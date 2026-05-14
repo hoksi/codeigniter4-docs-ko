@@ -48,19 +48,19 @@ msgstr "각 요소의 정확한 역할에 대해서는 많은 견해가 있을 �
 msgid ""
 "**Models** manage the data of the application and help to enforce any "
 "special business rules the application might need."
-msgstr "**모델(Models)**은 애플리케이션의 데이터를 관리하고 애플리케이션에 필요한 특별한 비즈니스 규칙을 적용하는 데 도움을 줍니다."
+msgstr "**모델(Models)** 은 애플리케이션의 데이터를 관리하고 애플리케이션에 필요한 특별한 비즈니스 규칙을 적용하는 데 도움을 줍니다."
 
 #: ../../source/concepts/mvc.rst:24
 msgid ""
 "**Views** are simple files, with little to no logic, that display the "
 "information to the user."
-msgstr "**뷰(Views)**는 로직이 거의 없거나 아예 없는 단순한 파일로, 사용자에게 정보를 표시합니다."
+msgstr "**뷰(Views)** 는 로직이 거의 없거나 아예 없는 단순한 파일로, 사용자에게 정보를 표시합니다."
 
 #: ../../source/concepts/mvc.rst:26
 msgid ""
 "**Controllers** act as glue code, marshaling data back and forth between "
 "the view (or the user that's seeing it) and the data storage."
-msgstr "**컨트롤러(Controllers)**는 뷰(또는 이를 보는 사용자)와 데이터 저장소 사이에서 데이터를 주고받으며 관리하는 '접착제 코드' 역할을 합니다."
+msgstr "**컨트롤러(Controllers)** 는 뷰(또는 이를 보는 사용자)와 데이터 저장소 사이에서 데이터를 주고받으며 관리하는 '접착제 코드' 역할을 합니다."
 
 #: ../../source/concepts/mvc.rst:29
 msgid ""
