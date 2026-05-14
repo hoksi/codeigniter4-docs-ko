@@ -41,7 +41,7 @@ msgid ""
 "sections thoroughly. You should read the :doc:`Library "
 "<../../libraries/index>` and :doc:`../../helpers/index` references when "
 "needed."
-msgstr "이제 튜토리얼을 마쳤으므로 나머지 문서들도 확인해 보시기 바랍니다. CodeIgniter는 포괄적인 문서화로 자주 찬사를 받습니다. 이를 장점으로 활용하여 :doc:`개요(Overview) <../../concepts/index>`와 :doc:`일반 주제 <../../general/index>` 섹션을 철저히 읽어보세요. 필요한 경우 :doc:`라이브러리 <../../libraries/index>` 및 :doc:`헬퍼 <../../helpers/index>` 레퍼런스도 읽어보시기 바랍니다."
+msgstr "이제 튜토리얼을 마쳤으므로 나머지 문서들도 확인해 보시기 바랍니다. CodeIgniter는 포괄적인 문서화로 자주 찬사를 받습니다. 이를 장점으로 활용하여 :doc:`개요(Overview) <../../concepts/index>`\ 와 :doc:`일반 주제 <../../general/index>` 섹션을 철저히 읽어보세요. 필요한 경우 :doc:`라이브러리 <../../libraries/index>` 및 :doc:`헬퍼 <../../helpers/index>` 레퍼런스도 읽어보시기 바랍니다."
 
 #: ../../source/guides/first-app/conclusion.rst:17
 msgid ""

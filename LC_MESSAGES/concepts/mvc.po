@@ -48,19 +48,19 @@ msgstr "각 요소의 정확한 역할에 대해서는 많은 견해가 있을 �
 msgid ""
 "**Models** manage the data of the application and help to enforce any "
 "special business rules the application might need."
-msgstr "**모델(Models)** 은 애플리케이션의 데이터를 관리하고 애플리케이션에 필요한 특별한 비즈니스 규칙을 적용하는 데 도움을 줍니다."
+msgstr "**\ 모델(Models)** 은 애플리케이션의 데이터를 관리하고 애플리케이션에 필요한 특별한 비즈니스 규칙을 적용하는 데 도움을 줍니다."
 
 #: ../../source/concepts/mvc.rst:24
 msgid ""
 "**Views** are simple files, with little to no logic, that display the "
 "information to the user."
-msgstr "**뷰(Views)** 는 로직이 거의 없거나 아예 없는 단순한 파일로, 사용자에게 정보를 표시합니다."
+msgstr "**\ 뷰(Views)** 는 로직이 거의 없거나 아예 없는 단순한 파일로, 사용자에게 정보를 표시합니다."
 
 #: ../../source/concepts/mvc.rst:26
 msgid ""
 "**Controllers** act as glue code, marshaling data back and forth between "
 "the view (or the user that's seeing it) and the data storage."
-msgstr "**컨트롤러(Controllers)** 는 뷰(또는 이를 보는 사용자)와 데이터 저장소 사이에서 데이터를 주고받으며 관리하는 '접착제 코드' 역할을 합니다."
+msgstr "**\ 컨트롤러(Controllers)** 는 뷰(또는 이를 보는 사용자)와 데이터 저장소 사이에서 데이터를 주고받으며 관리하는 '접착제 코드' 역할을 합니다."
 
 #: ../../source/concepts/mvc.rst:29
 msgid ""
@@ -111,7 +111,7 @@ msgid ""
 " example, a user's profile might be displayed in a controller named "
 "``User``, and a method named ``profile``. You might store the view file "
 "for this method in **app/Views/user/profile.php**."
-msgstr "뷰는 일반적으로 **app/Views**에 저장되지만, 어떤 방식으로든 정리하지 않으면 금방 다루기 힘들어질 수 있습니다. CodeIgniter는 어떠한 조직 방식도 강요하지 않지만, 좋은 규칙 중 하나는 각 컨트롤러에 대해 **Views** 디렉토리에 새 디렉토리를 만드는 것입니다. 그런 다음 메서드 이름으로 뷰의 이름을 지정합니다. 이렇게 하면 나중에 뷰를 매우 쉽게 찾을 수 있습니다. 예를 들어, 사용자 프로필이 ``User``라는 컨트롤러와 ``profile``이라는 메서드에 표시될 수 있습니다. 이 메서드의 뷰 파일은 **app/Views/user/profile.php**에 저장할 수 있습니다."
+msgstr "뷰는 일반적으로 **app/Views**\ 에 저장되지만, 어떤 방식으로든 정리하지 않으면 금방 다루기 힘들어질 수 있습니다. CodeIgniter는 어떠한 조직 방식도 강요하지 않지만, 좋은 규칙 중 하나는 각 컨트롤러에 대해 **Views** 디렉토리에 새 디렉토리를 만드는 것입니다. 그런 다음 메서드 이름으로 뷰의 이름을 지정합니다. 이렇게 하면 나중에 뷰를 매우 쉽게 찾을 수 있습니다. 예를 들어, 사용자 프로필이 ``User``\ 라는 컨트롤러와 ``profile``\ 이라는 메서드에 표시될 수 있습니다. 이 메서드의 뷰 파일은 **app/Views/user/profile.php**\ 에 저장할 수 있습니다."
 
 #: ../../source/concepts/mvc.rst:56
 msgid ""
@@ -153,7 +153,7 @@ msgstr "많은 개발자에게 어떤 비즈니스 규칙이 적용되는지 결
 msgid ""
 "Models are typically stored in **app/Models**, though they can use a "
 "namespace to be grouped however you need."
-msgstr "모델은 일반적으로 **app/Models**에 저장되지만, 필요한 방식으로 그룹화하기 위해 네임스페이스를 사용할 수 있습니다."
+msgstr "모델은 일반적으로 **app/Models**\ 에 저장되지만, 필요한 방식으로 그룹화하기 위해 네임스페이스를 사용할 수 있습니다."
 
 #: ../../source/concepts/mvc.rst:76
 msgid ":doc:`Find out more about models </models/model>`"
@@ -187,7 +187,7 @@ msgstr "컨트롤러의 또 다른 책임은 HTTP 요청과 관련된 모든 것
 msgid ""
 "Controllers are typically stored in **app/Controllers**, though they can "
 "use a namespace to be grouped however you need."
-msgstr "컨트롤러는 일반적으로 **app/Controllers**에 저장되지만, 필요한 방식으로 그룹화하기 위해 네임스페이스를 사용할 수 있습니다."
+msgstr "컨트롤러는 일반적으로 **app/Controllers**\ 에 저장되지만, 필요한 방식으로 그룹화하기 위해 네임스페이스를 사용할 수 있습니다."
 
 #: ../../source/concepts/mvc.rst:93
 msgid ":doc:`Find out more about controllers </incoming/controllers>`"

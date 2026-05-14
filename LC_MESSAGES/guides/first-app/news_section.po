@@ -42,7 +42,7 @@ msgid ""
 "databases>`. In this tutorial, we provide SQL code for a MySQL database, "
 "and we also assume that you have a suitable client for issuing database "
 "commands (mysql, MySQL Workbench, or phpMyAdmin)."
-msgstr "CodeIgniter 설치 시 :ref:`요구 사항 <requirements-supported-databases>`에 명시된 대로 적절한 데이터베이스를 설정했다고 가정합니다. 이 튜토리얼에서는 MySQL 데이터베이스를 위한 SQL 코드를 제공하며, 데이터베이스 명령을 실행하기 위한 적절한 클라이언트(mysql, MySQL Workbench 또는 phpMyAdmin)가 있다고 가정합니다."
+msgstr "CodeIgniter 설치 시 :ref:`요구 사항 <requirements-supported-databases>`\ 에 명시된 대로 적절한 데이터베이스를 설정했다고 가정합니다. 이 튜토리얼에서는 MySQL 데이터베이스를 위한 SQL 코드를 제공하며, 데이터베이스 명령을 실행하기 위한 적절한 클라이언트(mysql, MySQL Workbench 또는 phpMyAdmin)가 있다고 가정합니다."
 
 #: ../../source/guides/first-app/news_section.rst:22
 msgid ""
@@ -64,7 +64,7 @@ msgid ""
 " you can read about :doc:`Migrations <../../dbmgmt/migration>` and "
 ":doc:`Seeds <../../dbmgmt/seeds>` to create more useful database setups "
 "later."
-msgstr "또한 몇 개의 시드 레코드를 추가합니다. 지금은 테이블 생성에 필요한 SQL 문만 보여드리지만, CodeIgniter에 더 익숙해지면 이를 프로그래밍 방식으로 처리할 수 있음을 알아두세요. 나중에 :doc:`마이그레이션 <../../dbmgmt/migration>` 및 :doc:`시드(Seeds) <../../dbmgmt/seeds>`에 대해 읽어보고 더 유용한 데이터베이스 설정을 만들 수 있습니다."
+msgstr "또한 몇 개의 시드 레코드를 추가합니다. 지금은 테이블 생성에 필요한 SQL 문만 보여드리지만, CodeIgniter에 더 익숙해지면 이를 프로그래밍 방식으로 처리할 수 있음을 알아두세요. 나중에 :doc:`마이그레이션 <../../dbmgmt/migration>` 및 :doc:`시드(Seeds) <../../dbmgmt/seeds>`\ 에 대해 읽어보고 더 유용한 데이터베이스 설정을 만들 수 있습니다."
 
 #: ../../source/guides/first-app/news_section.rst:41
 msgid ""
@@ -88,7 +88,7 @@ msgid ""
 "uncommented and set appropriately for the database you want to use. Make "
 "sure you've configured your database properly as described in "
 ":doc:`../../database/configuration`::"
-msgstr "CodeIgniter를 설치할 때 만든 로컬 설정 파일인 **.env**에서 데이터베이스 속성 설정의 주석을 해제하고 사용하려는 데이터베이스에 맞게 적절히 설정해야 합니다. :doc:`../../database/configuration`에 설명된 대로 데이터베이스를 올바르게 설정했는지 확인하세요::"
+msgstr "CodeIgniter를 설치할 때 만든 로컬 설정 파일인 **.env**\ 에서 데이터베이스 속성 설정의 주석을 해제하고 사용하려는 데이터베이스에 맞게 적절히 설정해야 합니다. :doc:`../../database/configuration`\ 에 설명된 대로 데이터베이스를 올바르게 설정했는지 확인하세요::"
 
 #: ../../source/guides/first-app/news_section.rst:66
 msgid "Setting up Your Model"
@@ -101,7 +101,7 @@ msgid ""
 "are the place where you retrieve, insert, and update information in your "
 "database or other data stores. They provide access to your data. You can "
 "read more about it in :doc:`../../models/model`."
-msgstr "데이터베이스 작업을 컨트롤러에 직접 작성하는 대신, 나중에 쉽게 재사용할 수 있도록 쿼리를 모델에 배치해야 합니다. 모델은 데이터베이스나 다른 데이터 저장소에서 정보를 검색, 삽입 및 업데이트하는 곳입니다. 모델은 데이터에 대한 접근을 제공합니다. 이에 대한 자세한 내용은 :doc:`../../models/model`에서 읽어볼 수 있습니다."
+msgstr "데이터베이스 작업을 컨트롤러에 직접 작성하는 대신, 나중에 쉽게 재사용할 수 있도록 쿼리를 모델에 배치해야 합니다. 모델은 데이터베이스나 다른 데이터 저장소에서 정보를 검색, 삽입 및 업데이트하는 곳입니다. 모델은 데이터에 대한 접근을 제공합니다. 이에 대한 자세한 내용은 :doc:`../../models/model`\ 에서 읽어볼 수 있습니다."
 
 #: ../../source/guides/first-app/news_section.rst:75
 msgid "Create NewsModel"
@@ -111,7 +111,7 @@ msgstr "NewsModel 생성"
 msgid ""
 "Open up the **app/Models** directory and create a new file called "
 "**NewsModel.php** and add the following code."
-msgstr "**app/Models** 디렉토리를 열고 **NewsModel.php**라는 새 파일을 만든 후 다음 코드를 추가합니다."
+msgstr "**app/Models** 디렉토리를 열고 **NewsModel.php**\ 라는 새 파일을 만든 후 다음 코드를 추가합니다."
 
 #: ../../source/guides/first-app/news_section.rst:82
 msgid ""
@@ -119,7 +119,7 @@ msgid ""
 "creates a new model by extending ``CodeIgniter\\Model`` and loads the "
 "database library. This will make the database class available through the"
 " ``$this->db`` object."
-msgstr "이 코드는 이전에 사용한 컨트롤러 코드와 비슷해 보입니다. ``CodeIgniter\\Model``을 상속받아 새 모델을 생성하고 데이터베이스 라이브러리를 로드합니다. 이렇게 하면 ``$this->db`` 객체를 통해 데이터베이스 클래스를 사용할 수 있게 됩니다."
+msgstr "이 코드는 이전에 사용한 컨트롤러 코드와 비슷해 보입니다. ``CodeIgniter\\Model``\ 을 상속받아 새 모델을 생성하고 데이터베이스 라이브러리를 로드합니다. 이렇게 하면 ``$this->db`` 객체를 통해 데이터베이스 클래스를 사용할 수 있게 됩니다."
 
 #: ../../source/guides/first-app/news_section.rst:88
 msgid "Add NewsModel::getNews() Method"
@@ -136,7 +136,7 @@ msgid ""
 "Model class also allows you to easily work with the Query Builder and "
 "provides some additional tools to make working with data simpler. Add the"
 " following code to your model."
-msgstr "데이터베이스와 모델이 설정되었으므로 데이터베이스에서 모든 포스트를 가져오는 메서드가 필요합니다. 이를 위해 CodeIgniter에 포함된 데이터베이스 추상화 계층인 :doc:`쿼리 빌더(Query Builder) <../../database/query_builder>`가 ``CodeIgniter\\Model``에서 사용됩니다. 이를 통해 '쿼리'를 한 번만 작성하면 :doc:`지원되는 모든 데이터베이스 시스템 <../../intro/requirements>`에서 작동하게 할 수 있습니다. 또한 모델 클래스를 사용하면 쿼리 빌더를 쉽게 다룰 수 있으며, 데이터 작업을 더 간단하게 만들어주는 몇 가지 추가 도구를 제공합니다. 모델에 다음 코드를 추가하세요."
+msgstr "데이터베이스와 모델이 설정되었으므로 데이터베이스에서 모든 포스트를 가져오는 메서드가 필요합니다. 이를 위해 CodeIgniter에 포함된 데이터베이스 추상화 계층인 :doc:`쿼리 빌더(Query Builder) <../../database/query_builder>`\ 가 ``CodeIgniter\\Model``\ 에서 사용됩니다. 이를 통해 '쿼리'를 한 번만 작성하면 :doc:`지원되는 모든 데이터베이스 시스템 <../../intro/requirements>`\ 에서 작동하게 할 수 있습니다. 또한 모델 클래스를 사용하면 쿼리 빌더를 쉽게 다룰 수 있으며, 데이터 작업을 더 간단하게 만들어주는 몇 가지 추가 도구를 제공합니다. 모델에 다음 코드를 추가하세요."
 
 #: ../../source/guides/first-app/news_section.rst:103
 msgid ""
@@ -144,7 +144,7 @@ msgid ""
 "news records, or get a news item by its slug. You might have noticed that"
 " the ``$slug`` variable wasn't escaped before running the query; "
 ":doc:`Query Builder <../../database/query_builder>` does this for you."
-msgstr "이 코드를 사용하면 두 가지 다른 쿼리를 수행할 수 있습니다. 모든 뉴스 레코드를 가져오거나, 슬러그를 통해 특정 뉴스 항목을 가져올 수 있습니다. 쿼리를 실행하기 전에 ``$slug`` 변수가 이스케이프되지 않았다는 점을 눈치채셨을 수도 있는데, :doc:`쿼리 빌더 <../../database/query_builder>`가 이를 대신 처리해 줍니다."
+msgstr "이 코드를 사용하면 두 가지 다른 쿼리를 수행할 수 있습니다. 모든 뉴스 레코드를 가져오거나, 슬러그를 통해 특정 뉴스 항목을 가져올 수 있습니다. 쿼리를 실행하기 전에 ``$slug`` 변수가 이스케이프되지 않았다는 점을 눈치채셨을 수도 있는데, :doc:`쿼리 빌더 <../../database/query_builder>`\ 가 이를 대신 처리해 줍니다."
 
 #: ../../source/guides/first-app/news_section.rst:108
 msgid ""
@@ -154,7 +154,7 @@ msgid ""
 "They are helper methods that use the Query Builder to run their commands "
 "on the current table, and returning an array of results in the format of "
 "your choice. In this example, ``findAll()`` returns an array of array."
-msgstr "여기서 사용된 두 메서드인 ``findAll()``과 ``first()``는 ``CodeIgniter\\Model`` 클래스에서 제공됩니다. 이들은 앞서 ``NewsModel`` 클래스에서 설정한 ``$table`` 속성을 기반으로 사용할 테이블을 이미 알고 있습니다. 이들은 쿼리 빌더를 사용하여 현재 테이블에서 명령을 실행하고 원하는 형식의 결과 배열을 반환하는 헬퍼 메서드입니다. 이 예제에서 ``findAll()``은 배열의 배열을 반환합니다."
+msgstr "여기서 사용된 두 메서드인 ``findAll()``\ 과 ``first()``\ 는 ``CodeIgniter\\Model`` 클래스에서 제공됩니다. 이들은 앞서 ``NewsModel`` 클래스에서 설정한 ``$table`` 속성을 기반으로 사용할 테이블을 이미 알고 있습니다. 이들은 쿼리 빌더를 사용하여 현재 테이블에서 명령을 실행하고 원하는 형식의 결과 배열을 반환하는 헬퍼 메서드입니다. 이 예제에서 ``findAll()``\ 은 배열의 배열을 반환합니다."
 
 #: ../../source/guides/first-app/news_section.rst:116
 msgid "Display the News"
@@ -190,7 +190,7 @@ msgstr "News 컨트롤러 생성"
 
 #: ../../source/guides/first-app/news_section.rst:137
 msgid "Create the new controller at **app/Controllers/News.php**."
-msgstr "**app/Controllers/News.php**에 새 컨트롤러를 생성합니다."
+msgstr "**app/Controllers/News.php**\ 에 새 컨트롤러를 생성합니다."
 
 #: ../../source/guides/first-app/news_section.rst:141
 msgid ""
@@ -200,7 +200,7 @@ msgid ""
 "methods, and makes sure that you have access to the current ``Request`` "
 "and ``Response`` objects, as well as the ``Logger`` class, for saving "
 "information to disk."
-msgstr "코드를 보면 이전에 만든 파일들과 몇 가지 유사점을 발견할 수 있습니다. 먼저, 이 컨트롤러는 CodeIgniter의 핵심 클래스인 ``Controller``를 상속받는 ``BaseController``를 확장합니다. 이는 몇 가지 헬퍼 메서드를 제공하며, 현재의 ``Request`` 및 ``Response`` 객체뿐만 아니라 정보를 디스크에 저장하기 위한 ``Logger`` 클래스에 접근할 수 있도록 보장합니다."
+msgstr "코드를 보면 이전에 만든 파일들과 몇 가지 유사점을 발견할 수 있습니다. 먼저, 이 컨트롤러는 CodeIgniter의 핵심 클래스인 ``Controller``\ 를 상속받는 ``BaseController``\ 를 확장합니다. 이는 몇 가지 헬퍼 메서드를 제공하며, 현재의 ``Request`` 및 ``Response`` 객체뿐만 아니라 정보를 디스크에 저장하기 위한 ``Logger`` 클래스에 접근할 수 있도록 보장합니다."
 
 #: ../../source/guides/first-app/news_section.rst:147
 msgid ""
@@ -214,7 +214,7 @@ msgid ""
 "``NewsModel`` instance. This is a helper function. You can read more "
 "about it in :doc:`../../general/common_functions`. You could also write "
 "``$model = new NewsModel();``, if you don't use it."
-msgstr "다음으로 :php:func:`model()` 함수를 사용하여 ``NewsModel`` 인스턴스를 생성합니다. 이는 헬퍼 함수입니다. 이에 대한 자세한 내용은 :doc:`../../general/common_functions`에서 읽어볼 수 있습니다. 이 함수를 사용하지 않는다면 ``$model = new NewsModel();``과 같이 작성할 수도 있습니다."
+msgstr "다음으로 :php:func:`model()` 함수를 사용하여 ``NewsModel`` 인스턴스를 생성합니다. 이는 헬퍼 함수입니다. 이에 대한 자세한 내용은 :doc:`../../general/common_functions`\ 에서 읽어볼 수 있습니다. 이 함수를 사용하지 않는다면 ``$model = new NewsModel();``\ 과 같이 작성할 수도 있습니다."
 
 #: ../../source/guides/first-app/news_section.rst:154
 msgid ""
@@ -248,7 +248,7 @@ msgstr "news/index 뷰 파일 생성"
 
 #: ../../source/guides/first-app/news_section.rst:175
 msgid "Create **app/Views/news/index.php** and add the next piece of code."
-msgstr "**app/Views/news/index.php**를 만들고 다음 코드를 추가합니다."
+msgstr "**app/Views/news/index.php**\ 를 만들고 다음 코드를 추가합니다."
 
 #: ../../source/guides/first-app/news_section.rst:179
 msgid ""
@@ -256,7 +256,7 @@ msgid ""
 "this time we also passed \"url\" as a second parameter. That's because "
 "attack patterns are different depending on the context in which the "
 "output is used."
-msgstr "XSS 공격을 방지하기 위해 다시 한번 :php:func:`esc()`를 사용하고 있습니다. 하지만 이번에는 두 번째 매개변수로 \"url\"을 전달했습니다. 이는 출력이 사용되는 맥락에 따라 공격 패턴이 다르기 때문입니다."
+msgstr "XSS 공격을 방지하기 위해 다시 한번 :php:func:`esc()`\ 를 사용하고 있습니다. 하지만 이번에는 두 번째 매개변수로 \"url\"을 전달했습니다. 이는 출력이 사용되는 맥락에 따라 공격 패턴이 다르기 때문입니다."
 
 #: ../../source/guides/first-app/news_section.rst:184
 msgid ""
@@ -265,7 +265,7 @@ msgid ""
 "template language, you can use CodeIgniter's :doc:`View Parser "
 "</outgoing/view_parser>` or a third party parser. Parser "
 "</outgoing/view_parser>` or a third party parser."
-msgstr "여기서 각 뉴스 항목은 루프를 통해 사용자에게 표시됩니다. PHP와 HTML이 섞인 템플릿을 작성한 것을 볼 수 있습니다. 만약 템플릿 언어를 선호하신다면, CodeIgniter의 :doc:`View Parser </outgoing/view_parser>`나 서드파티 파서를 사용할 수 있습니다."
+msgstr "여기서 각 뉴스 항목은 루프를 통해 사용자에게 표시됩니다. PHP와 HTML이 섞인 템플릿을 작성한 것을 볼 수 있습니다. 만약 템플릿 언어를 선호하신다면, CodeIgniter의 :doc:`View Parser </outgoing/view_parser>`\ 나 서드파티 파서를 사용할 수 있습니다."
 
 #: ../../source/guides/first-app/news_section.rst:190
 msgid "Complete News::show() Method"
@@ -285,7 +285,7 @@ msgid ""
 "Don't forget to add ``use "
 "CodeIgniter\\Exceptions\\PageNotFoundException;`` to import the "
 "``PageNotFoundException`` class."
-msgstr "``PageNotFoundException`` 클래스를 임포트하기 위해 ``use CodeIgniter\\Exceptions\\PageNotFoundException;``을 추가하는 것을 잊지 마세요."
+msgstr "``PageNotFoundException`` 클래스를 임포트하기 위해 ``use CodeIgniter\\Exceptions\\PageNotFoundException;``\ 을 추가하는 것을 잊지 마세요."
 
 #: ../../source/guides/first-app/news_section.rst:203
 msgid ""
@@ -301,7 +301,7 @@ msgstr "news/view 뷰 파일 생성"
 msgid ""
 "The only thing left to do is create the corresponding view at "
 "**app/Views/news/view.php**. Put the following code in this file."
-msgstr "남은 작업은 **app/Views/news/view.php**에 해당하는 뷰를 만드는 것입니다. 이 파일에 다음 코드를 입력하세요."
+msgstr "남은 작업은 **app/Views/news/view.php**\ 에 해당하는 뷰를 만드는 것입니다. 이 파일에 다음 코드를 입력하세요."
 
 #: ../../source/guides/first-app/news_section.rst:214
 msgid ""

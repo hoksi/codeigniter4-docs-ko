@@ -32,7 +32,7 @@ msgid ""
 "using. Keeping track of where every single file is, and hard-coding that "
 "location into your files in a series of ``requires()`` is a massive "
 "headache and very error-prone. That's where autoloaders come in."
-msgstr "모든 애플리케이션은 서로 다른 위치에 있는 수많은 클래스로 구성됩니다. 프레임워크는 핵심 기능을 위한 클래스를 제공하며, 애플리케이션은 라이브러리, 모델 및 기타 엔티티들을 통해 작동합니다. 또한 프로젝트에서 사용하는 서드파티 클래스들도 있을 수 있습니다. 모든 파일의 위치를 추적하고, 이를 ``requires()``를 사용하여 파일에 하드코딩하는 것은 매우 번거롭고 에러가 발생하기 쉽습니다. 여기서 오토로더(autoloader)가 필요해집니다."
+msgstr "모든 애플리케이션은 서로 다른 위치에 있는 수많은 클래스로 구성됩니다. 프레임워크는 핵심 기능을 위한 클래스를 제공하며, 애플리케이션은 라이브러리, 모델 및 기타 엔티티들을 통해 작동합니다. 또한 프로젝트에서 사용하는 서드파티 클래스들도 있을 수 있습니다. 모든 파일의 위치를 추적하고, 이를 ``requires()``\ 를 사용하여 파일에 하드코딩하는 것은 매우 번거롭고 에러가 발생하기 쉽습니다. 여기서 오토로더(autoloader)가 필요해집니다."
 
 #: ../../source/concepts/autoloader.rst:18
 msgid "CodeIgniter4 Autoloader"
@@ -53,14 +53,14 @@ msgid ""
 "`spl_autoload_register <https://www.php.net/manual/en/function.spl-"
 "autoload-register.php>`_, they work in sequence and don't get in each "
 "other's way."
-msgstr "오토로더는 단독으로도 잘 작동하지만, 필요에 따라 `Composer <https://getcomposer.org>`_와 같은 다른 오토로더나 사용자 정의 오토로더와 함께 사용할 수도 있습니다. 이들은 모두 `spl_autoload_register <https://www.php.net/manual/en/function.spl-autoload-register.php>`_를 통해 등록되므로, 순차적으로 작동하며 서로 방해하지 않습니다."
+msgstr "오토로더는 단독으로도 잘 작동하지만, 필요에 따라 `Composer <https://getcomposer.org>`_\ 와 같은 다른 오토로더나 사용자 정의 오토로더와 함께 사용할 수도 있습니다. 이들은 모두 `spl_autoload_register <https://www.php.net/manual/en/function.spl-autoload-register.php>`_\ 를 통해 등록되므로, 순차적으로 작동하며 서로 방해하지 않습니다."
 
 #: ../../source/concepts/autoloader.rst:32
 msgid ""
 "The autoloader is always active, being registered with "
 "``spl_autoload_register()`` at the beginning of the framework's "
 "execution."
-msgstr "오토로더는 항상 활성화되어 있으며, 프레임워크 실행 시작 시점에 ``spl_autoload_register()``를 통해 등록됩니다."
+msgstr "오토로더는 항상 활성화되어 있으며, 프레임워크 실행 시작 시점에 ``spl_autoload_register()``\ 를 통해 등록됩니다."
 
 #: ../../source/concepts/autoloader.rst:35
 msgid ""
@@ -80,7 +80,7 @@ msgid ""
 "Initial configuration is done in **app/Config/Autoload.php**. This file "
 "contains two primary arrays: one for the classmap, and one for PSR-4 "
 "compatible namespaces."
-msgstr "초기 설정은 **app/Config/Autoload.php**에서 이루어집니다. 이 파일에는 클래스맵(classmap)을 위한 배열과 PSR-4 호환 네임스페이스를 위한 배열이라는 두 개의 주요 배열이 포함되어 있습니다."
+msgstr "초기 설정은 **app/Config/Autoload.php**\ 에서 이루어집니다. 이 파일에는 클래스맵(classmap)을 위한 배열과 PSR-4 호환 네임스페이스를 위한 배열이라는 두 개의 주요 배열이 포함되어 있습니다."
 
 #: ../../source/concepts/autoloader.rst:51
 msgid "Namespaces"
@@ -115,7 +115,7 @@ msgstr "기본적으로 ``App`` 네임스페이스는 **app** 디렉토리에 �
 msgid ""
 "If you create class files in the locations and according to `PSR-4`_, the"
 " autoloader will autoload them."
-msgstr "`PSR-4`_에 따라 해당 위치에 클래스 파일을 생성하면 오토로더가 자동으로 이를 로드합니다."
+msgstr "`PSR-4`_\ 에 따라 해당 위치에 클래스 파일을 생성하면 오토로더가 자동으로 이를 로드합니다."
 
 #: ../../source/concepts/autoloader.rst:73
 msgid "Confirming Namespaces"
@@ -147,13 +147,13 @@ msgid ""
 "``App\\Config`` as you might expect. This allows the core system files to"
 " always be able to locate them, even when the application namespace has "
 "changed."
-msgstr "설정 파일들은 예상과 달리 ``App\\Config``가 아닌 ``Config`` 네임스페이스로 지정됩니다. 이를 통해 애플리케이션 네임스페이스가 변경되더라도 핵심 시스템 파일들이 항상 설정 파일을 찾을 수 있습니다."
+msgstr "설정 파일들은 예상과 달리 ``App\\Config``\ 가 아닌 ``Config`` 네임스페이스로 지정됩니다. 이를 통해 애플리케이션 네임스페이스가 변경되더라도 핵심 시스템 파일들이 항상 설정 파일을 찾을 수 있습니다."
 
 #: ../../source/concepts/autoloader.rst:96
 msgid ""
 "Since v4.5.3 appstarter, the ``Config\\\\`` namespace has been added to "
 "**composer.json**'s ``autoload.psr-4``."
-msgstr "v4.5.3 App Starter부터 ``Config\\\\`` 네임스페이스가 **composer.json**의 ``autoload.psr-4``에 추가되었습니다."
+msgstr "v4.5.3 App Starter부터 ``Config\\\\`` 네임스페이스가 **composer.json**\ 의 ``autoload.psr-4``\ 에 추가되었습니다."
 
 #: ../../source/concepts/autoloader.rst:100
 msgid "Changing App Namespace"
@@ -170,14 +170,14 @@ msgstr "**app/Config/Constants.php** 파일을 편집하고 ``APP_NAMESPACE`` �
 msgid ""
 "And if you use Composer autoloader, you also need to change the ``App`` "
 "namespace in your **composer.json**, and run ``composer dump-autoload``."
-msgstr "Composer 오토로더를 사용하는 경우, **composer.json**에서도 ``App`` 네임스페이스를 변경하고 ``composer dump-autoload``를 실행해야 합니다."
+msgstr "Composer 오토로더를 사용하는 경우, **composer.json**\ 에서도 ``App`` 네임스페이스를 변경하고 ``composer dump-autoload``\ 를 실행해야 합니다."
 
 #: ../../source/concepts/autoloader.rst:124
 msgid ""
 "Since v4.5.0 appstarter, the ``App\\\\`` namespace has been added to "
 "**composer.json**'s ``autoload.psr-4``. If your **composer.json** does "
 "not have it, adding it may improve your app's autoloading performance."
-msgstr "v4.5.0 App Starter부터 ``App\\\\`` 네임스페이스가 **composer.json**의 ``autoload.psr-4``에 추가되었습니다. 만약 **composer.json**에 이 내용이 없다면, 이를 추가하여 앱의 오토로딩 성능을 향상시킬 수 있습니다."
+msgstr "v4.5.0 App Starter부터 ``App\\\\`` 네임스페이스가 **composer.json**\ 의 ``autoload.psr-4``\ 에 추가되었습니다. 만약 **composer.json**\ 에 이 내용이 없다면, 이를 추가하여 앱의 오토로딩 성능을 향상시킬 수 있습니다."
 
 #: ../../source/concepts/autoloader.rst:128
 msgid ""
@@ -215,7 +215,7 @@ msgid ""
 "'vendor/autoload.php'``. If you need to change the location of that file "
 "for any reason, you can modify the value defined in "
 "**app/Config/Constants.php**."
-msgstr "기본적으로 ``ROOTPATH . 'vendor/autoload.php'``에서 Composer의 오토로드 파일을 찾습니다. 어떤 이유로든 이 파일의 위치를 변경해야 하는 경우, **app/Config/Constants.php**에 정의된 값을 수정할 수 있습니다."
+msgstr "기본적으로 ``ROOTPATH . 'vendor/autoload.php'``\ 에서 Composer의 오토로드 파일을 찾습니다. 어떤 이유로든 이 파일의 위치를 변경해야 하는 경우, **app/Config/Constants.php**\ 에 정의된 값을 수정할 수 있습니다."
 
 #: ../../source/concepts/autoloader.rst:151
 msgid "Priority of Autoloaders"
@@ -243,7 +243,7 @@ msgstr "FileLocator 캐싱"
 msgid ""
 "**FileLocator** is responsible for finding files or getting a classname "
 "from a file, which cannot be achieved with PHP autoloading."
-msgstr "**FileLocator**는 PHP 오토로딩으로는 달성할 수 없는 파일 찾기나 파일에서 클래스 이름을 가져오는 작업을 담당합니다."
+msgstr "**FileLocator**\ 는 PHP 오토로딩으로는 달성할 수 없는 파일 찾기나 파일에서 클래스 이름을 가져오는 작업을 담당합니다."
 
 #: ../../source/concepts/autoloader.rst:170
 msgid "To improve its performance, FileLocator Caching has been implemented."
@@ -306,7 +306,7 @@ msgstr "FileLocator 캐싱 활성화 방법"
 
 #: ../../source/concepts/autoloader.rst:206
 msgid "Set the following property to ``true`` in **app/Config/Optimize.php**::"
-msgstr "**app/Config/Optimize.php**에서 다음 속성을 ``true``로 설정하십시오::"
+msgstr "**app/Config/Optimize.php**\ 에서 다음 속성을 ``true``\ 로 설정하십시오::"
 
 #: ../../source/concepts/autoloader.rst:210
 msgid "Or you can enable it with the ``spark optimize`` command."
@@ -316,10 +316,10 @@ msgstr "또는 ``spark optimize`` 명령으로 활성화할 수 있습니다."
 msgid ""
 "This property cannot be overridden by :ref:`environment variables "
 "<configuration-classes-and-environment-variables>`."
-msgstr "이 속성은 :ref:`환경 변수 <configuration-classes-and-environment-variables>`에 의해 오버라이드될 수 없습니다."
+msgstr "이 속성은 :ref:`환경 변수 <configuration-classes-and-environment-variables>`\ 에 의해 오버라이드될 수 없습니다."
 
 #: ../../source/concepts/autoloader.rst:216
 msgid ""
 "Do not use this option when running the app in the :doc:`Worker Mode "
 "</installation/worker_mode>`."
-msgstr ":doc:`워커 모드(Worker Mode) </installation/worker_mode>`에서 앱을 실행할 때는 이 옵션을 사용하지 마십시오."
+msgstr ":doc:`워커 모드(Worker Mode) </installation/worker_mode>`\ 에서 앱을 실행할 때는 이 옵션을 사용하지 마십시오."

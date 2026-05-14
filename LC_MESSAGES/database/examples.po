@@ -62,7 +62,7 @@ msgstr "여러 결과를 반환하는 표준 쿼리 (객체 버전)"
 
 #: ../../source/database/examples.rst:34
 msgid "The above ``getResult()`` function returns an array of **objects**."
-msgstr "위의 ``getResult()`` 함수는 **객체** 배열을 반환합니다."
+msgstr "위의 ``getResult()`` 함수는 **\ 객체** 배열을 반환합니다."
 
 #: ../../source/database/examples.rst:35
 msgid "Example: ``$row->title``"
@@ -90,7 +90,7 @@ msgstr "단일 결과를 반환하는 표준 쿼리"
 msgid ""
 "The above ``getRow()`` function returns an **object**. Example: "
 "``$row->name``"
-msgstr "위의 ``getRow()`` 함수는 **객체**를 반환합니다. 예: ``$row->name``"
+msgstr "위의 ``getRow()`` 함수는 **\ 객체**\ 를 반환합니다. 예: ``$row->name``"
 
 #: ../../source/database/examples.rst:54
 msgid "Standard Query With Single Result (Array version)"
@@ -100,7 +100,7 @@ msgstr "단일 결과를 반환하는 표준 쿼리 (배열 버전)"
 msgid ""
 "The above ``getRowArray()`` function returns an **array**. Example: "
 "``$row['name']``."
-msgstr "위의 ``getRowArray()`` 함수는 **배열**을 반환합니다. 예: ``$row['name']``."
+msgstr "위의 ``getRowArray()`` 함수는 **\ 배열**\ 을 반환합니다. 예: ``$row['name']``."
 
 #: ../../source/database/examples.rst:62
 msgid "Standard Insert"
@@ -114,7 +114,7 @@ msgstr "쿼리 빌더 쿼리"
 msgid ""
 "The :doc:`Query Builder <query_builder>` gives you a simplified means of "
 "retrieving data:"
-msgstr ":doc:`쿼리 빌더 <query_builder>`는 데이터를 검색하는 단순화된 방법을 제공합니다."
+msgstr ":doc:`쿼리 빌더 <query_builder>`\ 는 데이터를 검색하는 단순화된 방법을 제공합니다."
 
 #: ../../source/database/examples.rst:74
 msgid ""

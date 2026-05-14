@@ -1,17 +1,16 @@
-# SOME DESCRIPTIVE TITLE.
+# CodeIgniter 4 User Guide Korean Translation.
 # Copyright (C) 2019-2026 CodeIgniter Foundation
 # This file is distributed under the same license as the CodeIgniter
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+# hoksi <hoksi@github.com>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-05-14 19:50+0900\n"
+"Last-Translator: hoksi <hoksi@github.com>\n"
 "Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -22,11 +21,10 @@ msgstr ""
 
 #: ../../source/helpers/index.rst:3
 msgid "Helpers"
-msgstr ""
+msgstr "헬퍼(Helpers)"
 
 #: ../../source/helpers/index.rst:5
 msgid ""
 "Helpers are collections of useful procedural functions. See also "
 ":doc:`../general/helpers`."
-msgstr ""
-
+msgstr "헬퍼는 유용한 절차적 함수들의 모음입니다. :doc:`../general/helpers`\ 도 참조하십시오."

@@ -57,7 +57,7 @@ msgstr "PHP 8.1의 지원 종료(EOL) 날짜는 2025년 12월 31일이었습니�
 msgid ""
 "**If you are still using a PHP version below 8.2, you should upgrade "
 "immediately.**"
-msgstr "**여전히 8.2 미만의 PHP 버전을 사용 중이라면 즉시 업그레이드해야 합니다.**"
+msgstr "**\ 여전히 8.2 미만의 PHP 버전을 사용 중이라면 즉시 업그레이드해야 합니다.**"
 
 #: ../../source/intro/requirements.rst:23
 msgid "The end of life date for PHP 8.2 will be December 31, 2026."
@@ -85,7 +85,7 @@ msgstr "PHP 8.1는 CodeIgniter 4.1.6 이상이 필요합니다."
 
 #: ../../source/intro/requirements.rst:31
 msgid "**Note that we only maintain the latest version.**"
-msgstr "**최신 버전만 유지 관리된다는 점에 유의하세요.**"
+msgstr "**\ 최신 버전만 유지 관리된다는 점에 유의하세요.**"
 
 #: ../../source/intro/requirements.rst:35
 msgid "Optional PHP Extensions"
@@ -105,7 +105,7 @@ msgstr "`mysqlnd <https://www.php.net/manual/ko/mysqlnd.install.php>`_ (MySQL을
 msgid ""
 "`curl <https://www.php.net/manual/en/curl.requirements.php>`_ (if you use"
 " :doc:`CURLRequest </libraries/curlrequest>`)"
-msgstr "`curl <https://www.php.net/manual/ko/curl.requirements.php>`_ (:doc:`CURLRequest </libraries/curlrequest>`를 사용하는 경우)"
+msgstr "`curl <https://www.php.net/manual/ko/curl.requirements.php>`_ (:doc:`CURLRequest </libraries/curlrequest>`\ 를 사용하는 경우)"
 
 #: ../../source/intro/requirements.rst:41
 msgid ""
@@ -169,7 +169,7 @@ msgstr "`libxml <https://www.php.net/manual/ko/libxml.requirements.php>`_ (:doc:
 msgid ""
 "`xdebug <https://xdebug.org/docs/install>`_ (if you use "
 "``CIUnitTestCase::assertHeaderEmitted()``)"
-msgstr "`xdebug <https://xdebug.org/docs/install>`_ (``CIUnitTestCase::assertHeaderEmitted()``를 사용하는 경우)"
+msgstr "`xdebug <https://xdebug.org/docs/install>`_ (``CIUnitTestCase::assertHeaderEmitted()``\ 를 사용하는 경우)"
 
 #: ../../source/intro/requirements.rst:61
 msgid "Supported Databases"

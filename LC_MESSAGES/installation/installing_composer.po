@@ -35,7 +35,7 @@ msgstr "CodeIgniter4는 Composer 2.0.14 이상이 필요합니다."
 msgid ""
 "If you are not familiar with Composer, we recommend you read `Basic usage"
 " <https://getcomposer.org/doc/01-basic-usage.md>`_ first."
-msgstr "Composer에 익숙하지 않다면 `기본 사용법 <https://getcomposer.org/doc/01-basic-usage.md>`_을 먼저 읽어보는 것을 권장합니다."
+msgstr "Composer에 익숙하지 않다면 `기본 사용법 <https://getcomposer.org/doc/01-basic-usage.md>`_\ 을 먼저 읽어보는 것을 권장합니다."
 
 #: ../../source/installation/installing_composer.rst:15
 msgid ""
@@ -134,7 +134,7 @@ msgstr "이 경우 명령에 버전을 지정합니다:"
 msgid ""
 "Then, open **composer.json** in your project root folder, and specify the"
 " framework version:"
-msgstr "그런 다음 프로젝트 루트 폴더의 **composer.json**을 열고 프레임워크 버전을 지정합니다."
+msgstr "그런 다음 프로젝트 루트 폴더의 **composer.json**\ 을 열고 프레임워크 버전을 지정합니다."
 
 #: ../../source/installation/installing_composer.rst:89
 #: ../../source/installation/installing_composer.rst:132
@@ -149,7 +149,7 @@ msgid ""
 "\"4.4.8\"`` in your **composer.json**, ``composer update`` command will "
 "not update the framework to the latest version. See `Writing Version "
 "Constraints`_ for how to specify the version."
-msgstr "**composer.json**에서 ``\"codeigniter4/framework\": \"4.4.8\"``과 같이 고정된 버전 번호를 사용하면 ``composer update`` 명령이 프레임워크를 최신 버전으로 업데이트하지 않습니다. 버전을 지정하는 방법은 `Writing Version Constraints`_를 참조하세요."
+msgstr "**composer.json**\ 에서 ``\"codeigniter4/framework\": \"4.4.8\"``\ 과 같이 고정된 버전 번호를 사용하면 ``composer update`` 명령이 프레임워크를 최신 버전으로 업데이트하지 않습니다. 버전을 지정하는 방법은 `Writing Version Constraints`_\ 를 참조하세요."
 
 #: ../../source/installation/installing_composer.rst:98
 #: ../../source/installation/installing_composer.rst:254
@@ -160,7 +160,7 @@ msgstr "초기 설정"
 msgid ""
 "After installation, a few initial configurations are required. See :ref"
 ":`initial-configuration` for the details."
-msgstr "설치 후 몇 가지 초기 설정이 필요합니다. 자세한 내용은 :ref:`initial-configuration`를 참조하세요."
+msgstr "설치 후 몇 가지 초기 설정이 필요합니다. 자세한 내용은 :ref:`initial-configuration`\ 를 참조하세요."
 
 #: ../../source/installation/installing_composer.rst:106
 #: ../../source/installation/installing_composer.rst:262
@@ -179,7 +179,7 @@ msgstr "새로운 출시가 있을 때마다 프로젝트 루트의 명령줄에
 msgid ""
 "Read the :doc:`upgrade instructions <upgrading>` and :doc:`change log "
 "<../changelogs/index>`, and check Breaking Changes and Enhancements."
-msgstr ":doc:`업그레이드 지침 <upgrading>` 및 :doc:`변경 로그 <../changelogs/index>`를 읽고 호환성이 중단되는 변경 사항(Breaking Changes)과 개선 사항을 확인하세요."
+msgstr ":doc:`업그레이드 지침 <upgrading>` 및 :doc:`변경 로그 <../changelogs/index>`\ 를 읽고 호환성이 중단되는 변경 사항(Breaking Changes)과 개선 사항을 확인하세요."
 
 #: ../../source/installation/installing_composer.rst:118
 #: ../../source/installation/installing_composer.rst:274
@@ -197,4 +197,4 @@ msgstr "예를 들어, v4.5.0이 출시된 후 v4.4.7에서 v4.4.8로 업그레�
 #: ../../source/installation/installing_composer.rst:278
 msgid ""
 "In that case, open **composer.json** in your project root folder, and "
-msgstr "이 경우 프로젝트 루트 폴더의 **composer.json**을 열고 "
+msgstr "이 경우 프로젝트 루트 폴더의 **composer.json**\ 을 열고 "

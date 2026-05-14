@@ -36,13 +36,13 @@ msgid ""
 "Like :doc:`./services`, **Factories** are an extension of autoloading "
 "that helps keep your code concise yet optimal, without having to pass "
 "around object instances between classes."
-msgstr ":doc:`./services`와 마찬가지로, **팩토리(Factories)**는 클래스 간에 객체 인스턴스를 직접 전달할 필요 없이 코드를 간결하고 최적화된 상태로 유지할 수 있게 돕는 오토로딩의 확장 기능입니다."
+msgstr ":doc:`./services`\ 와 마찬가지로, **\ 팩토리(Factories)**\ 는 클래스 간에 객체 인스턴스를 직접 전달할 필요 없이 코드를 간결하고 최적화된 상태로 유지할 수 있게 돕는 오토로딩의 확장 기능입니다."
 
 #: ../../source/concepts/factories.rst:18
 msgid ""
 "Factories are similar to CodeIgniter 3's ``$this->load`` in the following"
 " points:"
-msgstr "팩토리는 다음과 같은 점에서 CodeIgniter 3의 ``$this->load``와 비슷합니다."
+msgstr "팩토리는 다음과 같은 점에서 CodeIgniter 3의 ``$this->load``\ 와 비슷합니다."
 
 #: ../../source/concepts/factories.rst:20
 msgid "Load a class"
@@ -107,11 +107,11 @@ msgid ""
 "Take a look at **Models** as an example. You can access the Factory "
 "specific to Models by using the magic static method of the Factories "
 "class, ``Factories::models()``."
-msgstr "**모델(Models)**을 예로 들어보겠습니다. 팩토리 클래스의 매직 정적 메서드인 ``Factories::models()``를 사용하여 모델 전용 팩토리에 접근할 수 있습니다."
+msgstr "**\ 모델(Models)**\ 을 예로 들어보겠습니다. 팩토리 클래스의 매직 정적 메서드인 ``Factories::models()``\ 를 사용하여 모델 전용 팩토리에 접근할 수 있습니다."
 
 #: ../../source/concepts/factories.rst:55
 msgid "The static method name is called *component*."
-msgstr "이 정적 메서드 이름을 *컴포넌트(component)*라고 부릅니다."
+msgstr "이 정적 메서드 이름을 *\ 컴포넌트(component)*\ 라고 부릅니다."
 
 #: ../../source/concepts/factories.rst:60
 msgid "Passing Classname without Namespace"
@@ -123,7 +123,7 @@ msgid ""
 "the ``App`` namespace for the path corresponding to the magic static "
 "method name. ``Factories::models()`` searches the **app/Models** "
 "directory."
-msgstr "네임스페이스 없이 클래스 이름을 전달하면, 팩토리는 먼저 ``App`` 네임스페이스에서 매직 정적 메서드 이름에 대응하는 경로를 찾습니다. 예를 들어 ``Factories::models()``는 **app/Models** 디렉토리를 검색합니다."
+msgstr "네임스페이스 없이 클래스 이름을 전달하면, 팩토리는 먼저 ``App`` 네임스페이스에서 매직 정적 메서드 이름에 대응하는 경로를 찾습니다. 예를 들어 ``Factories::models()``\ 는 **app/Models** 디렉토리를 검색합니다."
 
 #: ../../source/concepts/factories.rst:67
 msgid "Passing Short Classname"
@@ -133,13 +133,13 @@ msgstr "짧은 클래스 이름 전달하기"
 msgid ""
 "In the following code, if you have ``App\\Models\\UserModel``, the "
 "instance will be returned:"
-msgstr "다음 코드에서 ``App\\Models\\UserModel``이 존재한다면 해당 인스턴스가 반환됩니다."
+msgstr "다음 코드에서 ``App\\Models\\UserModel``\ 이 존재한다면 해당 인스턴스가 반환됩니다."
 
 #: ../../source/concepts/factories.rst:73
 msgid ""
 "If you don't have ``App\\Models\\UserModel``, it searches for "
 "``Models\\UserModel`` in all namespaces."
-msgstr "만약 ``App\\Models\\UserModel``이 없다면 모든 네임스페이스에서 ``Models\\UserModel``을 검색합니다."
+msgstr "만약 ``App\\Models\\UserModel``\ 이 없다면 모든 네임스페이스에서 ``Models\\UserModel``\ 을 검색합니다."
 
 #: ../../source/concepts/factories.rst:75
 msgid ""
@@ -156,7 +156,7 @@ msgid ""
 "If you want to load a class in sub directories, you use the ``/`` as a "
 "separator. The following code loads **app/Libraries/Sub/SubLib.php** if "
 "it exists:"
-msgstr "하위 디렉토리에 있는 클래스를 로드하려면 ``/``를 구분자로 사용합니다. 다음 코드는 **app/Libraries/Sub/SubLib.php**가 존재할 경우 이를 로드합니다."
+msgstr "하위 디렉토리에 있는 클래스를 로드하려면 ``/``\ 를 구분자로 사용합니다. 다음 코드는 **app/Libraries/Sub/SubLib.php**\ 가 존재할 경우 이를 로드합니다."
 
 #: ../../source/concepts/factories.rst:92
 msgid "Passing Fully Qualified Classname"
@@ -168,7 +168,7 @@ msgstr "전체 경로 네임스페이스를 사용하여 요청할 수도 있습
 
 #: ../../source/concepts/factories.rst:99
 msgid "It returns the instance of ``Blog\\Models\\UserModel`` if it exists."
-msgstr "``Blog\\Models\\UserModel``이 존재하면 해당 인스턴스를 반환합니다."
+msgstr "``Blog\\Models\\UserModel``\ 이 존재하면 해당 인스턴스를 반환합니다."
 
 #: ../../source/concepts/factories.rst:101
 msgid ""
@@ -177,13 +177,13 @@ msgid ""
 " if you had both ``App\\Models\\UserModel`` and "
 "``Blog\\Models\\UserModel``, the instance of ``App\\Models\\UserModel`` "
 "would be returned."
-msgstr "v4.4.0 이전에는 전체 네임스페이스로 요청했을 때, ``Blog\\Models\\UserModel``만 있다면 해당 인스턴스가 반환되었지만, ``App\\Models\\UserModel``과 ``Blog\\Models\\UserModel``이 둘 다 있다면 ``App\\Models\\UserModel``의 인스턴스가 반환되었습니다."
+msgstr "v4.4.0 이전에는 전체 네임스페이스로 요청했을 때, ``Blog\\Models\\UserModel``\ 만 있다면 해당 인스턴스가 반환되었지만, ``App\\Models\\UserModel``\ 과 ``Blog\\Models\\UserModel``\ 이 둘 다 있다면 ``App\\Models\\UserModel``\ 의 인스턴스가 반환되었습니다."
 
 #: ../../source/concepts/factories.rst:106
 msgid ""
 "If you wanted to get ``Blog\\Models\\UserModel``, you needed to disable "
 "the option ``preferApp``:"
-msgstr "이 경우 ``Blog\\Models\\UserModel``을 가져오려면 ``preferApp`` 옵션을 비활성화해야 했습니다."
+msgstr "이 경우 ``Blog\\Models\\UserModel``\ 을 가져오려면 ``preferApp`` 옵션을 비활성화해야 했습니다."
 
 #: ../../source/concepts/factories.rst:113
 msgid "Convenience Functions"
@@ -235,7 +235,7 @@ msgstr "작동 방식"
 msgid ""
 "Once cached, configuration values are never changed until the cache is "
 "deleted, even if the configuration file or **.env** is changed."
-msgstr "한번 캐시되면 설정 파일이나 **.env**가 변경되더라도 캐시를 삭제하기 전까지 설정 값은 절대로 변경되지 않습니다."
+msgstr "한번 캐시되면 설정 파일이나 **.env**\ 가 변경되더라도 캐시를 삭제하기 전까지 설정 값은 절대로 변경되지 않습니다."
 
 #: ../../source/concepts/factories.rst:299
 msgid ""
@@ -291,7 +291,7 @@ msgstr "설정 캐싱 활성화 방법"
 
 #: ../../source/concepts/factories.rst:333
 msgid "Set the following property to ``true`` in **app/Config/Optimize.php**::"
-msgstr "**app/Config/Optimize.php**에서 다음 속성을 ``true``로 설정하십시오::"
+msgstr "**app/Config/Optimize.php**\ 에서 다음 속성을 ``true``\ 로 설정하십시오::"
 
 #: ../../source/concepts/factories.rst:337
 msgid "Or you can enable this with the ``spark optimize`` command."
@@ -301,10 +301,10 @@ msgstr "또는 ``spark optimize`` 명령으로 활성화할 수 있습니다."
 msgid ""
 "This property cannot be overridden by :ref:`environment variables "
 "<configuration-classes-and-environment-variables>`."
-msgstr "이 속성은 :ref:`환경 변수 <configuration-classes-and-environment-variables>`에 의해 오버라이드될 수 없습니다."
+msgstr "이 속성은 :ref:`환경 변수 <configuration-classes-and-environment-variables>`\ 에 의해 오버라이드될 수 없습니다."
 
 #: ../../source/concepts/factories.rst:343
 msgid ""
 "Do not use this option when running the app in the :doc:`Worker Mode "
 "</installation/worker_mode>`."
-msgstr ":doc:`워커 모드(Worker Mode) </installation/worker_mode>`에서 앱을 실행할 때는 이 옵션을 사용하지 마십시오."
+msgstr ":doc:`워커 모드(Worker Mode) </installation/worker_mode>`\ 에서 앱을 실행할 때는 이 옵션을 사용하지 마십시오."

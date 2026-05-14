@@ -34,7 +34,7 @@ msgstr "뷰는 단순히 웹 페이지이거나 헤더, 푸터, 사이드바와 
 msgid ""
 "Views are never called directly, they must be loaded by a controller or "
 ":ref:`view route <view-routes>`."
-msgstr "뷰는 절대로 직접 호출되지 않으며, 반드시 컨트롤러나 :ref:`뷰 라우트 <view-routes>`에 의해 로드되어야 합니다."
+msgstr "뷰는 절대로 직접 호출되지 않으며, 반드시 컨트롤러나 :ref:`뷰 라우트 <view-routes>`\ 에 의해 로드되어야 합니다."
 
 #: ../../source/outgoing/views.rst:15
 msgid ""
@@ -58,7 +58,7 @@ msgstr "뷰 생성하기"
 msgid ""
 "Using your text editor, create a file called **blog_view.php** and put "
 "this in it::"
-msgstr "텍스트 에디터를 사용하여 **blog_view.php**라는 파일을 만들고 다음 내용을 입력하십시오::"
+msgstr "텍스트 에디터를 사용하여 **blog_view.php**\ 라는 파일을 만들고 다음 내용을 입력하십시오::"
 
 #: ../../source/outgoing/views.rst:35
 msgid "Then save the file in your **app/Views** directory."
@@ -76,7 +76,7 @@ msgstr "특정 뷰 파일을 로드하고 표시하려면 컨트롤러에서 다
 
 #: ../../source/outgoing/views.rst:46
 msgid "Where *name* is the name of your view file."
-msgstr "여기서 *name*은 뷰 파일의 이름입니다."
+msgstr "여기서 *name*\ 은 뷰 파일의 이름입니다."
 
 #: ../../source/outgoing/views.rst:48
 msgid ""
@@ -86,19 +86,19 @@ msgstr "파일 확장자가 생략된 경우, 뷰 파일은 **.php** 확장자�
 
 #: ../../source/outgoing/views.rst:50
 msgid "The ``view()`` function uses :doc:`view_renderer` internally."
-msgstr "``view()`` 함수는 내부적으로 :doc:`view_renderer`를 사용합니다."
+msgstr "``view()`` 함수는 내부적으로 :doc:`view_renderer`\ 를 사용합니다."
 
 #: ../../source/outgoing/views.rst:52
 msgid ""
 "Now, create a file called **Blog.php** in the **app/Controllers** "
 "directory, and put this in it:"
-msgstr "이제 **app/Controllers** 디렉토리에 **Blog.php**라는 파일을 만들고 다음 내용을 입력하십시오."
+msgstr "이제 **app/Controllers** 디렉토리에 **Blog.php**\ 라는 파일을 만들고 다음 내용을 입력하십시오."
 
 #: ../../source/outgoing/views.rst:57
 msgid ""
 "Open the routing file located at **app/Config/Routes.php**, and look for "
 "the \"Route Definitions\". Add the following code:"
-msgstr "**app/Config/Routes.php**에 있는 라우팅 파일을 열고 \"Route Definitions\"를 찾아 다음 코드를 추가하십시오."
+msgstr "**app/Config/Routes.php**\ 에 있는 라우팅 파일을 열고 \"Route Definitions\"를 찾아 다음 코드를 추가하십시오."
 
 #: ../../source/outgoing/views.rst:63
 msgid ""
@@ -115,7 +115,7 @@ msgid ""
 "CodeIgniter will intelligently handle multiple calls to "
 ":php:func:`view()` from within a controller. If more than one call "
 "happens they will be appended together."
-msgstr "CodeIgniter는 컨트롤러 내에서 :php:func:`view()`를 여러 번 호출하는 것을 지능적으로 처리합니다. 두 번 이상 호출되면 호출된 순서대로 합쳐집니다."
+msgstr "CodeIgniter는 컨트롤러 내에서 :php:func:`view()`\ 를 여러 번 호출하는 것을 지능적으로 처리합니다. 두 번 이상 호출되면 호출된 순서대로 합쳐집니다."
 
 #: ../../source/outgoing/views.rst:73
 msgid ""
@@ -159,7 +159,7 @@ msgid ""
 " the :doc:`Autoloader </concepts/autoloader>` living under the namespace "
 "``Example\\Blog``, you could retrieve view files as if they were "
 "namespaced also."
-msgstr "``Example\\Blog`` 네임스페이스로 :doc:`오토로더 </concepts/autoloader>`에 PSR-4 매핑이 설정된 **example/blog** 디렉토리가 있다면, 뷰 파일도 네임스페이스가 지정된 것처럼 가져올 수 있습니다."
+msgstr "``Example\\Blog`` 네임스페이스로 :doc:`오토로더 </concepts/autoloader>`\ 에 PSR-4 매핑이 설정된 **example/blog** 디렉토리가 있다면, 뷰 파일도 네임스페이스가 지정된 것처럼 가져올 수 있습니다."
 
 #: ../../source/outgoing/views.rst:101
 msgid ""
@@ -167,7 +167,7 @@ msgid ""
 "**example/blog/Views** by prepending the namespace to the view name "
 "(specifying the end directory ``Views`` as in ``Example\\Blog\\Views\\`` "
 "is not required):"
-msgstr "이 예에 따라, 뷰 이름 앞에 네임스페이스를 붙여 **example/blog/Views**에서 **blog_view.php** 파일을 로드할 수 있습니다. (``Example\\Blog\\Views\\``와 같이 마지막 디렉토리인 ``Views``를 명시할 필요는 없습니다.)"
+msgstr "이 예에 따라, 뷰 이름 앞에 네임스페이스를 붙여 **example/blog/Views**\ 에서 **blog_view.php** 파일을 로드할 수 있습니다. (``Example\\Blog\\Views\\``\ 와 같이 마지막 디렉토리인 ``Views``\ 를 명시할 필요는 없습니다.)"
 
 #: ../../source/outgoing/views.rst:107
 msgid ""
@@ -197,14 +197,14 @@ msgstr "설정"
 msgid ""
 "By default, overrides are looked for in the **app/Views/overrides** "
 "directory. You can configure this location via the \"``$appOverridesFolder`` property in **app/Config/View.php**:"
-msgstr "기본적으로 오버라이드된 파일은 **app/Views/overrides** 디렉토리에서 찾습니다. **app/Config/View.php**의 ``$appOverridesFolder`` 속성을 통해 이 위치를 설정할 수 있습니다."
+msgstr "기본적으로 오버라이드된 파일은 **app/Views/overrides** 디렉토리에서 찾습니다. **app/Config/View.php**\ 의 ``$appOverridesFolder`` 속성을 통해 이 위치를 설정할 수 있습니다."
 
 #: ../../source/outgoing/views.rst:131
 msgid ""
 "If you prefer to map namespaces directly to the root of **app/Views** "
 "(without a subdirectory), you can set this value to an empty string "
 "(``''``)."
-msgstr "하위 디렉토리 없이 **app/Views**의 루트에 직접 네임스페이스를 매핑하고 싶다면 이 값을 빈 문자열(``''``)로 설정하면 됩니다."
+msgstr "하위 디렉토리 없이 **app/Views**\ 의 루트에 직접 네임스페이스를 매핑하고 싶다면 이 값을 빈 문자열(``''``)로 설정하면 됩니다."
 
 #: ../../source/outgoing/views.rst:134
 msgid "Example"
@@ -214,7 +214,7 @@ msgstr "예제"
 msgid ""
 "Assume you have a module named **Blog** with the namespace "
 "``Example\\Blog``. The original view file is located at:"
-msgstr "네임스페이스가 ``Example\\Blog``인 **Blog** 모듈이 있다고 가정해 봅시다. 원본 뷰 파일의 위치는 다음과 같습니다."
+msgstr "네임스페이스가 ``Example\\Blog``\ 인 **Blog** 모듈이 있다고 가정해 봅시다. 원본 뷰 파일의 위치는 다음과 같습니다."
 
 #: ../../source/outgoing/views.rst:146
 msgid ""
@@ -228,7 +228,7 @@ msgid ""
 " automatically load your custom view from "
 "**app/Views/overrides/Example/Blog/blog_view.php** instead of the "
 "original module view file."
-msgstr "이제 ``view('Example\\Blog\\blog_view')``를 호출하면, CodeIgniter는 원본 모듈 뷰 파일 대신 **app/Views/overrides/Example/Blog/blog_view.php**에서 커스텀 뷰를 자동으로 로드합니다."
+msgstr "이제 ``view('Example\\Blog\\blog_view')``\ 를 호출하면, CodeIgniter는 원본 모듈 뷰 파일 대신 **app/Views/overrides/Example/Blog/blog_view.php**\ 에서 커스텀 뷰를 자동으로 로드합니다."
 
 #: ../../source/outgoing/views.rst:159
 msgid ""
@@ -238,7 +238,7 @@ msgid ""
 "explicitly include the ``Views`` directory in the call, e.g., "
 "``view('Example\\Blog\\Views\\blog_view')``, the override path must also "
 "include it: **app/Views/overrides/Example/Blog/Views/blog_view.php**."
-msgstr "오버라이드 경로는 뷰를 참조하는 방식과 정확히 일치해야 합니다. 뷰를 ``view('Example\\Blog\\blog_view')``로 로드한다면 오버라이드 경로는 **app/Views/overrides/Example/Blog/blog_view.php**가 됩니다. 하지만 호출 시 ``view('Example\\Blog\\Views\\blog_view')``와 같이 ``Views`` 디렉토리를 명시적으로 포함했다면, 오버라이드 경로에도 이를 포함해야 합니다: **app/Views/overrides/Example/Blog/Views/blog_view.php**"
+msgstr "오버라이드 경로는 뷰를 참조하는 방식과 정확히 일치해야 합니다. 뷰를 ``view('Example\\Blog\\blog_view')``\ 로 로드한다면 오버라이드 경로는 **app/Views/overrides/Example/Blog/blog_view.php**\ 가 됩니다. 하지만 호출 시 ``view('Example\\Blog\\Views\\blog_view')``\ 와 같이 ``Views`` 디렉토리를 명시적으로 포함했다면, 오버라이드 경로에도 이를 포함해야 합니다: **app/Views/overrides/Example/Blog/Views/blog_view.php**"
 
 #: ../../source/outgoing/views.rst:169
 msgid "Caching Views"
@@ -256,7 +256,7 @@ msgid ""
 "By default, the view will be cached using the same name as the view file "
 "itself. You can customize this by passing along ``cache_name`` and the "
 "cache ID you wish to use:"
-msgstr "기본적으로 뷰는 뷰 파일 자체의 이름을 사용하여 캐시됩니다. ``cache_name``과 함께 사용할 캐시 ID를 전달하여 이를 커스터마이징할 수 있습니다."
+msgstr "기본적으로 뷰는 뷰 파일 자체의 이름을 사용하여 캐시됩니다. ``cache_name``\ 과 함께 사용할 캐시 ID를 전달하여 이를 커스터마이징할 수 있습니다."
 
 #: ../../source/outgoing/views.rst:184
 msgid "Adding Dynamic Data to the View"
@@ -297,7 +297,7 @@ msgid ""
 "The data passed in is retained for subsequent calls to "
 ":php:func:`view()`. If you call the function multiple times in a single "
 "request, you will not have to pass the desired data to each ``view()``."
-msgstr "전달된 데이터는 이후에 호출되는 :php:func:`view()`를 위해 유지됩니다. 단일 요청에서 함수를 여러 번 호출하는 경우, 각 ``view()`` 호출마다 매번 데이터를 전달할 필요가 없습니다."
+msgstr "전달된 데이터는 이후에 호출되는 :php:func:`view()`\ 를 위해 유지됩니다. 단일 요청에서 함수를 여러 번 호출하는 경우, 각 ``view()`` 호출마다 매번 데이터를 전달할 필요가 없습니다."
 
 #: ../../source/outgoing/views.rst:218
 msgid ""
@@ -312,7 +312,7 @@ msgid ""
 "Additionally, if you would like the default functionality of the "
 "``view()`` function to be that it does clear the data between calls, you "
 "can set ``$saveData`` to ``false`` in **app/Config/Views.php**."
-msgstr "또한 ``view()`` 함수의 기본 동작이 호출 사이에 데이터를 지우는 것이 되도록 하려면, **app/Config/Views.php**에서 ``$saveData``를 ``false``로 설정하면 됩니다."
+msgstr "또한 ``view()`` 함수의 기본 동작이 호출 사이에 데이터를 지우는 것이 되도록 하려면, **app/Config/Views.php**\ 에서 ``$saveData``\ 를 ``false``\ 로 설정하면 됩니다."
 
 #: ../../source/outgoing/views.rst:229
 msgid "Creating Loops"

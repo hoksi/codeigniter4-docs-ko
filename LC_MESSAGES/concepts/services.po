@@ -36,7 +36,7 @@ msgid ""
 "The **Services** in CodeIgniter 4 provide the functionality to create and"
 " share new class instances. It is implemented as the ``Config\\Services``"
 " class."
-msgstr "CodeIgniter 4의 **서비스(Services)**는 새로운 클래스 인스턴스를 생성하고 공유하는 기능을 제공합니다. 이는 ``Config\\Services`` 클래스로 구현되어 있습니다."
+msgstr "CodeIgniter 4의 **\ 서비스(Services)**\ 는 새로운 클래스 인스턴스를 생성하고 공유하는 기능을 제공합니다. 이는 ``Config\\Services`` 클래스로 구현되어 있습니다."
 
 #: ../../source/concepts/services.rst:18
 msgid ""
@@ -79,7 +79,7 @@ msgid ""
 " dependencies it might have into it. Then, we would replace our timer "
 "creation code with code that calls this global function or Services "
 "class:"
-msgstr "직접 인스턴스를 생성하는 대신, 중앙 클래스가 우리를 위해 인스턴스를 생성하게 합니다. 이 클래스는 매우 단순하게 유지되며, 서비스로 사용하려는 각 클래스에 대한 메서드만 포함합니다. 이 메서드는 일반적으로 해당 클래스의 **공유 인스턴스(shared instance)**를 반환하며, 필요한 모든 의존성을 함께 전달합니다. 그런 다음 기존의 타이머 생성 코드를 이 전역 함수나 서비스 클래스를 호출하는 코드로 대체합니다."
+msgstr "직접 인스턴스를 생성하는 대신, 중앙 클래스가 우리를 위해 인스턴스를 생성하게 합니다. 이 클래스는 매우 단순하게 유지되며, 서비스로 사용하려는 각 클래스에 대한 메서드만 포함합니다. 이 메서드는 일반적으로 해당 클래스의 **\ 공유 인스턴스(shared instance)**\ 를 반환하며, 필요한 모든 의존성을 함께 전달합니다. 그런 다음 기존의 타이머 생성 코드를 이 전역 함수나 서비스 클래스를 호출하는 코드로 대체합니다."
 
 #: ../../source/concepts/services.rst:44
 msgid ""
@@ -111,20 +111,20 @@ msgstr "많은 CodeIgniter 클래스들이 서비스로 제공되므로 다음�
 msgid ""
 "The ``$timer`` is an instance of the Timer class, and if you call "
 "``service('timer')`` again, you will get the exactly same instance."
-msgstr "``$timer``는 Timer 클래스의 인스턴스이며, 다시 ``service('timer')``를 호출하면 정확히 동일한 인스턴스를 얻게 됩니다."
+msgstr "``$timer``\ 는 Timer 클래스의 인스턴스이며, 다시 ``service('timer')``\ 를 호출하면 정확히 동일한 인스턴스를 얻게 됩니다."
 
 #: ../../source/concepts/services.rst:60
 msgid ""
 "The Services typically return a **shared instance** of the class. The "
 "following code creates a ``CURLRequest`` instance at the first call. And "
 "the second call returns the exactly same instance."
-msgstr "서비스는 일반적으로 클래스의 **공유 인스턴스**를 반환합니다. 다음 코드는 첫 번째 호출에서 ``CURLRequest`` 인스턴스를 생성합니다. 그리고 두 번째 호출에서는 정확히 동일한 인스턴스를 반환합니다."
+msgstr "서비스는 일반적으로 클래스의 **\ 공유 인스턴스**\ 를 반환합니다. 다음 코드는 첫 번째 호출에서 ``CURLRequest`` 인스턴스를 생성합니다. 그리고 두 번째 호출에서는 정확히 동일한 인스턴스를 반환합니다."
 
 #: ../../source/concepts/services.rst:64
 msgid ""
 "Therefore, the parameter ``$options2`` for the ``$client2`` does not "
 "work. It is just ignored."
-msgstr "따라서 ``$client2``에 대한 ``$options2`` 매개변수는 작동하지 않으며 그냥 무시됩니다."
+msgstr "따라서 ``$client2``\ 에 대한 ``$options2`` 매개변수는 작동하지 않으며 그냥 무시됩니다."
 
 #: ../../source/concepts/services.rst:67
 msgid "Getting a New Instance"
@@ -134,7 +134,7 @@ msgstr "새 인스턴스 가져오기"
 msgid ""
 "If you want to get a new instance of the Timer class, you need to pass "
 "``false`` to the argument ``$getShared``:"
-msgstr "Timer 클래스의 새로운 인스턴스를 얻고 싶다면 ``$getShared`` 인수에 ``false``를 전달해야 합니다."
+msgstr "Timer 클래스의 새로운 인스턴스를 얻고 싶다면 ``$getShared`` 인수에 ``false``\ 를 전달해야 합니다."
 
 #: ../../source/concepts/services.rst:74
 msgid "Convenience Functions"
@@ -157,13 +157,13 @@ msgid ""
 "same as the method name within the Services file always returns a SHARED "
 "instance of the class, so calling the function multiple times should "
 "always return the same instance:"
-msgstr "첫 번째는 요청된 서비스의 인스턴스를 반환하는 ``service()``입니다. 유일한 필수 매개변수는 서비스 이름입니다. 이는 서비스 파일 내의 메서드 이름과 동일하며 항상 클래스의 공유(SHARED) 인스턴스를 반환합니다. 따라서 함수를 여러 번 호출해도 항상 동일한 인스턴스가 반환됩니다."
+msgstr "첫 번째는 요청된 서비스의 인스턴스를 반환하는 ``service()``\ 입니다. 유일한 필수 매개변수는 서비스 이름입니다. 이는 서비스 파일 내의 메서드 이름과 동일하며 항상 클래스의 공유(SHARED) 인스턴스를 반환합니다. 따라서 함수를 여러 번 호출해도 항상 동일한 인스턴스가 반환됩니다."
 
 #: ../../source/concepts/services.rst:88
 msgid ""
 "Since v4.5.0, when you don't pass parameters to the service, the global "
 "function ``service()`` is recommended due to performance improvements."
-msgstr "v4.5.0부터 서비스에 매개변수를 전달하지 않는 경우 성능 향상을 위해 전역 함수 ``service()``를 사용하는 것이 권장됩니다."
+msgstr "v4.5.0부터 서비스에 매개변수를 전달하지 않는 경우 성능 향상을 위해 전역 함수 ``service()``\ 를 사용하는 것이 권장됩니다."
 
 #: ../../source/concepts/services.rst:90
 msgid ""
@@ -179,7 +179,7 @@ msgstr "single_service()"
 msgid ""
 "The second function, ``single_service()`` works just like ``service()`` "
 "but returns a new instance of the class:"
-msgstr "두 번째 함수인 ``single_service()``는 ``service()``와 똑같이 작동하지만 클래스의 새로운 인스턴스를 반환합니다."
+msgstr "두 번째 함수인 ``single_service()``\ 는 ``service()``\ 와 똑같이 작동하지만 클래스의 새로운 인스턴스를 반환합니다."
 
 #: ../../source/concepts/services.rst:103
 msgid "Defining Services"
@@ -194,7 +194,7 @@ msgid ""
 " to. When you want to extend or replace core classes, you only need to "
 "ensure you meet the requirements of the interface and you know that the "
 "classes are compatible."
-msgstr "서비스가 잘 작동하려면 각 클래스가 일관된 API 또는 사용할 `인터페이스 <https://www.php.net/manual/en/language.oop5.interfaces.php>`_를 가지고 있다는 점에 의존할 수 있어야 합니다. 거의 모든 CodeIgniter 클래스는 준수해야 할 인터페이스를 제공합니다. 핵심 클래스를 확장하거나 교체할 때 인터페이스의 요구 사항을 충족하기만 하면 해당 클래스들이 호환된다는 것을 확신할 수 있습니다."
+msgstr "서비스가 잘 작동하려면 각 클래스가 일관된 API 또는 사용할 `인터페이스 <https://www.php.net/manual/en/language.oop5.interfaces.php>`_\ 를 가지고 있다는 점에 의존할 수 있어야 합니다. 거의 모든 CodeIgniter 클래스는 준수해야 할 인터페이스를 제공합니다. 핵심 클래스를 확장하거나 교체할 때 인터페이스의 요구 사항을 충족하기만 하면 해당 클래스들이 호환된다는 것을 확신할 수 있습니다."
 
 #: ../../source/concepts/services.rst:111
 msgid ""
@@ -202,14 +202,14 @@ msgid ""
 "``RouteCollectionInterface``. When you want to create a replacement that "
 "provides a different way to create routes, you just need to create a new "
 "class that implements the ``RouteCollectionInterface``:"
-msgstr "예를 들어, ``RouteCollection`` 클래스는 ``RouteCollectionInterface``를 구현합니다. 라우트를 생성하는 다른 방식을 제공하는 대체 클래스를 만들고 싶다면, 단순히 ``RouteCollectionInterface``를 구현하는 새 클래스를 만들기만 하면 됩니다."
+msgstr "예를 들어, ``RouteCollection`` 클래스는 ``RouteCollectionInterface``\ 를 구현합니다. 라우트를 생성하는 다른 방식을 제공하는 대체 클래스를 만들고 싶다면, 단순히 ``RouteCollectionInterface``\ 를 구현하는 새 클래스를 만들기만 하면 됩니다."
 
 #: ../../source/concepts/services.rst:117
 msgid ""
 "Finally, add the ``routes()`` method to **app/Config/Services.php** to "
 "create a new instance of ``MyRouteCollection`` instead of "
 "``CodeIgniter\\Router\\RouteCollection``:"
-msgstr "마지막으로 **app/Config/Services.php**에 ``routes()`` 메서드를 추가하여 ``CodeIgniter\\Router\\RouteCollection`` 대신 ``MyRouteCollection``의 새 인스턴스를 생성하도록 합니다."
+msgstr "마지막으로 **app/Config/Services.php**\ 에 ``routes()`` 메서드를 추가하여 ``CodeIgniter\\Router\\RouteCollection`` 대신 ``MyRouteCollection``\ 의 새 인스턴스를 생성하도록 합니다."
 
 #: ../../source/concepts/services.rst:123
 msgid "Allowing Parameters"
@@ -229,7 +229,7 @@ msgid ""
 " developer to have the option of changing that path, though, if their "
 "needs require it. So the class accepts the ``$viewPath`` as a constructor"
 " parameter. The service method looks like this:"
-msgstr "좋은 예는 ``renderer`` 서비스입니다. 기본적으로 이 클래스가 ``APPPATH . 'views/'``에서 뷰를 찾을 수 있기를 원합니다. 하지만 개발자가 필요에 따라 해당 경로를 변경할 수 있는 옵션을 제공하고 싶습니다. 그래서 이 클래스는 생성자 매개변수로 ``$viewPath``를 받습니다. 서비스 메서드는 다음과 같습니다."
+msgstr "좋은 예는 ``renderer`` 서비스입니다. 기본적으로 이 클래스가 ``APPPATH . 'views/'``\ 에서 뷰를 찾을 수 있기를 원합니다. 하지만 개발자가 필요에 따라 해당 경로를 변경할 수 있는 옵션을 제공하고 싶습니다. 그래서 이 클래스는 생성자 매개변수로 ``$viewPath``\ 를 받습니다. 서비스 메서드는 다음과 같습니다."
 
 #: ../../source/concepts/services.rst:135
 msgid ""
@@ -266,7 +266,7 @@ msgstr "CodeIgniter는 정의된 모든 네임스페이스 내에서 사용자�
 
 #: ../../source/concepts/services.rst:158
 msgid "Its namespace must be defined in **app/Config/Autoload.php**"
-msgstr "해당 네임스페이스가 **app/Config/Autoload.php**에 정의되어 있어야 합니다."
+msgstr "해당 네임스페이스가 **app/Config/Autoload.php**\ 에 정의되어 있어야 합니다."
 
 #: ../../source/concepts/services.rst:159
 msgid "Inside the namespace, the file must be found at **Config/Services.php**"
@@ -274,7 +274,7 @@ msgstr "네임스페이스 내부의 **Config/Services.php** 위치에 파일이
 
 #: ../../source/concepts/services.rst:160
 msgid "It must extend ``CodeIgniter\\Config\\BaseService``"
-msgstr "``CodeIgniter\\Config\\BaseService``를 상속받아야 합니다."
+msgstr "``CodeIgniter\\Config\\BaseService``\ 를 상속받아야 합니다."
 
 #: ../../source/concepts/services.rst:162
 msgid "A small example should clarify this."
@@ -287,7 +287,7 @@ msgid ""
 "models, etc, and you'd like to make some of the classes available as a "
 "service. The first step is to create a new file: "
 "**Blog/Config/Services.php**. The skeleton of the file should be:"
-msgstr "프로젝트 루트 디렉토리에 **Blog**라는 새 디렉토리를 만들었다고 가정해 봅시다. 여기에는 컨트롤러, 모델 등이 포함된 **Blog 모듈**이 들어 있으며, 그중 일부 클래스를 서비스로 제공하고 싶습니다. 첫 번째 단계는 **Blog/Config/Services.php** 파일을 만드는 것입니다. 파일의 뼈대는 다음과 같습니다."
+msgstr "프로젝트 루트 디렉토리에 **Blog**\ 라는 새 디렉토리를 만들었다고 가정해 봅시다. 여기에는 컨트롤러, 모델 등이 포함된 **Blog 모듈**\ 이 들어 있으며, 그중 일부 클래스를 서비스로 제공하고 싶습니다. 첫 번째 단계는 **Blog/Config/Services.php** 파일을 만드는 것입니다. 파일의 뼈대는 다음과 같습니다."
 
 #: ../../source/concepts/services.rst:170
 msgid ""
@@ -324,4 +324,4 @@ msgid ""
 "This can be done by running ``Config\\Services::resetServicesCache()``. "
 "This will clear the cache, and force the service discovery again when "
 "needed."
-msgstr "이는 ``Config\\Services::resetServicesCache()``를 실행하여 수행할 수 있습니다. 이렇게 하면 캐시가 지워지고, 필요한 시점에 서비스 검색을 다시 강제로 수행하게 됩니다."
+msgstr "이는 ``Config\\Services::resetServicesCache()``\ 를 실행하여 수행할 수 있습니다. 이렇게 하면 캐시가 지워지고, 필요한 시점에 서비스 검색을 다시 강제로 수행하게 됩니다."
