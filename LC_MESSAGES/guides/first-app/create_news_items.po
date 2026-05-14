@@ -1,17 +1,16 @@
-# SOME DESCRIPTIVE TITLE.
+# CodeIgniter 4 User Guide Korean Translation.
 # Copyright (C) 2019-2026 CodeIgniter Foundation
 # This file is distributed under the same license as the CodeIgniter
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+# hoksi <hoksi@github.com>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-05-14 18:15+0900\n"
+"Last-Translator: hoksi <hoksi@github.com>\n"
 "Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../source/guides/first-app/create_news_items.rst:2
 msgid "Create News Items"
-msgstr ""
+msgstr "뉴스 항목 만들기"
 
 #: ../../source/guides/first-app/create_news_items.rst:8
 msgid ""
@@ -30,28 +29,28 @@ msgid ""
 " you haven't written any information to the database yet. In this "
 "section, you'll expand your news controller and model created earlier to "
 "include this functionality."
-msgstr ""
+msgstr "이제 CodeIgniter를 사용하여 데이터베이스에서 데이터를 읽는 방법을 알게 되었지만, 아직 데이터베이스에 정보를 기록하지는 않았습니다. 이 섹션에서는 이 기능을 포함하도록 이전에 만든 뉴스 컨트롤러와 모델을 확장합니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:14
 msgid "Enable CSRF Filter"
-msgstr ""
+msgstr "CSRF 필터 활성화"
 
 #: ../../source/guides/first-app/create_news_items.rst:16
 msgid "Before creating a form, let's enable the CSRF protection."
-msgstr ""
+msgstr "폼을 만들기 전에 CSRF 보호를 활성화해 봅시다."
 
 #: ../../source/guides/first-app/create_news_items.rst:18
 msgid ""
 "Open the **app/Config/Filters.php** file and update the ``$methods`` "
 "property like the following:"
-msgstr ""
+msgstr "**app/Config/Filters.php** 파일을 열고 ``$methods`` 속성을 다음과 같이 업데이트합니다:"
 
 #: ../../source/guides/first-app/create_news_items.rst:22
 msgid ""
 "It configures the CSRF filter to be enabled for all **POST** requests. "
 "You can read more about the CSRF protection in :doc:`Security "
 "<../../libraries/security>` library."
-msgstr ""
+msgstr "모든 **POST** 요청에 대해 CSRF 필터가 활성화되도록 설정합니다. CSRF 보호에 대한 자세한 내용은 :doc:`Security <../../libraries/security>` 라이브러리에서 읽어볼 수 있습니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:25
 msgid ""
@@ -59,46 +58,46 @@ msgid ""
 "Auto Routing (Legacy) <use-defined-routes-only>` because :ref:`auto-"
 "routing-legacy` permits any HTTP method to access a controller. Accessing"
 " the controller with a method you don't expect could bypass the filter."
-msgstr ""
+msgstr "일반적으로 ``$methods`` 필터를 사용하는 경우 :ref:`자동 라우팅(레거시)을 비활성화 <use-defined-routes-only>`해야 합니다. 왜냐하면 :ref:`auto-routing-legacy`는 모든 HTTP 메서드가 컨트롤러에 접근하는 것을 허용하기 때문입니다. 예상치 못한 메서드로 컨트롤러에 접근하면 필터를 우회할 수 있습니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:30
 msgid "Adding Routing Rules"
-msgstr ""
+msgstr "라우팅 규칙 추가"
 
 #: ../../source/guides/first-app/create_news_items.rst:32
 msgid ""
 "Before you can start adding news items into your CodeIgniter application "
 "you have to add an extra rule to **app/Config/Routes.php** file. Make "
 "sure your file contains the following:"
-msgstr ""
+msgstr "CodeIgniter 애플리케이션에 뉴스 항목을 추가하기 전에 **app/Config/Routes.php** 파일에 추가 규칙을 추가해야 합니다. 파일에 다음 내용이 포함되어 있는지 확인하세요:"
 
 #: ../../source/guides/first-app/create_news_items.rst:38
 msgid ""
 "The route directive for ``'news/new'`` is placed before the directive for"
 " ``'news/(:segment)'`` to ensure that the form to create a news item is "
 "displayed."
-msgstr ""
+msgstr "``'news/new'``에 대한 라우트 지침은 뉴스 항목 생성 폼이 제대로 표시되도록 ``'news/(:segment)'`` 지침보다 먼저 배치됩니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:40
 msgid ""
 "The ``$routes->post()`` line defines the router for a POST request. It "
 "matches only a POST request to the URI path **/news**, and it maps to the"
 " ``create()`` method of the ``News`` class."
-msgstr ""
+msgstr "``$routes->post()`` 라인은 POST 요청에 대한 라우터를 정의합니다. 이는 URI 경로 **/news**에 대한 POST 요청과만 일치하며, 이를 ``News`` 클래스의 ``create()`` 메서드에 매핑합니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:44
 msgid ""
 "You can read more about different routing types in :ref:`defined-route-"
 "routing`."
-msgstr ""
+msgstr "다양한 라우팅 유형에 대한 자세한 내용은 :ref:`defined-route-routing`에서 읽어볼 수 있습니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:47
 msgid "Create a Form"
-msgstr ""
+msgstr "폼 생성"
 
 #: ../../source/guides/first-app/create_news_items.rst:50
 msgid "Create news/create View File"
-msgstr ""
+msgstr "news/create 뷰 파일 생성"
 
 #: ../../source/guides/first-app/create_news_items.rst:52
 msgid ""
@@ -106,15 +105,15 @@ msgid ""
 "input the information to be stored. This means you'll be needing a form "
 "with two fields, one for the title and one for the text. You'll derive "
 "the slug from our title in the model."
-msgstr ""
+msgstr "데이터베이스에 데이터를 입력하려면 저장할 정보를 입력할 수 있는 폼을 만들어야 합니다. 즉, 제목(title)과 텍스트(text)를 위한 두 개의 필드가 있는 폼이 필요합니다. 슬러그(slug)는 모델에서 제목을 기반으로 생성할 것입니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:57
 msgid "Create a new view at **app/Views/news/create.php**:"
-msgstr ""
+msgstr "**app/Views/news/create.php**에 새 뷰를 생성합니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:61
 msgid "There are probably only four things here that look unfamiliar."
-msgstr ""
+msgstr "여기에는 아마 생소해 보이는 것이 네 가지 정도 있을 것입니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:63
 msgid ""
@@ -123,103 +122,103 @@ msgid ""
 "related to CSRF protection to the user. However, by default, if a CSRF "
 "validation check fails, an exception will be thrown, so it does not work "
 "yet. See :ref:`csrf-redirection-on-failure` for more information."
-msgstr ""
+msgstr ":php:func:`session()` 함수는 세션 객체를 가져오는 데 사용되며, ``session()->getFlashdata('error')``는 CSRF 보호와 관련된 에러를 사용자에게 표시하는 데 사용됩니다. 하지만 기본적으로 CSRF 유효성 검사가 실패하면 예외가 발생하므로 아직은 작동하지 않습니다. 자세한 내용은 :ref:`csrf-redirection-on-failure`를 참조하세요."
 
 #: ../../source/guides/first-app/create_news_items.rst:68
 msgid ""
 "The :php:func:`validation_list_errors()` function provided by the "
 ":doc:`../../helpers/form_helper` is used to report errors related to form"
 " validation."
-msgstr ""
+msgstr ":doc:`../../helpers/form_helper`에서 제공하는 :php:func:`validation_list_errors()` 함수는 폼 유효성 검사와 관련된 에러를 보고하는 데 사용됩니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:71
 msgid ""
 "The :php:func:`csrf_field()` function creates a hidden input with a CSRF "
 "token that helps protect against some common attacks."
-msgstr ""
+msgstr ":php:func:`csrf_field()` 함수는 일반적인 공격으로부터 보호하는 데 도움이 되는 CSRF 토큰을 포함한 숨겨진(hidden) 입력을 생성합니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:73
 msgid ""
 "The :php:func:`set_value()` function provided by the "
 ":doc:`../../helpers/form_helper` is used to show old input data when "
 "errors occur."
-msgstr ""
+msgstr ":doc:`../../helpers/form_helper`에서 제공하는 :php:func:`set_value()` 함수는 에러가 발생했을 때 이전에 입력한 데이터를 다시 보여주는 데 사용됩니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:77
 msgid "News Controller"
-msgstr ""
+msgstr "뉴스 컨트롤러"
 
 #: ../../source/guides/first-app/create_news_items.rst:79
 msgid "Go back to your ``News`` controller."
-msgstr ""
+msgstr "``News`` 컨트롤러로 돌아갑니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:82
 msgid "Add News::new() to Display the Form"
-msgstr ""
+msgstr "폼을 표시하기 위해 News::new() 추가"
 
 #: ../../source/guides/first-app/create_news_items.rst:84
 msgid "First, create a method to display the HTML form you have created."
-msgstr ""
+msgstr "먼저, 작성한 HTML 폼을 표시하는 메서드를 만듭니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:88
 msgid ""
 "We load the :doc:`Form helper <../../helpers/form_helper>` with the "
 ":php:func:`helper()` function. Most helper functions require the helper "
 "to be loaded before use."
-msgstr ""
+msgstr ":php:func:`helper()` 함수를 사용하여 :doc:`Form 헬퍼 <../../helpers/form_helper>`를 로드합니다. 대부분의 헬퍼 함수는 사용하기 전에 로드되어야 합니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:92
 msgid "Then it returns the created form view."
-msgstr ""
+msgstr "그런 다음 생성된 폼 뷰를 반환합니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:95
 msgid "Add News::create() to Create a News Item"
-msgstr ""
+msgstr "뉴스 항목을 생성하기 위해 News::create() 추가"
 
 #: ../../source/guides/first-app/create_news_items.rst:97
 msgid "Next, create a method to create a news item from the submitted data."
-msgstr ""
+msgstr "다음으로 제출된 데이터로부터 뉴스 항목을 생성하는 메서드를 만듭니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:99
 msgid "You're going to do three things here:"
-msgstr ""
+msgstr "여기서 세 가지 작업을 수행할 것입니다:"
 
 #: ../../source/guides/first-app/create_news_items.rst:101
 msgid "checks whether the submitted data passed the validation rules."
-msgstr ""
+msgstr "제출된 데이터가 유효성 검사 규칙을 통과했는지 확인합니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:102
 msgid "saves the news item to the database."
-msgstr ""
+msgstr "뉴스 항목을 데이터베이스에 저장합니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:103
 msgid "returns a success page."
-msgstr ""
+msgstr "성공 페이지를 반환합니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:107
 msgid "The code above adds a lot of functionality."
-msgstr ""
+msgstr "위의 코드는 많은 기능을 추가합니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:110
 msgid "Retrieve the Data"
-msgstr ""
+msgstr "데이터 가져오기"
 
 #: ../../source/guides/first-app/create_news_items.rst:112
 msgid ""
 "First, we use the :doc:`IncomingRequest <../../incoming/incomingrequest>`"
 " object ``$this->request``, which is set in the controller by the "
 "framework."
-msgstr ""
+msgstr "먼저, 프레임워크에 의해 컨트롤러에 설정된 :doc:`IncomingRequest <../../incoming/incomingrequest>` 객체인 ``$this->request``를 사용합니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:115
 msgid ""
 "We get the necessary items from the **POST** data by the user and set "
 "them in the ``$data`` variable."
-msgstr ""
+msgstr "사용자가 보낸 **POST** 데이터에서 필요한 항목들을 가져와 ``$data`` 변수에 설정합니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:119
 msgid "Validate the Data"
-msgstr ""
+msgstr "데이터 유효성 검사"
 
 #: ../../source/guides/first-app/create_news_items.rst:121
 msgid ""
@@ -227,31 +226,31 @@ msgid ""
 ":ref:`validateData() <controller-validatedata>` to validate the submitted"
 " data. In this case, the title and body fields are required and in the "
 "specific length."
-msgstr ""
+msgstr "다음으로, 컨트롤러에서 제공하는 헬퍼 함수인 :ref:`validateData() <controller-validatedata>`를 사용하여 제출된 데이터를 검증합니다. 이 경우 제목(title)과 본문(body) 필드는 필수이며 특정 길이를 충족해야 합니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:125
 msgid ""
 "CodeIgniter has a powerful validation library as demonstrated above. You "
 "can read more about the :doc:`Validation library "
 "<../../libraries/validation>`."
-msgstr ""
+msgstr "위에서 보여준 것처럼 CodeIgniter는 강력한 유효성 검사 라이브러리를 가지고 있습니다. :doc:`Validation 라이브러리 <../../libraries/validation>`에서 더 자세한 내용을 읽어볼 수 있습니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:128
 msgid ""
 "If the validation fails, we call the ``new()`` method you just created "
 "and return the HTML form."
-msgstr ""
+msgstr "유효성 검사가 실패하면 방금 만든 ``new()`` 메서드를 호출하여 HTML 폼을 다시 반환합니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:132
 msgid "Save the News Item"
-msgstr ""
+msgstr "뉴스 항목 저장"
 
 #: ../../source/guides/first-app/create_news_items.rst:134
 msgid ""
 "If the validation passed all the rules, we get the validated data by "
 ":ref:`$this->validator->getValidated() <validation-getting-validated-"
 "data>` and set them in the ``$post`` variable."
-msgstr ""
+msgstr "유효성 검사가 모든 규칙을 통과하면 :ref:`$this->validator->getValidated() <validation-getting-validated-data>`를 통해 검증된 데이터를 가져와 ``$post`` 변수에 설정합니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:138
 msgid ""
@@ -259,7 +258,7 @@ msgid ""
 "news item into the model. The :ref:`model-save` method handles inserting "
 "or updating the record automatically, based on whether it finds an array "
 "key matching the primary key."
-msgstr ""
+msgstr "``NewsModel``이 로드되고 호출됩니다. 이는 뉴스 항목을 모델로 전달하는 역할을 합니다. :ref:`model-save` 메서드는 기본 키(primary key)와 일치하는 배열 키를 찾는지 여부에 따라 레코드를 자동으로 삽입하거나 업데이트합니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:143
 msgid ""
@@ -268,26 +267,26 @@ msgid ""
 "down the string you pass it, replacing all spaces by dashes (``-``) and "
 "makes sure everything is in lowercase characters. This leaves you with a "
 "nice slug, perfect for creating URIs."
-msgstr ""
+msgstr "여기에는 새로운 함수 :php:func:`url_title()`이 포함되어 있습니다. :doc:`URL 헬퍼 <../../helpers/url_helper>`에서 제공하는 이 함수는 전달된 문자열에서 모든 공백을 대시(``-``)로 바꾸고 모든 문자를 소문자로 만듭니다. 이렇게 하면 URI를 만드는 데 적합한 멋진 슬러그가 생성됩니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:150
 msgid "Return Success Page"
-msgstr ""
+msgstr "성공 페이지 반환"
 
 #: ../../source/guides/first-app/create_news_items.rst:152
 msgid ""
 "After this, view files are loaded and returned to display a success "
 "message. Create a view at **app/Views/news/success.php** and write a "
 "success message."
-msgstr ""
+msgstr "이 작업이 끝나면 성공 메시지를 표시하기 위해 뷰 파일이 로드되어 반환됩니다. **app/Views/news/success.php**에 뷰를 만들고 성공 메시지를 작성하세요."
 
 #: ../../source/guides/first-app/create_news_items.rst:155
 msgid "This could be as simple as::"
-msgstr ""
+msgstr "다음과 같이 간단할 수 있습니다::"
 
 #: ../../source/guides/first-app/create_news_items.rst:160
 msgid "NewsModel Updating"
-msgstr ""
+msgstr "NewsModel 업데이트"
 
 #: ../../source/guides/first-app/create_news_items.rst:162
 msgid ""
@@ -297,7 +296,7 @@ msgid ""
 "already exists and should be updated, based on the presence of a primary "
 "key. In this case, there is no ``id`` field passed to it, so it will "
 "insert a new row into it's table, ``news``."
-msgstr ""
+msgstr "남은 일은 모델이 데이터를 올바르게 저장할 수 있도록 설정되어 있는지 확인하는 것입니다. 사용된 ``save()`` 메서드는 기본 키의 존재 여부에 따라 정보를 삽입해야 할지, 아니면 기존 행을 업데이트해야 할지 결정합니다. 이 경우 ``id`` 필드가 전달되지 않으므로 ``news`` 테이블에 새 행을 삽입합니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:169
 msgid ""
@@ -305,7 +304,7 @@ msgid ""
 "actually save any data because it doesn't know what fields are safe to be"
 " updated. Edit the ``NewsModel`` to provide it a list of updatable fields"
 " in the ``$allowedFields`` property."
-msgstr ""
+msgstr "하지만 기본적으로 모델의 삽입 및 업데이트 메서드는 어떤 필드가 안전하게 업데이트될 수 있는지 알지 못하기 때문에 실제로 데이터를 저장하지 않습니다. ``NewsModel``을 수정하여 ``$allowedFields`` 속성에 업데이트 가능한 필드 목록을 제공하세요."
 
 #: ../../source/guides/first-app/create_news_items.rst:176
 msgid ""
@@ -315,30 +314,29 @@ msgid ""
 " in the database. This helps protect against Mass Assignment "
 "Vulnerabilities. If your model is handling your timestamps, you would "
 "also leave those out."
-msgstr ""
+msgstr "이 새로운 속성에는 데이터베이스에 저장을 허용할 필드들이 포함됩니다. ``id``를 제외한 것을 보셨나요? 그 이유는 데이터베이스에서 자동 증가(auto-incrementing) 필드이므로 직접 다룰 일이 거의 없기 때문입니다. 이는 대량 할당 취약성(Mass Assignment Vulnerabilities)으로부터 보호하는 데 도움이 됩니다. 만약 모델에서 타임스탬프를 처리하고 있다면 그 필드들도 제외해야 합니다."
 
 #: ../../source/guides/first-app/create_news_items.rst:183
 msgid "Create a News Item"
-msgstr ""
+msgstr "뉴스 항목 만들기"
 
 #: ../../source/guides/first-app/create_news_items.rst:185
 msgid ""
 "Now point your browser to your local development environment where you "
 "installed CodeIgniter and add **/news/new** to the URL. Add some news and"
 " check out the different pages you made."
-msgstr ""
+msgstr "이제 CodeIgniter를 설치한 로컬 개발 환경의 브라우저에서 URL 뒤에 **/news/new**를 추가하세요. 뉴스를 추가하고 직접 만든 여러 페이지들을 확인해 보세요."
 
 #: ../../source/guides/first-app/create_news_items.rst:200
 msgid "Congratulations"
-msgstr ""
+msgstr "축하합니다"
 
 #: ../../source/guides/first-app/create_news_items.rst:202
 msgid "You just completed your first CodeIgniter4 application!"
-msgstr ""
+msgstr "방금 첫 번째 CodeIgniter4 애플리케이션을 완성했습니다!"
 
 #: ../../source/guides/first-app/create_news_items.rst:204
 msgid ""
 "The diagram underneath shows your project's **app** folder, with all of "
 "the files that you created or modified."
-msgstr ""
-
+msgstr "아래 다이어그램은 여러분이 생성하거나 수정한 모든 파일이 포함된 프로젝트의 **app** 폴더를 보여줍니다."
