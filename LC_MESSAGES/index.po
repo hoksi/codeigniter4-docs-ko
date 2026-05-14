@@ -1,17 +1,16 @@
-# SOME DESCRIPTIVE TITLE.
+# CodeIgniter 4 User Guide Korean Translation.
 # Copyright (C) 2019-2026 CodeIgniter Foundation
 # This file is distributed under the same license as the CodeIgniter
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+# hoksi <hoksi@github.com>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-05-14 16:40+0900\n"
+"Last-Translator: hoksi <hoksi@github.com>\n"
 "Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -22,37 +21,44 @@ msgstr ""
 
 #: ../../source/index.rst:3
 msgid "CodeIgniter4 User Guide"
-msgstr ""
+msgstr "CodeIgniter4 사용자 가이드"
 
 #: ../../source/index.rst:13
 msgid "Getting Started"
-msgstr ""
+msgstr "시작하기"
 
 #: ../../source/index.rst:23
 msgid "Guides"
-msgstr ""
+msgstr "가이드"
 
 #: ../../source/index.rst:33
 msgid "Overview & General Topics"
-msgstr ""
+msgstr "개요 및 일반 주제"
 
 #: ../../source/index.rst:47
 msgid "Request Handling"
-msgstr ""
+msgstr "요청 처리"
 
 #: ../../source/index.rst:61
 msgid "Handling Databases"
-msgstr ""
+msgstr "데이터베이스 다루기"
 
 #: ../../source/index.rst:80
 msgid "Libraries & Helpers"
-msgstr ""
+msgstr "라이브러리 및 헬퍼"
 
-#: ../../source/index.rst:94
-msgid "Advanced Topics"
-msgstr ""
+#: ../../source/index.rst:104
+msgid "Testing & Debugging"
+msgstr "테스트 및 디버깅"
 
 #: ../../source/index.rst:119
-msgid "Official Packages"
-msgstr ""
+msgid "Command Line Usage"
+msgstr "명령줄(CLI) 사용법"
 
+#: ../../source/index.rst:134
+msgid "Extending CodeIgniter"
+msgstr "CodeIgniter 확장"
+
+#: ../../source/index.rst:147
+msgid "Changelogs"
+msgstr "변경 로그"

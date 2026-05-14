@@ -1,17 +1,16 @@
-# SOME DESCRIPTIVE TITLE.
+# CodeIgniter 4 User Guide Korean Translation.
 # Copyright (C) 2019-2026 CodeIgniter Foundation
 # This file is distributed under the same license as the CodeIgniter
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+# hoksi <hoksi@github.com>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-05-14 17:30+0900\n"
+"Last-Translator: hoksi <hoksi@github.com>\n"
 "Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -22,109 +21,108 @@ msgstr ""
 
 #: ../../source/database/examples.rst:3
 msgid "Quick Start: Usage Examples"
-msgstr ""
+msgstr "빠른 시작: 사용 예제"
 
 #: ../../source/database/examples.rst:5
 msgid ""
 "The following page contains example code showing how the database class "
 "is used. For complete details please read the individual pages describing"
 " each function."
-msgstr ""
+msgstr "다음 페이지에는 데이터베이스 클래스가 어떻게 사용되는지 보여주는 예제 코드가 포함되어 있습니다. 자세한 내용은 각 기능을 설명하는 개별 페이지를 참조하십시오."
 
 #: ../../source/database/examples.rst:9
 msgid ""
 "CodeIgniter doesn't support dots (``.``) in the table and column names. "
 "Since v4.5.0, database names with dots are supported."
-msgstr ""
+msgstr "CodeIgniter는 테이블 및 컬럼 이름에 마침표(``.``)를 지원하지 않습니다. v4.5.0부터 마침표가 포함된 데이터베이스 이름은 지원됩니다."
 
 #: ../../source/database/examples.rst:17
 msgid "Initializing the Database Class"
-msgstr ""
+msgstr "데이터베이스 클래스 초기화"
 
 #: ../../source/database/examples.rst:19
 msgid ""
 "The following code loads and initializes the database class based on your"
 " :doc:`configuration <configuration>` settings:"
-msgstr ""
+msgstr "다음 코드는 :doc:`설정 <configuration>` 세팅을 기반으로 데이터베이스 클래스를 로드하고 초기화합니다."
 
 #: ../../source/database/examples.rst:24
 msgid "Once loaded the class is ready to be used as described below."
-msgstr ""
+msgstr "로드가 완료되면 아래에 설명된 대로 클래스를 사용할 수 있습니다."
 
 #: ../../source/database/examples.rst:26
 msgid ""
 "If all your pages require database access you can connect automatically. "
 "See the :doc:`Connecting to a Database <connecting>` page for details."
-msgstr ""
+msgstr "모든 페이지에서 데이터베이스 액세스가 필요한 경우 자동으로 연결할 수 있습니다. 자세한 내용은 :doc:`데이터베이스 연결 <connecting>` 페이지를 참조하십시오."
 
 #: ../../source/database/examples.rst:30
 msgid "Standard Query With Multiple Results (Object Version)"
-msgstr ""
+msgstr "여러 결과를 반환하는 표준 쿼리 (객체 버전)"
 
 #: ../../source/database/examples.rst:34
 msgid "The above ``getResult()`` function returns an array of **objects**."
-msgstr ""
+msgstr "위의 ``getResult()`` 함수는 **객체** 배열을 반환합니다."
 
 #: ../../source/database/examples.rst:35
 msgid "Example: ``$row->title``"
-msgstr ""
+msgstr "예: ``$row->title``"
 
 #: ../../source/database/examples.rst:38
 msgid "Standard Query With Multiple Results (Array Version)"
-msgstr ""
+msgstr "여러 결과를 반환하는 표준 쿼리 (배열 버전)"
 
 #: ../../source/database/examples.rst:43
 msgid ""
 "The above ``getResultArray()`` function returns an array of standard "
 "array indexes."
-msgstr ""
+msgstr "위의 ``getResultArray()`` 함수는 일반적인 배열 인덱스를 가진 배열을 반환합니다."
 
 #: ../../source/database/examples.rst:44
 msgid "Example: ``$row['title']``"
-msgstr ""
+msgstr "예: ``$row['title']``"
 
 #: ../../source/database/examples.rst:47
 msgid "Standard Query With Single Result"
-msgstr ""
+msgstr "단일 결과를 반환하는 표준 쿼리"
 
 #: ../../source/database/examples.rst:51
 msgid ""
 "The above ``getRow()`` function returns an **object**. Example: "
 "``$row->name``"
-msgstr ""
+msgstr "위의 ``getRow()`` 함수는 **객체**를 반환합니다. 예: ``$row->name``"
 
 #: ../../source/database/examples.rst:54
 msgid "Standard Query With Single Result (Array version)"
-msgstr ""
+msgstr "단일 결과를 반환하는 표준 쿼리 (배열 버전)"
 
 #: ../../source/database/examples.rst:58
 msgid ""
 "The above ``getRowArray()`` function returns an **array**. Example: "
 "``$row['name']``."
-msgstr ""
+msgstr "위의 ``getRowArray()`` 함수는 **배열**을 반환합니다. 예: ``$row['name']``."
 
 #: ../../source/database/examples.rst:62
 msgid "Standard Insert"
-msgstr ""
+msgstr "표준 삽입 (Insert)"
 
 #: ../../source/database/examples.rst:67
 msgid "Query Builder Query"
-msgstr ""
+msgstr "쿼리 빌더 쿼리"
 
 #: ../../source/database/examples.rst:69
 msgid ""
 "The :doc:`Query Builder <query_builder>` gives you a simplified means of "
 "retrieving data:"
-msgstr ""
+msgstr ":doc:`쿼리 빌더 <query_builder>`는 데이터를 검색하는 단순화된 방법을 제공합니다."
 
 #: ../../source/database/examples.rst:74
 msgid ""
 "The above ``get()`` function retrieves all the results from the supplied "
 "table. The :doc:`Query Builder <query_builder>` class contains a full "
 "complement of functions for working with data."
-msgstr ""
+msgstr "위의 ``get()`` 함수는 제공된 테이블의 모든 결과를 검색합니다. :doc:`쿼리 빌더 <query_builder>` 클래스에는 데이터를 다루기 위한 모든 기능이 포함되어 있습니다."
 
 #: ../../source/database/examples.rst:79
 msgid "Query Builder Insert"
-msgstr ""
-
+msgstr "쿼리 빌더 삽입 (Insert)"
