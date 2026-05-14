@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/guides/api/index.rst:4
+msgid "Getting Started with REST APIs"
+msgstr ""
+
+#: ../../source/guides/api/index.rst:10
+msgid ""
+"This tutorial walks you through building a simple RESTful API to manage "
+"books in CodeIgniter 4. You'll learn to set up a project, configure a "
+"database, and create API endpoints, and what makes an API RESTful."
+msgstr ""
+
+#: ../../source/guides/api/index.rst:12
+msgid "This tutorial will primarily focus on:"
+msgstr ""
+
+#: ../../source/guides/api/index.rst:14
+msgid "Auto-routing (Improved)"
+msgstr ""
+
+#: ../../source/guides/api/index.rst:15
+msgid "Creating JSON API endpoints"
+msgstr ""
+
+#: ../../source/guides/api/index.rst:16
+msgid "Using the API ResponseTrait for consistent responses"
+msgstr ""
+
+#: ../../source/guides/api/index.rst:17
+msgid "Basic database operations with Models"
+msgstr ""
+
+#: ../../source/guides/api/index.rst:21
+msgid ""
+"While we cover the basics of CodeIgniter, it is assumed that you have at "
+"least progressed through the :doc:`First App tutorial <../first-"
+"app/index>`."
+msgstr ""
+
+#: ../../source/guides/api/index.rst:33
+msgid "Getting Up and Running"
+msgstr ""
+
+#: ../../source/guides/api/index.rst:36
+msgid "Installing CodeIgniter"
+msgstr ""
+
+#: ../../source/guides/api/index.rst:44
+msgid ""
+"Open your browser to ``http://localhost:8080`` and you should see the "
+"CodeIgniter welcome page."
+msgstr ""
+
+#: ../../source/guides/api/index.rst:48
+msgid ""
+"Keep the server running in one terminal. If you prefer, you can stop it "
+"anytime with :kbd:`Ctrl+C` and start again with ``php spark serve``."
+msgstr ""
+
+#: ../../source/guides/api/index.rst:51
+msgid "Setting Development Mode"
+msgstr ""
+
+#: ../../source/guides/api/index.rst:53
+msgid "Copy the environment file and enable development settings:"
+msgstr ""
+
+#: ../../source/guides/api/index.rst:59
+msgid "Open **.env** and make sure this line is **uncommented**:"
+msgstr ""
+
+#: ../../source/guides/api/index.rst:65
+msgid "You can also use the spark ``env`` command to set the environment:"
+msgstr ""
+
+#: ../../source/guides/api/index.rst:72
+msgid "Configure SQLite"
+msgstr ""
+
+#: ../../source/guides/api/index.rst:74
+msgid ""
+"We'll use a single-file SQLite database under **writable/** so there's no"
+" external setup."
+msgstr ""
+
+#: ../../source/guides/api/index.rst:76
+msgid "Open **.env** and **uncomment** the database section, then set:"
+msgstr ""
+
+#: ../../source/guides/api/index.rst:88
+msgid ""
+"CodeIgniter will automatically create the SQLite database file if it "
+"doesn't exist, but you need to ensure that the **writable/** directory is"
+" writable by the web server."
+msgstr ""
+
+#: ../../source/guides/api/index.rst:92
+msgid ""
+"On some systems you might need to adjust group/owner or use ``chmod 666``"
+" temporarily during development. Never ship world-writable permissions to"
+" production."
+msgstr ""
+
+#: ../../source/guides/api/index.rst:95
+msgid ""
+"At this point, you have a working CodeIgniter4 project with SQLite "
+"configured."
+msgstr ""
+
+#: ../../source/guides/api/index.rst:97
+msgid "The app starts with ``php spark serve``"
+msgstr ""
+
+#: ../../source/guides/api/index.rst:98
+msgid "``CI_ENVIRONMENT`` is set to ``development`` in **.env**"
+msgstr ""
+
+#: ../../source/guides/api/index.rst:99
+msgid "**writable/database.db** exists and is writable"
+msgstr ""
+
+#: ../../source/guides/api/index.rst:102
+msgid "What's Next"
+msgstr ""
+
+#: ../../source/guides/api/index.rst:104
+msgid ""
+"In the next section, we'll enable auto-routing and create a simple JSON "
+"endpoint (``/api/pings``) to see how HTTP verbs map to controller methods"
+" in CodeIgniter."
+msgstr ""
+

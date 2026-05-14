@@ -1,0 +1,290 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.0.4.rst:2
+msgid "Version 4.0.4"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:4
+msgid "Release Date: July 15, 2020"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:6
+msgid "**4.0.4 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:13
+msgid "BREAKING"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:15
+msgid ""
+"Added ``$arguments`` parameter to ``after()`` and ``before()`` in "
+"``FilterInterface``. This is a breaking change, so all code implementing "
+"the ``FilterInterface`` must be updated."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:18
+msgid "Enhancements"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:20
+msgid ""
+"The location for the SQLite3 database has changed and by default will be "
+"now located in a ``writable`` folder instead of the ``public`` folder."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:21
+msgid ""
+"New CLI command: ``cache:clear`` that will destroy all data within the "
+"current cache engine."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:22
+msgid ""
+"Thanks to samsonasik, we have several libraries brought up to 100% test "
+"coverage."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:23
+msgid "A few small performance increases. Every ounce matters!"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:24
+msgid ""
+"``getFieldData()`` in the database results class now returns column type "
+"and length."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:25
+msgid "Default .htaccess file updated to work better with extended characters."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:26
+msgid ""
+"New Testing Feature: :doc:`Fabricator </testing/fabricator>` makes "
+"creating mock classes simple and repeatable in your tests."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:27
+msgid ""
+"Model class can now have the callbacks overridden at runtime. Useful for "
+"testing."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:28
+msgid ""
+"A number of improvements to :doc:`Feature Tests </testing/feature>` in "
+"general."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:29
+msgid ""
+"New :doc:`command() helper function </cli/spark_commands>` to "
+"programatically run your CLI commands. Useful for testing and cron jobs."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:30
+msgid ""
+"New command, ``make:seeder`` to generate a :doc:`Database Seed class "
+"</dbmgmt/seeds>` skeleton file."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:31
+msgid ""
+"Colors now available on the CLI within Windows, as well as other Windows-"
+"related CLI improvements."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:32
+msgid ""
+"New helper :doc:`mb_url_title() </helpers/url_helper>` that functions "
+"like ``url_title()`` but automatically escapes and extended URL "
+"characters."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:33
+msgid ":doc:`Image library </libraries/images>` now supports ``webp`` images."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:34
+msgid "Added Unicode support for regular expressions in the Router."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:35
+msgid ""
+"Added support for removing hidden folders in the :doc:`delete_files() "
+"</helpers/filesystem_helper>` helper."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:36
+msgid ""
+"``fetchGlobal()`` in the Request class now supports applying filters to "
+"arrays of data, not just the first item."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:37
+msgid "``file`` validation now works with arrays of files."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:38
+msgid ""
+"URI class now supports a ``setSilent()`` method that will disable the "
+"throwing of Exceptions."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:39
+msgid ""
+"New argument to ``URI::getSegment()`` that allows us to change the "
+"default value returned if nothing exists."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:40
+msgid ""
+"Implemented a ``withResource()`` in Image so that you can use method "
+"chaining instead of using the provided getResource() (used in tests). To "
+"just compress your image."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:41
+msgid ""
+"Cookies and headers can be copied from the global Response object when "
+"doing a redirect using the new ``withCookies()`` and ``withHeaders()`` "
+"methods."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:42
+msgid ""
+"Support for special prefix \"hex2bin:\" which can be used with ``$key`` "
+"parameter in :doc:`Encryption class</libraries/encryption>` or in .env "
+"file."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:45
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:47
+msgid ""
+"Fixed location for the SQLite3 database which by default will be now "
+"located in a ``writable`` folder instead of the ``public`` folder."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:48
+msgid "Fixed bug where ``force_https()`` could add ``https://`` a second time."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:49
+msgid ""
+"Fixed a bug with CurlRequest that could result in incorrect \"100 "
+"Continue\" headers."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:50
+msgid "Image::save() bug fixed when ``$target`` parameter was ``null``."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:51
+msgid ""
+"fixes for ``set_checkbox()`` and ``set_radio()`` when the $default "
+"parameter is set to ``true``."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:52
+msgid "fix for result object handling in Model class."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:53
+msgid "fixed escape character SQLite database."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:54
+msgid "fix for inserts on Postgres and Entities when the primary key was null."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:55
+msgid "CLI scripts can now correctly recognize dashes within arguments."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:56
+msgid "CURLRequest now properly sets content length with multipart data."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:57
+msgid "Misc. stability improvements for the ImageMagick handler."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:58
+msgid "setting validation errors within a config file should now work."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:59
+msgid "Unicode characters are not escaped when saving JSON from Entities."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:60
+msgid "redirecting with a custom HTTP code should work correctly now."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:61
+msgid "``Time::setTimezone()`` now working correctly."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:62
+msgid "added full outer join support for Postgres."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:63
+msgid ""
+"some cast items in the Entity (like array, json) were not being set "
+"correctly during a ``fill()`` process."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:64
+msgid ""
+"Fixed bug in Image GD handler that would try to compress images twice in "
+"certain cases."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:65
+msgid ""
+"Ensure get translation output logic work on selected locale, dashed "
+"locale, and fallback \"en\"."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:66
+msgid ""
+"Fix ``is_unique``/``is_not_unique`` validation called on POST/PUT via API"
+" in PostgreSQL."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:67
+msgid "Fixed a bug where filter arguments were not passed to ``after()``."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.4.rst:69
+msgid ""
+"See the repo's `CHANGELOG_4.0.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/changelogs/CHANGELOG_4.0.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

@@ -1,0 +1,494 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/libraries/caching.rst:3
+msgid "Caching Driver"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:5
+msgid ""
+"CodeIgniter features wrappers around some of the most popular forms of "
+"fast and dynamic caching. All but file-based caching require specific "
+"server requirements, and a Fatal Exception will be thrown if server "
+"requirements are not met."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:16
+msgid "Example Usage"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:18
+msgid ""
+"The following example shows a common usage pattern within your "
+"controllers."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:22
+msgid ""
+"You can grab an instance of the cache engine directly through the global "
+"function ``service()``:"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:30
+msgid "Configuring the Cache"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:32
+msgid ""
+"All configuration for the cache engine is done in "
+"**app/Config/Cache.php**. In that file, the following items are "
+"available."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:36
+msgid "$handler"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:38
+msgid ""
+"The is the name of the handler that should be used as the primary handler"
+" when starting up the engine. Available names are: apcu, dummy, file, "
+"memcached, redis, predis, wincache."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:42
+msgid "$backupHandler"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:44
+msgid ""
+"In the case that the first choice ``$handler`` is not available, this is "
+"the next cache handler to load. This is commonly the ``File`` handler "
+"since the file system is always available, but may not fit more complex, "
+"multi-server setups."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:49
+msgid "$prefix"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:51
+msgid ""
+"If you have more than one application using the same cache storage, you "
+"can add a custom prefix string here that is prepended to all key names."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:55
+msgid "$ttl"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:57
+msgid "The default number of seconds to save items when none is specified."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:59
+msgid ""
+"WARNING: This is not used by framework handlers where 60 seconds is hard-"
+"coded, but may be useful to projects and modules. This will replace the "
+"hard-coded value in a future release."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:63
+msgid "$file"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:65
+msgid ""
+"This is an array of settings specific to the  **File** handler to "
+"determine how it should save the cache files."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:68
+msgid "$memcached"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:70
+msgid ""
+"This is an array of servers that will be used when using the "
+"**Memcached** handler."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:73
+msgid "$redis"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:75
+msgid ""
+"The settings for the Redis server that you wish to use when using the "
+"**Redis** and **Predis** handler."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:79
+msgid "Command-Line Tools"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:81
+msgid ""
+"CodeIgniter ships with several :doc:`commands </cli/spark_commands>` that"
+" are available from the command line to help you work with Cache. These "
+"tools are not required to use Cache driver but might help you."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:86
+msgid "cache:clear"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:88
+msgid "Clears the current system caches:"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:95
+msgid "cache:info"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:97
+msgid "Shows file cache information in the current system:"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:103
+msgid "This command only supports the File cache handler."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:107
+msgid "Class Reference"
+msgstr ""
+
+#: ../../source/libraries/caching.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:115
+msgid "``true`` if supported, ``false`` if not"
+msgstr ""
+
+#: ../../source/libraries/caching.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/libraries/caching.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:120
+#: ../../source/libraries/caching.rst:133
+#: ../../source/libraries/caching.rst:144
+#: ../../source/libraries/caching.rst:243
+msgid "Cache item name"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:121
+msgid "Item value or ``null`` if not found"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:124
+msgid ""
+"This method will attempt to fetch an item from the cache store. If the "
+"item does not exist, the method will return null."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:127
+#: ../../source/libraries/caching.rst:153
+#: ../../source/libraries/caching.rst:166
+#: ../../source/libraries/caching.rst:182
+#: ../../source/libraries/caching.rst:198
+#: ../../source/libraries/caching.rst:211
+#: ../../source/libraries/caching.rst:223
+#: ../../source/libraries/caching.rst:234
+#: ../../source/libraries/caching.rst:250
+#: ../../source/libraries/caching.rst:268
+msgid "Example:"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:134
+msgid "Time to live in seconds"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:135
+msgid "Callback to invoke when the cache item returns null"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:136
+msgid "The value of the cache item"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:139
+msgid ""
+"Gets an item from the cache. If ``null`` was returned, this will invoke "
+"the callback and save the result. Either way, this will return the value."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:145
+msgid "the data to save"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:146
+msgid "Time To Live, in seconds (default 60)"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:147
+#: ../../source/libraries/caching.rst:160
+#: ../../source/libraries/caching.rst:217
+msgid "``true`` on success, ``false`` on failure"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:150
+msgid ""
+"This method will save an item to the cache store. If saving fails, the "
+"method will return ``false``."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:159
+msgid "name of cached item"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:163
+msgid ""
+"This method will delete a specific item from the cache store. If item "
+"deletion fails, the method will return false."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:172
+msgid "glob-style pattern to match cached items keys"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:173
+msgid "number of deleted items"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:176
+msgid ""
+"This method will delete multiple items from the cache store at once by "
+"matching their keys against a glob-style pattern. It will return the "
+"total number of deleted items."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:179
+msgid ""
+"This method is only implemented for File, Redis and Predis handlers. Due "
+"to limitations, it couldn't be implemented for Memcached and Wincache "
+"handlers."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:186
+msgid ""
+"For more information on glob-style syntax, please see `Glob (programming)"
+" <https://en.wikipedia.org/wiki/Glob_(programming)#Syntax>`_."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:191
+#: ../../source/libraries/caching.rst:204
+msgid "Cache ID"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:192
+msgid "Step/value to add"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:193
+#: ../../source/libraries/caching.rst:206
+msgid "New value on success, ``false`` on failure"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:196
+msgid "Performs atomic incrementation of a raw stored value."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:205
+msgid "Step/value to reduce by"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:209
+msgid "Performs atomic decrementation of a raw stored value."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:220
+msgid ""
+"This method will 'clean' the entire cache. If the deletion of the cache "
+"files fails, the method will return false."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:229
+msgid "Information on the entire cache database"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:232
+msgid "This method will return information on the entire cache."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:238
+msgid ""
+"The information returned and the structure of the data is dependent on "
+"which adapter is being used."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:244
+msgid ""
+"Metadata for the cached item. ``null`` for missing items, or an array "
+"with at least the \"expire\" key for absolute epoch expiry (``null`` for "
+"never expires)."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:247
+msgid ""
+"This method will return detailed information on a specific item in the "
+"cache."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:254
+msgid ""
+"The information returned and the structure of the data is dependent on "
+"which adapter is being used. Some adapters (File, Memcached, Wincache) "
+"still return ``false`` for missing items."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:260
+msgid "Potential cache key"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:261
+msgid "Optional prefix"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:262
+msgid ""
+"The verified and prefixed key. If the key exceeds the driver's max key "
+"length it will be hashed."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:265
+msgid ""
+"This method is used by handler methods to check that keys are valid. It "
+"will throw an ``InvalidArgumentException`` for non-strings, invalid "
+"characters, and empty lengths."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:274
+msgid "Drivers"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:277
+msgid "APCu Caching"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:279
+msgid "APCu is an in-memory key-value store for PHP."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:281
+msgid "To use it, you need the `APCu PHP extension <https://www.php.net/apcu>`_."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:284
+msgid "File-based Caching"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:286
+msgid "This requires a cache directory to be really writable by the application."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:288
+msgid ""
+"Use this with care, and make sure to benchmark your application, as a "
+"point can come where disk I/O will negate positive gains by caching."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:292
+msgid "Memcached Caching"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:294
+msgid ""
+"Memcached servers can be specified in the cache configuration file. "
+"Available options are:"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:298
+msgid ""
+"For more information on Memcached, please see "
+"`https://www.php.net/memcached <https://www.php.net/memcached>`_."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:302
+msgid "WinCache Caching"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:304
+msgid "Under Windows, you can also utilize the WinCache driver."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:306
+msgid ""
+"For more information on WinCache, please see "
+"`https://www.php.net/wincache <https://www.php.net/wincache>`_."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:310
+msgid "Redis Caching"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:312
+msgid ""
+"Redis is an in-memory key-value store which can operate in LRU cache "
+"mode. To use it, you need `Redis server and phpredis PHP extension "
+"<https://github.com/phpredis/phpredis>`_."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:315
+msgid ""
+"Config options to connect to redis server stored in the cache "
+"configuration file. Available options are:"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:319
+msgid ""
+"For more information on Redis, please see `https://redis.io "
+"<https://redis.io>`_."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:323
+msgid "Predis Caching"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:325
+msgid ""
+"Predis is a flexible and feature-complete PHP client library for the "
+"Redis key-value store. To use it, from the command line inside your "
+"project root:"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:332
+msgid ""
+"For more information on Redis, please see `https://github.com/nrk/predis "
+"<https://github.com/nrk/predis>`_."
+msgstr ""
+
+#: ../../source/libraries/caching.rst:336
+msgid "Dummy Cache"
+msgstr ""
+
+#: ../../source/libraries/caching.rst:338
+msgid ""
+"This is a caching backend that will always 'miss.' It stores no data, but"
+" lets you keep your caching code in place in environments that don't "
+"support your chosen cache."
+msgstr ""
+

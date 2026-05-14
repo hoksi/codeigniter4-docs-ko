@@ -1,0 +1,380 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/libraries/security.rst:3
+msgid "Security"
+msgstr ""
+
+#: ../../source/libraries/security.rst:5
+msgid ""
+"The Security Class contains methods that help protect your site against "
+"Cross-Site Request Forgery attacks."
+msgstr ""
+
+#: ../../source/libraries/security.rst:13
+msgid "Loading the Library"
+msgstr ""
+
+#: ../../source/libraries/security.rst:15
+msgid ""
+"If your only interest in loading the library is to handle CSRF "
+"protection, then you will never need to load it, as it runs as a filter "
+"and has no manual interaction."
+msgstr ""
+
+#: ../../source/libraries/security.rst:18
+msgid ""
+"If you find a case where you do need direct access though, you may load "
+"it through the Services file:"
+msgstr ""
+
+#: ../../source/libraries/security.rst:26
+msgid "Cross-Site Request Forgery (CSRF)"
+msgstr ""
+
+#: ../../source/libraries/security.rst:28
+msgid ""
+"The CSRF Protection is only available for **POST/PUT/PATCH/DELETE** "
+"requests. Requests for other methods are not protected."
+msgstr ""
+
+#: ../../source/libraries/security.rst:32
+msgid "Prerequisite"
+msgstr ""
+
+#: ../../source/libraries/security.rst:34
+msgid ""
+"When you use the CodeIgniter's CSRF protection, you still need to code as"
+" the following. Otherwise, the CSRF protection may be bypassed."
+msgstr ""
+
+#: ../../source/libraries/security.rst:38
+msgid "When Auto-Routing is Disabled"
+msgstr ""
+
+#: ../../source/libraries/security.rst:40
+msgid "Do one of the following:"
+msgstr ""
+
+#: ../../source/libraries/security.rst:42
+msgid "Do not use ``$routes->add()``, and use HTTP verbs in routes."
+msgstr ""
+
+#: ../../source/libraries/security.rst:43
+#: ../../source/libraries/security.rst:58
+msgid "Check the request method in the controller method before processing."
+msgstr ""
+
+#: ../../source/libraries/security.rst:45
+#: ../../source/libraries/security.rst:60
+msgid "E.g.::"
+msgstr ""
+
+#: ../../source/libraries/security.rst:51
+msgid ""
+"The :ref:`$this->request->is() <incomingrequest-is>` method can be used "
+"since v4.3.0. In previous versions, you need to use ``if "
+"(strtolower($this->request->getMethod()) !== 'post')``."
+msgstr ""
+
+#: ../../source/libraries/security.rst:56
+msgid "When Auto-Routing is Enabled"
+msgstr ""
+
+#: ../../source/libraries/security.rst:67
+msgid "Config for CSRF"
+msgstr ""
+
+#: ../../source/libraries/security.rst:72
+msgid "CSRF Protection Methods"
+msgstr ""
+
+#: ../../source/libraries/security.rst:74
+msgid ""
+"If you use :doc:`Session <./sessions>`, be sure to use Session based CSRF"
+" protection. Cookie based CSRF protection will not prevent Same-site "
+"attacks. See `GHSA-5hm8-vh6r-2cjq "
+"<https://github.com/codeigniter4/shield/security/advisories/GHSA-5hm8"
+"-vh6r-2cjq>`_ for details."
+msgstr ""
+
+#: ../../source/libraries/security.rst:80
+msgid ""
+"By default, the Cookie based CSRF Protection is used. It is `Double "
+"Submit Cookie <https://cheatsheetseries.owasp.org/cheatsheets/Cross-"
+"Site_Request_Forgery_Prevention_Cheat_Sheet.html#double-submit-cookie>`_ "
+"on OWASP Cross-Site Request Forgery Prevention Cheat Sheet."
+msgstr ""
+
+#: ../../source/libraries/security.rst:84
+msgid ""
+"You can also use Session based CSRF Protection. It is `Synchronizer Token"
+" Pattern <https://cheatsheetseries.owasp.org/cheatsheets/Cross-"
+"Site_Request_Forgery_Prevention_Cheat_Sheet.html#synchronizer-token-"
+"pattern>`_."
+msgstr ""
+
+#: ../../source/libraries/security.rst:87
+msgid ""
+"You can set to use the Session based CSRF protection by editing the "
+"following config parameter value in **app/Config/Security.php**:"
+msgstr ""
+
+#: ../../source/libraries/security.rst:93
+msgid "Token Randomization"
+msgstr ""
+
+#: ../../source/libraries/security.rst:95
+msgid ""
+"To mitigate compression side-channel attacks like `BREACH`_, and prevent "
+"an attacker from guessing the CSRF tokens, you can configure token "
+"randomization (off by default)."
+msgstr ""
+
+#: ../../source/libraries/security.rst:97
+msgid ""
+"If you enable it, a random mask is added to the token and used to "
+"scramble it."
+msgstr ""
+
+#: ../../source/libraries/security.rst:101
+msgid ""
+"You can enable it by editing the following config parameter value in "
+"**app/Config/Security.php**:"
+msgstr ""
+
+#: ../../source/libraries/security.rst:107
+msgid "Token Regeneration"
+msgstr ""
+
+#: ../../source/libraries/security.rst:109
+msgid ""
+"Tokens may be either regenerated on every submission (default) or kept "
+"the same throughout the life of the Session or CSRF cookie."
+msgstr ""
+
+#: ../../source/libraries/security.rst:112
+msgid ""
+"The default regeneration of tokens provides stricter security, but may "
+"result in usability concerns as other tokens become invalid (back/forward"
+" navigation, multiple tabs/windows, asynchronous actions, etc). You may "
+"alter this behavior by editing the following config parameter value in "
+"**app/Config/Security.php**:"
+msgstr ""
+
+#: ../../source/libraries/security.rst:121
+msgid ""
+"If you use Cookie based CSRF protection, and :php:func:`redirect()` after"
+" the submission, you must call ``withCookie()`` to send the regenerated "
+"CSRF cookie. See :ref:`response-redirect` for details."
+msgstr ""
+
+#: ../../source/libraries/security.rst:125
+msgid ""
+"Since v4.2.3, you can regenerate CSRF token manually with the "
+"``Security::generateHash()`` method."
+msgstr ""
+
+#: ../../source/libraries/security.rst:131
+msgid "Redirection on Failure"
+msgstr ""
+
+#: ../../source/libraries/security.rst:133
+msgid ""
+"Starting with v4.5.0, when a request fails the CSRF validation check, by "
+"default, the user is redirected to the previous page in production "
+"environment, or a SecurityException is thrown in other environments."
+msgstr ""
+
+#: ../../source/libraries/security.rst:137
+msgid ""
+"In production environment, when you use HTML forms, it is recommended to "
+"enable this redirection for a better user experience."
+msgstr ""
+
+#: ../../source/libraries/security.rst:140
+msgid "Upgrade users should check their configuration files."
+msgstr ""
+
+#: ../../source/libraries/security.rst:142
+msgid ""
+"If you want to make it redirect to the previous page, set the following "
+"config parameter value to ``true`` in **app/Config/Security.php**:"
+msgstr ""
+
+#: ../../source/libraries/security.rst:147
+msgid ""
+"When redirected, an ``error`` flash message is set and can be displayed "
+"to the end user with the following code in your view::"
+msgstr ""
+
+#: ../../source/libraries/security.rst:151
+msgid "This provides a nicer experience than simply crashing."
+msgstr ""
+
+#: ../../source/libraries/security.rst:153
+msgid ""
+"Even when the redirect value is ``true``, AJAX calls will not redirect, "
+"but will throw a SecurityException."
+msgstr ""
+
+#: ../../source/libraries/security.rst:158
+msgid "Enable CSRF Protection"
+msgstr ""
+
+#: ../../source/libraries/security.rst:160
+msgid ""
+"You can enable CSRF protection by altering your "
+"**app/Config/Filters.php** and enabling the `csrf` filter globally:"
+msgstr ""
+
+#: ../../source/libraries/security.rst:165
+msgid ""
+"Select URIs can be whitelisted from CSRF protection (for example API "
+"endpoints expecting externally POSTed content). You can add these URIs by"
+" adding them as exceptions in the filter:"
+msgstr ""
+
+#: ../../source/libraries/security.rst:171
+msgid "Regular expressions are also supported (case-insensitive):"
+msgstr ""
+
+#: ../../source/libraries/security.rst:175
+msgid "It is also possible to enable the CSRF filter only for specific methods:"
+msgstr ""
+
+#: ../../source/libraries/security.rst:179
+msgid ""
+"If you use ``$methods`` filters, you should :ref:`disable Auto Routing "
+"(Legacy) <use-defined-routes-only>` because :ref:`auto-routing-legacy` "
+"permits any HTTP method to access a controller. Accessing the controller "
+"with a method you don't expect could bypass the filter."
+msgstr ""
+
+#: ../../source/libraries/security.rst:184
+msgid "HTML Forms"
+msgstr ""
+
+#: ../../source/libraries/security.rst:186
+msgid ""
+"If you use the :doc:`form helper <../helpers/form_helper>`, then "
+":func:`form_open()` will automatically insert a hidden csrf field in your"
+" forms."
+msgstr ""
+
+#: ../../source/libraries/security.rst:190
+msgid ""
+"To use auto-generation of CSRF field, you need to turn CSRF filter on to "
+"the form page. In most cases it is requested using the ``GET`` method."
+msgstr ""
+
+#: ../../source/libraries/security.rst:193
+msgid ""
+"If not, then you can use the always available ``csrf_token()`` and "
+"``csrf_hash()`` functions ::"
+msgstr ""
+
+#: ../../source/libraries/security.rst:199
+msgid ""
+"Additionally, you can use the ``csrf_field()`` method to generate this "
+"hidden input field for you::"
+msgstr ""
+
+#: ../../source/libraries/security.rst:205
+msgid ""
+"When sending a JSON request the CSRF token can also be passed as one of "
+"the parameters. The next way to pass the CSRF token is a special Http "
+"header that's name is available by ``csrf_header()`` function."
+msgstr ""
+
+#: ../../source/libraries/security.rst:209
+msgid ""
+"Additionally, you can use the ``csrf_meta()`` method to generate this "
+"handy meta tag for you::"
+msgstr ""
+
+#: ../../source/libraries/security.rst:216
+msgid "The Order of Token Sent by Users"
+msgstr ""
+
+#: ../../source/libraries/security.rst:218
+msgid "The order of checking the availability of the CSRF token is as follows:"
+msgstr ""
+
+#: ../../source/libraries/security.rst:220
+msgid "``$_POST`` array"
+msgstr ""
+
+#: ../../source/libraries/security.rst:221
+msgid "HTTP header"
+msgstr ""
+
+#: ../../source/libraries/security.rst:222
+msgid ""
+"``php://input`` (JSON request) - bear in mind that this approach is the "
+"slowest one since we have to decode JSON and then re-encode it"
+msgstr ""
+
+#: ../../source/libraries/security.rst:223
+msgid "``php://input`` (raw body) - for PUT, PATCH, and DELETE type of requests"
+msgstr ""
+
+#: ../../source/libraries/security.rst:225
+msgid "``php://input`` (raw body) is checked since v4.4.2."
+msgstr ""
+
+#: ../../source/libraries/security.rst:229
+msgid "Other Helpful Methods"
+msgstr ""
+
+#: ../../source/libraries/security.rst:231
+msgid ""
+"You will never need to use most of the methods in the Security class "
+"directly. The following are methods that you might find helpful that are "
+"not related to the CSRF protection."
+msgstr ""
+
+#: ../../source/libraries/security.rst:235
+msgid "sanitizeFilename()"
+msgstr ""
+
+#: ../../source/libraries/security.rst:237
+msgid ""
+"Tries to sanitize filenames in order to prevent directory traversal "
+"attempts and other security threats, which is particularly useful for "
+"files that were supplied via user input. The first parameter is the path "
+"to sanitize."
+msgstr ""
+
+#: ../../source/libraries/security.rst:240
+msgid ""
+"If it is acceptable for the user input to include relative paths, e.g., "
+"**file/in/some/approved/folder.txt**, you can set the second optional "
+"parameter, ``$relativePath`` to ``true``."
+msgstr ""
+
+#: ../../source/libraries/security.rst:245
+msgid ""
+"This method is an alias for the ``sanitize_filename()`` function from the"
+" Security helper."
+msgstr ""
+

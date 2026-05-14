@@ -1,0 +1,1133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.5.0.rst:3
+msgid "Version 4.5.0"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:5
+msgid "Release Date: April 7, 2024"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:7
+msgid "**4.5.0 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:15
+msgid "Highlights"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:17
+msgid "Update minimal PHP requirement to 8.1."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:18
+msgid "Update minimal PHPUnit requirement to 10.5."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:19
+msgid ""
+"**CORS filter** (*contributed by* `kenjis <https://github.com/kenjis>`_) "
+"See :doc:`../libraries/cors`."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:21
+msgid ""
+"The **spark optimize** command for performance improvement on production "
+"environment (*contributed by* `kenjis <https://github.com/kenjis>`_). See"
+" :ref:`spark_optimize`."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:27
+msgid "Enhancements"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:32
+msgid "Required Filters"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:34
+msgid ""
+"New :ref:`Required Filters <filters-required>` have been introduced. They"
+" are special filters that are applied before and after other kinds of "
+"filters, and always applied even if a route does not exist."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:38
+msgid ""
+"The following existing functionalities have been reimplemented as "
+"Required Filters."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:40
+msgid ":ref:`Force Global Secure Requests <forcehttps>`"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:41
+msgid ":doc:`../general/caching`"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:42
+msgid ":ref:`performancemetrics`"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:43
+msgid ":ref:`the-debug-toolbar`"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:45
+msgid ""
+"The Benchmark **Timers** used by Debug Toolbar now collect *Required "
+"Before Filters* and *Required After Filters* data."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:48
+msgid "The benchmark points have been changed:"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:50
+msgid "Before"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:52
+msgid ""
+"``bootstrap``: Creating Request and Response objects, Event "
+"``pre_system``, Instantiating RouteCollection object, Loading Routes "
+"files, Instantiating Router object,"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:53
+msgid "``routing``: Routing,"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:54
+msgid "After"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:56
+msgid ""
+"``bootstrap``: Creating Request and Response objects, Event "
+"``pre_system``."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:57
+msgid ""
+"``required_before_filters``: Instantiating Filters object, Running "
+"*Required Before Filters*."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:58
+msgid ""
+"``routing``: Instantiating RouteCollection object, Loading Routes files, "
+"Instantiating Router object, Routing,"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:61
+msgid "Routing"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:63
+msgid ""
+"**AutoRouting Improved:** The ``$translateUriToCamelCase`` option has "
+"been added that allows using CamelCase controller and method names. See "
+":ref:`translate-uri-to-camelcase`."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:66
+msgid "**Others:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:67
+msgid ""
+"Added option ``$multipleSegmentsOneParam``. When this option is enabled, "
+"a placeholder that matches multiple segments, such as ``(:any)``, will be"
+" passed directly as it is to one parameter, even if it contains multiple "
+"segments. See :ref:`multiple-uri-segments-as-one-parameter` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:71
+msgid ""
+"Now the 404 controller's method that you set in ``$override404`` also "
+"receive a ``PageNotFoundException`` message as the first parameter."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:73
+msgid ""
+"Now you can use the ``__invoke()`` method as the default method. See :ref"
+":`routing-default-method`."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:77
+msgid "Commands"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:79
+msgid ""
+"Added ``spark optimize`` command to optimize configuration for production"
+" environment. See :ref:`spark_optimize` for the details."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:81
+msgid ""
+"Added ``spark make:test`` command to generate a skeleton test file. See "
+":ref:`cli-generators-make-test` for the details."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:83
+msgid ""
+"Added ``spark config:check`` command to check Config values. See :ref"
+":`confirming-config-values` for the details."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:85
+msgid ""
+"Added ``spark phpini:check`` command to check important PHP ini settings."
+" See :ref:`spark-phpini-check` for the details."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:87
+msgid ""
+"Added ``spark lang:find`` command to update translations keys. See :ref"
+":`generating-translation-files-via-command` for the details."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:88
+msgid ""
+"The ``--dbgroup`` option has been added to the ``spark db:table`` "
+"command. See :ref:`Database Commands <db-command-specify-the-dbgroup>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:92
+msgid "Testing"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:94
+msgid ""
+"**DomParser:** The new methods were added ``seeXPath()`` and "
+"``dontSeeXPath()`` which allows users to work directly with DOMXPath "
+"object, using complex expressions."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:96
+msgid ""
+"**CLI:** The new ``InputOutput`` class was added and now you can write "
+"tests for commands more easily if you use ``MockInputOutput``. See :ref"
+":`using-mock-input-output`."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:99
+msgid ""
+"**Fabricator:** The Fabricator class now has the ``setUnique()``, "
+"``setOptional()`` and ``setValid()`` methods to allow calling of Faker's "
+"modifiers on each field before faking their values."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:101
+msgid ""
+"**TestResponse:** TestResponse no longer extends "
+"``PHPUnit\\Framework\\TestCase`` as it is not a test. Assertions' return "
+"types are now natively typed ``void``."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:105
+#: ../../source/changelogs/v4.5.0.rst:369
+msgid "Database"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:108
+msgid "Query Builder"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:113
+msgid "limit(0) Behavior"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:115
+msgid ""
+"Added a feature flag ``Feature::$limitZeroAsAll`` to fix the incorrect "
+"behavior of ``limit(0)``."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:117
+msgid ""
+"If ``LIMIT 0`` is specified in a SQL statement, 0 records are returned. "
+"However, there is a bug in the Query Builder, and if ``limit(0)`` is "
+"specified, the generated SQL statement will have no ``LIMIT`` clause and "
+"all records will be returned."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:121
+msgid ""
+"It is recommended that ``$limitZeroAsAll`` in **app/Config/Feature.php** "
+"be set to ``false`` as this incorrect behavior will be fixed in a future "
+"version. See also :ref:`v450-model-findall-limit-0-behavior`."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:126
+#: ../../source/changelogs/v4.5.0.rst:187
+#: ../../source/changelogs/v4.5.0.rst:260
+#: ../../source/changelogs/v4.5.0.rst:331
+#: ../../source/changelogs/v4.5.0.rst:433
+msgid "Others"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:128
+msgid "Added support for database names containing dots (``.``)."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:131
+#: ../../source/changelogs/v4.5.0.rst:374
+msgid "Model"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:134
+msgid "Model Field Casting"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:136
+msgid ""
+"Added a feature to convert data retrieved from a database into the "
+"appropriate PHP type. See :ref:`model-field-casting` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:142
+msgid "findAll(0) Behavior"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:144
+msgid ""
+"Added a feature flag ``Feature::$limitZeroAsAll`` to fix the incorrect "
+"behavior of ``limit(0)`` for Query Builder. See :ref:`v450-query-builder-"
+"limit-0-behavior` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:147
+msgid ""
+"If you disable this flag, you need to change code like ``findAll(0, "
+"$offset)`` to ``findAll(null, $offset)``."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:151
+msgid "$updateOnlyChanged"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:153
+msgid ""
+"Added a property ``$updateOnlyChanged`` whether to update :doc:`Entity "
+"<../models/entities>`'s only changed fields. If you set this property to "
+"``false``, when you are updating an Entity, ``DataException`` \"There is "
+"no data to update\" will not raise even if the values in the Entity have "
+"not changed."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:159
+msgid ""
+"See :ref:`Using CodeIgniter’s Model <model-update-only-changed>` for "
+"details."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:162
+msgid "Saving Dates"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:164
+msgid ""
+"Now you can configure the date/time format when you save :doc:`Time "
+"<../libraries/time>` instances. See :ref:`model-saving-dates` for "
+"details."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:168
+msgid "Libraries"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:170
+msgid "**CORS:** Added :doc:`../libraries/cors` filter and class."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:171
+msgid "**Validation:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:172
+msgid ""
+"Added the new rule ``field_exists`` that checks the filed exists in the "
+"data to be validated."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:174
+msgid ""
+"The ``$dbGroup`` parameter of ``Validation::run()`` now accepts not only "
+"a database group name, but also a database connection instance or an "
+"array of database settings."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:177
+msgid "**Session:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:178
+msgid ""
+"``RedisHandler`` now can configure the interval time for acquiring locks "
+"(``$lockRetryInterval``) and the number of retries (``$lockMaxRetries``)."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:180
+msgid ""
+"Now you can use Redis ACL (username and password) with ``RedisHandler``. "
+"See :ref:`sessions-redishandler-driver` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:182
+msgid ""
+"**Security:** ``Config\\Security::$redirect`` is now, by default, "
+"environment-specific. For production environment, changed to ``true`` but"
+" is still ``false`` for other environments."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:189
+msgid ""
+"**Bootstrap:** The ``CodeIgniter\\Boot`` class has been introduced, "
+"replacing **system/bootstrap.php**."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:191
+msgid "**Autoloader:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:192
+msgid ""
+"Autoloading performance when using Composer has been improved. Adding the"
+" ``App`` namespace in the ``autoload.psr4`` setting in **composer.json** "
+"may also improve the performance of your app. See :ref:`autoloader-"
+"application-namespace`."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:195
+msgid ""
+"FileLocator Caching implemented. See :ref:`file-locator-caching` for "
+"details."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:196
+msgid "``FileLocatorInterface`` has been added."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:197
+#, python-brace-format
+msgid ""
+"**CodeIgniter:** Added a pseudo-variable ``{memory_usage}`` to show your "
+"memory usage in your view files, which was supported by CodeIgniter 3."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:199
+msgid ""
+"**Events:** Added event points ``pre_command`` and ``post_command`` for "
+"Spark commands. See :ref:`Event Points <event-points-for-cli-apps>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:201
+msgid ""
+"**HTTP:** Added ``Message::addHeader()`` method to add another header "
+"with the same name. See "
+":php:meth:`CodeIgniter\\\\HTTP\\\\Message::addHeader()`."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:203
+msgid ""
+"**Web Page Caching:** ``ResponseCache`` has been improved to include the "
+"request HTTP method in the cache key. This means that the same URI will "
+"be cached separately if the HTTP method is different."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:206
+msgid ""
+"**CSP:** Added ``ContentSecurityPolicy::clearDirective()`` method to "
+"clear existing CSP directives. See :ref:`csp-clear-directives`."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:211
+msgid "BREAKING"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:214
+msgid "Behavior Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:217
+msgid "Lowercase HTTP Method Name"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:219
+msgid ""
+"For historical reasons, the framework used HTTP method names in lower "
+"case like \"get\", \"post\". But the method token is case-sensitive "
+"because it might be used as a gateway to object-based systems with case-"
+"sensitive method names. By convention, standardized methods are defined "
+"in all-uppercase US-ASCII letters. See https://www.rfc-"
+"editor.org/rfc/rfc9110#name-overview."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:226
+msgid ""
+"Now the framework uses the correct HTTP method names like \"GET\", "
+"\"POST\"."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:228
+msgid "``Request::getMethod()`` returns uppercase HTTP methods."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:229
+msgid ""
+"``CURLRequest::request()`` does not change the accepted HTTP methods to "
+"uppercase."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:231
+msgid "See :ref:`upgrade-450-lowercase-http-method-name` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:234
+msgid "Filter Execution Order"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:236
+msgid ""
+"The order in which Controller Filters are executed has changed. See "
+":ref:`Upgrading Guide <upgrade-450-filter-execution-order>` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:240
+msgid "Nested Route Groups and Options"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:242
+msgid ""
+"Due to a bug fix, the behavior has changed so that options passed to the "
+"outer ``group()`` are merged with the options of the inner ``group()``. "
+"See :ref:`Upgrading Guide <upgrade-450-nested-route-groups-and-options>` "
+"for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:247
+msgid "API\\\\ResponseTrait"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:249
+msgid ""
+"Now when a response format is JSON, if you pass string data, the "
+"framework returns a JSON response. In previous versions, it returned a "
+"HTML response. See :ref:`Upgrading Guide <upgrade-450-api-response-"
+"trait>` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:254
+msgid "Factories class"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:256
+msgid ""
+":doc:`../concepts/factories` has been changed to a final class. It is a "
+"static class, and even if it were extended, there is no way to replace "
+"it."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:262
+msgid ""
+"**AutoRouting Legacy:** Changed so that a ``PageNotFoundException`` is "
+"thrown if the controller corresponding to the request URI does not exist."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:264
+msgid ""
+"**Logger:** The :php:func:`log_message()` function and the logger methods"
+" in ``CodeIgniter\\Log\\Logger`` now do not return ``bool`` values. The "
+"return types have been fixed to ``void`` to follow the PSR-3 interface."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:267
+msgid ""
+"**Autoloader:** The prefix ``\\`` in the fully qualified classname "
+"returned by ``FileLocator::findQualifiedNameFromPath()`` has been "
+"removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:269
+msgid ""
+"**BaseModel:** The ``getIdValue()`` method has been changed to "
+"``abstract``."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:270
+msgid ""
+"**Routing:** The :ref:`404-override` feature does change the Response "
+"status code to 404 by default. See :ref:`Upgrading Guide "
+"<upgrade-450-404-override>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:272
+msgid ""
+"**system/bootstrap.php:** This file cannot be used. The code has been "
+"moved to the new ``CodeIgniter\\Boot`` class."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:276
+msgid "Interface Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:278
+msgid ""
+"As long as you have not extended the relevant CodeIgniter core classes or"
+" implemented these interfaces, all these changes are backward compatible "
+"and require no intervention."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:282
+msgid ""
+"**ResponseInterface:** The default value of the third parameter "
+"``$expire`` of the ``ResponseInterface::setCookie()`` has been fixed from"
+" ``''`` to ``0``."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:284
+msgid ""
+"**Logger:** The `psr/log <https://packagist.org/packages/psr/log>`_ "
+"package has been upgraded to v3.0.0."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:286
+msgid ""
+"**Validation:** The method signature of ``ValidationInterface::run()`` "
+"has been changed. The ``?string`` typehint on the ``$dbGroup`` parameter "
+"was removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:292
+msgid "Method Signature Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:295
+msgid "Setting Cookies"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:297
+msgid ""
+"The third parameter ``$expire`` in :php:func:`set_cookie()` and "
+":php:meth:`CodeIgniter\\\\HTTP\\\\Response::setCookie()` has been fixed."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:300
+msgid ""
+"The type has been changed from ``string`` to ``int``, and the default "
+"value has been changed from ``''`` to  ``0``."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:304
+msgid "FileLocatorInterface"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:306
+msgid ""
+"**Router:** The first parameter of the ``RouteCollection`` constructor "
+"has been changed from ``FileLocator`` to ``FileLocatorInterface``."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:308
+msgid ""
+"**View:** The third parameter of the ``View`` constructor has been "
+"changed from ``FileLocator`` to ``FileLocatorInterface``."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:312
+msgid "Return Type Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:314
+msgid ""
+"**Model:** The return type of the ``objectToRawArray()`` method in the "
+"``Model`` and ``BaseModel`` classes has been changed from ``?array`` to "
+"``array``."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:318
+msgid "Traditional Validation Rules"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:320
+msgid ""
+"To add ``declare(strict_types=1)`` to the framework codebase, the method "
+"parameter type ``?string`` for a value to validate in the all Traditional"
+" Validation rule classes ``CodeIgniter\\Validation\\FormatRules`` and "
+"``CodeIgniter\\Validation\\Rules`` are removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:325
+msgid "For example, the method signature changed as follows::"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:333
+msgid ""
+"**Logger:** The method signatures of the methods in "
+"``CodeIgniter\\Log\\Logger`` that implements the PSR-3 interface have "
+"been fixed. The ``bool`` return types are changed to ``void``. The "
+"``$message`` parameters now have ``string|Stringable`` types."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:337
+msgid ""
+"**Validation:** The method signature of ``Validation::run()`` has been "
+"changed. The ``?string`` typehint on the ``$dbGroup`` parameter was "
+"removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:343
+msgid "Removed Deprecated Items"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:346
+msgid "Request"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:348
+msgid ""
+"The ``$upper`` parameter in ``getMethod()`` in ``RequestInterface`` and "
+"``Request`` has been removed. See :ref:`upgrade-450-lowercase-http-"
+"method-name`."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:350
+msgid ""
+"The deprecated ``isValidIP()`` method in ``RequestInterface`` and "
+"``Request`` has been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:352
+msgid ""
+"The visibility of the deprecated properties ``$uri`` and ``$config`` in "
+"``IncomingRequest`` has been changed to protected."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:354
+msgid "The ``$enableCSRF`` property in ``IncomingRequest`` has been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:355
+msgid ""
+"The ``removeRelativeDirectory()`` method in ``IncomingRequest`` has been "
+"removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:356
+msgid "The ``$proxyIPs`` property in ``Request`` has been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:359
+msgid "Filters"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:361
+msgid ""
+"The following deprecated items have been removed, because now :ref"
+":`multiple-filters` are always enabled."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:363
+msgid "``Filters::enableFilter()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:364
+msgid "``RouteCollection::getFilterForRoute()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:365
+msgid "``Router::$filterInfo``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:366
+msgid "``Router::getFilter()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:371
+msgid "``ModelFactory``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:376
+msgid "``BaseModel::idValue()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:377
+msgid "``BaseModel::fillPlaceholders()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:378
+msgid "``Model::idValue()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:379
+msgid "``Model::classToArray()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:382
+msgid "Response"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:384
+msgid ""
+"The visibility of the deprecated property ``ResponseTrait::$CSP`` has "
+"been changed to protected."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:386
+msgid "The following deprecated properties have been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:388
+msgid "``ResponseTrait::$CSPEnabled``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:389
+msgid "``ResponseTrait::$cookiePrefix``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:390
+msgid "``ResponseTrait::$cookieDomain``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:391
+msgid "``ResponseTrait::$cookiePath``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:392
+msgid "``ResponseTrait::$cookieSecure``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:393
+msgid "``ResponseTrait::$cookieHTTPOnly``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:394
+msgid "``ResponseTrait::$cookieSameSite``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:395
+msgid "``ResponseTrait::$cookies``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:398
+msgid "Security"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:400
+msgid "``SecurityInterface::isExpired()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:401
+msgid "``Security::isExpired()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:402
+msgid "``Security::CSRFVerify()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:403
+msgid "``Security::getCSRFHash()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:404
+msgid "``Security::getCSRFTokenName()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:405
+msgid "``Security::sendCookie()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:406
+msgid "``Security::doSendCookie()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:409
+msgid "CodeIgniter"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:411
+msgid "``$path``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:412
+msgid "``$useSafeOutput``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:413
+msgid "``useSafeOutput()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:414
+msgid "``setPath()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:417
+msgid "Test"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:419
+msgid "``CIDatabaseTestCase``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:420
+msgid "``ControllerResponse``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:421
+msgid "``ControllerTester``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:422
+msgid "``FeatureResponse``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:423
+msgid "``FeatureTestCase``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:424
+msgid "``Mock\\MockSecurityConfig``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:427
+msgid "Spark Commands"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:429
+msgid "``migrate:create``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:430
+msgid "``session:migration``"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:435
+msgid ""
+"**Cache:** The deprecated "
+"``CodeIgniter\\Cache\\Exceptions\\ExceptionInterface`` has been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:436
+#: ../../source/changelogs/v4.5.0.rst:459
+msgid "**Config:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:437
+msgid "The deprecated ``CodeIgniter\\Config\\Config`` class has been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:438
+msgid ""
+"The deprecated ``CodeIgniter\\Config\\BaseService::discoverServices()`` "
+"method has been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:440
+msgid ""
+"**Controller:** The deprecated ``Controller::loadHelpers()`` method has "
+"been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:441
+msgid ""
+"**Exceptions:** The deprecated ``CodeIgniter\\Exceptions\\CastException``"
+" class has been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:442
+msgid ""
+"**Entity:** The deprecated ``CodeIgniter\\Entity`` class has been "
+"removed. Use ``CodeIgniter\\Entity\\Entity`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:444
+msgid "**spark:** The deprecated constant ``SPARKED`` has been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:448
+msgid "Message Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:450
+msgid "Added ``CLI.generator.className.test`` message."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:451
+msgid "Added ``Validation.field_exists`` error message."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:455
+msgid "Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:457
+msgid ""
+"**Bootstrap:** The loading of **.env** and defining ``ENVIRONMENT`` have "
+"been moved before loading of **bootstrap.php**."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:460
+msgid ""
+"``Config\\Feature::$multipleFilters`` has been removed, because now :ref"
+":`multiple-filters` are always enabled."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:462
+msgid ""
+"The default error level in the production environment "
+"(**app/Config/Boot/production.php**) has been changed to ``E_ALL & "
+"~E_DEPRECATED`` to match the default **php.ini** for production."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:465
+msgid ""
+"**RouteCollection:** The HTTP method keys in the protected property "
+"``$routes`` has been fixed from lowercase to uppercase."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:467
+msgid ""
+"**Exceptions:** Unused ``CodeIgniter\\Exceptions\\AlertError`` and "
+"``CodeIgniter\\Exceptions\\EmergencyError`` were removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:469
+msgid ""
+"**Forge:** ``SQLSRV`` Forge now converts ``ENUM`` data types to "
+"``VARCHAR(n)`` when you add table columns. In previous version, it "
+"converted to ``TEXT`` that is deprecated in SQL Server."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:472
+msgid "``declare(strict_types=1)`` has been added to most framework codebase."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:476
+msgid "Deprecations"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:478
+msgid ""
+"**Services:** The ``BaseService::$services`` property has been "
+"deprecated. No longer used."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:480
+msgid "**CodeIgniter:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:481
+msgid "The ``determinePath()`` method has been deprecated. No longer used."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:482
+msgid ""
+"The ``resolvePlatformExtensions()`` method has been deprecated. No longer"
+" used. It has been moved to the "
+"``CodeIgniter\\Boot::checkMissingExtensions()`` method."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:485
+msgid ""
+"The ``bootstrapEnvironment()`` method has been deprecated. No longer "
+"used. It has been moved to the "
+"``CodeIgniter\\Boot::loadEnvironmentBootstrap()`` method."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:488
+msgid ""
+"The ``initializeKint()`` method has been deprecated. No longer used. It "
+"has been moved to the ``Autoloader``."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:490
+msgid ""
+"The ``autoloadKint()`` method has been deprecated. No longer used. It has"
+" been moved to the ``Autoloader``."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:492
+msgid ""
+"The ``configureKint()`` method has been deprecated. No longer used. It "
+"has been moved to the ``Autoloader``."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:494
+msgid ""
+"**Response:** The constructor parameter ``$config`` has been deprecated. "
+"No longer used."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:496
+msgid "**Filters:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:497
+msgid ""
+"The feature that ``Filters`` accept the lowercase HTTP method keys of "
+"``Config\\Filters::$methods`` has been deprecated. Use correct uppercase "
+"HTTP method keys instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:500
+msgid ""
+"The feature that the ``spark filter:check`` command accepts the lowercase"
+" HTTP method has been deprecated. Use correct uppercase HTTP method "
+"instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:502
+msgid ""
+"**RouteCollection:** The feature that the ``match()`` and "
+"``setHTTPVerb()`` methods accept the lowercase HTTP methods has been "
+"deprecated. Use correct uppercase HTTP methods instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:505
+msgid ""
+"**FeatureTestTrait:** The feature that the ``call()`` and "
+"``withRoutes()`` methods accept the lowercase HTTP methods has been "
+"deprecated. Use correct uppercase HTTP methods instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:508
+msgid ""
+"**Database:** The ``BaseConnection::$strictOn`` has been deprecated. It "
+"will be moved to ``MySQLi\\Connection`` in the future."
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:513
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.5.0.rst:515
+msgid ""
+"See the repo's `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

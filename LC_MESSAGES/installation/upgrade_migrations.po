@@ -1,0 +1,232 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_migrations.rst:2
+msgid "Upgrade Migrations"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:9
+msgid "Documentations"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:11
+msgid ""
+"`Database Migrations Documentation CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/libraries/migration.html>`_"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:12
+msgid ""
+":doc:`Database Migrations Documentation CodeIgniter 4.x "
+"</dbmgmt/migration>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:15
+msgid "What has been changed"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:17
+msgid ""
+"First of all, the sequential naming (``001_create_users``, "
+"``002_create_posts``) of migrations is not longer supported. Version 4 of"
+" CodeIgniter only supports the timestamp scheme "
+"(``20121031100537_create_users``, ``20121031500638_create_posts``) . If "
+"you have used sequential naming you have to rename each migration file."
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:18
+msgid ""
+"The migration table definition was changed. If you upgrade from CI3 to "
+"CI4 and use the same database, You need to upgrade the migration table "
+"definition and its data."
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:20
+msgid ""
+"The migration procedure has been also changed. You can now migrate the "
+"database with a simple CLI command:"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:27
+msgid "Upgrade Guide"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:29
+msgid ""
+"If your v3 project uses sequential migration names you have to change "
+"those to timestamp names."
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:30
+msgid ""
+"You have to move all migration files to the new folder "
+"**app/Database/Migrations**."
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:31
+msgid ""
+"Remove the line ``defined('BASEPATH') OR exit('No direct script access "
+"allowed');`` if it exists."
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:32
+msgid ""
+"Add this line just after the opening php tag: ``namespace "
+"App\\Database\\Migrations;``."
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:33
+msgid ""
+"Below the ``namespace App\\Database\\Migrations;`` line add this line: "
+"``use CodeIgniter\\Database\\Migration;``"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:34
+msgid "Replace ``extends CI_Migration`` with ``extends Migration``."
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:35
+msgid ""
+"The method names within the ``Forge`` class has been changed to use "
+"camelCase. For example:"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:37
+msgid "``$this->dbforge->add_field`` to ``$this->forge->addField``"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:38
+msgid "``$this->dbforge->add_key`` to ``$this->forge->addKey``"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:39
+msgid "``$this->dbforge->create_table`` to ``$this->forge->addTable``"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:40
+msgid "``$this->dbforge->drop_table`` to ``$this->forge->addTable``"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:42
+msgid ""
+"(optional) You can change the array syntax from ``array(...)`` to "
+"``[...]``"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:43
+msgid "Upgrade the migration table, if you use the same database."
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:45
+msgid ""
+"**(development)** Run the CI4 migration in the development environment or"
+" so with brand new database, to create the new migration table."
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:46
+msgid "**(development)** Export the migration table."
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:47
+msgid "**(production)** Drop (or rename) the existing CI3 migration table."
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:48
+msgid "**(production)** Import the new migration table and the data."
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:51
+msgid "Code Example"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:54
+msgid "CodeIgniter Version 3.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:56
+msgid "Path: **application/migrations**:"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:61
+msgid "CodeIgniter Version 4.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:63
+msgid "Path: **app/Database/Migrations**:"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:68
+msgid "Search & Replace"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:70
+msgid "You can use to following table to search & replace your old CI3 files."
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:73
+msgid "Search"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:73
+msgid "Replace"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:75
+msgid "extends CI_Migration"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:75
+msgid "extends Migration"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:77
+msgid "$this->dbforge->add_field"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:77
+msgid "$this->forge->addField"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:79
+msgid "$this->dbforge->add_key"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:79
+msgid "$this->forge->addKey"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:81
+msgid "$this->dbforge->create_table"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:81
+msgid "$this->forge->createTable"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:83
+msgid "$this->dbforge->drop_table"
+msgstr ""
+
+#: ../../source/installation/upgrade_migrations.rst:83
+msgid "$this->forge->dropTable"
+msgstr ""
+

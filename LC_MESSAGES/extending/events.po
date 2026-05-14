@@ -1,0 +1,232 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/extending/events.rst:2
+msgid "Events"
+msgstr ""
+
+#: ../../source/extending/events.rst:4
+msgid ""
+"CodeIgniter's Events feature provides a means to tap into and modify the "
+"inner workings of the framework without hacking core files. When "
+"CodeIgniter runs, it follows a specific execution process. There may be "
+"instances, however, when you'd like to cause some action to take place at"
+" a particular stage in the execution process. For example, you might want"
+" to run a script right before your controllers get loaded, or right "
+"after, or you might want to trigger one of your own scripts in some other"
+" location."
+msgstr ""
+
+#: ../../source/extending/events.rst:10
+msgid ""
+"Events work on a *publish/subscribe* pattern, where an event is triggered"
+" at some point during the script execution. Other scripts can "
+"\"subscribe\" to that event by registering with the Events class to let "
+"it know they want to perform an action when that event is triggered."
+msgstr ""
+
+#: ../../source/extending/events.rst:19
+msgid "Enabling Events"
+msgstr ""
+
+#: ../../source/extending/events.rst:21
+msgid "Events are always enabled, and are available globally."
+msgstr ""
+
+#: ../../source/extending/events.rst:24
+msgid "Defining an Event"
+msgstr ""
+
+#: ../../source/extending/events.rst:26
+msgid ""
+"Most events are defined within the **app/Config/Events.php** file. You "
+"can subscribe an action to an event with the ``Events`` class's ``on()`` "
+"method. The first parameter is the name of the event to subscribe to. The"
+" second parameter is a callable that will be run when that event is "
+"triggered:"
+msgstr ""
+
+#: ../../source/extending/events.rst:32
+msgid ""
+"In this example, whenever the ``pre_system`` event is executed, an "
+"instance of ``MyClass`` is created and the ``myFunction()`` method is "
+"run. Note that the second parameter can be *any* form of `callable "
+"<https://www.php.net/manual/en/function.is-callable.php>`_ that PHP "
+"recognizes:"
+msgstr ""
+
+#: ../../source/extending/events.rst:39
+msgid "Setting Priorities"
+msgstr ""
+
+#: ../../source/extending/events.rst:41
+msgid ""
+"Since multiple methods can be subscribed to a single event, you will need"
+" a way to define in what order those methods are called. You can do this "
+"by passing a priority value as the third parameter of the ``on()`` "
+"method. Lower values are executed first, with a value of 1 having the "
+"highest priority, and there being no limit on the lower values:"
+msgstr ""
+
+#: ../../source/extending/events.rst:47
+msgid ""
+"Any subscribers with the same priority will be executed in the order they"
+" were defined."
+msgstr ""
+
+#: ../../source/extending/events.rst:49
+msgid ""
+"Since v4.2.0, three class constants are defined for your use, that set "
+"some helpful ranges on the values. You are not required to use these but "
+"you might find they aid readability:"
+msgstr ""
+
+#: ../../source/extending/events.rst:54
+msgid ""
+"The constants ``EVENT_PRIORITY_LOW``, ``EVENT_PRIORITY_NORMAL`` and "
+"``EVENT_PRIORITY_HIGH`` has been removed in v4.6.0."
+msgstr ""
+
+#: ../../source/extending/events.rst:56
+msgid ""
+"Once sorted, all subscribers are executed in order. If any subscriber "
+"returns a boolean false value, then execution of the subscribers will "
+"stop."
+msgstr ""
+
+#: ../../source/extending/events.rst:60
+msgid "Publishing your own Events"
+msgstr ""
+
+#: ../../source/extending/events.rst:62
+msgid ""
+"The Events library makes it simple for you to create events in your own "
+"code, also. To use this feature, you would simply need to call the "
+"``trigger()`` method on the **Events** class with the name of the event:"
+msgstr ""
+
+#: ../../source/extending/events.rst:67
+msgid ""
+"You can pass any number of arguments to the subscribers by adding them as"
+" additional parameters. Subscribers will be given the arguments in the "
+"same order as defined:"
+msgstr ""
+
+#: ../../source/extending/events.rst:73
+msgid "Simulating Events"
+msgstr ""
+
+#: ../../source/extending/events.rst:75
+msgid ""
+"During testing, you might not want the events to actually fire, as "
+"sending out hundreds of emails a day is both slow and counter-productive."
+" You can tell the Events class to only simulate running the events with "
+"the ``simulate()`` method. When **true**, all events will be skipped over"
+" during the trigger method. Everything else will work as normal, though."
+msgstr ""
+
+#: ../../source/extending/events.rst:81
+msgid "You can stop simulation by passing false:"
+msgstr ""
+
+#: ../../source/extending/events.rst:88
+msgid "Event Points"
+msgstr ""
+
+#: ../../source/extending/events.rst:91
+msgid "For Web Apps"
+msgstr ""
+
+#: ../../source/extending/events.rst:93
+msgid ""
+"The following is a list of available event points for web applications "
+"that are invoked by **public/index.php**:"
+msgstr ""
+
+#: ../../source/extending/events.rst:96
+msgid ""
+"**pre_system** Called early during system execution. The URI, Request, "
+"and Response have been instantiated, but page cache checking, routing, "
+"and execution of \"before\" controller filters have not yet occurred."
+msgstr ""
+
+#: ../../source/extending/events.rst:99
+msgid ""
+"**post_controller_constructor** Called immediately after your controller "
+"is instantiated, but prior to any method calls happening."
+msgstr ""
+
+#: ../../source/extending/events.rst:100
+msgid ""
+"**post_system** Called right before the final rendered page is sent to "
+"the browser, at the end of system execution, after the execution of "
+"\"after\" controller filters."
+msgstr ""
+
+#: ../../source/extending/events.rst:106
+msgid "For CLI Apps"
+msgstr ""
+
+#: ../../source/extending/events.rst:108
+msgid ""
+"The following is a list of available event points for "
+":doc:`../cli/spark_commands`:"
+msgstr ""
+
+#: ../../source/extending/events.rst:110
+msgid "**pre_command** Called right before the command code execution."
+msgstr ""
+
+#: ../../source/extending/events.rst:111
+msgid "**post_command** Called right after the command code execution."
+msgstr ""
+
+#: ../../source/extending/events.rst:114
+msgid "Others"
+msgstr ""
+
+#: ../../source/extending/events.rst:116
+msgid ""
+"The following is a list of event points available for each of the "
+"libraries:"
+msgstr ""
+
+#: ../../source/extending/events.rst:118
+msgid ""
+"**email** Called after an email sent successfully from "
+"``CodeIgniter\\Email\\Email``. Receives an array of the ``Email`` class's"
+" properties as a parameter."
+msgstr ""
+
+#: ../../source/extending/events.rst:119
+msgid ""
+"**DBQuery** Called after a database query whether successful or not. "
+"Receives the ``Query`` object."
+msgstr ""
+
+#: ../../source/extending/events.rst:120
+msgid ""
+"**migrate** Called after a successful migration call to ``latest()`` or "
+"``regress()``. Receives the current properties of ``MigrationRunner`` as "
+"well as the name of the method."
+msgstr ""
+

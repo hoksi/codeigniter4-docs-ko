@@ -1,0 +1,568 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/database/results.rst:3
+msgid "Generating Query Results"
+msgstr ""
+
+#: ../../source/database/results.rst:5
+msgid "There are several ways to generate query results:"
+msgstr ""
+
+#: ../../source/database/results.rst:13
+msgid "Result Arrays"
+msgstr ""
+
+#: ../../source/database/results.rst:18
+msgid "getResult()"
+msgstr ""
+
+#: ../../source/database/results.rst:20
+msgid ""
+"This method returns the query result as an array of **objects**, or **an "
+"empty array** on failure."
+msgstr ""
+
+#: ../../source/database/results.rst:24
+msgid "Getting an Array of stdClass"
+msgstr ""
+
+#: ../../source/database/results.rst:26
+msgid "Typically you'll use this in a foreach loop, like this:"
+msgstr ""
+
+#: ../../source/database/results.rst:31
+msgid ""
+"The above method is an alias of "
+":php:meth:`CodeIgniter\\\\Database\\\\BaseResult::getResultObject()`."
+msgstr ""
+
+#: ../../source/database/results.rst:34
+msgid "Getting an Array of Array"
+msgstr ""
+
+#: ../../source/database/results.rst:36
+msgid ""
+"You can pass in the string 'array' if you wish to get your results as an "
+"array of arrays:"
+msgstr ""
+
+#: ../../source/database/results.rst:41
+msgid "The above usage is an alias of `getResultArray()`_."
+msgstr ""
+
+#: ../../source/database/results.rst:44
+msgid "Getting an Array of Custom Object"
+msgstr ""
+
+#: ../../source/database/results.rst:46
+msgid ""
+"You can also pass a string to ``getResult()`` which represents a class to"
+" instantiate for each result object"
+msgstr ""
+
+#: ../../source/database/results.rst:51
+msgid "The above method is an alias of `getCustomResultObject()`_."
+msgstr ""
+
+#: ../../source/database/results.rst:54
+msgid "getResultArray()"
+msgstr ""
+
+#: ../../source/database/results.rst:56
+msgid ""
+"This method returns the query result as a pure array, or an empty array "
+"when no result is produced. Typically you'll use this in a foreach loop, "
+"like this:"
+msgstr ""
+
+#: ../../source/database/results.rst:64
+msgid "Result Rows"
+msgstr ""
+
+#: ../../source/database/results.rst:67
+msgid "getRow()"
+msgstr ""
+
+#: ../../source/database/results.rst:69
+msgid ""
+"This method returns a single result row. If your query has more than one "
+"row, it returns only the first row. The result is returned as an "
+"**object**. Here's a usage example:"
+msgstr ""
+
+#: ../../source/database/results.rst:75 ../../source/database/results.rst:93
+msgid ""
+"If you want a specific row returned you can submit the row number as a "
+"digit in the first parameter:"
+msgstr ""
+
+#: ../../source/database/results.rst:80
+msgid ""
+"You can also add a second String parameter, which is the name of a class "
+"to instantiate the row with:"
+msgstr ""
+
+#: ../../source/database/results.rst:86
+msgid "getRowArray()"
+msgstr ""
+
+#: ../../source/database/results.rst:88
+msgid ""
+"Identical to the above ``row()`` method, except it returns an array. "
+"Example:"
+msgstr ""
+
+#: ../../source/database/results.rst:98
+msgid ""
+"In addition, you can walk forward/backward/first/last through your "
+"results using these variations:"
+msgstr ""
+
+#: ../../source/database/results.rst
+msgid "``$row = $query->getFirstRow()``"
+msgstr ""
+
+#: ../../source/database/results.rst
+msgid "``$row = $query->getLastRow()``"
+msgstr ""
+
+#: ../../source/database/results.rst
+msgid "``$row = $query->getNextRow()``"
+msgstr ""
+
+#: ../../source/database/results.rst
+msgid "``$row = $query->getPreviousRow()``"
+msgstr ""
+
+#: ../../source/database/results.rst:106
+msgid ""
+"By default they return an object unless you put the word \"array\" in the"
+" parameter:"
+msgstr ""
+
+#: ../../source/database/results.rst
+msgid "``$row = $query->getFirstRow('array')``"
+msgstr ""
+
+#: ../../source/database/results.rst
+msgid "``$row = $query->getLastRow('array')``"
+msgstr ""
+
+#: ../../source/database/results.rst
+msgid "``$row = $query->getNextRow('array')``"
+msgstr ""
+
+#: ../../source/database/results.rst
+msgid "``$row = $query->getPreviousRow('array')``"
+msgstr ""
+
+#: ../../source/database/results.rst:114
+msgid ""
+"All the methods above will load the whole result into memory "
+"(prefetching). Use ``getUnbufferedRow()`` for processing large result "
+"sets."
+msgstr ""
+
+#: ../../source/database/results.rst:119
+msgid "getUnbufferedRow()"
+msgstr ""
+
+#: ../../source/database/results.rst:121
+msgid ""
+"This method returns a single result row without prefetching the whole "
+"result in memory as ``row()`` does. If your query has more than one row, "
+"it returns the current row and moves the internal data pointer ahead."
+msgstr ""
+
+#: ../../source/database/results.rst:127
+msgid ""
+"For use with MySQLi you may set MySQLi's result mode to "
+"``MYSQLI_USE_RESULT`` for maximum memory savings. Use of this is not "
+"generally recommended but it can be beneficial in some circumstances such"
+" as writing large queries to csv. If you change the result mode be aware "
+"of the tradeoffs associated with it."
+msgstr ""
+
+#: ../../source/database/results.rst:135
+msgid ""
+"When using ``MYSQLI_USE_RESULT`` all subsequent calls on the same "
+"connection will result in error until all records have been fetched or a "
+"``freeResult()`` call has been made. The ``getNumRows()`` method will "
+"only return the number of rows based on the current position of the data "
+"pointer. MyISAM tables will remain locked until all the records have been"
+" fetched or a ``freeResult()`` call has been made."
+msgstr ""
+
+#: ../../source/database/results.rst:142
+msgid ""
+"You can optionally pass 'object' (default) or 'array' in order to specify"
+" the returned value's type:"
+msgstr ""
+
+#: ../../source/database/results.rst:149
+msgid "Custom Result Objects"
+msgstr ""
+
+#: ../../source/database/results.rst:151
+msgid ""
+"You can have the results returned as an instance of a custom class "
+"instead of a ``stdClass`` or array, as the ``getResult()`` and "
+"``getResultArray()`` methods allow. If the class is not already loaded "
+"into memory, the Autoloader will attempt to load it. The object will have"
+" all values returned from the database set as properties. If these have "
+"been declared and are non-public then you should provide a ``__set()`` "
+"method to allow them to be set."
+msgstr ""
+
+#: ../../source/database/results.rst:158 ../../source/database/results.rst:172
+#: ../../source/database/results.rst:182 ../../source/database/results.rst:188
+#: ../../source/database/results.rst:233
+msgid "Example:"
+msgstr ""
+
+#: ../../source/database/results.rst:162
+msgid ""
+"In addition to the two methods listed below, the following methods also "
+"can take a class name to return the results as: ``getFirstRow()``, "
+"``getLastRow()``, ``getNextRow()``, and ``getPreviousRow()``."
+msgstr ""
+
+#: ../../source/database/results.rst:167
+msgid "getCustomResultObject()"
+msgstr ""
+
+#: ../../source/database/results.rst:169
+msgid ""
+"Returns the entire result set as an array of instances of the class "
+"requested. The only parameter is the name of the class to instantiate."
+msgstr ""
+
+#: ../../source/database/results.rst:177
+msgid "getCustomRowObject()"
+msgstr ""
+
+#: ../../source/database/results.rst:179
+msgid ""
+"Returns a single row from your query results. The first parameter is the "
+"row number of the results. The second parameter is the class name to "
+"instantiate."
+msgstr ""
+
+#: ../../source/database/results.rst:186
+msgid "You can also use the ``getRow()`` method in exactly the same way."
+msgstr ""
+
+#: ../../source/database/results.rst:194
+msgid "Result Helper Methods"
+msgstr ""
+
+#: ../../source/database/results.rst:197
+msgid "getFieldCount()"
+msgstr ""
+
+#: ../../source/database/results.rst:199
+msgid ""
+"The number of FIELDS (columns) returned by the query. Make sure to call "
+"the method using your query result object:"
+msgstr ""
+
+#: ../../source/database/results.rst:205
+msgid "getFieldNames()"
+msgstr ""
+
+#: ../../source/database/results.rst:207
+msgid ""
+"Returns an array with the names of the FIELDS (columns) returned by the "
+"query. Make sure to call the method using your query result object:"
+msgstr ""
+
+#: ../../source/database/results.rst:213
+msgid "getNumRows()"
+msgstr ""
+
+#: ../../source/database/results.rst:215
+msgid ""
+"The number of records returned by the query. Make sure to call the method"
+" using your query result object:"
+msgstr ""
+
+#: ../../source/database/results.rst:220
+msgid ""
+"Because SQLite3 lacks an efficient method returning a record count, "
+"CodeIgniter will fetch and buffer the query result records internally and"
+" return a count of the resulting record array, which can be inefficient."
+msgstr ""
+
+#: ../../source/database/results.rst:225
+msgid "freeResult()"
+msgstr ""
+
+#: ../../source/database/results.rst:227
+msgid ""
+"It frees the memory associated with the result and deletes the result "
+"resource ID. Normally PHP frees its memory automatically at the end of "
+"script execution. However, if you are running a lot of queries in a "
+"particular script you might want to free the result after each query "
+"result has been generated in order to cut down on memory consumption."
+msgstr ""
+
+#: ../../source/database/results.rst:238
+msgid "dataSeek()"
+msgstr ""
+
+#: ../../source/database/results.rst:240
+msgid ""
+"This method sets the internal pointer for the next result row to be "
+"fetched. It is only useful in combination with ``getUnbufferedRow()``."
+msgstr ""
+
+#: ../../source/database/results.rst:243
+msgid ""
+"It accepts a positive integer value, which defaults to 0 and returns true"
+" on success or false on failure."
+msgstr ""
+
+#: ../../source/database/results.rst:248
+msgid ""
+"Not all database drivers support this feature and will return false. Most"
+" notably - you won't be able to use it with PDO."
+msgstr ""
+
+#: ../../source/database/results.rst:253
+msgid "Class Reference"
+msgstr ""
+
+#: ../../source/database/results.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/database/results.rst:261
+msgid "Type of requested results - array, object, or class name"
+msgstr ""
+
+#: ../../source/database/results.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/database/results.rst:262 ../../source/database/results.rst:272
+#: ../../source/database/results.rst:282 ../../source/database/results.rst:293
+msgid "Array containing the fetched rows"
+msgstr ""
+
+#: ../../source/database/results.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/database/results.rst:265
+msgid ""
+"A wrapper for the ``getResultArray()``, ``getResultObject()`` and "
+"``getCustomResultObject()`` methods."
+msgstr ""
+
+#: ../../source/database/results.rst:268 ../../source/database/results.rst:278
+msgid "Usage: see `Result Arrays`_."
+msgstr ""
+
+#: ../../source/database/results.rst:275
+msgid ""
+"Returns the query results as an array of rows, where each row is itself "
+"an associative array."
+msgstr ""
+
+#: ../../source/database/results.rst:285
+msgid ""
+"Returns the query results as an array of rows, where each row is an "
+"object of type ``stdClass``."
+msgstr ""
+
+#: ../../source/database/results.rst:288
+msgid "Usage: see `Getting an Array of stdClass`_."
+msgstr ""
+
+#: ../../source/database/results.rst:292
+msgid "Class name for the resulting rows"
+msgstr ""
+
+#: ../../source/database/results.rst:296
+msgid ""
+"Returns the query results as an array of rows, where each row is an "
+"instance of the specified class."
+msgstr ""
+
+#: ../../source/database/results.rst:301 ../../source/database/results.rst:324
+msgid "Index of the query results row to be returned"
+msgstr ""
+
+#: ../../source/database/results.rst:302 ../../source/database/results.rst:313
+#: ../../source/database/results.rst:373 ../../source/database/results.rst:381
+#: ../../source/database/results.rst:389 ../../source/database/results.rst:397
+msgid "Type of the requested result - array, object, or class name"
+msgstr ""
+
+#: ../../source/database/results.rst:303 ../../source/database/results.rst:325
+#: ../../source/database/results.rst:347
+msgid "The requested row or null if it doesn't exist"
+msgstr ""
+
+#: ../../source/database/results.rst:306
+msgid ""
+"A wrapper for the ``getRowArray()``, ``getRowObject()`` and "
+"``getCustomRowObject()`` methods."
+msgstr ""
+
+#: ../../source/database/results.rst:309 ../../source/database/results.rst:320
+#: ../../source/database/results.rst:330 ../../source/database/results.rst:341
+msgid "Usage: see `Result Rows`_."
+msgstr ""
+
+#: ../../source/database/results.rst:314
+msgid "Next row from the result set or null if it doesn't exist"
+msgstr ""
+
+#: ../../source/database/results.rst:317
+msgid "Fetches the next result row and returns it in the requested form."
+msgstr ""
+
+#: ../../source/database/results.rst:328
+msgid "Returns the requested result row as an associative array."
+msgstr ""
+
+#: ../../source/database/results.rst:334
+msgid ""
+"Index of the query results row to be returned :returns:    The requested "
+"row or null if it doesn't exist"
+msgstr ""
+
+#: ../../source/database/results.rst:338
+msgid "Returns the requested result row as an object of type ``stdClass``."
+msgstr ""
+
+#: ../../source/database/results.rst:345
+msgid "Index of the results row to return"
+msgstr ""
+
+#: ../../source/database/results.rst:346
+msgid "Class name for the resulting row"
+msgstr ""
+
+#: ../../source/database/results.rst:350
+msgid "Returns the requested result row as an instance of the requested class."
+msgstr ""
+
+#: ../../source/database/results.rst:355
+msgid "Index of the results row to be returned next"
+msgstr ""
+
+#: ../../source/database/results.rst:356
+msgid "true on success, false on failure"
+msgstr ""
+
+#: ../../source/database/results.rst:359
+msgid "Moves the internal results row pointer to the desired offset."
+msgstr ""
+
+#: ../../source/database/results.rst:361 ../../source/database/results.rst:410
+#: ../../source/database/results.rst:441
+msgid "Usage: see `Result Helper Methods`_."
+msgstr ""
+
+#: ../../source/database/results.rst:365
+msgid "Column name or array of key/value pairs"
+msgstr ""
+
+#: ../../source/database/results.rst:366
+msgid "Value to assign to the column, $key is a single field name"
+msgstr ""
+
+#: ../../source/database/results.rst:369
+msgid "Assigns a value to a particular column."
+msgstr ""
+
+#: ../../source/database/results.rst:374
+msgid "Next row of result set, or null if it doesn't exist"
+msgstr ""
+
+#: ../../source/database/results.rst:377
+msgid "Returns the next row from the result set."
+msgstr ""
+
+#: ../../source/database/results.rst:382
+msgid "Previous row of result set, or null if it doesn't exist"
+msgstr ""
+
+#: ../../source/database/results.rst:385
+msgid "Returns the previous row from the result set."
+msgstr ""
+
+#: ../../source/database/results.rst:390
+msgid "First row of result set, or null if it doesn't exist"
+msgstr ""
+
+#: ../../source/database/results.rst:393
+msgid "Returns the first row from the result set."
+msgstr ""
+
+#: ../../source/database/results.rst:398
+msgid "Last row of result set, or null if it doesn't exist"
+msgstr ""
+
+#: ../../source/database/results.rst:401
+msgid "Returns the last row from the result set."
+msgstr ""
+
+#: ../../source/database/results.rst:405
+msgid "Number of fields in the result set"
+msgstr ""
+
+#: ../../source/database/results.rst:408
+msgid "Returns the number of fields in the result set."
+msgstr ""
+
+#: ../../source/database/results.rst:414
+msgid "Array of column names"
+msgstr ""
+
+#: ../../source/database/results.rst:417
+msgid "Returns an array containing the field names in the result set."
+msgstr ""
+
+#: ../../source/database/results.rst:422
+msgid "Array containing field meta-data"
+msgstr ""
+
+#: ../../source/database/results.rst:425
+msgid "Generates an array of ``stdClass`` objects containing field meta-data."
+msgstr ""
+
+#: ../../source/database/results.rst:430
+msgid "Number of rows in result set"
+msgstr ""
+
+#: ../../source/database/results.rst:433
+msgid "Returns number of rows returned by the query"
+msgstr ""
+
+#: ../../source/database/results.rst:439
+msgid "Frees a result set."
+msgstr ""
+

@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/dbmgmt/db_commands.rst:3
+msgid "Database Commands"
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:5
+msgid "CodeIgniter provides some simple commands for database management."
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:13
+msgid "Showing Table Information"
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:16
+msgid "List the Tables in Your Database"
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:19
+msgid "db:table --show"
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:21
+msgid ""
+"To list all the tables in your database straight from your favorite "
+"terminal, you can use the ``db:table --show`` command:"
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:28
+msgid ""
+"When using this command it is assumed that a table exists. Otherwise, "
+"CodeIgniter will complain that the database has no tables."
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:34
+msgid "Specify the Database Group"
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:37
+msgid "db:table --dbgroup"
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:41
+msgid "You can specify the database group to use with the ``--dbgroup`` option:"
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:48
+msgid "Retrieve Some Records"
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:51
+msgid "db:table"
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:53
+msgid ""
+"When you have a table named ``my_table``, you can see the field names and"
+" the records of a table:"
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:59
+msgid ""
+"If the table ``my_table`` is not in the database, CodeIgniter displays a "
+"list of available tables to select."
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:61
+msgid "You can also use the following command without the table name:"
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:67
+msgid "In this case, the table name will be asked."
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:69
+msgid "You can also pass a few options:"
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:75
+msgid "The option ``--limit-rows 50`` limits the number of rows to 50 rows."
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:77
+msgid ""
+"The option  ``--limit-field-value 20`` limits the length of the field "
+"values to 20 characters, to prevent confusion of the table output in the "
+"terminal."
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:79
+msgid "The option ``--desc`` sets the sort direction to \"DESC\"."
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:82
+msgid "Retrieve Field Metadata"
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:85
+msgid "db:table --metadata"
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:87
+msgid ""
+"When you have a table named ``my_table``, you can see metadata like the "
+"column type, max length of the table with the ``--metadata`` option:"
+msgstr ""
+
+#: ../../source/dbmgmt/db_commands.rst:93
+msgid ""
+"When using this command it is assumed that the table exists. Otherwise, "
+"CodeIgniter will show a table list to select. Also, you can use this "
+"command as ``db:table --metadata``."
+msgstr ""
+

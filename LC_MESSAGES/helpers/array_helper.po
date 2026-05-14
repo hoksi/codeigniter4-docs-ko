@@ -1,0 +1,233 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/helpers/array_helper.rst:3
+msgid "Array Helper"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:5
+msgid ""
+"The array helper provides several functions to simplify more complex "
+"usages of arrays. It is not intended to duplicate any of the existing "
+"functionality that PHP provides - unless it is to vastly simplify their "
+"usage."
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:13
+msgid "Loading this Helper"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:15
+msgid "This helper is loaded using the following code:"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:21
+msgid "Available Functions"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:23
+msgid "The following functions are available:"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:27
+msgid "The dot-notation string describing how to search the array"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:28
+#: ../../source/helpers/array_helper.rst:62
+msgid "The array to search"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:29
+#: ../../source/helpers/array_helper.rst:63
+msgid "The value found within the array, or null"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:32
+msgid ""
+"This method allows you to use dot-notation to search through an array for"
+" a specific-key, and allows the use of a the ``*`` wildcard. Given the "
+"following array:"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:38
+msgid ""
+"We can locate the value of ``fizz`` by using the search string "
+"``foo.buzz.fizz``. Likewise, the value of ``baz`` can be found with "
+"``foo.bar.baz``:"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:44
+msgid ""
+"You can use the asterisk (``*``) as a wildcard to replace any of the "
+"segments. When found, it will search through all of the child nodes until"
+" it finds it. This is handy if you don't know the values, or if your "
+"values have a numeric index:"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:51
+msgid ""
+"If the array key contains a dot (``.``), then the key can be escaped with"
+" a backslash (``\\``):"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:56
+msgid ""
+"Prior to v4.2.0, ``dot_array_search('foo.bar.baz', ['foo' => ['bar' => "
+"23]])`` returned ``23`` due to a bug. v4.2.0 and later returns ``null``."
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:61
+msgid "The target key"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:66
+msgid ""
+"Returns the value of an element with a key value in an array of uncertain"
+" depth"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:70
+msgid "The array to be sorted (passed by reference)."
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:71
+msgid ""
+"The array keys to sort after and the respective PHP sort flags as an "
+"associative array."
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:73
+msgid "Whether sorting was successful or not."
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:76
+msgid ""
+"This method sorts the elements of a multidimensional array by the values "
+"of one or more keys in a hierarchical way. Take the following array, that"
+" might be returned from, e.g., the ``find()`` function of a model:"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:83
+msgid ""
+"Now sort this array by two keys. Note that the method supports the dot-"
+"notation to access values in deeper array levels, but does not support "
+"wildcards:"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:89
+msgid ""
+"The ``$players`` array is now sorted by the ``order`` value in each "
+"players' ``team`` subarray. If this value is equal for several players, "
+"these players will be ordered by their ``position``. The resulting array "
+"is:"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:96
+msgid ""
+"In the same way, the method can also handle an array of objects. In the "
+"example above it is further possible that each ``player`` is represented "
+"by an array, while the ``teams`` are objects. The method will detect the "
+"type of elements in each nesting level and handle it accordingly."
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:103
+msgid "The multidimensional array to flatten"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:104
+msgid ""
+"Optional ID to prepend to the outer keys. Used internally for flattening "
+"keys."
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:106
+msgid "The flattened array"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:108
+msgid ""
+"This function flattens a multidimensional array to a single key-value "
+"array by using dots as separators for the keys."
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:114
+msgid "On inspection, ``$flattened`` is equal to:"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:119
+msgid ""
+"Users may use the ``$id`` parameter on their own, but are not required to"
+" do so. The function uses this parameter internally to track the "
+"flattened keys. If users will be supplying an initial ``$id``, it will be"
+" prepended to all keys."
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:128
+msgid "Data rows (most likely from query results)"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:129
+msgid "Indexes to group values. Follows dot syntax"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:130
+msgid "If true, ``null`` and ``''`` values are not filtered out"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:132
+msgid "An array grouped by indexes values"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:134
+msgid ""
+"This function allows you to group data rows together by index values. The"
+" depth of returned array equals the number of indexes passed as "
+"parameter."
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:137
+msgid "The example shows some data (i.e. loaded from an API) with nested arrays."
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:142
+msgid ""
+"We want to group them first by ``gender``, then by ``hr.department`` (max"
+" depth = 2). First the result when excluding empty values:"
+msgstr ""
+
+#: ../../source/helpers/array_helper.rst:148
+msgid "And here the same code, but this time we want to include empty values:"
+msgstr ""
+

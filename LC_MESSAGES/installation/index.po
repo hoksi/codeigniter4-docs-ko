@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/index.rst:3
+msgid "Installation"
+msgstr ""
+
+#: ../../source/installation/index.rst:5
+msgid ""
+"CodeIgniter has two supported installation methods: manual download, or "
+"using `Composer <https://getcomposer.org>`_. Which is right for you?"
+msgstr ""
+
+#: ../../source/installation/index.rst:9
+msgid ""
+"We recommend the Composer installation because it keeps CodeIgniter up to"
+" date easily."
+msgstr ""
+
+#: ../../source/installation/index.rst:10
+msgid ""
+"If you would like the simple \"download & go\" install that CodeIgniter 3"
+" is known for, choose the manual installation."
+msgstr ""
+
+#: ../../source/installation/index.rst:13
+msgid ""
+"However you choose to install and run CodeIgniter4, the latest `user "
+"guide <https://codeigniter.com/user_guide/>`_ is accessible online. If "
+"you want to see previous versions, you can download from the "
+"`codeigniter4/userguide "
+"<https://github.com/codeigniter4/userguide/releases>`_ repository."
+msgstr ""
+
+#: ../../source/installation/index.rst:19
+msgid ""
+"Before using CodeIgniter 4, make sure that your server meets the "
+":doc:`requirements </intro/requirements>`, in particular the PHP version "
+"and the PHP extensions that are needed. You may find that you have to "
+"uncomment the ``php.ini`` \"extension\" lines to enable \"curl\" and "
+"\"intl\", for instance."
+msgstr ""
+

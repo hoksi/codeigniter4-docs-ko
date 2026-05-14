@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/database/events.rst:3
+msgid "Database Events"
+msgstr ""
+
+#: ../../source/database/events.rst:5
+msgid ""
+"The Database classes contain a few :doc:`Events </extending/events>` that"
+" you can tap into in order to learn more about what is happening during "
+"the database execution. These events can be used to collect data for "
+"analysis and reporting. The :doc:`Debug Toolbar </testing/debugging>` "
+"uses this to collect the queries to display in the Toolbar."
+msgstr ""
+
+#: ../../source/database/events.rst:16
+msgid "The Events"
+msgstr ""
+
+#: ../../source/database/events.rst:21
+msgid "DBQuery"
+msgstr ""
+
+#: ../../source/database/events.rst:23
+msgid ""
+"This event is triggered whenever a new query has been run, whether "
+"successful or not. The only parameter is a :doc:`Query "
+"</database/queries>` instance of the current query."
+msgstr ""
+
+#: ../../source/database/events.rst:27
+msgid ""
+"You could use this to display all queries in STDOUT, or logging to a "
+"file, or even creating tools to do automatic query analysis to help you "
+"spot potentially missing indexes, slow queries, etc."
+msgstr ""
+
+#: ../../source/database/events.rst:31
+msgid "An example to log all queries:"
+msgstr ""
+

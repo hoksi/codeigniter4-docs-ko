@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/extending/basecontroller.rst:3
+msgid "Extending the Controller"
+msgstr ""
+
+#: ../../source/extending/basecontroller.rst:5
+msgid ""
+"CodeIgniter's core Controller should not be changed, but a default class "
+"extension is provided for you at **app/Controllers/BaseController.php**. "
+"Any new controllers you make should extend ``BaseController`` to take "
+"advantage of preloaded components and any additional functionality you "
+"provide:"
+msgstr ""
+
+#: ../../source/extending/basecontroller.rst:16
+msgid "Preloading Components"
+msgstr ""
+
+#: ../../source/extending/basecontroller.rst:18
+msgid ""
+"The base controller is a great place to load any helpers, models, "
+"libraries, services, etc. that you intend to use every time your project "
+"runs. Helpers should be added to the pre-defined ``$helpers`` array. For "
+"example, if you want the HTML and Text helpers universally available:"
+msgstr ""
+
+#: ../../source/extending/basecontroller.rst:24
+msgid ""
+"Any other components to load or data to process should be added to the "
+"constructor ``initController()``. For example, if your project uses the "
+"Session Library heavily you may want to initiate it here:"
+msgstr ""
+
+#: ../../source/extending/basecontroller.rst:30
+msgid "Additional Methods"
+msgstr ""
+
+#: ../../source/extending/basecontroller.rst:32
+msgid ""
+"The base controller is not routable. As an added security measure **all**"
+" new methods you create should be declared as ``protected`` or "
+"``private`` and only be accessed through the controllers you create that "
+"extend ``BaseController``."
+msgstr ""
+
+#: ../../source/extending/basecontroller.rst:37
+msgid "Other Options"
+msgstr ""
+
+#: ../../source/extending/basecontroller.rst:39
+msgid ""
+"You may find that you need more than one base controller. You can create "
+"new base controllers as long as any other controllers that you make "
+"extend the correct base. For example, if your project has an involved "
+"public interface and a simple administrative portal you may want to "
+"extend ``BaseController`` to the public controllers and make "
+"``AdminController`` for any administrative controllers."
+msgstr ""
+
+#: ../../source/extending/basecontroller.rst:43
+msgid ""
+"If you do not want to use the base controller you may bypass it by having"
+" your controllers extend the system Controller instead:"
+msgstr ""
+

@@ -1,0 +1,280 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/testing/database.rst:3
+msgid "Testing Your Database"
+msgstr ""
+
+#: ../../source/testing/database.rst:10
+msgid "The Test Class"
+msgstr ""
+
+#: ../../source/testing/database.rst:12
+msgid ""
+"In order to take advantage of the built-in database tools that "
+"CodeIgniter provides for testing, your tests must extend "
+"``CIUnitTestCase`` and use the ``DatabaseTestTrait``:"
+msgstr ""
+
+#: ../../source/testing/database.rst:17
+msgid ""
+"Because special functionality executed during the ``setUp()`` and "
+"``tearDown()`` phases, you must ensure that you call the parent's methods"
+" if you need to use those methods, otherwise you will lose much of the "
+"functionality described here:"
+msgstr ""
+
+#: ../../source/testing/database.rst:24
+msgid "Setting Up a Test Database"
+msgstr ""
+
+#: ../../source/testing/database.rst:26
+msgid ""
+"When running database tests, you need to provide a database that can be "
+"used during testing. Instead of using the PHPUnit built-in database "
+"features, the framework provides tools specific to CodeIgniter. The first"
+" step is to ensure that you have set up a ``tests`` database group in "
+"**app/Config/Database.php**. This specifies a database connection that is"
+" only used while running tests, to keep your other data safe."
+msgstr ""
+
+#: ../../source/testing/database.rst:31
+msgid ""
+"If you have multiple developers on your team, you will likely want to "
+"keep your credentials stored in the **.env** file. To do so, edit the "
+"file to ensure the following lines are present and have the correct "
+"information::"
+msgstr ""
+
+#: ../../source/testing/database.rst:44
+msgid "Migrations and Seeds"
+msgstr ""
+
+#: ../../source/testing/database.rst:46
+msgid ""
+"When running tests, you need to ensure that your database has the correct"
+" schema set up and that it is in a known state for every test. You can "
+"use migrations and seeds to set up your database, by adding a couple of "
+"class properties to your test."
+msgstr ""
+
+#: ../../source/testing/database.rst:53
+msgid "Migrations"
+msgstr ""
+
+#: ../../source/testing/database.rst:56
+msgid "$migrate"
+msgstr ""
+
+#: ../../source/testing/database.rst:58
+msgid ""
+"This boolean value determines whether the database migration runs before "
+"test. By default, the database is always migrated to the latest available"
+" state as defined by ``$namespace``. If ``false``, migration never runs. "
+"If you want to disable migration, set ``false``."
+msgstr ""
+
+#: ../../source/testing/database.rst:63
+msgid "$migrateOnce"
+msgstr ""
+
+#: ../../source/testing/database.rst:65
+msgid ""
+"This boolean value determines whether the database migration runs only "
+"once. If you want to run migration once before the first test, set "
+"``true``. If not present or ``false``, migration runs before each test."
+msgstr ""
+
+#: ../../source/testing/database.rst:70
+msgid "$refresh"
+msgstr ""
+
+#: ../../source/testing/database.rst:72
+msgid ""
+"This boolean value determines whether the database is completely "
+"refreshed before test. If ``true``, all migrations are rolled back to "
+"version 0."
+msgstr ""
+
+#: ../../source/testing/database.rst:76
+msgid "$namespace"
+msgstr ""
+
+#: ../../source/testing/database.rst:78
+msgid ""
+"By default, CodeIgniter will look in "
+"**tests/_support/Database/Migrations** to locate the migrations that it "
+"should run during testing. You can change this location by specifying a "
+"new namespace in the ``$namespace`` properties. This should not include "
+"the **Database\\\\Migrations** sub-namespace but just the base namespace."
+msgstr ""
+
+#: ../../source/testing/database.rst:82
+msgid ""
+"If you set this property to ``null``, it runs migrations from all "
+"available namespaces like ``php spark migrate --all``."
+msgstr ""
+
+#: ../../source/testing/database.rst:85
+msgid "Seeds"
+msgstr ""
+
+#: ../../source/testing/database.rst:88
+msgid "$seed"
+msgstr ""
+
+#: ../../source/testing/database.rst:90
+msgid ""
+"If present and not empty, this specifies the name of a Seed file that is "
+"used to populate the database with test data prior to test running."
+msgstr ""
+
+#: ../../source/testing/database.rst:94
+msgid "$seedOnce"
+msgstr ""
+
+#: ../../source/testing/database.rst:96
+msgid ""
+"This boolean value determines whether the database seeding runs only "
+"once. If you want to run database seeding once before the first test, set"
+" ``true``. If not present or ``false``, database seeding runs before each"
+" test."
+msgstr ""
+
+#: ../../source/testing/database.rst:101
+msgid "$basePath"
+msgstr ""
+
+#: ../../source/testing/database.rst:103
+msgid ""
+"By default, CodeIgniter will look in **tests/_support/Database/Seeds** to"
+" locate the seeds that it should run during testing. You can change this "
+"directory by specifying the ``$basePath`` property. This should not "
+"include the **Seeds** directory, but the path to the single directory "
+"that holds the sub-directory."
+msgstr ""
+
+#: ../../source/testing/database.rst:108
+msgid "Helper Methods"
+msgstr ""
+
+#: ../../source/testing/database.rst:110
+msgid ""
+"The **DatabaseTestTrait** class provides several helper methods to aid in"
+" testing your database."
+msgstr ""
+
+#: ../../source/testing/database.rst:113
+msgid "Changing Database State"
+msgstr ""
+
+#: ../../source/testing/database.rst:116
+msgid "regressDatabase()"
+msgstr ""
+
+#: ../../source/testing/database.rst:118
+msgid ""
+"Called during ``$refresh`` described above, this method is available if "
+"you need to reset the database manually."
+msgstr ""
+
+#: ../../source/testing/database.rst:121
+msgid "migrateDatabase()"
+msgstr ""
+
+#: ../../source/testing/database.rst:123
+msgid ""
+"Called during ``setUp()``, this method is available if you need to run "
+"migrations manually."
+msgstr ""
+
+#: ../../source/testing/database.rst:126
+msgid "seed($name)"
+msgstr ""
+
+#: ../../source/testing/database.rst:128
+msgid ""
+"Allows you to manually load a Seed into the database. The only parameter "
+"is the name of the seed to run. The seed must be present within the path "
+"specified in ``$basePath``."
+msgstr ""
+
+#: ../../source/testing/database.rst:132
+msgid "hasInDatabase($table, $data)"
+msgstr ""
+
+#: ../../source/testing/database.rst:134
+msgid ""
+"Inserts a new row into the database. This row is removed after the "
+"current test runs. ``$data`` is an associative array with the data to "
+"insert into the table."
+msgstr ""
+
+#: ../../source/testing/database.rst:140
+msgid "Getting Data from Database"
+msgstr ""
+
+#: ../../source/testing/database.rst:143
+msgid "grabFromDatabase($table, $column, $criteria)"
+msgstr ""
+
+#: ../../source/testing/database.rst:145
+msgid ""
+"Returns the value of ``$column`` from the specified table where the row "
+"matches ``$criteria``. If more than one row is found, it will only return"
+" the first one."
+msgstr ""
+
+#: ../../source/testing/database.rst:151
+msgid "Assertions"
+msgstr ""
+
+#: ../../source/testing/database.rst:154
+msgid "dontSeeInDatabase($table, $criteria)"
+msgstr ""
+
+#: ../../source/testing/database.rst:156
+msgid ""
+"Asserts that a row with criteria matching the key/value pairs in "
+"``$criteria`` DOES NOT exist in the database."
+msgstr ""
+
+#: ../../source/testing/database.rst:161
+msgid "seeInDatabase($table, $criteria)"
+msgstr ""
+
+#: ../../source/testing/database.rst:163
+msgid ""
+"Asserts that a row with criteria matching the key/value pairs in "
+"``$criteria`` DOES exist in the database."
+msgstr ""
+
+#: ../../source/testing/database.rst:168
+msgid "seeNumRecords($expected, $table, $criteria)"
+msgstr ""
+
+#: ../../source/testing/database.rst:170
+msgid ""
+"Asserts that a number of matching rows are found in the database that "
+"match ``$criteria``."
+msgstr ""
+

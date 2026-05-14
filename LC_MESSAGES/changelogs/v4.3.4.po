@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.3.4.rst:2
+msgid "Version 4.3.4"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:4
+msgid "Release Date: April 27, 2023"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:6
+msgid "**4.3.4 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:13
+msgid "BREAKING"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:16
+msgid "Behavior Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:21
+msgid "Redirect Status Code"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:23
+msgid ""
+"Due to a bug, in previous versions, when using HTTP/1.1 or later the "
+"status code of the actual redirect response might be changed even if a "
+"status code was specified. For example, for a GET request, 302 would "
+"change to 307; for a POST request, 307 and 302 would change to 303."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:27
+msgid ""
+"Starting with this version, if you specify a status code in "
+":ref:`redirect <response-redirect-status-code>`, that code will always be"
+" used in the response."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:30
+msgid ""
+"The default code for GET requests has been corrected from 307 to 302 when"
+" using HTTP/1.1 or later."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:32
+msgid ""
+"The default code for HEAD and OPTIONS requests has been corrected from "
+"303 to 307 when using HTTP/1.1 or later."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:34
+msgid ""
+"In ``$routes->addRedirect()``, 302 is specified by default. Therefor 302 "
+"will always be used when you don't specify a status code. In previous "
+"versions, 302 might be changed."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:41
+msgid "Forge::modifyColumn()"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:43
+msgid ""
+"The :ref:`$forge->modifyColumn() <db-forge-modifyColumn>` has been fixed."
+" Due to a bug, in previous versions, SQLite3/Postgres/SQLSRV might change"
+" ``NULL``/``NOT NULL`` unpredictably."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:46
+msgid ""
+"In previous versions, the OCI8 driver did not change ``NULL``/``NOT "
+"NULL`` when you don't specify the ``null`` key."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:48
+msgid ""
+"Now in all database drivers ``$forge->modifyColumn()`` always sets "
+"``NULL`` when you don't specify the ``null`` key."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:50
+msgid ""
+"The ``NULL``/``NOT NULL`` change may still be unexpectedly, it is "
+"recommended to always specify the ``null`` key."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:54
+msgid "Deprecations"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:56
+msgid ""
+"**Text Helper:** :php:func:`random_string()`'s type ``basic``, ``md5``, "
+"and ``sha1`` are deprecated. They are not cryptographically secure."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:60
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:62
+msgid ""
+"**CURLRequest:** Fixed a bug where the response class was shared between "
+"requests."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.4.rst:64
+msgid ""
+"See the repo's `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

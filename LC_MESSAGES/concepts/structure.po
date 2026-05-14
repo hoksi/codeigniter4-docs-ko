@@ -1,0 +1,193 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/concepts/structure.rst:3
+msgid "Application Structure"
+msgstr ""
+
+#: ../../source/concepts/structure.rst:5
+msgid ""
+"To get the most out of CodeIgniter, you need to understand how the "
+"application is structured, by default, and what you can change to meet "
+"the needs of your application."
+msgstr ""
+
+#: ../../source/concepts/structure.rst:14
+msgid "Default Directories"
+msgstr ""
+
+#: ../../source/concepts/structure.rst:16
+msgid "A fresh install has five directories:"
+msgstr ""
+
+#: ../../source/concepts/structure.rst:18
+msgid "**app**"
+msgstr ""
+
+#: ../../source/concepts/structure.rst:19
+msgid "**public**"
+msgstr ""
+
+#: ../../source/concepts/structure.rst:20
+msgid "**writable**"
+msgstr ""
+
+#: ../../source/concepts/structure.rst:21
+msgid "**tests**"
+msgstr ""
+
+#: ../../source/concepts/structure.rst:22
+msgid "**vendor** or **system**"
+msgstr ""
+
+#: ../../source/concepts/structure.rst:24
+msgid "Each of these directories has a very specific part to play."
+msgstr ""
+
+#: ../../source/concepts/structure.rst:27
+msgid "app"
+msgstr ""
+
+#: ../../source/concepts/structure.rst:29
+msgid ""
+"The **app** directory is where all of your application code lives. This "
+"comes with a default directory structure that works well for many "
+"applications."
+msgstr ""
+
+#: ../../source/concepts/structure.rst:32
+msgid "The following folders make up the basic contents:"
+msgstr ""
+
+#: ../../source/concepts/structure.rst:48
+msgid ""
+"Because the **app** directory is already namespaced, you should feel free"
+" to modify the structure of this directory to suit your application's "
+"needs."
+msgstr ""
+
+#: ../../source/concepts/structure.rst:51
+msgid ""
+"For example, you might decide to start using the Repository pattern and "
+"Entities to work with your data. In this case, you could rename the "
+"**Models** directory to **Repositories**, and add a new **Entities** "
+"directory."
+msgstr ""
+
+#: ../../source/concepts/structure.rst:55
+msgid ""
+"All files in this directory live under the ``App`` namespace, though you "
+"are free to change that in **app/Config/Constants.php**."
+msgstr ""
+
+#: ../../source/concepts/structure.rst:59
+msgid "system"
+msgstr ""
+
+#: ../../source/concepts/structure.rst:61
+msgid ""
+"If you install CodeIgniter with Composer, the **system** is located in "
+"**vendor/codeigniter4/framework/system**."
+msgstr ""
+
+#: ../../source/concepts/structure.rst:64
+msgid ""
+"This directory stores the files that make up the framework, itself. While"
+" you have a lot of flexibility in how you use the application directory, "
+"the files in the system directory should never be modified. Instead, you "
+"should extend the classes, or create new classes, to provide the desired "
+"functionality."
+msgstr ""
+
+#: ../../source/concepts/structure.rst:69
+msgid "All files in this directory live under the ``CodeIgniter`` namespace."
+msgstr ""
+
+#: ../../source/concepts/structure.rst:74
+msgid "public"
+msgstr ""
+
+#: ../../source/concepts/structure.rst:76
+msgid ""
+"The **public** folder holds the browser-accessible portion of your web "
+"application, preventing direct access to your source code."
+msgstr ""
+
+#: ../../source/concepts/structure.rst:79
+msgid ""
+"It contains the main **.htaccess** file, **index.php**, and any "
+"application assets that you add, like CSS, javascript, or images."
+msgstr ""
+
+#: ../../source/concepts/structure.rst:82
+msgid ""
+"This folder is meant to be the \"web root\" of your site, and your web "
+"server would be configured to point to it."
+msgstr ""
+
+#: ../../source/concepts/structure.rst:86
+msgid "writable"
+msgstr ""
+
+#: ../../source/concepts/structure.rst:88
+msgid ""
+"This directory holds any directories that might need to be written to in "
+"the course of an application's life. This includes directories for "
+"storing cache files, logs, and any uploads a user might send."
+msgstr ""
+
+#: ../../source/concepts/structure.rst:92
+msgid ""
+"You should add any other directories that your application will need to "
+"write to here. This allows you to keep your other primary directories "
+"non-writable as an added security measure."
+msgstr ""
+
+#: ../../source/concepts/structure.rst:97
+msgid "tests"
+msgstr ""
+
+#: ../../source/concepts/structure.rst:99
+msgid ""
+"This directory is set up to hold your test files. The **_support** "
+"directory holds various mock classes and other utilities that you can use"
+" while writing your tests."
+msgstr ""
+
+#: ../../source/concepts/structure.rst:103
+msgid "This directory does not need to be transferred to your production servers."
+msgstr ""
+
+#: ../../source/concepts/structure.rst:106
+msgid "Modifying Directory Locations"
+msgstr ""
+
+#: ../../source/concepts/structure.rst:108
+msgid ""
+"If you've relocated any of the main directories, you can change the "
+"configuration settings inside **app/Config/Paths.php**."
+msgstr ""
+
+#: ../../source/concepts/structure.rst:111
+msgid "Please read :doc:`Managing your Applications <../general/managing_apps>`."
+msgstr ""
+

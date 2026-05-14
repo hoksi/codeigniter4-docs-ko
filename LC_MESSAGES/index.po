@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/index.rst:3
+msgid "CodeIgniter4 User Guide"
+msgstr ""
+
+#: ../../source/index.rst:13
+msgid "Getting Started"
+msgstr ""
+
+#: ../../source/index.rst:23
+msgid "Guides"
+msgstr ""
+
+#: ../../source/index.rst:33
+msgid "Overview & General Topics"
+msgstr ""
+
+#: ../../source/index.rst:47
+msgid "Request Handling"
+msgstr ""
+
+#: ../../source/index.rst:61
+msgid "Handling Databases"
+msgstr ""
+
+#: ../../source/index.rst:80
+msgid "Libraries & Helpers"
+msgstr ""
+
+#: ../../source/index.rst:94
+msgid "Advanced Topics"
+msgstr ""
+
+#: ../../source/index.rst:119
+msgid "Official Packages"
+msgstr ""
+

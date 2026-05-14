@@ -1,0 +1,492 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_405.rst:3
+msgid "Upgrading from 4.0.4 to 4.0.5"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:5
+msgid ""
+"Please refer to the upgrade instructions corresponding to your "
+"installation method."
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:7
+msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:8
+msgid ""
+":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
+"Upgrading <adding-codeigniter4-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:9
+msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:16
+msgid "Breaking Enhancements"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:19
+msgid "Cookie SameSite Support"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:21
+msgid ""
+"CodeIgniter 4.0.5 introduces a setting for the cookie SameSite attribute."
+" Prior versions did not set this attribute at all. The default setting "
+"for cookies is now `Lax`. This will affect how cookies are handled in "
+"cross-domain contexts and you may need to adjust this setting in your "
+"projects. Separate settings in **app/Config/App.php** exists for Response"
+" cookies and for CSRF cookies."
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:26
+msgid ""
+"For additional information, see `MDN Web Docs "
+"<https://developer.mozilla.org/pl/docs/Web/HTTP/Headers/Set-"
+"Cookie/SameSite>`_. The SameSite specifications are described in `RFC "
+"6265 <https://tools.ietf.org/html/rfc6265>`_ and the `RFC 6265bis "
+"revision <https://datatracker.ietf.org/doc/draft-ietf-httpbis-"
+"rfc6265bis/?include_text=1>`_."
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:31
+msgid "Message::getHeader(s)"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:33
+msgid ""
+"The HTTP layer is moving towards `PSR-7 compliance <https://www.php-"
+"fig.org/psr/psr-7/>`_. Towards this end ``Message::getHeader()`` and "
+"``Message::getHeaders()`` are deprecated and should be replaced with "
+"``Message::header()`` and ``Message::headers()`` respectively. Note that "
+"this pertains to all classes that extend ``Message`` as well: "
+"``Request``, ``Response`` and their subclasses."
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:38
+msgid "Additional related deprecations from the HTTP layer:"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:40
+msgid "``Message::isJSON()``: Check the \"Content-Type\" header directly"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:41
+msgid ""
+"``Request[Interface]::isValidIP()``: Use the Validation class with "
+"``valid_ip``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:42
+msgid ""
+"``Request[Interface]::getMethod()``: The ``$upper`` parameter will be "
+"removed, use strtoupper()"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:43
+msgid "``Request[Trait]::$ipAddress``: This property will become private"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:44
+msgid ""
+"``Request::$proxyIPs``: This property will be removed; access "
+"``config('App')->proxyIPs`` directly"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:45
+msgid ""
+"``Request::__construct()``: The constructor will no longer take "
+"``Config\\App`` and has been made nullable to aid transition"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:46
+msgid "``Response[Interface]::getReason()``: Use ``getReasonPhrase()`` instead"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:47
+msgid ""
+"``Response[Interface]::getStatusCode()``: The explicit ``int`` return "
+"type will be removed (no action required)"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:50
+msgid "ResponseInterface"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:52
+msgid ""
+"This interface intends to include the necessary methods for any "
+"framework-compatible response class. A number of methods expected by the "
+"framework were missing and have now been added. If you use any classes "
+"the implement ``ResponseInterface`` directly they will need to be "
+"compatible with the updated requirements. These methods are as follows:"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:57
+msgid "``setLastModified($date)``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:58
+msgid "``setLink(PagerInterface $pager)``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:59
+msgid "``setJSON($body, bool $unencoded = false)``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:60
+msgid "``getJSON()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:61
+msgid "``setXML($body)``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:62
+msgid "``getXML()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:63
+msgid "``send()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:64
+msgid "``sendHeaders()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:65
+msgid "``sendBody()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:66
+msgid ""
+"``setCookie($name, $value = '', $expire = '', $domain = '', $path = '/', "
+"$prefix = '', $secure = false, $httponly = false, $samesite = null)``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:67
+msgid ""
+"``hasCookie(string $name, string $value = null, string $prefix = ''): "
+"bool``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:68
+msgid "``getCookie(string $name = null, string $prefix = '')``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:69
+msgid ""
+"``deleteCookie(string $name = '', string $domain = '', string $path = "
+"'/', string $prefix = '')``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:70
+msgid "``getCookies()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:71
+msgid "``redirect(string $uri, string $method = 'auto', int $code = null)``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:72
+msgid "``download(string $filename = '', $data = '', bool $setMime = false)``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:74
+msgid ""
+"To facilitate use of this interface these methods have been moved from "
+"the framework's ``Response`` into a ``ResponseTrait`` which you may use, "
+"and ``DownloadResponse`` now extends ``Response`` directly to ensure "
+"maximum compatibility."
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:78
+msgid "Config\\\\Services"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:80
+msgid ""
+"Service discovery has been updated to allow third-party services (when "
+"enabled via Modules) to take precedence over core services. Update "
+"**app/Config/Services.php** so the class extends "
+"``CodeIgniter\\Config\\BaseService`` to allow proper discovery of third-"
+"party services."
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:84
+msgid "Project Files"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:86
+#, python-format
+msgid ""
+"Numerous files in the project space (root, app, public, writable) "
+"received updates. Due to these files being outside of the system scope "
+"they will not be changed without your intervention. There are some third-"
+"party CodeIgniter modules available to assist with merging changes to the"
+" project space: `Explore on Packagist "
+"<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:91
+msgid ""
+"Except in very rare cases for bug fixes, no changes made to files for the"
+" project space will break your application. All changes noted here are "
+"optional until the next major version, and any mandatory changes will be "
+"covered in the sections above."
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:96
+msgid "Content Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:98
+msgid ""
+"The following files received significant changes (including deprecations "
+"or visual adjustments) and it is recommended that you merge the updated "
+"versions with your application:"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:101
+msgid "``app/Views/*``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:102
+#: ../../source/installation/upgrade_405.rst:162
+msgid "``public/index.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:103
+#: ../../source/installation/upgrade_405.rst:161
+msgid "``public/.htaccess``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:104
+#: ../../source/installation/upgrade_405.rst:163
+msgid "``spark``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:105
+#: ../../source/installation/upgrade_405.rst:160
+msgid "``phpunit.xml.dist``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:106
+#: ../../source/installation/upgrade_405.rst:157
+msgid "``composer.json``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:109
+msgid "All Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:111
+msgid ""
+"This is a list of all files in the project space that received changes; "
+"many will be simple comments or formatting that have no effect on the "
+"runtime:"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:114
+msgid "``LICENSE``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:115
+msgid "``README.md``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:116
+msgid "``app/Config/App.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:117
+msgid "``app/Config/Autoload.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:118
+msgid "``app/Config/Boot/development.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:119
+msgid "``app/Config/Boot/production.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:120
+msgid "``app/Config/Boot/testing.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:121
+msgid "``app/Config/Cache.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:122
+msgid "``app/Config/Constants.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:123
+msgid "``app/Config/ContentSecurityPolicy.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:124
+msgid "``app/Config/Database.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:125
+msgid "``app/Config/DocTypes.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:126
+msgid "``app/Config/Email.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:127
+msgid "``app/Config/Encryption.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:128
+msgid "``app/Config/Events.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:129
+msgid "``app/Config/Exceptions.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:130
+msgid "``app/Config/Filters.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:131
+msgid "``app/Config/ForeignCharacters.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:132
+msgid "``app/Config/Format.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:133
+msgid "``app/Config/Generators.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:134
+msgid "``app/Config/Honeypot.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:135
+msgid "``app/Config/Images.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:136
+msgid "``app/Config/Kint.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:137
+msgid "``app/Config/Logger.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:138
+msgid "``app/Config/Migrations.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:139
+msgid "``app/Config/Mimes.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:140
+msgid "``app/Config/Modules.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:141
+msgid "``app/Config/Pager.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:142
+msgid "``app/Config/Paths.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:143
+msgid "``app/Config/Routes.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:144
+msgid "``app/Config/Security.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:145
+msgid "``app/Config/Services.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:146
+msgid "``app/Config/Toolbar.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:147
+msgid "``app/Config/UserAgents.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:148
+msgid "``app/Config/Validation.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:149
+msgid "``app/Config/View.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:150
+msgid "``app/Controllers/BaseController.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:151
+msgid "``app/Controllers/Home.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:152
+msgid "``app/Views/errors/cli/error_404.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:153
+msgid "``app/Views/errors/cli/error_exception.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:154
+msgid "``app/Views/errors/html/debug.css``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:155
+msgid "``app/Views/errors/html/debug.js``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:156
+msgid "``app/Views/errors/html/error_exception.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:158
+msgid "``env``"
+msgstr ""
+
+#: ../../source/installation/upgrade_405.rst:159
+msgid "``license.txt``"
+msgstr ""
+

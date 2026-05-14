@@ -1,0 +1,119 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_views.rst:2
+msgid "Upgrade Views"
+msgstr ""
+
+#: ../../source/installation/upgrade_views.rst:9
+msgid "Documentations"
+msgstr ""
+
+#: ../../source/installation/upgrade_views.rst:11
+msgid ""
+"`View Documentation CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/general/views.html>`_"
+msgstr ""
+
+#: ../../source/installation/upgrade_views.rst:12
+msgid ":doc:`View Documentation CodeIgniter 4.x </outgoing/views>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_views.rst:15
+msgid "What has been changed"
+msgstr ""
+
+#: ../../source/installation/upgrade_views.rst:17
+msgid ""
+"Your views look much like before, but they are invoked differently ... "
+"instead of CI3's ``$this->load->view('x');``, you can use ``return "
+"view('x');``."
+msgstr ""
+
+#: ../../source/installation/upgrade_views.rst:19
+msgid ""
+"CI4 supports :doc:`../outgoing/view_cells` to build your response in "
+"pieces, and :doc:`../outgoing/view_layouts` for page layout."
+msgstr ""
+
+#: ../../source/installation/upgrade_views.rst:21
+msgid ""
+"The :doc:`Template Parser <../outgoing/view_parser>` is still there, and "
+"substantially enhanced."
+msgstr ""
+
+#: ../../source/installation/upgrade_views.rst:24
+msgid "Upgrade Guide"
+msgstr ""
+
+#: ../../source/installation/upgrade_views.rst:26
+msgid "First, move all views  to the folder **app/Views**"
+msgstr ""
+
+#: ../../source/installation/upgrade_views.rst:27
+msgid "Change the loading syntax of views in every script where you load views:"
+msgstr ""
+
+#: ../../source/installation/upgrade_views.rst:28
+msgid ""
+"from ``$this->load->view('directory_name/file_name')`` to ``return "
+"view('directory_name/file_name');``"
+msgstr ""
+
+#: ../../source/installation/upgrade_views.rst:29
+msgid ""
+"from ``$content = $this->load->view('file', $data, TRUE);`` to ``$content"
+" = view('file', $data);``"
+msgstr ""
+
+#: ../../source/installation/upgrade_views.rst:30
+msgid ""
+"(optional) You can change the echo syntax in views from ``<?php echo "
+"$title; ?>`` to ``<?= $title ?>``"
+msgstr ""
+
+#: ../../source/installation/upgrade_views.rst:31
+msgid ""
+"Remove the line ``defined('BASEPATH') OR exit('No direct script access "
+"allowed');`` if it exists."
+msgstr ""
+
+#: ../../source/installation/upgrade_views.rst:34
+msgid "Code Example"
+msgstr ""
+
+#: ../../source/installation/upgrade_views.rst:37
+msgid "CodeIgniter Version 3.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_views.rst:39
+msgid "Path: **application/views**:"
+msgstr ""
+
+#: ../../source/installation/upgrade_views.rst:44
+msgid "CodeIgniter Version 4.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_views.rst:46
+msgid "Path: **app/Views**:"
+msgstr ""
+

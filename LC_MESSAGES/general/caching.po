@@ -1,0 +1,225 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/general/caching.rst:3
+msgid "Web Page Caching"
+msgstr ""
+
+#: ../../source/general/caching.rst:5
+msgid ""
+"CodeIgniter lets you cache your pages in order to achieve maximum "
+"performance."
+msgstr ""
+
+#: ../../source/general/caching.rst:8
+msgid ""
+"Although CodeIgniter is quite fast, the amount of dynamic information you"
+" display in your pages will correlate directly to the server resources, "
+"memory, and processing cycles utilized, which affect your page load "
+"speeds. By caching your pages, since they are saved in their fully "
+"rendered state, you can achieve performance much closer to that of static"
+" web pages."
+msgstr ""
+
+#: ../../source/general/caching.rst:20
+msgid "How Does Caching Work?"
+msgstr ""
+
+#: ../../source/general/caching.rst:22
+msgid ""
+"Caching can be enabled on a per-page basis, and you can set the length of"
+" time that a page should remain cached before being refreshed."
+msgstr ""
+
+#: ../../source/general/caching.rst:25
+msgid ""
+"Per-page means per URI. Since v4.5.0, the HTTP method of the request is "
+"also taken into account. This means that the same URI will be cached "
+"separately if the HTTP method is different."
+msgstr ""
+
+#: ../../source/general/caching.rst:29
+msgid ""
+"When a page is loaded for the first time, the page will be cached using "
+"the currently configured cache engine. On subsequent page loads, the "
+"cache will be retrieved and sent to the requesting user's browser."
+msgstr ""
+
+#: ../../source/general/caching.rst:33
+msgid ""
+"If it has expired, it will be deleted and refreshed before being sent to "
+"the browser."
+msgstr ""
+
+#: ../../source/general/caching.rst:36
+msgid ""
+"The Benchmark tag is not cached so you can still view your page load "
+"speed when caching is enabled."
+msgstr ""
+
+#: ../../source/general/caching.rst:40
+msgid "Configuring Caching"
+msgstr ""
+
+#: ../../source/general/caching.rst:43
+msgid "Setting Cache Engine"
+msgstr ""
+
+#: ../../source/general/caching.rst:45
+msgid ""
+"Before using Web Page Caching, you must set the cache engine up by "
+"editing **app/Config/Cache.php**. See :ref:`libraries-caching-"
+"configuring-the-cache` for details."
+msgstr ""
+
+#: ../../source/general/caching.rst:50
+msgid "Setting $cacheQueryString"
+msgstr ""
+
+#: ../../source/general/caching.rst:52
+msgid ""
+"You can set whether or not to include the query string when generating "
+"the cache with ``Config\\Cache::$cacheQueryString``."
+msgstr ""
+
+#: ../../source/general/caching.rst:55 ../../source/general/caching.rst:76
+msgid "Valid options are:"
+msgstr ""
+
+#: ../../source/general/caching.rst:57
+msgid ""
+"``false``: (default) Disabled. The query string is not taken into "
+"account; the same cache is returned for requests with the same URI path "
+"but different query strings."
+msgstr ""
+
+#: ../../source/general/caching.rst:60
+msgid ""
+"``true``: Enabled, take all query parameters into account. Be aware that "
+"this may result in numerous cache generated for the same page over and "
+"over again."
+msgstr ""
+
+#: ../../source/general/caching.rst:63
+msgid ""
+"**array**: Enabled, but only take into account the specified list of "
+"query parameters. E.g., ``['q', 'page']``."
+msgstr ""
+
+#: ../../source/general/caching.rst:69
+msgid "Setting $cacheStatusCodes"
+msgstr ""
+
+#: ../../source/general/caching.rst:73
+msgid ""
+"You can control which HTTP response status codes are allowed to be cached"
+" with ``Config\\Cache::$cacheStatusCodes``."
+msgstr ""
+
+#: ../../source/general/caching.rst:78
+msgid ""
+"``[]``: (default) Cache all HTTP status codes. This maintains backward "
+"compatibility but may cache temporary error pages."
+msgstr ""
+
+#: ../../source/general/caching.rst:80
+msgid ""
+"``[200]``: (Recommended) Only cache successful responses. This prevents "
+"caching of error pages (404, 500, etc.) that should be temporary."
+msgstr ""
+
+#: ../../source/general/caching.rst:82
+msgid "array of status codes: Cache only specific status codes. For example:"
+msgstr ""
+
+#: ../../source/general/caching.rst:84
+msgid "``[200, 404]``: Cache successful responses and not found pages."
+msgstr ""
+
+#: ../../source/general/caching.rst:85
+msgid "``[200, 404, 410]``: Cache successful responses and specific error codes."
+msgstr ""
+
+#: ../../source/general/caching.rst:86
+msgid "``[200, 201, 202, 203, 204]``: All 2xx successful responses."
+msgstr ""
+
+#: ../../source/general/caching.rst:88
+msgid ""
+"Using an empty array ``[]`` may cache temporary error pages (404, 500, "
+"etc). For production applications, consider restricting this to ``[200]``"
+" to avoid caching errors that should be temporary. For example, a cached "
+"404 page would remain cached even after the resource is created, until "
+"the cache expires."
+msgstr ""
+
+#: ../../source/general/caching.rst:93
+msgid ""
+"Regardless of this setting, ``DownloadResponse`` and ``RedirectResponse``"
+" instances are never cached by the ``PageCache`` filter."
+msgstr ""
+
+#: ../../source/general/caching.rst:97
+msgid "Enabling Caching"
+msgstr ""
+
+#: ../../source/general/caching.rst:99
+msgid ""
+"To enable caching, put the following tag in any of your controller "
+"methods:"
+msgstr ""
+
+#: ../../source/general/caching.rst:104
+msgid ""
+"Where ``$n`` is the number of **seconds** you wish the page to remain "
+"cached between refreshes."
+msgstr ""
+
+#: ../../source/general/caching.rst:107
+msgid ""
+"The above tag can go anywhere within a method. It is not affected by the "
+"order that it appears, so place it wherever it seems most logical to you."
+" Once the tag is in place, your pages will begin being cached."
+msgstr ""
+
+#: ../../source/general/caching.rst:111
+msgid ""
+"If you change configuration options that might affect your output, you "
+"have to manually delete your cache."
+msgstr ""
+
+#: ../../source/general/caching.rst:115
+msgid "Deleting Caches"
+msgstr ""
+
+#: ../../source/general/caching.rst:117
+msgid ""
+"If you no longer wish to cache a page you can remove the caching tag and "
+"it will no longer be refreshed when it expires."
+msgstr ""
+
+#: ../../source/general/caching.rst:120
+msgid ""
+"Removing the tag will not delete the cache immediately. It will have to "
+"expire normally."
+msgstr ""
+

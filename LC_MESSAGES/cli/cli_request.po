@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/cli/cli_request.rst:3
+msgid "CLIRequest Class"
+msgstr ""
+
+#: ../../source/cli/cli_request.rst:5
+msgid ""
+"If a request comes from a command line invocation, the request object is "
+"actually a ``CLIRequest``. It behaves the same as a :doc:`conventional "
+"request </incoming/request>` but adds some accessor methods for "
+"convenience."
+msgstr ""
+
+#: ../../source/cli/cli_request.rst:11
+msgid "Additional Accessors"
+msgstr ""
+
+#: ../../source/cli/cli_request.rst:14
+msgid "getSegments()"
+msgstr ""
+
+#: ../../source/cli/cli_request.rst:16
+msgid ""
+"Returns an array of the command line arguments deemed to be part of a "
+"path:"
+msgstr ""
+
+#: ../../source/cli/cli_request.rst:21
+msgid "getPath()"
+msgstr ""
+
+#: ../../source/cli/cli_request.rst:23
+msgid "Returns the reconstructed path as a string:"
+msgstr ""
+
+#: ../../source/cli/cli_request.rst:28
+msgid "getOptions()"
+msgstr ""
+
+#: ../../source/cli/cli_request.rst:30
+msgid "Returns an array of the command line arguments deemed to be options:"
+msgstr ""
+
+#: ../../source/cli/cli_request.rst:35
+msgid "getOption($key)"
+msgstr ""
+
+#: ../../source/cli/cli_request.rst:37
+msgid ""
+"Returns the value of a specific command line argument deemed to be an "
+"option:"
+msgstr ""
+
+#: ../../source/cli/cli_request.rst:42
+msgid "getOptionString()"
+msgstr ""
+
+#: ../../source/cli/cli_request.rst:44
+msgid "Returns the reconstructed command line string for the options:"
+msgstr ""
+
+#: ../../source/cli/cli_request.rst:48
+msgid ""
+"Passing ``true`` to the first argument will try to write long options "
+"using two dashes:"
+msgstr ""
+

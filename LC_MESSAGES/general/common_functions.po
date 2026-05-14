@@ -1,0 +1,826 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/general/common_functions.rst:3
+msgid "Global Functions and Constants"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:5
+msgid ""
+"CodeIgniter provides a few functions and variables that are globally "
+"defined, and are available to you at any point. These do not require "
+"loading any additional libraries or helpers."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:14
+msgid "Global Functions"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:17
+msgid "Service Accessors"
+msgstr ""
+
+#: ../../source/general/common_functions.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:21
+msgid "The cache name of the item to retrieve from cache (Optional)"
+msgstr ""
+
+#: ../../source/general/common_functions.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:22
+msgid "Either the cache object, or the item retrieved from the cache"
+msgstr ""
+
+#: ../../source/general/common_functions.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:25
+msgid ""
+"If no $key is provided, will return the Cache engine instance. If a $key "
+"is provided, will return the value of $key as stored in the cache "
+"currently, or null if no value is found."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:29
+msgid "Examples:"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:35
+msgid "The config classname."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:36
+#: ../../source/general/common_functions.rst:122
+msgid "Whether to return a shared instance."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:37
+msgid "The config instances."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:40
+msgid "More simple way of getting config instances from Factories."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:42
+msgid ""
+"See :ref:`Configuration <configuration-config>` and :ref:`Factories "
+"<factories-config>` for details."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:45
+msgid ""
+"The ``config()`` uses ``Factories::config()`` internally. See :ref"
+":`factories-loading-class` for details on the first parameter ``$name``."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:50
+msgid "Cookie name"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:51
+msgid "Cookie value"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:52
+msgid "Cookie options"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:53
+msgid "``Cookie``"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:54
+msgid "``Cookie`` instance"
+msgstr ""
+
+#: ../../source/general/common_functions.rst
+msgid "throws"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:55
+msgid "``CookieException``"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:57
+msgid "Simpler way to create a new Cookie instance."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:61
+msgid ""
+"If ``getGlobal`` is ``false``, this is passed to ``CookieStore``'s "
+"constructor."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:62
+msgid "If ``false``, creates a new instance of ``CookieStore``."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:63
+msgid "``CookieStore``"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:64
+msgid ""
+"Instance of ``CookieStore`` saved in the current ``Response``, or a new "
+"``CookieStore`` instance."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:66
+msgid "Fetches the global ``CookieStore`` instance held by ``Response``."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:70
+msgid "The name of the environment variable to retrieve"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:71
+msgid "The default value to return if no value is found."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:72
+msgid "The environment variable, the default value, or null."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:75
+msgid ""
+"Used to retrieve values that have previously been set to the environment,"
+" or return a default value if it is not found. Will format boolean values"
+" to actual booleans instead of string representations."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:79
+msgid ""
+"Especially useful when used in conjunction with **.env** files for "
+"setting values that are specific to the environment itself, like database"
+" settings, API keys, etc."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:85
+msgid "The information to be escaped."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:86
+msgid "The escaping context. Default is 'html'."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:87
+msgid "The character encoding of the string."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:88
+msgid "The escaped data."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:91
+msgid ""
+"Escapes data for inclusion in web pages, to help prevent XSS attacks. "
+"This uses the Laminas Escaper library to handle the actual filtering of "
+"the data."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:94
+msgid ""
+"If $data is a string, then it simply escapes and returns it. If $data is "
+"an array, then it loops over it, escaping each 'value' of the key/value "
+"pairs."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:97
+msgid ""
+"Valid context values: ``html``, ``js``, ``css``, ``url``, ``attr``, "
+"``raw``"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:101
+msgid "The name of the helper file to load, or an array of names."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:103
+msgid "Loads a helper file."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:105
+msgid "For full details, see the :doc:`helpers` page."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:109
+msgid "The language filename and the key of the text to retrieve."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:110
+msgid "An array of data to substitute for placeholders."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:111
+msgid "Specify a different locale to be used instead of the current locale."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:112
+msgid "The text in the language file"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:115
+msgid "Retrieves text from the language files."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:117
+msgid "For more information, see the :ref:`language-localization`."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:121
+msgid "The model classname."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:123
+msgid "The database connection."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:124
+msgid "The model instances"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:127
+msgid "More simple way of getting model instances."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:129
+msgid ""
+"The ``model()`` uses ``Factories::models()`` internally. See :ref"
+":`factories-loading-class` for details on the first parameter ``$name``."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:132
+msgid "See also the :ref:`Using CodeIgniter's Model <accessing-models>`."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:136
+msgid "The name of the old form data to check for."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:137
+msgid "The default value to return if $key doesn't exist."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:138
+msgid "An `escape <#esc>`_ context or false to disable it."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:139
+msgid "The value of the defined key, or the default value."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:142
+msgid "Provides a simple way to access \"old input data\" from submitting a form."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:144
+#: ../../source/general/common_functions.rst:172
+#: ../../source/general/common_functions.rst:199
+#: ../../source/general/common_functions.rst:364
+#: ../../source/general/common_functions.rst:423
+msgid "Example:"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:148
+msgid ""
+"If you are using the :php:func:`set_value()`, :php:func:`set_select()`, "
+":php:func:`set_checkbox()`, and :php:func:`set_radio()` functions in "
+":doc:`form helper </helpers/form_helper>`, this feature is built-in. You "
+"only need to use this function when not using the form helper."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:155
+msgid "The name of the session item to check for."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:156
+msgid ""
+"An instance of the Session object if no $key, the value found in the "
+"session for $key, or null."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:159
+msgid ""
+"Provides a convenient way to access the session class and to retrieve a "
+"stored value. For more information, see the :doc:`Sessions "
+"</libraries/sessions>` page."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:164
+msgid "The name of the benchmark point."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:165
+msgid "The Timer instance"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:168
+msgid ""
+"A convenience method that provides quick access to the Timer class. You "
+"can pass in the name of a benchmark point as the only parameter. This "
+"will start timing from this point, or stop timing if a timer with this "
+"name is already running."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:178
+msgid "The name of the file to load"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:179
+msgid "An array of key/value pairs to make available within the view."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:180
+msgid "An array of options that will be passed to the rendering class."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:181
+msgid "The output from the view."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:184
+msgid ""
+"Grabs the current RendererInterface-compatible class (:doc:`View "
+"<../outgoing/view_renderer>` class by default) and tells it to render the"
+" specified view. Simply provides a convenience method that can be used in"
+" Controllers, libraries, and routed closures."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:190
+msgid ""
+"Currently, these options are available for use within the ``$options`` "
+"array:"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:192
+msgid ""
+"``saveData`` specifies that data will persistent between multiple calls "
+"to ``view()`` within the same request. If you do not want the data to be "
+"persisted, specify false."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:193
+msgid ""
+"``cache`` specifies the number of seconds to cache the view for. See :ref"
+":`caching-views` for the details."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:194
+msgid ""
+"``debug`` can be set to false to disable the addition of debug code for "
+":ref:`Debug Toolbar <the-debug-toolbar>`."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:196
+msgid ""
+"The ``$option`` array is provided primarily to facilitate third-party "
+"integrations with libraries like Twig."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:203
+msgid ""
+"For more details, see the :doc:`Views <../outgoing/views>` and "
+":doc:`../outgoing/view_renderer` page."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:212
+msgid ""
+"View cells are used within views to insert HTML chunks that are managed "
+"by other classes."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:215
+msgid "For more details, see the :doc:`View Cells </outgoing/view_cells>` page."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:218
+msgid "Miscellaneous Functions"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:222
+msgid "The timezone the application has been set to display dates in."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:225
+msgid "Returns the timezone the application has been set to display dates in."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:229
+msgid "The CSP nonce attribute for script tag."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:232
+msgid ""
+"Returns the nonce attribute for a script tag. For example: "
+"``nonce=\"Eskdikejidojdk978Ad8jf\"``. See :ref:`Content Security Policy "
+"<csp-using-functions>`."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:237
+msgid "The CSP nonce attribute for style tag."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:240
+msgid ""
+"Returns the nonce attribute for a style tag. For example: "
+"``nonce=\"Eskdikejidojdk978Ad8jf\"``. See :ref:`Content Security Policy "
+"<csp-using-functions>`."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:245
+msgid "The name of the current CSRF token."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:248
+msgid "Returns the name of the current CSRF token."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:252
+#: ../../source/general/common_functions.rst:255
+msgid "The name of the header for current CSRF token."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:259
+msgid "The current value of the CSRF hash."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:262
+msgid "Returns the current CSRF hash value."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:266
+msgid ""
+"A string with the HTML for hidden input with all required CSRF "
+"information."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:269
+msgid "Returns a hidden input with the CSRF information already inserted::"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:275
+msgid "A string with the HTML for meta tag with all required CSRF information."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:278
+msgid "Returns a meta tag with the CSRF information already inserted::"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:284
+msgid ""
+"The number of seconds browsers should convert links to this resource to "
+"HTTPS."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:285
+msgid "An instance of the current Request object."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:286
+msgid "An instance of the current Response object."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:288
+msgid ""
+"Checks to see if the page is currently being accessed via HTTPS. If it "
+"is, then nothing happens. If it is not, then the user is redirected back "
+"to the current URI but through HTTPS. Will set the HTTP Strict Transport "
+"Security (HTST) header, which instructs modern browsers to automatically "
+"modify any HTTP requests to HTTPS requests for the ``$duration``."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:293
+msgid ""
+"This function is also used when you set "
+"``Config\\App:$forceGlobalSecureRequests`` to true."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:298
+msgid "Function to check for"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:299
+msgid "true if the function exists and is safe to call, false otherwise."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:304
+msgid ""
+"true if the script is being executed from the command line or false "
+"otherwise."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:309
+msgid "The filename being checked."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:310
+msgid "true if you can write to the file, false otherwise."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:315
+msgid "If given and is a boolean then it will be used as the return value."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:318
+msgid "Detect if platform is running in Windows."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:320
+msgid ""
+"The boolean value provided to $mock will persist in subsequent calls. To "
+"reset this mock value, the user must pass an explicit ``null`` to the "
+"function call. This will refresh the function to use auto-detection."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:328
+msgid "The level of severity"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:329
+msgid "The message that is to be logged."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:330
+msgid ""
+"An associative array of tags and their values that should be replaced in "
+"$message"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:331
+msgid "void"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:334
+msgid ""
+"Since v4.5.0, the return value is fixed to be compatible with PSR Log. In"
+" previous versions, it returned ``true`` if was logged successfully or "
+"``false`` if there was a problem logging it."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:338
+msgid ""
+"Logs a message using the Log Handlers defined in "
+"**app/Config/Logger.php**."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:340
+msgid ""
+"Level can be one of the following values: ``emergency``, ``alert``, "
+"``critical``, ``error``, ``warning``, ``notice``, ``info``, or ``debug``."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:343
+msgid ""
+"Context can be used to substitute values in the message string. For full "
+"details, see the :doc:`Logging Information <logging>` page."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:348
+msgid "The route name or Controller::method to redirect the user to."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:351
+msgid ""
+"Returns a RedirectResponse instance allowing you to easily create "
+"redirects. See :ref:`response-redirect` for details."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:356
+msgid "Input string"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:357
+msgid "Whether to remove URL-encoded characters as well"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:358
+msgid "Sanitized string"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:361
+msgid ""
+"This function prevents inserting null characters between ASCII "
+"characters, like Java\\\\0script."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:372
+msgid "The shared Request object."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:375
+msgid ""
+"This function is a wrapper for ``Services::request()`` and "
+"``service('request')``."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:381
+msgid "The shared Response object."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:384
+msgid ""
+"This function is a wrapper for ``Services::response()`` and "
+"``service('response')``."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:388
+msgid "Route name or Controller::method"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:389
+msgid ""
+"One or more parameters to be passed to the route. The last parameter "
+"allows you to set the locale."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:390
+msgid "a route path (URI path relative to baseURL)"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:393
+msgid ""
+"This function requires the controller/method to have a route defined in "
+"**app/Config/Routes.php**."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:395
+msgid ""
+"``route_to()`` returns a *route* path, not a full URI path for your site."
+" If your **baseURL** contains sub folders, the return value is not the "
+"same as the URI to link. In that case, just use :php:func:`url_to()` "
+"instead. See also :ref:`urls-url-structure`."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:400
+msgid ""
+"Generates a route for you based on a controller::method combination. Will"
+" take parameters into effect, if provided."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:404
+msgid "Generates a route for you based on a route name."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:408
+#, python-brace-format
+msgid ""
+"Since v4.3.0, when you use ``{locale}`` in your route, you can optionally"
+" specify the locale value as the last parameter."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:414
+#: ../../source/general/common_functions.rst:429
+msgid "The name of the service to load"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:415
+#: ../../source/general/common_functions.rst:430
+msgid "One or more parameters to pass to the service method."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:416
+#: ../../source/general/common_functions.rst:431
+msgid "An instance of the service class specified."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:419
+msgid ""
+"Provides easy access to any of the :doc:`Services <../concepts/services>`"
+" defined in the system. This will always return a shared instance of the "
+"class, so no matter how many times this is called during a single "
+"request, only one class instance will be created."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:434
+msgid ""
+"Identical to the **service()** function described above, except that all "
+"calls to this function will return a new instance of the class, where "
+"**service** returns the same instance every time."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:440
+msgid "Config item name"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:441
+msgid "The configuration item or null if the item doesn't exist"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:444
+msgid "Fetch a config file item with slash appended (if not empty)"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:448
+msgid "string, array of key value pairs, or object"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:449
+msgid "true if values do not need quotes (Javascript-style)"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:450
+msgid "String containing the attribute key/value pairs, comma-separated"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:453
+msgid ""
+"Helper function used to convert a string, array, or object of attributes "
+"to a string."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:457
+msgid "Global Constants"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:459
+msgid ""
+"The following constants are always available anywhere within your "
+"application."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:462
+msgid "Core Constants"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:466
+msgid "The path to the **app** directory."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:470
+msgid "The path to the project root directory. Just above ``APPPATH``."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:474
+msgid "The path to the **system** directory."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:478
+msgid "The path to the directory that holds the front controller."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:482
+msgid "The path to the **writable** directory."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:485
+msgid "Time Constants"
+msgstr ""
+
+#: ../../source/general/common_functions.rst:489
+msgid "Equals 1."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:493
+msgid "Equals 60."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:497
+msgid "Equals 3600."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:501
+msgid "Equals 86400."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:505
+msgid "Equals 604800."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:509
+msgid "Equals 2592000."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:513
+msgid "Equals 31536000."
+msgstr ""
+
+#: ../../source/general/common_functions.rst:517
+msgid "Equals 315360000."
+msgstr ""
+

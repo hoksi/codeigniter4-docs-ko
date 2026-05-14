@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.1.7.rst:2
+msgid "Version 4.1.7"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.7.rst:4
+msgid "Release Date: January 9, 2022"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.7.rst:6
+msgid "**4.1.7 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.7.rst:13
+msgid "BREAKING"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.7.rst:15
+msgid ""
+"Because ``FILTER_SANITIZE_STRING`` is deprecated since PHP 8.1, "
+"``get_cookie()`` that uses it when ``$xssClean`` is true changed the "
+"output. Now it uses ``FILTER_SANITIZE_FULL_SPECIAL_CHARS``. Note that "
+"using XSS filtering is a bad practice. It does not prevent XSS attacks "
+"perfectly. Using ``esc()`` with the correct ``$context`` in the views is "
+"recommended."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.7.rst:18
+msgid "Enhancements"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.7.rst:20 ../../source/changelogs/v4.1.7.rst:25
+#: ../../source/changelogs/v4.1.7.rst:30
+msgid "none."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.7.rst:23
+msgid "Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.7.rst:28
+msgid "Deprecations"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.7.rst:33
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.7.rst:35
+msgid ""
+"See the repo's `CHANGELOG_4.1.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/changelogs/CHANGELOG_4.1.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.3.2.rst:2
+msgid "Version 4.3.2"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.2.rst:4
+msgid "Release Date: February 18, 2023"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.2.rst:6
+msgid "**4.3.2 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.2.rst:13
+msgid "BREAKING"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.2.rst:16
+msgid "Behavior Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.2.rst:19
+msgid "base_url()"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.2.rst:21
+msgid ""
+"Due to a bug, in previous versions :php:func:`base_url()` without "
+"argument returned baseURL without a trailing slash (``/``) like "
+"``http://localhost:8080``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.2.rst:23
+msgid ""
+"Now it returns baseURL with a trailing slash. This is the same behavior "
+"as ``base_url()`` in CodeIgniter 3."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.2.rst:29
+msgid "uri_string()"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.2.rst:31
+msgid ""
+"The parameter ``$relative`` in :php:func:`uri_string()` was removed. Due "
+"to a bug, the function always returned a path relative to baseURL."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.2.rst:33
+msgid ""
+"When baseURL is accessed, it will now return an empty string (``''``). "
+"This is the same behavior as ``uri_string()`` in CodeIgniter 3. In "
+"previous versions it returned ``/``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.2.rst:38
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.2.rst:40
+msgid ""
+"**QueryBuilder:** ``where()`` generates incorrect SQL when using "
+"``RawSql``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.2.rst:41
+msgid "**QueryBuilder:** ``RawSql`` passed to ``set()`` disappears without error"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.2.rst:42
+msgid "**Session:** Can't connect to Redis with ``RedisHandler`` over TLS"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.2.rst:43
+msgid "**Autoloader:** May not add Composer package's namespaces"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.2.rst:44
+msgid "**Parser:** ``!`` does not work if delimiters are changed"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.2.rst:45
+msgid "**UserGuide:** Added missing items in ChangeLog and Upgrading Guide v4.3.0"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.2.rst:47
+msgid ""
+"See the repo's `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

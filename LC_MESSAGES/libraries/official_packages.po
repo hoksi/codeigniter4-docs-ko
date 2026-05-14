@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/libraries/official_packages.rst:3
+msgid "Official Packages"
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:5
+msgid ""
+"The CodeIgniter framework cannot solve all of the problems that "
+"developers will encounter. Many users have said they love how small and "
+"fast the framework is, so we don't want to bloat the core framework. To "
+"bridge the gap we are releasing official packages to provide additional "
+"functionality that not every site will need or want."
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:18
+msgid "Shield"
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:20
+msgid ""
+"`CodeIgniter Shield <https://shield.codeigniter.com/>`_ is an "
+"authentication and authorization framework for CodeIgniter 4. It is "
+"designed to be secure, flexible, and easily extendable to meet the needs "
+"of many different types of websites. Among the many features, it "
+"includes:"
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:25
+msgid "Session-based authentication"
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:26
+msgid "Personal access token authentication"
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:27
+msgid ""
+"framework for after login/register \"actions\" (like Two Factor "
+"Authentication, etc)"
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:28
+msgid "Role-Based Access Control with simple, flexible permissions."
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:29
+msgid "Per-user permission overrides,"
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:30
+msgid "and more..."
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:36
+msgid "Settings"
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:38
+msgid ""
+"`CodeIgniter Settings <https://settings.codeigniter.com>`_ is a wrapper "
+"around the configuration files that allows any configuration setting to "
+"saved to the database, while defaulting to the config files when not "
+"custom value has been stored. This allows an application to ship with the"
+" default config values, but adapt as the project grows or moves servers, "
+"without having to touch the code."
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:46
+msgid "Tasks (BETA)"
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:48
+msgid ""
+"`CodeIgniter Tasks <https://tasks.codeigniter.com>`_ is a simple task "
+"scheduler for CodeIgniter 4. It allows you to schedule tasks to run at "
+"specific times, or on a recurring basis. It is designed to be simple to "
+"use, but flexible enough to handle most use cases."
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:55
+msgid "Queue (BETA)"
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:57
+msgid ""
+"`CodeIgniter Queue <https://queue.codeigniter.com>`_ is a simple queue "
+"system for CodeIgniter 4. It allows you to queue up tasks to be run "
+"later."
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:62
+msgid "Cache"
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:64
+msgid ""
+"We provide a library with `PSR-6 and PSR-16 Cache Adapters "
+"<https://github.com/codeigniter4/cache>`_ for CodeIgniter 4. This is not "
+"required for use, since CodeIgniter 4 comes with a fully- functional "
+"cache component. This module is only for integrating third-party packages"
+" that rely on the PSR interface provisions."
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:72
+msgid "DevKit"
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:74
+msgid ""
+"`CodeIgniter DevKit <https://github.com/codeigniter4/devkit>`_ provides "
+"all of the development tools that CodeIgniter uses to help ensure quality"
+" code, including our coding standard, static analysis tools and rules, "
+"unit testing, data generation, file-system mocking, security advisories, "
+"and more. This can be used in any of your personal projects or libraries "
+"to get you rapidly setup with 17 different tools."
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:83
+msgid "Coding Standard"
+msgstr ""
+
+#: ../../source/libraries/official_packages.rst:85
+msgid ""
+"The `CodeIgniter Coding Standard <https://github.com/CodeIgniter/coding-"
+"standard>`_ holds the official coding standards of CodeIgniter based on "
+"PHP CS Fixer and powered by Nexus CS Config. This can be used in your own"
+" projects to form the basis of a consistent set of style rules that can "
+"be automatically applied to your code."
+msgstr ""
+

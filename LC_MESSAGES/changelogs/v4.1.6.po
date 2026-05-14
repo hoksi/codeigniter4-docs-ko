@@ -1,0 +1,166 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.1.6.rst:2
+msgid "Version 4.1.6"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:4
+msgid "Release Date: January 3, 2022"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:6
+msgid "**4.1.6 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:13
+msgid "SECURITY"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:15
+msgid ""
+"*Deserialization of Untrusted Data* found in the ``old()`` function was "
+"fixed. See the `Security advisory "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-"
+"w6jr-wj64-mc9x>`_ for more information."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:18
+msgid "BREAKING"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:20
+msgid ""
+"Multiple table names will no longer be stored in "
+"``BaseBuilder::$tableName`` - an empty string will be used instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:25
+msgid "Validation changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:27
+msgid ""
+"The previous version of the Validation can't handle an array item. "
+"Because of the bug fix, the validation results may be different, or raise"
+" a ``TypeError``. But the previous version's results are probably "
+"incorrect."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:31
+msgid ""
+"The Validation separated the validation process of multiple field like "
+"``contacts.*.name`` and single field. When a single field has an array "
+"data, the previous version validates each element of the array. The "
+"validation rule gets an element of the array as the parameter. On the "
+"other hand, the current version passes the array to the validation rule "
+"as a whole."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:38
+msgid "Enhancements"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:40
+msgid "Full support for PHP 8.1."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:41
+msgid ""
+"Database pane on debug toolbar now displays location where Query was "
+"called from. Also displays full backtrace."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:42
+msgid ""
+":ref:`Subqueries <query-builder-where-subquery>` in QueryBuilder can now "
+"be an instance of the BaseBuilder class."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:43
+msgid "Kint was updated from ^3.3 to ^4.0."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:46
+msgid "Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:48
+msgid ""
+"The process of sending cookies has been moved to the ``Response`` class. "
+"Now the ``Security`` and ``CookieStore`` class don't send cookies, set "
+"them to the Response."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:51
+msgid "Deprecations"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:53
+msgid "``Seeder::faker()`` and ``Seeder::$faker`` are deprecated."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:54
+msgid "``BaseBuilder::cleanClone()`` is deprecated."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:57
+msgid "Sending Cookies"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:59
+msgid ""
+"The process of sending cookies has been moved to the ``Response`` class. "
+"And the following methods are deprecated:"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:62
+msgid "``CookieStore::dispatch()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:63
+msgid "``CookieStore::setRawCookie()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:64
+msgid "``CookieStore::setCookie()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:65
+msgid "``Security::sendCookie()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:66
+msgid "``Security::doSendCookie()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:69
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.6.rst:71
+msgid ""
+"See the repo's `CHANGELOG_4.1.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/changelogs/CHANGELOG_4.1.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

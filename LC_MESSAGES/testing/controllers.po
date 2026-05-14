@@ -1,0 +1,398 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/testing/controllers.rst:3
+msgid "Testing Controllers"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:5
+msgid ""
+"Testing your controllers is made convenient with a couple of new helper "
+"classes and traits. When testing controllers, you can execute the code "
+"within a controller, without first running through the entire application"
+" bootstrap process. Often times, using the :doc:`Feature Testing tools "
+"<feature>` will be simpler, but this functionality is here in case you "
+"need it."
+msgstr ""
+
+#: ../../source/testing/controllers.rst:10
+msgid ""
+"Because the entire framework has not been bootstrapped, there will be "
+"times when you cannot test a controller this way."
+msgstr ""
+
+#: ../../source/testing/controllers.rst:18
+#: ../../source/testing/controllers.rst:130
+msgid "The Helper Trait"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:20
+msgid ""
+"To enable Controller Testing you need to use the ``ControllerTestTrait`` "
+"trait within your tests:"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:24
+msgid ""
+"Once the trait has been included, you can start setting up the "
+"environment, including the request and response classes, the request "
+"body, URI, and more. You specify the controller to use with the "
+"``controller()`` method, passing in the fully qualified class name of "
+"your controller. Finally, call the ``execute()`` method with the name of "
+"the method to run as the parameter:"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:32
+msgid "Helper Methods"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:35
+msgid "controller($class)"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:37
+msgid ""
+"Specifies the class name of the controller to test. The first parameter "
+"must be a fully qualified class name (i.e., include the namespace):"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:43
+msgid "execute(string $method, ...$params)"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:45
+msgid ""
+"Executes the specified method within the controller. The first parameter "
+"is the name of the method to run:"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:49
+msgid ""
+"By specifying the second and subsequent parameters, you can pass them to "
+"the controller method."
+msgstr ""
+
+#: ../../source/testing/controllers.rst:51
+msgid ""
+"This returns a new helper class that provides a number of routines for "
+"checking the response itself. See below for details."
+msgstr ""
+
+#: ../../source/testing/controllers.rst:55
+msgid "withConfig($config)"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:57
+msgid ""
+"Allows you to pass in a modified version of **app/Config/App.php** to "
+"test with different settings:"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:61
+msgid "If you do not provide one, the application's App config file will be used."
+msgstr ""
+
+#: ../../source/testing/controllers.rst:64
+msgid "withRequest($request)"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:66
+msgid ""
+"Allows you to provide an **IncomingRequest** instance tailored to your "
+"testing needs:"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:70
+msgid ""
+"If you do not provide one, a new IncomingRequest instance with the "
+"default application values will be passed into your controller."
+msgstr ""
+
+#: ../../source/testing/controllers.rst:74
+msgid "withResponse($response)"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:76
+msgid "Allows you to provide a **Response** instance:"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:80
+msgid ""
+"If you do not provide one, a new Response instance with the default "
+"application values will be passed into your controller."
+msgstr ""
+
+#: ../../source/testing/controllers.rst:84
+msgid "withLogger($logger)"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:86
+msgid "Allows you to provide a **Logger** instance:"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:90
+msgid ""
+"If you do not provide one, a new Logger instance with the default "
+"configuration values will be passed into your controller."
+msgstr ""
+
+#: ../../source/testing/controllers.rst:94
+msgid "withUri(string $uri)"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:96
+msgid ""
+"Allows you to provide a new URI that simulates the URL the client was "
+"visiting when this controller was run. This is helpful if you need to "
+"check URI segments within your controller. The only parameter is a string"
+" representing a valid URI:"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:102
+msgid ""
+"It is a good practice to always provide the URI during testing to avoid "
+"surprises."
+msgstr ""
+
+#: ../../source/testing/controllers.rst:104
+msgid ""
+"Since v4.4.0, this method creates a new Request instance with the URI. "
+"Because the Request instance should have the URI instance. Also if the "
+"hostname in the URI string is invalid with ``Config\\App``, the valid "
+"hostname will be set."
+msgstr ""
+
+#: ../../source/testing/controllers.rst:110
+msgid "withBody($body)"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:112
+msgid ""
+"Allows you to provide a custom body for the request. This can be helpful "
+"when testing API controllers where you need to set a JSON value as the "
+"body. The only parameter is a string that represents the body of the "
+"request:"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:118
+msgid "Checking the Response"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:120
+msgid ""
+"``ControllerTestTrait::execute()`` returns an instance of a "
+"``TestResponse``. See :doc:`Testing Responses <response>` on how to use "
+"this class to perform additional assertions and verification in your test"
+" cases."
+msgstr ""
+
+#: ../../source/testing/controllers.rst:124
+msgid "Filter Testing"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:126
+msgid ""
+"Similar to Controller Testing, the framework provides tools to help with "
+"creating tests for custom :doc:`Filters </incoming/filters>` and your "
+"projects use of them in routing."
+msgstr ""
+
+#: ../../source/testing/controllers.rst:132
+msgid ""
+"Just like with the Controller Tester you need to include the "
+"``FilterTestTrait`` in your test cases to enable these features:"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:138
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:140
+msgid ""
+"Because of the logical overlap with Controller Testing "
+"``FilterTestTrait`` is designed to work together with "
+"``ControllerTestTrait`` should you need both on the same class. Once the "
+"trait has been included ``CIUnitTestCase`` will detect its ``setUp`` "
+"method and prepare all the components needed for your tests. Should you "
+"need a special configuration you can alter any of the properties before "
+"calling the support methods:"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:146
+msgid "``$request`` A prepared version of the default ``IncomingRequest`` service"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:147
+msgid ""
+"``$response`` A prepared version of the default ``ResponseInterface`` "
+"service"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:148
+msgid ""
+"``$filtersConfig`` The default ``Config\\Filters`` configuration (note: "
+"discovery is handle by ``Filters`` so this will not include module "
+"aliases)"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:149
+msgid ""
+"``$filters`` An instance of ``CodeIgniter\\Filters\\Filters`` using the "
+"three components above"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:150
+msgid ""
+"``$collection`` A prepared version of ``RouteCollection`` which includes "
+"the discovery of ``Config\\Routes``"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:152
+msgid ""
+"The default configuration will usually be best for your testing since it "
+"most closely emulates a \"live\" project, but (for example) if you wanted"
+" to simulate a filter triggering accidentally on an unfiltered route you "
+"could add it to the Config:"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:159
+msgid "Checking Routes"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:161
+msgid ""
+"The first helper method is ``getFiltersForRoute()`` which will simulate "
+"the provided route and return a list of all Filters (by their alias) that"
+" would have run for the given position (\"before\" or \"after\"), without"
+" actually executing any controller or routing code. This has a large "
+"performance advantage over Controller and HTTP Testing."
+msgstr ""
+
+#: ../../source/testing/controllers.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:168
+msgid "The URI to check"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:169
+msgid "The filter method to check, \"before\" or \"after\""
+msgstr ""
+
+#: ../../source/testing/controllers.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:170
+msgid "Aliases for each filter that would have run"
+msgstr ""
+
+#: ../../source/testing/controllers.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:173
+#: ../../source/testing/controllers.rst:191
+msgid "Usage example:"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:178
+msgid "Calling Filter Methods"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:180
+msgid ""
+"The properties describe in Configuration are all set up to ensure maximum"
+" performance without interfering or interference from other tests. The "
+"next helper method will return a callable method using these properties "
+"to test your Filter code safely and check the results."
+msgstr ""
+
+#: ../../source/testing/controllers.rst:186
+msgid "The filter instance, class, or alias"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:187
+msgid "The filter method to run, \"before\" or \"after\""
+msgstr ""
+
+#: ../../source/testing/controllers.rst:188
+msgid "A callable method to run the simulated Filter event"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:195
+msgid ""
+"Notice how the ``Closure`` can take input parameters which are passed to "
+"your filter method."
+msgstr ""
+
+#: ../../source/testing/controllers.rst:198
+msgid "Assertions"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:200
+msgid ""
+"In addition to the helper methods above ``FilterTestTrait`` also comes "
+"with some assertions to streamline your test methods."
+msgstr ""
+
+#: ../../source/testing/controllers.rst:204
+msgid "assertFilter()"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:206
+msgid ""
+"The ``assertFilter()`` method checks that the given route at position "
+"uses the filter (by its alias):"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:211
+msgid "assertNotFilter()"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:213
+msgid ""
+"The ``assertNotFilter()`` method checks that the given route at position "
+"does not use the filter (by its alias):"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:218
+msgid "assertHasFilters()"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:220
+msgid ""
+"The ``assertHasFilters()`` method checks that the given route at position"
+" has at least one filter set:"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:225
+msgid "assertNotHasFilters()"
+msgstr ""
+
+#: ../../source/testing/controllers.rst:227
+msgid ""
+"The ``assertNotHasFilters()`` method checks that the given route at "
+"position has no filters set:"
+msgstr ""
+

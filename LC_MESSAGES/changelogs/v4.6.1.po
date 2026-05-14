@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.6.1.rst:3
+msgid "Version 4.6.1"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.1.rst:5
+msgid "Release Date: May 2, 2025"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.1.rst:7
+msgid "**4.6.1 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.1.rst:15
+msgid "Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.1.rst:16
+msgid ""
+"**Mimes**: Added the ``model/stl`` and ``application/octet-stream`` mime "
+"types for the ``stl`` extension inside the ``Config\\Mimes`` class."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.1.rst:20
+msgid "Deprecations"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.1.rst:22
+msgid ""
+"**Cache:** The ``FileHandler::writeFile()`` method is deprecated. Use "
+"``write_file()`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.1.rst:23
+msgid ""
+"**Cache:** The ``FileHandler::deleteFiles()`` method is deprecated. Use "
+"``delete_files()`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.1.rst:24
+msgid ""
+"**Cache:** The ``FileHandler::getDirFileInfo()`` method is deprecated. "
+"Use ``get_dir_file_info()`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.1.rst:25
+msgid ""
+"**Cache:** The ``FileHandler::getFileInfo()`` method is deprecated. Use "
+"``get_file_info()`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.1.rst:29
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.1.rst:31
+msgid ""
+"**CURLRequest:** Fixed an issue where multiple header sections appeared "
+"in the CURL response body during multiple redirects from the target "
+"server."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.1.rst:32
+msgid ""
+"**Cors:** Fixed a bug in the Cors filter that caused the appropriate "
+"headers to not be added when another filter returned a response object in"
+" the ``before`` filter."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.1.rst:33
+msgid ""
+"**Database:** Fixed a bug in ``Postgre`` and ``SQLite3`` handlers where "
+"composite unique keys were not fully taken into account for ``upsert`` "
+"type of queries."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.1.rst:34
+msgid ""
+"**Database:** Fixed a bug in the ``OCI8`` and ``SQLSRV`` drivers where "
+"``getVersion()`` returned an empty string when the database connection "
+"was not yet established."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.1.rst:35
+#, python-brace-format
+msgid ""
+"**Logger:** Fixed a bug where the ``{line}`` variable couldn't be used "
+"without specifying the ``{file}`` variable when logging the message."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.1.rst:36
+msgid ""
+"**Session:** Fixed a bug where ``Session::markAsTempdata()`` would give "
+"the wrong TTL when array data is supplied to ``Session::setTempdata()``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.1.rst:37
+msgid ""
+"**Toolbar:** Fixed a bug where setting ``maxHistory`` to ``0`` would "
+"produce a JavaScript error in the Debug Toolbar."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.1.rst:38
+msgid ""
+"**Toolbar:** Fixed a bug where setting ``maxHistory`` to ``0`` prevented "
+"log files from being properly cleared."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.1.rst:40
+msgid ""
+"See the repo's `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

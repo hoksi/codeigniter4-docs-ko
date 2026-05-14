@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_images.rst:2
+msgid "Upgrade Image Manipulation Class"
+msgstr ""
+
+#: ../../source/installation/upgrade_images.rst:9
+msgid "Documentations"
+msgstr ""
+
+#: ../../source/installation/upgrade_images.rst:11
+msgid ""
+"`Image Manipulation Class Documentation CodeIgniter 3.x "
+"<https://www.codeigniter.com/userguide3/libraries/image_lib.html>`_"
+msgstr ""
+
+#: ../../source/installation/upgrade_images.rst:12
+msgid ""
+":doc:`Image Manipulation Class Documentation CodeIgniter 4.x "
+"<../libraries/images>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_images.rst:15
+msgid "What has been changed"
+msgstr ""
+
+#: ../../source/installation/upgrade_images.rst:16
+msgid ""
+"The preferences passed to the constructor or ``initialize()`` method in "
+"CI3 have been changed to be specified in the new methods in CI4."
+msgstr ""
+
+#: ../../source/installation/upgrade_images.rst:18
+msgid "Some preferences like ``create_thumb`` are removed."
+msgstr ""
+
+#: ../../source/installation/upgrade_images.rst:19
+msgid ""
+"In CI4, the ``save()`` method must be called to save the manipulated "
+"image."
+msgstr ""
+
+#: ../../source/installation/upgrade_images.rst:20
+msgid ""
+"The ``display_errors()`` has been removed, and an exception will be "
+"thrown if an error occurs."
+msgstr ""
+
+#: ../../source/installation/upgrade_images.rst:24
+msgid "Upgrade Guide"
+msgstr ""
+
+#: ../../source/installation/upgrade_images.rst:25
+msgid ""
+"Within your class change the ``$this->load->library('image_lib');`` to "
+"``$image = \\Config\\Services::image();``."
+msgstr ""
+
+#: ../../source/installation/upgrade_images.rst:27
+msgid ""
+"Change the preferences passed to the constructor or ``initialize()`` "
+"method to be specified in the corresponding methods."
+msgstr ""
+
+#: ../../source/installation/upgrade_images.rst:29
+msgid "Call the ``save()`` method to save the file."
+msgstr ""
+
+#: ../../source/installation/upgrade_images.rst:32
+msgid "Code Example"
+msgstr ""
+
+#: ../../source/installation/upgrade_images.rst:35
+msgid "CodeIgniter Version 3.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_images.rst:40
+msgid "CodeIgniter Version 4.x"
+msgstr ""
+

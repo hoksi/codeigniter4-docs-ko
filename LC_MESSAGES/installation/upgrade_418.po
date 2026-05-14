@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_418.rst:3
+msgid "Upgrading from 4.1.7 to 4.1.8"
+msgstr ""
+
+#: ../../source/installation/upgrade_418.rst:5
+msgid ""
+"Please refer to the upgrade instructions corresponding to your "
+"installation method."
+msgstr ""
+
+#: ../../source/installation/upgrade_418.rst:7
+msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_418.rst:8
+msgid ""
+":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
+"Upgrading <adding-codeigniter4-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_418.rst:9
+msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_418.rst:16
+msgid "Breaking Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_418.rst:18
+msgid ""
+"Due to a security issue in the ``API\\ResponseTrait`` all trait methods "
+"are now scoped to ``protected``. See the `Security advisory "
+"GHSA-7528-7jg5-6g62 "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-7528-7jg5-6g62>`_"
+" for more information."
+msgstr ""
+

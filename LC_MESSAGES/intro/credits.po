@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/intro/credits.rst:3
+msgid "Credits"
+msgstr ""
+
+#: ../../source/intro/credits.rst:5
+msgid ""
+"CodeIgniter was originally developed by `EllisLab  "
+"<https://ellislab.com/>`_. The framework was written for performance in "
+"the real world, with many of the original class libraries, helpers, and "
+"sub-systems borrowed from the code-base of `ExpressionEngine "
+"<https://expressionengine.com>`_. It was, for years, developed and "
+"maintained by EllisLab, the ExpressionEngine Development Team and a group"
+" of community members called the Reactor Team."
+msgstr ""
+
+#: ../../source/intro/credits.rst:13
+msgid ""
+"In 2014, CodeIgniter was acquired by the `British Columbia Institute of "
+"Technology <https://www.bcit.ca/>`_ and was then officially announced as "
+"a community-maintained project."
+msgstr ""
+
+#: ../../source/intro/credits.rst:17
+msgid ""
+"In 2019, the CodeIgniter Foundation was formed to provide a perpetual "
+"managing group separate from any other entity to help ensure the "
+"framework's future."
+msgstr ""
+

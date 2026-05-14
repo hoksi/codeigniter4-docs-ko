@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_422.rst:3
+msgid "Upgrading from 4.2.1 to 4.2.2"
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:5
+msgid ""
+"Please refer to the upgrade instructions corresponding to your "
+"installation method."
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:7
+msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:8
+msgid ""
+":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
+"Upgrading <adding-codeigniter4-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:9
+msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:16
+msgid "Breaking Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:19
+msgid "Web Page Caching Bug Fix"
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:21
+msgid ""
+":doc:`../general/caching` now caches the Response data after :ref:`after-"
+"filters` are executed."
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:22
+msgid ""
+"For example, if you enable :ref:`secureheaders`, the Response headers are"
+" now sent when the page comes from the cache."
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:24
+msgid ""
+"If you have written **code based on this bug** that assumes changes to "
+"the Response in \"after\" filters are not cached then **sensitive "
+"information could be cached and compromised**. If this is the case, "
+"change your code to disable caching of the page."
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:27
+msgid "Others"
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:29
+msgid ""
+"The method ``Forge::createTable()`` no longer executes a ``CREATE TABLE "
+"IF NOT EXISTS``.  When `$ifNotExists` is true, if the table is not found "
+"in ``$db->tableExists($table)`` then ``CREATE TABLE`` is executed."
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:30
+msgid ""
+"The second parameter ``$ifNotExists`` of ``Forge::_createTable()`` is "
+"deprecated. It is no longer used and will be removed in a future release."
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:31
+msgid ""
+"When you use :php:func:`random_string()` with the first parameter "
+"``'crypto'``, now if you set the second parameter ``$len`` to an odd "
+"number, ``InvalidArgumentException`` will be thrown. Change the parameter"
+" to an even number."
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:34
+msgid "Breaking Enhancements"
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:38
+msgid "Project Files"
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:40
+#, python-format
+msgid ""
+"Numerous files in the **project space** (root, app, public, writable) "
+"received updates. Due to these files being outside of the **system** "
+"scope they will not be changed without your intervention. There are some "
+"third-party CodeIgniter modules available to assist with merging changes "
+"to the project space: `Explore on Packagist "
+"<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:45
+msgid ""
+"Except in very rare cases for bug fixes, no changes made to files for the"
+" project space will break your application. All changes noted here are "
+"optional until the next major version, and any mandatory changes will be "
+"covered in the sections above."
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:50
+msgid "Content Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:52
+#: ../../source/installation/upgrade_422.rst:67
+msgid "app/Views/errors/html/error_404.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:53
+#: ../../source/installation/upgrade_422.rst:68
+msgid "app/Views/welcome_message.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:54
+msgid "public/index.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:55
+msgid "spark"
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:58
+msgid "All Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:60
+msgid ""
+"This is a list of all files in the **project space** that received "
+"changes; many will be simple comments or formatting that have no effect "
+"on the runtime:"
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:63
+msgid "app/Config/App.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:64
+msgid "app/Config/Constants.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:65
+msgid "app/Config/Logger.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_422.rst:66
+msgid "app/Config/Paths.php"
+msgstr ""
+

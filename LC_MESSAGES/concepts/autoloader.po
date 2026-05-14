@@ -1,0 +1,327 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/concepts/autoloader.rst:3
+msgid "Autoloading Files"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:9
+msgid ""
+"Every application consists of a large number of classes in many different"
+" locations. The framework provides classes for core functionality. Your "
+"application will have a number of libraries, models, and other entities "
+"to make it work. You might have third-party classes that your project is "
+"using. Keeping track of where every single file is, and hard-coding that "
+"location into your files in a series of ``requires()`` is a massive "
+"headache and very error-prone. That's where autoloaders come in."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:18
+msgid "CodeIgniter4 Autoloader"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:20
+msgid ""
+"CodeIgniter provides a very flexible autoloader that can be used with "
+"very little configuration. It can locate individual namespaced classes "
+"that adhere to `PSR-4`_ autoloading directory structures."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:26
+msgid ""
+"The autoloader works great by itself, but can also work with other "
+"autoloaders, like `Composer <https://getcomposer.org>`_, or even your own"
+" custom autoloaders, if needed. Because they're all registered through "
+"`spl_autoload_register <https://www.php.net/manual/en/function.spl-"
+"autoload-register.php>`_, they work in sequence and don't get in each "
+"other's way."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:32
+msgid ""
+"The autoloader is always active, being registered with "
+"``spl_autoload_register()`` at the beginning of the framework's "
+"execution."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:35
+msgid ""
+"You should always be careful about the case of filenames. Many developers"
+" develop on case-insensitive file systems on Windows or macOS. However, "
+"most server environments use case-sensitive file systems. If the file "
+"name case is incorrect, the autoloader cannot find the file on the "
+"server."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:43
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:45
+msgid ""
+"Initial configuration is done in **app/Config/Autoload.php**. This file "
+"contains two primary arrays: one for the classmap, and one for PSR-4 "
+"compatible namespaces."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:51
+msgid "Namespaces"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:53
+msgid ""
+"The recommended method for organizing your classes is to create one or "
+"more namespaces for your application's files."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:56
+msgid ""
+"The ``$psr4`` array in the configuration file allows you to map the "
+"namespace to the directory those classes can be found in:"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:61
+msgid ""
+"The key of each row is the namespace itself. This does not need a "
+"trailing back slash. The value is the location to the directory the "
+"classes can be found in."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:64
+msgid ""
+"By default, the namespace ``App`` is located in the **app** directory, "
+"and the namespace ``Config`` is located in the **app/Config** directory."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:67
+msgid ""
+"If you create class files in the locations and according to `PSR-4`_, the"
+" autoloader will autoload them."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:73
+msgid "Confirming Namespaces"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:75
+msgid "You can check the namespace configuration by ``spark namespaces`` command:"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:84
+msgid "Application Namespace"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:86
+msgid ""
+"By default, the application directory is namespace to the ``App`` "
+"namespace. You must namespace the controllers, libraries, or models in "
+"the application directory, and they will be found under the ``App`` "
+"namespace."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:90
+msgid "Config Namespace"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:92
+msgid ""
+"Config files are namespaced in the ``Config`` namespace, not in "
+"``App\\Config`` as you might expect. This allows the core system files to"
+" always be able to locate them, even when the application namespace has "
+"changed."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:96
+msgid ""
+"Since v4.5.3 appstarter, the ``Config\\\\`` namespace has been added to "
+"**composer.json**'s ``autoload.psr-4``."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:100
+msgid "Changing App Namespace"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:102
+msgid ""
+"You may change this namespace by editing the **app/Config/Constants.php**"
+" file and setting the new namespace value under the ``APP_NAMESPACE`` "
+"setting:"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:108
+msgid ""
+"And if you use Composer autoloader, you also need to change the ``App`` "
+"namespace in your **composer.json**, and run ``composer dump-autoload``."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:124
+msgid ""
+"Since v4.5.0 appstarter, the ``App\\\\`` namespace has been added to "
+"**composer.json**'s ``autoload.psr-4``. If your **composer.json** does "
+"not have it, adding it may improve your app's autoloading performance."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:128
+msgid ""
+"You will need to modify any existing files that are referencing the "
+"current namespace."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:131
+msgid "Classmap"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:133
+msgid ""
+"If you use third-party libraries that are not Composer packages and are "
+"not namespaced, you can load those classes using the classmap:"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:138
+msgid ""
+"The key of each row is the name of the class that you want to locate. The"
+" value is the path to locate it at."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:142
+msgid "Composer Support"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:144
+msgid "Composer support is automatically initialized by default."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:146
+msgid ""
+"By default, it looks for Composer's autoload file at ``ROOTPATH . "
+"'vendor/autoload.php'``. If you need to change the location of that file "
+"for any reason, you can modify the value defined in "
+"**app/Config/Constants.php**."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:151
+msgid "Priority of Autoloaders"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:153
+msgid ""
+"If the same namespace is defined in both CodeIgniter and Composer, "
+"Composer's autoloader will be the first one to get a chance to locate the"
+" file."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:156
+msgid ""
+"Prior to v4.5.0, if the same namespace was defined in both CodeIgniter "
+"and Composer, CodeIgniter's autoloader was the first one to get a chance "
+"to locate the file."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:163
+msgid "FileLocator Caching"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:167
+msgid ""
+"**FileLocator** is responsible for finding files or getting a classname "
+"from a file, which cannot be achieved with PHP autoloading."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:170
+msgid "To improve its performance, FileLocator Caching has been implemented."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:173
+msgid "How It Works"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:175
+msgid ""
+"Save the all found data by FileLocator into a cache file when "
+"destructing, if the cache data is updated."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:177
+msgid "Restore cached data when instantiating if cached data is available."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:179
+msgid "The cached data are used permanently."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:182
+msgid "How to Delete Cached Data"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:184
+msgid "Once stored, the cached data never expire."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:186
+msgid ""
+"So if you add or remove files or change existing file paths, or "
+"namespaces, old cached data will be returned and your app may not work "
+"properly."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:189
+msgid ""
+"In that case, you must manually delete the cache file. If you add a "
+"CodeIgniter package via Composer, you also need to delete the cache file."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:192
+msgid "You can use the ``spark cache:clear`` command:"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:198
+msgid "Or simply delete the **writable/cache/FileLocatorCache** file."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:201
+msgid "The ``spark optimize`` command clears the cache."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:204
+msgid "How to Enable FileLocator Caching"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:206
+msgid "Set the following property to ``true`` in **app/Config/Optimize.php**::"
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:210
+msgid "Or you can enable it with the ``spark optimize`` command."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:213
+msgid ""
+"This property cannot be overridden by :ref:`environment variables "
+"<configuration-classes-and-environment-variables>`."
+msgstr ""
+
+#: ../../source/concepts/autoloader.rst:216
+msgid ""
+"Do not use this option when running the app in the :doc:`Worker Mode "
+"</installation/worker_mode>`."
+msgstr ""
+

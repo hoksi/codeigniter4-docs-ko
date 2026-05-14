@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/testing/mocking.rst:3
+msgid "Mocking System Classes"
+msgstr ""
+
+#: ../../source/testing/mocking.rst:5
+msgid ""
+"Several components within the framework provide mocked versions of their "
+"classes that can be used during testing. These classes can take the place"
+" of the normal class during test execution, often providing additional "
+"assertions to test that actions have taken place (or not taken place) "
+"during the execution of the test. This might be checking data gets cached"
+" correctly, emails were sent correctly, etc."
+msgstr ""
+
+#: ../../source/testing/mocking.rst:15
+msgid "Cache"
+msgstr ""
+
+#: ../../source/testing/mocking.rst:17
+msgid ""
+"You can mock the cache with the ``mock()`` method, using the "
+"``CacheFactory`` as its only parameter."
+msgstr ""
+
+#: ../../source/testing/mocking.rst:21
+msgid ""
+"While this returns an instance of ``CodeIgniter\\Test\\Mock\\MockCache`` "
+"that you can use directly, it also inserts the mock into the Service "
+"class, so any calls within your code to ``service('cache')`` or "
+"``Config\\Services::cache()`` will use the mocked class within its place."
+msgstr ""
+
+#: ../../source/testing/mocking.rst:25
+msgid ""
+"When using this in more than one test method within a single file you "
+"should call either the ``clean()`` or ``bypass()`` methods during the "
+"test ``setUp()`` to ensure a clean slate when your tests run."
+msgstr ""
+
+#: ../../source/testing/mocking.rst:29
+msgid "Additional Methods"
+msgstr ""
+
+#: ../../source/testing/mocking.rst:31
+msgid ""
+"You can instruct the mocked cache handler to never do any caching with "
+"the ``bypass()`` method. This will emulate using the dummy handler and "
+"ensures that your test does not rely on cached data for your tests."
+msgstr ""
+
+#: ../../source/testing/mocking.rst:37
+msgid "Available Assertions"
+msgstr ""
+
+#: ../../source/testing/mocking.rst:39
+msgid ""
+"The following new assertions are available on the mocked class for using "
+"during testing:"
+msgstr ""
+

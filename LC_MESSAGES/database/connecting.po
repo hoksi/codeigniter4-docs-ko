@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/database/connecting.rst:3
+msgid "Connecting to your Database"
+msgstr ""
+
+#: ../../source/database/connecting.rst:10
+msgid "Connecting to a Database"
+msgstr ""
+
+#: ../../source/database/connecting.rst:13
+msgid "Connecting to the Default Group"
+msgstr ""
+
+#: ../../source/database/connecting.rst:15
+msgid ""
+"You can connect to your database by adding this line of code in any "
+"function where it is needed, or in your class constructor to make the "
+"database available globally in that class."
+msgstr ""
+
+#: ../../source/database/connecting.rst:22
+msgid ""
+"If the above function does **not** contain any information in the first "
+"parameter, it will connect to the default group specified in your "
+"database config file. For most people, this is the preferred method of "
+"use."
+msgstr ""
+
+#: ../../source/database/connecting.rst:26
+msgid ""
+"A convenience method exists that is purely a wrapper around the above "
+"line and is provided for your convenience:"
+msgstr ""
+
+#: ../../source/database/connecting.rst:33
+msgid "Available Parameters"
+msgstr ""
+
+#: ../../source/database/connecting.rst:35
+msgid ""
+"**\\\\Config\\\\Database::connect($group = null, bool $getShared = true):"
+" BaseConnection**"
+msgstr ""
+
+#: ../../source/database/connecting.rst:37
+msgid ""
+"``$group``: The database group name, a string that must match the config "
+"class' property name. Default value is "
+"``Config\\Database::$defaultGroup``."
+msgstr ""
+
+#: ../../source/database/connecting.rst:38
+msgid ""
+"``$getShared``: true/false (boolean). Whether to return the shared "
+"connection (see Connecting to Multiple Databases below)."
+msgstr ""
+
+#: ../../source/database/connecting.rst:42
+msgid "Connecting to Specific Group"
+msgstr ""
+
+#: ../../source/database/connecting.rst:44
+msgid ""
+"The first parameter of this function can **optionally** be used to "
+"specify a particular database group from your config file. Examples:"
+msgstr ""
+
+#: ../../source/database/connecting.rst:47
+msgid "To choose a specific group from your config file you can do this:"
+msgstr ""
+
+#: ../../source/database/connecting.rst:52
+msgid ""
+"Where ``group_name`` is the name of the connection group from your config"
+" file."
+msgstr ""
+
+#: ../../source/database/connecting.rst:56
+msgid "Multiple Connections to Same Database"
+msgstr ""
+
+#: ../../source/database/connecting.rst:58
+msgid ""
+"By default, the ``connect()`` method will return the same instance of the"
+" database connection every time. If you need to have a separate "
+"connection to the same database, send ``false`` as the second parameter:"
+msgstr ""
+
+#: ../../source/database/connecting.rst:66
+msgid "Connecting to Multiple Databases"
+msgstr ""
+
+#: ../../source/database/connecting.rst:68
+msgid ""
+"If you need to connect to more than one database simultaneously you can "
+"do so as follows:"
+msgstr ""
+
+#: ../../source/database/connecting.rst:74
+msgid ""
+"Note: Change the words ``group_one`` and ``group_two`` to the specific "
+"group names you are connecting to."
+msgstr ""
+
+#: ../../source/database/connecting.rst:77
+msgid ""
+"You don't need to create separate database configurations if you only "
+"need to use a different database on the same connection. You can switch "
+"to a different database when you need to, like this: "
+"``$db->setDatabase($database2_name);``"
+msgstr ""
+
+#: ../../source/database/connecting.rst:83
+msgid "Connecting with Custom Settings"
+msgstr ""
+
+#: ../../source/database/connecting.rst:85
+msgid ""
+"You can pass in an array of database settings instead of a group name to "
+"get a connection that uses your custom settings. The array passed in must"
+" be the same format as the groups are defined in the configuration file:"
+msgstr ""
+
+#: ../../source/database/connecting.rst:93
+msgid "Reconnecting / Keeping the Connection Alive"
+msgstr ""
+
+#: ../../source/database/connecting.rst:95
+msgid ""
+"If the database server's idle timeout is exceeded while you're doing some"
+" heavy PHP lifting (processing an image, for instance), you should "
+"consider calling the ``reconnect()`` method before sending further "
+"queries, which can gracefully keep the connection alive or re-establish "
+"it."
+msgstr ""
+
+#: ../../source/database/connecting.rst:100
+msgid ""
+"The ``reconnect()`` method pings the server to check if the connection is"
+" still alive. If the connection has been lost, it will close and re-"
+"establish the connection."
+msgstr ""
+
+#: ../../source/database/connecting.rst:108
+msgid "Manually Closing the Connection"
+msgstr ""
+
+#: ../../source/database/connecting.rst:110
+msgid ""
+"While CodeIgniter intelligently takes care of closing your database "
+"connections, you can explicitly close the connection."
+msgstr ""
+

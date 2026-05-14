@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/helpers/date_helper.rst:3
+msgid "Date Helper"
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst:5
+msgid "The Date Helper file contains functions that assist in working with dates."
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst:12
+msgid ""
+"Many functions previously found in the CodeIgniter 3 ``date_helper`` have"
+" been moved to the :doc:`Time <../libraries/time>` class in CodeIgniter "
+"4."
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst:15
+msgid "Loading this Helper"
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst:17
+msgid "This helper is loaded using the following code:"
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst:22
+msgid "Available Functions"
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst:24
+msgid "The following functions are available:"
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst:28
+msgid "Timezone"
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst:29
+msgid "UNIX timestamp"
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst:32
+msgid ""
+"It is recommended to use the :doc:`Time <../libraries/time>` class "
+"instead. Use ``Time::now()->getTimestamp()`` to get the current UNIX "
+"timestamp."
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst:34
+msgid ""
+"If a timezone is not provided, it will return the current UNIX timestamp "
+"by ``time()``."
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst:38
+msgid ""
+"If any PHP supported timezone is provided, it will return a timestamp "
+"that is offset by the time difference. It is not the same as the current "
+"UNIX timestamp."
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst:40
+msgid ""
+"If you do not intend to set your master time reference to any other PHP "
+"supported timezone (which you'll typically do if you run a site that lets"
+" each user set their own timezone settings) there is no benefit to using "
+"this function over PHP's ``time()`` function."
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst:47
+msgid "Optional class to apply to the select field"
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst:48
+msgid "Default value for initial selection"
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst:49
+msgid ""
+"DateTimeZone class constants (see `listIdentifiers "
+"<https://www.php.net/manual/en/datetimezone.listidentifiers.php>`_)"
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst:50
+msgid ""
+"A two-letter ISO 3166-1 compatible country code (see `listIdentifiers "
+"<https://www.php.net/manual/en/datetimezone.listidentifiers.php>`_)"
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst:51
+msgid "Preformatted HTML select field"
+msgstr ""
+
+#: ../../source/helpers/date_helper.rst:54
+msgid ""
+"Generates a `select` form field of available timezones (optionally "
+"filtered by ``$what`` and ``$country``). You can supply an option class "
+"to apply to the field to make formatting easier, as well as a default "
+"selected value."
+msgstr ""
+

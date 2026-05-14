@@ -1,0 +1,217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_444.rst:3
+msgid "Upgrading from 4.4.3 to 4.4.4"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:5
+msgid ""
+"Please refer to the upgrade instructions corresponding to your "
+"installation method."
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:7
+msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:8
+msgid ""
+":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
+"Upgrading <adding-codeigniter4-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:9
+msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:17
+msgid "Mandatory File Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:20
+msgid "Error Files"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:22
+msgid "Update the following files to show correct error messages:"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:24
+#: ../../source/installation/upgrade_444.rst:97
+msgid "app/Views/errors/cli/error_exception.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:25
+#: ../../source/installation/upgrade_444.rst:98
+msgid "app/Views/errors/html/error_exception.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:29
+msgid "Breaking Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:34
+msgid "Validation with Dot Array Syntax"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:36
+msgid ""
+"If you are using :ref:`dot array syntax <validation-dot-array-syntax>` in"
+" validation rules, a bug where ``*`` would validate data in incorrect "
+"dimensions has been fixed."
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:39
+msgid ""
+"In previous versions, the rule key ``contacts.*.name`` captured data with"
+" any level like ``contacts.*.name``, ``contacts.*.*.name``, "
+"``contacts.*.*.*.name``, etc., incorrectly."
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:43
+msgid "The following code explains details:"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:48
+msgid "If you have code that depends on the bug, fix the the rule key."
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:51
+msgid "Validation rules matches and differs"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:53
+msgid ""
+"Because bugs have been fixed in the case where ``matches`` and "
+"``differs`` in the Strict and Traditional rules validate data of non-"
+"string types, if you are using these rules and validate non-string data, "
+"the validation results might be changed (fixed)."
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:58
+msgid ""
+"Note that Traditional Rules should not be used to validate data that is "
+"not a string."
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:62
+msgid "The use of the `ssl_key` option in CURLRequest was removed"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:64
+msgid ""
+"CURLRequest option `ssl_key` it's not recognized anymore. If in use, "
+"option `ssl_key` must be replaced with option `verify` in order to define"
+" the path to a CA bundle for CURLRequest."
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:68
+msgid "CURLRequest option `verify` can also take *boolean* values as usual."
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:72
+msgid "Project Files"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:74
+msgid ""
+"Some files in the **project space** (root, app, public, writable) "
+"received updates. Due to these files being outside of the **system** "
+"scope they will not be changed without your intervention."
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:77
+#, python-format
+msgid ""
+"There are some third-party CodeIgniter modules available to assist with "
+"merging changes to the project space: `Explore on Packagist "
+"<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:81
+msgid "All Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:83
+msgid ""
+"This is a list of all files in the **project space** that received "
+"changes; many will be simple comments or formatting that have no effect "
+"on the runtime:"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:86
+msgid "app/Config/App.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:87
+msgid "app/Config/Autoload.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:88
+msgid "app/Config/Boot/development.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:89
+msgid "app/Config/Boot/testing.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:90
+msgid "app/Config/Cache.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:91
+msgid "app/Config/Email.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:92
+msgid "app/Config/Filters.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:93
+msgid "app/Config/Kint.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:94
+msgid "app/Config/Modules.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:95
+msgid "app/Config/Publisher.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:96
+msgid "app/Config/Session.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:99
+msgid "composer.json"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:100
+msgid "env"
+msgstr ""
+
+#: ../../source/installation/upgrade_444.rst:101
+msgid "spark"
+msgstr ""
+

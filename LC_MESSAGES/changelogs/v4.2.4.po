@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.2.4.rst:2
+msgid "Version 4.2.4"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.4.rst:4
+msgid "Release Date: August 13, 2022"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.4.rst:6
+msgid "**4.2.4 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.4.rst:12
+msgid "**Hotfix release to fix download errors; no other content changes.**"
+msgstr ""
+

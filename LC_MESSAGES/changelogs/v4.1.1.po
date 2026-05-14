@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.1.1.rst:2
+msgid "Version 4.1.1"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.1.rst:4
+msgid "Release Date: February 1, 2021"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.1.rst:6
+msgid "**4.1.1 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.1.rst:13
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.1.rst:15
+msgid ""
+"Fixed an issue where ``.gitattributes`` was preventing framework "
+"downloads."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.1.rst:17
+msgid ""
+"Note that this fix was also applied retroactively to 4.0.5 on the "
+"**framework** repo."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.1.rst:19
+msgid ""
+"See the repo's `CHANGELOG_4.1.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/changelogs/CHANGELOG_4.1.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

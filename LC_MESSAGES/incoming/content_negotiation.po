@@ -1,0 +1,304 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/incoming/content_negotiation.rst:3
+msgid "Content Negotiation"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:11
+msgid "What is Content Negotiation?"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:13
+msgid ""
+"Content negotiation is a way to determine what type of content to return "
+"to the client based on what the client can handle, and what the server "
+"can handle. This can be used to determine whether the client is wanting "
+"HTML or JSON returned, whether the image should be returned as a JPEG or "
+"PNG, what type of compression is supported and more. This is done by "
+"analyzing four different headers which can each support multiple value "
+"options, each with their own priority."
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:18
+msgid ""
+"Trying to match this up manually can be pretty challenging. CodeIgniter "
+"provides the ``Negotiator`` class that can handle this for you."
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:21
+msgid ""
+"At it's heart Content Negotiation is simply a part of the HTTP "
+"specification that allows a single resource to serve more than one type "
+"of content, allowing the clients to request the type of data that works "
+"best for them."
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:25
+msgid ""
+"A classic example of this is a browser that cannot display PNG files can "
+"request only GIF or JPEG images. When the server receives the request, it"
+" looks at the available file types the client is requesting and selects "
+"the best match from the image formats that it supports, in this case "
+"likely choosing a JPEG image to return."
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:30
+msgid "This same negotiation can happen with four types of data:"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:32
+msgid ""
+"**Media/Document Type** - this could be image format, or HTML vs. XML or "
+"JSON."
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:33
+msgid ""
+"**Character Set** - The character set the returned document should be set"
+" in. Typically is UTF-8."
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:34
+msgid ""
+"**Document Encoding** - Typically the type of compression used on the "
+"results."
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:35
+msgid ""
+"**Document Language** - For sites that support multiple languages, this "
+"helps determine which to return."
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:39
+msgid "Loading the Class"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:41
+msgid "You can load an instance of the class manually through the Service class:"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:45
+msgid ""
+"This will grab the current request instance and automatically inject it "
+"into the Negotiator class."
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:47
+msgid ""
+"This class does not need to be loaded on it's own. Instead, it can be "
+"accessed through this request's ``IncomingRequest`` instance. While you "
+"cannot access it directly this way, you can easily access all of methods "
+"through the ``negotiate()`` method:"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:53
+msgid ""
+"When accessed this way, the first parameter is the type of content you're"
+" trying to find a match for, while the second is an array of supported "
+"values."
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:58
+msgid "Negotiating"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:60
+msgid ""
+"In this section, we will discuss the 4 types of content that can be "
+"negotiated and show how that would look using both of the methods "
+"described above to access the negotiator."
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:64
+msgid "Media"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:66
+msgid ""
+"The first aspect to look at is handling 'media' negotiations. These are "
+"provided by the ``Accept`` header and is one of the most complex headers "
+"available. A common example is the client telling the server what format "
+"it wants the data in. This is especially common in APIs. For example, a "
+"client might request JSON formatted data from an API endpoint::"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:74
+msgid ""
+"The server now needs to provide a list of what type of content it can "
+"provide. In this example, the API might be able to return data as raw "
+"HTML, JSON, or XML. This list should be provided in order of preference:"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:79
+msgid ""
+"In this case, both the client and the server can agree on formatting the "
+"data as JSON so 'json' is returned from the negotiate method. By default,"
+" if no match is found, the first element in the ``$supported`` array "
+"would be returned. In some cases, though, you might need to enforce the "
+"format to be a strict match. If you pass ``true`` as the final value, it "
+"will return an empty string if no match is found:"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:87
+msgid "Language"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:89
+msgid ""
+"Another common usage is to determine the language the content should be "
+"served in. If you are running only a single language site, this obviously"
+" isn't going to make much difference, but any site that can offer up "
+"multiple translations of content will find this useful, since the browser"
+" will typically send the preferred language along in the ``Accept-"
+"Language`` header::"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:97
+msgid ""
+"In this example, the browser would prefer French, with a second choice of"
+" English. If your website supports English and German you would do "
+"something like:"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:102
+msgid ""
+"In this example, 'en' would be returned as the current language. If no "
+"match is found, it will return the first element in the ``$supported`` "
+"array, so that should always be the preferred language."
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:106
+msgid "Strict Locale Negotiation"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:110
+msgid ""
+"By default, locale is determined on a lossy comparison basis. So only the"
+" first part of the locale string is taken into account (language). This "
+"is usually sufficient. But sometimes we want to be able to distinguish "
+"between regional versions such as ``en-US`` and ``en-GB`` to serve "
+"different content."
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:114
+msgid ""
+"For such cases, we have introduced a new setting that can be enabled via "
+"``Config\\Feature::$strictLocaleNegotiation``. This will ensure that the "
+"strict comparison will be made in the first place."
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:119
+msgid ""
+"CodeIgniter comes with translations only for primary language tags ('en',"
+" 'fr', etc.). So if you enable this feature and your settings in "
+"``Config\\App::$supportedLocales`` include regional language tags ('en-"
+"US', 'fr-FR', etc.), then keep in mind that if you have your own "
+"translation files, you **must also change** the folder names for "
+"CodeIgniter's translation files to match what you put in the "
+"``$supportedLocales`` array."
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:124
+msgid ""
+"Now let's consider the below example. The browser's preferred language "
+"will be set as this::"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:129
+msgid ""
+"In this example, the browser would prefer French, with a second choice of"
+" English (United Kingdom). Your website on another hand supports German "
+"and English (United States):"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:134
+msgid ""
+"In this example, 'en-US' would be returned as the current language. If no"
+" match is found, it will return the first element in the ``$supported`` "
+"array. Here is how exactly the locale selection process works."
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:137
+msgid ""
+"Even though the 'fr' is preferred by the browser it is not in our "
+"``$supported`` array. The same problem occurs with 'en-GB', but here we "
+"will be able to search for variants. First, we will fallback to the most "
+"general locale (in this case 'en') which again is not in our array. Then "
+"we will search for the regional locale 'en-'. And that's when our value "
+"from the ``$supported`` array will be matched. We will return 'en-US'."
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:142
+msgid "So the process of selecting a locale is as follows:"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:144
+msgid "strict match ('en-GB') - ISO 639-1 plus ISO 3166-1 alpha-2"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:145
+msgid "general locale match ('en') - ISO 639-1"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:146
+msgid ""
+"regional locale match ('en-') - ISO 639-1 plus \"wildcard\" for ISO "
+"3166-1 alpha-2"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:149
+msgid "Encoding"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:151
+msgid ""
+"The ``Accept-Encoding`` header contains the character sets the client "
+"prefers to receive, and is used to specify the type of compression the "
+"client supports::"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:157
+msgid ""
+"Your web server will define what types of compression you can use. Some, "
+"like Apache, only support **gzip**:"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:161
+msgid "See more at `Wikipedia <https://en.wikipedia.org/wiki/HTTP_compression>`_."
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:164
+msgid "Character Set"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:166
+msgid ""
+"The desired character set is passed through the ``Accept-Charset`` "
+"header::"
+msgstr ""
+
+#: ../../source/incoming/content_negotiation.rst:171
+msgid "By default, if no matches are found, **utf-8** will be returned:"
+msgstr ""
+

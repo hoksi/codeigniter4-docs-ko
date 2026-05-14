@@ -1,0 +1,699 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/libraries/encryption.rst:3
+msgid "Encryption Service"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:5
+msgid ""
+"DO NOT use this or any other *encryption* library for password storage! "
+"Passwords must be *hashed* instead, and you should do that through PHP's "
+"`Password Hashing extension <https://www.php.net/password>`_."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:10
+msgid ""
+"The Encryption Service provides two-way symmetric (secret key) data "
+"encryption. The service will instantiate and/or initialize an encryption "
+"**handler** to suit your parameters as explained below."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:14
+msgid ""
+"Encryption Service handlers must implement CodeIgniter's simple "
+"``EncrypterInterface``. Using an appropriate PHP cryptographic extension "
+"or third-party library may require additional software to be installed on"
+" your server and/or might need to be explicitly enabled in your instance "
+"of PHP."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:19
+msgid "The following PHP extensions are currently supported:"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:21
+msgid "`OpenSSL <https://www.php.net/openssl>`_"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:22
+msgid "`Sodium <https://www.php.net/manual/en/book.sodium>`_"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:24
+msgid ""
+"This is not a full cryptographic solution. If you need more capabilities,"
+" for example, public-key encryption, we suggest you consider direct use "
+"of OpenSSL or one of the other `Cryptography Extensions "
+"<https://www.php.net/manual/en/refs.crypto.php>`_. A more comprehensive "
+"package like `Halite <https://github.com/paragonie/halite>`_ (an O-O "
+"package built on libsodium) is another possibility."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:30
+msgid ""
+"Support for the ``MCrypt`` extension has been dropped, as that has been "
+"deprecated as of PHP 7.2."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:41
+msgid "Using the Encryption Library"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:43
+msgid ""
+"Like all services in CodeIgniter, it can be loaded via "
+"``Config\\Services``:"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:47
+msgid ""
+"Assuming you have set your starting key (see :ref:`configuration`), "
+"encrypting and decrypting data is simple - pass the appropriate string to"
+" ``encrypt()`` and/or ``decrypt()`` methods:"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:53
+msgid ""
+"And that's it! The Encryption library will do everything necessary for "
+"the whole process to be cryptographically secure out-of-the-box. You "
+"don't need to worry about it."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:60
+msgid "Configuring the Library"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:62
+msgid ""
+"The example above uses the configuration settings found in "
+"**app/Config/Encryption.php**."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:65
+msgid "Option"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:65
+msgid "Possible values (default in parentheses)"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:67
+msgid "key"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:67
+msgid "Encryption key starter"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:68
+msgid "driver"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:68
+msgid "Preferred handler, e.g., OpenSSL or Sodium (``OpenSSL``)"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:69
+msgid "digest"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:69
+msgid "Message digest algorithm (``SHA512``)"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:70
+msgid "blockSize"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:70
+msgid "[**SodiumHandler** only] Padding length in bytes (``16``)"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:71
+msgid "cipher"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:71
+msgid "[**OpenSSLHandler** only] Cipher to use (``AES-256-CTR``)"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:72
+msgid "encryptKeyInfo"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:72
+msgid "[**OpenSSLHandler** only] Encryption key info (``''``)"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:73
+msgid "authKeyInfo"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:73
+msgid "[**OpenSSLHandler** only] Authentication key info (``''``)"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:74
+msgid "rawData"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:74
+msgid "[**OpenSSLHandler** only] Whether the cipher-text should be raw (``true``)"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:77
+msgid ""
+"You can replace the config file's settings by passing a configuration "
+"object of your own to the ``Services`` call. The ``$config`` variable "
+"must be an instance of the ``Config\\Encryption`` class."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:86
+msgid "Configuration to Maintain Compatibility with CI3"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:90
+msgid ""
+"Since v4.3.0, you can decrypt data encrypted with CI3's Encryption. If "
+"you need to decrypt such data, use the following settings to maintain "
+"compatibility."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:96
+msgid "Supported HMAC Authentication Algorithms"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:98
+msgid ""
+"For HMAC message authentication, the Encryption library supports usage of"
+" the SHA-2 family of algorithms:"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:102
+msgid "Algorithm"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:102
+msgid "Raw length (bytes)"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:102
+msgid "Hex-encoded length (bytes)"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:104
+msgid "SHA512"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:104
+#: ../../source/libraries/encryption.rst:106
+msgid "64"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:104
+msgid "128"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:105
+msgid "SHA384"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:105
+msgid "48"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:105
+msgid "96"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:106
+msgid "SHA256"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:106
+msgid "32"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:107
+msgid "SHA224"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:107
+msgid "28"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:107
+msgid "56"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:110
+msgid ""
+"The reason for not including other popular algorithms, such as MD5 or "
+"SHA1 is that they are no longer considered secure enough and as such, we "
+"don't want to encourage their usage. If you absolutely need to use them, "
+"it is easy to do so via PHP's native `hash_hmac() "
+"<http://php.net/manual/en/function.hash-hmac.php>`_ function."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:116
+msgid ""
+"Stronger algorithms of course will be added in the future as they appear "
+"and become widely available."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:120
+msgid "Default Behavior"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:122
+msgid ""
+"By default, the Encryption Library uses the OpenSSL handler. That handler"
+" encrypts using the AES-256-CTR algorithm, your configured *key*, and "
+"SHA512 HMAC authentication."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:126
+msgid "Setting Your Encryption Key"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:128
+msgid ""
+"Your encryption key **must** be as long as the encryption algorithm in "
+"use allows. For AES-256, that's 256 bits or 32 bytes (characters) long."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:131
+msgid ""
+"The key should be as random as possible, and it **must not** be a regular"
+" text string, nor the output of a hashing function, etc. To create a "
+"proper key, you can use the Encryption library's ``createKey()`` method."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:137
+msgid ""
+"The key can be stored in **app/Config/Encryption.php**, or you can design"
+" a storage mechanism of your own and pass the key dynamically when "
+"encrypting/decrypting."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:140
+msgid ""
+"To save your key to your **app/Config/Encryption.php**, open the file and"
+" set:"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:146
+msgid "Encoding Keys or Results"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:148
+msgid ""
+"You'll notice that the ``createKey()`` method outputs binary data, which "
+"is hard to deal with (i.e., a copy-paste may damage it), so you may use "
+"``bin2hex()``, or ``base64_encode`` to work with the key in a more "
+"friendly manner. For example:"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:155
+msgid "You might find the same technique useful for the results of encryption:"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:161
+msgid "Using Prefixes in Storing Keys"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:163
+msgid ""
+"You may take advantage of two special prefixes in storing your encryption"
+" keys: ``hex2bin:`` and ``base64:``. When these prefixes immediately "
+"precede the value of your key, ``Encryption`` will intelligently parse "
+"the key and still pass a binary string to the library."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:171
+msgid "Similarly, you can use these prefixes in your **.env** file, too! ::"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:181
+msgid "Encryption Key Rotation"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:185
+msgid ""
+"When you need to rotate your encryption key (for security best practices "
+"or compliance requirements), you can use the ``previousKeys`` "
+"configuration option to maintain the ability to decrypt data encrypted "
+"with old keys while using a new key for all new encryption operations."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:190
+msgid "How It Works"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:192
+msgid "**Encryption** always uses the current ``key`` value"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:193
+msgid "**Decryption** tries the current ``key`` first"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:194
+msgid ""
+"If decryption fails, it automatically falls back to trying each key in "
+"``previousKeys``"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:195
+msgid "This allows seamless key rotation without data loss"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:198
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:200
+msgid ""
+"Add your old keys to the ``$previousKeys`` property in "
+"**app/Config/Encryption.php**:"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:205
+msgid "Using .env File"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:207
+msgid ""
+"You can also configure previous keys in your **.env** file (recommended) "
+"using a comma-separated list:"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:214
+msgid ""
+"The framework automatically parses the comma-separated string into an "
+"array and processes each key."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:217
+msgid "Key Rotation Workflow"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:219
+msgid "**Before rotation**: Data is encrypted and decrypted with ``key``"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:220
+msgid ""
+"**Start rotation**: Move current ``key`` value to ``previousKeys`` array,"
+" set new value for ``key``"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:221
+msgid ""
+"**During rotation**: New data encrypted with new ``key``, old data still "
+"decryptable via ``previousKeys``"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:222
+msgid ""
+"**Re-encrypt data** (optional): Decrypt and re-encrypt existing data with"
+" the new key"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:223
+msgid ""
+"**Complete rotation**: Once all data is re-encrypted, remove old keys "
+"from ``previousKeys``"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:225
+msgid ""
+"The ``previousKeys`` feature is for **decryption fallback only**. All new"
+" encryption operations always use the current ``key``. If you pass an "
+"explicit key via the ``$params`` argument to ``encrypt()`` or "
+"``decrypt()``, the previousKeys fallback will not be used."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:230
+msgid "Padding"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:232
+msgid ""
+"Sometimes, the length of a message may provide a lot of information about"
+" its nature. If a message is one of \"yes\", \"no\" and \"maybe\", "
+"encrypting the message doesn't help: knowing the length is enough to know"
+" what the message is."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:236
+msgid ""
+"Padding is a technique to mitigate this, by making the length a multiple "
+"of a given block size."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:238
+msgid ""
+"Padding is implemented in ``SodiumHandler`` using libsodium's native "
+"``sodium_pad`` and ``sodium_unpad`` functions. This requires the use of a"
+" padding length (in bytes) that is added to the plaintext message prior "
+"to encryption, and removed after decryption. Padding is configurable via "
+"the ``$blockSize`` property of ``Config\\Encryption``. This value should "
+"be greater than zero."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:243
+msgid ""
+"You are advised not to devise your own padding implementation. You must "
+"always use the more secure implementation of a library. Also, passwords "
+"should not be padded. Usage of padding in order to hide the length of a "
+"password is not recommended. A client willing to send a password to a "
+"server should hash it instead (even with a single iteration of the hash "
+"function). This ensures that the length of the transmitted data is "
+"constant, and that the server doesn't effortlessly get a copy of the "
+"password."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:251
+msgid "Encryption Handler Notes"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:254
+msgid "OpenSSL Notes"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:256
+msgid ""
+"The `OpenSSL <https://www.php.net/openssl>`_ extension has been a "
+"standard part of PHP for a long time."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:258
+msgid "CodeIgniter's OpenSSL handler uses the AES-256-CTR cipher."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:260
+msgid ""
+"The *key* your configuration provides is used to derive two other keys, "
+"one for encryption and one for authentication. This is achieved by way of"
+" a technique known as an `HMAC-based Key Derivation Function "
+"<https://en.wikipedia.org/wiki/HKDF>`_ (HKDF)."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:265
+msgid "Sodium Notes"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:267
+msgid ""
+"The `Sodium <https://www.php.net/manual/en/book.sodium>`_ extension is "
+"bundled by default in PHP as of PHP 7.2.0."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:270
+msgid ""
+"Sodium uses the algorithms XSalsa20 to encrypt, Poly1305 for MAC, and "
+"XS25519 for key exchange in sending secret messages in an end-to-end "
+"scenario. To encrypt and/or authenticate a string using a shared-key, "
+"such as symmetric encryption, Sodium uses the XSalsa20 algorithm to "
+"encrypt and HMAC-SHA512 for the authentication."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:276
+msgid "Message Length"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:278
+msgid ""
+"An encrypted string is usually longer than the original, plain-text "
+"string (depending on the cipher)."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:280
+msgid ""
+"This is influenced by the cipher algorithm itself, the initialization "
+"vector (IV) prepended to the cipher-text, and the HMAC authentication "
+"message that is also prepended. Furthermore, the encrypted message is "
+"also Base64-encoded so that it is safe for storage and transmission "
+"regardless of the character-set in use."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:285
+msgid ""
+"Keep this information in mind when selecting your data storage mechanism."
+" Cookies, for example, can only hold 4K of information."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:289
+msgid "Using the Encryption Service Directly"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:291
+msgid ""
+"Instead of (or in addition to) using ``Services`` as described in "
+":ref:`usage`, you can create an \"Encrypter\" directly, or change the "
+"settings of an existing instance."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:296
+msgid ""
+"Remember, that ``$config`` must be an instance of ``Config\\Encryption`` "
+"class."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:300
+msgid "Class Reference"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:308
+msgid "Output length"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:309
+msgid ""
+"A pseudo-random cryptographic key with the specified length, or ``false``"
+" on failure"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:312
+msgid ""
+"Creates a cryptographic key by fetching random data from the operating "
+"system's sources (*i.e.* ``/dev/urandom``)."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:317
+msgid "Configuration parameters"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:318
+msgid "``CodeIgniter\\Encryption\\EncrypterInterface`` instance"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:319
+msgid "``CodeIgniter\\Encryption\\EncrypterInterface``"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst
+msgid "throws"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:320
+#: ../../source/libraries/encryption.rst:338
+#: ../../source/libraries/encryption.rst:359
+msgid "``CodeIgniter\\Encryption\\Exceptions\\EncryptionException``"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:322
+msgid "Initializes (configures) the library to use different settings."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:324
+msgid "Example:"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:328
+msgid "Please refer to the :ref:`configuration` section for detailed info."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:334
+msgid "Data to encrypt"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:335
+#: ../../source/libraries/encryption.rst:356
+msgid "Configuration parameters (key)"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:336
+msgid "Encrypted data"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:340
+msgid "Encrypts the input data and returns its ciphertext."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:342
+#: ../../source/libraries/encryption.rst:363
+msgid ""
+"If you pass parameters as the second argument, the ``key`` element will "
+"be used as the starting key for this operation if ``$params`` is an "
+"array; or the starting key may be passed as a string."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:346
+#: ../../source/libraries/encryption.rst:367
+msgid ""
+"If you are using the SodiumHandler and want to pass a different "
+"``blockSize`` on runtime, pass the ``blockSize`` key in the ``$params`` "
+"array."
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:349
+#: ../../source/libraries/encryption.rst:370
+msgid "Examples:"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:355
+msgid "Data to decrypt"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:357
+msgid "Decrypted data"
+msgstr ""
+
+#: ../../source/libraries/encryption.rst:361
+msgid "Decrypts the input data and returns it in plain-text."
+msgstr ""
+

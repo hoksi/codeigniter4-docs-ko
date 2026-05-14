@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_emails.rst:2
+msgid "Upgrade Emails"
+msgstr ""
+
+#: ../../source/installation/upgrade_emails.rst:9
+msgid "Documentations"
+msgstr ""
+
+#: ../../source/installation/upgrade_emails.rst:11
+msgid ""
+"`Email Documentation CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/libraries/email.html>`_"
+msgstr ""
+
+#: ../../source/installation/upgrade_emails.rst:12
+msgid ":doc:`Email Documentation CodeIgniter 4.x </libraries/email>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_emails.rst:15
+msgid "What has been changed"
+msgstr ""
+
+#: ../../source/installation/upgrade_emails.rst:16
+msgid ""
+"Only small things like the method names and the loading of the library "
+"have changed."
+msgstr ""
+
+#: ../../source/installation/upgrade_emails.rst:17
+msgid ""
+"The behavior when using the SMTP protocol has been slightly changed. You "
+"may not be able to communicate with your SMTP server properly if you use "
+"the CI3 settings. See :ref:`email-ssl-tls-for-smtp` and :ref:`email-"
+"preferences`."
+msgstr ""
+
+#: ../../source/installation/upgrade_emails.rst:20
+msgid "Upgrade Guide"
+msgstr ""
+
+#: ../../source/installation/upgrade_emails.rst:21
+msgid ""
+"Within your class change the ``$this->load->library('email');`` to "
+"``$email = service('email');``."
+msgstr ""
+
+#: ../../source/installation/upgrade_emails.rst:22
+msgid ""
+"From that on you have to replace every line starting with "
+"``$this->email`` to ``$email``."
+msgstr ""
+
+#: ../../source/installation/upgrade_emails.rst:23
+msgid ""
+"The methods in the Email class are named slightly different. All methods,"
+" except for ``send()``, ``attach()``, ``printDebugger()`` and ``clear()``"
+" have a ``set`` as prefix followed by the previous method name. ``bcc()``"
+" is now ``setBcc()`` and so on."
+msgstr ""
+
+#: ../../source/installation/upgrade_emails.rst:24
+msgid ""
+"The config attributes in **app/Config/Email.php** have changed. You "
+"should have a look at the :ref:`setting-email-preferences` to have a list"
+" of the new attributes."
+msgstr ""
+
+#: ../../source/installation/upgrade_emails.rst:27
+msgid "Code Example"
+msgstr ""
+
+#: ../../source/installation/upgrade_emails.rst:30
+msgid "CodeIgniter Version 3.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_emails.rst:35
+msgid "CodeIgniter Version 4.x"
+msgstr ""
+

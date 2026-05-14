@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/testing/index.rst:8
+msgid "Getting Started"
+msgstr ""
+
+#: ../../source/testing/index.rst:8
+msgid "Database"
+msgstr ""
+
+#: ../../source/testing/index.rst:8
+msgid "Generating Data"
+msgstr ""
+
+#: ../../source/testing/index.rst:8
+msgid "Controller Testing"
+msgstr ""
+
+#: ../../source/testing/index.rst:8
+msgid "HTTP Testing"
+msgstr ""
+
+#: ../../source/testing/index.rst:8
+msgid "Mocking"
+msgstr ""
+
+#: ../../source/testing/index.rst:8
+msgid "Session Testing"
+msgstr ""
+
+#: ../../source/testing/index.rst:3
+msgid "Testing"
+msgstr ""
+
+#: ../../source/testing/index.rst:5
+msgid ""
+"CodeIgniter ships with a number of tools to help you test and debug your "
+"application thoroughly. The following sections should get you quickly "
+"testing your applications."
+msgstr ""
+

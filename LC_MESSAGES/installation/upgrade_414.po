@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_414.rst:3
+msgid "Upgrading from 4.1.3 to 4.1.4"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:5
+msgid ""
+"Please refer to the upgrade instructions corresponding to your "
+"installation method."
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:7
+msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:8
+msgid ""
+":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
+"Upgrading <adding-codeigniter4-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:9
+msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:15
+msgid ""
+"This release focuses on code style. All changes (except those noted "
+"below) are cosmetic to bring the code in line with the new `CodeIgniter "
+"Coding Standard <https://github.com/CodeIgniter/coding-standard>`_ (based"
+" on PSR-12)."
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:19
+msgid "Breaking Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:22
+msgid "Method Scope"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:24
+msgid ""
+"The following methods were changed from ``public`` to ``protected`` to "
+"match their parent class methods and better align with their uses. If you"
+" relied on any of these methods being public (highly unlikely) adjust "
+"your code accordingly:"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:27
+msgid "``CodeIgniter\\Database\\MySQLi\\Connection::execute()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:28
+msgid "``CodeIgniter\\Database\\MySQLi\\Connection::_fieldData()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:29
+msgid "``CodeIgniter\\Database\\MySQLi\\Connection::_indexData()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:30
+msgid "``CodeIgniter\\Database\\MySQLi\\Connection::_foreignKeyData()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:31
+msgid "``CodeIgniter\\Database\\Postgre\\Builder::_like_statement()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:32
+msgid "``CodeIgniter\\Database\\Postgre\\Connection::execute()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:33
+msgid "``CodeIgniter\\Database\\Postgre\\Connection::_fieldData()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:34
+msgid "``CodeIgniter\\Database\\Postgre\\Connection::_indexData()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:35
+msgid "``CodeIgniter\\Database\\Postgre\\Connection::_foreignKeyData()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:36
+msgid "``CodeIgniter\\Database\\SQLSRV\\Connection::execute()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:37
+msgid "``CodeIgniter\\Database\\SQLSRV\\Connection::_fieldData()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:38
+msgid "``CodeIgniter\\Database\\SQLSRV\\Connection::_indexData()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:39
+msgid "``CodeIgniter\\Database\\SQLSRV\\Connection::_foreignKeyData()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:40
+msgid "``CodeIgniter\\Database\\SQLite3\\Connection::execute()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:41
+msgid "``CodeIgniter\\Database\\SQLite3\\Connection::_fieldData()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:42
+msgid "``CodeIgniter\\Database\\SQLite3\\Connection::_indexData()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:43
+msgid "``CodeIgniter\\Database\\SQLite3\\Connection::_foreignKeyData()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:44
+msgid "``CodeIgniter\\Images\\Handlers\\GDHandler::_flatten()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:45
+msgid "``CodeIgniter\\Images\\Handlers\\GDHandler::_flip()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:46
+msgid "``CodeIgniter\\Images\\Handlers\\ImageMagickHandler::_flatten()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:47
+msgid "``CodeIgniter\\Images\\Handlers\\ImageMagickHandler::_flip()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:48
+msgid "``CodeIgniter\\Test\\Mock\\MockIncomingRequest::detectURI()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:49
+msgid "``CodeIgniter\\Test\\Mock\\MockSecurity.php::sendCookie()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:52
+msgid "Project Files"
+msgstr ""
+
+#: ../../source/installation/upgrade_414.rst:54
+msgid ""
+"All files in the project space were reformatted with the new coding "
+"style. This will not affect existing code but you may want to apply the "
+"updated coding style to your own projects to keep them in line with the "
+"framework's version of these files."
+msgstr ""
+

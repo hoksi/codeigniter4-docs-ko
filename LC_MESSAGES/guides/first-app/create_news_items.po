@@ -1,0 +1,344 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/guides/first-app/create_news_items.rst:2
+msgid "Create News Items"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:8
+msgid ""
+"You now know how you can read data from a database using CodeIgniter, but"
+" you haven't written any information to the database yet. In this "
+"section, you'll expand your news controller and model created earlier to "
+"include this functionality."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:14
+msgid "Enable CSRF Filter"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:16
+msgid "Before creating a form, let's enable the CSRF protection."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:18
+msgid ""
+"Open the **app/Config/Filters.php** file and update the ``$methods`` "
+"property like the following:"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:22
+msgid ""
+"It configures the CSRF filter to be enabled for all **POST** requests. "
+"You can read more about the CSRF protection in :doc:`Security "
+"<../../libraries/security>` library."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:25
+msgid ""
+"In general, if you use ``$methods`` filters, you should :ref:`disable "
+"Auto Routing (Legacy) <use-defined-routes-only>` because :ref:`auto-"
+"routing-legacy` permits any HTTP method to access a controller. Accessing"
+" the controller with a method you don't expect could bypass the filter."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:30
+msgid "Adding Routing Rules"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:32
+msgid ""
+"Before you can start adding news items into your CodeIgniter application "
+"you have to add an extra rule to **app/Config/Routes.php** file. Make "
+"sure your file contains the following:"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:38
+msgid ""
+"The route directive for ``'news/new'`` is placed before the directive for"
+" ``'news/(:segment)'`` to ensure that the form to create a news item is "
+"displayed."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:40
+msgid ""
+"The ``$routes->post()`` line defines the router for a POST request. It "
+"matches only a POST request to the URI path **/news**, and it maps to the"
+" ``create()`` method of the ``News`` class."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:44
+msgid ""
+"You can read more about different routing types in :ref:`defined-route-"
+"routing`."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:47
+msgid "Create a Form"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:50
+msgid "Create news/create View File"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:52
+msgid ""
+"To input data into the database, you need to create a form where you can "
+"input the information to be stored. This means you'll be needing a form "
+"with two fields, one for the title and one for the text. You'll derive "
+"the slug from our title in the model."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:57
+msgid "Create a new view at **app/Views/news/create.php**:"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:61
+msgid "There are probably only four things here that look unfamiliar."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:63
+msgid ""
+"The :php:func:`session()` function is used to get the Session object, and"
+" ``session()->getFlashdata('error')`` is used to display the error "
+"related to CSRF protection to the user. However, by default, if a CSRF "
+"validation check fails, an exception will be thrown, so it does not work "
+"yet. See :ref:`csrf-redirection-on-failure` for more information."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:68
+msgid ""
+"The :php:func:`validation_list_errors()` function provided by the "
+":doc:`../../helpers/form_helper` is used to report errors related to form"
+" validation."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:71
+msgid ""
+"The :php:func:`csrf_field()` function creates a hidden input with a CSRF "
+"token that helps protect against some common attacks."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:73
+msgid ""
+"The :php:func:`set_value()` function provided by the "
+":doc:`../../helpers/form_helper` is used to show old input data when "
+"errors occur."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:77
+msgid "News Controller"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:79
+msgid "Go back to your ``News`` controller."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:82
+msgid "Add News::new() to Display the Form"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:84
+msgid "First, create a method to display the HTML form you have created."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:88
+msgid ""
+"We load the :doc:`Form helper <../../helpers/form_helper>` with the "
+":php:func:`helper()` function. Most helper functions require the helper "
+"to be loaded before use."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:92
+msgid "Then it returns the created form view."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:95
+msgid "Add News::create() to Create a News Item"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:97
+msgid "Next, create a method to create a news item from the submitted data."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:99
+msgid "You're going to do three things here:"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:101
+msgid "checks whether the submitted data passed the validation rules."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:102
+msgid "saves the news item to the database."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:103
+msgid "returns a success page."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:107
+msgid "The code above adds a lot of functionality."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:110
+msgid "Retrieve the Data"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:112
+msgid ""
+"First, we use the :doc:`IncomingRequest <../../incoming/incomingrequest>`"
+" object ``$this->request``, which is set in the controller by the "
+"framework."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:115
+msgid ""
+"We get the necessary items from the **POST** data by the user and set "
+"them in the ``$data`` variable."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:119
+msgid "Validate the Data"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:121
+msgid ""
+"Next, you'll use the Controller-provided helper function "
+":ref:`validateData() <controller-validatedata>` to validate the submitted"
+" data. In this case, the title and body fields are required and in the "
+"specific length."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:125
+msgid ""
+"CodeIgniter has a powerful validation library as demonstrated above. You "
+"can read more about the :doc:`Validation library "
+"<../../libraries/validation>`."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:128
+msgid ""
+"If the validation fails, we call the ``new()`` method you just created "
+"and return the HTML form."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:132
+msgid "Save the News Item"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:134
+msgid ""
+"If the validation passed all the rules, we get the validated data by "
+":ref:`$this->validator->getValidated() <validation-getting-validated-"
+"data>` and set them in the ``$post`` variable."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:138
+msgid ""
+"The ``NewsModel`` is loaded and called. This takes care of passing the "
+"news item into the model. The :ref:`model-save` method handles inserting "
+"or updating the record automatically, based on whether it finds an array "
+"key matching the primary key."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:143
+msgid ""
+"This contains a new function :php:func:`url_title()`. This function - "
+"provided by the :doc:`URL helper <../../helpers/url_helper>` - strips "
+"down the string you pass it, replacing all spaces by dashes (``-``) and "
+"makes sure everything is in lowercase characters. This leaves you with a "
+"nice slug, perfect for creating URIs."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:150
+msgid "Return Success Page"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:152
+msgid ""
+"After this, view files are loaded and returned to display a success "
+"message. Create a view at **app/Views/news/success.php** and write a "
+"success message."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:155
+msgid "This could be as simple as::"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:160
+msgid "NewsModel Updating"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:162
+msgid ""
+"The only thing that remains is ensuring that your model is set up to "
+"allow data to be saved properly. The ``save()`` method that was used will"
+" determine whether the information should be inserted or if the row "
+"already exists and should be updated, based on the presence of a primary "
+"key. In this case, there is no ``id`` field passed to it, so it will "
+"insert a new row into it's table, ``news``."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:169
+msgid ""
+"However, by default the insert and update methods in the Model will not "
+"actually save any data because it doesn't know what fields are safe to be"
+" updated. Edit the ``NewsModel`` to provide it a list of updatable fields"
+" in the ``$allowedFields`` property."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:176
+msgid ""
+"This new property now contains the fields that we allow to be saved to "
+"the database. Notice that we leave out the ``id``? That's because you "
+"will almost never need to do that, since it is an auto-incrementing field"
+" in the database. This helps protect against Mass Assignment "
+"Vulnerabilities. If your model is handling your timestamps, you would "
+"also leave those out."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:183
+msgid "Create a News Item"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:185
+msgid ""
+"Now point your browser to your local development environment where you "
+"installed CodeIgniter and add **/news/new** to the URL. Add some news and"
+" check out the different pages you made."
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:200
+msgid "Congratulations"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:202
+msgid "You just completed your first CodeIgniter4 application!"
+msgstr ""
+
+#: ../../source/guides/first-app/create_news_items.rst:204
+msgid ""
+"The diagram underneath shows your project's **app** folder, with all of "
+"the files that you created or modified."
+msgstr ""
+

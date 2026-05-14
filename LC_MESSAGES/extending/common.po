@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/extending/common.rst:3
+msgid "Replacing Common Functions"
+msgstr ""
+
+#: ../../source/extending/common.rst:5
+msgid ""
+"There are quite a few functions necessary to CodeIgniter that need to be "
+"loaded early for use in the core classes and thus cannot be placed into a"
+" helper. While most users will never have any need to do this, but the "
+"option to replace these functions does exist for those who would like to "
+"significantly alter the CodeIgniter core. In the **app/** directory there"
+" is a file **Common.php**, and any functions defined in there will take "
+"precedence over the versions found in **system/Common.php**. This is also"
+" an opportunity to create globally-available functions you intend to use "
+"throughout the framework."
+msgstr ""
+
+#: ../../source/extending/common.rst:12
+msgid ""
+"Messing with a core system class has a lot of implications, so make sure "
+"you know what you are doing before attempting it."
+msgstr ""
+

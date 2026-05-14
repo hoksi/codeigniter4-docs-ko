@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_view_parser.rst:2
+msgid "Upgrade View Parser"
+msgstr ""
+
+#: ../../source/installation/upgrade_view_parser.rst:9
+msgid "Documentations"
+msgstr ""
+
+#: ../../source/installation/upgrade_view_parser.rst:11
+msgid ""
+"`Template Parser Documentation CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/libraries/parser.html>`_"
+msgstr ""
+
+#: ../../source/installation/upgrade_view_parser.rst:12
+msgid ":doc:`View Parser Documentation CodeIgniter 4.x </outgoing/view_parser>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_view_parser.rst:15
+msgid "What has been changed"
+msgstr ""
+
+#: ../../source/installation/upgrade_view_parser.rst:16
+msgid "You have to change the implementation and loading of the Parser Library."
+msgstr ""
+
+#: ../../source/installation/upgrade_view_parser.rst:17
+msgid "The Views can copied from CI3. Usually no changes there are required."
+msgstr ""
+
+#: ../../source/installation/upgrade_view_parser.rst:20
+msgid "Upgrade Guide"
+msgstr ""
+
+#: ../../source/installation/upgrade_view_parser.rst:21
+msgid ""
+"Wherever you use the View Parser Library replace "
+"``$this->load->library('parser');`` with ``$parser = "
+"service('parser');``."
+msgstr ""
+
+#: ../../source/installation/upgrade_view_parser.rst:22
+msgid ""
+"You have to change the render part in your controller from "
+"``$this->parser->parse('blog_template', $data);`` to ``return "
+"$parser->setData($data)->render('blog_template');``."
+msgstr ""
+
+#: ../../source/installation/upgrade_view_parser.rst:25
+msgid "Code Example"
+msgstr ""
+
+#: ../../source/installation/upgrade_view_parser.rst:28
+msgid "CodeIgniter Version 3.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_view_parser.rst:33
+msgid "CodeIgniter Version 4.x"
+msgstr ""
+

@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/installing_manual.rst:2
+msgid "Manual Installation"
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:8
+msgid ""
+"The `CodeIgniter 4 framework "
+"<https://github.com/codeigniter4/framework>`_ repository holds the "
+"released versions of the framework. It is intended for developers who do "
+"not wish to use Composer."
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:12
+msgid ""
+"Develop your app inside the **app** folder, and the **public** folder "
+"will be your public-facing document root. Do not change anything inside "
+"the **system** folder!"
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:16
+msgid ""
+"This is the installation technique closest to that described for "
+"`CodeIgniter 3 "
+"<https://codeigniter.com/userguide3/installation/index.html>`_."
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:20
+msgid "Installation"
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:22
+msgid ""
+"Download the `latest version "
+"<https://github.com/CodeIgniter4/framework/releases/latest>`_, and "
+"extract it to become your project root."
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:25
+msgid ""
+"Before v4.4.0, CodeIgniter autoloader did not allow special characters "
+"that are illegal in filenames on certain operating systems. The symbols "
+"that can be used are ``/``, ``_``, ``.``, ``:``, ``\\`` and space. So if "
+"you installed CodeIgniter under the folder that contains the special "
+"characters like ``(``, ``)``, etc., CodeIgniter didn't work. Since "
+"v4.4.0, this restriction has been removed."
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:33
+msgid "Initial Configuration"
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:35
+msgid ""
+"After installation, a few initial configurations are required. See :ref"
+":`initial-configuration` for the detail."
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:41
+msgid "Upgrading"
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:43
+msgid ""
+"Download a new copy of the framework, and then replace the **system** "
+"folder."
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:45
+msgid ""
+"Read the :doc:`upgrade instructions <upgrading>` and :doc:`change log "
+"<../changelogs/index>`, and check Breaking Changes and Enhancements."
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:49
+msgid "Pros"
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:51
+msgid "Download and run."
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:54
+msgid "Cons"
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:56
+msgid ""
+"You need to check for file changes in the **project space** (root, app, "
+"public, tests, writable) and merge them by yourself."
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:60
+msgid "Structure"
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:62
+msgid "Folders in your project after set up:"
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:64
+msgid "app, public, tests, writable, system"
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:67
+msgid "Translations Installation"
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:69
+msgid ""
+"If you want to take advantage of the system message translations, they "
+"can be added to your project in a similar fashion."
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:72
+msgid ""
+"Download the `latest version of them "
+"<https://github.com/codeigniter4/translations/releases/latest>`_. Extract"
+" the downloaded zip, and copy the **Language** folder contents in it to "
+"your **app/Languages** folder."
+msgstr ""
+
+#: ../../source/installation/installing_manual.rst:76
+msgid ""
+"This would need to be repeated to incorporate any updates to the "
+"translations."
+msgstr ""
+

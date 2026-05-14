@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/extending/authentication.rst:2
+msgid "Authentication"
+msgstr ""
+
+#: ../../source/extending/authentication.rst:4
+msgid ""
+"CodeIgniter provides an official authentication and authorization "
+"framework :ref:`CodeIgniter Shield <shield>` for CodeIgniter 4, It is "
+"designed to be secure, flexible, and easily extendable to meet the needs "
+"of many different types of websites."
+msgstr ""
+
+#: ../../source/extending/authentication.rst:9
+msgid ""
+"The following are recommended guidelines to encourage consistency among "
+"developers of modules, projects, and the framework itself."
+msgstr ""
+
+#: ../../source/extending/authentication.rst:13
+msgid "Recommendations"
+msgstr ""
+
+#: ../../source/extending/authentication.rst:15
+msgid ""
+"Modules that handle login and logout operations should trigger the "
+"``login`` and ``logout`` Events when successful"
+msgstr ""
+
+#: ../../source/extending/authentication.rst:16
+msgid ""
+"Modules that define a \"current user\" should define the function "
+"``user_id()`` to return the user's unique identifier, or ``null`` for "
+"\"no current user\""
+msgstr ""
+
+#: ../../source/extending/authentication.rst:18
+msgid ""
+"Modules that fulfill these recommendations may indicate compatibility by "
+"adding the following provision to **composer.json**::"
+msgstr ""
+
+#: ../../source/extending/authentication.rst:24
+msgid ""
+"You may view a list of modules that provide this implementation on "
+"`Packagist <https://packagist.org/providers/codeigniter4/authentication-"
+"implementation>`_."
+msgstr ""
+

@@ -1,0 +1,809 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/libraries/cookies.rst:3
+msgid "Cookies"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:5
+msgid ""
+"An **HTTP cookie** (web cookie, browser cookie) is a small piece of data "
+"that a server sends to the user's web browser. The browser may store it "
+"and send it back with later requests to the same server. Typically, it's "
+"used to tell if two requests came from the same browser - keeping a user "
+"logged-in, for example. It remembers stateful information for the "
+"stateless HTTP protocol."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:11
+msgid "Cookies are mainly used for three purposes:"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:13
+msgid ""
+"**Session management**: Logins, shopping carts, game scores, or anything "
+"else the server should remember"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:14
+msgid "**Personalization**: User preferences, themes, and other settings"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:15
+msgid "**Tracking**: Recording and analyzing user behavior"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:17
+msgid ""
+"To help you efficiently send cookies to browsers, CodeIgniter provides "
+"the ``CodeIgniter\\Cookie\\Cookie`` class to abstract the cookie "
+"interaction."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:27
+msgid "Creating Cookies"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:29
+msgid "There are currently four ways to create a new ``Cookie`` value object."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:33
+msgid ""
+"When constructing the ``Cookie`` object, only the ``name`` attribute is "
+"required. All other else are optional. If the optional attributes are not"
+" modified, their values will be filled up by the default values saved in "
+"the ``Cookie`` class."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:38
+msgid "Overriding Defaults"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:40
+msgid ""
+"To override the defaults currently stored in the class, you can pass a "
+"``Config\\Cookie`` instance or an array of defaults to the static "
+"``Cookie::setDefaults()`` method."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:45
+msgid ""
+"Passing the ``Config\\Cookie`` instance or an array to "
+"``Cookie::setDefaults()`` will effectively overwrite your defaults and "
+"will persist until new defaults are passed."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:49
+msgid "Changing Defaults for a Limited Time"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:51
+msgid ""
+"If you do not want this behavior but only want to change defaults for a "
+"limited time, you can take advantage of ``Cookie::setDefaults()`` return "
+"which returns the old defaults array."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:59
+msgid "Accessing Cookie's Attributes"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:61
+msgid ""
+"Once instantiated, you can easily access a ``Cookie``'s attribute by "
+"using one of its getter methods."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:67
+msgid "Immutable Cookies"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:69
+msgid ""
+"A new ``Cookie`` instance is an immutable value object representation of "
+"an HTTP cookie. Being immutable, modifying any of the instance's "
+"attributes will not affect the original instance. The modification "
+"**always** returns a new instance. You need to retain this new instance "
+"in order to use it."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:77
+msgid "Validating a Cookie's Attributes"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:79
+msgid ""
+"An HTTP cookie is regulated by several specifications that need to be "
+"followed in order to be accepted by browsers. Thus, when creating or "
+"modifying certain attributes of the ``Cookie``, these are validated in "
+"order to check if these follow the specifications."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:83
+msgid "A ``CookieException`` is thrown if violations were reported."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:86
+msgid "Validating the Name Attribute"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:88
+msgid "A cookie name can be any US-ASCII character, except for the following:"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:90
+msgid "control characters;"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:91
+msgid "spaces or tabs;"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:92
+#, python-brace-format
+msgid "separator characters, such as ``( ) < > @ , ; : \\ \" / [ ] ? = { }``"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:94
+msgid ""
+"If setting the ``$raw`` parameter to ``true`` this validation will be "
+"strictly made. This is because PHP's `setcookie() "
+"<https://www.php.net/manual/en/function.setcookie.php>`_ and "
+"`setrawcookie() "
+"<https://www.php.net/manual/en/function.setrawcookie.php>`_ will reject "
+"cookies with invalid names. Additionally, cookie names cannot be an empty"
+" string."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:101
+msgid "Validating the Prefix Attribute"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:103
+msgid ""
+"When using the ``__Secure-`` prefix, cookies must be set with the "
+"``$secure`` flag set to ``true``. If using the ``__Host-`` prefix, "
+"cookies must exhibit the following:"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:106
+msgid "``$secure`` flag set to ``true``"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:107
+msgid "``$domain`` is empty"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:108
+msgid "``$path`` must be ``/``"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:111
+msgid "Validating the SameSite Attribute"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:113
+msgid "The SameSite attribute accepts three values:"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:115
+msgid ""
+"**Lax**: Cookies are not sent on normal cross-site subrequests (for "
+"example to load images or frames into a third party site), but are sent "
+"when a user is navigating to the origin site (*i.e.* when following a "
+"link)."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:116
+msgid ""
+"**Strict**: Cookies will only be sent in a first-party context and not be"
+" sent along with requests initiated by third party websites."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:117
+msgid ""
+"**None**: Cookies will be sent in all contexts, *i.e.* in responses to "
+"both first-party and cross-origin requests."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:119
+msgid ""
+"CodeIgniter, however, allows you to set the SameSite attribute to an "
+"empty string. When an empty string is provided, the default SameSite "
+"setting saved in the ``Cookie`` class is used. You can change the default"
+" SameSite by using the ``Cookie::setDefaults()`` as discussed above."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:123
+msgid ""
+"Recent cookie specifications have changed such that modern browsers are "
+"being required to give a default SameSite if nothing was provided. This "
+"default is ``Lax``. If you have set the SameSite to be an empty string "
+"and your default SameSite is also an empty string, your cookie will be "
+"given the ``Lax`` value."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:127
+msgid ""
+"If the SameSite is set to ``None`` you need to make sure that ``Secure`` "
+"is also set to ``true``."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:129
+msgid ""
+"When writing the SameSite attribute, the ``Cookie`` class accepts any of "
+"the values case-insensitively. You can also take advantage of the class's"
+" constants to make it not a hassle."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:137
+msgid "Sending Cookies"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:139
+msgid ""
+"Set the ``Cookie`` objects in the ``CookieStore`` of the Response object,"
+" and the framework will automatically send the cookies."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:142
+msgid "Use :php:meth:`CodeIgniter\\\\HTTP\\\\Response::setCookie()` to set:"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:146
+msgid "You can also use the :php:func:`set_cookie()` helper function:"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:153
+msgid "Using the Cookie Store"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:155
+msgid "Normally, there is no need to use CookieStore directly."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:157
+msgid ""
+"The ``CookieStore`` class represents an immutable collection of "
+"``Cookie`` objects."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:160
+msgid "Getting the Store from Response"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:162
+msgid ""
+"The ``CookieStore`` instance can be accessed from the current "
+"``Response`` object."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:168
+msgid "Creating CookieStore"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:170
+msgid ""
+"CodeIgniter provides three other ways to create a new instance of the "
+"``CookieStore``."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:174
+msgid ""
+"When using the global :php:func:`cookies()` function, the passed "
+"``Cookie`` array will only be considered if the second argument, "
+"``$getGlobal``, is set to ``false``."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:178
+msgid "Checking Cookies in Store"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:180
+msgid ""
+"To check whether a ``Cookie`` object exists in the ``CookieStore`` "
+"instance, you can use several ways:"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:185
+msgid "Getting Cookies in Store"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:187
+msgid "Retrieving a ``Cookie`` instance in a cookie collection is very easy:"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:191
+msgid ""
+"When getting a ``Cookie`` instance directly from a ``CookieStore``, an "
+"invalid name will throw a ``CookieException``."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:196
+msgid ""
+"When getting a ``Cookie`` instance from the current ``Response``'s cookie"
+" collection, an invalid name will just return ``null``."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:201
+msgid ""
+"If no arguments are supplied in when getting cookies from the "
+"``Response``, all ``Cookie`` objects in store will be displayed."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:206
+msgid ""
+"The helper function :php:func:`get_cookie()` gets the cookie from the "
+"current ``Request`` object, not from ``Response``. This function checks "
+"the ``$_COOKIE`` array if that cookie is set and fetches it right away."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:211
+msgid "Adding/Removing Cookies in Store"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:213
+msgid ""
+"As previously mentioned, ``CookieStore`` objects are immutable. You need "
+"to save the modified instance in order to work on it. The original "
+"instance is left unchanged."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:218
+msgid ""
+"Removing a cookie from the store **DOES NOT** delete it from the browser."
+" If you intend to delete a cookie *from the browser*, you must put an "
+"empty value cookie with the same name to the store."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:222
+msgid ""
+"When interacting with the cookies in store in the current ``Response`` "
+"object, you can safely add or delete cookies without worrying the "
+"immutable nature of the cookie collection. The ``Response`` object will "
+"replace the instance with the modified instance."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:229
+msgid "Dispatching Cookies in Store"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:231
+#: ../../source/libraries/cookies.rst:483
+msgid "This method was deprecated as of version 4.1.6 and was removed in 4.6.0."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:233
+msgid ""
+"More often than not, you do not need to concern yourself in manually "
+"sending cookies. CodeIgniter will do this for you. However, if you really"
+" need to manually send cookies, you can use the ``dispatch`` method. Just"
+" like in sending other headers, you need to make sure the headers are not"
+" yet sent by checking the value of ``headers_sent()``."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:242
+msgid "Cookie Personalization"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:244
+msgid ""
+"Sane defaults are already in place inside the ``Cookie`` class to ensure "
+"the smooth creation of cookie objects. However, you may wish to define "
+"your own settings by changing the following settings in the "
+"``Config\\Cookie`` class in **app/Config/Cookie.php** file."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:249
+msgid "Setting"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:249
+msgid "Options/Types"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:249
+msgid "Default"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:249
+msgid "Description"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:251
+msgid "**$prefix**"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:251
+#: ../../source/libraries/cookies.rst:253
+#: ../../source/libraries/cookies.rst:254
+msgid "``string``"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:251
+#: ../../source/libraries/cookies.rst:254
+msgid "``''``"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:251
+msgid "Prefix to prepend to the cookie name."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:252
+msgid "**$expires**"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:252
+msgid "``DateTimeInterface|string|int``"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:252
+msgid "``0``"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:252
+msgid "The expires timestamp."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:253
+msgid "**$path**"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:253
+msgid "``/``"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:253
+msgid "The path property of the cookie."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:254
+msgid "**$domain**"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:254
+msgid "The domain property of the cookie.with trailing slash."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:255
+msgid "**$secure**"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:255
+#: ../../source/libraries/cookies.rst:256
+#: ../../source/libraries/cookies.rst:258
+msgid "``true``/``false``"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:255
+#: ../../source/libraries/cookies.rst:258
+msgid "``false``"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:255
+msgid "If to be sent over secure HTTPS."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:256
+msgid "**$httponly**"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:256
+msgid "``true``"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:256
+msgid "If not accessible to JavaScript."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:257
+msgid "**$samesite**"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:257
+msgid "``Lax``/``None``/``Strict``"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:257
+msgid "``Lax``"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:257
+msgid "The SameSite attribute."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:258
+msgid "**$raw**"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:258
+msgid "If to be dispatched using ``setrawcookie()``."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:261
+msgid ""
+"In runtime, you can manually supply a new default using the "
+"``Cookie::setDefaults()`` method."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:265
+msgid "Class Reference"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:273
+msgid "The configuration array or instance"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:275
+msgid "The old defaults"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:277
+msgid ""
+"Set the default attributes to a Cookie instance by injecting the values "
+"from the ``Config\\Cookie`` config or an array."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:281
+msgid "The ``Set-Cookie`` header string"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:282
+msgid ""
+"Whether this cookie is not to be URL encoded and sent via "
+"``setrawcookie()``"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:283
+#: ../../source/libraries/cookies.rst:294
+#: ../../source/libraries/cookies.rst:324
+#: ../../source/libraries/cookies.rst:332
+#: ../../source/libraries/cookies.rst:340
+#: ../../source/libraries/cookies.rst:348
+#: ../../source/libraries/cookies.rst:356
+#: ../../source/libraries/cookies.rst:363
+#: ../../source/libraries/cookies.rst:373
+#: ../../source/libraries/cookies.rst:381
+#: ../../source/libraries/cookies.rst:389
+#: ../../source/libraries/cookies.rst:397
+#: ../../source/libraries/cookies.rst:405
+#: ../../source/libraries/cookies.rst:413
+#: ../../source/libraries/cookies.rst:459
+msgid "``Cookie``"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:284
+#: ../../source/libraries/cookies.rst:295
+msgid "``Cookie`` instance"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst
+msgid "throws"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:285
+#: ../../source/libraries/cookies.rst:296
+#: ../../source/libraries/cookies.rst:436
+#: ../../source/libraries/cookies.rst:445
+#: ../../source/libraries/cookies.rst:461
+msgid "``CookieException``"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:287
+msgid "Create a new Cookie instance from a ``Set-Cookie`` header."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:291
+msgid "The cookie name"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:292
+msgid "The cookie value"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:293
+msgid "The cookie options"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:298
+msgid "Construct a new Cookie instance."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:303
+msgid "The ID used in indexing in the cookie collection."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:325
+#: ../../source/libraries/cookies.rst:333
+#: ../../source/libraries/cookies.rst:341
+#: ../../source/libraries/cookies.rst:349
+#: ../../source/libraries/cookies.rst:357
+#: ../../source/libraries/cookies.rst:364
+#: ../../source/libraries/cookies.rst:374
+#: ../../source/libraries/cookies.rst:382
+#: ../../source/libraries/cookies.rst:390
+#: ../../source/libraries/cookies.rst:398
+#: ../../source/libraries/cookies.rst:406
+#: ../../source/libraries/cookies.rst:414
+msgid "new ``Cookie`` instance"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:327
+msgid "Creates a new Cookie with URL encoding option updated."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:335
+msgid "Creates a new Cookie with new prefix."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:343
+msgid "Creates a new Cookie with new name."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:351
+msgid "Creates a new Cookie with new value."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:359
+msgid "Creates a new Cookie with new cookie expires time."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:366
+msgid "Creates a new Cookie that will expire from the browser."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:370
+msgid "This method was deprecated as of version 4.2.6 and was removed in 4.6.0."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:376
+msgid "Creates a new Cookie that will virtually never expire."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:384
+msgid "Creates a new Cookie with new domain."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:392
+msgid "Creates a new Cookie with new path."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:400
+msgid "Creates a new Cookie with new \"Secure\" attribute."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:408
+msgid "Creates a new Cookie with new \"HttpOnly\" attribute."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:416
+msgid "Creates a new Cookie with new \"SameSite\" attribute."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:421
+msgid "Returns the string representation that can be passed as a header string."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:426
+msgid "Returns the array representation of the Cookie instance."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:432
+msgid "Array of ``Set-Cookie`` headers"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:433
+msgid "Whether not to use URL encoding"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:434
+#: ../../source/libraries/cookies.rst:443
+#: ../../source/libraries/cookies.rst:466
+#: ../../source/libraries/cookies.rst:475
+msgid "``CookieStore``"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:435
+#: ../../source/libraries/cookies.rst:444
+msgid "``CookieStore`` instance"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:438
+msgid "Creates a CookieStore from an array of ``Set-Cookie`` headers."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:442
+msgid "Array of ``Cookie`` objects"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:449
+#: ../../source/libraries/cookies.rst:457
+#: ../../source/libraries/cookies.rst:473
+msgid "Cookie name"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:450
+#: ../../source/libraries/cookies.rst:458
+#: ../../source/libraries/cookies.rst:474
+msgid "Cookie prefix"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:451
+msgid "Cookie value"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:453
+msgid ""
+"Checks if a ``Cookie`` object identified by name and prefix is present in"
+" the collection."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:460
+msgid "Retrieves an instance of Cookie identified by a name and prefix."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:465
+msgid "A Cookie object"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:467
+#: ../../source/libraries/cookies.rst:476
+msgid "new ``CookieStore`` instance"
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:469
+msgid ""
+"Store a new cookie and return a new collection. The original collection "
+"is left unchanged."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:478
+msgid ""
+"Removes a cookie from a collection and returns an updated collection. The"
+" original collection is left unchanged."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:487
+msgid "Dispatches all cookies in store."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:492
+msgid "Returns all cookie instances in store."
+msgstr ""
+
+#: ../../source/libraries/cookies.rst:498
+msgid "Clears the cookie collection."
+msgstr ""
+

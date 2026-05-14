@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_html_tables.rst:2
+msgid "Upgrade HTML Tables"
+msgstr ""
+
+#: ../../source/installation/upgrade_html_tables.rst:9
+msgid "Documentations"
+msgstr ""
+
+#: ../../source/installation/upgrade_html_tables.rst:11
+msgid ""
+"`HTML Table Documentation CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/libraries/table.html>`_"
+msgstr ""
+
+#: ../../source/installation/upgrade_html_tables.rst:12
+msgid ":doc:`HTML Table Documentation CodeIgniter 4.x </outgoing/table>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_html_tables.rst:15
+msgid "What has been changed"
+msgstr ""
+
+#: ../../source/installation/upgrade_html_tables.rst:16
+msgid ""
+"Only small things like the method names and the loading of the library "
+"have changed."
+msgstr ""
+
+#: ../../source/installation/upgrade_html_tables.rst:19
+msgid "Upgrade Guide"
+msgstr ""
+
+#: ../../source/installation/upgrade_html_tables.rst:20
+msgid ""
+"Within your class change the ``$this->load->library('table');`` to "
+"``$table = new \\CodeIgniter\\View\\Table();``."
+msgstr ""
+
+#: ../../source/installation/upgrade_html_tables.rst:21
+msgid ""
+"From that on you have to replace every line starting with "
+"``$this->table`` to ``$table``. For example: ``echo "
+"$this->table->generate($query);`` will become ``echo "
+"$table->generate($query);``"
+msgstr ""
+
+#: ../../source/installation/upgrade_html_tables.rst:22
+msgid ""
+"The methods in the HTML Table class could be named slightly different. "
+"The most important change in the naming is the switch from underscored "
+"method names to camelCase. The method ``set_heading()`` from version 3 is"
+" now named ``setHeading()`` and so on."
+msgstr ""
+
+#: ../../source/installation/upgrade_html_tables.rst:25
+msgid "Code Example"
+msgstr ""
+
+#: ../../source/installation/upgrade_html_tables.rst:28
+msgid "CodeIgniter Version 3.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_html_tables.rst:33
+msgid "CodeIgniter Version 4.x"
+msgstr ""
+

@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrading.rst:3
+msgid "Upgrading From a Previous Version"
+msgstr ""
+
+#: ../../source/installation/upgrading.rst:5
+msgid ""
+"Please read the upgrade notes corresponding to the version you are "
+"upgrading from."
+msgstr ""
+
+#: ../../source/installation/upgrading.rst:8
+msgid "See also :doc:`./backward_compatibility_notes`."
+msgstr ""
+
+#: ../../source/installation/upgrading.rst:10
+msgid ""
+"The manual mentions changes to **project space**. To perform the update, "
+"you need to compare the original files from "
+"**vendor/codeigniter4/framework** or from the ZIP archive and make "
+"changes."
+msgstr ""
+
+#: ../../source/installation/upgrading.rst:13
+msgid ""
+"Example, the original **app/Config/App.php** will be located in "
+"**vendor/codeigniter4/framework/app/Config/App.php**. Alternatively, "
+"replace it with a new file and add your previous lines."
+msgstr ""
+
+#: ../../source/installation/upgrading.rst:16
+msgid ""
+"If you don't know what version of CodeIgniter you are currently running, "
+"you can get it from :ref:`the Debug Toolbar <the-debug-toolbar>`, or "
+"simply echo the constant ``\\CodeIgniter\\CodeIgniter::CI_VERSION``."
+msgstr ""
+

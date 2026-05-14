@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/testing/session_testing.rst:3
+msgid "Session Testing"
+msgstr ""
+
+#: ../../source/testing/session_testing.rst:5
+msgid ""
+"Testing session behavior in your application is made simple with the "
+"ArrayHandler session driver. Unlike other session drivers, ArrayHandler "
+"does not persist data to disk, database, or external storage. This allows"
+" you to simulate session interactions safely during unit or integration "
+"tests, without affecting real session data."
+msgstr ""
+
+#: ../../source/testing/session_testing.rst:9
+msgid ""
+"Using this driver, you can set, retrieve, and assert session data "
+"entirely in memory, making your tests faster and more isolated. While in "
+"most production scenarios you would use file, database, or cache-backed "
+"sessions, ArrayHandler exists specifically to support testing workflows "
+"and prevent side effects."
+msgstr ""
+
+#: ../../source/testing/session_testing.rst:17
+msgid "Initializing Sessions"
+msgstr ""
+
+#: ../../source/testing/session_testing.rst:19
+msgid ""
+"You can initialize a session using the ArrayHandler driver for testing. "
+"This example shows how to create a session instance with a proper "
+"configuration:"
+msgstr ""
+
+#: ../../source/testing/session_testing.rst:24
+msgid "Setting and Retrieving Data"
+msgstr ""
+
+#: ../../source/testing/session_testing.rst:26
+msgid "Once initialized, you can set session values and retrieve them as usual:"
+msgstr ""
+
+#: ../../source/testing/session_testing.rst:32
+msgid ""
+"Session data is stored in memory and lasts as long as the ArrayHandler "
+"object exists; after the object is destroyed (typically at the end of a "
+"request or test), the data is lost."
+msgstr ""
+
+#: ../../source/testing/session_testing.rst:36
+msgid "Example Test Case"
+msgstr ""
+
+#: ../../source/testing/session_testing.rst:38
+msgid ""
+"Here's a simple example demonstrating usage of the ArrayHandler in a "
+"PHPUnit test:"
+msgstr ""
+
+#: ../../source/testing/session_testing.rst:43
+msgid "Session Assertions"
+msgstr ""
+
+#: ../../source/testing/session_testing.rst:46
+msgid "Using PHPUnit Assertions with ArrayHandler"
+msgstr ""
+
+#: ../../source/testing/session_testing.rst:48
+msgid ""
+"When testing sessions directly with Session and ArrayHandler in a unit "
+"test, use standard PHPUnit assertions. ``assertSessionHas()`` and "
+"``assertSessionMissing()`` are not available in this context because you "
+"are interacting directly with the session object, not a response object."
+msgstr ""
+
+#: ../../source/testing/session_testing.rst:55
+msgid "Session Assertions via TestResponse"
+msgstr ""
+
+#: ../../source/testing/session_testing.rst:57
+msgid ""
+"When testing controllers or HTTP responses, you can use CodeIgniter 4’s "
+"session assertion helpers, such as ``assertSessionHas()`` and "
+"``assertSessionMissing()``, which are available on the ``TestResponse`` "
+"object. These helpers allow you to assert the state of the session during"
+" the HTTP request/response lifecycle. See more: :ref:`Session Assertions "
+"<response-session-assertions>`"
+msgstr ""
+
+#: ../../source/testing/session_testing.rst:64
+msgid "Custom Session Values"
+msgstr ""
+
+#: ../../source/testing/session_testing.rst:66
+msgid ""
+"In Feature Tests, you can provide custom session data for a single test "
+"using the ``withSession()`` method. This allows you to simulate session "
+"states such as logged-in users or specific roles during the request. For "
+"full details and examples, see: :ref:`Setting Session Values <feature-"
+"setting-session-values>`"
+msgstr ""
+

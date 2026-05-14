@@ -1,0 +1,510 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/general/errors.rst:3
+msgid "Error Handling"
+msgstr ""
+
+#: ../../source/general/errors.rst:5
+msgid ""
+"CodeIgniter builds error reporting into your system through Exceptions, "
+"both the `SPL collection "
+"<https://www.php.net/manual/en/spl.exceptions.php>`_, as well as a few "
+"exceptions that are provided by the framework."
+msgstr ""
+
+#: ../../source/general/errors.rst:8
+msgid ""
+"Depending on your environment's setup, the default action when an error "
+"or exception is thrown is to display a detailed error report unless the "
+"application is running under the ``production`` environment. In the "
+"``production`` environment, a more generic message is displayed to keep "
+"the best user experience for your users."
+msgstr ""
+
+#: ../../source/general/errors.rst:18
+msgid "Using Exceptions"
+msgstr ""
+
+#: ../../source/general/errors.rst:20
+msgid ""
+"This section is a quick overview for newer programmers, or for developers"
+" who are not experienced with using exceptions."
+msgstr ""
+
+#: ../../source/general/errors.rst:23
+msgid "What are Exceptions"
+msgstr ""
+
+#: ../../source/general/errors.rst:25
+msgid ""
+"Exceptions are simply events that happen when the exception is "
+"\"thrown\". This halts the current flow of the script, and execution is "
+"then sent to the error handler which displays the appropriate error page:"
+msgstr ""
+
+#: ../../source/general/errors.rst:31
+msgid "Catching Exceptions"
+msgstr ""
+
+#: ../../source/general/errors.rst:33
+msgid ""
+"If you are calling a method that might throw an exception, you can catch "
+"that exception using a ``try/catch`` block:"
+msgstr ""
+
+#: ../../source/general/errors.rst:37
+msgid ""
+"If the ``$userModel`` throws an exception, it is caught and the code "
+"within the catch block is executed. In this example, the scripts dies, "
+"echoing the error message that the ``UserModel`` defined."
+msgstr ""
+
+#: ../../source/general/errors.rst:41
+msgid "Catching Specific Exceptions"
+msgstr ""
+
+#: ../../source/general/errors.rst:43
+msgid ""
+"In the example above, we catch any type of Exception. If we only want to "
+"watch for specific types of exceptions, like a ``DataException``, we can "
+"specify that in the catch parameter. Any other exceptions that are thrown"
+" and are not child classes of the caught exception will be passed on to "
+"the error handler:"
+msgstr ""
+
+#: ../../source/general/errors.rst:49
+msgid ""
+"This can be handy for handling the error yourself, or for performing "
+"cleanup before the script ends. If you want the error handler to function"
+" as normal, you can throw a new exception within the catch block:"
+msgstr ""
+
+#: ../../source/general/errors.rst:55 ../../source/general/errors.rst:116
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/general/errors.rst:58
+msgid "Error Reporting"
+msgstr ""
+
+#: ../../source/general/errors.rst:60
+msgid ""
+"When ``display_errors`` in PHP ini setting is enabled, CodeIgniter will "
+"display a detailed error report with all errors"
+msgstr ""
+
+#: ../../source/general/errors.rst:63
+msgid ""
+"So by default, CodeIgniter will display a detailed error report in the "
+"``development`` and ``testing`` environments, and will not display any "
+"errors in the ``production`` environment."
+msgstr ""
+
+#: ../../source/general/errors.rst:69
+msgid ""
+"You can change your environment by setting the ``CI_ENVIRONMENT`` "
+"variable. See :ref:`setting-environment`."
+msgstr ""
+
+#: ../../source/general/errors.rst:72
+msgid ""
+"Disabling error reporting DOES NOT stop logs from being written if there "
+"are errors."
+msgstr ""
+
+#: ../../source/general/errors.rst:74
+msgid ""
+"Note that your settings from the **.env** file are added to ``$_SERVER`` "
+"and ``$_ENV``. As a side effect, this means that if the detailed error "
+"report is displayed, **your secure credentials are publicly exposed**."
+msgstr ""
+
+#: ../../source/general/errors.rst:79
+msgid "Logging Exceptions"
+msgstr ""
+
+#: ../../source/general/errors.rst:81
+msgid ""
+"By default, all Exceptions other than \"404 - Page Not Found\" exceptions"
+" are logged. This can be turned on and off by setting the ``$log`` value "
+"of **app/Config/Exceptions.php**:"
+msgstr ""
+
+#: ../../source/general/errors.rst:86
+msgid ""
+"To ignore logging on other status codes, you can set the status code to "
+"ignore in the same file:"
+msgstr ""
+
+#: ../../source/general/errors.rst:90
+msgid ""
+"It is possible that logging still will not happen for exceptions if your "
+"current :ref:`Log settings <logging-configuration>` are not set up to log"
+" ``critical`` errors, which all exceptions are logged as."
+msgstr ""
+
+#: ../../source/general/errors.rst:97
+msgid "Logging Deprecation Warnings"
+msgstr ""
+
+#: ../../source/general/errors.rst:101
+msgid ""
+"Prior to v4.3.0, all errors reported by ``error_reporting()`` will be "
+"thrown as an ``ErrorException`` object."
+msgstr ""
+
+#: ../../source/general/errors.rst:104
+msgid ""
+"But with the surge in use of PHP 8.1+, many users may see exceptions "
+"thrown for `passing null to non-nullable arguments of internal functions "
+"<https://wiki.php.net/rfc/deprecate_null_to_scalar_internal_arg>`_."
+msgstr ""
+
+#: ../../source/general/errors.rst:107
+msgid ""
+"To ease the migration to PHP 8.1, starting with v4.3.0, CodeIgniter has "
+"the feature that only logs the deprecation errors (``E_DEPRECATED`` and "
+"``E_USER_DEPRECATED``) without throwing them as exceptions."
+msgstr ""
+
+#: ../../source/general/errors.rst:111
+msgid ""
+"By default, CodeIgniter will only log deprecations without throwing "
+"exceptions in development environment. In production environment, no "
+"logging is done and no exceptions are thrown."
+msgstr ""
+
+#: ../../source/general/errors.rst:118
+msgid ""
+"The settings for this feature are as follows. First, make sure your copy "
+"of ``Config\\Exceptions`` is updated with the two new properties and set "
+"as follows:"
+msgstr ""
+
+#: ../../source/general/errors.rst:124
+msgid ""
+"Next, depending on the log level you set in "
+"``Config\\Exceptions::$deprecationLogLevel``, check whether the logger "
+"threshold defined in ``Config\\Logger::$threshold`` covers the "
+"deprecation log level. If not, adjust it accordingly."
+msgstr ""
+
+#: ../../source/general/errors.rst:130
+msgid ""
+"After that, subsequent deprecations will be logged as configured without "
+"throwing as exceptions."
+msgstr ""
+
+#: ../../source/general/errors.rst:133
+msgid "This feature also works with user deprecations:"
+msgstr ""
+
+#: ../../source/general/errors.rst:137
+msgid ""
+"For testing your application you may want to always throw on "
+"deprecations. You may configure this by setting the environment variable "
+"``CODEIGNITER_SCREAM_DEPRECATIONS`` to a truthy value."
+msgstr ""
+
+#: ../../source/general/errors.rst:141
+msgid "Framework Exceptions"
+msgstr ""
+
+#: ../../source/general/errors.rst:146
+msgid "Exception Design"
+msgstr ""
+
+#: ../../source/general/errors.rst:148
+msgid "Staring with v4.6.0, all Exception classes that the framework throws:"
+msgstr ""
+
+#: ../../source/general/errors.rst:150
+msgid "implement ``CodeIgniter\\Exceptions\\ExceptionInterface``"
+msgstr ""
+
+#: ../../source/general/errors.rst:151
+msgid ""
+"extend ``CodeIgniter\\Exceptions\\LogicException`` or "
+"``CodeIgniter\\Exceptions\\RuntimeException``"
+msgstr ""
+
+#: ../../source/general/errors.rst:153
+msgid ""
+"The framework only throws the above kind of exception classes, but PHP or"
+" other libraries that are used may throw other exceptions."
+msgstr ""
+
+#: ../../source/general/errors.rst:156
+msgid "There are two base Exception classes that the framework throws:"
+msgstr ""
+
+#: ../../source/general/errors.rst:159
+msgid "LogicException"
+msgstr ""
+
+#: ../../source/general/errors.rst:161
+msgid ""
+"``CodeIgniter\\Exceptions\\LogicException`` extends ``\\LogicException``."
+" This exception represents error in the program logic. This kind of "
+"exception should lead directly to a fix in your code."
+msgstr ""
+
+#: ../../source/general/errors.rst:166
+msgid "RuntimeException"
+msgstr ""
+
+#: ../../source/general/errors.rst:168
+msgid ""
+"``CodeIgniter\\Exceptions\\RuntimeException`` extends "
+"``\\RuntimeException``. This exception is thrown if an error which can "
+"only be found on runtime occurs."
+msgstr ""
+
+#: ../../source/general/errors.rst:171
+msgid "The following framework exceptions are also available:"
+msgstr ""
+
+#: ../../source/general/errors.rst:174
+msgid "PageNotFoundException"
+msgstr ""
+
+#: ../../source/general/errors.rst:176
+msgid "This is used to signal a 404, Page Not Found error:"
+msgstr ""
+
+#: ../../source/general/errors.rst:180
+msgid ""
+"You can pass a message into the exception that will be displayed in place"
+" of the default message on the 404 page."
+msgstr ""
+
+#: ../../source/general/errors.rst:182
+msgid ""
+"For the default 404 view file location, see :ref:`http-status-code-and-"
+"error-views`."
+msgstr ""
+
+#: ../../source/general/errors.rst:184
+msgid ""
+"If, in **app/Config/Routing.php** or **app/Config/Routes.php**, you have "
+"specified a :ref:`404-override`, that will be called instead of the "
+"standard 404 page."
+msgstr ""
+
+#: ../../source/general/errors.rst:188
+msgid "ConfigException"
+msgstr ""
+
+#: ../../source/general/errors.rst:190
+msgid ""
+"This exception should be used when the values from the configuration "
+"class are invalid, or when the config class is not the right type, etc:"
+msgstr ""
+
+#: ../../source/general/errors.rst:195
+msgid "This provides an exit code of 3."
+msgstr ""
+
+#: ../../source/general/errors.rst:198
+msgid "DatabaseException"
+msgstr ""
+
+#: ../../source/general/errors.rst:200
+msgid ""
+"This exception is thrown for database errors, such as when the database "
+"connection cannot be created, or when it is temporarily lost:"
+msgstr ""
+
+#: ../../source/general/errors.rst:205
+msgid "This provides an exit code of 8."
+msgstr ""
+
+#: ../../source/general/errors.rst:208
+msgid "RedirectException"
+msgstr ""
+
+#: ../../source/general/errors.rst:210
+msgid ""
+"Since v4.4.0, the namespace of ``RedirectException`` has been changed. "
+"Previously it was ``CodeIgniter\\Router\\Exceptions\\RedirectException``."
+" The previous class has been removed in v4.6.0."
+msgstr ""
+
+#: ../../source/general/errors.rst:214
+msgid ""
+"This exception is a special case allowing for overriding of all other "
+"response routing and forcing a redirect to a specific URI:"
+msgstr ""
+
+#: ../../source/general/errors.rst:219
+msgid ""
+"``$uri`` is a URI path relative to baseURL. You can also supply a "
+"redirect code to use instead of the default (``302``, \"temporary "
+"redirect\"):"
+msgstr ""
+
+#: ../../source/general/errors.rst:224
+msgid ""
+"Also, since v4.4.0 an object of a class that implements ResponseInterface"
+" can be used as the first argument. This solution is suitable for cases "
+"where you need to add additional headers or cookies in the response."
+msgstr ""
+
+#: ../../source/general/errors.rst:232
+msgid "Specify HTTP Status Code in Your Exception"
+msgstr ""
+
+#: ../../source/general/errors.rst:236
+msgid ""
+"Since v4.3.0, you can specify the HTTP status code for your Exception "
+"class to implement ``CodeIgniter\\Exceptions\\HTTPExceptionInterface``."
+msgstr ""
+
+#: ../../source/general/errors.rst:239
+msgid ""
+"When an exception implementing ``HTTPExceptionInterface`` is caught by "
+"CodeIgniter's exception handler, the Exception code will become the HTTP "
+"status code."
+msgstr ""
+
+#: ../../source/general/errors.rst:244
+msgid "HTTP Status Code and Error Views"
+msgstr ""
+
+#: ../../source/general/errors.rst:246
+msgid ""
+"The exception handler displays the error view corresponding to the HTTP "
+"status code, if one exists."
+msgstr ""
+
+#: ../../source/general/errors.rst:249
+msgid ""
+"For example, ``PageNotFoundException`` implements the "
+"``HTTPExceptionInterface``, so its exception code ``404`` will be the "
+"HTTP status code. Therefore if it is thrown, the system will show the "
+"**error_404.php** in the **app/Views/errors/html** folder when it is a "
+"web request. If it is invoked via CLI, the system will show the "
+"**error_404.php** in the **app/Views/errors/cli** folder."
+msgstr ""
+
+#: ../../source/general/errors.rst:255
+msgid ""
+"If there is no view file corresponding to the HTTP status code, "
+"**production.php** or **error_exception.php** will be displayed."
+msgstr ""
+
+#: ../../source/general/errors.rst:258
+msgid ""
+"If ``display_errors`` is on in the PHP ini setting, "
+"**error_exception.php** is selected and a detailed error report is "
+"displayed."
+msgstr ""
+
+#: ../../source/general/errors.rst:261
+msgid ""
+"You should customize all of the error views in the "
+"**app/Views/errors/html** folder for your site."
+msgstr ""
+
+#: ../../source/general/errors.rst:264
+msgid ""
+"You can also create error views for specific HTTP status code. For "
+"example, if you want to create an error view for \"400 Bad Request\", add"
+" **error_400.php**."
+msgstr ""
+
+#: ../../source/general/errors.rst:267
+msgid ""
+"If an error view file with the corresponding HTTP status code exists, the"
+" exception handler will display that file regardless of the environment. "
+"The view file must be implemented in such a way that it does not display "
+"detailed error messages in production environment by yourself."
+msgstr ""
+
+#: ../../source/general/errors.rst:275
+msgid "Specify Exit Code in Your Exception"
+msgstr ""
+
+#: ../../source/general/errors.rst:279
+msgid ""
+"Since v4.3.0, you can specify the exit code for your Exception class to "
+"implement ``CodeIgniter\\Exceptions\\HasExitCodeInterface``."
+msgstr ""
+
+#: ../../source/general/errors.rst:282
+msgid ""
+"When an exception implementing ``HasExitCodeInterface`` is caught by "
+"CodeIgniter's exception handler, the code returned from the "
+"``getExitCode()`` method will become the exit code."
+msgstr ""
+
+#: ../../source/general/errors.rst:287
+msgid "Custom Exception Handlers"
+msgstr ""
+
+#: ../../source/general/errors.rst:291
+msgid ""
+"If you need more control over how exceptions are displayed you can now "
+"define your own handlers and specify when they apply."
+msgstr ""
+
+#: ../../source/general/errors.rst:295
+msgid "Defining the New Handler"
+msgstr ""
+
+#: ../../source/general/errors.rst:297
+msgid ""
+"The first step is to create a new class which implements "
+"``CodeIgniter\\Debug\\ExceptionHandlerInterface``. You can also extend "
+"``CodeIgniter\\Debug\\BaseExceptionHandler``. This class includes a "
+"number of utility methods that are used by the default exception handler."
+" The new handler must implement a single method: ``handle()``:"
+msgstr ""
+
+#: ../../source/general/errors.rst:304
+msgid ""
+"This example defines the minimum amount of code typically needed - "
+"display a view and exit with the proper exit code. However, the "
+"``BaseExceptionHandler`` provides a number of other helper functions and "
+"objects."
+msgstr ""
+
+#: ../../source/general/errors.rst:308
+msgid "Configuring the New Handler"
+msgstr ""
+
+#: ../../source/general/errors.rst:310
+msgid ""
+"Telling CodeIgniter to use your new exception handler class is done in "
+"the **app/Config/Exceptions.php** configuration file's ``handler()`` "
+"method:"
+msgstr ""
+
+#: ../../source/general/errors.rst:315
+msgid ""
+"You can use any logic your application needs to determine whether it "
+"should handle the exception, but the two most common are checking on the "
+"HTTP status code or the type of exception. If your class should handle it"
+" then return a new instance of that class:"
+msgstr ""
+

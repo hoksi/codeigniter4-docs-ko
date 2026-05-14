@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_sessions.rst:2
+msgid "Upgrade Sessions"
+msgstr ""
+
+#: ../../source/installation/upgrade_sessions.rst:9
+msgid "Documentations"
+msgstr ""
+
+#: ../../source/installation/upgrade_sessions.rst:11
+msgid ""
+"`Session Library Documentation CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/libraries/sessions.html>`_"
+msgstr ""
+
+#: ../../source/installation/upgrade_sessions.rst:12
+msgid ":doc:`Session Library Documentation CodeIgniter 4.x </libraries/sessions>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_sessions.rst:15
+msgid "What has been changed"
+msgstr ""
+
+#: ../../source/installation/upgrade_sessions.rst:16
+msgid ""
+"Only small things like the method names and the loading of the library "
+"have changed."
+msgstr ""
+
+#: ../../source/installation/upgrade_sessions.rst:17
+msgid "The definition of the session table in Database Driver has changed."
+msgstr ""
+
+#: ../../source/installation/upgrade_sessions.rst:20
+msgid "Upgrade Guide"
+msgstr ""
+
+#: ../../source/installation/upgrade_sessions.rst:21
+msgid ""
+"Wherever you use the Session Library replace "
+"``$this->load->library('session');`` with ``$session = session();``."
+msgstr ""
+
+#: ../../source/installation/upgrade_sessions.rst:22
+msgid ""
+"From that on you have to replace every line starting with "
+"``$this->session`` with ``$session`` followed by the new method name."
+msgstr ""
+
+#: ../../source/installation/upgrade_sessions.rst:24
+msgid ""
+"To access session data use the syntax ``$session->item`` or "
+"``$session->get('item')`` instead of the CI3 syntax "
+"``$this->session->name``."
+msgstr ""
+
+#: ../../source/installation/upgrade_sessions.rst:25
+msgid ""
+"To set data use ``$session->set($array);`` instead of "
+"``$this->session->set_userdata($array);``."
+msgstr ""
+
+#: ../../source/installation/upgrade_sessions.rst:26
+msgid ""
+"To remove data use ``unset($_SESSION['some_name']);`` or "
+"``$session->remove('some_name');`` instead of "
+"``$this->session->unset_userdata('some_name');``."
+msgstr ""
+
+#: ../../source/installation/upgrade_sessions.rst:27
+msgid ""
+"To mark session data as flashdata, which will only be available for the "
+"next request, use ``$session->markAsFlashdata('item');`` instead of "
+"``$this->session->mark_as_flash('item');```"
+msgstr ""
+
+#: ../../source/installation/upgrade_sessions.rst:28
+msgid ""
+"If you use Database Driver, you need to recreate the session table. See "
+":ref:`sessions-databasehandler-driver`."
+msgstr ""
+
+#: ../../source/installation/upgrade_sessions.rst:31
+msgid "Code Example"
+msgstr ""
+
+#: ../../source/installation/upgrade_sessions.rst:34
+msgid "CodeIgniter Version 3.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_sessions.rst:39
+msgid "CodeIgniter Version 4.x"
+msgstr ""
+

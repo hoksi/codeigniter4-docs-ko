@@ -1,0 +1,1181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.3.0.rst:2
+msgid "Version 4.3.0"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:4
+msgid "Release Date: January 10, 2023"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:6
+msgid "**4.3.0 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:13
+msgid "Highlights"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:15
+msgid ""
+"Query Builder supports **upsert()**, **upsertBatch()**, **deleteBatch()**"
+" and now ***batch()** methods can set data from a query (*contributed by*"
+" `sclubricants <https://github.com/sclubricants>`_). See `Query "
+"Builder`_."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:19
+msgid ""
+"Database Forge supports to **add indexes in the existing tables** and "
+"**name indexes** (*contributed by* `sclubricants "
+"<https://github.com/sclubricants>`_). See `Forge`_."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:22
+msgid ""
+"To make the default configuration more secure, the default Validation "
+"Rules have been changed to **Strict Rules**."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:24
+msgid ""
+"When a database error occurs, the conditions that an exception is thrown "
+"and the exception classes that can be thrown have been changed. See :ref"
+":`exceptions-when-database-errors-occur`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:29
+msgid "BREAKING"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:32
+msgid "Behavior Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:37
+msgid "Exceptions when Database Errors Occur"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:39
+msgid ""
+"The exceptions thrown by the database connection classes have been "
+"changed to ``CodeIgniter\\Database\\Exceptions\\DatabaseException``. "
+"Previously, different database drivers threw different exception classes,"
+" but these have been unified into ``DatabaseException``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:40
+msgid ""
+"The exceptions thrown by the ``execute()`` method of Prepared Queries "
+"have been changed to ``DatabaseException``. Previously, different "
+"database drivers might throw different exception classes or did not throw"
+" exceptions, but these have been unified into ``DatabaseException``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:41
+msgid ""
+"During transactions, exceptions are not thrown by default even if "
+"``DBDebug`` is true."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:42
+msgid "``DBDebug`` and ``CI_DEBUG`` Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:44
+msgid ""
+"To be consistent in behavior regardless of environments, "
+"``Config\\Database::$default['DBDebug']`` and "
+"``Config\\Database::$tests['DBDebug']`` has been changed to ``true`` by "
+"default. With these settings, an exception is always thrown when a "
+"database error occurs. Previously, it is ``false`` **only in the "
+"production environment**."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:48
+msgid ""
+"Now ``DatabaseException`` thrown in ``BaseBuilder`` is thrown if "
+"``$DBDebug`` is true. Previously, it is thrown if ``CI_DEBUG`` is true."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:50
+msgid ""
+"The default value of ``BaseConnection::$DBDebug`` has been changed to "
+"``true``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:51
+msgid ""
+"With these changes, ``DBDebug`` **now means whether or not to throw an "
+"exception when an error occurs**. Although unrelated to debugging, the "
+"name has not been changed."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:53
+msgid ""
+"When running transactions with ``DBDebug`` is ``true``, even if a query "
+"error occurs, exceptions are not thrown by default. Previously, if a "
+"query error occurs, all the queries will be rolled backed, and an "
+"exception will be thrown, so :ref:`transactions-managing-errors` or :ref"
+":`transactions-manual-transactions` won't work."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:57
+msgid ""
+"Now when you delete without WHERE clause in ``Model``, "
+"``DatabaseException`` is thrown even if ``CI_DEBUG`` is false. "
+"Previously, it is thrown if ``CI_DEBUG`` is true."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:61
+msgid "HTTP Status Code and Exit Code when Exception Occurs"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:63
+msgid ""
+"Previously, CodeIgniter's Exception Handler used the *Exception code* as "
+"the *HTTP status code* in some cases, and calculated the *Exit code* "
+"based on the Exception code. However there should be no logical "
+"connection with Exception code and HTTP Status Code or Exit code."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:65
+msgid ""
+"Now the Exception Handler sets HTTP status code to ``500`` and set Exit "
+"code to the constant ``EXIT_ERROR`` (= ``1``) by default."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:66
+msgid ""
+"You can change HTTP status code or Exit code to implement "
+"``HTTPExceptionInterface`` or ``HasExitCodeInterface`` in your Exception "
+"class. See :ref:`error-specify-http-status-code` and :ref:`error-specify-"
+"exit-code`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:68
+msgid "For example, the Exit code has been changed like the following:"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:70
+msgid ""
+"If an uncaught ``ConfigException`` occurs, the Exit code is "
+"``EXIT_CONFIG`` (= ``3``) instead of ``12``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:71
+msgid ""
+"If an uncaught ``CastException`` occurs, the Exit code is ``EXIT_CONFIG``"
+" (= ``3``) instead of ``9``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:72
+msgid ""
+"If an uncaught ``DatabaseException`` occurs, the Exit code is "
+"``EXIT_DATABASE`` (= ``8``) instead of ``17``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:77
+msgid "Time"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:79
+msgid ""
+"The following methods of the :doc:`Time <../libraries/time>` class had "
+"bugs that changed the state of the current object. To fix these bugs, the"
+" Time class has been fixed:"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:81
+msgid "``add()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:82
+msgid "``modify()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:83
+msgid "``setDate()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:84
+msgid "``setISODate()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:85
+msgid "``setTime()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:86
+msgid "``sub()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:88
+msgid ""
+"Now the ``Time`` class extends ``DateTimeImmutable`` and is completely "
+"immutable."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:89
+msgid ""
+"``TimeLegacy`` class has been added for backward compatibility, which "
+"behaves the same as the unmodified ``Time`` class."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:92 ../../source/changelogs/v4.3.0.rst:124
+#: ../../source/changelogs/v4.3.0.rst:191
+#: ../../source/changelogs/v4.3.0.rst:251
+#: ../../source/changelogs/v4.3.0.rst:319
+msgid "Others"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:94
+msgid ""
+"**Helper:** :php:func:`script_tag()` and :php:func:`safe_mailto()` no "
+"longer output ``type=\"text/javascript\"`` in ``<script>`` tag."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:95
+msgid ""
+"**CLI:** The ``spark`` file has been changed due to a change in the "
+"processing of Spark commands."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:96
+msgid ""
+"**CLI:** ``CITestStreamFilter::$buffer = ''`` no longer causes the filter"
+" to be registered to listen for streams. Now there is a "
+"``CITestStreamFilter::registration()`` method for this. See "
+":ref:`upgrade-430-stream-filter` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:98
+msgid ""
+"**Database:** ``InvalidArgumentException`` that is a kind of "
+"``LogicException`` in ``BaseBuilder::_whereIn()`` is not suppressed by "
+"the configuration. Previously if ``CI_DEBUG`` was false, the exception "
+"was suppressed."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:99
+msgid ""
+"**Database:** The data structure returned by "
+":ref:`BaseConnection::getForeignKeyData() <metadata-getforeignkeydata>` "
+"has been changed."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:100
+msgid ""
+"**Database:** ``CodeIgniter\\Database\\BasePreparedQuery`` class returns "
+"now a bool value for write-type queries instead of the ``Result`` class "
+"object."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:101
+msgid ""
+"**Model:** ``Model::update()`` method now raises a ``DatabaseException`` "
+"if it generates an SQL statement without a WHERE clause; Model does not "
+"support operations that update all records."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:103
+msgid ""
+"**Routing:** ``RouteCollection::resetRoutes()`` resets Auto-Discovery of "
+"Routes. Previously once discovered, RouteCollection never discover Routes"
+" files again even if ``RouteCollection::resetRoutes()`` is called."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:108
+msgid "Interface Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:110
+msgid ""
+"As long as you have not extended the relevant CodeIgniter core classes or"
+" implemented these interfaces, all these changes are backward compatible "
+"and require no intervention."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:115
+msgid "OutgoingRequestInterface"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:117
+msgid ""
+"Added new ``OutgoingRequestInterface`` that represents an outgoing "
+"request."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:118
+msgid ""
+"Added new ``OutgoingRequest`` class that implements "
+"``OutgoingRequestInterface``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:119
+msgid "Now ``RequestInterface`` extends ``OutgoingRequestInterface``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:120
+msgid "Now ``CURLRequest`` extends ``OutgoingRequest``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:121
+msgid "Now ``Request`` extends ``OutgoingRequest``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:126
+msgid ""
+"**HTTP:** Added missing ``getProtocolVersion()``, ``getBody()``, "
+"``hasHeader()`` and ``getHeaderLine()`` method in ``MessageInterface``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:127
+msgid "**HTTP:** Now ``ResponseInterface`` extends ``MessageInterface``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:128
+msgid ""
+"**HTTP:** Added missing ``ResponseInterface::getCSP()`` (and "
+"``Response::getCSP()``), ``ResponseInterface::getReasonPhrase()`` and "
+"``ResponseInterface::getCookieStore()`` methods."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:129
+msgid ""
+"**Database:** Added missing "
+"``CodeIgniter\\Database\\ResultInterface::getNumRows()`` method."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:130
+msgid "See also `Validation Changes`_."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:133
+msgid "Method Signature Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:138
+msgid "Validation Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:141
+msgid "ValidationInterface"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:143
+msgid ""
+"``ValidationInterface`` has been changed to eliminate the mismatch "
+"between ``ValidationInterface`` and the ``Validation`` class."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:145
+msgid ""
+"The third parameter ``$dbGroup`` for ``ValidationInterface::run()`` has "
+"been added."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:146
+msgid "The following methods are added to the interface:"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:148
+msgid "``ValidationInterface::setRule()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:149
+msgid "``ValidationInterface::getRules()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:150
+msgid "``ValidationInterface::getRuleGroup()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:151
+msgid "``ValidationInterface::setRuleGroup()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:152
+msgid "``ValidationInterface::loadRuleGroup()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:153
+msgid "``ValidationInterface::hasError()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:154
+msgid "``ValidationInterface::listErrors()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:155
+msgid "``ValidationInterface::showError()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:158
+msgid "Validation"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:160
+msgid ""
+"The return value of  ``Validation::loadRuleGroup()`` has been changed "
+"from ``null`` to ``[]`` when the ``$group`` is empty."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:163
+#: ../../source/changelogs/v4.3.0.rst:229
+msgid "Database"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:165
+msgid ""
+"The return types of ``CodeIgniter\\Database\\BasePreparedQuery::close()``"
+" and ``CodeIgniter\\Database\\PreparedQueryInterface`` have been changed "
+"to ``bool`` (previously untyped)."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:166
+msgid ""
+"The return type of ``CodeIgniter\\Database\\Database::loadForge()`` has "
+"been changed to ``Forge``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:167
+msgid ""
+"The return type of ``CodeIgniter\\Database\\Database::loadUtils()`` has "
+"been changed to ``BaseUtils``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:168
+msgid ""
+"Parameter name ``$column`` has changed in ``Table::dropForeignKey()`` to "
+"``$foreignName``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:169
+msgid ""
+"The second parameter ``$index`` of ``BaseBuilder::updateBatch()`` has "
+"changed to ``$constraints``. It now accepts types array, string, or "
+"``RawSql``. Extending classes should likewise change types."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:170
+msgid ""
+"The ``$set`` parameter of ``BaseBuilder::insertBatch()`` and "
+"``BaseBuilder::updateBatch()`` now accepts an object of a single row of "
+"data."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:171
+msgid "``BaseBuilder::_updateBatch()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:172
+msgid "The second parameter ``$values`` has changed to ``$keys``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:173
+msgid ""
+"The third parameter ``$index`` has changed to ``$values``. The parameter "
+"type also has changed to ``array``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:176
+msgid "Database Forge"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:178
+msgid ""
+"The method signature of ``Forge::dropKey()`` has changed. An additional "
+"optional parameter ``$prefixKeyName`` has been added."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:179
+msgid ""
+"The method signature of ``Forge::addKey()`` has changed. An additional "
+"optional parameter ``$keyName`` has been added."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:180
+msgid ""
+"The method signature of ``Forge::addPrimaryKey()`` has changed. An "
+"additional optional parameter ``$keyName`` has been added."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:181
+msgid ""
+"The method signature of ``Forge::addUniqueKey()`` has changed. An "
+"additional optional parameter ``$keyName`` has been added."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:182
+msgid ""
+"The following method has an additional ``$asQuery`` parameter. When set "
+"to ``true`` the method returns a stand alone SQL query."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:184
+msgid "``CodeIgniter\\Database\\Forge::_processPrimaryKeys()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:185
+msgid ""
+"In addition to the added ``$asQuery`` parameter above the following "
+"methods also now return an array."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:187
+msgid "``CodeIgniter\\Database\\Forge::_processIndexes()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:188
+msgid "``CodeIgniter\\Database\\Forge::_processForeignKeys()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:193
+msgid ""
+"**API:** The return type of ``API\\ResponseTrait::failServerError()`` has"
+" been changed to ``ResponseInterface``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:194
+msgid ""
+"The following methods have been changed to accept ``ResponseInterface`` "
+"as a parameter instead of ``Response``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:196
+msgid "``Debug\\Exceptions::__construct()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:197
+msgid "``Services::exceptions()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:199
+msgid ""
+"**Request:** The ``$index`` parameter of "
+"``IncomingRequest::getJsonVar()`` now accepts an ``array``, ``string`` or"
+" ``null`` value."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:202
+msgid "Enhancements"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:205
+msgid "Commands"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:207
+msgid ""
+"The call handler for Spark commands from the ``CodeIgniter\\CodeIgniter``"
+" class has been extracted. This will reduce the cost of console calls."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:208
+msgid ""
+"Added ``spark filter:check`` command to check the filters for a route. "
+"See :ref:`Controller Filters <spark-filter-check>` for the details."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:209
+msgid ""
+"Added ``spark make:cell`` command to create a new Cell file and its view."
+" See :ref:`generating-cell-via-command` for the details."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:210
+msgid ""
+"Now ``spark routes`` command shows route names. See :ref:`URI Routing "
+"<routing-spark-routes>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:211
+msgid ""
+"Now ``spark routes`` command can sort the output by Handler. See :ref"
+":`routing-spark-routes-sort-by-handler`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:214
+msgid ""
+"Help information for a spark command can now be accessed using the "
+"``--help`` option (e.g. ``php spark serve --help``)"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:215
+msgid ""
+"Added methods ``CLI::promptByMultipleKeys()`` to support multiple value "
+"in input, unlike ``promptByKey()``. See :ref:`prompt-by-multiple-keys` "
+"for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:216
+msgid "HTTP/3 is now considered a valid protocol."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:219
+msgid "Testing"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:221
+msgid ""
+"Added the ``StreamFilterTrait`` to make it easier to work with capturing "
+"data from STDOUT and STDERR streams. See :ref:`testing-cli-output`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:222
+msgid ""
+"The CITestStreamFilter filter class now implements methods for adding a "
+"filter to streams. See :ref:`testing-cli-output`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:223
+msgid ""
+"Added the ``PhpStreamWrapper`` to make it easier to work with setting "
+"data to ``php://stdin``. See :ref:`testing-cli-input`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:224
+msgid ""
+"Added method :ref:`benchmark-timer-record` to measure performance in a "
+"callable. Also enhanced common function ``timer()`` to accept optional "
+"callable."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:225
+msgid ""
+"A boolean third parameter ``$useExactComparison`` is added to "
+"``TestLogger::didLog()`` which sets whether log messages are checked "
+"verbatim. This defaults to ``true``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:226
+msgid ""
+"Added method ``CIUnitTestCase::assertLogContains()`` which compares log "
+"messages by parts instead of the whole of the message."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:232
+msgid "Query Builder"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:234
+msgid ""
+"Added ``upsert()`` and ``upsertBatch()`` methods to QueryBuilder. See "
+":ref:`upsert-data`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:235
+msgid "Added ``deleteBatch()`` method to QueryBuilder. See :ref:`delete-batch`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:236
+msgid ""
+"Added ``when()`` and ``whenNot()`` methods to conditionally add clauses "
+"to the query. See :ref:`BaseBuilder::when() <db-builder-when>` for "
+"details."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:237
+msgid ""
+"Improved the SQL structure for ``Builder::updateBatch()``. See :ref"
+":`update-batch` for the details."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:238
+msgid ""
+"Added ``BaseBuilder::setQueryAsData()`` which allows ``insertBatch()``, "
+"``updateBatch()``, ``upsertBatch()``, ``deleteBatch()`` from a query. See"
+" :ref:`insert-batch-data`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:241
+msgid "Forge"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:243
+msgid ""
+"Added ``Forge::processIndexes()`` allowing the creation of indexes on an "
+"existing table. See :ref:`db-forge-adding-keys-to-a-table` for the "
+"details."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:244
+msgid ""
+"Added the ability to manually set index names. These methods include: "
+"``Forge::addKey()``, ``Forge::addPrimaryKey()``, and "
+"``Forge::addUniqueKey()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:245
+msgid ""
+"The new method ``Forge::dropPrimaryKey()`` allows dropping the primary "
+"key on a table. See :ref:`dropping-a-primary-key`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:246
+msgid ""
+"Fixed ``Forge::dropKey()`` to allow dropping unique indexes. This "
+"required the ``DROP CONSTRAINT`` SQL command."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:247
+msgid ""
+":php:meth:`CodeIgniter\\\\Database\\\\Forge::addForeignKey()` now "
+"includes a name parameter to set foreign key names manually. This is not "
+"supported in SQLite3."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:248
+msgid ""
+"SQLSRV now automatically drops ``DEFAULT`` constraint when using "
+":ref:`Forge::dropColumn() <db-forge-dropColumn>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:253
+msgid ""
+"SQLite3 has a new Config item ``busyTimeout`` to set timeout when a table"
+" is locked."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:254
+msgid ""
+"``BaseConnection::escape()`` now excludes the ``RawSql`` data type. This "
+"allows passing SQL strings into data."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:255
+msgid ""
+"Improved data returned by :ref:`BaseConnection::getForeignKeyData() "
+"<metadata-getforeignkeydata>`. All DBMS returns the same structure."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:256
+msgid ""
+"SQLite :ref:`BaseConnection::getIndexData() <db-metadata-getindexdata>` "
+"now can return pseudo index named ``PRIMARY`` for `AUTOINCREMENT` column,"
+" and each returned index data has ``type`` property."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:257
+msgid ""
+"``BasePreparedQuery::close()`` now deallocates the prepared statement in "
+"all DBMS. Previously, they were not deallocated in Postgre, SQLSRV and "
+"OCI8. See :ref:`database-queries-stmt-close`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:258
+msgid ""
+"Added ``BaseConnection::transException()`` to throw exceptinons during "
+"transactions. See :ref:`transactions-throwing-exceptions`"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:262
+msgid "Model"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:264
+msgid ""
+"Added before and after events to ``BaseModel::insertBatch()`` and "
+"``BaseModel::updateBatch()`` methods. See :ref:`model-events-callbacks`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:265
+msgid ""
+"Added ``Model::allowEmptyInserts()`` method to insert empty data. See "
+":ref:`Using CodeIgniter's Model <model-allow-empty-inserts>`"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:266
+msgid ""
+"Added new :ref:`entities-property-casting` class ``IntBoolCast`` for "
+"Entity."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:269
+msgid "Libraries"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:271
+msgid ""
+"**Publisher:** Added methods ``replace()``, ``addLineAfter()`` and "
+"``addLineBefore()`` to modify files in Publisher. See :ref:`Publisher "
+"<publisher-modifying-files>` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:272
+msgid ""
+"**Encryption:** Now Encryption can decrypt data encrypted with CI3's "
+"Encryption. See :ref:`encryption-compatible-with-ci3`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:273
+msgid ""
+"**CURLRequest:** Added option version HTTP2 in :ref:`CURLRequest "
+"<curlrequest-version>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:276
+msgid "Helpers and Functions"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:278
+msgid "Now you can autoload helpers by **app/Config/Autoload.php**."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:279
+msgid ""
+"Added new Form helper function :php:func:`validation_errors()`, "
+":php:func:`validation_list_errors()` and "
+":php:func:`validation_show_error()` to display Validation Errors."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:280
+msgid ""
+"You can set the locale to :php:func:`route_to()` if you pass a locale "
+"value as the last parameter."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:281
+msgid "Added :php:func:`request()` and :php:func:`response()` functions."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:282
+msgid ""
+"Added :php:func:`decamelize()` function to convert camelCase to "
+"snake_case."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:283
+msgid ""
+"Added :php:func:`is_windows()` global function to detect Windows "
+"platforms."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:286
+msgid "HTML5 Compatibility"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:288
+msgid ""
+"Creation of void HTML elements like ``<input>`` can be configured to "
+"exclude or not the solidus character (``/``) before the right angle "
+"bracket (``>``) by setting the ``$html5`` property in "
+"**app/Config/DocTypes.php**. If you set it to ``true``, HTML5 compatible "
+"tags without ``/`` like ``<br>`` will be output."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:293
+msgid "The following items are affected:"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:295
+msgid "Typography class: Creation of ``br`` tag"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:296
+msgid "View Parser: The ``nl2br`` filter"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:297
+msgid "Honeypot: ``input`` tag"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:298
+msgid "Form helper"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:299
+msgid "HTML helper"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:300
+msgid "Common Functions"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:303
+msgid "Error Handling"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:305
+msgid ""
+"You can now log deprecation warnings instead of throwing exceptions. See "
+":ref:`logging_deprecation_warnings` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:306
+msgid "Logging of deprecations is turned on by default."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:307
+msgid ""
+"To *temporarily* enable throwing of deprecations, set the environment "
+"variable ``CODEIGNITER_SCREAM_DEPRECATIONS`` to a truthy value."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:308
+msgid ""
+"``Config\\Logger::$threshold`` is now, by default, environment-specific. "
+"For production environment, default threshold is still ``4`` but changed "
+"to ``9`` for other environments."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:313
+msgid "Multiple Domain Support"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:315
+msgid ""
+"Added ``Config\\App::$allowedHostnames`` to set hostnames other than the "
+"hostname in the baseURL."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:316
+msgid ""
+"If you set ``Config\\App::$allowedHostnames``, URL-related functions such"
+" as :php:func:`base_url()`, :php:func:`current_url()`, "
+":php:func:`site_url()` will return the URL with the hostname set in "
+"``Config\\App::$allowedHostnames`` if the current URL matches."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:321
+msgid ""
+"**Routing:** Added ``$routes->useSupportedLocalesOnly(true)`` so that the"
+" Router returns 404 Not Found if the locale in the URL is not supported "
+"in ``Config\\App::$supportedLocales``. See :ref:`Localization "
+"<localization-in-routes>`"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:322
+msgid ""
+"**Routing:** Added new ``$routes->view()`` method to return the view "
+"directly. See :ref:`View Routes <view-routes>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:323
+msgid ""
+"**View:** View Cells are now first-class citizens and can be located in "
+"the **app/Cells** directory. See :ref:`View Cells <app-cells>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:324
+msgid ""
+"**View:** Added ``Controlled Cells`` that provide more structure and "
+"flexibility to your View Cells. See :ref:`View Cells <controlled-cells>` "
+"for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:325
+msgid ""
+"**Validation:** Added Closure validation rule. See :ref:`validation-"
+"using-closure-rule` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:326
+msgid ""
+"**Config:** Now you can specify Composer packages to auto-discover "
+"manually. See :ref:`Code Modules <modules-specify-composer-packages>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:327
+msgid ""
+"**Config:** Added ``Config\\Session`` class to handle session "
+"configuration."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:328
+msgid "**Debug:** Kint has been updated to 5.0.2."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:329
+msgid ""
+"**Request:** Added new ``$request->getRawInputVar()`` method to return a "
+"specified variable from raw stream. See :ref:`Retrieving Raw data "
+"<incomingrequest-retrieving-raw-data>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:330
+msgid ""
+"**Request:** Added new ``$request->is()`` method to query the request "
+"type. See :ref:`Determining Request Type <incomingrequest-is>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:334
+msgid "Message Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:336
+msgid "Updated English language strings to be more consistent."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:337
+msgid ""
+"Added ``CLI.generator.className.cell`` and "
+"``CLI.generator.viewName.cell``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:338
+msgid "Added **en/Errors.php** file."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:341
+msgid "Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:343
+msgid "Config"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:344
+msgid "All atomic type properties in ``Config`` classes have been typed."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:345
+msgid ""
+"See :ref:`Upgrading <upgrade_430_config>` for information on changing the"
+" default values."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:346
+msgid "Changed the processing of Spark commands:"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:347
+msgid "The ``CodeIgniter\\CodeIgniter`` no longer handles Spark commands."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:348
+msgid "The ``CodeIgniter::isSparked()`` method has been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:349
+msgid ""
+"The ``CodeIgniter\\CLI\\CommandRunner`` class has been removed due to a "
+"change in Spark commands processing."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:350
+msgid ""
+"The system route configuration file ``system/Config/Routes.php`` has been"
+" removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:351
+msgid ""
+"The route configuration file ``app/Config/Routes.php`` has been changed. "
+"Removed include of system routes configuration file."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:354
+msgid "Deprecations"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:356
+msgid "``RouteCollection::localizeRoute()`` is deprecated."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:357
+msgid ""
+"``RouteCollection::fillRouteParams()`` is deprecated. Use "
+"``RouteCollection::buildReverseRoute()`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:358
+msgid ""
+"``BaseBuilder::setUpdateBatch()`` and ``BaseBuilder::setInsertBatch()`` "
+"are deprecated. Use ``BaseBuilder::setData()`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:359
+msgid ""
+"The public property ``Response::$CSP`` is deprecated. It will be "
+"protected. Use ``Response::getCSP()`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:360
+msgid ""
+"``CodeIgniter::$path`` and ``CodeIgniter::setPath()`` are deprecated. No "
+"longer used."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:361
+msgid ""
+"The public property ``IncomingRequest::$uri`` is deprecated. It will be "
+"protected. Use ``IncomingRequest::getUri()`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:362
+msgid ""
+"The public property ``IncomingRequest::$config`` is deprecated. It will "
+"be protected."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:363
+msgid ""
+"The method ``CLI::isWindows()`` is deprecated. Use ``is_windows()`` "
+"instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:364
+msgid ""
+"The ``Config\\App`` session properties in favor of the new session config"
+" class ``Config\\Session``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:367
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:369
+msgid ""
+"Fixed a bug when all types of ``Prepared Queries`` were returning a "
+"``Result`` object instead of a bool value for write-type queries."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:370
+msgid ""
+"Fixed a bug with variable filtering in JSON requests using with "
+"``IncomingRequest::getVar()`` or ``IncomingRequest::getJsonVar()`` "
+"methods."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:371
+msgid ""
+"Fixed a bug when variable type may be changed when using a specified "
+"index with ``IncomingRequest::getVar()`` or "
+"``IncomingRequest::getJsonVar()`` methods."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:372
+msgid ""
+"Fixed a bug that Honeypot field appears when CSP is enabled. See also "
+":ref:`upgrade-430-honeypot-and-csp`."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.0.rst:374
+msgid ""
+"See the repo's `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

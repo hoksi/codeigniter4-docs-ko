@@ -1,0 +1,1295 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/outgoing/view_parser.rst:3
+msgid "View Parser"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:9
+msgid ""
+"The View Parser can perform simple text substitution for pseudo-variables"
+" contained within your view files. It can parse simple variables or "
+"variable tag pairs."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:13
+msgid ""
+"Pseudo-variable names or control constructs are enclosed in braces, like "
+"this::"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:30
+msgid ""
+"These variables are not actual PHP variables, but rather plain text "
+"representations that allow you to eliminate PHP from your templates (view"
+" files)."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:34
+msgid ""
+"CodeIgniter does **not** require you to use this class since using pure "
+"PHP in your view pages (for instance using the :doc:`View renderer "
+"</outgoing/view_renderer>` ) lets them run a little faster. However, some"
+" developers prefer to use some form of template engine if they work with "
+"designers who they feel would find some confusion working with PHP."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:44
+msgid "Using the View Parser Class"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:46
+msgid "The simplest method to load the parser class is through its service:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:50
+msgid ""
+"Alternately, if you are not using the ``Parser`` class as your default "
+"renderer, you can instantiate it directly:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:55
+msgid ""
+"Then you can use any of the three standard rendering methods that it "
+"provides: ``render()``, ``setVar()`` and ``setData()``. You will also be "
+"able to specify delimiters directly, through the ``setDelimiters()`` "
+"method."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:60
+msgid ""
+"Using the ``Parser``, your view templates are processed only by the "
+"Parser itself, and not like a conventional view PHP script. PHP code in "
+"such a script is ignored by the parser, and only substitutions are "
+"performed."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:64
+msgid "This is purposeful: view files with no PHP."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:67
+msgid "What It Does"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:69
+msgid ""
+"The ``Parser`` class processes \"PHP/HTML scripts\" stored in the "
+"application's view path. These scripts can not contain any PHP."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:72
+msgid ""
+"Each view parameter (which we refer to as a pseudo-variable) triggers a "
+"substitution, based on the type of value you provided for it. Pseudo-"
+"variables are not extracted into PHP variables; instead their value is "
+"accessed through the pseudo-variable syntax, where its name is referenced"
+" inside braces."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:77
+msgid ""
+"The Parser class uses an associative array internally, to accumulate "
+"pseudo-variable settings until you call its ``render()``. This means that"
+" your pseudo-variable names need to be unique, or a later parameter "
+"setting will over-ride an earlier one."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:81
+msgid ""
+"This also impacts escaping parameter values for different contexts inside"
+" your script. You will have to give each escaped value a unique parameter"
+" name."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:85
+msgid "Parser Templates"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:87
+msgid ""
+"You can use the ``render()`` method to parse (or render) simple "
+"templates, like this:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:92
+msgid ""
+"View parameters are passed to ``setData()`` as an associative array of "
+"data to be replaced in the template."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:95
+#, python-brace-format
+msgid ""
+"In the above example, the template would contain two variables: "
+"``{blog_title}`` and ``{blog_heading}``"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:97
+msgid ""
+"The first parameter to ``render()`` contains the name of the template, "
+"where ``blog_template`` is the name of your view template file."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:100
+msgid ""
+"If the file extension is omitted, then the views are expected to end with"
+" the .php extension."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:103
+msgid "Parser Configuration Options"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:105
+msgid ""
+"Several options can be passed to the ``render()`` or ``renderString()`` "
+"methods."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:107
+msgid ""
+"``cache`` - the time in seconds, to save a view's results; ignored for "
+"``renderString()``"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:108
+msgid ""
+"``cache_name`` - the ID used to save/retrieve a cached view result; "
+"defaults to the viewpath; ignored for renderString()"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:110
+msgid ""
+"``saveData`` - true if the view data parameters should be retained for "
+"subsequent calls; default is **true**"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:112
+msgid ""
+"``cascadeData`` - true if pseudo-variable settings should be passed on to"
+" nested substitutions; default is **true**"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:119
+msgid "Substitution Variations"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:121
+msgid ""
+"There are three types of substitution supported: simple, looping, and "
+"nested. Substitutions are performed in the same sequence that pseudo-"
+"variables were added."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:124
+msgid ""
+"The **simple substitution** performed by the parser is a one-to-one "
+"replacement of pseudo-variables where the corresponding data parameter "
+"has either a scalar or string value, as in this example:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:130
+msgid ""
+"The ``Parser`` takes substitution a lot further with \"variable pairs\", "
+"used for nested substitutions or looping, and with some advanced "
+"constructs for conditional substitution."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:134
+msgid "When the parser executes, it will generally"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:136
+msgid "handle any conditional substitutions"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:137
+msgid "handle any nested/looping substitutions"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:138
+msgid "handle the remaining single substitutions"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:141
+msgid "Loop Substitutions"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:143
+msgid ""
+"A loop substitution happens when the value for a pseudo-variable is a "
+"sequential array of arrays, like an array of row settings."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:146
+msgid ""
+"The above example code allows simple variables to be replaced. What if "
+"you would like an entire block of variables to be repeated, with each "
+"iteration containing new values? Consider the template example we showed "
+"at the top of the page::"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:166
+#, python-brace-format
+msgid ""
+"In the above code you'll notice a pair of variables: ``{blog_entries}`` "
+"data... ``{/blog_entries}``. In a case like this, the entire chunk of "
+"data between these pairs would be repeated multiple times, corresponding "
+"to the number of rows in the \"blog_entries\" element of the parameters "
+"array."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:171
+msgid ""
+"Parsing variable pairs is done using the identical code shown above to "
+"parse single variables, except, you will add a multi-dimensional array "
+"corresponding to your variable pair data. Consider this example:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:177
+msgid ""
+"The value for the pseudo-variable ``blog_entries`` is a sequential array "
+"of associative arrays. The outer level does not have keys associated with"
+" each of the nested \"rows\"."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:181
+msgid ""
+"If your \"pair\" data is coming from a database result, which is already "
+"a multi-dimensional array, you can simply use the database "
+"``getResultArray()`` method:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:187
+msgid ""
+"If the array you are trying to loop over contains objects instead of "
+"arrays, the parser will first look for an ``asArray()`` method on the "
+"object. If it exists, that method will be called and the resulting array "
+"is then looped over just as described above. If no ``asArray()`` method "
+"exists, the object will be cast as an array and its public properties "
+"will be made available to the Parser."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:193
+msgid ""
+"This is especially useful with the Entity classes, which has an "
+"``asArray()`` method that returns all public and protected properties "
+"(minus the _options property) and makes them available to the Parser."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:198
+msgid "Nested Substitutions"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:200
+msgid ""
+"A nested substitution happens when the value for a pseudo-variable is an "
+"associative array of values, like a record from a database:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:205
+msgid ""
+"The value for the pseudo-variable ``blog_entries`` is an associative "
+"array. The key/value pairs defined inside it will be exposed inside the "
+"variable pair loop for that variable."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:209
+msgid "A **blog_template.php** that might work for the above::"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:219
+msgid ""
+"If you would like the other pseudo-variables accessible inside the "
+"``blog_entries`` scope, then make sure that the ``cascadeData`` option is"
+" set to true."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:223
+msgid "Comments"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:225
+#, python-brace-format
+msgid ""
+"You can place comments in your templates that will be ignored and removed"
+" during parsing by wrapping the comments in a ``{#  #}`` symbols."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:239
+msgid "Cascading Data"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:241
+msgid ""
+"With both a nested and a loop substitution, you have the option of "
+"cascading data pairs into the inner substitution."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:244
+msgid "The following example is not impacted by cascading:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:248
+msgid "This example gives different results, depending on cascading:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:253
+msgid "Preventing Parsing"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:255
+#, python-brace-format
+msgid ""
+"You can specify portions of the page to not be parsed with the "
+"``{noparse}`` ``{/noparse}`` tag pair. Anything in this section will stay"
+" exactly as it is, with no variable substitution, looping, etc, happening"
+" to the markup between the brackets."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:265
+msgid "Conditional Logic"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:267
+msgid ""
+"The Parser class supports some basic conditionals to handle ``if``, "
+"``else``, and ``elseif`` syntax. All ``if`` blocks must be closed with an"
+" ``endif`` tag::"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:274
+msgid "This simple block is converted to the following during parsing:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:278
+msgid ""
+"All variables used within if statements must have been previously set "
+"with the same name. Other than that, it is treated exactly like a "
+"standard PHP conditional, and all standard PHP rules would apply here. "
+"You can use any of the comparison operators you would normally, like "
+"``==``, ``===``, ``!==``, ``<``, ``>``, etc."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:292
+msgid ""
+"In the background, conditionals are parsed using an ``eval()``, so you "
+"must ensure that you take care with the user data that is used within "
+"conditionals, or you could open your application up to security risks."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:296
+msgid "Changing the Conditional Delimiters"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:298
+msgid ""
+"If you have JavaScript code like the following in your templates, the "
+"Parser raises a syntax error because there are strings that can be "
+"interpreted as a conditional::"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:308
+msgid ""
+"In that case, you can change the delimiters for conditionals with the "
+"``setConditionalDelimiters()`` method to avoid misinterpretations:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:312
+msgid "In this case, you will write code in your template::"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:321
+msgid "Escaping Data"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:323
+msgid ""
+"By default, all variable substitution is escaped to help prevent XSS "
+"attacks on your pages. CodeIgniter's ``esc()`` method supports several "
+"different contexts, like general ``html``, when it's in an HTML ``attr``,"
+" in ``css``, etc. If nothing else is specified, the data will be assumed "
+"to be in an HTML context. You can specify the context used by using the "
+"``esc()`` filter::"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:331
+msgid ""
+"There will be times when you absolutely need something to used and NOT "
+"escaped. You can do this by adding exclamation marks to the opening and "
+"closing braces::"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:337
+msgid "Filters"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:339
+msgid ""
+"Any single variable substitution can have one or more filters applied to "
+"it to modify the way it is presented. These are not intended to "
+"drastically change the output, but provide ways to reuse the same "
+"variable data but with different presentations. The ``esc`` filter "
+"discussed above is one example. Dates are another common use case, where "
+"you might need to format the same data differently in several sections on"
+" the same page."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:344
+msgid ""
+"Filters are commands that come after the pseudo-variable name, and are "
+"separated by the pipe symbol, ``|``::"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:349
+msgid ""
+"If the parameter takes any arguments, they must be separated by commas "
+"and enclosed in parentheses::"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:353
+msgid ""
+"Multiple filters can be applied to the value by piping multiple ones "
+"together. They are processed in order, from left to right::"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:359
+msgid "Provided Filters"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:361
+msgid "The following filters are available when using the parser:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:364
+msgid "Filter"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:364
+#: ../../source/outgoing/view_parser.rst:468
+msgid "Arguments"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:364
+#: ../../source/outgoing/view_parser.rst:468
+msgid "Description"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:364
+#: ../../source/outgoing/view_parser.rst:468
+msgid "Example"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:366
+msgid "abs"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:366
+msgid "Displays the absolute value of a number."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:366
+#, python-brace-format
+msgid "{ v|abs }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:368
+msgid "capitalize"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:368
+msgid ""
+"Displays the string in sentence case: all lowercase with firstletter "
+"capitalized."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:368
+#, python-brace-format
+msgid "{ v|capitalize}"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:371
+msgid "date"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:371
+msgid "format (Y-m-d)"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:371
+msgid "A PHP **date**-compatible formatting string."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:371
+#, python-brace-format
+msgid "{ v|date(Y-m-d) }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:373
+msgid "date_modify"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:373
+msgid "value to add / subtract"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:373
+msgid ""
+"A **strtotime** compatible string to modify the date, like ``+5 day`` or "
+"``-1 week``."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:373
+#, python-brace-format
+msgid "{ v|date_modify(+1 day) }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:376
+msgid "default"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:376
+msgid "default value"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:376
+msgid "Displays the default value if the variable is `empty()`_."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:376
+#, python-brace-format
+msgid "{ v|default(just in case) }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:378
+msgid "esc"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:378
+msgid "html, attr, css, js"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:378
+msgid "Specifies the context to escape the data."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:378
+#, python-brace-format
+msgid "{ v|esc(attr) }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:381
+msgid "excerpt"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:381
+msgid "phrase, radius"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:381
+msgid ""
+"Returns the text within a radius of words from a given phrase. Same as "
+"**excerpt** helper function."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:381
+#, python-brace-format
+msgid "{ v|excerpt(green giant, 20) }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:384
+msgid "highlight"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:384
+msgid "phrase"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:384
+msgid "Highlights a given phrase within the text using '<mark></mark>' tags."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:384
+#, python-brace-format
+msgid "{ v|highlight(view parser) }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:387
+msgid "highlight_code"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:387
+msgid "Highlights code samples with HTML/CSS."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:387
+#, python-brace-format
+msgid "{ v|highlight_code }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:389
+msgid "limit_chars"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:389
+#: ../../source/outgoing/view_parser.rst:391
+msgid "limit"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:389
+msgid "Limits the number of characters to $limit."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:389
+#, python-brace-format
+msgid "{ v|limit_chars(100) }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:391
+msgid "limit_words"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:391
+msgid "Limits the number of words to $limit."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:391
+#, python-brace-format
+msgid "{ v|limit_words(20) }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:393
+msgid "local_currency"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:393
+msgid "currency, locale, fraction"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:393
+msgid ""
+"Displays a localized version of a currency. \"currency\" valueis any "
+"3-letter ISO 4217 currency code."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:393
+#, python-brace-format
+msgid "{ v|local_currency(EUR,en_US) }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:397
+msgid "local_number"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:397
+msgid "type, precision, locale"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:397
+msgid ""
+"Displays a localized version of a number. \"type\" can be one of: "
+"decimal, currency, percent, scientific, spellout, ordinal, duration."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:397
+#, python-brace-format
+msgid "{ v|local_number(decimal,2,en_US) }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:401
+msgid "lower"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:401
+msgid "Converts a string to lowercase."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:401
+#, python-brace-format
+msgid "{ v|lower }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:403
+msgid "nl2br"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:403
+msgid "Replaces all newline characters (\\n) to an HTML <br/> tag."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:403
+#, python-brace-format
+msgid "{ v|nl2br }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:405
+msgid "number_format"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:405
+msgid "places"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:405
+msgid "Wraps PHP **number_format** function for use within the parser."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:405
+#, python-brace-format
+msgid "{ v|number_format(3) }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:408
+msgid "prose"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:408
+msgid ""
+"Takes a body of text and uses the **auto_typography()** method to turn it"
+" into prettier, easier-to-read, prose."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:408
+#, python-brace-format
+msgid "{ v|prose }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:411
+msgid "round"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:411
+msgid "places, type"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:411
+msgid ""
+"Rounds a number to the specified places. Types of **ceil** and **floor** "
+"can be passed to use those functions instead."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:411
+#, python-brace-format
+msgid "{ v|round(3) } { v|round(ceil) }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:414
+msgid "strip_tags"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:414
+msgid "allowed chars"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:414
+msgid "Wraps PHP **strip_tags**. Can accept a string of allowed tags."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:414
+#, python-brace-format
+msgid "{ v|strip_tags(<br>) }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:417
+msgid "title"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:417
+msgid ""
+"Displays a \"title case\" version of the string, with all lowercase, and "
+"each word capitalized."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:417
+#, python-brace-format
+msgid "{ v|title }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:420
+msgid "upper"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:420
+msgid "Displays the string in all uppercase."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:420
+#, python-brace-format
+msgid "{ v|upper }"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:425
+msgid ""
+"See `PHP's NumberFormatter "
+"<https://www.php.net/manual/en/numberformatter.create.php>`_ for details "
+"relevant to the \"local_number\" filter."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:429
+msgid "Custom Filters"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:431
+msgid ""
+"You can easily create your own filters by editing **app/Config/View.php**"
+" and adding new entries to the ``$filters`` array. Each key is the name "
+"which the filter is called by in the view, and its value is any valid PHP"
+" callable:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:438
+msgid "Parser Plugins"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:440
+#, python-brace-format
+msgid ""
+"Plugins allow you to extend the parser, adding custom features for each "
+"project. They can be any PHP callable, making them very simple to "
+"implement. Within templates, plugins are specified by ``{+ +}`` tags::"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:445
+msgid ""
+"This example shows a plugin named **foo**. It can manipulate any of the "
+"content between its opening and closing tags. In this example, it could "
+"work with the text \" inner content \". Plugins are processed before any "
+"pseudo-variable replacements happen."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:449
+msgid ""
+"While plugins will often consist of tag pairs, like shown above, they can"
+" also be a single tag, with no closing tag::"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:453
+msgid ""
+"Opening tags can also contain parameters that can customize how the "
+"plugin works. The parameters are represented as key/value pairs::"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:458
+msgid "Parameters can also be single values::"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:463
+msgid "Provided Plugins"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:465
+msgid "The following plugins are available when using the parser:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:468
+msgid "Plugin"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:470
+msgid "current_url"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:470
+msgid "Alias for the current_url helper function."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:470
+#, python-brace-format
+msgid "``{+ current_url +}``"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:471
+msgid "previous_url"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:471
+msgid "Alias for the previous_url helper function."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:471
+#, python-brace-format
+msgid "``{+ previous_url +}``"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:472
+msgid "siteURL"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:472
+msgid "Alias for the site_url helper function."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:472
+#, python-brace-format
+msgid "``{+ siteURL \"login\" +}``"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:473
+msgid "mailto"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:473
+#: ../../source/outgoing/view_parser.rst:474
+msgid "email, title, attributes"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:473
+msgid "Alias for the mailto helper function."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:473
+#, python-brace-format
+msgid "``{+ mailto email=foo@example.com title=\"Stranger Things\" +}``"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:474
+msgid "safe_mailto"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:474
+msgid "Alias for the safe_mailto helper function."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:474
+#, python-brace-format
+msgid "``{+ safe_mailto email=foo@example.com title=\"Stranger Things\" +}``"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:475
+msgid "lang"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:475
+msgid "language string"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:475
+msgid "Alias for the lang helper function."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:475
+#, python-brace-format
+msgid "``{+ lang number.terabyteAbbr +}``"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:476
+msgid "validation_errors"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:476
+msgid "fieldname(optional)"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:476
+msgid ""
+"Returns either error string for the field (if specified) or all "
+"validation errors."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:476
+#, python-brace-format
+msgid "``{+ validation_errors +} , {+ validation_errors field=\"email\" +}``"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:478
+msgid "route"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:478
+msgid "route name"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:478
+msgid "Alias for the route_to helper function."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:478
+#, python-brace-format
+msgid "``{+ route \"login\" +}``"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:479
+msgid "csp_script_nonce"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:479
+msgid "Alias for the csp_script_nonce helper function."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:479
+#, python-brace-format
+msgid "``{+ csp_script_nonce +}``"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:481
+msgid "csp_style_nonce"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:481
+msgid "Alias for the csp_style_nonce helper function."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:481
+#, python-brace-format
+msgid "``{+ csp_style_nonce +}``"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:486
+msgid "Registering a Plugin"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:488
+msgid ""
+"At its simplest, all you need to do to register a new plugin and make it "
+"ready for use is to add it to the **app/Config/View.php**, under the "
+"``$plugins`` array. The key is the name of the plugin that is used within"
+" the template file. The value is any valid PHP callable, including static"
+" class methods:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:494
+msgid ""
+"You can also use closures, but these can only be defined in the config "
+"file's constructor:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:498
+msgid ""
+"If the callable is on its own, it is treated as a single tag, not an "
+"open/close one. It will be replaced by the return value from the plugin:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:503
+msgid ""
+"If the callable is wrapped in an array, it is treated as an open/close "
+"tag pair that can operate on any of the content between its tags:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:510
+msgid "Usage Notes"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:512
+msgid ""
+"If you include substitution parameters that are not referenced in your "
+"template, they are ignored:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:517
+msgid ""
+"If you do not include a substitution parameter that is referenced in your"
+" template, the original pseudo-variable is shown in the result:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:522
+msgid ""
+"If you provide a string substitution parameter when an array is expected,"
+" i.e., for a variable pair, the substitution is done for the opening "
+"variable pair tag, but the closing variable pair tag is not rendered "
+"properly:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:529
+msgid "View Fragments"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:531
+msgid ""
+"You do not have to use variable pairs to get the effect of iteration in "
+"your views. It is possible to use a view fragment for what would be "
+"inside a variable pair, and to control the iteration in your controller "
+"instead of in the view."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:536
+msgid "An example with the iteration controlled in the view::"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:551
+#: ../../source/outgoing/view_parser.rst:563
+msgid "Result::"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:558
+msgid ""
+"An example with the iteration controlled in the controller, using a view "
+"fragment:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:572
+msgid "Class Reference"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:580
+msgid "File name of the view source"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:581
+#: ../../source/outgoing/view_parser.rst:603
+msgid "Array of options, as key/value pairs"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:582
+#: ../../source/outgoing/view_parser.rst:604
+msgid ""
+"If true, will save data for use with any other calls, if false, will "
+"clean the data after rendering the view."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:583
+#: ../../source/outgoing/view_parser.rst:605
+msgid "The rendered text for the chosen view"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:586
+msgid ""
+"Builds the output based upon a file name and any data that has already "
+"been set:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:590
+msgid "Options supported:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:592
+msgid "``cache`` - the time in seconds, to save a view's results"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:593
+msgid ""
+"``cache_name`` - the ID used to save/retrieve a cached view result; "
+"defaults to the viewpath"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:594
+msgid ""
+"``cascadeData`` - true if the data pairs in effect when a nested or loop "
+"substitution occurs should be propagated"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:595
+msgid ""
+"``saveData`` - true if the view data parameter should be retained for "
+"subsequent calls"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:597
+msgid ""
+"Any conditional substitutions are performed first, then remaining "
+"substitutions are performed for each data pair."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:602
+msgid "View source provided as a string"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:608
+msgid ""
+"Builds the output based upon a provided template source and any data that"
+" has already been set:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:612
+msgid "Options supported, and behavior, as above."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:616
+msgid "Array of view data strings, as key/value pairs"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:617
+#: ../../source/outgoing/view_parser.rst:632
+msgid "The context to use for data escaping."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:618
+#: ../../source/outgoing/view_parser.rst:633
+#: ../../source/outgoing/view_parser.rst:647
+#: ../../source/outgoing/view_parser.rst:658
+msgid "The Renderer, for method chaining"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:621
+msgid "Sets several pieces of view data at once:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:625
+msgid ""
+"Supported escape contexts: html, css, js, url, or attr or raw. If 'raw', "
+"no escaping will happen."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:630
+msgid "Name of the view data variable"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:631
+msgid "The value of this view data"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:636
+msgid "Sets a single piece of view data:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:640
+msgid ""
+"Supported escape contexts: html, css, js, url, attr or raw. If 'raw', no "
+"escaping will happen."
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:645
+msgid "Left delimiter for substitution fields"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:646
+msgid "right delimiter for substitution fields"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:650
+msgid "Override the substitution field delimiters:"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:656
+msgid "Left delimiter for conditionals"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:657
+msgid "right delimiter for conditionals"
+msgstr ""
+
+#: ../../source/outgoing/view_parser.rst:661
+msgid "Override the conditional delimiters:"
+msgstr ""
+

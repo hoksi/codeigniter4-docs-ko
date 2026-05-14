@@ -1,0 +1,240 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/extending/composer_packages.rst:3
+msgid "Creating Composer Packages"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:5
+msgid ""
+"You can make the :doc:`../general/modules` you create into Composer "
+"packages, or can create a Composer package for CodeIgniter 4."
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:14
+msgid "Folder Structure"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:16
+msgid "Here's a typical directory structure for a Composer package::"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:31
+msgid "Creating composer.json"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:33
+msgid ""
+"In the root of your package directory, create a **composer.json** file. "
+"This file defines metadata about your package and its dependencies."
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:36
+msgid "The ``composer init`` command helps you create it."
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:38
+msgid "For example, **composer.json** might look like this::"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:65
+msgid "Package Name"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:67
+msgid ""
+"The ``name`` field is important here. Package names are generally written"
+" in the format \"vendor-name/package-name\" with all lowercase. Here is a"
+" common example:"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:70
+msgid ""
+"``your-vendor-name``: The name that identifies the vendor (creator of the"
+" package), such as your name or your organization."
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:72
+msgid "``your-package-name``: The name of the package you are creating."
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:74
+msgid ""
+"Thus, it is important to make the name unique to distinguish it from "
+"other packages. Uniqueness is especially important when publishing."
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:78
+msgid "Namespace"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:80
+msgid ""
+"The package name then determines the vendor namespace in "
+"``autoload.psr4``."
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:82
+msgid ""
+"If your package name is ``your-vendor/your-package``, the vendor "
+"namespace must be ``YourVendor``. So you would write like the following::"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:91
+msgid ""
+"This setting instructs Composer to autoload the source code for your "
+"package."
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:94
+msgid "Choosing License"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:96
+msgid ""
+"If you are not familiar with open source licenses, see "
+"https://choosealicense.com/. Many PHP packages, including CodeIgniter, "
+"use the MIT license."
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:101
+msgid "Preparing Development Tools"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:103
+msgid ""
+"There are many tools that help ensure quality code. So you should use "
+"them. You can easily install and configure such tools with `CodeIgniter "
+"DevKit <https://github.com/codeigniter4/devkit>`_."
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:108
+msgid "Installing DevKit"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:110
+msgid "In the root of your package directory, run the following commands:"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:118
+msgid ""
+"The DevKit installs various Composer packages that helps your "
+"development, and installs templates for them in "
+"**vendor/codeigniter4/devkit/src/Template**. Copy the files in it to your"
+" project root folder, and edit them for your needs."
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:123
+msgid "Configuring Coding Standards Fixer"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:125
+msgid ""
+"DevKit provides Coding Standards Fixer with `CodeIgniter Coding Standard "
+"<https://github.com/CodeIgniter/coding-standard>`_ based on `PHP-CS-Fixer"
+" <https://github.com/PHP-CS-Fixer/PHP-CS-Fixer>`_."
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:129
+msgid ""
+"Copy **vendor/codeigniter4/devkit/src/Template/.php-cs-fixer.dist.php** "
+"to your project root folder."
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:132
+msgid "Create the **build** folder for the cache file::"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:138
+msgid "Open **.php-cs-fixer.dist.php** in your editor, and fix the folder path::"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:152
+msgid "That't it. Now you can run Coding Standards Fixer:"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:158
+msgid ""
+"If you add ``scripts.cs-fix`` in your **composer.json**, you can run it "
+"with ``composer cs-fix`` command::"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:171
+msgid "Config Files"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:174
+msgid "Allowing Users to Override Settings"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:176
+msgid ""
+"If your package has a configuration file and you want users to be able to"
+" override the settings, use :php:func:`config()` with the short classname"
+" like ``config('YourConfig')`` to call the configuration file."
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:180
+msgid ""
+"Users can then override the package configuration by placing a "
+"configuration class with the same short classname in **app/Config** that "
+"extends the package Config class like "
+"``YourVendor\\YourPackage\\Config\\YourConfig``."
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:185
+msgid "Overriding Settings in app/Config"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:187
+msgid ""
+"If you need to override or add to known configurations in the "
+"**app/Config** folder, you can use :ref:`Implicit Registrars "
+"<registrars>`."
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:192
+msgid "References"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:194
+msgid ""
+"We have published some official packages. You can use these packages as "
+"references when creating your own packages:"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:197
+msgid "https://github.com/codeigniter4/shield"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:198
+msgid "https://github.com/codeigniter4/settings"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:199
+msgid "https://github.com/codeigniter4/tasks"
+msgstr ""
+
+#: ../../source/extending/composer_packages.rst:200
+msgid "https://github.com/codeigniter4/cache"
+msgstr ""
+

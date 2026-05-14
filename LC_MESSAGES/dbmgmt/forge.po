@@ -1,0 +1,797 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/dbmgmt/forge.rst:3
+msgid "Database Forge Class"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:5
+msgid ""
+"The Database Forge Class contains methods that help you manage your "
+"database."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:14
+msgid "Initializing the Forge Class"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:16
+msgid ""
+"In order to initialize the Forge class, your database driver must already"
+" be running, since the Forge class relies on it."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:19
+msgid "Load the Forge Class as follows:"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:23
+msgid ""
+"You can also pass another database group name to the DB Forge loader, in "
+"case the database you want to manage isn't the default one:"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:28
+msgid ""
+"In the above example, we're passing the name of a different database "
+"group to connect to as the first parameter."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:33
+msgid "Creating and Dropping Databases"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:36
+msgid "$forge->createDatabase('db_name')"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:38
+msgid ""
+"Permits you to create the database specified in the first parameter. "
+"Returns true/false based on success or failure:"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:43
+msgid ""
+"An optional second parameter set to true will add ``IF EXISTS`` statement"
+" or will check if a database exists before creating it (depending on "
+"DBMS)."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:49
+msgid "$forge->dropDatabase('db_name')"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:51
+msgid ""
+"Permits you to drop the database specified in the first parameter. "
+"Returns true/false based on success or failure:"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:57
+msgid "Creating Databases in the Command Line"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:59
+msgid ""
+"CodeIgniter supports creating databases straight from your favorite "
+"terminal using the dedicated ``db:create`` command. By using this command"
+" it is assumed that the database is not yet existing. Otherwise, "
+"CodeIgniter will complain that the database creation has failed."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:63
+msgid ""
+"To start, just type the command and the name of the database (e.g., "
+"``foo``):"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:69
+msgid ""
+"If everything went fine, you should expect the ``Database \"foo\" "
+"successfully created.`` message displayed."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:71
+msgid ""
+"If you are on a testing environment or you are using the SQLite3 driver, "
+"you may pass in the file extension for the file where the database will "
+"be created using the ``--ext`` option. Valid values are ``db`` and "
+"``sqlite`` and defaults to ``db``. Remember that these should not be "
+"preceded by a period. :"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:80
+msgid "The above command will create the db file in **WRITEPATH/foo.sqlite**."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:82
+msgid ""
+"When using the special SQLite3 database name ``:memory:``, expect that "
+"the command will still produce a success message but no database file is "
+"created. This is because SQLite3 will just use an in-memory database."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:88
+msgid "Creating Tables"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:90
+msgid ""
+"There are several things you may wish to do when creating tables. Add "
+"fields, add keys to the table, alter columns. CodeIgniter provides a "
+"mechanism for this."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:97
+msgid "Adding Fields"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:100
+msgid "$forge->addField()"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:102
+msgid ""
+"Fields are normally created via an associative array. Within the array, "
+"you must include a ``type`` key that relates to the datatype of the "
+"field."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:105
+msgid ""
+"For example, ``INT``, ``VARCHAR``, ``TEXT``, etc. Many datatypes (for "
+"example ``VARCHAR``) also require a ``constraint`` key."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:110
+msgid "Additionally, the following key/values can be used:"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:112
+msgid "``unsigned``/true : to generate ``UNSIGNED`` in the field definition."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:113
+msgid ""
+"``default``/value : to generate ``DEFAULT`` constraint in the field "
+"definition."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:114
+msgid ""
+"``null``/true : to generate ``NULL`` in the field definition. Without "
+"this, the field will default to ``NOT NULL``."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:116
+msgid ""
+"``auto_increment``/true : generates an auto_increment flag on the field. "
+"Note that the field type must be a type that supports this, such as "
+"``INTEGER``."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:119
+msgid "``unique``/true : to generate a unique key for the field definition."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:123
+msgid ""
+"After the fields have been defined, they can be added using "
+"``$forge->addField($fields)`` followed by a call to the "
+":ref:`createTable() <creating-a-table>`  method."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:128
+msgid "Notes on Data Types"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:131
+msgid "Floating-Point Types"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:133
+msgid ""
+"Floating-Point types such as ``FLOAT`` and ``DOUBLE`` represent "
+"approximate values. Therefore, they should not be used when exact values "
+"are needed."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:152
+msgid ""
+"When it is important to preserve exact precision, for example with "
+"monetary data, ``DECIMAL`` or ``NUMERIC`` should be used."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:156
+msgid "TEXT"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:158
+msgid ""
+"``TEXT`` should not be used on SQLSRV. It is deprecated. See `ntext, "
+"text, and image (Transact-SQL) - SQL Server | Microsoft Learn "
+"<https://learn.microsoft.com/en-us/sql/t-sql/data-types/ntext-text-and-"
+"image-transact-sql?view=sql-server-ver16>`_."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:162
+msgid "ENUM"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:164
+msgid "Not all databases support ``ENUM``."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:166
+msgid ""
+"Starting with v4.5.0, ``SQLSRV`` Forge converts ``ENUM`` data types to "
+"``VARCHAR(n)``. Previous versions converted to ``TEXT``."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:172
+msgid "Raw Sql Strings as Default Values"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:176
+msgid ""
+"Since v4.2.0, ``$forge->addField()`` accepts a "
+"``CodeIgniter\\Database\\RawSql`` instance, which expresses raw SQL "
+"strings."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:180
+msgid ""
+"When you use ``RawSql``, you MUST escape the data manually. Failure to do"
+" so could result in SQL injections."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:183
+msgid "Passing Strings as Fields"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:185
+msgid ""
+"If you know exactly how you want a field to be created, you can pass the "
+"string into the field definitions with ``addField()``:"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:190
+msgid ""
+"Passing raw strings as fields cannot be followed by ``addKey()`` calls on"
+" those fields."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:192
+msgid "Multiple calls to ``addField()`` are cumulative."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:195
+msgid "Creating an id Field"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:197
+msgid ""
+"There is a special exception for creating id fields. A field with type id"
+" will automatically be assigned as an INT(9) auto_incrementing Primary "
+"Key."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:206
+msgid "Adding Keys"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:209
+msgid "$forge->addKey()"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:211
+msgid ""
+"Generally speaking, you'll want your table to have Keys. This is "
+"accomplished with ``$forge->addKey('field')``. The optional second "
+"parameter set to true will make it a primary key and the third parameter "
+"set to true will make it a unique key. You may specify a name with the "
+"fourth parameter. Note that ``addKey()`` must be followed by a call to "
+"``createTable()`` or ``processIndexes()`` when the table already exists."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:219
+msgid ""
+"Multiple column non-primary keys must be sent as an array. Sample output "
+"below is for MySQL."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:225
+msgid "$forge->addPrimaryKey()"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:228
+msgid "$forge->addUniqueKey()"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:230
+msgid ""
+"To make code reading more objective it is also possible to add primary "
+"and unique keys with specific methods:"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:235
+msgid ""
+"When you add a primary key, MySQL and SQLite will assume the name "
+"``PRIMARY`` even if a name is provided."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:240
+msgid "Adding Foreign Keys"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:242
+msgid ""
+"Foreign Keys help to enforce relationships and actions across your "
+"tables. For tables that support Foreign Keys, you may add them directly "
+"in forge:"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:247
+msgid ""
+"You can specify the desired action for the \"on update\" and \"on "
+"delete\" properties of the constraint as well as the name:"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:251
+msgid ""
+"SQLite3 does not support the naming of foreign keys. CodeIgniter will "
+"refer to them by ``prefix_table_column_foreign``."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:256
+msgid "Creating a Table"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:258
+msgid "After fields and keys have been declared, you can create a new table with"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:263
+msgid ""
+"An optional second parameter set to true will create the table only if it"
+" doesn't already exist."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:267
+msgid "You could also pass optional table attributes, such as MySQL's ``ENGINE``:"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:271
+msgid ""
+"Unless you specify the ``CHARACTER SET`` and/or ``COLLATE`` attributes, "
+"``createTable()`` will always add them with your configured *charset* and"
+" *DBCollat* values, as long as they are not empty (MySQL only)."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:277
+msgid "Dropping Tables"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:280
+msgid "Dropping a Table"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:282
+msgid ""
+"Execute a ``DROP TABLE`` statement and optionally add an ``IF EXISTS`` "
+"clause."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:286
+msgid ""
+"A third parameter can be passed to add a ``CASCADE`` option, which might "
+"be required for some drivers to handle removal of tables with foreign "
+"keys."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:293
+msgid "Modifying Tables"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:296
+msgid "Adding a Field to a Table"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:299
+msgid "$forge->addColumn()"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:301
+msgid ""
+"The ``addColumn()`` method is used to modify an existing table. It "
+"accepts the same field array as :ref:`Creating Tables <adding-fields>`, "
+"and can be used to add additional fields."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:305
+msgid ""
+"Unlike when creating a table, if ``null`` is not specified, the column "
+"will be ``NULL``, not ``NOT NULL``."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:310
+msgid ""
+"If you are using MySQL or CUBIRD, then you can take advantage of their "
+"``AFTER`` and ``FIRST`` clauses to position the new column."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:313
+msgid "Examples:"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:318
+msgid "Dropping Fields From a Table"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:323
+msgid "$forge->dropColumn()"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:325
+msgid "Used to remove a column from a table."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:329
+msgid "Used to remove multiple columns from a table."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:334
+msgid "Modifying a Field in a Table"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:339
+msgid "$forge->modifyColumn()"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:341
+msgid ""
+"The usage of this method is identical to ``addColumn()``, except it "
+"alters an existing column rather than adding a new one. In order to "
+"change the name, you can add a \"name\" key into the field defining "
+"array."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:347
+msgid ""
+"The ``modifyColumn()`` may unexpectedly change ``NULL``/``NOT NULL``. So "
+"it is recommended to always specify the value for ``null`` key. Unlike "
+"when creating a table, if ``null`` is not specified, the column will be "
+"``NULL``, not ``NOT NULL``."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:352
+msgid ""
+"Due to a bug, prior v4.3.4, SQLite3 may not set ``NOT NULL`` even if you "
+"specify ``'null' => false``."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:355
+msgid ""
+"Due to a bug, prior v4.3.4, Postgres and SQLSRV set ``NOT NULL`` even if "
+"you specify ``'null' => true``."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:361
+msgid "Adding Keys to a Table"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:365
+msgid ""
+"You may add keys to an existing table by using ``addKey()``, "
+"``addPrimaryKey()``, ``addUniqueKey()`` or ``addForeignKey()`` and "
+"``processIndexes()``:"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:373
+msgid "Dropping a Primary Key"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:377
+msgid "Execute a DROP PRIMARY KEY."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:382
+msgid "Dropping a Key"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:384
+msgid "Execute a DROP KEY."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:389
+msgid "Dropping a Foreign Key"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:391
+msgid "Execute a DROP FOREIGN KEY."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:396
+msgid "Renaming a Table"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:398
+msgid "Executes a TABLE rename"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:404
+msgid "Class Reference"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:412
+msgid "Table name to add the column to"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:413 ../../source/dbmgmt/forge.rst:560
+msgid "Column definition(s)"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:414 ../../source/dbmgmt/forge.rst:481
+#: ../../source/dbmgmt/forge.rst:500 ../../source/dbmgmt/forge.rst:508
+#: ../../source/dbmgmt/forge.rst:518 ../../source/dbmgmt/forge.rst:529
+#: ../../source/dbmgmt/forge.rst:540 ../../source/dbmgmt/forge.rst:550
+#: ../../source/dbmgmt/forge.rst:561
+msgid "true on success, false on failure"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:417
+msgid ""
+"Adds a column to an existing table. Usage: See `Adding a Field to a "
+"Table`_."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:421
+msgid "Field definition to add"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:422 ../../source/dbmgmt/forge.rst:435
+#: ../../source/dbmgmt/forge.rst:448 ../../source/dbmgmt/forge.rst:459
+#: ../../source/dbmgmt/forge.rst:470
+msgid "``\\CodeIgniter\\Database\\Forge`` instance (method chaining)"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:423 ../../source/dbmgmt/forge.rst:436
+#: ../../source/dbmgmt/forge.rst:449 ../../source/dbmgmt/forge.rst:460
+#: ../../source/dbmgmt/forge.rst:471
+msgid "``\\CodeIgniter\\Database\\Forge``"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:425
+msgid ""
+"Adds a field to the set that will be used to create a table. Usage: See "
+"`Adding Fields`_."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:429 ../../source/dbmgmt/forge.rst:444
+#: ../../source/dbmgmt/forge.rst:457 ../../source/dbmgmt/forge.rst:468
+msgid "Name of a key field or an array of fields"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:430
+msgid "Name of a parent table"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:431
+msgid "Name of a parent table field or an array of fields"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:432
+msgid "Desired action for the \"on update\""
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:433
+msgid "Desired action for the \"on delete\""
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:434
+msgid "Name of foreign key. This does not work with SQLite3"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:438
+msgid ""
+"Adds a foreign key to the set that will be used to create a table. Usage:"
+" See `Adding Foreign Keys`_."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:440
+msgid "``$fkName`` can be used since v4.3.0."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:445
+msgid "Set to true if it should be a primary key or a regular one"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:446
+msgid "Set to true if it should be a unique key or a regular one"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:447 ../../source/dbmgmt/forge.rst:458
+#: ../../source/dbmgmt/forge.rst:469
+msgid "Name of key to be added"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:451
+msgid ""
+"Adds a key to the set that will be used to create a table. Usage: See "
+"`Adding Keys`_."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:453 ../../source/dbmgmt/forge.rst:464
+#: ../../source/dbmgmt/forge.rst:475 ../../source/dbmgmt/forge.rst:534
+msgid "``$keyName`` can be used since v4.3.0."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:462
+msgid ""
+"Adds a primary key to the set that will be used to create a table. Usage:"
+" See `Adding Keys`_."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:473
+msgid ""
+"Adds a unique key to the set that will be used to create a table. Usage: "
+"See `Adding Keys`_."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:479
+msgid "Name of the database to create"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:480
+msgid "Set to true to add an ``IF NOT EXISTS`` clause or check if database exists"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:484
+msgid "Creates a new database. Usage: See `Creating and Dropping Databases`_."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:488
+msgid "Name of the table to create"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:489
+msgid "Set to true to add an ``IF NOT EXISTS`` clause"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:490
+msgid "An associative array of table attributes"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:491 ../../source/dbmgmt/forge.rst:570
+msgid "Query object on success, false on failure"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:494
+msgid "Creates a new table. Usage: See `Creating a Table`_."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:498 ../../source/dbmgmt/forge.rst:559
+msgid "Table name"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:499
+msgid "Comma-delimited string or an array of column names"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:503
+msgid ""
+"Drops single or multiple columns from a table. Usage: See `Dropping "
+"Fields From a Table`_."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:507
+msgid "Name of the database to drop"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:511
+msgid "Drops a database. Usage: See `Creating and Dropping Databases`_."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:515
+msgid "Name of table that has key"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:516
+msgid "Name of key to be dropped"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:517
+msgid "If database prefix should be added to ``$keyName``"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:521
+msgid "Drops an index or unique index."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:523
+msgid "``$keyName`` and ``$prefixKeyName`` can be used since v4.3.0."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:527
+msgid "Name of table to drop primary key"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:528
+msgid "Name of primary key to be dropped"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:532
+msgid "Drops a primary key from a table."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:538
+msgid "Name of the table to drop"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:539
+msgid "Set to true to add an ``IF EXISTS`` clause"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:543
+msgid "Drops a table. Usage: See `Dropping a Table`_."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:549
+msgid "Name of the table to add indexes to"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:553
+msgid ""
+"Used following ``addKey()``, ``addPrimaryKey()``, ``addUniqueKey()``, and"
+" ``addForeignKey()`` to add indexes to an existing table. See `Adding "
+"Keys to a Table`_."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:564
+msgid "Modifies a table column. Usage: See `Modifying a Field in a Table`_."
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:568
+msgid "Current of the table"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:569
+msgid "New name of the table"
+msgstr ""
+
+#: ../../source/dbmgmt/forge.rst:573
+msgid "Renames a table. Usage: See `Renaming a Table`_."
+msgstr ""
+

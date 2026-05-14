@@ -1,0 +1,232 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/libraries/cors.rst:3
+msgid "Cross-Origin Resource Sharing (CORS)"
+msgstr ""
+
+#: ../../source/libraries/cors.rst:7
+msgid ""
+"Cross-Origin Resource Sharing (CORS) is an HTTP-header based security "
+"mechanism that allows a server to indicate any origins (domain, scheme, "
+"or port) other than its own from which a browser should permit loading "
+"resources."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:11
+msgid ""
+"CORS works by adding headers to HTTP requests and responses to indicate "
+"whether the requested resource can be shared across different origins, "
+"helping to prevent malicious attacks like cross-site request forgery "
+"(CSRF) and data theft."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:15
+msgid ""
+"If you are not familiar with CORS and CORS headers, please read the `MDN "
+"documentation on CORS`_."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:20
+msgid "CodeIgniter provides the CORS filter and helper class."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:28
+msgid "Configuring CORS"
+msgstr ""
+
+#: ../../source/libraries/cors.rst:31
+msgid "Setting Default Config"
+msgstr ""
+
+#: ../../source/libraries/cors.rst:33
+msgid "CORS can be configured by **app/Config/Cors.php**."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:35
+msgid ""
+"At a minimum, the following items in the ``$default`` property must be "
+"set:"
+msgstr ""
+
+#: ../../source/libraries/cors.rst:37
+msgid "``allowedOrigins``: List explicitly the Origin(s) you want to allow."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:38
+msgid "``allowedHeaders``: List explicitly the HTTP headers you want to allow."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:39
+msgid "``allowedMethods``: List explicitly the HTTP methods you want to allow."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:41
+msgid ""
+"Based on the principle of least privilege, only the minimum necessary "
+"Origin, Methods, and Headers should be allowed."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:44
+msgid ""
+"If you send credentials (e.g., cookies) with a cross-origin request, set "
+"``supportsCredentials`` to ``true``."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:48
+msgid "Enabling CORS"
+msgstr ""
+
+#: ../../source/libraries/cors.rst:50
+msgid "To enable CORS, you need to do two things:"
+msgstr ""
+
+#: ../../source/libraries/cors.rst:52
+msgid "Specify the ``cors`` filter to routes that you permit CORS."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:53
+msgid "Add **OPTIONS** routes for CORS Preflight Requests."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:56
+msgid "Set against Routes"
+msgstr ""
+
+#: ../../source/libraries/cors.rst:58
+msgid "You can set the ``cors`` filter to routes with **app/Config/Routes.php**."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:60 ../../source/libraries/cors.rst:75
+#: ../../source/libraries/cors.rst:82
+msgid "E.g.,"
+msgstr ""
+
+#: ../../source/libraries/cors.rst:64 ../../source/libraries/cors.rst:79
+msgid ""
+"Don't forget to add OPTIONS routes for Preflight Requests. Because "
+"Controller Filters (except for Required Filters) do not work if the route"
+" does not exist."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:67
+msgid ""
+"The CORS filter handles all Preflight Requests, so the closure "
+"controllers for the OPTIONS routes are not normally called."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:71
+msgid "Set in Config\\\\Filters"
+msgstr ""
+
+#: ../../source/libraries/cors.rst:73
+msgid ""
+"Alternatively, you can set the ``cors`` filter to URI paths in "
+"**app/Config/Filters.php**."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:86
+msgid ""
+"The CORS filter handles all Preflight Requests, so the closure controller"
+" for the OPTIONS routes is not normally called."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:90
+msgid "Checking Routes and Filters"
+msgstr ""
+
+#: ../../source/libraries/cors.rst:92
+msgid ""
+"After configuration, you can check the routes and filters with the :ref"
+":`routing-spark-routes` command."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:96
+msgid "Setting Another Config"
+msgstr ""
+
+#: ../../source/libraries/cors.rst:98
+msgid ""
+"If you want to use a different configuration than the default "
+"configuration, add a property to **app/Config/Cors.php**."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:101
+msgid "For example, add the ``$api`` property."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:105
+msgid ""
+"The property name (``api`` in the above example) will become the "
+"configuration name."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:107
+msgid "Then, specify the property name as the filter argument like ``cors:api``:"
+msgstr ""
+
+#: ../../source/libraries/cors.rst:111
+msgid "You can also use :ref:`filters-filters-filter-arguments`."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:115
+msgid "Class Reference"
+msgstr ""
+
+#: ../../source/libraries/cors.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/libraries/cors.rst:123 ../../source/libraries/cors.rst:132
+#: ../../source/libraries/cors.rst:141
+msgid "Request instance"
+msgstr ""
+
+#: ../../source/libraries/cors.rst:124 ../../source/libraries/cors.rst:125
+#: ../../source/libraries/cors.rst:133 ../../source/libraries/cors.rst:134
+msgid "Response instance"
+msgstr ""
+
+#: ../../source/libraries/cors.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/libraries/cors.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/libraries/cors.rst:128
+msgid "Adds response headers for CORS."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:137
+msgid "Handles Preflight Requests."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:142
+msgid "True if it is a Preflight Request."
+msgstr ""
+
+#: ../../source/libraries/cors.rst:145
+msgid "Checks if the request is a Preflight Request."
+msgstr ""
+

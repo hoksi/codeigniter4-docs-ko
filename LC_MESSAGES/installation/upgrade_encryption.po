@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_encryption.rst:2
+msgid "Upgrade Encryption"
+msgstr ""
+
+#: ../../source/installation/upgrade_encryption.rst:9
+msgid "Documentations"
+msgstr ""
+
+#: ../../source/installation/upgrade_encryption.rst:11
+msgid ""
+"`Encryption Library Documentation CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/libraries/encryption.html>`_"
+msgstr ""
+
+#: ../../source/installation/upgrade_encryption.rst:12
+msgid ""
+":doc:`Encryption Service Documentation CodeIgniter 4.x "
+"</libraries/encryption>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_encryption.rst:15
+msgid "What has been changed"
+msgstr ""
+
+#: ../../source/installation/upgrade_encryption.rst:17
+msgid ""
+"The support for ``MCrypt`` has been dropped, as that has been deprecated "
+"as of PHP 7.2."
+msgstr ""
+
+#: ../../source/installation/upgrade_encryption.rst:20
+msgid "Upgrade Guide"
+msgstr ""
+
+#: ../../source/installation/upgrade_encryption.rst:22
+msgid ""
+"Within your configs the ``$config['encryption_key'] = 'abc123';`` moved "
+"from **application/config/config.php** to ``public $key = 'abc123';`` in "
+"**app/Config/Encryption.php**."
+msgstr ""
+
+#: ../../source/installation/upgrade_encryption.rst:23
+msgid ""
+"If you need to decrypt data encrypted with CI3's Encryption, configure "
+"settings to maintain compatibility. See :ref:`encryption-compatible-with-"
+"ci3`."
+msgstr ""
+
+#: ../../source/installation/upgrade_encryption.rst:24
+msgid ""
+"Wherever you have used the encryption library you have to replace "
+"``$this->load->library('encryption');`` with ``$encrypter = "
+"service('encrypter');`` and change the methods for encryption and "
+"decrypting like in the following code example."
+msgstr ""
+
+#: ../../source/installation/upgrade_encryption.rst:27
+msgid "Code Example"
+msgstr ""
+
+#: ../../source/installation/upgrade_encryption.rst:30
+msgid "CodeIgniter Version 3.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_encryption.rst:35
+msgid "CodeIgniter Version 4.x"
+msgstr ""
+

@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_models.rst:2
+msgid "Upgrade Models"
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:9
+msgid "Documentations"
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:11
+msgid ""
+"`Model Documentation CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/general/models.html>`_"
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:12
+msgid ":doc:`Model Documentation CodeIgniter 4.x </models/model>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:15
+msgid "What has been changed"
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:17
+msgid ""
+"The CI4 model has much more functionality, including automatic database "
+"connection, basic CRUD, in-model validation, and automatic pagination."
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:18
+msgid ""
+"Since namespaces has been added to CodeIgniter 4, the models must be "
+"changed to support namespaces."
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:21
+msgid "Upgrade Guide"
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:23
+msgid "First, move all model files to the folder **app/Models**."
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:24
+msgid "Add this line just after the opening php tag: ``namespace App\\Models;``."
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:25
+msgid ""
+"Below the ``namespace App\\Models;`` line add this line: ``use "
+"CodeIgniter\\Model;``."
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:26
+msgid "Replace ``extends CI_Model`` with ``extends Model``."
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:27
+msgid "Add the ``protected $table`` property and set the table name."
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:28
+msgid ""
+"Add the ``protected $allowedFields`` property and set the array of field "
+"names to allow to insert/update."
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:29
+msgid ""
+"Instead of CI3's ``$this->load->model('x');``, you would now use "
+"``$this->x = new X();``, following namespaced conventions for your "
+"component. Alternatively, you can use the :php:func:`model()` function: "
+"``$this->x = model('X');``."
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:31
+msgid ""
+"If you use sub-directories in your model structure you have to change the"
+" namespace according to that. Example: You have a version 3 model located"
+" in **application/models/users/user_contact.php** the namespace has to be"
+" ``namespace App\\Models\\Users;`` and the model path in the version 4 "
+"should look like this: **app/Models/Users/UserContact.php**"
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:34
+msgid ""
+"The new Model in CI4 has a lot of built-in methods. For example, the "
+"``find($id)`` method. With this you can find data where the primary key "
+"is equal to ``$id``. Inserting data is also easier than before. In CI4 "
+"there is an ``insert($data)`` method. You can optionally make use of all "
+"those built-in methods and migrate your code to the new methods."
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:37
+msgid "You can find more information to those methods in :doc:`../models/model`."
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:40
+msgid "Code Example"
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:43
+msgid "CodeIgniter Version 3.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:45
+msgid "Path: **application/models**:"
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:50
+msgid "CodeIgniter Version 4.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:52
+msgid "Path: **app/Models**:"
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:56
+msgid ""
+"The above code is direct translation from CI3 to CI4. It uses Query "
+"Builder directly in the model. Note that when you use Query Builder "
+"directly, you cannot use features in CodeIgniter's Model."
+msgstr ""
+
+#: ../../source/installation/upgrade_models.rst:60
+msgid "If you want to use CodeIgniter's Model features, the code will be:"
+msgstr ""
+

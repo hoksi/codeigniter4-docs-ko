@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.2.8.rst:2
+msgid "Version 4.2.8"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.8.rst:4
+msgid "Release Date: October 30, 2022"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.8.rst:6
+msgid "**4.2.8 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.8.rst:13
+msgid "Deprecations"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.8.rst:15
+msgid ""
+"The third parameter ``$returnResponse`` of "
+"``CodeIgniter::handleRequest()`` is deprecated."
+msgstr ""
+
+#: ../../source/changelogs/v4.2.8.rst:18
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.8.rst:20
+msgid ""
+"Fixed a bug when the ``CodeIgniter\\HTTP\\IncomingRequest::getPostGet()``"
+" and ``CodeIgniter\\HTTP\\IncomingRequest::getGetPost()`` methods didn't "
+"return values from the other stream when ``index`` was set to ``null``."
+msgstr ""
+
+#: ../../source/changelogs/v4.2.8.rst:21
+msgid ""
+"Fixed a bug when ``binds`` weren't cleaned properly when calling "
+"``CodeIgniter\\Database\\Postgre::replace()`` multiple times in the "
+"context."
+msgstr ""
+
+#: ../../source/changelogs/v4.2.8.rst:22
+msgid ""
+"Fixed a bug when the "
+"``CodeIgniter\\Database\\SQLSRV\\PreparedQuery::_getResult()`` was "
+"returning the bool value instead of the resource."
+msgstr ""
+
+#: ../../source/changelogs/v4.2.8.rst:23
+msgid ""
+"Fixed a bug in the error handler where in cases the callback cannot "
+"process the error level it does not pass the error to PHP's standard "
+"error handler."
+msgstr ""
+
+#: ../../source/changelogs/v4.2.8.rst:25
+msgid ""
+"See the repo's `CHANGELOG_4.2.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/changelogs/CHANGELOG_4.2.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

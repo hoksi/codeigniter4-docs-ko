@@ -1,0 +1,292 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/repositories.rst:2
+msgid "CodeIgniter Repositories"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:9
+msgid "codeigniter4 organization"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:11
+msgid ""
+"The CodeIgniter 4 open source project has its own `GitHub organization "
+"<https://github.com/codeigniter4>`_."
+msgstr ""
+
+#: ../../source/installation/repositories.rst:14
+msgid ""
+"There are several development repositories, of interest to potential "
+"contributors:"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:17
+#: ../../source/installation/repositories.rst:53
+#: ../../source/installation/repositories.rst:98
+msgid "Repository"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:17
+#: ../../source/installation/repositories.rst:53
+#: ../../source/installation/repositories.rst:98
+msgid "Audience"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:17
+#: ../../source/installation/repositories.rst:53
+#: ../../source/installation/repositories.rst:98
+msgid "Description"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:19
+msgid "CodeIgniter4_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:19
+#: ../../source/installation/repositories.rst:23
+msgid "contributors"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:19
+msgid "Project codebase, including tests & user guide sources"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:21
+msgid "translations_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:21
+#: ../../source/installation/repositories.rst:25
+#: ../../source/installation/repositories.rst:27
+#: ../../source/installation/repositories.rst:29
+#: ../../source/installation/repositories.rst:31
+#: ../../source/installation/repositories.rst:33
+#: ../../source/installation/repositories.rst:35
+#: ../../source/installation/repositories.rst:55
+#: ../../source/installation/repositories.rst:57
+#: ../../source/installation/repositories.rst:100
+#: ../../source/installation/repositories.rst:102
+msgid "developers"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:21
+msgid "System message translations"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:23
+msgid "coding-standard_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:23
+msgid "Coding style conventions & rules"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:25
+msgid "devkit_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:25
+msgid "Development toolkit for CodeIgniter libraries and projects"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:27
+msgid "settings_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:27
+msgid "Settings Library for CodeIgniter 4"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:29
+msgid "shield_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:29
+msgid "Authentication and Authorization Library for CodeIgniter 4"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:31
+msgid "tasks_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:31
+msgid "Task Scheduler for CodeIgniter 4"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:33
+msgid "cache_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:33
+msgid "PSR-6 and PSR-16 Cache Adapters for CodeIgniter 4"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:35
+msgid "queue_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:35
+msgid "Job Queue for CodeIgniter 4"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:48
+msgid ""
+"There are also several deployment repositories, referenced in the "
+"installation directions. The deployment repositories are built "
+"automatically when a new version is released, and they are not directly "
+"contributed to."
+msgstr ""
+
+#: ../../source/installation/repositories.rst:55
+msgid "framework_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:55
+msgid "Released versions of the framework"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:57
+msgid "appstarter_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:57
+msgid "Starter project (app/public/writable). Dependent on \"framework\""
+msgstr ""
+
+#: ../../source/installation/repositories.rst:60
+msgid "userguide_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:60
+msgid "anyone"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:60
+msgid "Pre-built user guide"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:67
+msgid ""
+"In all the above, the latest version of a repository can be downloaded by"
+" selecting the \"releases\" link in the secondary navbar inside the "
+"\"Code\" tab of its GitHub repository page. The current (in development) "
+"version of each can be cloned or downloaded by selecting the \"Clone or "
+"download\" dropdown button on the right-hand side if the repository "
+"homepage."
+msgstr ""
+
+#: ../../source/installation/repositories.rst:74
+msgid "Composer Packages"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:76
+msgid ""
+"We also maintain composer-installable packages on `packagist.org "
+"<https://packagist.org/search/?query=codeigniter4>`_. These correspond to"
+" the repositories mentioned above:"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:79
+msgid ""
+"`codeigniter4/framework "
+"<https://packagist.org/packages/codeigniter4/framework>`_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:80
+msgid ""
+"`codeigniter4/appstarter "
+"<https://packagist.org/packages/codeigniter4/appstarter>`_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:81
+msgid ""
+"`codeigniter4/translations "
+"<https://packagist.org/packages/codeigniter4/translations>`_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:82
+msgid ""
+"`codeigniter/coding-standard  <https://packagist.org/packages/codeigniter"
+"/coding-standard>`_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:83
+msgid ""
+"`codeigniter4/devkit "
+"<https://packagist.org/packages/codeigniter4/devkit>`_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:84
+msgid ""
+"`codeigniter4/settings "
+"<https://packagist.org/packages/codeigniter4/settings>`_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:85
+msgid ""
+"`codeigniter4/shield "
+"<https://packagist.org/packages/codeigniter4/shield>`_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:86
+msgid "`codeigniter4/cache <https://packagist.org/packages/codeigniter4/cache>`_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:88
+msgid ""
+"See the :doc:`Installation </installation/index>` page for more "
+"information."
+msgstr ""
+
+#: ../../source/installation/repositories.rst:91
+msgid "CodeIgniter 4 Projects"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:93
+msgid ""
+"We maintain a `codeigniter4projects "
+"<https://github.com/codeigniter4projects>`_ organization on GitHub as "
+"well, with projects that are not part of the framework, but which "
+"showcase it or make it easier to work with!"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:100
+msgid "website_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:100
+msgid "The codeigniter.com website, written in CodeIgniter 4"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:102
+msgid "playground_"
+msgstr ""
+
+#: ../../source/installation/repositories.rst:102
+msgid "Basic code examples in project form. Still growing."
+msgstr ""
+
+#: ../../source/installation/repositories.rst:108
+msgid "These are not composer-installable repositories."
+msgstr ""
+

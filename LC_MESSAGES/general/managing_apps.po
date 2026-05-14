@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/general/managing_apps.rst:3
+msgid "Managing your Applications"
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:5
+msgid ""
+"By default, it is assumed that you only intend to use CodeIgniter to "
+"manage one application, which you will build in your **app** directory. "
+"It is possible, however, to have multiple sets of applications that share"
+" a single CodeIgniter installation, or even to rename or relocate your "
+"application directory."
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:18
+msgid "Renaming or Relocating the Application Directory"
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:20
+msgid ""
+"If you would like to rename your application directory or even move it to"
+" a different location on your server, other than your project root, open "
+"your main **app/Config/Paths.php** and set a *full server path* in the "
+"``$appDirectory`` variable (at about line 44):"
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:27
+msgid ""
+"You will need to modify two additional files in your project root, so "
+"that they can find the **Paths** configuration file:"
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:30
+msgid "**spark** runs command line apps."
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:35
+msgid "**public/index.php** is the front controller for your webapp."
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:43
+msgid "Running Multiple Applications with one CodeIgniter Installation"
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:45
+msgid ""
+"If you would like to share a common CodeIgniter framework installation, "
+"to manage several different applications, simply put all of the "
+"directories located inside your application directory into their own "
+"(sub)-directory."
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:49
+msgid ""
+"For example, let's say you want to create two applications, named **foo**"
+" and **bar**. You could structure your application project directories "
+"like this:"
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:76
+msgid ""
+"If you install CodeIgniter from the Zip file, the directory structure "
+"would be following:"
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:84
+msgid ""
+"This would have two apps, **foo** and **bar**, both having standard "
+"application directories and a **public** folder, and sharing a common "
+"**codeigniter4/framework**."
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:87
+msgid ""
+"The ``$systemDirectory`` variable in **app/Config/Paths.php** inside each"
+" of those would be set to refer to the shared common "
+"**codeigniter4/framework** folder:"
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:92
+msgid ""
+"If you install CodeIgniter from the Zip file, the ``$systemDirectory`` "
+"would be ``__DIR__ . '/../../../codeigniter4/system'``."
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:94
+msgid ""
+"And modify the ``COMPOSER_PATH`` constant in **app/Config/Constants.php**"
+" inside each of those:"
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:99
+msgid ""
+"Only when you change the Application Directory, see :ref:`renaming-app-"
+"directory` and modify the paths in the **index.php** and **spark**."
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:102
+msgid "Changing the Location of the .env File"
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:104
+msgid ""
+"If necessary, you can change the location of the ``.env`` file by "
+"adjusting the ``$envDirectory`` property in ``app/Config/Paths.php``."
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:107
+msgid ""
+"By default, the framework loads environment settings from a ``.env`` file"
+" located one level above the ``app/`` directory (in the ``ROOTPATH``). "
+"This is a safe location when your domain is correctly pointed to the "
+"``public/`` directory, as recommended."
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:111
+msgid ""
+"In practice, however, some applications are served from a subdirectory "
+"(e.g., ``http://example.com/myapp``) rather than from the main domain. In"
+" such cases, placing the ``.env`` file within the ``ROOTPATH`` may expose"
+" sensitive configuration data if ``.htaccess`` or other protections are "
+"misconfigured."
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:115
+msgid ""
+"To avoid this risk in such setups, it is recommended that you ensure the "
+"``.env`` file is located outside any web-accessible directories."
+msgstr ""
+
+#: ../../source/general/managing_apps.rst:119
+msgid ""
+"If you change the location of the ``.env`` file, make absolutely sure it "
+"is not publicly accessible. Exposure of this file could lead to "
+"compromised credentials and access to critical services, such as your "
+"database, mail server, or third-party APIs."
+msgstr ""
+

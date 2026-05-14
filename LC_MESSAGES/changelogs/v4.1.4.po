@@ -1,0 +1,209 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.1.4.rst:2
+msgid "Version 4.1.4"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:4
+msgid "Release Date: September 6, 2021"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:6
+msgid "**4.1.4 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:12
+msgid ""
+"This release focuses on code style. All changes (except those noted "
+"below) are cosmetic to bring the code in line with the new `CodeIgniter "
+"Coding Standard <https://github.com/CodeIgniter/coding-standard>`_ (based"
+" on PSR-12)."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:16
+msgid "BREAKING"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:18
+msgid ""
+"The following methods were changed from \"public\" to \"protected\" to "
+"match their parent class methods and better align with their uses:"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:20
+msgid "``CodeIgniter\\Database\\MySQLi\\Connection::execute()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:21
+msgid "``CodeIgniter\\Database\\MySQLi\\Connection::_fieldData()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:22
+msgid "``CodeIgniter\\Database\\MySQLi\\Connection::_indexData()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:23
+msgid "``CodeIgniter\\Database\\MySQLi\\Connection::_foreignKeyData()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:24
+msgid "``CodeIgniter\\Database\\Postgre\\Builder::_like_statement()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:25
+msgid "``CodeIgniter\\Database\\Postgre\\Connection::execute()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:26
+msgid "``CodeIgniter\\Database\\Postgre\\Connection::_fieldData()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:27
+msgid "``CodeIgniter\\Database\\Postgre\\Connection::_indexData()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:28
+msgid "``CodeIgniter\\Database\\Postgre\\Connection::_foreignKeyData()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:29
+msgid "``CodeIgniter\\Database\\SQLSRV\\Connection::execute()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:30
+msgid "``CodeIgniter\\Database\\SQLSRV\\Connection::_fieldData()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:31
+msgid "``CodeIgniter\\Database\\SQLSRV\\Connection::_indexData()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:32
+msgid "``CodeIgniter\\Database\\SQLSRV\\Connection::_foreignKeyData()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:33
+msgid "``CodeIgniter\\Database\\SQLite3\\Connection::execute()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:34
+msgid "``CodeIgniter\\Database\\SQLite3\\Connection::_fieldData()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:35
+msgid "``CodeIgniter\\Database\\SQLite3\\Connection::_indexData()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:36
+msgid "``CodeIgniter\\Database\\SQLite3\\Connection::_foreignKeyData()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:37
+msgid "``CodeIgniter\\Images\\Handlers\\GDHandler::_flatten()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:38
+msgid "``CodeIgniter\\Images\\Handlers\\GDHandler::_flip()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:39
+msgid "``CodeIgniter\\Images\\Handlers\\ImageMagickHandler::_flatten()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:40
+msgid "``CodeIgniter\\Images\\Handlers\\ImageMagickHandler::_flip()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:41
+msgid "``CodeIgniter\\Test\\Mock\\MockIncomingRequest::detectURI()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:42
+msgid "``CodeIgniter\\Test\\Mock\\MockSecurity.php::sendCookie()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:44
+msgid ""
+"To be compatible with the strict inheritance checks of PHP 8.1, the "
+"following method signatures were added return types to match their "
+"parents' signatures whenever possible:"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:46
+msgid "``CodeIgniter\\Cookie\\Cookie::offsetExists()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:47
+msgid "``CodeIgniter\\Cookie\\Cookie::offsetSet()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:48
+msgid "``CodeIgniter\\Cookie\\Cookie::offsetUnset()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:49
+msgid "``CodeIgniter\\Cookie\\CookieStore::getIterator()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:50
+msgid "``CodeIgniter\\I18n\\Time::__wakeup()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:51
+msgid "``CodeIgniter\\Test\\Filters\\CITestStreamFilter::filter()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:53
+msgid ""
+"Related to the strict inheritance checks of PHP 8.1, the following "
+"session handlers implementing ``SessionHandlerInterface`` have their "
+"public methods modified to match the interface:"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:55
+msgid "``CodeIgniter\\Session\\Handlers\\ArrayHandler``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:56
+msgid "``CodeIgniter\\Session\\Handlers\\DatabaseHandler``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:57
+msgid "``CodeIgniter\\Session\\Handlers\\FileHandler``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:58
+msgid "``CodeIgniter\\Session\\Handlers\\MemcachedHandler``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:59
+msgid "``CodeIgniter\\Session\\Handlers\\RedisHandler``"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.4.rst:61
+msgid ""
+"See the repo's `CHANGELOG_4.1.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/changelogs/CHANGELOG_4.1.md>`_"
+" for a complete list of changes."
+msgstr ""
+

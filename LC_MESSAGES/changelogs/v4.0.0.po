@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.0.0.rst:2
+msgid "Version 4.0.0"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0.rst:4
+msgid "Release Date: February 24, 2020"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0.rst:6
+msgid "**4.0 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0.rst:13
+msgid "Enhancements"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0.rst:15
+msgid "Updated welcome view file"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0.rst:16
+msgid "Debug Toolbar now supports dark mode"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0.rst:17
+msgid "New alpha_numeric_punct validation rule"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0.rst:18
+msgid ""
+"Kint was updated from the 2.x branch to the latest 3.x branch, with new "
+"config file to specify options"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0.rst:19
+msgid "Additional docs for getting started"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0.rst:20
+msgid "CLI fixed to better handle complex arguments"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0.rst:21
+msgid "Improvements to File class"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0.rst:22
+msgid "New :php:func:`model()` helper method for easy singleton Models."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0.rst:23
+msgid ""
+"Tests completely reorganized to make app-level tests simpler out of the "
+"box."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0.rst:26
+msgid "Repo Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0.rst:28
+msgid "The devstarter repo has been deprecated."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0.rst:30
+msgid ""
+"We now have an automated changelog generated in the `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
+" file in the main repo. See it for more details."
+msgstr ""
+

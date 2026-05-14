@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/helpers/xml_helper.rst:3
+msgid "XML Helper"
+msgstr ""
+
+#: ../../source/helpers/xml_helper.rst:5
+msgid ""
+"The XML Helper file contains functions that assist in working with XML "
+"data."
+msgstr ""
+
+#: ../../source/helpers/xml_helper.rst:13
+msgid "Loading this Helper"
+msgstr ""
+
+#: ../../source/helpers/xml_helper.rst:15
+msgid "This helper is loaded using the following code"
+msgstr ""
+
+#: ../../source/helpers/xml_helper.rst:20
+msgid "Available Functions"
+msgstr ""
+
+#: ../../source/helpers/xml_helper.rst:22
+msgid "The following functions are available:"
+msgstr ""
+
+#: ../../source/helpers/xml_helper.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/helpers/xml_helper.rst:26
+msgid "the text string to convert"
+msgstr ""
+
+#: ../../source/helpers/xml_helper.rst:27
+msgid ""
+"Whether to protect all content that looks like a potential entity instead"
+" of just numbered entities, e.g., &foo;"
+msgstr ""
+
+#: ../../source/helpers/xml_helper.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/helpers/xml_helper.rst:28
+msgid "XML-converted string"
+msgstr ""
+
+#: ../../source/helpers/xml_helper.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/helpers/xml_helper.rst:31
+msgid ""
+"Takes a string as input and converts the following reserved XML "
+"characters to entities:"
+msgstr ""
+
+#: ../../source/helpers/xml_helper.rst:34
+msgid "Ampersands: &"
+msgstr ""
+
+#: ../../source/helpers/xml_helper.rst:35
+msgid "Less than and greater than characters: < >"
+msgstr ""
+
+#: ../../source/helpers/xml_helper.rst:36
+msgid "Single and double quotes: ' \""
+msgstr ""
+
+#: ../../source/helpers/xml_helper.rst:37
+msgid "Dashes: -"
+msgstr ""
+
+#: ../../source/helpers/xml_helper.rst:39
+msgid ""
+"This function ignores ampersands if they are part of existing numbered "
+"character entities, e.g., &#123;. Example:"
+msgstr ""
+
+#: ../../source/helpers/xml_helper.rst:44
+msgid "outputs:"
+msgstr ""
+

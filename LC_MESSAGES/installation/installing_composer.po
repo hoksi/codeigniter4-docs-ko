@@ -1,0 +1,403 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/installing_composer.rst:2
+msgid "Composer Installation"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:8
+msgid "Composer can be used in two ways to install CodeIgniter4 on your system."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:10
+msgid "CodeIgniter4 requires Composer 2.0.14 or later."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:12
+msgid ""
+"If you are not familiar with Composer, we recommend you read `Basic usage"
+" <https://getcomposer.org/doc/01-basic-usage.md>`_ first."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:15
+msgid ""
+"The first technique describes creating a skeleton project (app starter) "
+"using CodeIgniter4, that you would then use as the base for a new webapp."
+" The second technique described below lets you add CodeIgniter4 to an "
+"existing webapp,"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:20
+msgid ""
+"If you are using a Git repository to store your code, or for "
+"collaboration with others, then the **vendor** folder would normally be "
+"\"git ignored\". In such a case, you will need to do a ``composer "
+"install`` (or ``composer update`` if you want to update all Composer "
+"dependencies) when you clone the repository to a new system."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:27
+msgid "App Starter"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:29
+msgid ""
+"The `CodeIgniter 4 app starter "
+"<https://github.com/codeigniter4/appstarter>`_ repository holds a "
+"skeleton application, with a composer dependency on the latest released "
+"version of the framework."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:33
+msgid ""
+"This installation technique would suit a developer who wishes to start a "
+"new CodeIgniter4 based project."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:37
+#: ../../source/installation/installing_composer.rst:224
+msgid "Installation"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:39
+msgid "In the folder above your project root:"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:45
+msgid "The command above will create a **project-root** folder."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:47
+msgid ""
+"If you omit the \"project-root\" argument, the command will create an "
+"\"appstarter\" folder, which can be renamed as appropriate."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:50
+msgid ""
+"Before v4.4.0, CodeIgniter autoloader did not allow special characters "
+"that are illegal in filenames on certain operating systems. The symbols "
+"that can be used are ``/``, ``_``, ``.``, ``:``, ``\\`` and space. So if "
+"you installed CodeIgniter under the folder that contains the special "
+"characters like ``(``, ``)``, etc., CodeIgniter didn't work. Since "
+"v4.4.0, this restriction has been removed."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:57
+#: ../../source/installation/installing_composer.rst:235
+msgid ""
+"When you deploy to your production server, don't forget to run the "
+"following command:"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:64
+#: ../../source/installation/installing_composer.rst:242
+msgid ""
+"The above command will remove the Composer packages only for development "
+"that are not needed in the production environment. This will greatly "
+"reduce the vendor folder size."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:69
+msgid "Installing Previous Versions"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:71
+msgid ""
+"For example, you may want to install v4.4.8 after v4.5.0 has been "
+"released."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:73
+msgid "In that case, specify the version in the command:"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:79
+msgid ""
+"Then, open **composer.json** in your project root folder, and specify the"
+" framework version:"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:89
+#: ../../source/installation/installing_composer.rst:132
+#: ../../source/installation/installing_composer.rst:288
+msgid "Then, run the ``composer update`` command."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:91
+#: ../../source/installation/installing_composer.rst:134
+msgid ""
+"When you use a fixed version number like ``\"codeigniter4/framework\": "
+"\"4.4.8\"`` in your **composer.json**, ``composer update`` command will "
+"not update the framework to the latest version. See `Writing Version "
+"Constraints`_ for how to specify the version."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:98
+#: ../../source/installation/installing_composer.rst:254
+msgid "Initial Configuration"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:100
+msgid ""
+"After installation, a few initial configurations are required. See :ref"
+":`initial-configuration` for the details."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:106
+#: ../../source/installation/installing_composer.rst:262
+msgid "Upgrading"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:108
+#: ../../source/installation/installing_composer.rst:264
+msgid ""
+"Whenever there is a new release, then from the command line in your "
+"project root:"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:114
+#: ../../source/installation/installing_composer.rst:270
+msgid ""
+"Read the :doc:`upgrade instructions <upgrading>` and :doc:`change log "
+"<../changelogs/index>`, and check Breaking Changes and Enhancements."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:118
+#: ../../source/installation/installing_composer.rst:274
+msgid "Upgrading to a Specified Version"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:120
+#: ../../source/installation/installing_composer.rst:276
+msgid ""
+"For example, you may want to upgrade from v4.4.7 to v4.4.8 after v4.5.0 "
+"has been released."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:122
+#: ../../source/installation/installing_composer.rst:278
+msgid ""
+"In that case, open **composer.json** in your project root folder, and "
+"specify the framework version:"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:139
+#: ../../source/installation/installing_composer.rst:291
+msgid "Pros"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:141
+msgid "Simple installation; easy to update."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:144
+#: ../../source/installation/installing_composer.rst:296
+msgid "Cons"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:146
+msgid ""
+"You still need to check for file changes in the **project space** (root, "
+"app, public, writable) and merge them after updating."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:149
+#: ../../source/installation/installing_composer.rst:301
+#, python-format
+msgid ""
+"There are some third-party CodeIgniter modules available to assist with "
+"merging changes to the project space: `Explore on Packagist "
+"<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:154
+#: ../../source/installation/installing_composer.rst:306
+msgid "Structure"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:156
+#: ../../source/installation/installing_composer.rst:308
+msgid "Folders in your project after set up:"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:158
+#: ../../source/installation/installing_composer.rst:310
+msgid "app, public, tests, writable"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:159
+#: ../../source/installation/installing_composer.rst:311
+msgid "vendor/codeigniter4/framework/system"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:164
+msgid "Latest Dev"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:166
+msgid ""
+"The App Starter repo comes with a ``builds`` scripts to switch Composer "
+"sources between the current stable release and the latest development "
+"branch of the framework. Use this script for a developer who is willing "
+"to live with the latest unreleased changes, which may be unstable."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:170
+msgid ""
+"The `development user guide "
+"<https://codeigniter4.github.io/CodeIgniter4/>`_ is accessible online. "
+"Note that this differs from the released user guide, and will pertain to "
+"the develop branch explicitly."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:174
+msgid ""
+"You should not rely on the version of the framework in your project - the"
+" development code may contain an incorrect number."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:178
+msgid "Update for Latest Dev"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:180
+#: ../../source/installation/installing_composer.rst:229
+msgid "In your project root:"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:186
+msgid ""
+"The command above will update **composer.json** to point to the "
+"``develop`` branch of the working repository, and update the "
+"corresponding paths in config and XML files."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:189
+msgid ""
+"After using the ``builds`` command be sure to run ``composer update`` to "
+"sync your vendor folder with the latest target build. Then, check the "
+":doc:`upgrading` and update project files if necessary."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:194
+msgid "Next Minor Version"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:196
+msgid "If you want to use the next minor version branch:"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:202
+#, python-brace-format
+msgid ""
+"And run ``composer update`` to sync your vendor folder with the latest "
+"target build. Then, check the Upgrading Guide "
+"(**user_guide_src/source/installation/upgrade_{version}.rst**) and update"
+" project files if necessary."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:208
+msgid "Revert to Stable Release"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:210
+msgid "To revert the changes run:"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:217
+msgid "Adding CodeIgniter4 to an Existing Project"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:219
+msgid ""
+"The same `CodeIgniter 4 framework "
+"<https://github.com/codeigniter4/framework>`_ repository described in "
+"\"Manual Installation\" can also be added to an existing project using "
+"Composer."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:226
+msgid ""
+"Develop your app inside the ``app`` folder, and the ``public`` folder "
+"will be your document root."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:247
+msgid "Setting Up"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:249
+msgid ""
+"Copy the **app**, **public**, **tests** and **writable** folders from "
+"**vendor/codeigniter4/framework** to your project root"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:250
+msgid ""
+"Copy the **env**, **phpunit.xml.dist** and **spark** files, from "
+"**vendor/codeigniter4/framework** to your project root"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:251
+msgid ""
+"You will have to adjust the ``$systemDirectory`` property in "
+"**app/Config/Paths.php** to refer to the vendor one, e.g., ``__DIR__ . "
+"'/../../vendor/codeigniter4/framework/system'``."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:256
+msgid ""
+"A few initial configurations are required. See :ref:`initial-"
+"configuration` for the details."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:293
+msgid "Relatively simple installation; easy to update."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:298
+msgid ""
+"You still need to check for file changes in the **project space** (root, "
+"app, public, writable) after updating."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:314
+msgid "Translations Installation"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:316
+msgid ""
+"If you want to take advantage of the system message translations, they "
+"can be added to your project in a similar fashion."
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:319
+msgid "From the command line inside your project root:"
+msgstr ""
+
+#: ../../source/installation/installing_composer.rst:325
+msgid ""
+"These will be updated along with the framework whenever you do a "
+"``composer update``."
+msgstr ""
+

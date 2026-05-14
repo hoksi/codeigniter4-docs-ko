@@ -1,0 +1,224 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/database/transactions.rst:3
+msgid "Transactions"
+msgstr ""
+
+#: ../../source/database/transactions.rst:5
+msgid ""
+"CodeIgniter's database abstraction allows you to use transactions with "
+"databases that support transaction-safe table types. In MySQL, you'll "
+"need to be running InnoDB or BDB table types rather than the more common "
+"MyISAM. Most other database platforms support transactions natively."
+msgstr ""
+
+#: ../../source/database/transactions.rst:10
+msgid ""
+"If you are not familiar with transactions we recommend you find a good "
+"online resource to learn about them for your particular database. The "
+"information below assumes you have a basic understanding of transactions."
+msgstr ""
+
+#: ../../source/database/transactions.rst:20
+msgid "CodeIgniter's Approach to Transactions"
+msgstr ""
+
+#: ../../source/database/transactions.rst:22
+msgid ""
+"CodeIgniter utilizes an approach to transactions that is very similar to "
+"the process used by the popular database class ADODB. We've chosen that "
+"approach because it greatly simplifies the process of running "
+"transactions. In most cases, all that is required is two lines of code."
+msgstr ""
+
+#: ../../source/database/transactions.rst:27
+msgid ""
+"Traditionally, transactions have required a fair amount of work to "
+"implement since they demand that you keep track of your queries and "
+"determine whether to commit or rollback based on the success or failure "
+"of your queries. This is particularly cumbersome with nested queries. In "
+"contrast, we've implemented a smart transaction system that does all this"
+" for you automatically (you can also manage your transactions manually if"
+" you choose to, but there's really no benefit)."
+msgstr ""
+
+#: ../../source/database/transactions.rst:36
+#: ../../source/database/transactions.rst:88
+#: ../../source/database/transactions.rst:103
+msgid ""
+"Since v4.3.0, during transactions, exceptions are not thrown by default "
+"even if ``DBDebug`` is true."
+msgstr ""
+
+#: ../../source/database/transactions.rst:40
+msgid "Running Transactions"
+msgstr ""
+
+#: ../../source/database/transactions.rst:42
+msgid ""
+"To run your queries using transactions you will use the "
+"``$this->db->transStart()`` and ``$this->db->transComplete()`` methods as"
+" follows:"
+msgstr ""
+
+#: ../../source/database/transactions.rst:48
+msgid ""
+"You can run as many queries as you want between the "
+"``transStart()``/``transComplete()`` methods and they will all be "
+"committed or rolled back based on the success or failure of any given "
+"query."
+msgstr ""
+
+#: ../../source/database/transactions.rst:53
+msgid "Strict Mode"
+msgstr ""
+
+#: ../../source/database/transactions.rst:55
+msgid "By default, CodeIgniter runs all transactions in Strict Mode."
+msgstr ""
+
+#: ../../source/database/transactions.rst:57
+msgid ""
+"When strict mode is enabled, if you are running multiple groups of "
+"transactions, if one group fails all subsequent groups will be rolled "
+"back."
+msgstr ""
+
+#: ../../source/database/transactions.rst:60
+msgid ""
+"If strict mode is disabled, each group is treated independently, meaning "
+"a failure of one group will not affect any others."
+msgstr ""
+
+#: ../../source/database/transactions.rst:63
+msgid "Strict Mode can be disabled as follows:"
+msgstr ""
+
+#: ../../source/database/transactions.rst:70
+msgid "Resetting Transaction Status"
+msgstr ""
+
+#: ../../source/database/transactions.rst:74
+msgid ""
+"When strict mode is enabled, if one transaction fails, all subsequent "
+"transactions will be rolled back."
+msgstr ""
+
+#: ../../source/database/transactions.rst:77
+msgid ""
+"If you wan to restart transactions after a failure, you can reset the "
+"transaction status:"
+msgstr ""
+
+#: ../../source/database/transactions.rst:85
+msgid "Managing Errors"
+msgstr ""
+
+#: ../../source/database/transactions.rst:91
+msgid "You can manage your own errors like this:"
+msgstr ""
+
+#: ../../source/database/transactions.rst:98
+msgid "Throwing Exceptions"
+msgstr ""
+
+#: ../../source/database/transactions.rst:106
+msgid ""
+"If you want an exception to be thrown when a query error occurs, you can "
+"use ``$this->db->transException(true)``:"
+msgstr ""
+
+#: ../../source/database/transactions.rst:111
+msgid ""
+"If a query error occurs, all the queries will be rolled backed, and a "
+"``DatabaseException`` will be thrown."
+msgstr ""
+
+#: ../../source/database/transactions.rst:115
+msgid "Disabling Transactions"
+msgstr ""
+
+#: ../../source/database/transactions.rst:117
+msgid ""
+"Transactions are enabled by default. If you would like to disable "
+"transactions you can do so using ``$this->db->transOff()``:"
+msgstr ""
+
+#: ../../source/database/transactions.rst:122
+msgid ""
+"When transactions are disabled, your queries will be auto-committed, just"
+" as they are when running queries without transactions."
+msgstr ""
+
+#: ../../source/database/transactions.rst:126
+msgid "Test Mode"
+msgstr ""
+
+#: ../../source/database/transactions.rst:128
+msgid ""
+"You can optionally put the transaction system into \"test mode\", which "
+"will cause your queries to be rolled back -- even if the queries produce "
+"a valid result. To use test mode simply set the first parameter in the "
+"``$this->db->transStart()`` method to true:"
+msgstr ""
+
+#: ../../source/database/transactions.rst:138
+msgid "Running Transactions Manually"
+msgstr ""
+
+#: ../../source/database/transactions.rst:140
+msgid ""
+"When you have ``DBDebug`` false in your **app/Config/Database.php** file,"
+" and if you would like to run transactions manually you can do so as "
+"follows:"
+msgstr ""
+
+#: ../../source/database/transactions.rst:145
+msgid ""
+"Make sure to use ``$this->db->transBegin()`` when running manual "
+"transactions, **NOT** ``$this->db->transStart()``."
+msgstr ""
+
+#: ../../source/database/transactions.rst:149
+msgid "Nested Transactions"
+msgstr ""
+
+#: ../../source/database/transactions.rst:151
+msgid ""
+"In CodeIgniter, transactions can be nested in a way such that only the "
+"outmost or top-level transaction commands are executed. You can include "
+"as many pairs of ``transStart()``/``transComplete()`` or "
+"``transBegin()``/``transCommit()``/``transRollback()`` as you want inside"
+" a transaction block and so on. CodeIgniter will keep track of the "
+"transaction \"depth\" and only take action at the outermost layer (zero "
+"depth)."
+msgstr ""
+
+#: ../../source/database/transactions.rst:160
+msgid ""
+"In case the structure is far more complex, it's your responsibility to "
+"ensure that the inner transactions can reach the outermost layer again in"
+" order to be fully executed by the database, thus prevents unintended "
+"commits/rollbacks."
+msgstr ""
+

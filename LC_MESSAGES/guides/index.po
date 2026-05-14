@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/guides/index.rst:3
+msgid "Guides"
+msgstr ""
+
+#: ../../source/guides/index.rst:5
+msgid ""
+"This section contains guides to help you get started with CodeIgniter 4 "
+"in a project-based way."
+msgstr ""
+
+#: ../../source/guides/index.rst:15
+msgid "Build Your First Application"
+msgstr ""
+
+#: ../../source/guides/index.rst:17
+msgid ""
+"This project walks you through building a basic news application. You "
+"will begin by writing code that loads static pages. Next, you will create"
+" a news section that reads news items from a database. Finally, you'll "
+"add a form to create news items in the database. This gives you a good "
+"overview of how CodeIgniter works and how to use its main components."
+msgstr ""
+
+#: ../../source/guides/index.rst:21
+msgid "Build a RESTful API"
+msgstr ""
+
+#: ../../source/guides/index.rst:23
+msgid ""
+"This guide helps you build a simple RESTful API using CodeIgniter 4. You "
+"will learn how to use auto-routing, set up controllers, and handle "
+"requests and responses in a RESTful manner. By the end of this guide, you"
+" will have a functional API that can perform CRUD operations on a "
+"resource. This introduces you to the basic concepts of a RESTful API and "
+"the tools that CodeIgniter provides to facilitate its development."
+msgstr ""
+

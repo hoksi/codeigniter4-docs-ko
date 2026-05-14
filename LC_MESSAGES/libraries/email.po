@@ -1,0 +1,807 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/libraries/email.rst:3
+msgid "Email Class"
+msgstr ""
+
+#: ../../source/libraries/email.rst:5
+msgid "CodeIgniter's robust Email Class supports the following features:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:7
+msgid "Multiple Protocols: Mail, Sendmail, and SMTP"
+msgstr ""
+
+#: ../../source/libraries/email.rst:8
+msgid "TLS and SSL Encryption for SMTP"
+msgstr ""
+
+#: ../../source/libraries/email.rst:9
+msgid "Multiple recipients"
+msgstr ""
+
+#: ../../source/libraries/email.rst:10
+msgid "CC and BCCs"
+msgstr ""
+
+#: ../../source/libraries/email.rst:11
+msgid "HTML or Plaintext email"
+msgstr ""
+
+#: ../../source/libraries/email.rst:12
+msgid "Attachments"
+msgstr ""
+
+#: ../../source/libraries/email.rst:13
+msgid "Word wrapping"
+msgstr ""
+
+#: ../../source/libraries/email.rst:14
+msgid "Priorities"
+msgstr ""
+
+#: ../../source/libraries/email.rst:15
+msgid ""
+"BCC Batch Mode, enabling large email lists to be broken into small BCC "
+"batches."
+msgstr ""
+
+#: ../../source/libraries/email.rst:17
+msgid "Email Debugging tools"
+msgstr ""
+
+#: ../../source/libraries/email.rst:25
+msgid "Using the Email Library"
+msgstr ""
+
+#: ../../source/libraries/email.rst:28
+msgid "Sending Email"
+msgstr ""
+
+#: ../../source/libraries/email.rst:30
+msgid ""
+"Sending email is not only simple, but you can configure it on the fly or "
+"set your preferences in the **app/Config/Email.php** file."
+msgstr ""
+
+#: ../../source/libraries/email.rst:33
+msgid "Here is a basic example demonstrating how you might send email:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:40
+msgid "Setting Email Preferences"
+msgstr ""
+
+#: ../../source/libraries/email.rst:42
+msgid ""
+"There are 22 different preferences available to tailor how your email "
+"messages are sent. You can either set them manually as described here, or"
+" automatically via preferences stored in your config file, described in "
+"`Email Preferences`_."
+msgstr ""
+
+#: ../../source/libraries/email.rst:48
+msgid "Setting Email Preferences by Passing an Array"
+msgstr ""
+
+#: ../../source/libraries/email.rst:50
+msgid ""
+"Preferences are set by passing an array of preference values to the email"
+" initialize method. Here is an example of how you might set some "
+"preferences:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:56
+msgid ""
+"Most of the preferences have default values that will be used if you do "
+"not set them."
+msgstr ""
+
+#: ../../source/libraries/email.rst:60
+msgid "Setting Email Preferences in a Config File"
+msgstr ""
+
+#: ../../source/libraries/email.rst:62
+msgid ""
+"If you prefer not to set preferences using the above method, you can "
+"instead put them into the config file. Simply open the "
+"**app/Config/Email.php** file, and set your configs in the Email "
+"properties. Then save the file and it will be used automatically. You "
+"will NOT need to use the ``$email->initialize()`` method if you set your "
+"preferences in the config file."
+msgstr ""
+
+#: ../../source/libraries/email.rst:72
+msgid "SSL versus TLS for SMTP Protocol"
+msgstr ""
+
+#: ../../source/libraries/email.rst:74
+msgid ""
+"To protect the username, password and email content while communicating "
+"with the SMTP server, encryption on the channel should be used. Two "
+"different standards are widely deployed and it is important to understand"
+" the differences when trying to troubleshoot email sending issues."
+msgstr ""
+
+#: ../../source/libraries/email.rst:79
+msgid ""
+"Most SMTP servers allow connections on ports 465 or 587 when submitting "
+"emails. (The original port 25 is seldom used because of many ISPs have "
+"blocking rules in place and since the communication is entirely in clear-"
+"text)."
+msgstr ""
+
+#: ../../source/libraries/email.rst:83
+msgid ""
+"The key difference is that port 465 expects the communication channel to "
+"be secured using TLS from the start as per `RFC 8314 "
+"<https://tools.ietf.org/html/rfc8314>`_. A connection to port 587 allows "
+"clear-text connection and later will upgrade the channel to use "
+"encryption using the ``STARTTLS`` SMTP command."
+msgstr ""
+
+#: ../../source/libraries/email.rst:88
+msgid ""
+"Upgrading a connection on port 465 may or may not be supported by the "
+"server, so the ``STARTTLS`` SMTP command may fail if the server does not "
+"allow it. If you set the port to 465, you should try to set the "
+"``SMTPCrypto`` to an empty string (``''``) since the communication is "
+"secured using TLS from the start and the ``STARTTLS`` is not needed."
+msgstr ""
+
+#: ../../source/libraries/email.rst:93
+msgid ""
+"If your configuration requires you to connect to port 587, you should "
+"most likely set ``SMTPCrypto`` to ``tls`` as this will implement the "
+"``STARTTLS`` command while communicating with the SMTP server to switch "
+"from clear-text to an encrypted channel. The initial communication will "
+"be made in clear-text and the channel will be upgraded to TLS with the "
+"``STARTTLS`` command."
+msgstr ""
+
+#: ../../source/libraries/email.rst:99
+msgid "Reviewing Preferences"
+msgstr ""
+
+#: ../../source/libraries/email.rst:101
+msgid ""
+"The settings used for the last successful send are available from the "
+"instance property ``$archive``. This is helpful for testing and debugging"
+" to determine that actual values at the time of the ``send()`` call."
+msgstr ""
+
+#: ../../source/libraries/email.rst:108
+msgid "Email Preferences"
+msgstr ""
+
+#: ../../source/libraries/email.rst:110
+msgid ""
+"The following is a list of all the preferences that can be set when "
+"sending email."
+msgstr ""
+
+#: ../../source/libraries/email.rst:114
+msgid "Preference"
+msgstr ""
+
+#: ../../source/libraries/email.rst:114
+msgid "Default Value"
+msgstr ""
+
+#: ../../source/libraries/email.rst:114
+msgid "Options"
+msgstr ""
+
+#: ../../source/libraries/email.rst:114
+msgid "Description"
+msgstr ""
+
+#: ../../source/libraries/email.rst:116
+msgid "**fromEmail**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:116
+msgid "The email address to be set in the \"from\" header."
+msgstr ""
+
+#: ../../source/libraries/email.rst:117
+msgid "**fromName**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:117
+msgid "The name to be set in the \"from\" header."
+msgstr ""
+
+#: ../../source/libraries/email.rst:118
+msgid "**userAgent**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:118
+msgid "CodeIgniter"
+msgstr ""
+
+#: ../../source/libraries/email.rst:118
+msgid "The \"user agent\"."
+msgstr ""
+
+#: ../../source/libraries/email.rst:119
+msgid "**protocol**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:119
+msgid "mail"
+msgstr ""
+
+#: ../../source/libraries/email.rst:119
+msgid "``mail``, ``sendmail``, or ``smtp``"
+msgstr ""
+
+#: ../../source/libraries/email.rst:119
+msgid "The mail sending protocol."
+msgstr ""
+
+#: ../../source/libraries/email.rst:121
+msgid "**mailPath**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:121
+msgid "/usr/sbin/sendmail"
+msgstr ""
+
+#: ../../source/libraries/email.rst:121
+msgid "The server path to Sendmail."
+msgstr ""
+
+#: ../../source/libraries/email.rst:122
+msgid "**SMTPHost**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:122
+msgid "SMTP Server Hostname."
+msgstr ""
+
+#: ../../source/libraries/email.rst:123
+msgid "**SMTPAuthMethod**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:123
+msgid "login"
+msgstr ""
+
+#: ../../source/libraries/email.rst:123
+msgid "``login``, ``plain``"
+msgstr ""
+
+#: ../../source/libraries/email.rst:123
+msgid "SMTP Authentication Method. (Available since 4.7.0)"
+msgstr ""
+
+#: ../../source/libraries/email.rst:124
+msgid "**SMTPUser**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:124
+msgid "SMTP Username."
+msgstr ""
+
+#: ../../source/libraries/email.rst:125
+msgid "**SMTPPass**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:125
+msgid "SMTP Password."
+msgstr ""
+
+#: ../../source/libraries/email.rst:126
+msgid "**SMTPPort**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:126
+msgid "25"
+msgstr ""
+
+#: ../../source/libraries/email.rst:126
+msgid ""
+"SMTP Port. (If set to ``465``, TLS will be used for the connection "
+"regardless of ``SMTPCrypto`` setting.)"
+msgstr ""
+
+#: ../../source/libraries/email.rst:128
+msgid "**SMTPTimeout**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:128
+msgid "5"
+msgstr ""
+
+#: ../../source/libraries/email.rst:128
+msgid "SMTP Timeout (in seconds)."
+msgstr ""
+
+#: ../../source/libraries/email.rst:129
+msgid "**SMTPKeepAlive**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:129 ../../source/libraries/email.rst:145
+#: ../../source/libraries/email.rst:147
+msgid "false"
+msgstr ""
+
+#: ../../source/libraries/email.rst:129 ../../source/libraries/email.rst:135
+#: ../../source/libraries/email.rst:141 ../../source/libraries/email.rst:145
+#: ../../source/libraries/email.rst:147
+msgid "``true``/``false``"
+msgstr ""
+
+#: ../../source/libraries/email.rst:129
+msgid "Enable persistent SMTP connections."
+msgstr ""
+
+#: ../../source/libraries/email.rst:130
+msgid "**SMTPCrypto**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:130
+msgid "tls"
+msgstr ""
+
+#: ../../source/libraries/email.rst:130
+msgid "``tls``, ``ssl``, or empty string (``''``)"
+msgstr ""
+
+#: ../../source/libraries/email.rst:130
+msgid ""
+"SMTP Encryption. Setting this to ``ssl`` will create a secure channel to "
+"the server using SSL, and ``tls`` will issue a ``STARTTLS`` command to "
+"the server. Connection on port ``465`` should set this to an empty string"
+" (``''``). See also :ref:`email-ssl-tls-for-smtp`."
+msgstr ""
+
+#: ../../source/libraries/email.rst:135
+msgid "**wordWrap**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:135 ../../source/libraries/email.rst:141
+msgid "true"
+msgstr ""
+
+#: ../../source/libraries/email.rst:135
+msgid "Enable word-wrap."
+msgstr ""
+
+#: ../../source/libraries/email.rst:136
+msgid "**wrapChars**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:136
+msgid "76"
+msgstr ""
+
+#: ../../source/libraries/email.rst:136
+msgid "Character count to wrap at."
+msgstr ""
+
+#: ../../source/libraries/email.rst:137
+msgid "**mailType**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:137
+msgid "text"
+msgstr ""
+
+#: ../../source/libraries/email.rst:137
+msgid "``text`` or ``html``"
+msgstr ""
+
+#: ../../source/libraries/email.rst:137
+msgid ""
+"Type of mail. If you send HTML email you must send it as a complete web "
+"page. Make sure you don't have any relative links or relative image paths"
+" otherwise they will not work."
+msgstr ""
+
+#: ../../source/libraries/email.rst:140
+msgid "**charset**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:140
+msgid "UTF-8"
+msgstr ""
+
+#: ../../source/libraries/email.rst:140
+msgid "Character set (``utf-8``, ``iso-8859-1``, etc.)."
+msgstr ""
+
+#: ../../source/libraries/email.rst:141
+msgid "**validate**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:141
+msgid "Whether to validate the email address."
+msgstr ""
+
+#: ../../source/libraries/email.rst:142
+msgid "**priority**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:142
+msgid "3"
+msgstr ""
+
+#: ../../source/libraries/email.rst:142
+msgid "1, 2, 3, 4, 5"
+msgstr ""
+
+#: ../../source/libraries/email.rst:142
+msgid "Email Priority. ``1`` = highest. ``5`` = lowest. ``3`` = normal."
+msgstr ""
+
+#: ../../source/libraries/email.rst:143
+msgid "**CRLF**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:143 ../../source/libraries/email.rst:144
+msgid "\\\\r\\\\n"
+msgstr ""
+
+#: ../../source/libraries/email.rst:143 ../../source/libraries/email.rst:144
+msgid "``\\r\\n``, ``\\n`` or ``\\r``"
+msgstr ""
+
+#: ../../source/libraries/email.rst:143 ../../source/libraries/email.rst:144
+msgid "Newline character. (Use ``\\r\\n`` to comply with RFC 822)."
+msgstr ""
+
+#: ../../source/libraries/email.rst:144
+msgid "**newline**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:145
+msgid "**BCCBatchMode**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:145
+msgid "Enable BCC Batch Mode."
+msgstr ""
+
+#: ../../source/libraries/email.rst:146
+msgid "**BCCBatchSize**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:146
+msgid "200"
+msgstr ""
+
+#: ../../source/libraries/email.rst:146
+msgid "Number of emails in each BCC batch."
+msgstr ""
+
+#: ../../source/libraries/email.rst:147
+msgid "**DSN**"
+msgstr ""
+
+#: ../../source/libraries/email.rst:147
+msgid "Enable notify message from server."
+msgstr ""
+
+#: ../../source/libraries/email.rst:151
+msgid "Overriding Word Wrapping"
+msgstr ""
+
+#: ../../source/libraries/email.rst:153
+msgid ""
+"If you have word wrapping enabled (recommended to comply with RFC 822) "
+"and you have a very long link in your email it can get wrapped too, "
+"causing it to become un-clickable by the person receiving it. CodeIgniter"
+" lets you manually override word wrapping within part of your message "
+"like this::"
+msgstr ""
+
+#: ../../source/libraries/email.rst:167
+#, python-brace-format
+msgid "Place the item you do not want word-wrapped between: {unwrap} {/unwrap}"
+msgstr ""
+
+#: ../../source/libraries/email.rst:171
+msgid "Class Reference"
+msgstr ""
+
+#: ../../source/libraries/email.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/libraries/email.rst:179
+msgid "\"From\" email address"
+msgstr ""
+
+#: ../../source/libraries/email.rst:180
+msgid "\"From\" display name"
+msgstr ""
+
+#: ../../source/libraries/email.rst:181
+msgid "Optional email address to redirect undelivered email to"
+msgstr ""
+
+#: ../../source/libraries/email.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/libraries/email.rst:182 ../../source/libraries/email.rst:200
+#: ../../source/libraries/email.rst:211 ../../source/libraries/email.rst:226
+#: ../../source/libraries/email.rst:236 ../../source/libraries/email.rst:249
+#: ../../source/libraries/email.rst:259 ../../source/libraries/email.rst:269
+#: ../../source/libraries/email.rst:287 ../../source/libraries/email.rst:297
+#: ../../source/libraries/email.rst:342
+msgid "CodeIgniter\\\\Email\\\\Email instance (method chaining)"
+msgstr ""
+
+#: ../../source/libraries/email.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/libraries/email.rst:185
+msgid "Sets the email address and name of the person sending the email:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:189
+msgid "You can also set a Return-Path, to help redirect undelivered mail:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:193
+msgid "Return-Path can't be used if you've configured 'smtp' as your protocol."
+msgstr ""
+
+#: ../../source/libraries/email.rst:198
+msgid "Email address for replies"
+msgstr ""
+
+#: ../../source/libraries/email.rst:199
+msgid "Display name for the reply-to email address"
+msgstr ""
+
+#: ../../source/libraries/email.rst:203
+msgid ""
+"Sets the reply-to address. If the information is not provided the "
+"information in the `setFrom <#setFrom>`_ method is used. Example:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:210 ../../source/libraries/email.rst:225
+#: ../../source/libraries/email.rst:234
+msgid "Comma separated string or an array of email addresses"
+msgstr ""
+
+#: ../../source/libraries/email.rst:214
+msgid ""
+"Sets the email address(es) of the recipient(s). Can be a single email, a "
+"comma separated list or an array:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:229
+msgid ""
+"Sets the CC email address(es). Just like the \"to\", can be a single "
+"email, a comma separated list or an array."
+msgstr ""
+
+#: ../../source/libraries/email.rst:235
+msgid "Maximum number of emails to send per batch"
+msgstr ""
+
+#: ../../source/libraries/email.rst:239
+msgid ""
+"Sets the BCC email address(es). Just like the ``setTo()`` method, can be "
+"a single email, a comma separated list or an array."
+msgstr ""
+
+#: ../../source/libraries/email.rst:242
+msgid ""
+"If ``$limit`` is set, \"batch mode\" will be enabled, which will send the"
+" emails to batches, with each batch not exceeding the specified "
+"``$limit``."
+msgstr ""
+
+#: ../../source/libraries/email.rst:248
+msgid "Email subject line"
+msgstr ""
+
+#: ../../source/libraries/email.rst:252
+msgid "Sets the email subject:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:258
+msgid "Email message body"
+msgstr ""
+
+#: ../../source/libraries/email.rst:262
+msgid "Sets the email message body:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:268
+msgid "Alternative email message body"
+msgstr ""
+
+#: ../../source/libraries/email.rst:272
+msgid "Sets the alternative email message body:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:276
+msgid ""
+"This is an optional message string which can be used if you send HTML "
+"formatted email. It lets you specify an alternative message with no HTML "
+"formatting which is added to the header string for people who do not "
+"accept HTML email. If you do not set your own message CodeIgniter will "
+"extract the message from your HTML email and strip the tags."
+msgstr ""
+
+#: ../../source/libraries/email.rst:285
+msgid "Header name"
+msgstr ""
+
+#: ../../source/libraries/email.rst:286
+msgid "Header value"
+msgstr ""
+
+#: ../../source/libraries/email.rst:290
+msgid "Appends additional headers to the email:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:296
+msgid "Whether or not to clear attachments"
+msgstr ""
+
+#: ../../source/libraries/email.rst:300
+msgid ""
+"Initializes all the email variables to an empty state. This method is "
+"intended for use if you run the email sending method in a loop, "
+"permitting the data to be reset between cycles."
+msgstr ""
+
+#: ../../source/libraries/email.rst:306
+msgid "If you set the parameter to true any attachments will be cleared as well:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:313
+msgid "Whether to clear message data automatically"
+msgstr ""
+
+#: ../../source/libraries/email.rst:314
+msgid "true on success, false on failure"
+msgstr ""
+
+#: ../../source/libraries/email.rst:317
+msgid ""
+"The email sending method. Returns boolean true or false based on success "
+"or failure, enabling it to be used conditionally:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:322
+msgid ""
+"This method will automatically clear all parameters if the request was "
+"successful. To stop this behaviour pass false:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:327
+msgid ""
+"In order to use the ``printDebugger()`` method, you need to avoid "
+"clearing the email parameters."
+msgstr ""
+
+#: ../../source/libraries/email.rst:330
+msgid ""
+"If ``BCCBatchMode`` is enabled, and there are more than ``BCCBatchSize`` "
+"recipients, this method will always return boolean ``true``."
+msgstr ""
+
+#: ../../source/libraries/email.rst:336
+msgid "File name"
+msgstr ""
+
+#: ../../source/libraries/email.rst:337
+msgid ""
+"'disposition' of the attachment. Most email clients make their own "
+"decision regardless of the MIME specification used here. "
+"https://www.iana.org/assignments/cont-disp/cont-disp.xhtml"
+msgstr ""
+
+#: ../../source/libraries/email.rst:340
+msgid "Custom file name to use in the email"
+msgstr ""
+
+#: ../../source/libraries/email.rst:341
+msgid "MIME type to use (useful for buffered data)"
+msgstr ""
+
+#: ../../source/libraries/email.rst:345
+msgid ""
+"Enables you to send an attachment. Put the file path/name in the first "
+"parameter. For multiple attachments use the method multiple times. For "
+"example:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:351
+msgid ""
+"To use the default disposition (attachment), leave the second parameter "
+"blank, otherwise use a custom disposition:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:356
+msgid "You can also use a URL:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:360
+msgid "If you'd like to use a custom file name, you can use the third parameter:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:364
+msgid ""
+"If you need to use a buffer string instead of a real - physical - file "
+"you can use the first parameter as buffer, the third parameter as file "
+"name and the fourth parameter as mime-type:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:372
+msgid "Existing attachment filename"
+msgstr ""
+
+#: ../../source/libraries/email.rst:373
+msgid "Attachment Content-ID or false if not found"
+msgstr ""
+
+#: ../../source/libraries/email.rst:376
+msgid ""
+"Sets and returns an attachment's Content-ID, which enables you to embed "
+"an inline (picture) attachment into HTML. First parameter must be the "
+"already attached file name."
+msgstr ""
+
+#: ../../source/libraries/email.rst:381
+msgid "Content-ID for each email must be re-created for it to be unique."
+msgstr ""
+
+#: ../../source/libraries/email.rst:385
+msgid "Which parts of the message to print out"
+msgstr ""
+
+#: ../../source/libraries/email.rst:386
+msgid "Formatted debug data"
+msgstr ""
+
+#: ../../source/libraries/email.rst:389
+msgid ""
+"Returns a string containing any server messages, the email headers, and "
+"the email message. Useful for debugging."
+msgstr ""
+
+#: ../../source/libraries/email.rst:392
+msgid ""
+"You can optionally specify which parts of the message should be printed. "
+"Valid options are: **headers**, **subject**, **body**."
+msgstr ""
+
+#: ../../source/libraries/email.rst:395
+msgid "Example:"
+msgstr ""
+
+#: ../../source/libraries/email.rst:399
+msgid "By default, all of the raw data will be printed."
+msgstr ""
+

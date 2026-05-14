@@ -1,0 +1,774 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/libraries/time.rst:3
+msgid "Times and Dates"
+msgstr ""
+
+#: ../../source/libraries/time.rst:5
+msgid ""
+"CodeIgniter provides a fully-localized, immutable, date/time class that "
+"is built on PHP's DateTimeImmutable class, but uses the Intl extension's "
+"features to convert times across timezones and display the output "
+"correctly for different locales. This class is the ``Time`` class and "
+"lives in the ``CodeIgniter\\I18n`` namespace."
+msgstr ""
+
+#: ../../source/libraries/time.rst:9
+msgid ""
+"Since the Time class extends ``DateTimeImmutable``, if there are features"
+" that you need that this class doesn't provide, you can likely find them "
+"within the `DateTimeImmutable`_  class itself."
+msgstr ""
+
+#: ../../source/libraries/time.rst:14
+msgid ""
+"Prior to v4.3.0, the Time class extended ``DateTime`` and some inherited "
+"methods changed the current object state. The bug was fixed in v4.3.0. If"
+" you need the old Time class for backward compatibility, you can use "
+"deprecated ``TimeLegacy`` class for the time being."
+msgstr ""
+
+#: ../../source/libraries/time.rst:24
+msgid "Instantiating"
+msgstr ""
+
+#: ../../source/libraries/time.rst:26
+msgid ""
+"There are several ways that a new Time instance can be created. The first"
+" is simply to create a new instance like any other class."
+msgstr ""
+
+#: ../../source/libraries/time.rst:29
+msgid ""
+"When you do it this way, you can pass in a string representing the "
+"desired time. This can be any string that PHP's `DateTimeImmutable`_ "
+"constructor can parse. See `Supported Date and Time Formats`_ for "
+"details."
+msgstr ""
+
+#: ../../source/libraries/time.rst:37
+msgid ""
+"You can pass in strings representing the timezone and the locale in the "
+"second and the third parameters, respectively. The timezone can be any "
+"one supported by PHP's `DateTimeZone "
+"<https://www.php.net/manual/en/timezones.php>`__ class. The locale can be"
+" any one supported by PHP's `Locale "
+"<https://www.php.net/manual/en/class.locale.php>`__ class. If no locale "
+"or timezone is provided, the application defaults will be used."
+msgstr ""
+
+#: ../../source/libraries/time.rst:45
+msgid "now()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:47
+msgid ""
+"The Time class has several helper methods to instantiate the class. The "
+"first of these is the ``now()`` method that returns a new instance set to"
+" the current time. You can pass in strings representing the timezone and "
+"locale in the second and third parameters, respectively. If no locale or "
+"timezone is provided, the application defaults will be used."
+msgstr ""
+
+#: ../../source/libraries/time.rst:54
+msgid "parse()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:56
+msgid ""
+"This helper method is a static version of the default constructor. It "
+"takes a string acceptable as DateTimeImmutable's constructor as the first"
+" parameter, a timezone as the second parameter, and the locale as the "
+"third parameter:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:62
+msgid "today()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:64
+msgid ""
+"Returns a new instance with the date set to the current date, and the "
+"time set to midnight. It accepts strings for the timezone and locale in "
+"the first and second parameters:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:70
+msgid "yesterday()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:72
+msgid ""
+"Returns a new instance with the date set to the yesterday's date and the "
+"time set to midnight. It accepts strings for the timezone and locale in "
+"the first and second parameters:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:78
+msgid "tomorrow()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:80
+msgid ""
+"Returns a new instance with the date set to tomorrow's date and the time "
+"set to midnight. It accepts strings for the timezone and locale in the "
+"first and second parameters:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:86
+msgid "createFromDate()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:88
+msgid ""
+"Given separate inputs for **year**, **month**, and **day**, will return a"
+" new instance. If any of these parameters are not provided, it will use "
+"the current year, month and day. Accepts strings for the timezone and "
+"locale in the fourth and fifth parameters:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:95
+msgid "createFromTime()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:97
+msgid ""
+"Like ``createFromDate()``, except it is only concerned with the "
+"**hours**, **minutes**, and **seconds**. Uses the current day for the "
+"date portion of the Time instance. Accepts strings for the timezone and "
+"locale in the fourth and fifth parameters:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:104
+msgid "create()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:106
+msgid ""
+"A combination of the previous two methods, takes **year**, **month**, "
+"**day**, **hour**, **minutes**, and **seconds** as separate parameters. "
+"Any value not provided will use the current date and time. Accepts "
+"strings for the timezone and locale in the fourth and fifth parameters:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:113
+msgid "createFromFormat()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:115
+msgid ""
+"This is a replacement for DateTimeImmutable's method of the same name. "
+"This allows the timezone to be set at the same time, and returns a "
+"``Time`` instance, instead of DateTimeImmutable:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:123
+msgid "createFromTimestamp()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:125
+msgid ""
+"This method takes a UNIX timestamp and, optionally, the timezone and "
+"locale, to create a new Time instance:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:130
+msgid ""
+"If you do not explicitly pass a timezone, it returns a Time instance with"
+" **UTC**."
+msgstr ""
+
+#: ../../source/libraries/time.rst:132
+msgid ""
+"We recommend to always call ``createFromTimestamp()`` with 2 parameters "
+"(i.e. explicitly pass a timezone) unless using UTC as the default "
+"timezone."
+msgstr ""
+
+#: ../../source/libraries/time.rst:135
+msgid ""
+"In v4.4.6 to prior to v4.6.0, this method returned a Time instance with "
+"the default timezone when you do not specify a timezone."
+msgstr ""
+
+#: ../../source/libraries/time.rst:139
+msgid "createFromInstance()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:141
+msgid ""
+"When working with other libraries that provide a DateTime instance, you "
+"can use this method to convert that to a Time instance, optionally "
+"setting the locale. The timezone will be automatically determined from "
+"the DateTime instance passed in:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:148
+msgid "toDateTime()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:150
+msgid ""
+"While not an instantiator, this method is the opposite of the "
+"**instance** method, allowing you to convert a Time instance into a "
+"DateTime instance. This preserves the timezone setting, but loses the "
+"locale, since DateTime is not aware of locales:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:159
+msgid "Displaying the Value"
+msgstr ""
+
+#: ../../source/libraries/time.rst:161
+msgid ""
+"Since the Time class extends DateTimeImmutable, you get all of the output"
+" methods that provides, including the ``format()`` method. However, the "
+"DateTimeImmutable methods do not provide a localized result. The Time "
+"class does provide a number of helper methods to display localized "
+"versions of the value, though."
+msgstr ""
+
+#: ../../source/libraries/time.rst:166
+msgid "toLocalizedString()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:168
+msgid ""
+"This is the localized version of DateTimeImmutable's ``format()`` method."
+" Instead of using the values you might be familiar with, though, you must"
+" use values acceptable to the `IntlDateFormatter "
+"<https://www.php.net/manual/en/class.intldateformatter.php>`__ class. A "
+"full listing of values can be found `here <https://unicode-org.github.io"
+"/icu-docs/apidoc/released/icu4c/classSimpleDateFormat.html#details>`__."
+msgstr ""
+
+#: ../../source/libraries/time.rst:177
+msgid "toDateTimeString()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:179
+msgid ""
+"This is the first of three helper methods to work with the "
+"`IntlDateFormatter "
+"<https://www.php.net/manual/en/class.intldateformatter.php>`_ without "
+"having to remember their values. This will return a localized version of "
+"string formatted as (``Y-m-d H:i:s``):"
+msgstr ""
+
+#: ../../source/libraries/time.rst:185
+msgid "toDateString()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:187
+msgid "Displays just the localized date portion of the Time:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:192
+msgid "toTimeString()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:194
+msgid "Displays just the localized time portion of the value:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:199 ../../source/libraries/time.rst:453
+msgid "humanize()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:201
+msgid ""
+"This method returns a string that displays the difference between the "
+"current date/time and the instance in a human readable format that is "
+"geared towards being easily understood. It can create strings like '3 "
+"hours ago', 'in 1 month', etc:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:207 ../../source/libraries/time.rst:461
+msgid "The exact time displayed is determined in the following manner:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:210 ../../source/libraries/time.rst:464
+msgid "Time difference"
+msgstr ""
+
+#: ../../source/libraries/time.rst:210 ../../source/libraries/time.rst:464
+msgid "Result"
+msgstr ""
+
+#: ../../source/libraries/time.rst:212 ../../source/libraries/time.rst:466
+msgid "1 year < $time < 2 years"
+msgstr ""
+
+#: ../../source/libraries/time.rst:212 ../../source/libraries/time.rst:466
+msgid "in 1 year / 1 year ago"
+msgstr ""
+
+#: ../../source/libraries/time.rst:213 ../../source/libraries/time.rst:467
+msgid "1 month < $time < 1 year"
+msgstr ""
+
+#: ../../source/libraries/time.rst:213 ../../source/libraries/time.rst:467
+msgid "in 6 months / 6 months ago"
+msgstr ""
+
+#: ../../source/libraries/time.rst:214 ../../source/libraries/time.rst:468
+msgid "7 days < $time < 1 month"
+msgstr ""
+
+#: ../../source/libraries/time.rst:214 ../../source/libraries/time.rst:468
+msgid "in 3 weeks / 3 weeks ago"
+msgstr ""
+
+#: ../../source/libraries/time.rst:215 ../../source/libraries/time.rst:469
+msgid "today < $time < 7 days"
+msgstr ""
+
+#: ../../source/libraries/time.rst:215 ../../source/libraries/time.rst:469
+msgid "in 4 days / 4 days ago"
+msgstr ""
+
+#: ../../source/libraries/time.rst:216
+msgid "$time == yesterday / tomorrow"
+msgstr ""
+
+#: ../../source/libraries/time.rst:216
+msgid "Yesterday / Tomorrow"
+msgstr ""
+
+#: ../../source/libraries/time.rst:217
+msgid "59 minutes < $time < 1 day"
+msgstr ""
+
+#: ../../source/libraries/time.rst:217
+msgid "in 2 hours / 2 hours ago"
+msgstr ""
+
+#: ../../source/libraries/time.rst:218
+msgid "now < $time < 1 hour"
+msgstr ""
+
+#: ../../source/libraries/time.rst:218 ../../source/libraries/time.rst:471
+msgid "in 35 minutes / 35 minutes ago"
+msgstr ""
+
+#: ../../source/libraries/time.rst:219
+msgid "$time == now"
+msgstr ""
+
+#: ../../source/libraries/time.rst:219 ../../source/libraries/time.rst:472
+msgid "Now"
+msgstr ""
+
+#: ../../source/libraries/time.rst:222 ../../source/libraries/time.rst:475
+#, python-brace-format
+msgid ""
+"The result strings are coming from the language file, "
+"**system/Language/en/Time.php**. If you want to overwrite them, create "
+"**app/Language/{locale}/Time.php**."
+msgstr ""
+
+#: ../../source/libraries/time.rst:227
+msgid "Working with Individual Values"
+msgstr ""
+
+#: ../../source/libraries/time.rst:229
+msgid ""
+"The Time object provides a number of methods to allow to get and set "
+"individual items, like the year, month, hour, etc, of an existing "
+"instance. All of the values retrieved through the following methods will "
+"be fully localized and respect the locale that the Time instance was "
+"created with."
+msgstr ""
+
+#: ../../source/libraries/time.rst:233
+msgid ""
+"All of the following ``getX()`` and ``setX()`` methods can also be used "
+"as if they were a class property. So, any calls to methods like "
+"``getYear()`` can also be accessed through ``$time->year``, and so on."
+msgstr ""
+
+#: ../../source/libraries/time.rst:237
+msgid "Getters"
+msgstr ""
+
+#: ../../source/libraries/time.rst:239
+msgid "The following basic getters exist:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:243
+msgid ""
+"In addition to these, a number of methods exist to provide additional "
+"information about the date:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:248
+msgid "getAge()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:250
+msgid ""
+"Returns the age, in years, between the Time instance and the current "
+"time. Perfect for checking the age of someone based on their birthday:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:256
+msgid "getDST()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:258
+msgid ""
+"Returns boolean true/false based on whether the Time instance is "
+"currently observing Daylight Savings Time:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:263
+msgid "getLocal()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:265
+msgid ""
+"Returns boolean true if the Time instance is in the same timezone as the "
+"application is currently running in:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:270
+msgid "getUtc()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:272
+msgid "Returns boolean true if the Time instance is in UTC time:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:277
+msgid "getTimezone()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:279
+msgid ""
+"Returns a new `DateTimeZone "
+"<https://www.php.net/manual/en/class.datetimezone.php>`__ object set the "
+"timezone of the Time instance:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:285
+msgid "getTimezoneName()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:287
+msgid ""
+"Returns the full `timezone string "
+"<https://www.php.net/manual/en/timezones.php>`__ of the Time instance:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:292
+msgid "Setters"
+msgstr ""
+
+#: ../../source/libraries/time.rst:294
+msgid ""
+"The following basic setters exist. If any of the values set are out of "
+"range, an ``InvalidArgumentExeption`` will be thrown."
+msgstr ""
+
+#: ../../source/libraries/time.rst:297
+msgid ""
+"All setters will return a new Time instance, leaving the original "
+"instance untouched."
+msgstr ""
+
+#: ../../source/libraries/time.rst:299
+msgid ""
+"All setters will throw an InvalidArgumentException if the value is out of"
+" range."
+msgstr ""
+
+#: ../../source/libraries/time.rst:304
+msgid "setTimezone()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:306
+msgid "Converts the time from it's current timezone into the new one:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:311
+msgid "setTimestamp()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:313
+msgid "Returns a new instance with the date set to the new timestamp:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:317
+msgid ""
+"Prior to v4.6.0, due to a bug, this method might return incorrect "
+"date/time. See :ref:`Upgrading Guide <upgrade-460-time-set-timestamp>` "
+"for details."
+msgstr ""
+
+#: ../../source/libraries/time.rst:321
+msgid "Modifying the Value"
+msgstr ""
+
+#: ../../source/libraries/time.rst:323
+msgid ""
+"The following methods allow you to modify the date by adding or "
+"subtracting values to the current Time. This will not modify the existing"
+" Time instance, but will return a new instance."
+msgstr ""
+
+#: ../../source/libraries/time.rst:329
+msgid "addCalendarMonths() / subCalendarMonths()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:331
+msgid ""
+"Modifies the current Time by adding or subtracting whole calendar months."
+" These methods can be useful if you require no calendar months are "
+"skipped in recurring dates. Refer to the table below for a comparison "
+"between ``addMonths()`` and ``addCalendarMonths()`` for an initial date "
+"of ``2025-01-31``."
+msgstr ""
+
+#: ../../source/libraries/time.rst:336
+msgid "$months"
+msgstr ""
+
+#: ../../source/libraries/time.rst:336
+msgid "addMonths()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:336
+msgid "addCalendarMonths()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:338
+msgid "1"
+msgstr ""
+
+#: ../../source/libraries/time.rst:338
+msgid "2025-03-03"
+msgstr ""
+
+#: ../../source/libraries/time.rst:338
+msgid "2025-02-28"
+msgstr ""
+
+#: ../../source/libraries/time.rst:339
+msgid "2"
+msgstr ""
+
+#: ../../source/libraries/time.rst:339
+msgid "2025-03-31"
+msgstr ""
+
+#: ../../source/libraries/time.rst:340
+msgid "3"
+msgstr ""
+
+#: ../../source/libraries/time.rst:340
+msgid "2025-05-01"
+msgstr ""
+
+#: ../../source/libraries/time.rst:340
+msgid "2025-04-30"
+msgstr ""
+
+#: ../../source/libraries/time.rst:341
+msgid "4"
+msgstr ""
+
+#: ../../source/libraries/time.rst:341
+msgid "2025-05-31"
+msgstr ""
+
+#: ../../source/libraries/time.rst:342
+msgid "5"
+msgstr ""
+
+#: ../../source/libraries/time.rst:342
+msgid "2025-07-01"
+msgstr ""
+
+#: ../../source/libraries/time.rst:342
+msgid "2025-06-30"
+msgstr ""
+
+#: ../../source/libraries/time.rst:343
+msgid "6"
+msgstr ""
+
+#: ../../source/libraries/time.rst:343
+msgid "2025-07-31"
+msgstr ""
+
+#: ../../source/libraries/time.rst:347
+msgid "Comparing Two Times"
+msgstr ""
+
+#: ../../source/libraries/time.rst:349
+msgid ""
+"The following methods allow you to compare one Time instance with "
+"another. All comparisons are first converted to UTC before comparisons "
+"are done, to ensure that different timezones respond correctly."
+msgstr ""
+
+#: ../../source/libraries/time.rst:353
+msgid "equals()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:355
+msgid ""
+"Determines if the datetime passed in is equal to the current instance. "
+"Equal in this case means that they represent the same moment in time, and"
+" are not required to be in the same timezone, as both times are converted"
+" to UTC and compared that way:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:361 ../../source/libraries/time.rst:383
+msgid ""
+"The value being tested against can be a Time instance, a DateTime "
+"instance, or a string with the full date time in a manner that a new "
+"DateTime instance can understand. When passing a string as the first "
+"parameter, you can pass a timezone string in as the second parameter. If "
+"no timezone is given, the system default will be used:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:368
+msgid "sameAs()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:370
+msgid ""
+"This is identical to the ``equals()`` method, except that it only returns"
+" true when the date, time, AND timezone are all identical:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:376
+msgid "isBefore()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:378
+msgid ""
+"Checks if the passed in time is before the current instance. The "
+"comparison is done against the UTC versions of both times:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:390
+msgid "isAfter()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:392
+msgid ""
+"Works exactly the same as ``isBefore()`` except checks if the time is "
+"after the time passed in:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:399
+msgid "isPast()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:403
+msgid ""
+"Determines if the current instance's time is in the past, relative to "
+"\"now\". It returns a boolean true/false::"
+msgstr ""
+
+#: ../../source/libraries/time.rst:411
+msgid "isFuture()"
+msgstr ""
+
+#: ../../source/libraries/time.rst:415
+msgid ""
+"Determines if the current instance's time is in the future, relative to "
+"\"now\". It returns a boolean true/false::"
+msgstr ""
+
+#: ../../source/libraries/time.rst:423
+msgid "Viewing Differences"
+msgstr ""
+
+#: ../../source/libraries/time.rst:425
+msgid ""
+"To compare two Times directly, you would use the ``difference()`` method,"
+" which returns a ``CodeIgniter\\I18n\\TimeDifference`` instance."
+msgstr ""
+
+#: ../../source/libraries/time.rst:428
+msgid ""
+"The first parameter is either a Time instance, a DateTime instance, or a "
+"string with the date/time. If a string is passed in the first parameter, "
+"the second parameter can be a timezone string:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:433
+msgid ""
+"Once you have the TimeDifference instance, you have several methods you "
+"can use to find information about the difference between the two times. "
+"The value returned will be negative if it was in the past, or positive if"
+" in the future from the original time:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:439
+msgid ""
+"Prior to v4.4.7, Time always converted the time zones to UTC before "
+"comparison. This could lead to unexpected results when containing a day "
+"differed from 24 hours due to Daylight Saving Time (DST)."
+msgstr ""
+
+#: ../../source/libraries/time.rst:443
+msgid ""
+"Starting with v4.4.7, when comparing date/times that are in the same time"
+" zone, the comparison is performed as is, without conversion to UTC."
+msgstr ""
+
+#: ../../source/libraries/time.rst:448
+msgid ""
+"You can use either ``getX()`` methods, or access the calculate values as "
+"if they were properties:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:455
+msgid ""
+"Much like Time's ``humanize()`` method, this returns a string that "
+"displays the difference between the times in a human readable format that"
+" is geared towards being easily understood. It can create strings like '3"
+" hours ago', 'in 1 month', etc. The biggest difference is in how very "
+"recent dates are handled:"
+msgstr ""
+
+#: ../../source/libraries/time.rst:470
+msgid "1 hour < $time < 1 day"
+msgstr ""
+
+#: ../../source/libraries/time.rst:470
+msgid "in 8 hours / 8 hours ago"
+msgstr ""
+
+#: ../../source/libraries/time.rst:471
+msgid "1 minute < $time < 1 hour"
+msgstr ""
+
+#: ../../source/libraries/time.rst:472
+msgid "$time < 1 minute"
+msgstr ""
+

@@ -1,0 +1,583 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/running.rst:3
+msgid "Running Your App"
+msgstr ""
+
+#: ../../source/installation/running.rst:9
+msgid ""
+"A CodeIgniter 4 app can be run in a number of different ways: hosted on a"
+" web server, using virtualization, or using CodeIgniter's command line "
+"tool for testing. This section addresses how to use each technique, and "
+"explains some of the pros and cons of them."
+msgstr ""
+
+#: ../../source/installation/running.rst:13
+msgid ""
+"You should always be careful about the case of filenames. Many developers"
+" develop on case-insensitive file systems on Windows or macOS. However, "
+"most server environments use case-sensitive file systems. If the file "
+"name case is incorrect, code that works locally will not work on the "
+"server."
+msgstr ""
+
+#: ../../source/installation/running.rst:19
+msgid ""
+"If you're new to CodeIgniter, please read the :doc:`Getting Started "
+"</intro/index>` section of the User Guide to begin learning how to build "
+"dynamic PHP applications. Enjoy!"
+msgstr ""
+
+#: ../../source/installation/running.rst:26
+msgid "Initial Configuration"
+msgstr ""
+
+#: ../../source/installation/running.rst:29
+msgid "Configure for Your Site URIs"
+msgstr ""
+
+#: ../../source/installation/running.rst:31
+msgid "Open the **app/Config/App.php** file with a text editor."
+msgstr ""
+
+#: ../../source/installation/running.rst:33
+msgid "$baseURL"
+msgstr ""
+
+#: ../../source/installation/running.rst:34
+msgid ""
+"Set your base URL to ``$baseURL``. If you need more flexibility, the "
+"baseURL may be set within the :ref:`.env <dotenv-file>` file as "
+"``app.baseURL = 'http://example.com/'``. **Always use a trailing slash on"
+" your base URL!**"
+msgstr ""
+
+#: ../../source/installation/running.rst:38
+msgid ""
+"If you don't set the ``baseURL`` correctly, in development mode, the "
+"debug toolbar may not load properly and web pages may take considerably "
+"longer to display."
+msgstr ""
+
+#: ../../source/installation/running.rst:42
+msgid "$indexPage"
+msgstr ""
+
+#: ../../source/installation/running.rst:43
+msgid ""
+"If you don't want to include **index.php** in your site URIs, set "
+"``$indexPage`` to ``''``. The setting will be used when the framework "
+"generates your site URIs."
+msgstr ""
+
+#: ../../source/installation/running.rst:46
+msgid ""
+"You may need to configure your web server to access your site with a URL "
+"that does not contain **index.php**. See :ref:`CodeIgniter URLs <urls-"
+"remove-index-php>`."
+msgstr ""
+
+#: ../../source/installation/running.rst:50
+msgid "Configure Database Connection Settings"
+msgstr ""
+
+#: ../../source/installation/running.rst:52
+msgid ""
+"If you intend to use a database, open the **app/Config/Database.php** "
+"file with a text editor and set your database settings. Alternately, "
+"these could be set in your **.env** file. See :ref:`Database "
+"Configuration <database-config-explanation-of-values>` for details."
+msgstr ""
+
+#: ../../source/installation/running.rst:58
+msgid "Set to Development Mode"
+msgstr ""
+
+#: ../../source/installation/running.rst:60
+msgid ""
+"If it is not on the production server, set ``CI_ENVIRONMENT`` to "
+"``development`` in **.env** file to take advantage of the debugging tools"
+" provided. See :ref:`setting-development-mode` for the detail."
+msgstr ""
+
+#: ../../source/installation/running.rst:64
+msgid ""
+"In production environments, you should disable error display and any "
+"other development-only functionality. In CodeIgniter, this can be done by"
+" setting the environment to \"production\". By default, the application "
+"will run using the \"production\" environment. See also :ref"
+":`environment-constant`."
+msgstr ""
+
+#: ../../source/installation/running.rst:70
+msgid "Set Writable Folder Permission"
+msgstr ""
+
+#: ../../source/installation/running.rst:72
+msgid ""
+"If you will be running your site using a web server (e.g., Apache or "
+"nginx), you will need to modify the permissions for the **writable** "
+"folder inside your project, so that it is writable by the user or account"
+" used by your web server."
+msgstr ""
+
+#: ../../source/installation/running.rst:80
+msgid "Checking PHP ini Settings"
+msgstr ""
+
+#: ../../source/installation/running.rst:84
+msgid ""
+"`PHP ini settings`_ change the behaviors of PHP. CodeIgniter provides a "
+"command to check important PHP settings."
+msgstr ""
+
+#: ../../source/installation/running.rst:93
+msgid ""
+"The *Recommended* column shows the recommended values for production "
+"environment. They may differ in development environments."
+msgstr ""
+
+#: ../../source/installation/running.rst:97
+msgid ""
+"If you cannot use the spark command, you can use "
+"``CheckPhpIni::run(false)`` in your controller."
+msgstr ""
+
+#: ../../source/installation/running.rst:100
+msgid "E.g.,"
+msgstr ""
+
+#: ../../source/installation/running.rst:120
+msgid "Local Development Server"
+msgstr ""
+
+#: ../../source/installation/running.rst:122
+msgid ""
+"CodeIgniter 4 comes with a local development server, leveraging PHP's "
+"built-in web server with CodeIgniter routing. You can launch it, with the"
+" following command line in the main directory:"
+msgstr ""
+
+#: ../../source/installation/running.rst:130
+msgid ""
+"This will launch the server and you can now view your application in your"
+" browser at http://localhost:8080."
+msgstr ""
+
+#: ../../source/installation/running.rst:132
+msgid ""
+"The built-in development server should only be used on local development "
+"machines. It should NEVER be used on a production server."
+msgstr ""
+
+#: ../../source/installation/running.rst:135
+msgid ""
+"If you need to run the site on a host other than simply localhost, you'll"
+" first need to add the host to your **hosts** file. The exact location of"
+" the file varies in each of the main operating systems, though all unix-"
+"type systems (including macOS) will typically keep the file at "
+"**/etc/hosts**."
+msgstr ""
+
+#: ../../source/installation/running.rst:139
+msgid ""
+"The local development server can be customized with three command line "
+"options:"
+msgstr ""
+
+#: ../../source/installation/running.rst:141
+msgid ""
+"You can use the ``--host`` CLI option to specify a different host to run "
+"the application at:"
+msgstr ""
+
+#: ../../source/installation/running.rst:147
+msgid ""
+"By default, the server runs on port 8080 but you might have more than one"
+" site running, or already have another application using that port. You "
+"can use the ``--port`` CLI option to specify a different one:"
+msgstr ""
+
+#: ../../source/installation/running.rst:154
+msgid ""
+"You can also specify a specific version of PHP to use, with the ``--php``"
+" CLI option, with its value set to the path of the PHP executable you "
+"want to use:"
+msgstr ""
+
+#: ../../source/installation/running.rst:163
+msgid "Worker Mode with FrankenPHP"
+msgstr ""
+
+#: ../../source/installation/running.rst:167
+msgid ""
+"Worker Mode is currently **experimental**. The only officially supported "
+"worker implementation is **FrankenPHP**, which is backed by the PHP "
+"Foundation."
+msgstr ""
+
+#: ../../source/installation/running.rst:170
+msgid ""
+"FrankenPHP is a modern PHP application server that supports Worker Mode, "
+"allowing your application to handle multiple requests within the same PHP"
+" process for improved performance."
+msgstr ""
+
+#: ../../source/installation/running.rst:175
+msgid "Quick Start"
+msgstr ""
+
+#: ../../source/installation/running.rst:177
+msgid ""
+"Install FrankenPHP using `static binaries "
+"<https://github.com/php/frankenphp/releases>`_"
+msgstr ""
+
+#: ../../source/installation/running.rst:179
+msgid "Generate worker mode files:"
+msgstr ""
+
+#: ../../source/installation/running.rst:185
+msgid "Start the server:"
+msgstr ""
+
+#: ../../source/installation/running.rst:191
+msgid ""
+"For detailed configuration, performance tuning, and important "
+"considerations about state management, see :doc:`worker_mode`."
+msgstr ""
+
+#: ../../source/installation/running.rst:196
+msgid "Hosting with Apache"
+msgstr ""
+
+#: ../../source/installation/running.rst:198
+msgid ""
+"A CodeIgniter4 webapp is normally hosted on a web server. Apache HTTP "
+"Server is the \"standard\" platform, and assumed in much of our "
+"documentation."
+msgstr ""
+
+#: ../../source/installation/running.rst:201
+msgid ""
+"Apache is bundled with many platforms, but can also be downloaded in a "
+"bundle with a database engine and PHP from `Bitnami "
+"<https://bitnami.com/stacks/infrastructure>`_."
+msgstr ""
+
+#: ../../source/installation/running.rst:205
+msgid "Configure Main Config File"
+msgstr ""
+
+#: ../../source/installation/running.rst:208
+msgid "Enabling mod_rewrite"
+msgstr ""
+
+#: ../../source/installation/running.rst:210
+msgid ""
+"The \"mod_rewrite\" module enables URLs without \"index.php\" in them, "
+"and is assumed in our user guide."
+msgstr ""
+
+#: ../../source/installation/running.rst:213
+msgid ""
+"Make sure that the rewrite module is enabled (uncommented) in the main "
+"configuration file, e.g., **apache2/conf/httpd.conf**:"
+msgstr ""
+
+#: ../../source/installation/running.rst:221
+msgid "Setting Document Root"
+msgstr ""
+
+#: ../../source/installation/running.rst:223
+msgid ""
+"Also make sure that the default document root's ``<Directory>`` element "
+"enables this too, in the ``AllowOverride`` setting:"
+msgstr ""
+
+#: ../../source/installation/running.rst:235
+msgid "Hosting with VirtualHost"
+msgstr ""
+
+#: ../../source/installation/running.rst:237
+msgid ""
+"We recommend using \"virtual hosting\" to run your apps. You can set up "
+"different aliases for each of the apps you work on,"
+msgstr ""
+
+#: ../../source/installation/running.rst:241
+msgid "Enabling vhost_alias_module"
+msgstr ""
+
+#: ../../source/installation/running.rst:243
+msgid ""
+"Make sure that the virtual hosting module is enabled (uncommented) in the"
+" main configuration file, e.g., **apache2/conf/httpd.conf**:"
+msgstr ""
+
+#: ../../source/installation/running.rst:251
+msgid "Adding Host Alias"
+msgstr ""
+
+#: ../../source/installation/running.rst:253
+msgid ""
+"Add a host alias in your \"hosts\" file, typically **/etc/hosts** on "
+"unix-type platforms, or "
+"**c:\\\\Windows\\\\System32\\\\drivers\\\\etc\\\\hosts** on Windows."
+msgstr ""
+
+#: ../../source/installation/running.rst:256
+msgid ""
+"Add a line to the file. This could be ``myproject.local`` or "
+"``myproject.test``, for instance::"
+msgstr ""
+
+#: ../../source/installation/running.rst:262
+msgid "Setting VirtualHost"
+msgstr ""
+
+#: ../../source/installation/running.rst:264
+msgid ""
+"Add a ``<VirtualHost>`` element for your webapp inside the virtual "
+"hosting configuration, e.g., **apache2/conf/extra/httpd-vhost.conf**:"
+msgstr ""
+
+#: ../../source/installation/running.rst:281
+msgid "The above configuration assumes the project folder is located as follows:"
+msgstr ""
+
+#: ../../source/installation/running.rst:290
+#: ../../source/installation/running.rst:340
+msgid "Restart Apache."
+msgstr ""
+
+#: ../../source/installation/running.rst:293
+msgid "Testing"
+msgstr ""
+
+#: ../../source/installation/running.rst:295
+msgid ""
+"With the above configuration, your webapp would be accessed with the URL "
+"**http://myproject.local/** in your browser."
+msgstr ""
+
+#: ../../source/installation/running.rst:297
+msgid "Apache needs to be restarted whenever you change its configuration."
+msgstr ""
+
+#: ../../source/installation/running.rst:300
+msgid "Hosting with Subfolder"
+msgstr ""
+
+#: ../../source/installation/running.rst:302
+msgid ""
+"If you want a baseURL like **http://localhost/myproject/** with a "
+"subfolder, there are three ways."
+msgstr ""
+
+#: ../../source/installation/running.rst:306
+msgid "Making Symlink"
+msgstr ""
+
+#: ../../source/installation/running.rst:308
+#: ../../source/installation/running.rst:324
+msgid ""
+"Place your project folder as follows, where **htdocs** is the Apache "
+"document root::"
+msgstr ""
+
+#: ../../source/installation/running.rst:314
+msgid "Navigate to the **htdocs** folder and create a symbolic link as follows:"
+msgstr ""
+
+#: ../../source/installation/running.rst:322
+msgid "Using Alias"
+msgstr ""
+
+#: ../../source/installation/running.rst:330
+msgid ""
+"Add the following in the main configuration file, e.g., "
+"**apache2/conf/httpd.conf**:"
+msgstr ""
+
+#: ../../source/installation/running.rst:343
+msgid "Adding .htaccess"
+msgstr ""
+
+#: ../../source/installation/running.rst:345
+msgid "The last resort is to add **.htaccess** to the project root."
+msgstr ""
+
+#: ../../source/installation/running.rst:347
+msgid ""
+"It is not recommended that you place the project folder in the document "
+"root. However, if you have no other choice, like on a shared server, you "
+"can use this."
+msgstr ""
+
+#: ../../source/installation/running.rst:350
+msgid ""
+"Place your project folder as follows, where **htdocs** is the Apache "
+"document root, and create the **.htaccess** file::"
+msgstr ""
+
+#: ../../source/installation/running.rst:358
+msgid "And edit **.htaccess** as follows:"
+msgstr ""
+
+#: ../../source/installation/running.rst:372
+msgid "And remove the redirect settings in **public/.htaccess**:"
+msgstr ""
+
+#: ../../source/installation/running.rst:397
+msgid "Hosting with mod_userdir (Shared Hosts)"
+msgstr ""
+
+#: ../../source/installation/running.rst:399
+msgid ""
+"A common practice in shared hosting environments is to use the Apache "
+"module \"mod_userdir\" to enable per-user Virtual Hosts automatically. "
+"Additional configuration is required to allow CodeIgniter4 to be run from"
+" these per-user directories."
+msgstr ""
+
+#: ../../source/installation/running.rst:401
+msgid ""
+"The following assumes that the server is already configured for "
+"mod_userdir. A guide to enabling this module is available `in the Apache "
+"documentation "
+"<https://httpd.apache.org/docs/2.4/howto/public_html.html>`_."
+msgstr ""
+
+#: ../../source/installation/running.rst:403
+msgid ""
+"Because CodeIgniter4 expects the server to find the framework front "
+"controller at **public/index.php** by default, you must specify this "
+"location as an alternative to search for the request (even if "
+"CodeIgniter4 is installed within the per-user web directory)."
+msgstr ""
+
+#: ../../source/installation/running.rst:405
+msgid ""
+"The default user web directory **~/public_html** is specified by the "
+"``UserDir`` directive, typically in **apache2/mods-"
+"available/userdir.conf** or **apache2/conf/extra/httpd-userdir.conf**:"
+msgstr ""
+
+#: ../../source/installation/running.rst:411
+msgid ""
+"So you will need to configure Apache to look for CodeIgniter's public "
+"directory first before trying to serve the default:"
+msgstr ""
+
+#: ../../source/installation/running.rst:417
+msgid ""
+"Be sure to specify options and permissions for the CodeIgniter public "
+"directory as well. A **userdir.conf** might look like:"
+msgstr ""
+
+#: ../../source/installation/running.rst:469
+msgid "Removing the index.php"
+msgstr ""
+
+#: ../../source/installation/running.rst:471
+msgid "See :ref:`CodeIgniter URLs <urls-remove-index-php-apache>`."
+msgstr ""
+
+#: ../../source/installation/running.rst:474
+#: ../../source/installation/running.rst:523
+msgid "Setting Environment"
+msgstr ""
+
+#: ../../source/installation/running.rst:476
+msgid "See :ref:`Handling Multiple Environments <environment-apache>`."
+msgstr ""
+
+#: ../../source/installation/running.rst:480
+msgid "Hosting with nginx"
+msgstr ""
+
+#: ../../source/installation/running.rst:482
+msgid ""
+"nginx is the second most widely used HTTP server for web hosting. Here "
+"you can find an example configuration using PHP 8.1 FPM (unix sockets) "
+"under Ubuntu Server."
+msgstr ""
+
+#: ../../source/installation/running.rst:486
+msgid "default.conf"
+msgstr ""
+
+#: ../../source/installation/running.rst:488
+msgid ""
+"This configuration enables URLs without \"index.php\" in them and using "
+"CodeIgniter's \"404 - File Not Found\" for URLs ending with \".php\"."
+msgstr ""
+
+#: ../../source/installation/running.rst:525
+msgid "See :ref:`Handling Multiple Environments <environment-nginx>`."
+msgstr ""
+
+#: ../../source/installation/running.rst:529
+msgid "Deployment to Shared Hosting Services"
+msgstr ""
+
+#: ../../source/installation/running.rst:531
+msgid "See :ref:`Deployment <deployment-to-shared-hosting-services>`."
+msgstr ""
+
+#: ../../source/installation/running.rst:535
+msgid "Bootstrapping the App"
+msgstr ""
+
+#: ../../source/installation/running.rst:537
+msgid ""
+"In some scenarios, you will want to load the framework without actually "
+"running the whole application. This is particularly useful for unit "
+"testing your project, but may also be handy for using third-party tools "
+"to analyze and modify your code. The framework comes with two separate "
+"bootstrap scripts specifically for these scenarios:"
+msgstr ""
+
+#: ../../source/installation/running.rst:542
+msgid ""
+"**system/Test/bootstrap.php**: This script is used primarily for unit "
+"testing."
+msgstr ""
+
+#: ../../source/installation/running.rst:543
+msgid ""
+"**system/util_bootstrap.php**: This script is used for other scripts that"
+" need access to the framework. It is recommended for use in scripts that "
+"are not part for testing as this will NOT fail gracefully if an exception"
+" is thrown."
+msgstr ""
+
+#: ../../source/installation/running.rst:547
+msgid ""
+"Most of the paths to your project are defined during the bootstrap "
+"process. You may use pre-defined constants to override these, but when "
+"using the defaults be sure that your paths align with the expected "
+"directory structure for your installation method."
+msgstr ""
+

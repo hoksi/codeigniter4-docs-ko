@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.3.5.rst:2
+msgid "Version 4.3.5"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.5.rst:4
+msgid "Release Date: May 21, 2023"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.5.rst:6
+msgid "**4.3.5 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.5.rst:13
+msgid "SECURITY"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.5.rst:15
+msgid ""
+"*Remote Code Execution Vulnerability in Validation Placeholders* was "
+"fixed. See the `Security advisory GHSA-m6m8-6gq8-c9fj "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-"
+"m6m8-6gq8-c9fj>`_ for more information."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.5.rst:18
+msgid "Fixed that ``Session::stop()`` did not destroy the session."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.5.rst:21
+msgid "Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.5.rst:23
+msgid ""
+"**make:cell command:** When creating a new cell, the controller would "
+"always have the ``Cell`` suffixed to the class name. For the view file, "
+"the final ``_cell`` is always removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.5.rst:25
+msgid ""
+"**View Cells:** For compatibility with previous versions, view filenames "
+"ending with ``_cell`` can still be located by the ``Cell`` as long as "
+"auto-detection of view file is enabled (via setting the ``$view`` "
+"property to an empty string)."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.5.rst:30
+msgid "Deprecations"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.5.rst:32
+msgid ""
+"**Session:** The ``Session::stop()`` method is deprecated. Use the "
+":ref:`Session::destroy() <session-destroy>` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.5.rst:36
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.5.rst:38
+msgid ""
+"**Validation:** Fixed a bug where a closure used in combination with "
+"``permit_empty`` or ``if_exist`` rules was causing an error."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.5.rst:39
+msgid "**make:cell command:** Fixed generating view files as classes."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.5.rst:40
+msgid ""
+"**make:cell command:** Fixed treatment of single word class input for "
+"case-insensitive OS."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.5.rst:42
+msgid ""
+"See the repo's `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

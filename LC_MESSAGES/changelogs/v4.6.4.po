@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.6.4.rst:3
+msgid "Version 4.6.4"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:5
+msgid "Release Date: December 12, 2025"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:7
+msgid "**4.6.4 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:15
+msgid "Message Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:17
+msgid ""
+"Added ``Honeypot.noTemplate``, ``Honeypot.noNameField``, "
+"``Honeypot.theClientIsABot``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:21
+msgid "Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:23
+msgid ""
+"**Config:** Added the ``synchronous`` key for "
+"``Config\\Database::$tests``. For SQLite3 driver only."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:27
+msgid "Deprecations"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:29
+msgid "**Exception:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:30
+msgid ""
+"The "
+"``CodeIgniter\\Honeypot\\Exceptions\\HoneypotException::forNoHiddenValue()``"
+" method has been deprecated. Never used."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:34
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:36
+msgid ""
+"**Cache:** Fixed a bug in ``PredisHandler::deleteMatching()`` causing "
+"Redis error when no keys match the pattern."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:37
+msgid ""
+"**Cache:** Fixed a bug in ``RedisHandler::deleteMatching()`` returning "
+"``false`` instead of ``int`` when no keys match the pattern."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:38
+msgid ""
+"**Database:** Fixed a bug in ``Database::connect()`` which was causing to"
+" store non-shared connection instances in shared cache."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:39
+msgid ""
+"**Database:** Fixed a bug in ``Connection::getFieldData()`` for "
+"``SQLSRV`` and ``OCI8`` where extra characters were returned in column "
+"default values (specific to those handlers), instead of following the "
+"convention used by other drivers."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:40
+msgid ""
+"**Database:** Fixed a bug in ``BaseBuilder::compileOrderBy()`` where the "
+"method could overwrite ``QBOrderBy`` with a string instead of keeping it "
+"as an array, causing type errors and preventing additional ``ORDER BY`` "
+"clauses from being appended."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:41
+msgid ""
+"**Database:** Fixed a bug in ``SQLite3`` where the password parameter was"
+" ignored unless it was an empty string."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:42
+msgid ""
+"**Debug:** Fixed a bug in ``ExceptionHandler`` where JSON encoding would "
+"fail when exception traces contained resources (e.g., database "
+"connections), closures, or circular references."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:43
+msgid ""
+"**Forge:** Fixed a bug in ``Postgre`` and ``SQLSRV`` where changing a "
+"column's default value using ``Forge::modifyColumn()`` method produced "
+"incorrect SQL syntax."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:44
+msgid ""
+"**Migrations:** Fixed a bug in the session table migration template where"
+" the ``timestamp`` field name conflicted with reserved keywords in "
+"MySQL/MariaDB."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:45
+msgid ""
+"**Model:** Fixed a bug in ``Model::replace()`` where ``created_at`` field"
+" (when available) wasn't set correctly."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:46
+msgid ""
+"**Model:** Fixed a bug in ``Model::insertBatch()`` and "
+"``Model::updateBatch()`` where casts were not applied to inserted or "
+"updated values."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:47
+msgid ""
+"**Toolbar:** Fixed bugs in ``Collectors\\Logs`` that were preventing the "
+"\"Logs\" tab from appearing on the Debug Toolbar."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:48
+msgid ""
+"**Toolbar:** Fixed bugs in ``toolbar.js`` which caused \"Uncaught "
+"TypeError\" in some scenarios."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:49
+msgid ""
+"**Validation:** Fixed a bug in the ``FormatRules::valid_base64()`` "
+"validation rule that caused a TypeError when checking invalid base64 "
+"strings."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.4.rst:51
+msgid ""
+"See the repo's `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

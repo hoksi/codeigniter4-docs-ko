@@ -1,0 +1,359 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:2
+msgid "Version 4.0.0-alpha.1"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:4
+msgid "Release Date: September 28, 2018"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:6
+msgid "**Rewrite of the CodeIgniter framework**"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:13
+msgid "New Packages List"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:15
+msgid "API"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:16
+msgid "\\\\ ResponseTrait"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:17
+msgid "Autoloader"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:18
+msgid "\\\\ AutoLoader, FileLocator"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:19
+msgid "CLI"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:20
+msgid "\\\\ BaseCommand, CLI, CommandRunner, Console"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:21
+msgid "Cache"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:22
+msgid "\\\\ CacheFactory, CacheInterface"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:23
+msgid "\\\\ Handlers ... Dummy, File, Memcached, Predis, Redis, Wincache"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:24
+msgid "Commands"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:25
+msgid "\\\\ Help, ListCommands"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:26
+msgid ""
+"\\\\ Database \\\\ CreateMigration, MigrateCurrent, MigrateLatest, "
+"MigrateRefresh, MigrateRollback, MigrateStatus, MigrateVersion, Seed"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:28
+msgid "\\\\ Server \\\\ Serve"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:29
+msgid "\\\\ Sessions \\\\ CreateMigration"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:30
+msgid "\\\\ Utilities \\\\ Namespaces, Routes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:31
+msgid "Config"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:32
+msgid ""
+"\\\\ AutoloadConfig, BaseConfig, BaseService, Config, DotEnv, "
+"ForeignCharacters, Routes, Services, View"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:34
+msgid "Database"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:35
+msgid ""
+"\\\\ BaseBuilder, BaseConnection, BasePreparedQuery, BaseResult, "
+"BaseUtils, Config, ConnectionInterface, Database, Forge, Migration, "
+"MigrationRunner, PreparedQueryInterface, Query, QueryInterface, "
+"ResultInterface, Seeder"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:38
+msgid "\\\\ MySQLi \\\\ Builder, Connection, Forge, PreparedQuery, Result"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:39
+msgid "\\\\ Postgre \\\\ Builder, Connection, Forge, PreparedQuery, Result, Utils"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:40
+msgid "\\\\ SQLite3 \\\\ Builder, Connection, Forge, PreparedQuery, Result, Utils"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:41
+msgid "Debug"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:42
+msgid "\\\\ Exceptions, Iterator, Timer, Toolbar"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:43
+msgid "\\\\ Toolbar \\\\ Collectors..."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:44
+msgid "Email"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:45
+msgid "\\\\ Email"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:46
+msgid "Events"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:47
+msgid "\\\\ Events"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:48
+msgid "Files"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:49
+msgid "\\\\ File"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:50
+msgid "Filters"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:51
+msgid "\\\\ FilterInterface, Filters"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:52
+msgid "Format"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:53
+msgid "\\\\ FormatterInterface, JSONFormatter, XMLFormatter"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:54
+msgid "HTTP"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:55
+msgid ""
+"\\\\ CLIRequest, CURLRequest, ContentSecurityPolicy, Header, "
+"IncomingRequest, Message, Negotiate, Request, RequestInterface, Response,"
+" ResponseInterface, URI, UserAgent"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:58
+msgid "\\\\ Files \\\\ FileCollection, UploadedFile, UploadedFileInterface"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:59
+msgid "Helpers"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:60
+msgid ""
+"... array, cookie, date, filesystem, form, html, inflector, number, "
+"security, text, url"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:62
+msgid "Honeypot"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:63
+msgid "\\\\ Honeypot"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:64
+msgid "I18n"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:65
+msgid "\\\\ Time, TimeDifference"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:66
+msgid "Images"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:67
+msgid "\\\\ Image, ImageHandlerInterface"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:68
+msgid "\\\\ Handlers ... Base, GD, ImageMagick"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:69
+msgid "Language"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:70
+msgid "\\\\ Language"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:71
+msgid "Log"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:72
+msgid "Logger, LoggerAwareTrait"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:73
+msgid "\\\\ Handlers ...  Base, ChromeLogger, File, HandlerInterface"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:74
+msgid "Pager"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:75
+msgid "\\\\ Pager, PagerInterface, PagerRenderer"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:76
+msgid "Router"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:77
+msgid "\\\\ RouteCollection, RouteCollectionInterface, Router, RouterInterface"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:78
+msgid "Security"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:79
+msgid "\\\\ Security"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:80
+msgid "Session"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:81
+msgid "\\\\ Session, SessionInterface"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:82
+msgid "\\\\ Handlers ... Base, File, Memcached, Redis"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:83
+msgid "Test"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:84
+msgid ""
+"\\\\ CIDatabaseTestCase, CIUnitTestCase, FeatureResponse, "
+"FeatureTestCase, ReflectionHelper"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:85
+msgid "\\\\ Filters \\\\ CITestStreamFilter"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:86
+msgid "ThirdParty (bundled)"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:87
+msgid "\\\\ Kint (for \\\\Debug)"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:88
+msgid "\\\\ PSR \\\\ Log (for \\\\Log)"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:89
+msgid "\\\\ ZendEscaper \\\\ Escaper (for \\\\View)"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:90
+msgid "Throttle"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:91
+msgid "\\\\ Throttler, ThrottlerInterface"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:92
+msgid "Typography"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:93
+msgid "\\\\ Typography"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:94
+msgid "Validation"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:95
+msgid ""
+"\\\\ CreditCardRules, FileRules, FormatRules, Rules, Validation, "
+"ValidationInterface"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:96
+msgid "View"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.1.rst:97
+msgid "\\\\ Cell, Filters, Parser, Plugins, RendererInterface, View"
+msgstr ""
+

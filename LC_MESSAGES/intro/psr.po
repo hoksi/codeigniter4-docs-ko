@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/intro/psr.rst:3
+msgid "PSR Compliance"
+msgstr ""
+
+#: ../../source/intro/psr.rst:5
+msgid ""
+"The `PHP-FIG <https://www.php-fig.org/>`_ was created in 2009 to help "
+"make code more interoperable between frameworks by ratifying Interfaces, "
+"style guides, and more that members were free to implement or not. While "
+"CodeIgniter is not a member of the FIG, we are compatible with a number "
+"of their proposals. This guide is meant to list the status of our "
+"compliance with the various accepted, and some draft, proposals."
+msgstr ""
+
+#: ../../source/intro/psr.rst:10
+msgid "**PSR-1: Basic Coding Standard**"
+msgstr ""
+
+#: ../../source/intro/psr.rst:12
+msgid ""
+"This recommendation covers basic class, method, and file-naming "
+"standards. Our `style guide "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/contributing/styleguide.md>`_"
+" meets PSR-1 and adds its own requirements on top of it."
+msgstr ""
+
+#: ../../source/intro/psr.rst:16
+msgid "**PSR-12: Extended Coding Style**"
+msgstr ""
+
+#: ../../source/intro/psr.rst:18
+msgid ""
+"Our `style guide "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/contributing/styleguide.md>`_"
+" follows the recommendation plus a set of our own styling conventions."
+msgstr ""
+
+#: ../../source/intro/psr.rst:21
+msgid "**PSR-3: Logger Interface**"
+msgstr ""
+
+#: ../../source/intro/psr.rst:23
+msgid ""
+"CodeIgniter's :doc:`Logger </general/logging>` implements all of the "
+"interfaces provided by this PSR."
+msgstr ""
+
+#: ../../source/intro/psr.rst:25
+msgid "**PSR-4: Autoloading Standard**"
+msgstr ""
+
+#: ../../source/intro/psr.rst:27
+msgid ""
+"This PSR provides a method for organizing file and namespaces to allow "
+"for a standard method of autoloading classes. Our :doc:`Autoloader "
+"</concepts/autoloader>` meets the PSR-4 recommendations."
+msgstr ""
+
+#: ../../source/intro/psr.rst:30
+msgid "**PSR-6: Caching Interfaces** **PSR-16: SimpleCache Interface**"
+msgstr ""
+
+#: ../../source/intro/psr.rst:33
+msgid ""
+"While the framework Cache components do not adhere to PSR-6 or PSR-16, a "
+"separate set of adapters are available from the CodeIgniter4 organization"
+" as a supplemental module. It is recommended that projects use the native"
+" Cache drivers directly as the adapters are only intended for "
+"compatibility with third-party libraries. For more information visit the "
+"`CodeIgniter4 Cache repo <https://github.com/codeigniter4/cache>`_."
+msgstr ""
+
+#: ../../source/intro/psr.rst:38
+msgid "**PSR-7: HTTP Message Interface**"
+msgstr ""
+
+#: ../../source/intro/psr.rst:40
+msgid ""
+"This PSR standardizes a way of representing the HTTP interactions. While "
+"many of the concepts became part of our HTTP layer, CodeIgniter does not "
+"strive for compatibility with this recommendation."
+msgstr ""
+
+#: ../../source/intro/psr.rst:43
+msgid "---"
+msgstr ""
+
+#: ../../source/intro/psr.rst:45
+msgid ""
+"If you find any places that we claim to meet a PSR but have failed to "
+"execute it correctly, please let us know and we will get it fixed, or "
+"submit a pull request with the required changes."
+msgstr ""
+

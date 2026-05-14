@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/incoming/methodspoofing.rst:3
+msgid "HTTP Method Spoofing"
+msgstr ""
+
+#: ../../source/incoming/methodspoofing.rst:5
+msgid ""
+"When working with HTML forms you can only use GET or POST HTTP verbs. In "
+"most cases, this is just fine. However, to support REST-ful routing you "
+"need to support other, more correct, verbs, like DELETE or PUT. Since the"
+" browsers don't support this, CodeIgniter provides you with a way to "
+"spoof the method that is being used. This allows you to make a POST "
+"request, but tell the application that it should be treated as a "
+"different request type."
+msgstr ""
+
+#: ../../source/incoming/methodspoofing.rst:10
+msgid ""
+"To spoof the method, a hidden input is added to the form with the name of"
+" ``_method``. It's value is the HTTP verb that you want the request to "
+"be::"
+msgstr ""
+
+#: ../../source/incoming/methodspoofing.rst:17
+msgid ""
+"This form is converted into a PUT request and is a true PUT request as "
+"far as the routing and the IncomingRequest class are concerned."
+msgstr ""
+
+#: ../../source/incoming/methodspoofing.rst:20
+msgid ""
+"The form that you are using must be a POST request. GET requests cannot "
+"be spoofed."
+msgstr ""
+
+#: ../../source/incoming/methodspoofing.rst:22
+msgid ""
+"Be sure to check your web server's configuration as some servers do not "
+"support all HTTP verbs with the default configuration, and must have "
+"additional packages enabled to work."
+msgstr ""
+

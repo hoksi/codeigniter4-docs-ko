@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_validations.rst:2
+msgid "Upgrade Validations"
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:9
+msgid "Documentations of Library"
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:11
+msgid ""
+"`Form Validation Documentation CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/libraries/form_validation.html>`_"
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:12
+msgid ":doc:`Validation Documentation CodeIgniter 4.x </libraries/validation>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:15
+msgid "What has been changed"
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:16
+msgid ""
+"If you want to change validation error display, you have to set CI4 "
+":ref:`validation View templates <validation-customizing-error-display>`."
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:17
+msgid ""
+"CI4 validation has no `Callbacks "
+"<http://www.codeigniter.com/userguide3/libraries/form_validation.html"
+"#callbacks-your-own-validation-methods>`_ in CI3. Use :ref:`Callable "
+"Rules <validation-using-callable-rule>` (since v4.5.0) or :ref:`Closure "
+"Rules <validation-using-closure-rule>` (since v4.3.0) or :ref:`Rule "
+"Classes <validation-using-rule-classes>` instead."
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:22
+msgid ""
+"In CI3, Callbacks/Callable rules were prioritized, but in CI4, "
+"Closure/Callable Rules are not prioritized, and are checked in the order "
+"in which they are listed."
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:24
+msgid ""
+"Since v4.5.0, :ref:`Callable Rules <validation-using-callable-rule>` has "
+"been introduced, but it is a bit different from CI3's `Callable "
+"<http://www.codeigniter.com/userguide3/libraries/form_validation.html"
+"#callable-use-anything-as-a-rule>`_."
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:26
+msgid "CI4 validation format rules do not permit empty string."
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:27
+msgid "CI4 validation never changes your data."
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:28
+msgid ""
+"Since v4.3.0, :php:func:`validation_errors()` has been introduced, but "
+"the API is different from CI3's."
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:31
+msgid "Upgrade Guide"
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:32
+msgid "Within the view which contains the form you have to change:"
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:34
+msgid ""
+"``<?php echo validation_errors(); ?>`` to ``<?= validation_list_errors() "
+"?>``"
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:36
+msgid "Within the controller you have to change the following:"
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:38
+msgid "``$this->load->helper(array('form', 'url'));`` to ``helper('form');``"
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:39
+msgid "remove the line ``$this->load->library('form_validation');``"
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:40
+msgid ""
+"``if ($this->form_validation->run() == FALSE)`` to ``if (! "
+"$this->validateData($data, $rules))`` where ``$data`` is the data to "
+"validate, typically, the POST data ``$this->request->getPost()``."
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:42
+msgid ""
+"``$this->load->view('myform');`` to ``return view('myform', ['validation'"
+" => $this->validator,]);``"
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:44
+msgid ""
+"You have to change the validation rules. The new syntax is to set the "
+"rules as array in the controller:"
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:49
+msgid "Code Example"
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:52
+msgid "CodeIgniter Version 3.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:53
+msgid "Path: **application/views**::"
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:84
+msgid "Path: **application/controllers**:"
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:89
+msgid "CodeIgniter Version 4.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:90
+msgid "Path: **app/Views**::"
+msgstr ""
+
+#: ../../source/installation/upgrade_validations.rst:121
+msgid "Path: **app/Controllers**:"
+msgstr ""
+

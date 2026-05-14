@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.4.4.rst:3
+msgid "Version 4.4.4"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:5
+msgid "Release Date: December 28, 2023"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:7
+msgid "**4.4.4 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:15
+msgid "BREAKING"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:18
+msgid "Validation with Dot Array Syntax"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:20
+msgid ""
+"A validation rule with the wildcard ``*`` now validates only data in "
+"correct dimensions as \"dot array syntax\". See :ref:`Upgrading "
+"<upgrade-444-validation-with-dot-array-syntax>` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:25
+msgid "Validation rules matches and differs"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:27
+msgid ""
+"Bugs have been fixed in the case where ``matches`` and ``differs`` in the"
+" Strict and Traditional rules validate data of non-string types."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:31
+msgid "The use of the `ssl_key` option in CURLRequest was removed"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:33
+msgid ""
+"Due to a bug, we were using the undocumented `ssl_key` config option to "
+"define the CA bundle in CURLRequest. This was fixed and is now working "
+"according to documentation. You can define your CA bundle via the "
+"`verify` option."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:37
+msgid "Filesystem Helper"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:39
+msgid ""
+":php:func:`get_filenames()` now follows symlink folders, which it "
+"previously just returned without following."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:44
+msgid "Enhancements"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:46
+msgid "Full support for PHP 8.3."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:50
+msgid "Message Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:52
+msgid "Added ``HTTP.invalidJSON`` error message."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:53
+msgid "Added ``HTTP.unsupportedJSONFormat`` error message."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:57
+msgid "Deprecations"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:59
+msgid ""
+"**Request:** The :php:meth:`CodeIgniter\\\\HTTP\\\\Request::getEnv()` "
+"method is deprecated. This method does not work from the beginning. Use "
+":php:func:`env()` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:65
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:67
+msgid ""
+"**CURLRequest:** Fixed a bug where the hostname was checked even if "
+"options 'verify' was set to *false*."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.4.rst:69
+msgid ""
+"See the repo's `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

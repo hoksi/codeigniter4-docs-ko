@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/libraries/typography.rst:3
+msgid "Typography"
+msgstr ""
+
+#: ../../source/libraries/typography.rst:5
+msgid ""
+"The Typography library contains methods that help you format text in "
+"semantically relevant ways."
+msgstr ""
+
+#: ../../source/libraries/typography.rst:14
+msgid "Loading the Library"
+msgstr ""
+
+#: ../../source/libraries/typography.rst:16
+msgid ""
+"Like all services in CodeIgniter, it can be loaded via "
+"``Config\\Services``, though you usually will not need to load it "
+"manually:"
+msgstr ""
+
+#: ../../source/libraries/typography.rst:23
+msgid "Available static functions"
+msgstr ""
+
+#: ../../source/libraries/typography.rst:25
+msgid "The following functions are available:"
+msgstr ""
+
+#: ../../source/libraries/typography.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/libraries/typography.rst:29
+#: ../../source/libraries/typography.rst:48
+#: ../../source/libraries/typography.rst:62
+msgid "Input string"
+msgstr ""
+
+#: ../../source/libraries/typography.rst:30
+msgid "Whether to reduce multiple instances of double newlines to two"
+msgstr ""
+
+#: ../../source/libraries/typography.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/libraries/typography.rst:31
+msgid "HTML-formatted typography-safe string"
+msgstr ""
+
+#: ../../source/libraries/typography.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/libraries/typography.rst:34
+msgid "Formats text so that it is semantically and typographically correct HTML."
+msgstr ""
+
+#: ../../source/libraries/typography.rst:37
+#: ../../source/libraries/typography.rst:56
+#: ../../source/libraries/typography.rst:70
+msgid "Usage example:"
+msgstr ""
+
+#: ../../source/libraries/typography.rst:41
+msgid ""
+"Typographic formatting can be processor intensive, particularly if you "
+"have a lot of content being formatted. If you choose to use this function"
+" you may want to consider :doc:`caching <../general/caching>` your pages."
+msgstr ""
+
+#: ../../source/libraries/typography.rst:49
+msgid "String with formatted characters."
+msgstr ""
+
+#: ../../source/libraries/typography.rst:52
+msgid ""
+"This function mainly converts double and single quotes to curly entities,"
+" but it also converts em-dashes, double spaces, and ampersands."
+msgstr ""
+
+#: ../../source/libraries/typography.rst:63
+msgid "String with HTML-formatted line breaks"
+msgstr ""
+
+#: ../../source/libraries/typography.rst:66
+msgid ""
+"Converts newlines to ``<br />`` tags unless they appear within ``<pre>`` "
+"tags. This function is identical to the native PHP ``nl2br()`` function, "
+"except that it ignores ``<pre>`` tags."
+msgstr ""
+

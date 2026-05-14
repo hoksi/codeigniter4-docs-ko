@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.2.11.rst:2
+msgid "Version 4.2.11"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.11.rst:4
+msgid "Release Date: December 21, 2022"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.11.rst:6
+msgid "**4.2.11 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.11.rst:13
+msgid "SECURITY"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.11.rst:15
+msgid ""
+"*Attackers may spoof IP address when using proxy* was fixed. See the "
+"`Security advisory GHSA-ghw3-5qvm-3mqc "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-"
+"ghw3-5qvm-3mqc>`_ for more information."
+msgstr ""
+
+#: ../../source/changelogs/v4.2.11.rst:16
+msgid ""
+"*Potential Session Handlers Vulnerability* was fixed. See the `Security "
+"advisory GHSA-6cq5-8cj7-g558 "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-"
+"6cq5-8cj7-g558>`_ for more information."
+msgstr ""
+
+#: ../../source/changelogs/v4.2.11.rst:19
+msgid "BREAKING"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.11.rst:21
+msgid ""
+"The ``Config\\App::$proxyIPs`` value format has been changed. See "
+":ref:`Upgrading Guide <upgrade-4211-proxyips>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.2.11.rst:22
+msgid ""
+"The key of the session data record for :ref:`sessions-databasehandler-"
+"driver`, :ref:`sessions-memcachedhandler-driver` and :ref:`sessions-"
+"redishandler-driver` has changed. See :ref:`Upgrading Guide <upgrade-4211"
+"-session-key>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.2.11.rst:27
+msgid "Enhancements"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.11.rst:29
+msgid "Full support for PHP 8.2."
+msgstr ""
+
+#: ../../source/changelogs/v4.2.11.rst:32
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.11.rst:34
+msgid ""
+"Fixed a ``FileLocator::locateFile()`` bug where a similar namespace name "
+"could be replaced by another, causing a failure to find a file that "
+"exists."
+msgstr ""
+
+#: ../../source/changelogs/v4.2.11.rst:35
+msgid ""
+"Fixed a ``RedisHandler`` session class to use the correct config when "
+"used with a socket connection."
+msgstr ""
+
+#: ../../source/changelogs/v4.2.11.rst:37
+msgid ""
+"See the repo's `CHANGELOG_4.2.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/changelogs/CHANGELOG_4.2.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

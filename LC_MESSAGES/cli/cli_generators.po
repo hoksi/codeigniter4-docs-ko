@@ -1,0 +1,482 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/cli/cli_generators.rst:3
+msgid "CLI Generators"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:5
+msgid ""
+"CodeIgniter4 now comes equipped with generators to ease the creation of "
+"stock controllers, models, entities, etc. You can also scaffold a "
+"complete set of files with just one command."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:14
+msgid "Introduction"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:16
+msgid ""
+"All built-in generators reside under the ``Generators`` group when listed"
+" using ``php spark list``. To view the full description and usage "
+"information on a particular generator, use the command:"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:23
+msgid "where ``<generator_command>`` will be replaced with the command to check."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:25
+msgid ""
+"Do you need to have the generated code in a subfolder? Let's say if you "
+"want to create a controller class to reside in the ``Admin`` subfolder of"
+" the main ``Controllers`` folder, you will just need to prepend the "
+"subfolder to the class name, like this: ``php spark make:controller "
+"admin/login``. This command will create the ``Login`` controller in the "
+"``Controllers/Admin`` subfolder with a namespace of "
+"``App\\Controllers\\Admin``."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:31
+msgid ""
+"Working on modules? Code generation will set the root namespace to a "
+"default of ``APP_NAMESPACE``. Should you need to have the generated code "
+"elsewhere in your module namespace, make sure to set the ``--namespace`` "
+"option in your command, e.g., ``php spark make:model blog --namespace "
+"Acme\\\\Blog``."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:35
+msgid ""
+"Make sure when setting the ``--namespace`` option that the supplied "
+"namespace is a valid namespace defined in your ``$psr4`` array in "
+"``Config\\Autoload`` or defined in your composer autoload file. "
+"Otherwise, code generation will be interrupted."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:41
+msgid "Built-in Generators"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:43
+msgid "CodeIgniter4 ships the following generators by default."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:46
+msgid "make:cell"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:50
+msgid "Creates a new Cell file and its view."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:53
+#: ../../source/cli/cli_generators.rst:73
+#: ../../source/cli/cli_generators.rst:97
+#: ../../source/cli/cli_generators.rst:118
+#: ../../source/cli/cli_generators.rst:148
+#: ../../source/cli/cli_generators.rst:169
+#: ../../source/cli/cli_generators.rst:190
+#: ../../source/cli/cli_generators.rst:214
+#: ../../source/cli/cli_generators.rst:240
+#: ../../source/cli/cli_generators.rst:260
+#: ../../source/cli/cli_generators.rst:281
+#: ../../source/cli/cli_generators.rst:305
+msgid "Usage:"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:59
+#: ../../source/cli/cli_generators.rst:79
+#: ../../source/cli/cli_generators.rst:103
+#: ../../source/cli/cli_generators.rst:124
+#: ../../source/cli/cli_generators.rst:154
+#: ../../source/cli/cli_generators.rst:175
+#: ../../source/cli/cli_generators.rst:196
+#: ../../source/cli/cli_generators.rst:220
+#: ../../source/cli/cli_generators.rst:246
+#: ../../source/cli/cli_generators.rst:266
+#: ../../source/cli/cli_generators.rst:287
+#: ../../source/cli/cli_generators.rst:311
+msgid "Argument:"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:60
+msgid ""
+"``name``: The name of the cell class. It should be in PascalCase. "
+"**[REQUIRED]**"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:63
+#: ../../source/cli/cli_generators.rst:83
+#: ../../source/cli/cli_generators.rst:107
+#: ../../source/cli/cli_generators.rst:128
+#: ../../source/cli/cli_generators.rst:158
+#: ../../source/cli/cli_generators.rst:179
+#: ../../source/cli/cli_generators.rst:200
+#: ../../source/cli/cli_generators.rst:224
+#: ../../source/cli/cli_generators.rst:250
+#: ../../source/cli/cli_generators.rst:270
+#: ../../source/cli/cli_generators.rst:291
+#: ../../source/cli/cli_generators.rst:315
+msgid "Options:"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:64
+#: ../../source/cli/cli_generators.rst:87
+#: ../../source/cli/cli_generators.rst:108
+#: ../../source/cli/cli_generators.rst:131
+#: ../../source/cli/cli_generators.rst:159
+#: ../../source/cli/cli_generators.rst:180
+#: ../../source/cli/cli_generators.rst:204
+#: ../../source/cli/cli_generators.rst:225
+#: ../../source/cli/cli_generators.rst:271
+#: ../../source/cli/cli_generators.rst:295
+#: ../../source/cli/cli_generators.rst:316
+msgid ""
+"``--namespace``: Set the root namespace. Defaults to value of "
+"``APP_NAMESPACE``."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:65
+#: ../../source/cli/cli_generators.rst:89
+#: ../../source/cli/cli_generators.rst:110
+#: ../../source/cli/cli_generators.rst:133
+#: ../../source/cli/cli_generators.rst:161
+#: ../../source/cli/cli_generators.rst:182
+#: ../../source/cli/cli_generators.rst:206
+#: ../../source/cli/cli_generators.rst:227
+#: ../../source/cli/cli_generators.rst:252
+#: ../../source/cli/cli_generators.rst:273
+#: ../../source/cli/cli_generators.rst:297
+#: ../../source/cli/cli_generators.rst:318
+msgid "``--force``: Set this flag to overwrite existing files on destination."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:68
+msgid "make:command"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:70
+msgid "Creates a new spark command."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:80
+msgid "``name``: The name of the command class. **[REQUIRED]**"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:84
+msgid ""
+"``--command``: The command name to run in spark. Defaults to "
+"``command:name``."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:85
+msgid ""
+"``--group``: The group/namespace of the command. Defaults to ``App`` for "
+"basic commands, and ``Generators`` for generator commands."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:86
+msgid ""
+"``--type``: The type of command, whether a ``basic`` command or a "
+"``generator`` command. Defaults to ``basic``."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:88
+#: ../../source/cli/cli_generators.rst:109
+#: ../../source/cli/cli_generators.rst:132
+#: ../../source/cli/cli_generators.rst:160
+#: ../../source/cli/cli_generators.rst:181
+#: ../../source/cli/cli_generators.rst:205
+#: ../../source/cli/cli_generators.rst:226
+#: ../../source/cli/cli_generators.rst:272
+#: ../../source/cli/cli_generators.rst:296
+#: ../../source/cli/cli_generators.rst:317
+msgid "``--suffix``: Append the component suffix to the generated class name."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:92
+msgid "make:config"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:94
+msgid "Creates a new config file."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:104
+msgid "``name``: The name of the config class. **[REQUIRED]**"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:113
+msgid "make:controller"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:115
+msgid "Creates a new controller file."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:125
+msgid "``name``: The name of the controller class. **[REQUIRED]**"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:129
+msgid ""
+"``--bare``: Extends from ``CodeIgniter\\Controller`` instead of "
+"``BaseController``."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:130
+msgid ""
+"``--restful``: Extends from a RESTful resource. Choices are "
+"``controller`` and ``presenter``. Defaults to ``controller``."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:135
+msgid ""
+"If you use ``--suffix``, the generated controller name will be like "
+"``ProductController``. That violates the Controller naming convention "
+"when using :ref:`Auto Routing <controller-auto-routing-improved>` "
+"(Controller class names MUST start with an uppercase letter and ONLY the "
+"first character can be uppercase). So ``--suffix`` can be used when you "
+"use :ref:`Defined Routes <defined-route-routing>`."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:143
+msgid "make:entity"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:145
+msgid "Creates a new entity file."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:155
+msgid "``name``: The name of the entity class. **[REQUIRED]**"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:164
+msgid "make:filter"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:166
+msgid "Creates a new filter file."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:176
+msgid "``name``: The name of the filter class. **[REQUIRED]**"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:185
+msgid "make:model"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:187
+msgid "Creates a new model file."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:197
+msgid "``name``: The name of the model class. **[REQUIRED]**"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:201
+msgid "``--dbgroup``: Database group to use. Defaults to ``default``."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:202
+msgid ""
+"``--return``: Set the return type from ``array``, ``object``, or "
+"``entity``. Defaults to ``array``."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:203
+msgid ""
+"``--table``: Supply a different table name. Defaults to the pluralized "
+"class name."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:209
+msgid "make:seeder"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:211
+msgid "Creates a new seeder file."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:221
+msgid "``name``: The name of the seeder class. **[REQUIRED]**"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:233
+msgid "make:test"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:237
+msgid "Creates a new test file."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:247
+msgid "``name``: The name of the test class. **[REQUIRED]**"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:251
+msgid "``--namespace``: Set the root namespace. Defaults to value of ``Tests``."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:255
+msgid "make:transformer"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:257
+msgid "Creates a new API transformer file."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:267
+msgid "``name``: The name of the transformer class. **[REQUIRED]**"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:276
+msgid "make:migration"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:278
+msgid "Creates a new migration file."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:288
+msgid "``name``: The name of the migration class. **[REQUIRED]**"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:292
+msgid "``--session``: Generate a migration file for database sessions."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:293
+msgid ""
+"``--table``: Set the table name to use for database sessions. Defaults to"
+" ``ci_sessions``."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:294
+msgid ""
+"``--dbgroup``: Set the database group for database sessions. Defaults to "
+"``default`` group."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:300
+msgid "make:validation"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:302
+msgid "Creates a new validation file."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:312
+msgid "``name``: The name of the validation class. **[REQUIRED]**"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:322
+msgid "Scaffolding a Complete Set of Stock Code"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:324
+msgid ""
+"Sometimes in our development phase we are creating functionalities by "
+"groups, such as creating an *Admin* group. This group will contain its "
+"own controller, model, migration files, or even entities. You may be "
+"tempted to type each generator command one-by-one in the terminal and "
+"wishfully thinking it would be great to have a single generator command "
+"to rule them all."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:329
+msgid ""
+"Fret no more! CodeIgniter4 is also shipped with a dedicated "
+"``make:scaffold`` command that is basically a wrapper to the controller, "
+"model, entity, migration, and seeder generator commands. All you need is "
+"the class name that will be used to name all the generated classes. Also,"
+" **individual options** supported by each generator command are "
+"recognized by the scaffold command."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:334
+msgid "Running this in your terminal:"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:340
+msgid "will create the following files:"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:342
+msgid "**app/Controllers/User.php**"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:343
+msgid "**app/Models/User.php**"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:344
+msgid "**app/Database/Migrations/<some date here>_User.php** and"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:345
+msgid "**app/Database/Seeds/User.php**"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:347
+msgid ""
+"To include an ``Entity`` class in the scaffolded files, just include the "
+"``--return entity`` to the command and it will be passed to the model "
+"generator."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:352
+msgid "GeneratorTrait"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:354
+msgid ""
+"All generator commands must use the ``GeneratorTrait`` to fully utilize "
+"its methods that are used in code generation."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:359
+msgid "Declaring the Location of a Custom Generator Command Template"
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:361
+msgid ""
+"The default order of lookup for generator templates is (1) the template "
+"defined in the **app/Config/Generators.php** file, and (2) if not found, "
+"the template found at the ``CodeIgniter\\Commands\\Generators\\Views`` "
+"namespace."
+msgstr ""
+
+#: ../../source/cli/cli_generators.rst:364
+msgid ""
+"To declare the template location for your custom generator command, you "
+"will need to add it to the **app/Config/Generators.php** file. For "
+"example, if you have a command ``make:awesome-command`` and your "
+"generator template is located within your *app* directory "
+"**app/Commands/Generators/Views/awesomecommand.tpl.php**, you would "
+"update the config file like so:"
+msgstr ""
+

@@ -1,0 +1,525 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/cli/cli_signals.rst:3
+msgid "CLI Signals"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:5
+msgid ""
+"Unix signals are a fundamental part of process communication and control."
+" They provide a way to interrupt, control, and communicate with running "
+"processes. CodeIgniter's SignalTrait makes it easy to handle signals in "
+"your CLI commands, enabling graceful shutdowns, pause/resume "
+"functionality, and custom signal handling."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:15
+msgid "What are Signals?"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:17
+msgid ""
+"Signals are software interrupts delivered to a process by the operating "
+"system. They notify processes of various events, from user-initiated "
+"interruptions (like pressing Ctrl+C) to system events (like terminal "
+"disconnection)."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:20
+msgid ""
+"``SignalTrait`` adds the ability to perform certain actions before the "
+"signal is consumed, as well as the capability to protect certain pieces "
+"of code from signal interruption. This protection mechanism guarantees "
+"the proper execution of critical command operations by ensuring they "
+"complete atomically without being interrupted by incoming signals."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:25
+msgid "Common Unix Signals"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:27
+msgid "Here are the most commonly used signals in CLI applications:"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:29
+msgid "**Handleable Signals:**"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:31
+msgid "**SIGTERM (15)**: Termination signal - requests graceful shutdown"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:32
+msgid "**SIGINT (2)**: Interrupt signal - typically sent by Ctrl+C"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:33
+msgid "**SIGHUP (1)**: Hangup signal - terminal disconnected or closed"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:34
+msgid "**SIGQUIT (3)**: Quit signal - typically sent by Ctrl+\\\\"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:35
+msgid "**SIGTSTP (20)**: Terminal stop - typically sent by Ctrl+Z (suspend)"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:36
+msgid "**SIGCONT (18)**: Continue signal - resume suspended process (fg command)"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:37
+msgid "**SIGUSR1 (10)**: User-defined signal 1"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:38
+msgid "**SIGUSR2 (12)**: User-defined signal 2"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:40
+msgid "**Unhandleable Signals:**"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:42
+msgid "Some signals cannot be caught, blocked, or handled by user processes:"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:44
+msgid "**SIGKILL (9)**: Forceful termination - cannot be caught or ignored"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:45
+msgid "**SIGSTOP (19)**: Forceful suspend - cannot be caught or ignored"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:47
+msgid ""
+"These signals are handled directly by the kernel and will terminate or "
+"suspend your process immediately, bypassing any custom handlers."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:50
+msgid "System Requirements"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:52
+msgid "Signal handling requires:"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:54
+msgid "**Unix-based system** (Linux, macOS, BSD) - Windows is not supported"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:55
+msgid "**PCNTL extension** - for signal registration and handling"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:56
+msgid ""
+"**POSIX extension** - required for pause/resume functionality "
+"(SIGTSTP/SIGCONT)"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:58
+msgid ""
+"On systems without these extensions, the SignalTrait will gracefully "
+"degrade and disable signal handling."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:62
+msgid "Using the SignalTrait"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:64
+msgid ""
+"The ``SignalTrait`` provides a comprehensive signal handling system for "
+"CLI commands. To use it, simply add the trait to your command class and "
+"register signals in your command's ``run()`` method:"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:69
+msgid ""
+"This registers three termination signals that will set the ``$running`` "
+"state to ``false`` when received."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:72
+msgid "Custom Signal Handlers"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:74
+msgid "You can map signals to custom methods for specific behavior:"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:79
+msgid "Fallback Signal Handler"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:81
+msgid ""
+"For signals without explicit mappings, you can implement a generic "
+"``onInterruption()`` method:"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:87
+msgid "Critical Sections"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:89
+msgid ""
+"Some operations should never be interrupted (database transactions, file "
+"operations). Use ``withSignalsBlocked()`` to create atomic operations:"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:94
+msgid ""
+"During critical sections, ALL signals (including Ctrl+Z) are blocked to "
+"prevent data corruption."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:98
+msgid "Pause and Resume"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:100
+msgid "The SignalTrait supports proper Unix job control with custom handlers:"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:105
+msgid "How Pause/Resume Works"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:107
+msgid "**SIGTSTP received**: Custom ``onPause()`` handler runs"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:108
+msgid "**Process suspends**: Using standard Unix job control"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:109
+msgid "**SIGCONT received**: Process resumes, then ``onResume()`` handler runs"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:111
+msgid ""
+"This allows you to save state before suspension and restore it after "
+"resumption while maintaining proper shell integration."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:114
+msgid "Important Limitations"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:116
+msgid "**Shell Job Control vs Manual Signals**"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:118
+msgid ""
+"There's a critical difference between using shell job control and "
+"manually sending signals:"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:132
+msgid "**The Problem with Manual SIGCONT**"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:134
+msgid "When you manually send ``kill -CONT`` from a different terminal:"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:136
+msgid "**Expected behavior:**"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:137
+msgid "Process resumes and custom handlers execute"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:139
+msgid "**Side effects:**"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:140
+msgid "Process loses foreground terminal control"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:141
+msgid "Ctrl+C and Ctrl+Z may stop working"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:142
+msgid "Process runs in background state"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:144
+msgid ""
+"This happens because manual ``kill -CONT`` doesn't restore the process to"
+" the terminal's foreground process group."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:146
+msgid "**Best Practices for Pause/Resume**"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:148
+msgid "**Use shell job control** (Ctrl+Z, fg, bg) when possible"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:149
+msgid ""
+"**Document the limitation** if your application needs manual signal "
+"control"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:150
+msgid "**Provide alternative control methods** for automated environments"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:151
+msgid "**Test thoroughly** in your deployment environment"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:155
+msgid "Triggering Signals"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:158
+msgid "From Command Line"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:160
+msgid "You can send signals to running processes using the ``kill`` command:"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:180
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:182
+msgid "These keyboard shortcuts send signals to the foreground process:"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:184
+msgid "**Ctrl+C**: Sends SIGINT (interrupt)"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:185
+msgid "**Ctrl+Z**: Sends SIGTSTP (suspend/pause)"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:186
+msgid "**Ctrl+\\\\**: Sends SIGQUIT (quit with core dump)"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:189
+msgid "Job Control"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:191
+msgid "Standard Unix job control works seamlessly:"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:203
+msgid "Debugging Signals"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:206
+msgid "Process State Information"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:208
+msgid "Use ``getProcessState()`` to debug signal issues:"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:212
+msgid "This returns comprehensive information including:"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:214
+msgid "Process ID and running state"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:215
+msgid "Registered signals and mappings"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:216
+msgid "Memory usage statistics"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:217
+msgid "Terminal control information (session, process group)"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:218
+msgid "Signal blocking status"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:222
+msgid "Class Reference"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:230
+msgid "List of signals to handle"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:231
+msgid "Optional signal-to-method mapping"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:234
+msgid "Register signal handlers with optional custom method mapping."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:238
+msgid ""
+"Requires the PCNTL extension. On Windows, signal handling is "
+"automatically disabled."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:242
+msgid "true if the process should continue running, false if not"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:245
+msgid "Check if the process should continue running (not terminated)."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:251
+msgid "true if termination has been requested, false if not"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:254
+msgid "Check if termination has been requested (opposite of ``isRunning()``)."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:262
+msgid "Manually request process termination."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:270
+msgid "Reset all states - useful for testing or restart scenarios."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:274
+msgid "The critical operation to execute without interruption"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:275
+msgid "The result of the operation"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:278
+msgid ""
+"Execute a critical operation with ALL signals blocked to prevent ANY "
+"interruption."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:280
+msgid ""
+"This blocks ALL interruptible signals including termination signals "
+"(SIGTERM, SIGINT), pause/resume signals (SIGTSTP, SIGCONT), and custom "
+"signals (SIGUSR1, SIGUSR2). Only SIGKILL (unblockable) can still "
+"terminate the process."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:286
+msgid "true if signals are currently blocked, false if not"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:289
+msgid "Check if signals are currently blocked."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:293 ../../source/cli/cli_signals.rst:303
+msgid "Signal constant"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:294
+msgid "Method name to call for this signal"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:297
+msgid "Add or update signal-to-method mapping at runtime."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:304
+msgid "Human-readable signal name"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:307
+msgid "Get human-readable name for a signal constant."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:313
+msgid "true if any signals are registered, false if not"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:316
+msgid "Check if any signals are registered."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:320
+msgid "Array of registered signal constants"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:323
+msgid "Get array of registered signal constants."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:327
+msgid "Comprehensive process state information"
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:330
+msgid ""
+"Get comprehensive process state information including process ID, memory "
+"usage, signal handling status, and terminal control information."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:339
+msgid "Unregister all signals and clean up resources."
+msgstr ""
+
+#: ../../source/cli/cli_signals.rst:341
+msgid ""
+"This removes all signal handling behavior for all previously registered "
+"signals."
+msgstr ""
+

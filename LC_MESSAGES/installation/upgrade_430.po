@@ -1,0 +1,731 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_430.rst:3
+msgid "Upgrading from 4.2.12 to 4.3.0"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:5
+msgid ""
+"Please refer to the upgrade instructions corresponding to your "
+"installation method."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:7
+msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:8
+msgid ""
+":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
+"Upgrading <adding-codeigniter4-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:9
+msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:16
+msgid "Composer Version"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:18
+msgid "If you use Composer, CodeIgniter v4.3.0 requires Composer 2.0.14 or later."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:21
+msgid ""
+"If you are using older version of Composer, upgrade your ``composer`` "
+"tool, and delete the **vendor/** directory, and run ``composer update`` "
+"again."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:24
+msgid "The procedure, for example, is as follows:"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:33
+msgid "Mandatory File Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:36
+#: ../../source/installation/upgrade_430.rst:412
+msgid "spark"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:38
+msgid ""
+"The following files received significant changes and **you must merge the"
+" updated versions** with your application:"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:41
+msgid "``spark``"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:43
+msgid ""
+"If you do not update this file, Spark commands will not work at all after"
+" running ``composer update``."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:45
+msgid "The upgrade procedure, for example, is as follows:"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:53
+msgid "Config Files"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:56
+#: ../../source/installation/upgrade_430.rst:392
+msgid "app/Config/Kint.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:58
+msgid "**app/Config/Kint.php** has been updated for Kint 5.0."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:59
+msgid "You need to replace:"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:61
+msgid "``Kint\\Renderer\\Renderer`` with ``Kint\\Renderer\\AbstractRenderer``"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:62
+msgid "``Renderer::SORT_FULL`` with ``AbstractRenderer::SORT_FULL``"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:65
+#: ../../source/installation/upgrade_430.rst:333
+#: ../../source/installation/upgrade_430.rst:385
+msgid "app/Config/Exceptions.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:67
+msgid ""
+"If you are using PHP 8.2, you need to add new properties "
+"``$logDeprecations`` and ``$deprecationLogLevel``."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:70
+msgid "Mock Config Classes"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:72
+msgid ""
+"If you are using the following Mock Config classes in testing, you need "
+"to update the corresponding Config files in **app/Config**:"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:74
+msgid "``MockAppConfig`` (``Config\\App``)"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:75
+msgid "``MockCLIConfig`` (``Config\\App``)"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:76
+msgid "``MockSecurityConfig`` (``Config\\Security``)"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:78
+msgid ""
+"Add **types** to the properties in these Config classes. You may need to "
+"fix the property values to match the property types."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:81
+#: ../../source/installation/upgrade_430.rst:409
+msgid "composer.json"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:83
+msgid ""
+"If you installed CodeIgnter manually, and are using Composer, you need to"
+" remove the following lines, and run ``composer update``."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:106
+msgid "Breaking Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:109
+msgid "Database Exception Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:111
+msgid ""
+"The exception classes may be changed when database errors occur. If you "
+"catch the exceptions, you must confirm that your code can catch the "
+"exceptions."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:113
+msgid "Now a few exceptions will be thrown even if ``CI_DEBUG`` is false."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:114
+msgid ""
+"During transactions, exceptions are not thrown by default even if "
+"``DBDebug`` is true. If you want exceptions to be thrown, you need to "
+"call ``transException(true)``. See :ref:`transactions-throwing-"
+"exceptions`."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:117
+msgid "See :ref:`exceptions-when-database-errors-occur` for details."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:120
+msgid "HTTP Status Code and Exit Code of Uncaught Exceptions"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:122
+msgid ""
+"If you expect *Exception code* as *HTTP status code*, the HTTP status "
+"code will be changed. In that case, you need to implement "
+"``HTTPExceptionInterface`` in the Exception. See :ref:`error-specify-"
+"http-status-code`."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:124
+msgid ""
+"If you expect *Exit code* based on *Exception code*, the Exit code will "
+"be changed. In that case, you need to implement ``HasExitCodeInterface`` "
+"in the Exception. See :ref:`error-specify-exit-code`."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:128
+msgid "redirect()->withInput() and Validation Errors"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:130
+msgid ""
+"``redirect()->withInput()`` and Validation errors had an undocumented "
+"behavior. If you redirect with ``withInput()``, CodeIgniter stores the "
+"validation errors in the session, and you can get the errors in the "
+"redirected page from a validation object *before a new validation is "
+"run*::"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:143
+msgid "This behavior was a bug and fixed in v4.3.0."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:145
+msgid ""
+"If you have code that depends on the bug, you need to change the code. "
+"Use new Form helpers, :php:func:`validation_errors()`, "
+":php:func:`validation_list_errors()` and "
+":php:func:`validation_show_error()` to display Validation Errors, instead"
+" of the Validation object."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:150
+msgid "Validation Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:152
+msgid ""
+"``ValidationInterface`` has been changed. Implemented classes should "
+"likewise add the methods and the parameters so as not to break LSP. See "
+":ref:`v430-validation-changes` for details."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:153
+msgid ""
+"The return value of  ``Validation::loadRuleGroup()`` has been changed "
+"``null`` to ``[]`` when the ``$group`` is empty. Update the code if you "
+"depend on the behavior."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:156
+msgid "Time Fixes"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:158
+msgid ""
+"Due to bug fixes, some methods in :doc:`Time <../libraries/time>` have "
+"changed from mutable behavior to immutable; ``Time`` now extends "
+"``DateTimeImmutable``. See :ref:`ChangeLog <v430-time-fix>` for details."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:159
+msgid ""
+"If you need the behavior of ``Time`` before the modification, a "
+"compatible ``TimeLegacy`` class has been added. Please replace all "
+"``Time`` with ``TimeLegacy`` in your application code."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:160
+msgid "But ``TimeLegacy`` is deprecated. So we recommend you update your code."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:162
+msgid "E.g.::"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:195
+msgid "Capturing STDERR and STDOUT streams in Tests"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:197
+msgid ""
+"The way error and output streams are captured has changed. Now instead "
+"of::"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:213
+msgid "need to use::"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:230
+msgid ""
+"Or use the trait ``CodeIgniter\\Test\\StreamFilterTrait``. See :ref"
+":`testing-cli-output`."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:233
+msgid "Interface Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:235
+msgid ""
+"Some interfaces has been fixed. See :ref:`v430-interface-changes` for "
+"details."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:238
+msgid "Foreign Key Data"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:240
+msgid ""
+"The data structure returned by ``BaseConnection::getForeignKeyData()`` "
+"has been changed. You will need to adjust any code depending on this "
+"method to use the new structure."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:243
+msgid "Example: ``tableprefix_table_column1_column2_foreign``"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:245
+msgid "The data returned has the following structure::"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:264
+msgid "Breaking Enhancements"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:267
+msgid "Multiple Domain Support"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:269
+msgid ""
+"If you set ``Config\\App::$allowedHostnames``, URL-related functions such"
+" as :php:func:`base_url()`, :php:func:`current_url()`, "
+":php:func:`site_url()` will return the URL with the hostname set in "
+"``Config\\App::$allowedHostnames`` if the current URL matches."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:272
+msgid "Database"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:274
+msgid ""
+"The return type of ``CodeIgniter\\Database\\Database::loadForge()`` has "
+"been changed to ``Forge``. Extending classes should likewise change the "
+"type."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:275
+msgid ""
+"The return type of ``CodeIgniter\\Database\\Database::loadUtils()`` has "
+"been changed to ``BaseUtils``. Extending classes should likewise change "
+"the type."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:276
+msgid ""
+"The second parameter ``$index`` of ``BaseBuilder::updateBatch()`` has "
+"changed to ``$constraints``. It now accepts types array, string, or "
+"``RawSql``. Extending classes should likewise change types."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:277
+msgid ""
+"The ``$set`` parameter of ``BaseBuilder::insertBatch()`` and "
+"``BaseBuilder::updateBatch()`` now accepts an object of a single row of "
+"data. Extending classes should likewise change the type."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:278
+msgid ""
+"The third parameter ``$index`` of ``BaseBuilder::_updateBatch()`` has "
+"changed to ``$values``, and the parameter type has changed to ``array``. "
+"Extending classes should likewise change the type."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:279
+msgid ""
+"The ``Model::update()`` method now raises a ``DatabaseException`` if it "
+"generates an SQL statement without a WHERE clause. If you need to update "
+"all records in a table, use Query Builder instead. E.g., "
+"``$model->builder()->update($data)``."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:285
+msgid "Honeypot and CSP"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:287
+msgid ""
+"When CSP is enabled, id attribute ``id=\"hpc\"`` will be injected into "
+"the container tag for the Honeypot field to hide the field. If the id is "
+"already used in your views, you need to change it with "
+"``Config\\Honeypot::$containerId``. And you can remove "
+"``style=\"display:none\"`` in ``Config\\Honeypot::$container``."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:293
+msgid "Others"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:295
+msgid ""
+"**Helper:** Since void HTML elements (e.g. ``<input>``) in "
+"``html_helper``, ``form_helper`` or common functions have been changed to"
+" be HTML5-compatible by default and you need to be compatible with XHTML,"
+" you must set the ``$html5`` property in **app/Config/DocTypes.php** to "
+"``false``."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:296
+msgid ""
+"**CLI:** Since the launch of Spark Commands was extracted from "
+"``CodeIgniter\\CodeIgniter``, there may be problems running these "
+"commands if the ``Services::codeigniter()`` service has been overridden."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:299
+msgid "Project Files"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:301
+#, python-format
+msgid ""
+"Numerous files in the **project space** (root, app, public, writable) "
+"received updates. Due to these files being outside of the **system** "
+"scope they will not be changed without your intervention. There are some "
+"third-party CodeIgniter modules available to assist with merging changes "
+"to the project space: `Explore on Packagist "
+"<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:307
+msgid "Content Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:309
+msgid ""
+"The following files received significant changes (including deprecations "
+"or visual adjustments) and it is recommended that you merge the updated "
+"versions with your application:"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:315
+msgid "Config"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:317
+#: ../../source/installation/upgrade_430.rst:375
+msgid "app/Config/App.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:318
+msgid ""
+"The new property ``$allowedHostnames`` is added to set allowed hostnames "
+"in the site URL other than the hostname in the ``$baseURL``. See "
+":ref:`v430-multiple-domain-support`."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:320
+msgid ""
+"The property ``$appTimezone`` has been changed to ``UTC`` to avoid being "
+"affected by daylight saving time."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:322
+#: ../../source/installation/upgrade_430.rst:376
+msgid "app/Config/Autoload.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:323
+msgid "The new property ``$helpers`` is added to autoload helpers."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:324
+#: ../../source/installation/upgrade_430.rst:381
+msgid "app/Config/Database.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:325
+msgid ""
+"``$default['DBDebug']`` and ``$test['DBDebug']`` are changed to ``true`` "
+"by default. See :ref:`exceptions-when-database-errors-occur`."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:327
+#: ../../source/installation/upgrade_430.rst:382
+msgid "app/Config/DocTypes.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:328
+msgid ""
+"The property ``$html5`` to determine whether to remove the solidus "
+"(``/``) character for void HTML elements (e.g. ``<input>``) is added, and"
+" set to ``true`` by default for HTML5 compatibility."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:330
+#: ../../source/installation/upgrade_430.rst:384
+msgid "app/Config/Encryption.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:331
+msgid ""
+"The new property ``$rawData``,  ``$encryptKeyInfo``, and ``$authKeyInfo``"
+" are added for CI3 Encryption compatibility. See :ref:`encryption-"
+"compatible-with-ci3`."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:334
+msgid ""
+"Two additional public properties were added: ``$logDeprecations`` and "
+"``$deprecationLogLevel``. See See :ref:`logging_deprecation_warnings` for"
+" details."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:336
+#: ../../source/installation/upgrade_430.rst:390
+msgid "app/Config/Honeypot.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:337
+msgid ""
+"The new property ``$containerId`` is added to set id attribute value for "
+"the container tag when CSP is enabled."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:339
+msgid ""
+"The ``input`` tag in the property ``$template`` value has been changed to"
+" HTML5 compatible."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:340
+#: ../../source/installation/upgrade_430.rst:393
+msgid "app/Config/Logger.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:341
+msgid ""
+"The property ``$threshold`` has been changed to ``9`` in other than "
+"``production`` environment."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:343
+#: ../../source/installation/upgrade_430.rst:396
+msgid "app/Config/Modules.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:344
+msgid ""
+"The new property ``$composerPackages`` is added to limit Composer package"
+" Auto-Discovery for better performance."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:346
+#: ../../source/installation/upgrade_430.rst:399
+msgid "app/Config/Routes.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:347
+msgid ""
+"Due to the fact that the approach to running Spark Commands has changed, "
+"there is no longer a need to load the internal routes of the framework "
+"(``SYSTEMPATH . 'Config/Routes.php'``)."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:349
+#: ../../source/installation/upgrade_430.rst:400
+msgid "app/Config/Security.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:350
+msgid ""
+"Changed the value of the property ``$redirect`` to ``false`` to prevent "
+"redirection when a CSRF check fails. This is to make it easier to "
+"recognize that it is a CSRF error."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:352
+#: ../../source/installation/upgrade_430.rst:401
+msgid "app/Config/Session.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:353
+msgid "Added to handle session configuration."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:354
+#: ../../source/installation/upgrade_430.rst:404
+msgid "app/Config/Validation.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:355
+msgid ""
+"The default Validation Rules have been changed to Strict Rules for better"
+" security. See :ref:`validation-traditional-and-strict-rules`."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:358
+msgid "View Files"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:360
+msgid ""
+"The following view files have been changed to HTML5 compatible tags. "
+"Also, error messages are now defined in the **Errors** language file."
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:363
+#: ../../source/installation/upgrade_430.rst:405
+msgid "app/Views/errors/html/error_404.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:364
+#: ../../source/installation/upgrade_430.rst:406
+msgid "app/Views/errors/html/error_exception.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:365
+#: ../../source/installation/upgrade_430.rst:407
+msgid "app/Views/errors/html/production.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:366
+#: ../../source/installation/upgrade_430.rst:408
+msgid "app/Views/welcome_message.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:369
+msgid "All Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:371
+msgid ""
+"This is a list of all files in the **project space** that received "
+"changes; many will be simple comments or formatting that have no effect "
+"on the runtime. All atomic type properties in ``Config`` classes have "
+"been typed:"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:377
+msgid "app/Config/CURLRequest.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:378
+msgid "app/Config/Cache.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:379
+msgid "app/Config/ContentSecurityPolicy.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:380
+msgid "app/Config/Cookie.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:383
+msgid "app/Config/Email.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:386
+msgid "app/Config/Feature.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:387
+msgid "app/Config/Filters.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:388
+msgid "app/Config/Format.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:389
+msgid "app/Config/Generators.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:391
+msgid "app/Config/Images.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:394
+msgid "app/Config/Migrations.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:395
+msgid "app/Config/Mimes.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:397
+msgid "app/Config/Pager.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:398
+msgid "app/Config/Paths.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:402
+msgid "app/Config/Toolbar.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:403
+msgid "app/Config/UserAgents.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:410
+msgid "env"
+msgstr ""
+
+#: ../../source/installation/upgrade_430.rst:411
+msgid "phpunit.xml.dist"
+msgstr ""
+

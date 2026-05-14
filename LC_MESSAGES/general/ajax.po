@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/general/ajax.rst:3
+msgid "AJAX Requests"
+msgstr ""
+
+#: ../../source/general/ajax.rst:5
+msgid ""
+"The ``IncomingRequest::isAJAX()`` method uses the ``X-Requested-With`` "
+"header to define whether the request is XHR or normal. However, the most "
+"recent JavaScript implementations (i.e., fetch) no longer send this "
+"header along with the request, thus the use of "
+"``IncomingRequest::isAJAX()`` becomes less reliable, because without this"
+" header it is not possible to define whether the request is or not XHR."
+msgstr ""
+
+#: ../../source/general/ajax.rst:7
+msgid ""
+"To get around this problem, the most efficient solution (so far) is to "
+"manually define the request header, forcing the information to be sent to"
+" the server, which will then be able to identify that the request is XHR."
+msgstr ""
+
+#: ../../source/general/ajax.rst:9
+msgid ""
+"Here's how to force the ``X-Requested-With`` header to be sent in the "
+"Fetch API and other JavaScript libraries."
+msgstr ""
+
+#: ../../source/general/ajax.rst:16
+msgid "Fetch API"
+msgstr ""
+
+#: ../../source/general/ajax.rst:29
+msgid "jQuery"
+msgstr ""
+
+#: ../../source/general/ajax.rst:31
+msgid ""
+"For libraries like jQuery for example, it is not necessary to make "
+"explicit the sending of this header, because according to the `official "
+"documentation <https://api.jquery.com/jquery.ajax/>`_ it is a standard "
+"header for all requests ``$.ajax()``. But if you still want to force the "
+"shipment to not take risks, just do it as follows:"
+msgstr ""
+
+#: ../../source/general/ajax.rst:41
+msgid "VueJS"
+msgstr ""
+
+#: ../../source/general/ajax.rst:43
+msgid ""
+"In VueJS you just need to add the following code to the ``created`` "
+"function, as long as you are using Axios for this type of request."
+msgstr ""
+
+#: ../../source/general/ajax.rst:50
+msgid "React"
+msgstr ""
+
+#: ../../source/general/ajax.rst:57
+msgid "htmx"
+msgstr ""
+
+#: ../../source/general/ajax.rst:59
+msgid ""
+"You can use `ajax-header <https://github.com/bigskysoftware/htmx-"
+"extensions/blob/main/src/ajax-header/README.md>`_ extension."
+msgstr ""
+

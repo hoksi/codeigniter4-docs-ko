@@ -1,0 +1,998 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:2
+msgid "Version 4.0.0-beta.2"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:4
+msgid "Release Date: April 4, 2019"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:11
+msgid "Highlights"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:13
+msgid ""
+"A number of fixes & improvements, importantly for the Model and testing "
+"classes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:14
+msgid "Models now require a primary key"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:15
+msgid "Generated API docs accessible at https://codeigniter4.github.io/api/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:16
+msgid "Validation rules have been enhanced"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:17
+msgid ".htaccess beefed up"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:20
+msgid "New messages"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:22
+msgid ""
+"Database.noPrimaryKey, forFindColumnHaveMultipleColumns, "
+"Database.forEmptyInputGiven"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:25
+msgid "App Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:27
+msgid "updated app/Config/Events"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:28
+msgid "added app/Controllers/BaseController"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:29
+msgid "added tests/ folder for unit testing"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:30
+msgid "added phpunit.xml.dist for unit testing configuration"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:33
+msgid "Changed Files"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:35
+msgid "The list of changed files follows, with PR numbers shown."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:37
+msgid ".htaccess #1900"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:39
+msgid "app/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:40
+#: ../../source/changelogs/v4.0.0-beta.2.rst:68
+#: ../../source/changelogs/v4.0.0-beta.2.rst:142
+msgid "Config/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:41
+msgid "Events #1856"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:42
+msgid "Controllers/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:43
+msgid "BaseController #1847"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:44
+msgid "Home #1847"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:46
+msgid "contributing/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:47
+msgid "README.rst #1846"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:48
+msgid "styleguide #1872"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:50
+msgid "contributing.md #1846"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:52
+msgid "phpdoc.dist.xml #1872"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:54
+msgid "system/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:55
+msgid "Autoloader/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:56
+msgid "FileLocator #1860"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:57
+msgid "Cache/Handlers/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:58
+msgid "FileHandler #1895"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:59
+msgid "MemcachedHandler #1895"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:60
+msgid "PredisHandler #1895"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:61
+msgid "RedisHandler #1863, #1895"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:62
+msgid "WincacheHandler #1895"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:63
+#: ../../source/changelogs/v4.0.0-beta.2.rst:140
+msgid "CLI/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:64
+msgid "CLI #1891, #1910"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:65
+msgid "Commands/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:66
+msgid "Server/Serve #1893"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:67
+msgid "Utilities/Routes #1859"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:69
+msgid "BaseConfig #1811"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:70
+msgid "Routes #1847, #1850"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:71
+#: ../../source/changelogs/v4.0.0-beta.2.rst:145
+msgid "Database/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:72
+msgid "BaseBuilder $1776, #1902"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:73
+msgid "BaseConnection #1899"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:74
+msgid "Forge #1844, #1899"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:75
+msgid "MigrationRunner #1860, #1865"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:76
+msgid "MySQLi/Connection #1896"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:77
+msgid "MySQLi/Forge #1899"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:78
+msgid "Postgre/Builder #1902"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:79
+msgid "Postgre/Forge #1899"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:80
+msgid "Query #1805, #1771"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:81
+msgid "SQLite3/Builder #1902"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:82
+msgid "SQLite3/Forge #1899"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:83
+msgid "Debug/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:84
+msgid "Toolbar/Collectors/History #1869"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:85
+msgid "Toolbar #1897"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:86
+#: ../../source/changelogs/v4.0.0-beta.2.rst:150
+msgid "Events/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:87
+msgid "Events #1867"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:88
+msgid "Exceptions/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:89
+msgid "ModelException #1829"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:90
+msgid "PageNotFoundException #1844"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:91
+msgid "Files/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:92
+msgid "File #1809, #1854"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:93
+msgid "Helpers/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:94
+msgid "date_helper #d08b68"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:95
+msgid "form_helper #1803"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:96
+msgid "html_helper #1803"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:97
+msgid "number_helper #d08b68, #1803"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:98
+msgid "security_helper #d08b68"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:99
+msgid "text_helper #d08b68, #1803"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:100
+msgid "url_helper #d08b68, #1803"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:101
+msgid "xml_helper #1803"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:102
+msgid "Honeypot/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:103
+msgid "Honeypot #1894"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:104
+#: ../../source/changelogs/v4.0.0-beta.2.rst:152
+msgid "HTTP/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:105
+msgid "Header #1769"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:106
+msgid "IncomingRequest #1831"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:107
+msgid "Language/en/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:108
+msgid "Database #1829, #1861, #1902"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:109
+#: ../../source/changelogs/v4.0.0-beta.2.rst:154
+msgid "Router/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:110
+msgid "RouteCollection #1769"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:111
+msgid "Router #1839, #1882"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:112
+msgid "Session/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:113
+msgid "Session #1769"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:114
+#: ../../source/changelogs/v4.0.0-beta.2.rst:156
+msgid "Test/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:115
+msgid "ControllerTester #1769, #1848, #1855"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:116
+msgid "DOMParser #1848"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:117
+#: ../../source/changelogs/v4.0.0-beta.2.rst:159
+msgid "Validation/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:118
+msgid "FormatRules #1762, #1863"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:119
+msgid "Rules #1791, #1814, #1818, #1862"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:120
+msgid "Validation #1769"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:121
+msgid "Views/list #1828"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:122
+#: ../../source/changelogs/v4.0.0-beta.2.rst:162
+msgid "View/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:123
+msgid "Filters #1769"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:124
+msgid "Parser #1769"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:125
+msgid "View #1769, #1827"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:126
+msgid "CodeIgniter #1769, #1804, #1590"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:127
+msgid "Common #1802, #895ae0"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:128
+msgid "ComposerScripts #1804"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:129
+msgid "Controller #1769, #1850"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:130
+msgid "Entity #1769, #1804"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:131
+msgid "Model #1793, #1769, #1804, #1808, #1812, #1813, #1817, #1829, #1746, #1861"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:133
+msgid "tests/system/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:134
+msgid "Cache/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:135
+msgid "Handlers/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:136
+msgid "FileHandlerTest #1796, #1895"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:137
+msgid "MemcachedHandlerTest #1895"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:138
+msgid "RedisHandlerTest #1895"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:139
+msgid "CacheFactoryTest #1796"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:141
+msgid "CLITest #1910"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:143
+msgid "BaseConfigTest #1811"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:144
+msgid "ConfigTest #1811"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:146
+msgid "Builder/EmptyTest #1902"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:147
+msgid "Builder/SelectTest #1902"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:148
+msgid "Live/ModelTest #1817, #1829, #1861"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:149
+msgid "Live/WhereTest #1906"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:151
+msgid "EventsTest #1867"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:153
+msgid "ContentSecurityPolicyTest #1848"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:155
+msgid "RouteCollectionTest #1822, #1912, #1913"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:157
+msgid "ControllerTesterTest #1848, #1855"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:158
+msgid "DOMParserTest #1848"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:160
+msgid "FormatRulesTest #1762"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:161
+msgid "RulesTest #1791"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:163
+msgid "ViewTest #1827, #1836"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:164
+msgid "ControllerTest #1850"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:166
+msgid "user_guide_src/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:167
+msgid "cli/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:168
+msgid "cli_commands #1777"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:169
+msgid "cli_library #1892, #1910"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:170
+msgid "concepts/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:171
+msgid "services #1811"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:172
+msgid "database/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:173
+msgid "examples #1794"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:174
+msgid "dbmgmt/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:175
+msgid "forge #1844, #1899"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:176
+msgid "migration #1860, #1865"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:177
+msgid "extending/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:178
+msgid "basecontroller #1847"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:179
+msgid "core_classes #1847"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:180
+msgid "general/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:181
+msgid "common_functions #1802, #1895"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:182
+msgid "helpers/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:183
+msgid "number_helper #d08b68"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:184
+msgid "url_helper #1803"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:185
+msgid "incoming/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:186
+msgid "routing #1908"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:187
+msgid "libraries/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:188
+msgid "caching #1895"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:189
+msgid "files #1790, #1854"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:190
+msgid "pagination #1823"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:191
+msgid "sessions #1843"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:192
+msgid "validation #1814, #1828, #1862"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:193
+msgid "models/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:194
+msgid "models #1817, #1820, #1829, #1746, #1861"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:195
+msgid "outgoing/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:196
+msgid "view_layouts #1827"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:197
+msgid "testing/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:198
+msgid "controllers #1848"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:201
+msgid "PRs merged"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:203
+msgid "#1913 More RouteCollection tests for overwriting. Closes #1692"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:204
+msgid "#1912 Additional RouteCollectionTests"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:205
+msgid ""
+"#1910 Added print method to CLI library so you can print multiple times "
+"on same line"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:206
+msgid "#1908 Add filter parameters to User Guide"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:207
+msgid "#1906 SubQuery related test cases w.r.t #1775"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:208
+msgid "#1902 BaseBuilder corrections"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:209
+msgid "#1900 Update .htaccess for better security and caching"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:210
+msgid "#1899 Database Forge correction"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:211
+msgid "#1897 Toolbar fix w.r.t #1779"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:212
+msgid "#1896 Mysql connection issue with SSL cert (#1219)"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:213
+msgid "#1894 Typos fixings"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:214
+msgid "#1893 Fix spark serve with remove escapeshellarg()"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:215
+msgid "#1892 Add CLI background color list to the user guide"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:216
+msgid "#1891 Allow CLI::strlen null parameter"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:217
+msgid "#1886 Fixed issue #1880, fixed a few typos and updated code style"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:218
+msgid "#1882 Router Changes w.r.t #1541"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:219
+msgid "#1873-1889 Docs: move namespace declarations & add missing class docblocks"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:220
+msgid "#1872 Docs: fix phpdoc config"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:221
+msgid "#1871 Unmatched Cache Library `get()` return null"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:222
+msgid "#1869 History::SetFiles check #1778"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:223
+msgid "#1863 Module wise Typos changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:224
+msgid "#1861 New method Find Column w.r.t. #1619"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:225
+msgid "#1860 Migrationrunner use autoloader"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:226
+msgid "#1867 Events should actually work with any callable now. Fixes #1835"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:227
+msgid "#1865 MigrationRunner issue with definition resolved"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:228
+msgid "#1862 required_with and required_without definition changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:229
+msgid "#1859 Ignore callbacks in routes list"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:230
+msgid "#1858 Typos correction in DB module"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:231
+msgid "#1856 ensure ob_end_flush() when ob_get_level() > 0 on pre_system event"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:232
+msgid "#1855 Fix: ControllerTester::execute. Fixes #1834"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:233
+msgid ""
+"#1854 File::move now returns new file instance for relocated file. Fixes "
+"#1782"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:234
+msgid "#1851 Replace old CI3 .gitignore with root CI4 version"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:235
+msgid "#1850 Secure routable controller methods"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:236
+msgid "#1848 Test: fix & test Test/ControllerTest, tested"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:237
+msgid "#1847 Extend Controller to BaseController by default"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:238
+msgid "#1846 Fix contributing links"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:239
+msgid "#1844 Model Fix"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:240
+msgid "#1843 Replace CI3 $this->input reference"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:241
+msgid "#1842 Exception 'forPageNotFound' missing default value"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:242
+msgid "#1839 Dont replace slashes with backslashes in the to route"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:243
+msgid "#1836 Test: Improve View\\View coverage"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:244
+msgid "#1831 Fix some PHPDoc comments error"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:245
+msgid ""
+"#1829 Improve: Models now require a primary key. This is partially to "
+"keep the code ..."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:246
+msgid "#1828 Fix: Remove bootstrap styles from validation views."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:247
+msgid ""
+"#1827 Fix: Adding include method to View library to render view "
+"partials... views."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:248
+msgid "#1823 Docs: Remove legacy Bootstrap references in Pagination class"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:249
+msgid "#1822 Test: enhance RouteCollection coverage"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:250
+msgid "#1820 Fix: Correct sphinx errors in model.rst"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:251
+msgid "#1819 Improve: Add apibot for API docs using phpDocumentor"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:252
+msgid "#1818 Improve: Code improvement in exact_length Rule"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:253
+msgid "#1817 Improve: Model setValidationMessage functions introduced"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:254
+msgid "#895ae0 Fix: Start session whenver using the old command"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:255
+msgid "#1814 Enhance: extended exact_length[1,3,5]"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:256
+msgid "#1813 Fix: Model::save fix for earlier PRs"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:257
+msgid "#1812 Test: Improve Filters coverage"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:258
+msgid "#1811 Test: Config module coverage improved"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:259
+msgid "#1809 Fix file move failed. Fixex #1785"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:260
+msgid "#1808 Fix: Fix save method return value"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:261
+msgid "#1805 Docs: Query Class Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:262
+msgid "#1804 Docs: Some Base Functional Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:263
+msgid "#1803 Docs: Some Helper Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:264
+msgid "#1802 Docs: Common function correction"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:265
+msgid "#1796 Test: Improve Cache coverage"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:266
+msgid "#1794 Replace nonexistent \"getAffectedRows\""
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:267
+msgid "#1793 Set Model->chunk return type"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:268
+msgid "#1791 Fix: Remove is_numeric tests in Validation\\Rules"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:269
+msgid "#d08b68 Fix in ControllerTester for missing UserAgent"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:270
+msgid "#1790 Correction of typos in documentation as mentioned in issue #1781"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:271
+msgid "#1777 Add CLI namespace to example"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:272
+msgid "#1776 Fix: replace only last operator in field name"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:273
+msgid "#1771 Fix: fix typo in matchSimpleBinds"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:274
+msgid "#1769 Correction in Methods and Spellings"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:275
+msgid "#1762 Fix: decimal rule. shouldn't it accept integers?"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:276
+msgid ""
+"#1746 Improve: Update Model, to selective update created_at / updated_at "
+"field."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.2.rst:277
+msgid "#1590 Improve: Enhance 404Override"
+msgstr ""
+

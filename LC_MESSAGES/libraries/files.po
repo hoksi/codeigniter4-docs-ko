@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/libraries/files.rst:3
+msgid "Working with Files"
+msgstr ""
+
+#: ../../source/libraries/files.rst:5
+msgid ""
+"CodeIgniter provides a File class that wraps the `SplFileInfo "
+"<https://www.php.net/manual/en/class.splfileinfo.php>`_ class and "
+"provides some additional convenience methods. This class is the base "
+"class for :doc:`uploaded files </libraries/uploaded_files>` and "
+":doc:`images </libraries/images>`."
+msgstr ""
+
+#: ../../source/libraries/files.rst:14
+msgid "Getting a File instance"
+msgstr ""
+
+#: ../../source/libraries/files.rst:16
+msgid ""
+"You create a new File instance by passing in the path to the file in the "
+"constructor."
+msgstr ""
+
+#: ../../source/libraries/files.rst:21
+msgid ""
+"By default, the file does not need to exist. However, you can pass an "
+"additional argument of ``true`` to check that the file exists and throw "
+"``FileNotFoundException()`` if it does not."
+msgstr ""
+
+#: ../../source/libraries/files.rst:25
+msgid "Taking Advantage of Spl"
+msgstr ""
+
+#: ../../source/libraries/files.rst:27
+msgid ""
+"Once you have an instance, you have the full power of the SplFileInfo "
+"class at the ready, including:"
+msgstr ""
+
+#: ../../source/libraries/files.rst:33
+msgid "New Features"
+msgstr ""
+
+#: ../../source/libraries/files.rst:35
+msgid ""
+"In addition to all of the methods in the SplFileInfo class, you get some "
+"new tools."
+msgstr ""
+
+#: ../../source/libraries/files.rst:38
+msgid "getRandomName()"
+msgstr ""
+
+#: ../../source/libraries/files.rst:40
+msgid ""
+"You can generate a cryptographically secure random filename, with the "
+"current timestamp prepended, with the ``getRandomName()`` method. This is"
+" especially useful to rename files when moving it so that the filename is"
+" unguessable:"
+msgstr ""
+
+#: ../../source/libraries/files.rst:47
+msgid "getSize()"
+msgstr ""
+
+#: ../../source/libraries/files.rst:49
+msgid "Returns the size of the file in bytes:"
+msgstr ""
+
+#: ../../source/libraries/files.rst:54 ../../source/libraries/files.rst:67
+#: ../../source/libraries/files.rst:84 ../../source/libraries/files.rst:101
+msgid ""
+"A ``RuntimeException`` will be thrown if the file does not exist or an "
+"error occurs."
+msgstr ""
+
+#: ../../source/libraries/files.rst:57
+msgid "getSizeByUnit()"
+msgstr ""
+
+#: ../../source/libraries/files.rst:61
+msgid ""
+"Returns the size of the file default in bytes. You can pass in either "
+"``'kb'`` or ``'mb'`` as the first parameter to get the results in "
+"kibibytes or mebibytes, respectively:"
+msgstr ""
+
+#: ../../source/libraries/files.rst:73
+msgid "getSizeByBinaryUnit()"
+msgstr ""
+
+#: ../../source/libraries/files.rst:77
+msgid ""
+"Returns the size of the file default in bytes. You can pass in different "
+"FileSizeUnit values as the first parameter to get the results in "
+"kibibytes, mebibytes etc. respectively. You can pass in a precision value"
+" as the second parameter to define the amount of decimal places."
+msgstr ""
+
+#: ../../source/libraries/files.rst:90
+msgid "getSizeByMetricUnit()"
+msgstr ""
+
+#: ../../source/libraries/files.rst:94
+msgid ""
+"Returns the size of the file default in bytes. You can pass in different "
+"FileSizeUnit values as the first parameter to get the results in "
+"kilobytes, megabytes etc. respectively. You can pass in a precision value"
+" as the second parameter to define the amount of decimal places."
+msgstr ""
+
+#: ../../source/libraries/files.rst:104
+msgid "getMimeType()"
+msgstr ""
+
+#: ../../source/libraries/files.rst:106
+msgid ""
+"Retrieve the media type (mime type) of the file. Uses methods that are "
+"considered as secure as possible when determining the type of file:"
+msgstr ""
+
+#: ../../source/libraries/files.rst:113
+msgid "guessExtension()"
+msgstr ""
+
+#: ../../source/libraries/files.rst:115
+msgid ""
+"Attempts to determine the file extension based on the trusted "
+"``getMimeType()`` method. If the mime type is unknown, will return null. "
+"This is often a more trusted source than simply using the extension "
+"provided by the filename. Uses the values in **app/Config/Mimes.php** to "
+"determine extension:"
+msgstr ""
+
+#: ../../source/libraries/files.rst:123
+msgid "Moving Files"
+msgstr ""
+
+#: ../../source/libraries/files.rst:125
+msgid ""
+"Each file can be moved to its new location with the aptly named "
+"``move()`` method. This takes the directory to move the file to as the "
+"first parameter:"
+msgstr ""
+
+#: ../../source/libraries/files.rst:131
+msgid ""
+"By default, the original filename was used. You can specify a new "
+"filename by passing it as the second parameter:"
+msgstr ""
+
+#: ../../source/libraries/files.rst:136
+msgid ""
+"The ``move()`` method returns a new File instance that for the relocated "
+"file, so you must capture the result if the resulting location is needed:"
+msgstr ""
+

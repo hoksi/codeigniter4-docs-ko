@@ -1,0 +1,244 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/database/metadata.rst:3
+msgid "Getting Metadata"
+msgstr ""
+
+#: ../../source/database/metadata.rst:11
+msgid "Table Metadata"
+msgstr ""
+
+#: ../../source/database/metadata.rst:13
+msgid "These functions let you fetch table information."
+msgstr ""
+
+#: ../../source/database/metadata.rst:16
+msgid "List the Tables in Your Database"
+msgstr ""
+
+#: ../../source/database/metadata.rst:19
+msgid "$db->listTables()"
+msgstr ""
+
+#: ../../source/database/metadata.rst:21
+msgid ""
+"Returns an array containing the names of all the tables in the database "
+"you are currently connected to. Example:"
+msgstr ""
+
+#: ../../source/database/metadata.rst:26
+msgid ""
+"Some drivers have additional system tables that are excluded from this "
+"return."
+msgstr ""
+
+#: ../../source/database/metadata.rst:29
+msgid "Determine If a Table Exists"
+msgstr ""
+
+#: ../../source/database/metadata.rst:32
+msgid "$db->tableExists()"
+msgstr ""
+
+#: ../../source/database/metadata.rst:34
+msgid ""
+"Sometimes it's helpful to know whether a particular table exists before "
+"running an operation on it. Returns a boolean true/false. Usage example:"
+msgstr ""
+
+#: ../../source/database/metadata.rst:39
+msgid "Replace *table_name* with the name of the table you are looking for."
+msgstr ""
+
+#: ../../source/database/metadata.rst:43
+msgid "Field Metadata"
+msgstr ""
+
+#: ../../source/database/metadata.rst:46
+msgid "List the Fields in a Table"
+msgstr ""
+
+#: ../../source/database/metadata.rst:49
+msgid "$db->getFieldNames()"
+msgstr ""
+
+#: ../../source/database/metadata.rst:51
+msgid ""
+"Returns an array containing the field names. This query can be called two"
+" ways:"
+msgstr ""
+
+#: ../../source/database/metadata.rst:54
+msgid "You can supply the table name and call it from the ``$db`` object:"
+msgstr ""
+
+#: ../../source/database/metadata.rst:58
+msgid ""
+"You can gather the field names associated with any query you run by "
+"calling the function from your query result object:"
+msgstr ""
+
+#: ../../source/database/metadata.rst:64
+msgid "Determine If a Field is Present in a Table"
+msgstr ""
+
+#: ../../source/database/metadata.rst:67
+msgid "$db->fieldExists()"
+msgstr ""
+
+#: ../../source/database/metadata.rst:69
+msgid ""
+"Sometimes it's helpful to know whether a particular field exists before "
+"performing an action. Returns a boolean true/false. Usage example:"
+msgstr ""
+
+#: ../../source/database/metadata.rst:74
+msgid ""
+"Replace *field_name* and *table_name* with the column name and the table "
+"name you are looking for."
+msgstr ""
+
+#: ../../source/database/metadata.rst:77
+msgid "Retrieve Field Metadata"
+msgstr ""
+
+#: ../../source/database/metadata.rst:82
+msgid "$db->getFieldData()"
+msgstr ""
+
+#: ../../source/database/metadata.rst:84
+msgid "Returns an array of objects containing field information."
+msgstr ""
+
+#: ../../source/database/metadata.rst:86
+msgid ""
+"Sometimes it's helpful to gather the field names or other metadata, like "
+"the column type, max length, etc."
+msgstr ""
+
+#: ../../source/database/metadata.rst:89
+msgid "Not all databases provide metadata."
+msgstr ""
+
+#: ../../source/database/metadata.rst:91 ../../source/database/metadata.rst:128
+#: ../../source/database/metadata.rst:145
+msgid "Usage example:"
+msgstr ""
+
+#: ../../source/database/metadata.rst:95
+msgid ""
+"The following data is available from this function if supported by your "
+"database:"
+msgstr ""
+
+#: ../../source/database/metadata.rst:98
+msgid "``name`` - column name"
+msgstr ""
+
+#: ../../source/database/metadata.rst:99
+msgid "``type`` - the type of the column"
+msgstr ""
+
+#: ../../source/database/metadata.rst:100
+msgid "``max_length`` - maximum length of the column"
+msgstr ""
+
+#: ../../source/database/metadata.rst:101
+msgid ""
+"``nullable`` - boolean ``true`` if the column is nullable, otherwise "
+"boolean ``false``"
+msgstr ""
+
+#: ../../source/database/metadata.rst:102
+msgid "``default`` - the default value"
+msgstr ""
+
+#: ../../source/database/metadata.rst:103
+msgid ""
+"``primary_key`` - integer ``1`` if the column is a primary key (all "
+"integer ``1``, even if there are multiple primary keys), otherwise "
+"integer ``0`` (This field is currently only available for ``MySQLi`` and "
+"``SQLite3``)"
+msgstr ""
+
+#: ../../source/database/metadata.rst:105
+msgid "Since v4.4.0, SQLSRV supported ``nullable``."
+msgstr ""
+
+#: ../../source/database/metadata.rst:108
+msgid "$query->getFieldData()"
+msgstr ""
+
+#: ../../source/database/metadata.rst:110
+msgid ""
+"If you have run a query already you can use the result object instead of "
+"supplying the table name:"
+msgstr ""
+
+#: ../../source/database/metadata.rst:115
+msgid ""
+"The data returned is different from the data from "
+"``$db->getFieldData()``. If you cannot get the data you need, use "
+"``$db->getFieldData()``."
+msgstr ""
+
+#: ../../source/database/metadata.rst:119
+msgid "List the Indexes in a Table"
+msgstr ""
+
+#: ../../source/database/metadata.rst:124
+msgid "$db->getIndexData()"
+msgstr ""
+
+#: ../../source/database/metadata.rst:126
+msgid "Returns an array of objects containing index information."
+msgstr ""
+
+#: ../../source/database/metadata.rst:132
+msgid ""
+"The key types may be unique to the database you are using. For instance, "
+"MySQL will return one of primary, fulltext, spatial, index or unique for "
+"each key associated with a table."
+msgstr ""
+
+#: ../../source/database/metadata.rst:136
+msgid ""
+"SQLite3 returns a pseudo index named ``PRIMARY``. But it is a special "
+"index, and you can't use it in your SQL commands."
+msgstr ""
+
+#: ../../source/database/metadata.rst:141
+msgid "$db->getForeignKeyData()"
+msgstr ""
+
+#: ../../source/database/metadata.rst:143
+msgid "Returns an array of objects containing foreign key information."
+msgstr ""
+
+#: ../../source/database/metadata.rst:149
+msgid ""
+"Foreign keys use the naming convention "
+"``tableprefix_table_column1_column2_foreign``. Oracle uses a slightly "
+"different suffix of ``_fk``."
+msgstr ""
+

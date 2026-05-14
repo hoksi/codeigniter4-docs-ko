@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_routing.rst:2
+msgid "Upgrade Routing"
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:9
+msgid "Documentations"
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:11
+msgid ""
+"`URI Routing Documentation CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/general/routing.html>`_"
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:12
+msgid ":doc:`URI Routing Documentation CodeIgniter 4.x </incoming/routing>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:15
+msgid "What has been changed"
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:17
+msgid "In CI4 the Auto Routing is disabled by default."
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:18
+msgid "In CI4 the new more secure :ref:`auto-routing-improved` is introduced."
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:19
+msgid "In CI4 the routing is no longer configured by setting the routes as array."
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:20
+msgid ""
+"The Wildcard ``(:any)`` In CI3 will be the Placeholder ``(:segment)`` in "
+"CI4. The ``(:any)`` in CI4 matches multiple segements. See :ref:`URI "
+"Routing <routing-placeholder-any>`."
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:23
+msgid "Upgrade Guide"
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:25
+msgid ""
+"If you use the Auto Routing in the same way as CI3, you need to enable "
+":ref:`auto-routing-legacy`."
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:26
+msgid ""
+"You have to change the syntax of each routing line and append it in "
+"**app/Config/Routes.php**. For example:"
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:28
+msgid ""
+"``$route['journals'] = 'blogs';`` to ``$routes->add('journals', "
+"'Blogs::index');``. This would map to the ``index()`` method in the "
+"``Blogs`` controller."
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:29
+msgid ""
+"``$route['product/(:any)'] = 'catalog/product_lookup';`` to "
+"``$routes->add('product/(:segment)', 'Catalog::productLookup');``. Don't "
+"forget to replace ``(:any)`` with ``(:segment)``."
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:30
+msgid ""
+"``$route['login/(.+)'] = 'auth/login/$1';`` to "
+"``$routes->add('login/(.+)', 'Auth::login/$1');``"
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:32
+#: ../../source/installation/upgrade_routing.rst:51
+msgid ""
+"For backward compatibility, ``$routes->add()`` is used here. But we "
+"strongly recommend to use :ref:`routing-http-verb-routes` like "
+"``$routes->get()`` instead of ``$routes->add()`` for security."
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:37
+msgid "Code Example"
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:40
+msgid "CodeIgniter Version 3.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:41
+msgid "Path: **application/config/routes.php**:"
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:46
+msgid "CodeIgniter Version 4.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_routing.rst:47
+msgid "Path: **app/Config/Routes.php**:"
+msgstr ""
+

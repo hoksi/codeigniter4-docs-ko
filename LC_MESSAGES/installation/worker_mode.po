@@ -1,0 +1,717 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/worker_mode.rst:3
+msgid "Worker Mode"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:11
+msgid ""
+"Worker Mode is currently **experimental**. The only officially supported "
+"worker implementation is **FrankenPHP**, which is backed by the PHP "
+"Foundation."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:16
+msgid "Introduction"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:19
+msgid "What is Worker Mode?"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:21
+msgid ""
+"Worker Mode is a performance optimization feature that allows CodeIgniter"
+" to handle multiple HTTP requests within the same PHP process, instead of"
+" starting a new process for each request like traditional PHP-FPM does."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:26
+msgid "Traditional PHP vs Worker Mode"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:28
+msgid "**Traditional PHP (PHP-FPM)**"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:30
+msgid "In traditional PHP, each HTTP request goes through this cycle:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:32
+msgid "Web server receives request and spawns a new PHP process"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:33
+msgid "PHP loads and parses all required files"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:34
+msgid "Framework bootstraps: autoloader, configuration, services, routes"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:35
+msgid "Database connections are established"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:36
+msgid "Request is processed and response is sent"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:37
+msgid "All connections are closed"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:38
+msgid "PHP process terminates, freeing all memory"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:40
+msgid ""
+"This \"shared nothing\" architecture is simple and safe, but inefficient "
+"for high-traffic applications because steps 2-4 repeat for every single "
+"request."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:43
+msgid "**Worker Mode**"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:45
+msgid "In Worker Mode, the lifecycle changes dramatically:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:47
+msgid "Worker process starts and performs one-time initialization:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:49
+msgid "Loads and parses all required files (cached in OPcache)"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:50
+msgid "Bootstraps framework: autoloader, configuration, services, routes"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:51
+msgid "Establishes database and cache connections"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:53
+msgid "For each incoming request:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:55
+msgid "Reuses existing connections and cached resources"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:56
+msgid ""
+"Resets only request-specific state (superglobals, request/response "
+"objects)"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:57
+msgid "Processes request and sends response"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:58
+msgid "Cleans up request-specific data"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:60
+msgid "Worker continues running, ready for the next request"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:62
+msgid ""
+"This approach eliminates redundant initialization work and connection "
+"overhead, resulting in **2-3x performance improvements** for typical "
+"database-driven applications."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:66
+msgid "How CodeIgniter Manages State"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:68
+msgid ""
+"The key challenge in Worker Mode is preventing state from leaking between"
+" requests. CodeIgniter handles this through several mechanisms:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:71
+msgid "**Services Reset**"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:72
+msgid ""
+"Most services are destroyed and recreated for each request. Only services"
+" listed in ``$persistentServices`` survive between requests."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:75
+msgid "**Factories Reset**"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:76
+msgid ""
+"All Factories (Models, Config instances) are reset between requests, "
+"ensuring fresh instances without stale data."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:79
+msgid "**Superglobals Isolation**"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:80
+msgid ""
+"Request data (``$_GET``, ``$_POST``, ``$_SERVER``, etc.) is properly "
+"isolated per request through the Superglobals service."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:83
+msgid "**Connection Persistence**"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:84
+msgid ""
+"Database and cache connections are validated at request start and reused "
+"if healthy. Unhealthy connections are automatically re-established."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:89
+msgid "Getting Started"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:92
+msgid "Installation"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:94
+msgid ""
+"Install FrankenPHP following the `official documentation "
+"<https://frankenphp.dev/>`_"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:96
+msgid ""
+"You can use a static binary or Docker. Here, we will assume we use a "
+"static binary, which can be `downloaded directly "
+"<https://github.com/php/frankenphp/releases/>`_."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:99
+msgid "Install the Worker Mode template files using the spark command:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:105
+msgid "This command creates two files:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:107
+msgid "**Caddyfile** - FrankenPHP configuration file with worker mode enabled"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:108
+msgid ""
+"**public/frankenphp-worker.php** - Worker entry point that handles the "
+"request loop"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:110
+msgid ""
+"Configure your worker settings in **app/Config/WorkerMode.php** if "
+"needed. The defaults are recommended for most applications."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:114
+msgid "Running the Worker"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:116
+msgid "Start FrankenPHP using the generated Caddyfile:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:122
+msgid ""
+"The server will start with worker mode enabled, handling requests through"
+" the worker entry point."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:124
+msgid "To run in the background (daemon mode):"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:131
+msgid "Uninstalling"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:133
+msgid "To remove the Worker Mode template files:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:139
+msgid "This removes the **Caddyfile** and **public/frankenphp-worker.php** files."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:143
+msgid "Performance Benchmarks"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:145
+msgid ""
+"Worker Mode typically provides **2-3x performance improvements** for "
+"database-driven applications. The actual gains depend on your "
+"application's characteristics:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:149
+msgid "Scenario"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:149
+msgid "Expected Improvement"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:151
+msgid "**Simple endpoints**"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:151
+msgid ""
+"Applications returning minimal JSON responses show modest improvements "
+"(10-30%), as there's little bootstrap overhead to eliminate."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:154
+msgid "**Database queries**"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:154
+msgid ""
+"Endpoints performing database queries typically see **2-3x** improvements"
+" from connection reuse and reduced initialization overhead."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:157
+msgid "**Complex bootstrap**"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:157
+msgid ""
+"Applications with many services, routes, or configuration see the largest"
+" gains, as this overhead is eliminated entirely."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:162
+msgid "Worker Count Considerations"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:164
+msgid ""
+"Total throughput scales with worker count. Match worker count to your "
+"typical concurrency patterns and available CPU cores. Too few workers "
+"limit concurrency; too many waste memory."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:168
+msgid "First Request Latency"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:170
+msgid ""
+"The initial request to each worker is slower due to bootstrap and "
+"connection establishment. Subsequent requests benefit from cached "
+"resources and persistent connections."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:175
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:177
+msgid ""
+"All worker mode configuration is managed through the "
+"**app/Config/WorkerMode.php** file."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:180
+msgid "Configuration Options"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:183
+msgid "Option"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:183
+msgid "Type"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:183
+msgid "Description"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:185
+msgid "**$persistentServices**"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:185
+#: ../../source/installation/worker_mode.rst:189
+msgid "array"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:185
+msgid ""
+"Services that persist across requests and are not reset. Services not in "
+"this list are destroyed after each request to prevent state leakage. "
+"Default: ``['autoloader', 'locator', 'exceptions', 'commands', "
+"'codeigniter', 'superglobals', 'routes', 'cache']``"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:189
+msgid "**$resetEventListeners**"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:189
+msgid ""
+"Event names whose listeners are removed between requests. Use this when "
+"you register event listeners inside other event callbacks rather than at "
+"the top level of **Config/Events.php**, which would cause them to "
+"accumulate across requests. Default: ``[]``"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:193
+msgid "**$forceGarbageCollection**"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:193
+msgid "bool"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:193
+msgid ""
+"Whether to force garbage collection after each request. ``true`` "
+"(default, recommended): Prevents memory leaks. ``false``: Relies on PHP's"
+" automatic garbage collection."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:199
+msgid "Persistent Services"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:201
+msgid ""
+"The ``$persistentServices`` array controls which services survive between"
+" requests. The default configuration includes:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:205
+msgid "Service"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:205
+msgid "Purpose"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:207
+msgid "``autoloader``"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:207
+msgid ""
+"PSR-4 autoloading configuration. Safe to persist as class maps don't "
+"change."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:208
+msgid "``locator``"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:208
+msgid ""
+"File locator for finding framework files. Caches file paths for "
+"performance."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:209
+msgid "``exceptions``"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:209
+msgid "Exception handler. Stateless, safe to reuse."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:210
+msgid "``commands``"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:210
+msgid "CLI commands registry. Only used during worker startup."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:211
+msgid "``codeigniter``"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:211
+msgid "Main application instance. Orchestrates the request/response cycle."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:212
+msgid "``superglobals``"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:212
+msgid "Superglobals wrapper. Properly isolated per request internally."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:213
+msgid "``routes``"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:213
+msgid "Router configuration. Route definitions don't change between requests."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:214
+msgid "``cache``"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:214
+msgid "Cache service. Maintains connections to cache backends (Redis, Memcached)."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:217
+msgid ""
+"Adding services to ``$persistentServices`` without understanding their "
+"state management can cause data leakage between requests. Only persist "
+"services that are truly stateless or manage their own request isolation."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:224
+msgid "Reset Event Listeners"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:228
+msgid ""
+"Event listeners registered at the top level of **Config/Events.php** are "
+"loaded once at worker startup and persist correctly across requests. "
+"However, if you register a listener inside another event's callback, it "
+"will be re-registered on every request and accumulate:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:235
+msgid ""
+"To clean up such listeners between requests, add the event name to "
+"``$resetEventListeners`` in **app/Config/WorkerMode.php**:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:240
+msgid ""
+"The recommended approach is to register listeners at the top level of "
+"**Config/Events.php** instead of inside callbacks. Use "
+"``$resetEventListeners`` only when registering inside a callback is "
+"unavoidable."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:246
+msgid "Optimize Configuration"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:248
+msgid ""
+"The ``app/Config/Optimize.php`` configuration options (Config Caching and"
+" File Locator Caching) should **NOT** be used with Worker Mode."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:251
+msgid ""
+"These optimizations were designed for traditional PHP where each request "
+"starts fresh. In Worker Mode, the persistent process already provides "
+"these benefits naturally, and enabling them can cause issues with stale "
+"data."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:255
+msgid ""
+"Do not enable ``$configCacheEnabled`` or ``$locatorCacheEnabled`` in "
+"**app/Config/Optimize.php** when using Worker Mode."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:259
+msgid "OPcache Settings"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:261
+msgid ""
+"Worker Mode benefits significantly from OPcache. Ensure it's enabled and "
+"properly configured:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:272
+msgid "Important Considerations"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:275
+msgid "State Management"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:277
+msgid ""
+"Since the PHP process persists across requests, careful attention to "
+"state management is essential:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:279
+msgid ""
+"**Avoid static properties** for request-specific data, as these persist "
+"between requests"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:280
+msgid "**Be cautious with singletons** that might retain request state"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:281
+msgid ""
+"**Clean up resources** like file handles and database cursors after each "
+"request"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:282
+msgid "**Don't store user data** in class properties that persist across requests"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:285
+msgid "Registrars"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:287
+msgid ""
+"Config registrars (``Config/Registrar.php`` files) work correctly in "
+"Worker Mode. Registrar files are discovered once when the worker starts, "
+"and registrar logic is applied every time a Config class is instantiated."
+" Each request gets a fresh Config instance with registrars applied."
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:293
+msgid "Memory Management"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:295
+msgid "Monitor memory usage:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:301
+msgid "If memory grows continuously:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:303
+msgid "Verify garbage collection is enabled (``$forceGarbageCollection = true``)"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:304
+msgid "Ensure resources are properly closed after use"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:305
+msgid "Unset large objects when no longer needed"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:306
+msgid "Check for circular references that prevent garbage collection"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:309
+msgid "Debugging"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:311
+msgid ""
+"Worker Mode can make debugging more challenging since the process "
+"persists across requests:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:313
+msgid ""
+"**Restart workers after code changes** - workers don't auto-reload "
+"modified files"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:314
+msgid ""
+"**Check logs** in **writable/logs/** for connection and state-related "
+"issues"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:315
+msgid ""
+"**Use logging liberally** to trace request flow across the persistent "
+"process"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:318
+msgid "Session and Cache Handlers"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:320
+msgid ""
+"**File-based handlers** may experience file locking contention between "
+"workers. For production environments, consider using:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:323
+msgid "**Redis** or **Memcached** for sessions and cache"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:324
+msgid "These provide better concurrency and automatic connection persistence"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:327
+msgid "Database Connections"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:329
+msgid "Database connections are automatically managed:"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:331
+msgid "Connections persist across requests for performance"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:332
+msgid "Connections are validated at the start of each request"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:333
+msgid "Failed connections are automatically re-established"
+msgstr ""
+
+#: ../../source/installation/worker_mode.rst:334
+msgid ""
+"Uncommitted transactions are automatically rolled back with a warning "
+"logged"
+msgstr ""
+

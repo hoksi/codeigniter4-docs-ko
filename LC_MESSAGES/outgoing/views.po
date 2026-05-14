@@ -1,0 +1,338 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/outgoing/views.rst:3
+msgid "Views"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:9
+msgid ""
+"A view is simply a web page, or a page fragment, like a header, footer, "
+"sidebar, etc. In fact, views can flexibly be embedded within other views "
+"(within other views, etc.) if you need this type of hierarchy."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:13
+msgid ""
+"Views are never called directly, they must be loaded by a controller or "
+":ref:`view route <view-routes>`."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:15
+msgid ""
+"Remember that in an MVC framework, the Controller acts as the traffic "
+"cop, so it is responsible for fetching a particular view. If you have not"
+" read the :doc:`Controllers </incoming/controllers>` page, you should do "
+"so before continuing."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:19
+msgid ""
+"Using the example controller you created in the controller page, let's "
+"add a view to it."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:22
+msgid "Creating a View"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:24
+msgid ""
+"Using your text editor, create a file called **blog_view.php** and put "
+"this in it::"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:35
+msgid "Then save the file in your **app/Views** directory."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:38
+msgid "Displaying a View"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:40
+msgid ""
+"To load and display a particular view file you will use the "
+":php:func:`view()` function like following code in your controller:"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:46
+msgid "Where *name* is the name of your view file."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:48
+msgid ""
+"If the file extension is omitted, then the views are expected to end with"
+" the **.php** extension."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:50
+msgid "The ``view()`` function uses :doc:`view_renderer` internally."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:52
+msgid ""
+"Now, create a file called **Blog.php** in the **app/Controllers** "
+"directory, and put this in it:"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:57
+msgid ""
+"Open the routing file located at **app/Config/Routes.php**, and look for "
+"the \"Route Definitions\". Add the following code:"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:63
+msgid ""
+"If you visit your site, you should see your new view. The URL was similar"
+" to this::"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:68
+msgid "Loading Multiple Views"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:70
+msgid ""
+"CodeIgniter will intelligently handle multiple calls to "
+":php:func:`view()` from within a controller. If more than one call "
+"happens they will be appended together."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:73
+msgid ""
+"For example, you may wish to have a header view, a menu view, a content "
+"view, and a footer view. That might look something like this:"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:78
+msgid ""
+"In the example above, we are using \"dynamically added data\", which you "
+"will see below."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:81
+msgid "Storing Views within Sub-directories"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:83
+msgid ""
+"Your view files can also be stored within sub-directories if you prefer "
+"that type of organization. When doing so you will need to include the "
+"directory name loading the view. Example:"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:92
+msgid "Namespaced Views"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:94
+msgid ""
+"You can store views under a **Views** directory that is namespaced, and "
+"load that view as if it was namespaced. While PHP does not support "
+"loading non-class files from a namespace, CodeIgniter provides this "
+"feature to make it possible to package your views together in a module-"
+"like fashion for easy re-use or distribution."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:98
+msgid ""
+"If you have **example/blog** directory that has a PSR-4 mapping set up in"
+" the :doc:`Autoloader </concepts/autoloader>` living under the namespace "
+"``Example\\Blog``, you could retrieve view files as if they were "
+"namespaced also."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:101
+msgid ""
+"Following this example, you could load the **blog_view.php** file from "
+"**example/blog/Views** by prepending the namespace to the view name "
+"(specifying the end directory ``Views`` as in ``Example\\Blog\\Views\\`` "
+"is not required):"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:107
+msgid ""
+"You must use backslashes (``\\``) when referencing namespaced views, as "
+"this is how CodeIgniter distinguishes a namespaced view from a regular "
+"file path. Forward slashes (``/``) are only used for subdirectories "
+"within the standard **app/Views** folder."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:115
+msgid "Overriding Namespaced Views"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:119
+msgid ""
+"You can override a namespaced view by creating a matching directory "
+"structure within your application's **app/Views** directory. This allows "
+"you to customize the output of modules or packages without modifying "
+"their core source code."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:123
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:125
+msgid ""
+"By default, overrides are looked for in the **app/Views/overrides** "
+"directory. You can configure this location via the "
+"``$appOverridesFolder`` property in **app/Config/View.php**:"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:131
+msgid ""
+"If you prefer to map namespaces directly to the root of **app/Views** "
+"(without a subdirectory), you can set this value to an empty string "
+"(``''``)."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:134
+msgid "Example"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:136
+msgid ""
+"Assume you have a module named **Blog** with the namespace "
+"``Example\\Blog``. The original view file is located at:"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:146
+msgid ""
+"To override this view (using the default configuration), create a file at"
+" the matching path within **app/Views/overrides**:"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:157
+msgid ""
+"Now, when you call ``view('Example\\Blog\\blog_view')``, CodeIgniter will"
+" automatically load your custom view from "
+"**app/Views/overrides/Example/Blog/blog_view.php** instead of the "
+"original module view file."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:159
+msgid ""
+"The override path must match exactly how you reference the view. If you "
+"load a view as ``view('Example\\Blog\\blog_view')``, the override path is"
+" **app/Views/overrides/Example/Blog/blog_view.php**. However, if you "
+"explicitly include the ``Views`` directory in the call, e.g., "
+"``view('Example\\Blog\\Views\\blog_view')``, the override path must also "
+"include it: **app/Views/overrides/Example/Blog/Views/blog_view.php**."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:169
+msgid "Caching Views"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:171
+msgid ""
+"You can cache a view with the :php:func:`view()` function by passing a "
+"``cache`` option with the number of seconds to cache the view for, in the"
+" third parameter:"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:177
+msgid ""
+"By default, the view will be cached using the same name as the view file "
+"itself. You can customize this by passing along ``cache_name`` and the "
+"cache ID you wish to use:"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:184
+msgid "Adding Dynamic Data to the View"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:186
+msgid ""
+"Data is passed from the controller to the view by way of an array in the "
+"second parameter of the :php:func:`view()` function."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:189
+msgid "Here's an example:"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:194
+msgid "Let's try it with your controller file. Open it and add this code:"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:198
+msgid ""
+"Now open your view file and change the text to variables that correspond "
+"to the array keys in your data::"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:209
+msgid ""
+"Then load the page at the URL you've been using and you should see the "
+"variables replaced."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:212
+msgid "The saveData Option"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:214
+msgid ""
+"The data passed in is retained for subsequent calls to "
+":php:func:`view()`. If you call the function multiple times in a single "
+"request, you will not have to pass the desired data to each ``view()``."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:218
+msgid ""
+"But this might not keep any data from \"bleeding\" into other views, "
+"potentially causing issues. If you would prefer to clean the data after "
+"one call, you can pass the ``saveData`` option into the ``$option`` array"
+" in the third parameter."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:225
+msgid ""
+"Additionally, if you would like the default functionality of the "
+"``view()`` function to be that it does clear the data between calls, you "
+"can set ``$saveData`` to ``false`` in **app/Config/Views.php**."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:229
+msgid "Creating Loops"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:231
+msgid ""
+"The data array you pass to your view files is not limited to simple "
+"variables. You can pass multi dimensional arrays, which can be looped to "
+"generate multiple rows. For example, if you pull data from your database "
+"it will typically be in the form of a multi-dimensional array."
+msgstr ""
+
+#: ../../source/outgoing/views.rst:235
+msgid "Here's a simple example. Add this to your controller:"
+msgstr ""
+
+#: ../../source/outgoing/views.rst:239
+msgid "Now open your view file and create a loop:"
+msgstr ""
+

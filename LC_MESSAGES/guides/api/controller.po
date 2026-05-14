@@ -1,0 +1,250 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/guides/api/controller.rst:4
+msgid "Building a RESTful Controller"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:6
+msgid ""
+"In this chapter, we build the API endpoints to expose your ``book`` table"
+" through a proper RESTful API. We'll use "
+":php:class:`CodeIgniter\\\\RESTful\\\\ResourceController` to handle CRUD "
+"actions with almost no boilerplate."
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:10
+msgid "What is RESTful?"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:12
+msgid ""
+"RESTful APIs use standard HTTP verbs (``GET``, ``POST``, ``PUT``, "
+"``DELETE``) to perform actions on resources identified by URIs. This "
+"approach makes APIs predictable and easy to use. There can be much debate"
+" on some of the finer points of what makes a REST API, but following "
+"these basics can get it close enough for many uses. By using auto-routing"
+" and the :php:class:`Api\\ResponseTrait`, CodeIgniter makes it simple to "
+"create RESTful endpoints."
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:15
+msgid "Generate the controller"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:17
+msgid "Run the Spark command:"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:23
+msgid "This creates **app/Controllers/Api/Books.php**."
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:25
+msgid "Open it and replace its contents with the following stubbed-out class:"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:29
+msgid ""
+"Since we're using auto-routing, we need to use the ``index`` method names"
+" so it doesn't interfere with mapping to the URI segments. But we can use"
+" the HTTP verb prefixes (``get``, ``post``, ``put``, ``delete``) to "
+"indicate which method handles which verb. The only one that is slightly "
+"odd is ``getIndex()``, which must be used to map to both listing all "
+"resources and listing a single resource by ID."
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:33
+msgid ""
+"If you prefer a different naming scheme, you would need to define routes "
+"explicitly in **app/Config/Routes.php** and turn auto-routing off."
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:36
+msgid "API Transformers"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:38
+msgid ""
+"It is considered a best practice to separate your data models from the "
+"way they are presented in your API responses. This is often done using "
+"transformers or resource classes that format the data consistently. "
+"CodeIgniter provides API transformers to help with this."
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:40
+msgid "Create the transformers with the generator command:"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:46
+msgid ""
+"The transformer requires a single method, ``toArray()``, to be present "
+"and accept a mixed data type called ``$resource``. This method transforms"
+" the resource into an array format suitable for API responses. The "
+"returned array is then encoded as JSON or XML for the API response."
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:48
+msgid ""
+"Edit the Book transformer at **app/Transformers/BookTransformer.php**. "
+"This one is a little more complex since it includes related author data:"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:52
+msgid ""
+"One feature of transformers is the ability to include related resources "
+"conditionally. In this case, we check if the ``author`` relationship is "
+"loaded on the book resource before including it in the response. This "
+"allows flexibility in how much data is returned based on the request "
+"context. The client calling the API would have to request the related "
+"data explicitly through query parameters such as "
+"``/api/books?include=author``. The method name must start with "
+"``include`` followed by the related resource name with the first letter "
+"capitalized."
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:54
+msgid ""
+"You may have noticed that we did not use an AuthorTransformer. This is "
+"because the author data is simple enough that we can return it directly "
+"without additional transformation. However, for more complex related "
+"resources, you might want to create separate transformers for them as "
+"well. Additionally, we'll collect the author information at query time so"
+" that we don't hit any N+1 query issues later."
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:57
+msgid "Listing Books"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:59
+msgid ""
+"We made the ``$id`` parameter optional so that the same method can handle"
+" both listing all books and retrieving a single book by ID. Let's "
+"implement that now."
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:65
+msgid ""
+"In this method, we check if an ``$id`` is provided. If it is, we attempt "
+"to find the specific book. If we could not find the book by that ID, we "
+"return a 404 Not Found response using the :php:meth:`failNotFound()` "
+"helper from :php:trait:`ResponseTrait`. If we do find the book, we use "
+"our BookTransformer and return the formatted response."
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:67
+msgid ""
+"If no ``$id`` is provided, we use the model to retrieve all books, "
+"stopping short of actually retrieving the records. This allows us to use "
+"the ``ResponseTrait``'s :php:meth:`paginate` method to handle pagination "
+"automatically. We pass the name of the transformer to the ``paginate`` "
+"method so that it can format each book in the paginated result set."
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:69
+msgid ""
+"In both of these cases, we use a new method on the model called "
+"``withAuthorInfo()``. This is a custom method we will add to the model to"
+" join the related author data when retrieving books."
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:72
+msgid "Add the Model helper method"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:74
+msgid ""
+"In your BookModel, we add a new method called ``withAuthorInfo()``. This "
+"method uses the Query Builder to join the ``author`` table and select the"
+" relevant author fields. This way, when we retrieve books, we also get "
+"the associated author information without needing to make separate "
+"queries for each book."
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:80
+msgid "Test the list endpoint"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:82
+msgid "Start the local server:"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:88
+msgid "Now visit:"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:90
+msgid "**Browser:** ``http://localhost:8080/api/books``"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:91
+msgid "**cURL:** ``curl http://localhost:8080/api/books``"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:93
+msgid "You should see a paginated list of books in JSON format:"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:131
+msgid "If you see JSON data from your seeder, congratulations—your API is live!"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:134
+msgid "Implement the remaining methods"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:136
+msgid "Edit **app/Controllers/Api/Books.php** to include the remaining methods:"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:140
+msgid ""
+"Each method uses helpers from :php:trait:`ResponseTrait` to send proper "
+"HTTP status codes and JSON payloads."
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:142
+msgid ""
+"And that's it! You now have a fully functional RESTful API for managing "
+"books, complete with proper HTTP methods, status codes, and data "
+"transformation. You can further enhance this API by adding "
+"authentication, validation, and other features as needed."
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:145
+msgid "A More Semantic Naming Scheme"
+msgstr ""
+
+#: ../../source/guides/api/controller.rst:147
+msgid ""
+"In the previous examples, we used method names like ``getIndex()``, "
+"``putIndex()``, etc. because we wanted to rely solely on the HTTP verb to"
+" determine the action. With auto-routing enabled, we have to use the "
+"``index`` method name to avoid conflicts with URI segments. However, if "
+"you prefer more semantic method names, you could change the method names "
+"so that they reflect the action being performed, such as ``getList()``, "
+"``postCreate()``, ``putUpdate()``, and ``deleteDelete()``. This would "
+"make each method's purpose clearer at a glance and would add one new "
+"segment to the URI."
+msgstr ""
+

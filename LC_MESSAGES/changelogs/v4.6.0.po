@@ -1,0 +1,727 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.6.0.rst:3
+msgid "Version 4.6.0"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:5
+msgid "Release Date: January 19, 2025"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:7
+msgid "**4.6.0 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:15
+msgid "BREAKING"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:18
+msgid "Behavior Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:23 ../../source/changelogs/v4.6.0.rst:212
+#: ../../source/changelogs/v4.6.0.rst:304
+msgid "Exceptions"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:25
+msgid ""
+"The exception class has been redesigned. See :ref:`exception-design` for "
+"details. The following breaking changes have been made accordingly:"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:28
+msgid ""
+"``Validation::setRule()`` now throws "
+"``CodeIgniter\\Exceptions\\InvalidArgumentException`` instead of "
+"``TypeError``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:30
+msgid ""
+"``CriticalError`` now extends "
+"``CodeIgniter\\Exceptions\\RuntimeException`` instead of ``Error``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:32
+msgid ""
+"``DatabaseException`` now extends "
+"``CodeIgniter\\Exceptions\\RuntimeException`` instead of ``Error``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:34
+msgid ""
+"``ConfigException`` now extends "
+"``CodeIgniter\\Exceptions\\RuntimeException`` instead of "
+"``CodeIgniter\\Exceptions\\CriticalError``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:36
+msgid ""
+"``TestException`` now extends ``CodeIgniter\\Exceptions\\LogicException``"
+" instead of ``CodeIgniter\\Exceptions\\CriticalError``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:40
+msgid "Filters Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:42
+msgid ""
+"The ``Filters`` class has been changed to allow multiple runs of the same"
+" filter with different arguments in before or after. See :ref:`Upgrading "
+"Guide <upgrade-460-filters-changes>` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:47
+msgid "Registrars"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:49
+msgid ""
+"Added check to prevent Auto-Discovery of Registrars from running twice. "
+"If it is executed twice, an exception will be thrown. See "
+":ref:`upgrade-460-registrars-with-dirty-hack`."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:54
+msgid "Time::createFromTimestamp()"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:56
+msgid ""
+"``Time::createFromTimestamp()`` handles timezones differently. If "
+"``$timezone`` is not explicitly passed then the instance has timezone set"
+" to UTC unlike earlier where the currently set default timezone was used."
+" See :ref:`Upgrading Guide <upgrade-460-time-create-from-timestamp>` for "
+"details."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:62
+msgid "Time with Microseconds"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:64
+msgid ""
+"Fixed bugs that some methods in ``Time`` to lose microseconds have been "
+"fixed. See :ref:`Upgrading Guide <upgrade-460-time-keeps-microseconds>` "
+"for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:68
+msgid "Time::setTimestamp()"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:70
+msgid ""
+"``Time::setTimestamp()`` behavior has been fixed. See :ref:`Upgrading "
+"Guide <upgrade-460-time-set-timestamp>` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:74
+msgid "Error Reporting to Non-HTML Requests"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:76
+msgid ""
+"In previous versions, when a request does not accept HTML, CodeIgniter "
+"showed error details only in the ``development`` and ``testing`` "
+"environments."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:79
+msgid ""
+"But because it is not possible to display error details when using a "
+"custom environment, this behavior has been fixed so that error details "
+"are displayed if ``display_errors`` in PHP ini setting is enabled."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:83
+msgid ""
+"With this fix, the error details are now displayed under the same "
+"conditions for both HTML requests and non-HTML requests."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:87
+msgid "Session ID (SID)"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:89
+msgid ""
+"Now ``Session`` library forces to use the PHP default 32 character SIDs, "
+"with 4 bits of entropy per character. See :ref:`Upgrading Guide "
+"<upgrade-460-sid-change>` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:96
+msgid "Headers"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:98
+msgid ""
+"The headers set by the ``Response`` class replace those that can be set "
+"by the PHP ``header()`` function."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:101
+msgid ""
+"In previous versions, headers set by the ``Response`` class were added to"
+" existing ones - giving no options to change them. That could lead to "
+"unexpected behavior when the same headers were set with mutually "
+"exclusive directives."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:105
+msgid ""
+"For example, session will automatically set headers with the ``header()``"
+" function:"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:113
+msgid ""
+"So if we set **Expires** header one more time we will end up with a "
+"duplicated header:"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:120
+msgid "Response headers:"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:128
+msgid ""
+"Now, we don't know which one will be picked by the browser or which "
+"header is the correct one. With changes in this version our previous "
+"header will be overridden:"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:138
+msgid "Interface Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:140
+msgid ""
+"As long as you have not extended the relevant CodeIgniter core classes or"
+" implemented these interfaces, all these changes are backward compatible "
+"and require no intervention."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:144
+msgid ""
+"**Router:** The following methods have been added in "
+"``RouteCollectionInterface``:"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:146
+msgid "``getDefaultNamespace()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:147
+msgid "``getRoutesOptions()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:148
+msgid "``setHTTPVerb()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:149
+msgid "``isFiltered()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:150
+msgid "``getFiltersForRoute()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:155
+msgid "Method Signature Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:157
+msgid ""
+"**Router:** The constructor of the ``DefinedRouteCollector`` has been "
+"changed. The ``RouteCollection`` typehint has been changed to "
+"``RouteCollectionInterface``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:159
+msgid ""
+"**View:** The return type of the ``renderSection()`` method has been "
+"changed to ``string``, and now the method does not call ``echo``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:161
+msgid ""
+"**Time:** The first parameter type of the ``createFromTimestamp()`` has "
+"been changed from ``int`` to ``int|float``, and the return type "
+"``static`` has been added."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:164
+msgid ""
+"**Helpers:** ``character_limiter()`` parameter names have been updated. "
+"If you use named arguments, you need to update the function calls."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:167
+msgid "Removed Type Definitions"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:169
+msgid "**Database:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:170
+msgid ""
+"The type ``string`` of the first parameter in "
+"``BaseConnection::escapeIdentifier()`` has been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:172
+msgid ""
+"The type ``string`` of the first parameter in "
+"``BaseConnection::getFieldNames()`` and "
+"``SQLite3\\Connection::getFieldNames()`` have been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:175
+msgid ""
+"The type ``string`` of the first parameter in "
+"``BaseConnection::_listColumns()`` and "
+"``MySQLi\\Connection::_listColumns()`` and "
+"``OCI8\\Connection::_listColumns()`` and "
+"``Postgre\\Connection::_listColumns()`` and "
+"``SQLSRV\\Connection::_listColumns()`` and "
+"``SQLite3\\Connection::_listColumns()`` have been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:185
+msgid "Removed Deprecated Items"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:187
+msgid ""
+"**API:** The deprecated ``failValidationError()`` method in "
+"``CodeIgniter\\API\\ResponseTrait`` has been removed. Use "
+"``failValidationErrors()`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:189
+msgid ""
+"**HTTP:** The deprecated ``getReason()`` method in "
+"``CodeIgniter\\HTTP\\Response`` and ``ResponseInterface`` has been "
+"removed. Use ``getReasonPhrase()`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:191
+msgid ""
+"**Logger:** The deprecated ``CodeIgniter\\Log\\Logger::cleanFilenames()``"
+" and ``CodeIgniter\\Test\\TestLogger::cleanup()`` have been removed. Use "
+"the ``clean_path()`` function instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:194
+msgid ""
+"**Router:** The deprecated "
+"``CodeIgniter\\Router\\Exceptions\\RedirectException`` has been removed. "
+"Use ``CodeIgniter\\HTTP\\Exceptions\\RedirectException`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:195
+msgid ""
+"**Constants:** The deprecated constants ``EVENT_PRIORITY_*`` in has been "
+"removed. Use the class constants "
+"``CodeIgniter\\Events\\Events::PRIORITY_LOW``, "
+"``CodeIgniter\\Events\\Events::PRIORITY_NORMAL`` and "
+"``CodeIgniter\\Events\\Events::PRIORITY_HIGH`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:196
+msgid ""
+"**View:** The deprecated property "
+"``CodeIgniter\\View\\View::$currentSection`` has been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:197
+msgid ""
+"**Config:** The deprecated property ``Config\\Cache::$storePath`` has "
+"been removed. Use ``Config\\Cache::$file['storePath']`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:198
+msgid ""
+"**Formatter:** The deprecated ``Config\\Format::getFormatter()`` has been"
+" removed. Use ``CodeIgniter\\Format\\Format::getFormatter()`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:199
+msgid ""
+"**Security:** ``Config\\Security::$samesite`` has been removed. Use "
+"``Config\\Cookie::$samesite`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:200
+msgid ""
+"**Cookie:** Methods ``dispatch()``, ``setRawCookie()``, ``setCookie()`` "
+"in ``CodeIgniter\\Cookie\\CookieStore`` has been removed. They are now "
+"part of ``CodeIgniter\\HTTP\\ResponseTrait``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:204
+msgid "Enhancements"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:207
+msgid "Publisher"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:209
+msgid ""
+"``Publisher::discover()`` now accepts a second parameter (``namespace``) "
+"specifying the namespace in which publishers should be searched. See :ref"
+":`discovery-in-a-specific-namespace` for the details."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:214
+msgid ""
+"The exception class has been redesigned. See :ref:`exception-design` for "
+"details. The following new Exception classes have been added accordingly:"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:217
+msgid "``CodeIgniter\\Exceptions\\LogicException``"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:218
+msgid "``CodeIgniter\\Exceptions\\RuntimeException``"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:219
+msgid "``CodeIgniter\\Exceptions\\BadFunctionCallException``"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:220
+msgid "``CodeIgniter\\Exceptions\\BadMethodCallException``"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:221
+msgid "``CodeIgniter\\Exceptions\\InvalidArgumentException``"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:223
+msgid "The following new Exception interfaces have been added:"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:225
+msgid "``CodeIgniter\\Files\\Exceptions\\ExceptionInterface``"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:226
+msgid "``CodeIgniter\\HTTP\\Exceptions\\ExceptionInterface``"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:227
+msgid "``CodeIgniter\\Router\\Exceptions\\ExceptionInterface``"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:229
+msgid ""
+"Displaying exceptions for non-HTML responses now rely on the PHP "
+"``display_errors`` setting instead of hardcoded environments."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:232
+msgid "Commands"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:234
+msgid ""
+"The ``spark routes`` and ``spark filter:check`` commands now display "
+"filter arguments."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:236
+msgid "The ``spark filter:check`` command now displays filter classnames."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:237
+msgid ""
+"The ``spark lang:sync`` command to synchronize translation files. See "
+":ref:`sync-translations-command`"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:238
+msgid ""
+"The ``spark phpini:check`` command now has an optional ``opcache`` "
+"argument, which when used will display information about opcache "
+"settings."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:242
+msgid "Routing"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:244
+msgid "Now you can specify multiple hostnames when restricting routes."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:247
+msgid "Negotiator"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:249
+msgid ""
+"Added a feature flag ``Feature::$strictLocaleNegotiation`` to enable "
+"strict locale comparison. Previously, response with language headers "
+"``Accept-language: en-US,en-GB;q=0.9`` returned the first allowed "
+"language ``en`` could instead of the exact language ``en-US`` or ``en-"
+"GB``. Set the value to ``true`` to enable comparison not only by language"
+" code ('en' - ISO 639-1) but also by regional code ('en-US' - ISO 639-1 "
+"plus ISO 3166-1 alpha)."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:254
+msgid "Pagination"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:256
+msgid ""
+"Added a new feature to get the total and the range number of items of the"
+" current page. See :ref:`Displaying the Number of Items on the Page "
+"<displaying-the-number-of-items-on-the-page>` for more details."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:260
+msgid "Database"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:263
+#: ../../source/changelogs/v4.6.0.rst:284
+msgid "Others"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:265
+msgid ""
+"Added a new configuration ``foundRows`` for MySQLi to use "
+"``MYSQLI_CLIENT_FOUND_ROWS``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:266
+msgid ""
+"Added the ``BaseConnection::resetTransStatus()`` method to reset the "
+"transaction status. See :ref:`transactions-resetting-transaction-status` "
+"for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:268
+msgid ""
+"SQLite3 has a new Config item ``synchronous`` to adjust how strict SQLite"
+" is at flushing to disk during transactions. Modifying this can be useful"
+" if we use journal mode set to ``WAL``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:272
+msgid "Libraries"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:274
+msgid ""
+"**File:** Added ``getSizeByBinaryUnit()`` and ``getSizeByMetricUnit()`` "
+"to ``File`` class. See :ref:`File::getSizeByBinaryUnit() <file-get-size-"
+"by-binary-unit>` and :ref:`File::getSizeByMetricUnit() <file-get-size-by-"
+"metric-unit>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:276
+msgid ""
+"**FileCollection:** Added ``retainMultiplePatterns()`` to "
+"``FileCollection`` class. See "
+":ref:`FileCollection::retainMultiplePatterns() <file-collections-retain-"
+"multiple-patterns>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:278
+msgid ""
+"**Validation:** Added ``min_dims`` validation rule to ``FileRules`` "
+"class. See :ref:`Validation <rules-for-file-uploads>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:280
+msgid ""
+"**Validation:** Rules: ``is_unique`` and ``is_not_unique`` now accept the"
+" optional ``dbGroup`` as part of the first parameter. See "
+":ref:`Validation <rules-for-general-use>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:286
+msgid ""
+"**Filters:** Now you can execute a filter more than once with the "
+"different arguments in before or after."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:288
+msgid ""
+"**Services:** Added ``BaseService::resetServicesCache()`` method to reset"
+" the services cache. See :ref:`resetting-services-cache`."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:290
+msgid "**Errors:** Added a default error page for \"400 Bad Request\"."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:294
+msgid "Message Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:296
+msgid "Added ``Validation.min_dims`` message"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:297
+msgid "Added ``Errors.badRequest`` and ``Errors.sorryBadRequest``"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:301
+msgid "Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:306
+msgid ""
+"The exception classes have been redesigned. See :ref:`exception-design` "
+"for details. The following changes have been made accordingly:"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:309
+msgid ""
+"The ``deleteMatching()`` method in Cache Handler classes now throws "
+"``CodeIgniter\\Exceptions\\BadMethodCallException`` instead of "
+"``Exception``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:311
+msgid ""
+"``Cache\\ResponseCache::get()`` now throws "
+"``CodeIgniter\\Exceptions\\RuntimeException`` instead of ``Exception``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:313
+msgid ""
+"Classes that threw ``RuntimeException`` have been changed to throw "
+"``CodeIgniter\\Exceptions\\RuntimeException``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:315
+msgid ""
+"Classes that threw ``InvalidArgumentException`` have been changed to "
+"throw ``CodeIgniter\\Exceptions\\InvalidArgumentException``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:317
+msgid ""
+"Classes that threw ``LogicException`` have been changed to throw "
+"``CodeIgniter\\Exceptions\\LogicException``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:319
+msgid ""
+"Classes that threw ``BadMethodCallException`` have been changed to throw "
+"``CodeIgniter\\Exceptions\\BadMethodCallException``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:321
+msgid ""
+"Classes that threw ``BadFunctionCallException`` have been changed to "
+"throw ``CodeIgniter\\Exceptions\\BadFunctionCallException``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:323
+msgid ""
+"``RedirectException`` now extends "
+"``CodeIgniter\\Exceptions\\RuntimeException`` instead of ``Exception``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:325
+msgid ""
+"``PageNotFoundException`` now extends "
+"``CodeIgniter\\Exceptions\\RuntimeException`` instead of "
+"``OutOfBoundsException``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:330
+msgid "Deprecations"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:332
+msgid "**Filters:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:333
+msgid ""
+"The properties ``$arguments`` and ``$argumentsClass`` of ``Filters`` have"
+" been deprecated. No longer used."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:335
+msgid ""
+"The ``Filters::getArguments()`` method has been deprecated. No longer "
+"used."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:336
+msgid "**File:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:337
+msgid ""
+"The function ``getSizeByUnit()`` of ``File`` has been deprecated. Use "
+"either ``getSizeByBinaryUnit()`` or ``getSizeByMetricUnit()`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:342
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:344
+msgid "**Response:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:345
+msgid ""
+"Headers set using the ``Response`` class are now prioritized and replace "
+"headers that can be set manually using the PHP ``header()`` function."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:347
+msgid "**View:** Added support for multibyte strings for ``View::excerpt()``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:348
+msgid "**Helpers:** Added support for multibyte strings for ``excerpt()``."
+msgstr ""
+
+#: ../../source/changelogs/v4.6.0.rst:350
+msgid ""
+"See the repo's `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

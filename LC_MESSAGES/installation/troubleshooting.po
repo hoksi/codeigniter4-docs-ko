@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/troubleshooting.rst:3
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:5
+msgid "Here are some common installation problems, and suggested workarounds."
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:12
+msgid "How do I know if my install is working?"
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:14
+msgid "From the command line, at your project root:"
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:20
+msgid ""
+"``http://localhost:8080`` in your browser should then show the default "
+"welcome page:"
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:23
+msgid "|CodeIgniter4 Welcome|"
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:84
+msgid "CodeIgniter4 Welcome"
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:26
+msgid "I have to include index.php in my URL"
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:28
+msgid ""
+"If a URL like ``/mypage/find/apple`` doesn't work, but the similar URL "
+"``/index.php/mypage/find/apple`` does, that sounds like your "
+"**.htaccess** rules (for Apache) are not set up properly, or the "
+"``mod_rewrite`` extension in Apache's **httpd.conf** is commented out. "
+"See :ref:`urls-remove-index-php`."
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:35
+msgid "Only the default page loads"
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:37
+msgid ""
+"If you find that no matter what you put in your URL only your default "
+"page is loading, it might be that your server does not support the "
+"REQUEST_URI variable needed to serve search-engine friendly URLs. As a "
+"first step, open your **app/Config/App.php** file and look for the URI "
+"Protocol information. It will recommend that you try a couple of "
+"alternate settings. If it still doesn't work after you've tried this "
+"you'll need to force CodeIgniter to add a question mark (``?``) to your "
+"URLs. To do this open your **app/Config/App.php** file and change this:"
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:48
+msgid "To this:"
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:53
+msgid "No input file specified"
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:55
+msgid ""
+"If you see \"No input file specified\", try to change the rewrite rule "
+"like the following (to add ``?`` after ``index.php``):"
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:62
+msgid "My app works fine locally but not on the production server"
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:64
+msgid "Make sure that the case of the folder and file names matches the code."
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:66
+msgid ""
+"Many developers develop on case-insensitive file systems on Windows or "
+"macOS. However, most server environments use case-sensitive file systems."
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:69
+msgid ""
+"For example, when you have **app/Controllers/Product.php**, you must use "
+"``Product`` as the short classname, not ``product``."
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:72
+msgid "If the file name case is incorrect, the file is not found on the server."
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:75
+msgid "The tutorial gives 404 errors everywhere :("
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:77
+msgid ""
+"You can't follow the tutorial using PHP's built-in web server. It doesn't"
+" process the **.htaccess** file needed to route requests properly."
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:81
+msgid ""
+"The solution: use Apache to serve your site, or else the built-in "
+"CodeIgniter equivalent, ``php spark serve`` from your project root."
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:87
+msgid "What's with an unhelpful \"Whoops!\" page?"
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:89
+msgid ""
+"You find that your app is displaying a page with \"Whoops!\" and then the"
+" text line \"We seem to have hit a snag. Please try again later...\"."
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:92
+msgid ""
+"That is a sign that you are in production mode and have hit an "
+"unrecoverable error, which we don't want to show to the viewer of the "
+"webapp, for better security."
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:96
+msgid ""
+"You can see the error in the log file. See `CodeIgniter Error Logs`_ "
+"below."
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:98
+msgid ""
+"If you reach this page while developing you should change your "
+"environment to \"development\" (in **.env**). See :ref:`setting-"
+"development-mode` for more details. After that, reload the page. You will"
+" see the error and the back trace."
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:103
+msgid "CodeIgniter Error Logs"
+msgstr ""
+
+#: ../../source/installation/troubleshooting.rst:105
+msgid "See :ref:`codeigniter-error-logs`."
+msgstr ""
+

@@ -1,0 +1,758 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:2
+msgid "Version 4.0.0-rc.2"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:4
+msgid "Release Date: Sept 27, 2019"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:6
+msgid "**RC.2 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:13
+msgid "Enhancements"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:15
+msgid "query builder testability simplified with new property, but dropped"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:16
+msgid "method parameters (breaking change)"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:17
+msgid "database, migrations and sessions beefed up"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:18
+msgid "numerous smaller bugs corrected"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:21
+msgid "App Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:23
+msgid "Config/Constants, Paths & some config settings have had changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:26
+msgid "Message Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:28
+msgid "N/A"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:31
+msgid "Changed Files"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:33
+msgid "The list of changed files follows, with PR numbers shown."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:35
+msgid "admin/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:37
+msgid "app/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:38
+msgid "Config/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:39
+msgid "Boot/* #2241"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:40
+msgid "Constants #2183"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:41
+msgid "Paths #2181"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:42
+msgid "public/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:44
+msgid "system/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:45
+msgid "CLI/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:46
+msgid "BaseCommand #2231"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:47
+#: ../../source/changelogs/v4.0.0-rc.2.rst:98
+msgid "Database/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:48
+msgid "MySQLi/Connection #2201, 2229"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:49
+msgid "Postgre/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:50
+msgid "BaseBuilder #2269"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:51
+msgid "Connection #2201"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:52
+msgid "SQLite3/Connection #2201, 2228, 2230"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:53
+msgid "BaseBuilder #2257, 2232, 2269, 2270"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:54
+msgid "BaseConnection #2208, 2213, 2231"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:55
+msgid "Config #2224"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:56
+msgid "Forge #2205"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:57
+msgid "MigrationRunner #2191"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:58
+msgid "Debug/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:59
+msgid "Exceptions #2262"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:60
+#: ../../source/changelogs/v4.0.0-rc.2.rst:117
+msgid "Encryption/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:61
+msgid "Encryption #2231"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:62
+msgid "Handlers/BaseHandler #2231"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:63
+msgid "Files/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:64
+msgid "FileCollection #2265"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:65
+#: ../../source/changelogs/v4.0.0-rc.2.rst:121
+msgid "HTTP/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:66
+msgid "CURLRequest #2168"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:67
+msgid "IncomingRequest #2265"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:68
+msgid "Request #2253"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:69
+msgid "Response #2253"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:70
+#: ../../source/changelogs/v4.0.0-rc.2.rst:125
+msgid "I18n/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:71
+msgid "Time #2231"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:72
+msgid "TimeDifference #2231"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:73
+msgid "Images/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:74
+msgid "Handlers/BaseHandler #2246"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:75
+#: ../../source/changelogs/v4.0.0-rc.2.rst:130
+msgid "RESTful/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:76
+msgid "ResourcePresenter #2271"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:77
+msgid "Security/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:78
+msgid "Security #2240"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:79
+#: ../../source/changelogs/v4.0.0-rc.2.rst:132
+msgid "Session/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:80
+msgid "Session #2197, 2231"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:81
+msgid "Test/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:82
+msgid "CIDatabaseTestCase #2205"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:83
+msgid "CIDatabaseUnitTestCase #2184"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:84
+msgid "Validation/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:85
+msgid "FileRules #2265"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:86
+msgid "Validation #2268"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:87
+#: ../../source/changelogs/v4.0.0-rc.2.rst:134
+msgid "View/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:88
+msgid "Parser #2264"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:90
+msgid "Common #2200, 2209, 2261"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:91
+msgid "Model #2231"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:93
+msgid "tests/_support/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:95
+msgid "tests/system/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:96
+msgid "Commands/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:97
+msgid "CommandClassTest #2231"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:99
+msgid "Builder/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:100
+msgid "GetTest #2232"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:101
+msgid "CountTest #2269"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:102
+msgid "DeleteTest #2269"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:103
+msgid "EmptyTest #2269"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:104
+msgid "GetTest #2269"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:105
+#: ../../source/changelogs/v4.0.0-rc.2.rst:113
+msgid "GroupTest #2257"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:106
+msgid "InsertTest #2269"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:107
+msgid "ReplaceTest #2269"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:108
+msgid "TruncateTest #2269"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:109
+msgid "UpdateTest #2269"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:110
+msgid "Live/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:111
+msgid "EscapeTest #2229"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:112
+msgid "ForgeTest #2201, 2211"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:114
+msgid "MetadataTest #2211"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:115
+msgid "ModelTest #2231"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:116
+msgid "BaseConnectionTest #2229, 2231"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:118
+msgid "EncryptionTest #2231"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:119
+msgid "Helpers/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:120
+msgid "URLHelperTest #2259"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:122
+msgid "CURLRequestTest #2168"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:123
+msgid "FileCOllectionTest #2265"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:124
+msgid "URITest #2259"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:126
+msgid "TimeDifferenceTest #2231"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:127
+msgid "TimeTest #2231"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:128
+msgid "Pager/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:129
+msgid "pagerTest #2259"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:131
+msgid "ResourcePresenterTest #2271"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:133
+msgid "SessionTest #2231"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:135
+msgid "ParserTest #2264"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:137
+msgid "user_guide_src/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:138
+msgid "concepts/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:139
+msgid "structure #2221"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:140
+msgid "database/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:141
+msgid "metadata #2199, 2201, 2208"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:142
+msgid "queries #2208"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:143
+msgid "query_builder #2257, 2232, 2269"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:144
+msgid "dbmgmt/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:145
+msgid "migration #2190, 2191"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:146
+msgid "extending/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:147
+msgid "contributing #2221"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:148
+msgid "general/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:149
+msgid "errors #2221"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:150
+msgid "helpera/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:151
+msgid "url_helper #2259"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:152
+msgid "incoming/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:153
+msgid "restful #2189"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:154
+msgid "routing #2221"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:155
+msgid "installation/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:156
+msgid "troubleshooting #2260"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:157
+msgid "libraries/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:158
+msgid "encryption #2221"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:159
+msgid "pagination #2216"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:160
+msgid "time #2221"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:161
+msgid "uti #2216"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:162
+msgid "outgoing/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:163
+msgid "api_responses #2245"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:164
+msgid "view_layouts #2218"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:165
+msgid "view_parser #2218, 2264"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:166
+msgid "testing/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:167
+msgid "controllers #2221"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:168
+msgid "debugging #2221, 2209"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:169
+msgid "feature #2218, 2221"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:170
+msgid "overview #2221"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:171
+msgid "tutorial/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:172
+msgid "news_section #2221"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:173
+msgid "static_pages #2221"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:176
+msgid "PRs merged"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:178
+msgid "#2271 fix ResourcePresenter::setModel()"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:179
+msgid "#2270 groupStart() refactorization"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:180
+msgid "#2269 testMode() method for BaseBuilder"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:181
+msgid "#2268 Validation session use only if exists"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:182
+msgid "#2267 Tests setUp and tearDown: void"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:183
+msgid "#2265 Fix a validation issue on multiple file upload"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:184
+msgid "#2264 fix. Parser allow other extension"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:185
+msgid "#2262 Fix parameter type in Debug/Exceptions"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:186
+msgid "#2261 Fix lang() signature"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:187
+msgid "#2260 Explain the whoops page"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:188
+msgid "#2259 Add URI & url_helper tests"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:189
+msgid "#2257 Several updates to the HAVING clauses"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:190
+msgid "#2253 Fix invalid parameters"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:191
+msgid "#2246 EXIF not supported for GIF"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:192
+msgid "#2245 Fix class ref parameter types"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:193
+msgid "#2241 Fix ini_set parameter type"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:194
+msgid "#2240 Handle JSON POSTs in CSRF"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:195
+msgid "#2232 Fixes BaseBuilder getWhere() bug"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:196
+msgid "#2231 Add magic __isset to classes with __get"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:197
+msgid "#2230 Add escape to SQLite _listTables()"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:198
+msgid "#2229 MySQLi escapeLikeStringDirect()"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:199
+msgid "#2228 Exclude `sqlite_%` from listTables()"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:200
+msgid "#2224 change new \\Config\\Database() to config('Database')"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:201
+msgid "#2221 Documentation fixes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:202
+msgid "#2218 Typo corrected"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:203
+msgid "#2216 Update uri.rst"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:204
+msgid "#2213 Filter listTables cache response on constrainPrefix"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:205
+msgid "#2211 Add listTable() tests"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:206
+msgid "#2209 Add trace()"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:207
+msgid "#2208 Add $db->getPrefix()"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:208
+msgid "#2205 Fix empty() bug on DBPrefix"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:209
+msgid "#2201 Foreign key columns"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:210
+msgid "#2200 Notify Kint of dd alias"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:211
+msgid "#2199 Add getForeignKeyData to User Guide"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:212
+msgid "#2187 Update Session.php"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:213
+msgid "#2191 Migration rollback reverse"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:214
+msgid "#2190 Fix name of ForeignKeyChecks"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:215
+msgid "#2189 missing return"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:216
+msgid "#2184 Fix case on \"Seeds/\" directory"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:217
+msgid "#2183 Check `defined` for constants"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:218
+msgid "#2181 Remove copy-paste extraneous text"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.2.rst:219
+msgid "#2168 Fix for CURL for 'debug' option"
+msgstr ""
+

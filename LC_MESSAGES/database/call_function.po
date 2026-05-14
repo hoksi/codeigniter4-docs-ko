@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/database/call_function.rst:3
+msgid "Custom Function Calls"
+msgstr ""
+
+#: ../../source/database/call_function.rst:10
+msgid "$db->callFunction()"
+msgstr ""
+
+#: ../../source/database/call_function.rst:12
+msgid ""
+"This function enables you to call PHP database functions that are not "
+"natively included in CodeIgniter, in a platform-independent manner. For "
+"example, let's say you want to call the ``mysql_get_client_info()`` "
+"function, which is **not** natively supported by CodeIgniter. You could "
+"do so like this:"
+msgstr ""
+
+#: ../../source/database/call_function.rst:20
+msgid ""
+"You must supply the name of the function, **without** the ``mysql_`` "
+"prefix, in the first parameter. The prefix is added automatically based "
+"on which database driver is currently being used. This permits you to run"
+" the same function on different database platforms. Obviously, not all "
+"function calls are identical between platforms, so there are limits to "
+"how useful this function can be in terms of portability."
+msgstr ""
+
+#: ../../source/database/call_function.rst:27
+msgid ""
+"Any parameters needed by the function you are calling will be added to "
+"the second parameter."
+msgstr ""
+
+#: ../../source/database/call_function.rst:32
+msgid ""
+"Often, you will either need to supply a database connection ID or a "
+"database result ID. The connection ID can be accessed using:"
+msgstr ""
+
+#: ../../source/database/call_function.rst:37
+msgid "The result ID can be accessed from within your result object, like this:"
+msgstr ""
+

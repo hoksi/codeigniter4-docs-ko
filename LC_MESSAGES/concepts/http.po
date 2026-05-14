@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/concepts/http.rst:3
+msgid "Working with HTTP Requests"
+msgstr ""
+
+#: ../../source/concepts/http.rst:5
+msgid ""
+"In order to get the most out of CodeIgniter, you need to have a basic "
+"understanding of how HTTP requests and responses work. Since this is what"
+" you work with while developing web applications, understanding the "
+"concepts behind HTTP is a **must** for all developers that want to be "
+"successful."
+msgstr ""
+
+#: ../../source/concepts/http.rst:9
+msgid ""
+"The first part of this chapter gives an overview. After the concepts are "
+"out of the way, we will discuss how to work with the requests and "
+"responses within CodeIgniter."
+msgstr ""
+
+#: ../../source/concepts/http.rst:17
+msgid "What is HTTP?"
+msgstr ""
+
+#: ../../source/concepts/http.rst:19
+msgid ""
+"HTTP is simply a text-based convention that allows two machines to talk "
+"to each other. When a browser requests a page, it asks the server if it "
+"can get the page. The server then prepares the page and sends a response "
+"back to the browser that asked for it. That's pretty much it. Obviously, "
+"there are some complexities that you can use, but the basics are really "
+"pretty simple."
+msgstr ""
+
+#: ../../source/concepts/http.rst:24
+msgid ""
+"HTTP is the term used to describe that exchange convention. It stands for"
+" HyperText Transfer Protocol. Your goal when you develop web applications"
+" is to always understand what the browser is requesting, and be able to "
+"respond appropriately."
+msgstr ""
+
+#: ../../source/concepts/http.rst:29
+msgid "The Request"
+msgstr ""
+
+#: ../../source/concepts/http.rst:31
+msgid ""
+"Whenever a client (a web browser, smartphone app, etc) makes a request, "
+"it sends a small text message to the server and waits for a response."
+msgstr ""
+
+#: ../../source/concepts/http.rst:34
+msgid "The request would look something like this::"
+msgstr ""
+
+#: ../../source/concepts/http.rst:41
+msgid ""
+"This message displays all of the information necessary to know what the "
+"client is requesting. It tells the method for the request (GET, POST, "
+"DELETE, etc), and the version of HTTP it supports."
+msgstr ""
+
+#: ../../source/concepts/http.rst:44
+msgid ""
+"The request also includes a number of optional request headers that can "
+"contain a wide variety of information such as what languages the client "
+"wants the content displayed as, the types of formats the client accepts, "
+"and much more. Wikipedia has an article that lists `all header fields "
+"<https://en.wikipedia.org/wiki/List_of_HTTP_header_fields>`_ if you want "
+"to look it over."
+msgstr ""
+
+#: ../../source/concepts/http.rst:50
+msgid "The Response"
+msgstr ""
+
+#: ../../source/concepts/http.rst:52
+msgid ""
+"Once the server receives the request, your application will take that "
+"information and generate some output. The server will bundle your output "
+"as part of its response to the client. This is also represented as a "
+"simple text message that looks something like this::"
+msgstr ""
+
+#: ../../source/concepts/http.rst:65
+msgid ""
+"The response tells the client what version of the HTTP specification that"
+" it's using and, probably most importantly, the status code (200). The "
+"status code is one of a number of codes that have been standardized to "
+"have a very specific meaning to the client. This can tell them that it "
+"was successful (200), or that the page wasn't found (404). Head over to "
+"IANA for a `full list of HTTP status codes "
+"<https://www.iana.org/assignments/http-status-codes/http-status-"
+"codes.xhtml>`_."
+msgstr ""
+
+#: ../../source/concepts/http.rst:72
+msgid "Working with Requests and Responses"
+msgstr ""
+
+#: ../../source/concepts/http.rst:74
+msgid ""
+"While PHP provides ways to interact with the request and response "
+"headers, CodeIgniter, like most frameworks, abstracts them so that you "
+"have a consistent, simple interface to them. The :doc:`IncomingRequest "
+"class </incoming/incomingrequest>` is an object-oriented representation "
+"of the HTTP request. It provides everything you need:"
+msgstr ""
+
+#: ../../source/concepts/http.rst:80
+msgid ""
+"The request class does a lot of work in the background for you, that you "
+"never need to worry about. The ``isAJAX()`` and ``isSecure()`` methods "
+"check several different methods to determine the correct answer."
+msgstr ""
+
+#: ../../source/concepts/http.rst:83
+msgid ""
+"The ``isAJAX()`` method depends on the ``X-Requested-With`` header, which"
+" in some cases is not sent by default in XHR requests via JavaScript "
+"(i.e., fetch). See the :doc:`AJAX Requests </general/ajax>` section on "
+"how to avoid this problem."
+msgstr ""
+
+#: ../../source/concepts/http.rst:85
+msgid ""
+"CodeIgniter also provides a :doc:`Response class </outgoing/response>` "
+"that is an object-oriented representation of the HTTP response. This "
+"gives you an easy and powerful way to construct your response to the "
+"client:"
+msgstr ""
+
+#: ../../source/concepts/http.rst:90
+msgid ""
+"In addition, the Response class allows you to work the HTTP cache layer "
+"for the best performance."
+msgstr ""
+

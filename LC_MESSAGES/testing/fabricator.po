@@ -1,0 +1,349 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/testing/fabricator.rst:3
+msgid "Generating Test Data"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:5
+msgid ""
+"Often you will need sample data for your application to run its tests. "
+"The ``Fabricator`` class uses `Faker "
+"<https://github.com/FakerPHP/Faker>`_ to turn models into generators of "
+"random data. Use fabricators in your seeds or test cases to stage fake "
+"data for your unit tests."
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:14
+msgid "Supported Models"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:16
+msgid ""
+"``Fabricator`` supports any model that extends the framework's core "
+"model, ``CodeIgniter\\Model``. You may use your own custom models by "
+"ensuring they implement "
+"``CodeIgniter\\Test\\Interfaces\\FabricatorModel``:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:21
+msgid ""
+"In addition to methods, the interface outlines some necessary properties "
+"for the target model. Please see the interface code for details."
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:24
+msgid "Loading Fabricators"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:26
+msgid "At its most basic a fabricator takes the model to act on:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:30
+msgid ""
+"The parameter can be a string specifying the name of the model, or an "
+"instance of the model itself:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:35
+msgid "Defining Formatters"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:37
+msgid ""
+"Faker generates data by requesting it from a formatter. With no "
+"formatters defined, ``Fabricator`` will attempt to guess at the most "
+"appropriate fit based on the field name and properties of the model it "
+"represents, falling back on ``$fabricator->defaultFormatter``. This may "
+"be fine if your field names correspond with common formatters, or if you "
+"don't care much about the content of the fields, but most of the time you"
+" will want to specify the formatters to use as the second parameter to "
+"the constructor:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:45
+msgid ""
+"You can also change the formatters after a fabricator is initialized by "
+"using the ``setFormatters()`` method."
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:48
+msgid "Advanced Formatting"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:50
+msgid ""
+"Sometimes the default return of a formatter is not enough. Faker "
+"providers allow parameters to most formatters to further limit the scope "
+"of random data. A fabricator will check its representative model for the "
+"``fake()`` method where you can define exactly what the faked data should"
+" look like:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:56
+msgid ""
+"Notice in this example how the first three values are equivalent to the "
+"formatters from before. However for ``avatar`` we have requested an image"
+" size other than the default and ``login`` uses a conditional based on "
+"app configuration, neither of which are possible using the "
+"``$formatters`` parameter."
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:60
+msgid ""
+"You may want to keep your test data separate from your production models,"
+" so it is a good practice to define a child class in your test support "
+"folder:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:66
+msgid "Setting Modifiers"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:70
+msgid ""
+"Faker provides three special providers, ``unique()``, ``optional()``, and"
+" ``valid()``, to be called before any provider. Fabricator fully supports"
+" these modifiers by providing dedicated methods."
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:76
+msgid ""
+"The arguments passed after the field name are passed directly to the "
+"modifiers as-is. You can refer to `Faker's documentation on modifiers`_ "
+"for details."
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:81
+msgid ""
+"Instead of calling each method on Fabricator, you may use Faker's "
+"modifiers directly if you are using the ``fake()`` method on your models."
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:87
+msgid "Localization"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:89
+msgid ""
+"Faker supports a lot of different locales. Check their documentation to "
+"determine which providers support your locale. Specify a locale in the "
+"third parameter while initiating a fabricator:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:94
+msgid ""
+"If no locale is specified it will use the one defined in "
+"**app/Config/App.php** as ``defaultLocale``. You can check the locale of "
+"an existing fabricator using its ``getLocale()`` method."
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:98
+msgid "Faking the Data"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:100
+msgid ""
+"Once you have a properly-initialized fabricator it is easy to generate "
+"test data with the ``make()`` command:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:104
+msgid "You might get back something like this:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:108
+msgid "You can also get a lot of them back by supplying a count:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:112
+msgid ""
+"The return type of ``make()`` mimics what is defined in the "
+"representative model, but you can force a type using the methods "
+"directly:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:117
+msgid ""
+"The return from ``make()`` is ready to be used in tests or inserted into "
+"the database. Alternatively ``Fabricator`` includes the ``create()`` "
+"command to insert it for you, and return the result. Due to model "
+"callbacks, database formatting, and special keys like primary and "
+"timestamps the return from ``create()`` can differ from ``make()``. You "
+"might get back something like this:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:124
+msgid ""
+"Similar to ``make()`` you can supply a count to insert and return an "
+"array of objects:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:128
+msgid ""
+"Finally, there may be times you want to test with the full database "
+"object but you are not actually using a database. ``create()`` takes a "
+"second parameter to allowing mocking the object, returning the object "
+"with extra database fields above without actually touching the database:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:135
+msgid "Specifying Test Data"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:137
+msgid ""
+"Generated data is great, but sometimes you may want to supply a specific "
+"field for a test without compromising your formatters configuration. "
+"Rather then creating a new fabricator for each variant you can use "
+"``setOverrides()`` to specify the value for any fields:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:143
+msgid ""
+"Now any data generated with ``make()`` or ``create()`` will always use "
+"\"Bobby\" for the ``first`` field:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:147
+msgid ""
+"``setOverrides()`` can take a second parameter to indicate whether this "
+"should be a persistent override or only for a single action:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:152
+msgid "Notice after the first return the fabricator stops using the overrides:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:156
+msgid ""
+"If no second parameter is supplied then passed values will persist by "
+"default."
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:159
+msgid "Test Helper"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:161
+msgid ""
+"Often all you will need is a one-and-done fake object for testing. The "
+"Test Helper provides the ``fake($model, $overrides, $persist = true)`` "
+"function to do just this:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:166
+msgid "This is equivalent to:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:170
+msgid ""
+"If you just need a fake object without saving it to the database you can "
+"pass false into the persist parameter."
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:173
+msgid "Table Counts"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:175
+msgid ""
+"Frequently your faked data will depend on other faked data. "
+"``Fabricator`` provides a static count of the number of faked items you "
+"have created for each table. Consider the following example:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:179
+msgid ""
+"Your project has users and groups. In your test case you want to create "
+"various scenarios with groups of different sizes, so you use "
+"``Fabricator`` to create a bunch of groups. Now you want to create fake "
+"users but don't want to assign them to a non-existent group ID. Your "
+"model's fake method could look like this:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:186
+msgid ""
+"Now creating a new user will ensure it is a part of a valid group: "
+"``$user = fake(UserModel::class);``"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:189
+msgid "Methods"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:191
+msgid ""
+"``Fabricator`` handles the counts internally but you can also access "
+"these static methods to assist with using them:"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:195
+msgid "getCount(string $table): int"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:197
+msgid "Return the current value for a specific table (default: 0)."
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:200
+msgid "setCount(string $table, int $count): int"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:202
+msgid ""
+"Set the value for a specific table manually, for example if you create "
+"some test items without using a fabricator that you still wanted factored"
+" into the final counts."
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:206
+msgid "upCount(string $table): int"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:208
+msgid ""
+"Increment the value for a specific table by one and return the new value."
+" (This is what is used internally with ``Fabricator::create()``)."
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:212
+msgid "downCount(string $table): int"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:214
+msgid ""
+"Decrement the value for a specific table by one and return the new value,"
+" for example if you deleted a fake item but wanted to track the change."
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:218
+msgid "resetCounts()"
+msgstr ""
+
+#: ../../source/testing/fabricator.rst:220
+msgid ""
+"Resets all counts. Good idea to call this between test cases (though "
+"using ``CIUnitTestCase::$refresh = true`` does it automatically)."
+msgstr ""
+

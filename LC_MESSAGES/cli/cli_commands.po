@@ -1,0 +1,298 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/cli/cli_commands.rst:3
+msgid "Creating Spark Commands"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:5
+msgid ""
+"While the ability to use Controllers via CLI like any other route is "
+"convenient, you might find times where you need a little something "
+"different. That's where Spark commands come in. They are simple classes "
+"that do not need to have routes defined for, making them perfect for "
+"building tools that developers can use to make their jobs simpler, "
+"whether by handling migrations or database seeding, checking cronjob "
+"status, or even building out custom code generators for your company."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:17
+msgid "Creating New Commands"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:19
+msgid ""
+"You can very easily create new commands to use in your own development. "
+"Each class must be in its own file, and must extend "
+"``CodeIgniter\\CLI\\BaseCommand``, and implement the ``run()`` method."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:22
+msgid ""
+"The following properties should be used in order to get listed in CLI "
+"commands and to add help functionality to your command:"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:24
+msgid ""
+"``$group``: a string to describe the group the command is lumped under "
+"when listing commands. For example: ``Database``"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:25
+msgid ""
+"``$name``: a string to describe the command's name. For example: "
+"``make:controller``"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:26
+msgid ""
+"``$description``: a string to describe the command. For example: "
+"``Generates a new controller file.``"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:27
+msgid ""
+"``$usage``: a string to describe the command usage. For example: "
+"``make:controller <name> [options]``"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:28
+msgid ""
+"``$arguments``: an array of strings to describe each command argument. "
+"For example: ``'name' => 'The controller class name.'``"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:29
+msgid ""
+"``$options``: an array of strings to describe each command option. For "
+"example: ``'--force' => 'Force overwrite existing file.'``"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:31
+msgid ""
+"**Help description will be automatically generated according to the above"
+" parameters.**"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:34
+msgid "File Location"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:36
+msgid ""
+"Commands must be stored within a directory named **Commands**. However, "
+"that directory has to be located in the PSR-4 namespaces so that the "
+":doc:`Autoloader </concepts/autoloader>` can locate it. This could be in "
+"**app/Commands**, or a directory that you keep commands in to use in all "
+"of your project development, like **Acme/Commands**."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:40
+msgid ""
+"When the commands are executed, the full CodeIgniter CLI environment has "
+"been loaded, making it possible to get environment information, path "
+"information, and to use any of the tools you would use when making a "
+"Controller."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:44
+msgid "An Example Command"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:46
+msgid ""
+"Let's step through an example command whose only function is to report "
+"basic information about the application itself, for demonstration "
+"purposes. Start by creating a new file at **app/Commands/AppInfo.php**. "
+"It should contain the following code:"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:52
+msgid ""
+"If you run the **list** command, you will see the new command listed "
+"under its own ``Demo`` group. If you take a close look, you should see "
+"how this works fairly easily. The ``$group`` property simply tells it how"
+" to organize this command with all of the other commands that exist, "
+"telling it what heading to list it under."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:56
+msgid ""
+"The ``$name`` property is the name this command can be called by. The "
+"only requirement is that it must not contain a space, and all characters "
+"must be valid on the command line itself. By convention, though, commands"
+" are lowercase, with further grouping of commands being done by using a "
+"colon with the command name itself. This helps keep multiple commands "
+"from having naming collisions."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:61
+msgid ""
+"The final property, ``$description`` is a short string that is displayed "
+"in the **list** command and should describe what the command does."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:65
+msgid "run()"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:67
+msgid ""
+"The ``run()`` method is the method that is called when the command is "
+"being run. The ``$params`` array is a list of any CLI arguments after the"
+" command name for your use. If the CLI string was:"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:74
+msgid "Then **foo** is the command name, and the ``$params`` array would be:"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:78
+msgid ""
+"This can also be accessed through the :doc:`CLI </cli/cli_library>` "
+"library, but this already has your command removed from the string. These"
+" parameters can be used to customize how your scripts behave."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:81
+msgid "Our demo command might have a ``run()`` method something like:"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:85
+msgid ""
+"See the :doc:`CLI Library </cli/cli_library>` page for detailed "
+"information."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:88
+msgid "Command Termination"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:90
+msgid ""
+"By default, the command exits with a success code of ``0``. If an error "
+"is encountered while executing a command, you can terminate the command "
+"by using the ``return`` language construct with an exit code in the "
+"``run()`` method."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:93
+msgid "For example, ``return EXIT_ERROR;``"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:95
+msgid ""
+"This approach can help with debugging at the system level, if the "
+"command, for example, is run via crontab."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:97
+msgid ""
+"You can use the ``EXIT_*`` exit code constants defined in the "
+"**app/Config/Constants.php** file."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:101
+msgid "BaseCommand"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:103
+msgid ""
+"The ``BaseCommand`` class that all commands must extend have a couple of "
+"helpful utility methods that you should be familiar with when creating "
+"your own commands. It also has a :doc:`Logger </general/logging>` "
+"available at ``$this->logger``."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:113
+msgid "The name of another command to call."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:114
+msgid "Additional CLI arguments to make available to that command."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:116
+msgid ""
+"This method allows you to run other commands during the execution of your"
+" current command:"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:122
+msgid "The exception to use for error reporting."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:124
+msgid ""
+"A convenience method to maintain a consistent and clear error output to "
+"the CLI:"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:130
+msgid "A method to show command help: (usage,arguments,description,options)"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:134
+msgid "The string item."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:135
+msgid "The max size."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:136
+msgid "How many extra spaces to add at the end."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:137
+msgid "The indent spaces."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:139
+msgid ""
+"Pads our string out so that all titles are the same length to nicely line"
+" up descriptions:"
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:147
+msgid "Use :php:meth:`CodeIgniter\\\\CLI\\\\BaseCommand::setPad()` instead."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:150
+msgid "The  $key => $value array."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:151
+msgid "The pad spaces."
+msgstr ""
+
+#: ../../source/cli/cli_commands.rst:153
+msgid ""
+"A method to calculate padding for ``$key => $value`` array output. The "
+"padding can be used to output a will formatted table in CLI."
+msgstr ""
+

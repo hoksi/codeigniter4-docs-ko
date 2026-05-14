@@ -1,0 +1,987 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:2
+msgid "Version 4.0.0-alpha.5"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:4
+msgid "Release Date: Jan 30, 2019"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:6
+msgid "**Next alpha release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:13
+msgid "Highlights"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:15
+msgid "added $maxQueries setting to app/Config/Toolbar.php"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:16
+msgid "updated PHP dependency to 7.2"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:17
+msgid ""
+"new feature branches have been created for the email and queue modules, "
+"so they don't impact the release of 4.0.0"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:18
+msgid ""
+"dropped several language messages that were unused (eg "
+"Migrations.missingTable) and added some new (eg Migrations.invalidType)"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:19
+msgid "lots of bug fixes, especially for the database support"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:20
+msgid ""
+"provided filters (CSRF, Honeypot, DebugToolbar) have been moved from "
+"app/Filters/ to system/Filters/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:21
+msgid "revisited the installation and tutorial sections of the user guide"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:22
+msgid "code coverage is at 77% ... getting ever closer to our target of 80% :)"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:24
+msgid ""
+"We hope this will be the last alpha, and that the next pre-release will "
+"be our first beta ... fingers crossed!"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:27
+msgid "Changed Files"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:29
+msgid "The list of changed files follows, with PR numbers shown."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:31
+msgid "admin/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:32
+msgid "starter/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:33
+msgid "README.md #1637"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:34
+msgid "app/Config/Paths.php #1685"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:35
+msgid "release-appstarter #1685"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:37
+msgid "app/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:38
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:57
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:123
+msgid "Config/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:39
+msgid "Filters #1686"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:40
+msgid "Modules #1665"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:41
+msgid "Services #614216"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:42
+msgid "Toolbar"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:44
+msgid "contributing/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:45
+msgid "guidelines.rst #1671, #1673"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:46
+msgid "internals.rst #1671"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:48
+msgid "public/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:49
+msgid "index.php #1648, #1670"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:51
+msgid "system/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:52
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:117
+msgid "Autoloader/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:53
+msgid "Autoloader #1665, #1672"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:54
+msgid "FileLocator #1665"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:55
+msgid "Commands/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:56
+msgid "Database/MigrationRollback #1683"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:58
+msgid "BaseConfig #1635"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:59
+msgid "BaseService #1635, #1665"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:60
+msgid "Paths #1626"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:61
+msgid "Services #614216, #3a4ade, #1643"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:62
+msgid "View #1616"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:63
+msgid "Database/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:64
+msgid "BaseBuilder #1640, #1663, #1677"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:65
+msgid "BaseConnection #1677"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:66
+msgid "Config #6b8b8b, #1660"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:67
+msgid "MigrationRunner #81d371, #1660"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:68
+msgid "Query #1677"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:69
+msgid "Database/Postgre/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:70
+msgid "Builder #d2b377"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:71
+msgid "Debug/Toolbar/Collectors/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:72
+msgid "Logs #1654"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:73
+msgid "Views #3a4ade"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:74
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:143
+msgid "Events/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:75
+msgid "Events #1635"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:76
+msgid "Exceptions/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:77
+msgid "ConfigException #1660"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:78
+msgid "Files/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:79
+msgid "Exceptions/FileException #1636"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:80
+msgid "File #1636"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:81
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:145
+msgid "Filters/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:82
+msgid "Filters #1635, #1625, #6dab8f"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:83
+msgid "CSRF #1686"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:84
+msgid "DebugToolbar #1686"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:85
+msgid "Honeypot #1686"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:86
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:150
+msgid "Helpers/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:87
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:182
+msgid "form_helper #1633"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:88
+msgid "html_helper #1538"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:89
+msgid "xml_helper #1641"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:90
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:155
+msgid "HTTP/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:91
+msgid "ContentSecurityPolicy #1641, #1642"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:92
+msgid "URI #2e698a"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:93
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:158
+msgid "Language/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:94
+msgid "/en/Files #1636"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:95
+msgid "Language #1641"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:96
+msgid "Log/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:97
+msgid "Handlers/FileHandler #1641"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:98
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:160
+msgid "Router/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:99
+msgid "RouteCollection #1665, #5951c3"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:100
+msgid "Router #9e435c, #7993a7, #1678"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:101
+msgid "Session/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:102
+msgid "Handlers/BaseHandler #1684"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:103
+msgid "Handlers/FileHandler #1684"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:104
+msgid "Handlers/MemcachedHandler #1679"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:105
+msgid "Session #1679"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:106
+msgid "bootstrap #81d371, #1665"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:107
+msgid "Common #1660"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:108
+msgid "Entity #1623, #1622"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:109
+msgid "Model #1617, #1632, #1656, #1689"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:111
+msgid "tests/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:112
+msgid "README.md #1671"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:114
+msgid "tests/system/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:115
+msgid "API/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:116
+msgid "ResponseTraitTest #1635"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:118
+msgid "AutoloaderTest #1665"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:119
+msgid "FileLocatorTest #1665, #1686"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:120
+msgid "CLI/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:121
+msgid "CommandRunnerTest #1635"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:122
+msgid "CommandsTest #1635"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:124
+msgid "BaseConfigTest #1635"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:125
+msgid "ConfigTest #1643"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:126
+msgid "ServicesTest #1635, #1643"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:127
+msgid "Database/Builder/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:128
+msgid "AliasTest #bea1dd"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:129
+msgid "DeleteTest #1677"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:130
+msgid "GroupTest #1640"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:131
+msgid "InsertTest #1640, #1677"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:132
+msgid "LikeTest #1640, #1677"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:133
+msgid "SelectTest #1663"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:134
+msgid "UpdateTest #1640, #1677"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:135
+msgid "WhereTest #1640, #1677"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:136
+msgid "Database/Live/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:137
+msgid "AliasTest #1675"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:138
+msgid "ConnectTest #1660, #1675"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:139
+msgid "ForgeTest #6b8b8b"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:140
+msgid "InsertTest #1677"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:141
+msgid "Migrations/MigrationRunnerTest #1660, #1675"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:142
+msgid "ModelTest #1617, #1689"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:144
+msgid "EventTest #1635"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:146
+msgid "CSRFTest #1686"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:147
+msgid "DebugToolbarTest #1686"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:148
+msgid "FiltersTest #1635, #6dab8f, #1686"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:149
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:154
+msgid "HoneypotTest #1686"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:151
+msgid "FormHelperTest #1633"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:152
+msgid "XMLHelperTest #1641"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:153
+msgid "Honeypot/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:156
+msgid "ContentSecurityPolicyTest #1641"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:157
+msgid "IncomingRequestTest #1641"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:159
+msgid "LanguageTest #1643"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:161
+msgid "RouteCollectionTest #5951c3"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:162
+msgid "RouterTest #9e435c"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:163
+msgid "Validation/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:164
+msgid "RulesTest #1689"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:165
+msgid "View/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:166
+msgid "ParserPluginTest #1669"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:167
+msgid "ParserTest #1669"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:169
+msgid "user_guide_src/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:171
+msgid "concepts/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:172
+msgid "autoloader #1665"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:173
+msgid "structure #1648"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:174
+msgid "database/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:175
+msgid "connecting #1660"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:176
+msgid "transactions #1645"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:177
+msgid "general/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:178
+msgid "configuration #1643"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:179
+msgid "managing_apps #5f305a, #1648"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:180
+msgid "modules #1613, #1665"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:181
+msgid "helpers/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:183
+msgid "incoming/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:184
+msgid "filters #1686"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:185
+msgid "index #4a1886"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:186
+msgid "methodspoofing #4a1886"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:187
+msgid "installation/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:188
+msgid "index #1690, #1693"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:189
+msgid "installing_composer #1673, #1690"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:190
+msgid "installing_git #1673, #1690"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:191
+msgid "installing_manual #1673, #1690"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:192
+msgid "repositories #1673, #1690"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:193
+msgid "running #1690, #1691"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:194
+msgid "troubleshooting #1690, #1693"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:195
+msgid "libraries/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:196
+msgid "honeypot #1686"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:197
+msgid "index #1643, #1690"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:198
+msgid "throttler #1686"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:199
+msgid "tutorial/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:200
+msgid "create_news_item  #1693"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:201
+msgid "index #1693"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:202
+msgid "news_section #1693"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:203
+msgid "static_pages #1693"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:205
+msgid "composer.json #1670"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:206
+msgid "contributing.md #1670"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:207
+msgid "README.md #1670"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:208
+msgid "spark #1648"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:209
+msgid ".travis.yml #1649, #1670"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:212
+msgid "PRs merged"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:214
+msgid "#1693 Docs/tutorial"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:215
+msgid "#5951c3 Allow domain/sub-domain routes to overwrite existing routes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:216
+msgid "#1691 Update the running docs"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:217
+msgid "#1690 Rework install docs"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:218
+msgid "#bea1dd Additional AliasTests for potential LeftJoin issue"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:219
+msgid "#1689 Model Validation Fix"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:220
+msgid "#1687 Add copyright blocks to filters"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:221
+msgid "#1686 Refactor/filters"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:222
+msgid "#1685 Fix admin - app starter creation"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:223
+msgid "#1684 Updating session id cleanup for filehandler"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:224
+msgid "#1683 Fix migrate:refresh bug"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:225
+msgid "#d2b377 Fix Postgres replace command to work new way of storing binds"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:226
+msgid "#4a1886 Document method spoofing"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:227
+msgid "#2e698a urldecode URI keys as well as values."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:228
+msgid "#1679 save_path - for memcached"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:229
+msgid "#1678 fix route not replacing forward slashes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:230
+msgid "#1677 Implement Don't Escape feature for db engine"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:231
+msgid "#1675 Add missing test group directives"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:232
+msgid "#1674 Update changelog"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:233
+msgid "#1673 Updated download & installation docs"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:234
+msgid "#1672 Update Autoloader.php"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:235
+msgid "#1670 Update PHP dependency to 7.2"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:236
+msgid "#1671 Update docs"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:237
+msgid "#1669 Enhance Parser & Plugin testing"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:238
+msgid "#1665 Composer PSR4 namespaces are now part of the modules auto-discovery"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:239
+msgid "#6dab8f Filters match case-insensitively"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:240
+msgid "#1663 Fix bind issue that occurred when using whereIn"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:241
+msgid "#1660 Migrations Tests and database tweaks"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:242
+msgid ""
+"#1656 DBGroup in __get(), allows to validate \"database\" data outside "
+"the model"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:243
+msgid "#1654 Toolbar - Return Logger::$logCache items"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:244
+msgid "#1649 remove php 7.3 from \"allow_failures\" in travis config"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:245
+msgid "#1648 Update \"managing apps\" docs"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:246
+msgid "#1645 Fix transaction enabling confusing (docu)"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:247
+msgid "#1643 Remove email module"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:248
+msgid "#1642 CSP nonce attribute value in \"\""
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:249
+msgid "#81d371 Safety checks for config files during autoload and migrations"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:250
+msgid "#1641 More unit testing tweaks"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:251
+msgid "#1640 Update getCompiledX methods in BaseBuilder"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:252
+msgid "#1637 Fix starter README"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:253
+msgid "#1636 Refactor Files module"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:254
+msgid "#5f305a UG - Typo in managing apps"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:255
+msgid "#1635 Unit testing enhancements"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:256
+msgid "#1633 Uses csrf_field and form_hidden"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:257
+msgid "#1632 DBGroup should be passed to ->run instead of ->setRules"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:258
+msgid "#1631 move use statement after License doc at UploadedFile class"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:259
+msgid "#1630 Update copyright to 2019"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:260
+msgid "#1629 \"application\" to \"app\" directory doc and comments"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:261
+msgid "#3a4ade view() now properly reads the app config again"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:262
+msgid "#7993a7 Final piece to get translateURIDashes working appropriately"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:263
+msgid "#9e435c TranslateURIDashes fix"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:264
+msgid "#1626 clean up Paths::$viewDirectory property"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:265
+msgid "#1625 After matches is not set empty"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:266
+msgid "#1623 Property was not cast if was defined as nullable"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:267
+msgid "#1622 Nullable support for __set"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:268
+msgid "#1617 countAllResults() should respect soft deletes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:269
+msgid "#1616 Fix View config merge order"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:270
+msgid ""
+"#614216 Moved honeypot service out of the app Services file to the system"
+" Services where it belongs"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:271
+msgid ""
+"#6b8b8b Allow db forge and utils to take an array of connection info "
+"instead of a group name"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:272
+msgid "#1613 Typo in documentation"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-alpha.5.rst:273
+msgid "#1538 img fix(?) - html_helper"
+msgstr ""
+

@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_responses.rst:2
+msgid "Upgrade Output Class"
+msgstr ""
+
+#: ../../source/installation/upgrade_responses.rst:9
+msgid "Documentations"
+msgstr ""
+
+#: ../../source/installation/upgrade_responses.rst:10
+msgid ""
+"`Output Class Documentation CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/libraries/output.html>`_"
+msgstr ""
+
+#: ../../source/installation/upgrade_responses.rst:11
+msgid ":doc:`HTTP Responses Documentation CodeIgniter 4.x </outgoing/response>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_responses.rst:14
+msgid "What has been changed"
+msgstr ""
+
+#: ../../source/installation/upgrade_responses.rst:15
+msgid "The Output class has been changed to the Response class."
+msgstr ""
+
+#: ../../source/installation/upgrade_responses.rst:16
+msgid "The methods have been renamed."
+msgstr ""
+
+#: ../../source/installation/upgrade_responses.rst:19
+msgid "Upgrade Guide"
+msgstr ""
+
+#: ../../source/installation/upgrade_responses.rst:20
+msgid ""
+"The methods in the HTTP Response class are named slightly different. The "
+"most important change in the naming is the switch from underscored method"
+" names to camelCase. The method ``set_content_type()`` from version 3 is "
+"now named ``setContentType()`` and so on."
+msgstr ""
+
+#: ../../source/installation/upgrade_responses.rst:21
+msgid ""
+"In the most cases you have to change ``$this->output`` to "
+"``$this->response`` followed by the method. You can find all methods in "
+":doc:`../outgoing/response`."
+msgstr ""
+
+#: ../../source/installation/upgrade_responses.rst:24
+msgid "Code Example"
+msgstr ""
+
+#: ../../source/installation/upgrade_responses.rst:27
+msgid "CodeIgniter Version 3.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_responses.rst:32
+msgid "CodeIgniter Version 4.x"
+msgstr ""
+

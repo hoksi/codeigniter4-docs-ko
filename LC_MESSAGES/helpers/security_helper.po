@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/helpers/security_helper.rst:3
+msgid "Security Helper"
+msgstr ""
+
+#: ../../source/helpers/security_helper.rst:5
+msgid "The Security Helper file contains security related functions."
+msgstr ""
+
+#: ../../source/helpers/security_helper.rst:12
+msgid "Loading this Helper"
+msgstr ""
+
+#: ../../source/helpers/security_helper.rst:14
+msgid "This helper is loaded using the following code:"
+msgstr ""
+
+#: ../../source/helpers/security_helper.rst:19
+msgid "Available Functions"
+msgstr ""
+
+#: ../../source/helpers/security_helper.rst:21
+msgid "The following functions are available:"
+msgstr ""
+
+#: ../../source/helpers/security_helper.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/helpers/security_helper.rst:25
+msgid "Filename"
+msgstr ""
+
+#: ../../source/helpers/security_helper.rst:26
+msgid "Whether the relative path is acceptable (available since v4.6.2)"
+msgstr ""
+
+#: ../../source/helpers/security_helper.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/helpers/security_helper.rst:27
+msgid "Sanitized file name"
+msgstr ""
+
+#: ../../source/helpers/security_helper.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/helpers/security_helper.rst:30
+msgid "Provides protection against directory traversal."
+msgstr ""
+
+#: ../../source/helpers/security_helper.rst:32
+msgid ""
+"For more info, please see the :doc:`Security Library "
+"<../libraries/security>` documentation."
+msgstr ""
+
+#: ../../source/helpers/security_helper.rst:37
+#: ../../source/helpers/security_helper.rst:50
+msgid "Input string"
+msgstr ""
+
+#: ../../source/helpers/security_helper.rst:38
+msgid "The input string with no image tags"
+msgstr ""
+
+#: ../../source/helpers/security_helper.rst:41
+msgid ""
+"This is a security function that will strip image tags from a string. It "
+"leaves the image URL as plain text."
+msgstr ""
+
+#: ../../source/helpers/security_helper.rst:44
+#: ../../source/helpers/security_helper.rst:56
+msgid "Example:"
+msgstr ""
+
+#: ../../source/helpers/security_helper.rst:51
+msgid "Safely formatted string"
+msgstr ""
+
+#: ../../source/helpers/security_helper.rst:54
+msgid "This is a security function that converts PHP tags to entities."
+msgstr ""
+

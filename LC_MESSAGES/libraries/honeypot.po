@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/libraries/honeypot.rst:3
+msgid "Honeypot Class"
+msgstr ""
+
+#: ../../source/libraries/honeypot.rst:5
+msgid ""
+"The Honeypot Class makes it possible to determine when a Bot makes a "
+"request to a CodeIgniter4 application, if it's enabled in "
+"**app/Config/Filters.php** file. This is done by attaching form fields to"
+" any form, and this form field is hidden from a human but accessible to a"
+" Bot. When data is entered into the field, it's assumed the request is "
+"coming from a Bot, and you can throw a ``HoneypotException``."
+msgstr ""
+
+#: ../../source/libraries/honeypot.rst:16
+msgid "Enabling Honeypot"
+msgstr ""
+
+#: ../../source/libraries/honeypot.rst:18
+msgid ""
+"To enable a Honeypot, changes have to be made to the "
+"**app/Config/Filters.php**. Just uncomment honeypot from the ``$globals``"
+" array, like:"
+msgstr ""
+
+#: ../../source/libraries/honeypot.rst:23
+msgid ""
+"A sample Honeypot filter is bundled, as **system/Filters/Honeypot.php**. "
+"If it is not suitable, make your own at **app/Filters/Honeypot.php**, and"
+" modify the ``$aliases`` in **app/Config/Filters.php** appropriately."
+msgstr ""
+
+#: ../../source/libraries/honeypot.rst:29
+msgid "Customizing Honeypot"
+msgstr ""
+
+#: ../../source/libraries/honeypot.rst:31
+msgid ""
+"Honeypot can be customized. The fields below can be set either in "
+"**app/Config/Honeypot.php** or in **.env**."
+msgstr ""
+
+#: ../../source/libraries/honeypot.rst:34
+msgid ""
+"``$hidden`` - ``true`` or ``false`` to control visibility of the honeypot"
+" field; default is ``true``"
+msgstr ""
+
+#: ../../source/libraries/honeypot.rst:35
+msgid ""
+"``$label`` - HTML label for the honeypot field, default is ``'Fill This "
+"Field'``"
+msgstr ""
+
+#: ../../source/libraries/honeypot.rst:36
+msgid ""
+"``$name`` - name of the HTML form field used for the template; default is"
+" ``'honeypot'``"
+msgstr ""
+
+#: ../../source/libraries/honeypot.rst:37
+#, python-brace-format
+msgid ""
+"``$template`` - form field template used for the honeypot; default is "
+"``'<label>{label}</label><input type=\"text\" name=\"{name}\" "
+"value=\"\">'``"
+msgstr ""
+
+#: ../../source/libraries/honeypot.rst:38
+#, python-brace-format
+msgid ""
+"``$container`` - container tag for the template; default is ``'<div "
+"style=\"display:none\">{template}</div>'``. If you enables CSP, you can "
+"remove ``style=\"display:none\"``."
+msgstr ""
+
+#: ../../source/libraries/honeypot.rst:40
+msgid ""
+"``$containerId`` - [Since v4.3.0] this setting is used only when you "
+"enable CSP. You can change the id attribute for the container tag; "
+"default is ``'hpc'``"
+msgstr ""
+

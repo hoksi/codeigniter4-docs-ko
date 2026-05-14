@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/database/helpers.rst:3
+msgid "Query Helper Methods"
+msgstr ""
+
+#: ../../source/database/helpers.rst:10
+msgid "Information From Executing a Query"
+msgstr ""
+
+#: ../../source/database/helpers.rst:13
+msgid "$db->insertID()"
+msgstr ""
+
+#: ../../source/database/helpers.rst:15
+msgid "The insert ID number when performing database inserts."
+msgstr ""
+
+#: ../../source/database/helpers.rst:17
+msgid ""
+"If using the PDO driver with PostgreSQL, or using the Interbase driver, "
+"this function requires a $name parameter, which specifies the appropriate"
+" sequence to check for the insert id."
+msgstr ""
+
+#: ../../source/database/helpers.rst:22
+msgid "$db->affectedRows()"
+msgstr ""
+
+#: ../../source/database/helpers.rst:24
+msgid ""
+"Displays the number of affected rows, when doing \"write\" type queries "
+"(insert, update, etc.)."
+msgstr ""
+
+#: ../../source/database/helpers.rst:27
+msgid ""
+"In MySQL \"DELETE FROM TABLE\" returns 0 affected rows. The database "
+"class has a small hack that allows it to return the correct number of "
+"affected rows. By default this hack is enabled but it can be turned off "
+"in the database driver file."
+msgstr ""
+
+#: ../../source/database/helpers.rst:33
+msgid "$db->getLastQuery()"
+msgstr ""
+
+#: ../../source/database/helpers.rst:35
+msgid ""
+"Returns a Query object that represents the last query that was run (the "
+"query string, not the result)."
+msgstr ""
+
+#: ../../source/database/helpers.rst:38
+msgid "Information About Your Database"
+msgstr ""
+
+#: ../../source/database/helpers.rst:41
+msgid "$db->countAll()"
+msgstr ""
+
+#: ../../source/database/helpers.rst:43
+msgid ""
+"Permits you to determine the number of rows in a particular table. Submit"
+" the table name in the first parameter. This is part of Query Builder."
+msgstr ""
+
+#: ../../source/database/helpers.rst:49
+msgid "$db->countAllResults()"
+msgstr ""
+
+#: ../../source/database/helpers.rst:51
+msgid ""
+"Permits you to determine the number of rows in a particular result set. "
+"Submit the table name in the first parameter. This is part of Query "
+"Builder."
+msgstr ""
+
+#: ../../source/database/helpers.rst:57
+msgid "$db->getPlatform()"
+msgstr ""
+
+#: ../../source/database/helpers.rst:59
+msgid ""
+"Outputs the database platform (DBDriver) you are running (MySQLi, SQLSRV,"
+" Postgre, etc...):"
+msgstr ""
+
+#: ../../source/database/helpers.rst:65
+msgid "$db->getVersion()"
+msgstr ""
+
+#: ../../source/database/helpers.rst:67
+msgid "Outputs the database version you are running:"
+msgstr ""
+

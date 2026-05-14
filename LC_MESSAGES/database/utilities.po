@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/database/utilities.rst:3
+msgid "Database Utilities"
+msgstr ""
+
+#: ../../source/database/utilities.rst:5
+msgid ""
+"The Database Utility Class contains methods that help you manage your "
+"database."
+msgstr ""
+
+#: ../../source/database/utilities.rst:13
+msgid "Initializing the Utility Class"
+msgstr ""
+
+#: ../../source/database/utilities.rst:15
+msgid "Load the Utility Class as follows:"
+msgstr ""
+
+#: ../../source/database/utilities.rst:20
+msgid ""
+"You can also pass another database group to the DB Utility loader, in "
+"case the database you want to manage isn't the default one:"
+msgstr ""
+
+#: ../../source/database/utilities.rst:26
+msgid ""
+"In the above example, we're passing a database group name as the first "
+"parameter."
+msgstr ""
+
+#: ../../source/database/utilities.rst:31
+msgid "Using the Database Utilities"
+msgstr ""
+
+#: ../../source/database/utilities.rst:34
+msgid "Retrieve List of Database Names"
+msgstr ""
+
+#: ../../source/database/utilities.rst:36
+msgid "Returns an array of database names:"
+msgstr ""
+
+#: ../../source/database/utilities.rst:42
+msgid "Determine If a Database Exists"
+msgstr ""
+
+#: ../../source/database/utilities.rst:44
+msgid ""
+"Sometimes it's helpful to know whether a particular database exists. "
+"Returns a boolean ``true``/``false``. Usage example:"
+msgstr ""
+
+#: ../../source/database/utilities.rst:50
+msgid ""
+"Replace ``database_name`` with the name of the database you are looking "
+"for. This method is case sensitive."
+msgstr ""
+
+#: ../../source/database/utilities.rst:54
+msgid "Optimize a Table"
+msgstr ""
+
+#: ../../source/database/utilities.rst:56
+msgid ""
+"Permits you to optimize a table using the table name specified in the "
+"first parameter. Returns ``true``/``false`` based on success or failure:"
+msgstr ""
+
+#: ../../source/database/utilities.rst:62
+msgid ""
+"Not all database platforms support table optimization. It is mostly for "
+"use with MySQL."
+msgstr ""
+
+#: ../../source/database/utilities.rst:66
+msgid "Optimize a Database"
+msgstr ""
+
+#: ../../source/database/utilities.rst:68
+msgid ""
+"Permits you to optimize the database your DB class is currently connected"
+" to. Returns an array containing the DB status messages or ``false`` on "
+"failure:"
+msgstr ""
+
+#: ../../source/database/utilities.rst:75
+msgid ""
+"Not all database platforms support database optimization. It it is mostly"
+" for use with MySQL."
+msgstr ""
+
+#: ../../source/database/utilities.rst:79
+msgid "Export a Query Result as a CSV File"
+msgstr ""
+
+#: ../../source/database/utilities.rst:81
+msgid ""
+"Permits you to generate a CSV file from a query result. The first "
+"parameter of the method must contain the result object from your query. "
+"Example:"
+msgstr ""
+
+#: ../../source/database/utilities.rst:88
+msgid ""
+"The second, third, and fourth parameters allow you to set the delimiter "
+"newline, and enclosure characters respectively. By default commas are "
+"used as the delimiter, ``\"\\n\"`` is used as a new line, and a double-"
+"quote is used as the enclosure. Example:"
+msgstr ""
+
+#: ../../source/database/utilities.rst:96
+msgid ""
+"This method will NOT write the CSV file for you. It simply creates the "
+"CSV layout. If you need to write the file use the "
+":php:func:`write_file()` helper."
+msgstr ""
+
+#: ../../source/database/utilities.rst:101
+msgid "Export a Query Result as an XML Document"
+msgstr ""
+
+#: ../../source/database/utilities.rst:103
+msgid ""
+"Permits you to generate an XML file from a query result. The first "
+"parameter expects a query result object, the second may contain an "
+"optional array of config parameters. Example:"
+msgstr ""
+
+#: ../../source/database/utilities.rst:109
+msgid ""
+"and it will get the following xml result when the ``mytable`` has columns"
+" ``id`` and ``name``::"
+msgstr ""
+
+#: ../../source/database/utilities.rst:118
+msgid ""
+"This method will NOT write the XML file for you. It simply creates the "
+"XML layout. If you need to write the file use the "
+":php:func:`write_file()` helper."
+msgstr ""
+

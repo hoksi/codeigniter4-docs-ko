@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.2.7.rst:2
+msgid "Version 4.2.7"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.7.rst:4
+msgid "Release Date: October 6, 2022"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.7.rst:6
+msgid "**4.2.7 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.7.rst:13
+msgid "SECURITY"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.7.rst:15
+msgid ""
+"*Secure or HttpOnly flag set in Config\\Cookie is not reflected in "
+"Cookies issued* was fixed. See the `Security advisory GHSA-745p-r637-7vvp"
+" <https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-"
+"745p-r637-7vvp>`_ for more information."
+msgstr ""
+
+#: ../../source/changelogs/v4.2.7.rst:16
+msgid ""
+"Fixed a bug that prevents CSP headers from being sent when "
+"``Config\\ContentSecurityPolicy::$autoNonce`` is false."
+msgstr ""
+
+#: ../../source/changelogs/v4.2.7.rst:19
+msgid "BREAKING"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.7.rst:21
+msgid ""
+"The default values of the parameters in :php:func:`set_cookie()` and "
+":php:meth:`CodeIgniter\\\\HTTP\\\\Response::setCookie()` has been fixed. "
+"Now the default values of ``$secure`` and ``$httponly`` are ``null``, and"
+" these values will be replaced with the ``Config\\Cookie`` values."
+msgstr ""
+
+#: ../../source/changelogs/v4.2.7.rst:22
+msgid ""
+"``Time::__toString()`` is now locale-independent. It returns database-"
+"compatible strings like '2022-09-07 12:00:00' in any locale."
+msgstr ""
+
+#: ../../source/changelogs/v4.2.7.rst:23
+msgid ""
+"The Validation rule ``Validation\\Rule::required_without()`` and "
+"``Validation\\StrictRules\\Rule::required_without()`` parameters have "
+"been changed and the logic of these rule has also been fixed."
+msgstr ""
+
+#: ../../source/changelogs/v4.2.7.rst:26
+msgid "Message Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.7.rst:28
+msgid "Fixed typos in some items in ``Language/en/Email.php``."
+msgstr ""
+
+#: ../../source/changelogs/v4.2.7.rst:29
+msgid "Added missing item ``valid_json`` in ``Language/en/Validation.php``."
+msgstr ""
+
+#: ../../source/changelogs/v4.2.7.rst:32
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.2.7.rst:34
+msgid ""
+"See the repo's `CHANGELOG_4.2.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/changelogs/CHANGELOG_4.2.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_configuration.rst:2
+msgid "Upgrade Configuration"
+msgstr ""
+
+#: ../../source/installation/upgrade_configuration.rst:9
+msgid "Documentations"
+msgstr ""
+
+#: ../../source/installation/upgrade_configuration.rst:11
+msgid ""
+"`Config Documentation CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/libraries/config.html>`_"
+msgstr ""
+
+#: ../../source/installation/upgrade_configuration.rst:12
+msgid ""
+":doc:`Configuration Documentation CodeIgniter 4.x "
+"</general/configuration>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_configuration.rst:15
+msgid "What has been changed"
+msgstr ""
+
+#: ../../source/installation/upgrade_configuration.rst:17
+msgid ""
+"In CI4, the configurations are now stored in classes which extend "
+"``CodeIgniter\\Config\\BaseConfig``."
+msgstr ""
+
+#: ../../source/installation/upgrade_configuration.rst:18
+msgid ""
+"The **application/config/config.php** in CI3 will be "
+"**app/Config/App.php** and some other files like "
+"**app/Config/Security.php** for the specific classes."
+msgstr ""
+
+#: ../../source/installation/upgrade_configuration.rst:20
+msgid ""
+"Within the configuration class, the config values are stored in public "
+"class properties."
+msgstr ""
+
+#: ../../source/installation/upgrade_configuration.rst:21
+msgid "The method to fetch config values has been changed."
+msgstr ""
+
+#: ../../source/installation/upgrade_configuration.rst:24
+msgid "Upgrade Guide"
+msgstr ""
+
+#: ../../source/installation/upgrade_configuration.rst:26
+msgid ""
+"You have to change the values in the default CI4 config files according "
+"to the changes in the CI3 files. The config names are pretty much the "
+"same as in CI3."
+msgstr ""
+
+#: ../../source/installation/upgrade_configuration.rst:28
+msgid ""
+"If you are using custom config files in your CI3 project you have to "
+"create those files as new PHP classes in your CI4 project in "
+"**app/Config**. These classes should be in the ``Config`` namespace and "
+"should extend ``CodeIgniter\\Config\\BaseConfig``."
+msgstr ""
+
+#: ../../source/installation/upgrade_configuration.rst:31
+msgid ""
+"Once you have created all custom config classes, you have to copy the "
+"variables from the CI3 config into the new CI4 config class as public "
+"class properties."
+msgstr ""
+
+#: ../../source/installation/upgrade_configuration.rst:33
+msgid ""
+"Now, you have to change the config fetching syntax everywhere you fetch "
+"config values. The CI3 syntax is something like "
+"``$this->config->item('item_name');``. You have to change this into "
+"``config('MyConfig')->item_name;``."
+msgstr ""
+
+#: ../../source/installation/upgrade_configuration.rst:38
+msgid "Code Example"
+msgstr ""
+
+#: ../../source/installation/upgrade_configuration.rst:41
+msgid "CodeIgniter Version 3.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_configuration.rst:43
+msgid "Path: **application/config/site.php**:"
+msgstr ""
+
+#: ../../source/installation/upgrade_configuration.rst:48
+msgid "CodeIgniter Version 4.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_configuration.rst:50
+msgid "Path: **app/Config/Site.php**:"
+msgstr ""
+

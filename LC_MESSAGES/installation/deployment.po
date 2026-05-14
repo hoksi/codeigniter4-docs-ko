@@ -1,0 +1,291 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/deployment.rst:3
+msgid "Deployment"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:11
+msgid "Optimization"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:13
+msgid ""
+"Before deploying your CodeIgniter application to production, there are "
+"several things you can do to make your application run more efficiently."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:16
+msgid ""
+"This section describes the optimization features that CodeIgniter "
+"provides."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:21
+msgid "spark optimize"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:25
+msgid "The ``spark optimize`` command performs the following optimizations:"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:27
+msgid "`Removing Dev Packages`_"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:28
+msgid "Enabling `Config Caching`_"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:29
+msgid "Enabling `FileLocator Caching`_"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:31
+msgid ""
+"Do not use ``spark optimize`` when running the app in the "
+":doc:`worker_mode`."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:34
+msgid "Composer Optimization"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:37
+msgid "Removing Dev Packages"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:39
+msgid "When you deploy, don't forget to run the following command:"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:45
+msgid ""
+"The above command will remove the Composer packages only for development "
+"that are not needed in the production environment. This will greatly "
+"reduce the vendor folder size."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:50
+msgid "Specifying Packages to Discover"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:52
+msgid ""
+"If Composer Package Auto-Discovery is enabled, all Composer packages are "
+"scanned when needed. But there is no need to scan packages that are not "
+"CodeIgniter packages, so specifying the packages to be scanned prevents "
+"unnecessary scanning."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:56
+msgid "See :ref:`modules-specify-composer-packages`."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:59
+msgid "Config Caching"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:61
+msgid ""
+"Once cached, configuration values are never changed until the cache is "
+"deleted, even if the configuration file or **.env** is changed."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:64
+msgid ""
+"Caching the Config objects can improve performance. However, the cache "
+"must be manually deleted when changing Config values."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:67
+msgid "See :ref:`factories-config-caching`."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:70
+msgid "FileLocator Caching"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:72
+msgid ""
+"Caching the file paths that FileLocator found can improve performance. "
+"However, the cache must be manually deleted when adding/deleting/changing"
+" file paths."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:75
+msgid "See :ref:`file-locator-caching`."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:78
+msgid "PHP Preloading"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:80
+msgid ""
+"With PHP preloading, you can instruct the server to load essential files "
+"like functions and classes into memory during startup. This means these "
+"elements are readily available for all requests, skipping the usual "
+"loading process and boosting your application's performance. However, "
+"this comes at the cost of increased memory usage and requires restarting "
+"the PHP engine for changes to take effect."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:85
+msgid ""
+"If you want to use `Preloading "
+"<https://www.php.net/manual/en/opcache.preloading.php>`_, we provide a "
+"`preload script "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/preload.php>`_."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:89
+msgid "Requirement"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:91
+msgid ""
+"Using preloading requires one dedicated PHP handler. Normally, web "
+"servers are configured to use one PHP handler, so one app requires a "
+"dedicated web server. If you want to use preloading for multiple apps on "
+"one web server, configure your server to use virtual hosts with multiple "
+"PHP handlers like multiple PHP-FPMs, with each virtual host using one PHP"
+" handler. Preloading keeps the relevant definitions in memory by reading "
+"the files specified in ``opcache.preload``."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:95
+msgid ""
+"See :ref:`running-multiple-app` to make one core CodeIgniter4 to handle "
+"your multiple apps."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:98
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:100
+msgid ""
+"Open ``php.ini`` or ``xx-opcache.ini`` if you have split INI "
+"configuration in PHP, and recommend to set "
+"``opcache.preload=/path/to/preload.php`` and "
+"``opcache.preload_user=myuser``."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:102
+msgid ""
+"``myuser`` is user running in your web server. If you want to find the "
+"location of the split INI configuration, just run ``php --ini`` or open "
+"file ``phpinfo()`` and search *Additional .ini files parsed*."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:104
+msgid ""
+"Make sure you use the appstarter installation. If using manual "
+"installation, you must change the directory in ``include`` path."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:112
+msgid "Deployment to Shared Hosting Services"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:115
+msgid ""
+"**index.php** is no longer in the root of the project! It has been moved "
+"inside the **public** folder, for better security and separation of "
+"components."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:118
+msgid ""
+"This means that you should configure your web server to \"point\" to your"
+" project's **public** folder, and not to the project root."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:122
+msgid "Specifying the Document Root"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:124
+msgid ""
+"The best way is to set the document root to the **public** folder in the "
+"server configuration::"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:130
+msgid ""
+"Check with your hosting service provider to see if you can change the "
+"document root. Unfortunately, if you cannot change the document root, go "
+"to the next way."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:134
+msgid "Using Two Directories"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:136
+msgid ""
+"The second way is to use two directories, and adjust the path. One is for"
+" the application and the other is the default document root."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:139
+msgid ""
+"Upload the contents of the **public** folder to **public_html** (the "
+"default document root) and the other files to the directory for the "
+"application::"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:152
+msgid ""
+"See `Install CodeIgniter 4 on Shared Hosting (cPanel) "
+"<https://forum.codeigniter.com/showthread.php?tid=76779>`_ for details."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:157
+msgid "Adding .htaccess"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:159
+msgid "The last resort is to add **.htaccess** to the project root."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:161
+msgid ""
+"It is not recommended that you place the project folder in the document "
+"root. However, if you have no other choice, you can use this."
+msgstr ""
+
+#: ../../source/installation/deployment.rst:164
+msgid ""
+"Place your project folder as follows, where **public_html** is the "
+"document root, and create the **.htaccess** file::"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:172
+msgid "And edit **.htaccess** as follows:"
+msgstr ""
+
+#: ../../source/installation/deployment.rst:186
+msgid "And remove the redirect settings in **public/.htaccess**:"
+msgstr ""
+

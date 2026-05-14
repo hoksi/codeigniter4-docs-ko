@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/database/examples.rst:3
+msgid "Quick Start: Usage Examples"
+msgstr ""
+
+#: ../../source/database/examples.rst:5
+msgid ""
+"The following page contains example code showing how the database class "
+"is used. For complete details please read the individual pages describing"
+" each function."
+msgstr ""
+
+#: ../../source/database/examples.rst:9
+msgid ""
+"CodeIgniter doesn't support dots (``.``) in the table and column names. "
+"Since v4.5.0, database names with dots are supported."
+msgstr ""
+
+#: ../../source/database/examples.rst:17
+msgid "Initializing the Database Class"
+msgstr ""
+
+#: ../../source/database/examples.rst:19
+msgid ""
+"The following code loads and initializes the database class based on your"
+" :doc:`configuration <configuration>` settings:"
+msgstr ""
+
+#: ../../source/database/examples.rst:24
+msgid "Once loaded the class is ready to be used as described below."
+msgstr ""
+
+#: ../../source/database/examples.rst:26
+msgid ""
+"If all your pages require database access you can connect automatically. "
+"See the :doc:`Connecting to a Database <connecting>` page for details."
+msgstr ""
+
+#: ../../source/database/examples.rst:30
+msgid "Standard Query With Multiple Results (Object Version)"
+msgstr ""
+
+#: ../../source/database/examples.rst:34
+msgid "The above ``getResult()`` function returns an array of **objects**."
+msgstr ""
+
+#: ../../source/database/examples.rst:35
+msgid "Example: ``$row->title``"
+msgstr ""
+
+#: ../../source/database/examples.rst:38
+msgid "Standard Query With Multiple Results (Array Version)"
+msgstr ""
+
+#: ../../source/database/examples.rst:43
+msgid ""
+"The above ``getResultArray()`` function returns an array of standard "
+"array indexes."
+msgstr ""
+
+#: ../../source/database/examples.rst:44
+msgid "Example: ``$row['title']``"
+msgstr ""
+
+#: ../../source/database/examples.rst:47
+msgid "Standard Query With Single Result"
+msgstr ""
+
+#: ../../source/database/examples.rst:51
+msgid ""
+"The above ``getRow()`` function returns an **object**. Example: "
+"``$row->name``"
+msgstr ""
+
+#: ../../source/database/examples.rst:54
+msgid "Standard Query With Single Result (Array version)"
+msgstr ""
+
+#: ../../source/database/examples.rst:58
+msgid ""
+"The above ``getRowArray()`` function returns an **array**. Example: "
+"``$row['name']``."
+msgstr ""
+
+#: ../../source/database/examples.rst:62
+msgid "Standard Insert"
+msgstr ""
+
+#: ../../source/database/examples.rst:67
+msgid "Query Builder Query"
+msgstr ""
+
+#: ../../source/database/examples.rst:69
+msgid ""
+"The :doc:`Query Builder <query_builder>` gives you a simplified means of "
+"retrieving data:"
+msgstr ""
+
+#: ../../source/database/examples.rst:74
+msgid ""
+"The above ``get()`` function retrieves all the results from the supplied "
+"table. The :doc:`Query Builder <query_builder>` class contains a full "
+"complement of functions for working with data."
+msgstr ""
+
+#: ../../source/database/examples.rst:79
+msgid "Query Builder Insert"
+msgstr ""
+

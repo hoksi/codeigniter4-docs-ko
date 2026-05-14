@@ -1,0 +1,313 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/guides/first-app/news_section.rst:2
+msgid "News Section"
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:8
+msgid ""
+"In the last section, we went over some basic concepts of the framework by"
+" writing a class that references static pages. We cleaned up the URI by "
+"adding custom routing rules. Now it's time to introduce dynamic content "
+"and start using a database."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:14
+msgid "Create a Database to Work with"
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:16
+msgid ""
+"The CodeIgniter installation assumes that you have set up an appropriate "
+"database, as outlined in the :ref:`requirements <requirements-supported-"
+"databases>`. In this tutorial, we provide SQL code for a MySQL database, "
+"and we also assume that you have a suitable client for issuing database "
+"commands (mysql, MySQL Workbench, or phpMyAdmin)."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:22
+msgid ""
+"You need to create a database ``ci4tutorial`` that can be used for this "
+"tutorial, and then configure CodeIgniter to use it."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:25
+msgid ""
+"Using your database client, connect to your database and run the SQL "
+"command below (MySQL)::"
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:36
+msgid ""
+"Also, add some seed records. For now, we'll just show you the SQL "
+"statements needed to create the table, but you should be aware that this "
+"can be done programmatically once you are more familiar with CodeIgniter;"
+" you can read about :doc:`Migrations <../../dbmgmt/migration>` and "
+":doc:`Seeds <../../dbmgmt/seeds>` to create more useful database setups "
+"later."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:41
+msgid ""
+"A note of interest: a \"slug\", in the context of web publishing, is a "
+"user- and SEO-friendly short text used in a URL to identify and describe "
+"a resource."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:44
+msgid "The seed records might be something like::"
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:52
+msgid "Connect to Your Database"
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:54
+msgid ""
+"The local configuration file, **.env**, that you created when you "
+"installed CodeIgniter, should have the database property settings "
+"uncommented and set appropriately for the database you want to use. Make "
+"sure you've configured your database properly as described in "
+":doc:`../../database/configuration`::"
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:66
+msgid "Setting up Your Model"
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:68
+msgid ""
+"Instead of writing database operations right in the controller, queries "
+"should be placed in a model, so they can easily be reused later. Models "
+"are the place where you retrieve, insert, and update information in your "
+"database or other data stores. They provide access to your data. You can "
+"read more about it in :doc:`../../models/model`."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:75
+msgid "Create NewsModel"
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:77
+msgid ""
+"Open up the **app/Models** directory and create a new file called "
+"**NewsModel.php** and add the following code."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:82
+msgid ""
+"This code looks similar to the controller code that was used earlier. It "
+"creates a new model by extending ``CodeIgniter\\Model`` and loads the "
+"database library. This will make the database class available through the"
+" ``$this->db`` object."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:88
+msgid "Add NewsModel::getNews() Method"
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:90
+msgid ""
+"Now that the database and a model have been set up, you'll need a method "
+"to get all of our posts from our database. To do this, the database "
+"abstraction layer that is included with CodeIgniter - :doc:`Query Builder"
+" <../../database/query_builder>` - is used in the ``CodeIgniter\\Model``."
+" This makes it possible to write your 'queries' once and make them work "
+"on :doc:`all supported database systems <../../intro/requirements>`. The "
+"Model class also allows you to easily work with the Query Builder and "
+"provides some additional tools to make working with data simpler. Add the"
+" following code to your model."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:103
+msgid ""
+"With this code, you can perform two different queries. You can get all "
+"news records, or get a news item by its slug. You might have noticed that"
+" the ``$slug`` variable wasn't escaped before running the query; "
+":doc:`Query Builder <../../database/query_builder>` does this for you."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:108
+msgid ""
+"The two methods used here, ``findAll()`` and ``first()``, are provided by"
+" the ``CodeIgniter\\Model`` class. They already know the table to use "
+"based on the ``$table`` property we set in ``NewsModel`` class, earlier. "
+"They are helper methods that use the Query Builder to run their commands "
+"on the current table, and returning an array of results in the format of "
+"your choice. In this example, ``findAll()`` returns an array of array."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:116
+msgid "Display the News"
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:118
+msgid ""
+"Now that the queries are written, the model should be tied to the views "
+"that are going to display the news items to the user. This could be done "
+"in our ``Pages`` controller created earlier, but for the sake of clarity,"
+" a new ``News`` controller is defined."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:124
+msgid "Adding Routing Rules"
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:126
+msgid "Modify your **app/Config/Routes.php** file, so it looks as follows:"
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:130
+msgid ""
+"This makes sure the requests reach the ``News`` controller instead of "
+"going directly to the ``Pages`` controller. The second ``$routes->get()``"
+" line routes URI's with a slug to the ``show()`` method in the ``News`` "
+"controller."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:135
+msgid "Create News Controller"
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:137
+msgid "Create the new controller at **app/Controllers/News.php**."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:141
+msgid ""
+"Looking at the code, you may see some similarity with the files we "
+"created earlier. First, it extends ``BaseController`` that extends a core"
+" CodeIgniter class, ``Controller``, which provides a couple of helper "
+"methods, and makes sure that you have access to the current ``Request`` "
+"and ``Response`` objects, as well as the ``Logger`` class, for saving "
+"information to disk."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:147
+msgid ""
+"Next, there are two methods, one to view all news items, and one for a "
+"specific news item."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:150
+msgid ""
+"Next, the :php:func:`model()` function is used to create the "
+"``NewsModel`` instance. This is a helper function. You can read more "
+"about it in :doc:`../../general/common_functions`. You could also write "
+"``$model = new NewsModel();``, if you don't use it."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:154
+msgid ""
+"You can see that the ``$slug`` variable is passed to the model's method "
+"in the second method. The model is using this slug to identify the news "
+"item to be returned."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:159
+msgid "Complete News::index() Method"
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:161
+msgid ""
+"Now the data is retrieved by the controller through our model, but "
+"nothing is displayed yet. The next thing to do is, passing this data to "
+"the views. Modify the ``index()`` method to look like this:"
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:167
+msgid ""
+"The code above gets all news records from the model and assigns it to a "
+"variable. The value for the title is also assigned to the "
+"``$data['title']`` element and all data is passed to the views. You now "
+"need to create a view to render the news items."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:173
+msgid "Create news/index View File"
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:175
+msgid "Create **app/Views/news/index.php** and add the next piece of code."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:179
+msgid ""
+"We are again using :php:func:`esc()` to help prevent XSS attacks. But "
+"this time we also passed \"url\" as a second parameter. That's because "
+"attack patterns are different depending on the context in which the "
+"output is used."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:184
+msgid ""
+"Here, each news item is looped and displayed to the user. You can see we "
+"wrote our template in PHP mixed with HTML. If you prefer to use a "
+"template language, you can use CodeIgniter's :doc:`View Parser "
+"</outgoing/view_parser>` or a third party parser. Parser "
+"</outgoing/view_parser>` or a third party parser."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:190
+msgid "Complete News::show() Method"
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:192
+msgid ""
+"The news overview page is now done, but a page to display individual news"
+" items is still absent. The model created earlier is made in such a way "
+"that it can easily be used for this functionality. You only need to add "
+"some code to the controller and create a new view. Go back to the "
+"``News`` controller and update the ``show()`` method with the following:"
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:200
+msgid ""
+"Don't forget to add ``use "
+"CodeIgniter\\Exceptions\\PageNotFoundException;`` to import the "
+"``PageNotFoundException`` class."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:203
+msgid ""
+"Instead of calling the ``getNews()`` method without a parameter, the "
+"``$slug`` variable is passed, so it will return the specific news item."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:207
+msgid "Create news/view View File"
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:209
+msgid ""
+"The only thing left to do is create the corresponding view at "
+"**app/Views/news/view.php**. Put the following code in this file."
+msgstr ""
+
+#: ../../source/guides/first-app/news_section.rst:214
+msgid ""
+"Point your browser to your \"news\" page, i.e., **localhost:8080/news**, "
+"you should see a list of the news items, each of which has a link to "
+"display just the one article."
+msgstr ""
+

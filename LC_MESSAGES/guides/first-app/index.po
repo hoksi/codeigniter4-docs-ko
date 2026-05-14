@@ -1,0 +1,253 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/guides/first-app/index.rst:3
+msgid "Build Your First Application"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:10
+msgid "Overview"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:12
+msgid ""
+"This tutorial is intended to introduce you to the CodeIgniter4 framework "
+"and the basic principles of MVC architecture. It will show you how a "
+"basic CodeIgniter application is constructed in a step-by-step fashion."
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:16
+msgid ""
+"If you are not familiar with PHP, we recommend that you check out the "
+"`W3Schools PHP Tutorial <https://www.w3schools.com/php/default.asp>`_ "
+"before continuing."
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:19
+msgid ""
+"In this tutorial, you will be creating a **basic news application**. You "
+"will begin by writing the code that can load static pages. Next, you will"
+" create a news section that reads news items from a database. Finally, "
+"you'll add a form to create news items in the database."
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:24
+msgid "This tutorial will primarily focus on:"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:26
+msgid "Model-View-Controller basics"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:27
+msgid "Routing basics"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:28
+msgid "Form validation"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:29
+msgid "Performing basic database queries using CodeIgniter's Model"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:31
+msgid ""
+"The entire tutorial is split up over several pages, each explaining a "
+"small part of the functionality of the CodeIgniter framework. You'll go "
+"through the following pages:"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:35
+msgid ""
+"Introduction, this page, which gives you an overview of what to expect "
+"and gets your default application downloaded and running."
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:37
+msgid ""
+":doc:`Static pages <static_pages>`, which will teach you the basics of "
+"controllers, views and routing."
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:39
+msgid ""
+":doc:`News section <news_section>`, where you'll start using models and "
+"will be doing some basic database operations."
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:41
+msgid ""
+":doc:`Create news items <create_news_items>`, which will introduce more "
+"advanced database operations and form validation."
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:43
+msgid ""
+":doc:`Conclusion <conclusion>`, which will give you some pointers on "
+"further reading and other resources."
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:46
+msgid "Enjoy your exploration of the CodeIgniter framework."
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:58
+msgid "Getting Up and Running"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:61
+msgid "Installing CodeIgniter"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:63
+msgid ""
+"You can download a release manually from the site, but for this tutorial "
+"we will use the recommended way and install the AppStarter package "
+"through Composer. From your command line type the following:"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:71
+msgid ""
+"This creates a new folder, **ci-news**, which contains your application "
+"code, with CodeIgniter installed in the vendor folder."
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:77
+msgid "Setting Development Mode"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:79
+msgid ""
+"By default, CodeIgniter starts up in production mode. This is a safety "
+"feature to keep your site a bit more secure in case settings are messed "
+"up once it is live. So first let's fix that. Copy or rename the **env** "
+"file to **.env**. Open it up."
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:83
+msgid ""
+"This file contains server-specific settings. This means you never will "
+"need to commit any sensitive information to your version control system. "
+"It includes some of the most common ones you want to enter already, "
+"though they are all commented out. So uncomment the line with "
+"``CI_ENVIRONMENT`` on it, and change ``production`` to ``development``::"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:92
+msgid "Running Development Server"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:94
+msgid ""
+"With that out of the way it's time to view your application in a browser."
+" You can serve it through any server of your choice, Apache, nginx, etc, "
+"but CodeIgniter comes with a simple command that takes advantage of PHP's"
+" built-in server to get you up and running fast on your development "
+"machines. Type the following on the command line from the root of your "
+"project:"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:105
+msgid "The Welcome Page"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:107
+msgid ""
+"Now point your browser to the correct URL you will be greeted by a "
+"welcome screen. Try it now by heading to the following URL::"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:112
+msgid "and you should be greeted by the following page:"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:116
+msgid ""
+"This means that your application works and you can start making changes "
+"to it."
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:119
+msgid "Debugging"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:122
+msgid "Debug Toolbar"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:124
+msgid ""
+"Now that you're in development mode, you'll see the CodeIgniter flame on "
+"the right bottom of your application. Click it and you'll see the debug "
+"toolbar."
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:126
+msgid ""
+"This toolbar contains a number of helpful items that you can reference "
+"during development. This will never show in production environments. "
+"Clicking any of the tabs along the bottom brings up additional "
+"information. Clicking the X on the right of the toolbar minimizes it to a"
+" small square with the CodeIgniter flame on it. If you click that the "
+"toolbar will show again."
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:135
+msgid "Error Pages"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:137
+msgid ""
+"In addition to this, CodeIgniter has some helpful error pages when you "
+"hit exceptions or other errors in your program. Open up "
+"**app/Controllers/Home.php** and change some line to generate an error "
+"(removing a semi-colon or brace should do the trick!). You will be "
+"greeted by a screen looking something like this:"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:144
+msgid "There are a couple of things to note here:"
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:146
+msgid ""
+"Hovering over the red header at the top reveals a **search** link that "
+"will open up DuckDuckGo.com in a new tab and searching for the exception."
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:148
+msgid ""
+"Clicking the **arguments** link on any line in the Backtrace will expand "
+"a list of the arguments that were passed into that function call."
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:151
+msgid "Everything else should be clear when you see it."
+msgstr ""
+
+#: ../../source/guides/first-app/index.rst:153
+msgid ""
+"Now that we know how to get started and how to debug a little, let's get "
+"started building this small news application."
+msgstr ""
+

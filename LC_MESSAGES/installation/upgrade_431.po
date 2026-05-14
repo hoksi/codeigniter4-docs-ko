@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_431.rst:3
+msgid "Upgrading from 4.3.0 to 4.3.1"
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:5
+msgid ""
+"Please refer to the upgrade instructions corresponding to your "
+"installation method."
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:7
+msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:8
+msgid ""
+":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
+"Upgrading <adding-codeigniter4-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:9
+msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:16
+msgid "Composer Version"
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:18
+msgid "If you use Composer, CodeIgniter v4.3 requires Composer 2.0.14 or later."
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:21
+msgid ""
+"If you are using older version of Composer, upgrade your ``composer`` "
+"tool, and delete the **vendor/** directory, and run ``composer update`` "
+"again."
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:24
+msgid "The procedure, for example, is as follows:"
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:33
+msgid "Mandatory File Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:36
+msgid "Config Files"
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:39
+#: ../../source/installation/upgrade_431.rst:71
+#: ../../source/installation/upgrade_431.rst:82
+msgid "app/Config/Email.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:41
+msgid ""
+"If you updated **app/Config/Email.php** when upgrading to v4.3.0, you "
+"must set the default values to ``$fromEmail``, ``$fromName``,  "
+"``$recipients``, ``$SMTPHost``, ``$SMTPUser`` and ``$SMTPPass`` to apply "
+"environment variable (**.env**) values."
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:45
+msgid ""
+"If no default values are set, setting environment variables for them will"
+" not be reflected in the Config object."
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:49
+msgid "app/Config/Exceptions.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:51
+msgid ""
+"If you are using PHP 8.2, you need to add new properties "
+"``$logDeprecations`` and ``$deprecationLogLevel``."
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:54
+msgid "Project Files"
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:56
+msgid ""
+"Some files in the **project space** (root, app, public, writable) "
+"received updates. Due to these files being outside of the **system** "
+"scope they will not be changed without your intervention."
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:59
+#, python-format
+msgid ""
+"There are some third-party CodeIgniter modules available to assist with "
+"merging changes to the project space: `Explore on Packagist "
+"<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:63
+msgid "Content Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:65
+msgid ""
+"The following files received significant changes (including deprecations "
+"or visual adjustments) and it is recommended that you merge the updated "
+"versions with your application:"
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:69
+msgid "Config"
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:72
+msgid ""
+"Set the default value ``''`` to ``$fromEmail``, ``$fromName``, "
+"``$recipients``, ``$SMTPHost``, ``$SMTPUser`` and ``$SMTPPass`` to apply "
+"environment variable (**.env**) values."
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:77
+msgid "All Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:79
+msgid ""
+"This is a list of all files in the **project space** that received "
+"changes; many will be simple comments or formatting that have no effect "
+"on the runtime:"
+msgstr ""
+
+#: ../../source/installation/upgrade_431.rst:83
+msgid "composer.json"
+msgstr ""
+

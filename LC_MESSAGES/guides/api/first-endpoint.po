@@ -1,0 +1,226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/guides/api/first-endpoint.rst:4
+msgid "Auto Routing & Your First Endpoint"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:10
+msgid ""
+"In this section, we enable CodeIgniter's *Improved Auto Routing* feature "
+"and create a simple JSON endpoint to confirm everything is wired "
+"correctly."
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:13
+msgid "Why Auto-Routing?"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:15
+msgid ""
+"The previous tutorial showed how to define routes manually in "
+"**app/Config/Routes.php**. While powerful and flexible, this can be "
+"tedious for RESTful APIs with many endpoints that follow a common "
+"pattern. Auto-Routing simplifies this by mapping URL patterns to "
+"controller classes and methods based on conventions, and its focus on "
+"HTTP verbs works well for RESTful APIs."
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:18
+msgid "Enable Improved Auto Routing"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:20
+msgid ""
+"By default, Auto-Routing is turned off. Enable it so your controllers "
+"automatically handle REST-style methods."
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:22
+msgid ""
+"Open **app/Config/Feature.php** and confirm this flag is ``true`` (this "
+"is the default):"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:28
+msgid ""
+"The \"Improved\" auto router is more secure and reliable than the legacy "
+"version, so it's recommended for all new projects."
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:30
+msgid "Then, in **app/Config/Routing.php**, confirm auto-routing is **enabled**:"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:36
+msgid ""
+"That's all you need for CodeIgniter to automatically map your controller "
+"classes and to URIs like ``GET /api/ping`` or ``POST /api/ping``."
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:39
+msgid "Create a Ping Controller"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:41
+msgid ""
+"To understand how a basic API endpoint works, let's generate a controller"
+" to serve as our first API endpoint. This will provide a simple \"ping\" "
+"response to confirm our setup is correct."
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:47
+msgid "This creates **app/Controllers/Api/Ping.php**."
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:49
+msgid "Edit the file so it looks like this:"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:53
+msgid "Here we:"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:55
+msgid ""
+"Use the :php:class:`ResponseTrait`, which already includes REST helpers "
+"such as :php:meth:`respond()` and proper status codes."
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:56
+msgid ""
+"Define a ``getIndex()`` method. The ``get`` prefix means it responds to "
+"``GET`` requests, and the ``Index`` name means it matches the base URI "
+"(``/api/ping``)."
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:59
+msgid "Test the route"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:61
+msgid "Start the development server if it isn't running:"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:67
+msgid "Now visit:"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:69
+msgid "**Browser:** ``http://localhost:8080/api/ping``"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:70
+msgid "**cURL:** ``curl http://localhost:8080/api/ping``"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:72
+msgid "Expected response:"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:80
+msgid "Congratulations — that's your first working JSON endpoint!"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:83
+msgid "Understand how it works"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:85
+msgid "When you request ``/api/ping``:"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:87
+msgid ""
+"The **Improved Auto Router** finds the ``App\\Controllers\\Api\\Ping`` "
+"class."
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:88
+msgid "It detects the HTTP verb (``GET``)."
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:89
+msgid "It calls the corresponding method name: ``getIndex()``."
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:90
+msgid ""
+":php:trait:`ResponseTrait` provides helper methods to produce consistent "
+"output."
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:92
+msgid "Here's how other verbs would map if you added them later:"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:95
+msgid "HTTP Verb"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:95
+msgid "Method Name"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:97
+msgid "``GET /api/ping`` ``POST /api/ping`` ``DELETE /api/ping``"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:97
+msgid "``getIndex()`` ``postIndex()`` ``deleteIndex()``"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:103
+msgid "Content Negotiation with the Format Class"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:105
+msgid ""
+"By default, CodeIgniter uses the "
+":php:class:`CodeIgniter\\\\Format\\\\Format` class to automatically "
+"negotiate the response format. It can return responses in either JSON or "
+"XML depending on what the client requests."
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:107
+msgid ""
+"The :php:trait:`ResponseTrait` sets the format to JSON by default. You "
+"can change this to XML if desired, but this tutorial will focus on JSON "
+"responses."
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:112
+msgid "Optional: Return More Data"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:114
+msgid "The ``respond()`` method can return additional data:"
+msgstr ""
+
+#: ../../source/guides/api/first-endpoint.rst:118
+msgid ""
+"You now have a working endpoint tested in both the browser and cURL. In "
+"the next section, we'll create our first real database resource. You'll "
+"define a **migration**, **seeder**, and **model** for a simple ``books`` "
+"table that powers the API's CRUD endpoints."
+msgstr ""
+

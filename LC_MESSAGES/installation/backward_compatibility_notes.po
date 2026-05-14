@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/backward_compatibility_notes.rst:3
+msgid "Backward Compatibility Notes"
+msgstr ""
+
+#: ../../source/installation/backward_compatibility_notes.rst:5
+msgid ""
+"We try to develop our products to be as backward compatible (BC) as "
+"possible."
+msgstr ""
+
+#: ../../source/installation/backward_compatibility_notes.rst:7
+msgid ""
+"Only major releases (such as 4.0, 5.0 etc.) are allowed to break backward"
+" compatibility. Minor releases (such as 4.2, 4.3 etc.) may introduce new "
+"features, but must do so without breaking the existing API."
+msgstr ""
+
+#: ../../source/installation/backward_compatibility_notes.rst:10
+msgid ""
+"However, the code is not mature and bug fixes may break compatibility in "
+"minor releases, or even in patch releases (such as 4.2.5). In that case, "
+"all the breaking changes are described in the :doc:`../changelogs/index`."
+msgstr ""
+
+#: ../../source/installation/backward_compatibility_notes.rst:14
+msgid "What are not Breaking Changes"
+msgstr ""
+
+#: ../../source/installation/backward_compatibility_notes.rst:16
+msgid ""
+"The deprecated items are not covered by backwards compatibility (BC) "
+"promise. It may be removed in the next next **minor** version or later. "
+"For example, if an item has been deprecated since 4.3.x, it may be "
+"removed in 4.5.0."
+msgstr ""
+
+#: ../../source/installation/backward_compatibility_notes.rst:19
+msgid ""
+"System messages defined in **system/Language/en/** are strictly for "
+"internal framework use and are not covered by backwards compatibility "
+"(BC) promise. If developers are relying on language string output they "
+"should be checking it against the function call (``lang('...')``), not "
+"the content."
+msgstr ""
+
+#: ../../source/installation/backward_compatibility_notes.rst:20
+msgid ""
+"`Named arguments "
+"<https://www.php.net/manual/en/functions.arguments.php#functions.named-"
+"arguments>`_ are not covered by backwards compatibility (BC) promise. We "
+"may choose to rename method/function parameter names when necessary in "
+"order to improve the  codebase."
+msgstr ""
+

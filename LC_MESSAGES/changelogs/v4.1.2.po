@@ -1,0 +1,260 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.1.2.rst:2
+msgid "Version 4.1.2"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:4
+msgid "Release Date: May 16, 2021"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:6
+msgid "**4.1.2 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:13
+msgid "BREAKING"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:15
+msgid ""
+"Fixed `a bug <https://github.com/codeigniter4/CodeIgniter4/issues/4116>`_"
+" in ``current_url()`` that prevented configurations with an ``indexPage``"
+" from including that value in the return value. Any installations using "
+"``App::$indexPage`` should expect altered values from ``current_url()`` "
+"and all its dependencies (including Response Testing, Pager, Form Helper,"
+" Pager, and View Parser)."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:21
+msgid "Enhancements"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:23
+msgid ""
+"New HTTP classes, ``Cookie`` and ``CookieStore``, for abstracting web "
+"cookies."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:24
+msgid "New ``assertRedirectTo()`` assertion available for HTTP tests."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:25
+msgid "New logger handler, ``ErrorlogHandler``, that writes to ``error_log()``."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:26
+msgid "Entity. Added custom type casting functionality."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:27
+msgid ""
+"New option in routing. The ``priority`` option lower the priority of "
+"specific route processing."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:28
+msgid ""
+"The ``Autoloader`` class can now load files which do not contain PHP "
+"classes. The list of `non-class` files will be listed in the ``$files`` "
+"property of ``Config\\Autoload`` class."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:31
+msgid "Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:33
+msgid "Layouts in views now support nested sections."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:34
+msgid ""
+"``Response::getCookie`` now returns a ``Cookie`` instance instead of an "
+"array of cookie attributes."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:35
+msgid ""
+"``Response::getCookies`` now returns an array of ``Cookie`` instances "
+"instead of array of array of attributes."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:36
+msgid ""
+"To eliminate warnings from modern browsers' consoles, empty samesite "
+"values will be defaulted to ``Lax`` on cookie dispatch."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:37
+msgid ""
+"`Model::errors()` and `BaseModel::errors()` now always returns `array`; "
+"there was no definition change but the docblock has been updated."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:38
+msgid ""
+"``Entity::castAs`` has changed behavior. Added new parameter ``$method``."
+" Type casting has been moved to separate handlers."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:39
+msgid ""
+"Entity. Timestamp casting now throws an exception when an invalid value "
+"is passed"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:40
+msgid "``Entity::castAsJson`` uses external cast handler ``JsonCast::get``."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:41
+msgid "``Entity::mutateDate`` uses external cast handler ``DatetimeCast::get``."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:42
+msgid ""
+"In order for ``Config\\**`` classes to get their respective properties' "
+"values from the ``.env``, it is now necessary to namespace the property "
+"with the name of the class. Previously, the property names are enough but"
+" now disallowed because it can get system environment variables, like "
+"``PATH``."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:43
+msgid ""
+"The array helper ``_array_search_dot`` is now marked for ``@internal`` "
+"use. As this is used by ``dot_array_search``, users should not use "
+"``_array_search_dot`` directly in their code."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:44
+msgid ""
+"``CacheInterface::getMetaData()`` returns ``null`` for misses, or an "
+"array with at least the \"expires\" key set to the absolute epoch "
+"expiration, or ``null`` for \"never expires\". The File, Memcached, and "
+"Wincache Handlers still return ``false`` which will become ``null`` in a "
+"future release."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:47
+msgid "Deprecations"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:49
+msgid "Deprecated ``CodeIgniter\\View\\View::$currentSection`` property."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:50
+msgid ""
+"Language strings and exceptions on invalid cookie samesite are deprecated"
+" for the ``CookieException``'s own exception message."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:51
+msgid "Deprecated `CodeIgniter\\Entity` in favor of `CodeIgniter\\Entity\\Entity`"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:52
+msgid ""
+"Deprecated cookie-related properties of ``Response`` in order to use the "
+"``Cookie`` class."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:53
+msgid ""
+"Deprecated cookie-related properties of ``Security`` in order to use the "
+"``Cookie`` class."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:54
+msgid ""
+"Deprecated cookie-related properties of ``Session`` in order to use the "
+"``Cookie`` class."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:55
+msgid ""
+"Deprecated ``Security::isExpired()`` to use the ``Cookie``'s internal "
+"expires status."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:56
+msgid ""
+"Deprecated ``CIDatabaseTestCase`` to use the ``DatabaseTestTrait`` "
+"instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:57
+msgid "Deprecated ``FeatureTestCase`` to use the ``FeatureTestTrait`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:58
+msgid ""
+"Deprecated ``ControllerTester`` to use the ``ControllerTestTrait`` "
+"instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:59
+msgid ""
+"Consolidated and deprecated ``ControllerResponse`` and "
+"``FeatureResponse`` in favor of ``TestResponse``."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:60
+msgid ""
+"Deprecated ``Time::instance()``, use ``Time::createFromInstance()`` "
+"instead (now accepts ``DateTimeInterface``)."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:61
+msgid ""
+"Deprecated ``IncomingRequest::removeRelativeDirectory()``, use "
+"``URI::removeDotSegments()`` instead"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:62
+msgid ""
+"Deprecated ``\\API\\ResponseTrait::failValidationError()`` to use "
+"``\\API\\ResponseTrait::failValidationErrors()`` instead"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:65
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:67
+msgid ""
+"``BaseConnection::query()`` now returns ``false`` for failed queries "
+"(unless ``DBDebug==true``, in which case an exception will be thrown) and"
+" returns boolean values for write-type queries as specified in the docs."
+msgstr ""
+
+#: ../../source/changelogs/v4.1.2.rst:69
+msgid ""
+"See the repo's `CHANGELOG_4.1.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/changelogs/CHANGELOG_4.1.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

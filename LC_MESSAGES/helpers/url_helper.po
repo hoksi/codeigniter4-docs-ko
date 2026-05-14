@@ -1,0 +1,684 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/helpers/url_helper.rst:3
+msgid "URL Helper"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:5
+msgid "The URL Helper file contains functions that assist in working with URLs."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:12
+msgid "Loading this Helper"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:14
+msgid "This helper is automatically loaded by the framework on every request."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:17
+msgid "Available Functions"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:19
+msgid "The following functions are available:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:23
+#: ../../source/helpers/url_helper.rst:59
+msgid "URI string or array of URI segments."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:24
+#: ../../source/helpers/url_helper.rst:60
+msgid ""
+"Protocol, e.g., ``'http'`` or ``'https'``. If empty string ``''`` is set,"
+" a protocol-relative link is returned."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:25
+msgid "Alternate configuration to use."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:26
+msgid "Site URL"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:29
+#: ../../source/helpers/url_helper.rst:64
+#: ../../source/helpers/url_helper.rst:113
+msgid ""
+"Since v4.3.0, if you set ``Config\\App::$allowedHostnames``, this returns"
+" the URL with the hostname set in it if the current URL matches."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:32
+msgid ""
+"Returns your site URL, as specified in your config file. The "
+"**index.php** file (or whatever you have set as your site "
+"``Config\\App::$indexPage`` in your config file) will be added to the "
+"URL, as will any URI segments you pass to the function."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:37
+msgid ""
+"You are encouraged to use this function any time you need to generate a "
+"local URL so that your pages become more portable in the event your URL "
+"changes."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:41
+msgid ""
+"Segments can be optionally passed to the function as a string or an "
+"array. Here is a string example:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:46
+msgid ""
+"The above example would return something like: "
+"**http://example.com/index.php/news/local/123**"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:49
+msgid "Here is an example of segments passed as an array:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:53
+msgid ""
+"You may find the alternate configuration useful if generating URLs for a "
+"different site than yours, which contains different configuration "
+"preferences. We use this for unit testing the framework itself."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:61
+msgid "Base URL"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:67
+msgid ""
+"In previous versions, this returned the base URL without a trailing slash"
+" (``/``) when called with no argument. The bug was fixed and since v4.3.2"
+" it returns the base URL with a trailing slash."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:71
+msgid "Returns your site base URL, as specified in your config file. Example:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:75
+msgid ""
+"This function returns the same thing as :php:func:`site_url()`, without "
+"the ``Config\\App::$indexPage`` being appended."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:78
+msgid ""
+"Also like :php:func:`site_url()`, you can supply segments as a string or "
+"an array. Here is a string example:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:83
+msgid ""
+"The above example would return something like: "
+"**http://example.com/blog/post/123**"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:86
+msgid ""
+"If you pass an empty string ``''`` as the second parameter, it returns "
+"the protocol-relative link:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:91
+msgid ""
+"This is useful because unlike :php:func:`site_url()`, you can supply a "
+"string to a file, such as an image or stylesheet. For example:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:96
+msgid ""
+"This would give you something like: "
+"**http://example.com/images/icons/edit.png**"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:101
+msgid "True if you would like a URI instance returned, instead of a string."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:102
+msgid "An alternate request to use for path detection; useful for testing."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:103
+msgid "The current URL"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:106
+msgid ""
+"Returns the full URL of the page being currently viewed. When returning "
+"string, the query and fragment parts of the URL are removed. When "
+"returning URI, the query and fragment parts are preserved."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:110
+msgid ""
+"However for security reasons, it is created based on the ``Config\\App`` "
+"settings, and not intended to match the browser URL."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:116
+msgid "Calling ``current_url()`` is the same as doing this:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:121
+msgid ""
+"Prior to v4.1.2, this function had a bug causing it to ignore the "
+"configuration on ``Config\\App::$indexPage``."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:125
+msgid "True if you would like a URI instance returned instead of a string."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:126
+msgid "The URL the user was previously on"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:129
+msgid ""
+"Returns the full URL (including segments) of the page the user was "
+"previously on."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:131
+msgid ""
+"Due to security issues of blindly trusting the ``HTTP_REFERER`` system "
+"variable, CodeIgniter will store previously visited pages in the session "
+"if it's available. This ensures that we always use a known and trusted "
+"source. If the session hasn't been loaded, or is otherwise unavailable, "
+"then a sanitized version of ``HTTP_REFERER`` will be used."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:138
+msgid "A URI string"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:141
+msgid "Returns the path part of the current URL relative to baseURL."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:143
+msgid ""
+"For example, when your baseURL is **http://some-site.com/** and the "
+"current URL is::"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:147
+#: ../../source/helpers/url_helper.rst:155
+msgid "The function would return::"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:151
+msgid ""
+"When your baseURL is **http://some-site.com/subfolder/** and the current "
+"URL is::"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:159
+msgid ""
+"In previous versions, the parameter ``$relative = false`` was defined. "
+"However, due to a bug, this function always returned a path relative to "
+"baseURL. Since v4.3.2, the parameter has been removed."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:163
+msgid ""
+"In previous versions, when you navigate to the baseURL, this function "
+"returned ``/``. Since v4.3.2, the bug has been fixed and it returns an "
+"empty string(``''``)."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:169
+#: ../../source/helpers/url_helper.rst:188
+#: ../../source/helpers/url_helper.rst:226
+msgid "Alternate configuration to use"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:170
+msgid "The ``indexPage`` value"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:173
+msgid ""
+"Returns your site **indexPage**, as specified in your config file. "
+"Example:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:178
+msgid ""
+"As with :php:func:`site_url()`, you may specify an alternate "
+"configuration. You may find the alternate configuration useful if "
+"generating URLs for a different site than yours, which contains different"
+" configuration preferences. We use this for unit testing the framework "
+"itself."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:185
+msgid "URI string or array of URI segments"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:186
+#: ../../source/helpers/url_helper.rst:224
+#: ../../source/helpers/url_helper.rst:264
+#: ../../source/helpers/url_helper.rst:283
+msgid "Anchor title"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:187
+#: ../../source/helpers/url_helper.rst:225
+#: ../../source/helpers/url_helper.rst:265
+#: ../../source/helpers/url_helper.rst:284
+msgid "HTML attributes"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:189
+msgid "HTML hyperlink (anchor tag)"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:192
+msgid "Creates a standard HTML anchor link based on your local site URL."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:194
+msgid ""
+"The first parameter can contain any segments you wish appended to the "
+"URL. As with the :php:func:`site_url()` function above, segments can be a"
+" string or an array."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:198
+msgid ""
+"If you are building links that are internal to your application do not "
+"include the base URL (``http://...``). This will be added automatically "
+"from the information specified in your config file. Include only the URI "
+"segments you wish appended to the URL."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:203
+msgid ""
+"The second segment is the text you would like the link to say. If you "
+"leave it blank, the URL will be used."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:206
+msgid ""
+"The third parameter can contain a list of attributes you would like added"
+" to the link. The attributes can be a simple string or an associative "
+"array."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:210
+#: ../../source/helpers/url_helper.rst:372
+msgid "Here are some examples:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:214
+#: ../../source/helpers/url_helper.rst:240
+msgid ""
+"As above, you may specify an alternate configuration. You may find the "
+"alternate configuration useful if generating links for a different site "
+"than yours, which contains different configuration preferences. We use "
+"this for unit testing the framework itself."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:219
+msgid ""
+"Attributes passed into the anchor function are automatically escaped to "
+"protected against XSS attacks."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:223
+msgid "URI string"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:227
+msgid "Pop-up hyperlink"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:230
+msgid ""
+"Nearly identical to the :php:func:`anchor()` function except that it "
+"opens the URL in a new window. You can specify JavaScript window "
+"attributes in the third parameter to control how the window is opened. If"
+" the third parameter is not set it will simply open a new window with "
+"your own browser settings."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:236
+msgid "Here is an example with attributes:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:245
+msgid ""
+"The above attributes are the function defaults so you only need to set "
+"the ones that are different from what you need. If you want the function "
+"to use all of its defaults simply pass an empty array in the third "
+"parameter:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:252
+msgid ""
+"The **window_name** is not really an attribute, but an argument to the "
+"JavaScript `window.open() "
+"<https://www.w3schools.com/jsref/met_win_open.asp>`_ method, which "
+"accepts either a window name or a window target."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:256
+msgid ""
+"Any other attribute than the listed above will be parsed as an HTML "
+"attribute to the anchor tag."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:259
+msgid ""
+"Attributes passed into the anchor_popup function are automatically "
+"escaped to protected against XSS attacks."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:263
+#: ../../source/helpers/url_helper.rst:282
+msgid "E-mail address"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:266
+msgid "A \"mail to\" hyperlink"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:269
+msgid "Creates a standard HTML e-mail link. Usage example:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:273
+msgid ""
+"As with the :php:func:`anchor()` tab above, you can set attributes using "
+"the third parameter:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:278
+msgid ""
+"Attributes passed into the mailto function are automatically escaped to "
+"protected against XSS attacks."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:285
+msgid "A spam-safe \"mail to\" hyperlink"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:288
+msgid ""
+"Identical to the :php:func:`mailto()` function except it writes an "
+"obfuscated version of the *mailto* tag using ordinal numbers written with"
+" JavaScript to help prevent the e-mail address from being harvested by "
+"spam bots."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:294
+#: ../../source/helpers/url_helper.rst:327
+#: ../../source/helpers/url_helper.rst:355
+msgid "Input string"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:295
+msgid "Link type (``'email'``, ``'url'`` or ``'both'``)"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:296
+msgid "Whether to create popup links"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:297
+msgid "Linkified string"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:300
+msgid ""
+"Automatically turns URLs and e-mail addresses contained in a string into "
+"links. Example:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:305
+msgid ""
+"The second parameter determines whether URLs and e-mails are converted or"
+" just one or the other. The default behavior is both if the parameter is "
+"not specified. E-mail links are encoded as :php:func:`safe_mailto()` as "
+"shown above."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:310
+msgid "Converts only URLs:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:314
+msgid "Converts only e-mail addresses:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:318
+msgid ""
+"The third parameter determines whether links are shown in a new window. "
+"The value can be true or false (boolean):"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:323
+msgid ""
+"The only URLs recognized are those that start with ``www.`` or with "
+"``://``."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:328
+#: ../../source/helpers/url_helper.rst:356
+msgid "Word separator (usually ``'-'`` or ``'_'``)"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:329
+#: ../../source/helpers/url_helper.rst:357
+msgid "Whether to transform the output string to lowercase"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:330
+#: ../../source/helpers/url_helper.rst:358
+msgid "URL-formatted string"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:333
+msgid ""
+"Takes a string as input and creates a human-friendly URL string. This is "
+"useful if, for example, you have a blog in which you'd like to use the "
+"title of your entries in the URL. Example:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:339
+msgid ""
+"The second parameter determines the word delimiter. By default dashes are"
+" used. Preferred options are: ``-`` (dash) or ``_`` (underscore)."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:342
+#: ../../source/helpers/url_helper.rst:349
+msgid "Example:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:346
+msgid ""
+"The third parameter determines whether or not lowercase characters are "
+"forced. By default they are not. Options are boolean true/false."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:361
+msgid ""
+"This function works the same as :php:func:`url_title()` but it converts "
+"all accented characters automatically."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:366
+msgid "The hostname to parse. If null, uses the current request's host."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:367
+msgid "The subdomain, or an empty string if none exists."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:370
+msgid "Parses the subdomain from the given host name."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:376
+msgid ""
+"You can customize the list of known two-part TLDs by adding them to the "
+"``Config\\Hostnames::TWO_PART_TLDS`` array."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:381
+msgid "URL string"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:382
+msgid "true for ``https://``"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:383
+msgid "Protocol-prefixed URL string"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:386
+msgid ""
+"This function will add ``http://`` or ``https://`` in the event that a "
+"protocol prefix is missing from a URL."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:389
+msgid "Pass the URL string to the function like this:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:395
+msgid "Route name or Controller::method"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:396
+msgid ""
+"One or more parameters to be passed to the route. The last parameter "
+"allows you to set the locale."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:397
+msgid "Absolute URL"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:400
+msgid ""
+"This function requires the controller/method to have a route defined in "
+"**app/Config/Routes.php**."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:402
+msgid "Builds an absolute URL to a controller method in your app. Example:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:406
+msgid "You can also add arguments to the route. Here is an example:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:411
+msgid ""
+"This is useful because you can still change your routes after putting "
+"links into your views."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:414
+#, python-brace-format
+msgid ""
+"Since v4.3.0, when you use ``{locale}`` in your route, you can optionally"
+" specify the locale value as the last parameter."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:418
+msgid ""
+"For full details, see the :ref:`reverse-routing` and :ref:`using-named-"
+"routes`."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:422
+msgid "The URL path relative to baseURL to check the current URI path against."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:425
+msgid ""
+"Compares the current URL's path against the given path to see if they "
+"match. Example:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:429
+msgid ""
+"This would match **http://example.com/admin**. It would match "
+"**http://example.com/subdir/admin** if your baseURL is "
+"``http://example.com/subdir/``."
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:432
+msgid ""
+"You can use the ``*`` wildcard to match any other applicable characters "
+"in the URL:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:437
+msgid "This would match any of the following:"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:439
+msgid "/admin"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:440
+msgid "/admin/"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:441
+msgid "/admin/users"
+msgstr ""
+
+#: ../../source/helpers/url_helper.rst:442
+msgid "/admin/users/schools/classmates/..."
+msgstr ""
+

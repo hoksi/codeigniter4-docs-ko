@@ -1,0 +1,741 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/helpers/html_helper.rst:3
+msgid "HTML Helper"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:5
+msgid "The HTML Helper file contains functions that assist in working with HTML."
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:12
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:14
+msgid ""
+"Since ``v4.3.0``, void HTML elements (e.g. ``<img>``) in ``html_helper`` "
+"functions have been changed to be HTML5-compatible by default and if you "
+"need to be compatible with XHTML, you must set the ``$html5`` property in"
+" **app/Config/DocTypes.php** to ``false``."
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:17
+msgid "Loading this Helper"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:19
+msgid "This helper is loaded using the following code:"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:24
+msgid "Available Functions"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:26
+msgid "The following functions are available:"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:30
+msgid "Image source URI, or array of attributes and values"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:31
+msgid "Should ``Config\\App::$indexPage`` be added to the source path"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:32
+msgid "Additional HTML attributes"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:33
+msgid "An HTML image element"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:36
+msgid ""
+"Lets you create HTML ``<img>`` elements. The first parameter contains the"
+" image source. Example:"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:41
+msgid ""
+"There is an optional second parameter, a true/false value, that specifies"
+" if the *src* should have ``Config\\App::$indexPage`` added to the "
+"address it creates. Presumably, this would be if you were using a media "
+"controller:"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:47
+msgid ""
+"Additionally, an associative array can be passed as the first parameter, "
+"for complete control over all attributes and values. If an *alt* "
+"attribute is not provided, CodeIgniter will generate one with empty "
+"string."
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:51
+#: ../../source/helpers/html_helper.rst:95
+#: ../../source/helpers/html_helper.rst:120
+#: ../../source/helpers/html_helper.rst:352
+msgid "Example:"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:57
+msgid "Path to the image file"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:58
+msgid "MIME type to use, or null to guess"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:59
+msgid "base64 encoded binary image string"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:62
+msgid ""
+"Generates a src-ready string from an image using the \"data:\" protocol. "
+"Example:"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:67
+msgid ""
+"There is an optional second parameter to specify the MIME type, otherwise"
+" the function will use your Mimes config to guess:"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:72
+msgid ""
+"Note that ``$path`` must exist and be a readable image format supported "
+"by the ``data:`` protocol. This function is not recommended for very "
+"large files, but it provides a convenient way of serving images from your"
+" app that are not web-accessible (e.g., in **public/**)."
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:78
+msgid "The source of the link file"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:79
+msgid "Relation type"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:80
+msgid "Type of the related document"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:81
+msgid "Link title"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:82
+msgid "Media type"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:83
+msgid "Should indexPage be added to the link path"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:84
+msgid "Hreflang type"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:85
+msgid "An HTML link element"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:88
+msgid ""
+"Lets you create HTML ``<link>`` elements. This is useful for stylesheet "
+"links, as well as other links. The parameters are *href*, with optional "
+"*rel*, *type*, *title*, *media*, *indexPage* and *hreflang*."
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:92
+msgid ""
+"*indexPage* is a boolean value that specifies if the *href* should have "
+"the page specified by ``$config['indexPage']`` added to the address it "
+"creates."
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:99
+msgid "Further examples:"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:103
+msgid ""
+"Alternately, an associative array can be passed to the ``link_tag()`` "
+"function for complete control over all attributes and values:"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:110
+msgid ""
+"The source name or URL of a JavaScript file, or an associative array "
+"specifying the attributes"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:111
+msgid "Whether to treat ``$src`` as a routed URI string"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:112
+msgid "An HTML script element"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:115
+msgid ""
+"Lets you create HTML ``<script>`` elements. The parameters are *src* and "
+"optional *indexPage*."
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:117
+msgid ""
+"*indexPage* is a boolean value that specifies if the *src* should have "
+"the page specified by ``$config['indexPage']`` added to the address it "
+"creates."
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:124
+msgid ""
+"Alternately, an associative array can be passed to the ``script_tag()`` "
+"function for complete control over all attributes and values:"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:131
+#: ../../source/helpers/html_helper.rst:204
+msgid "List entries"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:132
+#: ../../source/helpers/html_helper.rst:205
+#: ../../source/helpers/html_helper.rst:216
+#: ../../source/helpers/html_helper.rst:267
+#: ../../source/helpers/html_helper.rst:280
+#: ../../source/helpers/html_helper.rst:294
+#: ../../source/helpers/html_helper.rst:320
+msgid "HTML attributes"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:133
+msgid "An HTML unordered list element"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:136
+msgid ""
+"Permits you to generate an unordered HTML list from a simple or multi-"
+"dimensional array. Example:"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:141
+#: ../../source/helpers/html_helper.rst:156
+#: ../../source/helpers/html_helper.rst:227
+#: ../../source/helpers/html_helper.rst:305
+msgid "The above code will produce this:"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:152
+msgid "Here is a more complex example, using a multi-dimensional array:"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:206
+msgid "An HTML ordered list element"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:209
+msgid ""
+"Identical to :php:func:`ul()`, only it produces ``<ol>`` element for "
+"ordered lists instead of ``<ul>``."
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:214
+#: ../../source/helpers/html_helper.rst:253
+msgid ""
+"Either a source string or an array of sources. See :php:func:`source()` "
+"function"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:215
+msgid ""
+"The message to display if the video element is not supported by the "
+"browser"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:217
+#: ../../source/helpers/html_helper.rst:256
+msgid "Use the track function inside an array. See :php:func:`track()` function"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:218
+msgid "Should indexPage be added to the video source path"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:219
+msgid "An HTML video element"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:222
+msgid ""
+"Permits you to generate an HTML video element from a source string or an "
+"array of sources. Example:"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:254
+msgid ""
+"The message to display if the audio element is not supported by the "
+"browser"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:257
+msgid "Should indexPage be added to the audio source path"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:258
+msgid "An HTML audio element"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:261
+msgid ""
+"Identical to :php:func:`video()`, only it produces ``<audio>`` element "
+"instead of ``<video>``."
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:265
+msgid "The path of the media resource"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:266
+msgid "The MIME-type of the resource with optional codecs parameters"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:268
+msgid "An HTML source element"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:271
+msgid ""
+"Lets you create HTML ``<source>`` elements. The first parameter contains "
+"the path of the resource. Example:"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:278
+msgid "The path of the resource to embed"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:279
+msgid "MIME-type"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:281
+msgid "Should indexPage be added to the source path"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:282
+msgid "An HTML embed element"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:285
+msgid ""
+"Lets you create HTML ``<embed>`` elements. The first parameter contains "
+"the embed source. Example:"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:292
+msgid "A resource URL"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:293
+msgid "Content-type of the resource"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:295
+msgid "Should indexPage be added to the resource URL"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:296
+msgid "Use the param function inside an array. See :php:func:`param()` function"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:297
+msgid "An HTML object element"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:300
+msgid ""
+"Lets you create HTML ``<object>`` elements. The first parameter contains "
+"the object data. Example:"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:318
+msgid "The name of the parameter"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:319
+msgid "The value of the parameter"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:321
+msgid "An HTML param element"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:324
+msgid ""
+"Lets you create HTML ``<param>`` elements. The first parameter contains "
+"the param source. Example:"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:331
+msgid "The path of the track (.vtt file)"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:332
+msgid "The kind of timed track"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:333
+msgid "The language of the timed track"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:334
+msgid "A user-readable title for the timed track"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:335
+msgid "An HTML track element"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:338
+msgid ""
+"Generates a track element to specify timed tracks. The tracks are "
+"formatted in WebVTT format. Example:"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:345
+msgid "Doctype name"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:346
+msgid "An HTML DocType declaration"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:349
+msgid ""
+"Helps you generate document type declarations (DTD's). HTML 5 is used by "
+"default, but many doctypes are available."
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:356
+msgid ""
+"The following is a list of the pre-defined doctypes. These are pulled "
+"from **app/Config/DocTypes.php**, or they could be overridden in your "
+"**.env** configuration."
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:360
+msgid "Document type"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:360
+msgid "$type parameter"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:360
+msgid "Result"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:362
+msgid "XHTML 1.1"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:362
+msgid "xhtml11"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:362
+msgid ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" "
+"\"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:363
+msgid "XHTML 1.0 Strict"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:363
+msgid "xhtml1-strict"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:363
+msgid ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" "
+"\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:364
+msgid "XHTML 1.0 Transitional"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:364
+msgid "xhtml1-trans"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:364
+msgid ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" "
+"\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:365
+msgid "XHTML 1.0 Frameset"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:365
+msgid "xhtml1-frame"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:365
+msgid ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Frameset//EN\" "
+"\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd\">"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:366
+msgid "XHTML Basic 1.1"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:366
+msgid "xhtml-basic11"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:366
+msgid ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML Basic 1.1//EN\" "
+"\"http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd\">"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:367
+msgid "HTML 5"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:367
+msgid "html5"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:367
+msgid "<!DOCTYPE html>"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:368
+msgid "HTML 4 Strict"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:368
+msgid "html4-strict"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:368
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" "
+"\"http://www.w3.org/TR/html4/strict.dtd\">"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:369
+msgid "HTML 4 Transitional"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:369
+msgid "html4-trans"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:369
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" "
+"\"http://www.w3.org/TR/html4/loose.dtd\">"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:370
+msgid "HTML 4 Frameset"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:370
+msgid "html4-frame"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:370
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Frameset//EN\" "
+"\"http://www.w3.org/TR/html4/frameset.dtd\">"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:371
+msgid "MathML 1.01"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:371
+msgid "mathml1"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:371
+msgid "<!DOCTYPE math SYSTEM \"http://www.w3.org/Math/DTD/mathml1/mathml.dtd\">"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:372
+msgid "MathML 2.0"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:372
+msgid "mathml2"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:372
+msgid ""
+"<!DOCTYPE math PUBLIC \"-//W3C//DTD MathML 2.0//EN\" "
+"\"http://www.w3.org/Math/DTD/mathml2/mathml2.dtd\">"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:373
+msgid "SVG 1.0"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:373
+msgid "svg10"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:373
+msgid ""
+"<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.0//EN\" "
+"\"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd\">"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:374
+msgid "SVG 1.1 Full"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:374
+msgid "svg11"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:374
+msgid ""
+"<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" "
+"\"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:375
+msgid "SVG 1.1 Basic"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:375
+msgid "svg11-basic"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:375
+msgid ""
+"<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1 Basic//EN\" "
+"\"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-basic.dtd\">"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:376
+msgid "SVG 1.1 Tiny"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:376
+msgid "svg11-tiny"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:376
+msgid ""
+"<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1 Tiny//EN\" "
+"\"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd\">"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:377
+msgid "XHTML+MathML+SVG (XHTML host)"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:377
+msgid "xhtml-math-svg-xh"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:377
+msgid ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG "
+"1.1//EN\" \"http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-"
+"svg.dtd\">"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:378
+msgid "XHTML+MathML+SVG (SVG host)"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:378
+msgid "xhtml-math-svg-sh"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:378
+msgid ""
+"<!DOCTYPE svg:svg PUBLIC \"-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG"
+" 1.1//EN\" \"http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-"
+"svg.dtd\">"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:379
+msgid "XHTML+RDFa 1.0"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:379
+msgid "xhtml-rdfa-1"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:379
+msgid ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.0//EN\" "
+"\"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd\">"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:380
+msgid "XHTML+RDFa 1.1"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:380
+msgid "xhtml-rdfa-2"
+msgstr ""
+
+#: ../../source/helpers/html_helper.rst:380
+msgid ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.1//EN\" "
+"\"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd\">"
+msgstr ""
+

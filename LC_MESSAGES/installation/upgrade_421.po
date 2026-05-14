@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_421.rst:3
+msgid "Upgrading from 4.2.0 to 4.2.1"
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:5
+msgid ""
+"Please refer to the upgrade instructions corresponding to your "
+"installation method."
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:7
+msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:8
+msgid ""
+":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
+"Upgrading <adding-codeigniter4-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:9
+msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:16
+msgid "Mandatory File Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:19
+#: ../../source/installation/upgrade_421.rst:88
+msgid "app/Config/Mimes.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:21
+msgid ""
+"The mapping of file extensions to MIME types in **app/Config/Mimes.php** "
+"was updated to fix a bug. Also, the logic of "
+"``Mimes::getExtensionFromType()`` was changed."
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:24
+msgid "Breaking Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:29
+msgid "get_cookie()"
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:31
+msgid ""
+"If there is a cookie with a prefixed name and a cookie with the same name"
+" without a prefix, the previous ``get_cookie()`` had the tricky behavior "
+"of returning the cookie without the prefix."
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:33
+msgid ""
+"For example, when ``Config\\Cookie::$prefix`` is ``prefix_``, there are "
+"two cookies, ``test`` and ``prefix_test``:"
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:42
+msgid "Previously, ``get_cookie()`` returns the following:"
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:49
+msgid ""
+"Now the behavior has been fixed as a bug, and has been changed like the "
+"following."
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:57
+msgid "If you depend on the previous behavior, you need to change your code."
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:59
+msgid ""
+"In the example above, if there is only one cookie ``prefix_test``, the "
+"previous ``get_cookie('test')`` also returns ``\"CI Cookie\"``."
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:63
+msgid "Breaking Enhancements"
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:67
+msgid "Project Files"
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:69
+#, python-format
+msgid ""
+"Numerous files in the **project space** (root, app, public, writable) "
+"received updates. Due to these files being outside of the **system** "
+"scope they will not be changed without your intervention. There are some "
+"third-party CodeIgniter modules available to assist with merging changes "
+"to the project space: `Explore on Packagist "
+"<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:74
+msgid ""
+"Except in very rare cases for bug fixes, no changes made to files for the"
+" project space will break your application. All changes noted here are "
+"optional until the next major version, and any mandatory changes will be "
+"covered in the sections above."
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:79
+msgid "Content Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:83
+msgid "All Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_421.rst:85
+msgid ""
+"This is a list of all files in the **project space** that received "
+"changes; many will be simple comments or formatting that have no effect "
+"on the runtime:"
+msgstr ""
+

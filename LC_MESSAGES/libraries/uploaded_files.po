@@ -1,0 +1,546 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/libraries/uploaded_files.rst:3
+msgid "Working with Uploaded Files"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:5
+msgid ""
+"CodeIgniter makes working with files uploaded through a form much simpler"
+" and more secure than using PHP's ``$_FILES`` array directly. This "
+"extends the :doc:`File class </libraries/files>` and thus gains all of "
+"the features of that class."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:10
+msgid ""
+"This is not the same as the File Uploading class in CodeIgniter 3. This "
+"provides a raw interface to the uploaded files with a few small features."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:21
+msgid "File Upload Form Tutorial"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:23
+msgid "Uploading a file involves the following general process:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:25
+msgid ""
+"An upload form is displayed, allowing a user to select a file and upload "
+"it."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:27
+msgid ""
+"When the form is submitted, the file is uploaded to the destination you "
+"specify."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:29
+msgid ""
+"Along the way, the file is validated to make sure it is allowed to be "
+"uploaded based on the preferences you set."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:31
+msgid "Once uploaded, the user will be shown a success message."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:33
+msgid ""
+"To demonstrate this process here is a brief tutorial. Afterward you'll "
+"find reference information."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:37
+msgid "Creating the Upload Form"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:39
+msgid ""
+"Using a text editor, create a form called **upload_form.php**. In it, "
+"place this code and save it to your **app/Views** directory:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:44
+msgid ""
+"You'll notice we are using a form helper to create the opening form tag. "
+"File uploads require a multipart form, so the helper creates the proper "
+"syntax for you."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:48
+msgid ""
+"You'll also notice we have an ``$errors`` variable. This is so we can "
+"show error messages in the event the user does something wrong."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:53
+msgid "The Success Page"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:55
+msgid ""
+"Using a text editor, create a form called **upload_success.php**. In it, "
+"place this code and save it to your **app/Views** directory::"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:79
+msgid "The Controller"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:81
+msgid ""
+"Using a text editor, create a controller called **Upload.php**. In it, "
+"place this code and save it to your **app/Controllers** directory:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:86
+msgid ""
+"Only the :ref:`rules-for-file-uploads` can be used to validate uploaded "
+"files."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:88
+msgid ""
+"Therefore, the rule ``required`` cannot be used either, so if the file is"
+" required, use the rule ``uploaded`` instead."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:91
+msgid ""
+"Note that an empty array (``[]``) is passed as the first argument to "
+"``$this->validateData()``. It is because the file validation rules get "
+"the data for the uploaded file directly from the Request object."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:95
+msgid ""
+"If the form has fields other than file upload, pass the field data as the"
+" first argument."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:99
+msgid "The Routes"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:101
+msgid ""
+"Using a text editor, open **app/Config/Routes.php**. In it, add the "
+"following two routes:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:106
+msgid "The Upload Directory"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:108
+msgid "The uploaded files are stored in the **writable/uploads/** directory."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:111
+msgid "Try it!"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:113
+msgid "To try your form, visit your site using a URL similar to this one::"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:117
+msgid ""
+"You should see an upload form. Try uploading an image file (either a "
+"**jpg**, **gif**, **png**, or **webp**). If the path in your controller "
+"is correct it should work."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:125
+msgid "Accessing Files"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:128
+msgid "All Files"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:130
+msgid ""
+"When you upload files they can be accessed natively in PHP through the "
+"``$_FILES`` superglobal. This array has some major shortcomings when "
+"working with multiple files uploaded at once, and has potential security "
+"flaws many developers are not aware of. CodeIgniter helps with both of "
+"these situations by standardizing your usage of files behind a common "
+"interface."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:135
+msgid ""
+"Files are accessed through the current ``IncomingRequest`` instance. To "
+"retrieve all files that were uploaded with this request, use "
+"``getFiles()``. This will return an array of files represented by "
+"instances of ``CodeIgniter\\HTTP\\Files\\UploadedFile``:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:140
+msgid ""
+"Of course, there are multiple ways to name the file input, and anything "
+"but the simplest can create strange results. The array returns in a "
+"manner that you would expect. With the simplest usage, a single file "
+"might be submitted like::"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:145
+msgid "Which would return a simple array like::"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:151
+msgid ""
+"The UploadedFile instance corresponds to ``$_FILES``. Even if a user just"
+" clicks the submit button and does not upload any file, the instance will"
+" still exist. You can check that the file was actually uploaded by the "
+"``isValid()`` method in UploadedFile. See :ref:`verify-a-file`."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:153
+#: ../../source/libraries/uploaded_files.rst:205
+msgid ""
+"If you used an array notation for the name, the input would look "
+"something like::"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:157
+msgid "The array returned by ``getFiles()`` would look more like this::"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:168
+msgid "In some cases, you may specify an array of files to upload::"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:173
+msgid "In this case, the returned array of files would be more like::"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:187
+msgid "Single File"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:189
+msgid ""
+"If you just need to access a single file, you can use ``getFile()`` to "
+"retrieve the file instance directly. This will return an instance of "
+"``CodeIgniter\\HTTP\\Files\\UploadedFile``:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:192
+msgid "Simplest usage"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:194
+#: ../../source/libraries/uploaded_files.rst:385
+msgid "With the simplest usage, a single file might be submitted like::"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:198
+msgid "Which would return a simple file instance like:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:203
+msgid "Array notation"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:209
+msgid "For get the file instance:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:214
+msgid "Multiple files"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:220
+#: ../../source/libraries/uploaded_files.rst:228
+#: ../../source/libraries/uploaded_files.rst:241
+msgid "In controller:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:224
+msgid "where the ``images`` is a loop from the form field name."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:226
+msgid ""
+"If there are multiple files with the same name you can use ``getFile()`` "
+"to retrieve every file individually."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:232
+msgid ""
+"You might find it easier to use ``getFileMultiple()``, to get an array of"
+" uploaded files with the same name:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:236
+msgid "Another example::"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:245
+msgid "Using ``getFiles()`` is more appropriate."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:249
+msgid "Working with the File"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:251
+msgid ""
+"Once you've retrieved the UploadedFile instance, you can get information "
+"about the file in safe ways, as well as move the file to a new location."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:257
+msgid "Verify a File"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:259
+msgid ""
+"You can check that a file was actually uploaded via HTTP with no errors "
+"by calling the ``isValid()`` method:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:263
+msgid ""
+"As seen in this example, if a file had an upload error, you can retrieve "
+"the error code (an integer) and the error message with the ``getError()``"
+" and ``getErrorString()`` methods. The following errors can be discovered"
+" through this method:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:267
+msgid "The file exceeds your ``upload_max_filesize`` ini directive."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:268
+msgid "The file exceeds the upload limit defined in your form."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:269
+msgid "The file was only partially uploaded."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:270
+msgid "No file was uploaded."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:271
+msgid "The file could not be written on disk."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:272
+msgid "File could not be uploaded: missing temporary directory."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:273
+msgid "File upload was stopped by a PHP extension."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:276
+msgid "File Names"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:279
+msgid "getName()"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:281
+msgid ""
+"You can retrieve the original filename provided by the client with the "
+"``getName()`` method. This will typically be the filename sent by the "
+"client, and should not be trusted. If the file has been moved, this will "
+"return the final name of the moved file:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:288
+msgid "getClientName()"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:290
+msgid ""
+"Always returns the original name of the uploaded file as sent by the "
+"client, even if the file has been moved:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:295
+msgid "getTempName()"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:297
+msgid ""
+"To get the full path of the temp file that was created during the upload,"
+" you can use the ``getTempName()`` method:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:302
+msgid "Other File Info"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:305
+msgid "getClientExtension()"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:307
+msgid ""
+"Returns the original file extension, based on the file name that was "
+"uploaded:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:311
+msgid ""
+"This is NOT a trusted source. For a trusted version, use "
+"``guessExtension()`` instead."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:314
+msgid "getClientMimeType()"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:316
+msgid ""
+"Returns the mime type of the file as provided by the client. This is NOT "
+"a trusted value. For a trusted version, use ``getMimeType()`` instead:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:322
+msgid "getClientPath()"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:326
+msgid ""
+"Returns the `webkit relative path <https://developer.mozilla.org/en-"
+"US/docs/Web/API/File/webkitRelativePath>`_ of the uploaded file when the "
+"client has uploaded files via directory upload. In PHP versions below "
+"8.1, this returns ``null``"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:332
+msgid "Moving Files"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:335
+msgid "with Original Filename"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:337
+msgid ""
+"Each file can be moved to its new location with the aptly named "
+"``move()`` method. This takes the directory to move the file to as the "
+"first parameter:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:342
+msgid "By default, the original filename was used."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:345
+msgid "with New Filename"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:347
+msgid "You can specify a new filename by passing it as the second parameter:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:352
+msgid "Overwriting Existing File"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:354
+msgid ""
+"By default, if the destination file already exists, a new filename will "
+"be used. For example, if **image_name.jpg** already exists in the "
+"directory, then the filename will be **image_name_1.jpg** automatically."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:358
+msgid ""
+"You can overwrite the existing file by passing ``true`` as the third "
+"parameter:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:364
+msgid "Check if the File Moved"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:366
+msgid ""
+"Once the file has been moved the temporary file is deleted. You can check"
+" if a file has been moved already with the ``hasMoved()`` method, which "
+"returns a boolean:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:372
+msgid "When Moving Fails"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:374
+#: ../../source/libraries/uploaded_files.rst:399
+msgid ""
+"Moving an uploaded file can fail, with an ``HTTPException``, under "
+"several circumstances:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:376
+#: ../../source/libraries/uploaded_files.rst:401
+msgid "the file has already been moved"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:377
+#: ../../source/libraries/uploaded_files.rst:402
+msgid "the file did not upload successfully"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:378
+#: ../../source/libraries/uploaded_files.rst:403
+msgid "the file move operation fails (e.g., improper permissions)"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:381
+msgid "Store Files"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:383
+msgid ""
+"Each file can be moved to its new location with the aptly named "
+"``store()`` method."
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:389
+msgid ""
+"By default, upload files are saved in **writable/uploads** directory. The"
+" **YYYYMMDD** folder and random file name will be created. Returns a file"
+" path:"
+msgstr ""
+
+#: ../../source/libraries/uploaded_files.rst:394
+msgid ""
+"You can specify a directory to move the file to as the first parameter. A"
+" new filename by passing it as the second parameter:"
+msgstr ""
+

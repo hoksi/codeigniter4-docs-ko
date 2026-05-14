@@ -1,0 +1,575 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_450.rst:3
+msgid "Upgrading from 4.4.8 to 4.5.0"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:5
+msgid ""
+"Please refer to the upgrade instructions corresponding to your "
+"installation method."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:7
+msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:8
+msgid ""
+":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
+"Upgrading <adding-codeigniter4-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:9
+msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:16
+msgid "Mandatory File Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:19
+msgid "index.php and spark"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:21
+msgid ""
+"The following files received significant changes and **you must merge the"
+" updated versions** with your application:"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:24
+msgid "``public/index.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:25
+msgid "``spark``"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:27
+msgid ""
+"If you don't update the above files, CodeIgniter will not work properly "
+"after running ``composer update``."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:30
+msgid "The upgrade procedure, for example, is as follows:"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:39
+msgid "Breaking Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:44
+msgid "Lowercase HTTP Method Name"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:47
+msgid "Request::getMethod()"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:49
+msgid ""
+"For historical reasons, ``Request::getMethod()`` returned HTTP method "
+"names in lower case by default."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:52
+msgid ""
+"But the method token is case-sensitive because it might be used as a "
+"gateway to object-based systems with case-sensitive method names. By "
+"convention, standardized methods are defined in all-uppercase US-ASCII "
+"letters. See https://www.rfc-editor.org/rfc/rfc9110#name-overview."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:57
+msgid ""
+"Now the deprecated ``$upper`` parameter in ``Request::getMethod()`` has "
+"been removed, and the ``getMethod()`` returns the as-is HTTP method name."
+" That is, uppercase like \"GET\", \"POST\", and so on."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:61
+msgid ""
+"If you want lowercase HTTP method names, use PHP's ``strtolower()`` "
+"function::"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:65
+msgid "And you should use uppercase HTTP method names in your app code."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:68
+#: ../../source/installation/upgrade_450.rst:280
+#: ../../source/installation/upgrade_450.rst:353
+msgid "app/Config/Filters.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:70
+msgid ""
+"You should update the keys to uppercase in ``$methods`` in "
+"**app/Config/Filters.php**::"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:78
+msgid "CURLRequest::request()"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:80
+msgid ""
+"In previous versions, you could pass lowercase HTTP methods to the "
+"``request()`` method. But this bug has been fixed."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:83
+msgid ""
+"Now you must pass the correct HTTP method names like ``GET``, ``POST``. "
+"Otherwise you would get the error response::"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:96
+msgid "Nested Route Groups and Options"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:98
+msgid ""
+"A bug that prevented options passed to outer ``group()`` from being "
+"merged with options in inner ``group()`` has been fixed."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:101
+msgid ""
+"Check and correct your route configuration as it could change the values "
+"of the options applied."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:104
+msgid "For example,"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:120
+msgid ""
+"Now the ``csrf`` filter is executed for both the route ``admin`` and "
+"``admin/users``. In previous versions, it is executed only for the route "
+"``admin``. See also :ref:`routing-nesting-groups`."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:127
+msgid "Filter Execution Order"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:129
+msgid ""
+"The order in which Controller Filters are executed has changed. If you "
+"wish to maintain the same execution order as in previous versions, set "
+"``true`` to ``Config\\Feature::$oldFilterOrder``. See also :ref:`filter-"
+"execution-order`."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:133
+msgid "The order of execution of filter groups has been changed."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:135
+#: ../../source/installation/upgrade_450.rst:161
+msgid "Before Filters::"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:140
+#: ../../source/installation/upgrade_450.rst:166
+msgid "After Filters::"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:145
+msgid ""
+"2. The After Filters in *Route* filters and *Filters* filters execution "
+"order is now reversed."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:148
+msgid "When you have the following configuration:"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:174
+msgid "API\\\\ResponseTrait and String Data"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:176
+msgid ""
+"In previous versions, if you pass string data to a trait method, the "
+"framework returned an HTML response, even if the response format was "
+"determined to be JSON."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:179
+msgid ""
+"Now if you pass string data, it returns a JSON response correctly. See "
+"also :ref:`api-response-trait-handling-response-types`."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:182
+msgid ""
+"You can keep the behavior in previous versions if you set the "
+"``$stringAsHtml`` property to ``true`` in your controller."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:186
+msgid "FileLocator::findQualifiedNameFromPath()"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:188
+msgid ""
+"In previous versions, ``FileLocator::findQualifiedNameFromPath()`` "
+"returns Fully Qualified Classnames with a leading ``\\``. Now the leading"
+" ``\\`` has been removed."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:191
+msgid "If you have code that expects a leading ``\\``, fix it."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:194
+msgid "BaseModel::getIdValue()"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:196
+msgid ""
+"The ``BaseModel::getIdValue()`` has been changed to ``abstract``, and the"
+" implementation has been removed."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:199
+msgid ""
+"If you extneds ``BaseModel``, implement the ``getIdValue()`` method in "
+"the child class."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:202
+msgid "Factories"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:204
+msgid ""
+":doc:`../concepts/factories` has been changed to a final class. In the "
+"unlikely event, you have inherited the Factories, stop inheriting and "
+"copy the code into your Factories class."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:209
+msgid "Auto Routing (Legacy)"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:211
+msgid ""
+"In previous versions, the controller filters might be executed even when "
+"the corresponding controller was not found."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:214
+msgid ""
+"This bug has been fixed and now a ``PageNotFoundException`` will be "
+"thrown and the filters will not be executed if the controller is not "
+"found."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:217
+msgid ""
+"If you have code that depends on this bug, for example if you expect "
+"global filters to be executed even for non-existent pages, use the new "
+":ref:`v450-required-filters`."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:221
+msgid "Method Signature Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:223
+msgid ""
+"Some method signature changes have been made. Classes that extend them "
+"should update their APIs to reflect the changes. See :ref:`ChangeLog "
+"<v450-method-signature-changes>` for details."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:228
+msgid "Removed Deprecated Items"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:230
+msgid ""
+"Some deprecated items have been removed. If you are still using these "
+"items, or extending these classes, upgrade your code. See :ref:`ChangeLog"
+" <v450-removed-deprecated-items>` for details."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:235
+msgid "Breaking Enhancements"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:240
+msgid "404 Override Status Code"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:242
+msgid ""
+"In previous versions, :ref:`404-override` returned responses with the "
+"status code ``200`` by default. Now it returns ``404`` by default."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:245
+msgid "If you want ``200``, you need to set it in the controller::"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:254
+msgid "Validation::run() Signature"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:256
+msgid ""
+"The method signatures of ``Validation::run()`` and "
+"``ValidationInterface::run()`` have been changed. The ``?string`` "
+"typehint on the ``$dbGroup`` parameter was removed. Extending classes "
+"should likewise remove the parameter so as not to break LSP."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:262
+msgid "Project Files"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:264
+msgid ""
+"Some files in the **project space** (root, app, public, writable) "
+"received updates. Due to these files being outside of the **system** "
+"scope they will not be changed without your intervention."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:267
+#, python-format
+msgid ""
+"There are some third-party CodeIgniter modules available to assist with "
+"merging changes to the project space: `Explore on Packagist "
+"<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:271
+msgid "Content Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:273
+msgid ""
+"The following files received significant changes (including deprecations "
+"or visual adjustments) and it is recommended that you merge the updated "
+"versions with your application:"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:277
+msgid "Config"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:282
+msgid ""
+"Required Filters have been added, so the following changes were made. See"
+" also :ref:`ChangeLog <v450-required-filters>`."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:285
+msgid "The base class has been changed::"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:289
+msgid "The following items are added in the ``$aliases`` property::"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:298
+msgid "A new property ``$required`` is added, and set as the following::"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:312
+msgid "The  ``'toolbar'`` in the ``$global['after']`` was removed."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:315
+msgid "Others"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:317
+#: ../../source/installation/upgrade_450.rst:348
+msgid "app/Config/Boot/production.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:318
+msgid ""
+"The default error level to ``error_reporting()`` has been changed to "
+"``E_ALL & ~E_DEPRECATED``."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:319
+#: ../../source/installation/upgrade_450.rst:350
+msgid "app/Config/Cors.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:320
+msgid "Added to handle CORS configuration."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:321
+#: ../../source/installation/upgrade_450.rst:351
+msgid "app/Config/Database.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:322
+msgid ""
+"The default value of ``charset`` in ``$default`` has been change to "
+"``utf8mb4``."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:323
+msgid ""
+"The default value of ``DBCollat`` in ``$default`` has been change to "
+"``utf8mb4_general_ci``."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:324
+msgid "The default value of ``DBCollat`` in ``$tests`` has been change to ``''``."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:325
+#: ../../source/installation/upgrade_450.rst:352
+msgid "app/Config/Feature.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:326
+msgid ""
+"``Config\\Feature::$oldFilterOrder`` has been added. See :ref:`filter-"
+"execution-order`."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:328
+msgid ""
+"``Config\\Feature::$limitZeroAsAll`` has been added. See :ref:`v450"
+"-query-builder-limit-0-behavior`."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:330
+msgid ""
+"``Config\\Feature::$multipleFilters`` has been removed, because now :ref"
+":`multiple-filters` are always enabled."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:332
+#: ../../source/installation/upgrade_450.rst:355
+msgid "app/Config/Kint.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:333
+msgid ""
+"It no longer extends ``BaseConfig`` because enabling :ref:`factories-"
+"config-caching` could cause errors."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:335
+#: ../../source/installation/upgrade_450.rst:356
+msgid "app/Config/Optimize.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:336
+msgid "Added to handle optimization configuration."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:337
+#: ../../source/installation/upgrade_450.rst:358
+msgid "app/Config/Security.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:338
+msgid ""
+"The property ``$redirect`` has been changed to ``true`` in ``production``"
+" environment."
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:342
+msgid "All Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:344
+msgid ""
+"This is a list of all files in the **project space** that received "
+"changes; many will be simple comments or formatting that have no effect "
+"on the runtime:"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:347
+msgid "app/Config/Autoload.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:349
+msgid "app/Config/Cache.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:354
+msgid "app/Config/Generators.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:357
+msgid "app/Config/Routing.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:359
+msgid "app/Config/Session.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:360
+msgid "app/Views/errors/cli/error_exception.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:361
+msgid "app/Views/errors/html/error_exception.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:362
+msgid "app/Views/welcome_message.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:363
+msgid "composer.json"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:364
+msgid "env"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:365
+msgid "phpunit.xml.dist"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:366
+msgid "preload.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:367
+msgid "public/index.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_450.rst:368
+msgid "spark"
+msgstr ""
+

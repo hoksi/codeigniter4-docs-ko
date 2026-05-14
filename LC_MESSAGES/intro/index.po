@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/intro/index.rst:47
+msgid "License Agreement"
+msgstr ""
+
+#: ../../source/intro/index.rst:3
+msgid "Welcome to CodeIgniter4"
+msgstr ""
+
+#: ../../source/intro/index.rst:5
+msgid ""
+"CodeIgniter is a PHP full-stack web framework that is light, fast, "
+"flexible and secure."
+msgstr ""
+
+#: ../../source/intro/index.rst:8
+msgid ""
+"It is an Application Development Framework - a toolkit - for people who "
+"build web sites using PHP. Its goal is to enable you to develop projects "
+"much faster than you could if you were writing code from scratch, by "
+"providing a rich set of libraries for commonly needed tasks, as well as a"
+" simple interface and logical structure to access these libraries."
+msgstr ""
+
+#: ../../source/intro/index.rst:15
+msgid ""
+"CodeIgniter lets you creatively focus on your project by minimizing the "
+"amount of code needed for a given task."
+msgstr ""
+
+#: ../../source/intro/index.rst:18
+msgid ""
+"Where possible, CodeIgniter has been kept as flexible as possible, "
+"allowing you to work in the way you want, not being forced into working "
+"any certain way. The framework can have core parts easily extended or "
+"completely replaced to make the system work the way you need it to."
+msgstr ""
+
+#: ../../source/intro/index.rst:23
+msgid ""
+"In short, CodeIgniter is the malleable framework that tries to provide "
+"the tools you need while staying out of the way."
+msgstr ""
+
+#: ../../source/intro/index.rst:28
+msgid "Is CodeIgniter Right for You?"
+msgstr ""
+
+#: ../../source/intro/index.rst:30
+msgid "CodeIgniter is right for you if:"
+msgstr ""
+
+#: ../../source/intro/index.rst:32
+msgid "You want a framework with a small footprint."
+msgstr ""
+
+#: ../../source/intro/index.rst:33
+msgid "You need exceptional performance."
+msgstr ""
+
+#: ../../source/intro/index.rst:34
+msgid ""
+"You want a framework that incorporates a number of features and "
+"techniques to enable you to do good security practices easily."
+msgstr ""
+
+#: ../../source/intro/index.rst:36
+msgid ""
+"You want a non-magical framework that you can easily find and read the "
+"source code."
+msgstr ""
+
+#: ../../source/intro/index.rst:38
+msgid "You want a framework that requires nearly zero configuration."
+msgstr ""
+
+#: ../../source/intro/index.rst:39
+msgid ""
+"You want a framework that does not require you to adhere to restrictive "
+"coding rules."
+msgstr ""
+
+#: ../../source/intro/index.rst:41
+msgid "You want a framework that makes it easy to create test code."
+msgstr ""
+
+#: ../../source/intro/index.rst:42
+msgid ""
+"You do not want to be forced to learn a templating language (although a "
+"template parser is optionally available if you desire one)."
+msgstr ""
+
+#: ../../source/intro/index.rst:44
+msgid "You eschew complexity, favoring simple solutions."
+msgstr ""
+
+#: ../../source/intro/index.rst:45
+msgid "You need clear, thorough documentation."
+msgstr ""
+

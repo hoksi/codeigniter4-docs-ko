@@ -1,0 +1,372 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:2
+msgid "Version 4.0.0-rc.4"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:4
+msgid "Release Date: February 6, 2020"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:6
+msgid "**RC.4 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:13
+msgid "Enhancements"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:15
+msgid ""
+"Fixed url systems so that it would work when system is served out of "
+"subfolders."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:16
+msgid "Added required insert ignore support for sqlite3 and mysql."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:17
+msgid "Add validation function `is_not_unique`"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:18
+msgid "Various improvements and cleanup to the Email class"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:21
+msgid "PRs merged"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:23
+msgid "#2527 Update manual.rst"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:24
+msgid ""
+"#2454 Page in the official documentation on ajax requests with iSAJAX() "
+"fixes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:25
+msgid "#2525 Remove incorrect inline doc type"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:26
+msgid "#2524 Restore namespace after regress."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:27
+msgid "#2523 Replace legacy CI3 constant."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:28
+msgid "#2522 Adding Events information in the 'Upgrading from 3.x to 4.x' section"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:29
+msgid "#2518 Fix pager URI to work in subfolders."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:30
+msgid "#2516 HTML Helper - Fix attribute type for lists"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:31
+msgid "#2515 Layout Renderer Fix"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:32
+msgid "#2513 Typo in userguide \"Entity Classes - Business Logic\""
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:33
+msgid "#2511 Database add highlight"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:34
+msgid "#2509 Revert Renderer section reset"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:35
+msgid "#2507 Update ordering of search locations for better prioritization."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:36
+msgid "#2506 HTTP Response - Fix crash on CSP methods CSP is disabled"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:37
+msgid "#2504 BaseConnection - Nullable return type in getConnectStart()"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:38
+msgid "#2502 View Renderer - Reset sections after generating the ouput"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:39
+msgid "#2501 view_cell call controller on initController method."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:40
+msgid "#2499 View Parser - Fix ParsePair() with filter"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:41
+msgid "#2497 Fix splitQueryPart()"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:42
+msgid "#2496 Use site_url for RedirectResponse."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:43
+msgid "#2495 update toolbar userguide"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:44
+msgid "#2494 Debug Toolbar - Fix Debugbar-Time header, Render in <head>"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:45
+msgid "#2493 fix sphinx version."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:46
+msgid "#2490 fix. Toolbar init view Error"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:47
+msgid "#2489 Fix pager"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:48
+msgid "#2486 Update current_url and previous_url in the docs for View Parser."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:49
+msgid "#2485 Typo in user guide \"Running via the Command Line\""
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:50
+msgid "#2482 Services request add URI Core System extend support"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:51
+msgid "#2481 Priority Redirection."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:52
+msgid "#2472 ControllerTest should work without URI specified. Fixes #2470"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:53
+msgid "#2471 Transition from Zend Escaper to Laminas Escaper"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:54
+msgid "#2462 Fix impossible length for migration table id."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:55
+msgid "#2458 Replace `composer install` by `composer require`"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:56
+msgid ""
+"#2450 CRITICAL when $_SESSION is null / Argument 2 passed to "
+"dot_array_search() must be []"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:57
+msgid "#2449 User Guide: Query Builder selectCount - error correction in example"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:58
+msgid "#2447 Existing File checks (Nowackipawel/patch-69)"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:59
+msgid "#2446 DB Insert Ignore (Tada5hi/database-feature)"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:60
+msgid "#2438 Nice array view in debug toolbar"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:61
+msgid "#2436 Fix Message method reference"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:62
+msgid ""
+"#2433 Inserting through a model should respect all validation rules. "
+"Fixes #2384"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:63
+msgid "#2432 Fix curly brace deprecation in php 7.4"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:64
+msgid "#2429 fix. safe_mailto multi-byte safe"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:65
+msgid "#2427 Add $recipients property to Config\\Email"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:66
+msgid "#2426 Add hex validation rule, test, Guide"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:67
+msgid "#2425 fix: Router setDefaultNameSpace can't worker"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:68
+msgid "#2422 Don't show duplicate Date headers when running under PHPs server."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:69
+msgid "#2420 Change current_url() to use cloned URI"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:70
+msgid "#2417 Revise Encryption Service Documentation"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:71
+msgid "#2416 Add missing closing braces of condition 'hasError()'"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:72
+msgid "#2415 Add 'nullable' to MySQL field data"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:73
+msgid "#2413 fix. toolbar file 301"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:74
+msgid "#2411 fix parse params of plugin"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:75
+msgid "#2408 Ensure previous_url() gets accurate URI."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:76
+msgid "#2407 Fix url helper functions to work when site hosted in subfolders."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:77
+msgid "#2406 Fix issue #2391 CodeIgniter::display404errors()"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:78
+msgid "#2402 Removed pointless isset() check"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:79
+msgid "#2401 Remove pointless check from conditional"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:80
+msgid "#2400 Remove redundant check in conditionals"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:81
+msgid "#2399 Revise Controllers Documentation"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:82
+msgid "#2398 Edit .htaccess"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:83
+msgid "#2392 Add validation function `is_not_unique`"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:84
+msgid "#2389 Confer silent status to nested seeders"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:85
+msgid "#2388 Fix copypaste command comment"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:86
+msgid "#2387 Use only digits for migrations order"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:87
+msgid "#2382 quick fix postgresql insert id"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:88
+msgid ""
+"#2381 Fix: Use of CodeIgniter\\Config\\Services prevents Service "
+"overriding"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:89
+msgid "#2379 Replace null log file extension check"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:90
+msgid "#2377 Docs Rev: Replacing Core Classes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:91
+msgid "#2369 Remove LoggerAwareTrait from Email class"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:92
+msgid "#2368 Remove log_message from Email::__construct"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:93
+msgid "#2364 Email config doesn't incorporate .env items"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:94
+msgid "#2362 Fix SMTP protocol problem"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:95
+msgid "#2359 Bugfix Model after event data"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:96
+msgid "#2358 Fix Logger config"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:97
+msgid "#2356 Fix typo in comments of Services.php"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.4.rst:98
+msgid "#2352 Fix method name to 'toDateString()' in Date and Times user guide"
+msgstr ""
+

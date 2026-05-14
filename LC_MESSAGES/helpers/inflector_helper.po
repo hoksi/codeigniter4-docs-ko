@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/helpers/inflector_helper.rst:3
+msgid "Inflector Helper"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:5
+msgid ""
+"The Inflector Helper file contains functions that permit you to change "
+"**English** words to plural, singular, camel case, etc."
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:13
+msgid "Loading this Helper"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:15
+msgid "This helper is loaded using the following code:"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:20
+msgid "Available Functions"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:22
+msgid "The following functions are available:"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:26
+#: ../../source/helpers/inflector_helper.rst:36
+#: ../../source/helpers/inflector_helper.rst:47
+#: ../../source/helpers/inflector_helper.rst:57
+#: ../../source/helpers/inflector_helper.rst:68
+#: ../../source/helpers/inflector_helper.rst:79
+#: ../../source/helpers/inflector_helper.rst:90
+#: ../../source/helpers/inflector_helper.rst:101
+#: ../../source/helpers/inflector_helper.rst:119
+#: ../../source/helpers/inflector_helper.rst:129
+msgid "Input string"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:27
+msgid "A singular word"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:30
+msgid "Changes a plural word to singular. Example:"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:37
+msgid "A plural word"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:40
+msgid "Changes a singular word to plural. Example:"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:46
+msgid "Number of items"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:48
+msgid "A singular or plural phrase"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:51
+msgid "Changes a word and its count to a phrase. Example:"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:58
+msgid "Camel case string"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:61
+msgid ""
+"Changes a string of words separated by spaces or underscores to camel "
+"case. Example:"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:69
+msgid "Pascal case string"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:72
+msgid ""
+"Changes a string of words separated by spaces or underscores to Pascal "
+"case, which is camel case with the first letter capitalized. Example:"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:80
+msgid "String containing underscores instead of spaces"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:83
+msgid "Takes multiple words separated by spaces and underscores them. Example:"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:91
+msgid "String containing underscores between words"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:94
+msgid ""
+"Takes multiple words in camelCase or PascalCase and converts them to "
+"snake_case. Example:"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:102
+msgid "Input separator"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:103
+msgid "Humanized string"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:106
+msgid ""
+"Takes multiple words separated by underscores and adds spaces between "
+"them. Each word is capitalized."
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:109
+msgid "Example:"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:113
+msgid "To use dashes instead of underscores:"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:120
+msgid "true if the word is countable or false if not"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:123
+msgid "Checks if the given word has a plural version. Example:"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:130
+msgid "Dasherized string"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:133
+msgid "Replaces underscores with dashes in the string. Example:"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:139
+msgid "The integer to determine the suffix"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:140
+msgid "Ordinal suffix"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:143
+msgid ""
+"Returns the suffix that should be added to a number to denote the "
+"position such as 1st, 2nd, 3rd, 4th. Example:"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:151
+msgid "The integer to ordinalize"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:152
+msgid "Ordinalized integer"
+msgstr ""
+
+#: ../../source/helpers/inflector_helper.rst:155
+msgid ""
+"Turns a number into an ordinal string used to denote the position such as"
+" 1st, 2nd, 3rd, 4th. Example:"
+msgstr ""
+

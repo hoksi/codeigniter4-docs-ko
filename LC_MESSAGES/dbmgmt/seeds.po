@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/dbmgmt/seeds.rst:3
+msgid "Database Seeding"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:5
+msgid ""
+"Database seeding is a simple way to add data into your database. It is "
+"especially useful during development where you need to populate the "
+"database with sample data that you can develop against, but it is not "
+"limited to that. Seeders can contain static data that you don't want to "
+"include in a migration, like countries, or geo-coding tables, event or "
+"setting information, and more."
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:16
+msgid "Database Seeders"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:18
+msgid ""
+"Database seeders are simple classes that must have a ``run()`` method, "
+"and extend ``CodeIgniter\\Database\\Seeder``. Within the ``run()`` the "
+"class can create any form of data that it needs to. It has access to the "
+"database connection and the forge through ``$this->db`` and "
+"``$this->forge``, respectively. Seed files must be stored within the "
+"**app/Database/Seeds** directory. The name of the file must match the "
+"name of the class."
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:27
+msgid "Nesting Seeders"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:29
+msgid ""
+"Seeders can call other seeders, with the ``call()`` method. This allows "
+"you to easily organize a central seeder, but organize the tasks into "
+"separate seeder files:"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:34
+msgid ""
+"You can also use a fully-qualified class name in the ``call()`` method, "
+"allowing you to keep your seeders anywhere the autoloader can find them. "
+"This is great for more modular code bases:"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:41
+msgid "Using Seeders"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:43
+msgid "You can grab a copy of the main seeder through the database config class:"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:48
+msgid "Using a Different Database Group"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:50
+msgid ""
+"You can specify a different database group when obtaining a seeder "
+"instance by passing the group name as the first parameter:"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:55
+msgid ""
+"When using ``call()`` to run child seeders, the database connection is "
+"automatically passed to them. This means child seeders will use the same "
+"connection as the parent seeder, unless they explicitly specify their own"
+" ``$DBGroup`` property."
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:59
+msgid ""
+"If a seeder needs to always use a specific database group regardless of "
+"the parent seeder's connection, you can set the ``$DBGroup`` property in "
+"the seeder class:"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:64
+msgid "The connection priority is:"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:66
+msgid ""
+"If ``$DBGroup`` is set in the seeder class, that connection group is "
+"always used"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:67
+msgid ""
+"Otherwise, if a connection was passed (from parent seeder via ``call()`` "
+"or from ``Database::seeder()``), it is used"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:68
+msgid "Otherwise, the default connection group is used"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:71
+msgid "Command Line Seeding"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:73
+msgid ""
+"You can also seed data from the command line, as part of the Migrations "
+"CLI tools, if you don't want to create a dedicated controller:"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:82
+msgid "Creating Seeder Files"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:84
+msgid "Using the command line, you can easily generate seed files:"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:90
+msgid ""
+"The above command outputs **UserSeeder.php** file located at "
+"**app/Database/Seeds** directory."
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:92
+msgid ""
+"You can supply the ``root`` namespace where the seed file will be stored "
+"by supplying the ``--namespace`` option:"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:94
+msgid "For Unix:"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:100
+msgid "For Windows:"
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:106
+msgid ""
+"If ``Acme\\Blog`` is mapped to **app/Blog** directory, then this command "
+"will generate **MySeeder.php** at **app/Blog/Database/Seeds** directory."
+msgstr ""
+
+#: ../../source/dbmgmt/seeds.rst:108
+msgid ""
+"Supplying the ``--force`` option will overwrite existing files in "
+"destination."
+msgstr ""
+

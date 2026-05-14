@@ -1,0 +1,395 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_460.rst:3
+msgid "Upgrading from 4.5.8 to 4.6.0"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:5
+msgid ""
+"Please refer to the upgrade instructions corresponding to your "
+"installation method."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:7
+msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:8
+msgid ""
+":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
+"Upgrading <adding-codeigniter4-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:9
+msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:17
+msgid "Breaking Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:20
+msgid "Exception Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:22
+msgid ""
+"Some classes have changed the exception classes that are thrown. Some "
+"exception classes have changed parent classes. See :ref:`ChangeLog <v460"
+"-behavior-changes-exceptions>` for details."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:26
+msgid ""
+"If you have code that catches these exceptions, change the exception "
+"classes."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:31
+msgid "Time::createFromTimestamp() Timezone Change"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:33
+msgid ""
+"When you do not explicitly pass a timezone, now "
+":ref:`Time::createFromTimestamp() <time-createfromtimestamp>` returns a "
+"Time instance with **UTC**. In v4.4.6 to prior to v4.6.0, a Time instance"
+" with the currently set default timezone was returned."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:38
+msgid ""
+"This behavior change normalizes behavior with changes in PHP 8.4 which "
+"adds a new ``DateTimeInterface::createFromTimestamp()`` method."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:41
+msgid ""
+"If you want to keep the default timezone, you need to pass the timezone "
+"as the second parameter::"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:51
+msgid "Time keeps Microseconds"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:53
+msgid ""
+"In previous versions, :doc:`Time <../libraries/time>` lost microseconds "
+"in some cases. But the bugs have been fixed."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:56
+msgid "The results of the ``Time`` comparison may differ due to these fixes:"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:61
+msgid "In a such case, you need to remove the microseconds:"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:66
+msgid "The following cases now keeps microseconds:"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:74
+msgid ""
+"Note that ``Time`` with the current time has been holding microseconds "
+"since before."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:79
+msgid "Also, methods that returns an ``int`` still lose the microseconds."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:87
+msgid "Time::setTimestamp() Behavior Fix"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:89
+msgid ""
+"In previous versions, if you call ``Time::setTimestamp()`` on a Time "
+"instance with a timezone other than the default timezone might return a "
+"Time instance with the wrong date/time."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:93
+msgid ""
+"This bug has been fixed, and it now behaves in the same way as "
+"``DateTimeImmutable``:"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:98
+msgid "Note that if you use the default timezone, the behavior is not changed:"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:106
+msgid "Registrars with Dirty Hack"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:108
+msgid ""
+"To prevent Auto-Discovery of :ref:`registrars` from running twice, when a"
+" registrar class is loaded or instantiated, if it instantiates a Config "
+"class (which extends ``CodeIgniter\\Config\\BaseConfig``), "
+"``ConfigException`` will be raised."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:112
+msgid ""
+"This is because if Auto-Discovery of Registrars is performed twice, "
+"duplicate values may be added to properties of Config classes."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:115
+msgid ""
+"All registrar classes (**Config/Registrar.php** in all namespaces) must "
+"be modified so that they do not instantiate any Config class when loaded "
+"or instantiated."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:118
+msgid ""
+"If the packages/modules you are using provide such registrar classes, the"
+" registrar classes in the packages/modules need to be fixed."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:121
+msgid "The following is an example of code that will no longer work:"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:128
+msgid "Session ID (SID) Change"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:130
+msgid ""
+"Now :doc:`../libraries/sessions` forces to use the PHP default 32 "
+"character SIDs, with 4 bits of entropy per character. This change is to "
+"match the behavior of PHP 9."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:134
+msgid "In other words, the following settings are always used:"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:141
+msgid ""
+"In previous versions, the PHP ini settings was respected. So this change "
+"may change your SID length."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:144
+msgid "If you cannot accept this change, customize the Session library."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:147
+msgid "Interface Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:149
+msgid ""
+"Some interface changes have been made. Classes that implement them should"
+" update their APIs to reflect the changes. See :ref:`ChangeLog <v460"
+"-interface-changes>` for details."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:154
+msgid "Method Signature Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:156
+msgid ""
+"Some method signature changes have been made. Classes that extend them "
+"should update their APIs to reflect the changes. See :ref:`ChangeLog "
+"<v460-method-signature-changes>` for details."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:161
+msgid "Removed Deprecated Items"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:163
+msgid ""
+"Some deprecated items have been removed. If you are still using these "
+"items, or extending these classes, upgrade your code. See :ref:`ChangeLog"
+" <v460-removed-deprecated-items>` for details."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:169
+msgid "Breaking Enhancements"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:174
+msgid "Filters Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:176
+msgid ""
+"The ``Filters`` class has been changed to allow multiple runs of the same"
+" filter with different arguments in before or after."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:179
+msgid ""
+"If you are extending ``Filters``, you will need to modify it to conform "
+"to the following changes:"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:182
+msgid ""
+"The structure of the array properties ``$filters`` and "
+"``$filtersClasses`` have been changed."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:184
+msgid "The properties ``$arguments`` and ``$argumentsClass`` are no longer used."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:185
+msgid ""
+"``Filters`` has been changed so that the same filter class is not "
+"instantiated multiple times. If a filter class is used both before and "
+"after, the same instance is used."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:191
+msgid "Project Files"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:193
+msgid ""
+"Some files in the **project space** (root, app, public, writable) "
+"received updates. Due to these files being outside of the **system** "
+"scope they will not be changed without your intervention."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:196
+#, python-format
+msgid ""
+"There are some third-party CodeIgniter modules available to assist with "
+"merging changes to the project space: `Explore on Packagist "
+"<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:200
+msgid "Content Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:202
+msgid ""
+"The following files received significant changes (including deprecations "
+"or visual adjustments) and it is recommended that you merge the updated "
+"versions with your application:"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:206
+msgid "Config"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:208
+#: ../../source/installation/upgrade_460.rst:225
+msgid "app/Config/Feature.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:209
+msgid "``Config\\Feature::$autoRoutesImproved`` has been changed to ``true``."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:210
+msgid "``Config\\Feature::$strictLocaleNegotiation`` has been added."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:211
+#: ../../source/installation/upgrade_460.rst:228
+msgid "app/Config/Routing.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:212
+msgid ""
+"``Config\\Routing::$translateUriToCamelCase`` has been changed to "
+"``true``."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:213
+#: ../../source/installation/upgrade_460.rst:227
+msgid "app/Config/Kint.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:214
+msgid ""
+"``Config\\Kint::$richSort`` has been removed. Kint in v6 no longer uses "
+"``AbstractRenderer::SORT_FULL``. Leaving this property in your code will "
+"cause a runtime error due to the undefined constant."
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:217
+msgid "All Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:219
+msgid ""
+"This is a list of all files in the **project space** that received "
+"changes; many will be simple comments or formatting that have no effect "
+"on the runtime:"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:222
+msgid "app/Config/Cache.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:223
+msgid "app/Config/Constants.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:224
+msgid "app/Config/Database.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:226
+msgid "app/Config/Format.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:229
+msgid "app/Config/Security.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:230
+msgid "app/Views/errors/html/debug.css"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:231
+msgid "app/Views/errors/html/error_400.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:232
+msgid "preload.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:233
+msgid "public/index.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_460.rst:234
+msgid "spark"
+msgstr ""
+

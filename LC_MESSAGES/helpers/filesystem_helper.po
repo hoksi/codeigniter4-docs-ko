@@ -1,0 +1,366 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/helpers/filesystem_helper.rst:3
+msgid "Filesystem Helper"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:5
+msgid ""
+"The Filesystem Helper file contains functions that assist in working with"
+" files and directories."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:13
+msgid "Loading this Helper"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:15
+msgid "This helper is loaded using the following code:"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:20
+msgid "Available Functions"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:22
+msgid "The following functions are available:"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:26
+msgid "Path to the source directory"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:27
+msgid ""
+"Depth of directories to traverse (``0`` = fully recursive, ``1`` = "
+"current dir, etc)"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:28
+msgid "Whether to include hidden paths"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:29
+msgid "An array of files"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:32
+#: ../../source/helpers/filesystem_helper.rst:247
+msgid "Examples:"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:36
+msgid "Paths are almost always relative to your main **index.php** file."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:38
+msgid ""
+"Sub-folders contained within the directory will be mapped as well. If you"
+" wish to control the recursion depth, you can do so using the second "
+"parameter (integer). A depth of ``1`` will only map the top level "
+"directory:"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:44
+msgid ""
+"By default, hidden files will not be included in the returned array and "
+"hidden directories will be skipped. To override this behavior, you may "
+"set a third parameter to ``true`` (boolean):"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:50
+msgid ""
+"Each folder name will be an array index, while its contained files will "
+"be numerically indexed. Here is an example of a typical array::"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:80
+msgid "If no results are found, this will return an empty array."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:84
+msgid "Original source directory"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:85
+msgid "Target destination directory"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:86
+msgid "Whether individual files overwrite on collision"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:88
+msgid ""
+"Recursively copies the files and directories of the origin directory into"
+" the target directory, i.e. \"mirror\" its contents."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:91
+#: ../../source/helpers/filesystem_helper.rst:108
+#: ../../source/helpers/filesystem_helper.rst:140
+#: ../../source/helpers/filesystem_helper.rst:147
+#: ../../source/helpers/filesystem_helper.rst:169
+#: ../../source/helpers/filesystem_helper.rst:185
+msgid "Example:"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:95
+msgid "You can optionally change the overwrite behavior via the third parameter."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:99
+#: ../../source/helpers/filesystem_helper.rst:191
+msgid "File path"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:100
+msgid "Data to write to file"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:101
+msgid "``fopen()`` mode"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:102
+msgid "``true`` if the write was successful, ``false`` in case of an error"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:105
+msgid ""
+"Writes data to the file specified in the path. If the file does not exist"
+" then the function will create it."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:112
+msgid "You can optionally set the write mode via the third parameter:"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:116
+msgid ""
+"The default mode is ``'wb'``. Please see `fopen() "
+"<https://www.php.net/manual/en/function.fopen.php>`_ in the PHP manual "
+"for mode options."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:119
+msgid ""
+"In order for this function to write data to a file, its permissions must "
+"be set such that it is writable. If the file does not already exist, then"
+" the directory containing it must be writable."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:123
+msgid ""
+"The path is relative to your main site **index.php** file, NOT your "
+"controller or view files. CodeIgniter uses a front controller so paths "
+"are always relative to the main site index."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:127
+msgid "This function acquires an exclusive lock on the file while writing to it."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:131
+#: ../../source/helpers/filesystem_helper.rst:155
+#: ../../source/helpers/filesystem_helper.rst:175
+msgid "Directory path"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:132
+msgid "Whether to also delete directories"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:133
+msgid "Whether to skip deleting .htaccess and index page files"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:134
+msgid "Whether to also delete hidden files (files beginning with a period)"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:135
+msgid "``true`` on success, ``false`` in case of an error"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:138
+msgid "Deletes ALL files contained in the supplied path."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:144
+msgid ""
+"If the second parameter is set to ``true``, any directories contained "
+"within the supplied root path will be deleted as well."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:151
+msgid "The files must be writable or owned by the system in order to be deleted."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:156
+msgid ""
+"Whether to include the path as part of the filename; false for no path, "
+"null for the path relative to ``$sourceDir``, true for the full path"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:157
+msgid "Whether to include hidden files (files beginning with a period)"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:158
+msgid "Whether to include directories in the array output"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:159
+msgid "An array of file names"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:162
+msgid ""
+"Takes a server path as input and returns an array containing the names of"
+" all files contained within it. The file path can optionally be added to "
+"the file names by setting the second parameter to 'relative' for relative"
+" paths or any other non-empty value for a full file path."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:167
+msgid ""
+"Prior to v4.4.4, due to a bug, this function did not follow symlink "
+"folders."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:176
+msgid ""
+"Whether to look only at the specified directory (excluding sub-"
+"directories)"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:177
+msgid "An array containing info on the supplied directory's contents"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:180
+msgid ""
+"Reads the specified directory and builds an array containing the "
+"filenames, filesize, dates, and permissions. Sub-folders contained within"
+" the specified path are only read if forced by sending the second "
+"parameter to false, as this can be an intensive operation."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:192
+msgid ""
+"What type of info to return to be passed as array or comma separated "
+"string"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:193
+msgid "An array containing info on the specified file or false on failure"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:196
+msgid ""
+"Given a file and path, returns (optionally) the *name*, *path*, *size* "
+"and *date modified* information attributes for a file. Second parameter "
+"allows you to explicitly declare what information you want returned."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:200
+msgid ""
+"Valid ``$returnedValues`` options are: ``name``, ``size``, ``date``, "
+"``readable``, ``writeable``, ``executable`` and ``fileperms``."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:205
+#: ../../source/helpers/filesystem_helper.rst:216
+msgid "Permissions"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:206
+msgid "Symbolic permissions string"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:209
+msgid ""
+"Takes numeric permissions (such as is returned by `fileperms() "
+"<https://www.php.net/manual/en/function.fileperms.php>`_) and returns "
+"standard symbolic notation of file permissions."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:217
+msgid "Octal permissions string"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:220
+msgid ""
+"Takes numeric permissions (such as is returned by `fileperms() "
+"<https://www.php.net/manual/en/function.fileperms.php>`_) and returns a "
+"three character octal notation of file permissions."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:227
+msgid "Path to the first file"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:228
+msgid "Path to the second file"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:229
+msgid "Whether both files exist with identical hashes"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:232
+msgid "Compares two files to see if they are the same (based on their MD5 hash)."
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:238
+msgid "Path"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:239
+msgid "Whether to check if the path actually exists"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:240
+msgid "An absolute path"
+msgstr ""
+
+#: ../../source/helpers/filesystem_helper.rst:243
+msgid ""
+"This function will return a server path without symbolic links or "
+"relative directory structures. An optional second argument will cause an "
+"error to be triggered if the path cannot be resolved."
+msgstr ""
+

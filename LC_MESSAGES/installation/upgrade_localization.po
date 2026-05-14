@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_localization.rst:2
+msgid "Upgrade Localization"
+msgstr ""
+
+#: ../../source/installation/upgrade_localization.rst:9
+msgid "Documentations"
+msgstr ""
+
+#: ../../source/installation/upgrade_localization.rst:11
+msgid ""
+"`Language Documentation CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/libraries/language.html>`_"
+msgstr ""
+
+#: ../../source/installation/upgrade_localization.rst:12
+msgid ":doc:`Localization Documentation CodeIgniter 4.x </outgoing/localization>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_localization.rst:15
+msgid "What has been changed"
+msgstr ""
+
+#: ../../source/installation/upgrade_localization.rst:16
+msgid "In CI4 the language files return the language lines as array."
+msgstr ""
+
+#: ../../source/installation/upgrade_localization.rst:19
+msgid "Upgrade Guide"
+msgstr ""
+
+#: ../../source/installation/upgrade_localization.rst:20
+msgid "Specify the default language in **Config/App.php**:"
+msgstr ""
+
+#: ../../source/installation/upgrade_localization.rst:24
+msgid "Now move your language files to **app/Language/<locale>**."
+msgstr ""
+
+#: ../../source/installation/upgrade_localization.rst:25
+msgid ""
+"After that you have to change the syntax within the language files. Below"
+" in the Code Example you will see how the language array within the file "
+"should look like."
+msgstr ""
+
+#: ../../source/installation/upgrade_localization.rst:26
+msgid ""
+"Remove from every file the language loader ``$this->lang->load($file, "
+"$lang);``."
+msgstr ""
+
+#: ../../source/installation/upgrade_localization.rst:27
+msgid ""
+"Replace the method to load the language line "
+"``$this->lang->line('error_email_missing')`` with ``echo "
+"lang('Errors.errorEmailMissing');``."
+msgstr ""
+
+#: ../../source/installation/upgrade_localization.rst:30
+msgid "Code Example"
+msgstr ""
+
+#: ../../source/installation/upgrade_localization.rst:33
+msgid "CodeIgniter Version 3.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_localization.rst:38
+msgid "CodeIgniter Version 4.x"
+msgstr ""
+

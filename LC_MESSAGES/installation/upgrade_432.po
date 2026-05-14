@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_432.rst:3
+msgid "Upgrading from 4.3.1 to 4.3.2"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:5
+msgid ""
+"Please refer to the upgrade instructions corresponding to your "
+"installation method."
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:7
+msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:8
+msgid ""
+":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
+"Upgrading <adding-codeigniter4-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:9
+msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:16
+msgid "Breaking Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:19
+msgid "base_url()"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:21
+msgid ""
+"The :php:func:`base_url()` behavior has been fixed. In previous versions,"
+" when you call ``base_url()`` **without argument**, it returned baseURL "
+"without a trailing slash (``/``). Now it returns baseURL with a trailing "
+"slash. For example:"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:25
+msgid "before: ``http://example.com``"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:26
+msgid "after: ``http://example.com/``"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:28
+msgid ""
+"If you have code to call ``base_url()`` without argument, you may need to"
+" adjust the URLs."
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:33
+msgid "uri_string()"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:35
+msgid ""
+"The :php:func:`uri_string()` behavior has been fixed. In previous "
+"versions, when you navigate to the baseURL, it returned ``/``. Now it "
+"returns an empty string (``''``)."
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:38
+msgid "If you have code to call ``uri_string()``, you may need to adjust it."
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:40
+msgid ""
+"The :php:func:`uri_string()` returns a URI path relative to baseURL. It "
+"is not a full URI path if the baseURL contains subfolders. If you use it "
+"for HTML links, it is better to use it with :php:func:`site_url()` like "
+"``site_url(uri_string())``."
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:46
+msgid "Mandatory File Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:49
+#: ../../source/installation/upgrade_432.rst:84
+#: ../../source/installation/upgrade_432.rst:96
+msgid "composer.json"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:51
+msgid ""
+"If you have installed CodeIgnter manually and are using or planning to "
+"use Composer, remove the following line:"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:68
+msgid "Project Files"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:70
+msgid ""
+"Some files in the **project space** (root, app, public, writable) "
+"received updates. Due to these files being outside of the **system** "
+"scope they will not be changed without your intervention."
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:73
+#, python-format
+msgid ""
+"There are some third-party CodeIgniter modules available to assist with "
+"merging changes to the project space: `Explore on Packagist "
+"<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:77
+msgid "Content Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:79
+msgid ""
+"The following files received significant changes (including deprecations "
+"or visual adjustments) and it is recommended that you merge the updated "
+"versions with your application:"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:82
+#: ../../source/installation/upgrade_432.rst:94
+msgid "app/Config/Mimes.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:83
+#: ../../source/installation/upgrade_432.rst:95
+msgid "app/Views/errors/html/error_exception.php"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:85
+#: ../../source/installation/upgrade_432.rst:97
+msgid "public/.htaccess"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:88
+msgid "All Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:90
+msgid ""
+"This is a list of all files in the **project space** that received "
+"changes; many will be simple comments or formatting that have no effect "
+"on the runtime:"
+msgstr ""
+
+#: ../../source/installation/upgrade_432.rst:93
+msgid "app/Config/App.php"
+msgstr ""
+

@@ -1,0 +1,1916 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/concepts/security.rst:3
+msgid "Security Guidelines"
+msgstr ""
+
+#: ../../source/concepts/security.rst:5
+msgid ""
+"We take security seriously. CodeIgniter incorporates a number of features"
+" and techniques to either enforce good security practices, or to enable "
+"you to do so easily."
+msgstr ""
+
+#: ../../source/concepts/security.rst:9
+msgid ""
+"We respect the `Open Web Application Security Project (OWASP) "
+"<https://owasp.org>`_ and follow their recommendations as much as "
+"possible."
+msgstr ""
+
+#: ../../source/concepts/security.rst:12
+msgid ""
+"The following comes from `OWASP Top Ten <https://owasp.org/www-project-"
+"top-ten/>`_ and `OWASP API Security Top 10 <https://owasp.org/API-"
+"Security/editions/2023/en/0x11-t10/>`_ identifying the top "
+"vulnerabilities for web applications and apis. For each, we provide a "
+"brief description, the OWASP recommendations, and then the CodeIgniter "
+"provisions to address the problem."
+msgstr ""
+
+#: ../../source/concepts/security.rst:25
+msgid "OWASP Top 10 2021"
+msgstr ""
+
+#: ../../source/concepts/security.rst:28
+msgid "A01:2021 Broken Access Control"
+msgstr ""
+
+#: ../../source/concepts/security.rst:30
+msgid ""
+"Access control enforces policy such that users cannot act outside of "
+"their intended permissions. Failures typically lead to unauthorized "
+"information disclosure, modification, or destruction of all data or "
+"performing a business function outside the user's limits."
+msgstr ""
+
+#: ../../source/concepts/security.rst:35
+msgid "Common access control vulnerabilities include:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:37
+msgid ""
+"Violation of the principle of least privilege or deny by default, where "
+"access should only be granted for particular capabilities, roles, or "
+"users, but is available to anyone."
+msgstr ""
+
+#: ../../source/concepts/security.rst:40
+msgid ""
+"Bypassing access control checks by modifying the URL (parameter tampering"
+" or force browsing), internal application state, or the HTML page, or by "
+"using an attack tool modifying API requests."
+msgstr ""
+
+#: ../../source/concepts/security.rst:43
+msgid ""
+"Permitting viewing or editing someone else's account, by providing its "
+"unique identifier (insecure direct object references)"
+msgstr ""
+
+#: ../../source/concepts/security.rst:45
+msgid "Accessing API with missing access controls for POST, PUT and DELETE."
+msgstr ""
+
+#: ../../source/concepts/security.rst:46
+msgid ""
+"Elevation of privilege. Acting as a user without being logged in or "
+"acting as an admin when logged in as a user."
+msgstr ""
+
+#: ../../source/concepts/security.rst:48
+msgid ""
+"Metadata manipulation, such as replaying or tampering with a JSON Web "
+"Token (JWT) access control token, or a cookie or hidden field manipulated"
+" to elevate privileges or abusing JWT invalidation."
+msgstr ""
+
+#: ../../source/concepts/security.rst:51
+msgid ""
+"CORS misconfiguration allows API access from unauthorized/untrusted "
+"origins."
+msgstr ""
+
+#: ../../source/concepts/security.rst:52
+msgid ""
+"Force browsing to authenticated pages as an unauthenticated user or to "
+"privileged pages as a standard user."
+msgstr ""
+
+#: ../../source/concepts/security.rst:56 ../../source/concepts/security.rst:131
+#: ../../source/concepts/security.rst:201
+#: ../../source/concepts/security.rst:255
+#: ../../source/concepts/security.rst:306
+#: ../../source/concepts/security.rst:358
+#: ../../source/concepts/security.rst:411
+#: ../../source/concepts/security.rst:456
+#: ../../source/concepts/security.rst:504
+#: ../../source/concepts/security.rst:548
+#: ../../source/concepts/security.rst:599
+#: ../../source/concepts/security.rst:626
+#: ../../source/concepts/security.rst:667
+#: ../../source/concepts/security.rst:700
+#: ../../source/concepts/security.rst:736
+#: ../../source/concepts/security.rst:768
+#: ../../source/concepts/security.rst:808
+#: ../../source/concepts/security.rst:841
+#: ../../source/concepts/security.rst:892
+#: ../../source/concepts/security.rst:931
+msgid "OWASP recommendations"
+msgstr ""
+
+#: ../../source/concepts/security.rst:58
+msgid ""
+"Access control is only effective in trusted server-side code or server-"
+"less API, where the attacker cannot modify the access control check or "
+"metadata."
+msgstr ""
+
+#: ../../source/concepts/security.rst:61
+msgid "Except for public resources, deny by default."
+msgstr ""
+
+#: ../../source/concepts/security.rst:62
+msgid ""
+"Implement access control mechanisms once and re-use them throughout the "
+"application, including minimizing Cross-Origin Resource Sharing (CORS) "
+"usage."
+msgstr ""
+
+#: ../../source/concepts/security.rst:64
+msgid ""
+"Model access controls should enforce record ownership rather than "
+"accepting that the user can create, read, update, or delete any record."
+msgstr ""
+
+#: ../../source/concepts/security.rst:66
+msgid ""
+"Unique application business limit requirements should be enforced by "
+"domain models."
+msgstr ""
+
+#: ../../source/concepts/security.rst:67
+msgid ""
+"Disable web server directory listing and ensure file metadata (e.g., "
+".git) and backup files are not present within web roots."
+msgstr ""
+
+#: ../../source/concepts/security.rst:69
+msgid ""
+"Log access control failures, alert admins when appropriate (e.g., "
+"repeated failures)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:70
+msgid ""
+"Rate limit API and controller access to minimize the harm from automated "
+"attack tooling."
+msgstr ""
+
+#: ../../source/concepts/security.rst:72
+msgid ""
+"Stateful session identifiers should be invalidated on the server after "
+"logout. Stateless JWT tokens should rather be short-lived so that the "
+"window of opportunity for an attacker is minimized. For longer lived JWTs"
+" it's highly recommended to follow the OAuth standards to revoke access."
+msgstr ""
+
+#: ../../source/concepts/security.rst:78 ../../source/concepts/security.rst:169
+#: ../../source/concepts/security.rst:225
+#: ../../source/concepts/security.rst:275
+#: ../../source/concepts/security.rst:328
+#: ../../source/concepts/security.rst:384
+#: ../../source/concepts/security.rst:432
+#: ../../source/concepts/security.rst:477
+#: ../../source/concepts/security.rst:528
+#: ../../source/concepts/security.rst:580
+#: ../../source/concepts/security.rst:611
+#: ../../source/concepts/security.rst:650
+#: ../../source/concepts/security.rst:684
+#: ../../source/concepts/security.rst:722
+#: ../../source/concepts/security.rst:753
+#: ../../source/concepts/security.rst:795
+#: ../../source/concepts/security.rst:824
+#: ../../source/concepts/security.rst:875
+#: ../../source/concepts/security.rst:918
+#: ../../source/concepts/security.rst:941
+msgid "CodeIgniter provisions"
+msgstr ""
+
+#: ../../source/concepts/security.rst:80
+msgid ""
+":ref:`Public <application-structure-public>` folder, with application and"
+" system outside"
+msgstr ""
+
+#: ../../source/concepts/security.rst:82 ../../source/concepts/security.rst:229
+#: ../../source/concepts/security.rst:582
+#: ../../source/concepts/security.rst:724
+#: ../../source/concepts/security.rst:826
+#: ../../source/concepts/security.rst:944
+msgid ":doc:`../libraries/validation` library"
+msgstr ""
+
+#: ../../source/concepts/security.rst:83
+msgid ""
+":doc:`Security </libraries/security>` library provides for :ref:`CSRF "
+"protection <cross-site-request-forgery>`"
+msgstr ""
+
+#: ../../source/concepts/security.rst:85
+msgid ":doc:`../libraries/sessions` library"
+msgstr ""
+
+#: ../../source/concepts/security.rst:86 ../../source/concepts/security.rst:278
+#: ../../source/concepts/security.rst:656
+#: ../../source/concepts/security.rst:725
+msgid ":doc:`../libraries/throttler` for rate limit"
+msgstr ""
+
+#: ../../source/concepts/security.rst:87 ../../source/concepts/security.rst:881
+msgid ":doc:`../libraries/cors` filter"
+msgstr ""
+
+#: ../../source/concepts/security.rst:88
+msgid ":php:func:`log_message()` function for logging"
+msgstr ""
+
+#: ../../source/concepts/security.rst:89 ../../source/concepts/security.rst:175
+#: ../../source/concepts/security.rst:279
+#: ../../source/concepts/security.rst:435
+#: ../../source/concepts/security.rst:531
+#: ../../source/concepts/security.rst:613
+#: ../../source/concepts/security.rst:654
+#: ../../source/concepts/security.rst:687
+#: ../../source/concepts/security.rst:756
+msgid ""
+"An official authentication and authorization framework :ref:`CodeIgniter "
+"Shield <shield>`"
+msgstr ""
+
+#: ../../source/concepts/security.rst:90
+msgid "Easy to add third party authentication"
+msgstr ""
+
+#: ../../source/concepts/security.rst:93
+msgid "A02:2021 Cryptographic Failures"
+msgstr ""
+
+#: ../../source/concepts/security.rst:95
+msgid ""
+"The first thing is to determine the protection needs of data in transit "
+"and at rest. For example, passwords, credit card numbers, health records,"
+" personal information, and business secrets require extra protection, "
+"mainly if that data falls under privacy laws, e.g., EU's General Data "
+"Protection Regulation (GDPR), or regulations, e.g., financial data "
+"protection such as PCI Data Security Standard (PCI DSS). For all such "
+"data:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:102
+msgid ""
+"Is any data transmitted in clear text? This concerns protocols such as "
+"HTTP, SMTP, FTP also using TLS upgrades like STARTTLS. External internet "
+"traffic is hazardous. Verify all internal traffic, e.g., between load "
+"balancers, web servers, or back-end systems."
+msgstr ""
+
+#: ../../source/concepts/security.rst:106
+msgid ""
+"Are any old or weak cryptographic algorithms or protocols used either by "
+"default or in older code?"
+msgstr ""
+
+#: ../../source/concepts/security.rst:108
+msgid ""
+"Are default crypto keys in use, weak crypto keys generated or re-used, or"
+" is proper key management or rotation missing? Are crypto keys checked "
+"into source code repositories?"
+msgstr ""
+
+#: ../../source/concepts/security.rst:111
+msgid ""
+"Is encryption not enforced, e.g., are any HTTP headers (browser) security"
+" directives or headers missing?"
+msgstr ""
+
+#: ../../source/concepts/security.rst:113
+msgid "Is the received server certificate and the trust chain properly validated?"
+msgstr ""
+
+#: ../../source/concepts/security.rst:114
+msgid ""
+"Are initialization vectors ignored, reused, or not generated sufficiently"
+" secure for the cryptographic mode of operation? Is an insecure mode of "
+"operation such as ECB in use? Is encryption used when authenticated "
+"encryption is more appropriate?"
+msgstr ""
+
+#: ../../source/concepts/security.rst:117
+msgid ""
+"Are passwords being used as cryptographic keys in absence of a password "
+"base key derivation function?"
+msgstr ""
+
+#: ../../source/concepts/security.rst:119
+msgid ""
+"Is randomness used for cryptographic purposes that was not designed to "
+"meet cryptographic requirements? Even if the correct function is chosen, "
+"does it need to be seeded by the developer, and if not, has the developer"
+" over-written the strong seeding functionality built into it with a seed "
+"that lacks sufficient entropy/unpredictability?"
+msgstr ""
+
+#: ../../source/concepts/security.rst:124
+msgid ""
+"Are deprecated hash functions such as MD5 or SHA1 in use, or are non-"
+"cryptographic hash functions used when cryptographic hash functions are "
+"needed?"
+msgstr ""
+
+#: ../../source/concepts/security.rst:126
+msgid ""
+"Are deprecated cryptographic padding methods such as PKCS number 1 v1.5 "
+"in use?"
+msgstr ""
+
+#: ../../source/concepts/security.rst:127
+msgid ""
+"Are cryptographic error messages or side channel information exploitable,"
+" for example in the form of padding oracle attacks?"
+msgstr ""
+
+#: ../../source/concepts/security.rst:133
+msgid "Do the following, at a minimum, and consult the references:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:135
+msgid ""
+"Classify data processed, stored, or transmitted by an application. "
+"Identify which data is sensitive according to privacy laws, regulatory "
+"requirements, or business needs."
+msgstr ""
+
+#: ../../source/concepts/security.rst:138
+msgid ""
+"Don't store sensitive data unnecessarily. Discard it as soon as possible "
+"or use PCI DSS compliant tokenization or even truncation. Data that is "
+"not retained cannot be stolen."
+msgstr ""
+
+#: ../../source/concepts/security.rst:141
+msgid "Make sure to encrypt all sensitive data at rest."
+msgstr ""
+
+#: ../../source/concepts/security.rst:142
+msgid ""
+"Ensure up-to-date and strong standard algorithms, protocols, and keys are"
+" in place; use proper key management."
+msgstr ""
+
+#: ../../source/concepts/security.rst:144
+msgid ""
+"Encrypt all data in transit with secure protocols such as TLS with "
+"forward secrecy (FS) ciphers, cipher prioritization by the server, and "
+"secure parameters. Enforce encryption using directives like HTTP Strict "
+"Transport Security (HSTS)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:147
+msgid "Disable caching for response that contain sensitive data."
+msgstr ""
+
+#: ../../source/concepts/security.rst:148
+msgid "Apply required security controls as per the data classification."
+msgstr ""
+
+#: ../../source/concepts/security.rst:149
+msgid ""
+"Do not use legacy protocols such as FTP and SMTP for transporting "
+"sensitive data."
+msgstr ""
+
+#: ../../source/concepts/security.rst:150
+msgid ""
+"Store passwords using strong adaptive and salted hashing functions with a"
+" work factor (delay factor), such as Argon2, scrypt, bcrypt or PBKDF2."
+msgstr ""
+
+#: ../../source/concepts/security.rst:152
+msgid ""
+"Initialization vectors must be chosen appropriate for the mode of "
+"operation. For many modes, this means using a CSPRNG (cryptographically "
+"secure pseudo random number generator). For modes that require a nonce, "
+"then the initialization vector (IV) does not need a CSPRNG. In all cases,"
+" the IV should never be used twice for a fixed key."
+msgstr ""
+
+#: ../../source/concepts/security.rst:157
+msgid "Always use authenticated encryption instead of just encryption."
+msgstr ""
+
+#: ../../source/concepts/security.rst:158
+msgid ""
+"Keys should be generated cryptographically randomly and stored in memory "
+"as byte arrays. If a password is used, then it must be converted to a key"
+" via an appropriate password base key derivation function."
+msgstr ""
+
+#: ../../source/concepts/security.rst:161
+msgid ""
+"Ensure that cryptographic randomness is used where appropriate, and that "
+"it has not been seeded in a predictable way or with low entropy. Most "
+"modern APIs do not require the developer to seed the CSPRNG to get "
+"security."
+msgstr ""
+
+#: ../../source/concepts/security.rst:164
+msgid ""
+"Avoid deprecated cryptographic functions and padding schemes, such as "
+"MD5, SHA1, PKCS number 1 v1.5 ."
+msgstr ""
+
+#: ../../source/concepts/security.rst:166
+msgid "Verify independently the effectiveness of configuration and settings."
+msgstr ""
+
+#: ../../source/concepts/security.rst:171
+#: ../../source/concepts/security.rst:877
+msgid ""
+"The config for global secure access "
+"(``Config\\App::$forceGlobalSecureRequests``)"
+msgstr ""
+
+#: ../../source/concepts/security.rst:172
+#: ../../source/concepts/security.rst:878
+msgid ":php:func:`force_https()` function"
+msgstr ""
+
+#: ../../source/concepts/security.rst:173
+msgid ":doc:`../libraries/encryption`"
+msgstr ""
+
+#: ../../source/concepts/security.rst:174
+msgid ""
+"The :ref:`database config <database-config-explanation-of-values>` "
+"(``encrypt``)"
+msgstr ""
+
+#: ../../source/concepts/security.rst:179
+msgid "A03:2021 Injection"
+msgstr ""
+
+#: ../../source/concepts/security.rst:181
+msgid "An application is vulnerable to attack when:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:183
+msgid ""
+"User-supplied data is not validated, filtered, or sanitized by the "
+"application."
+msgstr ""
+
+#: ../../source/concepts/security.rst:184
+msgid ""
+"Dynamic queries or non-parameterized calls without context-aware escaping"
+" are used directly in the interpreter."
+msgstr ""
+
+#: ../../source/concepts/security.rst:186
+msgid ""
+"Hostile data is used within object-relational mapping (ORM) search "
+"parameters to extract additional, sensitive records."
+msgstr ""
+
+#: ../../source/concepts/security.rst:188
+msgid ""
+"Hostile data is directly used or concatenated. The SQL or command "
+"contains the structure and malicious data in dynamic queries, commands, "
+"or stored procedures."
+msgstr ""
+
+#: ../../source/concepts/security.rst:191
+msgid ""
+"Some of the more common injections are SQL, NoSQL, OS command, Object "
+"Relational Mapping (ORM), LDAP, and Expression Language (EL) or Object "
+"Graph Navigation Library (OGNL) injection. The concept is identical among"
+" all interpreters. Source code review is the best method of detecting if "
+"applications are vulnerable to injections. Automated testing of all "
+"parameters, headers, URL, cookies, JSON, SOAP, and XML data inputs is "
+"strongly encouraged. Organizations can include static (SAST), dynamic "
+"(DAST), and interactive (IAST) application security testing tools into "
+"the CI/CD pipeline to identify introduced injection flaws before "
+"production deployment."
+msgstr ""
+
+#: ../../source/concepts/security.rst:203
+msgid ""
+"Preventing injection requires keeping data separate from commands and "
+"queries:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:205
+msgid ""
+"The preferred option is to use a safe API, which avoids using the "
+"interpreter entirely, provides a parameterized interface, or migrates to "
+"Object Relational Mapping Tools (ORMs)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:209
+msgid ""
+"Note: Even when parameterized, stored procedures can still introduce SQL "
+"injection if PL/SQL or T-SQL concatenates queries and data or executes "
+"hostile data with EXECUTE IMMEDIATE or exec()."
+msgstr ""
+
+#: ../../source/concepts/security.rst:212
+msgid ""
+"Use positive server-side input validation. This is not a complete defense"
+" as many applications require special characters, such as text areas or "
+"APIs for mobile applications."
+msgstr ""
+
+#: ../../source/concepts/security.rst:215
+msgid ""
+"For any residual dynamic queries, escape special characters using the "
+"specific escape syntax for that interpreter."
+msgstr ""
+
+#: ../../source/concepts/security.rst:218
+msgid ""
+"Note: SQL structures such as table names, column names, and so on cannot "
+"be escaped, and thus user-supplied structure names are dangerous. This is"
+" a common issue in report-writing software."
+msgstr ""
+
+#: ../../source/concepts/security.rst:221
+msgid ""
+"Use LIMIT and other SQL controls within queries to prevent mass "
+"disclosure of records in case of SQL injection."
+msgstr ""
+
+#: ../../source/concepts/security.rst:227
+msgid ":ref:`urls-uri-security`"
+msgstr ""
+
+#: ../../source/concepts/security.rst:228
+msgid ":ref:`invalidchars` filter"
+msgstr ""
+
+#: ../../source/concepts/security.rst:230
+msgid ":php:func:`esc()` function"
+msgstr ""
+
+#: ../../source/concepts/security.rst:231
+#: ../../source/concepts/security.rst:583
+#: ../../source/concepts/security.rst:827
+msgid ""
+":doc:`HTTP library <../incoming/incomingrequest>` provides for "
+":ref:`input field filtering <incomingrequest-filtering-input-data>`"
+msgstr ""
+
+#: ../../source/concepts/security.rst:233
+msgid "Support for :ref:`content-security-policy`"
+msgstr ""
+
+#: ../../source/concepts/security.rst:234
+msgid ":doc:`../database/query_builder`"
+msgstr ""
+
+#: ../../source/concepts/security.rst:235
+msgid ":ref:`Database escape methods <database-queries-escaping>`"
+msgstr ""
+
+#: ../../source/concepts/security.rst:236
+msgid ":ref:`database-queries-query-bindings`"
+msgstr ""
+
+#: ../../source/concepts/security.rst:239
+msgid "A04:2021 Insecure Design"
+msgstr ""
+
+#: ../../source/concepts/security.rst:241
+msgid ""
+"Insecure design is a broad category representing different weaknesses, "
+"expressed as “missing or ineffective control design.” Insecure design is "
+"not the source for all other Top 10 risk categories. There is a "
+"difference between insecure design and insecure implementation. We "
+"differentiate between design flaws and implementation defects for a "
+"reason, they have different root causes and remediation."
+msgstr ""
+
+#: ../../source/concepts/security.rst:247
+msgid ""
+"A secure design can still have implementation defects leading to "
+"vulnerabilities that may be exploited. An insecure design cannot be fixed"
+" by a perfect implementation as by definition, needed security controls "
+"were never created to defend against specific attacks. One of the factors"
+" that contribute to insecure design is the lack of business risk "
+"profiling inherent in the software or system being developed, and thus "
+"the failure to determine what level of security design is required."
+msgstr ""
+
+#: ../../source/concepts/security.rst:257
+msgid ""
+"Establish and use a secure development lifecycle with AppSec "
+"professionals to help evaluate and design security and privacy-related "
+"controls"
+msgstr ""
+
+#: ../../source/concepts/security.rst:259
+msgid ""
+"Establish and use a library of secure design patterns or paved road ready"
+" to use components"
+msgstr ""
+
+#: ../../source/concepts/security.rst:261
+msgid ""
+"Use threat modeling for critical authentication, access control, business"
+" logic, and key flows"
+msgstr ""
+
+#: ../../source/concepts/security.rst:263
+msgid "Integrate security language and controls into user stories"
+msgstr ""
+
+#: ../../source/concepts/security.rst:264
+msgid ""
+"Integrate plausibility checks at each tier of your application (from "
+"frontend to backend)"
+msgstr ""
+
+#: ../../source/concepts/security.rst:266
+msgid ""
+"Write unit and integration tests to validate that all critical flows are "
+"resistant to the threat model. Compile use-cases and misuse-cases for "
+"each tier of your application."
+msgstr ""
+
+#: ../../source/concepts/security.rst:269
+msgid ""
+"Segregate tier layers on the system and network layers depending on the "
+"exposure and protection needs"
+msgstr ""
+
+#: ../../source/concepts/security.rst:271
+msgid "Segregate tenants robustly by design throughout all tiers"
+msgstr ""
+
+#: ../../source/concepts/security.rst:272
+msgid "Limit resource consumption by user or service"
+msgstr ""
+
+#: ../../source/concepts/security.rst:277
+#: ../../source/concepts/security.rst:615
+msgid ":doc:`PHPUnit testing <../testing/overview>`"
+msgstr ""
+
+#: ../../source/concepts/security.rst:282
+msgid "A05:2021 Security Misconfiguration"
+msgstr ""
+
+#: ../../source/concepts/security.rst:284
+msgid "The application might be vulnerable if the application is:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:286
+msgid ""
+"Missing appropriate security hardening across any part of the application"
+" stack or improperly configured permissions on cloud services."
+msgstr ""
+
+#: ../../source/concepts/security.rst:288
+msgid ""
+"Unnecessary features are enabled or installed (e.g., unnecessary ports, "
+"services, pages, accounts, or privileges)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:290
+msgid "Default accounts and their passwords are still enabled and unchanged."
+msgstr ""
+
+#: ../../source/concepts/security.rst:291
+msgid ""
+"Error handling reveals stack traces or other overly informative error "
+"messages to users."
+msgstr ""
+
+#: ../../source/concepts/security.rst:293
+msgid ""
+"For upgraded systems, the latest security features are disabled or not "
+"configured securely."
+msgstr ""
+
+#: ../../source/concepts/security.rst:295
+msgid ""
+"The security settings in the application servers, application frameworks "
+"(e.g., Struts, Spring, ASP.NET), libraries, databases, etc., are not set "
+"to secure values."
+msgstr ""
+
+#: ../../source/concepts/security.rst:297
+msgid ""
+"The server does not send security headers or directives, or they are not "
+"set to secure values."
+msgstr ""
+
+#: ../../source/concepts/security.rst:299
+msgid ""
+"The software is out of date or vulnerable (see A06:2021-Vulnerable and "
+"Outdated Components)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:302
+msgid ""
+"Without a concerted, repeatable application security configuration "
+"process, systems are at a higher risk."
+msgstr ""
+
+#: ../../source/concepts/security.rst:308
+msgid "Secure installation processes should be implemented, including:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:310
+msgid ""
+"A repeatable hardening process makes it fast and easy to deploy another "
+"environment that is appropriately locked down. Development, QA, and "
+"production environments should all be configured identically, with "
+"different credentials used in each environment. This process should be "
+"automated to minimize the effort required to set up a new secure "
+"environment."
+msgstr ""
+
+#: ../../source/concepts/security.rst:315
+msgid ""
+"A minimal platform without any unnecessary features, components, "
+"documentation, and samples. Remove or do not install unused features and "
+"frameworks."
+msgstr ""
+
+#: ../../source/concepts/security.rst:317
+msgid ""
+"A task to review and update the configurations appropriate to all "
+"security notes, updates, and patches as part of the patch management "
+"process (see A06:2021-Vulnerable and Outdated Components). Review cloud "
+"storage permissions (e.g., S3 bucket permissions)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:320
+msgid ""
+"A segmented application architecture provides effective and secure "
+"separation between components or tenants, with segmentation, "
+"containerization, or cloud security groups (ACLs)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:323
+msgid "Sending security directives to clients, e.g., Security Headers."
+msgstr ""
+
+#: ../../source/concepts/security.rst:324
+msgid ""
+"An automated process to verify the effectiveness of the configurations "
+"and settings in all environments."
+msgstr ""
+
+#: ../../source/concepts/security.rst:330
+msgid ":ref:`spark config:check <confirming-config-values>` command"
+msgstr ""
+
+#: ../../source/concepts/security.rst:331
+msgid ":ref:`spark phpini:check <spark-phpini-check>` command"
+msgstr ""
+
+#: ../../source/concepts/security.rst:332
+msgid ":ref:`Production mode <environment-constant>` by default"
+msgstr ""
+
+#: ../../source/concepts/security.rst:333
+msgid ":ref:`secureheaders` filter"
+msgstr ""
+
+#: ../../source/concepts/security.rst:336
+msgid "A06:2021 Vulnerable and Outdated Components"
+msgstr ""
+
+#: ../../source/concepts/security.rst:338
+msgid "You are likely vulnerable:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:340
+msgid ""
+"If you do not know the versions of all components you use (both client-"
+"side and server-side). This includes components you directly use as well "
+"as nested dependencies."
+msgstr ""
+
+#: ../../source/concepts/security.rst:343
+msgid ""
+"If the software is vulnerable, unsupported, or out of date. This includes"
+" the OS, web/application server, database management system (DBMS), "
+"applications, APIs and all components, runtime environments, and "
+"libraries."
+msgstr ""
+
+#: ../../source/concepts/security.rst:346
+msgid ""
+"If you do not scan for vulnerabilities regularly and subscribe to "
+"security bulletins related to the components you use."
+msgstr ""
+
+#: ../../source/concepts/security.rst:348
+msgid ""
+"If you do not fix or upgrade the underlying platform, frameworks, and "
+"dependencies in a risk-based, timely fashion. This commonly happens in "
+"environments when patching is a monthly or quarterly task under change "
+"control, leaving organizations open to days or months of unnecessary "
+"exposure to fixed vulnerabilities."
+msgstr ""
+
+#: ../../source/concepts/security.rst:352
+msgid ""
+"If software developers do not test the compatibility of updated, "
+"upgraded, or patched libraries."
+msgstr ""
+
+#: ../../source/concepts/security.rst:354
+msgid ""
+"If you do not secure the components’ configurations (see "
+"A05:2021-Security Misconfiguration)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:360
+msgid "There should be a patch management process in place to:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:362
+msgid ""
+"Remove unused dependencies, unnecessary features, components, files, and "
+"documentation."
+msgstr ""
+
+#: ../../source/concepts/security.rst:364
+msgid ""
+"Continuously inventory the versions of both client-side and server-side "
+"components (e.g., frameworks, libraries) and their dependencies using "
+"tools like versions, OWASP Dependency Check, retire.js, etc. Continuously"
+" monitor sources like Common Vulnerability and Exposures (CVE) and "
+"National Vulnerability Database (NVD) for vulnerabilities in the "
+"components. Use software composition analysis tools to automate the "
+"process. Subscribe to email alerts for security vulnerabilities related "
+"to components you use."
+msgstr ""
+
+#: ../../source/concepts/security.rst:371
+msgid ""
+"Only obtain components from official sources over secure links. Prefer "
+"signed packages to reduce the chance of including a modified, malicious "
+"component (See A08:2021-Software and Data Integrity Failures)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:374
+msgid ""
+"Monitor for libraries and components that are unmaintained or do not "
+"create security patches for older versions. If patching is not possible, "
+"consider deploying a virtual patch to monitor, detect, or protect against"
+" the discovered issue."
+msgstr ""
+
+#: ../../source/concepts/security.rst:379
+msgid ""
+"Every organization must ensure an ongoing plan for monitoring, triaging, "
+"and applying updates or configuration changes for the lifetime of the "
+"application or portfolio."
+msgstr ""
+
+#: ../../source/concepts/security.rst:386
+msgid "Easy :ref:`app-starter-upgrading` by Composer"
+msgstr ""
+
+#: ../../source/concepts/security.rst:389
+msgid "A07:2021 Identification and Authentication Failures"
+msgstr ""
+
+#: ../../source/concepts/security.rst:391
+msgid ""
+"Confirmation of the user's identity, authentication, and session "
+"management is critical to protect against authentication-related attacks."
+" There may be authentication weaknesses if the application:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:395
+msgid ""
+"Permits automated attacks such as credential stuffing, where the attacker"
+" has a list of valid usernames and passwords."
+msgstr ""
+
+#: ../../source/concepts/security.rst:397
+msgid "Permits brute force or other automated attacks."
+msgstr ""
+
+#: ../../source/concepts/security.rst:398
+msgid ""
+"Permits default, weak, or well-known passwords, such as \"Password1\" or "
+"\"admin/admin\"."
+msgstr ""
+
+#: ../../source/concepts/security.rst:399
+msgid ""
+"Uses weak or ineffective credential recovery and forgot-password "
+"processes, such as \"knowledge-based answers,\" which cannot be made "
+"safe."
+msgstr ""
+
+#: ../../source/concepts/security.rst:401
+msgid ""
+"Uses plain text, encrypted, or weakly hashed passwords data stores (see "
+"A02:2021-Cryptographic Failures)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:403
+msgid "Has missing or ineffective multi-factor authentication."
+msgstr ""
+
+#: ../../source/concepts/security.rst:404
+msgid "Exposes session identifier in the URL."
+msgstr ""
+
+#: ../../source/concepts/security.rst:405
+msgid "Reuse session identifier after successful login."
+msgstr ""
+
+#: ../../source/concepts/security.rst:406
+msgid ""
+"Does not correctly invalidate Session IDs. User sessions or "
+"authentication tokens (mainly single sign-on (SSO) tokens) aren't "
+"properly invalidated during logout or a period of inactivity."
+msgstr ""
+
+#: ../../source/concepts/security.rst:413
+msgid ""
+"Where possible, implement multi-factor authentication to prevent "
+"automated credential stuffing, brute force, and stolen credential reuse "
+"attacks."
+msgstr ""
+
+#: ../../source/concepts/security.rst:415
+msgid ""
+"Do not ship or deploy with any default credentials, particularly for "
+"admin users."
+msgstr ""
+
+#: ../../source/concepts/security.rst:416
+msgid ""
+"Implement weak password checks, such as testing new or changed passwords "
+"against the top 10,000 worst passwords list."
+msgstr ""
+
+#: ../../source/concepts/security.rst:418
+msgid ""
+"Align password length, complexity, and rotation policies with National "
+"Institute of Standards and Technology (NIST) 800-63b's guidelines in "
+"section 5.1.1 for Memorized Secrets or other modern, evidence-based "
+"password policies."
+msgstr ""
+
+#: ../../source/concepts/security.rst:421
+msgid ""
+"Ensure registration, credential recovery, and API pathways are hardened "
+"against account enumeration attacks by using the same messages for all "
+"outcomes."
+msgstr ""
+
+#: ../../source/concepts/security.rst:423
+msgid ""
+"Limit or increasingly delay failed login attempts, but be careful not to "
+"create a denial of service scenario. Log all failures and alert "
+"administrators when credential stuffing, brute force, or other attacks "
+"are detected."
+msgstr ""
+
+#: ../../source/concepts/security.rst:426
+msgid ""
+"Use a server-side, secure, built-in session manager that generates a new "
+"random session ID with high entropy after login. Session identifier "
+"should not be in the URL, be securely stored, and invalidated after "
+"logout, idle, and absolute timeouts."
+msgstr ""
+
+#: ../../source/concepts/security.rst:434
+msgid ":doc:`Session <../libraries/sessions>` library"
+msgstr ""
+
+#: ../../source/concepts/security.rst:439
+msgid "A08:2021 Software and Data Integrity Failures"
+msgstr ""
+
+#: ../../source/concepts/security.rst:441
+msgid ""
+"Software and data integrity failures relate to code and infrastructure "
+"that does not protect against integrity violations. An example of this is"
+" where an application relies upon plugins, libraries, or modules from "
+"untrusted sources, repositories, and content delivery networks (CDNs). An"
+" insecure CI/CD pipeline can introduce the potential for unauthorized "
+"access, malicious code, or system compromise."
+msgstr ""
+
+#: ../../source/concepts/security.rst:447
+msgid ""
+"Lastly, many applications now include auto-update functionality, where "
+"updates are downloaded without sufficient integrity verification and "
+"applied to the previously trusted application. Attackers could "
+"potentially upload their own updates to be distributed and run on all "
+"installations."
+msgstr ""
+
+#: ../../source/concepts/security.rst:452
+msgid ""
+"Another example is where objects or data are encoded or serialized into a"
+" structure that an attacker can see and modify is vulnerable to insecure "
+"deserialization."
+msgstr ""
+
+#: ../../source/concepts/security.rst:458
+msgid ""
+"Use digital signatures or similar mechanisms to verify the software or "
+"data is from the expected source and has not been altered."
+msgstr ""
+
+#: ../../source/concepts/security.rst:460
+msgid ""
+"Ensure libraries and dependencies, such as npm or Maven, are consuming "
+"trusted repositories. If you have a higher risk profile, consider hosting"
+" an internal known-good repository that's vetted."
+msgstr ""
+
+#: ../../source/concepts/security.rst:463
+msgid ""
+"Ensure that a software supply chain security tool, such as OWASP "
+"Dependency Check or OWASP CycloneDX, is used to verify that components do"
+" not contain known vulnerabilities"
+msgstr ""
+
+#: ../../source/concepts/security.rst:466
+msgid ""
+"Ensure that there is a review process for code and configuration changes "
+"to minimize the chance that malicious code or configuration could be "
+"introduced into your software pipeline."
+msgstr ""
+
+#: ../../source/concepts/security.rst:469
+msgid ""
+"Ensure that your CI/CD pipeline has proper segregation, configuration, "
+"and access control to ensure the integrity of the code flowing through "
+"the build and deploy processes."
+msgstr ""
+
+#: ../../source/concepts/security.rst:472
+msgid ""
+"Ensure that unsigned or unencrypted serialized data is not sent to "
+"untrusted clients without some form of integrity check or digital "
+"signature to detect tampering or replay of the serialized data"
+msgstr ""
+
+#: ../../source/concepts/security.rst:479
+#: ../../source/concepts/security.rst:797
+msgid "n/a"
+msgstr ""
+
+#: ../../source/concepts/security.rst:482
+msgid "A09:2021 Security Logging and Monitoring Failures"
+msgstr ""
+
+#: ../../source/concepts/security.rst:484
+msgid ""
+"This category is to help detect, escalate, and respond to active "
+"breaches. Without logging and monitoring, breaches cannot be detected. "
+"Insufficient logging, detection, monitoring, and active response occurs "
+"any time:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:488
+msgid ""
+"Auditable events, such as logins, failed logins, and high-value "
+"transactions, are not logged."
+msgstr ""
+
+#: ../../source/concepts/security.rst:490
+msgid "Warnings and errors generate no, inadequate, or unclear log messages."
+msgstr ""
+
+#: ../../source/concepts/security.rst:491
+msgid "Logs of applications and APIs are not monitored for suspicious activity."
+msgstr ""
+
+#: ../../source/concepts/security.rst:492
+msgid "Logs are only stored locally."
+msgstr ""
+
+#: ../../source/concepts/security.rst:493
+msgid ""
+"Appropriate alerting thresholds and response escalation processes are not"
+" in place or effective."
+msgstr ""
+
+#: ../../source/concepts/security.rst:495
+msgid ""
+"Penetration testing and scans by dynamic application security testing "
+"(DAST) tools (such as OWASP ZAP) do not trigger alerts."
+msgstr ""
+
+#: ../../source/concepts/security.rst:497
+msgid ""
+"The application cannot detect, escalate, or alert for active attacks in "
+"real-time or near real-time."
+msgstr ""
+
+#: ../../source/concepts/security.rst:500
+msgid ""
+"You are vulnerable to information leakage by making logging and alerting "
+"events visible to a user or an attacker (see A01:2021-Broken Access "
+"Control)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:506
+msgid ""
+"Developers should implement some or all the following controls, depending"
+" on the risk of the application:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:508
+msgid ""
+"Ensure all login, access control, and server-side input validation "
+"failures can be logged with sufficient user context to identify "
+"suspicious or malicious accounts and held for enough time to allow "
+"delayed forensic analysis."
+msgstr ""
+
+#: ../../source/concepts/security.rst:511
+msgid ""
+"Ensure that logs are generated in a format that log management solutions "
+"can easily consume."
+msgstr ""
+
+#: ../../source/concepts/security.rst:513
+msgid ""
+"Ensure log data is encoded correctly to prevent injections or attacks on "
+"the logging or monitoring systems."
+msgstr ""
+
+#: ../../source/concepts/security.rst:515
+msgid ""
+"Ensure high-value transactions have an audit trail with integrity "
+"controls to prevent tampering or deletion, such as append-only database "
+"tables or similar."
+msgstr ""
+
+#: ../../source/concepts/security.rst:517
+msgid ""
+"DevSecOps teams should establish effective monitoring and alerting such "
+"that suspicious activities are detected and responded to quickly."
+msgstr ""
+
+#: ../../source/concepts/security.rst:519
+msgid ""
+"Establish or adopt an incident response and recovery plan, such as "
+"National Institute of Standards and Technology (NIST) 800-61r2 or later."
+msgstr ""
+
+#: ../../source/concepts/security.rst:522
+msgid ""
+"There are commercial and open-source application protection frameworks "
+"such as the OWASP ModSecurity Core Rule Set, and open-source log "
+"correlation software, such as the Elasticsearch, Logstash, Kibana (ELK) "
+"stack, that feature custom dashboards and alerting."
+msgstr ""
+
+#: ../../source/concepts/security.rst:530
+msgid ":doc:`Logging <../general/logging>` library"
+msgstr ""
+
+#: ../../source/concepts/security.rst:535
+msgid "A10:2021 Server-Side Request Forgery (SSRF)"
+msgstr ""
+
+#: ../../source/concepts/security.rst:537
+msgid ""
+"SSRF flaws occur whenever a web application is fetching a remote resource"
+" without validating the user-supplied URL. It allows an attacker to "
+"coerce the application to send a crafted request to an unexpected "
+"destination, even when protected by a firewall, VPN, or another type of "
+"network access control list (ACL)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:542
+msgid ""
+"As modern web applications provide end-users with convenient features, "
+"fetching a URL becomes a common scenario. As a result, the incidence of "
+"SSRF is increasing. Also, the severity of SSRF is becoming higher due to "
+"cloud services and the complexity of architectures."
+msgstr ""
+
+#: ../../source/concepts/security.rst:550
+msgid ""
+"Developers can prevent SSRF by implementing some or all the following "
+"defense in depth controls:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:553
+msgid "From Network layer:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:555
+msgid ""
+"Segment remote resource access functionality in separate networks to "
+"reduce the impact of SSRF"
+msgstr ""
+
+#: ../../source/concepts/security.rst:557
+msgid ""
+"Enforce “deny by default” firewall policies or network access control "
+"rules to block all but essential intranet traffic."
+msgstr ""
+
+#: ../../source/concepts/security.rst:560
+msgid "Hints:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:562
+msgid ""
+"Establish an ownership and a lifecycle for firewall rules based on "
+"applications."
+msgstr ""
+
+#: ../../source/concepts/security.rst:564
+msgid ""
+"Log all accepted and blocked network flows on firewalls (see "
+"A09:2021-Security Logging and Monitoring Failures)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:567
+msgid "From Application layer:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:569
+msgid "Sanitize and validate all client-supplied input data"
+msgstr ""
+
+#: ../../source/concepts/security.rst:570
+msgid "Enforce the URL schema, port, and destination with a positive allow list"
+msgstr ""
+
+#: ../../source/concepts/security.rst:571
+msgid "Do not send raw responses to clients"
+msgstr ""
+
+#: ../../source/concepts/security.rst:572
+msgid "Disable HTTP redirections"
+msgstr ""
+
+#: ../../source/concepts/security.rst:573
+msgid ""
+"Be aware of the URL consistency to avoid attacks such as DNS rebinding "
+"and “time of check, time of use” (TOCTOU) race conditions"
+msgstr ""
+
+#: ../../source/concepts/security.rst:576
+msgid ""
+"Do not mitigate SSRF via the use of a deny list or regular expression. "
+"Attackers have payload lists, tools, and skills to bypass deny lists."
+msgstr ""
+
+#: ../../source/concepts/security.rst:588
+msgid "OWASP API Security Top 10 2023"
+msgstr ""
+
+#: ../../source/concepts/security.rst:591
+msgid "API1:2023 Broken Object Level Authorization"
+msgstr ""
+
+#: ../../source/concepts/security.rst:593
+msgid ""
+"APIs tend to expose endpoints that handle object identifiers, creating a "
+"wide attack surface of Object Level Access Control issues. Object level "
+"authorization checks should be considered in every function that accesses"
+" a data source using an ID from the user."
+msgstr ""
+
+#: ../../source/concepts/security.rst:601
+msgid ""
+"Implement a proper authorization mechanism that relies on the user "
+"policies and hierarchy."
+msgstr ""
+
+#: ../../source/concepts/security.rst:603
+msgid ""
+"Use the authorization mechanism to check if the logged-in user has access"
+" to perform the requested action on the record in every function that "
+"uses an input from the client to access a record in the database."
+msgstr ""
+
+#: ../../source/concepts/security.rst:606
+msgid ""
+"Prefer the use of random and unpredictable values as GUIDs for records' "
+"IDs."
+msgstr ""
+
+#: ../../source/concepts/security.rst:607
+msgid ""
+"Write tests to evaluate the vulnerability of the authorization mechanism."
+" Do not deploy changes that make the tests fail."
+msgstr ""
+
+#: ../../source/concepts/security.rst:618
+msgid "API2:2023 Broken Authentication"
+msgstr ""
+
+#: ../../source/concepts/security.rst:620
+msgid ""
+"Authentication mechanisms are often implemented incorrectly, allowing "
+"attackers to compromise authentication tokens or to exploit "
+"implementation flaws to assume other user's identities temporarily or "
+"permanently. Compromising a system's ability to identify the client/user,"
+" compromises API security overall."
+msgstr ""
+
+#: ../../source/concepts/security.rst:628
+msgid ""
+"Make sure you know all the possible flows to authenticate to the API "
+"(mobile/ web/deep links that implement one-click authentication/etc.). "
+"Ask your engineers what flows you missed."
+msgstr ""
+
+#: ../../source/concepts/security.rst:631
+msgid ""
+"Read about your authentication mechanisms. Make sure you understand what "
+"and how they are used. OAuth is not authentication, and neither are API "
+"keys."
+msgstr ""
+
+#: ../../source/concepts/security.rst:633
+msgid ""
+"Don't reinvent the wheel in authentication, token generation, or password"
+" storage. Use the standards."
+msgstr ""
+
+#: ../../source/concepts/security.rst:635
+msgid ""
+"Credential recovery/forgot password endpoints should be treated as login "
+"endpoints in terms of brute force, rate limiting, and lockout "
+"protections."
+msgstr ""
+
+#: ../../source/concepts/security.rst:637
+msgid ""
+"Require re-authentication for sensitive operations (e.g. changing the "
+"account owner email address/2FA phone number)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:639
+msgid "Use the OWASP Authentication Cheatsheet."
+msgstr ""
+
+#: ../../source/concepts/security.rst:640
+msgid "Where possible, implement multi-factor authentication."
+msgstr ""
+
+#: ../../source/concepts/security.rst:641
+msgid ""
+"Implement anti-brute force mechanisms to mitigate credential stuffing, "
+"dictionary attacks, and brute force attacks on your authentication "
+"endpoints. This mechanism should be stricter than the regular rate "
+"limiting mechanisms on your APIs."
+msgstr ""
+
+#: ../../source/concepts/security.rst:644
+msgid ""
+"Implement account lockout/captcha mechanisms to prevent brute force "
+"attacks against specific users. Implement weak-password checks."
+msgstr ""
+
+#: ../../source/concepts/security.rst:646
+msgid ""
+"API keys should not be used for user authentication. They should only be "
+"used for API clients authentication."
+msgstr ""
+
+#: ../../source/concepts/security.rst:652
+#: ../../source/concepts/security.rst:755
+msgid ":doc:`../incoming/filters`"
+msgstr ""
+
+#: ../../source/concepts/security.rst:653
+#: ../../source/concepts/security.rst:920
+msgid ":ref:`routing-spark-routes` command"
+msgstr ""
+
+#: ../../source/concepts/security.rst:659
+msgid "API3:2023 Broken Object Property Level Authorization"
+msgstr ""
+
+#: ../../source/concepts/security.rst:661
+msgid ""
+"This category combines API3:2019 Excessive Data Exposure and API6:2019 - "
+"Mass Assignment, focusing on the root cause: the lack of or improper "
+"authorization validation at the object property level. This leads to "
+"information exposure or manipulation by unauthorized parties."
+msgstr ""
+
+#: ../../source/concepts/security.rst:669
+msgid ""
+"When exposing an object using an API endpoint, always make sure that the "
+"user should have access to the object's properties you expose."
+msgstr ""
+
+#: ../../source/concepts/security.rst:671
+msgid ""
+"Avoid using generic methods such as to_json() and to_string(). Instead, "
+"cherry-pick specific object properties you specifically want to return."
+msgstr ""
+
+#: ../../source/concepts/security.rst:673
+msgid ""
+"If possible, avoid using functions that automatically bind a client's "
+"input into code variables, internal objects, or object properties (\"Mass"
+" Assignment\")."
+msgstr ""
+
+#: ../../source/concepts/security.rst:675
+msgid ""
+"Allow changes only to the object's properties that should be updated by "
+"the client."
+msgstr ""
+
+#: ../../source/concepts/security.rst:677
+msgid ""
+"Implement a schema-based response validation mechanism as an extra layer "
+"of security. As part of this mechanism, define and enforce data returned "
+"by all API methods."
+msgstr ""
+
+#: ../../source/concepts/security.rst:680
+msgid ""
+"Keep returned data structures to the bare minimum, according to the "
+"business/functional requirements for the endpoint."
+msgstr ""
+
+#: ../../source/concepts/security.rst:686
+msgid "Model's :ref:`model-allowed-fields`"
+msgstr ""
+
+#: ../../source/concepts/security.rst:691
+msgid "API4:2023 Unrestricted Resource Consumption"
+msgstr ""
+
+#: ../../source/concepts/security.rst:693
+msgid ""
+"Satisfying API requests requires resources such as network bandwidth, "
+"CPU, memory, and storage. Other resources such as emails/SMS/phone calls "
+"or biometrics validation are made available by service providers via API "
+"integrations, and paid for per request. Successful attacks can lead to "
+"Denial of Service or an increase of operational costs."
+msgstr ""
+
+#: ../../source/concepts/security.rst:702
+msgid ""
+"Use a solution that makes it easy to limit memory, CPU, number of "
+"restarts, file descriptors, and processes such as Containers / Serverless"
+" code (e.g. Lambdas)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:704
+msgid ""
+"Define and enforce a maximum size of data on all incoming parameters and "
+"payloads, such as maximum length for strings, maximum number of elements "
+"in arrays, and maximum upload file size (regardless of whether it is "
+"stored locally or in cloud storage)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:708
+msgid ""
+"Implement a limit on how often a client can interact with the API within "
+"a defined timeframe (rate limiting)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:710
+msgid ""
+"Rate limiting should be fine tuned based on the business needs. Some API "
+"Endpoints might require stricter policies."
+msgstr ""
+
+#: ../../source/concepts/security.rst:712
+msgid ""
+"Limit/throttle how many times or how often a single API client/user can "
+"execute a single operation (e.g. validate an OTP, or request password "
+"recovery without visiting the one-time URL)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:715
+msgid ""
+"Add proper server-side validation for query string and request body "
+"parameters, specifically the one that controls the number of records to "
+"be returned in the response."
+msgstr ""
+
+#: ../../source/concepts/security.rst:718
+msgid ""
+"Configure spending limits for all service providers/API integrations. "
+"When setting spending limits is not possible, billing alerts should be "
+"configured instead."
+msgstr ""
+
+#: ../../source/concepts/security.rst:728
+msgid "API5:2023 Broken Function Level Authorization"
+msgstr ""
+
+#: ../../source/concepts/security.rst:730
+msgid ""
+"Complex access control policies with different hierarchies, groups, and "
+"roles, and an unclear separation between administrative and regular "
+"functions, tend to lead to authorization flaws. By exploiting these "
+"issues, attackers can gain access to other users’ resources and/or "
+"administrative functions."
+msgstr ""
+
+#: ../../source/concepts/security.rst:738
+msgid ""
+"Your application should have a consistent and easy-to-analyze "
+"authorization module that is invoked from all your business functions. "
+"Frequently, such protection is provided by one or more components "
+"external to the application code."
+msgstr ""
+
+#: ../../source/concepts/security.rst:742
+msgid ""
+"The enforcement mechanism(s) should deny all access by default, requiring"
+" explicit grants to specific roles for access to every function."
+msgstr ""
+
+#: ../../source/concepts/security.rst:744
+msgid ""
+"Review your API endpoints against function level authorization flaws, "
+"while keeping in mind the business logic of the application and groups "
+"hierarchy."
+msgstr ""
+
+#: ../../source/concepts/security.rst:746
+msgid ""
+"Make sure that all of your administrative controllers inherit from an "
+"administrative abstract controller that implements authorization checks "
+"based on the user's group/role."
+msgstr ""
+
+#: ../../source/concepts/security.rst:749
+msgid ""
+"Make sure that administrative functions inside a regular controller "
+"implement authorization checks based on the user's group and role."
+msgstr ""
+
+#: ../../source/concepts/security.rst:760
+msgid "API6:2023 Unrestricted Access to Sensitive Business Flows"
+msgstr ""
+
+#: ../../source/concepts/security.rst:762
+msgid ""
+"APIs vulnerable to this risk expose a business flow - such as buying a "
+"ticket, or posting a comment - without compensating for how the "
+"functionality could harm the business if used excessively in an automated"
+" manner. This doesn't necessarily come from implementation bugs."
+msgstr ""
+
+#: ../../source/concepts/security.rst:770
+msgid "The mitigation planning should be done in two layers:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:772
+msgid ""
+"Business - identify the business flows that might harm the business if "
+"they are excessively used."
+msgstr ""
+
+#: ../../source/concepts/security.rst:774
+msgid ""
+"Engineering - choose the right protection mechanisms to mitigate the "
+"business risk."
+msgstr ""
+
+#: ../../source/concepts/security.rst:777
+msgid ""
+"Some of the protection mechanisms are more simple while others are more "
+"difficult to implement. The following methods are used to slow down "
+"automated threats:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:780
+msgid ""
+"Device fingerprinting: denying service to unexpected client devices (e.g "
+"headless browsers) tends to make threat actors use more sophisticated "
+"solutions, thus more costly for them"
+msgstr ""
+
+#: ../../source/concepts/security.rst:783
+msgid ""
+"Human detection: using either captcha or more advanced biometric "
+"solutions (e.g. typing patterns)"
+msgstr ""
+
+#: ../../source/concepts/security.rst:785
+msgid ""
+"Non-human patterns: analyze the user flow to detect non-human patterns "
+"(e.g. the user accessed the \"add to cart\" and \"complete purchase\" "
+"functions in less than one second)"
+msgstr ""
+
+#: ../../source/concepts/security.rst:788
+msgid "Consider blocking IP addresses of Tor exit nodes and well-known proxies"
+msgstr ""
+
+#: ../../source/concepts/security.rst:790
+msgid ""
+"Secure and limit access to APIs that are consumed directly by machines "
+"(such as developer and B2B APIs). They tend to be an easy target for "
+"attackers because they often don't implement all the required protection "
+"mechanisms."
+msgstr ""
+
+#: ../../source/concepts/security.rst:800
+msgid "API7:2023 Server Side Request Forgery"
+msgstr ""
+
+#: ../../source/concepts/security.rst:802
+msgid ""
+"Server-Side Request Forgery (SSRF) flaws can occur when an API is "
+"fetching a remote resource without validating the user-supplied URI. This"
+" enables an attacker to coerce the application to send a crafted request "
+"to an unexpected destination, even when protected by a firewall or a VPN."
+msgstr ""
+
+#: ../../source/concepts/security.rst:810
+msgid ""
+"Isolate the resource fetching mechanism in your network: usually these "
+"features are aimed to retrieve remote resources and not internal ones."
+msgstr ""
+
+#: ../../source/concepts/security.rst:812
+msgid "Whenever possible, use allow lists of:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:814
+msgid ""
+"Remote origins users are expected to download resources from (e.g. Google"
+" Drive, Gravatar, etc.)"
+msgstr ""
+
+#: ../../source/concepts/security.rst:816
+msgid "URL schemes and ports"
+msgstr ""
+
+#: ../../source/concepts/security.rst:817
+msgid "Accepted media types for a given functionality"
+msgstr ""
+
+#: ../../source/concepts/security.rst:818
+msgid "Disable HTTP redirections."
+msgstr ""
+
+#: ../../source/concepts/security.rst:819
+msgid ""
+"Use a well-tested and maintained URL parser to avoid issues caused by URL"
+" parsing inconsistencies."
+msgstr ""
+
+#: ../../source/concepts/security.rst:820
+msgid "Validate and sanitize all client-supplied input data."
+msgstr ""
+
+#: ../../source/concepts/security.rst:821
+msgid "Do not send raw responses to clients."
+msgstr ""
+
+#: ../../source/concepts/security.rst:829
+#: ../../source/concepts/security.rst:943
+msgid ":doc:`CURLRequest <../libraries/curlrequest>` class"
+msgstr ""
+
+#: ../../source/concepts/security.rst:830
+msgid ":doc:`URI <../libraries/uri>` class"
+msgstr ""
+
+#: ../../source/concepts/security.rst:833
+msgid "API8:2023 Security Misconfiguration"
+msgstr ""
+
+#: ../../source/concepts/security.rst:835
+msgid ""
+"APIs and the systems supporting them typically contain complex "
+"configurations, meant to make the APIs more customizable. Software and "
+"DevOps engineers can miss these configurations, or don't follow security "
+"best practices when it comes to configuration, opening the door for "
+"different types of attacks."
+msgstr ""
+
+#: ../../source/concepts/security.rst:843
+msgid "The API life cycle should include:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:845
+msgid ""
+"A repeatable hardening process leading to fast and easy deployment of a "
+"properly locked down environment"
+msgstr ""
+
+#: ../../source/concepts/security.rst:847
+msgid ""
+"A task to review and update configurations across the entire API stack. "
+"The review should include: orchestration files, API components, and cloud"
+" services (e.g. S3 bucket permissions)"
+msgstr ""
+
+#: ../../source/concepts/security.rst:850
+msgid ""
+"An automated process to continuously assess the effectiveness of the "
+"configuration and settings in all environments"
+msgstr ""
+
+#: ../../source/concepts/security.rst:853
+msgid "Furthermore:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:855
+msgid ""
+"Ensure that all API communications from the client to the API server and "
+"any downstream/upstream components happen over an encrypted communication"
+" channel (TLS), regardless of whether it is an internal or public-facing "
+"API."
+msgstr ""
+
+#: ../../source/concepts/security.rst:858
+msgid ""
+"Be specific about which HTTP verbs each API can be accessed by: all other"
+" HTTP verbs should be disabled (e.g. HEAD)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:860
+msgid ""
+"APIs expecting to be accessed from browser-based clients (e.g., WebApp "
+"front-end) should, at least:"
+msgstr ""
+
+#: ../../source/concepts/security.rst:863
+msgid "implement a proper Cross-Origin Resource Sharing (CORS) policy"
+msgstr ""
+
+#: ../../source/concepts/security.rst:864
+msgid "include applicable Security Headers"
+msgstr ""
+
+#: ../../source/concepts/security.rst:865
+msgid ""
+"Restrict incoming content types/data formats to those that meet the "
+"business/ functional requirements."
+msgstr ""
+
+#: ../../source/concepts/security.rst:867
+msgid ""
+"Ensure all servers in the HTTP server chain (e.g. load balancers, reverse"
+" and forward proxies, and back-end servers) process incoming requests in "
+"a uniform manner to avoid desync issues."
+msgstr ""
+
+#: ../../source/concepts/security.rst:870
+msgid ""
+"Where applicable, define and enforce all API response payload schemas, "
+"including error responses, to prevent exception traces and other valuable"
+" information from being sent back to attackers."
+msgstr ""
+
+#: ../../source/concepts/security.rst:879
+msgid ":ref:`Defined Route Routing <defined-route-routing>`"
+msgstr ""
+
+#: ../../source/concepts/security.rst:880
+msgid ":ref:`auto-routing-improved`"
+msgstr ""
+
+#: ../../source/concepts/security.rst:884
+msgid "API9:2023 Improper Inventory Management"
+msgstr ""
+
+#: ../../source/concepts/security.rst:886
+msgid ""
+"APIs tend to expose more endpoints than traditional web applications, "
+"making proper and updated documentation highly important. A proper "
+"inventory of hosts and deployed API versions also are important to "
+"mitigate issues such as deprecated API versions and exposed debug "
+"endpoints."
+msgstr ""
+
+#: ../../source/concepts/security.rst:894
+msgid ""
+"Inventory all API hosts and document important aspects of each one of "
+"them, focusing on the API environment (e.g. production, staging, test, "
+"development), who should have network access to the host (e.g. public, "
+"internal, partners) and the API version."
+msgstr ""
+
+#: ../../source/concepts/security.rst:898
+msgid ""
+"Inventory integrated services and document important aspects such as "
+"their role in the system, what data is exchanged (data flow), and their "
+"sensitivity."
+msgstr ""
+
+#: ../../source/concepts/security.rst:900
+msgid ""
+"Document all aspects of your API such as authentication, errors, "
+"redirects, rate limiting, cross-origin resource sharing (CORS) policy, "
+"and endpoints, including their parameters, requests, and responses."
+msgstr ""
+
+#: ../../source/concepts/security.rst:903
+msgid ""
+"Generate documentation automatically by adopting open standards. Include "
+"the documentation build in your CI/CD pipeline."
+msgstr ""
+
+#: ../../source/concepts/security.rst:905
+msgid "Make API documentation available only to those authorized to use the API."
+msgstr ""
+
+#: ../../source/concepts/security.rst:906
+msgid ""
+"Use external protection measures such as API security specific solutions "
+"for all exposed versions of your APIs, not just for the current "
+"production version."
+msgstr ""
+
+#: ../../source/concepts/security.rst:908
+msgid ""
+"Avoid using production data with non-production API deployments. If this "
+"is unavoidable, these endpoints should get the same security treatment as"
+" the production ones."
+msgstr ""
+
+#: ../../source/concepts/security.rst:911
+msgid ""
+"When newer versions of APIs include security improvements, perform a risk"
+" analysis to inform the mitigation actions required for the older "
+"versions. For example, whether it is possible to backport the "
+"improvements without breaking API compatibility or if you need to take "
+"the older version out quickly and force all clients to move to the latest"
+" version."
+msgstr ""
+
+#: ../../source/concepts/security.rst:923
+msgid "API10:2023 Unsafe Consumption of APIs"
+msgstr ""
+
+#: ../../source/concepts/security.rst:925
+msgid ""
+"Developers tend to trust data received from third-party APIs more than "
+"user input, and so tend to adopt weaker security standards. In order to "
+"compromise APIs, attackers go after integrated third-party services "
+"instead of trying to compromise the target API directly."
+msgstr ""
+
+#: ../../source/concepts/security.rst:933
+msgid "When evaluating service providers, assess their API security posture."
+msgstr ""
+
+#: ../../source/concepts/security.rst:934
+msgid ""
+"Ensure all API interactions happen over a secure communication channel "
+"(TLS)."
+msgstr ""
+
+#: ../../source/concepts/security.rst:935
+msgid ""
+"Always validate and properly sanitize data received from integrated APIs "
+"before using it."
+msgstr ""
+
+#: ../../source/concepts/security.rst:937
+msgid ""
+"Maintain an allowlist of well-known locations integrated APIs may "
+"redirect yours to: do not blindly follow redirects."
+msgstr ""
+

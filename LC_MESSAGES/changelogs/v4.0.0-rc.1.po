@@ -1,0 +1,824 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:2
+msgid "Version 4.0.0-rc.1"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:4
+msgid "Release Date: Sep 3, 2019"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:6
+msgid "**RC.1 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:13
+msgid "Enhancements"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:15
+msgid "CI3 Email ported to CI4"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:16
+msgid "Encryption (basic) added"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:17
+msgid ""
+"Migrations refactored and streamlined for more wholistic functionality "
+"(BC)"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:18
+msgid "added convert() to ImageHandlerInterface"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:19
+msgid "disabled debug toolbar for downloads"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:20
+msgid "CLI commands returns an error code now (\"spark\" changed)"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:21
+msgid "RESTful controllers added to shorten dev time for RESTful APIs"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:22
+msgid "added RouteCollection::presenter() as part of the RESTful support"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:25
+msgid "App Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:27
+msgid "added app/Common to make it easier to override common functions"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:28
+msgid "Config/Email and Encryption added"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:29
+msgid "Config/Migration modified, and has different settings"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:30
+msgid "Controllers/Home fixed, removing unnecessary model reference"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:33
+msgid "Message Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:35
+msgid "Migration has new & modified messages"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:36
+msgid "Messages now has RESTful set"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:39
+msgid "Changed Files"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:41
+msgid "The list of changed files follows, with PR numbers shown."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:43
+msgid "admin/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:44
+msgid "release-appstarter #2155"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:45
+msgid "release-framework #2155"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:47
+msgid "app/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:48
+#: ../../source/changelogs/v4.0.0-rc.1.rst:77
+msgid "Config/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:49
+#: ../../source/changelogs/v4.0.0-rc.1.rst:86
+#: ../../source/changelogs/v4.0.0-rc.1.rst:115
+msgid "Email #2092"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:50
+#: ../../source/changelogs/v4.0.0-rc.1.rst:89
+#: ../../source/changelogs/v4.0.0-rc.1.rst:116
+msgid "Encryption #2135"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:51
+msgid "Migrations #2065"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:52
+msgid "Controllers/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:53
+msgid "BaseController #2046"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:54
+msgid "Home #2145"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:56
+msgid "Common #2110"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:58
+msgid "public/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:60
+msgid "system/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:61
+#: ../../source/changelogs/v4.0.0-rc.1.rst:141
+msgid "API/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:62
+msgid "ResponseTrait #2131"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:63
+msgid "Autoloader/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:64
+msgid "Autoloader #2149"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:65
+msgid "FileLocator #2149"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:66
+msgid "Cache/Handlders/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:67
+msgid "RedisHandler #2144"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:68
+msgid "CLI/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:69
+msgid "CommandRunner #2164"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:70
+msgid "Commands/Database/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:71
+msgid "CreateMigration #2065"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:72
+msgid "Migrate #2065, 2137"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:73
+msgid "MigrateRefresh #2065, 2137"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:74
+msgid "MigrateRollback #2065, 2137"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:75
+msgid "MigrateStatus #2137"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:76
+msgid "MigrateVersion #2137"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:78
+msgid "BaseConfig #2082"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:79
+msgid "Services #2135, 2092"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:80
+#: ../../source/changelogs/v4.0.0-rc.1.rst:143
+msgid "Database/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:81
+msgid "BaseBuilder #2127, 2090, 2142, 2153, 2160, 2023, 2001"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:82
+msgid "MigrationRunner #2065, 2137"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:83
+msgid "Debug/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:84
+msgid "Toolbar #2118"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:85
+msgid "Email/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:87
+#: ../../source/changelogs/v4.0.0-rc.1.rst:153
+msgid "Encryption/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:88
+msgid "EncrypterInterface #2135"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:90
+msgid "Exceptions/EncryptionException #2135"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:91
+#: ../../source/changelogs/v4.0.0-rc.1.rst:110
+msgid "Handlers/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:92
+msgid "BaseHandler #2135"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:93
+msgid "OpenSSLHandler #2135"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:94
+msgid "Exceptions/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:95
+msgid "ConfigException #2065"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:96
+msgid "Files/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:97
+msgid "File #2178"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:98
+msgid "Filters/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:99
+msgid "DebugToolbar #2118"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:100
+#: ../../source/changelogs/v4.0.0-rc.1.rst:156
+msgid "Helpers/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:101
+#: ../../source/changelogs/v4.0.0-rc.1.rst:182
+msgid "inflector_helper #2065"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:102
+msgid "Honeypot/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:103
+msgid "Honeypot #2177"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:104
+#: ../../source/changelogs/v4.0.0-rc.1.rst:158
+msgid "HTTP/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:105
+msgid "DownloadResponse #2129"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:106
+msgid "Files/UploadedFile #2128"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:107
+msgid "Message @2171"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:108
+msgid "Response #2166"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:109
+#: ../../source/changelogs/v4.0.0-rc.1.rst:161
+msgid "Images/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:111
+msgid "-BaseHandler #2113, 2150 - ImageMagickHandler #2151"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:113
+msgid "BImageHandlerInterface #2113"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:114
+msgid "Language/en/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:117
+msgid "Migrations #2065, 2137"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:118
+msgid "RESTful #2165"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:119
+#: ../../source/changelogs/v4.0.0-rc.1.rst:163
+msgid "RESTful/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:120
+msgid "ResourceController #2165"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:121
+msgid "ResourcePresenter #2165"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:122
+#: ../../source/changelogs/v4.0.0-rc.1.rst:166
+msgid "Router/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:123
+msgid "RouteCollection #2165"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:124
+msgid "Security/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:125
+msgid "Security #2027"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:126
+msgid "Session/Handlers/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:127
+msgid "RedisHandler #2125"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:128
+msgid "Test/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:129
+msgid "CIDatabaseTestCase #2137"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:131
+msgid "bootstrap #2110"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:132
+msgid "CodeIgniter #2126, 2164"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:133
+msgid "Common #2109"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:134
+msgid "Entity #2112"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:135
+msgid "Model #2090"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:137
+msgid "tests/_support/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:138
+msgid "RESTful/... #2165"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:140
+msgid "tests/system/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:142
+msgid "ResponseTraitTest #2131"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:144
+msgid "Builder/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:145
+msgid "GetTest #2142"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:146
+#: ../../source/changelogs/v4.0.0-rc.1.rst:151
+msgid "SelectTest #2160"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:147
+msgid "WhereTest #2001"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:148
+msgid "Live/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:149
+msgid "GroupTest #2160"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:150
+msgid "ModelTest #2090"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:152
+msgid "Migrations/MigrationRunnerTest #2065, 2137"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:154
+msgid "EncryptionTest #2135"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:155
+msgid "OpenSSLHandlerTest #2135"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:157
+msgid "InflectorHelperTest #2065"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:159
+msgid "DownloadResponseTest #2129"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:160
+msgid "MessageTest #2171"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:162
+msgid "GDHandlerTest #2113"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:164
+msgid "ResourceControllerTest #2165"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:165
+msgid "ResourcePresenterTest #2165"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:167
+msgid "RouteCollectionTest #2165"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:169
+msgid "ControllerTest #2165"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:170
+msgid "EntityTest #2112"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:172
+msgid "user_guide_src/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:173
+msgid "changelogs/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:174
+msgid "next #2154"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:175
+msgid "database/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:176
+msgid "query_builder #2160, 2001"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:177
+msgid "dbmgmt/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:178
+msgid "migrations #2065, 2132, 2136, 2154, 2137"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:179
+msgid "extending/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:180
+msgid "common #2162"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:181
+msgid "helpers/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:183
+msgid "incoming/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:184
+msgid "restful #2165"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:185
+msgid "routing #2165"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:186
+msgid "libraries/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:187
+msgid "email #2092, 2154"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:188
+msgid "encryption #2135"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:189
+msgid "images #2113, 2169"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:190
+msgid "outgoing/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:191
+msgid "api_responses #2131"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:192
+msgid "localization #2134"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:193
+msgid "response #2129"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:194
+msgid "testing/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:195
+msgid "database #2137"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:197
+msgid "CONTRIBUTING.md #2010"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:198
+msgid "README.md #2010"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:199
+msgid "spark"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:202
+msgid "PRs merged"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:204
+msgid "#2178 Add fallback for missing finfo_open"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:205
+msgid "#2177 Fix missing form close tag"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:206
+msgid "#2171 Setheader dupes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:207
+msgid "#2169 Add $quality usage for Image Library"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:208
+msgid "#2166 Cookie error"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:209
+msgid "#2165 RESTful help"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:210
+msgid "#2164 Exit error code on CLI Command failure"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:211
+msgid "#2162 User Guide updates for Common.php"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:212
+msgid "#2160 Add BaseBuilder SelectCount"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:213
+msgid "#2155 Include .gitignore in starters"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:214
+msgid "#2153 Bug fix countAllResults with LIMIT"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:215
+msgid "#2154 Fix email & migrations docs; update changelog"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:216
+msgid "#2151 ImageMagick->save() return value"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:217
+msgid "#2150 New logic for Image->fit()"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:218
+msgid "#2149 listNamespaceFiles: Ensure trailing slash"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:219
+msgid "#2145 Remove UserModel reference from Home controller"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:220
+msgid "#2144 Update Redis legacy function"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:221
+msgid "#2142 Fixing BuilderBase resetting when getting the SQL"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:222
+msgid "#2137 New Migration Logic"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:223
+msgid "#2136 Migrations user guide fixes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:224
+msgid "#2135 Encryption"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:225
+msgid "#2134 Fix localization writeup"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:226
+msgid "#2132 Update migration User Guide"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:227
+msgid "#2131 Added No Content response to API\\ResponseTrait"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:228
+msgid "#2129 Add setFileName() to DownloadResponse"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:229
+msgid "#2128 guessExtension fallback to clientExtension"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:230
+msgid "#2127 Update limit function since $offset is nullable"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:231
+msgid "#2126 Limit storePreviousURL to certain requests"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:232
+msgid "#2125 Updated redis session handler to support redis 5.0.x"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:233
+msgid "#2118 Disabled Toolbar on downloads"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:234
+msgid "#2113 Add Image->convert()"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:235
+msgid "#2112 Update `Entity.php` `__isset` method"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:236
+msgid "#2110 Added app/Common.php"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:237
+msgid "#2109 Fix typo in checking if exists db_connect()"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:238
+msgid "#2092 Original email port"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:239
+msgid "#2090 Fix prevent soft delete all without conditions set"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:240
+msgid "#2082 Update BaseConfig.php"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:241
+msgid "#2065 Migration updates for more wholistic functionality"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:242
+msgid "#2046 clean base controller code"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:243
+msgid "#2027 Fix CSRF hash regeneration"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:244
+msgid "#2023 whereIn $value do not have to be an array"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:245
+msgid "#2010 Fix CSRF hash regenerationerbiage revisions"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-rc.1.rst:246
+msgid "#2001 Subqueries in BaseBuilder"
+msgstr ""
+

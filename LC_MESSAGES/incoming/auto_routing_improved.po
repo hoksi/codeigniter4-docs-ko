@@ -1,0 +1,797 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/incoming/auto_routing_improved.rst:5
+msgid "Auto Routing (Improved)"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:15
+msgid "What is Auto Routing (Improved) ?"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:17
+msgid ""
+"By default, all routes must be :ref:`defined <defined-route-routing>` in "
+"the configuration file."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:20
+msgid ""
+"However, with **Auto Routing (Improved)**, you can define the controller "
+"name and its method name according to the convention and it will be "
+"automatically routed. In other words, there is no need to define routes "
+"manually."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:24
+msgid ""
+"If you enable Auto Routing (Improved), when no defined route is found "
+"that matches the URI, the system will attempt to match that URI against "
+"the controllers and methods."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:28
+msgid ""
+"For security reasons, if a controller is used in the defined routes, Auto"
+" Routing (Improved) does not route to the controller."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:31
+msgid ""
+"Auto Routing (Improved) is disabled by default. To use it, see :ref"
+":`enabled-auto-routing-improved`."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:36
+msgid "Differences from Auto Routing (Legacy)"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:38
+msgid ""
+":ref:`auto-routing-legacy` is a routing system from CodeIgniter 3. If you"
+" are not familiar with it, go to the next section."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:41
+msgid ""
+"If you know it well, these are some changes in **Auto Routing "
+"(Improved)**:"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:43
+msgid ""
+"A controller method needs HTTP verb prefix like ``getIndex()``, "
+"``postCreate()``."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:44
+msgid ""
+"Since developers always know the HTTP method, a request with an "
+"unexpected HTTP method will never execute the controller."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:46
+msgid ""
+"The Default Controller (``Home`` by default) and the Default Method "
+"(``index`` by default) must be omitted in the URI."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:47
+#: ../../source/incoming/auto_routing_improved.rst:54
+msgid ""
+"It restricts one-to-one correspondence between controller methods and "
+"URIs."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:48
+msgid ""
+"E.g. by default, you can access ``/``, but ``/home`` and ``/home/index`` "
+"will be 404 Not Found."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:50
+msgid "It checks method parameter count."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:51
+msgid ""
+"If there are more parameters in the URI than the method parameters, it "
+"results in 404 Not Found."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:53
+msgid "It does not support ``_remap()`` method."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:55
+msgid ""
+"But it has the :ref:`auto-routing-improved-default-method-fallback` "
+"feature instead."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:57
+msgid "Can't access controllers in Defined Routes."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:58
+msgid ""
+"It completely separates controllers accessible via **Auto Routing** from "
+"those accessible via **Defined Routes**."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:65
+msgid "Enable Auto Routing (Improved)"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:67
+msgid ""
+"To use it, you need to change the setting ``$autoRoute`` option to "
+"``true`` in **app/Config/Routing.php**::"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:72
+msgid ""
+"And you need to change the property ``$autoRoutesImproved`` to ``true`` "
+"in **app/Config/Feature.php**::"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:77
+msgid ""
+"When you use Auto Routing (Improved), you must remove the line "
+"``$routes->get('/', 'Home::index');``  in **app/Config/Routes.php**. "
+"Because defined routes take precedence over Auto Routing, and controllers"
+" defined in the defined routes are denied access by Auto Routing "
+"(Improved) for security reasons."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:85
+msgid "URI Segments"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:87
+msgid ""
+"The segments in the URL, in following with the Model-View-Controller "
+"approach, usually represent::"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:92
+msgid ""
+"The first segment represents the controller **class** that should be "
+"invoked."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:93
+msgid "The second segment represents the class **method** that should be called."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:94
+msgid ""
+"The third, and any additional segments, represent any **parameters** that"
+" will be passed to the controller method."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:96
+msgid "Consider this URI::"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:100
+msgid ""
+"In the above example, when you send an HTTP request with **GET** method, "
+"Auto Routing (Improved) would attempt to find a controller named "
+"``App\\Controllers\\HelloWorld`` and executes ``getHello()`` method with "
+"passing ``'1'`` as the first parameter."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:105
+#: ../../source/incoming/auto_routing_improved.rst:137
+msgid ""
+"A controller method that will be executed by Auto Routing (Improved) "
+"needs HTTP verb (``get``, ``post``, ``put``, etc.) prefix like "
+"``getIndex()``, ``postCreate()``."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:109
+msgid ""
+"When a controller's short name matches the first segment of a URI, it "
+"will be loaded."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:114
+msgid "Let's try it: Hello World!"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:116
+msgid "Let's create a simple controller so you can see it in action."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:119
+msgid "Create a Controller"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:121
+msgid ""
+"Using your text editor, create a file called **HelloWorld.php** in your "
+"**app/Controllers** directory, and put the following code in it."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:126
+msgid ""
+"The file must be called **HelloWorld.php**. When you use Auto Routing "
+"(Improved), controller class names MUST be CamelCase."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:129
+msgid ""
+"You will notice that the ``HelloWorld`` Controller is extending the "
+"``BaseController``. You can also extend the ``CodeIgniter\\Controller`` "
+"if you do not need the functionality of the BaseController."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:133
+msgid ""
+"The BaseController provides a convenient place for loading components and"
+" performing functions that are needed by all your controllers. You can "
+"extend this class in any new controller."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:142
+msgid "Check the Routes"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:144
+msgid "You can check your routes with the ``spark routes`` command."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:150
+msgid "If you did it right, you should see:"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:160
+msgid "See :ref:`routing-spark-routes` for the output details."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:163
+msgid "Visit Your Site"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:165
+msgid "Now visit your site using a URL similar to this::"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:169
+msgid ""
+"The system automatically translates URI with dashes (``-``) to CamelCase "
+"in the controller and method URI segments."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:172
+#: ../../source/incoming/auto_routing_improved.rst:458
+msgid ""
+"For example, the URI ``sub-dir/hello-controller/some-method`` will "
+"execute the ``SubDir\\HelloController::getSomeMethod()`` method."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:175
+msgid "If you did it right, you should see::"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:181
+msgid "Examples of Controller Names"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:183
+msgid ""
+"The following is an valid controller name. Because "
+"``App\\Controllers\\HelloWorld`` is CamelCase."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:188
+msgid ""
+"The following is **not** valid. Because the first letter (``h``) is not "
+"capital."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:192
+msgid ""
+"The following is also **not** valid. Because the first letter (``h``) is "
+"not capital."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:198
+msgid "Controller Methods"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:201
+msgid "Method Visibility"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:203
+msgid ""
+"When you define a method that is executable via HTTP request, the method "
+"must be declared as ``public``."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:206
+msgid ""
+"For security reasons be sure to declare any new utility methods as "
+"``protected`` or ``private``."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:210
+#: ../../source/incoming/auto_routing_improved.rst:427
+msgid "Default Method"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:212
+msgid ""
+"In the above example, the method name is ``getIndex()``. The method (HTTP"
+" verb + ``Index()``) is called the **Default Method**, and is loaded if "
+"the **second segment** of the URI is empty."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:217
+msgid "Normal Methods"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:219
+msgid ""
+"The second segment of the URI determines which method in the controller "
+"gets called."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:221
+msgid "Let's try it. Add a new method to your controller:"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:225
+msgid "Now load the following URL to see the ``getComment()`` method::"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:229
+msgid "You should see your new message."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:233
+msgid "Passing URI Segments to Your Methods"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:235
+msgid ""
+"If your URI contains more than two segments they will be passed to your "
+"method as parameters."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:238
+msgid "For example, let's say you have a URI like this::"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:242
+msgid ""
+"Your method will be passed URI segments 3 and 4 (``'sandals'`` and "
+"``'123'``):"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:246
+#: ../../source/incoming/auto_routing_improved.rst:287
+#: ../../source/incoming/auto_routing_improved.rst:315
+msgid ""
+"If there are more parameters in the URI than the method parameters, Auto "
+"Routing (Improved) does not execute the method, and it results in 404 Not"
+" Found."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:252
+#: ../../source/incoming/auto_routing_improved.rst:397
+msgid "Default Controller"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:254
+msgid ""
+"The **Default Controller** is a special controller that is used when a "
+"URI ends with a directory name or when a URI is not present, as will be "
+"the case when only your site root URL is requested."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:258
+msgid "By default, the Default Controller is ``Home``."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:260
+msgid ""
+"Define only the default method (``getIndex()`` for GET requests) in the "
+"default controller. If you define any other public method, that method "
+"will not be executed."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:264
+msgid ""
+"For more information, please refer to the :ref:`routing-auto-routing-"
+"improved-configuration-options`."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:271
+msgid "Default Method Fallback"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:275
+msgid ""
+"If the controller method corresponding to the URI segment of the method "
+"name does not exist, and if the default method is defined, the remaining "
+"URI segments are passed to the default method for execution."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:281
+#: ../../source/incoming/auto_routing_improved.rst:304
+msgid "Load the following URL::"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:285
+msgid "The method will be passed URI segments 2 and 3 (``'15'`` and ``'edit'``):"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:292
+msgid "Fallback to Default Controller"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:294
+msgid ""
+"If the controller corresponding to the URI segment of the controller name"
+" does not exist, and if the default controller (``Home`` by default) "
+"exists in the directory, the remaining URI segments are passed to the "
+"default controller's default method."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:299
+msgid ""
+"For example, when you have the following default controller ``Home`` in "
+"the **app/Controllers/News** directory:"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:308
+msgid ""
+"The ``News\\Home`` controller and the default ``getIndex()`` method will "
+"be found. So the default method will get the second URI segment "
+"(``'101'``):"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:311
+msgid ""
+"If there is ``App\\Controllers\\News`` controller, it takes precedence. "
+"The URI segments are searched sequentially and the first controller found"
+" is used."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:321
+msgid "Organizing Your Controllers into Sub-directories"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:323
+msgid ""
+"If you are building a large application you might want to hierarchically "
+"organize or structure your controllers into sub-directories. CodeIgniter "
+"permits you to do this."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:327
+msgid ""
+"Simply create sub-directories under the main **app/Controllers**, and "
+"place your controller classes within them."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:330
+msgid "Directory names MUST start with an uppercase letter and be CamelCase."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:332
+msgid ""
+"When using this feature the first segment of your URI must specify the "
+"directory. For example, let's say you have a controller located here::"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:337
+msgid "To call the above controller your URI will look something like this::"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:341
+msgid ""
+"You cannot have directories with the same name in **app/Controllers** and"
+" **public**. This is because if there is a directory, the web server will"
+" search for it and it will not be routed to CodeIgniter."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:346
+msgid ""
+"Each of your sub-directories may contain a default controller which will "
+"be called if the URL contains *only* the sub-directory. Simply put a "
+"controller in there that matches the name of your default controller as "
+"specified in your **app/Config/Routing.php** file."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:353
+msgid "Examples of Controller/Methods and URIs"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:355
+msgid ""
+"In the case of a **GET** request with the default configuration, the "
+"mapping between controller/methods and URIs is as follows:"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:359
+msgid "Controller/Method"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:359
+msgid "URI"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:359
+msgid "Description"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:361
+msgid "``Home::getIndex()``"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:361
+msgid "/"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:361
+msgid "The default controller and the default method."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:362
+msgid "``Blog::getIndex()``"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:362
+#: ../../source/incoming/auto_routing_improved.rst:366
+msgid "/blog"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:362
+#: ../../source/incoming/auto_routing_improved.rst:363
+msgid "The default method."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:363
+msgid "``UserProfile::getIndex()``"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:363
+msgid "/user-profile"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:364
+msgid "``Blog::getTags()``"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:364
+#: ../../source/incoming/auto_routing_improved.rst:369
+msgid "/blog/tags"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:365
+msgid "``Blog::getNews($id)``"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:365
+#: ../../source/incoming/auto_routing_improved.rst:372
+msgid "/blog/news/123"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:366
+msgid "``Blog\\Home::getIndex()``"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:366
+msgid ""
+"Sub-directory ``Blog`` and the default controller and the default method."
+" If there is ``Blog`` controller, it takes precedence."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:369
+msgid "``Blog\\Tags::getIndex()``"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:369
+msgid ""
+"Sub-directory ``Blog`` and the default method. If there is ``Blog`` "
+"controller, it takes precedence."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:372
+msgid "``Blog\\News::getIndex($id)``"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:372
+msgid ""
+"Sub-directory ``Blog`` and the default method fallback. If there is "
+"``Blog`` controller, it takes precedence."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:379
+msgid "Applying Filters"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:381
+msgid ""
+"Applying controller filters allows you to add processing before and after"
+" the controller method execution. This is especially handy during "
+"authentication or api logging."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:385
+msgid ""
+"If you use Auto Routing, set the filters to be applied in "
+"**app/Config/Filters.php**. See :doc:`Controller Filters <filters>` for "
+"more information on setting up filters."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:392
+msgid "Configuration Options"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:394
+msgid "These options are available in the **app/Config/Routing.php** file."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:400
+msgid "For Site Root URI"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:402
+msgid ""
+"When a user visits the root of your site (i.e., **http://example.com**) "
+"the controller to use is determined by the value set to the "
+"``$defaultController`` property, unless a route exists for it explicitly."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:406
+msgid ""
+"The default value for this is ``Home`` which matches the controller at "
+"**app/Controllers/Home.php**::"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:412
+msgid "For Directory URI"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:414
+msgid ""
+"The default controller is also used when no matching route has been "
+"found, and the URI would point to a directory in the controllers "
+"directory. For example, if the user visits **http://example.com/admin**, "
+"if a controller was found at **app/Controllers/Admin/Home.php**, it would"
+" be used."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:419
+msgid ""
+"You cannot access the default controller with the URI of the controller "
+"name. When the default controller is ``Home``, you can access "
+"**http://example.com/**, but if you access **http://example.com/home**, "
+"it will be not found."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:429
+msgid ""
+"This works similar to the default controller setting, but is used to "
+"determine the default method that is used when a controller is found that"
+" matches the URI, but no segment exists for the method. The default value"
+" is ``index``."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:433
+msgid ""
+"In this example, if the user were to visit **example.com/products**, and "
+"a ``Products`` controller existed, the ``Products::getListAll()`` method "
+"would be executed::"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:438
+msgid ""
+"You cannot access the controller with the URI of the default method name."
+" In the example above, you can access **example.com/products**, but if "
+"you access **example.com/products/listall**, it will be not found."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:445
+msgid "Translate URI To CamelCase"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:449
+msgid ""
+"Since v4.6.0, the ``$translateUriToCamelCase`` option is enabled by "
+"default."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:452
+msgid ""
+"Since v4.5.0, the ``$translateUriToCamelCase`` option has been "
+"implemented, which works well with the current CodeIgniter's coding "
+"standards."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:455
+msgid ""
+"This option enables you to automatically translate URI with dashes "
+"(``-``) to CamelCase in the controller and method URI segments."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:461
+msgid ""
+"When this option is enabled, the ``$translateURIDashes`` option is "
+"ignored."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:465
+msgid "Disable Translate URI To CamelCase"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:467
+msgid ""
+"The option to disable \"Translate URI To CamelCase\" exists only for "
+"backward compatibility. We don't recommend to disable it."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:470
+msgid ""
+"To disable it, you need to change the setting "
+"``$translateUriToCamelCase`` option to ``false`` in "
+"**app/Config/Routing.php**::"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:479
+msgid "Module Routing"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:483
+msgid ""
+"You can use auto routing even if you use :doc:`../general/modules` and "
+"place the controllers in a different namespace."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:486
+msgid ""
+"To route to a module, the ``$moduleRoutes`` property in "
+"**app/Config/Routing.php** must be set::"
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:493
+msgid ""
+"The key is the first URI segment for the module, and the value is the "
+"controller namespace. In the above configuration, "
+"**http://localhost:8080/blog/foo/bar** will be routed to "
+"``Acme\\Blog\\Controllers\\Foo::getBar()``."
+msgstr ""
+
+#: ../../source/incoming/auto_routing_improved.rst:497
+msgid ""
+"If you define ``$moduleRoutes``, the routing for the module takes "
+"precedence. In the above example, even if you have the "
+"``App\\Controllers\\Blog`` controller, **http://localhost:8080/blog** "
+"will be routed to the default controller "
+"``Acme\\Blog\\Controllers\\Home``."
+msgstr ""
+

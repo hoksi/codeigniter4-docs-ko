@@ -1,0 +1,563 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/dbmgmt/migration.rst:3
+msgid "Database Migrations"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:5
+msgid ""
+"Migrations are a convenient way for you to alter your database in a "
+"structured and organized manner. You could edit fragments of SQL by hand "
+"but you would then be responsible for telling other developers that they "
+"need to go and run them. You would also have to keep track of which "
+"changes need to be run against the production machines next time you "
+"deploy."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:11
+msgid ""
+"The database table **migrations** tracks which migrations have already "
+"been run, so all you have to do is make sure your migrations are in place"
+" and run the ``spark migrate`` command to bring the database up to the "
+"most recent state. You can also use ``spark migrate --all`` to include "
+"migrations from all namespaces."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:23
+msgid "Migration File Names"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:25
+msgid ""
+"A migration file name is made up of a timestamp prefix, an underscore "
+"(``_``), and a descriptive name (classname)."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:28
+msgid "2024-09-08-013653_AddBlogTable.php"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:30
+msgid ""
+"Each migration is numbered using the timestamp (**2024-09-08-013653**) "
+"when the migration was created, in **YYYY-MM-DD-HHIISS** format."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:33
+msgid ""
+"The descriptive name (**AddBlogTable**) for the migration is a classname "
+"in PHP. So you must name a valid classname."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:36
+msgid ""
+"The year, month, day, and time in a prefix can be separated from each "
+"other by dashes (``-``), underscores (``_``), or not at all. For example:"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:39
+msgid "2012-10-31-100538_AlterBlogTrackViews.php"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:40
+msgid "2012_10_31_100539_AlterBlogAddTranslations.php"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:41
+msgid "20121031100537_AddBlog.php"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:43
+msgid ""
+"Each Migration is run in numeric order forward or backwards depending on "
+"the method taken. This helps prevent numbering conflicts when working in "
+"a team environment."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:49
+msgid "Create a Migration"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:51
+msgid ""
+"This will be the first migration for a new site which has a blog. All "
+"migrations go in the **app/Database/Migrations/** directory and have "
+"names such as **2022-01-31-013057_AddBlog.php**."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:57
+msgid ""
+"The database connection and the database Forge class are both available "
+"to you through ``$this->db`` and ``$this->forge``, respectively."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:60
+msgid ""
+"Alternatively, you can use a command-line call to generate a skeleton "
+"migration file. See `make:migration`_ in :ref:`command-line-tools` for "
+"more details."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:63
+msgid ""
+"Since the migration class is a PHP class, the classname must be unique in"
+" every migration file."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:66
+msgid "Foreign Keys"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:68
+msgid ""
+"When your tables include Foreign Keys, migrations can often cause "
+"problems as you attempt to drop tables and columns. To temporarily bypass"
+" the foreign key checks while running migrations, use the "
+"``disableForeignKeyChecks()`` and ``enableForeignKeyChecks()`` methods on"
+" the database connection."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:75
+msgid "Database Groups"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:77
+msgid ""
+"A migration will only be run against a single database group. If you have"
+" multiple groups defined in **app/Config/Database.php**, then by default "
+"it will run against the ``$defaultGroup`` as specified in that same "
+"configuration file."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:81
+msgid ""
+"There may be times when you need different schemas for different database"
+" groups. Perhaps you have one database that is used for all general site "
+"information, while another database is used for mission critical data."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:85
+msgid ""
+"You can ensure that migrations are run only against the proper group by "
+"setting the ``$DBGroup`` property on your migration. This name must match"
+" the name of the database group exactly:"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:91
+msgid ""
+"The **migrations** table that tracks which migrations have already been "
+"run will be always created in the default database group."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:95
+msgid "Namespaces"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:97
+msgid ""
+"The migration library can automatically scan all namespaces you have "
+"defined within **app/Config/Autoload.php** or loaded from an external "
+"source like Composer, using the ``$psr4`` property for matching directory"
+" names. It will include all migrations it finds in "
+"**Database/Migrations**."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:102
+msgid ""
+"Each namespace has its own version sequence, this will help you upgrade "
+"and downgrade each module (namespace) without affecting other namespaces."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:104
+msgid ""
+"For example, assume that we have the following namespaces defined in our "
+"Autoload configuration file:"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:110
+msgid ""
+"This will look for any migrations located at both "
+"**APPPATH/Database/Migrations** and "
+"**ROOTPATH/MyCompany/Database/Migrations**. This makes it simple to "
+"include migrations in your re-usable, modular code suites."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:118
+msgid "Command-Line Tools"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:120
+msgid ""
+"CodeIgniter ships with several :doc:`commands </cli/spark_commands>` that"
+" are available from the command line to help you work with migrations. "
+"These tools make things easier for those of you that wish to use them. "
+"The tools primarily provide access to the same methods that are available"
+" within the MigrationRunner class."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:125
+msgid "migrate"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:127
+msgid "Migrates a database group with all available migrations:"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:133
+msgid "You can use ``migrate`` with the following options:"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:135 ../../source/dbmgmt/migration.rst:182
+msgid ""
+"``-g`` - to specify database group. If specified, only migrations for the"
+" specified database group will be run. If not specified, all migrations "
+"will be run."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:136 ../../source/dbmgmt/migration.rst:183
+msgid "``-n`` - to choose namespace, otherwise ``App`` namespace will be used."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:137
+msgid "``--all`` - to migrate all namespaces to the latest migration."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:139
+msgid ""
+"This example will migrate ``Acme\\Blog`` namespace with any new "
+"migrations on the test database group:"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:141
+msgid "For Unix:"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:147
+msgid "For Windows:"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:153
+msgid ""
+"When using the ``--all`` option, it will scan through all namespaces "
+"attempting to find any migrations that have not been run. These will all "
+"be collected and then sorted as a group by date created. This should help"
+" to minimize any potential conflicts between the main application and any"
+" modules."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:158
+msgid "migrate:rollback"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:160
+msgid "Rolls back all migrations to a blank slate, effectively migration 0:"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:166
+msgid "You can use ``migrate:rollback`` with the following options:"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:168
+msgid "``-b`` - to choose a batch: natural numbers specify the batch."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:169 ../../source/dbmgmt/migration.rst:185
+msgid ""
+"``-f`` - to force a bypass confirmation question, it is only asked in a "
+"production environment."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:172
+msgid "migrate:refresh"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:174
+msgid ""
+"Refreshes the database state by first rolling back all migrations, and "
+"then migrating all:"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:180
+msgid "You can use ``migrate:refresh`` with the following options:"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:184
+msgid "``--all`` - to refresh all namespaces."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:188
+msgid "migrate:status"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:190
+msgid ""
+"Displays a list of all migrations and the date and time they ran, or '--'"
+" if they have not been run:"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:206
+msgid "You can use ``migrate:status`` with the following options:"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:208
+msgid ""
+"``-g`` - to specify database group. If specified, only migrations for the"
+" specified database group will be checked. If not specified, all "
+"migrations will be checked."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:211
+msgid "make:migration"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:213
+msgid ""
+"Creates a skeleton migration file in **app/Database/Migrations**. It "
+"automatically prepends the current timestamp. The class name it creates "
+"is the Pascal case version of the filename."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:221
+msgid "You can use ``make:migration`` with the following options:"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:223
+msgid "``--namespace`` - Set root namespace. Default: ``APP_NAMESPACE``."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:224
+msgid "``--suffix``    - Append the component title to the class name."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:226
+msgid ""
+"The following options are also available to generate the migration file "
+"for database sessions:"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:229
+msgid "``--session``   - Generates the migration file for database sessions."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:230
+msgid ""
+"``--table``     - Table name to use for database sessions. Default: "
+"``ci_sessions``."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:231
+msgid ""
+"``--dbgroup``   - Database group to use for database sessions. Default: "
+"``default``."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:235
+msgid "Migration Preferences"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:237
+msgid ""
+"The following is a table of all the config options for migrations, "
+"available in **app/Config/Migrations.php**."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:240
+msgid "Preference"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:240
+msgid "Default"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:240
+msgid "Options"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:240
+msgid "Description"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:242
+msgid "**enabled**"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:242
+msgid "true"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:242 ../../source/dbmgmt/migration.rst:247
+msgid "true / false"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:242
+msgid "Enable or disable migrations."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:243
+msgid "**table**"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:243
+msgid "migrations"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:243
+msgid "None"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:243
+msgid ""
+"The table name for storing the schema version number. This table is "
+"always created in the default database group (``$defaultGroup``)."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:246
+msgid "**timestampFormat**"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:246
+msgid "Y-m-d-His\\_"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:246
+msgid "The format to use for timestamps when creating a migration."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:247
+msgid "**lock**"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:247
+msgid "false"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:247
+msgid ""
+"Enable distributed locking to prevent concurrent migrations in multi-"
+"process environments (e.g., Kubernetes)."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:253
+msgid "Class Reference"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:261
+msgid "An array of migration files"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:264
+msgid ""
+"An array of migration filenames are returned that are found in the "
+"``path`` property."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:268 ../../source/dbmgmt/migration.rst:278
+#: ../../source/dbmgmt/migration.rst:290
+msgid "database group name, if null default database group will be used."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:269 ../../source/dbmgmt/migration.rst:291
+msgid "``true`` on success, ``false`` on failure"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:272
+msgid ""
+"This locates migrations for a namespace (or all namespaces), determines "
+"which migrations have not yet been run, and runs them in order of their "
+"version (namespaces intermingled)."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:277
+msgid ""
+"previous batch to migrate down to; 1+ specifies the batch, 0 reverts all,"
+" negative refers to the relative batch (e.g., -3 means \"three batches "
+"back\")"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:279
+msgid "``true`` on success, ``false`` on failure or no migrations are found"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:282
+msgid ""
+"Regress can be used to roll back changes to a previous state, batch by "
+"batch."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:288
+msgid "path to a valid migration file."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:289
+msgid "namespace of the provided migration."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:294
+msgid ""
+"This forces a single file to migrate regardless of order or batches. "
+"Method ``up()`` or ``down()`` is detected based on whether it has already"
+" been migrated."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:296
+msgid ""
+"This method is recommended only for testing and could cause data "
+"consistency issues."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:300
+msgid "application namespace. ``null`` is all namespaces."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:301 ../../source/dbmgmt/migration.rst:313
+msgid "The current MigrationRunner instance"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:304
+msgid "Sets the namespace the library should look for migration files:"
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:308
+msgid "If you set ``null``, it looks for migration files in all namespaces."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:312
+msgid "database group name."
+msgstr ""
+
+#: ../../source/dbmgmt/migration.rst:316
+msgid "Sets the group the library should look for migration files:"
+msgstr ""
+

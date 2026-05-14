@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_pagination.rst:2
+msgid "Upgrade Pagination"
+msgstr ""
+
+#: ../../source/installation/upgrade_pagination.rst:9
+msgid "Documentations"
+msgstr ""
+
+#: ../../source/installation/upgrade_pagination.rst:11
+msgid ""
+"`Pagination Class Documentation CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/libraries/pagination.html>`_"
+msgstr ""
+
+#: ../../source/installation/upgrade_pagination.rst:12
+msgid ":doc:`Pagination Documentation CodeIgniter 4.x </libraries/pagination>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_pagination.rst:15
+msgid "What has been changed"
+msgstr ""
+
+#: ../../source/installation/upgrade_pagination.rst:16
+msgid ""
+"You have to change the views and also the controller in order to use the "
+"new pagination library."
+msgstr ""
+
+#: ../../source/installation/upgrade_pagination.rst:17
+msgid ""
+"If you want to customize the pagination links, you need to create View "
+"Templates."
+msgstr ""
+
+#: ../../source/installation/upgrade_pagination.rst:18
+msgid ""
+"In CI4 the pagination uses the actual page number only. You can't use the"
+" starting index (offset) for the items which is the default in CI3."
+msgstr ""
+
+#: ../../source/installation/upgrade_pagination.rst:19
+msgid ""
+"If you use :doc:`CodeIgnite\\\\Model </models/model>`, you can use the "
+"built-in method in the Model class."
+msgstr ""
+
+#: ../../source/installation/upgrade_pagination.rst:22
+msgid "Upgrade Guide"
+msgstr ""
+
+#: ../../source/installation/upgrade_pagination.rst:23
+msgid "Within the views change to following:"
+msgstr ""
+
+#: ../../source/installation/upgrade_pagination.rst:25
+msgid ""
+"``<?php echo $this->pagination->create_links(); ?>`` to ``<?= "
+"$pager->links() ?>``"
+msgstr ""
+
+#: ../../source/installation/upgrade_pagination.rst:27
+msgid "Within the controller you have to make the following changes:"
+msgstr ""
+
+#: ../../source/installation/upgrade_pagination.rst:29
+msgid ""
+"You can use the built-in ``paginate()`` method on every Model. Have a "
+"look at the code example below to see how you setup the pagination on a "
+"specific model."
+msgstr ""
+
+#: ../../source/installation/upgrade_pagination.rst:32
+msgid "Code Example"
+msgstr ""
+
+#: ../../source/installation/upgrade_pagination.rst:35
+msgid "CodeIgniter Version 3.x"
+msgstr ""
+
+#: ../../source/installation/upgrade_pagination.rst:40
+msgid "CodeIgniter Version 4.x"
+msgstr ""
+

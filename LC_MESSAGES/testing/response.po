@@ -1,0 +1,426 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/testing/response.rst:3
+msgid "Testing Responses"
+msgstr ""
+
+#: ../../source/testing/response.rst:5
+msgid ""
+"The ``TestResponse`` class provides a number of helpful functions for "
+"parsing and testing responses from your test cases. Usually a "
+"``TestResponse`` will be provided for you as a result of your "
+":doc:`Controller Tests <controllers>` or :doc:`HTTP Feature Tests "
+"<feature>`, but you can always create your own directly using any "
+"``ResponseInterface``:"
+msgstr ""
+
+#: ../../source/testing/response.rst:18
+msgid "Testing the Response"
+msgstr ""
+
+#: ../../source/testing/response.rst:20
+msgid ""
+"Whether you have received a ``TestResponse`` as a result of your tests or"
+" created one yourself, there are a number of new assertions that you can "
+"use in your tests."
+msgstr ""
+
+#: ../../source/testing/response.rst:24
+msgid "Accessing Request/Response"
+msgstr ""
+
+#: ../../source/testing/response.rst:27
+msgid "request()"
+msgstr ""
+
+#: ../../source/testing/response.rst:29
+msgid "You can access directly the Request object, if it was set during testing:"
+msgstr ""
+
+#: ../../source/testing/response.rst:35
+msgid "response()"
+msgstr ""
+
+#: ../../source/testing/response.rst:37
+msgid "This allows you direct access to the response object:"
+msgstr ""
+
+#: ../../source/testing/response.rst:43
+msgid "Checking Response Status"
+msgstr ""
+
+#: ../../source/testing/response.rst:46
+msgid "isOK()"
+msgstr ""
+
+#: ../../source/testing/response.rst:48
+msgid ""
+"Returns a boolean true/false based on whether the response is perceived "
+"to be \"ok\". This is primarily determined by a response status code in "
+"the 200 or 300's. An empty body is not considered valid, unless in "
+"redirects."
+msgstr ""
+
+#: ../../source/testing/response.rst:55
+msgid "assertOK()"
+msgstr ""
+
+#: ../../source/testing/response.rst:57
+msgid ""
+"This assertion simply uses the ``isOK()`` method to test a response. "
+"``assertNotOK()`` is the inverse of this assertion."
+msgstr ""
+
+#: ../../source/testing/response.rst:63
+msgid "isRedirect()"
+msgstr ""
+
+#: ../../source/testing/response.rst:65
+msgid ""
+"Returns a boolean true/false based on whether the response is a "
+"redirected response."
+msgstr ""
+
+#: ../../source/testing/response.rst:71
+msgid "assertRedirect()"
+msgstr ""
+
+#: ../../source/testing/response.rst:73
+msgid ""
+"Asserts that the Response is an instance of RedirectResponse. "
+"``assertNotRedirect()`` is the inverse of this assertion."
+msgstr ""
+
+#: ../../source/testing/response.rst:79
+msgid "assertRedirectTo()"
+msgstr ""
+
+#: ../../source/testing/response.rst:81
+msgid ""
+"Asserts that the Response is an instance of RedirectResponse and the "
+"destination matches the uri given."
+msgstr ""
+
+#: ../../source/testing/response.rst:88
+msgid "getRedirectUrl()"
+msgstr ""
+
+#: ../../source/testing/response.rst:90
+msgid "Returns the URL set for a RedirectResponse, or null for failure."
+msgstr ""
+
+#: ../../source/testing/response.rst:96
+msgid "assertStatus(int $code)"
+msgstr ""
+
+#: ../../source/testing/response.rst:98
+msgid "Asserts that the HTTP status code returned matches $code."
+msgstr ""
+
+#: ../../source/testing/response.rst:106
+msgid "Session Assertions"
+msgstr ""
+
+#: ../../source/testing/response.rst:109
+msgid "assertSessionHas(string $key, $value = null)"
+msgstr ""
+
+#: ../../source/testing/response.rst:111
+msgid ""
+"Asserts that a value exists in the resulting session. If $value is "
+"passed, will also assert that the variable's value matches what was "
+"specified."
+msgstr ""
+
+#: ../../source/testing/response.rst:118
+msgid "assertSessionMissing(string $key)"
+msgstr ""
+
+#: ../../source/testing/response.rst:120
+msgid "Asserts that the resulting session does not include the specified $key."
+msgstr ""
+
+#: ../../source/testing/response.rst:126
+msgid "Header Assertions"
+msgstr ""
+
+#: ../../source/testing/response.rst:129
+msgid "assertHeader(string $key, $value = null)"
+msgstr ""
+
+#: ../../source/testing/response.rst:131
+msgid ""
+"Asserts that a header named ``$key`` exists in the response. If "
+"``$value`` is not empty, will also assert that the values match."
+msgstr ""
+
+#: ../../source/testing/response.rst:138
+msgid "assertHeaderMissing(string $key)"
+msgstr ""
+
+#: ../../source/testing/response.rst:140
+msgid "Asserts that a header name ``$key`` does not exist in the response."
+msgstr ""
+
+#: ../../source/testing/response.rst:146
+msgid "Cookie Assertions"
+msgstr ""
+
+#: ../../source/testing/response.rst:149
+msgid "assertCookie(string $key, $value = null, string $prefix = '')"
+msgstr ""
+
+#: ../../source/testing/response.rst:151
+msgid ""
+"Asserts that a cookie named ``$key`` exists in the response. If "
+"``$value`` is not empty, will also assert that the values match. You can "
+"set the cookie prefix, if needed, by passing it in as the third "
+"parameter."
+msgstr ""
+
+#: ../../source/testing/response.rst:158
+msgid "assertCookieMissing(string $key)"
+msgstr ""
+
+#: ../../source/testing/response.rst:160
+msgid "Asserts that a cookie named ``$key`` does not exist in the response."
+msgstr ""
+
+#: ../../source/testing/response.rst:166
+msgid "assertCookieExpired(string $key, string $prefix = '')"
+msgstr ""
+
+#: ../../source/testing/response.rst:168
+msgid ""
+"Asserts that a cookie named ``$key`` exists, but has expired. You can set"
+" the cookie prefix, if needed, by passing it in as the second parameter."
+msgstr ""
+
+#: ../../source/testing/response.rst:175
+msgid "DOM Helpers"
+msgstr ""
+
+#: ../../source/testing/response.rst:177
+msgid ""
+"The response you get back contains a number of helper methods to inspect "
+"the HTML output within the response. These are useful for using within "
+"assertions in your tests."
+msgstr ""
+
+#: ../../source/testing/response.rst:181
+msgid "see()"
+msgstr ""
+
+#: ../../source/testing/response.rst:183
+msgid ""
+"Returns a boolean true/false based on whether the text on the page exists"
+" either by itself, or more specifically within a tag, as specified by "
+"type, class, or id:"
+msgstr ""
+
+#: ../../source/testing/response.rst:190
+msgid "The ``dontSee()`` method is the exact opposite:"
+msgstr ""
+
+#: ../../source/testing/response.rst:196
+msgid "seeElement()"
+msgstr ""
+
+#: ../../source/testing/response.rst:198
+msgid ""
+"The ``seeElement()`` and ``dontSeeElement()`` are very similar to the "
+"previous methods, but do not look at the values of the elements. Instead,"
+" they simply check that the elements exist on the page:"
+msgstr ""
+
+#: ../../source/testing/response.rst:205
+msgid "seeLink()"
+msgstr ""
+
+#: ../../source/testing/response.rst:207
+msgid ""
+"You can use ``seeLink()`` to ensure that a link appears on the page with "
+"the specified text:"
+msgstr ""
+
+#: ../../source/testing/response.rst:213
+msgid "seeInField()"
+msgstr ""
+
+#: ../../source/testing/response.rst:215
+msgid ""
+"The ``seeInField()`` method checks for any input tags exist with the name"
+" and value:"
+msgstr ""
+
+#: ../../source/testing/response.rst:221
+msgid "seeCheckboxIsChecked()"
+msgstr ""
+
+#: ../../source/testing/response.rst:223
+msgid ""
+"Finally, you can check if a checkbox exists and is checked with the "
+"``seeCheckboxIsChecked()`` method:"
+msgstr ""
+
+#: ../../source/testing/response.rst:229
+msgid "seeXPath()"
+msgstr ""
+
+#: ../../source/testing/response.rst:233
+msgid ""
+"You can use ``seeXPath()`` to take advantage of the full power that xpath"
+" gives you. This method is aimed at more advanced users who want to write"
+" a more complex expressions using the DOMXPath object directly:"
+msgstr ""
+
+#: ../../source/testing/response.rst:240
+msgid "The ``dontSeeXPath()`` method is the exact opposite:"
+msgstr ""
+
+#: ../../source/testing/response.rst:246
+msgid "DOM Assertions"
+msgstr ""
+
+#: ../../source/testing/response.rst:248
+msgid ""
+"You can perform tests to see if specific elements/text/etc exist with the"
+" body of the response with the following assertions."
+msgstr ""
+
+#: ../../source/testing/response.rst:252
+msgid "assertSee(string $search = null, string $element = null)"
+msgstr ""
+
+#: ../../source/testing/response.rst:254
+msgid ""
+"Asserts that text/HTML is on the page, either by itself or - more "
+"specifically - within a tag, as specified by type, class, or id:"
+msgstr ""
+
+#: ../../source/testing/response.rst:261
+msgid "assertDontSee(string $search = null, string $element = null)"
+msgstr ""
+
+#: ../../source/testing/response.rst:263
+msgid "Asserts the exact opposite of the ``assertSee()`` method:"
+msgstr ""
+
+#: ../../source/testing/response.rst:269
+msgid "assertSeeElement(string $search)"
+msgstr ""
+
+#: ../../source/testing/response.rst:271
+msgid ""
+"Similar to ``assertSee()``, however this only checks for an existing "
+"element. It does not check for specific text:"
+msgstr ""
+
+#: ../../source/testing/response.rst:277
+msgid "assertDontSeeElement(string $search)"
+msgstr ""
+
+#: ../../source/testing/response.rst:279
+msgid ""
+"Similar to ``assertSee()``, however this only checks for an existing "
+"element that is missing. It does not check for specific text:"
+msgstr ""
+
+#: ../../source/testing/response.rst:286
+msgid "assertSeeLink(string $text, string $details = null)"
+msgstr ""
+
+#: ../../source/testing/response.rst:288
+msgid ""
+"Asserts that an anchor tag is found with matching ``$text`` as the body "
+"of the tag:"
+msgstr ""
+
+#: ../../source/testing/response.rst:294
+msgid "assertSeeInField(string $field, string $value = null)"
+msgstr ""
+
+#: ../../source/testing/response.rst:296
+msgid "Asserts that an input tag exists with the name and value:"
+msgstr ""
+
+#: ../../source/testing/response.rst:302
+msgid "Working with JSON"
+msgstr ""
+
+#: ../../source/testing/response.rst:304
+msgid ""
+"Responses will frequently contain JSON responses, especially when working"
+" with API methods. The following methods can help to test the responses."
+msgstr ""
+
+#: ../../source/testing/response.rst:308
+msgid "getJSON()"
+msgstr ""
+
+#: ../../source/testing/response.rst:310
+msgid "This method will return the body of the response as a JSON string:"
+msgstr ""
+
+#: ../../source/testing/response.rst:315
+msgid ""
+"You can use this method to determine if ``$response`` actually holds JSON"
+" content:"
+msgstr ""
+
+#: ../../source/testing/response.rst:320
+msgid "Be aware that the JSON string will be pretty-printed in the result."
+msgstr ""
+
+#: ../../source/testing/response.rst:323
+msgid "assertJSONFragment(array $fragment)"
+msgstr ""
+
+#: ../../source/testing/response.rst:325
+msgid ""
+"Asserts that ``$fragment`` is found within the JSON response. It does not"
+" need to match the entire JSON value."
+msgstr ""
+
+#: ../../source/testing/response.rst:331
+msgid "assertJSONExact($test)"
+msgstr ""
+
+#: ../../source/testing/response.rst:333
+msgid ""
+"Similar to ``assertJSONFragment()``, but checks the entire JSON response "
+"to ensure exact matches."
+msgstr ""
+
+#: ../../source/testing/response.rst:336
+msgid "Working with XML"
+msgstr ""
+
+#: ../../source/testing/response.rst:339
+msgid "getXML()"
+msgstr ""
+
+#: ../../source/testing/response.rst:341
+msgid "If your application returns XML, you can retrieve it through this method."
+msgstr ""
+

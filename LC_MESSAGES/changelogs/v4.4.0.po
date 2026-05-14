@@ -1,0 +1,862 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.4.0.rst:2
+msgid "Version 4.4.0"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:4
+msgid "Release Date: August 25, 2023"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:6
+msgid "**4.4.0 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:13
+msgid "Highlights"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:15
+msgid ""
+"The Debug Toolbar now has a new “Hot Reload” feature (*contributed by* "
+"`lonnieezell <https://github.com/lonnieezell>`_). See `Testing`_."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:20
+msgid "BREAKING"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:23
+msgid "Behavior Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:26
+msgid "URI::setSegment() and Non-Existent Segment"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:28
+msgid ""
+"An exception is now thrown when you set the last ``+2`` segment. In "
+"previous versions, an exception was thrown only if the last segment "
+"``+3`` or more was specified. See :ref:`upgrade-440-uri-setsegment`."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:32
+msgid ""
+"The next segment (``+1``) of the current last segment can be set as "
+"before."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:37
+msgid "Factories"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:40
+msgid "Passing Classname with Namespace"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:42
+msgid ""
+"Now ``preferApp`` works only when you request :ref:`a classname without a"
+" namespace <factories-passing-classname-without-namespace>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:45
+msgid ""
+"For example, when you call "
+"``model(\\Myth\\Auth\\Models\\UserModel::class)`` or "
+"``model('Myth\\Auth\\Models\\UserModel')``:"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:48
+msgid "before:"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:50
+msgid ""
+"returns ``App\\Models\\UserModel`` if exists and ``preferApp`` is true "
+"(default)"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:51
+msgid ""
+"returns ``Myth\\Auth\\Models\\UserModel`` if exists and ``preferApp`` is "
+"false"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:53
+msgid "after:"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:55
+msgid ""
+"returns ``Myth\\Auth\\Models\\UserModel`` even if ``preferApp`` is true "
+"(default)"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:56
+msgid ""
+"returns ``App\\Models\\UserModel`` if you define "
+"``Factories::define('models', 'Myth\\Auth\\Models\\UserModel', "
+"'App\\Models\\UserModel')`` before calling the ``model()``"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:58
+msgid ""
+"If you had passed a non-existent classname by mistake, the previous "
+"version would have returned a class instance in the ``App`` or ``Config``"
+" namespace because of the ``preferApp`` feature."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:62
+msgid ""
+"For example, in a controller (``namespace App\\Controllers``), if you "
+"called ``config(Config\\App::class)`` by mistake (note the class is "
+"missing the leading ``\\``), meaning you actually passed "
+"``App\\Controllers\\Config\\App``. But that class does not exist, so now "
+"Factories will return ``null``."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:68
+msgid "Property Name"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:70
+msgid "The property ``Factories::$basenames`` has been renamed to ``$aliases``."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:73
+msgid "Autoloader"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:75
+msgid ""
+"Previously, CodeIgniter's autoloader allowed loading class names ending "
+"with the `.php` extension. This means instantiating objects like `new "
+"Foo.php()` was possible and would instantiate as `new Foo()`. Since "
+"`Foo.php` is an invalid class name, this behavior of the autoloader is "
+"changed. Now, instantiating such classes would fail."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:81
+msgid "CodeIgniter and exit()"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:83
+msgid ""
+"The ``CodeIgniter::run()`` method no longer calls ``exit(EXIT_SUCCESS)``."
+" The exit call is moved to **public/index.php**."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:89
+msgid "Site URI Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:91
+msgid ""
+"A new ``SiteURI`` class that extends the ``URI`` class and represents the"
+" site URI has been added, and now it is used in many places that need the"
+" current URI."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:94
+msgid ""
+"``$this->request->getUri()`` in controllers returns the ``SiteURI`` "
+"instance. Also, :php:func:`site_url()`, :php:func:`base_url()`, and "
+":php:func:`current_url()` use the SiteURI internally."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:99
+msgid "getPath()"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:101
+msgid ""
+"The ``getPath()`` method now always returns the full URI path with "
+"leading ``/``. Therefore, when your baseURL has sub-directories and you "
+"want to get the relative path to baseURL, you must use the new "
+"``getRoutePath()`` method instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:105
+msgid "For example::"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:113
+msgid "Site URI Values"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:115
+msgid ""
+"The SiteURI class normalizes site URIs more strictly than before, and "
+"some bugs have been fixed."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:118
+msgid ""
+"As a result, the framework may return site URIs or the URI paths slightly"
+" differently than in previous versions. For example, ``/`` will be added "
+"after ``index.php``::"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:129
+msgid "Interface Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:131
+msgid ""
+"As long as you have not extended the relevant CodeIgniter core classes or"
+" implemented these interfaces, all these changes are backward compatible "
+"and require no intervention."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:135
+msgid ""
+"**Validation:** Added the ``getValidated()`` method in "
+"``ValidationInterface``."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:140
+msgid "Method Signature Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:145
+msgid "Parameter Type Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:147
+msgid "**Services:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:148
+msgid ""
+"The first parameter of ``Services::security()`` has been changed from "
+"``Config\\App`` to ``Config\\Security``."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:150
+msgid ""
+"The first parameter of ``Services::session()`` has been changed from "
+"``Config\\App`` to ``Config\\Session``."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:152
+msgid "**Session:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:153
+msgid ""
+"The second parameter of ``Session::__construct()`` has been changed from "
+"``Config\\App`` to ``Config\\Session``."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:155
+msgid ""
+"The first parameter of ``__construct()`` in the database's "
+"``BaseHandler``, ``DatabaseHandler``, ``FileHandler``, "
+"``MemcachedHandler``, and ``RedisHandler`` has been changed from "
+"``Config\\App`` to ``Config\\Session``."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:158
+msgid ""
+"**Security:** The first parameter of ``Security::__construct()`` has been"
+" changed from ``Config\\App`` to ``Config\\Security``."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:160
+msgid ""
+"**Validation:** The method signature of ``Validation::check()`` has been "
+"changed. The ``string`` typehint on the ``$rule`` parameter was removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:162
+msgid ""
+"**CodeIgniter:** The method signature of ``CodeIgniter::setRequest()`` "
+"has been changed. The ``Request`` typehint on the ``$request`` parameter "
+"was removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:164
+msgid "**FeatureTestCase:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:165
+msgid ""
+"The method signature of ``FeatureTestCase::populateGlobals()`` has been "
+"changed. The ``Request`` typehint on the ``$request`` parameter was "
+"removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:167
+msgid ""
+"The method signature of ``FeatureTestCase::setRequestBody()`` has been "
+"changed. The ``Request`` typehint on the ``$request`` parameter and the "
+"return type ``Request`` were removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:172
+msgid "Added Parameters"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:174
+msgid ""
+"**Routing:** The third parameter ``Routing $routing`` has been added to "
+"``RouteCollection::__construct()``."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:178
+msgid "Removed Parameters"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:180
+msgid ""
+"**Services:** The second parameter ``$request`` and the third parameter "
+"``$response`` in ``Services::exceptions()`` have been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:182
+msgid ""
+"**Error Handling:** The second parameter ``$request`` and the third "
+"parameter ``$response`` in "
+"``CodeIgniter\\Debug\\Exceptions::__construct()`` have been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:186
+msgid "Return Type Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:188
+msgid ""
+"**Autoloader:** The return signatures of the `loadClass` and "
+"`loadClassmap` methods are made `void` to be compatible as callbacks in "
+"`spl_autoload_register` and `spl_autoload_unregister` functions."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:192
+msgid "Enhancements"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:195
+msgid "Commands"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:197
+msgid "**spark routes:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:198
+msgid ""
+"Now you can specify the host in the request URL. See :ref:`routing-spark-"
+"routes-specify-host`."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:200
+msgid "It shows view files of :ref:`view-routes` in *Handler* like the following:"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:203
+msgid "Method"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:203
+msgid "Route"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:203
+msgid "Name"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:203
+msgid "Handler"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:203
+msgid "Before Filters"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:203
+msgid "After Filters"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:205
+msgid "GET"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:205
+msgid "about"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:205
+msgid "»"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:205
+msgid "(View) pages/about"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:205
+msgid "toolbar"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:210
+msgid "Testing"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:212
+msgid "**DebugBar:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:213
+msgid ""
+"The Debug Toolbar now has a new \"Hot Reload\" feature that can be used "
+"to automatically reload the page when a file is changed. See :ref:`debug-"
+"toolbar-hot-reload`."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:216
+msgid ""
+"Now :ref:`view-routes` are displayed in *DEFINED ROUTES* on the *Routes* "
+"tab."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:219
+msgid "Database"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:221
+msgid ""
+"**MySQLi:** Added the ``numberNative`` attribute to the Database Config "
+"to keep the variable type obtained after SQL Query consistent with the "
+"type set in the database. See :ref:`Database Configuration <database-"
+"config-explanation-of-values>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:223
+msgid ""
+"**SQLSRV:** Field Metadata now includes ``nullable``. See :ref:`db-"
+"metadata-getfielddata`."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:226
+msgid "Model"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:228
+msgid ""
+"Added special getter/setter to Entity to avoid method name conflicts. See"
+" :ref:`entities-special-getter-setter`."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:232
+msgid "Libraries"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:234
+msgid ""
+"**Validation:** Added ``Validation::getValidated()`` method that gets the"
+" actual validated data. See :ref:`validation-getting-validated-data` for "
+"details."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:236
+msgid ""
+"**Images:** The option ``$quality`` can now be used to compress WebP "
+"images."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:237
+msgid ""
+"**Uploaded Files:** Added ``UploadedFiles::getClientPath()`` method that "
+"returns the value of the `full_path` index of the file if it was uploaded"
+" via directory upload."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:239
+msgid ""
+"**CURLRequest:** Added a request option ``proxy``. See :ref:`CURLRequest "
+"Class <curlrequest-request-options-proxy>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:241
+msgid ""
+"**URI:** A new ``SiteURI`` class that extends ``URI`` and represents the "
+"site URI has been added."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:245
+msgid "Helpers and Functions"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:247
+msgid ""
+"**Array:** Added :php:func:`array_group_by()` helper function to group "
+"data values together. Supports dot-notation syntax."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:249
+msgid ""
+"**Common:** :php:func:`force_https()` no longer terminates the "
+"application, but throws a ``RedirectException``."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:252
+msgid "Others"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:254
+msgid ""
+"**DownloadResponse:** Added ``DownloadResponse::inline()`` method that "
+"sets the ``Content-Disposition: inline`` header to display the file in "
+"the browser. See :ref:`open-file-in-browser` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:257
+msgid ""
+"**View:** Added optional 2nd parameter ``$saveData`` on "
+"``renderSection()`` to prevent from auto cleans the data after "
+"displaying. See :ref:`View Layouts <creating-a-layout>` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:258
+msgid "**Auto Routing (Improved)**:"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:259
+msgid ""
+"Now you can route to Modules. See :ref:`auto-routing-improved-module-"
+"routing` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:261
+msgid ""
+"If a controller is found that corresponds to a URI segment and that "
+"controller does not have a method defined for the URI segment, the "
+"default method will now be executed. This addition allows for more "
+"flexible handling of URIs in auto routing. See :ref:`auto-routing-"
+"improved-default-method-fallback` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:265
+msgid ""
+"**Filters:** Now you can use Filter Arguments with :ref:`$filters "
+"property <filters-filters-filter-arguments>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:266
+msgid ""
+"**Request:** Added ``IncomingRequest::setValidLocales()`` method to set "
+"valid locales."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:267
+msgid ""
+"**Table:** Added ``Table::setSyncRowsWithHeading()`` method to "
+"synchronize row columns with headings. See :ref:`table-sync-rows-with-"
+"headings` for details."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:268
+msgid "**Error Handling:** Now you can use :ref:`custom-exception-handlers`."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:269
+msgid "**RedirectException:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:270
+msgid ""
+"It can also take an object that implements ``ResponseInterface`` as its "
+"first argument."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:271
+msgid "It implements ``ResponsableInterface``."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:272
+msgid "**Factories:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:273
+msgid ""
+"You can now define the classname that will actually be loaded. See :ref"
+":`factories-defining-classname-to-be-loaded`."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:275
+msgid ""
+"Config Caching implemented. See :ref:`factories-config-caching` for "
+"details."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:278
+msgid "Message Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:280
+msgid "Added ``Core.invalidDirectory`` error message."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:281
+msgid "Improved ``HTTP.invalidHTTPProtocol`` error message."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:284
+msgid "Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:286
+msgid ""
+"**Images:** The default quality for WebP in ``GDHandler`` has been "
+"changed from 80 to 90."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:287
+msgid "**Config:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:288
+msgid "The deprecated Cookie items in **app/Config/App.php** has been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:289
+msgid "The deprecated Session items in **app/Config/App.php** has been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:290
+msgid "The deprecated CSRF items in **app/Config/App.php** has been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:291
+msgid ""
+"Routing settings have been moved to **app/Config/Routing.php** config "
+"file. See :ref:`Upgrading Guide <upgrade-440-config-routing>`."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:293
+msgid ""
+"**DownloadResponse:** When generating response headers, does not replace "
+"the ``Content-Disposition`` header if it was previously specified."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:294
+msgid "**Autoloader:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:295
+msgid ""
+"Before v4.4.0, CodeIgniter autoloader did not allow special characters "
+"that are illegal in filenames on certain operating systems. The symbols "
+"that can be used are ``/``, ``_``, ``.``, ``:``, ``\\`` and space. So if "
+"you installed CodeIgniter under the folder that contains the special "
+"characters like ``(``, ``)``, etc., CodeIgniter didn't work. Since "
+"v4.4.0, this restriction has been removed."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:301
+msgid ""
+"The methods ``Autoloader::loadClass()`` and "
+"``Autoloader::loadClassmap()`` are now both marked ``@internal``."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:303
+msgid ""
+"**RouteCollection:** The array structure of the protected property "
+"``$routes`` has been modified for performance."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:305
+msgid ""
+"**HSTS:** Now :php:func:`force_https()` or "
+"``Config\\App::$forceGlobalSecureRequests = true`` sets the HTTP status "
+"code 307, which allows the HTTP request method to be preserved after the "
+"redirect. In previous versions, it was 302."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:311
+msgid "Deprecations"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:313
+msgid ""
+"**Entity:** ``Entity::setAttributes()`` is deprecated. Use "
+"``Entity::injectRawData()`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:314
+msgid ""
+"**Error Handling:** Many methods and properties in "
+"``CodeIgniter\\Debug\\Exceptions`` are deprecated. Because these methods "
+"have been moved to ``BaseExceptionHandler`` or ``ExceptionHandler``."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:317
+msgid "**Autoloader:** ``Autoloader::sanitizeFilename()`` is deprecated."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:318
+msgid "**CodeIgniter:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:319
+msgid "``CodeIgniter::$returnResponse`` property is deprecated. No longer used."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:320
+msgid ""
+"``CodeIgniter::$cacheTTL`` property is deprecated. No longer used. Use "
+"``ResponseCache`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:321
+msgid ""
+"``CodeIgniter::cache()`` method is deprecated. No longer used. Use "
+"``ResponseCache`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:322
+msgid ""
+"``CodeIgniter::cachePage()`` method is deprecated. No longer used. Use "
+"``ResponseCache`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:323
+msgid ""
+"``CodeIgniter::generateCacheName()`` method is deprecated. No longer "
+"used. Use ``ResponseCache`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:324
+msgid "``CodeIgniter::callExit()`` method is deprecated. No longer used."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:325
+msgid ""
+"**RedirectException:** "
+"``\\CodeIgniter\\Router\\Exceptions\\RedirectException`` is deprecated. "
+"Use ``\\CodeIgniter\\HTTP\\Exceptions\\RedirectException`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:326
+msgid ""
+"**Session:** The property ``$sessionDriverName``, ``$sessionCookieName``,"
+" ``$sessionExpiration``, ``$sessionSavePath``, ``$sessionMatchIP``, "
+"``$sessionTimeToUpdate``, and ``$sessionRegenerateDestroy`` in "
+"``Session`` are deprecated, and no longer used. Use ``$config`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:330
+msgid ""
+"**Security:** The property ``$csrfProtection``, ``$tokenRandomize``, "
+"``$tokenName``, ``$headerName``, ``$expires``, ``$regenerate``, and "
+"``$redirect`` in ``Security`` are deprecated, and no longer used. Use "
+"``$config`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:334
+msgid "**URI:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:335
+msgid "``URI::$uriString`` is deprecated."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:336
+msgid "``URI::$baseURL`` is deprecated. Use ``SiteURI`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:337
+msgid "``URI::setSilent()`` is deprecated."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:338
+msgid "``URI::setScheme()`` is deprecated. Use ``withScheme()`` instead."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:339
+msgid "``URI::setURI()`` is deprecated."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:340
+msgid "**IncomingRequest:**"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:341
+msgid "``IncomingRequest::detectURI()`` is deprecated and no longer used."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:342
+msgid ""
+"``IncomingRequest::detectPath()`` is deprecated, and no longer used. It "
+"moved to ``SiteURIFactory``."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:344
+msgid ""
+"``IncomingRequest::parseRequestURI()`` is deprecated, and no longer used."
+" It moved to ``SiteURIFactory``."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:346
+msgid ""
+"``IncomingRequest::parseQueryString()`` is deprecated, and no longer "
+"used. It moved to ``SiteURIFactory``."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:348
+msgid "``IncomingRequest::setPath()`` is deprecated."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:351
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:353
+msgid ""
+"**Auto Routing (Improved)**: In previous versions, when "
+"``$translateURIDashes`` is true, two URIs correspond to a single "
+"controller method, one URI for dashes (e.g., **foo-bar**) and one URI for"
+" underscores (e.g., **foo_bar**). This bug has been fixed. Now the URI "
+"for underscores (**foo_bar**) is not accessible."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:357
+msgid "**Output Buffering:** Bug fix with output buffering."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:358
+msgid ""
+"**ControllerTestTrait:** ``ControllerTestTrait::withUri()`` creates a new"
+" Request instance with the URI. Because the Request instance should have "
+"the URI instance. Also if the hostname in the URI string is invalid with "
+"``Config\\App``, the valid hostname will be set."
+msgstr ""
+
+#: ../../source/changelogs/v4.4.0.rst:363
+msgid ""
+"See the repo's `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

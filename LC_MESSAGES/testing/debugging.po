@@ -1,0 +1,453 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/testing/debugging.rst:3
+msgid "Debugging Your Application"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:11
+msgid "Checking Logs"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:16
+msgid "CodeIgniter Error Logs"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:18
+msgid ""
+"CodeIgniter logs error messages, according to the settings in "
+"**app/Config/Logger.php**."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:20
+msgid ""
+"The default configuration has daily log files stored in "
+"**writable/logs**. It would be a good idea to check them if things aren't"
+" working the way you expect!"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:23
+msgid ""
+"You can adjust the error threshold to see more or fewer messages. See "
+":ref:`Logging <logging-configuration>` for details."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:27
+msgid "Logging All SQL Queries"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:29
+msgid ""
+"All SQL queries issued by CodeIgniter can be logged. See :ref:`Database "
+"Events <database-events-dbquery>` for details."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:34
+msgid "Replacing var_dump()"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:36
+msgid ""
+"While using Xdebug and a good IDE can be indispensable to debug your "
+"application, sometimes a quick ``var_dump()`` is all you need. "
+"CodeIgniter makes that even better by bundling in the excellent `Kint "
+"<https://kint-php.github.io/kint/>`_ debugging tool for PHP."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:41
+msgid ""
+"This goes way beyond your usual tool, providing many alternate pieces of "
+"data, like formatting timestamps into recognizable dates, showing you "
+"hexcodes as colors, display array data like a table for easy reading, and"
+" much, much more."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:46
+msgid "Enabling Kint"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:48
+msgid ""
+"By default, Kint is enabled in **development** and **testing** "
+":doc:`environments </general/environments>` only. It will be enabled "
+"whenever the constant ``CI_DEBUG`` is defined and its value is truthy. "
+"This is defined in the boot files (e.g. "
+"**app/Config/Boot/development.php**)."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:53
+msgid "Using Kint"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:56
+msgid "d()"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:58
+msgid ""
+"The ``d()`` method dumps all of the data it knows about the contents "
+"passed as the only parameter to the screen, and allows the script to "
+"continue executing:"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:65
+msgid "dd()"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:67
+msgid ""
+"This method is identical to ``d()``, except that it also ``die()`` and no"
+" further code is executed this request."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:70
+msgid "trace()"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:72
+msgid ""
+"This provides a backtrace to the current execution point, with Kint's own"
+" unique spin:"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:77
+msgid ""
+"For more information, see `Kint's page <https://kint-"
+"php.github.io/kint//>`_."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:83
+msgid "The Debug Toolbar"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:85
+msgid ""
+"The Debug Toolbar provides at-a-glance information about the current page"
+" request, including benchmark results, queries you have run, request and "
+"response data, and more. This can all prove very useful during "
+"development to help you debug and optimize."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:89
+msgid ""
+"The Debug Toolbar is still under construction with several planned "
+"features not yet implemented."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:92
+msgid "Enabling the Toolbar"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:94
+msgid ""
+"The toolbar is enabled by default in any :doc:`environment "
+"</general/environments>` *except* **production**. It will be shown "
+"whenever the constant ``CI_DEBUG`` is defined and its value is truthy. "
+"This is defined in the boot files (e.g. "
+"**app/Config/Boot/development.php**) and can be modified there to "
+"determine what environment to show."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:98
+msgid ""
+"The Debug Toolbar is not displayed when your ``baseURL`` setting (in "
+"**app/Config/App.php** or ``app.baseURL`` in **.env**) does not match "
+"your actual URL."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:100
+msgid ""
+"The toolbar itself is displayed as an :doc:`After Filter "
+"</incoming/filters>`. You can stop it from ever running by removing "
+"``'toolbar'`` from the ``$required`` (or ``$globals``) property of "
+"**app/Config/Filters.php**."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:103
+msgid "Prior to v4.5.0, the toolbar was set to ``$globals`` by default."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:106
+msgid "Choosing What to Show"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:108
+msgid ""
+"CodeIgniter ships with several Collectors that, as the name implies, "
+"collect data to display on the toolbar. You can easily make your own to "
+"customize the toolbar. To determine which collectors are shown, again "
+"head over to the **app/Config/Toolbar.php** configuration file:"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:114
+msgid ""
+"Comment out any collectors that you do not want to show. Add custom "
+"Collectors here by providing the fully-qualified class name. The exact "
+"collectors that appear here will affect which tabs are shown, as well as "
+"what information is shown on the Timeline."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:118
+msgid ""
+"Some tabs, like Database and Logs, will only display when they have "
+"content to show. Otherwise, they are removed to help out on smaller "
+"displays."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:121
+msgid "The Collectors that ship with CodeIgniter are:"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:123
+msgid ""
+"**Timers** collects all of the benchmark data, both by the system and by "
+"your application."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:124
+msgid ""
+"**Database** Displays a list of queries that all database connections "
+"have performed, and their execution time."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:125
+msgid ""
+"**Logs** Any information that was logged will be displayed here. In long-"
+"running systems, or systems with many items being logged, this can cause "
+"memory issues and should be disabled."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:126
+msgid ""
+"**Views** Displays render time for views on the timeline, and shows any "
+"data passed to the views on a separate tab."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:127
+msgid ""
+"**Cache** Will display information about cache hits and misses, and "
+"execution times."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:128
+msgid ""
+"**Files** displays a list of all files that have been loaded during this "
+"request."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:129
+msgid ""
+"**Routes** displays information about the current route and all routes "
+"defined in the system."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:130
+msgid ""
+"**Events** displays a list of all events that have been loaded during "
+"this request."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:133
+msgid "Setting Benchmark Points"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:135
+msgid ""
+"In order for the Profiler to compile and display your benchmark data you "
+"must name your mark points using specific syntax."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:137
+msgid ""
+"Please read the information on setting Benchmark points in the "
+":doc:`Benchmark Library </testing/benchmark>` page."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:140
+msgid "Creating Custom Collectors"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:142
+msgid ""
+"Creating custom collectors is a straightforward task. You create a new "
+"class, fully-namespaced so that the autoloader can locate it, that "
+"extends ``CodeIgniter\\Debug\\Toolbar\\Collectors\\BaseCollector``. This "
+"provides a number of methods that you can override, and has four required"
+" class properties that you must correctly set depending on how you want "
+"the Collector to work:"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:149
+msgid ""
+"**$hasTimeline** should be set to ``true`` for any Collector that wants "
+"to display information in the toolbar's timeline. If this is true, you "
+"will need to implement the ``formatTimelineData()`` method to format and "
+"return the data for display."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:153
+msgid ""
+"**$hasTabContent** should be ``true`` if the Collector wants to display "
+"its own tab with custom content. If this is true, you will need to "
+"provide a ``$title``, implement the ``display()`` method to render out "
+"tab's contents, and might need to implement the ``getTitleDetails()`` "
+"method if you want to display additional information just to the right of"
+" the tab content's title."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:158
+msgid ""
+"**$hasVarData** should be ``true`` if this Collector wants to add "
+"additional data to the ``Vars`` tab. If this is true, you will need to "
+"implement the ``getVarData()`` method."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:161
+msgid "**$title** is displayed on open tabs."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:164
+msgid "Displaying a Toolbar Tab"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:166
+msgid "To display a toolbar tab you must:"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:168
+msgid ""
+"Fill in ``$title`` with the text displayed as both the toolbar title and "
+"the tab header."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:169
+msgid "Set ``$hasTabContent`` to ``true``."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:170
+msgid "Implement the ``display()`` method."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:171
+msgid "Optionally, implement the ``getTitleDetails()`` method."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:173
+msgid ""
+"The ``display()`` creates the HTML that is displayed within the tab "
+"itself. It does not need to worry about the title of the tab, as that is "
+"automatically handled by the toolbar. It should return a string of HTML."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:176
+msgid ""
+"The ``getTitleDetails()`` method should return a string that is displayed"
+" just to the right of the tab's title. it can be used to provide "
+"additional overview information. For example, the Database tab displays "
+"the total number of queries across all connections, while the Files tab "
+"displays the total number of files."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:181
+msgid "Providing Timeline Data"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:183
+msgid "To provide information to be displayed in the Timeline you must:"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:185
+msgid "Set ``$hasTimeline`` to ``true``."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:186
+msgid "Implement the ``formatTimelineData()`` method."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:188
+msgid ""
+"The ``formatTimelineData()`` method must return an array of arrays "
+"formatted in a way that the timeline can use it to sort it correctly and "
+"display the correct information. The inner arrays must include the "
+"following information:"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:194
+msgid "Providing Vars"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:196
+msgid "To add data to the Vars tab you must:"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:198
+msgid "Set ``$hasVarData`` to ``true``"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:199
+msgid "Implement ``getVarData()`` method."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:201
+msgid ""
+"The ``getVarData()`` method should return an array containing arrays of "
+"key/value pairs to display. The name of the outer array's key is the name"
+" of the section on the Vars tab:"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:209
+msgid "Hot Reloading"
+msgstr ""
+
+#: ../../source/testing/debugging.rst:213
+msgid ""
+"The Debug Toolbar includes a feature called Hot Reloading that allows you"
+" to make changes to your application's code and have them automatically "
+"reloaded in the browser without having to refresh the page. This is a "
+"great time-saver during development."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:215
+msgid ""
+"To enable Hot Reloading while you are developing, you can click the "
+"button on the left side of the toolbar that looks like a refresh icon. "
+"This will enable Hot Reloading for all pages until you disable it."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:217
+msgid ""
+"Hot Reloading works by scanning the files within the **app** directory "
+"every second and looking for changes. If it finds any, it will send a "
+"message to the browser to reload the page. It does not scan any other "
+"directories, so if you are making changes to files outside of the **app**"
+" directory, you will need to manually refresh the page."
+msgstr ""
+
+#: ../../source/testing/debugging.rst:219
+msgid ""
+"If you need to watch files outside of the **app** directory, or are "
+"finding it slow due to the size of your project, you can specify the "
+"directories to scan and the file extensions to scan for in the "
+"``$watchedDirectories`` and ``$watchedExtensions`` properties of the "
+"**app/Config/Toolbar.php** configuration file."
+msgstr ""
+

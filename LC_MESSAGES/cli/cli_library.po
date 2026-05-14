@@ -1,0 +1,409 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/cli/cli_library.rst:3
+msgid "CLI Library"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:5
+msgid ""
+"CodeIgniter's CLI library makes creating interactive command-line scripts"
+" simple, including:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:7
+msgid "Prompting the user for more information"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:8
+msgid "Writing multi-colored text the terminal"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:9
+msgid "Beeping (be nice!)"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:10
+msgid "Showing progress bars during long tasks"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:11
+msgid "Wrapping long text lines to fit the window."
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:18
+msgid "Initializing the Class"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:20
+msgid ""
+"You do not need to create an instance of the CLI library, since all of "
+"it's methods are static. Instead, you simply need to ensure your "
+"controller can locate it via a ``use`` statement above your class:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:25
+msgid ""
+"The class is automatically initialized when the file is loaded the first "
+"time."
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:28
+msgid "Getting Input from the User"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:30
+msgid ""
+"Sometimes you need to ask the user for more information. They might not "
+"have provided optional command-line arguments, or the script may have "
+"encountered an existing file and needs confirmation before overwriting. "
+"This is handled with the ``prompt()`` or ``promptByKey()`` method."
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:34
+msgid ""
+"Since v4.3.0, you can write tests for these methods with "
+"``PhpStreamWrapper``. See :ref:`testing-cli-input`."
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:38
+msgid "prompt()"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:40
+msgid "You can provide a question by passing it in as the first parameter:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:44
+msgid ""
+"You can provide a default answer that will be used if the user just hits "
+"enter by passing the default in the second parameter:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:49
+msgid ""
+"You can restrict the acceptable answers by passing in an array of allowed"
+" answers as the second parameter:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:53
+msgid ""
+"Finally, you can pass :ref:`validation <validation>` rules to the answer "
+"input as the third parameter:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:57
+msgid "Validation rules can also be written in the array syntax:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:62
+msgid "promptByKey()"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:64
+msgid ""
+"Predefined answers (options) for prompt sometimes need to be described or"
+" are too complex to select via their value. ``promptByKey()`` allows the "
+"user to select an option by its key instead of its value:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:69
+msgid "Named keys are also possible:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:73
+msgid ""
+"Finally, you can pass :ref:`validation <validation>` rules to the answer "
+"input as the third parameter, the acceptable answers are automatically "
+"restricted to the passed options."
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:78
+msgid "promptByMultipleKeys()"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:82
+msgid ""
+"This method is the same as ``promptByKey()``, but it supports multiple "
+"value."
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:86
+msgid ""
+"The method ``promptByMultipleKeys()``, unlike ``promptByKey()``, does not"
+" support named keys or validation."
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:89
+msgid "Providing Feedback"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:92
+msgid "write()"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:94
+msgid ""
+"Several methods are provided for you to provide feedback to your users. "
+"This can be as simple as a single status update or a complex table of "
+"information that wraps to the user's terminal window. At the core of this"
+" is the ``write()`` method which takes the string to output as the first "
+"parameter:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:100
+msgid ""
+"You can change the color of the text by passing in a color name as the "
+"second parameter:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:104
+msgid ""
+"This could be used to differentiate messages by status, or create "
+"'headers' by using a different color. You can even set background colors "
+"by passing the color name in as the third parameter:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:109
+msgid "The following foreground colors are available:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:111 ../../source/cli/cli_library.rst:131
+msgid "black"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:112
+msgid "dark_gray"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:113 ../../source/cli/cli_library.rst:132
+msgid "blue"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:114
+msgid "dark_blue"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:115
+msgid "light_blue"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:116 ../../source/cli/cli_library.rst:133
+msgid "green"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:117
+msgid "light_green"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:118 ../../source/cli/cli_library.rst:134
+msgid "cyan"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:119
+msgid "light_cyan"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:120 ../../source/cli/cli_library.rst:135
+msgid "red"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:121
+msgid "light_red"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:122
+msgid "purple"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:123
+msgid "light_purple"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:124
+msgid "light_yellow"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:125 ../../source/cli/cli_library.rst:136
+msgid "yellow"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:126 ../../source/cli/cli_library.rst:137
+msgid "light_gray"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:127
+msgid "white"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:129
+msgid "And a smaller number are available as background colors:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:138
+msgid "magenta"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:141
+msgid "print()"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:143
+msgid ""
+"Print functions identically to the ``write()`` method, except that it "
+"does not force a newline either before or after. Instead it prints it to "
+"the screen wherever the cursor is currently. This allows you to print "
+"multiple items all on the same line, from different calls. This is "
+"especially helpful when you want to show a status, do something, then "
+"print \"Done\" on the same line:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:153
+msgid "color()"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:155
+msgid ""
+"While the ``write()`` command will write a single line to the terminal, "
+"ending it with a EOL character, you can use the ``color()`` method to "
+"make a string fragment that can be used in the same way, except that it "
+"will not force an EOL after printing. This allows you to create multiple "
+"outputs on the same row. Or, more commonly, you can use it inside of a "
+"``write()`` method to create a string of a different color inside:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:162
+msgid ""
+"This example would write a single line to the window, with ``fileA`` in "
+"yellow, followed by a tab, and then ``/path/to/file`` in white text."
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:166
+msgid "error()"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:168
+msgid ""
+"If you need to output errors, you should use the appropriately named "
+"``error()`` method. This writes light-red text to STDERR, instead of "
+"STDOUT, like ``write()`` and ``color()`` do. This can be useful if you "
+"have scripts watching for errors so they don't have to sift through all "
+"of the information, only the actual error messages. You use it exactly as"
+" you would the ``write()`` method:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:176
+msgid "wrap()"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:178
+msgid ""
+"This command will take a string, start printing it on the current line, "
+"and wrap it to a set length on new lines. This might be useful when "
+"displaying a list of options with descriptions that you want to wrap in "
+"the current window and not go off screen:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:184
+msgid ""
+"By default, the string will wrap at the terminal width. Windows currently"
+" doesn't provide a way to determine the window size, so we default to 80 "
+"characters. If you want to restrict the width to something shorter that "
+"you can be pretty sure fits within the window, pass the maximum line-"
+"length as the second parameter. This will break the string at the nearest"
+" word barrier so that words are not broken."
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:191
+msgid ""
+"You may find that you want a column on the left of titles, files, or "
+"tasks, while you want a column of text on the right with their "
+"descriptions. By default, this will wrap back to the left edge of the "
+"window, which doesn't allow things to line up in columns. In cases like "
+"this, you can pass in a number of spaces to pad every line after the "
+"first line, so that you will have a crisp column edge on the left:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:198
+msgid "Would create something like this:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:210
+msgid "newLine()"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:212
+msgid ""
+"The ``newLine()`` method displays a blank line to the user. It does not "
+"take any parameters:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:217
+msgid "clearScreen()"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:219
+msgid ""
+"You can clear the current terminal window with the ``clearScreen()`` "
+"method. In most versions of Windows, this will simply insert 40 blank "
+"lines since Windows doesn't support this feature. Windows 10 bash "
+"integration should change this:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:226
+msgid "showProgress()"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:228
+msgid ""
+"If you have a long-running task that you would like to keep the user "
+"updated with the progress, you can use the ``showProgress()`` method "
+"which displays something like the following:"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:235
+msgid "This block is animated in place for a very nice effect."
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:237
+msgid ""
+"To use it, pass in the current step as the first parameter, and the total"
+" number of steps as the second parameter. The percent complete and the "
+"length of the display will be determined based on that number. When you "
+"are done, pass ``false`` as the first parameter and the progress bar will"
+" be removed."
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:244
+msgid "table()"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:258
+msgid "wait()"
+msgstr ""
+
+#: ../../source/cli/cli_library.rst:260
+msgid ""
+"Waits a certain number of seconds, optionally showing a wait message and "
+"waiting for a key press."
+msgstr ""
+

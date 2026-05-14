@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/intro/requirements.rst:3
+msgid "Server Requirements"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:11
+msgid "PHP and Required Extensions"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:13
+msgid ""
+"`PHP <https://www.php.net/>`_ version 8.2 or newer is required, with the "
+"following PHP extensions are enabled:"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:15
+msgid "`intl <https://www.php.net/manual/en/intl.requirements.php>`_"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:16
+msgid "`mbstring <https://www.php.net/manual/en/mbstring.installation.php>`_"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:19
+msgid "The end of life date for PHP 7.4 was November 28, 2022."
+msgstr ""
+
+#: ../../source/intro/requirements.rst:20
+msgid "The end of life date for PHP 8.0 was November 26, 2023."
+msgstr ""
+
+#: ../../source/intro/requirements.rst:21
+msgid "The end of life date for PHP 8.1 was December 31, 2025."
+msgstr ""
+
+#: ../../source/intro/requirements.rst:22
+msgid ""
+"**If you are still using a PHP version below 8.2, you should upgrade "
+"immediately.**"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:23
+msgid "The end of life date for PHP 8.2 will be December 31, 2026."
+msgstr ""
+
+#: ../../source/intro/requirements.rst:26
+msgid "PHP 8.5 requires CodeIgniter 4.7.0 or later."
+msgstr ""
+
+#: ../../source/intro/requirements.rst:27
+msgid "PHP 8.4 requires CodeIgniter 4.6.0 or later."
+msgstr ""
+
+#: ../../source/intro/requirements.rst:28
+msgid "PHP 8.3 requires CodeIgniter 4.4.4 or later."
+msgstr ""
+
+#: ../../source/intro/requirements.rst:29
+msgid "PHP 8.2 requires CodeIgniter 4.2.11 or later."
+msgstr ""
+
+#: ../../source/intro/requirements.rst:30
+msgid "PHP 8.1 requires CodeIgniter 4.1.6 or later."
+msgstr ""
+
+#: ../../source/intro/requirements.rst:31
+msgid "**Note that we only maintain the latest version.**"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:35
+msgid "Optional PHP Extensions"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:37
+msgid "The following PHP extensions should be enabled on your server:"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:39
+msgid ""
+"`mysqlnd <https://www.php.net/manual/en/mysqlnd.install.php>`_ (if you "
+"use MySQL)"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:40
+msgid ""
+"`curl <https://www.php.net/manual/en/curl.requirements.php>`_ (if you use"
+" :doc:`CURLRequest </libraries/curlrequest>`)"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:41
+msgid ""
+"`imagick <https://www.php.net/manual/en/imagick.requirements.php>`_ (if "
+"you use :doc:`Image </libraries/images>` class ImageMagickHandler)"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:42
+msgid ""
+"`gd <https://www.php.net/manual/en/image.requirements.php>`_ (if you use "
+":doc:`Image </libraries/images>` class GDHandler)"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:43
+msgid ""
+"`simplexml <https://www.php.net/manual/en/simplexml.requirements.php>`_ "
+"(if you format XML)"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:45
+msgid "The following PHP extensions are required when you use a Cache server:"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:47
+msgid ""
+"`memcache <https://www.php.net/manual/en/memcache.requirements.php>`_ (if"
+" you use :doc:`Cache </libraries/caching>` class MemcachedHandler with "
+"Memcache)"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:48
+msgid ""
+"`memcached <https://www.php.net/manual/en/memcached.requirements.php>`_ "
+"(if you use :doc:`Cache </libraries/caching>` class MemcachedHandler with"
+" Memcached)"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:49
+msgid ""
+"`redis <https://github.com/phpredis/phpredis>`_ (if you use :doc:`Cache "
+"</libraries/caching>` class RedisHandler)"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:51
+msgid "The following PHP extensions are required when you use PHPUnit:"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:53
+msgid ""
+"`dom <https://www.php.net/manual/en/dom.requirements.php>`_ (if you use "
+":doc:`TestResponse </testing/response>` class)"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:54
+msgid ""
+"`libxml <https://www.php.net/manual/en/libxml.requirements.php>`_ (if you"
+" use :doc:`TestResponse </testing/response>` class)"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:55
+msgid ""
+"`xdebug <https://xdebug.org/docs/install>`_ (if you use "
+"``CIUnitTestCase::assertHeaderEmitted()``)"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:61
+msgid "Supported Databases"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:63
+msgid ""
+"A database is required for most web application programming. Currently "
+"supported databases are:"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:66
+msgid "MySQL via the ``MySQLi`` driver (version 5.1 and above only)"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:67
+msgid "PostgreSQL via the ``Postgre`` driver (version 7.4 and above only)"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:68
+msgid "SQLite3 via the ``SQLite3`` driver"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:69
+msgid ""
+"Microsoft SQL Server via the ``SQLSRV`` driver (version 2012 and above "
+"only)"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:70
+msgid "Oracle Database via the ``OCI8`` driver (version 12.1 and above only)"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:72
+msgid ""
+"Not all of the drivers have been converted/rewritten for CodeIgniter4. "
+"The list below shows the outstanding ones."
+msgstr ""
+
+#: ../../source/intro/requirements.rst:75
+msgid "MySQL (5.1+) via the *pdo* driver"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:76
+msgid "Oracle via the *pdo* drivers"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:77
+msgid "PostgreSQL via the *pdo* driver"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:78
+msgid "MSSQL via the *pdo* driver"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:79
+msgid "SQLite via the *sqlite* (version 2) and *pdo* drivers"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:80
+msgid "CUBRID via the *cubrid* and *pdo* drivers"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:81
+msgid "Interbase/Firebird via the *ibase* and *pdo* drivers"
+msgstr ""
+
+#: ../../source/intro/requirements.rst:82
+msgid ""
+"ODBC via the *odbc* and *pdo* drivers (you should know that ODBC is "
+"actually an abstraction layer)"
+msgstr ""
+

@@ -1,0 +1,676 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:2
+msgid "Version 4.0.0-beta.3"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:4
+msgid "Release Date: May 7, 2019"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:11
+msgid "Highlights"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:13
+msgid "Type hinting added throughout & typos corrected (see API docs)"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:14
+msgid "Fixed a number of model, database, validation & debug toolbar issues"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:17
+msgid "New Messages"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:19
+msgid "Database.FieldNotExists"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:20
+msgid "Validation.equals, not_equals"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:23
+msgid "App Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:25
+msgid "Removed $salt config item in app/Config/App"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:26
+msgid "Enabled migrations by default in app/Config/Migrations"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:27
+msgid "Simplified public/.htaccess"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:30
+msgid "Changed Files"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:32
+msgid "The list of changed files follows, with PR numbers shown."
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:34
+msgid "admin/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:35
+msgid "framework/composer.json #1935"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:36
+msgid "starter/composer.json #1935"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:38
+msgid "app/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:39
+#: ../../source/changelogs/v4.0.0-beta.3.rst:51
+#: ../../source/changelogs/v4.0.0-beta.3.rst:107
+msgid "Config/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:40
+msgid "App #1973"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:41
+msgid "Migrations #1973"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:43
+msgid "public/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:44
+msgid ".htaccess #1973"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:46
+msgid "system/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:47
+msgid "API/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:48
+msgid "ResponseTrait #1962"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:49
+msgid "Commands/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:50
+msgid "Server/rewrite #1925"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:52
+msgid "AutoloadConfig #1974"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:53
+msgid "BaseConfig #1947"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:54
+msgid "Database/ #1938"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:55
+msgid "BaseBuilder #1923, #1933, #1950"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:56
+msgid "BaseConnection #1950"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:57
+msgid "BaseResult #1917"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:58
+msgid "BaseUtils #1917"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:59
+msgid "Forge #1917"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:60
+msgid "SQLite3/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:61
+msgid "Connection #1917"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:62
+msgid "Result #1917"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:63
+msgid "Debug/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:64
+msgid "Toolbar #1916"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:65
+msgid "Toolbar/Collectors/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:66
+msgid "BaseCollector #1972"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:67
+msgid "Config #1973"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:68
+msgid "History #1945"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:69
+msgid "Routes #1949"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:70
+msgid "Toolbar/Views/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:71
+msgid "_config.tpl.php #1973"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:72
+msgid "toolbar.tpl.php #1972"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:73
+msgid "toolbarloader.js #1931, #1961"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:74
+msgid "Exceptions/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:75
+msgid "EntityException #1927"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:76
+#: ../../source/changelogs/v4.0.0-beta.3.rst:119
+msgid "Filters/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:77
+msgid "Filters #1970, #1985"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:78
+msgid "Format/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:79
+msgid "FormatterInterface #1918"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:80
+msgid "JSONFormatter #1918"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:81
+msgid "XMLFormatter #1918"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:82
+msgid "HTTP/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:83
+msgid "CLIRequest #1956"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:84
+msgid "CURLRequest #1915"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:85
+msgid "Images/Handlers/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:86
+msgid "BaseHandler #1956"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:87
+msgid "Language/en/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:88
+msgid "Database #1917"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:89
+msgid "Validation #1952"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:90
+msgid "Router/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:91
+msgid "Router #1968"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:92
+msgid "RouteCollection #1977"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:93
+msgid "Session/Handlers/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:94
+msgid "RedisHandler #1980"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:95
+#: ../../source/changelogs/v4.0.0-beta.3.rst:121
+msgid "Test/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:96
+msgid "FeatureResponse #1977"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:97
+msgid "FeatureTestCase #1977"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:98
+#: ../../source/changelogs/v4.0.0-beta.3.rst:123
+msgid "Validation/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:99
+msgid "FormatRules #1957"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:100
+msgid "Rules #1952"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:101
+#: ../../source/changelogs/v4.0.0-beta.3.rst:126
+msgid "View/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:102
+msgid "Table #1984"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:103
+msgid "Entity #1911, #1927, #1943, #1950, #1955"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:104
+msgid "Model #1930, #1943, #1963, #1981"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:106
+msgid "tests/system/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:108
+msgid "BaseConfigTest #1947"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:109
+msgid "Database/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:110
+msgid "BaseQueryTest #1917"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:111
+msgid "Live/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:112
+msgid "DbUtilsTest #1917, #1943"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:113
+msgid "ForgeTest #1917"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:114
+msgid "GetTest #1917, #1943"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:115
+msgid "ModelTest #1930, #1943, #1981"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:116
+msgid "Migrations/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:117
+msgid "MigrationRunnerTest #1917"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:118
+msgid "MigrationTest #1943"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:120
+msgid "FilterTest #1985"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:122
+msgid "FeatureTestCaseTest #1977"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:124
+msgid "FormatRulesTest #1957"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:125
+msgid "RulesTest #1952, #cbe4b1d"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:127
+msgid "TableTest #1978, #1984"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:128
+msgid "EntityTest #1911"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:130
+msgid "user_guide_src/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:131
+msgid "dbmgmt/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:132
+msgid "migrations #1973"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:133
+msgid "installation/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:134
+msgid "installing_composer #1926"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:135
+msgid "running #1935"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:136
+msgid "libraries/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:137
+msgid "validation #1952, #1954, #1957"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:138
+msgid "outgoing/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:139
+msgid "index #1978"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:140
+msgid "table #1978, #1984"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:141
+msgid "testing/"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:142
+msgid "feature #1977"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:143
+msgid "overview #1936"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:145
+msgid ".htaccess #1939"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:146
+msgid "composer.json #1935"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:147
+msgid "phpdoc.dist.xml #1987"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:150
+msgid "PRs merged"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:152
+msgid "#1987 Correct API docblock problems for phpdocs"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:153
+msgid "#1986 Update docblock version to 4.0.0"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:154
+msgid "#1985 Fix filter processing. Fixes #1907"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:155
+msgid "#cbe4b1d Fix SQLite tests"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:156
+msgid "#1984 Add footing to HTML Table"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:157
+msgid ""
+"#1981 Using soft deletes should not return an ambiguous field message "
+"when joining tables"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:158
+msgid "#1980 Corrected return value for Session/RedisHandler::read"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:159
+msgid "#1978 Implement HTML Table for CI4 (missed feature)"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:160
+msgid "#1977 Test/featuretestcase"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:161
+msgid "#1974 Remove framework classes from the autoloader classmap"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:162
+msgid "#1973 Defaultfixes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:163
+msgid "#1972 Toolbar fix for custom collectors"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:164
+msgid "#1970 Add back filter arguments"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:165
+msgid "#1968 Fixed pathinfo mode 404 error"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:166
+msgid ""
+"#1963 String type primary key should also wrap into an array during db "
+"update"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:167
+msgid "#1962 Fix side issue"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:168
+msgid "#1961 Fix Debugbar url tail slash issue"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:169
+msgid "#1957 New generic string validation rule"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:170
+msgid "#1956 Use Null Coalesce Operator"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:171
+msgid "#1955 Travis-CI build failed fix"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:172
+msgid "#1954 Fix validation table format"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:173
+msgid "#1952 Add Validations for `equals()` and `not_equals()`"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:174
+msgid "#1951 System typos changes & code cleanup"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:175
+msgid "#1950 Fix some side issue"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:176
+msgid "#1949 Toobar/Routes correction"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:177
+msgid "#1947 Fix BaseConfig didn't load Registrar files properly"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:178
+msgid "#1945 Fix datetime extraction from debugbar file"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:179
+msgid "#1943 Model, Entity, Exception & Migration test cases"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:180
+msgid "#1939 Remove section that prevents hotlinking"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:181
+msgid "#1938 Database typos changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:182
+msgid "#1936 Docs: improve app testing writeup"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:183
+msgid "#1935 Update phpunit.xml scripts. Fixes #1932"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:184
+msgid "#1933 having (Is NULL deletion)"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:185
+msgid "#1931 Toolbar IE11 fix"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:186
+msgid "#1930 Model Changes w.r.t. #1773"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:187
+msgid "#1927 Entity exception for non existed props"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:188
+msgid "#1926 Docs: update installation guide"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:189
+msgid "#1925 removed $_SERVER['CI_ENVIRONMENT']"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:190
+msgid "#1923 missing return"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:191
+msgid "#1918 JSONFormatter"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:192
+msgid "#1917 Database Test Cases"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:193
+msgid "#1916 Check if the value is string"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:194
+msgid "#1915 Fix for POST + JSON (Content-Length added)"
+msgstr ""
+
+#: ../../source/changelogs/v4.0.0-beta.3.rst:195
+msgid "#1911 JSON Cast exception test cases"
+msgstr ""
+

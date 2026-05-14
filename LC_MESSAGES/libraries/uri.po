@@ -1,0 +1,395 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/libraries/uri.rst:3
+msgid "Working with URIs"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:5
+msgid ""
+"CodeIgniter provides an object oriented solution for working with URI's "
+"in your application. Using this makes it simple to ensure that the "
+"structure is always correct, no matter how complex the URI might be, as "
+"well as adding relative URI to an existing one and have it resolved "
+"safely and correctly."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:15
+msgid "Creating URI instances"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:17
+msgid "Creating a URI instance is as simple as creating a new class instance."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:19
+msgid ""
+"When you create the new instance, you can pass a full or partial URL in "
+"the constructor and it will be parsed into its appropriate sections:"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:25
+msgid ""
+"Alternatively, you can use the :php:func:`service()` function to return "
+"an instance for you:"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:30
+msgid "Since v4.4.0, if you don't pass a URL, it returns the current URI:"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:35
+msgid ""
+"The above code returns the ``SiteURI`` instance, that extends the ``URI``"
+" class. The ``URI`` class is for general URIs, but the ``SiteURI`` class "
+"is for your site URIs."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:40
+msgid "The Current URI"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:42
+msgid ""
+"When you need an object representing the current URL of the request, you "
+"can use the :php:func:`current_url()` function available in the "
+":doc:`../helpers/url_helper`:"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:48
+msgid ""
+"You must pass ``true`` as the first parameter, otherwise, it will return "
+"the string representation of the current URL."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:50
+msgid ""
+"This URI is based on the path (relative to your ``baseURL``) as "
+"determined by the current request object and your settings in "
+"``Config\\App`` (``baseURL``, ``indexPage``, and "
+"``forceGlobalSecureRequests``)."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:53
+msgid ""
+"Assuming that you're in a controller that extends "
+"``CodeIgniter\\Controller``, you can also get the current SiteURI "
+"instance:"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:61
+msgid "URI Strings"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:63
+msgid ""
+"Many times, all you really want is to get a string representation of a "
+"URI. This is easy to do by simply casting the URI as a string:"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:68
+msgid ""
+"If you know the pieces of the URI and just want to ensure it's all "
+"formatted correctly, you can generate a string using the URI class' "
+"static ``createURIString()`` method:"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:73
+msgid ""
+"When ``URI`` is cast to a string, it will attempt to adjust project URLs "
+"to the settings defined in ``Config\\App``. If you need the exact, "
+"unaltered string representation then use ``URI::createURIString()`` "
+"instead."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:79
+msgid "The URI Parts"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:81
+msgid ""
+"Once you have a URI instance, you can set or retrieve any of the various "
+"parts of the URI. This section will provide details on what those parts "
+"are, and how to work with them."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:85
+msgid "Scheme"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:87
+msgid ""
+"The scheme is frequently 'http' or 'https', but any scheme is supported, "
+"including 'file', 'mailto', etc."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:92
+msgid "Authority"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:94
+msgid ""
+"Many URIs contain several elements that are collectively known as the "
+"'authority'. This includes any user info, the host and the port number. "
+"You can retrieve all of these pieces as one single string with the "
+"``getAuthority()`` method, or you can manipulate the individual parts."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:100
+msgid ""
+"By default, this will not display the password portion since you wouldn't"
+" want to show that to anyone. If you want to show the password, you can "
+"use the ``showPassword()`` method. This URI instance will continue to "
+"show that password until you turn it off again, so always make sure that "
+"you turn it off as soon as you are finished with it:"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:106
+msgid ""
+"If you do not want to display the port, pass in ``true`` as the only "
+"parameter:"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:110
+msgid ""
+"If the current port is the default port for the scheme it will never be "
+"displayed."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:113
+msgid "UserInfo"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:115
+msgid ""
+"The userinfo section is simply the username and password that you might "
+"see with an FTP URI. While you can get this as part of the Authority, you"
+" can also retrieve it yourself:"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:120
+msgid ""
+"By default, it will not display the password, but you can override that "
+"with the ``showPassword()`` method:"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:125
+msgid "Host"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:127
+msgid ""
+"The host portion of the URI is typically the domain name of the URL. This"
+" can be easily set and retrieved with the ``getHost()`` and ``setHost()``"
+" methods:"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:133
+msgid "Port"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:135
+msgid ""
+"The port is an integer number between 0 and 65535. Each scheme has a "
+"default value associated with it."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:139
+msgid ""
+"When using the ``setPort()`` method, the port will be checked that it is "
+"within the valid range and assigned."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:142
+msgid "Path"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:144
+msgid ""
+"The path is all of the segments within the site itself. As expected, the "
+"``getPath()`` and ``setPath()`` methods can be used to manipulate it:"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:149
+msgid ""
+"When setting the path it is sanitized to encode any dangerous characters,"
+" and remove dot segments for safety."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:152
+msgid ""
+"Since v4.4.0, the ``SiteURI::getRoutePath()`` method, returns the URI "
+"path relative to baseURL, and the ``SiteURI::getPath()`` method always "
+"returns the full URI path with leading ``/``."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:157
+msgid "Query"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:159
+msgid ""
+"The query data can be manipulated through the class using simple string "
+"representations."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:162
+msgid "Getting/Setting Query"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:164
+msgid "Query values can only be set as a string currently."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:169
+msgid "The ``setQuery()`` method overwrites existing query variables."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:171
+msgid ""
+"Query values cannot contain fragments. An InvalidArgumentException will "
+"be thrown if it does."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:174
+msgid "Setting Query from Array"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:176
+msgid "You can set query values using an array:"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:180
+msgid "The ``setQueryArray()`` method overwrites existing query variables."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:183
+msgid "Adding Query Value"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:185
+msgid ""
+"You can add a value to the query variables collection without destroying "
+"the existing query variables with the ``addQuery()`` method. The first "
+"parameter is the name of the variable, and the second parameter is the "
+"value:"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:192
+msgid "Filtering Query Values"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:194
+msgid ""
+"You can filter the query values returned by passing an options array to "
+"the ``getQuery()`` method, with either an *only* or an *except* key:"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:199
+msgid "This only changes the values returned during this one call."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:202
+msgid "Changing Query Values"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:204
+msgid ""
+"If you need to modify the URI's query values more permanently, you can "
+"use the ``stripQuery()`` and ``keepQuery()`` methods to change the actual"
+" object's query variable collection:"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:209
+msgid ""
+"By default ``setQuery()`` and ``setQueryArray()`` methods uses native "
+"``parse_str()`` function to prepare data. If you want to use more liberal"
+" rules (which allow key names to contain dots), you can use a special "
+"method ``useRawQueryString()`` beforehand."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:214
+msgid "Fragment"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:216
+msgid ""
+"Fragments are the portion at the end of the URL, preceded by the pound-"
+"sign (``#``). In HTML URLs these are links to an on-page anchor. Media "
+"URI's can make use of them in various other ways."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:223
+msgid "URI Segments"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:225
+msgid "Each section of the path between the slashes is a single segment."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:227
+msgid ""
+"In the case of your site URI, URI Segments mean only the URI path part "
+"relative to the baseURL. If your baseURL contains sub folders, the values"
+" will be different from the current URI path."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:231
+msgid ""
+"The URI class provides a simple way to determine what the values of the "
+"segments are. The segments start at 1 being the furthest left of the "
+"path."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:236
+msgid ""
+"You can also set a different default value for a particular segment by "
+"using the second parameter of the ``getSegment()`` method. The default is"
+" empty string."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:240
+msgid ""
+"You can get the last +1 segment. When you try to get the last +2 or more "
+"segment, an exception will be thrown by default. You could prevent "
+"throwing exceptions with the ``setSilent()`` method."
+msgstr ""
+
+#: ../../source/libraries/uri.rst:244
+msgid "You can get a count of the total segments:"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:248
+msgid "Finally, you can retrieve an array of all of the segments:"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:254
+msgid "Disable Throwing Exceptions"
+msgstr ""
+
+#: ../../source/libraries/uri.rst:256
+msgid ""
+"By default, some methods of this class may throw an exception. If you "
+"want to disable it, you can set a special flag that will prevent throwing"
+" exceptions."
+msgstr ""
+

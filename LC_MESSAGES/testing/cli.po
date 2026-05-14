@@ -1,0 +1,266 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/testing/cli.rst:3
+msgid "Testing CLI Commands"
+msgstr ""
+
+#: ../../source/testing/cli.rst:13
+msgid "Using MockInputOutput"
+msgstr ""
+
+#: ../../source/testing/cli.rst:18
+msgid "MockInputOutput"
+msgstr ""
+
+#: ../../source/testing/cli.rst:20
+msgid ""
+"**MockInputOutput** provides an easy way to write tests for commands that"
+" require user input, such as ``CLI::prompt()``, ``CLI::wait()``, and "
+"``CLI::input()``."
+msgstr ""
+
+#: ../../source/testing/cli.rst:23
+msgid ""
+"You can replace the ``InputOutput`` class with ``MockInputOutput`` during"
+" test execution to capture inputs and outputs."
+msgstr ""
+
+#: ../../source/testing/cli.rst:26
+msgid ""
+"When you use ``MockInputOutput``, you don't need to use :ref:`stream-"
+"filter-trait`, :ref:`ci-test-stream-filter`, and :ref:`php-stream-"
+"wrapper`."
+msgstr ""
+
+#: ../../source/testing/cli.rst:31
+msgid "Helper Methods"
+msgstr ""
+
+#: ../../source/testing/cli.rst:34
+msgid "getOutput(?int $index = null): string"
+msgstr ""
+
+#: ../../source/testing/cli.rst:36
+msgid "Gets the output."
+msgstr ""
+
+#: ../../source/testing/cli.rst:38
+msgid ""
+"If you call it like ``$io->getOutput()``, it returns the whole output "
+"string."
+msgstr ""
+
+#: ../../source/testing/cli.rst:39
+msgid ""
+"If you specify ``0`` or a positive number, it returns the output array "
+"item. Each item has the output of a ``CLI::fwrite()`` call."
+msgstr ""
+
+#: ../../source/testing/cli.rst:41
+msgid ""
+"If you specify a negative number ``-n``, it returns the last ``n``-th "
+"item of the output array."
+msgstr ""
+
+#: ../../source/testing/cli.rst:45
+msgid "getOutputs(): array"
+msgstr ""
+
+#: ../../source/testing/cli.rst:47
+msgid ""
+"Returns the output array. Each item has the output of a ``CLI::fwrite()``"
+" call."
+msgstr ""
+
+#: ../../source/testing/cli.rst:50 ../../source/testing/cli.rst:83
+#: ../../source/testing/cli.rst:109 ../../source/testing/cli.rst:140
+msgid "How to Use"
+msgstr ""
+
+#: ../../source/testing/cli.rst:52
+msgid ""
+"``CLI::setInputOutput()`` can set the ``MockInputOutput`` instance to the"
+" ``CLI`` class."
+msgstr ""
+
+#: ../../source/testing/cli.rst:53
+msgid ""
+"``CLI::resetInputOutput()`` resets the ``InputOutput`` instance in the "
+"``CLI`` class."
+msgstr ""
+
+#: ../../source/testing/cli.rst:54
+msgid "``MockInputOutput::setInputs()`` sets the user input array."
+msgstr ""
+
+#: ../../source/testing/cli.rst:55
+msgid "``MockInputOutput::getOutput()`` gets the command output."
+msgstr ""
+
+#: ../../source/testing/cli.rst:57
+msgid "The following test code is to test the command ``spark db:table``:"
+msgstr ""
+
+#: ../../source/testing/cli.rst:63
+msgid "Without MockInputOutput"
+msgstr ""
+
+#: ../../source/testing/cli.rst:68
+msgid "Testing CLI Output"
+msgstr ""
+
+#: ../../source/testing/cli.rst:73
+msgid "StreamFilterTrait"
+msgstr ""
+
+#: ../../source/testing/cli.rst:77
+msgid "**StreamFilterTrait** provides an alternate to these helper methods."
+msgstr ""
+
+#: ../../source/testing/cli.rst:79
+msgid ""
+"You may need to test things that are difficult to test. Sometimes, "
+"capturing a stream, like PHP's own STDOUT, or STDERR, might be helpful. "
+"The ``StreamFilterTrait`` helps you capture the output from the stream of"
+" your choice."
+msgstr ""
+
+#: ../../source/testing/cli.rst:85
+msgid ""
+"``StreamFilterTrait::getStreamFilterBuffer()`` gets the captured data "
+"from the buffer."
+msgstr ""
+
+#: ../../source/testing/cli.rst:86
+msgid "``StreamFilterTrait::resetStreamFilterBuffer()`` resets captured data."
+msgstr ""
+
+#: ../../source/testing/cli.rst:88 ../../source/testing/cli.rst:153
+msgid "An example demonstrating this inside one of your test cases:"
+msgstr ""
+
+#: ../../source/testing/cli.rst:92
+msgid ""
+"The ``StreamFilterTrait`` has a configurator that is called "
+"automatically. See :ref:`Testing Traits <testing-overview-traits>`."
+msgstr ""
+
+#: ../../source/testing/cli.rst:95
+msgid ""
+"If you override the ``setUp()`` or ``tearDown()`` methods in your test, "
+"then you must call the ``parent::setUp()`` and ``parent::tearDown()`` "
+"methods respectively to configure the ``StreamFilterTrait``."
+msgstr ""
+
+#: ../../source/testing/cli.rst:101
+msgid "CITestStreamFilter"
+msgstr ""
+
+#: ../../source/testing/cli.rst:103
+msgid "**CITestStreamFilter** for manual/single use."
+msgstr ""
+
+#: ../../source/testing/cli.rst:105
+msgid ""
+"If you need to capture streams in only one test, then instead of using "
+"the StreamFilterTrait trait, you can manually add a filter to streams."
+msgstr ""
+
+#: ../../source/testing/cli.rst:111
+msgid "``CITestStreamFilter::registration()`` Filter registration."
+msgstr ""
+
+#: ../../source/testing/cli.rst:112
+msgid ""
+"``CITestStreamFilter::addOutputFilter()`` Adding a filter to the output "
+"stream."
+msgstr ""
+
+#: ../../source/testing/cli.rst:113
+msgid ""
+"``CITestStreamFilter::addErrorFilter()`` Adding a filter to the error "
+"stream."
+msgstr ""
+
+#: ../../source/testing/cli.rst:114
+msgid ""
+"``CITestStreamFilter::removeOutputFilter()`` Removing a filter from the "
+"output stream."
+msgstr ""
+
+#: ../../source/testing/cli.rst:115
+msgid ""
+"``CITestStreamFilter::removeErrorFilter()`` Removing a filter from the "
+"error stream."
+msgstr ""
+
+#: ../../source/testing/cli.rst:122
+msgid "Testing CLI Input"
+msgstr ""
+
+#: ../../source/testing/cli.rst:127
+msgid "PhpStreamWrapper"
+msgstr ""
+
+#: ../../source/testing/cli.rst:131
+msgid ""
+"**PhpStreamWrapper** provides a way to write tests for methods that "
+"require user input, such as ``CLI::prompt()``, ``CLI::wait()``, and "
+"``CLI::input()``."
+msgstr ""
+
+#: ../../source/testing/cli.rst:134
+msgid ""
+"The PhpStreamWrapper is a stream wrapper class. If you don't know PHP's "
+"stream wrapper, see `The streamWrapper class "
+"<https://www.php.net/manual/en/class.streamwrapper.php>`_ in the PHP "
+"maual."
+msgstr ""
+
+#: ../../source/testing/cli.rst:142
+msgid ""
+"``PhpStreamWrapper::register()`` Register the ``PhpStreamWrapper`` to the"
+" ``php`` protocol."
+msgstr ""
+
+#: ../../source/testing/cli.rst:143
+msgid ""
+"``PhpStreamWrapper::restore()`` Restore the php protocol wrapper back to "
+"the PHP built-in wrapper."
+msgstr ""
+
+#: ../../source/testing/cli.rst:144
+msgid "``PhpStreamWrapper::setContent()`` Set the input data."
+msgstr ""
+
+#: ../../source/testing/cli.rst:146
+msgid ""
+"The PhpStreamWrapper is intended for only testing ``php://stdin``. But "
+"when you register it, it handles all the `php protocol "
+"<https://www.php.net/manual/en/wrappers.php.php>`_ streams, such as "
+"``php://stdout``, ``php://stderr``, ``php://memory``. So it is strongly "
+"recommended that ``PhpStreamWrapper`` be registered/unregistered only "
+"when needed. Otherwise, it will interfere with other built-in php streams"
+" while registered."
+msgstr ""
+

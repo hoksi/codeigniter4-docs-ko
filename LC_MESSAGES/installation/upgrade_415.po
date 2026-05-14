@@ -1,0 +1,353 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/installation/upgrade_415.rst:3
+msgid "Upgrading from 4.1.4 to 4.1.5"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:5
+msgid ""
+"Please refer to the upgrade instructions corresponding to your "
+"installation method."
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:7
+msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:8
+msgid ""
+":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
+"Upgrading <adding-codeigniter4-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:9
+msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:16
+msgid "Breaking Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:19
+msgid "Changes for set() method in BaseBuilder and Model class"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:21
+msgid ""
+"The casting for the ``$value`` parameter has been removed to fix a bug "
+"where passing parameters as array and string to the ``set()`` method were"
+" handled differently. If you extended the ``BaseBuilder`` class or "
+"``Model`` class yourself and modified the ``set()`` method, then you need"
+" to change its definition from ``public function set($key, ?string $value"
+" = '', ?bool $escape = null)`` to ``public function set($key, $value = "
+"'', ?bool $escape = null)``."
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:28
+msgid "Session DatabaseHandler's Database Table Change"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:30
+msgid ""
+"The types of the following columns in the session table have been changed"
+" for optimization."
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:32
+msgid "MySQL"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:33
+#: ../../source/installation/upgrade_415.rst:36
+msgid "``timestamp``"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:34
+msgid "PostgreSQL"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:35
+msgid "``ip_address``"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:37
+msgid "``data``"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:39
+msgid ""
+"Update the definition of the session table. See the "
+":doc:`/libraries/sessions` for the new definition."
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:41
+msgid ""
+"The change was introduced in v4.1.2. But due to `a bug "
+"<https://github.com/codeigniter4/CodeIgniter4/issues/4807>`_, the "
+"DatabaseHandler Driver did not work properly."
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:45
+msgid "CSRF Protection"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:47
+msgid ""
+"Because of a bug fix, now CSRF protection works on not only **POST** but "
+"also **PUT/PATCH/DELETE** requests when CSRF filter is applied."
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:50
+msgid ""
+"When you use **PUT/PATCH/DELETE** requests, you need to send CSRF token. "
+"Or remove the CSRF filter for such requests if you don't need CSRF "
+"protection for them."
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:53
+msgid ""
+"If you want the same behavior as the previous version, set the CSRF "
+"filter like the following in **app/Config/Filters.php**:"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:57
+msgid ""
+"Protecting **GET** method needs only when you use ``form_open()`` auto-"
+"generation of CSRF field."
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:59
+msgid ""
+"In general, if you use ``$methods`` filters, you should :ref:`disable "
+"Auto Routing (Legacy) <use-defined-routes-only>` because :ref:`auto-"
+"routing-legacy` permits any HTTP method to access a controller. Accessing"
+" the controller with a method you don't expect could bypass the filter."
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:64
+msgid "CURLRequest Header Change"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:66
+msgid ""
+"In the previous version, if you didn't provide your own headers, "
+"``CURLRequest`` would send the request-headers from the browser. The bug "
+"was fixed. If your requests depend on the headers, your requests might "
+"fail after upgrading. In this case, add the necessary headers manually. "
+"See :ref:`CURLRequest Class <curlrequest-request-options-headers>` for "
+"how to add."
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:72
+msgid "Query Builder Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:74
+msgid ""
+"For optimization and a bug fix, the following behaviors, mostly used in "
+"testing, have been changed."
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:76
+msgid ""
+"When you use ``insertBatch()`` and ``updateBatch()``, the return value of"
+" ``$query->getOriginalQuery()`` has changed. It no longer returns the "
+"query with the binded parameters, but the actual query that was run."
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:77
+msgid ""
+"If ``testMode`` is ``true``, ``insertBatch()`` will return an SQL string "
+"array instead of the number of affected rows. This change was made so "
+"that the returned data type is the same as the ``updateBatch()`` method."
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:80
+msgid "Breaking Enhancements"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:85
+msgid "Multiple Filters for a Route"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:87
+msgid "A new feature to set multiple filters for a route."
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:89
+msgid ""
+"This feature is disabled by default. Because it breaks backward "
+"compatibility."
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:91
+msgid ""
+"If you want to use this, you need to set the property "
+"``$multipleFilters`` ``true`` in ``app/Config/Feature.php``. If you "
+"enable it:"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:94
+msgid "``CodeIgniter\\CodeIgniter::handleRequest()`` uses"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:95
+msgid ""
+"``CodeIgniter\\Filters\\Filters::enableFilters()``, instead of "
+"``enableFilter()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:96
+msgid "``CodeIgniter\\CodeIgniter::tryToRouteIt()`` uses"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:97
+msgid "``CodeIgniter\\Router\\Router::getFilters()``, instead of ``getFilter()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:98
+msgid "``CodeIgniter\\Router\\Router::handle()`` uses"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:99
+msgid "the property ``$filtersInfo``, instead of ``$filterInfo``"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:100
+msgid ""
+"``CodeIgniter\\Router\\RouteCollection::getFiltersForRoute()``, instead "
+"of ``getFilterForRoute()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:102
+msgid "If you extended the above classes, then you need to change them."
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:104
+msgid "The following methods and a property have been deprecated:"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:106
+msgid "``CodeIgniter\\Filters\\Filters::enableFilter()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:107
+msgid "``CodeIgniter\\Router\\Router::getFilter()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:108
+msgid "``CodeIgniter\\Router\\RouteCollection::getFilterForRoute()``"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:109
+msgid "``CodeIgniter\\Router\\RouteCollection``'s property ``$filterInfo``"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:111
+msgid "See :ref:`applying-filters` for the functionality."
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:114
+msgid "Project Files"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:116
+#, python-format
+msgid ""
+"Numerous files in the project space (root, app, public, writable) "
+"received updates. Due to these files being outside of the system scope "
+"they will not be changed without your intervention. There are some third-"
+"party CodeIgniter modules available to assist with merging changes to the"
+" project space: `Explore on Packagist "
+"<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:121
+msgid ""
+"Except in very rare cases for bug fixes, no changes made to files for the"
+" project space will break your application. All changes noted here are "
+"optional until the next major version, and any mandatory changes will be "
+"covered in the sections above."
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:126
+msgid "Content Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:128
+msgid ""
+"The following files received significant changes (including deprecations "
+"or visual adjustments) and it is recommended that you merge the updated "
+"versions with your application:"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:131
+#: ../../source/installation/upgrade_415.rst:145
+msgid "``app/Config/CURLRequest.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:132
+#: ../../source/installation/upgrade_415.rst:146
+msgid "``app/Config/Cache.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:133
+#: ../../source/installation/upgrade_415.rst:147
+msgid "``app/Config/Feature.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:134
+#: ../../source/installation/upgrade_415.rst:148
+msgid "``app/Config/Generators.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:135
+#: ../../source/installation/upgrade_415.rst:150
+msgid "``app/Config/Publisher.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:136
+#: ../../source/installation/upgrade_415.rst:151
+msgid "``app/Config/Security.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:137
+#: ../../source/installation/upgrade_415.rst:152
+msgid "``app/Views/welcome_message.php``"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:140
+msgid "All Changes"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:142
+msgid ""
+"This is a list of all files in the project space that received changes; "
+"many will be simple comments or formatting that have no effect on the "
+"runtime:"
+msgstr ""
+
+#: ../../source/installation/upgrade_415.rst:149
+msgid "``app/Config/Kint.php``"
+msgstr ""
+

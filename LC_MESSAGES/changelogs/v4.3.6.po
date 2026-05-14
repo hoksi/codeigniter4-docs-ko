@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.3.6.rst:2
+msgid "Version 4.3.6"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:4
+msgid "Release Date: June 18, 2023"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:6
+msgid "**4.3.6 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:13
+msgid "BREAKING"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:16
+msgid "Interface Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:18
+msgid ""
+"As long as you have not extended the relevant CodeIgniter core classes or"
+" implemented these interfaces, all these changes are backward compatible "
+"and require no intervention."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:23
+msgid "AutoRouterInterface"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:25
+msgid ""
+"Now ``AutoRouterInterface::getRoute()`` has the new second parameter "
+"``string $httpVerb``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:28
+msgid "ValidationInterface::check()"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:30 ../../source/changelogs/v4.3.6.rst:39
+msgid "The second parameter has changed from ``string $rule`` to ``$rules``."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:31 ../../source/changelogs/v4.3.6.rst:40
+msgid "The optional fourth parameter ``$dbGroup = null`` has been added."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:34
+msgid "Method Signature Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:37
+msgid "Validation::check()"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:43
+msgid "Deprecations"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:45
+msgid ""
+"**AutoRouterImproved:** The constructor parameter ``$httpVerb`` is "
+"deprecated. No longer used."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:49
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:51
+msgid ""
+"**Validation:** Fixed a bug that ``$DBGroup`` is ignored when checking "
+"the value of a placeholder."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:53
+msgid ""
+"**Validation:** Fixed a bug that ``check()`` cannot specify non-default "
+"database group."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:55
+msgid ""
+"**Database:** Fixed a bug where semicolon character (``;``) in one of the"
+" Postgre connection parameters would break the DSN string."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:56
+msgid ""
+"**AutoRouting Improved:** Fixed a bug that feature testing may not find "
+"controller/method."
+msgstr ""
+
+#: ../../source/changelogs/v4.3.6.rst:59
+msgid ""
+"See the repo's `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

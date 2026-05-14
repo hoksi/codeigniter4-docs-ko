@@ -1,0 +1,531 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/helpers/text_helper.rst:3
+msgid "Text Helper"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:5
+msgid "The Text Helper file contains functions that assist in working with Text."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:12
+msgid "Loading this Helper"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:14
+msgid "This helper is loaded using the following code:"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:19
+msgid "Available Functions"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:21
+msgid "The following functions are available:"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:25
+msgid "Randomization type"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:26
+msgid "Output string length"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:27
+msgid "A random string"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:30
+msgid ""
+"Generates a random string based on the type and length you specify. "
+"Useful for creating passwords or generating random hashes."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:33
+msgid ""
+"The first parameter specifies the type of string, the second parameter "
+"specifies the length. The following choices are available:"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:36
+msgid "**alpha**: A string with lower and uppercase letters only."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:37
+msgid "**alnum**: Alphanumeric string with lower and uppercase characters."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:38
+msgid "**numeric**: Numeric string."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:39
+msgid "**nozero**: Numeric string with no zeros."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:40
+msgid "**crypto**: A random string based on ``random_bytes()``."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:42
+msgid ""
+"When you use **crypto**, you must set an even number to the second "
+"parameter. Since v4.2.2, if you set an odd number, "
+"``InvalidArgumentException`` will be thrown."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:45
+msgid ""
+"Since v4.3.3, **alpha**, **alnum** and **nozero** use ``random_byte()``, "
+"and **numeric** uses ``random_int()``. In the previous versions, it used "
+"``str_shuffle()`` that is not cryptographically secure."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:50
+#: ../../source/helpers/text_helper.rst:66
+msgid "Usage example:"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:56
+#: ../../source/helpers/text_helper.rst:91
+#: ../../source/helpers/text_helper.rst:142
+#: ../../source/helpers/text_helper.rst:153
+#: ../../source/helpers/text_helper.rst:163
+#: ../../source/helpers/text_helper.rst:178
+#: ../../source/helpers/text_helper.rst:200
+#: ../../source/helpers/text_helper.rst:218
+#: ../../source/helpers/text_helper.rst:228
+#: ../../source/helpers/text_helper.rst:246
+#: ../../source/helpers/text_helper.rst:264
+#: ../../source/helpers/text_helper.rst:277
+#: ../../source/helpers/text_helper.rst:309
+#: ../../source/helpers/text_helper.rst:323
+msgid "Input string"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:57
+msgid "Separator to append a duplicate number with"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:58
+msgid "Starting number"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:59
+msgid "An incremented string"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:62
+msgid ""
+"Increments a string by appending a number to it or increasing the number."
+" Useful for creating \"copies\" or a file or duplicating database content"
+" which has unique titles or slugs."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:72
+msgid "A variable number of arguments"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:73
+msgid "Alternated string(s)"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:76
+msgid ""
+"Allows two or more items to be alternated between, when cycling through a"
+" loop. Example:"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:81
+msgid ""
+"You can add as many parameters as you want, and with each iteration of "
+"your loop the next item will be returned."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:86
+msgid ""
+"To use multiple separate calls to this function simply call the function "
+"with no arguments to re-initialize."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:92
+msgid "A string with normalized slashes"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:95
+msgid ""
+"Converts double slashes in a string to a single slash, except those found"
+" in URL protocol prefixes (e.g., http&#58;//)."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:98
+#: ../../source/helpers/text_helper.rst:110
+#: ../../source/helpers/text_helper.rst:188
+#: ../../source/helpers/text_helper.rst:212
+#: ../../source/helpers/text_helper.rst:236
+#: ../../source/helpers/text_helper.rst:258
+#: ../../source/helpers/text_helper.rst:289
+#: ../../source/helpers/text_helper.rst:317
+#: ../../source/helpers/text_helper.rst:342
+#: ../../source/helpers/text_helper.rst:368
+msgid "Example:"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:104
+msgid "Input string or an array of strings"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:105
+msgid "String(s) with stripped slashes"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:108
+msgid "Removes any slashes from an array of strings."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:114
+msgid "The above will return the following array:"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:118
+msgid ""
+"For historical reasons, this function will also accept and handle string "
+"inputs. This however makes it just an alias for ``stripslashes()``."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:124
+msgid "Text to search in"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:125
+msgid "Character to reduce"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:126
+msgid "Whether to also trim the specified character"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:127
+msgid "Reduced string"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:130
+msgid ""
+"Reduces multiple instances of a particular character occurring directly "
+"after each other. Example:"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:135
+msgid ""
+"If the third parameter is set to ``true``, it will remove occurrences of "
+"the character at the beginning and the end of the string. Example:"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:143
+msgid "String with quotes converted to HTML entities"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:146
+msgid ""
+"Converts single and double quotes in a string to the corresponding HTML "
+"entities. Example:"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:154
+msgid "String with quotes stripped"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:157
+msgid "Removes single and double quotes from a string. Example:"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:164
+msgid "Limit"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:165
+#: ../../source/helpers/text_helper.rst:180
+msgid "End character (usually an ellipsis)"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:166
+msgid "Word-limited string"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:169
+msgid "Truncates a string to the number of *words* specified. Example:"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:173
+msgid ""
+"The third parameter is an optional suffix added to the string. By default"
+" it adds an ellipsis."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:179
+msgid "Number of characters"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:181
+msgid "Character-limited string"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:184
+msgid ""
+"Truncates a string to the number of *characters* specified. It maintains "
+"the integrity of words so the character count may be slightly more or "
+"less than what you specify."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:192
+msgid ""
+"The third parameter is an optional suffix added to the string, if "
+"undeclared this helper uses an ellipsis."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:195
+msgid ""
+"If you need to truncate to an exact number of characters, please see the "
+":php:func:`ellipsize()` function below."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:201
+msgid "A string with ASCII values converted to entities"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:204
+#, python-format
+msgid ""
+"Converts ASCII values to character entities, including high ASCII and MS "
+"Word characters that can cause problems when used in a web page, so that "
+"they can be shown consistently regardless of browser settings or stored "
+"reliably in a database. There is some dependence on your server's "
+"supported character sets, so it may not be 100% reliable in all cases, "
+"but for the most part, it should correctly identify characters outside "
+"the normal range (like accented characters)."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:219
+msgid "Whether to convert unsafe entities as well"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:220
+msgid "A string with HTML entities converted to ASCII characters"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:223
+msgid ""
+"This function does the opposite of :php:func:`ascii_to_entities()`. It "
+"turns character entities back into ASCII."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:229
+msgid "A string with accented characters converted"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:232
+msgid ""
+"Transliterates high ASCII characters to low ASCII equivalents. Useful "
+"when non-English characters need to be used where only standard ASCII "
+"characters are safely used, for instance, in URLs."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:240
+msgid ""
+"This function uses a companion config file "
+"**app/Config/ForeignCharacters.php** to define the to and from array for "
+"transliteration."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:247
+msgid "List of bad words to censor"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:248
+msgid "What to replace bad words with"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:249
+msgid "Censored string"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:252
+msgid ""
+"Enables you to censor words within a text string. The first parameter "
+"will contain the original string. The second will contain an array of "
+"words which you disallow. The third (optional) parameter can contain a "
+"replacement value for the words. If not specified they are replaced with "
+"pound signs: ####."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:265
+msgid "String with code highlighted via HTML"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:268
+msgid "Colorizes a string of code (PHP, HTML, etc.). Example:"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:272
+msgid ""
+"The function uses PHP's ``highlight_string()`` function, so the colors "
+"used are the ones specified in your php.ini file."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:278
+msgid "Phrase to highlight"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:279
+msgid "Opening tag used for the highlight"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:280
+msgid "Closing tag for the highlight"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:281
+msgid "String with a phrase highlighted via HTML"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:284
+msgid ""
+"Will highlight a phrase within a text string. The first parameter will "
+"contain the original string, the second will contain the phrase you wish "
+"to highlight. The third and fourth parameters will contain the "
+"opening/closing HTML tags you would like the phrase wrapped in."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:293
+msgid "The above code prints::"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:297
+msgid ""
+"This function used to use the ``<strong>`` tag by default. Older browsers"
+" might not support the new HTML5 mark tag, so it is recommended that you "
+"insert the following CSS code into your stylesheet if you need to support"
+" such browsers::"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:310
+msgid "Character limit"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:311
+msgid "Word-wrapped string"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:314
+msgid ""
+"Wraps text at the specified *character* count while maintaining complete "
+"words."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:324
+msgid "String length limit"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:325
+msgid "Position to split at (int or float)"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:326
+#: ../../source/helpers/text_helper.rst:355
+msgid "What to use as the ellipsis character"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:327
+msgid "Ellipsized string"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:330
+msgid ""
+"This function will strip tags from a string, split it at a defined "
+"maximum length, and insert an ellipsis."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:333
+msgid ""
+"The first parameter is the string to ellipsize, the second is the number "
+"of characters in the final string. The third parameter is where in the "
+"string the ellipsis should appear from 0 - 1, left to right. For example."
+" a value of 1 will place the ellipsis at the right of the string, .5 in "
+"the middle, and 0 at the left."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:339
+msgid ""
+"An optional fourth parameter is the kind of ellipsis. By default, "
+"&hellip; will be inserted."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:346
+#: ../../source/helpers/text_helper.rst:372
+msgid "Produces::"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:352
+msgid "Text to extract an excerpt"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:353
+msgid "Phrase or word to extract the text around"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:354
+msgid "Number of characters before and after $phrase"
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:356
+msgid "Excerpt."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:359
+msgid ""
+"This function will extract $radius number of characters before and after "
+"the central $phrase with an ellipsis before and after."
+msgstr ""
+
+#: ../../source/helpers/text_helper.rst:362
+msgid ""
+"The first parameter is the text to extract an excerpt from, the second is"
+" the central word or phrase to count before and after. The third "
+"parameter is the number of characters to count before and after the "
+"central phrase. If no phrase passed, the excerpt will include the first "
+"$radius characters with the ellipsis at the end."
+msgstr ""
+

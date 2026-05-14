@@ -1,0 +1,454 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/general/modules.rst:3
+msgid "Code Modules"
+msgstr ""
+
+#: ../../source/general/modules.rst:5
+msgid ""
+"CodeIgniter supports a form of code modularization to help you create "
+"reusable code. Modules are typically centered around a specific subject, "
+"and can be thought of as mini-applications within your larger "
+"application."
+msgstr ""
+
+#: ../../source/general/modules.rst:8
+msgid ""
+"Any of the standard file types within the framework are supported, like "
+"controllers, models, views, config files, helpers, language files, etc. "
+"Modules may contain as few, or as many, of these as you like."
+msgstr ""
+
+#: ../../source/general/modules.rst:12
+msgid ""
+"If you want to create a module as a Composer package, see also "
+":doc:`../extending/composer_packages`."
+msgstr ""
+
+#: ../../source/general/modules.rst:20
+msgid "Namespaces"
+msgstr ""
+
+#: ../../source/general/modules.rst:22
+msgid ""
+"The core element of the modules functionality comes from the :doc:`PSR-4 "
+"compatible autoloading <../concepts/autoloader>` that CodeIgniter uses. "
+"While any code can use the PSR-4 autoloader and namespaces, the primary "
+"way to take full advantage of modules is to namespace your code and add "
+"it to **app/Config/Autoload.php**, in the ``$psr4`` property."
+msgstr ""
+
+#: ../../source/general/modules.rst:26
+msgid ""
+"For example, let's say we want to keep a simple blog module that we can "
+"re-use between applications. We might create folder with our company "
+"name, Acme, to store all of our modules within. We will put it right "
+"alongside our **app** directory in the main project root::"
+msgstr ""
+
+#: ../../source/general/modules.rst:37
+msgid ""
+"Open **app/Config/Autoload.php** and add the ``Acme\\Blog`` namespace to "
+"the ``$psr4`` array property:"
+msgstr ""
+
+#: ../../source/general/modules.rst:41
+#, python-format
+msgid ""
+"Now that this is set up, we can access any file within the **acme/Blog** "
+"folder through the ``Acme\\Blog`` namespace. This alone takes care of 80%"
+" of what is needed for modules to work, so you should be sure to "
+"familiarize yourself with namespaces and become comfortable with their "
+"use. Several file types will be scanned for automatically through all "
+"defined namespaces - a crucial ingredient for working with modules."
+msgstr ""
+
+#: ../../source/general/modules.rst:45
+msgid ""
+"A common directory structure within a module will mimic the main "
+"application folder::"
+msgstr ""
+
+#: ../../source/general/modules.rst:61
+msgid ""
+"Of course, there is nothing forcing you to use this exact structure, and "
+"you should organize it in the manner that best suits your module, leaving"
+" out directories you don't need, creating new directories for Entities, "
+"Interfaces, or Repositories, etc."
+msgstr ""
+
+#: ../../source/general/modules.rst:67
+msgid "Autoloading Non-class Files"
+msgstr ""
+
+#: ../../source/general/modules.rst:69
+msgid ""
+"More often than not that your module will not contain only PHP classes "
+"but also others like procedural functions, bootstrapping files, module "
+"constants files, etc. which are not normally loaded the way classes are "
+"loaded. One approach for this is using ``require``-ing the file(s) at the"
+" start of the file where it would be used."
+msgstr ""
+
+#: ../../source/general/modules.rst:74
+msgid ""
+"Another approach provided by CodeIgniter is to autoload these *non-class*"
+" files like how you would autoload your classes. All we need to do is "
+"provide the list of paths to those files and include them in the "
+"``$files`` property of your **app/Config/Autoload.php** file."
+msgstr ""
+
+#: ../../source/general/modules.rst:84
+msgid "Auto-Discovery"
+msgstr ""
+
+#: ../../source/general/modules.rst:86
+msgid ""
+"Many times, you will need to specify the full namespace to files you want"
+" to include, but CodeIgniter can be configured to make integrating "
+"modules into your applications simpler by automatically discovering many "
+"different file types, including:"
+msgstr ""
+
+#: ../../source/general/modules.rst:90
+msgid ":doc:`Events <../extending/events>`"
+msgstr ""
+
+#: ../../source/general/modules.rst:91
+msgid ":doc:`Filters <../incoming/filters>`"
+msgstr ""
+
+#: ../../source/general/modules.rst:92
+msgid ":ref:`registrars`"
+msgstr ""
+
+#: ../../source/general/modules.rst:93
+msgid ":doc:`Route files <../incoming/routing>`"
+msgstr ""
+
+#: ../../source/general/modules.rst:94
+msgid ":doc:`Services <../concepts/services>`"
+msgstr ""
+
+#: ../../source/general/modules.rst:96
+msgid "This is configured in the file **app/Config/Modules.php**."
+msgstr ""
+
+#: ../../source/general/modules.rst:98
+msgid ""
+"The auto-discovery system works by scanning for particular directories "
+"and files within psr4 namespaces that have been defined in "
+"**Config/Autoload.php** and Composer packages."
+msgstr ""
+
+#: ../../source/general/modules.rst:100
+msgid ""
+"The discovery process would look for discoverable items on that path and "
+"should, for example, find the routes file at "
+"**acme/Blog/Config/Routes.php**."
+msgstr ""
+
+#: ../../source/general/modules.rst:103
+msgid "Enable/Disable Discover"
+msgstr ""
+
+#: ../../source/general/modules.rst:105
+msgid ""
+"You can turn on or off all auto-discovery in the system with the "
+"``$enabled`` class variable. False will disable all discovery, optimizing"
+" performance, but negating the special capabilities of your modules and "
+"Composer packages."
+msgstr ""
+
+#: ../../source/general/modules.rst:109
+msgid "Specify Discovery Items"
+msgstr ""
+
+#: ../../source/general/modules.rst:111
+msgid ""
+"With the ``$aliases`` option, you can specify which items are "
+"automatically discovered. If the item is not present, then no auto-"
+"discovery will happen for that item, but the others in the array will "
+"still be discovered."
+msgstr ""
+
+#: ../../source/general/modules.rst:115
+msgid "Discovery and Composer"
+msgstr ""
+
+#: ../../source/general/modules.rst:117
+msgid ""
+"Packages installed via Composer using PSR-4 namespaces will also be "
+"discovered by default. PSR-0 namespaced packages will not be detected."
+msgstr ""
+
+#: ../../source/general/modules.rst:123
+msgid "Specify Composer Packages"
+msgstr ""
+
+#: ../../source/general/modules.rst:127
+msgid ""
+"To avoid wasting time scanning for irrelevant Composer packages, you can "
+"manually specify packages to discover by editing the "
+"``$composerPackages`` variable in **app/Config/Modules.php**:"
+msgstr ""
+
+#: ../../source/general/modules.rst:131
+msgid "Alternatively, you can specify which packages to exclude from discovery."
+msgstr ""
+
+#: ../../source/general/modules.rst:136
+msgid "Disable Composer Package Discovery"
+msgstr ""
+
+#: ../../source/general/modules.rst:138
+msgid ""
+"If you do not want all of Composer's known directories to be scanned when"
+" locating files, you can turn this off by editing the "
+"``$discoverInComposer`` variable in **app/Config/Modules.php**:"
+msgstr ""
+
+#: ../../source/general/modules.rst:145
+msgid "Working with Files"
+msgstr ""
+
+#: ../../source/general/modules.rst:147
+msgid ""
+"This section will take a look at each of the file types (controllers, "
+"views, language files, etc) and how they can be used within the module. "
+"Some of this information is described in more detail in the relevant "
+"location of the user guide, but is being reproduced here so that it's "
+"easier to grasp how all of the pieces fit together."
+msgstr ""
+
+#: ../../source/general/modules.rst:152
+msgid "Routes"
+msgstr ""
+
+#: ../../source/general/modules.rst:154
+msgid ""
+"By default, :doc:`routes <../incoming/routing>` are automatically scanned"
+" for within modules. It can be turned off in the **Modules** config file,"
+" described above."
+msgstr ""
+
+#: ../../source/general/modules.rst:157
+msgid ""
+"Since the files are being included into the current scope, the "
+"``$routes`` instance is already defined for you. It will cause errors if "
+"you attempt to redefine that class."
+msgstr ""
+
+#: ../../source/general/modules.rst:160
+msgid ""
+"When working with modules, it can be a problem if the routes in the "
+"application contain wildcards. In that case, see :ref:`routing-priority`."
+msgstr ""
+
+#: ../../source/general/modules.rst:166
+msgid "Filters"
+msgstr ""
+
+#: ../../source/general/modules.rst:170
+msgid ""
+"This feature is deprecated. Use :ref:`registrars` instead like the "
+"following:"
+msgstr ""
+
+#: ../../source/general/modules.rst:175
+msgid ""
+"By default, :doc:`filters <../incoming/filters>` are automatically "
+"scanned for within modules. It can be turned off in the **Modules** "
+"config file, described above."
+msgstr ""
+
+#: ../../source/general/modules.rst:178
+msgid ""
+"Since the files are being included into the current scope, the "
+"``$filters`` instance is already defined for you. It will cause errors if"
+" you attempt to redefine that class."
+msgstr ""
+
+#: ../../source/general/modules.rst:181
+msgid ""
+"In the module's **Config/Filters.php** file, you need to define the "
+"aliases of the filters you use:"
+msgstr ""
+
+#: ../../source/general/modules.rst:186
+msgid "Controllers"
+msgstr ""
+
+#: ../../source/general/modules.rst:188
+msgid ""
+"Controllers outside of the main **app/Controllers** directory cannot be "
+"automatically routed by URI detection, but must be specified within the "
+"Routes file itself:"
+msgstr ""
+
+#: ../../source/general/modules.rst:193
+msgid ""
+"To reduce the amount of typing needed here, the **group** routing feature"
+" is helpful:"
+msgstr ""
+
+#: ../../source/general/modules.rst:198
+msgid "Config Files"
+msgstr ""
+
+#: ../../source/general/modules.rst:200
+msgid ""
+"No special change is needed when working with configuration files. These "
+"are still namespaced classes and loaded with the ``new`` command:"
+msgstr ""
+
+#: ../../source/general/modules.rst:205
+msgid ""
+"Config files are automatically discovered whenever using the "
+":php:func:`config()` function that is always available, and you pass a "
+"short classname to it."
+msgstr ""
+
+#: ../../source/general/modules.rst:207
+msgid ""
+"We don't recommend you use the same short classname in modules. Modules "
+"that need to override or add to known configurations in **app/Config/** "
+"should use :ref:`Implicit Registrars <registrars>`."
+msgstr ""
+
+#: ../../source/general/modules.rst:210
+msgid ""
+"Prior to v4.4.0, ``config()`` finds the file in **app/Config/** when "
+"there is a class with the same shortname, even if you specify a fully "
+"qualified class name like ``config(\\Acme\\Blog\\Config\\Blog::class)``. "
+"This behavior has been fixed in v4.4.0, and returns the specified "
+"instance."
+msgstr ""
+
+#: ../../source/general/modules.rst:216
+msgid "Migrations"
+msgstr ""
+
+#: ../../source/general/modules.rst:218
+msgid ""
+"Migration files will be automatically discovered within defined "
+"namespaces. All migrations found across all namespaces will be run every "
+"time."
+msgstr ""
+
+#: ../../source/general/modules.rst:222
+msgid "Seeds"
+msgstr ""
+
+#: ../../source/general/modules.rst:224
+msgid ""
+"Seed files can be used from both the CLI and called from within other "
+"seed files as long as the full namespace is provided. If calling on the "
+"CLI, you will need to provide double backslashes:"
+msgstr ""
+
+#: ../../source/general/modules.rst:228
+msgid "For Unix:"
+msgstr ""
+
+#: ../../source/general/modules.rst:234
+msgid "For Windows:"
+msgstr ""
+
+#: ../../source/general/modules.rst:241
+msgid "Helpers"
+msgstr ""
+
+#: ../../source/general/modules.rst:243
+msgid ""
+"Helpers will be automatically discovered within defined namespaces when "
+"using the :php:func:`helper()` function, as long as it is within the "
+"namespaces **Helpers** directory:"
+msgstr ""
+
+#: ../../source/general/modules.rst:249
+msgid ""
+"You can specify namespaces. See :ref:`helpers-loading-from-specified-"
+"namespace` for details."
+msgstr ""
+
+#: ../../source/general/modules.rst:252
+msgid "Language Files"
+msgstr ""
+
+#: ../../source/general/modules.rst:254
+msgid ""
+"Language files are located automatically from defined namespaces when "
+"using the :php:func:`lang()` function, as long as the file follows the "
+"same directory structures as the main application directory."
+msgstr ""
+
+#: ../../source/general/modules.rst:259
+msgid "Libraries"
+msgstr ""
+
+#: ../../source/general/modules.rst:261
+msgid ""
+"Libraries are always instantiated by their fully-qualified class name, so"
+" no special access is provided:"
+msgstr ""
+
+#: ../../source/general/modules.rst:266
+msgid "Models"
+msgstr ""
+
+#: ../../source/general/modules.rst:268
+msgid ""
+"If you instantiate models with ``new`` keyword by their fully-qualified "
+"class names, no special access is provided:"
+msgstr ""
+
+#: ../../source/general/modules.rst:272
+msgid ""
+"Model files are automatically discovered whenever using the "
+":php:func:`model()` function that is always available."
+msgstr ""
+
+#: ../../source/general/modules.rst:274
+msgid "We don't recommend you use the same short classname in modules."
+msgstr ""
+
+#: ../../source/general/modules.rst:276
+msgid ""
+"Prior to v4.4.0, ``model()`` finds the file in **app/Models/** when there"
+" is a class with the same shortname, even if you specify a fully "
+"qualified class name like "
+"``model(\\Acme\\Blog\\Model\\PostModel::class)``. See the Note in :ref"
+":`factories-passing-fully-qualified-classname` for more information."
+msgstr ""
+
+#: ../../source/general/modules.rst:283
+msgid "Views"
+msgstr ""
+
+#: ../../source/general/modules.rst:285
+msgid ""
+"Views can be loaded using the class namespace as described in the "
+":ref:`views <namespaced-views>` documentation:"
+msgstr ""
+

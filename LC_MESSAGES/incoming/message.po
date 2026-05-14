@@ -1,0 +1,262 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/incoming/message.rst:3
+msgid "HTTP Messages"
+msgstr ""
+
+#: ../../source/incoming/message.rst:5
+msgid ""
+"The Message class provides an interface to the portions of an HTTP "
+"message that are common to both requests and responses, including the "
+"message body, protocol version, utilities for working with the headers, "
+"and methods for handling content negotiation."
+msgstr ""
+
+#: ../../source/incoming/message.rst:9
+msgid ""
+"This class is the parent class that both the :doc:`Request Class "
+"<../incoming/request>` and the :doc:`Response Class "
+"<../outgoing/response>` extend from, and it is not used directly."
+msgstr ""
+
+#: ../../source/incoming/message.rst:14
+msgid "Class Reference"
+msgstr ""
+
+#: ../../source/incoming/message.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/incoming/message.rst:22
+msgid "The current message body"
+msgstr ""
+
+#: ../../source/incoming/message.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/incoming/message.rst:25
+msgid ""
+"Returns the current message body, if any has been set. If not body "
+"exists, returns null:"
+msgstr ""
+
+#: ../../source/incoming/message.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/incoming/message.rst:31 ../../source/incoming/message.rst:39
+msgid "The body of the message."
+msgstr ""
+
+#: ../../source/incoming/message.rst:32 ../../source/incoming/message.rst:40
+msgid "the Message|Response instance to allow methods to be chained together."
+msgstr ""
+
+#: ../../source/incoming/message.rst:35
+msgid "Sets the body of the current request."
+msgstr ""
+
+#: ../../source/incoming/message.rst:43
+msgid "Appends data to the body of the current request."
+msgstr ""
+
+#: ../../source/incoming/message.rst:47
+msgid "void"
+msgstr ""
+
+#: ../../source/incoming/message.rst:49
+msgid ""
+"Scans and parses the headers found in the SERVER data and stores it for "
+"later access. This is used by the :doc:`IncomingRequest Class "
+"<../incoming/incomingrequest>` to make the current request's headers "
+"available."
+msgstr ""
+
+#: ../../source/incoming/message.rst:53
+msgid ""
+"The headers are any SERVER data that starts with ``HTTP_``, like "
+"``HTTP_HOST``. Each message is converted from it's standard uppercase and"
+" underscore format to a ucwords and dash format. The preceding ``HTTP_`` "
+"is removed from the string. So ``HTTP_ACCEPT_LANGUAGE`` becomes ``Accept-"
+"Language``."
+msgstr ""
+
+#: ../../source/incoming/message.rst:60
+msgid "An array of all of the headers found."
+msgstr ""
+
+#: ../../source/incoming/message.rst:63
+msgid "Returns an array of all headers found or previously set."
+msgstr ""
+
+#: ../../source/incoming/message.rst:67
+msgid "The name of the header you want to retrieve the value of."
+msgstr ""
+
+#: ../../source/incoming/message.rst:68
+msgid ""
+"Returns a single header object. If multiple headers with the same name "
+"exist, then will return an array of header objects."
+msgstr ""
+
+#: ../../source/incoming/message.rst:71
+msgid ""
+"Allows you to retrieve the current value of a single message header. "
+"``$name`` is the case-insensitive header name. While the header is "
+"converted internally as described above, you can access the header with "
+"any type of case:"
+msgstr ""
+
+#: ../../source/incoming/message.rst:76
+msgid ""
+"If the header has multiple values, ``getValue()`` will return as an array"
+" of values. You can use the ``getValueLine()`` method to retrieve the "
+"values as a string:"
+msgstr ""
+
+#: ../../source/incoming/message.rst:81
+msgid ""
+"You can filter the header by passing a filter value in as the second "
+"parameter:"
+msgstr ""
+
+#: ../../source/incoming/message.rst:87
+msgid "The name of the header you want to see if it exists."
+msgstr ""
+
+#: ../../source/incoming/message.rst:88
+msgid "Returns true if it exists, false otherwise."
+msgstr ""
+
+#: ../../source/incoming/message.rst:93
+msgid "The name of the header to retrieve."
+msgstr ""
+
+#: ../../source/incoming/message.rst:94
+msgid "A string representing the header value."
+msgstr ""
+
+#: ../../source/incoming/message.rst:97
+msgid ""
+"Returns the value(s) of the header as a string. This method allows you to"
+" easily get a string representation of the header values when the header "
+"has multiple values. The values are appropriately joined:"
+msgstr ""
+
+#: ../../source/incoming/message.rst:104
+msgid "The name of the header to set the value for."
+msgstr ""
+
+#: ../../source/incoming/message.rst:105
+msgid "The value to set the header to."
+msgstr ""
+
+#: ../../source/incoming/message.rst:106
+msgid "The current Message|Response instance"
+msgstr ""
+
+#: ../../source/incoming/message.rst:109
+msgid ""
+"Sets the value of a single header. ``$name`` is the case-insensitive name"
+" of the header. If the header doesn't already exist in the collection, it"
+" will be created. The ``$value`` can be either a string or an array of "
+"strings:"
+msgstr ""
+
+#: ../../source/incoming/message.rst:117
+msgid "The name of the header to remove."
+msgstr ""
+
+#: ../../source/incoming/message.rst:118 ../../source/incoming/message.rst:129
+#: ../../source/incoming/message.rst:141 ../../source/incoming/message.rst:155
+#: ../../source/incoming/message.rst:174
+msgid "The current message instance"
+msgstr ""
+
+#: ../../source/incoming/message.rst:121
+msgid ""
+"Removes the header from the Message. ``$name`` is the case-insensitive "
+"name of the header:"
+msgstr ""
+
+#: ../../source/incoming/message.rst:127 ../../source/incoming/message.rst:139
+msgid "The name of the header to modify"
+msgstr ""
+
+#: ../../source/incoming/message.rst:128
+msgid "The value to add to the header."
+msgstr ""
+
+#: ../../source/incoming/message.rst:132
+msgid ""
+"Adds a value to an existing header. The header must already be an array "
+"of values instead of a single string. If it is a string then a "
+"LogicException will be thrown."
+msgstr ""
+
+#: ../../source/incoming/message.rst:140
+msgid "The value to prepend to the header."
+msgstr ""
+
+#: ../../source/incoming/message.rst:144
+msgid ""
+"Prepends a value to an existing header. The header must already be an "
+"array of values instead of a single string. If it is a string then a "
+"LogicException will be thrown."
+msgstr ""
+
+#: ../../source/incoming/message.rst:153
+msgid "The name of the header to add."
+msgstr ""
+
+#: ../../source/incoming/message.rst:154
+msgid "The value of the header."
+msgstr ""
+
+#: ../../source/incoming/message.rst:158
+msgid ""
+"Adds a header (not a header value) with the same name. Use this only when"
+" you set multiple headers with the same name,"
+msgstr ""
+
+#: ../../source/incoming/message.rst:165
+msgid "The current HTTP protocol version"
+msgstr ""
+
+#: ../../source/incoming/message.rst:168
+msgid ""
+"Returns the message's current HTTP protocol. If none has been set, will "
+"return ``1.1``."
+msgstr ""
+
+#: ../../source/incoming/message.rst:173
+msgid "The HTTP protocol version"
+msgstr ""
+
+#: ../../source/incoming/message.rst:177
+msgid ""
+"Sets the HTTP protocol version this Message uses. Valid values are "
+"``1.0``, ``1.1``, ``2.0`` and ``3.0``:"
+msgstr ""
+
