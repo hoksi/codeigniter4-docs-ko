@@ -1,17 +1,16 @@
-# SOME DESCRIPTIVE TITLE.
+# CodeIgniter 4 User Guide Korean Translation.
 # Copyright (C) 2019-2026 CodeIgniter Foundation
 # This file is distributed under the same license as the CodeIgniter
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+# hoksi <hoksi@github.com>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-05-14 21:00+0900\n"
+"Last-Translator: hoksi <hoksi@github.com>\n"
 "Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../source/guides/api/database-setup.rst:4
 msgid "Creating the Database and Model"
-msgstr ""
+msgstr "데이터베이스 및 모델 생성"
 
 #: ../../source/guides/api/database-setup.rst:10
 msgid ""
@@ -30,129 +29,128 @@ msgid ""
 "table for our ``books`` resource, seeding it with sample data, and "
 "defining a model to access it. By the end, you'll have a working "
 "``books`` table populated with example rows."
-msgstr ""
+msgstr "이 섹션에서는 ``books`` 리소스를 위한 SQLite 데이터베이스 테이블을 만들고, 샘플 데이터를 시딩(seeding)하며, 이를 접근하기 위한 모델을 정의하여 데이터 계층을 설정합니다. 완료되면 예제 행으로 채워진 작동하는 ``books`` 테이블이 준비됩니다."
 
 #: ../../source/guides/api/database-setup.rst:13
 msgid "Create the Migrations"
-msgstr ""
+msgstr "마이그레이션 생성"
 
 #: ../../source/guides/api/database-setup.rst:15
 msgid ""
 "Migrations let you version-control your database schema by defining what "
 "to apply and how to roll it back. Let's make ones for simple ``authors`` "
 "and ``books`` tables."
-msgstr ""
+msgstr "마이그레이션은 적용할 내용과 롤백 방법을 정의하여 데이터베이스 스키마를 버전 관리할 수 있게 해줍니다. 간단한 ``authors`` 및 ``books`` 테이블을 위한 마이그레이션을 만들어 봅시다."
 
 #: ../../source/guides/api/database-setup.rst:17
 msgid "Run the Spark command:"
-msgstr ""
+msgstr "다음 Spark 명령을 실행합니다:"
 
 #: ../../source/guides/api/database-setup.rst:24
 msgid "This creates a new file under **app/Database/Migrations/**."
-msgstr ""
+msgstr "이 명령은 **app/Database/Migrations/** 아래에 새 파일을 생성합니다."
 
 #: ../../source/guides/api/database-setup.rst:26
 msgid "Edit **app/Database/Migrations/CreateAuthorsTable.php** to look like this:"
-msgstr ""
+msgstr "**app/Database/Migrations/CreateAuthorsTable.php** 를 다음과 같이 수정합니다:"
 
 #: ../../source/guides/api/database-setup.rst:30
 msgid ""
 "Each author only needs a name for our purposes. We've made the name a "
 "unique key to prevent duplicates."
-msgstr ""
+msgstr "이 예제에서는 각 저자의 이름만 필요합니다. 중복을 방지하기 위해 이름을 고유 키(unique key)로 설정했습니다."
 
 #: ../../source/guides/api/database-setup.rst:32
 msgid ""
 "Now, edit **app/Database/Migrations/CreateBooksTable.php** to look like "
 "this:"
-msgstr ""
+msgstr "이제 **app/Database/Migrations/CreateBooksTable.php** 를 다음과 같이 수정합니다:"
 
 #: ../../source/guides/api/database-setup.rst:36
 msgid ""
 "This contains a foreign key reference to the ``authors`` table. It lets "
 "us associate each book with an author and keep author names in one place."
-msgstr ""
+msgstr "여기에는 ``authors`` 테이블을 참조하는 외래 키(foreign key)가 포함되어 있습니다. 이를 통해 각 책을 저자와 연결하고 저자 이름을 한 곳에서 관리할 수 있습니다."
 
 #: ../../source/guides/api/database-setup.rst:38
 msgid "Now run the migration:"
-msgstr ""
+msgstr "이제 마이그레이션을 실행합니다:"
 
 #: ../../source/guides/api/database-setup.rst:44
 msgid ""
 "Now, the database has the structure needed to hold our book and author "
 "records."
-msgstr ""
+msgstr "이제 데이터베이스에 책과 저자 레코드를 저장할 구조가 마련되었습니다."
 
 #: ../../source/guides/api/database-setup.rst:47
 msgid "Create a seeder"
-msgstr ""
+msgstr "시더(Seeder) 생성"
 
 #: ../../source/guides/api/database-setup.rst:49
 msgid ""
 "Seeders load sample data for development so you have something to work "
 "with right away. Here, we'll add some example books and their authors."
-msgstr ""
+msgstr "시더는 개발용 샘플 데이터를 로드하여 즉시 작업할 수 있게 해줍니다. 여기서는 몇 가지 예제 책과 저자를 추가하겠습니다."
 
 #: ../../source/guides/api/database-setup.rst:51
 msgid "Run:"
-msgstr ""
+msgstr "명령 실행:"
 
 #: ../../source/guides/api/database-setup.rst:57
 msgid "Edit the file at **app/Database/Seeds/BookSeeder.php**:"
-msgstr ""
+msgstr "**app/Database/Seeds/BookSeeder.php** 파일을 수정합니다:"
 
 #: ../../source/guides/api/database-setup.rst:61
 msgid ""
 "This seeder first inserts authors into the ``authors`` table, captures "
 "their IDs, and then uses those IDs to insert books into the ``books`` "
 "table."
-msgstr ""
+msgstr "이 시더는 먼저 저자들을 ``authors`` 테이블에 삽입하고 해당 ID를 가져온 다음, 그 ID들을 사용하여 책들을 ``books`` 테이블에 삽입합니다."
 
 #: ../../source/guides/api/database-setup.rst:63
 msgid "Then run the seeder:"
-msgstr ""
+msgstr "그런 다음 시더를 실행합니다:"
 
 #: ../../source/guides/api/database-setup.rst:69
 msgid "You should see confirmation messages indicating the rows were inserted."
-msgstr ""
+msgstr "행이 성공적으로 삽입되었음을 알리는 확인 메시지가 표시될 것입니다."
 
 #: ../../source/guides/api/database-setup.rst:72
 msgid "Create the Book model"
-msgstr ""
+msgstr "Book 모델 생성"
 
 #: ../../source/guides/api/database-setup.rst:74
 msgid ""
 "Models make database access simple and reusable by providing an object-"
 "oriented interface to your tables and a fluent query API. Let's create "
 "models for the ``authors`` and ``books`` tables."
-msgstr ""
+msgstr "모델은 테이블에 대한 객체 지향 인터페이스와 유연한 쿼리 API를 제공하여 데이터베이스 접근을 단순하고 재사용 가능하게 만듭니다. ``authors`` 및 ``books`` 테이블을 위한 모델을 만들어 봅시다."
 
 #: ../../source/guides/api/database-setup.rst:76
 msgid "Generate one:"
-msgstr ""
+msgstr "생성 명령:"
 
 #: ../../source/guides/api/database-setup.rst:83
 msgid "Both models will be simple extensions of CodeIgniter's base Model class."
-msgstr ""
+msgstr "두 모델 모두 CodeIgniter의 기본 Model 클래스를 간단히 확장할 것입니다."
 
 #: ../../source/guides/api/database-setup.rst:85
 msgid "Edit **app/Models/AuthorModel.php**:"
-msgstr ""
+msgstr "**app/Models/AuthorModel.php** 파일을 수정합니다:"
 
 #: ../../source/guides/api/database-setup.rst:89
 msgid "Edit **app/Models/BookModel.php**:"
-msgstr ""
+msgstr "**app/Models/BookModel.php** 파일을 수정합니다:"
 
 #: ../../source/guides/api/database-setup.rst:93
 msgid ""
 "This tells CodeIgniter which table to use and which fields can be mass-"
 "assigned."
-msgstr ""
+msgstr "이를 통해 CodeIgniter에 사용할 테이블과 대량 할당(mass-assigned) 가능한 필드를 알려줍니다."
 
 #: ../../source/guides/api/database-setup.rst:95
 msgid ""
 "In the next section, we'll use your new models to power a RESTful API "
 "controller. You'll build the ``/api/books`` endpoint and see how "
 "CodeIgniter's ``Api\\ResponseTrait`` makes CRUD operations easy."
-msgstr ""
-
+msgstr "다음 섹션에서는 새로운 모델을 사용하여 RESTful API 컨트롤러를 구동하겠습니다. ``/api/books`` 엔드포인트를 구축하고 CodeIgniter의 ``Api\\ResponseTrait`` 가 어떻게 CRUD 작업을 쉽게 만드는지 확인해 보겠습니다."

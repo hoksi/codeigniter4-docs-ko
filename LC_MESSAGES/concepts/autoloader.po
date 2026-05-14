@@ -1,17 +1,16 @@
-# SOME DESCRIPTIVE TITLE.
+# CodeIgniter 4 User Guide Korean Translation.
 # Copyright (C) 2019-2026 CodeIgniter Foundation
 # This file is distributed under the same license as the CodeIgniter
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+# hoksi <hoksi@github.com>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-05-14 18:30+0900\n"
+"Last-Translator: hoksi <hoksi@github.com>\n"
 "Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../source/concepts/autoloader.rst:3
 msgid "Autoloading Files"
-msgstr ""
+msgstr "파일 오토로딩"
 
 #: ../../source/concepts/autoloader.rst:9
 msgid ""
@@ -33,18 +32,18 @@ msgid ""
 "using. Keeping track of where every single file is, and hard-coding that "
 "location into your files in a series of ``requires()`` is a massive "
 "headache and very error-prone. That's where autoloaders come in."
-msgstr ""
+msgstr "모든 애플리케이션은 서로 다른 위치에 있는 수많은 클래스로 구성됩니다. 프레임워크는 핵심 기능을 위한 클래스를 제공하며, 애플리케이션은 라이브러리, 모델 및 기타 엔티티들을 통해 작동합니다. 또한 프로젝트에서 사용하는 서드파티 클래스들도 있을 수 있습니다. 모든 파일의 위치를 추적하고, 이를 ``requires()``\ 를 사용하여 파일에 하드코딩하는 것은 매우 번거롭고 에러가 발생하기 쉽습니다. 여기서 오토로더(autoloader)가 필요해집니다."
 
 #: ../../source/concepts/autoloader.rst:18
 msgid "CodeIgniter4 Autoloader"
-msgstr ""
+msgstr "CodeIgniter4 오토로더"
 
 #: ../../source/concepts/autoloader.rst:20
 msgid ""
 "CodeIgniter provides a very flexible autoloader that can be used with "
 "very little configuration. It can locate individual namespaced classes "
 "that adhere to `PSR-4`_ autoloading directory structures."
-msgstr ""
+msgstr "CodeIgniter는 매우 적은 설정으로 사용할 수 있는 유연한 오토로더를 제공합니다. `PSR-4`_ 오토로딩 디렉토리 구조를 따르는 개별 네임스페이스 클래스들을 찾을 수 있습니다."
 
 #: ../../source/concepts/autoloader.rst:26
 msgid ""
@@ -54,14 +53,14 @@ msgid ""
 "`spl_autoload_register <https://www.php.net/manual/en/function.spl-"
 "autoload-register.php>`_, they work in sequence and don't get in each "
 "other's way."
-msgstr ""
+msgstr "오토로더는 단독으로도 잘 작동하지만, 필요에 따라 `Composer <https://getcomposer.org>`_\ 와 같은 다른 오토로더나 사용자 정의 오토로더와 함께 사용할 수도 있습니다. 이들은 모두 `spl_autoload_register <https://www.php.net/manual/en/function.spl-autoload-register.php>`_\ 를 통해 등록되므로, 순차적으로 작동하며 서로 방해하지 않습니다."
 
 #: ../../source/concepts/autoloader.rst:32
 msgid ""
 "The autoloader is always active, being registered with "
 "``spl_autoload_register()`` at the beginning of the framework's "
 "execution."
-msgstr ""
+msgstr "오토로더는 항상 활성화되어 있으며, 프레임워크 실행 시작 시점에 ``spl_autoload_register()``\ 를 통해 등록됩니다."
 
 #: ../../source/concepts/autoloader.rst:35
 msgid ""
@@ -70,65 +69,65 @@ msgid ""
 "most server environments use case-sensitive file systems. If the file "
 "name case is incorrect, the autoloader cannot find the file on the "
 "server."
-msgstr ""
+msgstr "파일 이름의 대소문자에 항상 주의해야 합니다. 많은 개발자가 Windows나 macOS의 대소문자를 구분하지 않는 파일 시스템에서 개발합니다. 하지만 대부분의 서버 환경은 대소문자를 구분하는 파일 시스템을 사용합니다. 파일 이름의 대소문자가 틀리면 오토로더가 서버에서 파일을 찾을 수 없습니다."
 
 #: ../../source/concepts/autoloader.rst:43
 msgid "Configuration"
-msgstr ""
+msgstr "설정"
 
 #: ../../source/concepts/autoloader.rst:45
 msgid ""
 "Initial configuration is done in **app/Config/Autoload.php**. This file "
 "contains two primary arrays: one for the classmap, and one for PSR-4 "
 "compatible namespaces."
-msgstr ""
+msgstr "초기 설정은 **app/Config/Autoload.php**\ 에서 이루어집니다. 이 파일에는 클래스맵(classmap)을 위한 배열과 PSR-4 호환 네임스페이스를 위한 배열이라는 두 개의 주요 배열이 포함되어 있습니다."
 
 #: ../../source/concepts/autoloader.rst:51
 msgid "Namespaces"
-msgstr ""
+msgstr "네임스페이스"
 
 #: ../../source/concepts/autoloader.rst:53
 msgid ""
 "The recommended method for organizing your classes is to create one or "
 "more namespaces for your application's files."
-msgstr ""
+msgstr "클래스를 정리하는 권장 방법은 애플리케이션 파일에 대해 하나 이상의 네임스페이스를 만드는 것입니다."
 
 #: ../../source/concepts/autoloader.rst:56
 msgid ""
 "The ``$psr4`` array in the configuration file allows you to map the "
 "namespace to the directory those classes can be found in:"
-msgstr ""
+msgstr "설정 파일의 ``$psr4`` 배열을 사용하여 네임스페이스를 해당 클래스가 위치한 디렉토리에 매핑할 수 있습니다."
 
 #: ../../source/concepts/autoloader.rst:61
 msgid ""
 "The key of each row is the namespace itself. This does not need a "
 "trailing back slash. The value is the location to the directory the "
 "classes can be found in."
-msgstr ""
+msgstr "각 행의 키는 네임스페이스 자체입니다. 마지막에 백슬래시(\\)를 붙일 필요는 없습니다. 값은 클래스를 찾을 수 있는 디렉토리의 위치입니다."
 
 #: ../../source/concepts/autoloader.rst:64
 msgid ""
 "By default, the namespace ``App`` is located in the **app** directory, "
 "and the namespace ``Config`` is located in the **app/Config** directory."
-msgstr ""
+msgstr "기본적으로 ``App`` 네임스페이스는 **app** 디렉토리에 위치하며, ``Config`` 네임스페이스는 **app/Config** 디렉토리에 위치합니다."
 
 #: ../../source/concepts/autoloader.rst:67
 msgid ""
 "If you create class files in the locations and according to `PSR-4`_, the"
 " autoloader will autoload them."
-msgstr ""
+msgstr "`PSR-4`_\ 에 따라 해당 위치에 클래스 파일을 생성하면 오토로더가 자동으로 이를 로드합니다."
 
 #: ../../source/concepts/autoloader.rst:73
 msgid "Confirming Namespaces"
-msgstr ""
+msgstr "네임스페이스 확인"
 
 #: ../../source/concepts/autoloader.rst:75
 msgid "You can check the namespace configuration by ``spark namespaces`` command:"
-msgstr ""
+msgstr "``spark namespaces`` 명령을 통해 네임스페이스 설정을 확인할 수 있습니다."
 
 #: ../../source/concepts/autoloader.rst:84
 msgid "Application Namespace"
-msgstr ""
+msgstr "애플리케이션 네임스페이스"
 
 #: ../../source/concepts/autoloader.rst:86
 msgid ""
@@ -136,11 +135,11 @@ msgid ""
 "namespace. You must namespace the controllers, libraries, or models in "
 "the application directory, and they will be found under the ``App`` "
 "namespace."
-msgstr ""
+msgstr "기본적으로 애플리케이션 디렉토리는 ``App`` 네임스페이스로 지정됩니다. 애플리케이션 디렉토리에 있는 컨트롤러, 라이브러리 또는 모델에는 네임스페이스를 지정해야 하며, 이들은 ``App`` 네임스페이스 아래에서 찾을 수 있게 됩니다."
 
 #: ../../source/concepts/autoloader.rst:90
 msgid "Config Namespace"
-msgstr ""
+msgstr "Config 네임스페이스"
 
 #: ../../source/concepts/autoloader.rst:92
 msgid ""
@@ -148,67 +147,67 @@ msgid ""
 "``App\\Config`` as you might expect. This allows the core system files to"
 " always be able to locate them, even when the application namespace has "
 "changed."
-msgstr ""
+msgstr "설정 파일들은 예상과 달리 ``App\\Config``\ 가 아닌 ``Config`` 네임스페이스로 지정됩니다. 이를 통해 애플리케이션 네임스페이스가 변경되더라도 핵심 시스템 파일들이 항상 설정 파일을 찾을 수 있습니다."
 
 #: ../../source/concepts/autoloader.rst:96
 msgid ""
 "Since v4.5.3 appstarter, the ``Config\\\\`` namespace has been added to "
 "**composer.json**'s ``autoload.psr-4``."
-msgstr ""
+msgstr "v4.5.3 App Starter부터 ``Config\\\\`` 네임스페이스가 **composer.json**\ 의 ``autoload.psr-4``\ 에 추가되었습니다."
 
 #: ../../source/concepts/autoloader.rst:100
 msgid "Changing App Namespace"
-msgstr ""
+msgstr "App 네임스페이스 변경"
 
 #: ../../source/concepts/autoloader.rst:102
 msgid ""
 "You may change this namespace by editing the **app/Config/Constants.php**"
 " file and setting the new namespace value under the ``APP_NAMESPACE`` "
 "setting:"
-msgstr ""
+msgstr "**app/Config/Constants.php** 파일을 편집하고 ``APP_NAMESPACE`` 설정 아래에 새 네임스페이스 값을 설정하여 이 네임스페이스를 변경할 수 있습니다."
 
 #: ../../source/concepts/autoloader.rst:108
 msgid ""
 "And if you use Composer autoloader, you also need to change the ``App`` "
 "namespace in your **composer.json**, and run ``composer dump-autoload``."
-msgstr ""
+msgstr "Composer 오토로더를 사용하는 경우, **composer.json**\ 에서도 ``App`` 네임스페이스를 변경하고 ``composer dump-autoload``\ 를 실행해야 합니다."
 
 #: ../../source/concepts/autoloader.rst:124
 msgid ""
 "Since v4.5.0 appstarter, the ``App\\\\`` namespace has been added to "
 "**composer.json**'s ``autoload.psr-4``. If your **composer.json** does "
 "not have it, adding it may improve your app's autoloading performance."
-msgstr ""
+msgstr "v4.5.0 App Starter부터 ``App\\\\`` 네임스페이스가 **composer.json**\ 의 ``autoload.psr-4``\ 에 추가되었습니다. 만약 **composer.json**\ 에 이 내용이 없다면, 이를 추가하여 앱의 오토로딩 성능을 향상시킬 수 있습니다."
 
 #: ../../source/concepts/autoloader.rst:128
 msgid ""
 "You will need to modify any existing files that are referencing the "
 "current namespace."
-msgstr ""
+msgstr "현재 네임스페이스를 참조하고 있는 기존 파일들을 모두 수정해야 합니다."
 
 #: ../../source/concepts/autoloader.rst:131
 msgid "Classmap"
-msgstr ""
+msgstr "클래스맵(Classmap)"
 
 #: ../../source/concepts/autoloader.rst:133
 msgid ""
 "If you use third-party libraries that are not Composer packages and are "
 "not namespaced, you can load those classes using the classmap:"
-msgstr ""
+msgstr "Composer 패키지가 아니며 네임스페이스가 지정되지 않은 서드파티 라이브러리를 사용하는 경우, 클래스맵을 사용하여 해당 클래스들을 로드할 수 있습니다."
 
 #: ../../source/concepts/autoloader.rst:138
 msgid ""
 "The key of each row is the name of the class that you want to locate. The"
 " value is the path to locate it at."
-msgstr ""
+msgstr "각 행의 키는 찾고자 하는 클래스의 이름입니다. 값은 해당 클래스가 위치한 경로입니다."
 
 #: ../../source/concepts/autoloader.rst:142
 msgid "Composer Support"
-msgstr ""
+msgstr "Composer 지원"
 
 #: ../../source/concepts/autoloader.rst:144
 msgid "Composer support is automatically initialized by default."
-msgstr ""
+msgstr "Composer 지원은 기본적으로 자동으로 초기화됩니다."
 
 #: ../../source/concepts/autoloader.rst:146
 msgid ""
@@ -216,112 +215,111 @@ msgid ""
 "'vendor/autoload.php'``. If you need to change the location of that file "
 "for any reason, you can modify the value defined in "
 "**app/Config/Constants.php**."
-msgstr ""
+msgstr "기본적으로 ``ROOTPATH . 'vendor/autoload.php'``\ 에서 Composer의 오토로드 파일을 찾습니다. 어떤 이유로든 이 파일의 위치를 변경해야 하는 경우, **app/Config/Constants.php**\ 에 정의된 값을 수정할 수 있습니다."
 
 #: ../../source/concepts/autoloader.rst:151
 msgid "Priority of Autoloaders"
-msgstr ""
+msgstr "오토로더 우선순위"
 
 #: ../../source/concepts/autoloader.rst:153
 msgid ""
 "If the same namespace is defined in both CodeIgniter and Composer, "
 "Composer's autoloader will be the first one to get a chance to locate the"
 " file."
-msgstr ""
+msgstr "동일한 네임스페이스가 CodeIgniter와 Composer 양쪽 모두에 정의되어 있는 경우, Composer의 오토로더가 파일을 찾을 기회를 먼저 갖게 됩니다."
 
 #: ../../source/concepts/autoloader.rst:156
 msgid ""
 "Prior to v4.5.0, if the same namespace was defined in both CodeIgniter "
 "and Composer, CodeIgniter's autoloader was the first one to get a chance "
 "to locate the file."
-msgstr ""
+msgstr "v4.5.0 이전에는 동일한 네임스페이스가 양쪽에 정의된 경우 CodeIgniter의 오토로더가 먼저 기회를 가졌습니다."
 
 #: ../../source/concepts/autoloader.rst:163
 msgid "FileLocator Caching"
-msgstr ""
+msgstr "FileLocator 캐싱"
 
 #: ../../source/concepts/autoloader.rst:167
 msgid ""
 "**FileLocator** is responsible for finding files or getting a classname "
 "from a file, which cannot be achieved with PHP autoloading."
-msgstr ""
+msgstr "**FileLocator**\ 는 PHP 오토로딩으로는 달성할 수 없는 파일 찾기나 파일에서 클래스 이름을 가져오는 작업을 담당합니다."
 
 #: ../../source/concepts/autoloader.rst:170
 msgid "To improve its performance, FileLocator Caching has been implemented."
-msgstr ""
+msgstr "성능 향상을 위해 FileLocator 캐싱이 구현되었습니다."
 
 #: ../../source/concepts/autoloader.rst:173
 msgid "How It Works"
-msgstr ""
+msgstr "작동 방식"
 
 #: ../../source/concepts/autoloader.rst:175
 msgid ""
 "Save the all found data by FileLocator into a cache file when "
 "destructing, if the cache data is updated."
-msgstr ""
+msgstr "캐시 데이터가 업데이트된 경우, 객체 소멸 시 FileLocator가 찾은 모든 데이터를 캐시 파일에 저장합니다."
 
 #: ../../source/concepts/autoloader.rst:177
 msgid "Restore cached data when instantiating if cached data is available."
-msgstr ""
+msgstr "캐시 데이터가 있는 경우, 객체 생성 시 이를 복원합니다."
 
 #: ../../source/concepts/autoloader.rst:179
 msgid "The cached data are used permanently."
-msgstr ""
+msgstr "캐시 데이터는 영구적으로 사용됩니다."
 
 #: ../../source/concepts/autoloader.rst:182
 msgid "How to Delete Cached Data"
-msgstr ""
+msgstr "캐시 데이터 삭제 방법"
 
 #: ../../source/concepts/autoloader.rst:184
 msgid "Once stored, the cached data never expire."
-msgstr ""
+msgstr "한번 저장된 캐시 데이터는 만료되지 않습니다."
 
 #: ../../source/concepts/autoloader.rst:186
 msgid ""
 "So if you add or remove files or change existing file paths, or "
 "namespaces, old cached data will be returned and your app may not work "
 "properly."
-msgstr ""
+msgstr "따라서 파일을 추가/제거하거나 기존 파일 경로 또는 네임스페이스를 변경하는 경우, 오래된 캐시 데이터가 반환되어 앱이 제대로 작동하지 않을 수 있습니다."
 
 #: ../../source/concepts/autoloader.rst:189
 msgid ""
 "In that case, you must manually delete the cache file. If you add a "
 "CodeIgniter package via Composer, you also need to delete the cache file."
-msgstr ""
+msgstr "이러한 경우 캐시 파일을 수동으로 삭제해야 합니다. Composer를 통해 CodeIgniter 패키지를 추가하는 경우에도 캐시 파일을 삭제해야 합니다."
 
 #: ../../source/concepts/autoloader.rst:192
 msgid "You can use the ``spark cache:clear`` command:"
-msgstr ""
+msgstr "``spark cache:clear`` 명령을 사용할 수 있습니다."
 
 #: ../../source/concepts/autoloader.rst:198
 msgid "Or simply delete the **writable/cache/FileLocatorCache** file."
-msgstr ""
+msgstr "또는 단순히 **writable/cache/FileLocatorCache** 파일을 삭제하십시오."
 
 #: ../../source/concepts/autoloader.rst:201
 msgid "The ``spark optimize`` command clears the cache."
-msgstr ""
+msgstr "``spark optimize`` 명령은 캐시를 지웁니다."
 
 #: ../../source/concepts/autoloader.rst:204
 msgid "How to Enable FileLocator Caching"
-msgstr ""
+msgstr "FileLocator 캐싱 활성화 방법"
 
 #: ../../source/concepts/autoloader.rst:206
 msgid "Set the following property to ``true`` in **app/Config/Optimize.php**::"
-msgstr ""
+msgstr "**app/Config/Optimize.php**\ 에서 다음 속성을 ``true``\ 로 설정하십시오::"
 
 #: ../../source/concepts/autoloader.rst:210
 msgid "Or you can enable it with the ``spark optimize`` command."
-msgstr ""
+msgstr "또는 ``spark optimize`` 명령으로 활성화할 수 있습니다."
 
 #: ../../source/concepts/autoloader.rst:213
 msgid ""
 "This property cannot be overridden by :ref:`environment variables "
 "<configuration-classes-and-environment-variables>`."
-msgstr ""
+msgstr "이 속성은 :ref:`환경 변수 <configuration-classes-and-environment-variables>`\ 에 의해 오버라이드될 수 없습니다."
 
 #: ../../source/concepts/autoloader.rst:216
 msgid ""
 "Do not use this option when running the app in the :doc:`Worker Mode "
 "</installation/worker_mode>`."
-msgstr ""
-
+msgstr ":doc:`워커 모드(Worker Mode) </installation/worker_mode>`\ 에서 앱을 실행할 때는 이 옵션을 사용하지 마십시오."

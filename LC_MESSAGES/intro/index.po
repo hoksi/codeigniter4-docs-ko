@@ -1,17 +1,16 @@
-# SOME DESCRIPTIVE TITLE.
+# CodeIgniter 4 User Guide Korean Translation.
 # Copyright (C) 2019-2026 CodeIgniter Foundation
 # This file is distributed under the same license as the CodeIgniter
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+# hoksi <hoksi@github.com>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-05-14 16:45+0900\n"
+"Last-Translator: hoksi <hoksi@github.com>\n"
 "Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -22,17 +21,17 @@ msgstr ""
 
 #: ../../source/intro/index.rst:47
 msgid "License Agreement"
-msgstr ""
+msgstr "라이선스 계약"
 
 #: ../../source/intro/index.rst:3
 msgid "Welcome to CodeIgniter4"
-msgstr ""
+msgstr "CodeIgniter4에 오신 것을 환영합니다"
 
 #: ../../source/intro/index.rst:5
 msgid ""
 "CodeIgniter is a PHP full-stack web framework that is light, fast, "
 "flexible and secure."
-msgstr ""
+msgstr "CodeIgniter는 가볍고 빠르며 유연하고 안전한 PHP 풀스택 웹 프레임워크입니다."
 
 #: ../../source/intro/index.rst:8
 msgid ""
@@ -41,13 +40,13 @@ msgid ""
 "much faster than you could if you were writing code from scratch, by "
 "providing a rich set of libraries for commonly needed tasks, as well as a"
 " simple interface and logical structure to access these libraries."
-msgstr ""
+msgstr "PHP를 사용하여 웹사이트를 구축하는 사람들을 위한 애플리케이션 개발 프레임워크이자 툴킷입니다. 자주 필요한 작업을 위한 풍부한 라이브러리 세트와 이러한 라이브러리에 접근하기 위한 간단한 인터페이스 및 논리적 구조를 제공함으로써, 처음부터 코드를 작성하는 것보다 훨씬 빠르게 프로젝트를 개발할 수 있도록 돕는 것이 목표입니다."
 
 #: ../../source/intro/index.rst:15
 msgid ""
 "CodeIgniter lets you creatively focus on your project by minimizing the "
 "amount of code needed for a given task."
-msgstr ""
+msgstr "CodeIgniter는 주어진 작업에 필요한 코드 양을 최소화하여 프로젝트에 창의적으로 집중할 수 있게 해줍니다."
 
 #: ../../source/intro/index.rst:18
 msgid ""
@@ -55,67 +54,66 @@ msgid ""
 "allowing you to work in the way you want, not being forced into working "
 "any certain way. The framework can have core parts easily extended or "
 "completely replaced to make the system work the way you need it to."
-msgstr ""
+msgstr "가능한 한 CodeIgniter는 유연성을 유지하여 특정한 방식을 강요받지 않고 원하는 방식으로 작업할 수 있도록 합니다. 프레임워크의 핵심 부분은 쉽게 확장하거나 완전히 교체하여 시스템이 필요에 맞게 작동하도록 만들 수 있습니다."
 
 #: ../../source/intro/index.rst:23
 msgid ""
 "In short, CodeIgniter is the malleable framework that tries to provide "
 "the tools you need while staying out of the way."
-msgstr ""
+msgstr "요약하자면, CodeIgniter는 방해가 되지 않으면서 필요한 도구를 제공하려고 노력하는 유연한 프레임워크입니다."
 
 #: ../../source/intro/index.rst:28
 msgid "Is CodeIgniter Right for You?"
-msgstr ""
+msgstr "CodeIgniter가 여러분에게 적합한가요?"
 
 #: ../../source/intro/index.rst:30
 msgid "CodeIgniter is right for you if:"
-msgstr ""
+msgstr "다음과 같은 경우 CodeIgniter가 적합합니다:"
 
 #: ../../source/intro/index.rst:32
 msgid "You want a framework with a small footprint."
-msgstr ""
+msgstr "작은 설치 공간(small footprint)을 가진 프레임워크를 원하는 경우."
 
 #: ../../source/intro/index.rst:33
 msgid "You need exceptional performance."
-msgstr ""
+msgstr "탁월한 성능이 필요한 경우."
 
 #: ../../source/intro/index.rst:34
 msgid ""
 "You want a framework that incorporates a number of features and "
 "techniques to enable you to do good security practices easily."
-msgstr ""
+msgstr "우수한 보안 관행을 쉽게 실천할 수 있도록 다양한 기능과 기술이 포함된 프레임워크를 원하는 경우."
 
 #: ../../source/intro/index.rst:36
 msgid ""
 "You want a non-magical framework that you can easily find and read the "
 "source code."
-msgstr ""
+msgstr "소스 코드를 쉽게 찾아 읽을 수 있는 '마법 같지 않은' 프레임워크를 원하는 경우."
 
 #: ../../source/intro/index.rst:38
 msgid "You want a framework that requires nearly zero configuration."
-msgstr ""
+msgstr "설정이 거의 필요 없는 프레임워크를 원하는 경우."
 
 #: ../../source/intro/index.rst:39
 msgid ""
 "You want a framework that does not require you to adhere to restrictive "
 "coding rules."
-msgstr ""
+msgstr "제한적인 코딩 규칙을 따르지 않아도 되는 프레임워크를 원하는 경우."
 
 #: ../../source/intro/index.rst:41
 msgid "You want a framework that makes it easy to create test code."
-msgstr ""
+msgstr "테스트 코드를 쉽게 작성할 수 있는 프레임워크를 원하는 경우."
 
 #: ../../source/intro/index.rst:42
 msgid ""
 "You do not want to be forced to learn a templating language (although a "
 "template parser is optionally available if you desire one)."
-msgstr ""
+msgstr "템플릿 언어를 강제로 배우고 싶지 않은 경우(원하는 경우 템플릿 파서를 선택적으로 사용할 수 있음)."
 
 #: ../../source/intro/index.rst:44
 msgid "You eschew complexity, favoring simple solutions."
-msgstr ""
+msgstr "복잡함을 피하고 간단한 해결책을 선호하는 경우."
 
 #: ../../source/intro/index.rst:45
 msgid "You need clear, thorough documentation."
-msgstr ""
-
+msgstr "명확하고 철저한 문서가 필요한 경우."

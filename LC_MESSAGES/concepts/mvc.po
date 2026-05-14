@@ -1,17 +1,16 @@
-# SOME DESCRIPTIVE TITLE.
+# CodeIgniter 4 User Guide Korean Translation.
 # Copyright (C) 2019-2026 CodeIgniter Foundation
 # This file is distributed under the same license as the CodeIgniter
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+# hoksi <hoksi@github.com>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-05-14 17:20+0900\n"
+"Last-Translator: hoksi <hoksi@github.com>\n"
 "Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -22,11 +21,11 @@ msgstr ""
 
 #: ../../source/concepts/mvc.rst:3
 msgid "Models, Views, and Controllers"
-msgstr ""
+msgstr "모델, 뷰, 컨트롤러"
 
 #: ../../source/concepts/mvc.rst:11
 msgid "What is MVC?"
-msgstr ""
+msgstr "MVC란 무엇인가요?"
 
 #: ../../source/concepts/mvc.rst:13
 msgid ""
@@ -36,32 +35,32 @@ msgid ""
 " View, Controller (MVC) pattern to organize the files. This keeps the "
 "data, the presentation, and flow through the application as separate "
 "parts."
-msgstr ""
+msgstr "애플리케이션을 만들 때마다 적절한 파일을 쉽게 찾고 유지보수하기 위해 코드를 정리하는 방법을 찾아야 합니다. 대부분의 웹 프레임워크와 마찬가지로 CodeIgniter는 파일 정리를 위해 모델, 뷰, 컨트롤러(MVC) 패턴을 사용합니다. 이를 통해 애플리케이션의 데이터, 프레젠테이션, 흐름을 개별적인 부분으로 유지합니다."
 
 #: ../../source/concepts/mvc.rst:18
 msgid ""
 "It should be noted that there are many views on the exact roles of each "
 "element, but this document describes our take on it. If you think of it "
 "differently, you're free to modify how you use each piece as you need."
-msgstr ""
+msgstr "각 요소의 정확한 역할에 대해서는 많은 견해가 있을 수 있지만, 이 문서는 당사의 입장을 설명합니다. 다르게 생각하신다면 필요에 따라 각 요소를 사용하는 방식을 자유롭게 수정할 수 있습니다."
 
 #: ../../source/concepts/mvc.rst:22
 msgid ""
 "**Models** manage the data of the application and help to enforce any "
 "special business rules the application might need."
-msgstr ""
+msgstr "**\ 모델(Models)** 은 애플리케이션의 데이터를 관리하고 애플리케이션에 필요한 특별한 비즈니스 규칙을 적용하는 데 도움을 줍니다."
 
 #: ../../source/concepts/mvc.rst:24
 msgid ""
 "**Views** are simple files, with little to no logic, that display the "
 "information to the user."
-msgstr ""
+msgstr "**\ 뷰(Views)** 는 로직이 거의 없거나 아예 없는 단순한 파일로, 사용자에게 정보를 표시합니다."
 
 #: ../../source/concepts/mvc.rst:26
 msgid ""
 "**Controllers** act as glue code, marshaling data back and forth between "
 "the view (or the user that's seeing it) and the data storage."
-msgstr ""
+msgstr "**\ 컨트롤러(Controllers)** 는 뷰(또는 이를 보는 사용자)와 데이터 저장소 사이에서 데이터를 주고받으며 관리하는 '접착제 코드' 역할을 합니다."
 
 #: ../../source/concepts/mvc.rst:29
 msgid ""
@@ -72,19 +71,19 @@ msgid ""
 "for their storage, though you're free to store them wherever you desire, "
 "as long as they are properly namespaced. We will discuss that in more "
 "detail below."
-msgstr ""
+msgstr "가장 기본적으로 컨트롤러와 모델은 특정 작업을 수행하는 클래스일 뿐입니다. 물론 여러분이 사용할 수 있는 유일한 클래스 유형은 아니지만, 이 프레임워크가 설계된 핵심적인 사용 방식을 구성합니다. 이들은 **app** 디렉토리에 전용 저장 디렉토리가 있지만, 적절하게 네임스페이스가 지정되어 있다면 원하는 어디든 저장할 수 있습니다. 이에 대해서는 아래에서 더 자세히 논의하겠습니다."
 
 #: ../../source/concepts/mvc.rst:34
 msgid "Let's take a closer look at each of these three main components."
-msgstr ""
+msgstr "세 가지 주요 구성 요소를 각각 더 자세히 살펴보겠습니다."
 
 #: ../../source/concepts/mvc.rst:38
 msgid "The Components"
-msgstr ""
+msgstr "구성 요소"
 
 #: ../../source/concepts/mvc.rst:41
 msgid "Views"
-msgstr ""
+msgstr "뷰(Views)"
 
 #: ../../source/concepts/mvc.rst:43
 msgid ""
@@ -92,7 +91,7 @@ msgid ""
 "amounts of PHP. The PHP should be very simple, usually just displaying a "
 "variable's contents, or looping over some items and displaying their "
 "information in a table."
-msgstr ""
+msgstr "뷰는 가장 단순한 파일이며 일반적으로 소량의 PHP가 포함된 HTML입니다. PHP는 매우 간단해야 하며, 보통 변수 내용을 표시하거나 일부 항목을 루프하여 테이블에 정보를 표시하는 정도여야 합니다."
 
 #: ../../source/concepts/mvc.rst:46
 msgid ""
@@ -100,7 +99,7 @@ msgid ""
 "views as variables that can be displayed with simple ``echo`` calls. You "
 "can also display other views within a view, making it pretty simple to "
 "display a common header or footer on every page."
-msgstr ""
+msgstr "뷰는 컨트롤러로부터 표시할 데이터를 전달받으며, 컨트롤러는 간단한 ``echo`` 호출로 표시할 수 있는 변수 형태로 데이터를 뷰에 전달합니다. 뷰 내에서 다른 뷰를 표시할 수도 있어 모든 페이지에 공통 헤더나 푸터를 표시하는 것이 매우 간단합니다."
 
 #: ../../source/concepts/mvc.rst:50
 msgid ""
@@ -112,22 +111,22 @@ msgid ""
 " example, a user's profile might be displayed in a controller named "
 "``User``, and a method named ``profile``. You might store the view file "
 "for this method in **app/Views/user/profile.php**."
-msgstr ""
+msgstr "뷰는 일반적으로 **app/Views**\ 에 저장되지만, 어떤 방식으로든 정리하지 않으면 금방 다루기 힘들어질 수 있습니다. CodeIgniter는 어떠한 조직 방식도 강요하지 않지만, 좋은 규칙 중 하나는 각 컨트롤러에 대해 **Views** 디렉토리에 새 디렉토리를 만드는 것입니다. 그런 다음 메서드 이름으로 뷰의 이름을 지정합니다. 이렇게 하면 나중에 뷰를 매우 쉽게 찾을 수 있습니다. 예를 들어, 사용자 프로필이 ``User``\ 라는 컨트롤러와 ``profile``\ 이라는 메서드에 표시될 수 있습니다. 이 메서드의 뷰 파일은 **app/Views/user/profile.php**\ 에 저장할 수 있습니다."
 
 #: ../../source/concepts/mvc.rst:56
 msgid ""
 "That type of organization works great as a base habit to get into. At "
 "times you might need to organize it differently. That's not a problem. As"
 " long as CodeIgniter can find the file, it can display it."
-msgstr ""
+msgstr "이러한 조직 방식은 기본적인 습관으로 들여두기에 좋습니다. 때로는 다르게 구성해야 할 수도 있지만 문제없습니다. CodeIgniter가 파일을 찾을 수만 있다면 표시할 수 있습니다."
 
 #: ../../source/concepts/mvc.rst:59
 msgid ":doc:`Find out more about views </outgoing/views>`"
-msgstr ""
+msgstr ":doc:`뷰에 대해 더 알아보기 </outgoing/views>`"
 
 #: ../../source/concepts/mvc.rst:62
 msgid "Models"
-msgstr ""
+msgstr "모델(Models)"
 
 #: ../../source/concepts/mvc.rst:64
 msgid ""
@@ -136,7 +135,7 @@ msgid ""
 "model's job has two parts: enforce business rules on the data as it is "
 "pulled from, or put into, the database; and handle the actual saving and "
 "retrieval of the data from the database."
-msgstr ""
+msgstr "모델의 임무는 애플리케이션을 위해 단일 유형의 데이터를 유지 관리하는 것입니다. 이는 사용자, 블로그 게시물, 거래 등이 될 수 있습니다. 이 경우 모델의 임무는 두 부분으로 나뉩니다. 데이터가 데이터베이스에서 추출되거나 데이터베이스에 입력될 때 비즈니스 규칙을 적용하는 것과 데이터베이스에서 데이터를 실제로 저장하고 검색하는 것을 처리하는 것입니다."
 
 #: ../../source/concepts/mvc.rst:68
 msgid ""
@@ -148,21 +147,21 @@ msgid ""
 " By keeping these business requirements in the model, you won't repeat "
 "code throughout several controllers and accidentally miss updating an "
 "area."
-msgstr ""
+msgstr "많은 개발자에게 어떤 비즈니스 규칙이 적용되는지 결정할 때 혼란이 옵니다. 이는 간단히 말해 데이터에 대한 모든 제한이나 요구 사항이 모델에 의해 처리됨을 의미합니다. 여기에는 회사의 표준을 충족하기 위해 저장되기 전의 원시 데이터를 정규화하거나, 컨트롤러에 전달하기 전에 특정 방식으로 컬럼 형식을 지정하는 것 등이 포함될 수 있습니다. 이러한 비즈니스 요구 사항을 모델에 유지함으로써 여러 컨트롤러에서 코드를 반복하지 않고 실수로 업데이트를 누락하는 일을 방지할 수 있습니다."
 
 #: ../../source/concepts/mvc.rst:74
 msgid ""
 "Models are typically stored in **app/Models**, though they can use a "
 "namespace to be grouped however you need."
-msgstr ""
+msgstr "모델은 일반적으로 **app/Models**\ 에 저장되지만, 필요한 방식으로 그룹화하기 위해 네임스페이스를 사용할 수 있습니다."
 
 #: ../../source/concepts/mvc.rst:76
 msgid ":doc:`Find out more about models </models/model>`"
-msgstr ""
+msgstr ":doc:`모델에 대해 더 알아보기 </models/model>`"
 
 #: ../../source/concepts/mvc.rst:79
 msgid "Controllers"
-msgstr ""
+msgstr "컨트롤러(Controllers)"
 
 #: ../../source/concepts/mvc.rst:81
 msgid ""
@@ -173,7 +172,7 @@ msgid ""
 "be displayed. This also includes loading up other utility classes, if "
 "needed, to handle specialized tasks that is outside of the purview of the"
 " model."
-msgstr ""
+msgstr "컨트롤러는 몇 가지 다른 역할을 수행합니다. 가장 명확한 역할은 사용자로부터 입력을 받은 다음 어떻게 처리할지 결정하는 것입니다. 여기에는 데이터를 모델에 전달하여 저장하거나, 모델에 데이터를 요청한 다음 이를 뷰에 전달하여 표시하는 작업이 포함되는 경우가 많습니다. 또한 필요한 경우 모델의 범위를 벗어난 전문적인 작업을 처리하기 위해 다른 유틸리티 클래스를 로드하는 것도 포함됩니다."
 
 #: ../../source/concepts/mvc.rst:86
 msgid ""
@@ -182,15 +181,14 @@ msgid ""
 "encoding, etc. In short, the controller is where you make sure that "
 "people are allowed to be there, and they get the data they need in a "
 "format they can use."
-msgstr ""
+msgstr "컨트롤러의 또 다른 책임은 HTTP 요청과 관련된 모든 것(리다이렉트, 인증, 웹 보안, 인코딩 등)을 처리하는 것입니다. 요약하자면, 컨트롤러는 사용자가 해당 페이지에 접근할 수 있는지 확인하고, 필요한 데이터를 사용할 수 있는 형식으로 제공받을 수 있도록 하는 곳입니다."
 
 #: ../../source/concepts/mvc.rst:90
 msgid ""
 "Controllers are typically stored in **app/Controllers**, though they can "
 "use a namespace to be grouped however you need."
-msgstr ""
+msgstr "컨트롤러는 일반적으로 **app/Controllers**\ 에 저장되지만, 필요한 방식으로 그룹화하기 위해 네임스페이스를 사용할 수 있습니다."
 
 #: ../../source/concepts/mvc.rst:93
 msgid ":doc:`Find out more about controllers </incoming/controllers>`"
-msgstr ""
-
+msgstr ":doc:`컨트롤러에 대해 더 알아보기 </incoming/controllers>`"

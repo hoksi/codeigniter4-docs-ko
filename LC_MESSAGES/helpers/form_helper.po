@@ -1,17 +1,16 @@
-# SOME DESCRIPTIVE TITLE.
+# CodeIgniter 4 User Guide Korean Translation.
 # Copyright (C) 2019-2026 CodeIgniter Foundation
 # This file is distributed under the same license as the CodeIgniter
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+# hoksi <hoksi@github.com>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-05-14 20:00+0900\n"
+"Last-Translator: hoksi <hoksi@github.com>\n"
 "Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -22,15 +21,15 @@ msgstr ""
 
 #: ../../source/helpers/form_helper.rst:3
 msgid "Form Helper"
-msgstr ""
+msgstr "폼 헬퍼(Form Helper)"
 
 #: ../../source/helpers/form_helper.rst:5
 msgid "The Form Helper file contains functions that assist in working with forms."
-msgstr ""
+msgstr "폼 헬퍼 파일은 폼 작업을 돕는 함수들을 포함하고 있습니다."
 
 #: ../../source/helpers/form_helper.rst:14
 msgid "Configuration"
-msgstr ""
+msgstr "설정"
 
 #: ../../source/helpers/form_helper.rst:16
 msgid ""
@@ -39,18 +38,21 @@ msgid ""
 "need to be compatible with XHTML, you must set the ``$html5`` property in"
 " **app/Config/DocTypes.php** to ``false``."
 msgstr ""
+"v4.3.0부터 ``form_helper`` 함수의 void HTML 요소(예: ``<input>``)는 기본적으로 HTML5 "
+"호환으로 변경되었습니다. XHTML과 호환되어야 하는 경우 **app/Config/DocTypes.php**\\ 의 "
+"``$html5`` 속성을 ``false``\\ 로 설정해야 합니다."
 
 #: ../../source/helpers/form_helper.rst:20
 msgid "Loading this Helper"
-msgstr ""
+msgstr "헬퍼 로드하기"
 
 #: ../../source/helpers/form_helper.rst:22
 msgid "This helper is loaded using the following code:"
-msgstr ""
+msgstr "이 헬퍼는 다음 코드를 사용하여 로드합니다:"
 
 #: ../../source/helpers/form_helper.rst:28
 msgid "Escaping Field Values"
-msgstr ""
+msgstr "필드 값 이스케이프(Escaping)"
 
 #: ../../source/helpers/form_helper.rst:30
 msgid ""
@@ -58,10 +60,12 @@ msgid ""
 "elements. In order to do that safely, you'll need to use the :doc:`common"
 " function <../general/common_functions>` :php:func:`esc()`."
 msgstr ""
+"폼 요소 내에서 HTML 및 따옴표와 같은 문자를 사용해야 할 수 있습니다. 이를 안전하게 수행하려면 :doc:`공통 함수 "
+"<../general/common_functions>`\\ 인 :php:func:`esc()` 를 사용해야 합니다."
 
 #: ../../source/helpers/form_helper.rst:35
 msgid "Consider the following example:"
-msgstr ""
+msgstr "다음 예제를 고려해 보십시오:"
 
 #: ../../source/helpers/form_helper.rst:39
 msgid ""
@@ -69,6 +73,8 @@ msgid ""
 "to break. The :php:func:`esc()` function converts HTML special characters"
 " so that it can be used safely::"
 msgstr ""
+"위의 문자열에는 따옴표 세트가 포함되어 있어 폼이 깨질 수 있습니다. :php:func:`esc()` 함수는 HTML 특수 문자를 "
+"변환하여 안전하게 사용할 수 있도록 합니다::"
 
 #: ../../source/helpers/form_helper.rst:45
 msgid ""
@@ -78,14 +84,16 @@ msgid ""
 "only if you are creating your own form elements, which you would pass as "
 "strings."
 msgstr ""
+"이 페이지에 나열된 폼 헬퍼 함수를 사용하고 연관 배열로 값을 전달하면 폼 값은 자동으로 이스케이프 처리되므로 이 함수를 호출할 "
+"필요가 없습니다. 직접 폼 요소를 생성하여 문자열로 전달하는 경우에만 사용하십시오."
 
 #: ../../source/helpers/form_helper.rst:53
 msgid "Available Functions"
-msgstr ""
+msgstr "사용 가능한 함수"
 
 #: ../../source/helpers/form_helper.rst:55
 msgid "The following functions are available:"
-msgstr ""
+msgstr "다음 함수들을 사용할 수 있습니다:"
 
 #: ../../source/helpers/form_helper.rst
 msgid "Parameters"
@@ -251,8 +259,9 @@ msgstr ""
 #: ../../source/helpers/form_helper.rst:331
 #: ../../source/helpers/form_helper.rst:362
 #: ../../source/helpers/form_helper.rst:457
+#, fuzzy
 msgid "Field value"
-msgstr ""
+msgstr "필드 값 이스케이프(Escaping)"
 
 #: ../../source/helpers/form_helper.rst:153
 msgid "An HTML hidden input element"

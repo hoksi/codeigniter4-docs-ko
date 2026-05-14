@@ -1,17 +1,16 @@
-# SOME DESCRIPTIVE TITLE.
+# CodeIgniter 4 User Guide Korean Translation.
 # Copyright (C) 2019-2026 CodeIgniter Foundation
 # This file is distributed under the same license as the CodeIgniter
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+# hoksi <hoksi@github.com>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-05-14 19:30+0900\n"
+"Last-Translator: hoksi <hoksi@github.com>\n"
 "Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -22,15 +21,15 @@ msgstr ""
 
 #: ../../source/incoming/routing.rst:3
 msgid "URI Routing"
-msgstr ""
+msgstr "URI 라우팅"
 
 #: ../../source/incoming/routing.rst:10
 msgid "What is URI Routing?"
-msgstr ""
+msgstr "URI 라우팅이란 무엇인가요?"
 
 #: ../../source/incoming/routing.rst:12
 msgid "URI Routing associates a URI with a controller's method."
-msgstr ""
+msgstr "URI 라우팅은 URI를 컨트롤러의 메서드와 연결합니다."
 
 #: ../../source/incoming/routing.rst:14
 msgid ""
@@ -41,16 +40,22 @@ msgid ""
 "corresponding controller methods. There is no need to define routes "
 "manually."
 msgstr ""
+"CodeIgniter에는 두 가지 종류의 라우팅이 있습니다. 하나는 **\\ 정의된 라우트 라우팅(Defined Route "
+"Routing)**\\ 이고, 다른 하나는 **\\ 자동 라우팅(Auto Routing)**\\ 입니다. 정의된 라우트 라우팅을 "
+"사용하면 라우트를 수동으로 정의할 수 있어 유연한 URL 설정이 가능합니다. 자동 라우팅은 규칙(conventions)에 따라 "
+"HTTP 요청을 자동으로 라우팅하고 해당하는 컨트롤러 메서드를 실행하므로 라우트를 수동으로 정의할 필요가 없습니다."
 
 #: ../../source/incoming/routing.rst:18
 msgid ""
 "First, let's look at Defined Route Routing. If you want to use Auto "
 "Routing, see :ref:`auto-routing-improved`."
 msgstr ""
+"먼저 정의된 라우트 라우팅에 대해 알아보겠습니다. 자동 라우팅을 사용하려면 :ref:`auto-routing-improved`\\ "
+"를 참조하십시오."
 
 #: ../../source/incoming/routing.rst:23
 msgid "Setting Routing Rules"
-msgstr ""
+msgstr "라우팅 규칙 설정"
 
 #: ../../source/incoming/routing.rst:25
 msgid ""
@@ -59,6 +64,9 @@ msgid ""
 "(``$routes``) that permits you to specify your own routing criteria. "
 "Routes can be specified using placeholders or Regular Expressions."
 msgstr ""
+"라우팅 규칙은 **app/Config/Routes.php** 파일에 정의됩니다. 이 파일에서 자신만의 라우팅 기준을 지정할 수 있게"
+" 해주는 RouteCollection 클래스의 인스턴스(``$routes``)를 생성하는 것을 볼 수 있습니다. 라우트는 "
+"자리표시자(placeholders)나 정규 표현식을 사용하여 지정할 수 있습니다."
 
 #: ../../source/incoming/routing.rst:29
 msgid ""
@@ -66,6 +74,8 @@ msgid ""
 "verbs (request method). If you expect a GET request, you use the "
 "``get()`` method:"
 msgstr ""
+"라우트를 지정할 때 HTTP 동사(요청 메서드)에 대응하는 메서드를 선택합니다. GET 요청을 처리하려면 ``get()`` 메서드를"
+" 사용합니다."
 
 #: ../../source/incoming/routing.rst:34
 msgid ""
@@ -74,6 +84,9 @@ msgid ""
 "method ``Home::index``) on the right, along with any parameters that "
 "should be passed to the controller."
 msgstr ""
+"라우트는 왼쪽에 라우트 경로(Route Path)(BaseURL에 대한 상대적인 URI 경로, 예: ``/``)를 받고, 이를 "
+"오른쪽에 있는 라우트 핸들러(Route Handler)(컨트롤러 및 메서드, 예: ``Home::index``)와 컨트롤러에 전달할"
+" 매개변수에 매핑합니다."
 
 #: ../../source/incoming/routing.rst:38
 msgid ""
@@ -81,20 +94,22 @@ msgid ""
 " use a static method, by separating the class and its method with a "
 "double-colon, like ``Users::list``."
 msgstr ""
+"컨트롤러와 메서드는 정적 메서드를 사용하는 것과 같은 방식으로, ``Users::list``\\ 와 같이 클래스와 메서드를 이중 "
+"콜론(::)으로 구분하여 나열해야 합니다."
 
 #: ../../source/incoming/routing.rst:42
 msgid ""
 "If that method requires parameters to be passed to it, then they would be"
 " listed after the method name, separated by forward-slashes:"
-msgstr ""
+msgstr "해당 메서드에 매개변수를 전달해야 하는 경우, 메서드 이름 뒤에 슬래시(/)로 구분하여 나열합니다."
 
 #: ../../source/incoming/routing.rst:48
 msgid "Examples"
-msgstr ""
+msgstr "예제"
 
 #: ../../source/incoming/routing.rst:50
 msgid "Here are a few basic routing examples."
-msgstr ""
+msgstr "다음은 몇 가지 기본적인 라우팅 예제입니다."
 
 #: ../../source/incoming/routing.rst:52
 msgid ""
@@ -102,6 +117,8 @@ msgid ""
 "mapped to the ``\\App\\Controllers\\Blogs`` class, and the :ref:`default "
 "method <routing-default-method>`, which is usually ``index()``:"
 msgstr ""
+"첫 번째 세그먼트에 **journals**\\ 라는 단어가 포함된 URL은 ``\\App\\Controllers\\Blogs`` "
+"클래스와 보통 ``index()``\\ 인 :ref:`기본 메서드 <routing-default-method>`\\ 로 매핑됩니다."
 
 #: ../../source/incoming/routing.rst:57
 msgid ""
@@ -109,6 +126,8 @@ msgid ""
 "``\\App\\Controllers\\Blogs`` class and the ``users()`` method. The ID "
 "will be set to ``34``:"
 msgstr ""
+"**blog/joe** 세그먼트를 포함하는 URL은 ``\\App\\Controllers\\Blogs`` 클래스와 "
+"``users()`` 메서드에 매핑됩니다. ID는 ``34``\\ 로 설정됩니다."
 
 #: ../../source/incoming/routing.rst:62
 msgid ""
@@ -116,6 +135,8 @@ msgid ""
 "will be mapped to the ``\\App\\Controllers\\Catalog`` class and the "
 "``productLookup()`` method:"
 msgstr ""
+"첫 번째 세그먼트가 **product**\\ 이고 두 번째 세그먼트에 무엇이든 오는 URL은 "
+"``\\App\\Controllers\\Catalog`` 클래스와 ``productLookup()`` 메서드에 매핑됩니다."
 
 #: ../../source/incoming/routing.rst:67
 msgid ""
@@ -124,28 +145,31 @@ msgid ""
 "``productLookupByID()`` method passing in the match as a variable to the "
 "method:"
 msgstr ""
+"첫 번째 세그먼트가 **product**\\ 이고 두 번째 세그먼트에 숫자가 오는 URL은 "
+"``\\App\\Controllers\\Catalog`` 클래스와 ``productLookupByID()`` 메서드에 매핑되며, "
+"일치하는 숫자를 메서드의 변수로 전달합니다."
 
 #: ../../source/incoming/routing.rst:75
 msgid "HTTP verb Routes"
-msgstr ""
+msgstr "HTTP 동사 라우트"
 
 #: ../../source/incoming/routing.rst:77
 msgid "You can use any standard HTTP verb (GET, POST, PUT, DELETE, OPTIONS, etc):"
-msgstr ""
+msgstr "표준 HTTP 동사(GET, POST, PUT, DELETE, OPTIONS 등)를 모두 사용할 수 있습니다."
 
 #: ../../source/incoming/routing.rst:81
 msgid ""
 "You can supply multiple verbs that a route should match by passing them "
 "in as an array to the ``match()`` method:"
-msgstr ""
+msgstr "``match()`` 메서드에 배열로 전달하여 하나의 라우트가 여러 동사에 일치하도록 지정할 수 있습니다."
 
 #: ../../source/incoming/routing.rst:86
 msgid "Specifying Route Handlers"
-msgstr ""
+msgstr "라우트 핸들러 지정"
 
 #: ../../source/incoming/routing.rst:91
 msgid "Controller's Namespace"
-msgstr ""
+msgstr "컨트롤러 네임스페이스"
 
 #: ../../source/incoming/routing.rst:93
 msgid ""
@@ -153,38 +177,42 @@ msgid ""
 "controller is written without a leading ``\\``, the :ref:`routing-"
 "default-namespace` will be prepended:"
 msgstr ""
+"컨트롤러와 메서드 이름을 문자열로 지정할 때, 컨트롤러 이름 앞에 ``\\``\\ 가 없으면 :ref:`routing-"
+"default-namespace`\\ 가 앞에 붙습니다."
 
 #: ../../source/incoming/routing.rst:99
 msgid ""
 "If you put ``\\`` at the beginning, it is treated as a fully qualified "
 "class name:"
-msgstr ""
+msgstr "맨 앞에 ``\\``\\ 를 붙이면 전체 경로 클래스 이름(fully qualified class name)으로 취급됩니다."
 
 #: ../../source/incoming/routing.rst:103
 msgid "You can also specify the namespace with the ``namespace`` option:"
-msgstr ""
+msgstr "``namespace`` 옵션을 사용하여 네임스페이스를 명시적으로 지정할 수도 있습니다."
 
 #: ../../source/incoming/routing.rst:107
 msgid "See :ref:`assigning-namespace` for details."
-msgstr ""
+msgstr "자세한 내용은 :ref:`assigning-namespace`\\ 를 참조하십시오."
 
 #: ../../source/incoming/routing.rst:110
 msgid "Array Callable Syntax"
-msgstr ""
+msgstr "배열 콜러블(Array Callable) 구문"
 
 #: ../../source/incoming/routing.rst:114
 msgid "Since v4.2.0, you can use array callable syntax to specify the controller:"
-msgstr ""
+msgstr "v4.2.0부터는 배열 콜러블 구문을 사용하여 컨트롤러를 지정할 수 있습니다."
 
 #: ../../source/incoming/routing.rst:119
 msgid "Or using ``use`` keyword:"
-msgstr ""
+msgstr "또는 ``use`` 키워드를 사용할 수 있습니다."
 
 #: ../../source/incoming/routing.rst:124
 msgid ""
 "If you forget to add ``use App\\Controllers\\Home;``, the controller "
 "classname is interpreted as ``\\Home``, not ``App\\Controllers\\Home``."
 msgstr ""
+"``use App\\Controllers\\Home;`` 추가를 잊으면 컨트롤러 클래스 이름이 "
+"``App\\Controllers\\Home``\\ 이 아닌 ``\\Home``\\ 으로 해석됩니다."
 
 #: ../../source/incoming/routing.rst:127
 msgid ""
@@ -192,16 +220,19 @@ msgid ""
 "as a fully qualified classname. So :ref:`routing-default-namespace` and "
 ":ref:`namespace option <assigning-namespace>` have no effect."
 msgstr ""
+"배열 콜러블 구문을 사용할 때 클래스 이름은 항상 전체 경로 클래스 이름으로 해석됩니다. 따라서 :ref:`routing-"
+"default-namespace`\\ 와 :ref:`namespace 옵션 <assigning-namespace>`\\ 은 적용되지"
+" 않습니다."
 
 #: ../../source/incoming/routing.rst:132
 msgid "Array Callable Syntax and Placeholders"
-msgstr ""
+msgstr "배열 콜러블 구문과 자리표시자"
 
 #: ../../source/incoming/routing.rst:134
 msgid ""
 "If there are placeholders, it will automatically set the parameters in "
 "the specified order:"
-msgstr ""
+msgstr "자리표시자가 있는 경우, 지정된 순서대로 매개변수가 자동으로 설정됩니다."
 
 #: ../../source/incoming/routing.rst:139
 msgid ""
@@ -209,10 +240,12 @@ msgid ""
 "expressions in routes. In such a case, you can specify the parameters "
 "manually:"
 msgstr ""
+"하지만 라우트에 정규 표현식을 사용하는 경우 자동 설정된 매개변수가 올바르지 않을 수 있습니다. 이런 경우에는 매개변수를 수동으로 "
+"지정할 수 있습니다."
 
 #: ../../source/incoming/routing.rst:146
 msgid "Using Closures"
-msgstr ""
+msgstr "클로저(Closures) 사용"
 
 #: ../../source/incoming/routing.rst:148
 msgid ""
@@ -221,18 +254,20 @@ msgid ""
 "URI. This is handy for quickly executing small tasks, or even just "
 "showing a simple view:"
 msgstr ""
+"익명 함수인 클로저를 라우트의 목적지로 사용할 수 있습니다. 사용자가 해당 URI에 접속하면 이 함수가 실행됩니다. 이는 작은 "
+"작업을 빠르게 실행하거나 단순히 뷰를 보여줄 때 유용합니다."
 
 #: ../../source/incoming/routing.rst:155
 msgid "Specifying Route Paths"
-msgstr ""
+msgstr "라우트 경로 지정"
 
 #: ../../source/incoming/routing.rst:158 ../../source/incoming/routing.rst:176
 msgid "Placeholders"
-msgstr ""
+msgstr "자리표시자(Placeholders)"
 
 #: ../../source/incoming/routing.rst:160
 msgid "A typical route might look something like this:"
-msgstr ""
+msgstr "전형적인 라우트는 다음과 같은 모습일 것입니다."
 
 #: ../../source/incoming/routing.rst:164
 msgid ""
@@ -242,6 +277,9 @@ msgid ""
 "segment of the URL path, and a number is found in the second segment, the"
 " ``Catalog`` class and the ``productLookup`` method are used instead."
 msgstr ""
+"라우트에서 첫 번째 매개변수는 매칭할 URI를 포함하고, 두 번째 매개변수는 라우팅될 목적지를 포함합니다. 위의 예에서 URL "
+"경로의 첫 번째 세그먼트가 \"product\"이고 두 번째 세그먼트가 숫자라면, ``Catalog`` 클래스와 "
+"``productLookup`` 메서드가 대신 사용됩니다."
 
 #: ../../source/incoming/routing.rst:169
 msgid ""
@@ -250,70 +288,72 @@ msgid ""
 " the value of the Regular Expression. They are primarily used for "
 "readability."
 msgstr ""
+"자리표시자는 단순히 정규 표현식 패턴을 나타내는 문자열입니다. 라우팅 과정에서 이러한 자리표시자들은 정규 표현식 값으로 대체됩니다."
+" 주로 가독성을 위해 사용됩니다."
 
 #: ../../source/incoming/routing.rst:173
 msgid "The following placeholders are available for you to use in your routes:"
-msgstr ""
+msgstr "라우트에서 사용할 수 있는 자리표시자는 다음과 같습니다."
 
 #: ../../source/incoming/routing.rst:176
 msgid "Description"
-msgstr ""
+msgstr "설명"
 
 #: ../../source/incoming/routing.rst:178
 msgid "(:any)"
-msgstr ""
+msgstr "(:any)"
 
 #: ../../source/incoming/routing.rst:178
 msgid ""
 "will match all characters from that point to the end of the URI. This may"
 " include multiple URI segments."
-msgstr ""
+msgstr "해당 지점부터 URI 끝까지의 모든 문자와 일치합니다. 여기에는 여러 URI 세그먼트가 포함될 수 있습니다."
 
 #: ../../source/incoming/routing.rst:179
 msgid "(:segment)"
-msgstr ""
+msgstr "(:segment)"
 
 #: ../../source/incoming/routing.rst:179
 msgid ""
 "will match any character except for a forward slash (``/``) restricting "
 "the result to a single segment."
-msgstr ""
+msgstr "슬래시(``/``)를 제외한 모든 문자와 일치하며, 결과를 단일 세그먼트로 제한합니다."
 
 #: ../../source/incoming/routing.rst:180
 msgid "(:num)"
-msgstr ""
+msgstr "(:num)"
 
 #: ../../source/incoming/routing.rst:180
 msgid "will match any positive integer."
-msgstr ""
+msgstr "모든 양의 정수와 일치합니다."
 
 #: ../../source/incoming/routing.rst:181
 msgid "(:alpha)"
-msgstr ""
+msgstr "(:alpha)"
 
 #: ../../source/incoming/routing.rst:181
 msgid "will match any string of alphabetic characters"
-msgstr ""
+msgstr "알파벳 문자로만 구성된 문자열과 일치합니다."
 
 #: ../../source/incoming/routing.rst:182
 msgid "(:alphanum)"
-msgstr ""
+msgstr "(:alphanum)"
 
 #: ../../source/incoming/routing.rst:182
 msgid ""
 "will match any string of alphabetic characters or integers, or any "
 "combination of the two."
-msgstr ""
+msgstr "알파벳 문자나 정수, 또는 그 조합으로 구성된 문자열과 일치합니다."
 
 #: ../../source/incoming/routing.rst:183
 msgid "(:hash)"
-msgstr ""
+msgstr "(:hash)"
 
 #: ../../source/incoming/routing.rst:183
 msgid ""
 "is the same as ``(:segment)``, but can be used to easily see which routes"
 " use hashed ids."
-msgstr ""
+msgstr "``(:segment)``\\ 와 동일하지만, 해시된 ID를 사용하는 라우트를 쉽게 식별하기 위해 사용될 수 있습니다."
 
 #: ../../source/incoming/routing.rst:186
 #, python-brace-format
@@ -322,26 +362,28 @@ msgid ""
 "as it is reserved for use in :doc:`localization "
 "</outgoing/localization>`."
 msgstr ""
+"``{locale}``\\ 은 :doc:`다국어화(localization) </outgoing/localization>`\\ 를 "
+"위해 예약되어 있으므로 자리표시자나 라우트의 다른 부분으로 사용할 수 없습니다."
 
 #: ../../source/incoming/routing.rst:192
 msgid "The Behavior of (:any)"
-msgstr ""
+msgstr "(:any)의 동작"
 
 #: ../../source/incoming/routing.rst:194
 msgid ""
 "Note that a single ``(:any)`` will match multiple segments in the URL if "
 "present."
-msgstr ""
+msgstr "단일 ``(:any)``\\ 는 URL에 여러 세그먼트가 있을 경우 이를 모두 포함하여 일치하게 됨에 유의하십시오."
 
 #: ../../source/incoming/routing.rst:196 ../../source/incoming/routing.rst:783
 msgid "For example the route:"
-msgstr ""
+msgstr "예를 들어 다음 라우트는"
 
 #: ../../source/incoming/routing.rst:200
 msgid ""
 "will match **product/123**, **product/123/456**, **product/123/456/789** "
 "and so on."
-msgstr ""
+msgstr "**product/123**, **product/123/456**, **product/123/456/789** 등과 일치합니다."
 
 #: ../../source/incoming/routing.rst:202
 msgid ""
@@ -349,18 +391,22 @@ msgid ""
 "slash (``/``), it will still be split into multiple parameters when "
 "passed to ``Catalog::productLookup()``."
 msgstr ""
+"기본적으로 위의 예에서 ``$1`` 자리표시자에 슬래시(``/``)가 포함되어 있다면, "
+"``Catalog::productLookup()``\\ 에 전달될 때 여전히 여러 매개변수로 분리됩니다."
 
 #: ../../source/incoming/routing.rst:206 ../../source/incoming/routing.rst:266
 msgid ""
 "Since v4.5.0, you can change the behavior with the config option. See "
 ":ref:`multiple-uri-segments-as-one-parameter` for details."
 msgstr ""
+"v4.5.0부터는 설정 옵션을 통해 이 동작을 변경할 수 있습니다. 자세한 내용은 :ref:`multiple-uri-"
+"segments-as-one-parameter`\\ 를 참조하십시오."
 
 #: ../../source/incoming/routing.rst:209
 msgid ""
 "The implementation in the Controller should take into account the maximum"
 " parameters:"
-msgstr ""
+msgstr "컨트롤러의 구현은 최대 매개변수 개수를 고려해야 합니다."
 
 #: ../../source/incoming/routing.rst:214
 msgid ""
@@ -368,12 +414,17 @@ msgid ""
 "<https://www.php.net/manual/en/functions.arguments.php#functions"
 ".variable-arg-list>`_:"
 msgstr ""
+"또는 `가변 길이 인수 목록 "
+"<https://www.php.net/manual/ko/functions.arguments.php#functions"
+".variable-arg-list>`_\\ 을 사용할 수 있습니다."
 
 #: ../../source/incoming/routing.rst:218
 msgid ""
 "Do not put any placeholder after ``(:any)``. Because the number of "
 "parameters passed to the controller method may change."
 msgstr ""
+"``(:any)`` 뒤에는 어떠한 자리표시자도 두지 마십시오. 컨트롤러 메서드에 전달되는 매개변수의 개수가 변경될 수 있기 "
+"때문입니다."
 
 #: ../../source/incoming/routing.rst:221
 msgid ""
@@ -381,20 +432,22 @@ msgid ""
 "``(:segment)`` should be used when defining the routes. With the examples"
 " URLs from above:"
 msgstr ""
+"여러 세그먼트를 매칭하는 것이 의도한 동작이 아니라면, 라우트를 정의할 때 ``(:segment)``\\ 를 사용해야 합니다. 위의"
+" 예제 URL들을 사용하면 다음과 같습니다."
 
 #: ../../source/incoming/routing.rst:226
 msgid "will only match **product/123** and generate 404 errors for other example."
-msgstr ""
+msgstr "이 설정은 **product/123**\\ 만 매칭하며, 다른 예제들에 대해서는 404 에러를 발생시킵니다."
 
 #: ../../source/incoming/routing.rst:229
 msgid "Custom Placeholders"
-msgstr ""
+msgstr "커스텀 자리표시자"
 
 #: ../../source/incoming/routing.rst:231
 msgid ""
 "You can create your own placeholders that can be used in your routes file"
 " to fully customize the experience and readability."
-msgstr ""
+msgstr "라우트 파일에서 사용할 자신만의 자리표시자를 만들어 경험과 가독성을 완전히 커스터마이징할 수 있습니다."
 
 #: ../../source/incoming/routing.rst:234
 msgid ""
@@ -403,16 +456,20 @@ msgid ""
 "parameter is the Regular Expression pattern it should be replaced with. "
 "This must be called before you add the route:"
 msgstr ""
+"``addPlaceholder()`` 메서드를 사용하여 새로운 자리표시자를 추가합니다. 첫 번째 매개변수는 자리표시자로 사용할 "
+"문자열이고, 두 번째 매개변수는 대체될 정규 표현식 패턴입니다. 이는 라우트를 추가하기 전에 호출되어야 합니다."
 
 #: ../../source/incoming/routing.rst:241
 msgid "Regular Expressions"
-msgstr ""
+msgstr "정규 표현식"
 
 #: ../../source/incoming/routing.rst:243
 msgid ""
 "If you prefer you can use regular expressions to define your routing "
 "rules. Any valid regular expression is allowed, as are back-references."
 msgstr ""
+"원한다면 정규 표현식을 사용하여 라우팅 규칙을 정의할 수 있습니다. 유효한 모든 정규 표현식이 허용되며 역참조(back-"
+"references)도 가능합니다."
 
 #: ../../source/incoming/routing.rst:246
 msgid ""
@@ -420,6 +477,8 @@ msgid ""
 "than the double backslash syntax. A typical RegEx route might look "
 "something like this:"
 msgstr ""
+"참고: 역참조를 사용하는 경우 이중 백슬래시 구문 대신 달러($) 구문을 사용해야 합니다. 전형적인 정규 표현식 라우트는 다음과 "
+"같은 모습일 것입니다."
 
 #: ../../source/incoming/routing.rst:251
 msgid ""
@@ -427,13 +486,15 @@ msgid ""
 "instead call the ``show()`` method of the ``Products`` controller class, "
 "with the original first and second segment passed as arguments to it."
 msgstr ""
+"위의 예에서 **products/shirts/123**\\ 과 유사한 URI는 ``Products`` 컨트롤러 클래스의 "
+"``show()`` 메서드를 호출하며, 원래의 첫 번째와 두 번째 세그먼트가 메서드 인수로 전달됩니다."
 
 #: ../../source/incoming/routing.rst:254
 msgid ""
 "With regular expressions, you can also catch a segment containing a "
 "forward slash (``/``), which would usually represent the delimiter "
 "between multiple segments."
-msgstr ""
+msgstr "정규 표현식을 사용하면 일반적으로 여러 세그먼트 사이의 구분자를 나타내는 슬래시(``/``)가 포함된 세그먼트도 캡처할 수 있습니다."
 
 #: ../../source/incoming/routing.rst:257
 msgid ""
@@ -441,6 +502,8 @@ msgid ""
 "application and you wish to be able to redirect them back to the same "
 "page after they log in, you may find this example useful:"
 msgstr ""
+"예를 들어, 사용자가 웹 애플리케이션의 비밀번호로 보호된 영역에 접근할 때 로그인 후 동일한 페이지로 리다이렉트하고 싶다면 다음 "
+"예제가 유용할 것입니다."
 
 #: ../../source/incoming/routing.rst:262
 msgid ""
@@ -448,6 +511,8 @@ msgid ""
 "slash (``/``), it will still be split into multiple parameters when "
 "passed to ``Auth::login()``."
 msgstr ""
+"기본적으로 위의 예에서 ``$1`` 자리표시자에 슬래시(``/``)가 포함되어 있다면, ``Auth::login()``\\ 에 "
+"전달될 때 여전히 여러 매개변수로 분리됩니다."
 
 #: ../../source/incoming/routing.rst:269
 msgid ""
@@ -455,14 +520,16 @@ msgid ""
 "more about them, `regular-expressions.info <https://www.regular-"
 "expressions.info/>`_ might be a good starting point."
 msgstr ""
+"정규 표현식을 모르거나 더 배우고 싶다면 `regular-expressions.info <https://www.regular-"
+"expressions.info/>`_\\ 가 좋은 시작점이 될 수 있습니다."
 
 #: ../../source/incoming/routing.rst:272
 msgid "You can also mix and match placeholders with regular expressions."
-msgstr ""
+msgstr "자리표시자와 정규 표현식을 혼합하여 사용할 수도 있습니다."
 
 #: ../../source/incoming/routing.rst:277
 msgid "View Routes"
-msgstr ""
+msgstr "뷰 라우트"
 
 #: ../../source/incoming/routing.rst:281
 msgid ""
@@ -471,6 +538,8 @@ msgid ""
 "request. This method accepts the name of the view to load as the second "
 "parameter."
 msgstr ""
+"로직이 필요 없이 단순히 뷰를 렌더링하고 싶다면 ``view()`` 메서드를 사용할 수 있습니다. 이는 항상 GET 요청으로 "
+"취급됩니다. 이 메서드는 두 번째 매개변수로 로드할 뷰의 이름을 받습니다."
 
 #: ../../source/incoming/routing.rst:287
 msgid ""
@@ -478,10 +547,12 @@ msgid ""
 " view in a special variable, ``$segments``. They are available as an "
 "array, indexed in the order they appear in the route."
 msgstr ""
+"라우트 내에 자리표시자를 사용하는 경우, 뷰 내에서 ``$segments``\\ 라는 특별한 변수를 통해 접근할 수 있습니다. "
+"이들은 라우트에 나타나는 순서대로 인덱싱된 배열로 제공됩니다."
 
 #: ../../source/incoming/routing.rst:295
 msgid "Redirecting Routes"
-msgstr ""
+msgstr "리다이렉트 라우트"
 
 #: ../../source/incoming/routing.rst:297
 msgid ""
@@ -493,10 +564,14 @@ msgid ""
 "that should be sent along with the redirect. The default value is ``302``"
 " which is a temporary redirect and is recommended in most cases:"
 msgstr ""
+"오랫동안 운영되는 사이트라면 페이지 위치가 변경되기 마련입니다. ``addRedirect()`` 메서드를 사용하여 다른 라우트로 "
+"리다이렉트해야 하는 라우트를 지정할 수 있습니다. 첫 번째 매개변수는 이전 라우트의 URI 패턴입니다. 두 번째 매개변수는 "
+"리다이렉트할 새 URI이거나 명명된 라우트(named route)의 이름입니다. 세 번째 매개변수는 리다이렉트와 함께 전송할 "
+"HTTP 상태 코드입니다. 기본값은 302(임시 리다이렉트)이며 대부분의 경우에 권장됩니다."
 
 #: ../../source/incoming/routing.rst:305
 msgid "Since v4.2.0, ``addRedirect()`` can use placeholders."
-msgstr ""
+msgstr "v4.2.0부터 ``addRedirect()``\\ 에서 자리표시자를 사용할 수 있습니다."
 
 #: ../../source/incoming/routing.rst:307
 msgid ""
@@ -802,8 +877,9 @@ msgid ""
 msgstr ""
 
 #: ../../source/incoming/routing.rst:519
+#, fuzzy
 msgid "Reverse Routing"
-msgstr ""
+msgstr "URI 라우팅"
 
 #: ../../source/incoming/routing.rst:521
 msgid ""
@@ -825,8 +901,9 @@ msgid ""
 msgstr ""
 
 #: ../../source/incoming/routing.rst:535
+#, fuzzy
 msgid "Named Routes"
-msgstr ""
+msgstr "뷰 라우트"
 
 #: ../../source/incoming/routing.rst:537
 msgid ""
@@ -863,8 +940,9 @@ msgid ""
 msgstr ""
 
 #: ../../source/incoming/routing.rst:555
+#, fuzzy
 msgid "Grouping Routes"
-msgstr ""
+msgstr "리다이렉트 라우트"
 
 #: ../../source/incoming/routing.rst:557
 msgid ""
@@ -921,8 +999,9 @@ msgid ""
 msgstr ""
 
 #: ../../source/incoming/routing.rst:588
+#, fuzzy
 msgid "Setting Other Options"
-msgstr ""
+msgstr "라우팅 규칙 설정"
 
 #: ../../source/incoming/routing.rst:590
 msgid ""
@@ -935,8 +1014,9 @@ msgid ""
 msgstr ""
 
 #: ../../source/incoming/routing.rst:600
+#, fuzzy
 msgid "Nesting Groups"
-msgstr ""
+msgstr "리다이렉트 라우트"
 
 #: ../../source/incoming/routing.rst:602
 msgid ""
@@ -1216,8 +1296,9 @@ msgid "Auto Routing (Improved) is a new, more secure automatic routing system."
 msgstr ""
 
 #: ../../source/incoming/routing.rst:798
+#, fuzzy
 msgid "See :doc:`auto_routing_improved` for details."
-msgstr ""
+msgstr "자세한 내용은 :ref:`assigning-namespace`\\ 를 참조하십시오."
 
 #: ../../source/incoming/routing.rst:803 ../../source/incoming/routing.rst:979
 msgid "Auto Routing (Legacy)"
@@ -1251,10 +1332,11 @@ msgid ""
 msgstr ""
 
 #: ../../source/incoming/routing.rst:819
+#, fuzzy
 msgid ""
 "Auto Routing (Legacy) routes an HTTP request with **any** HTTP method to "
 "a controller method."
-msgstr ""
+msgstr "URI 라우팅은 URI를 컨트롤러의 메서드와 연결합니다."
 
 #: ../../source/incoming/routing.rst:822
 msgid "Enable Auto Routing (Legacy)"
@@ -1377,8 +1459,9 @@ msgid ""
 msgstr ""
 
 #: ../../source/incoming/routing.rst:900
+#, fuzzy
 msgid "Confirming Routes"
-msgstr ""
+msgstr "리다이렉트 라우트"
 
 #: ../../source/incoming/routing.rst:902
 msgid ""
@@ -1387,8 +1470,9 @@ msgid ""
 msgstr ""
 
 #: ../../source/incoming/routing.rst:907
+#, fuzzy
 msgid "spark routes"
-msgstr ""
+msgstr "HTTP 동사 라우트"
 
 #: ../../source/incoming/routing.rst:909
 msgid "Displays all routes and filters:"
@@ -1497,12 +1581,14 @@ msgid "Specify Host"
 msgstr ""
 
 #: ../../source/incoming/routing.rst:1017
+#, fuzzy
 msgid "You can specify the host in the request URL with the ``--host`` option:"
-msgstr ""
+msgstr "``namespace`` 옵션을 사용하여 네임스페이스를 명시적으로 지정할 수도 있습니다."
 
 #: ../../source/incoming/routing.rst:1024
+#, fuzzy
 msgid "Getting Routing Information"
-msgstr ""
+msgstr "라우팅 규칙 설정"
 
 #: ../../source/incoming/routing.rst:1026
 msgid ""

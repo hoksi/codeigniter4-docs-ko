@@ -1,17 +1,16 @@
-# SOME DESCRIPTIVE TITLE.
+# CodeIgniter 4 User Guide Korean Translation.
 # Copyright (C) 2019-2026 CodeIgniter Foundation
 # This file is distributed under the same license as the CodeIgniter
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+# hoksi <hoksi@github.com>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-05-14 16:50+0900\n"
+"Last-Translator: hoksi <hoksi@github.com>\n"
 "Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -22,225 +21,224 @@ msgstr ""
 
 #: ../../source/intro/requirements.rst:3
 msgid "Server Requirements"
-msgstr ""
+msgstr "서버 요구 사항"
 
 #: ../../source/intro/requirements.rst:11
 msgid "PHP and Required Extensions"
-msgstr ""
+msgstr "PHP 및 필수 확장 기능"
 
 #: ../../source/intro/requirements.rst:13
 msgid ""
 "`PHP <https://www.php.net/>`_ version 8.2 or newer is required, with the "
 "following PHP extensions are enabled:"
-msgstr ""
+msgstr "`PHP <https://www.php.net/>`_ 8.2 버전 이상이 필요하며, 다음 PHP 확장 기능이 활성화되어 있어야 합니다:"
 
 #: ../../source/intro/requirements.rst:15
 msgid "`intl <https://www.php.net/manual/en/intl.requirements.php>`_"
-msgstr ""
+msgstr "`intl <https://www.php.net/manual/ko/intl.requirements.php>`_"
 
 #: ../../source/intro/requirements.rst:16
 msgid "`mbstring <https://www.php.net/manual/en/mbstring.installation.php>`_"
-msgstr ""
+msgstr "`mbstring <https://www.php.net/manual/ko/mbstring.installation.php>`_"
 
 #: ../../source/intro/requirements.rst:19
 msgid "The end of life date for PHP 7.4 was November 28, 2022."
-msgstr ""
+msgstr "PHP 7.4의 지원 종료(EOL) 날짜는 2022년 11월 28일이었습니다."
 
 #: ../../source/intro/requirements.rst:20
 msgid "The end of life date for PHP 8.0 was November 26, 2023."
-msgstr ""
+msgstr "PHP 8.0의 지원 종료(EOL) 날짜는 2023년 11월 26일이었습니다."
 
 #: ../../source/intro/requirements.rst:21
 msgid "The end of life date for PHP 8.1 was December 31, 2025."
-msgstr ""
+msgstr "PHP 8.1의 지원 종료(EOL) 날짜는 2025년 12월 31일이었습니다."
 
 #: ../../source/intro/requirements.rst:22
 msgid ""
 "**If you are still using a PHP version below 8.2, you should upgrade "
 "immediately.**"
-msgstr ""
+msgstr "**\ 여전히 8.2 미만의 PHP 버전을 사용 중이라면 즉시 업그레이드해야 합니다.**"
 
 #: ../../source/intro/requirements.rst:23
 msgid "The end of life date for PHP 8.2 will be December 31, 2026."
-msgstr ""
+msgstr "PHP 8.2의 지원 종료(EOL) 날짜는 2026년 12월 31일이 될 것입니다."
 
 #: ../../source/intro/requirements.rst:26
 msgid "PHP 8.5 requires CodeIgniter 4.7.0 or later."
-msgstr ""
+msgstr "PHP 8.5는 CodeIgniter 4.7.0 이상이 필요합니다."
 
 #: ../../source/intro/requirements.rst:27
 msgid "PHP 8.4 requires CodeIgniter 4.6.0 or later."
-msgstr ""
+msgstr "PHP 8.4는 CodeIgniter 4.6.0 이상이 필요합니다."
 
 #: ../../source/intro/requirements.rst:28
 msgid "PHP 8.3 requires CodeIgniter 4.4.4 or later."
-msgstr ""
+msgstr "PHP 8.3는 CodeIgniter 4.4.4 이상이 필요합니다."
 
 #: ../../source/intro/requirements.rst:29
 msgid "PHP 8.2 requires CodeIgniter 4.2.11 or later."
-msgstr ""
+msgstr "PHP 8.2는 CodeIgniter 4.2.11 이상이 필요합니다."
 
 #: ../../source/intro/requirements.rst:30
 msgid "PHP 8.1 requires CodeIgniter 4.1.6 or later."
-msgstr ""
+msgstr "PHP 8.1는 CodeIgniter 4.1.6 이상이 필요합니다."
 
 #: ../../source/intro/requirements.rst:31
 msgid "**Note that we only maintain the latest version.**"
-msgstr ""
+msgstr "**\ 최신 버전만 유지 관리된다는 점에 유의하세요.**"
 
 #: ../../source/intro/requirements.rst:35
 msgid "Optional PHP Extensions"
-msgstr ""
+msgstr "선택적 PHP 확장 기능"
 
 #: ../../source/intro/requirements.rst:37
 msgid "The following PHP extensions should be enabled on your server:"
-msgstr ""
+msgstr "서버에서 다음 PHP 확장 기능이 활성화되어 있어야 합니다:"
 
 #: ../../source/intro/requirements.rst:39
 msgid ""
 "`mysqlnd <https://www.php.net/manual/en/mysqlnd.install.php>`_ (if you "
 "use MySQL)"
-msgstr ""
+msgstr "`mysqlnd <https://www.php.net/manual/ko/mysqlnd.install.php>`_ (MySQL을 사용하는 경우)"
 
 #: ../../source/intro/requirements.rst:40
 msgid ""
 "`curl <https://www.php.net/manual/en/curl.requirements.php>`_ (if you use"
 " :doc:`CURLRequest </libraries/curlrequest>`)"
-msgstr ""
+msgstr "`curl <https://www.php.net/manual/ko/curl.requirements.php>`_ (:doc:`CURLRequest </libraries/curlrequest>`\ 를 사용하는 경우)"
 
 #: ../../source/intro/requirements.rst:41
 msgid ""
 "`imagick <https://www.php.net/manual/en/imagick.requirements.php>`_ (if "
 "you use :doc:`Image </libraries/images>` class ImageMagickHandler)"
-msgstr ""
+msgstr "`imagick <https://www.php.net/manual/ko/imagick.requirements.php>`_ (:doc:`Image </libraries/images>` 클래스의 ImageMagickHandler를 사용하는 경우)"
 
 #: ../../source/intro/requirements.rst:42
 msgid ""
 "`gd <https://www.php.net/manual/en/image.requirements.php>`_ (if you use "
 ":doc:`Image </libraries/images>` class GDHandler)"
-msgstr ""
+msgstr "`gd <https://www.php.net/manual/ko/image.requirements.php>`_ (:doc:`Image </libraries/images>` 클래스의 GDHandler를 사용하는 경우)"
 
 #: ../../source/intro/requirements.rst:43
 msgid ""
 "`simplexml <https://www.php.net/manual/en/simplexml.requirements.php>`_ "
 "(if you format XML)"
-msgstr ""
+msgstr "`simplexml <https://www.php.net/manual/ko/simplexml.requirements.php>`_ (XML 형식을 지정하는 경우)"
 
 #: ../../source/intro/requirements.rst:45
 msgid "The following PHP extensions are required when you use a Cache server:"
-msgstr ""
+msgstr "캐시 서버를 사용할 때 다음 PHP 확장 기능이 필요합니다:"
 
 #: ../../source/intro/requirements.rst:47
 msgid ""
 "`memcache <https://www.php.net/manual/en/memcache.requirements.php>`_ (if"
 " you use :doc:`Cache </libraries/caching>` class MemcachedHandler with "
 "Memcache)"
-msgstr ""
+msgstr "`memcache <https://www.php.net/manual/ko/memcache.requirements.php>`_ (Memcache와 함께 :doc:`Cache </libraries/caching>` 클래스의 MemcachedHandler를 사용하는 경우)"
 
 #: ../../source/intro/requirements.rst:48
 msgid ""
 "`memcached <https://www.php.net/manual/en/memcached.requirements.php>`_ "
 "(if you use :doc:`Cache </libraries/caching>` class MemcachedHandler with"
 " Memcached)"
-msgstr ""
+msgstr "`memcached <https://www.php.net/manual/ko/memcached.requirements.php>`_ (Memcached와 함께 :doc:`Cache </libraries/caching>` 클래스의 MemcachedHandler를 사용하는 경우)"
 
 #: ../../source/intro/requirements.rst:49
 msgid ""
 "`redis <https://github.com/phpredis/phpredis>`_ (if you use :doc:`Cache "
 "</libraries/caching>` class RedisHandler)"
-msgstr ""
+msgstr "`redis <https://github.com/phpredis/phpredis>`_ (:doc:`Cache </libraries/caching>` 클래스의 RedisHandler를 사용하는 경우)"
 
 #: ../../source/intro/requirements.rst:51
 msgid "The following PHP extensions are required when you use PHPUnit:"
-msgstr ""
+msgstr "PHPUnit을 사용할 때 다음 PHP 확장 기능이 필요합니다:"
 
 #: ../../source/intro/requirements.rst:53
 msgid ""
 "`dom <https://www.php.net/manual/en/dom.requirements.php>`_ (if you use "
 ":doc:`TestResponse </testing/response>` class)"
-msgstr ""
+msgstr "`dom <https://www.php.net/manual/ko/dom.requirements.php>`_ (:doc:`TestResponse </testing/response>` 클래스를 사용하는 경우)"
 
 #: ../../source/intro/requirements.rst:54
 msgid ""
 "`libxml <https://www.php.net/manual/en/libxml.requirements.php>`_ (if you"
 " use :doc:`TestResponse </testing/response>` class)"
-msgstr ""
+msgstr "`libxml <https://www.php.net/manual/ko/libxml.requirements.php>`_ (:doc:`TestResponse </testing/response>` 클래스를 사용하는 경우)"
 
 #: ../../source/intro/requirements.rst:55
 msgid ""
 "`xdebug <https://xdebug.org/docs/install>`_ (if you use "
 "``CIUnitTestCase::assertHeaderEmitted()``)"
-msgstr ""
+msgstr "`xdebug <https://xdebug.org/docs/install>`_ (``CIUnitTestCase::assertHeaderEmitted()``\ 를 사용하는 경우)"
 
 #: ../../source/intro/requirements.rst:61
 msgid "Supported Databases"
-msgstr ""
+msgstr "지원되는 데이터베이스"
 
 #: ../../source/intro/requirements.rst:63
 msgid ""
 "A database is required for most web application programming. Currently "
 "supported databases are:"
-msgstr ""
+msgstr "대부분의 웹 애플리케이션 프로그래밍에는 데이터베이스가 필요합니다. 현재 지원되는 데이터베이스는 다음과 같습니다."
 
 #: ../../source/intro/requirements.rst:66
 msgid "MySQL via the ``MySQLi`` driver (version 5.1 and above only)"
-msgstr ""
+msgstr "``MySQLi`` 드라이버를 통한 MySQL (5.1 버전 이상만 해당)"
 
 #: ../../source/intro/requirements.rst:67
 msgid "PostgreSQL via the ``Postgre`` driver (version 7.4 and above only)"
-msgstr ""
+msgstr "``Postgre`` 드라이버를 통한 PostgreSQL (7.4 버전 이상만 해당)"
 
 #: ../../source/intro/requirements.rst:68
 msgid "SQLite3 via the ``SQLite3`` driver"
-msgstr ""
+msgstr "``SQLite3`` 드라이버를 통한 SQLite3"
 
 #: ../../source/intro/requirements.rst:69
 msgid ""
 "Microsoft SQL Server via the ``SQLSRV`` driver (version 2012 and above "
 "only)"
-msgstr ""
+msgstr "``SQLSRV`` 드라이버를 통한 Microsoft SQL Server (2012 버전 이상만 해당)"
 
 #: ../../source/intro/requirements.rst:70
 msgid "Oracle Database via the ``OCI8`` driver (version 12.1 and above only)"
-msgstr ""
+msgstr "``OCI8`` 드라이버를 통한 Oracle Database (12.1 버전 이상만 해당)"
 
 #: ../../source/intro/requirements.rst:72
 msgid ""
 "Not all of the drivers have been converted/rewritten for CodeIgniter4. "
 "The list below shows the outstanding ones."
-msgstr ""
+msgstr "모든 드라이버가 CodeIgniter4용으로 변환되거나 다시 작성된 것은 아닙니다. 아래 목록은 진행 중인 드라이버들을 보여줍니다."
 
 #: ../../source/intro/requirements.rst:75
 msgid "MySQL (5.1+) via the *pdo* driver"
-msgstr ""
+msgstr "*pdo* 드라이버를 통한 MySQL (5.1+)"
 
 #: ../../source/intro/requirements.rst:76
 msgid "Oracle via the *pdo* drivers"
-msgstr ""
+msgstr "*pdo* 드라이버를 통한 Oracle"
 
 #: ../../source/intro/requirements.rst:77
 msgid "PostgreSQL via the *pdo* driver"
-msgstr ""
+msgstr "*pdo* 드라이버를 통한 PostgreSQL"
 
 #: ../../source/intro/requirements.rst:78
 msgid "MSSQL via the *pdo* driver"
-msgstr ""
+msgstr "*pdo* 드라이버를 통한 MSSQL"
 
 #: ../../source/intro/requirements.rst:79
 msgid "SQLite via the *sqlite* (version 2) and *pdo* drivers"
-msgstr ""
+msgstr "*sqlite* (버전 2) 및 *pdo* 드라이버를 통한 SQLite"
 
 #: ../../source/intro/requirements.rst:80
 msgid "CUBRID via the *cubrid* and *pdo* drivers"
-msgstr ""
+msgstr "*cubrid* 및 *pdo* 드라이버를 통한 CUBRID"
 
 #: ../../source/intro/requirements.rst:81
 msgid "Interbase/Firebird via the *ibase* and *pdo* drivers"
-msgstr ""
+msgstr "*ibase* 및 *pdo* 드라이버를 통한 Interbase/Firebird"
 
 #: ../../source/intro/requirements.rst:82
 msgid ""
 "ODBC via the *odbc* and *pdo* drivers (you should know that ODBC is "
 "actually an abstraction layer)"
-msgstr ""
-
+msgstr "*odbc* 및 *pdo* 드라이버를 통한 ODBC (ODBC가 실제로는 추상화 계층이라는 점을 알아두어야 합니다)"
