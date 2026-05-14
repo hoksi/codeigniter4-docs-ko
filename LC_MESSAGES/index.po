@@ -47,18 +47,23 @@ msgstr "데이터베이스 다루기"
 msgid "Libraries & Helpers"
 msgstr "라이브러리 및 헬퍼"
 
-#: ../../source/index.rst:104
-msgid "Testing & Debugging"
-msgstr "테스트 및 디버깅"
+#: ../../source/index.rst:94
+msgid "Advanced Topics"
+msgstr ""
 
 #: ../../source/index.rst:119
-msgid "Command Line Usage"
-msgstr "명령줄(CLI) 사용법"
+msgid "Official Packages"
+msgstr ""
 
-#: ../../source/index.rst:134
-msgid "Extending CodeIgniter"
-msgstr "CodeIgniter 확장"
+#~ msgid "Testing & Debugging"
+#~ msgstr "테스트 및 디버깅"
 
-#: ../../source/index.rst:147
-msgid "Changelogs"
-msgstr "변경 로그"
+#~ msgid "Command Line Usage"
+#~ msgstr "명령줄(CLI) 사용법"
+
+#~ msgid "Extending CodeIgniter"
+#~ msgstr "CodeIgniter 확장"
+
+#~ msgid "Changelogs"
+#~ msgstr "변경 로그"
+

@@ -69,7 +69,7 @@ msgstr "\"Improved\" 자동 라우터는 기존 버전보다 더 안전하고 �
 
 #: ../../source/guides/api/first-endpoint.rst:30
 msgid "Then, in **app/Config/Routing.php**, confirm auto-routing is **enabled**:"
-msgstr "그다음 **app/Config/Routing.php** 에서 자동 라우팅이 **활성화**되어 있는지 확인합니다:"
+msgstr "그다음 **app/Config/Routing.php** 에서 자동 라우팅이 **활성화**\\ 되어 있는지 확인합니다:"
 
 #: ../../source/guides/api/first-endpoint.rst:36
 msgid ""

@@ -39,13 +39,19 @@ msgid ""
 "automatically routes HTTP requests based on conventions and execute the "
 "corresponding controller methods. There is no need to define routes "
 "manually."
-msgstr "CodeIgniter에는 두 가지 종류의 라우팅이 있습니다. 하나는 **\ 정의된 라우트 라우팅(Defined Route Routing)**\ 이고, 다른 하나는 **\ 자동 라우팅(Auto Routing)**\ 입니다. 정의된 라우트 라우팅을 사용하면 라우트를 수동으로 정의할 수 있어 유연한 URL 설정이 가능합니다. 자동 라우팅은 규칙(conventions)에 따라 HTTP 요청을 자동으로 라우팅하고 해당하는 컨트롤러 메서드를 실행하므로 라우트를 수동으로 정의할 필요가 없습니다."
+msgstr ""
+"CodeIgniter에는 두 가지 종류의 라우팅이 있습니다. 하나는 **\\ 정의된 라우트 라우팅(Defined Route "
+"Routing)**\\ 이고, 다른 하나는 **\\ 자동 라우팅(Auto Routing)**\\ 입니다. 정의된 라우트 라우팅을 "
+"사용하면 라우트를 수동으로 정의할 수 있어 유연한 URL 설정이 가능합니다. 자동 라우팅은 규칙(conventions)에 따라 "
+"HTTP 요청을 자동으로 라우팅하고 해당하는 컨트롤러 메서드를 실행하므로 라우트를 수동으로 정의할 필요가 없습니다."
 
 #: ../../source/incoming/routing.rst:18
 msgid ""
 "First, let's look at Defined Route Routing. If you want to use Auto "
 "Routing, see :ref:`auto-routing-improved`."
-msgstr "먼저 정의된 라우트 라우팅에 대해 알아보겠습니다. 자동 라우팅을 사용하려면 :ref:`auto-routing-improved`\ 를 참조하십시오."
+msgstr ""
+"먼저 정의된 라우트 라우팅에 대해 알아보겠습니다. 자동 라우팅을 사용하려면 :ref:`auto-routing-improved`\\ "
+"를 참조하십시오."
 
 #: ../../source/incoming/routing.rst:23
 msgid "Setting Routing Rules"
@@ -57,14 +63,19 @@ msgid ""
 "you'll see that it creates an instance of the RouteCollection class "
 "(``$routes``) that permits you to specify your own routing criteria. "
 "Routes can be specified using placeholders or Regular Expressions."
-msgstr "라우팅 규칙은 **app/Config/Routes.php** 파일에 정의됩니다. 이 파일에서 자신만의 라우팅 기준을 지정할 수 있게 해주는 RouteCollection 클래스의 인스턴스(``$routes``)를 생성하는 것을 볼 수 있습니다. 라우트는 자리표시자(placeholders)나 정규 표현식을 사용하여 지정할 수 있습니다."
+msgstr ""
+"라우팅 규칙은 **app/Config/Routes.php** 파일에 정의됩니다. 이 파일에서 자신만의 라우팅 기준을 지정할 수 있게"
+" 해주는 RouteCollection 클래스의 인스턴스(``$routes``)를 생성하는 것을 볼 수 있습니다. 라우트는 "
+"자리표시자(placeholders)나 정규 표현식을 사용하여 지정할 수 있습니다."
 
 #: ../../source/incoming/routing.rst:29
 msgid ""
 "When you specify a route, you choose a method to corresponding to HTTP "
 "verbs (request method). If you expect a GET request, you use the "
 "``get()`` method:"
-msgstr "라우트를 지정할 때 HTTP 동사(요청 메서드)에 대응하는 메서드를 선택합니다. GET 요청을 처리하려면 ``get()`` 메서드를 사용합니다."
+msgstr ""
+"라우트를 지정할 때 HTTP 동사(요청 메서드)에 대응하는 메서드를 선택합니다. GET 요청을 처리하려면 ``get()`` 메서드를"
+" 사용합니다."
 
 #: ../../source/incoming/routing.rst:34
 msgid ""
@@ -72,14 +83,19 @@ msgid ""
 "``/``) on the left, and maps it to the **Route Handler** (controller and "
 "method ``Home::index``) on the right, along with any parameters that "
 "should be passed to the controller."
-msgstr "라우트는 왼쪽에 라우트 경로(Route Path)(BaseURL에 대한 상대적인 URI 경로, 예: ``/``)를 받고, 이를 오른쪽에 있는 라우트 핸들러(Route Handler)(컨트롤러 및 메서드, 예: ``Home::index``)와 컨트롤러에 전달할 매개변수에 매핑합니다."
+msgstr ""
+"라우트는 왼쪽에 라우트 경로(Route Path)(BaseURL에 대한 상대적인 URI 경로, 예: ``/``)를 받고, 이를 "
+"오른쪽에 있는 라우트 핸들러(Route Handler)(컨트롤러 및 메서드, 예: ``Home::index``)와 컨트롤러에 전달할"
+" 매개변수에 매핑합니다."
 
 #: ../../source/incoming/routing.rst:38
 msgid ""
 "The controller and method should be listed in the same way that you would"
 " use a static method, by separating the class and its method with a "
 "double-colon, like ``Users::list``."
-msgstr "컨트롤러와 메서드는 정적 메서드를 사용하는 것과 같은 방식으로, ``Users::list``\ 와 같이 클래스와 메서드를 이중 콜론(::)으로 구분하여 나열해야 합니다."
+msgstr ""
+"컨트롤러와 메서드는 정적 메서드를 사용하는 것과 같은 방식으로, ``Users::list``\\ 와 같이 클래스와 메서드를 이중 "
+"콜론(::)으로 구분하여 나열해야 합니다."
 
 #: ../../source/incoming/routing.rst:42
 msgid ""
@@ -100,21 +116,27 @@ msgid ""
 "A URL containing the word **journals** in the first segment will be "
 "mapped to the ``\\App\\Controllers\\Blogs`` class, and the :ref:`default "
 "method <routing-default-method>`, which is usually ``index()``:"
-msgstr "첫 번째 세그먼트에 **journals**\ 라는 단어가 포함된 URL은 ``\\App\\Controllers\\Blogs`` 클래스와 보통 ``index()``\ 인 :ref:`기본 메서드 <routing-default-method>`\ 로 매핑됩니다."
+msgstr ""
+"첫 번째 세그먼트에 **journals**\\ 라는 단어가 포함된 URL은 ``\\App\\Controllers\\Blogs`` "
+"클래스와 보통 ``index()``\\ 인 :ref:`기본 메서드 <routing-default-method>`\\ 로 매핑됩니다."
 
 #: ../../source/incoming/routing.rst:57
 msgid ""
 "A URL containing the segments **blog/joe** will be mapped to the "
 "``\\App\\Controllers\\Blogs`` class and the ``users()`` method. The ID "
 "will be set to ``34``:"
-msgstr "**blog/joe** 세그먼트를 포함하는 URL은 ``\\App\\Controllers\\Blogs`` 클래스와 ``users()`` 메서드에 매핑됩니다. ID는 ``34``\ 로 설정됩니다."
+msgstr ""
+"**blog/joe** 세그먼트를 포함하는 URL은 ``\\App\\Controllers\\Blogs`` 클래스와 "
+"``users()`` 메서드에 매핑됩니다. ID는 ``34``\\ 로 설정됩니다."
 
 #: ../../source/incoming/routing.rst:62
 msgid ""
 "A URL with **product** as the first segment, and anything in the second "
 "will be mapped to the ``\\App\\Controllers\\Catalog`` class and the "
 "``productLookup()`` method:"
-msgstr "첫 번째 세그먼트가 **product**\ 이고 두 번째 세그먼트에 무엇이든 오는 URL은 ``\\App\\Controllers\\Catalog`` 클래스와 ``productLookup()`` 메서드에 매핑됩니다."
+msgstr ""
+"첫 번째 세그먼트가 **product**\\ 이고 두 번째 세그먼트에 무엇이든 오는 URL은 "
+"``\\App\\Controllers\\Catalog`` 클래스와 ``productLookup()`` 메서드에 매핑됩니다."
 
 #: ../../source/incoming/routing.rst:67
 msgid ""
@@ -122,7 +144,10 @@ msgid ""
 "will be mapped to the ``\\App\\Controllers\\Catalog`` class and the "
 "``productLookupByID()`` method passing in the match as a variable to the "
 "method:"
-msgstr "첫 번째 세그먼트가 **product**\ 이고 두 번째 세그먼트에 숫자가 오는 URL은 ``\\App\\Controllers\\Catalog`` 클래스와 ``productLookupByID()`` 메서드에 매핑되며, 일치하는 숫자를 메서드의 변수로 전달합니다."
+msgstr ""
+"첫 번째 세그먼트가 **product**\\ 이고 두 번째 세그먼트에 숫자가 오는 URL은 "
+"``\\App\\Controllers\\Catalog`` 클래스와 ``productLookupByID()`` 메서드에 매핑되며, "
+"일치하는 숫자를 메서드의 변수로 전달합니다."
 
 #: ../../source/incoming/routing.rst:75
 msgid "HTTP verb Routes"
@@ -151,13 +176,15 @@ msgid ""
 "When you specify a controller and method name as a string, if a "
 "controller is written without a leading ``\\``, the :ref:`routing-"
 "default-namespace` will be prepended:"
-msgstr "컨트롤러와 메서드 이름을 문자열로 지정할 때, 컨트롤러 이름 앞에 ``\\``\ 가 없으면 :ref:`routing-default-namespace`\ 가 앞에 붙습니다."
+msgstr ""
+"컨트롤러와 메서드 이름을 문자열로 지정할 때, 컨트롤러 이름 앞에 ``\\``\\ 가 없으면 :ref:`routing-"
+"default-namespace`\\ 가 앞에 붙습니다."
 
 #: ../../source/incoming/routing.rst:99
 msgid ""
 "If you put ``\\`` at the beginning, it is treated as a fully qualified "
 "class name:"
-msgstr "맨 앞에 ``\\``\ 를 붙이면 전체 경로 클래스 이름(fully qualified class name)으로 취급됩니다."
+msgstr "맨 앞에 ``\\``\\ 를 붙이면 전체 경로 클래스 이름(fully qualified class name)으로 취급됩니다."
 
 #: ../../source/incoming/routing.rst:103
 msgid "You can also specify the namespace with the ``namespace`` option:"
@@ -165,7 +192,7 @@ msgstr "``namespace`` 옵션을 사용하여 네임스페이스를 명시적으�
 
 #: ../../source/incoming/routing.rst:107
 msgid "See :ref:`assigning-namespace` for details."
-msgstr "자세한 내용은 :ref:`assigning-namespace`\ 를 참조하십시오."
+msgstr "자세한 내용은 :ref:`assigning-namespace`\\ 를 참조하십시오."
 
 #: ../../source/incoming/routing.rst:110
 msgid "Array Callable Syntax"
@@ -183,14 +210,19 @@ msgstr "또는 ``use`` 키워드를 사용할 수 있습니다."
 msgid ""
 "If you forget to add ``use App\\Controllers\\Home;``, the controller "
 "classname is interpreted as ``\\Home``, not ``App\\Controllers\\Home``."
-msgstr "``use App\\Controllers\\Home;`` 추가를 잊으면 컨트롤러 클래스 이름이 ``App\\Controllers\\Home``\ 이 아닌 ``\\Home``\ 으로 해석됩니다."
+msgstr ""
+"``use App\\Controllers\\Home;`` 추가를 잊으면 컨트롤러 클래스 이름이 "
+"``App\\Controllers\\Home``\\ 이 아닌 ``\\Home``\\ 으로 해석됩니다."
 
 #: ../../source/incoming/routing.rst:127
 msgid ""
 "When you use Array Callable Syntax, the classname is always interpreted "
 "as a fully qualified classname. So :ref:`routing-default-namespace` and "
 ":ref:`namespace option <assigning-namespace>` have no effect."
-msgstr "배열 콜러블 구문을 사용할 때 클래스 이름은 항상 전체 경로 클래스 이름으로 해석됩니다. 따라서 :ref:`routing-default-namespace`\ 와 :ref:`namespace 옵션 <assigning-namespace>`\ 은 적용되지 않습니다."
+msgstr ""
+"배열 콜러블 구문을 사용할 때 클래스 이름은 항상 전체 경로 클래스 이름으로 해석됩니다. 따라서 :ref:`routing-"
+"default-namespace`\\ 와 :ref:`namespace 옵션 <assigning-namespace>`\\ 은 적용되지"
+" 않습니다."
 
 #: ../../source/incoming/routing.rst:132
 msgid "Array Callable Syntax and Placeholders"
@@ -207,7 +239,9 @@ msgid ""
 "But the auto-configured parameters may not be correct if you use regular "
 "expressions in routes. In such a case, you can specify the parameters "
 "manually:"
-msgstr "하지만 라우트에 정규 표현식을 사용하는 경우 자동 설정된 매개변수가 올바르지 않을 수 있습니다. 이런 경우에는 매개변수를 수동으로 지정할 수 있습니다."
+msgstr ""
+"하지만 라우트에 정규 표현식을 사용하는 경우 자동 설정된 매개변수가 올바르지 않을 수 있습니다. 이런 경우에는 매개변수를 수동으로 "
+"지정할 수 있습니다."
 
 #: ../../source/incoming/routing.rst:146
 msgid "Using Closures"
@@ -219,7 +253,9 @@ msgid ""
 "route maps to. This function will be executed when the user visits that "
 "URI. This is handy for quickly executing small tasks, or even just "
 "showing a simple view:"
-msgstr "익명 함수인 클로저를 라우트의 목적지로 사용할 수 있습니다. 사용자가 해당 URI에 접속하면 이 함수가 실행됩니다. 이는 작은 작업을 빠르게 실행하거나 단순히 뷰를 보여줄 때 유용합니다."
+msgstr ""
+"익명 함수인 클로저를 라우트의 목적지로 사용할 수 있습니다. 사용자가 해당 URI에 접속하면 이 함수가 실행됩니다. 이는 작은 "
+"작업을 빠르게 실행하거나 단순히 뷰를 보여줄 때 유용합니다."
 
 #: ../../source/incoming/routing.rst:155
 msgid "Specifying Route Paths"
@@ -240,7 +276,10 @@ msgid ""
 " above example, if the literal word \"product\" is found in the first "
 "segment of the URL path, and a number is found in the second segment, the"
 " ``Catalog`` class and the ``productLookup`` method are used instead."
-msgstr "라우트에서 첫 번째 매개변수는 매칭할 URI를 포함하고, 두 번째 매개변수는 라우팅될 목적지를 포함합니다. 위의 예에서 URL 경로의 첫 번째 세그먼트가 \"product\"이고 두 번째 세그먼트가 숫자라면, ``Catalog`` 클래스와 ``productLookup`` 메서드가 대신 사용됩니다."
+msgstr ""
+"라우트에서 첫 번째 매개변수는 매칭할 URI를 포함하고, 두 번째 매개변수는 라우팅될 목적지를 포함합니다. 위의 예에서 URL "
+"경로의 첫 번째 세그먼트가 \"product\"이고 두 번째 세그먼트가 숫자라면, ``Catalog`` 클래스와 "
+"``productLookup`` 메서드가 대신 사용됩니다."
 
 #: ../../source/incoming/routing.rst:169
 msgid ""
@@ -248,7 +287,9 @@ msgid ""
 "pattern. During the routing process, these placeholders are replaced with"
 " the value of the Regular Expression. They are primarily used for "
 "readability."
-msgstr "자리표시자는 단순히 정규 표현식 패턴을 나타내는 문자열입니다. 라우팅 과정에서 이러한 자리표시자들은 정규 표현식 값으로 대체됩니다. 주로 가독성을 위해 사용됩니다."
+msgstr ""
+"자리표시자는 단순히 정규 표현식 패턴을 나타내는 문자열입니다. 라우팅 과정에서 이러한 자리표시자들은 정규 표현식 값으로 대체됩니다."
+" 주로 가독성을 위해 사용됩니다."
 
 #: ../../source/incoming/routing.rst:173
 msgid "The following placeholders are available for you to use in your routes:"
@@ -312,7 +353,7 @@ msgstr "(:hash)"
 msgid ""
 "is the same as ``(:segment)``, but can be used to easily see which routes"
 " use hashed ids."
-msgstr "``(:segment)``\ 와 동일하지만, 해시된 ID를 사용하는 라우트를 쉽게 식별하기 위해 사용될 수 있습니다."
+msgstr "``(:segment)``\\ 와 동일하지만, 해시된 ID를 사용하는 라우트를 쉽게 식별하기 위해 사용될 수 있습니다."
 
 #: ../../source/incoming/routing.rst:186
 #, python-brace-format
@@ -320,7 +361,9 @@ msgid ""
 "``{locale}`` cannot be used as a placeholder or other part of the route, "
 "as it is reserved for use in :doc:`localization "
 "</outgoing/localization>`."
-msgstr "``{locale}``\ 은 :doc:`다국어화(localization) </outgoing/localization>`\ 를 위해 예약되어 있으므로 자리표시자나 라우트의 다른 부분으로 사용할 수 없습니다."
+msgstr ""
+"``{locale}``\\ 은 :doc:`다국어화(localization) </outgoing/localization>`\\ 를 "
+"위해 예약되어 있으므로 자리표시자나 라우트의 다른 부분으로 사용할 수 없습니다."
 
 #: ../../source/incoming/routing.rst:192
 msgid "The Behavior of (:any)"
@@ -330,7 +373,7 @@ msgstr "(:any)의 동작"
 msgid ""
 "Note that a single ``(:any)`` will match multiple segments in the URL if "
 "present."
-msgstr "단일 ``(:any)``\ 는 URL에 여러 세그먼트가 있을 경우 이를 모두 포함하여 일치하게 됨에 유의하십시오."
+msgstr "단일 ``(:any)``\\ 는 URL에 여러 세그먼트가 있을 경우 이를 모두 포함하여 일치하게 됨에 유의하십시오."
 
 #: ../../source/incoming/routing.rst:196 ../../source/incoming/routing.rst:783
 msgid "For example the route:"
@@ -347,13 +390,17 @@ msgid ""
 "By default, in the above example, if the ``$1`` placeholder contains a "
 "slash (``/``), it will still be split into multiple parameters when "
 "passed to ``Catalog::productLookup()``."
-msgstr "기본적으로 위의 예에서 ``$1`` 자리표시자에 슬래시(``/``)가 포함되어 있다면, ``Catalog::productLookup()``\ 에 전달될 때 여전히 여러 매개변수로 분리됩니다."
+msgstr ""
+"기본적으로 위의 예에서 ``$1`` 자리표시자에 슬래시(``/``)가 포함되어 있다면, "
+"``Catalog::productLookup()``\\ 에 전달될 때 여전히 여러 매개변수로 분리됩니다."
 
 #: ../../source/incoming/routing.rst:206 ../../source/incoming/routing.rst:266
 msgid ""
 "Since v4.5.0, you can change the behavior with the config option. See "
 ":ref:`multiple-uri-segments-as-one-parameter` for details."
-msgstr "v4.5.0부터는 설정 옵션을 통해 이 동작을 변경할 수 있습니다. 자세한 내용은 :ref:`multiple-uri-segments-as-one-parameter`\ 를 참조하십시오."
+msgstr ""
+"v4.5.0부터는 설정 옵션을 통해 이 동작을 변경할 수 있습니다. 자세한 내용은 :ref:`multiple-uri-"
+"segments-as-one-parameter`\\ 를 참조하십시오."
 
 #: ../../source/incoming/routing.rst:209
 msgid ""
@@ -366,24 +413,31 @@ msgid ""
 "Or you can use `variable-length argument lists "
 "<https://www.php.net/manual/en/functions.arguments.php#functions"
 ".variable-arg-list>`_:"
-msgstr "또는 `가변 길이 인수 목록 <https://www.php.net/manual/ko/functions.arguments.php#functions.variable-arg-list>`_\ 을 사용할 수 있습니다."
+msgstr ""
+"또는 `가변 길이 인수 목록 "
+"<https://www.php.net/manual/ko/functions.arguments.php#functions"
+".variable-arg-list>`_\\ 을 사용할 수 있습니다."
 
 #: ../../source/incoming/routing.rst:218
 msgid ""
 "Do not put any placeholder after ``(:any)``. Because the number of "
 "parameters passed to the controller method may change."
-msgstr "``(:any)`` 뒤에는 어떠한 자리표시자도 두지 마십시오. 컨트롤러 메서드에 전달되는 매개변수의 개수가 변경될 수 있기 때문입니다."
+msgstr ""
+"``(:any)`` 뒤에는 어떠한 자리표시자도 두지 마십시오. 컨트롤러 메서드에 전달되는 매개변수의 개수가 변경될 수 있기 "
+"때문입니다."
 
 #: ../../source/incoming/routing.rst:221
 msgid ""
 "If matching multiple segments is not the intended behavior, "
 "``(:segment)`` should be used when defining the routes. With the examples"
 " URLs from above:"
-msgstr "여러 세그먼트를 매칭하는 것이 의도한 동작이 아니라면, 라우트를 정의할 때 ``(:segment)``\ 를 사용해야 합니다. 위의 예제 URL들을 사용하면 다음과 같습니다."
+msgstr ""
+"여러 세그먼트를 매칭하는 것이 의도한 동작이 아니라면, 라우트를 정의할 때 ``(:segment)``\\ 를 사용해야 합니다. 위의"
+" 예제 URL들을 사용하면 다음과 같습니다."
 
 #: ../../source/incoming/routing.rst:226
 msgid "will only match **product/123** and generate 404 errors for other example."
-msgstr "이 설정은 **product/123**\ 만 매칭하며, 다른 예제들에 대해서는 404 에러를 발생시킵니다."
+msgstr "이 설정은 **product/123**\\ 만 매칭하며, 다른 예제들에 대해서는 404 에러를 발생시킵니다."
 
 #: ../../source/incoming/routing.rst:229
 msgid "Custom Placeholders"
@@ -401,7 +455,9 @@ msgid ""
 "parameter is the string to be used as the placeholder. The second "
 "parameter is the Regular Expression pattern it should be replaced with. "
 "This must be called before you add the route:"
-msgstr "``addPlaceholder()`` 메서드를 사용하여 새로운 자리표시자를 추가합니다. 첫 번째 매개변수는 자리표시자로 사용할 문자열이고, 두 번째 매개변수는 대체될 정규 표현식 패턴입니다. 이는 라우트를 추가하기 전에 호출되어야 합니다."
+msgstr ""
+"``addPlaceholder()`` 메서드를 사용하여 새로운 자리표시자를 추가합니다. 첫 번째 매개변수는 자리표시자로 사용할 "
+"문자열이고, 두 번째 매개변수는 대체될 정규 표현식 패턴입니다. 이는 라우트를 추가하기 전에 호출되어야 합니다."
 
 #: ../../source/incoming/routing.rst:241
 msgid "Regular Expressions"
@@ -411,21 +467,27 @@ msgstr "정규 표현식"
 msgid ""
 "If you prefer you can use regular expressions to define your routing "
 "rules. Any valid regular expression is allowed, as are back-references."
-msgstr "원한다면 정규 표현식을 사용하여 라우팅 규칙을 정의할 수 있습니다. 유효한 모든 정규 표현식이 허용되며 역참조(back-references)도 가능합니다."
+msgstr ""
+"원한다면 정규 표현식을 사용하여 라우팅 규칙을 정의할 수 있습니다. 유효한 모든 정규 표현식이 허용되며 역참조(back-"
+"references)도 가능합니다."
 
 #: ../../source/incoming/routing.rst:246
 msgid ""
 "Note: If you use back-references you must use the dollar syntax rather "
 "than the double backslash syntax. A typical RegEx route might look "
 "something like this:"
-msgstr "참고: 역참조를 사용하는 경우 이중 백슬래시 구문 대신 달러($) 구문을 사용해야 합니다. 전형적인 정규 표현식 라우트는 다음과 같은 모습일 것입니다."
+msgstr ""
+"참고: 역참조를 사용하는 경우 이중 백슬래시 구문 대신 달러($) 구문을 사용해야 합니다. 전형적인 정규 표현식 라우트는 다음과 "
+"같은 모습일 것입니다."
 
 #: ../../source/incoming/routing.rst:251
 msgid ""
 "In the above example, a URI similar to **products/shirts/123** would "
 "instead call the ``show()`` method of the ``Products`` controller class, "
 "with the original first and second segment passed as arguments to it."
-msgstr "위의 예에서 **products/shirts/123**\ 과 유사한 URI는 ``Products`` 컨트롤러 클래스의 ``show()`` 메서드를 호출하며, 원래의 첫 번째와 두 번째 세그먼트가 메서드 인수로 전달됩니다."
+msgstr ""
+"위의 예에서 **products/shirts/123**\\ 과 유사한 URI는 ``Products`` 컨트롤러 클래스의 "
+"``show()`` 메서드를 호출하며, 원래의 첫 번째와 두 번째 세그먼트가 메서드 인수로 전달됩니다."
 
 #: ../../source/incoming/routing.rst:254
 msgid ""
@@ -439,21 +501,27 @@ msgid ""
 "For example, if a user accesses a password protected area of your web "
 "application and you wish to be able to redirect them back to the same "
 "page after they log in, you may find this example useful:"
-msgstr "예를 들어, 사용자가 웹 애플리케이션의 비밀번호로 보호된 영역에 접근할 때 로그인 후 동일한 페이지로 리다이렉트하고 싶다면 다음 예제가 유용할 것입니다."
+msgstr ""
+"예를 들어, 사용자가 웹 애플리케이션의 비밀번호로 보호된 영역에 접근할 때 로그인 후 동일한 페이지로 리다이렉트하고 싶다면 다음 "
+"예제가 유용할 것입니다."
 
 #: ../../source/incoming/routing.rst:262
 msgid ""
 "By default, in the above example, if the ``$1`` placeholder contains a "
 "slash (``/``), it will still be split into multiple parameters when "
 "passed to ``Auth::login()``."
-msgstr "기본적으로 위의 예에서 ``$1`` 자리표시자에 슬래시(``/``)가 포함되어 있다면, ``Auth::login()``\ 에 전달될 때 여전히 여러 매개변수로 분리됩니다."
+msgstr ""
+"기본적으로 위의 예에서 ``$1`` 자리표시자에 슬래시(``/``)가 포함되어 있다면, ``Auth::login()``\\ 에 "
+"전달될 때 여전히 여러 매개변수로 분리됩니다."
 
 #: ../../source/incoming/routing.rst:269
 msgid ""
 "For those of you who don't know regular expressions and want to learn "
 "more about them, `regular-expressions.info <https://www.regular-"
 "expressions.info/>`_ might be a good starting point."
-msgstr "정규 표현식을 모르거나 더 배우고 싶다면 `regular-expressions.info <https://www.regular-expressions.info/>`_\ 가 좋은 시작점이 될 수 있습니다."
+msgstr ""
+"정규 표현식을 모르거나 더 배우고 싶다면 `regular-expressions.info <https://www.regular-"
+"expressions.info/>`_\\ 가 좋은 시작점이 될 수 있습니다."
 
 #: ../../source/incoming/routing.rst:272
 msgid "You can also mix and match placeholders with regular expressions."
@@ -469,14 +537,18 @@ msgid ""
 "it, you can use the ``view()`` method. This is always treated as GET "
 "request. This method accepts the name of the view to load as the second "
 "parameter."
-msgstr "로직이 필요 없이 단순히 뷰를 렌더링하고 싶다면 ``view()`` 메서드를 사용할 수 있습니다. 이는 항상 GET 요청으로 취급됩니다. 이 메서드는 두 번째 매개변수로 로드할 뷰의 이름을 받습니다."
+msgstr ""
+"로직이 필요 없이 단순히 뷰를 렌더링하고 싶다면 ``view()`` 메서드를 사용할 수 있습니다. 이는 항상 GET 요청으로 "
+"취급됩니다. 이 메서드는 두 번째 매개변수로 로드할 뷰의 이름을 받습니다."
 
 #: ../../source/incoming/routing.rst:287
 msgid ""
 "If you use placeholders within your route, you can access them within the"
 " view in a special variable, ``$segments``. They are available as an "
 "array, indexed in the order they appear in the route."
-msgstr "라우트 내에 자리표시자를 사용하는 경우, 뷰 내에서 ``$segments``\ 라는 특별한 변수를 통해 접근할 수 있습니다. 이들은 라우트에 나타나는 순서대로 인덱싱된 배열로 제공됩니다."
+msgstr ""
+"라우트 내에 자리표시자를 사용하는 경우, 뷰 내에서 ``$segments``\\ 라는 특별한 변수를 통해 접근할 수 있습니다. "
+"이들은 라우트에 나타나는 순서대로 인덱싱된 배열로 제공됩니다."
 
 #: ../../source/incoming/routing.rst:295
 msgid "Redirecting Routes"
@@ -491,8 +563,1108 @@ msgid ""
 "the name of a named route. The third parameter is the HTTP status code "
 "that should be sent along with the redirect. The default value is ``302``"
 " which is a temporary redirect and is recommended in most cases:"
-msgstr "오랫동안 운영되는 사이트라면 페이지 위치가 변경되기 마련입니다. ``addRedirect()`` 메서드를 사용하여 다른 라우트로 리다이렉트해야 하는 라우트를 지정할 수 있습니다. 첫 번째 매개변수는 이전 라우트의 URI 패턴입니다. 두 번째 매개변수는 리다이렉트할 새 URI이거나 명명된 라우트(named route)의 이름입니다. 세 번째 매개변수는 리다이렉트와 함께 전송할 HTTP 상태 코드입니다. 기본값은 302(임시 리다이렉트)이며 대부분의 경우에 권장됩니다."
+msgstr ""
+"오랫동안 운영되는 사이트라면 페이지 위치가 변경되기 마련입니다. ``addRedirect()`` 메서드를 사용하여 다른 라우트로 "
+"리다이렉트해야 하는 라우트를 지정할 수 있습니다. 첫 번째 매개변수는 이전 라우트의 URI 패턴입니다. 두 번째 매개변수는 "
+"리다이렉트할 새 URI이거나 명명된 라우트(named route)의 이름입니다. 세 번째 매개변수는 리다이렉트와 함께 전송할 "
+"HTTP 상태 코드입니다. 기본값은 302(임시 리다이렉트)이며 대부분의 경우에 권장됩니다."
 
 #: ../../source/incoming/routing.rst:305
 msgid "Since v4.2.0, ``addRedirect()`` can use placeholders."
-msgstr "v4.2.0부터 ``addRedirect()``\ 에서 자리표시자를 사용할 수 있습니다."
+msgstr "v4.2.0부터 ``addRedirect()``\\ 에서 자리표시자를 사용할 수 있습니다."
+
+#: ../../source/incoming/routing.rst:307
+msgid ""
+"If a redirect route is matched during a page load, the user will be "
+"immediately redirected to the new page before a controller can be loaded."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:311
+msgid "Environment Restrictions"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:313
+msgid ""
+"You can create a set of routes that will only be viewable in a certain "
+"environment. This allows you to create tools that only the developer can "
+"use on their local machines that are not reachable on testing or "
+"production servers. This can be done with the ``environment()`` method. "
+"The first parameter is the name of the environment. Any routes defined "
+"within this closure are only accessible from the given environment:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:321
+msgid "Routes with any HTTP verbs"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:323 ../../source/incoming/routing.rst:344
+msgid ""
+"This method exists only for backward compatibility. Do not use it in new "
+"projects. Even if you are already using it, we recommend that you use "
+"another, more appropriate method."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:327
+msgid ""
+"While the ``add()`` method seems to be convenient, it is recommended to "
+"always use the HTTP-verb-based routes, described above, as it is more "
+"secure. If you use the :doc:`CSRF protection </libraries/security>`, it "
+"does not protect **GET** requests. If the URI specified in the ``add()`` "
+"method is accessible by the GET method, the CSRF protection will not "
+"work."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:332
+msgid ""
+"It is possible to define a route with any HTTP verbs. You can use the "
+"``add()`` method:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:337
+msgid ""
+"Using the HTTP-verb-based routes will also provide a slight performance "
+"increase, since only routes that match the current request method are "
+"stored, resulting in fewer routes to scan through when trying to find a "
+"match."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:342
+msgid "Mapping Multiple Routes"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:348
+msgid ""
+"The ``map()`` method is not recommended as well as ``add()`` because it "
+"calls ``add()`` internally."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:351
+msgid ""
+"While the ``add()`` method is simple to use, it is often handier to work "
+"with multiple routes at once, using the ``map()`` method. Instead of "
+"calling the ``add()`` method for each route that you need to add, you can"
+" define an array of routes and then pass it as the first parameter to the"
+" ``map()`` method:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:360
+msgid "Command-Line Only Routes"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:362
+msgid ""
+"It is recommended to use Spark Commands for CLI scripts instead of "
+"calling controllers via CLI. See the :doc:`../cli/cli_commands` page for "
+"detailed information."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:365
+msgid ""
+"Any route created by any of the HTTP-verb-based route methods will also "
+"be inaccessible from the CLI, but routes created by the ``add()`` method "
+"will still be available from the command line."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:369
+msgid ""
+"You can create routes that work only from the command-line, and are "
+"inaccessible from the web browser, with the ``cli()`` method:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:374
+msgid ""
+"If you enable :ref:`auto-routing-legacy` and place the command file in "
+"**app/Controllers**, anyone could access the command with the help of "
+"Auto Routing (Legacy) via HTTP."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:378
+msgid "Global Options"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:380
+msgid ""
+"All of the methods for creating a route (``get()``, ``post()``, "
+":doc:`resource() <restful>` etc) can take an array of options that can "
+"modify the generated routes, or further restrict them. The ``$options`` "
+"array is always the last parameter:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:388
+msgid "Applying Filters"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:390
+msgid ""
+"You can alter the behavior of specific routes by supplying filters to run"
+" before or after the controller. This is especially handy during "
+"authentication or api logging."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:392
+msgid "The value for the filter can be a string or an array of strings:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:394
+msgid "matching the aliases defined in **app/Config/Filters.php**."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:395
+msgid "filter classnames"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:397
+msgid ""
+"See :ref:`Controller Filters <filters-aliases>` for more information on "
+"defining aliases."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:399
+msgid ""
+"If you set filters to routes in **app/Config/Routes.php** (not in "
+"**app/Config/Filters.php**), it is recommended to disable Auto Routing "
+"(Legacy). When :ref:`auto-routing-legacy` is enabled, it may be possible "
+"that a controller can be accessed via a different URL than the configured"
+" route, in which case the filter you specified to the route will not be "
+"applied. See :ref:`use-defined-routes-only` to disable auto-routing."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:407
+msgid "Alias Filter"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:409
+msgid ""
+"You specify an alias :ref:`defined in app/Config/Filters.php <filters-"
+"aliases>` for the filter value:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:413
+msgid ""
+"You may also supply arguments to be passed to the alias filter's "
+"``before()`` and ``after()`` methods:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:418
+msgid "Classname Filter"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:422
+msgid "You can specify a filter classname for the filter value:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:429
+msgid "Multiple Filters"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:433
+msgid ""
+"Since v4.5.0, *Multiple Filters* are always enabled. Prior to v4.5.0, "
+"*Multiple Filters* were disabled by default. If you want to use with "
+"prior to v4.5.0, See :ref:`Upgrading from 4.1.4 to 4.1.5 <upgrade-415"
+"-multiple-filters-for-a-route>` for the details."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:439
+msgid "You can specify an array for the filter value:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:444
+msgid "Filter Arguments"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:446
+msgid "Additional arguments may be passed to a filter:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:450
+msgid ""
+"In this example, the array ``['dual', 'noreturn']`` will be passed in "
+"``$arguments`` to the filter's ``before()`` and ``after()`` "
+"implementation methods."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:456
+msgid "Assigning Namespace"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:458
+msgid ""
+"While a :ref:`routing-default-namespace` will be prepended to the "
+"generated controllers, you can also specify a different namespace to be "
+"used in any options array, with the ``namespace`` option. The value "
+"should be the namespace you want modified:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:464
+msgid ""
+"The new namespace is only applied during that call for any methods that "
+"create a single route, like get, post, etc. For any methods that create "
+"multiple routes, the new namespace is attached to all routes generated by"
+" that function or, in the case of ``group()``, all routes generated while"
+" in the closure."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:469
+msgid "Limit to Hostname"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:471
+msgid ""
+"You can restrict groups of routes to function only in certain domain or "
+"sub-domains of your application by passing the \"hostname\" option along "
+"with the desired domain to allow it on as part of the options array:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:476
+msgid ""
+"This example would only allow the specified hosts to work if the domain "
+"exactly matched **accounts.example.com**. It would not work under the "
+"main site at **example.com**."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:480
+msgid "Restrict by Multiple Hostnames"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:484
+msgid "Also you can restrict by multiple hostnames, e.g:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:489
+msgid "Limit to Subdomains"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:491
+msgid ""
+"When the ``subdomain`` option is present, the system will restrict the "
+"routes to only be available on that sub-domain. The route will only be "
+"matched if the subdomain is the one the application is being viewed "
+"through:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:496
+msgid ""
+"You can restrict it to any subdomain by setting the value to an asterisk,"
+" (``*``). If you are viewing from a URL that does not have any subdomain "
+"present, this will not be matched:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:501
+msgid ""
+"The system is not perfect and should be tested for your specific domain "
+"before being used in production. Most domains should work fine but some "
+"edge case ones, especially with a period in the domain itself (not used "
+"to separate suffixes or www) can potentially lead to false positives."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:506
+msgid "Offsetting the Matched Parameters"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:508
+msgid ""
+"You can offset the matched parameters in your route by any numeric value "
+"with the ``offset`` option, with the value being the number of segments "
+"to offset."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:511
+msgid ""
+"This can be beneficial when developing APIs with the first URI segment "
+"being the version number. It can also be used when the first parameter is"
+" a language string:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:519
+#, fuzzy
+msgid "Reverse Routing"
+msgstr "URI 라우팅"
+
+#: ../../source/incoming/routing.rst:521
+msgid ""
+"Reverse routing allows you to define the controller and method, as well "
+"as any parameters, that a link should go to, and have the router lookup "
+"the current route to it. This allows route definitions to change without "
+"you having to update your application code. This is typically used within"
+" views to create links."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:525
+msgid ""
+"For example, if you have a route to a photo gallery that you want to link"
+" to, you can use the :php:func:`url_to()` helper function to get the "
+"route that should be used. The first parameter is the fully qualified "
+"Controller and method, separated by a double colon (``::``), much like "
+"you would use when writing the initial route itself. Any parameters that "
+"should be passed to the route are passed in next:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:535
+#, fuzzy
+msgid "Named Routes"
+msgstr "뷰 라우트"
+
+#: ../../source/incoming/routing.rst:537
+msgid ""
+"You can name routes to make your application less fragile. This applies a"
+" name to a route that can be called later, and even if the route "
+"definition changes, all of the links in your application built with "
+":php:func:`url_to()` will still work without you having to make any "
+"changes. A route is named by passing in the ``as`` option with the name "
+"of the route:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:544
+msgid "This has the added benefit of making the views more readable, too."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:546
+msgid ""
+"By default, all defined routes have names matching their paths, with "
+"placeholders replaced by their corresponding regular expressions. For "
+"example, if you define a route like ``$routes->get('edit/(:num)', "
+"'PostController::edit/$1');``, you can generate the corresponding URL "
+"using ``route_to('edit/([0-9]+)', 12)``."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:550
+msgid ""
+"According to :ref:`routing-priority`, if a not-named route is defined "
+"first (e.g., ``$routes->get('edit', 'PostController::edit');``) and "
+"another named route is defined later with the same name as the path of "
+"the first route (e.g., ``$routes->get('edit/(:num)', "
+"'PostController::edit/$1', ['as' => 'edit']);``), the second route will "
+"not be registered because its name will conflict with the automatically "
+"assigned name of the first route."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:555
+#, fuzzy
+msgid "Grouping Routes"
+msgstr "리다이렉트 라우트"
+
+#: ../../source/incoming/routing.rst:557
+msgid ""
+"You can group your routes under a common name with the ``group()`` "
+"method. The group name becomes a segment that appears prior to the routes"
+" defined inside of the group. This allows you to reduce the typing needed"
+" to build out an extensive set of routes that all share the opening "
+"string, like when building an admin area:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:563
+msgid ""
+"This would prefix the **users** and **blog** URIs with **admin**, "
+"handling URLs like **admin/users** and **admin/blog**."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:566
+msgid "Setting Namespace"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:568
+msgid ""
+"If you need to assign options to a group, like a :ref:`assigning-"
+"namespace`, do it before the callback:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:572
+msgid ""
+"This would handle a resource route to the ``App\\API\\v1\\Users`` "
+"controller with the **api/users** URI."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:575
+msgid "Setting Filters"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:577
+msgid ""
+"You can also use a specific :doc:`filter <filters>` for a group of "
+"routes. This will always run the filter before or after the controller. "
+"This is especially handy during authentication or api logging:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:582
+msgid ""
+"The value for the filter must match one of the aliases defined within "
+"**app/Config/Filters.php**."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:584
+msgid ""
+"Prior to v4.5.4, due to a bug, filters passed to the ``group()`` were not"
+" merged into the filters passed to the inner routes."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:588
+#, fuzzy
+msgid "Setting Other Options"
+msgstr "라우팅 규칙 설정"
+
+#: ../../source/incoming/routing.rst:590
+msgid ""
+"At some point, you may want to group routes for the purpose of applying "
+"filters or other route config options like namespace, subdomain, etc. "
+"Without necessarily needing to add a prefix to the group, you can pass an"
+" empty string in place of the prefix and the routes in the group will be "
+"routed as though the group never existed but with the given route config "
+"options:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:600
+#, fuzzy
+msgid "Nesting Groups"
+msgstr "리다이렉트 라우트"
+
+#: ../../source/incoming/routing.rst:602
+msgid ""
+"It is possible to nest groups within groups for finer organization if you"
+" need it:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:606
+msgid "This would handle the URL at **admin/users/list**."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:608
+msgid ""
+"The ``filter`` option passed to the outer ``group()`` are merged with the"
+" inner ``group()`` filter option. The above code runs "
+"``myfilter1:config`` for the route ``admin``, and ``myfilter1:config`` "
+"and ``myfilter2:region`` for the route ``admin/users/list``."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:613
+msgid ""
+"Prior to v4.6.0, the same filter cannot be run multiple times with "
+"different arguments."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:616
+msgid ""
+"Any other overlapping options passed to the inner ``group()`` will "
+"overwrite their values."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:618
+msgid ""
+"Prior to v4.5.0, due to a bug, options passed to the outer ``group()`` "
+"are not merged with the inner ``group()`` options."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:624
+msgid "Route Priority"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:626
+msgid ""
+"Routes are registered in the routing table in the order in which they are"
+" defined. This means that when a URI is accessed, the first matching "
+"route will be executed."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:628
+msgid ""
+"If a route path is defined more than once with different handlers, only "
+"the first defined route is registered."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:630
+msgid ""
+"You can check registered routes in the routing table by running the "
+":ref:`spark routes <routing-spark-routes>` command."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:633
+msgid "Changing Route Priority"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:635
+msgid ""
+"When working with modules, it can be a problem if the routes in the "
+"application contain wildcards. Then the module routes will not be "
+"processed correctly. You can solve this problem by lowering the priority "
+"of route processing using the ``priority`` option. The parameter accepts "
+"positive integers and zero. The higher the number specified in the "
+"``priority``, the lower route priority in the processing queue:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:643
+msgid ""
+"To disable this functionality, you must call the method with the "
+"parameter ``false``:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:647
+msgid ""
+"By default, all routes have a priority of 0. Negative integers will be "
+"cast to the absolute value."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:653
+msgid "Routes Configuration Options"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:655
+msgid ""
+"The RoutesCollection class provides several options that affect all "
+"routes, and can be modified to meet your application's needs. These "
+"options are available in **app/Config/Routing.php**."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:658
+msgid ""
+"The config file **app/Config/Routing.php** has been added since v4.4.0. "
+"In previous versions, the setter methods were used in "
+"**app/Config/Routes.php** to change settings."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:665
+msgid "Default Namespace"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:667
+msgid ""
+"When matching a controller to a route, the router will add the default "
+"namespace value to the front of the controller specified by the route. By"
+" default, this value is ``App\\Controllers``."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:670
+msgid ""
+"If you set the value empty string (``''``), it leaves each route to "
+"specify the fully namespaced controller:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:675
+msgid ""
+"If your controllers are not explicitly namespaced, there is no need to "
+"change this. If you namespace your controllers, then you can change this "
+"value to save typing:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:683
+msgid "Default Method"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:685
+msgid ""
+"This setting is used when the route handler only has the controller name "
+"and no method name listed. The default value is ``index``. ::"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:692
+msgid ""
+"The ``$defaultMethod`` is also common with Auto Routing. See :ref:`Auto "
+"Routing (Improved) <routing-auto-routing-improved-default-method>` or "
+":ref:`Auto Routing (Legacy) <routing-auto-routing-legacy-default-"
+"method>`."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:696
+msgid "If you define the following route::"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:700
+msgid ""
+"the ``index()`` method of the ``App\\Controllers\\Home`` controller is "
+"executed when the route matches."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:703
+msgid ""
+"Method names beginning with ``_`` cannot be used as the default method. "
+"However, starting with v4.5.0, ``__invoke`` method is allowed."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:707
+msgid "Translate URI Dashes"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:709
+msgid ""
+"This option enables you to automatically replace dashes (``-``) with "
+"underscores in the controller and method URI segments when used in Auto "
+"Routing, thus saving you additional route entries if you need to do that."
+" This is required because the dash isn't a valid class or method name "
+"character and would cause a fatal error if you try to use it:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:714
+msgid ""
+"When using Auto Routing (Improved), prior to v4.4.0, if "
+"``$translateURIDashes`` is true, two URIs correspond to a single "
+"controller method, one URI for dashes (e.g., **foo-bar**) and one URI for"
+" underscores (e.g., **foo_bar**). This was incorrect behavior. Since "
+"v4.4.0, the URI for underscores (**foo_bar**) is not accessible."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:723
+msgid "Use Defined Routes Only"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:725 ../../source/incoming/routing.rst:824
+msgid "Since v4.2.0, the auto-routing is disabled by default."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:727
+msgid ""
+"When no defined route is found that matches the URI, the system will "
+"attempt to match that URI against the controllers and methods when Auto "
+"Routing is enabled."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:730
+msgid ""
+"You can disable this automatic matching, and restrict routes to only "
+"those defined by you, by setting the ``$autoRoute`` property to false:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:735
+msgid ""
+"If you use the :doc:`CSRF protection </libraries/security>`, it does not "
+"protect **GET** requests. If the URI is accessible by the GET method, the"
+" CSRF protection will not work."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:741
+msgid "404 Override"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:743
+msgid ""
+"When a page is not found that matches the current URI, the system will "
+"show a generic 404 view. Using the ``$override404`` property within the "
+"routing config file, you can define controller class/method for 404 "
+"routes."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:749
+msgid ""
+"You can also change what happens by specifying an action to happen with "
+"the ``set404Override()`` method in Routes config file. The value can be "
+"either a valid class/method pair, or a Closure:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:755
+msgid ""
+"Starting with v4.5.0, the 404 Override feature sets the Response status "
+"code to ``404`` by default. In previous versions, the code was ``200``. "
+"If you want to change the status code in the controller, see "
+":php:meth:`CodeIgniter\\\\HTTP\\\\Response::setStatusCode()` for "
+"information on how to set the status code."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:762
+msgid "Route Processing by Priority"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:764
+msgid ""
+"Enables or disables processing of the routes queue by priority. Lowering "
+"the priority is defined in the route option. Disabled by default. This "
+"functionality affects all routes. For an example use of lowering the "
+"priority see :ref:`routing-priority`:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:773
+msgid "Multiple URI Segments as One Parameter"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:777
+msgid ""
+"When this option is enabled, a placeholder that matches multiple "
+"segments, such as ``(:any)``, will be passed directly as it is to one "
+"parameter, even if it contains multiple segments."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:787
+msgid ""
+"will match **product/123**, **product/123/456**, **product/123/456/789** "
+"and so on. And if the URI is **product/123/456**, ``123/456`` will be "
+"passed to the first parameter of the ``Catalog::productLookup()`` method."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:792 ../../source/incoming/routing.rst:941
+msgid "Auto Routing (Improved)"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:796
+msgid "Auto Routing (Improved) is a new, more secure automatic routing system."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:798
+#, fuzzy
+msgid "See :doc:`auto_routing_improved` for details."
+msgstr "자세한 내용은 :ref:`assigning-namespace`\\ 를 참조하십시오."
+
+#: ../../source/incoming/routing.rst:803 ../../source/incoming/routing.rst:979
+msgid "Auto Routing (Legacy)"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:805
+msgid ""
+"This feature exists only for backward compatibility. Do not use it in new"
+" projects. Even if you are already using it, we recommend that you use "
+"the :ref:`auto-routing-improved` instead."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:809
+msgid ""
+"Auto Routing (Legacy) is a routing system from CodeIgniter 3. It can "
+"automatically route HTTP requests based on conventions and execute the "
+"corresponding controller methods."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:812
+msgid ""
+"It is recommended that all routes are defined in the "
+"**app/Config/Routes.php** file, or to use :ref:`auto-routing-improved`,"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:815
+msgid ""
+"To prevent misconfiguration and miscoding, we recommend that you do not "
+"use Auto Routing (Legacy) feature. It is easy to create vulnerable apps "
+"where controller filters or CSRF protection are bypassed."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:819
+#, fuzzy
+msgid ""
+"Auto Routing (Legacy) routes an HTTP request with **any** HTTP method to "
+"a controller method."
+msgstr "URI 라우팅은 URI를 컨트롤러의 메서드와 연결합니다."
+
+#: ../../source/incoming/routing.rst:822
+msgid "Enable Auto Routing (Legacy)"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:826
+msgid ""
+"To use it, you need to change the setting ``$autoRoute`` option to "
+"``true`` in **app/Config/Routing.php**::"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:830
+msgid ""
+"And set the property ``$autoRoutesImproved`` to ``false`` in "
+"**app/Config/Feature.php**::"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:835
+msgid "URI Segments (Legacy)"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:837
+msgid ""
+"The segments in the URL, in following with the Model-View-Controller "
+"approach, usually represent::"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:841
+msgid ""
+"The first segment represents the controller **class** that should be "
+"invoked."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:842
+msgid "The second segment represents the class **method** that should be called."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:843
+msgid ""
+"The third, and any additional segments, represent the ID and any "
+"variables that will be passed to the controller."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:845
+msgid "Consider this URI::"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:849
+msgid ""
+"In the above example, CodeIgniter would attempt to find a controller "
+"named **Helloworld.php** and executes ``index()`` method with passing "
+"``'1'`` as the first argument."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:852 ../../source/incoming/routing.rst:883
+msgid ""
+"See :ref:`Auto Routing (Legacy) in Controllers <controller-auto-routing-"
+"legacy>` for more info."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:857
+msgid "Configuration Options (Legacy)"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:859
+msgid "These options are available in the **app/Config/Routing.php** file."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:862
+msgid "Default Controller (Legacy)"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:865
+msgid "For Site Root URI (Legacy)"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:867
+msgid ""
+"When a user visits the root of your site (i.e., **example.com**) the "
+"controller to use is determined by the value set to the "
+"``$defaultController`` property, unless a route exists for it explicitly."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:871
+msgid ""
+"The default value for this is ``Home`` which matches the controller at "
+"**app/Controllers/Home.php**::"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:877
+msgid "For Directory URI (Legacy)"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:879
+msgid ""
+"The default controller is also used when no matching route has been "
+"found, and the URI would point to a directory in the controllers "
+"directory. For example, if the user visits **example.com/admin**, if a "
+"controller was found at **app/Controllers/Admin/Home.php**, it would be "
+"used."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:888
+msgid "Default Method (Legacy)"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:890
+msgid ""
+"This works similar to the default controller setting, but is used to "
+"determine the default method that is used when a controller is found that"
+" matches the URI, but no segment exists for the method. The default value"
+" is ``index``."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:894
+msgid ""
+"In this example, if the user were to visit **example.com/products**, and "
+"a ``Products`` controller existed, the ``Products::listAll()`` method "
+"would be executed::"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:900
+#, fuzzy
+msgid "Confirming Routes"
+msgstr "리다이렉트 라우트"
+
+#: ../../source/incoming/routing.rst:902
+msgid ""
+"CodeIgniter has the following :doc:`command </cli/spark_commands>` to "
+"display all routes."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:907
+#, fuzzy
+msgid "spark routes"
+msgstr "HTTP 동사 라우트"
+
+#: ../../source/incoming/routing.rst:909
+msgid "Displays all routes and filters:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:915
+msgid "The output is like the following:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:926
+msgid "The *Method* column shows the HTTP method that the route is listening for."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:928
+msgid ""
+"The *Route* column shows the route path to match. The route of a defined "
+"route is expressed as a regular expression."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:930
+msgid ""
+"Since v4.3.0, the *Name* column shows the route name. ``»`` indicates the"
+" name is the same as the route path."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:932
+#, python-brace-format
+msgid ""
+"The system is not perfect. For routes containing regular expression "
+"patterns like ``([^/]+)`` or ``{locale}``, the *Filters* displayed might "
+"not be correct (if you set complicated URI pattern for the filters in "
+"**app/Config/Filters.php**), or it is displayed as ``<unknown>``."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:937
+msgid ""
+"The :ref:`spark filter:check <spark-filter-check>` command can be used to"
+" check for 100% accurate filters."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:943
+msgid "When you use Auto Routing (Improved), the output is like the following:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:953
+msgid "The *Method* will be like ``GET(auto)``."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:955
+msgid ""
+"``/..`` in the *Route* column indicates one segment. ``[/..]`` indicates "
+"it is optional."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:957 ../../source/incoming/routing.rst:995
+msgid ""
+"When auto-routing is enabled and you have the route ``home``, it can be "
+"also accessed by ``Home``, or maybe by ``hOme``, ``hoMe``, ``HOME``, etc."
+" but the command will show only ``home``."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:959
+msgid ""
+"If you see a route starting with ``x`` like the following, it indicates "
+"an invalid route that won't be routed, but the controller has a public "
+"method for routing."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:970
+msgid ""
+"The above example shows you have the "
+"``\\App\\Controllers\\Home::getFoo()`` method, but it is not routed "
+"because it is the default controller (``Home`` by default) and the "
+"default controller name must be omitted in the URI. You should delete the"
+" ``getFoo()`` method."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:975
+msgid ""
+"Prior to v4.3.4, the invalid route is displayed as a normal route due to "
+"a bug."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:981
+msgid "When you use Auto Routing (Legacy), the output is like the following:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:991
+msgid "The *Method* will be ``auto``."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:993
+msgid "``[/...]`` in the *Route* column indicates any number of segments."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:1000
+msgid "Sort by Handler"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:1004
+msgid "You can sort the routes by *Handler*:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:1013
+msgid "Specify Host"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:1017
+#, fuzzy
+msgid "You can specify the host in the request URL with the ``--host`` option:"
+msgstr "``namespace`` 옵션을 사용하여 네임스페이스를 명시적으로 지정할 수도 있습니다."
+
+#: ../../source/incoming/routing.rst:1024
+#, fuzzy
+msgid "Getting Routing Information"
+msgstr "라우팅 규칙 설정"
+
+#: ../../source/incoming/routing.rst:1026
+msgid ""
+"In CodeIgniter 4, understanding and managing routing information is "
+"crucial for handling HTTP requests effectively. This involves retrieving "
+"details about the active controller and method, as well as the filters "
+"applied to a specific route. Below, we explore how to access this routing"
+" information to assist in tasks such as logging, debugging, or "
+"implementing conditional logic."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:1031
+msgid "Retrieving the Current Controller/Method Names"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:1033
+msgid ""
+"In some cases, you might need to determine which controller and method "
+"have been triggered by the current HTTP request. This can be useful for "
+"logging, debugging, or conditional logic based on the active controller "
+"method."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:1036
+msgid ""
+"CodeIgniter 4 provides a simple way to access the current route's "
+"controller and method names using the ``Router`` class. Here is an "
+"example:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:1040
+msgid ""
+"This functionality is particularly useful when you need to dynamically "
+"interact with your controller or log which method is handling a "
+"particular request."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:1043
+msgid "Getting Active Filters for the Current Route"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:1045
+msgid ""
+":doc:`Filters <filters>` are a powerful feature that enables you to "
+"perform operations such as authentication, logging, and security checks "
+"before or after processing HTTP requests. To access the active filters "
+"for a specific route, you can use the "
+":php:meth:`CodeIgniter\\\\Router\\\\Router::getFilters()` method from the"
+" ``Router`` class."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:1048
+msgid ""
+"This method returns a list of filters that are currently active for the "
+"route being processed:"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:1052
+msgid ""
+"The ``getFilters()`` method returns only the filters defined for the "
+"specific route. It does not include global filters or those specified in "
+"the **app/Config/Filters.php** file."
+msgstr ""
+
+#: ../../source/incoming/routing.rst:1056
+msgid "Getting Matched Route Options for the Current Route"
+msgstr ""
+
+#: ../../source/incoming/routing.rst:1058
+msgid ""
+"When we're defining routes, they may have optional parameters: "
+"``filter``, ``namespace``, ``hostname``, ``subdomain``, ``offset``, "
+"``priority``, ``as``. All of them were described earlier above. "
+"Additionally, if we use ``addRedirect()`` we can also expect the "
+"``redirect`` key. To access the values of these parameters, we can call "
+"``Router::getMatchedRouteOptions()``. Here is an example of the returned "
+"array:"
+msgstr ""
+

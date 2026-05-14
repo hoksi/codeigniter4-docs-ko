@@ -37,7 +37,10 @@ msgid ""
 "functions have been changed to be HTML5-compatible by default and if you "
 "need to be compatible with XHTML, you must set the ``$html5`` property in"
 " **app/Config/DocTypes.php** to ``false``."
-msgstr "v4.3.0부터 ``form_helper`` 함수의 void HTML 요소(예: ``<input>``)는 기본적으로 HTML5 호환으로 변경되었습니다. XHTML과 호환되어야 하는 경우 **app/Config/DocTypes.php**\ 의 ``$html5`` 속성을 ``false``\ 로 설정해야 합니다."
+msgstr ""
+"v4.3.0부터 ``form_helper`` 함수의 void HTML 요소(예: ``<input>``)는 기본적으로 HTML5 "
+"호환으로 변경되었습니다. XHTML과 호환되어야 하는 경우 **app/Config/DocTypes.php**\\ 의 "
+"``$html5`` 속성을 ``false``\\ 로 설정해야 합니다."
 
 #: ../../source/helpers/form_helper.rst:20
 msgid "Loading this Helper"
@@ -56,7 +59,9 @@ msgid ""
 "You may need to use HTML and characters such as quotes within your form "
 "elements. In order to do that safely, you'll need to use the :doc:`common"
 " function <../general/common_functions>` :php:func:`esc()`."
-msgstr "폼 요소 내에서 HTML 및 따옴표와 같은 문자를 사용해야 할 수 있습니다. 이를 안전하게 수행하려면 :doc:`공통 함수 <../general/common_functions>`\ 인 :php:func:`esc()` 를 사용해야 합니다."
+msgstr ""
+"폼 요소 내에서 HTML 및 따옴표와 같은 문자를 사용해야 할 수 있습니다. 이를 안전하게 수행하려면 :doc:`공통 함수 "
+"<../general/common_functions>`\\ 인 :php:func:`esc()` 를 사용해야 합니다."
 
 #: ../../source/helpers/form_helper.rst:35
 msgid "Consider the following example:"
@@ -67,7 +72,9 @@ msgid ""
 "Since the above string contains a set of quotes, it will cause the form "
 "to break. The :php:func:`esc()` function converts HTML special characters"
 " so that it can be used safely::"
-msgstr "위의 문자열에는 따옴표 세트가 포함되어 있어 폼이 깨질 수 있습니다. :php:func:`esc()` 함수는 HTML 특수 문자를 변환하여 안전하게 사용할 수 있도록 합니다::"
+msgstr ""
+"위의 문자열에는 따옴표 세트가 포함되어 있어 폼이 깨질 수 있습니다. :php:func:`esc()` 함수는 HTML 특수 문자를 "
+"변환하여 안전하게 사용할 수 있도록 합니다::"
 
 #: ../../source/helpers/form_helper.rst:45
 msgid ""
@@ -76,7 +83,9 @@ msgid ""
 "automatically escaped, so there is no need to call this function. Use it "
 "only if you are creating your own form elements, which you would pass as "
 "strings."
-msgstr "이 페이지에 나열된 폼 헬퍼 함수를 사용하고 연관 배열로 값을 전달하면 폼 값은 자동으로 이스케이프 처리되므로 이 함수를 호출할 필요가 없습니다. 직접 폼 요소를 생성하여 문자열로 전달하는 경우에만 사용하십시오."
+msgstr ""
+"이 페이지에 나열된 폼 헬퍼 함수를 사용하고 연관 배열로 값을 전달하면 폼 값은 자동으로 이스케이프 처리되므로 이 함수를 호출할 "
+"필요가 없습니다. 직접 폼 요소를 생성하여 문자열로 전달하는 경우에만 사용하십시오."
 
 #: ../../source/helpers/form_helper.rst:53
 msgid "Available Functions"
@@ -85,3 +94,684 @@ msgstr "사용 가능한 함수"
 #: ../../source/helpers/form_helper.rst:55
 msgid "The following functions are available:"
 msgstr "다음 함수들을 사용할 수 있습니다:"
+
+#: ../../source/helpers/form_helper.rst
+msgid "Parameters"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:59
+#: ../../source/helpers/form_helper.rst:139
+msgid "Form action/target URI string"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:60
+#: ../../source/helpers/form_helper.rst:140
+msgid "HTML attributes, as an array or escaped string"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:61
+#: ../../source/helpers/form_helper.rst:141
+msgid "An array of hidden fields' definitions"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:62
+msgid "An HTML form opening tag"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst
+msgid "Return type"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:65
+msgid ""
+"Creates an opening form tag with a site URL **built from your** "
+"``Config\\App::$baseURL``. It will optionally let you add form attributes"
+" and hidden input fields, and will always add the `accept-charset` "
+"attribute based on the ``$charset`` property in your "
+"**app/Config/App.php** config file."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:70
+msgid ""
+"The main benefit of using this tag rather than hard coding your own HTML "
+"is that it permits your site to be more portable in the event your URLs "
+"ever change."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:73
+msgid "Here's a simple example:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:77
+msgid ""
+"The above example would create a form that points to your site URL plus "
+"the \"email/send\" URI segments, like this::"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:82
+#, python-brace-format
+msgid "You can also add ``{locale}`` like the following:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:86
+msgid ""
+"The above example would create a form that points to your site URL plus "
+"the current request locale with \"email/send\" URI segments, like this::"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:91
+msgid "**Adding Attributes**"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:93
+msgid ""
+"Attributes can be added by passing an associative array to the second "
+"parameter, like this:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:98
+msgid "Alternatively, you can specify the second parameter as a string:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:102
+msgid "The above examples would create a form similar to this::"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:106
+msgid ""
+"If :ref:`CSRF <cross-site-request-forgery>` filter is turned on "
+"``form_open()`` will generate CSRF field at the beginning of the form. "
+"You can specify ID of this field by passing **csrf_id** as an element of "
+"the ``$attributes`` array:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:110
+msgid "will return::"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:115
+msgid ""
+"To use auto-generation of CSRF field, you need to turn on the :ref:`CSRF "
+"filter <enable-csrf-protection>` in **app/Config/Filters.php** file. In "
+"most cases the form page is requested using the GET method. Normally, "
+"CSRF protection is required for POST/PUT/DELETE/PATCH requests, but even "
+"for GET requests, CSRF filters must be enabled for pages that display "
+"Forms."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:119
+msgid ""
+"If you enable CSRF filter with :ref:`filters-globals`, it will be active "
+"for all request types. But if you enable CSRF filter with ``public array "
+"$methods = ['POST' => ['csrf']];``, the hidden CSRF field will not be "
+"added in GET requests."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:122
+msgid "**Adding Hidden Input Fields**"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:124
+msgid ""
+"Hidden fields can be added by passing an associative array to the third "
+"parameter, like this:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:129
+msgid "You can skip the second parameter by passing any false value to it."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:131
+msgid "The above example would create a form similar to this::"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:142
+msgid "An HTML multipart form opening tag"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:145
+msgid ""
+"This function is identical to :php:func:`form_open()` above, except that "
+"it adds a *multipart* attribute, which is necessary if you would like to "
+"use the form to upload files with."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:151
+#: ../../source/helpers/form_helper.rst:248
+#: ../../source/helpers/form_helper.rst:282
+#: ../../source/helpers/form_helper.rst:454
+#: ../../source/helpers/form_helper.rst:475
+#: ../../source/helpers/form_helper.rst:498
+#: ../../source/helpers/form_helper.rst:517
+#: ../../source/helpers/form_helper.rst:579
+msgid "Field name"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:152
+#: ../../source/helpers/form_helper.rst:176
+#: ../../source/helpers/form_helper.rst:212
+#: ../../source/helpers/form_helper.rst:223
+#: ../../source/helpers/form_helper.rst:235
+#: ../../source/helpers/form_helper.rst:331
+#: ../../source/helpers/form_helper.rst:362
+#: ../../source/helpers/form_helper.rst:457
+#, fuzzy
+msgid "Field value"
+msgstr "필드 값 이스케이프(Escaping)"
+
+#: ../../source/helpers/form_helper.rst:153
+msgid "An HTML hidden input element"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:156
+msgid ""
+"Lets you generate hidden input fields. You can either submit a name/value"
+" string to create one field:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:161
+msgid "... or you can submit an associative array to create multiple fields:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:165
+msgid "You can also pass an associative array to the value field:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:169
+msgid "If you want to create hidden input fields with extra attributes:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:175
+#: ../../source/helpers/form_helper.rst:211
+#: ../../source/helpers/form_helper.rst:222
+#: ../../source/helpers/form_helper.rst:234
+#: ../../source/helpers/form_helper.rst:330
+#: ../../source/helpers/form_helper.rst:361
+msgid "Field attributes data"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:177
+#: ../../source/helpers/form_helper.rst:213
+#: ../../source/helpers/form_helper.rst:224
+#: ../../source/helpers/form_helper.rst:236
+#: ../../source/helpers/form_helper.rst:251
+#: ../../source/helpers/form_helper.rst:285
+#: ../../source/helpers/form_helper.rst:333
+#: ../../source/helpers/form_helper.rst:364
+#: ../../source/helpers/form_helper.rst:394
+#: ../../source/helpers/form_helper.rst:410
+#: ../../source/helpers/form_helper.rst:421
+msgid ""
+"Extra attributes to be added to the tag either as an array or a literal "
+"string"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:178
+msgid "The type of input field. i.e., 'text', 'email', 'number', etc."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:179
+msgid "An HTML text input element"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:182
+msgid ""
+"Lets you generate a standard text input field. You can minimally pass the"
+" field name and value in the first and second parameter:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:187
+#: ../../source/helpers/form_helper.rst:430
+msgid ""
+"Or you can pass an associative array containing any data you wish your "
+"form to contain:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:192
+msgid ""
+"If you want boolean attributes, pass the boolean value "
+"(``true``/``false``). In this case the boolean value does not matter:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:196
+#: ../../source/helpers/form_helper.rst:435
+msgid ""
+"If you would like your form to contain some additional data, like "
+"JavaScript, you can pass it as a string in the third parameter:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:201
+#: ../../source/helpers/form_helper.rst:272
+#: ../../source/helpers/form_helper.rst:355
+msgid "Or you can pass it as an array:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:205
+msgid ""
+"To support the expanded range of HTML5 input fields, you can pass an "
+"input type in as the fourth parameter:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:214
+msgid "An HTML password input element"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:217
+msgid ""
+"This function is identical in all respects to the "
+":php:func:`form_input()` function above except that it uses the "
+"\"password\" input type."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:225
+msgid "An HTML file upload input element"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:228
+msgid ""
+"This function is identical in all respects to the "
+":php:func:`form_input()` function above except that it uses the \"file\" "
+"input type, allowing it to be used to upload files."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:237
+msgid "An HTML textarea element"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:240
+msgid ""
+"This function is identical in all respects to the "
+":php:func:`form_input()` function above except that it generates a "
+"\"textarea\" type."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:243
+msgid ""
+"Instead of the *maxlength* and *size* attributes in the above example, "
+"you will instead specify *rows* and *cols*."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:249
+#: ../../source/helpers/form_helper.rst:283
+msgid "An associative array of options to be listed"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:250
+#: ../../source/helpers/form_helper.rst:284
+msgid "List of fields to mark with the *selected* attribute"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:252
+msgid "An HTML select (dropdown) element"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:255
+msgid ""
+"Lets you create a standard drop-down field. The first parameter will "
+"contain the name of the field, the second parameter will contain an "
+"associative array of options, and the third parameter will contain the "
+"value you wish to be selected. You can also pass an array of multiple "
+"items through the third parameter, and the helper will create a multiple "
+"select for you."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:262
+#: ../../source/helpers/form_helper.rst:307
+#: ../../source/helpers/form_helper.rst:386
+msgid "Example:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:266
+msgid ""
+"If you would like the opening <select> to contain additional data, like "
+"an id attribute or JavaScript, you can pass it as a string in the fourth "
+"parameter:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:276
+msgid ""
+"If the array passed as ``$options`` is a multidimensional array, then "
+"``form_dropdown()`` will produce an <optgroup> with the array key as the "
+"label."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:286
+msgid "An HTML select element with multiple attribute"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:289
+msgid ""
+"Lets you create a standard multiselect field. The first parameter will "
+"contain the name of the field, the second parameter will contain an "
+"associative array of options, and the third parameter will contain the "
+"value or values you wish to be selected."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:294
+msgid ""
+"The parameter usage is identical to using :php:func:`form_dropdown()` "
+"above, except of course that the name of the field will need to use POST "
+"array syntax, e.g., foo[]."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:300
+msgid "Text to put in the <legend> tag"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:301
+msgid "Attributes to be set on the <fieldset> tag"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:302
+msgid "An HTML fieldset opening tag"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:305
+msgid "Lets you generate fieldset/legend fields."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:311
+msgid ""
+"Similar to other functions, you can submit an associative array in the "
+"second parameter if you prefer to set additional attributes:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:318
+#: ../../source/helpers/form_helper.rst:442
+msgid "Anything to append after the closing tag, *as is*"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:319
+msgid "An HTML fieldset closing tag"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:322
+msgid ""
+"Produces a closing ``</fieldset>`` tag. The only advantage to using this "
+"function is it permits you to pass data to it which will be added below "
+"the tag. For example"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:332
+msgid "Whether to mark the checkbox as being *checked*"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:334
+msgid "An HTML checkbox input element"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:337
+msgid "Lets you generate a checkbox field. Simple example:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:341
+msgid ""
+"The third parameter contains a boolean true/false to determine whether "
+"the box should be checked or not."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:344
+msgid ""
+"Similar to the other form functions in this helper, you can also pass an "
+"array of attributes to the function:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:349
+msgid ""
+"Also as with other functions, if you would like the tag to contain "
+"additional data like JavaScript, you can pass it as a string in the "
+"fourth parameter:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:363
+msgid "Whether to mark the radio button as being *checked*"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:365
+msgid "An HTML radio input element"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:368
+msgid ""
+"This function is identical in all respects to the "
+":php:func:`form_checkbox()` function above except that it uses the "
+"\"radio\" input type."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:373
+msgid "Text to put in the <label> tag"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:374
+msgid "ID of the form element that we're making a label for"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:375
+msgid "HTML attributes"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:376
+msgid "An HTML label element"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:379
+msgid "Lets you generate a <label>. Simple example:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:383
+msgid ""
+"Similar to other functions, you can submit an associative array in the "
+"third parameter if you prefer to set additional attributes."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:392
+#: ../../source/helpers/form_helper.rst:408
+#: ../../source/helpers/form_helper.rst:419
+msgid "Button name"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:393
+#: ../../source/helpers/form_helper.rst:409
+msgid "Button value"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:395
+msgid "An HTML input submit element"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:398
+msgid "Lets you generate a standard submit button. Simple example:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:402
+msgid ""
+"Similar to other functions, you can submit an associative array in the "
+"first parameter if you prefer to set your own attributes. The third "
+"parameter lets you add extra data to your form, like JavaScript."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:411
+msgid "An HTML input reset element"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:414
+msgid ""
+"Lets you generate a standard reset button. Use is identical to "
+":func:`form_submit()`."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:420
+msgid "Button label"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:422
+msgid "An HTML button element"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:425
+msgid ""
+"Lets you generate a standard button element. You can minimally pass the "
+"button name and content in the first and second parameter:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:443
+msgid "An HTML form closing tag"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:446
+msgid ""
+"Produces a closing ``</form>`` tag. The only advantage to using this "
+"function is it permits you to pass data to it which will be added below "
+"the tag. For example:"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:455
+msgid "Default value"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:456
+msgid "Whether to turn off HTML escaping of the value"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:460
+msgid ""
+"Permits you to set the value of an input or textarea element. You must "
+"supply the field name via the first parameter of the function. The second"
+" (optional) parameter allows you to set a default value for the field "
+"value. The third (optional) parameter allows you to turn off HTML "
+"escaping of the value, in case you need to use this function in "
+"combination with i.e., :php:func:`form_input()` and avoid double-"
+"escaping."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:467
+#: ../../source/helpers/form_helper.rst:488
+#: ../../source/helpers/form_helper.rst:510
+#: ../../source/helpers/form_helper.rst:526
+#: ../../source/helpers/form_helper.rst:548
+#: ../../source/helpers/form_helper.rst:571
+#: ../../source/helpers/form_helper.rst:595
+msgid "Example::"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:471
+msgid "The above form will show \"0\" when loaded for the first time."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:476
+#: ../../source/helpers/form_helper.rst:499
+#: ../../source/helpers/form_helper.rst:518
+msgid "Value to check for"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:477
+#: ../../source/helpers/form_helper.rst:500
+#: ../../source/helpers/form_helper.rst:519
+msgid "Whether the value is also a default one"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:478
+msgid "'selected' attribute or an empty string"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:481
+msgid ""
+"If you use a <select> menu, this function permits you to display the menu"
+" item that was selected."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:484
+msgid ""
+"The first parameter must contain the name of the select menu, the second "
+"parameter must contain the value of each item, and the third (optional) "
+"parameter lets you set an item as the default (use boolean true/false)."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:501
+#: ../../source/helpers/form_helper.rst:520
+msgid "'checked' attribute or an empty string"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:504
+msgid "Permits you to display a checkbox in the state it was submitted."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:506
+msgid ""
+"The first parameter must contain the name of the checkbox, the second "
+"parameter must contain its value, and the third (optional) parameter lets"
+" you set an item as the default (use boolean true/false)."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:523
+msgid ""
+"Permits you to display radio buttons in the state they were submitted. "
+"This function is identical to the :php:func:`set_checkbox()` function "
+"above."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:535
+msgid "The validation errors"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:538
+msgid ""
+"Returns the validation errors. First, this function checks the validation"
+" errors that are stored in the session. To store the errors in the "
+"session, you need to use ``withInput()`` with :php:func:`redirect() "
+"<redirect>`."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:541
+msgid ""
+"The returned array is the same as ``Validation::getErrors()``. See "
+":ref:`Validation <validation-redirect-and-validation-errors>` for "
+"details."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:544
+#: ../../source/helpers/form_helper.rst:567
+#: ../../source/helpers/form_helper.rst:591
+msgid ""
+"This function does not work with :ref:`in-model-validation`. If you want "
+"to get the validation errors in model validation, see :ref:`model-"
+"getting-validation-errors`."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:556
+#: ../../source/helpers/form_helper.rst:580
+msgid "Validation template name"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:557
+msgid "Rendered HTML of the validation errors"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:560
+msgid "Returns the rendered HTML of the validation errors."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:562
+#: ../../source/helpers/form_helper.rst:586
+msgid ""
+"The parameter ``$template`` is a Validation template name. See :ref"
+":`validation-customizing-error-display` for details."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:565
+#: ../../source/helpers/form_helper.rst:589
+msgid "This function uses :php:func:`validation_errors()` internally."
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:581
+msgid "Rendered HTML of the validation error"
+msgstr ""
+
+#: ../../source/helpers/form_helper.rst:584
+msgid "Returns a single error for the specified field in formatted HTML."
+msgstr ""
+
