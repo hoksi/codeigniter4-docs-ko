@@ -1,17 +1,16 @@
-# SOME DESCRIPTIVE TITLE.
+# CodeIgniter 4 User Guide Korean Translation.
 # Copyright (C) 2019-2026 CodeIgniter Foundation
 # This file is distributed under the same license as the CodeIgniter
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+# hoksi <hoksi@github.com>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-05-14 18:55+0900\n"
+"Last-Translator: hoksi <hoksi@github.com>\n"
 "Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -22,36 +21,36 @@ msgstr ""
 
 #: ../../source/concepts/factories.rst:3
 msgid "Factories"
-msgstr ""
+msgstr "팩토리(Factories)"
 
 #: ../../source/concepts/factories.rst:10
 msgid "Introduction"
-msgstr ""
+msgstr "소개"
 
 #: ../../source/concepts/factories.rst:13
 msgid "What are Factories?"
-msgstr ""
+msgstr "팩토리란 무엇인가요?"
 
 #: ../../source/concepts/factories.rst:15
 msgid ""
 "Like :doc:`./services`, **Factories** are an extension of autoloading "
 "that helps keep your code concise yet optimal, without having to pass "
 "around object instances between classes."
-msgstr ""
+msgstr ":doc:`./services`와 마찬가지로, **팩토리(Factories)**는 클래스 간에 객체 인스턴스를 직접 전달할 필요 없이 코드를 간결하고 최적화된 상태로 유지할 수 있게 돕는 오토로딩의 확장 기능입니다."
 
 #: ../../source/concepts/factories.rst:18
 msgid ""
 "Factories are similar to CodeIgniter 3's ``$this->load`` in the following"
 " points:"
-msgstr ""
+msgstr "팩토리는 다음과 같은 점에서 CodeIgniter 3의 ``$this->load``와 비슷합니다."
 
 #: ../../source/concepts/factories.rst:20
 msgid "Load a class"
-msgstr ""
+msgstr "클래스 로드"
 
 #: ../../source/concepts/factories.rst:21
 msgid "Share the loaded class instance"
-msgstr ""
+msgstr "로드된 클래스 인스턴스 공유"
 
 #: ../../source/concepts/factories.rst:23
 msgid ""
@@ -59,7 +58,7 @@ msgid ""
 "instance and access it from anywhere. This is a great way to reuse object"
 " states and reduce memory load from keeping multiple instances loaded "
 "across your app."
-msgstr ""
+msgstr "가장 단순하게 말하자면, 팩토리는 클래스 인스턴스를 생성하고 어디에서나 접근할 수 있는 공통된 방법을 제공합니다. 이는 객체 상태를 재사용하고 앱 전체에서 여러 인스턴스를 로드하여 발생하는 메모리 부하를 줄이는 훌륭한 방법입니다."
 
 #: ../../source/concepts/factories.rst:28
 msgid ""
@@ -67,24 +66,24 @@ msgid ""
 "classes that are used to work on or transmit common data. The framework "
 "itself uses Factories internally, e.g., to make sure the correct "
 "configuration is loaded when using the ``Config`` class."
-msgstr ""
+msgstr "어떤 클래스든 팩토리를 통해 로드할 수 있지만, 공통 데이터를 작업하거나 전송하는 데 사용되는 클래스들이 가장 좋은 예입니다. 프레임워크 자체도 내부적으로 팩토리를 사용합니다. 예를 들어 ``Config`` 클래스를 사용할 때 올바른 설정이 로드되도록 보장하기 위해 사용됩니다."
 
 #: ../../source/concepts/factories.rst:33
 msgid "Differences from Services"
-msgstr ""
+msgstr "서비스(Services)와의 차이점"
 
 #: ../../source/concepts/factories.rst:35
 msgid ""
 "Factories require a concrete class name to instantiate and do not have "
 "code to create instances."
-msgstr ""
+msgstr "팩토리는 인스턴스화를 위해 구체적인 클래스 이름이 필요하며, 인스턴스를 생성하기 위한 별도의 코드를 가지고 있지 않습니다."
 
 #: ../../source/concepts/factories.rst:37
 msgid ""
 "So, Factories are not good for creating a complex instance that needs "
 "many dependencies, and you cannot change the class of the instance to be "
 "returned."
-msgstr ""
+msgstr "따라서 팩토리는 많은 의존성이 필요한 복잡한 인스턴스를 생성하는 데 적합하지 않으며, 반환될 인스턴스의 클래스를 동적으로 변경할 수 없습니다."
 
 #: ../../source/concepts/factories.rst:40
 msgid ""
@@ -93,30 +92,30 @@ msgid ""
 "When you get a service, Services require a service name, not a class "
 "name, so the returned instance can be changed without changing the client"
 " code."
-msgstr ""
+msgstr "반면, 서비스는 인스턴스를 생성하는 코드를 포함하고 있어 다른 서비스나 클래스 인스턴스가 필요한 복잡한 인스턴스를 생성할 수 있습니다. 서비스를 가져올 때는 클래스 이름이 아닌 서비스 이름이 필요하므로, 클라이언트 코드를 수정하지 않고도 반환되는 인스턴스를 변경할 수 있습니다."
 
 #: ../../source/concepts/factories.rst:47
 msgid "Loading Classes"
-msgstr ""
+msgstr "클래스 로딩"
 
 #: ../../source/concepts/factories.rst:50
 msgid "Loading a Class"
-msgstr ""
+msgstr "클래스 로드하기"
 
 #: ../../source/concepts/factories.rst:52
 msgid ""
 "Take a look at **Models** as an example. You can access the Factory "
 "specific to Models by using the magic static method of the Factories "
 "class, ``Factories::models()``."
-msgstr ""
+msgstr "**모델(Models)**을 예로 들어보겠습니다. 팩토리 클래스의 매직 정적 메서드인 ``Factories::models()``를 사용하여 모델 전용 팩토리에 접근할 수 있습니다."
 
 #: ../../source/concepts/factories.rst:55
 msgid "The static method name is called *component*."
-msgstr ""
+msgstr "이 정적 메서드 이름을 *컴포넌트(component)*라고 부릅니다."
 
 #: ../../source/concepts/factories.rst:60
 msgid "Passing Classname without Namespace"
-msgstr ""
+msgstr "네임스페이스 없이 클래스 이름 전달하기"
 
 #: ../../source/concepts/factories.rst:62
 msgid ""
@@ -124,52 +123,52 @@ msgid ""
 "the ``App`` namespace for the path corresponding to the magic static "
 "method name. ``Factories::models()`` searches the **app/Models** "
 "directory."
-msgstr ""
+msgstr "네임스페이스 없이 클래스 이름을 전달하면, 팩토리는 먼저 ``App`` 네임스페이스에서 매직 정적 메서드 이름에 대응하는 경로를 찾습니다. 예를 들어 ``Factories::models()``는 **app/Models** 디렉토리를 검색합니다."
 
 #: ../../source/concepts/factories.rst:67
 msgid "Passing Short Classname"
-msgstr ""
+msgstr "짧은 클래스 이름 전달하기"
 
 #: ../../source/concepts/factories.rst:69
 msgid ""
 "In the following code, if you have ``App\\Models\\UserModel``, the "
 "instance will be returned:"
-msgstr ""
+msgstr "다음 코드에서 ``App\\Models\\UserModel``이 존재한다면 해당 인스턴스가 반환됩니다."
 
 #: ../../source/concepts/factories.rst:73
 msgid ""
 "If you don't have ``App\\Models\\UserModel``, it searches for "
 "``Models\\UserModel`` in all namespaces."
-msgstr ""
+msgstr "만약 ``App\\Models\\UserModel``이 없다면 모든 네임스페이스에서 ``Models\\UserModel``을 검색합니다."
 
 #: ../../source/concepts/factories.rst:75
 msgid ""
 "Next time you ask for the same class anywhere in your code, Factories "
 "will be sure you get back the instance as before:"
-msgstr ""
+msgstr "코드의 다른 곳에서 동일한 클래스를 다시 요청하면, 팩토리는 이전과 동일한 인스턴스를 반환하도록 보장합니다."
 
 #: ../../source/concepts/factories.rst:81
 msgid "Passing Short Classname with Sub-directories"
-msgstr ""
+msgstr "하위 디렉토리를 포함한 짧은 클래스 이름 전달"
 
 #: ../../source/concepts/factories.rst:83
 msgid ""
 "If you want to load a class in sub directories, you use the ``/`` as a "
 "separator. The following code loads **app/Libraries/Sub/SubLib.php** if "
 "it exists:"
-msgstr ""
+msgstr "하위 디렉토리에 있는 클래스를 로드하려면 ``/``를 구분자로 사용합니다. 다음 코드는 **app/Libraries/Sub/SubLib.php**가 존재할 경우 이를 로드합니다."
 
 #: ../../source/concepts/factories.rst:92
 msgid "Passing Fully Qualified Classname"
-msgstr ""
+msgstr "전체 경로 네임스페이스(Fully Qualified Classname) 전달"
 
 #: ../../source/concepts/factories.rst:94
 msgid "You could also request a fully qualified classname:"
-msgstr ""
+msgstr "전체 경로 네임스페이스를 사용하여 요청할 수도 있습니다."
 
 #: ../../source/concepts/factories.rst:99
 msgid "It returns the instance of ``Blog\\Models\\UserModel`` if it exists."
-msgstr ""
+msgstr "``Blog\\Models\\UserModel``이 존재하면 해당 인스턴스를 반환합니다."
 
 #: ../../source/concepts/factories.rst:101
 msgid ""
@@ -178,433 +177,134 @@ msgid ""
 " if you had both ``App\\Models\\UserModel`` and "
 "``Blog\\Models\\UserModel``, the instance of ``App\\Models\\UserModel`` "
 "would be returned."
-msgstr ""
+msgstr "v4.4.0 이전에는 전체 네임스페이스로 요청했을 때, ``Blog\\Models\\UserModel``만 있다면 해당 인스턴스가 반환되었지만, ``App\\Models\\UserModel``과 ``Blog\\Models\\UserModel``이 둘 다 있다면 ``App\\Models\\UserModel``의 인스턴스가 반환되었습니다."
 
 #: ../../source/concepts/factories.rst:106
 msgid ""
 "If you wanted to get ``Blog\\Models\\UserModel``, you needed to disable "
 "the option ``preferApp``:"
-msgstr ""
+msgstr "이 경우 ``Blog\\Models\\UserModel``을 가져오려면 ``preferApp`` 옵션을 비활성화해야 했습니다."
 
 #: ../../source/concepts/factories.rst:113
 msgid "Convenience Functions"
-msgstr ""
+msgstr "편의 함수"
 
 #: ../../source/concepts/factories.rst:115
 msgid ""
 "Two shortcut functions for Factories have been provided. These functions "
 "are always available."
-msgstr ""
+msgstr "팩토리를 위한 두 가지 단축 함수가 제공됩니다. 이 함수들은 언제나 사용 가능합니다."
 
 #: ../../source/concepts/factories.rst:120
 msgid "config()"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:122
-msgid ""
-"The first is :php:func:`config()` which returns a new instance of a "
-"Config class. The only required parameter is the class name:"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:127
-msgid "model()"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:129
-msgid ""
-"The second function, :php:func:`model()` returns a new instance of a "
-"Model class. The only required parameter is the class name:"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:136
-msgid "Defining Classname to be Loaded"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:140
-msgid ""
-"You could define a classname to be loaded before loading the class with "
-"the ``Factories::define()`` method:"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:146
-msgid ""
-"The first parameter is a component. The second parameter is a class alias"
-" (the first parameter to Factories magic static method), and the third "
-"parameter is the true fully qualified classname to be loaded."
-msgstr ""
-
-#: ../../source/concepts/factories.rst:150
-msgid ""
-"After that, if you load ``Myth\\Auth\\Models\\UserModel`` with Factories,"
-" the ``App\\Models\\UserModel`` instance will be returned:"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:157
-msgid "Factory Parameters"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:159
-msgid ""
-"``Factories`` takes as a second parameter an array of option values "
-"(described below). These directives will override the default options "
-"configured for each component."
-msgstr ""
-
-#: ../../source/concepts/factories.rst:162
-msgid ""
-"Any more parameters passed at the same time will be forwarded on to the "
-"class constructor, making it easy to configure your class instance on-"
-"the-fly. For example, say your app uses a separate database for "
-"authentication and you want to be sure that any attempts to access user "
-"records always go through that connection:"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:169
-msgid ""
-"Now any time the ``UserModel`` is loaded from ``Factories`` it will in "
-"fact be returning a class instance that uses the alternate database "
-"connection."
-msgstr ""
-
-#: ../../source/concepts/factories.rst:175
-msgid "Factories Options"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:177
-msgid ""
-"The default behavior might not work for every component. For example, say"
-" your component name and its path do not align, or you need to limit "
-"instances to a certain type of class. Each component takes a set of "
-"options to direct discovery and instantiation."
-msgstr ""
-
-#: ../../source/concepts/factories.rst:182
-msgid "Key"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:182
-msgid "Type"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:182
-msgid "Description"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:182
-msgid "Default"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:184
-msgid "component"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:184
-#: ../../source/concepts/factories.rst:186
-#: ../../source/concepts/factories.rst:188
-msgid "string or null"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:184
-msgid ""
-"The name of the component (if different than the static method). This can"
-" be used to alias one component to another."
-msgstr ""
-
-#: ../../source/concepts/factories.rst:184
-msgid "``null`` (defaults to the component name)"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:186
-msgid "path"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:186
-msgid "The relative path within the namespace/folder to look for classes."
-msgstr ""
-
-#: ../../source/concepts/factories.rst:186
-msgid ""
-"``null`` (defaults to the component name, but makes the first character "
-"uppercase)"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:188
-msgid "instanceOf"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:188
-msgid "A required class name to match on the returned instance."
-msgstr ""
-
-#: ../../source/concepts/factories.rst:188
-msgid "``null`` (no filtering)"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:189
-msgid "getShared"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:189
-#: ../../source/concepts/factories.rst:191
-msgid "boolean"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:189
-msgid "Whether to return a shared instance of the class or load a fresh one."
-msgstr ""
-
-#: ../../source/concepts/factories.rst:189
-#: ../../source/concepts/factories.rst:191
-msgid "``true``"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:191
-msgid "preferApp"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:191
-msgid ""
-"Whether a class with the same basename in the App namespace overrides "
-"other explicit class requests."
-msgstr ""
-
-#: ../../source/concepts/factories.rst:195
-msgid ""
-"Since v4.4.0, ``preferApp`` works only when you request :ref:`a classname"
-" without a namespace <factories-passing-classname-without-namespace>`."
-msgstr ""
-
-#: ../../source/concepts/factories.rst:199
-msgid "Factories Behavior"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:201
-msgid ""
-"Options can be applied in one of three ways (listed in ascending "
-"priority):"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:203
-msgid ""
-"A configuration class ``Config\\Factory`` with a property that matches "
-"the name of a component."
-msgstr ""
-
-#: ../../source/concepts/factories.rst:204
-msgid "The static method ``Factories::setOptions()``."
-msgstr ""
-
-#: ../../source/concepts/factories.rst:205
-msgid "Passing options directly at call time with a parameter."
-msgstr ""
-
-#: ../../source/concepts/factories.rst:208
-msgid "Configurations"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:210
-msgid ""
-"To set default component options, create a new Config files at "
-"**app/Config/Factory.php** that supplies options as an array property "
-"that matches the name of the component."
-msgstr ""
-
-#: ../../source/concepts/factories.rst:214
-msgid "Example: Filters Factories"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:216
-msgid ""
-"For example, if you want to create **Filters** by Factories, the "
-"component name wll be ``filters``. And if you want to ensure that each "
-"filter is an instance of a class which implements CodeIgniter's "
-"``FilterInterface``, your **app/Config/Factory.php** file might look like"
-" this:"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:222
-msgid ""
-"Now you can create a filter with code like "
-"``Factories::filters('SomeFilter')``, and the returned instance will "
-"surely be a CodeIgniter's filter."
-msgstr ""
-
-#: ../../source/concepts/factories.rst:225
-msgid ""
-"This would prevent conflict of an third-party module which happened to "
-"have an unrelated ``Filters`` path in its namespace."
-msgstr ""
-
-#: ../../source/concepts/factories.rst:229
-msgid "Example: Library Factories"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:231
-msgid ""
-"If you want to load your library classes in the **app/Libraries** "
-"directory with ``Factories::library('SomeLib')``, the path `Libraries` is"
-" different from the default path `Library`."
-msgstr ""
-
-#: ../../source/concepts/factories.rst:235
-msgid "In this case, your **app/Config/Factory.php** file will look like this:"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:239
-msgid "Now you can load your libraries with the ``Factories::library()`` method:"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:245
-msgid "setOptions Method"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:247
-msgid ""
-"The ``Factories`` class has a static method to allow runtime option "
-"configuration: simply supply the desired array of options using the "
-"``setOptions()`` method and they will be merged with the default values "
-"and stored for the next call:"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:254
-msgid "Parameter Options"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:256
-msgid ""
-"``Factories``'s magic static call takes as a second parameter an array of"
-" option values. These directives will override the stored options "
-"configured for each component and can be used at call time to get exactly"
-" what you need. The input should be an array with option names as keys to"
-" each overriding value."
-msgstr ""
-
-#: ../../source/concepts/factories.rst:261
-msgid ""
-"For example, by default ``Factories`` assumes that you want to locate a "
-"shared instance of a component. By adding a second parameter to the magic"
-" static call, you can control whether that single call will return a new "
-"or shared instance:"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:271
-msgid "Config Caching"
-msgstr ""
-
-#: ../../source/concepts/factories.rst:275
-msgid ""
-"Do not use this feature unless you have carefully read this section and "
-"understand how this feature works. Otherwise, your application will not "
-"function properly."
-msgstr ""
+msgstr "config()"
 
 #: ../../source/concepts/factories.rst:279
 msgid "To improve performance, Config Caching has been implemented."
-msgstr ""
+msgstr "성능 향상을 위해 설정 캐싱(Config Caching)이 구현되었습니다."
 
 #: ../../source/concepts/factories.rst:282
 msgid "Prerequisite"
-msgstr ""
+msgstr "전제 조건"
 
 #: ../../source/concepts/factories.rst:284
 msgid ""
 "Using this feature when the prerequisites are not met will prevent "
 "CodeIgniter from operating properly. Do not use this feature in such "
 "cases."
-msgstr ""
+msgstr "전제 조건이 충족되지 않은 상태에서 이 기능을 사용하면 CodeIgniter가 정상적으로 작동하지 않을 수 있습니다. 그런 경우에는 이 기능을 사용하지 마십시오."
 
 #: ../../source/concepts/factories.rst:287
 msgid ""
 "To use this feature, the properties of all Config objects instantiated in"
 " Factories must not be modified after instantiation. Put another way, the"
 " Config classes must be an immutable or readonly classes."
-msgstr ""
+msgstr "이 기능을 사용하려면 팩토리에서 인스턴스화된 모든 설정(Config) 객체의 속성이 인스턴스화 후에 수정되지 않아야 합니다. 다시 말해, 설정 클래스는 불변(immutable)이거나 읽기 전용(readonly) 클래스여야 합니다."
 
 #: ../../source/concepts/factories.rst:290
 msgid ""
 "By default, every Config class that is cached must implement "
 "``__set_state()`` method."
-msgstr ""
+msgstr "기본적으로 캐시되는 모든 설정 클래스는 ``__set_state()`` 메서드를 구현해야 합니다."
 
 #: ../../source/concepts/factories.rst:294
 msgid "How It Works"
-msgstr ""
+msgstr "작동 방식"
 
 #: ../../source/concepts/factories.rst:296
 msgid ""
 "Once cached, configuration values are never changed until the cache is "
 "deleted, even if the configuration file or **.env** is changed."
-msgstr ""
+msgstr "한번 캐시되면 설정 파일이나 **.env**가 변경되더라도 캐시를 삭제하기 전까지 설정 값은 절대로 변경되지 않습니다."
 
 #: ../../source/concepts/factories.rst:299
 msgid ""
 "Save the all Config instances in Factories into a cache file before "
 "shutdown, if the state of the Config instances in Factories changes."
-msgstr ""
+msgstr "종료(shutdown) 전, 팩토리에 있는 설정 인스턴스의 상태가 변경되었다면 모든 설정 인스턴스를 캐시 파일에 저장합니다."
 
 #: ../../source/concepts/factories.rst:301
 msgid ""
 "Restore cached Config instances before CodeIgniter initialization if a "
 "cache is available."
-msgstr ""
+msgstr "캐시가 있는 경우 CodeIgniter 초기화 전에 캐시된 설정 인스턴스들을 복원합니다."
 
 #: ../../source/concepts/factories.rst:304
 msgid ""
 "Simply put, all Config instances held by Factories are cached immediately"
 " prior to shutdown, and the cached instances are used permanently."
-msgstr ""
+msgstr "간단히 말해, 팩토리가 보유한 모든 설정 인스턴스는 종료 직전에 캐시되며, 캐시된 인스턴스들은 영구적으로 사용됩니다."
 
 #: ../../source/concepts/factories.rst:308
 msgid "How to Update Config Values"
-msgstr ""
+msgstr "설정 값 업데이트 방법"
 
 #: ../../source/concepts/factories.rst:310
 msgid ""
 "Once stored, the cached versions never expire. Changing a existing Config"
 " file (or changing Environment Variables for it) will not update the "
 "cache nor the Config values."
-msgstr ""
+msgstr "저장된 캐시 버전은 절대 만료되지 않습니다. 기존 설정 파일을 변경하거나 관련 환경 변수를 변경해도 캐시나 설정 값은 업데이트되지 않습니다."
 
 #: ../../source/concepts/factories.rst:314
 msgid ""
 "So if you want to update Config values, update Config files or "
 "Environment Variables for them, and you must manually delete the cache "
 "file."
-msgstr ""
+msgstr "따라서 설정 값을 업데이트하고 싶다면 설정 파일이나 환경 변수를 수정한 후, 수동으로 캐시 파일을 삭제해야 합니다."
 
 #: ../../source/concepts/factories.rst:317
 msgid "You can use the ``spark cache:clear`` command:"
-msgstr ""
+msgstr "``spark cache:clear`` 명령을 사용할 수 있습니다."
 
 #: ../../source/concepts/factories.rst:323
 msgid "Or simply delete the **writable/cache/FactoriesCache_config** file."
-msgstr ""
+msgstr "또는 단순히 **writable/cache/FactoriesCache_config** 파일을 삭제하십시오."
 
 #: ../../source/concepts/factories.rst:326
 msgid "Since v4.5.0, the ``spark optimize`` command clears the cache."
-msgstr ""
+msgstr "v4.5.0부터 ``spark optimize`` 명령은 캐시를 지웁니다."
 
 #: ../../source/concepts/factories.rst:329
 msgid "How to Enable Config Caching"
-msgstr ""
+msgstr "설정 캐싱 활성화 방법"
 
 #: ../../source/concepts/factories.rst:333
 msgid "Set the following property to ``true`` in **app/Config/Optimize.php**::"
-msgstr ""
+msgstr "**app/Config/Optimize.php**에서 다음 속성을 ``true``로 설정하십시오::"
 
 #: ../../source/concepts/factories.rst:337
 msgid "Or you can enable this with the ``spark optimize`` command."
-msgstr ""
+msgstr "또는 ``spark optimize`` 명령으로 활성화할 수 있습니다."
 
 #: ../../source/concepts/factories.rst:340
 msgid ""
 "This property cannot be overridden by :ref:`environment variables "
 "<configuration-classes-and-environment-variables>`."
-msgstr ""
+msgstr "이 속성은 :ref:`환경 변수 <configuration-classes-and-environment-variables>`에 의해 오버라이드될 수 없습니다."
 
 #: ../../source/concepts/factories.rst:343
 msgid ""
 "Do not use this option when running the app in the :doc:`Worker Mode "
 "</installation/worker_mode>`."
-msgstr ""
-
+msgstr ":doc:`워커 모드(Worker Mode) </installation/worker_mode>`에서 앱을 실행할 때는 이 옵션을 사용하지 마십시오."
