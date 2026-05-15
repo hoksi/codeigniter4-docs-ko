@@ -22,112 +22,112 @@ msgstr ""
 
 #: ../../source/cli/spark_commands.rst:3
 msgid "Spark Commands"
-msgstr ""
+msgstr "Spark 명령"
 
 #: ../../source/cli/spark_commands.rst:5
 msgid ""
 "CodeIgniter ships with the official command **spark** and built-in "
 "commands."
-msgstr ""
+msgstr "CodeIgniter에는 공식 명령 **spark** 와 내장 명령이 함께 제공됩니다."
 
 #: ../../source/cli/spark_commands.rst:13
 msgid "Running Commands"
-msgstr ""
+msgstr "명령 실행"
 
 #: ../../source/cli/spark_commands.rst:16
 msgid "Running via CLI"
-msgstr ""
+msgstr "CLI로 실행"
 
 #: ../../source/cli/spark_commands.rst:18
 msgid ""
 "The commands are run from the command line, in the project root "
 "directory. The command file **spark** has been provided that is used to "
 "run any of the CLI commands."
-msgstr ""
+msgstr "명령은 프로젝트 루트 디렉터리의 명령줄에서 실행합니다. **spark** 명령 파일이 제공되며, 이를 사용해 모든 CLI 명령을 실행합니다."
 
 #: ../../source/cli/spark_commands.rst:22
 msgid "Showing List of Commands"
-msgstr ""
+msgstr "명령 목록 보기"
 
 #: ../../source/cli/spark_commands.rst:24
 msgid ""
 "When called **spark** without specifying a command, a simple help page is"
 " displayed that also provides a list of available commands and their "
 "descriptions, sorted by categories:"
-msgstr ""
+msgstr "명령을 지정하지 않고 **spark** 를 호출하면, 사용 가능한 명령과 설명을 카테고리별로 정리해 보여주는 간단한 도움말 페이지가 표시됩니다:"
 
 #: ../../source/cli/spark_commands.rst:33
 msgid "spark list"
-msgstr ""
+msgstr "spark list"
 
 #: ../../source/cli/spark_commands.rst:35
 msgid "``php spark`` is the exactly same as the ``list`` command:"
-msgstr ""
+msgstr "``php spark`` 는 ``list`` 명령과 정확히 같습니다:"
 
 #: ../../source/cli/spark_commands.rst:41
 msgid ""
 "You may also use the ``--simple`` option to get a raw list of all "
 "available commands, sorted alphabetically:"
-msgstr ""
+msgstr "``--simple`` 옵션을 사용하면 사용 가능한 명령의 원시 목록을 알파벳순으로 볼 수도 있습니다:"
 
 #: ../../source/cli/spark_commands.rst:49
 msgid "Showing Help"
-msgstr ""
+msgstr "도움말 보기"
 
 #: ../../source/cli/spark_commands.rst:51
 msgid ""
 "You can get help about any CLI command using the ``help`` command as "
 "follows:"
-msgstr ""
+msgstr "다음과 같이 ``help`` 명령을 사용해 모든 CLI 명령의 도움말을 볼 수 있습니다:"
 
 #: ../../source/cli/spark_commands.rst:57
 msgid ""
 "Since v4.3.0, you can also use the ``--help`` option instead of the "
 "``help`` command:"
-msgstr ""
+msgstr "v4.3.0부터는 ``help`` 명령 대신 ``--help`` 옵션도 사용할 수 있습니다:"
 
 #: ../../source/cli/spark_commands.rst:64
 msgid "Running a Command"
-msgstr ""
+msgstr "명령 실행하기"
 
 #: ../../source/cli/spark_commands.rst:66
 msgid ""
 "You should pass the name of the command as the first argument to run that"
 " command:"
-msgstr ""
+msgstr "해당 명령을 실행하려면 명령 이름을 첫 번째 인자로 전달해야 합니다:"
 
 #: ../../source/cli/spark_commands.rst:72
 msgid ""
 "Some commands take additional arguments, which should be provided "
 "directly after the command, separated by spaces:"
-msgstr ""
+msgstr "일부 명령은 추가 인자를 받으며, 이 인자들은 명령 뒤에 공백으로 구분해 바로 이어서 전달해야 합니다:"
 
 #: ../../source/cli/spark_commands.rst:78
 msgid ""
 "For all of the commands CodeIgniter provides, if you do not provide the "
 "required arguments, you will be prompted for the information it needs to "
 "run correctly:"
-msgstr ""
+msgstr "CodeIgniter가 제공하는 모든 명령은 필요한 인자를 제공하지 않으면, 올바르게 실행하기 위해 필요한 정보를 입력하라는 메시지가 표시됩니다:"
 
 #: ../../source/cli/spark_commands.rst:88
 msgid "Suppressing Header Output"
-msgstr ""
+msgstr "헤더 출력 숨기기"
 
 #: ../../source/cli/spark_commands.rst:90
 msgid ""
 "When you run a command, the header with CodeIgniter version and the "
 "current time is output:"
-msgstr ""
+msgstr "명령을 실행하면 CodeIgniter 버전과 현재 시간이 포함된 헤더가 출력됩니다:"
 
 #: ../../source/cli/spark_commands.rst:101
 msgid ""
 "You may always pass ``--no-header`` to suppress the header output, "
 "helpful for parsing results:"
-msgstr ""
+msgstr "헤더 출력을 숨기려면 언제든지 ``--no-header`` 를 전달할 수 있으며, 결과를 파싱할 때 유용합니다:"
 
 #: ../../source/cli/spark_commands.rst:110
 msgid "Calling Commands"
-msgstr ""
+msgstr "명령 호출하기"
 
 #: ../../source/cli/spark_commands.rst:112
 msgid ""
@@ -135,19 +135,18 @@ msgid ""
 "done within a controller for cronjob tasks, but they can be used at any "
 "time. You do this by using the ``command()`` function. This function is "
 "always available."
-msgstr ""
+msgstr "명령은 직접 작성한 코드 안에서도 실행할 수 있습니다. 보통은 cron 작업용 컨트롤러 안에서 사용하지만, 언제든 사용할 수 있습니다. 이를 위해 ``command()`` 함수를 사용합니다. 이 함수는 항상 사용할 수 있습니다."
 
 #: ../../source/cli/spark_commands.rst:117
 msgid ""
 "The only argument is string that is the command called and any "
 "parameters. This appears exactly as you would call it from the command "
 "line."
-msgstr ""
+msgstr "유일한 인자는 실행할 명령과 그 매개변수를 담은 문자열입니다. 이는 명령줄에서 호출하는 것과 정확히 같은 형태로 표시됩니다."
 
 #: ../../source/cli/spark_commands.rst:120
 msgid ""
 "All output from the command that is ran is captured when not run from the"
 " command line. It is returned from the command so that you can choose to "
 "display it or not."
-msgstr ""
-
+msgstr "명령줄에서 실행하지 않을 경우, 실행된 명령의 모든 출력이 캡처됩니다. 출력은 명령에서 반환되므로 표시 여부를 선택할 수 있습니다."

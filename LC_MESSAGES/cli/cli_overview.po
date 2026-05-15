@@ -22,73 +22,73 @@ msgstr ""
 
 #: ../../source/cli/cli_overview.rst:3
 msgid "CLI Overview"
-msgstr ""
+msgstr "CLI 개요"
 
 #: ../../source/cli/cli_overview.rst:5
 msgid ""
 "CodeIgniter 4 provides built-in command **spark** and useful commands and"
 " library. You can also create spark commands, and run controllers via "
 "CLI."
-msgstr ""
+msgstr "CodeIgniter 4는 내장 명령 **spark** 와 유용한 명령 및 라이브러리를 제공합니다. 또한 spark 명령을 직접 만들고 CLI를 통해 컨트롤러를 실행할 수도 있습니다."
 
 #: ../../source/cli/cli_overview.rst:14
 msgid "What is the CLI?"
-msgstr ""
+msgstr "CLI란?"
 
 #: ../../source/cli/cli_overview.rst:16
 msgid ""
 "The command-line interface is a text-based method of interacting with "
 "computers. For more information, check the `Wikipedia article "
 "<https://en.wikipedia.org/wiki/Command-line_interface>`_."
-msgstr ""
+msgstr "명령줄 인터페이스는 컴퓨터와 상호작용하는 텍스트 기반 방식입니다. 자세한 내용은 `Wikipedia 문서 <https://en.wikipedia.org/wiki/Command-line_interface>`_ 를 참고하세요."
 
 #: ../../source/cli/cli_overview.rst:22
 msgid "Why Run via the Command-Line?"
-msgstr ""
+msgstr "왜 명령줄로 실행하나요?"
 
 #: ../../source/cli/cli_overview.rst:24
 msgid ""
 "There are many reasons for running CodeIgniter from the command-line, but"
 " they are not always obvious."
-msgstr ""
+msgstr "CodeIgniter를 명령줄에서 실행해야 하는 이유는 많지만, 항상 명확한 것은 아닙니다."
 
 #: ../../source/cli/cli_overview.rst:27
 msgid "Run your cron-jobs without needing to use *wget* or *curl*."
-msgstr ""
+msgstr "*wget* 이나 *curl* 을 사용하지 않고 cron 작업을 실행할 수 있습니다."
 
 #: ../../source/cli/cli_overview.rst:28
 msgid ""
 "Make interactive \"tasks\" that can do things like set permissions, prune"
 " cache folders, run backups, etc."
-msgstr ""
+msgstr "권한 설정, 캐시 폴더 정리, 백업 실행 등을 할 수 있는 대화형 \"작업\"을 만들 수 있습니다."
 
 #: ../../source/cli/cli_overview.rst:30
 msgid ""
 "Integrate with other applications in other languages. For example, a "
 "random C++ script could call one command and run code in your models!"
-msgstr ""
+msgstr "다른 언어의 애플리케이션과 통합할 수 있습니다. 예를 들어 C++ 스크립트 하나가 명령 하나를 호출해 모델 안의 코드를 실행할 수도 있습니다!"
 
 #: ../../source/cli/cli_overview.rst:35
 msgid "The Spark Commands"
-msgstr ""
+msgstr "Spark 명령"
 
 #: ../../source/cli/cli_overview.rst:37
 msgid ""
 "CodeIgniter ships with the official command **spark** and built-in "
 "commands."
-msgstr ""
+msgstr "CodeIgniter에는 공식 명령 **spark** 와 여러 내장 명령이 함께 제공됩니다."
 
 #: ../../source/cli/cli_overview.rst:39
 msgid "You can run the spark and see the help:"
-msgstr ""
+msgstr "spark를 실행하면 도움말을 볼 수 있습니다:"
 
 #: ../../source/cli/cli_overview.rst:45
 msgid "See the :doc:`spark_commands` page for detailed information."
-msgstr ""
+msgstr "자세한 내용은 :doc:`spark_commands` 페이지를 참고하세요."
 
 #: ../../source/cli/cli_overview.rst:49
 msgid "The CLI Library"
-msgstr ""
+msgstr "CLI 라이브러리"
 
 #: ../../source/cli/cli_overview.rst:51
 msgid ""
@@ -96,11 +96,10 @@ msgid ""
 "easy ways to output text in multiple colors to the terminal window. It "
 "also allows you to prompt a user for information, making it easy to build"
 " flexible, smart tools."
-msgstr ""
+msgstr "CLI 라이브러리는 CLI 인터페이스 작업을 쉽게 만들어 줍니다. 터미널 창에 여러 색상의 텍스트를 출력하는 간단한 방법을 제공하고, 사용자에게 정보를 묻는 기능도 있어 유연하고 똑똑한 도구를 만들기 쉽습니다."
 
 #: ../../source/cli/cli_overview.rst:55
 msgid ""
 "See the :doc:`CLI Library </cli/cli_library>` page for detailed "
 "information."
-msgstr ""
-
+msgstr "자세한 내용은 :doc:`CLI Library </cli/cli_library>` 페이지를 참고하세요."
