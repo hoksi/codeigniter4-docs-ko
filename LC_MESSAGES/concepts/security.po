@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:3
 msgid "Security Guidelines"
-msgstr ""
+msgstr "보안 가이드라인"
 
 #: ../../source/concepts/security.rst:5
 msgid ""
@@ -50,11 +50,11 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:25
 msgid "OWASP Top 10 2021"
-msgstr ""
+msgstr "OWASP Top 10 2021"
 
 #: ../../source/concepts/security.rst:28
 msgid "A01:2021 Broken Access Control"
-msgstr ""
+msgstr "A01:2021 액세스 제어 위반"
 
 #: ../../source/concepts/security.rst:30
 msgid ""
@@ -66,7 +66,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:35
 msgid "Common access control vulnerabilities include:"
-msgstr ""
+msgstr "일반적인 액세스 제어 취약점은 다음과 같습니다:"
 
 #: ../../source/concepts/security.rst:37
 msgid ""
@@ -90,7 +90,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:45
 msgid "Accessing API with missing access controls for POST, PUT and DELETE."
-msgstr ""
+msgstr "POST, PUT 및 DELETE에 대한 액세스 제어가 없는 API 접근."
 
 #: ../../source/concepts/security.rst:46
 msgid ""
@@ -137,7 +137,7 @@ msgstr ""
 #: ../../source/concepts/security.rst:892
 #: ../../source/concepts/security.rst:931
 msgid "OWASP recommendations"
-msgstr ""
+msgstr "OWASP 권장사항"
 
 #: ../../source/concepts/security.rst:58
 msgid ""
@@ -148,7 +148,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:61
 msgid "Except for public resources, deny by default."
-msgstr ""
+msgstr "공개 리소스를 제외하고 기본값으로 거부합니다."
 
 #: ../../source/concepts/security.rst:62
 msgid ""
@@ -215,7 +215,7 @@ msgstr ""
 #: ../../source/concepts/security.rst:918
 #: ../../source/concepts/security.rst:941
 msgid "CodeIgniter provisions"
-msgstr ""
+msgstr "CodeIgniter 보안 기능"
 
 #: ../../source/concepts/security.rst:80
 msgid ""
@@ -229,7 +229,7 @@ msgstr ""
 #: ../../source/concepts/security.rst:826
 #: ../../source/concepts/security.rst:944
 msgid ":doc:`../libraries/validation` library"
-msgstr ""
+msgstr ":doc:`../libraries/validation` 라이브러리"
 
 #: ../../source/concepts/security.rst:83
 msgid ""
@@ -239,21 +239,21 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:85
 msgid ":doc:`../libraries/sessions` library"
-msgstr ""
+msgstr ":doc:`../libraries/sessions` 라이브러리"
 
 #: ../../source/concepts/security.rst:86 ../../source/concepts/security.rst:278
 #: ../../source/concepts/security.rst:656
 #: ../../source/concepts/security.rst:725
 msgid ":doc:`../libraries/throttler` for rate limit"
-msgstr ""
+msgstr ":doc:`../libraries/throttler` 레이트 제한"
 
 #: ../../source/concepts/security.rst:87 ../../source/concepts/security.rst:881
 msgid ":doc:`../libraries/cors` filter"
-msgstr ""
+msgstr ":doc:`../libraries/cors` 필터"
 
 #: ../../source/concepts/security.rst:88
 msgid ":php:func:`log_message()` function for logging"
-msgstr ""
+msgstr ":php:func:`log_message()` 로깅 함수"
 
 #: ../../source/concepts/security.rst:89 ../../source/concepts/security.rst:175
 #: ../../source/concepts/security.rst:279
@@ -270,11 +270,11 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:90
 msgid "Easy to add third party authentication"
-msgstr ""
+msgstr "타사 인증을 쉽게 추가 가능"
 
 #: ../../source/concepts/security.rst:93
 msgid "A02:2021 Cryptographic Failures"
-msgstr ""
+msgstr "A02:2021 암호화 실패"
 
 #: ../../source/concepts/security.rst:95
 msgid ""
@@ -316,7 +316,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:113
 msgid "Is the received server certificate and the trust chain properly validated?"
-msgstr ""
+msgstr "수신된 서버 인증서와 신뢰 체인이 올바르게 검증되었습니까?"
 
 #: ../../source/concepts/security.rst:114
 msgid ""
@@ -362,7 +362,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:133
 msgid "Do the following, at a minimum, and consult the references:"
-msgstr ""
+msgstr "최소한 다음을 수행하고 참고 자료를 참조하세요:"
 
 #: ../../source/concepts/security.rst:135
 msgid ""
@@ -380,7 +380,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:141
 msgid "Make sure to encrypt all sensitive data at rest."
-msgstr ""
+msgstr "저장된 모든 민감한 데이터를 암호화해야 합니다."
 
 #: ../../source/concepts/security.rst:142
 msgid ""
@@ -398,11 +398,11 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:147
 msgid "Disable caching for response that contain sensitive data."
-msgstr ""
+msgstr "민감한 데이터를 포함하는 응답에 대해 캐싱을 비활성화합니다."
 
 #: ../../source/concepts/security.rst:148
 msgid "Apply required security controls as per the data classification."
-msgstr ""
+msgstr "데이터 분류에 따라 필요한 보안 제어를 적용합니다."
 
 #: ../../source/concepts/security.rst:149
 msgid ""
@@ -427,7 +427,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:157
 msgid "Always use authenticated encryption instead of just encryption."
-msgstr ""
+msgstr "인증된 암호화를 항상 사용하세요 (단순 암호화만으로는 안 됨)."
 
 #: ../../source/concepts/security.rst:158
 msgid ""
@@ -452,7 +452,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:166
 msgid "Verify independently the effectiveness of configuration and settings."
-msgstr ""
+msgstr "구성 및 설정의 효율성을 독립적으로 확인하세요."
 
 #: ../../source/concepts/security.rst:171
 #: ../../source/concepts/security.rst:877
@@ -464,11 +464,11 @@ msgstr ""
 #: ../../source/concepts/security.rst:172
 #: ../../source/concepts/security.rst:878
 msgid ":php:func:`force_https()` function"
-msgstr ""
+msgstr ":php:func:`force_https()` 함수"
 
 #: ../../source/concepts/security.rst:173
 msgid ":doc:`../libraries/encryption`"
-msgstr ""
+msgstr ":doc:`../libraries/encryption`"
 
 #: ../../source/concepts/security.rst:174
 msgid ""
@@ -478,11 +478,11 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:179
 msgid "A03:2021 Injection"
-msgstr ""
+msgstr "A03:2021 인젝션"
 
 #: ../../source/concepts/security.rst:181
 msgid "An application is vulnerable to attack when:"
-msgstr ""
+msgstr "애플리케이션이 공격에 취약한 경우:"
 
 #: ../../source/concepts/security.rst:183
 msgid ""
@@ -571,15 +571,15 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:227
 msgid ":ref:`urls-uri-security`"
-msgstr ""
+msgstr ":ref:`urls-uri-security`"
 
 #: ../../source/concepts/security.rst:228
 msgid ":ref:`invalidchars` filter"
-msgstr ""
+msgstr ":ref:`invalidchars` 필터"
 
 #: ../../source/concepts/security.rst:230
 msgid ":php:func:`esc()` function"
-msgstr ""
+msgstr ":php:func:`esc()` 함수"
 
 #: ../../source/concepts/security.rst:231
 #: ../../source/concepts/security.rst:583
@@ -591,23 +591,23 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:233
 msgid "Support for :ref:`content-security-policy`"
-msgstr ""
+msgstr ":ref:`content-security-policy` 지원"
 
 #: ../../source/concepts/security.rst:234
 msgid ":doc:`../database/query_builder`"
-msgstr ""
+msgstr ":doc:`../database/query_builder`"
 
 #: ../../source/concepts/security.rst:235
 msgid ":ref:`Database escape methods <database-queries-escaping>`"
-msgstr ""
+msgstr ":ref:`Database escape methods <database-queries-escaping>`"
 
 #: ../../source/concepts/security.rst:236
 msgid ":ref:`database-queries-query-bindings`"
-msgstr ""
+msgstr ":ref:`database-queries-query-bindings`"
 
 #: ../../source/concepts/security.rst:239
 msgid "A04:2021 Insecure Design"
-msgstr ""
+msgstr "A04:2021 안전하지 않은 설계"
 
 #: ../../source/concepts/security.rst:241
 msgid ""
@@ -651,7 +651,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:263
 msgid "Integrate security language and controls into user stories"
-msgstr ""
+msgstr "보안 언어 및 제어를 사용자 스토리에 통합"
 
 #: ../../source/concepts/security.rst:264
 msgid ""
@@ -674,24 +674,24 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:271
 msgid "Segregate tenants robustly by design throughout all tiers"
-msgstr ""
+msgstr "모든 계층에서 테넌트를 강력하게 분리하도록 설계"
 
 #: ../../source/concepts/security.rst:272
 msgid "Limit resource consumption by user or service"
-msgstr ""
+msgstr "사용자 또는 서비스별 리소스 소비 제한"
 
 #: ../../source/concepts/security.rst:277
 #: ../../source/concepts/security.rst:615
 msgid ":doc:`PHPUnit testing <../testing/overview>`"
-msgstr ""
+msgstr ":doc:`PHPUnit 테스트 <../testing/overview>`"
 
 #: ../../source/concepts/security.rst:282
 msgid "A05:2021 Security Misconfiguration"
-msgstr ""
+msgstr "A05:2021 보안 구성 오류"
 
 #: ../../source/concepts/security.rst:284
 msgid "The application might be vulnerable if the application is:"
-msgstr ""
+msgstr "다음과 같은 경우 애플리케이션이 취약할 수 있습니다:"
 
 #: ../../source/concepts/security.rst:286
 msgid ""
@@ -707,7 +707,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:290
 msgid "Default accounts and their passwords are still enabled and unchanged."
-msgstr ""
+msgstr "기본 계정 및 암호가 여전히 활성화되고 변경되지 않음."
 
 #: ../../source/concepts/security.rst:291
 msgid ""
@@ -748,7 +748,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:308
 msgid "Secure installation processes should be implemented, including:"
-msgstr ""
+msgstr "보안 설치 프로세스를 구현해야 합니다:"
 
 #: ../../source/concepts/security.rst:310
 msgid ""
@@ -784,7 +784,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:323
 msgid "Sending security directives to clients, e.g., Security Headers."
-msgstr ""
+msgstr "클라이언트에 보안 지시문 전송 (예: 보안 헤더)."
 
 #: ../../source/concepts/security.rst:324
 msgid ""
@@ -794,27 +794,27 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:330
 msgid ":ref:`spark config:check <confirming-config-values>` command"
-msgstr ""
+msgstr ":ref:`spark config:check <confirming-config-values>` 명령어"
 
 #: ../../source/concepts/security.rst:331
 msgid ":ref:`spark phpini:check <spark-phpini-check>` command"
-msgstr ""
+msgstr ":ref:`spark phpini:check <spark-phpini-check>` 명령어"
 
 #: ../../source/concepts/security.rst:332
 msgid ":ref:`Production mode <environment-constant>` by default"
-msgstr ""
+msgstr "기본값으로 :ref:`Production mode <environment-constant>`"
 
 #: ../../source/concepts/security.rst:333
 msgid ":ref:`secureheaders` filter"
-msgstr ""
+msgstr ":ref:`secureheaders` 필터"
 
 #: ../../source/concepts/security.rst:336
 msgid "A06:2021 Vulnerable and Outdated Components"
-msgstr ""
+msgstr "A06:2021 취약하고 구식 구성요소"
 
 #: ../../source/concepts/security.rst:338
 msgid "You are likely vulnerable:"
-msgstr ""
+msgstr "다음과 같은 경우 취약할 가능성이 높습니다:"
 
 #: ../../source/concepts/security.rst:340
 msgid ""
@@ -860,7 +860,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:360
 msgid "There should be a patch management process in place to:"
-msgstr ""
+msgstr "패치 관리 프로세스를 실시해야 합니다:"
 
 #: ../../source/concepts/security.rst:362
 msgid ""
@@ -904,11 +904,11 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:386
 msgid "Easy :ref:`app-starter-upgrading` by Composer"
-msgstr ""
+msgstr "Composer를 통한 쉬운 :ref:`app-starter-upgrading`"
 
 #: ../../source/concepts/security.rst:389
 msgid "A07:2021 Identification and Authentication Failures"
-msgstr ""
+msgstr "A07:2021 식별 및 인증 실패"
 
 #: ../../source/concepts/security.rst:391
 msgid ""
@@ -925,7 +925,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:397
 msgid "Permits brute force or other automated attacks."
-msgstr ""
+msgstr "무차별 대입 또는 기타 자동화된 공격을 허용합니다."
 
 #: ../../source/concepts/security.rst:398
 msgid ""
@@ -948,15 +948,15 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:403
 msgid "Has missing or ineffective multi-factor authentication."
-msgstr ""
+msgstr "다중 인증이 없거나 효과적이지 않습니다."
 
 #: ../../source/concepts/security.rst:404
 msgid "Exposes session identifier in the URL."
-msgstr ""
+msgstr "URL에서 세션 식별자를 노출합니다."
 
 #: ../../source/concepts/security.rst:405
 msgid "Reuse session identifier after successful login."
-msgstr ""
+msgstr "성공적인 로그인 후 세션 식별자를 재사용합니다."
 
 #: ../../source/concepts/security.rst:406
 msgid ""
@@ -1017,11 +1017,11 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:434
 msgid ":doc:`Session <../libraries/sessions>` library"
-msgstr ""
+msgstr ":doc:`Session <../libraries/sessions>` 라이브러리"
 
 #: ../../source/concepts/security.rst:439
 msgid "A08:2021 Software and Data Integrity Failures"
-msgstr ""
+msgstr "A08:2021 소프트웨어 및 데이터 무결성 실패"
 
 #: ../../source/concepts/security.rst:441
 msgid ""
@@ -1093,11 +1093,11 @@ msgstr ""
 #: ../../source/concepts/security.rst:479
 #: ../../source/concepts/security.rst:797
 msgid "n/a"
-msgstr ""
+msgstr "해당 없음"
 
 #: ../../source/concepts/security.rst:482
 msgid "A09:2021 Security Logging and Monitoring Failures"
-msgstr ""
+msgstr "A09:2021 보안 로깅 및 모니터링 실패"
 
 #: ../../source/concepts/security.rst:484
 msgid ""
@@ -1115,15 +1115,15 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:490
 msgid "Warnings and errors generate no, inadequate, or unclear log messages."
-msgstr ""
+msgstr "경고 및 오류가 로그 메시지를 생성하지 않거나 부족하거나 불명확합니다."
 
 #: ../../source/concepts/security.rst:491
 msgid "Logs of applications and APIs are not monitored for suspicious activity."
-msgstr ""
+msgstr "애플리케이션 및 API의 로그가 의심스러운 활동에 대해 모니터링되지 않습니다."
 
 #: ../../source/concepts/security.rst:492
 msgid "Logs are only stored locally."
-msgstr ""
+msgstr "로그는 로컬에만 저장됩니다."
 
 #: ../../source/concepts/security.rst:493
 msgid ""
@@ -1205,11 +1205,11 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:530
 msgid ":doc:`Logging <../general/logging>` library"
-msgstr ""
+msgstr ":doc:`Logging <../general/logging>` 라이브러리"
 
 #: ../../source/concepts/security.rst:535
 msgid "A10:2021 Server-Side Request Forgery (SSRF)"
-msgstr ""
+msgstr "A10:2021 서버 측 요청 위조(SSRF)"
 
 #: ../../source/concepts/security.rst:537
 msgid ""
@@ -1236,7 +1236,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:553
 msgid "From Network layer:"
-msgstr ""
+msgstr "네트워크 계층에서:"
 
 #: ../../source/concepts/security.rst:555
 msgid ""
@@ -1252,7 +1252,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:560
 msgid "Hints:"
-msgstr ""
+msgstr "힌트:"
 
 #: ../../source/concepts/security.rst:562
 msgid ""
@@ -1268,23 +1268,23 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:567
 msgid "From Application layer:"
-msgstr ""
+msgstr "애플리케이션 계층에서:"
 
 #: ../../source/concepts/security.rst:569
 msgid "Sanitize and validate all client-supplied input data"
-msgstr ""
+msgstr "모든 클라이언트가 제공한 입력 데이터를 새니타이즈하고 검증하세요"
 
 #: ../../source/concepts/security.rst:570
 msgid "Enforce the URL schema, port, and destination with a positive allow list"
-msgstr ""
+msgstr "긍정 허용 목록으로 URL 스키마, 포트 및 대상을 적용하세요"
 
 #: ../../source/concepts/security.rst:571
 msgid "Do not send raw responses to clients"
-msgstr ""
+msgstr "클라이언트에 원본 응답을 보내지 마세요"
 
 #: ../../source/concepts/security.rst:572
 msgid "Disable HTTP redirections"
-msgstr ""
+msgstr "HTTP 리다이렉션 비활성화"
 
 #: ../../source/concepts/security.rst:573
 msgid ""
@@ -1300,11 +1300,11 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:588
 msgid "OWASP API Security Top 10 2023"
-msgstr ""
+msgstr "OWASP API 보안 Top 10 2023"
 
 #: ../../source/concepts/security.rst:591
 msgid "API1:2023 Broken Object Level Authorization"
-msgstr ""
+msgstr "API1:2023 손상된 객체 수준 인증"
 
 #: ../../source/concepts/security.rst:593
 msgid ""
@@ -1341,7 +1341,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:618
 msgid "API2:2023 Broken Authentication"
-msgstr ""
+msgstr "API2:2023 손상된 인증"
 
 #: ../../source/concepts/security.rst:620
 msgid ""
@@ -1387,11 +1387,11 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:639
 msgid "Use the OWASP Authentication Cheatsheet."
-msgstr ""
+msgstr "OWASP 인증 치트시트를 사용하세요."
 
 #: ../../source/concepts/security.rst:640
 msgid "Where possible, implement multi-factor authentication."
-msgstr ""
+msgstr "가능한 경우 다중 인증을 구현하세요."
 
 #: ../../source/concepts/security.rst:641
 msgid ""
@@ -1416,16 +1416,16 @@ msgstr ""
 #: ../../source/concepts/security.rst:652
 #: ../../source/concepts/security.rst:755
 msgid ":doc:`../incoming/filters`"
-msgstr ""
+msgstr ":doc:`../incoming/filters`"
 
 #: ../../source/concepts/security.rst:653
 #: ../../source/concepts/security.rst:920
 msgid ":ref:`routing-spark-routes` command"
-msgstr ""
+msgstr ":ref:`routing-spark-routes` 명령어"
 
 #: ../../source/concepts/security.rst:659
 msgid "API3:2023 Broken Object Property Level Authorization"
-msgstr ""
+msgstr "API3:2023 손상된 객체 속성 수준 인증"
 
 #: ../../source/concepts/security.rst:661
 msgid ""
@@ -1475,11 +1475,11 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:686
 msgid "Model's :ref:`model-allowed-fields`"
-msgstr ""
+msgstr "모델의 :ref:`model-allowed-fields`"
 
 #: ../../source/concepts/security.rst:691
 msgid "API4:2023 Unrestricted Resource Consumption"
-msgstr ""
+msgstr "API4:2023 제한되지 않은 리소스 소비"
 
 #: ../../source/concepts/security.rst:693
 msgid ""
@@ -1540,7 +1540,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:728
 msgid "API5:2023 Broken Function Level Authorization"
-msgstr ""
+msgstr "API5:2023 손상된 함수 수준 인증"
 
 #: ../../source/concepts/security.rst:730
 msgid ""
@@ -1587,7 +1587,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:760
 msgid "API6:2023 Unrestricted Access to Sensitive Business Flows"
-msgstr ""
+msgstr "API6:2023 민감한 비즈니스 흐름에 대한 제한되지 않은 접근"
 
 #: ../../source/concepts/security.rst:762
 msgid ""
@@ -1599,7 +1599,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:770
 msgid "The mitigation planning should be done in two layers:"
-msgstr ""
+msgstr "완화 계획은 두 계층으로 수행되어야 합니다:"
 
 #: ../../source/concepts/security.rst:772
 msgid ""
@@ -1642,7 +1642,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:788
 msgid "Consider blocking IP addresses of Tor exit nodes and well-known proxies"
-msgstr ""
+msgstr "Tor 종료 노드 및 잘 알려진 프록시의 IP 주소 차단 고려"
 
 #: ../../source/concepts/security.rst:790
 msgid ""
@@ -1654,7 +1654,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:800
 msgid "API7:2023 Server Side Request Forgery"
-msgstr ""
+msgstr "API7:2023 서버 측 요청 위조"
 
 #: ../../source/concepts/security.rst:802
 msgid ""
@@ -1672,7 +1672,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:812
 msgid "Whenever possible, use allow lists of:"
-msgstr ""
+msgstr "가능한 경우 다음의 허용 목록을 사용하세요:"
 
 #: ../../source/concepts/security.rst:814
 msgid ""
@@ -1682,15 +1682,15 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:816
 msgid "URL schemes and ports"
-msgstr ""
+msgstr "URL 스키마 및 포트"
 
 #: ../../source/concepts/security.rst:817
 msgid "Accepted media types for a given functionality"
-msgstr ""
+msgstr "주어진 기능에 대해 허용된 미디어 유형"
 
 #: ../../source/concepts/security.rst:818
 msgid "Disable HTTP redirections."
-msgstr ""
+msgstr "HTTP 리다이렉션을 비활성화하세요."
 
 #: ../../source/concepts/security.rst:819
 msgid ""
@@ -1700,24 +1700,24 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:820
 msgid "Validate and sanitize all client-supplied input data."
-msgstr ""
+msgstr "모든 클라이언트가 제공한 입력 데이터를 검증하고 새니타이즈하세요."
 
 #: ../../source/concepts/security.rst:821
 msgid "Do not send raw responses to clients."
-msgstr ""
+msgstr "클라이언트에 원본 응답을 보내지 마세요."
 
 #: ../../source/concepts/security.rst:829
 #: ../../source/concepts/security.rst:943
 msgid ":doc:`CURLRequest <../libraries/curlrequest>` class"
-msgstr ""
+msgstr ":doc:`CURLRequest <../libraries/curlrequest>` 클래스"
 
 #: ../../source/concepts/security.rst:830
 msgid ":doc:`URI <../libraries/uri>` class"
-msgstr ""
+msgstr ":doc:`URI <../libraries/uri>` 클래스"
 
 #: ../../source/concepts/security.rst:833
 msgid "API8:2023 Security Misconfiguration"
-msgstr ""
+msgstr "API8:2023 보안 구성 오류"
 
 #: ../../source/concepts/security.rst:835
 msgid ""
@@ -1730,7 +1730,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:843
 msgid "The API life cycle should include:"
-msgstr ""
+msgstr "API 수명 주기에는 다음이 포함되어야 합니다:"
 
 #: ../../source/concepts/security.rst:845
 msgid ""
@@ -1753,7 +1753,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:853
 msgid "Furthermore:"
-msgstr ""
+msgstr "더욱이:"
 
 #: ../../source/concepts/security.rst:855
 msgid ""
@@ -1777,11 +1777,11 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:863
 msgid "implement a proper Cross-Origin Resource Sharing (CORS) policy"
-msgstr ""
+msgstr "적절한 CORS(교차 원본 리소스 공유) 정책 구현"
 
 #: ../../source/concepts/security.rst:864
 msgid "include applicable Security Headers"
-msgstr ""
+msgstr "적용 가능한 보안 헤더 포함"
 
 #: ../../source/concepts/security.rst:865
 msgid ""
@@ -1805,15 +1805,15 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:879
 msgid ":ref:`Defined Route Routing <defined-route-routing>`"
-msgstr ""
+msgstr ":ref:`Defined Route Routing <defined-route-routing>`"
 
 #: ../../source/concepts/security.rst:880
 msgid ":ref:`auto-routing-improved`"
-msgstr ""
+msgstr ":ref:`auto-routing-improved`"
 
 #: ../../source/concepts/security.rst:884
 msgid "API9:2023 Improper Inventory Management"
-msgstr ""
+msgstr "API9:2023 부적절한 인벤토리 관리"
 
 #: ../../source/concepts/security.rst:886
 msgid ""
@@ -1854,7 +1854,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:905
 msgid "Make API documentation available only to those authorized to use the API."
-msgstr ""
+msgstr "API 문서를 API 사용을 위해 인증된 사람들만 사용할 수 있도록 하세요."
 
 #: ../../source/concepts/security.rst:906
 msgid ""
@@ -1882,7 +1882,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:923
 msgid "API10:2023 Unsafe Consumption of APIs"
-msgstr ""
+msgstr "API10:2023 안전하지 않은 API 소비"
 
 #: ../../source/concepts/security.rst:925
 msgid ""
@@ -1894,7 +1894,7 @@ msgstr ""
 
 #: ../../source/concepts/security.rst:933
 msgid "When evaluating service providers, assess their API security posture."
-msgstr ""
+msgstr "서비스 제공자를 평가할 때 API 보안 태세를 평가하세요."
 
 #: ../../source/concepts/security.rst:934
 msgid ""
