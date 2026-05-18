@@ -18,32 +18,32 @@ msgstr ""
 
 #: ../../source/concepts/goals.rst:3
 msgid "Design and Architectural Goals"
-msgstr "설계 및 아키텍처 목표"
+msgstr ""
 
 #: ../../source/concepts/goals.rst:5
 msgid "Our goal for CodeIgniter is maximum performance, capability, and flexibility in the smallest, lightest possible package."
-msgstr "CodeIgniter의 목표는 최대 성능, 기능성 및 유연성을 최소한의 작은 패키지로 제공하는 것입니다."
+msgstr ""
 
 #: ../../source/concepts/goals.rst:8
 msgid "To meet this goal we are committed to benchmarking, re-factoring, and simplifying at every step of the development process, rejecting anything that doesn't further the stated objective."
-msgstr "이 목표를 달성하기 위해 우리는 개발 프로세스의 모든 단계에서 벤치마킹, 리팩토링, 단순화를 수행하며, 명시된 목표를 달성하지 못하는 모든 것을 거부합니다."
+msgstr ""
 
 #: ../../source/concepts/goals.rst:12
 msgid "From a technical and architectural standpoint, CodeIgniter was created with the following objectives:"
-msgstr "기술적, 아키텍처적 관점에서 CodeIgniter는 다음의 목표를 가지고 만들어졌습니다:"
+msgstr ""
 
 #: ../../source/concepts/goals.rst:15
 msgid "**Dynamic Instantiation.** In CodeIgniter, components are loaded and routines executed only when requested, rather than globally. No assumptions are made by the system regarding what may be needed beyond the minimal core resources, so the system is very light-weight by default. The events, as triggered by the HTTP request, and the controllers and views you design will determine what is invoked."
-msgstr "**동적 인스턴스 생성.** CodeIgniter에서는 글로벌 방식이 아닌 요청할 때만 컴포넌트가 로드되고 루틴이 실행됩니다. 시스템은 최소한의 핵심 리소스 외에 필요한 것에 대해 가정하지 않으므로 기본적으로 매우 가깁니다. HTTP 요청에 의해 트리거된 이벤트와 설계한 컨트롤러 및 뷰가 호출되는 것을 결정합니다."
+msgstr ""
 
 #: ../../source/concepts/goals.rst:21
 msgid "**Loose Coupling.** Coupling is the degree to which components of a system rely on each other. The less components depend on each other the more reusable and flexible the system becomes. Our goal was a very loosely coupled system."
-msgstr "**느슨한 결합.** 결합도는 시스템의 컴포넌트들이 서로에게 의존하는 정도입니다. 컴포넌트들이 서로에게 덜 의존할수록 시스템은 더욱 재사용 가능하고 유연해집니다. 우리의 목표는 매우 느슨하게 결합된 시스템입니다."
+msgstr ""
 
 #: ../../source/concepts/goals.rst:25
 msgid "**Component Singularity.** Singularity is the degree to which components have a narrowly focused purpose. In CodeIgniter, each class and its functions are highly autonomous in order to allow maximum usefulness."
-msgstr "**컴포넌트 단일성.** 단일성은 컴포넌트가 좁게 집중된 목적을 가지는 정도입니다. CodeIgniter에서는 최대의 유용성을 위해 각 클래스와 그 함수들이 고도로 자율적입니다."
+msgstr ""
 
 #: ../../source/concepts/goals.rst:30
 msgid "CodeIgniter is a dynamically instantiated, loosely coupled system with high component singularity. It strives for simplicity, flexibility, and high performance in a small footprint package."
-msgstr "CodeIgniter는 동적으로 인스턴스가 생성되고, 느슨하게 결합되며, 높은 컴포넌트 단일성을 가진 시스템입니다. 작은 풋프린트 패키지에서 단순성, 유연성, 높은 성능을 추구합니다."
+msgstr ""
