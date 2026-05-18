@@ -12,141 +12,159 @@ msgstr ""
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../source/general/configuration.rst:3
 msgid "Configuration"
-msgstr ""
+msgstr "구성"
 
 #: ../../source/general/configuration.rst:5
 msgid ""
-"Every framework uses configuration files to define numerous parameters "
-"and initial settings. CodeIgniter configuration files define simple "
-"classes where the required settings are public properties."
+"Every framework uses configuration files to define numerous parameters and "
+"initial settings. CodeIgniter configuration files define simple classes "
+"where the required settings are public properties."
 msgstr ""
+"모든 프레임워크는 구성 파일을 사용하여 수많은 매개변수와 초기 설정을 정의합니다. CodeIgniter 구성 파일은 필수 설정이 공용 "
+"속성인 간단한 클래스를 정의합니다."
 
 #: ../../source/general/configuration.rst:9
 msgid ""
 "Unlike many other frameworks, CodeIgniter configurable items aren't "
 "contained in a single file. Instead, each class that needs configurable "
-"items will have a configuration file with the same name as the class that"
-" uses it. You will find the application configuration files in the "
+"items will have a configuration file with the same name as the class that "
+"uses it. You will find the application configuration files in the "
 "**app/Config** folder."
 msgstr ""
+"다른 많은 프레임워크와 달리 CodeIgniter 구성 가능 항목은 단일 파일에 포함되지 않습니다. 대신 구성 가능한 항목이 필요한 각 "
+"클래스에는 해당 항목을 사용하는 클래스와 동일한 이름의 구성 파일이 있습니다. **app/Config** 폴더에서 애플리케이션 구성 "
+"파일을 찾을 수 있습니다."
 
 #: ../../source/general/configuration.rst:20
 msgid "What are Configuration Classes?"
-msgstr ""
+msgstr "구성 클래스란 무엇입니까?"
 
 #: ../../source/general/configuration.rst:22
 msgid ""
-"Configuration classes are utilized to define system default configuration"
-" values. System configuration values are typically *static*. "
-"Configuration classes are intended to retain the settings that configure "
-"how the application operates, rather than responding to each user's "
-"individual settings."
+"Configuration classes are utilized to define system default configuration "
+"values. System configuration values are typically *static*. Configuration "
+"classes are intended to retain the settings that configure how the "
+"application operates, rather than responding to each user's individual "
+"settings."
 msgstr ""
+"구성 클래스는 시스템 기본 구성 값을 정의하는 데 사용됩니다. 시스템 구성 값은 일반적으로 *static*\\ 입니다. 구성 클래스는 각"
+" 사용자의 개별 설정에 응답하는 대신 애플리케이션 작동 방식을 구성하는 설정을 유지하기 위한 것입니다."
 
 #: ../../source/general/configuration.rst:27
 msgid ""
 "It is not recommended to alter values set during the instantiation of a "
 "configuration class later during execution. In other words, it is "
-"recommended to treat configuration classes as immutable or readonly "
-"classes. This is especially important if you utilize :ref:`factories-"
-"config-caching`."
+"recommended to treat configuration classes as immutable or readonly classes."
+" This is especially important if you utilize :ref:`factories-config-"
+"caching`."
 msgstr ""
+"나중에 실행하는 동안 구성 클래스를 인스턴스화하는 동안 설정된 값을 변경하는 것은 권장되지 않습니다. 즉, 구성 클래스를 불변 클래스 "
+"또는 읽기 전용 클래스로 처리하는 것이 좋습니다. :ref:`factories-config-caching`\\ 을 활용하는 경우 이는 "
+"특히 중요합니다."
 
 #: ../../source/general/configuration.rst:32
 msgid ""
-"Configuration values can be hard-coded in the class files or obtained "
-"from environment variables at instantiation."
-msgstr ""
+"Configuration values can be hard-coded in the class files or obtained from "
+"environment variables at instantiation."
+msgstr "구성 값은 클래스 파일에 하드 코딩되거나 인스턴스화 시 환경 변수에서 얻을 수 있습니다."
 
 #: ../../source/general/configuration.rst:36
 msgid "Working with Configuration Files"
-msgstr ""
+msgstr "구성 파일 작업"
 
 #: ../../source/general/configuration.rst:39
 msgid "Getting a Config Object"
-msgstr ""
+msgstr "구성 개체 가져오기"
 
 #: ../../source/general/configuration.rst:41
 msgid ""
 "You can access configuration files for your classes in several different "
 "ways."
-msgstr ""
+msgstr "여러 가지 방법으로 클래스의 구성 파일에 액세스할 수 있습니다."
 
 #: ../../source/general/configuration.rst:44
 msgid "new keyword"
-msgstr ""
+msgstr "새 키워드"
 
 #: ../../source/general/configuration.rst:46
 msgid "By using the ``new`` keyword to create an instance:"
-msgstr ""
+msgstr "``new`` 키워드를 사용하여 인스턴스를 생성합니다."
 
 #: ../../source/general/configuration.rst:53
 msgid "config()"
-msgstr ""
+msgstr "구성()"
 
 #: ../../source/general/configuration.rst:55
 msgid "By using the :php:func:`config()` function:"
-msgstr ""
+msgstr ":php:func:`config()` 함수를 사용하여:"
 
 #: ../../source/general/configuration.rst:59
 msgid ""
-"If no namespace is provided, it will look for the file in the "
-"**app/Config** folder first, and if not found, look for in the **Config**"
-" folder in all defined namespaces."
+"If no namespace is provided, it will look for the file in the **app/Config**"
+" folder first, and if not found, look for in the **Config** folder in all "
+"defined namespaces."
 msgstr ""
+"네임스페이스가 제공되지 않으면 먼저 **app/Config** 폴더에서 파일을 찾고, 찾지 못한 경우 정의된 모든 네임스페이스의 "
+"**Config** 폴더에서 찾습니다."
 
 #: ../../source/general/configuration.rst:63
 msgid ""
 "All of the configuration files that ship with CodeIgniter are namespaced "
-"with ``Config``. Using this namespace in your application will provide "
-"the best performance since it knows exactly where to find the files."
+"with ``Config``. Using this namespace in your application will provide the "
+"best performance since it knows exactly where to find the files."
 msgstr ""
+"CodeIgniter와 함께 제공되는 모든 구성 파일은 ``Config``\\ 으로 네임스페이스가 지정됩니다. 애플리케이션에서 이 "
+"네임스페이스를 사용하면 파일을 찾을 위치를 정확히 알 수 있으므로 최상의 성능을 제공할 수 있습니다."
 
 #: ../../source/general/configuration.rst:67
 msgid ""
-"Prior to v4.4.0, ``config()`` finds the file in **app/Config/** when "
-"there is a class with the same shortname, even if you specify a fully "
-"qualified class name like ``config(\\Acme\\Blog\\Config\\Blog::class)``. "
-"This behavior has been fixed in v4.4.0, and returns the specified "
-"instance."
+"Prior to v4.4.0, ``config()`` finds the file in **app/Config/** when there "
+"is a class with the same shortname, even if you specify a fully qualified "
+"class name like ``config(\\Acme\\Blog\\Config\\Blog::class)``. This behavior"
+" has been fixed in v4.4.0, and returns the specified instance."
 msgstr ""
+"v4.4.0 이전에는 ``config(\\Acme\\Blog\\Config\\Blog::class)``\\ 와 같은 정규화된 클래스 "
+"이름을 지정하더라도 동일한 단축 이름을 가진 클래스가 있는 경우 ``config()``\\ 이 **app/Config/**\\ 에서 "
+"파일을 찾습니다. 이 동작은 v4.4.0에서 수정되었으며 지정된 인스턴스를 반환합니다."
 
 #: ../../source/general/configuration.rst:73
 msgid "Getting a Config Property"
-msgstr ""
+msgstr "구성 속성 가져오기"
 
 #: ../../source/general/configuration.rst:75
 msgid ""
-"All configuration object properties are public, so you access the "
-"settings like any other property:"
-msgstr ""
+"All configuration object properties are public, so you access the settings "
+"like any other property:"
+msgstr "모든 구성 개체 속성은 공개되므로 다른 속성과 마찬가지로 설정에 액세스할 수 있습니다."
 
 #: ../../source/general/configuration.rst:80
 msgid "Creating Configuration Files"
-msgstr ""
+msgstr "구성 파일 생성"
 
 #: ../../source/general/configuration.rst:82
 msgid ""
 "When you need a new configuration, first you create a new file at your "
-"desired location. The default file location (recommended for most cases) "
-"is **app/Config**."
+"desired location. The default file location (recommended for most cases) is "
+"**app/Config**."
 msgstr ""
+"새 구성이 필요한 경우 먼저 원하는 위치에 새 파일을 만듭니다. 기본 파일 위치(대부분의 경우 권장됨)는 **app/Config**\\ "
+"입니다."
 
 #: ../../source/general/configuration.rst:85
 msgid ""
 "You can put configuration files in any **Config** folder by using a "
 "different namespace."
-msgstr ""
+msgstr "다른 네임스페이스를 사용하여 모든 **Config** 폴더에 구성 파일을 넣을 수 있습니다."
 
 #: ../../source/general/configuration.rst:87
 msgid ""
@@ -154,37 +172,41 @@ msgid ""
 "``CodeIgniter\\Config\\BaseConfig`` to ensure that it can receive "
 "environment-specific settings."
 msgstr ""
+"클래스는 적절한 네임스페이스를 사용해야 하며 환경별 설정을 수신할 수 있도록 "
+"``CodeIgniter\\Config\\BaseConfig``\\ 을 확장해야 합니다."
 
 #: ../../source/general/configuration.rst:90
 msgid ""
 "Define the class and fill it with public properties that represent your "
 "settings:"
-msgstr ""
+msgstr "클래스를 정의하고 설정을 나타내는 공용 속성으로 채웁니다."
 
 #: ../../source/general/configuration.rst:95
 msgid "Environment Variables"
-msgstr ""
+msgstr "환경 변수"
 
 #: ../../source/general/configuration.rst:97
 msgid ""
-"One of today's best practices for application setup is to use Environment"
-" Variables. One reason for this is that Environment Variables are easy to"
-" change between deploys without changing any code. Configuration can "
-"change a lot across deploys, but code does not. For instance, multiple "
-"environments, such as the developer's local machine and the production "
-"server, usually need different configuration values for each particular "
-"setup."
+"One of today's best practices for application setup is to use Environment "
+"Variables. One reason for this is that Environment Variables are easy to "
+"change between deploys without changing any code. Configuration can change a"
+" lot across deploys, but code does not. For instance, multiple environments,"
+" such as the developer's local machine and the production server, usually "
+"need different configuration values for each particular setup."
 msgstr ""
+"오늘날 애플리케이션 설정에 대한 모범 사례 중 하나는 환경 변수를 사용하는 것입니다. 그 이유 중 하나는 코드를 변경하지 않고도 배포 "
+"간에 환경 변수를 쉽게 변경할 수 있기 때문입니다. 구성은 배포 전반에 걸쳐 많이 변경될 수 있지만 코드는 그렇지 않습니다. 예를 들어 "
+"개발자의 로컬 시스템 및 프로덕션 서버와 같은 여러 환경에는 일반적으로 각 특정 설정에 대해 서로 다른 구성 값이 필요합니다."
 
 #: ../../source/general/configuration.rst:99
 msgid ""
 "Environment Variables should also be used for anything private such as "
 "passwords, API keys, or other sensitive data."
-msgstr ""
+msgstr "환경 변수는 비밀번호, API 키 또는 기타 민감한 데이터와 같은 개인 정보에도 사용해야 합니다."
 
 #: ../../source/general/configuration.rst:104
 msgid "Dotenv File"
-msgstr ""
+msgstr "Dotenv 파일"
 
 #: ../../source/general/configuration.rst:106
 msgid ""
@@ -192,129 +214,151 @@ msgid ""
 "using a \"dotenv\" file. The term comes from the file name, which starts "
 "with a dot before the text \"env\"."
 msgstr ""
+"CodeIgniter를 사용하면 \"dotenv\" 파일을 사용하여 환경 변수를 간단하고 쉽게 설정할 수 있습니다. 이 용어는 "
+"\"env\"라는 텍스트 앞에 점으로 시작하는 파일 이름에서 유래되었습니다."
 
 #: ../../source/general/configuration.rst:109
 msgid "Creating Dotenv File"
-msgstr ""
+msgstr "Dotenv 파일 생성"
 
 #: ../../source/general/configuration.rst:111
 msgid ""
 "CodeIgniter expects the **.env** file to be at the root of your project "
-"alongside the **app** directories. There is a template file distributed "
-"with CodeIgniter that's located at the project root named **env** (Notice"
-" there's no dot (``.``) at the start?)."
+"alongside the **app** directories. There is a template file distributed with"
+" CodeIgniter that's located at the project root named **env** (Notice "
+"there's no dot (``.``) at the start?)."
 msgstr ""
+"CodeIgniter는 **.env** 파일이 **app** 디렉터리와 함께 프로젝트 루트에 있을 것으로 예상합니다. **env**\\ "
+"라는 프로젝트 루트에 있는 CodeIgniter와 함께 배포되는 템플릿 파일이 있습니다. (시작 부분에 점(``.``)이 없습니다.)"
 
 #: ../../source/general/configuration.rst:115
 msgid ""
-"It has a large collection of variables your project might use that have "
-"been assigned empty, dummy, or default values. You can use this file as a"
-" starting place for your application by either renaming the template to "
+"It has a large collection of variables your project might use that have been"
+" assigned empty, dummy, or default values. You can use this file as a "
+"starting place for your application by either renaming the template to "
 "**.env**, or by making a copy of it named **.env**."
 msgstr ""
+"여기에는 빈 값, 더미 값 또는 기본값이 할당되어 프로젝트에서 사용할 수 있는 대규모 변수 컬렉션이 있습니다. 템플릿 이름을 "
+"**.env**\\ 으로 바꾸거나 **.env**\\ 이라는 이름의 복사본을 만들어 이 파일을 애플리케이션의 시작 위치로 사용할 수 "
+"있습니다."
 
 #: ../../source/general/configuration.rst:119
 msgid ""
-"Make sure the **.env** file is NOT tracked by your version control "
-"system. For *git* that means adding it to **.gitignore**. Failure to do "
-"so could result in sensitive credentials being exposed to the public."
+"Make sure the **.env** file is NOT tracked by your version control system. "
+"For *git* that means adding it to **.gitignore**. Failure to do so could "
+"result in sensitive credentials being exposed to the public."
 msgstr ""
+"버전 제어 시스템에서 **.env** 파일을 추적하지 않는지 확인하세요. *git*\\ 의 경우 이는 **.gitignore**\\ 에 "
+"추가하는 것을 의미합니다. 그렇지 않으면 민감한 자격 증명이 대중에게 노출될 수 있습니다."
 
 #: ../../source/general/configuration.rst:122
 msgid "Setting Variables"
-msgstr ""
+msgstr "변수 설정"
 
 #: ../../source/general/configuration.rst:124
 msgid ""
-"Settings are stored in **.env** files as a simple a collection of "
-"name/value pairs separated by an equal sign. ::"
-msgstr ""
+"Settings are stored in **.env** files as a simple a collection of name/value"
+" pairs separated by an equal sign. ::"
+msgstr "설정은 등호로 구분된 이름/값 쌍의 간단한 컬렉션으로 **.env** 파일에 저장됩니다. ::"
 
 #: ../../source/general/configuration.rst:131
 msgid ""
-"When your application runs, **.env** will be loaded automatically, and "
-"the variables put into the environment. If a variable already exists in "
-"the environment, it will NOT be overwritten."
+"When your application runs, **.env** will be loaded automatically, and the "
+"variables put into the environment. If a variable already exists in the "
+"environment, it will NOT be overwritten."
 msgstr ""
+"애플리케이션이 실행되면 **.env**\\ 이 자동으로 로드되고 변수가 환경에 배치됩니다. 변수가 환경에 이미 존재하는 경우 덮어쓰이지 "
+"않습니다."
 
 #: ../../source/general/configuration.rst:136
 msgid "Getting Variables"
-msgstr ""
+msgstr "변수 얻기"
 
 #: ../../source/general/configuration.rst:138
 msgid ""
-"The loaded environment variables are accessed using any of the following:"
-" ``getenv()``, ``$_SERVER``, or ``$_ENV``."
-msgstr ""
+"The loaded environment variables are accessed using any of the following: "
+"``getenv()``, ``$_SERVER``, or ``$_ENV``."
+msgstr "로드된 환경 변수는 ``getenv()``, ``$_SERVER`` 또는 ``$_ENV`` 중 하나를 사용하여 액세스됩니다."
 
 #: ../../source/general/configuration.rst:143
 msgid ""
-"Note that your settings from the **.env** file are added to ``$_SERVER`` "
-"and ``$_ENV``. As a side effect, this means that if your CodeIgniter "
+"Note that your settings from the **.env** file are added to ``$_SERVER`` and"
+" ``$_ENV``. As a side effect, this means that if your CodeIgniter "
 "application is (for example) generating a ``var_dump($_ENV)`` or "
-"``phpinfo()`` (for debugging or other valid reasons), or a detailed error"
-" report in the ``development`` environment is shown, **your secure "
+"``phpinfo()`` (for debugging or other valid reasons), or a detailed error "
+"report in the ``development`` environment is shown, **your secure "
 "credentials are publicly exposed**."
 msgstr ""
+"**.env** 파일의 설정이 ``$_SERVER`` 및 ``$_ENV``\\ 에 추가됩니다. 부작용으로 이는 CodeIgniter "
+"애플리케이션이 (예를 들어) ``var_dump($_ENV)`` 또는 ``phpinfo()``(디버깅 또는 기타 유효한 이유로)를 "
+"생성하거나 ``development`` 환경의 자세한 오류 보고서가 표시되는 경우 **your secure credentials are "
+"publicly exposed**\\ 을 의미합니다."
 
 #: ../../source/general/configuration.rst:146
 msgid "Nesting Variables"
-msgstr ""
+msgstr "중첩 변수"
 
 #: ../../source/general/configuration.rst:148
 #, python-brace-format
 msgid ""
-"To save on typing, you can reuse variables that you've already specified "
-"in the file by wrapping the variable name within ``${...}``:"
-msgstr ""
+"To save on typing, you can reuse variables that you've already specified in "
+"the file by wrapping the variable name within ``${...}``:"
+msgstr "입력 시간을 절약하려면 ``${...}`` 내에 변수 이름을 래핑하여 파일에 이미 지정한 변수를 재사용할 수 있습니다."
 
 #: ../../source/general/configuration.rst:158
 msgid "Namespaced Variables"
-msgstr ""
+msgstr "네임스페이스 변수"
 
 #: ../../source/general/configuration.rst:160
 msgid ""
-"There will be times when you will have several variables with the same "
-"name. The system needs a way of knowing what the correct setting should "
-"be. This problem is solved by \"*namespacing*\" the variables."
+"There will be times when you will have several variables with the same name."
+" The system needs a way of knowing what the correct setting should be. This "
+"problem is solved by \"*namespacing*\" the variables."
 msgstr ""
+"동일한 이름을 가진 여러 변수가 있을 때가 있습니다. 시스템에는 올바른 설정이 무엇인지 알 수 있는 방법이 필요합니다. 이 문제는 변수를"
+" \"*namespacing*\"하여 해결됩니다."
 
 #: ../../source/general/configuration.rst:164
 msgid ""
-"Namespaced variables use a dot notation to qualify variable names so they"
-" will be unique when incorporated into the environment. This is done by "
+"Namespaced variables use a dot notation to qualify variable names so they "
+"will be unique when incorporated into the environment. This is done by "
 "including a distinguishing prefix followed by a dot (.), and then the "
 "variable name itself."
 msgstr ""
+"네임스페이스 변수는 점 표기법을 사용하여 변수 이름을 한정하므로 환경에 통합될 때 고유하게 됩니다. 이는 식별 접두사, 점(.), 변수 "
+"이름 자체를 포함하여 수행됩니다."
 
 #: ../../source/general/configuration.rst:184
 msgid "Namespace Separator"
-msgstr ""
+msgstr "네임스페이스 구분자"
 
 #: ../../source/general/configuration.rst:186
 msgid ""
-"Some environments, e.g., Docker, CloudFormation, do not permit variable "
-"name with dots (``.``). In such case, since v4.1.5, you could also use "
+"Some environments, e.g., Docker, CloudFormation, do not permit variable name"
+" with dots (``.``). In such case, since v4.1.5, you could also use "
 "underscores (``_``) as a separator."
 msgstr ""
+"Docker, CloudFormation과 같은 일부 환경에서는 점(``.``)이 포함된 변수 이름을 허용하지 않습니다. 이 경우 "
+"v4.1.5부터 밑줄(``_``)을 구분 기호로 사용할 수도 있습니다."
 
 #: ../../source/general/configuration.rst:197
 msgid "Configuration Classes and Environment Variables"
-msgstr ""
+msgstr "구성 클래스 및 환경 변수"
 
 #: ../../source/general/configuration.rst:199
 msgid ""
 "When you instantiate a configuration class, any *namespaced* environment "
 "variables are considered for merging into the configuration object's "
 "properties."
-msgstr ""
+msgstr "구성 클래스를 인스턴스화할 때 구성 개체의 속성에 병합하기 위해 모든 *namespaced* 환경 변수가 고려됩니다."
 
 #: ../../source/general/configuration.rst:202
 msgid ""
-"You cannot add a new property by setting environment variables, nor "
-"change a scalar value to an array. See :ref:`env-var-replacements-for-"
-"data`."
+"You cannot add a new property by setting environment variables, nor change a"
+" scalar value to an array. See :ref:`env-var-replacements-for-data`."
 msgstr ""
+"환경 변수를 설정하여 새 속성을 추가하거나 스칼라 값을 배열로 변경할 수 없습니다. :ref:`env-var-replacements-"
+"for-data`\\ 을 참조하세요."
 
 #: ../../source/general/configuration.rst:205
 #: ../../source/general/configuration.rst:317
@@ -323,153 +367,176 @@ msgid ""
 "class. So it will not work with a few files in the **app/Config** folder "
 "that do not extends the class."
 msgstr ""
+"이 기능은 ``CodeIgniter\\Config\\BaseConfig`` 클래스에서 구현됩니다. 따라서 클래스를 확장하지 않는 "
+"**app/Config** 폴더의 일부 파일에서는 작동하지 않습니다."
 
 #: ../../source/general/configuration.rst:209
 msgid ""
-"If the prefix of a namespaced variable exactly matches the namespace of "
-"the configuration class, then the trailing part of the setting (after the"
-" dot) is treated as a configuration property. If it matches an existing "
-"configuration property, the environment variable's value will replace the"
-" corresponding value from the configuration file. If there is no match, "
-"the configuration class properties are left unchanged. In this usage, the"
-" prefix must be the full (case-sensitive) namespace of the class."
+"If the prefix of a namespaced variable exactly matches the namespace of the "
+"configuration class, then the trailing part of the setting (after the dot) "
+"is treated as a configuration property. If it matches an existing "
+"configuration property, the environment variable's value will replace the "
+"corresponding value from the configuration file. If there is no match, the "
+"configuration class properties are left unchanged. In this usage, the prefix"
+" must be the full (case-sensitive) namespace of the class."
 msgstr ""
+"네임스페이스 변수의 접두사가 구성 클래스의 네임스페이스와 정확히 일치하는 경우 설정의 후행 부분(점 뒤)이 구성 속성으로 처리됩니다. "
+"기존 구성 속성과 일치하는 경우 환경 변수 값이 구성 파일의 해당 값을 대체합니다. 일치하는 항목이 없으면 구성 클래스 속성은 변경되지 "
+"않고 그대로 유지됩니다. 이 사용법에서 접두사는 클래스의 전체(대소문자 구분) 네임스페이스여야 합니다."
 
 #: ../../source/general/configuration.rst:221
 msgid ""
 "Both the namespace prefix and the property name are case-sensitive. They "
-"must exactly match the full namespace and property names as defined in "
-"the configuration class file."
+"must exactly match the full namespace and property names as defined in the "
+"configuration class file."
 msgstr ""
+"네임스페이스 접두사와 속성 이름은 모두 대소문자를 구분합니다. 구성 클래스 파일에 정의된 전체 네임스페이스 및 속성 이름과 정확히 "
+"일치해야 합니다."
 
 #: ../../source/general/configuration.rst:223
 msgid ""
 "The same holds for a *short prefix*, which is a namespace using only the "
 "lowercase version of the configuration class name. If the short prefix "
-"matches the class name, the value from **.env** replaces the "
-"configuration file value."
+"matches the class name, the value from **.env** replaces the configuration "
+"file value."
 msgstr ""
+"구성 클래스 이름의 소문자 버전만 사용하는 네임스페이스인 *short prefix*\\ 의 경우에도 마찬가지입니다. 짧은 접두사가 클래스"
+" 이름과 일치하면 **.env**\\ 의 값이 구성 파일 값을 대체합니다."
 
 #: ../../source/general/configuration.rst:232
 msgid "Since v4.1.5, you can also write with underscores::"
-msgstr ""
+msgstr "v4.1.5부터는 밑줄로도 작성할 수 있습니다."
 
 #: ../../source/general/configuration.rst:237
 msgid ""
-"When using the *short prefix* the property names must still exactly match"
-" the class defined name."
-msgstr ""
+"When using the *short prefix* the property names must still exactly match "
+"the class defined name."
+msgstr "*short prefix*\\ 을 사용할 때 속성 이름은 클래스에 정의된 이름과 정확히 일치해야 합니다."
 
 #: ../../source/general/configuration.rst:242
 msgid "Environment Variables as Replacements for Data"
-msgstr ""
+msgstr "데이터를 대체하는 환경 변수"
 
 #: ../../source/general/configuration.rst:244
 msgid ""
-"It is very important to always remember that environment variables "
-"contained in your **.env** are **only replacements for existing scalar "
-"values**."
+"It is very important to always remember that environment variables contained"
+" in your **.env** are **only replacements for existing scalar values**."
 msgstr ""
+"**.env**\\ 에 포함된 환경 변수는 **only replacements for existing scalar values**\\ "
+"이라는 점을 항상 기억하는 것이 매우 중요합니다."
 
 #: ../../source/general/configuration.rst:247
 msgid ""
-"Simply put, you can change only the property's scalar value that exists "
-"in the Config class by setting it in your **.env**."
-msgstr ""
+"Simply put, you can change only the property's scalar value that exists in "
+"the Config class by setting it in your **.env**."
+msgstr "간단히 말해서, **.env**\\ 에서 설정하여 Config 클래스에 존재하는 속성의 스칼라 값만 변경할 수 있습니다."
 
 #: ../../source/general/configuration.rst:250
 msgid "You cannot add a property that is not defined in the Config class."
-msgstr ""
+msgstr "Config 클래스에 정의되지 않은 속성은 추가할 수 없습니다."
 
 #: ../../source/general/configuration.rst:251
 msgid "You cannot change a scalar value in a property to an array."
-msgstr ""
+msgstr "속성의 스칼라 값을 배열로 변경할 수 없습니다."
 
 #: ../../source/general/configuration.rst:252
 msgid "You cannot add an element to an existing array."
-msgstr ""
+msgstr "기존 배열에는 요소를 추가할 수 없습니다."
 
 #: ../../source/general/configuration.rst:254
 msgid ""
-"For example, you cannot just put ``app.myNewConfig = foo`` in your "
-"**.env** and expect your ``Config\\App`` to magically have that property "
-"and value at run time."
+"For example, you cannot just put ``app.myNewConfig = foo`` in your **.env** "
+"and expect your ``Config\\App`` to magically have that property and value at"
+" run time."
 msgstr ""
+"예를 들어, ``app.myNewConfig = foo``\\ 을 **.env**\\ 에 넣고 ``Config\\App``\\ 가 "
+"마술처럼 런타임에 해당 속성과 값을 갖기를 기대할 수는 없습니다."
 
 #: ../../source/general/configuration.rst:257
 msgid ""
 "When you have the property ``$default = ['encrypt' => false]`` in your "
-"``Config\\Database``, you cannot change the ``encrypt`` value to an array"
-" even if you put ``database.default.encrypt.ssl_verify = true`` in your "
+"``Config\\Database``, you cannot change the ``encrypt`` value to an array "
+"even if you put ``database.default.encrypt.ssl_verify = true`` in your "
 "**.env**. If you want to do like that, see :ref:`Database Configuration "
 "<database-config-with-env-file>`."
 msgstr ""
+"``Config\\Database``\\ 에 ``$default = ['encrypt' => false]`` 속성이 있으면 "
+"**.env**\\ 에 ``database.default.encrypt.ssl_verify = true``\\ 을 넣어도 "
+"``encrypt`` 값을 배열로 변경할 수 없습니다. 그렇게 하고 싶다면 :ref:`Database Configuration "
+"<database-config-with-env-file>`\\ 을 참조하세요."
 
 #: ../../source/general/configuration.rst:264
 msgid "Treating Environment Variables as Arrays"
-msgstr ""
+msgstr "환경 변수를 배열로 처리"
 
 #: ../../source/general/configuration.rst:266
 msgid ""
-"A namespaced environment variable can be further treated as an array. If "
-"the prefix matches the configuration class, then the remainder of the "
+"A namespaced environment variable can be further treated as an array. If the"
+" prefix matches the configuration class, then the remainder of the "
 "environment variable name is treated as an array reference if it also "
 "contains a dot."
 msgstr ""
+"네임스페이스 환경 변수는 추가로 배열로 처리될 수 있습니다. 접두사가 구성 클래스와 일치하는 경우 환경 변수 이름의 나머지 부분에도 점이"
+" 포함되어 있으면 배열 참조로 처리됩니다."
 
 #: ../../source/general/configuration.rst:280
 msgid ""
 "If this was referring to a SimpleConfig configuration object, the above "
 "example would be treated as:"
-msgstr ""
+msgstr "이것이 SimpleConfig 구성 객체를 참조하는 경우 위 예는 다음과 같이 처리됩니다."
 
 #: ../../source/general/configuration.rst:284
 msgid "Any other elements of the ``$address`` property would be unchanged."
-msgstr ""
+msgstr "``$address`` 속성의 다른 요소는 변경되지 않습니다."
 
 #: ../../source/general/configuration.rst:286
 msgid ""
 "You can also use the array property name as a prefix. If the environment "
 "file held the following then the result would be the same as above."
-msgstr ""
+msgstr "배열 속성 이름을 접두사로 사용할 수도 있습니다. 환경 파일에 다음이 포함되어 있으면 결과는 위와 동일합니다."
 
 #: ../../source/general/configuration.rst:296
 msgid "Handling Different Environments"
-msgstr ""
+msgstr "다양한 환경 처리"
 
 #: ../../source/general/configuration.rst:298
 msgid ""
-"Configuring multiple environments is easily accomplished by using a "
-"separate **.env** file with values modified to meet that environment's "
-"needs."
-msgstr ""
+"Configuring multiple environments is easily accomplished by using a separate"
+" **.env** file with values modified to meet that environment's needs."
+msgstr "해당 환경의 요구 사항에 맞게 값이 수정된 별도의 **.env** 파일을 사용하면 여러 환경을 쉽게 구성할 수 있습니다."
 
 #: ../../source/general/configuration.rst:300
 msgid ""
-"The file should not contain every possible setting for every "
-"configuration class used by the application. In truth, it should include "
-"only those items that are specific to the environment or are sensitive "
-"details like passwords and API keys and other information that should not"
-" be exposed. But anything that changes between deployments is fair-game."
+"The file should not contain every possible setting for every configuration "
+"class used by the application. In truth, it should include only those items "
+"that are specific to the environment or are sensitive details like passwords"
+" and API keys and other information that should not be exposed. But anything"
+" that changes between deployments is fair-game."
 msgstr ""
+"파일에는 애플리케이션에서 사용하는 모든 구성 클래스에 대해 가능한 모든 설정이 포함되어서는 안 됩니다. 실제로 환경에 특정한 항목이나 "
+"비밀번호, API 키, 기타 노출되어서는 안 되는 정보와 같은 민감한 세부 정보만 포함해야 합니다. 그러나 배포 간에 변경되는 모든 "
+"사항은 공정한 게임입니다."
 
 #: ../../source/general/configuration.rst:302
 msgid ""
-"In each environment, place the **.env** file in the project's root "
-"folder. For most setups, this will be the same level as the ``app`` "
-"directories."
+"In each environment, place the **.env** file in the project's root folder. "
+"For most setups, this will be the same level as the ``app`` directories."
 msgstr ""
+"각 환경에서 **.env** 파일을 프로젝트의 루트 폴더에 배치합니다. 대부분의 설정에서 이는 ``app`` 디렉터리와 동일한 "
+"수준입니다."
 
 #: ../../source/general/configuration.rst:304
 msgid ""
-"Do not track **.env** files with your version control system. If you do, "
-"and the repository is made public, you will have put sensitive "
-"information where everybody can find it."
+"Do not track **.env** files with your version control system. If you do, and"
+" the repository is made public, you will have put sensitive information "
+"where everybody can find it."
 msgstr ""
+"버전 관리 시스템으로 **.env** 파일을 추적하지 마세요. 그렇게 하고 저장소가 공개되면 모든 사람이 찾을 수 있는 민감한 정보를 "
+"보관하게 됩니다."
 
 #: ../../source/general/configuration.rst:309
 msgid "Registrars"
-msgstr ""
+msgstr "등록기관"
 
 #: ../../source/general/configuration.rst:311
 msgid ""
@@ -477,6 +544,8 @@ msgid ""
 "configuration properties. Registrars provide a means of altering a "
 "configuration at runtime across namespaces and files."
 msgstr ""
+"\"등록자\"는 추가 구성 속성을 제공할 수 있는 다른 클래스입니다. 등록자는 런타임 시 네임스페이스와 파일 전반에 걸쳐 구성을 변경하는"
+" 수단을 제공합니다."
 
 #: ../../source/general/configuration.rst:314
 msgid ""
@@ -484,24 +553,25 @@ msgid ""
 "</general/modules>`. It alters configuration properties when the Config "
 "object is instantiated."
 msgstr ""
+":doc:`Modules </general/modules>`\\ 에서 :ref:`auto-discovery`\\ 이 활성화된 경우 등록 "
+"기관이 작동합니다. Config 객체가 인스턴스화될 때 구성 속성을 변경합니다."
 
 #: ../../source/general/configuration.rst:321
 msgid ""
-"There are two ways to implement a Registrar: **implicit** and "
-"**explicit**."
-msgstr ""
+"There are two ways to implement a Registrar: **implicit** and **explicit**."
+msgstr "등록자를 구현하는 방법에는 **implicit** 및 **explicit**\\ 의 두 가지 방법이 있습니다."
 
 #: ../../source/general/configuration.rst:323
 msgid "Values from **.env** always take priority over Registrars."
-msgstr ""
+msgstr "**.env**\\ 의 값은 항상 등록자보다 우선합니다."
 
 #: ../../source/general/configuration.rst:326
 msgid "Implicit Registrars"
-msgstr ""
+msgstr "암시적 등록자"
 
 #: ../../source/general/configuration.rst:328
 msgid "Implicit Registrars can change any Config class properties."
-msgstr ""
+msgstr "암시적 등록자는 모든 구성 클래스 속성을 변경할 수 있습니다."
 
 #: ../../source/general/configuration.rst:330
 msgid ""
@@ -509,47 +579,57 @@ msgid ""
 "**Config/Registrar.php** file. These files are classes whose methods are "
 "named for each configuration class you wish to extend."
 msgstr ""
+"모든 네임스페이스는 **Config/Registrar.php** 파일을 사용하여 암시적 등록자를 정의할 수 있습니다. 이러한 파일은 "
+"확장하려는 각 구성 클래스에 대해 메서드 이름이 지정된 클래스입니다."
 
 #: ../../source/general/configuration.rst:334
 msgid ""
-"For example, a third-party module or Composer package might wish to "
-"supply an additional template to ``Config\\Pager`` without overwriting "
-"whatever a developer has already configured. In "
-"**src/Config/Registrar.php** there would be a ``Registrar`` class with "
-"the single ``Pager()`` method (note the case-sensitivity):"
+"For example, a third-party module or Composer package might wish to supply "
+"an additional template to ``Config\\Pager`` without overwriting whatever a "
+"developer has already configured. In **src/Config/Registrar.php** there "
+"would be a ``Registrar`` class with the single ``Pager()`` method (note the "
+"case-sensitivity):"
 msgstr ""
+"예를 들어, 타사 모듈이나 Composer 패키지는 개발자가 이미 구성한 내용을 덮어쓰지 않고 ``Config\\Pager``\\ 에 "
+"추가 템플릿을 제공하려고 할 수 있습니다. **src/Config/Registrar.php**\\ 에는 단일 ``Pager()`` "
+"메서드가 있는 ``Registrar`` 클래스가 있습니다(대소문자 구분 참고)."
 
 #: ../../source/general/configuration.rst:341
 msgid ""
-"Registrar methods must always return an array, with keys corresponding to"
-" the properties of the target config file. Existing values are merged, "
-"and Registrar properties have overwrite priority."
+"Registrar methods must always return an array, with keys corresponding to "
+"the properties of the target config file. Existing values are merged, and "
+"Registrar properties have overwrite priority."
 msgstr ""
+"등록자 메서드는 항상 대상 구성 파일의 속성에 해당하는 키와 함께 배열을 반환해야 합니다. 기존 값은 병합되고 등록자 속성은 덮어쓰기 "
+"우선순위를 가집니다."
 
 #: ../../source/general/configuration.rst:346
 msgid "Explicit Registrars"
-msgstr ""
+msgstr "명시적 등록자"
 
 #: ../../source/general/configuration.rst:348
 msgid ""
 "Explicit Registrars can only change the Config class properties in which "
 "they are registered."
-msgstr ""
+msgstr "명시적 등록자는 자신이 등록된 Config 클래스 속성만 변경할 수 있습니다."
 
 #: ../../source/general/configuration.rst:351
 msgid ""
-"A configuration file can also specify any number of registrars "
-"explicitly. This is done by adding a ``$registrars`` property to your "
-"configuration file, holding an array of the names of candidate "
-"registrars:"
+"A configuration file can also specify any number of registrars explicitly. "
+"This is done by adding a ``$registrars`` property to your configuration "
+"file, holding an array of the names of candidate registrars:"
 msgstr ""
+"구성 파일은 명시적으로 원하는 만큼의 등록자를 지정할 수도 있습니다. 이는 후보 등록기관의 이름 배열을 보유하는 구성 파일에 "
+"``$registrars`` 속성을 추가하여 수행됩니다."
 
 #: ../../source/general/configuration.rst:357
 msgid ""
 "In order to act as a \"registrar\" the classes so identified must have a "
-"static function with the same name as the configuration class, and it "
-"should return an associative array of property settings."
+"static function with the same name as the configuration class, and it should"
+" return an associative array of property settings."
 msgstr ""
+"이렇게 식별된 클래스가 \"등록자\" 역할을 하려면 구성 클래스와 동일한 이름을 가진 정적 함수가 있어야 하며 속성 설정의 연관 배열을 "
+"반환해야 합니다."
 
 #: ../../source/general/configuration.rst:361
 msgid ""
@@ -558,26 +638,30 @@ msgid ""
 "invoke the method named for the configuration class and incorporate any "
 "returned properties."
 msgstr ""
+"구성 개체가 인스턴스화되면 ``$registrars``\\ 의 지정된 클래스를 반복합니다. 이러한 각 클래스에 대해 구성 클래스에 대해 "
+"명명된 메서드를 호출하고 반환된 속성을 통합합니다."
 
 #: ../../source/general/configuration.rst:365
 msgid "A sample configuration class setup for this:"
-msgstr ""
+msgstr "이에 대한 샘플 구성 클래스 설정은 다음과 같습니다."
 
 #: ../../source/general/configuration.rst:369
 msgid "... and the associated regional sales model might look like:"
-msgstr ""
+msgstr "... 관련 지역 판매 모델은 다음과 같습니다."
 
 #: ../../source/general/configuration.rst:373
 msgid ""
-"With the above example, when ``MySalesConfig`` is instantiated, it will "
-"end up with the three properties declared, but the value of the "
-"``$target`` property will be overridden by treating ``RegionalSales`` as "
-"a \"registrar\". The resulting configuration properties:"
+"With the above example, when ``MySalesConfig`` is instantiated, it will end "
+"up with the three properties declared, but the value of the ``$target`` "
+"property will be overridden by treating ``RegionalSales`` as a "
+"\"registrar\". The resulting configuration properties:"
 msgstr ""
+"위의 예에서 ``MySalesConfig``\\ 이 인스턴스화되면 세 가지 속성이 선언되지만 ``$target`` 속성의 값은 "
+"``RegionalSales``\\ 을 \"등록자\"로 처리하여 재정의됩니다. 결과 구성 속성은 다음과 같습니다."
 
 #: ../../source/general/configuration.rst:382
 msgid "Confirming Config Values"
-msgstr ""
+msgstr "구성 값 확인"
 
 #: ../../source/general/configuration.rst:384
 msgid ""
@@ -585,32 +669,38 @@ msgid ""
 ":ref:`registrars` and :ref:`Environment Variables <configuration-classes-"
 "and-environment-variables>`, and :ref:`factories-config-caching`."
 msgstr ""
+"실제 Config 객체 속성 값은 런타임 시 :ref:`registrars`, :ref:`Environment Variables "
+"<configuration-classes-and-environment-variables>` 및 :ref:`factories-config-"
+"caching`\\ 에 의해 변경됩니다."
 
 #: ../../source/general/configuration.rst:388
 msgid ""
 "CodeIgniter has the following :doc:`command <../cli/spark_commands>` to "
 "check the actual Config values."
 msgstr ""
+"CodeIgniter에는 실제 Config 값을 확인하기 위해 다음과 같은 :doc:`command "
+"<../cli/spark_commands>`\\ 이 있습니다."
 
 #: ../../source/general/configuration.rst:394
 msgid "config:check"
-msgstr ""
+msgstr "구성:확인"
 
 #: ../../source/general/configuration.rst:398
 msgid "For example, if you want to check the ``Config\\App`` instance:"
-msgstr ""
+msgstr "예를 들어, ``Config\\App`` 인스턴스를 확인하려면 다음을 수행하세요."
 
 #: ../../source/general/configuration.rst:404
 msgid "The output is like the following:"
-msgstr ""
+msgstr "출력은 다음과 같습니다."
 
 #: ../../source/general/configuration.rst:427
 msgid "You can see if Config Caching is enabled or not."
-msgstr ""
+msgstr "구성 캐싱이 활성화되어 있는지 여부를 확인할 수 있습니다."
 
 #: ../../source/general/configuration.rst:429
 msgid ""
-"If Config Caching is enabled, the cached values are used permanently. See"
-" :ref:`factories-config-caching` for details."
+"If Config Caching is enabled, the cached values are used permanently. See "
+":ref:`factories-config-caching` for details."
 msgstr ""
-
+"구성 캐싱이 활성화되면 캐시된 값이 영구적으로 사용됩니다. 자세한 내용은 :ref:`factories-config-caching`\\ 을"
+" 참조하세요."
