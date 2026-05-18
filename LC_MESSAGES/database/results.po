@@ -12,557 +12,592 @@ msgstr ""
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../source/database/results.rst:3
 msgid "Generating Query Results"
-msgstr ""
+msgstr "쿼리 결과 생성"
 
 #: ../../source/database/results.rst:5
 msgid "There are several ways to generate query results:"
-msgstr ""
+msgstr "쿼리 결과를 생성하는 방법에는 여러 가지가 있습니다."
 
 #: ../../source/database/results.rst:13
 msgid "Result Arrays"
-msgstr ""
+msgstr "결과 배열"
 
 #: ../../source/database/results.rst:18
 msgid "getResult()"
-msgstr ""
+msgstr "getResult()"
 
 #: ../../source/database/results.rst:20
 msgid ""
 "This method returns the query result as an array of **objects**, or **an "
 "empty array** on failure."
-msgstr ""
+msgstr "이 메서드는 쿼리 결과를 **객체** 배열로 반환하거나 실패 시 **빈 배열**로 반환합니다."
 
 #: ../../source/database/results.rst:24
 msgid "Getting an Array of stdClass"
-msgstr ""
+msgstr "stdClass 배열 얻기"
 
 #: ../../source/database/results.rst:26
 msgid "Typically you'll use this in a foreach loop, like this:"
-msgstr ""
+msgstr "일반적으로 다음과 같이 foreach 루프에서 이를 사용합니다."
 
 #: ../../source/database/results.rst:31
 msgid ""
 "The above method is an alias of "
 ":php:meth:`CodeIgniter\\\\Database\\\\BaseResult::getResultObject()`."
 msgstr ""
+"위 메소드는 "
+":php:meth:`CodeIgniter\\\\Database\\\\BaseResult::getResultObject()`\\의 "
+"별칭입니다."
 
 #: ../../source/database/results.rst:34
 msgid "Getting an Array of Array"
-msgstr ""
+msgstr "배열의 배열 얻기"
 
 #: ../../source/database/results.rst:36
 msgid ""
 "You can pass in the string 'array' if you wish to get your results as an "
 "array of arrays:"
-msgstr ""
+msgstr "결과를 배열의 배열로 얻으려면 문자열 'array'를 전달할 수 있습니다."
 
 #: ../../source/database/results.rst:41
 msgid "The above usage is an alias of `getResultArray()`_."
-msgstr ""
+msgstr "위 사용법은 `getResultArray()`_의 별칭입니다."
 
 #: ../../source/database/results.rst:44
 msgid "Getting an Array of Custom Object"
-msgstr ""
+msgstr "사용자 정의 개체의 배열 가져오기"
 
 #: ../../source/database/results.rst:46
 msgid ""
-"You can also pass a string to ``getResult()`` which represents a class to"
-" instantiate for each result object"
-msgstr ""
+"You can also pass a string to ``getResult()`` which represents a class to "
+"instantiate for each result object"
+msgstr "각 결과 객체에 대해 인스턴스화할 클래스를 나타내는 ``getResult()``\\에 문자열을 전달할 수도 있습니다."
 
 #: ../../source/database/results.rst:51
 msgid "The above method is an alias of `getCustomResultObject()`_."
-msgstr ""
+msgstr "위 메서드는 `getCustomResultObject()`_의 별칭입니다."
 
 #: ../../source/database/results.rst:54
 msgid "getResultArray()"
-msgstr ""
+msgstr "getResultArray()"
 
 #: ../../source/database/results.rst:56
 msgid ""
-"This method returns the query result as a pure array, or an empty array "
-"when no result is produced. Typically you'll use this in a foreach loop, "
-"like this:"
+"This method returns the query result as a pure array, or an empty array when"
+" no result is produced. Typically you'll use this in a foreach loop, like "
+"this:"
 msgstr ""
+"이 메서드는 쿼리 결과를 순수 배열로 반환하거나 결과가 생성되지 않는 경우 빈 배열로 반환합니다. 일반적으로 다음과 같이 foreach "
+"루프에서 이를 사용합니다."
 
 #: ../../source/database/results.rst:64
 msgid "Result Rows"
-msgstr ""
+msgstr "결과 행"
 
 #: ../../source/database/results.rst:67
 msgid "getRow()"
-msgstr ""
+msgstr "getRow()"
 
 #: ../../source/database/results.rst:69
 msgid ""
 "This method returns a single result row. If your query has more than one "
-"row, it returns only the first row. The result is returned as an "
-"**object**. Here's a usage example:"
+"row, it returns only the first row. The result is returned as an **object**."
+" Here's a usage example:"
 msgstr ""
+"이 메서드는 단일 결과 행을 반환합니다. 쿼리에 행이 두 개 이상 있으면 첫 번째 행만 반환됩니다. 결과는 **객체**로 반환됩니다. "
+"사용 예는 다음과 같습니다."
 
 #: ../../source/database/results.rst:75 ../../source/database/results.rst:93
 msgid ""
-"If you want a specific row returned you can submit the row number as a "
-"digit in the first parameter:"
-msgstr ""
+"If you want a specific row returned you can submit the row number as a digit"
+" in the first parameter:"
+msgstr "특정 행을 반환하려면 행 번호를 첫 번째 매개변수에 숫자로 제출하면 됩니다."
 
 #: ../../source/database/results.rst:80
 msgid ""
-"You can also add a second String parameter, which is the name of a class "
-"to instantiate the row with:"
-msgstr ""
+"You can also add a second String parameter, which is the name of a class to "
+"instantiate the row with:"
+msgstr "다음을 사용하여 행을 인스턴스화하는 클래스 이름인 두 번째 String 매개변수를 추가할 수도 있습니다."
 
 #: ../../source/database/results.rst:86
 msgid "getRowArray()"
-msgstr ""
+msgstr "getRowArray()"
 
 #: ../../source/database/results.rst:88
 msgid ""
 "Identical to the above ``row()`` method, except it returns an array. "
 "Example:"
-msgstr ""
+msgstr "배열을 반환한다는 점을 제외하면 위의 ``row()`` 메서드와 동일합니다. 예:"
 
 #: ../../source/database/results.rst:98
 msgid ""
-"In addition, you can walk forward/backward/first/last through your "
-"results using these variations:"
-msgstr ""
+"In addition, you can walk forward/backward/first/last through your results "
+"using these variations:"
+msgstr "또한 다음 변형을 사용하여 결과를 앞으로/뒤로/처음/마지막으로 살펴볼 수 있습니다."
 
 #: ../../source/database/results.rst
 msgid "``$row = $query->getFirstRow()``"
-msgstr ""
+msgstr "``$row = $query->getFirstRow()``"
 
 #: ../../source/database/results.rst
 msgid "``$row = $query->getLastRow()``"
-msgstr ""
+msgstr "``$row = $query->getLastRow()``"
 
 #: ../../source/database/results.rst
 msgid "``$row = $query->getNextRow()``"
-msgstr ""
+msgstr "``$row = $query->getNextRow()``"
 
 #: ../../source/database/results.rst
 msgid "``$row = $query->getPreviousRow()``"
-msgstr ""
+msgstr "``$row = $query->getPreviousRow()``"
 
 #: ../../source/database/results.rst:106
 msgid ""
-"By default they return an object unless you put the word \"array\" in the"
-" parameter:"
-msgstr ""
+"By default they return an object unless you put the word \"array\" in the "
+"parameter:"
+msgstr "매개변수에 \"array\"라는 단어를 넣지 않으면 기본적으로 객체를 반환합니다."
 
 #: ../../source/database/results.rst
 msgid "``$row = $query->getFirstRow('array')``"
-msgstr ""
+msgstr "``$row = $query->getFirstRow('array')``"
 
 #: ../../source/database/results.rst
 msgid "``$row = $query->getLastRow('array')``"
-msgstr ""
+msgstr "``$row = $query->getLastRow('array')``"
 
 #: ../../source/database/results.rst
 msgid "``$row = $query->getNextRow('array')``"
-msgstr ""
+msgstr "``$row = $query->getNextRow('array')``"
 
 #: ../../source/database/results.rst
 msgid "``$row = $query->getPreviousRow('array')``"
-msgstr ""
+msgstr "``$row = $query->getPreviousRow('array')``"
 
 #: ../../source/database/results.rst:114
 msgid ""
-"All the methods above will load the whole result into memory "
-"(prefetching). Use ``getUnbufferedRow()`` for processing large result "
-"sets."
+"All the methods above will load the whole result into memory (prefetching). "
+"Use ``getUnbufferedRow()`` for processing large result sets."
 msgstr ""
+"위의 모든 메소드는 전체 결과를 메모리에 로드합니다(프리페칭). 큰 결과 집합을 처리하려면 ``getUnbufferedRow()``\\를"
+" 사용하세요."
 
 #: ../../source/database/results.rst:119
 msgid "getUnbufferedRow()"
-msgstr ""
+msgstr "getUnbufferedRow()"
 
 #: ../../source/database/results.rst:121
 msgid ""
-"This method returns a single result row without prefetching the whole "
-"result in memory as ``row()`` does. If your query has more than one row, "
-"it returns the current row and moves the internal data pointer ahead."
+"This method returns a single result row without prefetching the whole result"
+" in memory as ``row()`` does. If your query has more than one row, it "
+"returns the current row and moves the internal data pointer ahead."
 msgstr ""
+"이 메소드는 ``row()``\\처럼 메모리에 전체 결과를 미리 가져오지 않고 단일 결과 행을 반환합니다. 쿼리에 행이 두 개 이상 "
+"있으면 현재 행을 반환하고 내부 데이터 포인터를 앞으로 이동합니다."
 
 #: ../../source/database/results.rst:127
 msgid ""
 "For use with MySQLi you may set MySQLi's result mode to "
 "``MYSQLI_USE_RESULT`` for maximum memory savings. Use of this is not "
-"generally recommended but it can be beneficial in some circumstances such"
-" as writing large queries to csv. If you change the result mode be aware "
-"of the tradeoffs associated with it."
+"generally recommended but it can be beneficial in some circumstances such as"
+" writing large queries to csv. If you change the result mode be aware of the"
+" tradeoffs associated with it."
 msgstr ""
+"MySQLi와 함께 사용하려면 최대 메모리 절약을 위해 MySQLi의 결과 모드를 ``MYSQLI_USE_RESULT``\\로 설정할 수"
+" 있습니다. 이 사용은 일반적으로 권장되지 않지만 csv에 대규모 쿼리를 작성하는 등 일부 상황에서는 도움이 될 수 있습니다. 결과 "
+"모드를 변경하는 경우 이와 관련된 장단점을 알고 있어야 합니다."
 
 #: ../../source/database/results.rst:135
 msgid ""
-"When using ``MYSQLI_USE_RESULT`` all subsequent calls on the same "
-"connection will result in error until all records have been fetched or a "
-"``freeResult()`` call has been made. The ``getNumRows()`` method will "
-"only return the number of rows based on the current position of the data "
-"pointer. MyISAM tables will remain locked until all the records have been"
-" fetched or a ``freeResult()`` call has been made."
+"When using ``MYSQLI_USE_RESULT`` all subsequent calls on the same connection"
+" will result in error until all records have been fetched or a "
+"``freeResult()`` call has been made. The ``getNumRows()`` method will only "
+"return the number of rows based on the current position of the data pointer."
+" MyISAM tables will remain locked until all the records have been fetched or"
+" a ``freeResult()`` call has been made."
 msgstr ""
+"``MYSQLI_USE_RESULT``\\를 사용하면 모든 레코드를 가져오거나 ``freeResult()`` 호출이 이루어질 때까지 "
+"동일한 연결에 대한 모든 후속 호출에서 오류가 발생합니다. ``getNumRows()`` 메소드는 데이터 포인터의 현재 위치를 기준으로 "
+"행 수만 반환합니다. MyISAM 테이블은 모든 레코드를 가져오거나 ``freeResult()`` 호출이 이루어질 때까지 잠긴 상태로 "
+"유지됩니다."
 
 #: ../../source/database/results.rst:142
 msgid ""
-"You can optionally pass 'object' (default) or 'array' in order to specify"
-" the returned value's type:"
-msgstr ""
+"You can optionally pass 'object' (default) or 'array' in order to specify "
+"the returned value's type:"
+msgstr "반환된 값의 유형을 지정하기 위해 선택적으로 'object'(기본값) 또는 'array'를 전달할 수 있습니다."
 
 #: ../../source/database/results.rst:149
 msgid "Custom Result Objects"
-msgstr ""
+msgstr "사용자 정의 결과 개체"
 
 #: ../../source/database/results.rst:151
 msgid ""
-"You can have the results returned as an instance of a custom class "
-"instead of a ``stdClass`` or array, as the ``getResult()`` and "
-"``getResultArray()`` methods allow. If the class is not already loaded "
-"into memory, the Autoloader will attempt to load it. The object will have"
-" all values returned from the database set as properties. If these have "
-"been declared and are non-public then you should provide a ``__set()`` "
-"method to allow them to be set."
+"You can have the results returned as an instance of a custom class instead "
+"of a ``stdClass`` or array, as the ``getResult()`` and ``getResultArray()`` "
+"methods allow. If the class is not already loaded into memory, the "
+"Autoloader will attempt to load it. The object will have all values returned"
+" from the database set as properties. If these have been declared and are "
+"non-public then you should provide a ``__set()`` method to allow them to be "
+"set."
 msgstr ""
+"``getResult()`` 및 ``getResultArray()`` 메소드가 허용하는 대로 ``stdClass`` 또는 배열 대신 "
+"사용자 정의 클래스의 인스턴스로 결과를 반환할 수 있습니다. 클래스가 아직 메모리에 로드되지 않은 경우 Autoloader는 해당 "
+"클래스를 로드하려고 시도합니다. 개체는 데이터베이스에서 반환된 모든 값을 속성으로 설정합니다. 이것이 선언되었고 비공개인 경우 이를 "
+"설정할 수 있도록 ``__set()`` 메소드를 제공해야 합니다."
 
 #: ../../source/database/results.rst:158 ../../source/database/results.rst:172
 #: ../../source/database/results.rst:182 ../../source/database/results.rst:188
 #: ../../source/database/results.rst:233
 msgid "Example:"
-msgstr ""
+msgstr "예:"
 
 #: ../../source/database/results.rst:162
 msgid ""
-"In addition to the two methods listed below, the following methods also "
-"can take a class name to return the results as: ``getFirstRow()``, "
+"In addition to the two methods listed below, the following methods also can "
+"take a class name to return the results as: ``getFirstRow()``, "
 "``getLastRow()``, ``getNextRow()``, and ``getPreviousRow()``."
 msgstr ""
+"아래 나열된 두 가지 메서드 외에도 다음 메서드도 클래스 이름을 사용하여 결과를 ``getFirstRow()``, "
+"``getLastRow()``, ``getNextRow()`` 및 ``getPreviousRow()``\\로 반환할 수 있습니다."
 
 #: ../../source/database/results.rst:167
 msgid "getCustomResultObject()"
-msgstr ""
+msgstr "getCustomResultObject()"
 
 #: ../../source/database/results.rst:169
 msgid ""
 "Returns the entire result set as an array of instances of the class "
 "requested. The only parameter is the name of the class to instantiate."
-msgstr ""
+msgstr "요청된 클래스의 인스턴스 배열로 전체 결과 집합을 반환합니다. 유일한 매개변수는 인스턴스화할 클래스의 이름입니다."
 
 #: ../../source/database/results.rst:177
 msgid "getCustomRowObject()"
-msgstr ""
+msgstr "getCustomRowObject()"
 
 #: ../../source/database/results.rst:179
 msgid ""
-"Returns a single row from your query results. The first parameter is the "
-"row number of the results. The second parameter is the class name to "
+"Returns a single row from your query results. The first parameter is the row"
+" number of the results. The second parameter is the class name to "
 "instantiate."
 msgstr ""
+"쿼리 결과에서 단일 행을 반환합니다. 첫 번째 매개변수는 결과의 행 번호입니다. 두 번째 매개변수는 인스턴스화할 클래스 이름입니다."
 
 #: ../../source/database/results.rst:186
 msgid "You can also use the ``getRow()`` method in exactly the same way."
-msgstr ""
+msgstr "``getRow()`` 메소드를 동일한 방식으로 사용할 수도 있습니다."
 
 #: ../../source/database/results.rst:194
 msgid "Result Helper Methods"
-msgstr ""
+msgstr "결과 도우미 메서드"
 
 #: ../../source/database/results.rst:197
 msgid "getFieldCount()"
-msgstr ""
+msgstr "getFieldCount()"
 
 #: ../../source/database/results.rst:199
 msgid ""
-"The number of FIELDS (columns) returned by the query. Make sure to call "
-"the method using your query result object:"
-msgstr ""
+"The number of FIELDS (columns) returned by the query. Make sure to call the "
+"method using your query result object:"
+msgstr "쿼리에서 반환된 FIELDS(열) 수입니다. 쿼리 결과 개체를 사용하여 메서드를 호출해야 합니다."
 
 #: ../../source/database/results.rst:205
 msgid "getFieldNames()"
-msgstr ""
+msgstr "getFieldNames()"
 
 #: ../../source/database/results.rst:207
 msgid ""
 "Returns an array with the names of the FIELDS (columns) returned by the "
 "query. Make sure to call the method using your query result object:"
-msgstr ""
+msgstr "쿼리에서 반환된 FIELDS(열) 이름이 포함된 배열을 반환합니다. 쿼리 결과 개체를 사용하여 메서드를 호출해야 합니다."
 
 #: ../../source/database/results.rst:213
 msgid "getNumRows()"
-msgstr ""
+msgstr "getNumRows()"
 
 #: ../../source/database/results.rst:215
 msgid ""
-"The number of records returned by the query. Make sure to call the method"
-" using your query result object:"
-msgstr ""
+"The number of records returned by the query. Make sure to call the method "
+"using your query result object:"
+msgstr "쿼리에서 반환된 레코드 수입니다. 쿼리 결과 개체를 사용하여 메서드를 호출해야 합니다."
 
 #: ../../source/database/results.rst:220
 msgid ""
 "Because SQLite3 lacks an efficient method returning a record count, "
-"CodeIgniter will fetch and buffer the query result records internally and"
-" return a count of the resulting record array, which can be inefficient."
+"CodeIgniter will fetch and buffer the query result records internally and "
+"return a count of the resulting record array, which can be inefficient."
 msgstr ""
+"SQLite3에는 레코드 수를 반환하는 효율적인 메서드가 없기 때문에 CodeIgniter는 쿼리 결과 레코드를 내부적으로 가져와 "
+"버퍼링하고 결과 레코드 배열의 수를 반환하므로 비효율적일 수 있습니다."
 
 #: ../../source/database/results.rst:225
 msgid "freeResult()"
-msgstr ""
+msgstr "freeResult()"
 
 #: ../../source/database/results.rst:227
 msgid ""
 "It frees the memory associated with the result and deletes the result "
 "resource ID. Normally PHP frees its memory automatically at the end of "
 "script execution. However, if you are running a lot of queries in a "
-"particular script you might want to free the result after each query "
-"result has been generated in order to cut down on memory consumption."
+"particular script you might want to free the result after each query result "
+"has been generated in order to cut down on memory consumption."
 msgstr ""
+"결과와 관련된 메모리를 해제하고 결과 리소스 ID를 삭제합니다. 일반적으로 PHP는 스크립트 실행이 끝나면 자동으로 메모리를 해제합니다."
+" 그러나 특정 스크립트에서 많은 쿼리를 실행하는 경우 메모리 소비를 줄이기 위해 각 쿼리 결과가 생성된 후 결과를 해제할 수 있습니다."
 
 #: ../../source/database/results.rst:238
 msgid "dataSeek()"
-msgstr ""
+msgstr "dataSeek()"
 
 #: ../../source/database/results.rst:240
 msgid ""
-"This method sets the internal pointer for the next result row to be "
-"fetched. It is only useful in combination with ``getUnbufferedRow()``."
+"This method sets the internal pointer for the next result row to be fetched."
+" It is only useful in combination with ``getUnbufferedRow()``."
 msgstr ""
+"이 메서드는 가져올 다음 결과 행에 대한 내부 포인터를 설정합니다. ``getUnbufferedRow()``\\와 조합해서만 유용합니다."
 
 #: ../../source/database/results.rst:243
 msgid ""
-"It accepts a positive integer value, which defaults to 0 and returns true"
-" on success or false on failure."
-msgstr ""
+"It accepts a positive integer value, which defaults to 0 and returns true on"
+" success or false on failure."
+msgstr "기본값은 0이고, 성공하면 true를, 실패하면 false를 반환하는 양의 정수 값을 허용합니다."
 
 #: ../../source/database/results.rst:248
 msgid ""
-"Not all database drivers support this feature and will return false. Most"
-" notably - you won't be able to use it with PDO."
+"Not all database drivers support this feature and will return false. Most "
+"notably - you won't be able to use it with PDO."
 msgstr ""
+"모든 데이터베이스 드라이버가 이 기능을 지원하는 것은 아니며 false를 반환합니다. 가장 주목할만한 점은 PDO와 함께 사용할 수 "
+"없다는 것입니다."
 
 #: ../../source/database/results.rst:253
 msgid "Class Reference"
-msgstr ""
+msgstr "수업 참고자료"
 
 #: ../../source/database/results.rst
 msgid "Parameters"
-msgstr ""
+msgstr "매개변수"
 
 #: ../../source/database/results.rst:261
 msgid "Type of requested results - array, object, or class name"
-msgstr ""
+msgstr "요청된 결과 유형 - 배열, 개체 또는 클래스 이름"
 
 #: ../../source/database/results.rst
 msgid "Returns"
-msgstr ""
+msgstr "보고"
 
 #: ../../source/database/results.rst:262 ../../source/database/results.rst:272
 #: ../../source/database/results.rst:282 ../../source/database/results.rst:293
 msgid "Array containing the fetched rows"
-msgstr ""
+msgstr "가져온 행을 포함하는 배열"
 
 #: ../../source/database/results.rst
 msgid "Return type"
-msgstr ""
+msgstr "반환 유형"
 
 #: ../../source/database/results.rst:265
 msgid ""
 "A wrapper for the ``getResultArray()``, ``getResultObject()`` and "
 "``getCustomResultObject()`` methods."
 msgstr ""
+"``getResultArray()``, ``getResultObject()`` 및 ``getCustomResultObject()`` "
+"메서드에 대한 래퍼입니다."
 
 #: ../../source/database/results.rst:268 ../../source/database/results.rst:278
 msgid "Usage: see `Result Arrays`_."
-msgstr ""
+msgstr "사용법: `결과 배열`_\\을 참조하세요."
 
 #: ../../source/database/results.rst:275
 msgid ""
-"Returns the query results as an array of rows, where each row is itself "
-"an associative array."
-msgstr ""
+"Returns the query results as an array of rows, where each row is itself an "
+"associative array."
+msgstr "쿼리 결과를 행 배열로 반환합니다. 여기서 각 행은 그 자체가 연관 배열입니다."
 
 #: ../../source/database/results.rst:285
 msgid ""
-"Returns the query results as an array of rows, where each row is an "
-"object of type ``stdClass``."
-msgstr ""
+"Returns the query results as an array of rows, where each row is an object "
+"of type ``stdClass``."
+msgstr "쿼리 결과를 행 배열로 반환합니다. 여기서 각 행은 ``stdClass`` 유형의 개체입니다."
 
 #: ../../source/database/results.rst:288
 msgid "Usage: see `Getting an Array of stdClass`_."
-msgstr ""
+msgstr "사용법: `stdClass 배열 가져오기`_\\를 참조하세요."
 
 #: ../../source/database/results.rst:292
 msgid "Class name for the resulting rows"
-msgstr ""
+msgstr "결과 행의 클래스 이름"
 
 #: ../../source/database/results.rst:296
 msgid ""
-"Returns the query results as an array of rows, where each row is an "
-"instance of the specified class."
-msgstr ""
+"Returns the query results as an array of rows, where each row is an instance"
+" of the specified class."
+msgstr "쿼리 결과를 행 배열로 반환합니다. 여기서 각 행은 지정된 클래스의 인스턴스입니다."
 
 #: ../../source/database/results.rst:301 ../../source/database/results.rst:324
 msgid "Index of the query results row to be returned"
-msgstr ""
+msgstr "반환할 쿼리 결과 행의 인덱스"
 
 #: ../../source/database/results.rst:302 ../../source/database/results.rst:313
 #: ../../source/database/results.rst:373 ../../source/database/results.rst:381
 #: ../../source/database/results.rst:389 ../../source/database/results.rst:397
 msgid "Type of the requested result - array, object, or class name"
-msgstr ""
+msgstr "요청된 결과 유형 - 배열, 개체 또는 클래스 이름"
 
 #: ../../source/database/results.rst:303 ../../source/database/results.rst:325
 #: ../../source/database/results.rst:347
 msgid "The requested row or null if it doesn't exist"
-msgstr ""
+msgstr "요청된 행 또는 존재하지 않는 경우 null"
 
 #: ../../source/database/results.rst:306
 msgid ""
 "A wrapper for the ``getRowArray()``, ``getRowObject()`` and "
 "``getCustomRowObject()`` methods."
 msgstr ""
+"``getRowArray()``, ``getRowObject()`` 및 ``getCustomRowObject()`` 메서드에 대한 "
+"래퍼입니다."
 
 #: ../../source/database/results.rst:309 ../../source/database/results.rst:320
 #: ../../source/database/results.rst:330 ../../source/database/results.rst:341
 msgid "Usage: see `Result Rows`_."
-msgstr ""
+msgstr "사용법: `결과 행`_\\을 참조하세요."
 
 #: ../../source/database/results.rst:314
 msgid "Next row from the result set or null if it doesn't exist"
-msgstr ""
+msgstr "결과 집합의 다음 행 또는 존재하지 않는 경우 null"
 
 #: ../../source/database/results.rst:317
 msgid "Fetches the next result row and returns it in the requested form."
-msgstr ""
+msgstr "다음 결과 행을 가져와서 요청된 형식으로 반환합니다."
 
 #: ../../source/database/results.rst:328
 msgid "Returns the requested result row as an associative array."
-msgstr ""
+msgstr "요청된 결과 행을 연관 배열로 반환합니다."
 
 #: ../../source/database/results.rst:334
 msgid ""
-"Index of the query results row to be returned :returns:    The requested "
-"row or null if it doesn't exist"
-msgstr ""
+"Index of the query results row to be returned :returns:    The requested row"
+" or null if it doesn't exist"
+msgstr "반환될 쿼리 결과 행의 인덱스 :returns: 요청된 행 또는 존재하지 않는 경우 null"
 
 #: ../../source/database/results.rst:338
 msgid "Returns the requested result row as an object of type ``stdClass``."
-msgstr ""
+msgstr "요청된 결과 행을 ``stdClass`` 유형의 객체로 반환합니다."
 
 #: ../../source/database/results.rst:345
 msgid "Index of the results row to return"
-msgstr ""
+msgstr "반환할 결과 행의 인덱스"
 
 #: ../../source/database/results.rst:346
 msgid "Class name for the resulting row"
-msgstr ""
+msgstr "결과 행의 클래스 이름"
 
 #: ../../source/database/results.rst:350
-msgid "Returns the requested result row as an instance of the requested class."
-msgstr ""
+msgid ""
+"Returns the requested result row as an instance of the requested class."
+msgstr "요청된 결과 행을 요청된 클래스의 인스턴스로 반환합니다."
 
 #: ../../source/database/results.rst:355
 msgid "Index of the results row to be returned next"
-msgstr ""
+msgstr "다음에 반환될 결과 행의 인덱스"
 
 #: ../../source/database/results.rst:356
 msgid "true on success, false on failure"
-msgstr ""
+msgstr "성공하면 참, 실패하면 거짓"
 
 #: ../../source/database/results.rst:359
 msgid "Moves the internal results row pointer to the desired offset."
-msgstr ""
+msgstr "내부 결과 행 포인터를 원하는 오프셋으로 이동합니다."
 
 #: ../../source/database/results.rst:361 ../../source/database/results.rst:410
 #: ../../source/database/results.rst:441
 msgid "Usage: see `Result Helper Methods`_."
-msgstr ""
+msgstr "사용법: `결과 도우미 메서드`_\\를 참조하세요."
 
 #: ../../source/database/results.rst:365
 msgid "Column name or array of key/value pairs"
-msgstr ""
+msgstr "열 이름 또는 키/값 쌍의 배열"
 
 #: ../../source/database/results.rst:366
 msgid "Value to assign to the column, $key is a single field name"
-msgstr ""
+msgstr "열에 할당할 값이며, $key는 단일 필드 이름입니다."
 
 #: ../../source/database/results.rst:369
 msgid "Assigns a value to a particular column."
-msgstr ""
+msgstr "특정 열에 값을 할당합니다."
 
 #: ../../source/database/results.rst:374
 msgid "Next row of result set, or null if it doesn't exist"
-msgstr ""
+msgstr "결과 집합의 다음 행 또는 존재하지 않는 경우 null"
 
 #: ../../source/database/results.rst:377
 msgid "Returns the next row from the result set."
-msgstr ""
+msgstr "결과 집합에서 다음 행을 반환합니다."
 
 #: ../../source/database/results.rst:382
 msgid "Previous row of result set, or null if it doesn't exist"
-msgstr ""
+msgstr "결과 집합의 이전 행 또는 존재하지 않는 경우 null"
 
 #: ../../source/database/results.rst:385
 msgid "Returns the previous row from the result set."
-msgstr ""
+msgstr "결과 집합에서 이전 행을 반환합니다."
 
 #: ../../source/database/results.rst:390
 msgid "First row of result set, or null if it doesn't exist"
-msgstr ""
+msgstr "결과 집합의 첫 번째 행 또는 존재하지 않는 경우 null"
 
 #: ../../source/database/results.rst:393
 msgid "Returns the first row from the result set."
-msgstr ""
+msgstr "결과 집합의 첫 번째 행을 반환합니다."
 
 #: ../../source/database/results.rst:398
 msgid "Last row of result set, or null if it doesn't exist"
-msgstr ""
+msgstr "결과 집합의 마지막 행 또는 존재하지 않는 경우 null"
 
 #: ../../source/database/results.rst:401
 msgid "Returns the last row from the result set."
-msgstr ""
+msgstr "결과 집합의 마지막 행을 반환합니다."
 
 #: ../../source/database/results.rst:405
 msgid "Number of fields in the result set"
-msgstr ""
+msgstr "결과 세트의 필드 수"
 
 #: ../../source/database/results.rst:408
 msgid "Returns the number of fields in the result set."
-msgstr ""
+msgstr "결과 집합의 필드 수를 반환합니다."
 
 #: ../../source/database/results.rst:414
 msgid "Array of column names"
-msgstr ""
+msgstr "열 이름 배열"
 
 #: ../../source/database/results.rst:417
 msgid "Returns an array containing the field names in the result set."
-msgstr ""
+msgstr "결과 세트의 필드 이름을 포함하는 배열을 반환합니다."
 
 #: ../../source/database/results.rst:422
 msgid "Array containing field meta-data"
-msgstr ""
+msgstr "필드 메타데이터가 포함된 배열"
 
 #: ../../source/database/results.rst:425
 msgid "Generates an array of ``stdClass`` objects containing field meta-data."
-msgstr ""
+msgstr "필드 메타데이터를 포함하는 ``stdClass`` 객체의 배열을 생성합니다."
 
 #: ../../source/database/results.rst:430
 msgid "Number of rows in result set"
-msgstr ""
+msgstr "결과 세트의 행 수"
 
 #: ../../source/database/results.rst:433
 msgid "Returns number of rows returned by the query"
-msgstr ""
+msgstr "쿼리에서 반환된 행 수를 반환합니다."
 
 #: ../../source/database/results.rst:439
 msgid "Frees a result set."
-msgstr ""
-
+msgstr "결과 세트를 해제합니다."
