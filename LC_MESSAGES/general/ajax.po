@@ -123,7 +123,7 @@ msgstr ""
 
 #: ../../source/general/ajax.rst:92
 msgid "Or you can set the header manually with ``hx-headers``:"
-msgstr "또는 ``hx-headers``로 헤더를 수동으로 설정할 수 있습니다:"
+msgstr "또는 ``hx-headers``\\ 를 사용해 헤더를 수동으로 설정할 수 있습니다:"
 
 #~ msgid ""
 #~ "In VueJS you just need to add "
