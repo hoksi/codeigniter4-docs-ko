@@ -231,7 +231,7 @@ msgstr ""
 
 #: ../../source/concepts/factories.rst:127
 msgid "model()"
-msgstr ""
+msgstr "model()"
 
 #: ../../source/concepts/factories.rst:129
 msgid ""
@@ -241,7 +241,7 @@ msgstr ""
 
 #: ../../source/concepts/factories.rst:136
 msgid "Defining Classname to be Loaded"
-msgstr ""
+msgstr "로드할 클래스 이름 정의"
 
 #: ../../source/concepts/factories.rst:140
 msgid ""
@@ -265,7 +265,7 @@ msgstr "다음 코드에서 ``App\\Models\\UserModel``\\ 이 존재한다면 해
 
 #: ../../source/concepts/factories.rst:157
 msgid "Factory Parameters"
-msgstr ""
+msgstr "팩토리 매개변수"
 
 #: ../../source/concepts/factories.rst:159
 msgid ""
@@ -305,29 +305,29 @@ msgstr ""
 
 #: ../../source/concepts/factories.rst:182
 msgid "Key"
-msgstr ""
+msgstr "키"
 
 #: ../../source/concepts/factories.rst:182
 msgid "Type"
-msgstr ""
+msgstr "유형"
 
 #: ../../source/concepts/factories.rst:182
 msgid "Description"
-msgstr ""
+msgstr "설명"
 
 #: ../../source/concepts/factories.rst:182
 msgid "Default"
-msgstr ""
+msgstr "기본값"
 
 #: ../../source/concepts/factories.rst:184
 msgid "component"
-msgstr ""
+msgstr "component"
 
 #: ../../source/concepts/factories.rst:184
 #: ../../source/concepts/factories.rst:186
 #: ../../source/concepts/factories.rst:188
 msgid "string or null"
-msgstr ""
+msgstr "문자열 또는 null"
 
 #: ../../source/concepts/factories.rst:184
 msgid ""
@@ -337,15 +337,15 @@ msgstr ""
 
 #: ../../source/concepts/factories.rst:184
 msgid "``null`` (defaults to the component name)"
-msgstr ""
+msgstr "``null`` (component 이름으로 기본값 설정)"
 
 #: ../../source/concepts/factories.rst:186
 msgid "path"
-msgstr ""
+msgstr "경로"
 
 #: ../../source/concepts/factories.rst:186
 msgid "The relative path within the namespace/folder to look for classes."
-msgstr ""
+msgstr "네임스페이스/폴더 내에서 클래스를 찾을 상대 경로입니다."
 
 #: ../../source/concepts/factories.rst:186
 msgid ""
@@ -355,37 +355,37 @@ msgstr ""
 
 #: ../../source/concepts/factories.rst:188
 msgid "instanceOf"
-msgstr ""
+msgstr "instanceOf"
 
 #: ../../source/concepts/factories.rst:188
 msgid "A required class name to match on the returned instance."
-msgstr ""
+msgstr "반환된 인스턴스와 일치해야 하는 필수 클래스 이름입니다."
 
 #: ../../source/concepts/factories.rst:188
 msgid "``null`` (no filtering)"
-msgstr ""
+msgstr "``null`` (필터링 없음)"
 
 #: ../../source/concepts/factories.rst:189
 msgid "getShared"
-msgstr ""
+msgstr "getShared"
 
 #: ../../source/concepts/factories.rst:189
 #: ../../source/concepts/factories.rst:191
 msgid "boolean"
-msgstr ""
+msgstr "boolean"
 
 #: ../../source/concepts/factories.rst:189
 msgid "Whether to return a shared instance of the class or load a fresh one."
-msgstr ""
+msgstr "클래스의 공유 인스턴스를 반환할지 또는 새 인스턴스를 로드할지 여부입니다."
 
 #: ../../source/concepts/factories.rst:189
 #: ../../source/concepts/factories.rst:191
 msgid "``true``"
-msgstr ""
+msgstr "``true``"
 
 #: ../../source/concepts/factories.rst:191
 msgid "preferApp"
-msgstr ""
+msgstr "preferApp"
 
 #: ../../source/concepts/factories.rst:191
 msgid ""
@@ -418,15 +418,15 @@ msgstr ""
 
 #: ../../source/concepts/factories.rst:204
 msgid "The static method ``Factories::setOptions()``."
-msgstr ""
+msgstr "정적 메서드 ``Factories::setOptions()``입니다."
 
 #: ../../source/concepts/factories.rst:205
 msgid "Passing options directly at call time with a parameter."
-msgstr ""
+msgstr "호출 시 매개변수로 옵션을 직접 전달합니다."
 
 #: ../../source/concepts/factories.rst:208
 msgid "Configurations"
-msgstr ""
+msgstr "구성"
 
 #: ../../source/concepts/factories.rst:210
 msgid ""
@@ -437,7 +437,7 @@ msgstr ""
 
 #: ../../source/concepts/factories.rst:214
 msgid "Example: Filters Factories"
-msgstr ""
+msgstr "예: 필터 팩토리"
 
 #: ../../source/concepts/factories.rst:216
 msgid ""
@@ -475,15 +475,15 @@ msgstr ""
 
 #: ../../source/concepts/factories.rst:235
 msgid "In this case, your **app/Config/Factory.php** file will look like this:"
-msgstr ""
+msgstr "이 경우 **app/Config/Factory.php** 파일은 다음과 같습니다:"
 
 #: ../../source/concepts/factories.rst:239
 msgid "Now you can load your libraries with the ``Factories::library()`` method:"
-msgstr ""
+msgstr "이제 ``Factories::library()`` 메서드로 라이브러리를 로드할 수 있습니다:"
 
 #: ../../source/concepts/factories.rst:245
 msgid "setOptions Method"
-msgstr ""
+msgstr "setOptions 메서드"
 
 #: ../../source/concepts/factories.rst:247
 msgid ""
@@ -495,7 +495,7 @@ msgstr ""
 
 #: ../../source/concepts/factories.rst:254
 msgid "Parameter Options"
-msgstr ""
+msgstr "매개변수 옵션"
 
 #: ../../source/concepts/factories.rst:256
 msgid ""
