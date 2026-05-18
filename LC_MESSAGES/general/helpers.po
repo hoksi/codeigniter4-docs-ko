@@ -74,7 +74,7 @@ msgstr "헬퍼는 일반적으로 **system/Helpers** 또는 **app/Helpers** 디�
 
 #: ../../source/general/helpers.rst:37
 msgid "Loading Helpers"
-msgstr "헬퍼 로드 중"
+msgstr "헬퍼 로딩"
 
 #: ../../source/general/helpers.rst:39
 msgid ""
@@ -84,7 +84,7 @@ msgstr ":doc:`../helpers/url_helper`\\ 은 항상 로드되므로 직접 로드�
 
 #: ../../source/general/helpers.rst:42
 msgid "Loading a Helper"
-msgstr "헬퍼 로드"
+msgstr "헬퍼 로딩"
 
 #: ../../source/general/helpers.rst:44
 msgid "Loading a helper file is quite simple using the following method:"
@@ -192,7 +192,7 @@ msgstr "system/Helpers - 기본 파일이 마지막으로 로드됩니다."
 
 #: ../../source/general/helpers.rst:93
 msgid "Loading Multiple Helpers"
-msgstr "여러 헬퍼 로드"
+msgstr "여러 헬퍼 로딩"
 
 #: ../../source/general/helpers.rst:95
 msgid ""
