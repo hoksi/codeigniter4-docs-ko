@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../source/general/managing_apps.rst:3
 msgid "Managing your Applications"
-msgstr ""
+msgstr "애플리케이션 관리"
 
 #: ../../source/general/managing_apps.rst:5
 msgid ""
@@ -31,11 +31,11 @@ msgid ""
 "It is possible, however, to have multiple sets of applications that share"
 " a single CodeIgniter installation, or even to rename or relocate your "
 "application directory."
-msgstr ""
+msgstr "기본적으로는 CodeIgniter를 사용해 **app** 디렉터리에서 하나의 애플리케이션만 관리한다고 가정합니다. 하지만 하나의 CodeIgniter 설치를 여러 애플리케이션 세트가 공유하도록 구성하거나, 애플리케이션 디렉터리의 이름을 바꾸거나 위치를 옮길 수도 있습니다."
 
 #: ../../source/general/managing_apps.rst:18
 msgid "Renaming or Relocating the Application Directory"
-msgstr ""
+msgstr "애플리케이션 디렉터리 이름 변경 또는 위치 이동"
 
 #: ../../source/general/managing_apps.rst:20
 msgid ""
@@ -43,25 +43,25 @@ msgid ""
 " a different location on your server, other than your project root, open "
 "your main **app/Config/Paths.php** and set a *full server path* in the "
 "``$appDirectory`` variable (at about line 44):"
-msgstr ""
+msgstr "애플리케이션 디렉터리의 이름을 바꾸거나 프로젝트 루트가 아닌 서버의 다른 위치로 옮기려면, 기본 **app/Config/Paths.php** 를 열어 ``$appDirectory`` 변수(약 44번째 줄)에 *전체 서버 경로*를 설정하세요:"
 
 #: ../../source/general/managing_apps.rst:27
 msgid ""
 "You will need to modify two additional files in your project root, so "
 "that they can find the **Paths** configuration file:"
-msgstr ""
+msgstr "**Paths** 설정 파일을 찾을 수 있도록 프로젝트 루트의 추가 파일 두 개도 수정해야 합니다:"
 
 #: ../../source/general/managing_apps.rst:30
 msgid "**spark** runs command line apps."
-msgstr ""
+msgstr "**spark** 는 명령줄 앱을 실행합니다."
 
 #: ../../source/general/managing_apps.rst:35
 msgid "**public/index.php** is the front controller for your webapp."
-msgstr ""
+msgstr "**public/index.php** 는 웹앱의 프론트 컨트롤러입니다."
 
 #: ../../source/general/managing_apps.rst:43
 msgid "Running Multiple Applications with one CodeIgniter Installation"
-msgstr ""
+msgstr "하나의 CodeIgniter 설치로 여러 애플리케이션 실행"
 
 #: ../../source/general/managing_apps.rst:45
 msgid ""
@@ -69,62 +69,62 @@ msgid ""
 "to manage several different applications, simply put all of the "
 "directories located inside your application directory into their own "
 "(sub)-directory."
-msgstr ""
+msgstr "공통 CodeIgniter 프레임워크 설치를 여러 애플리케이션에서 공유하려면, 애플리케이션 디렉터리 안에 있는 모든 디렉터리를 각각의 (하위) 디렉터리로 옮기면 됩니다."
 
 #: ../../source/general/managing_apps.rst:49
 msgid ""
 "For example, let's say you want to create two applications, named **foo**"
 " and **bar**. You could structure your application project directories "
 "like this:"
-msgstr ""
+msgstr "예를 들어 **foo** 와 **bar** 라는 두 애플리케이션을 만들고 싶다면, 프로젝트 디렉터리를 다음과 같이 구성할 수 있습니다:"
 
 #: ../../source/general/managing_apps.rst:76
 msgid ""
 "If you install CodeIgniter from the Zip file, the directory structure "
 "would be following:"
-msgstr ""
+msgstr "Zip 파일에서 CodeIgniter를 설치한 경우 디렉터리 구조는 다음과 같습니다:"
 
 #: ../../source/general/managing_apps.rst:84
 msgid ""
 "This would have two apps, **foo** and **bar**, both having standard "
 "application directories and a **public** folder, and sharing a common "
 "**codeigniter4/framework**."
-msgstr ""
+msgstr "이렇게 하면 **foo** 와 **bar** 두 앱이 표준 애플리케이션 디렉터리와 **public** 폴더를 각각 가지면서, 공통 **codeigniter4/framework** 를 공유하게 됩니다."
 
 #: ../../source/general/managing_apps.rst:87
 msgid ""
 "The ``$systemDirectory`` variable in **app/Config/Paths.php** inside each"
 " of those would be set to refer to the shared common "
 "**codeigniter4/framework** folder:"
-msgstr ""
+msgstr "각 앱의 **app/Config/Paths.php** 에 있는 ``$systemDirectory`` 변수는 공유되는 **codeigniter4/framework** 폴더를 가리키도록 설정합니다:"
 
 #: ../../source/general/managing_apps.rst:92
 msgid ""
 "If you install CodeIgniter from the Zip file, the ``$systemDirectory`` "
 "would be ``__DIR__ . '/../../../codeigniter4/system'``."
-msgstr ""
+msgstr "Zip 파일에서 CodeIgniter를 설치한 경우 ``$systemDirectory`` 는 ``__DIR__ . '/../../../codeigniter4/system'`` 가 됩니다."
 
 #: ../../source/general/managing_apps.rst:94
 msgid ""
 "And modify the ``COMPOSER_PATH`` constant in **app/Config/Constants.php**"
 " inside each of those:"
-msgstr ""
+msgstr "그리고 각 앱의 **app/Config/Constants.php** 에서 ``COMPOSER_PATH`` 상수도 수정합니다:"
 
 #: ../../source/general/managing_apps.rst:99
 msgid ""
 "Only when you change the Application Directory, see :ref:`renaming-app-"
 "directory` and modify the paths in the **index.php** and **spark**."
-msgstr ""
+msgstr "애플리케이션 디렉터리를 변경한 경우에만 :ref:`renaming-app-directory` 를 참고하여 **index.php** 와 **spark** 의 경로를 수정하세요."
 
 #: ../../source/general/managing_apps.rst:102
 msgid "Changing the Location of the .env File"
-msgstr ""
+msgstr ".env 파일 위치 변경"
 
 #: ../../source/general/managing_apps.rst:104
 msgid ""
 "If necessary, you can change the location of the ``.env`` file by "
 "adjusting the ``$envDirectory`` property in ``app/Config/Paths.php``."
-msgstr ""
+msgstr "필요하면 ``app/Config/Paths.php`` 의 ``$envDirectory`` 속성을 조정해 ``.env`` 파일 위치를 변경할 수 있습니다."
 
 #: ../../source/general/managing_apps.rst:107
 msgid ""
@@ -132,7 +132,7 @@ msgid ""
 " located one level above the ``app/`` directory (in the ``ROOTPATH``). "
 "This is a safe location when your domain is correctly pointed to the "
 "``public/`` directory, as recommended."
-msgstr ""
+msgstr "기본적으로 프레임워크는 ``app/`` 디렉터리에서 한 단계 위(``ROOTPATH``)에 있는 ``.env`` 파일에서 환경 설정을 로드합니다. 권장 사항대로 도메인이 ``public/`` 디렉터리를 올바르게 가리키는 경우 이 위치는 안전합니다."
 
 #: ../../source/general/managing_apps.rst:111
 msgid ""
@@ -141,13 +141,13 @@ msgid ""
 " such cases, placing the ``.env`` file within the ``ROOTPATH`` may expose"
 " sensitive configuration data if ``.htaccess`` or other protections are "
 "misconfigured."
-msgstr ""
+msgstr "하지만 실제로는 일부 애플리케이션이 메인 도메인이 아닌 하위 디렉터리(예: ``http://example.com/myapp``)에서 서비스됩니다. 이런 경우 ``.htaccess`` 나 기타 보호 설정이 잘못되면 ``ROOTPATH`` 내의 ``.env`` 파일이 민감한 구성 데이터를 노출할 수 있습니다."
 
 #: ../../source/general/managing_apps.rst:115
 msgid ""
 "To avoid this risk in such setups, it is recommended that you ensure the "
 "``.env`` file is located outside any web-accessible directories."
-msgstr ""
+msgstr "이런 구성에서 위험을 피하려면 ``.env`` 파일을 웹에서 접근 가능한 디렉터리 밖에 두는 것을 권장합니다."
 
 #: ../../source/general/managing_apps.rst:119
 msgid ""
@@ -155,5 +155,5 @@ msgid ""
 "is not publicly accessible. Exposure of this file could lead to "
 "compromised credentials and access to critical services, such as your "
 "database, mail server, or third-party APIs."
-msgstr ""
+msgstr "``.env`` 파일 위치를 변경한다면 외부에서 절대 접근할 수 없도록 반드시 확인하세요. 이 파일이 노출되면 자격 증명이 유출되고 데이터베이스, 메일 서버, 서드파티 API 같은 핵심 서비스 접근 권한이 침해될 수 있습니다."
 
