@@ -12,77 +12,87 @@ msgstr ""
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../source/general/helpers.rst:3
 msgid "Helper Functions"
-msgstr ""
+msgstr "도우미 기능"
 
 #: ../../source/general/helpers.rst:11
 msgid "What are Helpers?"
-msgstr ""
+msgstr "도우미란 무엇입니까?"
 
 #: ../../source/general/helpers.rst:13
 msgid ""
 "Helpers, as the name suggests, help you with tasks. Each helper file is "
 "simply a collection of functions in a particular category. There are "
-":doc:`URL Helpers <../helpers/url_helper>`, that assist in creating "
-"links, there are :doc:`Form Helpers <../helpers/form_helper>` that help "
-"you create form elements, :doc:`Test Helpers <../helpers/text_helper>` "
-"perform various text formatting routines,  :doc:`Cookie Helpers "
-"<../helpers/cookie_helper>` set and read cookies, :doc:`Filesystem "
-"Helpers <../helpers/filesystem_helper>` help you deal with files, etc."
+":doc:`URL Helpers <../helpers/url_helper>`, that assist in creating links, "
+"there are :doc:`Form Helpers <../helpers/form_helper>` that help you create "
+"form elements, :doc:`Test Helpers <../helpers/text_helper>` perform various "
+"text formatting routines,  :doc:`Cookie Helpers <../helpers/cookie_helper>` "
+"set and read cookies, :doc:`Filesystem Helpers "
+"<../helpers/filesystem_helper>` help you deal with files, etc."
 msgstr ""
+"이름에서 알 수 있듯이 도우미는 작업을 도와줍니다. 각 도우미 파일은 단순히 특정 범주의 함수 모음입니다. 링크 생성에 도움이 되는 "
+":doc:`URL Helpers <../helpers/url_helper>`, 양식 요소 생성에 도움이 되는 :doc:`Form "
+"Helpers <../helpers/form_helper>`, 다양한 텍스트 서식 지정 루틴을 수행하는 :doc:`Test Helpers"
+" <../helpers/text_helper>`, 쿠키를 설정하고 읽는 :doc:`Cookie Helpers "
+"<../helpers/cookie_helper>`, :doc:`Filesystem Helpers "
+"<../helpers/filesystem_helper>`, 파일 처리에 도움이 되는 등이 있습니다."
 
 #: ../../source/general/helpers.rst:22
 msgid ""
 "Unlike most other systems in CodeIgniter, Helpers are not written in an "
-"Object Oriented format. They are simple, procedural functions. Each "
-"helper function performs one specific task, with no dependence on other "
-"functions."
+"Object Oriented format. They are simple, procedural functions. Each helper "
+"function performs one specific task, with no dependence on other functions."
 msgstr ""
+"CodeIgniter의 대부분의 다른 시스템과 달리 도우미는 객체 지향 형식으로 작성되지 않습니다. 이는 단순하고 절차적인 기능입니다. "
+"각 도우미 함수는 다른 함수에 의존하지 않고 하나의 특정 작업을 수행합니다."
 
 #: ../../source/general/helpers.rst:27
 msgid ""
 "CodeIgniter does not load Helper Files by default, so the first step in "
-"using a Helper is to load it. Once loaded, it becomes globally available "
-"in your :doc:`controller <../incoming/controllers>` and :doc:`views "
+"using a Helper is to load it. Once loaded, it becomes globally available in "
+"your :doc:`controller <../incoming/controllers>` and :doc:`views "
 "<../outgoing/views>`."
 msgstr ""
+"CodeIgniter는 기본적으로 도우미 파일을 로드하지 않으므로 도우미 사용의 첫 번째 단계는 도우미 파일을 로드하는 것입니다. "
+"로드되면 :doc:`controller <../incoming/controllers>` 및 :doc:`views "
+"<../outgoing/views>`\\ 에서 전역적으로 사용할 수 있게 됩니다."
 
 #: ../../source/general/helpers.rst:32
 msgid ""
-"Helpers are typically stored in your **system/Helpers**, or "
-"**app/Helpers** directory."
-msgstr ""
+"Helpers are typically stored in your **system/Helpers**, or **app/Helpers** "
+"directory."
+msgstr "도우미는 일반적으로 **system/Helpers** 또는 **app/Helpers** 디렉터리에 저장됩니다."
 
 #: ../../source/general/helpers.rst:37
 msgid "Loading Helpers"
-msgstr ""
+msgstr "도우미 로드 중"
 
 #: ../../source/general/helpers.rst:39
 msgid ""
-"The :doc:`../helpers/url_helper` is always loaded so you do not need to "
-"load it yourself."
-msgstr ""
+"The :doc:`../helpers/url_helper` is always loaded so you do not need to load"
+" it yourself."
+msgstr ":doc:`../helpers/url_helper`\\ 은 항상 로드되므로 직접 로드할 필요가 없습니다."
 
 #: ../../source/general/helpers.rst:42
 msgid "Loading a Helper"
-msgstr ""
+msgstr "도우미 로드"
 
 #: ../../source/general/helpers.rst:44
 msgid "Loading a helper file is quite simple using the following method:"
-msgstr ""
+msgstr "다음 방법을 사용하면 도우미 파일을 로드하는 것이 매우 간단합니다."
 
 #: ../../source/general/helpers.rst:48
 msgid "The above code loads the **name_helper.php** file."
-msgstr ""
+msgstr "위 코드는 **name_helper.php** 파일을 로드합니다."
 
 #: ../../source/general/helpers.rst:50
 msgid ""
@@ -90,35 +100,45 @@ msgid ""
 "``helper('Name')`` will not work on case-sensitive file systems such as "
 "Linux."
 msgstr ""
+"CodeIgniter 도우미 파일 이름은 모두 소문자입니다. 따라서 ``helper('Name')``\\ 은 Linux와 같이 대소문자를"
+" 구분하는 파일 시스템에서는 작동하지 않습니다."
 
 #: ../../source/general/helpers.rst:54
 msgid ""
 "For example, to load the :doc:`../helpers/cookie_helper` file, which is "
 "named **cookie_helper.php**, you would do this:"
 msgstr ""
+"예를 들어, **cookie_helper.php**\\ 이라는 :doc:`../helpers/cookie_helper` 파일을 로드하려면"
+" 다음을 수행합니다."
 
 #: ../../source/general/helpers.rst:59
 msgid ""
-"The :php:func:`helper()` function does not return a value, so don't try "
-"to assign it to a variable. Just use it as shown."
+"The :php:func:`helper()` function does not return a value, so don't try to "
+"assign it to a variable. Just use it as shown."
 msgstr ""
+":php:func:`helper()` 함수는 값을 반환하지 않으므로 값을 변수에 할당하지 마세요. 표시된 대로 사용하면 됩니다."
 
 #: ../../source/general/helpers.rst:63
 msgid "Auto-Discovery and Composer Packages"
-msgstr ""
+msgstr "자동 검색 및 작성기 패키지"
 
 #: ../../source/general/helpers.rst:65
 msgid ""
 "By default, CodeIgniter will search for the helper files in all defined "
-"namespaces by :ref:`auto-discovery`. You can check your defined "
-"namespaces by the spark command. See :ref:`confirming-namespaces`."
+"namespaces by :ref:`auto-discovery`. You can check your defined namespaces "
+"by the spark command. See :ref:`confirming-namespaces`."
 msgstr ""
+"기본적으로 CodeIgniter는 :ref:`auto-discovery`\\ 으로 정의된 모든 네임스페이스에서 도우미 파일을 검색합니다."
+" Spark 명령으로 정의된 네임스페이스를 확인할 수 있습니다. :ref:`confirming-namespaces`\\ 을(를) "
+"참조하세요."
 
 #: ../../source/general/helpers.rst:69
 msgid ""
-"If you use many Composer packages, you will have many defined namespaces."
-" CodeIgniter will scan all namespaces by default."
+"If you use many Composer packages, you will have many defined namespaces. "
+"CodeIgniter will scan all namespaces by default."
 msgstr ""
+"많은 Composer 패키지를 사용하는 경우 정의된 네임스페이스도 많이 있게 됩니다. CodeIgniter는 기본적으로 모든 "
+"네임스페이스를 검색합니다."
 
 #: ../../source/general/helpers.rst:72
 msgid ""
@@ -126,220 +146,255 @@ msgid ""
 "manually specify packages for Auto-Discovery. See :ref:`modules-specify-"
 "composer-packages` for details."
 msgstr ""
+"관련 없는 Composer 패키지를 검색하는 데 시간을 낭비하지 않으려면 자동 검색용 패키지를 수동으로 지정할 수 있습니다. 자세한 "
+"내용은 :ref:`modules-specify-composer-packages`\\ 을 참조하세요."
 
 #: ../../source/general/helpers.rst:76
 msgid ""
 "Or you can :ref:`specify a namespace <helpers-loading-from-specified-"
 "namespace>` for a helper that you want to load."
 msgstr ""
+"또는 로드하려는 도우미에 대해 :ref:`specify a namespace <helpers-loading-from-specified-"
+"namespace>`\\ 을(를) 수행할 수 있습니다."
 
 #: ../../source/general/helpers.rst:80
 msgid "Load Order"
-msgstr ""
+msgstr "로드 순서"
 
 #: ../../source/general/helpers.rst:82
 msgid ""
-"The :php:func:`helper()` function will scan through all defined "
-"namespaces and load in ALL matching helpers of the same name. This allows"
-" any module's helpers to be loaded, as well as any helpers you've created"
-" specifically for this application."
+"The :php:func:`helper()` function will scan through all defined namespaces "
+"and load in ALL matching helpers of the same name. This allows any module's "
+"helpers to be loaded, as well as any helpers you've created specifically for"
+" this application."
 msgstr ""
+":php:func:`helper()` 함수는 정의된 모든 네임스페이스를 검색하고 동일한 이름의 일치하는 모든 도우미를 로드합니다. 이를 "
+"통해 모든 모듈의 도우미는 물론 이 응용 프로그램을 위해 특별히 만든 도우미도 로드할 수 있습니다."
 
 #: ../../source/general/helpers.rst:86
 msgid "The load order is as follows:"
-msgstr ""
+msgstr "로드 순서는 다음과 같습니다."
 
 #: ../../source/general/helpers.rst:88
 msgid "app/Helpers - Files loaded here are always loaded first."
-msgstr ""
+msgstr "app/Helpers - 여기에 로드된 파일은 항상 먼저 로드됩니다."
 
 #: ../../source/general/helpers.rst:89
 #, python-brace-format
 msgid ""
-"{namespace}/Helpers - All namespaces are looped through in the order they"
-" are defined."
-msgstr ""
+"{namespace}/Helpers - All namespaces are looped through in the order they "
+"are defined."
+msgstr "{namespace}/Helpers - 모든 네임스페이스는 정의된 순서대로 반복됩니다."
 
 #: ../../source/general/helpers.rst:90
 msgid "system/Helpers - The base file is loaded last."
-msgstr ""
+msgstr "system/Helpers - 기본 파일이 마지막으로 로드됩니다."
 
 #: ../../source/general/helpers.rst:93
 msgid "Loading Multiple Helpers"
-msgstr ""
+msgstr "여러 도우미 로드"
 
 #: ../../source/general/helpers.rst:95
 msgid ""
-"If you need to load more than one helper at a time, you can pass an array"
-" of file names in and all of them will be loaded:"
-msgstr ""
+"If you need to load more than one helper at a time, you can pass an array of"
+" file names in and all of them will be loaded:"
+msgstr "한 번에 두 개 이상의 도우미를 로드해야 하는 경우 파일 이름 배열을 전달하면 모든 도우미가 로드됩니다."
 
 #: ../../source/general/helpers.rst:101
 msgid "Loading in a Controller"
-msgstr ""
+msgstr "컨트롤러에 로드"
 
 #: ../../source/general/helpers.rst:103
 msgid ""
 "A helper can be loaded anywhere within your controller methods (or even "
-"within your View files, although that's not a good practice), as long as "
-"you load it before you use it."
+"within your View files, although that's not a good practice), as long as you"
+" load it before you use it."
 msgstr ""
+"도우미는 사용하기 전에 로드하기만 하면 컨트롤러 메서드 내(또는 좋은 방법은 아니지만 View 파일 내에서도) 어디에서나 로드할 수 "
+"있습니다."
 
 #: ../../source/general/helpers.rst:107
 msgid ""
-"You can load your helpers in your controller constructor so that they "
-"become available automatically in any method, or you can load a helper in"
-" a specific method that needs it."
+"You can load your helpers in your controller constructor so that they become"
+" available automatically in any method, or you can load a helper in a "
+"specific method that needs it."
 msgstr ""
+"도우미 생성자에서 도우미를 로드하여 모든 메서드에서 자동으로 사용할 수 있도록 하거나, 필요한 특정 메서드에서 도우미를 로드할 수 "
+"있습니다."
 
 #: ../../source/general/helpers.rst:112
 msgid ""
-"However if you want to load in your controller constructor, you can use "
-"the ``$helpers`` property in Controller instead. See :ref:`Controllers "
+"However if you want to load in your controller constructor, you can use the "
+"``$helpers`` property in Controller instead. See :ref:`Controllers "
 "<controllers-helpers>`."
 msgstr ""
+"그러나 컨트롤러 생성자에 로드하려면 컨트롤러에서 ``$helpers`` 속성을 대신 사용할 수 있습니다. :ref:`Controllers"
+" <controllers-helpers>`\\ 을(를) 참조하세요."
 
 #: ../../source/general/helpers.rst:118
 msgid "Loading from Specified Namespace"
-msgstr ""
+msgstr "지정된 네임스페이스에서 로드"
 
 #: ../../source/general/helpers.rst:120
 msgid ""
 "By default, CodeIgniter will search for the helper files in all defined "
 "namespaces and load all found files."
-msgstr ""
+msgstr "기본적으로 CodeIgniter는 정의된 모든 네임스페이스에서 도우미 파일을 검색하고 발견된 모든 파일을 로드합니다."
 
 #: ../../source/general/helpers.rst:123
 msgid ""
-"If you want to load only a helper in a specific namespace, prefix the "
-"name of the helper with the namespace that it can be located in. Within "
-"that namespaced directory, the loader expects it to live within a sub-"
-"directory named **Helpers**. An example will help understand this."
+"If you want to load only a helper in a specific namespace, prefix the name "
+"of the helper with the namespace that it can be located in. Within that "
+"namespaced directory, the loader expects it to live within a sub-directory "
+"named **Helpers**. An example will help understand this."
 msgstr ""
+"특정 네임스페이스의 헬퍼만 로드하려면 헬퍼 이름 앞에 헬퍼가 위치할 수 있는 네임스페이스를 붙입니다. 해당 네임스페이스 디렉터리 내에서 "
+"로더는 해당 헬퍼가 **Helpers**\\ 이라는 하위 디렉터리에 있을 것으로 예상합니다. 이를 이해하는 데 예가 도움이 될 것입니다."
 
 #: ../../source/general/helpers.rst:128
 msgid ""
 "For this example, assume that we have grouped together all of our Blog-"
-"related code into its own namespace, ``Example\\Blog``. The files exist "
-"on our server at **Modules/Blog/**. So, we would put our Helper files for"
-" the blog module in **Modules/Blog/Helpers/**. A **blog_helper** file "
-"would be at **Modules/Blog/Helpers/blog_helper.php**. Within our "
-"controller we could use the following command to load the helper for us:"
+"related code into its own namespace, ``Example\\Blog``. The files exist on "
+"our server at **Modules/Blog/**. So, we would put our Helper files for the "
+"blog module in **Modules/Blog/Helpers/**. A **blog_helper** file would be at"
+" **Modules/Blog/Helpers/blog_helper.php**. Within our controller we could "
+"use the following command to load the helper for us:"
 msgstr ""
+"이 예에서는 모든 블로그 관련 코드를 자체 네임스페이스인 ``Example\\Blog``\\ 로 그룹화했다고 가정합니다. 파일은 "
+"**Modules/Blog/**\\ 에 있는 당사 서버에 있습니다. 따라서 블로그 모듈용 도우미 파일을 "
+"**Modules/Blog/Helpers/**\\ 에 넣습니다. **blog_helper** 파일은 "
+"**Modules/Blog/Helpers/blog_helper.php**\\ 에 있습니다. 컨트롤러 내에서 다음 명령을 사용하여 도우미를"
+" 로드할 수 있습니다."
 
 #: ../../source/general/helpers.rst:137
 msgid "You can also use the following way:"
-msgstr ""
+msgstr "다음 방법을 사용할 수도 있습니다."
 
 #: ../../source/general/helpers.rst:141
 msgid ""
 "The functions within files loaded this way are not truly namespaced. The "
 "namespace is simply used as a convenient way to locate the files."
 msgstr ""
+"이런 방식으로 로드된 파일 내의 함수는 실제로 네임스페이스가 지정되지 않습니다. 네임스페이스는 단순히 파일을 찾는 편리한 방법으로 "
+"사용됩니다."
 
 #: ../../source/general/helpers.rst:147
 msgid "Auto-loading Helpers"
-msgstr ""
+msgstr "자동 로딩 도우미"
 
 #: ../../source/general/helpers.rst:151
 msgid ""
 "If you find that you need a particular helper globally throughout your "
 "application, you can tell CodeIgniter to auto-load it during system "
-"initialization. This is done by opening the **app/Config/Autoload.php** "
-"file and adding the helper to the ``$helpers`` property."
+"initialization. This is done by opening the **app/Config/Autoload.php** file"
+" and adding the helper to the ``$helpers`` property."
 msgstr ""
+"애플리케이션 전반에 걸쳐 특정 도우미가 필요하다고 판단되면 CodeIgniter에 시스템 초기화 중에 이를 자동 로드하도록 지시할 수 "
+"있습니다. **app/Config/Autoload.php** 파일을 열고 ``$helpers`` 속성에 도우미를 추가하면 됩니다."
 
 #: ../../source/general/helpers.rst:158
 msgid "Using a Helper"
-msgstr ""
+msgstr "도우미 사용"
 
 #: ../../source/general/helpers.rst:160
 msgid ""
 "Once you've loaded the Helper File containing the function you intend to "
 "use, you'll call it the way you would a standard PHP function."
-msgstr ""
+msgstr "사용하려는 함수가 포함된 도우미 파일을 로드한 후에는 표준 PHP 함수와 같은 방식으로 호출하게 됩니다."
 
 #: ../../source/general/helpers.rst:163
 msgid ""
-"For example, to create a link using the :php:func:`anchor()` function in "
-"one of your view files you would do this:"
+"For example, to create a link using the :php:func:`anchor()` function in one"
+" of your view files you would do this:"
 msgstr ""
+"예를 들어, 보기 파일 중 하나에서 :php:func:`anchor()` 함수를 사용하여 링크를 생성하려면 다음을 수행합니다."
 
 #: ../../source/general/helpers.rst:168
 msgid ""
-"Where ``Click Here`` is the name of the link, and ``blog/comments`` is "
-"the URI to the controller/method you wish to link to."
+"Where ``Click Here`` is the name of the link, and ``blog/comments`` is the "
+"URI to the controller/method you wish to link to."
 msgstr ""
+"여기서 ``Click Here``\\ 은 링크 이름이고 ``blog/comments``\\ 은 링크하려는 컨트롤러/메서드에 대한 "
+"URI입니다."
 
 #: ../../source/general/helpers.rst:173
 msgid "Creating Helpers"
-msgstr ""
+msgstr "도우미 만들기"
 
 #: ../../source/general/helpers.rst:176
 msgid "Creating Custom Helpers"
-msgstr ""
+msgstr "사용자 정의 도우미 만들기"
 
 #: ../../source/general/helpers.rst:178
 msgid "The helper filename is the **helper name** and **_helper.php**."
-msgstr ""
+msgstr "도우미 파일 이름은 **helper name** 및 **_helper.php**\\ 입니다."
 
 #: ../../source/general/helpers.rst:180
 msgid ""
 "For example, to create info helper, you’ll create a file named "
 "**app/Helpers/info_helper.php**, and add a function to the file:"
 msgstr ""
+"예를 들어 정보 도우미를 만들려면 **app/Helpers/info_helper.php**\\ 이라는 파일을 만들고 파일에 함수를 "
+"추가합니다."
 
 #: ../../source/general/helpers.rst:185
 msgid "You can add as many functions as you like to a single helper file."
-msgstr ""
+msgstr "단일 도우미 파일에 원하는 만큼 많은 기능을 추가할 수 있습니다."
 
 #: ../../source/general/helpers.rst:188
 msgid "\"Extending\" Helpers"
-msgstr ""
+msgstr "\"확장\" 도우미"
 
 #: ../../source/general/helpers.rst:190
 msgid ""
-"To \"extend\" Helpers, create a file in your **app/Helpers** folder with "
-"an identical name to the existing Helper."
-msgstr ""
+"To \"extend\" Helpers, create a file in your **app/Helpers** folder with an "
+"identical name to the existing Helper."
+msgstr "도우미를 \"확장\"하려면 **app/Helpers** 폴더에 기존 도우미와 동일한 이름으로 파일을 만듭니다."
 
 #: ../../source/general/helpers.rst:193
 msgid ""
 "If all you need to do is add some functionality to an existing helper - "
-"perhaps add a function or two, or change how a particular helper function"
-" operates - then it's overkill to replace the entire helper with your "
+"perhaps add a function or two, or change how a particular helper function "
+"operates - then it's overkill to replace the entire helper with your "
 "version. In this case, it's better to simply \"extend\" the Helper."
 msgstr ""
+"기존 도우미에 일부 기능을 추가하기만 하면 됩니다(예: 한두 가지 기능을 추가하거나 특정 도우미 기능이 작동하는 방식을 변경하는 경우)."
+" 그러면 전체 도우미를 사용자 버전으로 바꾸는 것은 과잉입니다. 이 경우 도우미를 간단히 \"확장\"하는 것이 좋습니다."
 
 #: ../../source/general/helpers.rst:198
 msgid ""
-"The term \"extend\" is used loosely since Helper functions are procedural"
-" and discrete and cannot be extended in the traditional programmatic "
-"sense. Under the hood, this gives you the ability to add to, or to "
-"replace the functions a Helper provides."
+"The term \"extend\" is used loosely since Helper functions are procedural "
+"and discrete and cannot be extended in the traditional programmatic sense. "
+"Under the hood, this gives you the ability to add to, or to replace the "
+"functions a Helper provides."
 msgstr ""
+"\"확장\"이라는 용어는 도우미 함수가 절차적이고 개별적이며 전통적인 프로그래밍 방식으로 확장될 수 없기 때문에 느슨하게 사용됩니다. "
+"내부적으로는 도우미가 제공하는 기능을 추가하거나 대체할 수 있는 기능을 제공합니다."
 
 #: ../../source/general/helpers.rst:203
 msgid ""
 "For example, to extend the native **Array Helper** you'll create a file "
 "named **app/Helpers/array_helper.php**, and add or override functions:"
 msgstr ""
+"예를 들어 기본 **Array Helper**\\ 을 확장하려면 **app/Helpers/array_helper.php**\\ 이라는 "
+"파일을 만들고 함수를 추가하거나 재정의합니다."
 
 #: ../../source/general/helpers.rst:209
 msgid "Do not specify the namespace ``App\\Helpers``."
-msgstr ""
+msgstr "네임스페이스 ``App\\Helpers``\\ 을 지정하지 마십시오."
 
 #: ../../source/general/helpers.rst:211
 msgid "See `Load Order`_ for the order in which helper files are loaded."
-msgstr ""
+msgstr "도우미 파일이 로드되는 순서는 `Load Order`_\\ 을 참조하세요."
 
 #: ../../source/general/helpers.rst:215
 msgid "Now What?"
-msgstr ""
+msgstr "이제 무엇을?"
 
 #: ../../source/general/helpers.rst:217
 msgid ""
 "In the Table of Contents, you'll find a list of all the available "
 ":doc:`Helpers <../helpers/index>`. Browse each one to see what they do."
 msgstr ""
-
+"목차에는 사용 가능한 모든 :doc:`Helpers <../helpers/index>` 목록이 나와 있습니다. 각각의 기능을 살펴보고 "
+"무엇을 하는지 알아보세요."
