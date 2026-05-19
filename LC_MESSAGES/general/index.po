@@ -22,5 +22,5 @@ msgstr ""
 
 #: ../../source/general/index.rst:3
 msgid "General Topics"
-msgstr ""
+msgstr "일반 주제"
 

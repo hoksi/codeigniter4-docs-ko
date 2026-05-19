@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"POT-Creation-Date: 2026-05-18 19:00+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ko\n"
@@ -887,9 +887,9 @@ msgstr ""
 
 #: ../../source/models/model.rst:495
 msgid ""
-"If no parameters are passed in, ``find()`` will return all rows in that "
-"model's table, effectively acting like ``findAll()``, though less "
-"explicit."
+"If ``find()`` is called without parameters or with ``null``, it will "
+"return all rows in that model's table, effectively acting like "
+"``findAll()``, though less explicit."
 msgstr ""
 
 #: ../../source/models/model.rst:499
@@ -1865,4 +1865,11 @@ msgid ""
 "CodeIgniter's Model gives you out of the box, and create a fully custom "
 "experience."
 msgstr ""
+
+#~ msgid ""
+#~ "If no parameters are passed in, "
+#~ "``find()`` will return all rows in "
+#~ "that model's table, effectively acting "
+#~ "like ``findAll()``, though less explicit."
+#~ msgstr ""
 

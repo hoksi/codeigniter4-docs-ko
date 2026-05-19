@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"POT-Creation-Date: 2026-05-18 19:00+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ko\n"
@@ -690,7 +690,7 @@ msgstr ""
 #: ../../source/libraries/time.rst:403
 msgid ""
 "Determines if the current instance's time is in the past, relative to "
-"\"now\". It returns a boolean true/false::"
+"\"now\". It returns a boolean true/false:"
 msgstr ""
 
 #: ../../source/libraries/time.rst:411
@@ -700,7 +700,7 @@ msgstr ""
 #: ../../source/libraries/time.rst:415
 msgid ""
 "Determines if the current instance's time is in the future, relative to "
-"\"now\". It returns a boolean true/false::"
+"\"now\". It returns a boolean true/false:"
 msgstr ""
 
 #: ../../source/libraries/time.rst:423
@@ -771,4 +771,18 @@ msgstr ""
 #: ../../source/libraries/time.rst:472
 msgid "$time < 1 minute"
 msgstr ""
+
+#~ msgid ""
+#~ "Determines if the current instance's "
+#~ "time is in the past, relative to"
+#~ " \"now\". It returns a boolean "
+#~ "true/false::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Determines if the current instance's "
+#~ "time is in the future, relative to"
+#~ " \"now\". It returns a boolean "
+#~ "true/false::"
+#~ msgstr ""
 

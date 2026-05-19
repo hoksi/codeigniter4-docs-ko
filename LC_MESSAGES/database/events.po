@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../source/database/events.rst:3
 msgid "Database Events"
-msgstr ""
+msgstr "데이터베이스 이벤트"
 
 #: ../../source/database/events.rst:5
 msgid ""
@@ -31,31 +31,31 @@ msgid ""
 "the database execution. These events can be used to collect data for "
 "analysis and reporting. The :doc:`Debug Toolbar </testing/debugging>` "
 "uses this to collect the queries to display in the Toolbar."
-msgstr ""
+msgstr "Database 클래스에는 데이터베이스 실행 중에 어떤 일이 일어나고 있는지 더 자세히 알기 위해 활용할 수 있는 몇 가지 :doc:`이벤트 </extending/events>` 가 포함되어 있습니다. 이러한 이벤트는 분석 및 보고를 위해 데이터를 수집하는 데 사용할 수 있습니다. :doc:`디버그 도구 모음 </testing/debugging>` 은 이를 사용하여 도구 모음에 표시할 쿼리를 수집합니다."
 
 #: ../../source/database/events.rst:16
 msgid "The Events"
-msgstr ""
+msgstr "이벤트"
 
 #: ../../source/database/events.rst:21
 msgid "DBQuery"
-msgstr ""
+msgstr "DBQuery"
 
 #: ../../source/database/events.rst:23
 msgid ""
 "This event is triggered whenever a new query has been run, whether "
 "successful or not. The only parameter is a :doc:`Query "
 "</database/queries>` instance of the current query."
-msgstr ""
+msgstr "이 이벤트는 새로운 쿼리가 실행될 때마다 (성공 여부와 관계없이) 발생합니다. 유일한 매개변수는 현재 쿼리의 :doc:`Query </database/queries>` 인스턴스입니다."
 
 #: ../../source/database/events.rst:27
 msgid ""
 "You could use this to display all queries in STDOUT, or logging to a "
 "file, or even creating tools to do automatic query analysis to help you "
 "spot potentially missing indexes, slow queries, etc."
-msgstr ""
+msgstr "이 기능을 사용하여 모든 쿼리를 STDOUT에 표시하거나, 파일에 로깅하거나, 심지어 자동 쿼리 분석 도구를 만들어 잠재적으로 누락된 인덱스, 느린 쿼리 등을 찾는 데 도움을 줄 수 있습니다."
 
 #: ../../source/database/events.rst:31
 msgid "An example to log all queries:"
-msgstr ""
+msgstr "모든 쿼리를 로깅하는 예제:"
 

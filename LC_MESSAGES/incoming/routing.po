@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"POT-Creation-Date: 2026-05-18 19:00+0900\n"
 "PO-Revision-Date: 2026-05-14 19:30+0900\n"
 "Last-Translator: hoksi <hoksi@github.com>\n"
 "Language: ko\n"
@@ -1573,7 +1573,7 @@ msgid "Sort by Handler"
 msgstr ""
 
 #: ../../source/incoming/routing.rst:1004
-msgid "You can sort the routes by *Handler*:"
+msgid "You can sort the routes by *handler*:"
 msgstr ""
 
 #: ../../source/incoming/routing.rst:1013
@@ -1667,4 +1667,7 @@ msgid ""
 "``Router::getMatchedRouteOptions()``. Here is an example of the returned "
 "array:"
 msgstr ""
+
+#~ msgid "You can sort the routes by *Handler*:"
+#~ msgstr ""
 

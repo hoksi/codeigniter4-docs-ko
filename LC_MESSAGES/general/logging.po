@@ -12,73 +12,77 @@ msgstr ""
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../source/general/logging.rst:3
 msgid "Logging Information"
-msgstr ""
+msgstr "로깅 정보"
 
 #: ../../source/general/logging.rst:10
 msgid "Log Levels"
-msgstr ""
+msgstr "로그 수준"
 
 #: ../../source/general/logging.rst:12
 msgid ""
 "You can log information to the local log files by using the "
-":php:func:`log_message()` method. You must supply the \"level\" of the "
-"error in the first parameter, indicating what type of message it is "
-"(debug, error, etc). The second parameter is the message itself:"
+":php:func:`log_message()` method. You must supply the \"level\" of the error"
+" in the first parameter, indicating what type of message it is (debug, "
+"error, etc). The second parameter is the message itself:"
 msgstr ""
+":php:func:`log_message()` 메서드를 사용하여 로컬 로그 파일에 정보를 기록할 수 있습니다. 첫 번째 매개변수에 오류의"
+" \"레벨\"을 제공하여 메시지 유형(디버그, 오류 등)을 표시해야 합니다. 두 번째 매개변수는 메시지 자체입니다."
 
 #: ../../source/general/logging.rst:18
 msgid ""
 "There are eight different log levels, matching to the `RFC 5424 "
 "<https://tools.ietf.org/html/rfc5424>`_ levels, and they are as follows:"
 msgstr ""
+"`RFC 5424 <https://tools.ietf.org/html/rfc5424>`_ 수준과 일치하는 8가지 로그 수준이 있으며 그 "
+"수준은 다음과 같습니다."
 
 #: ../../source/general/logging.rst:21
 msgid "Level"
-msgstr ""
+msgstr "레벨"
 
 #: ../../source/general/logging.rst:21
 msgid "Description"
-msgstr ""
+msgstr "설명"
 
 #: ../../source/general/logging.rst:23
 msgid "debug"
-msgstr ""
+msgstr "debug"
 
 #: ../../source/general/logging.rst:23
 msgid "Detailed debug information."
-msgstr ""
+msgstr "자세한 디버그 정보."
 
 #: ../../source/general/logging.rst:24
 msgid "info"
-msgstr ""
+msgstr "info"
 
 #: ../../source/general/logging.rst:24
 msgid ""
-"Interesting events in your application, like a user logging in, logging "
-"SQL queries, etc."
-msgstr ""
+"Interesting events in your application, like a user logging in, logging SQL "
+"queries, etc."
+msgstr "사용자 로그인, SQL 쿼리 로깅 등과 같은 애플리케이션의 흥미로운 이벤트"
 
 #: ../../source/general/logging.rst:25
 msgid "notice"
-msgstr ""
+msgstr "notice"
 
 #: ../../source/general/logging.rst:25
 msgid "Normal, but significant events in your application."
-msgstr ""
+msgstr "애플리케이션에서 일반적이지만 중요한 이벤트입니다."
 
 #: ../../source/general/logging.rst:26
 msgid "warning"
-msgstr ""
+msgstr "warning"
 
 #: ../../source/general/logging.rst:26
 msgid ""
@@ -86,259 +90,288 @@ msgid ""
 "APIs, poor use of an API, or other undesirable things that are not "
 "necessarily wrong."
 msgstr ""
+"더 이상 사용되지 않는 API 사용, API의 잘못된 사용 또는 반드시 잘못된 것은 아니지만 기타 바람직하지 않은 일과 같이 오류가 아닌"
+" 예외적인 발생입니다."
 
 #: ../../source/general/logging.rst:28
 msgid "error"
-msgstr ""
+msgstr "error"
 
 #: ../../source/general/logging.rst:28
 msgid ""
-"Runtime errors that do not require immediate action but should typically "
-"be logged and monitored."
-msgstr ""
+"Runtime errors that do not require immediate action but should typically be "
+"logged and monitored."
+msgstr "즉각적인 조치가 필요하지 않지만 일반적으로 기록하고 모니터링해야 하는 런타임 오류입니다."
 
 #: ../../source/general/logging.rst:29
 msgid "critical"
-msgstr ""
+msgstr "critical"
 
 #: ../../source/general/logging.rst:29
 msgid ""
 "Critical conditions, like an application component not available, or an "
 "unexpected exception."
-msgstr ""
+msgstr "애플리케이션 구성요소를 사용할 수 없거나 예상치 못한 예외와 같은 심각한 상황입니다."
 
 #: ../../source/general/logging.rst:30
 msgid "alert"
-msgstr ""
+msgstr "alert"
 
 #: ../../source/general/logging.rst:30
 msgid ""
-"Action must be taken immediately, like when an entire website is down, "
-"the database unavailable, etc."
-msgstr ""
+"Action must be taken immediately, like when an entire website is down, the "
+"database unavailable, etc."
+msgstr "전체 웹사이트가 다운되거나 데이터베이스를 사용할 수 없는 경우 등 즉시 조치를 취해야 합니다."
 
 #: ../../source/general/logging.rst:31
 msgid "emergency"
-msgstr ""
+msgstr "emergency"
 
 #: ../../source/general/logging.rst:31
 msgid "The system is unusable."
-msgstr ""
+msgstr "시스템을 사용할 수 없습니다."
 
 #: ../../source/general/logging.rst:34
 msgid ""
-"The logging system does not provide ways to alert sysadmins or webmasters"
-" about these events, they solely log the information. For many of the "
-"more critical event levels, the logging happens automatically by the "
-"Error Handler, described above."
+"The logging system does not provide ways to alert sysadmins or webmasters "
+"about these events, they solely log the information. For many of the more "
+"critical event levels, the logging happens automatically by the Error "
+"Handler, described above."
 msgstr ""
+"로깅 시스템은 시스템 관리자나 웹마스터에게 이러한 이벤트에 대해 경고하는 방법을 제공하지 않으며 정보만 기록합니다. 더 중요한 이벤트 "
+"수준의 경우 위에서 설명한 오류 처리기에 의해 자동으로 로깅이 발생합니다."
 
 #: ../../source/general/logging.rst:41
 msgid "Configuration"
-msgstr ""
+msgstr "설정"
 
 #: ../../source/general/logging.rst:43
 msgid ""
-"You can modify which levels are actually logged, as well as assign "
-"different Loggers to handle different levels, within the "
-"**app/Config/Logger.php** configuration file."
+"You can modify which levels are actually logged, as well as assign different"
+" Loggers to handle different levels, within the **app/Config/Logger.php** "
+"configuration file."
 msgstr ""
+"**app/Config/Logger.php** 구성 파일 내에서 실제로 기록되는 수준을 수정할 수 있을 뿐만 아니라 다양한 수준을 "
+"처리하기 위해 다양한 로거를 할당할 수도 있습니다."
 
 #: ../../source/general/logging.rst:46
 msgid ""
 "The ``threshold`` value of the config file determines which levels are "
-"logged across your application. If any levels are requested to be logged "
-"by the application, but the threshold doesn't allow them to log "
-"currently, they will be ignored. The simplest method to use is to set "
-"this value to the minimum level that you want to have logged. For "
-"example, if you want to log warning messages, and not information "
-"messages, you would set the threshold to ``5``. Any log requests with a "
-"level of 5 or less (which includes runtime errors, system errors, etc) "
-"would be logged and info, notices, and debug would be ignored:"
+"logged across your application. If any levels are requested to be logged by "
+"the application, but the threshold doesn't allow them to log currently, they"
+" will be ignored. The simplest method to use is to set this value to the "
+"minimum level that you want to have logged. For example, if you want to log "
+"warning messages, and not information messages, you would set the threshold "
+"to ``5``. Any log requests with a level of 5 or less (which includes runtime"
+" errors, system errors, etc) would be logged and info, notices, and debug "
+"would be ignored:"
 msgstr ""
+"구성 파일의 ``threshold`` 값은 애플리케이션 전체에 기록되는 수준을 결정합니다. 애플리케이션에서 기록하도록 요청한 수준이 "
+"있지만 임계값으로 인해 현재 기록이 허용되지 않는 경우 해당 수준은 무시됩니다. 가장 간단한 사용 방법은 이 값을 기록하려는 최소 "
+"수준으로 설정하는 것입니다. 예를 들어 정보 메시지가 아닌 경고 메시지를 기록하려면 임계값을 ``5``\\ 로 설정합니다. 레벨 5 "
+"이하(런타임 오류, 시스템 오류 등 포함)의 모든 로그 요청이 기록되고 정보, 알림 및 디버그는 무시됩니다."
 
 #: ../../source/general/logging.rst:55
 msgid ""
-"A complete list of levels and their corresponding threshold value is in "
-"the configuration file for your reference."
-msgstr ""
+"A complete list of levels and their corresponding threshold value is in the "
+"configuration file for your reference."
+msgstr "레벨의 전체 목록과 해당 임계값은 참조용 구성 파일에 있습니다."
 
 #: ../../source/general/logging.rst:57
 msgid ""
-"You can pick and choose the specific levels that you would like logged by"
-" assigning an array of log level numbers to the threshold value:"
-msgstr ""
+"You can pick and choose the specific levels that you would like logged by "
+"assigning an array of log level numbers to the threshold value:"
+msgstr "로그 수준 번호 배열을 임계값에 할당하여 기록하려는 특정 수준을 선택하고 선택할 수 있습니다."
 
 #: ../../source/general/logging.rst:63
 msgid "Using Multiple Log Handlers"
-msgstr ""
+msgstr "여러 로그 처리기 사용"
 
 #: ../../source/general/logging.rst:65
 msgid ""
-"The logging system can support multiple methods of handling logging "
-"running at the same time. Each handler can be set to handle specific "
-"levels and ignore the rest. Currently, three handlers come with a default"
-" install:"
+"The logging system can support multiple methods of handling logging running "
+"at the same time. Each handler can be set to handle specific levels and "
+"ignore the rest. Currently, three handlers come with a default install:"
 msgstr ""
+"로깅 시스템은 동시에 실행되는 로깅을 처리하는 여러 방법을 지원할 수 있습니다. 각 핸들러는 특정 레벨을 처리하고 나머지는 무시하도록 "
+"설정할 수 있습니다. 현재 세 개의 핸들러가 기본 설치와 함께 제공됩니다."
 
 #: ../../source/general/logging.rst:68
 msgid ""
-"**File Handler** is the default handler and will create a single file for"
-" every day locally. This is the recommended method of logging."
-msgstr ""
+"**File Handler** is the default handler and will create a single file for "
+"every day locally. This is the recommended method of logging."
+msgstr "**File Handler**\\ 은 기본 처리기이며 매일 로컬에서 단일 파일을 생성합니다. 이는 권장되는 로깅 방법입니다."
 
 #: ../../source/general/logging.rst:70
 msgid ""
 "**ChromeLogger Handler** If you have the `ChromeLogger extension "
 "<https://craig.is/writing/chrome-logger>`_ installed in the Chrome web "
-"browser, you can use this handler to display the log information in "
-"Chrome's console window."
+"browser, you can use this handler to display the log information in Chrome's"
+" console window."
 msgstr ""
+"**ChromeLogger Handler** Chrome 웹 브라우저에 `ChromeLogger extension "
+"<https://craig.is/writing/chrome-logger>`_\\ 이 설치되어 있는 경우 이 핸들러를 사용하여 Chrome"
+" 콘솔 창에 로그 정보를 표시할 수 있습니다."
 
 #: ../../source/general/logging.rst:73
 msgid ""
 "**Errorlog Handler** This handler will take advantage of PHP's native "
-"``error_log()`` function and write the logs there. Currently, only the "
-"``0`` and ``4`` message types of ``error_log()`` are supported."
+"``error_log()`` function and write the logs there. Currently, only the ``0``"
+" and ``4`` message types of ``error_log()`` are supported."
 msgstr ""
+"**Errorlog Handler** 이 핸들러는 PHP 기본 ``error_log()`` 함수를 활용하고 거기에 로그를 작성합니다. "
+"현재 ``error_log()``\\ 의 ``0`` 및 ``4`` 메시지 유형만 지원됩니다."
 
 #: ../../source/general/logging.rst:76
 msgid ""
 "The handlers are configured in the main configuration file, in the "
 "``$handlers`` property, which is simply an array of handlers and their "
-"configuration. Each handler is specified with the key being the fully "
-"name-spaced class name. The value will be an array of varying properties,"
-" specific to each handler. Each handler's section will have one property "
-"in common: ``handles``, which is an array of log level *names* that the "
-"handler will log information for."
+"configuration. Each handler is specified with the key being the fully name-"
+"spaced class name. The value will be an array of varying properties, "
+"specific to each handler. Each handler's section will have one property in "
+"common: ``handles``, which is an array of log level *names* that the handler"
+" will log information for."
 msgstr ""
+"핸들러는 기본 구성 파일의 ``$handlers`` 속성에서 구성됩니다. 이는 단순히 핸들러 및 해당 구성의 배열입니다. 각 핸들러는 "
+"완전한 네임스페이스 클래스 이름인 키로 지정됩니다. 값은 각 핸들러에 특정한 다양한 속성의 배열입니다. 각 핸들러의 섹션에는 하나의 공통"
+" 속성인 ``handles``\\ 이 있습니다. 이는 핸들러가 정보를 기록할 로그 수준 *이름*\\ 의 배열입니다."
 
 #: ../../source/general/logging.rst:85
 msgid "Modifying the Message with Context"
-msgstr ""
+msgstr "컨텍스트에 따라 메시지 수정"
 
 #: ../../source/general/logging.rst:87
 msgid ""
 "You will often want to modify the details of your message based on the "
-"context of the event being logged. You might need to log a user id, an IP"
-" address, the current POST variables, etc. You can do this by use "
+"context of the event being logged. You might need to log a user id, an IP "
+"address, the current POST variables, etc. You can do this by use "
 "placeholders in your message. Each placeholder must be wrapped in curly "
 "braces. In the third parameter, you must provide an array of placeholder "
-"names (without the braces) and their values. These will be inserted into "
-"the message string:"
+"names (without the braces) and their values. These will be inserted into the"
+" message string:"
 msgstr ""
+"기록되는 이벤트의 컨텍스트에 따라 메시지의 세부 정보를 수정하려는 경우가 많습니다. 사용자 ID, IP 주소, 현재 POST 변수 등을 "
+"기록해야 할 수도 있습니다. 메시지에 자리 표시자를 사용하면 됩니다. 각 자리 표시자는 중괄호로 묶어야 합니다. 세 번째 매개변수에는 "
+"자리 표시자 이름(중괄호 제외)과 해당 값의 배열을 제공해야 합니다. 메시지 문자열에 다음이 삽입됩니다."
 
 #: ../../source/general/logging.rst:95
 msgid ""
 "If you want to log an Exception or an Error, you can use the key of "
 "'exception', and the value being the Exception or Error itself. A string "
-"will be generated from that object containing the error message, the file"
-" name and line number. You must still provide the exception placeholder "
-"in the message:"
+"will be generated from that object containing the error message, the file "
+"name and line number. You must still provide the exception placeholder in "
+"the message:"
 msgstr ""
+"예외 또는 오류를 기록하려면 '예외' 키를 사용하고 값은 예외 또는 오류 자체를 사용할 수 있습니다. 오류 메시지, 파일 이름 및 줄 "
+"번호를 포함하는 해당 개체에서 문자열이 생성됩니다. 메시지에 예외 자리 표시자를 제공해야 합니다."
 
 #: ../../source/general/logging.rst:101
 msgid ""
-"Several core placeholders exist that will be automatically expanded for "
-"you based on the current page request:"
-msgstr ""
+"Several core placeholders exist that will be automatically expanded for you "
+"based on the current page request:"
+msgstr "현재 페이지 요청에 따라 자동으로 확장되는 몇 가지 핵심 자리 표시자가 있습니다."
 
 #: ../../source/general/logging.rst:104
 msgid "Placeholder"
-msgstr ""
+msgstr "플레이스홀더"
 
 #: ../../source/general/logging.rst:104
 msgid "Inserted value"
-msgstr ""
+msgstr "삽입 값"
 
 #: ../../source/general/logging.rst:106
 #, python-brace-format
 msgid "{post_vars}"
-msgstr ""
+msgstr "{post_vars}"
 
 #: ../../source/general/logging.rst:106
 msgid "$_POST variables"
-msgstr ""
+msgstr "$_POST 변수"
 
 #: ../../source/general/logging.rst:108
 #, python-brace-format
 msgid "{get_vars}"
-msgstr ""
+msgstr "{get_vars}"
 
 #: ../../source/general/logging.rst:108
 msgid "$_GET variables"
-msgstr ""
+msgstr "$_GET 변수"
 
 #: ../../source/general/logging.rst:110
 #, python-brace-format
 msgid "{session_vars}"
-msgstr ""
+msgstr "{session_vars}"
 
 #: ../../source/general/logging.rst:110
 msgid "$_SESSION variables"
-msgstr ""
+msgstr "$_SESSION 변수"
 
 #: ../../source/general/logging.rst:112
 #, python-brace-format
 msgid "{env}"
-msgstr ""
+msgstr "{env}"
 
 #: ../../source/general/logging.rst:112
 msgid "Current environment name, i.e., development"
-msgstr ""
+msgstr "현재 환경 이름(예: 개발)"
 
 #: ../../source/general/logging.rst:114
 #, python-brace-format
 msgid "{file}"
-msgstr ""
+msgstr "{file}"
 
 #: ../../source/general/logging.rst:114
 msgid "The name of file calling the logger"
-msgstr ""
+msgstr "로거를 호출하는 파일 이름"
 
 #: ../../source/general/logging.rst:116
 #, python-brace-format
 msgid "{line}"
-msgstr ""
+msgstr "{line}"
 
 #: ../../source/general/logging.rst:116
 #, python-brace-format
 msgid "The line in {file} where the logger was called"
-msgstr ""
+msgstr "로거가 호출된 {file}의 줄"
 
 #: ../../source/general/logging.rst:118
 #, python-brace-format
 msgid "{env:foo}"
-msgstr ""
+msgstr "{env:foo}"
 
 #: ../../source/general/logging.rst:118
 msgid "The value of 'foo' in $_ENV"
-msgstr ""
+msgstr "$_ENV의 'foo' 값"
 
 #: ../../source/general/logging.rst:122
 msgid "Using Third-Party Loggers"
-msgstr ""
+msgstr "타사 로거 사용"
 
 #: ../../source/general/logging.rst:124
 msgid ""
-"You can use any other logger that you might like as long as it extends "
-"from either ``Psr\\Log\\LoggerInterface`` and is `PSR-3 <https://www.php-"
-"fig.org/psr/psr-3/>`_ compatible. This means that you can easily drop in "
-"use for any PSR-3 compatible logger, or create your own."
+"You can use any other logger that you might like as long as it extends from "
+"either ``Psr\\Log\\LoggerInterface`` and is `PSR-3 <https://www.php-"
+"fig.org/psr/psr-3/>`_ compatible. This means that you can easily drop in use"
+" for any PSR-3 compatible logger, or create your own."
 msgstr ""
+"``Psr\\Log\\LoggerInterface``\\ 에서 확장되고 `PSR-3 <https://www.php-"
+"fig.org/psr/psr-3/>`_\\ 과 호환되는 한 원하는 다른 로거를 사용할 수 있습니다. 즉, PSR-3 호환 로거를 쉽게 "
+"사용하거나 직접 만들 수 있습니다."
 
 #: ../../source/general/logging.rst:128
 msgid ""
-"You must ensure that the third-party logger can be found by the system, "
-"by adding it to either the **app/Config/Autoload.php** configuration "
-"file, or through another autoloader, like Composer. Next, you should "
-"modify **app/Config/Services.php** to point the ``logger`` alias to your "
-"new class name."
+"You must ensure that the third-party logger can be found by the system, by "
+"adding it to either the **app/Config/Autoload.php** configuration file, or "
+"through another autoloader, like Composer. Next, you should modify "
+"**app/Config/Services.php** to point the ``logger`` alias to your new class "
+"name."
 msgstr ""
+"**app/Config/Autoload.php** 구성 파일에 추가하거나 Composer와 같은 다른 자동 로더를 통해 시스템에서 타사 "
+"로거를 찾을 수 있는지 확인해야 합니다. 다음으로 **app/Config/Services.php**\\ 을 수정하여 ``logger`` "
+"별칭이 새 클래스 이름을 가리키도록 해야 합니다."
 
 #: ../../source/general/logging.rst:133
 msgid ""
-"Now, any call that is done through the :php:func:`log_message()` function"
-" will use your library instead."
-msgstr ""
-
+"Now, any call that is done through the :php:func:`log_message()` function "
+"will use your library instead."
+msgstr "이제 :php:func:`log_message()` 함수를 통해 수행되는 모든 호출은 대신 라이브러리를 사용합니다."
