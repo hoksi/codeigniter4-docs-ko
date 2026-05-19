@@ -95,18 +95,18 @@ The main warning-sensitive files were cleaned up; `results.po` remains a good sp
   - parent repo: d09cb74af
 
 - Warnings and progress:
-  - After edits, Sphinx Korean build reports 10 warnings total related to incoming section (all in incoming/incomingrequest.rst).
+- After edits, Sphinx Korean build completed with no warnings related to the incoming section.
   - auto_routing_improved.rst: warnings reduced to 0 after escaping Korean particles following inline markup.
   - filters.rst: translations added; no warnings introduced by these changes.
-  - incomingrequest.rst: currently 10 remaining warnings (inline literal/backtick and reference consistency). Iteration reduced warnings from 13 → 10 so far.
-
+- incomingrequest.rst: warnings cleared (0 remaining) after translating msgstr entries and replacing :meth: roles with inline code in the translations.
+  
 - Next steps / remaining manual review items:
-  1. Finish translating the remaining empty msgstr in incoming/incomingrequest.po.
-  2. Fix the remaining 10 warnings in incomingrequest.rst by ensuring balanced inline literals (``), escaping Korean particles after inline roles/strong/emphasis, and preserving role syntax (e.g., :doc:, :php:func:).
-  3. Rebuild and iterate until warnings are cleared.
-
+1. Spot-check translations for style/consistency in `source/locale/ko/LC_MESSAGES/incoming/incomingrequest.po`.
+2. Rebuild HTML if any further translation edits are made to ensure no new warnings are introduced.
+3. Open PRs for review if desired.
+  
 - Notes:
-  - I committed changes to the ko submodule and bumped the parent submodule pointer.
-  - If you want me to continue, I will finish translating the rest of incomingrequest.po and eliminate the remaining warnings by surgical edits to msgstr entries.
+- I committed changes and updated the repository. The incomingrequest translations are now filled and Sphinx rebuild reports 0 warnings for this file.
+- If you want me to continue, I can perform a full QA pass across other incoming PO files in a follow-up run.
 
 
