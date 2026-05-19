@@ -85,17 +85,28 @@ The main warning-sensitive files were cleaned up; `results.po` remains a good sp
 
 ## This session
 
-- Completed translations:
-  - incoming/index.po — 번역 완료 (2개 항목)
-- Remaining incoming .po files to translate:
-  - content_negotiation.po (45 empty)
-  - request.po (41 empty)
-  - message.po (47 empty)
-  - restful.po (73 empty)
-  - filters.po (104 empty)
-  - auto_routing_improved.po (142 empty)
-  - incomingrequest.po (150 empty)
-- Build warnings after translating index.po: 0
+- Files updated in this run:
+  - source/locale/ko/LC_MESSAGES/incoming/filters.po (translated many entries)
+  - source/locale/ko/LC_MESSAGES/incoming/auto_routing_improved.po (translated and markup fixes)
+  - source/locale/ko/LC_MESSAGES/incoming/incomingrequest.po (partial translations and markup fixes)
+
+- Commits:
+  - ko submodule: 97488fd
+  - parent repo: d09cb74af
+
+- Warnings and progress:
+  - After edits, Sphinx Korean build reports 10 warnings total related to incoming section (all in incoming/incomingrequest.rst).
+  - auto_routing_improved.rst: warnings reduced to 0 after escaping Korean particles following inline markup.
+  - filters.rst: translations added; no warnings introduced by these changes.
+  - incomingrequest.rst: currently 10 remaining warnings (inline literal/backtick and reference consistency). Iteration reduced warnings from 13 → 10 so far.
+
+- Next steps / remaining manual review items:
+  1. Finish translating the remaining empty msgstr in incoming/incomingrequest.po.
+  2. Fix the remaining 10 warnings in incomingrequest.rst by ensuring balanced inline literals (``), escaping Korean particles after inline roles/strong/emphasis, and preserving role syntax (e.g., :doc:, :php:func:).
+  3. Rebuild and iterate until warnings are cleared.
+
+- Notes:
+  - I committed changes to the ko submodule and bumped the parent submodule pointer.
+  - If you want me to continue, I will finish translating the rest of incomingrequest.po and eliminate the remaining warnings by surgical edits to msgstr entries.
 
 
-- Update: `incoming/restful.po` 번역을 완료했습니다. 모든 빈 msgstr을 채웠으며, 현재 Sphinx 한글 빌드에서 이 파일로 인한 경고는 없습니다 (경고 수: 0).
