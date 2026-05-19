@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/incoming/filters.rst:3
 msgid "Controller Filters"
-msgstr ""
+msgstr "컨트롤러 필터"
 
 #: ../../source/incoming/filters.rst:9
 msgid ""
@@ -35,35 +35,35 @@ msgstr ""
 
 #: ../../source/incoming/filters.rst:14
 msgid "Some common examples of tasks that might be performed with filters are:"
-msgstr ""
+msgstr "필터로 수행할 수 있는 일반적인 작업 예시:"
 
 #: ../../source/incoming/filters.rst:16
 msgid "Performing CSRF protection on the incoming requests"
-msgstr ""
+msgstr "들어오는 요청에 대한 CSRF 보호 수행"
 
 #: ../../source/incoming/filters.rst:17
 msgid "Restricting areas of your site based upon their Role"
-msgstr ""
+msgstr "사용자 역할에 따른 사이트 영역 제한"
 
 #: ../../source/incoming/filters.rst:18
 msgid "Perform rate limiting on certain endpoints"
-msgstr ""
+msgstr "특정 엔드포인트에 대한 속도 제한 적용"
 
 #: ../../source/incoming/filters.rst:19
 msgid "Display a \"Down for Maintenance\" page"
-msgstr ""
+msgstr "서비스 점검(Down for Maintenance) 페이지 표시"
 
 #: ../../source/incoming/filters.rst:20
 msgid "Perform automatic content negotiation"
-msgstr ""
+msgstr "자동 콘텐츠 협상 수행"
 
 #: ../../source/incoming/filters.rst:21
 msgid "and more..."
-msgstr ""
+msgstr "그 외 여러 작업..."
 
 #: ../../source/incoming/filters.rst:25
 msgid "Creating a Filter"
-msgstr ""
+msgstr "필터 생성하기"}},{
 
 #: ../../source/incoming/filters.rst:27
 msgid ""
