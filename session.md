@@ -97,3 +97,5 @@ The main warning-sensitive files were cleaned up; `results.po` remains a good sp
   - incomingrequest.po (150 empty)
 - Build warnings after translating index.po: 0
 
+
+- Update: `incoming/restful.po` 번역을 완료했습니다. 모든 빈 msgstr을 채웠으며, 현재 Sphinx 한글 빌드에서 이 파일로 인한 경고는 없습니다 (경고 수: 0).
