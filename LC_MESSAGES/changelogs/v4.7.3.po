@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-18 19:00+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/changelogs/v4.7.3.rst:3
+msgid "Version 4.7.3"
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:5
+msgid "Release Date: Unreleased"
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:7
+msgid "**4.7.3 release of CodeIgniter4**"
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:15
+msgid "BREAKING"
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:19
+msgid "Message Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:21
+msgid "The ``Cache.invalidHandler`` message string was added."
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:25
+msgid "Changes"
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:27
+msgid ""
+"**Commands:** The ``-h`` option for the ``routes`` command is renamed to "
+"``--sort-by-handler`` to avoid conflict with the common use of ``-h`` as "
+"a shortcut for ``--help``. The old ``-h`` option will continue to work "
+"until v4.8.0, at which point it will be removed and repurposed as a "
+"shortcut for ``--help``. A warning message is displayed when using the "
+"old ``-h`` option to encourage users to switch to the new ``--sort-by-"
+"handler`` option."
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:33
+msgid "Deprecations"
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:37
+msgid "Bugs Fixed"
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:39
+msgid ""
+"**Autoloader:** Fixed a bug where ``Autoloader::unregister()`` (used "
+"during tests) silently failed to remove handlers from the SPL autoload "
+"stack, causing closures to accumulate permanently."
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:40
+msgid ""
+"**CLI:** Fixed a bug where ``CLI::generateDimensions()`` leaked ``stty`` "
+"error output (e.g., ``stty: 'standard input': Inappropriate ioctl for "
+"device``) to stderr when stdin was not a TTY."
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:41
+msgid ""
+"**CLI:** Fixed a bug where ``CLI::generateDimensions()`` leaked ``tput`` "
+"error output (``tput: No value for $TERM and no -T specified``) to stderr"
+" when the ``stty`` fallback was reached and the ``TERM`` environment "
+"variable was not set."
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:42
+msgid ""
+"**Commands:** Fixed a bug in the ``env`` command where passing options "
+"only would cause the command to throw a ``TypeError`` instead of showing "
+"the current environment."
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:43
+msgid ""
+"**Commands:** Fixed a bug in ``key:generate`` command where the regex "
+"used to locate the ``encryption.key`` line was fooled by a comment "
+"containing the substring (silently writing nothing), and did not handle "
+"DotEnv's ``export encryption.key = ...`` syntax."
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:44
+msgid ""
+"**Common:** Fixed a bug where the ``command()`` helper function did not "
+"properly clean up output buffers, which could lead to risky tests when "
+"exceptions were thrown."
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:45
+msgid ""
+"**Database:** Fixed a bug where ``BaseConnection::listTables()`` could "
+"return a sparse array when using cached table names after a table was "
+"dropped."
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:46
+msgid ""
+"**Database:** Fixed a bug where the PostgreSQL driver's ``increment()`` "
+"and ``decrement()`` methods were not working for numeric columns."
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:47
+msgid ""
+"**Database:** Fixed a bug where the SQLSRV driver's decrement method was "
+"adding instead of subtracting the decrement value when ``$castTextToInt``"
+" was false."
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:48
+msgid ""
+"**Entity:** Fixed a bug where ``Entity::normalizeValue()`` did not handle"
+" ``UnitEnum`` before checking for ``toArray()``, causing enums "
+"implementing ``toArray()`` to be incorrectly normalized as generic "
+"objects instead of enums."
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:49
+msgid ""
+"**Kint:** Fixed a bug where stale Content Security Policy nonces were "
+"reused in worker mode, causing browser CSP violations for Debug Toolbar "
+"assets."
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:50
+msgid ""
+"**Language:** Fixed a bug where ``Language::getLine()`` returned the "
+"literal dot-notation key instead of the nested array value when the "
+"requested key resolved to an intermediate array three or more levels "
+"deep."
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:51
+msgid ""
+"**Toolbar:** Fixed a bug where the Logs collector raised an undefined "
+"property error when using a third-party PSR-3 logger."
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:52
+msgid ""
+"**Time:** Fixed a bug where ``Time::createFromTimestamp()`` could fail "
+"for microsecond timestamps when ``LC_NUMERIC`` used a comma decimal "
+"separator."
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:53
+msgid ""
+"**Validation:** Fixed a bug where ``Validation::getValidated()`` dropped "
+"fields whose validated value was explicitly ``null``."
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:54
+msgid ""
+"**Worker Mode:** Fixed a bug where the ``frankenphp-worker.php`` template"
+" caused a ``Cannot redeclare class Config\\Paths`` fatal error when "
+"FrankenPHP's watcher re-executed the worker script after a watched file "
+"changed."
+msgstr ""
+
+#: ../../source/changelogs/v4.7.3.rst:56
+msgid ""
+"See the repo's `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
+" for a complete list of bugs fixed."
+msgstr ""
+

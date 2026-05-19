@@ -102,7 +102,7 @@ msgstr "``new`` 키워드를 사용하여 인스턴스를 생성합니다."
 
 #: ../../source/general/configuration.rst:53
 msgid "config()"
-msgstr "구성()"
+msgstr "config()"
 
 #: ../../source/general/configuration.rst:55
 msgid "By using the :php:func:`config()` function:"
