@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -833,4 +832,3 @@ msgid ""
 "URI\", since ``IncomingRequest::$uri`` might not be aware of the complete"
 " App configuration for base URLs."
 msgstr ""
-

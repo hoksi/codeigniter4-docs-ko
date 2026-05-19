@@ -188,7 +188,7 @@ msgstr "전체 경로 네임스페이스를 사용하여 요청할 수도 있습
 
 #: ../../source/concepts/factories.rst:99
 msgid "It returns the instance of ``Blog\\Models\\UserModel`` if it exists."
-msgstr "``Blog\\Models\\UserModel``\\ 이 존재하면 해당 인스턴스를 반환합니다."
+msgstr "Blog\\Models\\UserModel이 존재하면 해당 인스턴스를 반환합니다."
 
 #: ../../source/concepts/factories.rst:101
 msgid ""
@@ -198,16 +198,15 @@ msgid ""
 "``Blog\\Models\\UserModel``, the instance of ``App\\Models\\UserModel`` "
 "would be returned."
 msgstr ""
-"v4.4.0 이전에는 전체 네임스페이스로 요청했을 때, ``Blog\\Models\\UserModel``\\ 만 있다면 해당 "
-"인스턴스가 반환되었지만, ``App\\Models\\UserModel``\\ 과 "
-"``Blog\\Models\\UserModel``\\ 이 둘 다 있다면 ``App\\Models\\UserModel``\\ 의 "
-"인스턴스가 반환되었습니다."
+"v4.4.0 이전에는 전체 네임스페이스로 요청했을 때, Blog\\Models\\UserModel만 있다면 해당 "
+"인스턴스가 반환되었지만, App\\Models\\UserModel과 Blog\\Models\\UserModel이 둘 다 있다면 "
+"App\\Models\\UserModel의 인스턴스가 반환되었습니다."
 
 #: ../../source/concepts/factories.rst:106
 msgid ""
 "If you wanted to get ``Blog\\Models\\UserModel``, you needed to disable "
 "the option ``preferApp``:"
-msgstr "이 경우 ``Blog\\Models\\UserModel``\\ 을 가져오려면 ``preferApp`` 옵션을 비활성화해야 했습니다."
+msgstr "이 경우 Blog\\Models\\UserModel을 가져오려면 preferApp 옵션을 비활성화해야 했습니다."
 
 #: ../../source/concepts/factories.rst:113
 msgid "Convenience Functions"
@@ -418,7 +417,7 @@ msgstr ""
 
 #: ../../source/concepts/factories.rst:204
 msgid "The static method ``Factories::setOptions()``."
-msgstr "정적 메서드 ``Factories::setOptions()``입니다."
+msgstr "정적 메서드 ``Factories::setOptions()``\\입니다."
 
 #: ../../source/concepts/factories.rst:205
 msgid "Passing options directly at call time with a parameter."
@@ -645,4 +644,3 @@ msgid ""
 msgstr ""
 ":doc:`워커 모드(Worker Mode) </installation/worker_mode>`\\ 에서 앱을 실행할 때는 이 "
 "옵션을 사용하지 마십시오."
-

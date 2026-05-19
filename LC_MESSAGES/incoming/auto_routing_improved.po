@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -794,4 +793,3 @@ msgid ""
 "will be routed to the default controller "
 "``Acme\\Blog\\Controllers\\Home``."
 msgstr ""
-

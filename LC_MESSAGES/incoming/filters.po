@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -597,4 +596,3 @@ msgid ""
 "If you want to know about secure headers, see `OWASP Secure Headers "
 "Project <https://owasp.org/www-project-secure-headers/>`_."
 msgstr ""
-

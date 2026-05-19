@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -386,4 +385,3 @@ msgstr ""
 #: ../../source/incoming/restful.rst:197
 msgid "photos/delete/(:segment)"
 msgstr ""
-
