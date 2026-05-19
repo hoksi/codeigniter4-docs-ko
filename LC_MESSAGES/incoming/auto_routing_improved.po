@@ -39,7 +39,7 @@ msgid ""
 "name and its method name according to the convention and it will be "
 "automatically routed. In other words, there is no need to define routes "
 "manually."
-msgstr "그러나 **자동 라우팅(향상)**을 사용하면 컨트롤러 이름과 메서드 이름을 규약에 따라 정의하면 자동으로 라우팅됩니다. 즉, 라우트를 수동으로 정의할 필요가 없습니다."}
+msgstr "그러나 **자동 라우팅(향상)**\을 사용하면 컨트롤러 이름과 메서드 이름을 규약에 따라 정의하면 자동으로 라우팅됩니다. 즉, 라우트를 수동으로 정의할 필요가 없습니다."}
 
 #: ../../source/incoming/auto_routing_improved.rst:24
 msgid ""
