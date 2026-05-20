@@ -1,6 +1,6 @@
 # Session Notes
 
-Last updated: 2026-05-19 12:18 KST
+Last updated: 2026-05-20 11:55 KST
 
 ## Current status
 
@@ -85,6 +85,12 @@ The main warning-sensitive files were cleaned up; `results.po` remains a good sp
 
 ## This session
 
+- Remaining incoming translations were completed for:
+  - `source/locale/ko/LC_MESSAGES/incoming/filters.po`
+  - `source/locale/ko/LC_MESSAGES/incoming/auto_routing_improved.po`
+- Korean HTML was rebuilt successfully after fixing inline-markup particles and literal-block endings.
+- The incoming section is now translation-complete, with no untranslated entries left in those two files.
+
 - Files updated in this run:
   - source/locale/ko/LC_MESSAGES/incoming/filters.po (translated many entries)
   - source/locale/ko/LC_MESSAGES/incoming/auto_routing_improved.po (translated and markup fixes)
@@ -108,5 +114,4 @@ The main warning-sensitive files were cleaned up; `results.po` remains a good sp
 - Notes:
 - I committed changes and updated the repository. The incomingrequest translations are now filled and Sphinx rebuild reports 0 warnings for this file.
 - If you want me to continue, I can perform a full QA pass across other incoming PO files in a follow-up run.
-
 

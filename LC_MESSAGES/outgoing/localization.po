@@ -12,427 +12,495 @@ msgstr ""
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../source/outgoing/localization.rst:3
 msgid "Localization"
-msgstr ""
+msgstr "현지화"
 
 #: ../../source/outgoing/localization.rst:11
 msgid "Working with Locales"
-msgstr ""
+msgstr "로케일 작업"
 
 #: ../../source/outgoing/localization.rst:13
 msgid ""
-"CodeIgniter provides several tools to help you localize your application "
-"for different languages. While full localization of an application is a "
-"complex subject, it's simple to swap out strings in your application with"
-" different supported languages."
+"CodeIgniter provides several tools to help you localize your application for"
+" different languages. While full localization of an application is a complex"
+" subject, it's simple to swap out strings in your application with different"
+" supported languages."
 msgstr ""
+"CodeIgniter는 애플리케이션을 다양한 언어로 현지화하는 데 도움이 되는 여러 도구를 제공합니다. 애플리케이션의 전체 지역화는 "
+"복잡한 주제이지만 애플리케이션의 문자열을 지원되는 다른 언어로 바꾸는 것은 간단합니다."
 
 #: ../../source/outgoing/localization.rst:18
 msgid "Configuring the Locale"
-msgstr ""
+msgstr "로케일 구성"
 
 #: ../../source/outgoing/localization.rst:23
 msgid "Setting the Default Locale"
-msgstr ""
+msgstr "기본 로케일 설정"
 
 #: ../../source/outgoing/localization.rst:25
 msgid ""
-"Every site will have a default language/locale they operate in. This can "
-"be set in **app/Config/App.php**:"
-msgstr ""
+"Every site will have a default language/locale they operate in. This can be "
+"set in **app/Config/App.php**:"
+msgstr "모든 사이트에는 운영되는 기본 언어/로캘이 있습니다. 이는 **app/Config/App.php**\\에서 설정할 수 있습니다:"
 
 #: ../../source/outgoing/localization.rst:29
 msgid ""
 "The value can be any string that your application uses to manage text "
-"strings and other formats. It is recommended that a `BCP 47 <http://www"
-".rfc-editor.org/rfc/bcp/bcp47.txt>`_ language code is used. This results "
-"in language codes like en-US for American English, or fr-FR, for "
-"French/France. A more readable introduction to this can be found on the "
-"`W3C's site <https://www.w3.org/International/articles/language-tags/>`_."
+"strings and other formats. It is recommended that a `BCP 47 <http://www.rfc-"
+"editor.org/rfc/bcp/bcp47.txt>`_ language code is used. This results in "
+"language codes like en-US for American English, or fr-FR, for French/France."
+" A more readable introduction to this can be found on the `W3C's site "
+"<https://www.w3.org/International/articles/language-tags/>`_."
 msgstr ""
+"값은 응용 프로그램이 텍스트 문자열 및 기타 형식을 관리하는 데 사용하는 모든 문자열이 될 수 있습니다. `BCP 47 "
+"<http://www.rfc-editor.org/rfc/bcp/bcp47.txt>`_ 언어 코드를 사용하는 것이 좋습니다. 이로 인해 "
+"미국 영어의 경우 en-US, 프랑스어/프랑스의 경우 fr-FR과 같은 언어 코드가 생성됩니다. 이에 대한 더 읽기 쉬운 소개는 "
+"`W3C's site <https://www.w3.org/International/articles/language-tags/>`_\\에서"
+" 찾을 수 있습니다."
 
 #: ../../source/outgoing/localization.rst:34
 msgid ""
-"The system is smart enough to fall back to more generic language codes if"
-" an exact match cannot be found. If the locale code was set to ``en-US`` "
-"and we only have language files set up for ``en`` then those will be used"
-" since nothing exists for the more specific ``en-US``. If, however, a "
-"language directory existed at the **app/Language/en-US** directory then "
-"that would be used first."
+"The system is smart enough to fall back to more generic language codes if an"
+" exact match cannot be found. If the locale code was set to ``en-US`` and we"
+" only have language files set up for ``en`` then those will be used since "
+"nothing exists for the more specific ``en-US``. If, however, a language "
+"directory existed at the **app/Language/en-US** directory then that would be"
+" used first."
 msgstr ""
+"시스템은 정확하게 일치하는 항목을 찾을 수 없는 경우 보다 일반적인 언어 코드로 대체할 만큼 똑똑합니다. 로케일 코드가 ``en-"
+"US``\\로 설정되었고 ``en``\\에 대해 설정된 언어 파일만 있는 경우 더 구체적인 ``en-US``\\에 대한 것이 없기 때문에"
+" 해당 파일이 사용됩니다. 그러나 **app/Language/en-US** 디렉토리에 언어 디렉토리가 있는 경우 해당 디렉토리가 먼저 "
+"사용됩니다."
 
 #: ../../source/outgoing/localization.rst:40
 msgid "Locale Detection"
-msgstr ""
+msgstr "로케일 감지"
 
 #: ../../source/outgoing/localization.rst:42
 msgid ""
 "Locale detection only works for web-based requests that use the "
-"IncomingRequest class. Command-line requests will not have these "
-"features."
+"IncomingRequest class. Command-line requests will not have these features."
 msgstr ""
+"로케일 감지는 IncomingRequest 클래스를 사용하는 웹 기반 요청에 대해서만 작동합니다. 명령줄 요청에는 이러한 기능이 "
+"없습니다."
 
 #: ../../source/outgoing/localization.rst:45
 msgid ""
 "There are two methods supported to detect the correct locale during the "
 "request."
-msgstr ""
+msgstr "요청 중에 올바른 로케일을 감지하기 위해 지원되는 두 가지 방법이 있습니다."
 
 #: ../../source/outgoing/localization.rst:47
 msgid ""
-"`Content Negotiation`_: The first is a \"set and forget\" method that "
-"will automatically perform :doc:`content negotiation "
-"</incoming/content_negotiation>` for you to determine the correct locale "
-"to use."
+"`Content Negotiation`_: The first is a \"set and forget\" method that will "
+"automatically perform :doc:`content negotiation "
+"</incoming/content_negotiation>` for you to determine the correct locale to "
+"use."
 msgstr ""
+"`Content Negotiation`_: 첫 번째는 사용할 올바른 로케일을 결정하기 위해 자동으로 :doc:`content "
+"negotiation </incoming/content_negotiation>`\\을 수행하는 \"설정하고 잊어버리는\" 방법입니다."
 
 #: ../../source/outgoing/localization.rst:48
 msgid ""
 "`In Routes`_: The second method allows you to specify a segment in your "
 "routes that will be used to set the locale."
-msgstr ""
+msgstr "`In Routes`_: 두 번째 방법을 사용하면 로케일을 설정하는 데 사용될 경로의 세그먼트를 지정할 수 있습니다."
 
 #: ../../source/outgoing/localization.rst:50
 msgid ""
-"Should you ever need to set the locale directly, see `Setting the Current"
-" Locale`_."
-msgstr ""
+"Should you ever need to set the locale directly, see `Setting the Current "
+"Locale`_."
+msgstr "로캘을 직접 설정해야 하는 경우 `Setting the Current Locale`_\\을 참조하세요."
 
 #: ../../source/outgoing/localization.rst:52
 msgid ""
-"Since v4.4.0, ``IncomingRequest::setValidLocales()`` has been added to "
-"set (and reset) valid locales that are set from "
+"Since v4.4.0, ``IncomingRequest::setValidLocales()`` has been added to set "
+"(and reset) valid locales that are set from "
 "``Config\\App::$supportedLocales`` setting."
 msgstr ""
+"v4.4.0부터 ``Config\\App::$supportedLocales`` 설정에서 설정된 유효한 로케일을 설정(및 재설정)하기 위해"
+" ``IncomingRequest::setValidLocales()``\\이 추가되었습니다."
 
 #: ../../source/outgoing/localization.rst:56
 msgid "Content Negotiation"
-msgstr ""
+msgstr "콘텐츠 협상"
 
 #: ../../source/outgoing/localization.rst:58
 msgid ""
-"You can set up content negotiation to happen automatically by setting two"
-" additional settings in **app/Config/App.php**. The first value tells the"
-" Request class that we do want to negotiate a locale, so simply set it to"
-" true:"
+"You can set up content negotiation to happen automatically by setting two "
+"additional settings in **app/Config/App.php**. The first value tells the "
+"Request class that we do want to negotiate a locale, so simply set it to "
+"true:"
 msgstr ""
+"**app/Config/App.php**\\에서 두 가지 추가 설정을 지정하여 자동으로 콘텐츠 협상이 이루어지도록 설정할 수 있습니다. "
+"첫 번째 값은 Request 클래스에 우리가 로케일을 협상하고 싶다는 것을 알려주므로 간단히 true로 설정하십시오."
 
 #: ../../source/outgoing/localization.rst:63
 msgid ""
-"Once this is enabled, the system will automatically negotiate the correct"
-" language based upon an array of locales that you have defined in "
+"Once this is enabled, the system will automatically negotiate the correct "
+"language based upon an array of locales that you have defined in "
 "``$supportLocales``. If no match is found between the languages that you "
-"support, and the requested language, the first item in "
-"``$supportedLocales`` will be used. In the following example, the ``en`` "
-"locale would be used if no match is found:"
+"support, and the requested language, the first item in ``$supportedLocales``"
+" will be used. In the following example, the ``en`` locale would be used if "
+"no match is found:"
 msgstr ""
+"이 기능이 활성화되면 시스템은 ``$supportLocales``\\에서 정의한 로케일 배열을 기반으로 올바른 언어를 자동으로 "
+"협상합니다. 지원하는 언어와 요청한 언어 간에 일치하는 항목이 없으면 ``$supportedLocales``\\의 첫 번째 항목이 "
+"사용됩니다. 다음 예에서는 일치하는 항목이 없으면 ``en`` 로캘이 사용됩니다."
 
 #: ../../source/outgoing/localization.rst:73
 msgid "In Routes"
-msgstr ""
+msgstr "경로 중"
 
 #: ../../source/outgoing/localization.rst:75
 #, python-brace-format
 msgid ""
-"The second method uses a custom placeholder to detect the desired locale "
-"and set it on the Request. The placeholder ``{locale}`` can be placed as "
-"a segment in your route. If present, the contents of the matching segment"
-" will be your locale:"
+"The second method uses a custom placeholder to detect the desired locale and"
+" set it on the Request. The placeholder ``{locale}`` can be placed as a "
+"segment in your route. If present, the contents of the matching segment will"
+" be your locale:"
 msgstr ""
+"두 번째 방법은 사용자 정의 자리 표시자를 사용하여 원하는 로케일을 감지하고 요청에 설정합니다. 자리 표시자 "
+"``{locale}``\\은(는) 경로의 구간으로 배치될 수 있습니다. 있는 경우 일치하는 세그먼트의 내용이 귀하의 로캘이 됩니다."
 
 #: ../../source/outgoing/localization.rst:82
 msgid ""
-"In this example, if the user tried to visit "
-"**http://example.com/fr/books**, then the locale would be set to ``fr``, "
-"assuming it was configured as a valid locale."
+"In this example, if the user tried to visit **http://example.com/fr/books**,"
+" then the locale would be set to ``fr``, assuming it was configured as a "
+"valid locale."
 msgstr ""
+"이 예에서 사용자가 **http://example.com/fr/books**,을(를) 방문하려고 하면 해당 로케일이 유효한 로케일로 "
+"구성되었다고 가정하여 로케일이 ``fr``\\로 설정됩니다."
 
 #: ../../source/outgoing/localization.rst:85
 msgid ""
 "If the value doesn't match a valid locale as defined in "
-"``$supportedLocales`` in **app/Config/App.php**, the default locale will "
-"be used in its place, unless you set to use only the supported locales "
-"defined in the App configuration file:"
+"``$supportedLocales`` in **app/Config/App.php**, the default locale will be "
+"used in its place, unless you set to use only the supported locales defined "
+"in the App configuration file:"
 msgstr ""
+"값이 **app/Config/App.php**\\의 ``$supportedLocales``\\에 정의된 유효한 로케일과 일치하지 않는 "
+"경우 앱 구성 파일에 정의된 지원 로케일만 사용하도록 설정하지 않는 한 기본 로케일이 그 자리에서 사용됩니다."
 
 #: ../../source/outgoing/localization.rst:92
 msgid "The ``useSupportedLocalesOnly()`` method can be used since v4.3.0."
-msgstr ""
+msgstr "``useSupportedLocalesOnly()`` 메소드는 v4.3.0부터 사용할 수 있습니다."
 
 #: ../../source/outgoing/localization.rst:95
 msgid "Setting the Current Locale"
-msgstr ""
+msgstr "현재 로케일 설정"
 
 #: ../../source/outgoing/localization.rst:98
 msgid "IncomingRequest Locale"
-msgstr ""
+msgstr "들어오는요청 로케일"
 
 #: ../../source/outgoing/localization.rst:100
 msgid ""
 "If you want to set the locale directly, you may use the ``setLocale()`` "
 "method in the :doc:`../incoming/incomingrequest`:"
 msgstr ""
+"로캘을 직접 설정하려면 :doc:`../incoming/incomingrequest`\\에서 ``setLocale()`` 메서드를 사용할"
+" 수 있습니다."
 
 #: ../../source/outgoing/localization.rst:106
 msgid ""
-"Before setting the locale, you must set valid locales. Because any "
-"attempt to set a locale that is not valid will result in the "
-":ref:`default locale <setting-the-default-locale>` being set."
+"Before setting the locale, you must set valid locales. Because any attempt "
+"to set a locale that is not valid will result in the :ref:`default locale "
+"<setting-the-default-locale>` being set."
 msgstr ""
+"로케일을 설정하기 전에 유효한 로케일을 설정해야 합니다. 유효하지 않은 로케일을 설정하려고 하면 :ref:`default locale "
+"<setting-the-default-locale>`\\이(가) 설정되기 때문입니다."
 
 #: ../../source/outgoing/localization.rst:110
 msgid ""
 "By default, the valid locales are defined in "
 "``Config\\App::$supportedLocales`` in **app/Config/App.php**:"
 msgstr ""
+"기본적으로 유효한 로케일은 **app/Config/App.php**\\의 "
+"``Config\\App::$supportedLocales``\\에 정의되어 있습니다."
 
 #: ../../source/outgoing/localization.rst:115
 msgid ""
-"Since v4.4.0, ``IncomingRequest::setValidLocales()`` has been added to "
-"set (and reset) valid locales. Use it if you want to change the valid "
-"locales dynamically."
+"Since v4.4.0, ``IncomingRequest::setValidLocales()`` has been added to set "
+"(and reset) valid locales. Use it if you want to change the valid locales "
+"dynamically."
 msgstr ""
+"v4.4.0부터 유효한 로케일을 설정(및 재설정)하기 위해 ``IncomingRequest::setValidLocales()``\\이 "
+"추가되었습니다. 유효한 로케일을 동적으로 변경하려면 이를 사용하십시오."
 
 #: ../../source/outgoing/localization.rst:120
 msgid "Language Locale"
-msgstr ""
+msgstr "언어 로케일"
 
 #: ../../source/outgoing/localization.rst:122
 msgid ""
-"The ``Language`` class used in the :php:func:`lang()` function also has "
-"the current locale. This is set to the ``IncomingRequest`` locale during "
+"The ``Language`` class used in the :php:func:`lang()` function also has the "
+"current locale. This is set to the ``IncomingRequest`` locale during "
 "instantiating."
 msgstr ""
+":php:func:`lang()` 함수에 사용된 ``Language`` 클래스에도 현재 로케일이 있습니다. 인스턴스화하는 동안 "
+"``IncomingRequest`` 로케일로 설정됩니다."
 
 #: ../../source/outgoing/localization.rst:125
 msgid ""
-"If you want to change the locale after instantiating the language class, "
-"use the ``Language::setLocale()`` method."
-msgstr ""
+"If you want to change the locale after instantiating the language class, use"
+" the ``Language::setLocale()`` method."
+msgstr "언어 클래스를 인스턴스화한 후 로캘을 변경하려면 ``Language::setLocale()`` 메서드를 사용하세요."
 
 #: ../../source/outgoing/localization.rst:132
 msgid "Retrieving the Current Locale"
-msgstr ""
+msgstr "현재 로케일 검색"
 
 #: ../../source/outgoing/localization.rst:134
 msgid ""
-"The current locale can always be retrieved from the IncomingRequest "
-"object, through the ``getLocale()`` method. If your controller is "
-"extending ``CodeIgniter\\Controller``, this will be available through "
+"The current locale can always be retrieved from the IncomingRequest object, "
+"through the ``getLocale()`` method. If your controller is extending "
+"``CodeIgniter\\Controller``, this will be available through "
 "``$this->request``:"
 msgstr ""
+"현재 로케일은 항상 ``getLocale()`` 메소드를 통해 IncomingRequest 객체에서 검색할 수 있습니다. 컨트롤러가 "
+"``CodeIgniter\\Controller``\\을 확장하는 경우 ``$this->request``\\을 통해 사용할 수 있습니다."
 
 #: ../../source/outgoing/localization.rst:139
 msgid ""
-"Alternatively, you can use the :doc:`Services class </concepts/services>`"
-" to retrieve the current request:"
+"Alternatively, you can use the :doc:`Services class </concepts/services>` to"
+" retrieve the current request:"
 msgstr ""
+"또는 :doc:`Services class </concepts/services>`\\을 사용하여 현재 요청을 검색할 수 있습니다."
 
 #: ../../source/outgoing/localization.rst:148
 msgid "Language Localization"
-msgstr ""
+msgstr "언어 현지화"
 
 #: ../../source/outgoing/localization.rst:151
 msgid "Creating Language Files"
-msgstr ""
+msgstr "언어 파일 생성"
 
 #: ../../source/outgoing/localization.rst:153
 msgid ""
-"Language strings are stored in the **app/Language** directory, with a "
-"sub-directory for each supported language (locale)::"
-msgstr ""
+"Language strings are stored in the **app/Language** directory, with a sub-"
+"directory for each supported language (locale)::"
+msgstr "언어 문자열은 지원되는 각 언어(로케일)에 대한 하위 디렉터리와 함께 **app/Language** 디렉터리에 저장됩니다."
 
 #: ../../source/outgoing/localization.rst:163
 msgid "The Language Files do not have namespaces."
-msgstr ""
+msgstr "언어 파일에는 네임스페이스가 없습니다."
 
 #: ../../source/outgoing/localization.rst:165
 msgid ""
-"Languages do not have any specific naming convention that are required. "
-"The file should be named logically to describe the type of content it "
-"holds. For example, let's say you want to create a file containing error "
-"messages. You might name it simply: **Errors.php**."
+"Languages do not have any specific naming convention that are required. The "
+"file should be named logically to describe the type of content it holds. For"
+" example, let's say you want to create a file containing error messages. You"
+" might name it simply: **Errors.php**."
 msgstr ""
+"언어에는 필요한 특정 명명 규칙이 없습니다. 파일 이름은 파일에 포함된 콘텐츠 유형을 설명하기 위해 논리적으로 지정되어야 합니다. 예를 "
+"들어, 오류 메시지가 포함된 파일을 생성한다고 가정해 보겠습니다. 간단히 이름을 **Errors.php**\\로 지정할 수도 있습니다."
 
 #: ../../source/outgoing/localization.rst:169
 msgid ""
-"Within the file, you would return an array, where each element in the "
-"array has a language key and can have string to return:"
-msgstr ""
+"Within the file, you would return an array, where each element in the array "
+"has a language key and can have string to return:"
+msgstr "파일 내에서 배열의 각 요소에 언어 키가 있고 반환할 문자열이 있을 수 있는 배열을 반환합니다."
 
 #: ../../source/outgoing/localization.rst:173
 msgid "You cannot use dots (``.``) at the beginning and end of language keys."
-msgstr ""
+msgstr "언어 키의 시작과 끝 부분에는 점(``.``)을 사용할 수 없습니다."
 
 #: ../../source/outgoing/localization.rst:175
 msgid "It also supports nested definition:"
-msgstr ""
+msgstr "또한 중첩 정의도 지원합니다."
 
 #: ../../source/outgoing/localization.rst:182
 msgid "Basic Usage"
-msgstr ""
+msgstr "기본 사용법"
 
 #: ../../source/outgoing/localization.rst:184
 msgid ""
-"You can use the :php:func:`lang()` helper function to retrieve text from "
-"any of the language files, by passing the filename and the language key "
-"as the first parameter, separated by a period (``.``)."
+"You can use the :php:func:`lang()` helper function to retrieve text from any"
+" of the language files, by passing the filename and the language key as the "
+"first parameter, separated by a period (``.``)."
 msgstr ""
+":php:func:`lang()` 도우미 함수를 사용하면 파일 이름과 언어 키를 마침표(``.``)로 구분하여 첫 번째 매개변수로 "
+"전달하여 모든 언어 파일에서 텍스트를 검색할 수 있습니다."
 
 #: ../../source/outgoing/localization.rst:187
 msgid ""
 "For example, to load the ``errorEmailMissing`` string from the "
 "**Errors.php** language file, you would do the following:"
 msgstr ""
+"예를 들어 **Errors.php** 언어 파일에서 ``errorEmailMissing`` 문자열을 로드하려면 다음을 수행합니다."
 
 #: ../../source/outgoing/localization.rst:193
 msgid "For nested definition, you would do the following:"
-msgstr ""
+msgstr "중첩된 정의의 경우 다음을 수행합니다."
 
 #: ../../source/outgoing/localization.rst:198
 msgid ""
 "If the requested language key doesn't exist in the file for the current "
 "locale (after `Language Fallback`_), the string will be passed back, "
-"unchanged. In this example, it would return ``Errors.errorEmailMissing`` "
-"or ``Errors.nested.error.message`` if it didn't exist."
+"unchanged. In this example, it would return ``Errors.errorEmailMissing`` or "
+"``Errors.nested.error.message`` if it didn't exist."
 msgstr ""
+"요청된 언어 키가 현재 로케일(`Language Fallback`_ 이후)에 대한 파일에 없으면 문자열이 변경되지 않고 다시 전달됩니다."
+" 이 예에서는 존재하지 않는 경우 ``Errors.errorEmailMissing`` 또는 "
+"``Errors.nested.error.message``\\을 반환합니다."
 
 #: ../../source/outgoing/localization.rst:202
 msgid "Replacing Parameters"
-msgstr ""
+msgstr "매개변수 바꾸기"
 
 #: ../../source/outgoing/localization.rst:204
 msgid ""
 "The following functions all require the `intl "
-"<https://www.php.net/manual/en/book.intl.php>`_ extension to be loaded on"
-" your system in order to work. If the extension is not loaded, no "
-"replacement will be attempted. A great overview can be found over at "
-"`Sitepoint <https://www.sitepoint.com/localization-demystified-"
-"understanding-php-intl/>`_."
+"<https://www.php.net/manual/en/book.intl.php>`_ extension to be loaded on "
+"your system in order to work. If the extension is not loaded, no replacement"
+" will be attempted. A great overview can be found over at `Sitepoint "
+"<https://www.sitepoint.com/localization-demystified-understanding-php-"
+"intl/>`_."
 msgstr ""
+"다음 기능이 모두 작동하려면 시스템에 `intl <https://www.php.net/manual/en/book.intl.php>`_ "
+"확장 프로그램을 로드해야 합니다. 확장이 로드되지 않으면 교체가 시도되지 않습니다. 훌륭한 개요는 `Sitepoint "
+"<https://www.sitepoint.com/localization-demystified-understanding-php-"
+"intl/>`_\\에서 확인할 수 있습니다."
 
 #: ../../source/outgoing/localization.rst:208
 msgid ""
 "You can pass an array of values to replace placeholders in the language "
-"string as the second parameter to the ``lang()`` function. This allows "
-"for very simple number translations and formatting:"
+"string as the second parameter to the ``lang()`` function. This allows for "
+"very simple number translations and formatting:"
 msgstr ""
+"언어 문자열의 자리 표시자를 대체하기 위해 값 배열을 ``lang()`` 함수의 두 번째 매개변수로 전달할 수 있습니다. 이를 통해 매우"
+" 간단한 숫자 변환 및 형식 지정이 가능합니다."
 
 #: ../../source/outgoing/localization.rst:213
 msgid ""
-"The first item in the placeholder corresponds to the index of the item in"
-" the array, if it's numerical:"
-msgstr ""
+"The first item in the placeholder corresponds to the index of the item in "
+"the array, if it's numerical:"
+msgstr "자리 표시자의 첫 번째 항목은 숫자인 경우 배열 항목의 인덱스에 해당합니다."
 
 #: ../../source/outgoing/localization.rst:218
 msgid ""
-"You can also use named keys to make it easier to keep things straight, if"
-" you'd like:"
-msgstr ""
+"You can also use named keys to make it easier to keep things straight, if "
+"you'd like:"
+msgstr "원하는 경우 명명된 키를 사용하여 작업을 보다 쉽게 ​​수행할 수도 있습니다."
 
 #: ../../source/outgoing/localization.rst:223
 msgid ""
-"Obviously, you can do more than just number replacement. According to the"
-" `official ICU docs <https://unicode-org.github.io/icu-"
+"Obviously, you can do more than just number replacement. According to the "
+"`official ICU docs <https://unicode-org.github.io/icu-"
 "docs/apidoc/released/icu4c/classMessageFormat.html#details>`_ for the "
 "underlying library, the following types of data can be replaced:"
 msgstr ""
+"분명히 숫자 교체 이상의 작업을 수행할 수 있습니다. 기본 라이브러리의 `official ICU docs <https://unicode-"
+"org.github.io/icu-"
+"docs/apidoc/released/icu4c/classMessageFormat.html#details>`_\\에 따라 다음 유형의 "
+"데이터를 대체할 수 있습니다."
 
 #: ../../source/outgoing/localization.rst:227
 msgid "numbers - integer, currency, percent"
-msgstr ""
+msgstr "숫자 - 정수, 통화, 퍼센트"
 
 #: ../../source/outgoing/localization.rst:228
 msgid "dates - short, medium, long, full"
-msgstr ""
+msgstr "날짜 - 단기, 중기, 장기, 전체"
 
 #: ../../source/outgoing/localization.rst:229
 msgid "time - short, medium, long, full"
-msgstr ""
+msgstr "시간 - 짧음, 중간, 길음, 전체"
 
 #: ../../source/outgoing/localization.rst:230
 msgid "spellout - spells out numbers (i.e., 34 becomes thirty-four)"
-msgstr ""
+msgstr "철자법 - 숫자를 철자합니다(즉, 34는 34가 됩니다)."
 
 #: ../../source/outgoing/localization.rst:231
 msgid "ordinal"
-msgstr ""
+msgstr "서수"
 
 #: ../../source/outgoing/localization.rst:232
 msgid "duration"
-msgstr ""
+msgstr "지속"
 
 #: ../../source/outgoing/localization.rst:234
 msgid "Here are a few examples:"
-msgstr ""
+msgstr "다음은 몇 가지 예입니다."
 
 #: ../../source/outgoing/localization.rst:238
 msgid ""
 "You should be sure to read up on the MessageFormatter class and the "
-"underlying ICU formatting to get a better idea on what capabilities it "
-"has, like performing the conditional replacement, pluralization, and "
-"more. Both of the links provided earlier will give you an excellent idea "
-"as to the options available."
+"underlying ICU formatting to get a better idea on what capabilities it has, "
+"like performing the conditional replacement, pluralization, and more. Both "
+"of the links provided earlier will give you an excellent idea as to the "
+"options available."
 msgstr ""
+"조건부 대체, 복수화 수행 등과 같은 기능이 무엇인지 더 잘 이해하려면 MessageFormatter 클래스와 기본 ICU 형식을 읽어야"
+" 합니다. 이전에 제공된 두 링크 모두 사용 가능한 옵션에 대한 훌륭한 아이디어를 제공합니다."
 
 #: ../../source/outgoing/localization.rst:243
 msgid "Specifying Locale"
-msgstr ""
+msgstr "로케일 지정"
 
 #: ../../source/outgoing/localization.rst:245
 msgid ""
-"To specify a different locale to be used when replacing parameters, you "
-"can pass the locale in as the third parameter to the :php:func:`lang()` "
+"To specify a different locale to be used when replacing parameters, you can "
+"pass the locale in as the third parameter to the :php:func:`lang()` "
 "function."
 msgstr ""
+"매개변수를 교체할 때 사용할 다른 로케일을 지정하려면 해당 로케일을 :php:func:`lang()` 함수의 세 번째 매개변수로 전달할 "
+"수 있습니다."
 
 #: ../../source/outgoing/localization.rst:250
 msgid "If you want to change the current locale, see `Language Locale`_."
-msgstr ""
+msgstr "현재 로캘을 변경하려면 `Language Locale`_\\을 참조하세요."
 
 #: ../../source/outgoing/localization.rst:253
 msgid "Nested Arrays"
-msgstr ""
+msgstr "중첩 배열"
 
 #: ../../source/outgoing/localization.rst:255
 msgid ""
-"Language files also allow nested arrays to make working with lists, "
-"etc... easier."
-msgstr ""
+"Language files also allow nested arrays to make working with lists, etc... "
+"easier."
+msgstr "언어 파일을 사용하면 중첩 배열을 사용하여 목록 등을 더 쉽게 작업할 수 있습니다."
 
 #: ../../source/outgoing/localization.rst:260
 msgid "Language Fallback"
-msgstr ""
+msgstr "언어 대체"
 
 #: ../../source/outgoing/localization.rst:262
 msgid ""
 "If you have a set of messages for a given locale, for instance "
-"**Language/en/App.php**, you can add language variants for that locale, "
-"each in its own folder, for instance **Language/en-US/App.php**."
+"**Language/en/App.php**, you can add language variants for that locale, each"
+" in its own folder, for instance **Language/en-US/App.php**."
 msgstr ""
+"특정 로케일(예: **Language/en/App.php**)에 대한 메시지 세트가 있는 경우 해당 로케일에 대한 언어 변형을 각각 자체"
+" 폴더(예: **Language/en-US/App.php**)에 추가할 수 있습니다."
 
 #: ../../source/outgoing/localization.rst:266
 msgid ""
-"You only need to provide values for those messages that would be "
-"localized differently for that locale variant. Any missing message "
-"definitions will be automatically pulled from the main locale settings."
+"You only need to provide values for those messages that would be localized "
+"differently for that locale variant. Any missing message definitions will be"
+" automatically pulled from the main locale settings."
 msgstr ""
+"해당 로케일 변형에 대해 다르게 지역화되는 메시지에 대한 값만 제공하면 됩니다. 누락된 메시지 정의는 기본 로캘 설정에서 자동으로 "
+"가져옵니다."
 
 #: ../../source/outgoing/localization.rst:270
 msgid ""
 "It gets better - the localization can fall all the way back to English "
-"(**en**), in case new messages are added to the framework and you haven't"
-" had a chance to translate them yet for your locale."
+"(**en**), in case new messages are added to the framework and you haven't "
+"had a chance to translate them yet for your locale."
 msgstr ""
+"더 좋아졌습니다. 새 메시지가 프레임워크에 추가되었지만 아직 해당 로케일에 맞게 번역할 기회가 없었던 경우 현지화가 영어(**en**)로"
+" 돌아갈 수 있습니다."
 
 #: ../../source/outgoing/localization.rst:274
 msgid ""
@@ -440,72 +508,84 @@ msgid ""
 "first be sought in the **Language/fr-CA** directory, then in the "
 "**Language/fr** directory, and finally in the **Language/en** directory."
 msgstr ""
+"따라서 로케일 ``fr-CA``\\을 사용하는 경우 먼저 **Language/fr-CA** 디렉토리에서 지역화된 메시지를 찾은 다음 "
+"**Language/fr** 디렉토리, 마지막으로 **Language/en** 디렉토리에서 찾습니다."
 
 #: ../../source/outgoing/localization.rst:279
 msgid "System Message Translations"
-msgstr ""
+msgstr "시스템 메시지 번역"
 
 #: ../../source/outgoing/localization.rst:281
 msgid ""
-"We have an \"official\" set of the system message translations in their "
-"`own repository <https://github.com/codeigniter4/translations>`_."
+"We have an \"official\" set of the system message translations in their `own"
+" repository <https://github.com/codeigniter4/translations>`_."
 msgstr ""
+"`own repository <https://github.com/codeigniter4/translations>`_\\에는 시스템 메시지"
+" 번역의 \"공식\" 세트가 있습니다."
 
 #: ../../source/outgoing/localization.rst:284
 msgid ""
-"You could download that repository, and copy its **Language** folder into"
-" your **app** folder. The incorporated translations will be automatically"
-" picked up because the ``App`` namespace is mapped to your **app** "
-"folder."
+"You could download that repository, and copy its **Language** folder into "
+"your **app** folder. The incorporated translations will be automatically "
+"picked up because the ``App`` namespace is mapped to your **app** folder."
 msgstr ""
+"해당 저장소를 다운로드하고 **Language** 폴더를 **app** 폴더에 복사할 수 있습니다. ``App`` 네임스페이스가 "
+"**\\앱** 폴더에 매핑되므로 통합된 번역이 자동으로 선택됩니다."
 
 #: ../../source/outgoing/localization.rst:288
 msgid ""
-"Alternately, a better practice would be to run the following command "
-"inside your project:"
-msgstr ""
+"Alternately, a better practice would be to run the following command inside "
+"your project:"
+msgstr "또는 프로젝트 내에서 다음 명령을 실행하는 것이 더 나은 방법입니다."
 
 #: ../../source/outgoing/localization.rst:295
 msgid ""
 "The translated messages will be automatically picked up because the "
 "translations folders get mapped appropriately."
-msgstr ""
+msgstr "번역 폴더가 적절하게 매핑되므로 번역된 메시지가 자동으로 선택됩니다."
 
 #: ../../source/outgoing/localization.rst:299
 msgid "Overriding System Message Translations"
-msgstr ""
+msgstr "시스템 메시지 번역 재정의"
 
 #: ../../source/outgoing/localization.rst:301
 msgid ""
-"The framework provide `System Message Translations`_, and packages that "
-"you installed may also provide the message translations."
+"The framework provide `System Message Translations`_, and packages that you "
+"installed may also provide the message translations."
 msgstr ""
+"프레임워크는 `System Message Translations`_\\을 제공하며, 설치한 패키지도 메시지 번역을 제공할 수 있습니다."
 
 #: ../../source/outgoing/localization.rst:304
 msgid ""
-"If you want to override some language messages, create language files in "
-"the **app/Language** directory. Then, return only the array you want to "
+"If you want to override some language messages, create language files in the"
+" **app/Language** directory. Then, return only the array you want to "
 "override in the file."
 msgstr ""
+"일부 언어 메시지를 재정의하려면 **app/Language** 디렉터리에 언어 파일을 생성하세요. 그런 다음 파일에서 재정의하려는 배열만"
+" 반환합니다."
 
 #: ../../source/outgoing/localization.rst:311
 msgid "Generating Translation Files via Command"
-msgstr ""
+msgstr "명령을 통해 번역 파일 생성"
 
 #: ../../source/outgoing/localization.rst:315
 msgid ""
-"You can automatically generate and update translation files in your "
-"**app** folder. The command will search for the use of the ``lang()`` "
-"function, combine the current translation keys in **app/Language** by "
-"defining the locale ``defaultLocale`` from ``Config\\App``. After the "
-"operation, you need to translate the language keys yourself. The command "
-"is able to recognize nested keys normally ``File.array.nested.text``. "
-"Previously saved keys do not change."
+"You can automatically generate and update translation files in your **app** "
+"folder. The command will search for the use of the ``lang()`` function, "
+"combine the current translation keys in **app/Language** by defining the "
+"locale ``defaultLocale`` from ``Config\\App``. After the operation, you need"
+" to translate the language keys yourself. The command is able to recognize "
+"nested keys normally ``File.array.nested.text``. Previously saved keys do "
+"not change."
 msgstr ""
+"``app`` 폴더에서 번역 파일을 자동으로 생성하고 업데이트할 수 있습니다. 이 명령은 ``lang()`` 함수의 사용을 검색하고 "
+"``Config\\App``\\에서 로케일 ``defaultLocale``을 정의하여 ``app/Language``\\의 현재 번역 키를 "
+"결합합니다. 수술 후에는 언어 키를 직접 번역해야 합니다. 이 명령은 일반적으로 ``File.array.nested.text`` 중첩된 "
+"키를 인식할 수 있습니다. 이전에 저장된 키는 변경되지 않습니다."
 
 #: ../../source/outgoing/localization.rst:326
 msgid "When the command scans folders, **app/Language** will be skipped."
-msgstr ""
+msgstr "명령이 폴더를 검색할 때 ``app/Language``\\는 건너뜁니다."
 
 #: ../../source/outgoing/localization.rst:328
 msgid ""
@@ -514,41 +594,45 @@ msgid ""
 "``vendor/bin/php-cs-fixer fix ./app/Language`` if ``php-cs-fixer`` is "
 "installed."
 msgstr ""
+"생성된 언어 파일은 코딩 표준을 따르지 않을 가능성이 높습니다. 포맷하는 것이 좋습니다. 예를 들어 ``php-cs-fixer``\\이 "
+"설치된 경우 ``vendor/bin/php-cs-fixer fix ./app/Language``\\을 실행합니다."
 
 #: ../../source/outgoing/localization.rst:331
 msgid ""
 "Before updating, it is possible to preview the translations found by the "
 "command:"
-msgstr ""
+msgstr "업데이트하기 전에 다음 명령으로 찾은 번역을 미리 볼 수 있습니다."
 
 #: ../../source/outgoing/localization.rst:337
 msgid ""
-"The detailed output of ``--verbose`` also shows a list of invalid keys. "
-"For example:"
-msgstr ""
+"The detailed output of ``--verbose`` also shows a list of invalid keys. For "
+"example:"
+msgstr "``--verbose``\\의 자세한 출력에는 잘못된 키 목록도 표시됩니다. 예를 들어:"
 
 #: ../../source/outgoing/localization.rst:358
 msgid ""
-"For a more accurate search, specify the desired locale or directory to "
-"scan."
-msgstr ""
+"For a more accurate search, specify the desired locale or directory to scan."
+msgstr "보다 정확한 검색을 위해 검색하려는 로캘이나 디렉터리를 지정하세요."
 
 #: ../../source/outgoing/localization.rst:364
 msgid "Detailed information can be found by running the command:"
-msgstr ""
+msgstr "자세한 정보는 다음 명령을 실행하여 확인할 수 있습니다."
 
 #: ../../source/outgoing/localization.rst:373
 msgid "Synchronization Translation Files via Command"
-msgstr ""
+msgstr "명령을 통한 동기화 번역 파일"
 
 #: ../../source/outgoing/localization.rst:377
 msgid ""
 "You may need to create files for another language when you've finished "
-"translating for the current language. You can use the spark ``lang:find``"
-" command to help with this. However, it might not detect all "
-"translations, particularly those with dynamically set parameters like "
-"``lang('App.status.' . $key, ['payload' => 'John'], 'en')``."
+"translating for the current language. You can use the spark ``lang:find`` "
+"command to help with this. However, it might not detect all translations, "
+"particularly those with dynamically set parameters like ``lang('App.status.'"
+" . $key, ['payload' => 'John'], 'en')``."
 msgstr ""
+"현재 언어에 대한 번역을 마친 후 다른 언어에 대한 파일을 만들어야 할 수도 있습니다. 이를 해결하기 위해 Spark "
+"``lang:find`` 명령을 사용할 수 있습니다. 그러나 모든 번역, 특히 ``lang('App.status.' . $key, "
+"['payload' => 'John'], 'en')``\\과 같이 동적으로 설정된 매개변수가 있는 번역을 감지하지 못할 수도 있습니다."
 
 #: ../../source/outgoing/localization.rst:379
 msgid ""
@@ -556,18 +640,19 @@ msgid ""
 "language files and translate them manually. This approach preserves any "
 "unique keys the command might have overlooked."
 msgstr ""
+"번역이 누락되지 않도록 하려면 완성된 언어 파일을 복사하여 수동으로 번역하는 것이 가장 좋습니다. 이 접근 방식은 명령이 간과했을 수 "
+"있는 고유 키를 보존합니다."
 
 #: ../../source/outgoing/localization.rst:381
 msgid "All you need to do is execute:"
-msgstr ""
+msgstr "당신이 해야 할 일은 다음을 실행하는 것 뿐입니다:"
 
 #: ../../source/outgoing/localization.rst:391
 msgid ""
-"As a result, you will receive files with the translation keys. If there "
-"were duplicate keys in the target locale, they are saved."
-msgstr ""
+"As a result, you will receive files with the translation keys. If there were"
+" duplicate keys in the target locale, they are saved."
+msgstr "결과적으로 번역 키가 포함된 파일을 받게 됩니다. 대상 로케일에 중복된 키가 있으면 저장됩니다."
 
 #: ../../source/outgoing/localization.rst:394
 msgid "Non-matching keys in new translations are deleted!"
-msgstr ""
-
+msgstr "새 번역에서 일치하지 않는 키가 삭제됩니다!"

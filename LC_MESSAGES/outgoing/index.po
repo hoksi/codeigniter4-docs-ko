@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,9 +21,8 @@ msgstr ""
 
 #: ../../source/outgoing/index.rst:3
 msgid "Building Responses"
-msgstr ""
+msgstr "응답 빌드"
 
 #: ../../source/outgoing/index.rst:5
 msgid "View components are used to build what is returned to the user."
-msgstr ""
-
+msgstr "뷰 구성 요소는 사용자에게 반환되는 내용을 구성하는 데 사용됩니다."

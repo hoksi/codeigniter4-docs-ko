@@ -217,13 +217,12 @@ msgid "Configuration"
 msgstr "설정"
 
 #: ../../source/outgoing/views.rst:125
-#, fuzzy
 msgid ""
 "By default, overrides are looked for in the **app/Views/overrides** "
 "directory. You can configure this location via the "
 "``$appOverridesFolder`` property in **app/Config/View.php**:"
 msgstr ""
-"기본적으로 오버라이드된 파일은 **app/Views/overrides** 디렉토리에서 찾습니다. "
+"기본적으로 오버라이드 파일은 **app/Views/overrides** 디렉토리에서 찾습니다. "
 "**app/Config/View.php**\\ 의 ``$appOverridesFolder`` 속성을 통해 이 위치를 설정할 수 "
 "있습니다."
 
@@ -388,4 +387,3 @@ msgstr "간단한 예제입니다. 컨트롤러에 다음을 추가하십시오.
 #: ../../source/outgoing/views.rst:239
 msgid "Now open your view file and create a loop:"
 msgstr "이제 뷰 파일을 열고 루프를 만드십시오."
-

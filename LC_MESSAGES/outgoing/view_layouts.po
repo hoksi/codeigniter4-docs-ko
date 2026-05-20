@@ -12,112 +12,127 @@ msgstr ""
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../source/outgoing/view_layouts.rst:3
 msgid "View Layouts"
-msgstr ""
+msgstr "레이아웃 보기"
 
 #: ../../source/outgoing/view_layouts.rst:9
 msgid ""
-"CodeIgniter supports a simple, yet very flexible, layout system that "
-"makes it simple to use one or more base page layouts across your "
-"application. Layouts support sections of content that can be inserted "
-"from any view being rendered. You could create different layouts to "
-"support one-column, two-column, blog archive pages, and more. Layouts are"
-" never directly rendered. Instead, you render a view, which specifies the"
-" layout that it wants to extend."
+"CodeIgniter supports a simple, yet very flexible, layout system that makes "
+"it simple to use one or more base page layouts across your application. "
+"Layouts support sections of content that can be inserted from any view being"
+" rendered. You could create different layouts to support one-column, two-"
+"column, blog archive pages, and more. Layouts are never directly rendered. "
+"Instead, you render a view, which specifies the layout that it wants to "
+"extend."
 msgstr ""
+"CodeIgniter는 애플리케이션 전체에서 하나 이상의 기본 페이지 레이아웃을 간단하게 사용할 수 있게 해주는 간단하면서도 매우 유연한"
+" 레이아웃 시스템을 지원합니다. 레이아웃은 렌더링되는 모든 보기에서 삽입할 수 있는 콘텐츠 섹션을 지원합니다. 1열, 2열, 블로그 "
+"아카이브 페이지 등을 지원하기 위해 다양한 레이아웃을 만들 수 있습니다. 레이아웃은 직접 렌더링되지 않습니다. 대신 확장하려는 레이아웃을"
+" 지정하는 뷰를 렌더링합니다."
 
 #: ../../source/outgoing/view_layouts.rst:19
 msgid "Creating A Layout"
-msgstr ""
+msgstr "레이아웃 만들기"
 
 #: ../../source/outgoing/view_layouts.rst:21
 msgid ""
 "Layouts are views like any other. The only difference is their intended "
 "usage. Layouts are the only view files that would make use of the "
-"``renderSection()`` method. This method acts as a placeholder for "
-"content."
+"``renderSection()`` method. This method acts as a placeholder for content."
 msgstr ""
+"레이아웃은 다른 것과 같은 뷰입니다. 유일한 차이점은 의도된 용도입니다. 레이아웃은 ``renderSection()`` 메서드를 사용하는"
+" 유일한 보기 파일입니다. 이 메서드는 콘텐츠의 자리 표시자 역할을 합니다."
 
 #: ../../source/outgoing/view_layouts.rst:24
 msgid "E.g. **app/Views/default.php**::"
-msgstr ""
+msgstr "예: **앱/보기/default.php**::"
 
 #: ../../source/outgoing/view_layouts.rst:36
 msgid ""
 "The ``renderSection()`` method has two arguments: ``$sectionName`` and "
-"``$saveData``. ``$sectionName`` is the name of the section used by any "
-"child view to name the content section. If the boolean argument "
-"``$saveData`` is set to true, the method saves data for subsequent calls."
-" Otherwise, the method cleans the data after displaying the contents."
+"``$saveData``. ``$sectionName`` is the name of the section used by any child"
+" view to name the content section. If the boolean argument ``$saveData`` is "
+"set to true, the method saves data for subsequent calls. Otherwise, the "
+"method cleans the data after displaying the contents."
 msgstr ""
+"``renderSection()`` 메서드에는 ``$sectionName`` 및 ``$saveData``\\의 두 가지 인수가 있습니다."
+" ``$sectionName``\\은 하위 뷰에서 콘텐츠 섹션의 이름을 지정하는 데 사용되는 섹션의 이름입니다. 부울 인수 "
+"``$saveData``\\이 true로 설정된 경우 메소드는 후속 호출을 위해 데이터를 저장합니다. 그렇지 않은 경우 메서드는 내용을 "
+"표시한 후 데이터를 정리합니다."
 
 #: ../../source/outgoing/view_layouts.rst:40
 msgid "E.g. **app/Views/welcome_message.php**::"
-msgstr ""
+msgstr "예: **앱/보기/welcome_message.php**::"
 
 #: ../../source/outgoing/view_layouts.rst:53
 msgid "``$saveData`` can be used since v4.4.0."
-msgstr ""
+msgstr "``$saveData``\\은 v4.4.0부터 사용할 수 있습니다."
 
 #: ../../source/outgoing/view_layouts.rst:57
 msgid "Using Layouts in Views"
-msgstr ""
+msgstr "보기에서 레이아웃 사용"
 
 #: ../../source/outgoing/view_layouts.rst:59
 msgid ""
 "Whenever a view wants to be inserted into a layout, it must use the "
 "``extend()`` method at the top of the file::"
-msgstr ""
+msgstr "뷰를 레이아웃에 삽입하려고 할 때마다 file:: 상단에 있는 ``extend()`` 메서드를 사용해야 합니다."
 
 #: ../../source/outgoing/view_layouts.rst:63
 msgid ""
 "The ``extend()`` method takes the name of any view file that you wish to "
-"use. Since they are standard views, they will be located just like a "
-"view. By default, it will look in the application's View directory, but "
-"will also scan other PSR-4 defined namespaces. You can include a "
-"namespace to locate the view in particular namespace View directory::"
+"use. Since they are standard views, they will be located just like a view. "
+"By default, it will look in the application's View directory, but will also "
+"scan other PSR-4 defined namespaces. You can include a namespace to locate "
+"the view in particular namespace View directory::"
 msgstr ""
+"``extend()`` 메소드는 사용하려는 뷰 파일의 이름을 사용합니다. 표준 뷰이므로 뷰와 동일하게 위치하게 됩니다. 기본적으로 "
+"애플리케이션의 View 디렉터리를 검색하지만 다른 PSR-4 정의 네임스페이스도 검색합니다. 특정 네임스페이스 View "
+"directory::에서 뷰를 찾기 위해 네임스페이스를 포함할 수 있습니다."
 
 #: ../../source/outgoing/view_layouts.rst:69
 msgid ""
 "All content within a view that extends a layout must be included within "
-"``section($name)`` and ``endSection()`` method calls. Any content between"
-" these calls will be inserted into the layout wherever the "
+"``section($name)`` and ``endSection()`` method calls. Any content between "
+"these calls will be inserted into the layout wherever the "
 "``renderSection($name)`` call that matches the section name exists."
 msgstr ""
+"레이아웃을 확장하는 뷰 내의 모든 콘텐츠는 ``section($name)`` 및 ``endSection()`` 메서드 호출 내에 "
+"포함되어야 합니다. 이러한 호출 사이의 모든 콘텐츠는 섹션 이름과 일치하는 ``renderSection($name)`` 호출이 존재하는 "
+"레이아웃에 삽입됩니다."
 
 #: ../../source/outgoing/view_layouts.rst:73
 msgid "E.g. **app/Views/some_view.php**::"
-msgstr ""
+msgstr "예: **앱/보기/some_view.php**::"
 
 #: ../../source/outgoing/view_layouts.rst:81
 msgid ""
-"The ``endSection()`` does not need the section name. It automatically "
-"knows which one to close."
-msgstr ""
+"The ``endSection()`` does not need the section name. It automatically knows "
+"which one to close."
+msgstr "``endSection()``\\에는 섹션 이름이 필요하지 않습니다. 어느 쪽을 닫아야 할지 자동으로 알 수 있습니다."
 
 #: ../../source/outgoing/view_layouts.rst:83
 msgid "Sections can contain nested sections::"
-msgstr ""
+msgstr "섹션에는 중첩된 sections::이 포함될 수 있습니다."
 
 #: ../../source/outgoing/view_layouts.rst:96
 msgid "Rendering the View"
-msgstr ""
+msgstr "뷰 렌더링"
 
 #: ../../source/outgoing/view_layouts.rst:98
 msgid ""
-"Rendering the view and it's layout is done exactly as any other view "
-"would be displayed within a controller:"
-msgstr ""
+"Rendering the view and it's layout is done exactly as any other view would "
+"be displayed within a controller:"
+msgstr "뷰 렌더링과 레이아웃은 컨트롤러 내에 표시되는 다른 뷰와 동일하게 수행됩니다."
 
 #: ../../source/outgoing/view_layouts.rst:102
 msgid ""
@@ -126,38 +141,44 @@ msgid ""
 "automatically. The renderer is smart enough to detect whether the view "
 "should be rendered on its own, or if it needs a layout."
 msgstr ""
+"View **app/Views/some_view.php**\\를 렌더링하고 ``default``\\을 확장하는 경우 레이아웃 "
+"**app/Views/default.php**\\도 자동으로 사용됩니다. 렌더러는 뷰가 자체적으로 렌더링되어야 하는지 아니면 레이아웃이 "
+"필요한지를 감지할 만큼 똑똑합니다."
 
 #: ../../source/outgoing/view_layouts.rst:108
 msgid "Including View Partials"
-msgstr ""
+msgstr "부분 보기 포함"
 
 #: ../../source/outgoing/view_layouts.rst:110
 msgid ""
-"View partials are view files that do not extend any layout. They "
-"typically include content that can be reused from view to view. When "
-"using view layouts you must use ``$this->include()`` to include any view "
-"partials."
+"View partials are view files that do not extend any layout. They typically "
+"include content that can be reused from view to view. When using view "
+"layouts you must use ``$this->include()`` to include any view partials."
 msgstr ""
+"부분 보기는 레이아웃을 확장하지 않는 보기 파일입니다. 일반적으로 여러 보기에서 재사용할 수 있는 콘텐츠가 포함됩니다. 뷰 레이아웃을 "
+"사용할 때 뷰 부분을 포함하려면 ``$this->include()``\\을 사용해야 합니다."
 
 #: ../../source/outgoing/view_layouts.rst:123
 msgid ""
 "When calling the ``include()`` method, you can pass it all of the same "
-"options that can when rendering a normal view, including cache "
-"directives, etc."
+"options that can when rendering a normal view, including cache directives, "
+"etc."
 msgstr ""
+"``include()`` 메소드를 호출할 때 캐시 지시어 등을 포함하여 일반 뷰를 렌더링할 때와 동일한 옵션을 모두 전달할 수 있습니다."
 
 #: ../../source/outgoing/view_layouts.rst:128
 msgid "Assign Data to Layers"
-msgstr ""
+msgstr "레이어에 데이터 할당"
 
 #: ../../source/outgoing/view_layouts.rst:130
 msgid ""
 "You can pass additional variables to your templates, just like for "
-"``view()``. If you don't use the ``saveData = false`` flag anywhere in "
-"the templates, then the data will be inherited for each block."
+"``view()``. If you don't use the ``saveData = false`` flag anywhere in the "
+"templates, then the data will be inherited for each block."
 msgstr ""
+"``view()``\\과 마찬가지로 추가 변수를 템플릿에 전달할 수 있습니다. 템플릿 어디에서나 ``saveData = false`` "
+"플래그를 사용하지 않으면 데이터가 각 블록에 상속됩니다."
 
 #: ../../source/outgoing/view_layouts.rst:133
 msgid "When using a loop, passing new variables is required."
-msgstr ""
-
+msgstr "루프를 사용하는 경우 새 변수를 전달해야 합니다."
