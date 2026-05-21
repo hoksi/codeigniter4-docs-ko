@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../source/testing/feature.rst:3
 msgid "HTTP Feature Testing"
-msgstr ""
+msgstr "HTTP 기능 테스트"
 
 #: ../../source/testing/feature.rst:5
 msgid ""
@@ -33,10 +32,14 @@ msgid ""
 "routing works, the response is the correct format, analyze the results, "
 "and more."
 msgstr ""
+"기능 테스트(Feature Testing)를 사용하면 애플리케이션에 대한 단일 호출의 결과를 "
+"확인할 수 있습니다. 단일 웹 폼의 결과를 반환하거나 API 엔드포인트를 호출하는 것 등이 "
+"이에 해당합니다. 이 방법은 단일 요청의 전체 생명주기를 테스트하여 라우팅이 올바르게 "
+"작동하는지, 응답이 올바른 형식인지, 결과를 분석하는 등 다양한 검증을 할 수 있어 편리합니다."
 
 #: ../../source/testing/feature.rst:15
 msgid "The Test Class"
-msgstr ""
+msgstr "테스트 클래스"
 
 #: ../../source/testing/feature.rst:17
 msgid ""
@@ -47,10 +50,16 @@ msgid ""
 "``parent::setUp()`` and ``parent::tearDown()`` are called if you "
 "implement your own methods."
 msgstr ""
+"기능 테스트를 사용하려면 모든 테스트 클래스에서 "
+"``CodeIgniter\\Test\\DatabaseTestTrait``\ 와 "
+"``CodeIgniter\\Test\\FeatureTestTrait`` 트레이트를 사용해야 합니다. "
+"이 테스트 도구들은 데이터베이스의 올바른 준비 과정에 의존하므로, "
+"자체 메서드를 구현할 경우 반드시 ``parent::setUp()``\ 과 "
+"``parent::tearDown()``\ 이 호출되도록 해야 합니다."
 
 #: ../../source/testing/feature.rst:27
 msgid "Requesting a Page"
-msgstr ""
+msgstr "페이지 요청"
 
 #: ../../source/testing/feature.rst:29
 msgid ""
@@ -58,16 +67,18 @@ msgid ""
 "application and get the results back. To do this, you use the ``call()`` "
 "method."
 msgstr ""
+"기본적으로 기능 테스트는 애플리케이션의 엔드포인트를 호출하고 결과를 반환받을 수 있게 "
+"해줍니다. 이를 위해 ``call()`` 메서드를 사용합니다."
 
 #: ../../source/testing/feature.rst:32
 msgid ""
 "The first parameter is the HTTP method to use (most frequently either "
 "``GET`` or ``POST``)."
-msgstr ""
+msgstr "첫 번째 매개변수는 사용할 HTTP 메서드입니다 (주로 ``GET`` 또는 ``POST``)."
 
 #: ../../source/testing/feature.rst:33
 msgid "The second parameter is the URI path on your site to test."
-msgstr ""
+msgstr "두 번째 매개변수는 테스트할 사이트의 URI 경로입니다."
 
 #: ../../source/testing/feature.rst:34
 msgid ""
@@ -77,26 +88,30 @@ msgid ""
 "request would have the ``$_POST`` array populated. The ``$params`` is "
 "also used in :ref:`feature-formatting-the-request`."
 msgstr ""
+"세 번째 매개변수 ``$params``\ 는 사용 중인 HTTP 동사에 해당하는 슈퍼글로벌 변수를 "
+"채우는 데 사용되는 배열을 받습니다. 따라서 **GET** 메서드는 ``$_GET`` 변수를 채우고, "
+"**POST** 요청은 ``$_POST`` 배열을 채웁니다. ``$params``\ 는 "
+":ref:`feature-formatting-the-request`\ 에서도 사용됩니다."
 
 #: ../../source/testing/feature.rst:40
 msgid ""
 "The ``$params`` array does not make sense for every HTTP verb, but is "
 "included for consistency."
-msgstr ""
+msgstr "``$params`` 배열이 모든 HTTP 동사에 적합한 것은 아니지만, 일관성을 위해 포함되어 있습니다."
 
 #: ../../source/testing/feature.rst:47
 msgid "Shorthand Methods"
-msgstr ""
+msgstr "축약 메서드"
 
 #: ../../source/testing/feature.rst:49
 msgid ""
 "Shorthand methods for each of the HTTP verbs exist to ease typing and "
 "make things clearer:"
-msgstr ""
+msgstr "각 HTTP 동사에 대한 축약 메서드가 있어 더 간결하고 명확하게 작성할 수 있습니다:"
 
 #: ../../source/testing/feature.rst:55
 msgid "Setting Different Routes"
-msgstr ""
+msgstr "다른 라우트 설정"
 
 #: ../../source/testing/feature.rst:57
 msgid ""
@@ -104,16 +119,20 @@ msgid ""
 "\"routes\" into the ``withRoutes()`` method. This will override any "
 "existing routes in the system:"
 msgstr ""
+"``withRoutes()`` 메서드에 \"routes\" 배열을 전달하여 커스텀 라우트 모음을 사용할 수 있습니다. "
+"이렇게 하면 시스템의 기존 라우트가 재정의됩니다:"
 
 #: ../../source/testing/feature.rst:63
 msgid ""
 "Each of the \"routes\" is a 3 element array containing the HTTP verb (or "
 "\"add\" for all), the URI to match, and the routing destination."
 msgstr ""
+"각 \"route\"는 HTTP 동사(모든 메서드의 경우 \"add\"), 매칭할 URI, 라우팅 대상으로 "
+"구성된 3개 요소의 배열입니다."
 
 #: ../../source/testing/feature.rst:69
 msgid "Setting Session Values"
-msgstr ""
+msgstr "세션 값 설정"
 
 #: ../../source/testing/feature.rst:71
 msgid ""
@@ -123,10 +142,14 @@ msgid ""
 " or ``null`` to indicate that the current values of ``$_SESSION`` should "
 "be used. This is handy for testing authentication and more."
 msgstr ""
+"``withSession()`` 메서드를 사용하여 단일 테스트에서 사용할 커스텀 세션 값을 설정할 수 있습니다. "
+"이 메서드는 요청 시 ``$_SESSION`` 변수에 존재해야 하는 키/값 쌍의 배열을 받거나, "
+"현재 ``$_SESSION`` 값을 사용하도록 ``null``\ 을 받습니다. "
+"인증 테스트 등에 유용합니다."
 
 #: ../../source/testing/feature.rst:79
 msgid "Setting Headers"
-msgstr ""
+msgstr "헤더 설정"
 
 #: ../../source/testing/feature.rst:81
 msgid ""
@@ -134,10 +157,12 @@ msgid ""
 "an array of key/value pairs that would be passed as a header into the "
 "call:"
 msgstr ""
+"``withHeaders()`` 메서드를 사용하여 헤더 값을 설정할 수 있습니다. "
+"이 메서드는 호출 시 헤더로 전달될 키/값 쌍의 배열을 받습니다:"
 
 #: ../../source/testing/feature.rst:88
 msgid "Bypassing Events"
-msgstr ""
+msgstr "이벤트 건너뛰기"
 
 #: ../../source/testing/feature.rst:90
 msgid ""
@@ -146,10 +171,13 @@ msgid ""
 "can tell the system to skip any event handling with the ``skipEvents()`` "
 "method:"
 msgstr ""
+"이벤트는 애플리케이션에서 유용하게 사용되지만, 테스트 중에는 문제가 될 수 있습니다. "
+"특히 이메일을 발송하는 이벤트가 그렇습니다. ``skipEvents()`` 메서드를 사용하여 "
+"모든 이벤트 처리를 건너뛰도록 시스템에 지시할 수 있습니다:"
 
 #: ../../source/testing/feature.rst:99
 msgid "Formatting the Request"
-msgstr ""
+msgstr "요청 형식 지정"
 
 #: ../../source/testing/feature.rst:101
 msgid ""
@@ -158,6 +186,9 @@ msgid ""
 "``xml``. This is useful when testing JSON or XML APIs so that you can set"
 " the request in the form that the controller will expect."
 msgstr ""
+"``withBodyFormat()`` 메서드를 사용하여 요청 본문의 형식을 설정할 수 있습니다. "
+"현재 ``json`` 또는 ``xml``\ 을 지원합니다. 컨트롤러가 기대하는 형식으로 요청을 "
+"설정할 수 있어 JSON 또는 XML API를 테스트할 때 유용합니다."
 
 #: ../../source/testing/feature.rst:105
 msgid ""
@@ -165,14 +196,16 @@ msgid ""
 "``get()``... and assign them to the body of the request in the given "
 "format."
 msgstr ""
+"이 메서드는 ``call()``, ``post()``, ``get()`` 등에 전달된 매개변수를 받아 "
+"지정된 형식으로 요청 본문에 할당합니다."
 
 #: ../../source/testing/feature.rst:108
 msgid "This will also set the `Content-Type` header for your request accordingly."
-msgstr ""
+msgstr "이 메서드는 요청에 맞게 `Content-Type` 헤더도 함께 설정합니다."
 
 #: ../../source/testing/feature.rst:116
 msgid "Setting the Body"
-msgstr ""
+msgstr "본문 설정"
 
 #: ../../source/testing/feature.rst:118
 msgid ""
@@ -180,16 +213,21 @@ msgid ""
 " allows you to format the body how you want to format it. It is "
 "recommended that you use this if you have more complicated XMLs to test."
 msgstr ""
+"``withBody()`` 메서드를 사용하여 요청 본문을 직접 설정할 수 있습니다. "
+"원하는 형식으로 자유롭게 본문을 작성할 수 있습니다. "
+"복잡한 XML을 테스트해야 하는 경우 이 메서드를 사용하는 것을 권장합니다."
 
 #: ../../source/testing/feature.rst:121
 msgid ""
 "This will not set the `Content-Type` header for you. If you need that, "
 "you can set it with the ``withHeaders()`` method."
 msgstr ""
+"이 메서드는 `Content-Type` 헤더를 자동으로 설정하지 않습니다. "
+"필요한 경우 ``withHeaders()`` 메서드를 사용하여 설정할 수 있습니다."
 
 #: ../../source/testing/feature.rst:125
 msgid "Checking the Response"
-msgstr ""
+msgstr "응답 확인"
 
 #: ../../source/testing/feature.rst:127
 msgid ""
@@ -197,4 +235,6 @@ msgid ""
 "See :doc:`Testing Responses <response>` on how to use this class to "
 "perform additional assertions and verification in your test cases."
 msgstr ""
-
+"``FeatureTestTrait::call()``\ 은 ``TestResponse``\ 의 인스턴스를 반환합니다. "
+"테스트 케이스에서 추가 어설션 및 검증을 수행하는 방법은 :doc:`응답 테스트 <response>`\ 를 "
+"참고하십시오."
