@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,73 +21,78 @@ msgstr ""
 
 #: ../../source/installation/upgrade_437.rst:3
 msgid "Upgrading from 4.3.6 to 4.3.7"
-msgstr ""
+msgstr "4.3.6에서 4.3.7로 업그레이드"
 
 #: ../../source/installation/upgrade_437.rst:5
 msgid ""
 "Please refer to the upgrade instructions corresponding to your "
 "installation method."
-msgstr ""
+msgstr "설치 방법에 해당하는 업그레이드 지침을 참조하십시오."
 
 #: ../../source/installation/upgrade_437.rst:7
 msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
-msgstr ""
+msgstr ":ref:`Composer 설치 앱 스타터 업그레이드 <app-starter-upgrading>`"
 
 #: ../../source/installation/upgrade_437.rst:8
 msgid ""
 ":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
 "Upgrading <adding-codeigniter4-upgrading>`"
 msgstr ""
+":ref:`Composer 설치 기존 프로젝트에 CodeIgniter4 추가 업그레이드 "
+"<adding-codeigniter4-upgrading>`"
 
 #: ../../source/installation/upgrade_437.rst:9
 msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
-msgstr ""
+msgstr ":ref:`수동 설치 업그레이드 <installing-manual-upgrading>`"
 
 #: ../../source/installation/upgrade_437.rst:16
 msgid "Breaking Changes"
-msgstr ""
+msgstr "주요 변경사항"
 
 #: ../../source/installation/upgrade_437.rst:21
 msgid "Feature Testing Request Body"
-msgstr ""
+msgstr "기능 테스트 요청 본문"
 
 #: ../../source/installation/upgrade_437.rst:23
 msgid "If you call:"
-msgstr ""
+msgstr "다음을 호출하는 경우:"
 
 #: ../../source/installation/upgrade_437.rst:25
 msgid ":ref:`withBody() <feature-setting-the-body>`"
-msgstr ""
+msgstr ":ref:`withBody() <feature-setting-the-body>`"
 
 #: ../../source/installation/upgrade_437.rst:26
 msgid "and :ref:`withBodyFormat() <feature-formatting-the-request>`"
-msgstr ""
+msgstr "그리고 :ref:`withBodyFormat() <feature-formatting-the-request>`"
 
 #: ../../source/installation/upgrade_437.rst:27
 msgid ""
 "and pass the ``$params`` to :ref:`call() <feature-requesting-a-page>` (or"
 " shorthand methods)"
 msgstr ""
+"그리고 ``$params``\\ 를 :ref:`call() <feature-requesting-a-page>`\\ (또는 단축 메서드\\ )에 전달하면"
 
 #: ../../source/installation/upgrade_437.rst:29
 msgid ""
 "the priority for a Request body has been changed. In the unlikely event "
 "that you have test code affected by this change, modify it."
 msgstr ""
+"요청 본문의 우선순위가 변경되었습니다. 이 변경의 영향을 받는 테스트 코드가 있다면 수정하십시오."
 
 #: ../../source/installation/upgrade_437.rst:32
 msgid ""
 "For example, now the ``$params`` is used to build the request body, and "
 "the ``$body`` is not used::"
 msgstr ""
+"예를 들어, 이제 ``$params``\\ 가 요청 본문을 구성하는 데 사용되며, ``$body``\\ 는 사용되지 않습니다::"
 
 #: ../../source/installation/upgrade_437.rst:37
 msgid "Previously, the ``$body`` was used for the request body."
-msgstr ""
+msgstr "이전에는 ``$body``\\ 가 요청 본문에 사용되었습니다."
 
 #: ../../source/installation/upgrade_437.rst:40
 msgid "Return value of Validation::loadRuleGroup()"
-msgstr ""
+msgstr "Validation::loadRuleGroup()의 반환값"
 
 #: ../../source/installation/upgrade_437.rst:42
 msgid ""
@@ -96,14 +100,16 @@ msgid ""
 " \"**rules array**\" to \"**array** of **rules array** and **customErrors"
 " array**\" (``[rules, customErrors]``)."
 msgstr ""
+"``Validation::loadRuleGroup()``\\ 의 반환값이 \"**규칙 배열**\"에서 "
+"\"**규칙 배열**\\ 과 **customErrors 배열**\\ 의 **배열**\" (``[rules, customErrors]``)로 변경되었습니다."
 
 #: ../../source/installation/upgrade_437.rst:46
 msgid "If you use the method, update the code like the following::"
-msgstr ""
+msgstr "이 메서드\\ 를 사용하는 경우 다음과 같이 코드를 업데이트하십시오::"
 
 #: ../../source/installation/upgrade_437.rst:53
 msgid "Project Files"
-msgstr ""
+msgstr "프로젝트 파일"
 
 #: ../../source/installation/upgrade_437.rst:55
 msgid ""
@@ -111,6 +117,8 @@ msgid ""
 "received updates. Due to these files being outside of the **system** "
 "scope they will not be changed without your intervention."
 msgstr ""
+"**프로젝트 공간** (root, app, public, writable)의 일부 파일이 업데이트되었습니다. "
+"이 파일들은 **system** 범위 밖에 있으므로 직접 개입하지 않으면 변경되지 않습니다."
 
 #: ../../source/installation/upgrade_437.rst:58
 #, python-format
@@ -119,10 +127,12 @@ msgid ""
 "merging changes to the project space: `Explore on Packagist "
 "<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
 msgstr ""
+"프로젝트 공간의 변경사항 병합을 돕는 서드파티 CodeIgniter 모듈이 있습니다: "
+"`Packagist에서 탐색 <https://packagist.org/explore/?query=codeigniter4%20updates>`_."
 
 #: ../../source/installation/upgrade_437.rst:62
 msgid "Content Changes"
-msgstr ""
+msgstr "콘텐츠 변경사항"
 
 #: ../../source/installation/upgrade_437.rst:64
 msgid ""
@@ -130,19 +140,21 @@ msgid ""
 "or visual adjustments) and it is recommended that you merge the updated "
 "versions with your application:"
 msgstr ""
+"다음 파일들은 중요한 변경사항(사용 중단 또는 시각적 조정 포함)이 있으며, "
+"업데이트된 버전을 애플리케이션에 병합할 것을 권장합니다:"
 
 #: ../../source/installation/upgrade_437.rst:68
 msgid "Config"
-msgstr ""
+msgstr "설정"
 
 #: ../../source/installation/upgrade_437.rst:70
 #: ../../source/installation/upgrade_437.rst:83
 msgid "app/Config/Kint.php"
-msgstr ""
+msgstr "app/Config/Kint.php"
 
 #: ../../source/installation/upgrade_437.rst:73
 msgid "All Changes"
-msgstr ""
+msgstr "모든 변경사항"
 
 #: ../../source/installation/upgrade_437.rst:75
 msgid ""
@@ -150,52 +162,53 @@ msgid ""
 "changes; many will be simple comments or formatting that have no effect "
 "on the runtime:"
 msgstr ""
+"다음은 **프로젝트 공간**\\ 에서 변경된 모든 파일의 목록입니다. "
+"대부분은 런타임에 영향을 미치지 않는 단순한 주석이나 형식 변경입니다:"
 
 #: ../../source/installation/upgrade_437.rst:78
 msgid "app/Config/App.php"
-msgstr ""
+msgstr "app/Config/App.php"
 
 #: ../../source/installation/upgrade_437.rst:79
 msgid "app/Config/Autoload.php"
-msgstr ""
+msgstr "app/Config/Autoload.php"
 
 #: ../../source/installation/upgrade_437.rst:80
 msgid "app/Config/Cache.php"
-msgstr ""
+msgstr "app/Config/Cache.php"
 
 #: ../../source/installation/upgrade_437.rst:81
 msgid "app/Config/ContentSecurityPolicy.php"
-msgstr ""
+msgstr "app/Config/ContentSecurityPolicy.php"
 
 #: ../../source/installation/upgrade_437.rst:82
 msgid "app/Config/Filters.php"
-msgstr ""
+msgstr "app/Config/Filters.php"
 
 #: ../../source/installation/upgrade_437.rst:84
 msgid "app/Config/Logger.php"
-msgstr ""
+msgstr "app/Config/Logger.php"
 
 #: ../../source/installation/upgrade_437.rst:85
 msgid "app/Config/Migrations.php"
-msgstr ""
+msgstr "app/Config/Migrations.php"
 
 #: ../../source/installation/upgrade_437.rst:86
 msgid "app/Config/Modules.php"
-msgstr ""
+msgstr "app/Config/Modules.php"
 
 #: ../../source/installation/upgrade_437.rst:87
 msgid "app/Config/Paths.php"
-msgstr ""
+msgstr "app/Config/Paths.php"
 
 #: ../../source/installation/upgrade_437.rst:88
 msgid "app/Controllers/BaseController.php"
-msgstr ""
+msgstr "app/Controllers/BaseController.php"
 
 #: ../../source/installation/upgrade_437.rst:89
 msgid "app/Controllers/Home.php"
-msgstr ""
+msgstr "app/Controllers/Home.php"
 
 #: ../../source/installation/upgrade_437.rst:90
 msgid "composer.json"
-msgstr ""
-
+msgstr "composer.json"

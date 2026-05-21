@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,37 +21,37 @@ msgstr ""
 
 #: ../../source/installation/troubleshooting.rst:3
 msgid "Troubleshooting"
-msgstr ""
+msgstr "문제 해결"
 
 #: ../../source/installation/troubleshooting.rst:5
 msgid "Here are some common installation problems, and suggested workarounds."
-msgstr ""
+msgstr "다음은 일반적인 설치 문제와 권장 해결 방법입니다."
 
 #: ../../source/installation/troubleshooting.rst:12
 msgid "How do I know if my install is working?"
-msgstr ""
+msgstr "설치가 제대로 동작하는지 어떻게 알 수 있나요?"
 
 #: ../../source/installation/troubleshooting.rst:14
 msgid "From the command line, at your project root:"
-msgstr ""
+msgstr "프로젝트 루트에서 명령줄을 통해:"
 
 #: ../../source/installation/troubleshooting.rst:20
 msgid ""
 "``http://localhost:8080`` in your browser should then show the default "
 "welcome page:"
-msgstr ""
+msgstr "브라우저에서 ``http://localhost:8080``\\ 을 열면 기본 환영 페이지가 표시됩니다:"
 
 #: ../../source/installation/troubleshooting.rst:23
 msgid "|CodeIgniter4 Welcome|"
-msgstr ""
+msgstr "|CodeIgniter4 Welcome|"
 
 #: ../../source/installation/troubleshooting.rst:84
 msgid "CodeIgniter4 Welcome"
-msgstr ""
+msgstr "CodeIgniter4 환영"
 
 #: ../../source/installation/troubleshooting.rst:26
 msgid "I have to include index.php in my URL"
-msgstr ""
+msgstr "URL에 index.php를 포함해야 합니다"
 
 #: ../../source/installation/troubleshooting.rst:28
 msgid ""
@@ -62,10 +61,14 @@ msgid ""
 "``mod_rewrite`` extension in Apache's **httpd.conf** is commented out. "
 "See :ref:`urls-remove-index-php`."
 msgstr ""
+"``/mypage/find/apple``\\ 과 같은 URL이 동작하지 않고 ``/index.php/mypage/find/apple``\\ 과 "
+"같은 유사한 URL은 동작한다면, Apache의 **.htaccess** 규칙이 올바르게 설정되지 않았거나 Apache의 "
+"**httpd.conf**\\ 에서 ``mod_rewrite`` 확장이 주석 처리되어 있을 수 있습니다. "
+":ref:`urls-remove-index-php`\\ 를 참조하세요."
 
 #: ../../source/installation/troubleshooting.rst:35
 msgid "Only the default page loads"
-msgstr ""
+msgstr "기본 페이지만 로드됩니다"
 
 #: ../../source/installation/troubleshooting.rst:37
 msgid ""
@@ -78,70 +81,86 @@ msgid ""
 "you'll need to force CodeIgniter to add a question mark (``?``) to your "
 "URLs. To do this open your **app/Config/App.php** file and change this:"
 msgstr ""
+"URL에 무엇을 입력하든 기본 페이지만 로드된다면, 서버가 검색 엔진 친화적인 URL을 제공하는 데 필요한 REQUEST_URI "
+"변수를 지원하지 않을 수 있습니다. 먼저 **app/Config/App.php** 파일을 열고 URI Protocol 정보를 찾아보세요. "
+"몇 가지 대체 설정을 시도해 볼 것을 권장합니다. 그래도 동작하지 않는다면 CodeIgniter가 URL에 물음표(``?``)를 "
+"강제로 추가하도록 해야 합니다. 이를 위해 **app/Config/App.php** 파일을 열고 다음을 변경하세요:"
 
 #: ../../source/installation/troubleshooting.rst:48
 msgid "To this:"
-msgstr ""
+msgstr "다음으로 변경:"
 
 #: ../../source/installation/troubleshooting.rst:53
 msgid "No input file specified"
-msgstr ""
+msgstr "입력 파일이 지정되지 않았습니다"
 
 #: ../../source/installation/troubleshooting.rst:55
 msgid ""
 "If you see \"No input file specified\", try to change the rewrite rule "
 "like the following (to add ``?`` after ``index.php``):"
 msgstr ""
+"\"No input file specified\" 오류가 표시되면 다음과 같이 리라이트 규칙을 변경해 보세요(``index.php`` 뒤에 "
+"``?``\\ 를 추가):"
 
 #: ../../source/installation/troubleshooting.rst:62
 msgid "My app works fine locally but not on the production server"
-msgstr ""
+msgstr "앱이 로컬에서는 잘 동작하지만 운영 서버에서는 동작하지 않습니다"
 
 #: ../../source/installation/troubleshooting.rst:64
 msgid "Make sure that the case of the folder and file names matches the code."
-msgstr ""
+msgstr "폴더 및 파일 이름의 대소문자가 코드와 일치하는지 확인하세요."
 
 #: ../../source/installation/troubleshooting.rst:66
 msgid ""
 "Many developers develop on case-insensitive file systems on Windows or "
 "macOS. However, most server environments use case-sensitive file systems."
 msgstr ""
+"많은 개발자들이 Windows 또는 macOS의 대소문자를 구분하지 않는 파일 시스템에서 개발합니다. 그러나 대부분의 서버 환경은 "
+"대소문자를 구분하는 파일 시스템을 사용합니다."
 
 #: ../../source/installation/troubleshooting.rst:69
 msgid ""
 "For example, when you have **app/Controllers/Product.php**, you must use "
 "``Product`` as the short classname, not ``product``."
 msgstr ""
+"예를 들어, **app/Controllers/Product.php**\\ 가 있는 경우 짧은 클래스 이름으로 ``product``\\ 가 "
+"아닌 ``Product``\\ 를 사용해야 합니다."
 
 #: ../../source/installation/troubleshooting.rst:72
 msgid "If the file name case is incorrect, the file is not found on the server."
-msgstr ""
+msgstr "파일 이름의 대소문자가 잘못된 경우 서버에서 파일을 찾을 수 없습니다."
 
 #: ../../source/installation/troubleshooting.rst:75
 msgid "The tutorial gives 404 errors everywhere :("
-msgstr ""
+msgstr "튜토리얼에서 모든 곳에서 404 오류가 발생합니다 :("
 
 #: ../../source/installation/troubleshooting.rst:77
 msgid ""
 "You can't follow the tutorial using PHP's built-in web server. It doesn't"
 " process the **.htaccess** file needed to route requests properly."
 msgstr ""
+"PHP 내장 웹 서버를 사용하여 튜토리얼을 따라 할 수 없습니다. 내장 웹 서버는 요청을 올바르게 라우팅하는 데 필요한 "
+"**.htaccess** 파일을 처리하지 않습니다."
 
 #: ../../source/installation/troubleshooting.rst:81
 msgid ""
 "The solution: use Apache to serve your site, or else the built-in "
 "CodeIgniter equivalent, ``php spark serve`` from your project root."
 msgstr ""
+"해결 방법: Apache를 사용하여 사이트를 서비스하거나, 프로젝트 루트에서 CodeIgniter 내장 서버인 ``php spark "
+"serve``\\ 를 사용하세요."
 
 #: ../../source/installation/troubleshooting.rst:87
 msgid "What's with an unhelpful \"Whoops!\" page?"
-msgstr ""
+msgstr "도움이 되지 않는 \"Whoops!\" 페이지는 무엇인가요?"
 
 #: ../../source/installation/troubleshooting.rst:89
 msgid ""
 "You find that your app is displaying a page with \"Whoops!\" and then the"
 " text line \"We seem to have hit a snag. Please try again later...\"."
 msgstr ""
+"앱이 \"Whoops!\"와 함께 \"We seem to have hit a snag. Please try again "
+"later...\"라는 텍스트가 있는 페이지를 표시합니다."
 
 #: ../../source/installation/troubleshooting.rst:92
 msgid ""
@@ -149,12 +168,13 @@ msgid ""
 "unrecoverable error, which we don't want to show to the viewer of the "
 "webapp, for better security."
 msgstr ""
+"이는 운영 모드에서 복구 불가능한 오류가 발생했다는 신호이며, 보안상의 이유로 웹 앱 방문자에게 오류 내용을 보여주지 않는 것입니다."
 
 #: ../../source/installation/troubleshooting.rst:96
 msgid ""
 "You can see the error in the log file. See `CodeIgniter Error Logs`_ "
 "below."
-msgstr ""
+msgstr "오류는 로그 파일에서 확인할 수 있습니다. 아래 `CodeIgniter Error Logs`_\\ 를 참조하세요."
 
 #: ../../source/installation/troubleshooting.rst:98
 msgid ""
@@ -163,12 +183,14 @@ msgid ""
 "development-mode` for more details. After that, reload the page. You will"
 " see the error and the back trace."
 msgstr ""
+"개발 중에 이 페이지가 표시되면 **.env**\\ 에서 환경을 \"development\"로 변경해야 합니다. 자세한 내용은 "
+":ref:`setting-development-mode`\\ 를 참조하세요. 그런 다음 페이지를 다시 로드하면 오류와 역추적 정보를 "
+"볼 수 있습니다."
 
 #: ../../source/installation/troubleshooting.rst:103
 msgid "CodeIgniter Error Logs"
-msgstr ""
+msgstr "CodeIgniter 오류 로그"
 
 #: ../../source/installation/troubleshooting.rst:105
 msgid "See :ref:`codeigniter-error-logs`."
-msgstr ""
-
+msgstr ":ref:`codeigniter-error-logs`\\ 를 참조하세요."

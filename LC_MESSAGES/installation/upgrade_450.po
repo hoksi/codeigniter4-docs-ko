@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,77 +21,79 @@ msgstr ""
 
 #: ../../source/installation/upgrade_450.rst:3
 msgid "Upgrading from 4.4.8 to 4.5.0"
-msgstr ""
+msgstr "4.4.8에서 4.5.0으로 업그레이드"
 
 #: ../../source/installation/upgrade_450.rst:5
 msgid ""
 "Please refer to the upgrade instructions corresponding to your "
 "installation method."
-msgstr ""
+msgstr "설치 방법에 맞는 업그레이드 지침을 참조하십시오."
 
 #: ../../source/installation/upgrade_450.rst:7
 msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
-msgstr ""
+msgstr ":ref:`Composer 설치 앱 스타터 업그레이드 <app-starter-upgrading>`"
 
 #: ../../source/installation/upgrade_450.rst:8
 msgid ""
 ":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
 "Upgrading <adding-codeigniter4-upgrading>`"
 msgstr ""
+":ref:`Composer 설치 - 기존 프로젝트에 CodeIgniter4 추가 업그레이드 "
+"<adding-codeigniter4-upgrading>`"
 
 #: ../../source/installation/upgrade_450.rst:9
 msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
-msgstr ""
+msgstr ":ref:`수동 설치 업그레이드 <installing-manual-upgrading>`"
 
 #: ../../source/installation/upgrade_450.rst:16
 msgid "Mandatory File Changes"
-msgstr ""
+msgstr "필수 파일 변경사항"
 
 #: ../../source/installation/upgrade_450.rst:19
 msgid "index.php and spark"
-msgstr ""
+msgstr "index.php 및 spark"
 
 #: ../../source/installation/upgrade_450.rst:21
 msgid ""
 "The following files received significant changes and **you must merge the"
 " updated versions** with your application:"
-msgstr ""
+msgstr "다음 파일들은 중요한 변경사항이 있으므로 **업데이트된 버전을 반드시 애플리케이션에 병합**\ 해야 합니다:"
 
 #: ../../source/installation/upgrade_450.rst:24
 msgid "``public/index.php``"
-msgstr ""
+msgstr "``public/index.php``"
 
 #: ../../source/installation/upgrade_450.rst:25
 msgid "``spark``"
-msgstr ""
+msgstr "``spark``"
 
 #: ../../source/installation/upgrade_450.rst:27
 msgid ""
 "If you don't update the above files, CodeIgniter will not work properly "
 "after running ``composer update``."
-msgstr ""
+msgstr "위 파일들을 업데이트하지 않으면 ``composer update`` 실행 후 CodeIgniter가 제대로 동작하지 않습니다."
 
 #: ../../source/installation/upgrade_450.rst:30
 msgid "The upgrade procedure, for example, is as follows:"
-msgstr ""
+msgstr "업그레이드 절차의 예는 다음과 같습니다:"
 
 #: ../../source/installation/upgrade_450.rst:39
 msgid "Breaking Changes"
-msgstr ""
+msgstr "주요 변경사항"
 
 #: ../../source/installation/upgrade_450.rst:44
 msgid "Lowercase HTTP Method Name"
-msgstr ""
+msgstr "소문자 HTTP 메서드 이름"
 
 #: ../../source/installation/upgrade_450.rst:47
 msgid "Request::getMethod()"
-msgstr ""
+msgstr "Request::getMethod()"
 
 #: ../../source/installation/upgrade_450.rst:49
 msgid ""
 "For historical reasons, ``Request::getMethod()`` returned HTTP method "
 "names in lower case by default."
-msgstr ""
+msgstr "역사적인 이유로 ``Request::getMethod()``\ 는 기본적으로 소문자로 HTTP 메서드 이름을 반환했습니다."
 
 #: ../../source/installation/upgrade_450.rst:52
 msgid ""
@@ -101,6 +102,9 @@ msgid ""
 "convention, standardized methods are defined in all-uppercase US-ASCII "
 "letters. See https://www.rfc-editor.org/rfc/rfc9110#name-overview."
 msgstr ""
+"그러나 메서드 토큰은 대소문자를 구분하는 메서드 이름을 가진 객체 기반 시스템의 게이트웨이로 사용될 수 있으므로 "
+"대소문자를 구분합니다. 관례상 표준화된 메서드는 모두 대문자 US-ASCII 문자로 정의됩니다. "
+"https://www.rfc-editor.org/rfc/rfc9110#name-overview 를 참조하십시오."
 
 #: ../../source/installation/upgrade_450.rst:57
 msgid ""
@@ -108,64 +112,67 @@ msgid ""
 "been removed, and the ``getMethod()`` returns the as-is HTTP method name."
 " That is, uppercase like \"GET\", \"POST\", and so on."
 msgstr ""
+"이제 ``Request::getMethod()``\ 의 사용 중단된 ``$upper`` 매개변수가 제거되었으며, "
+"``getMethod()``\ 는 HTTP 메서드 이름을 있는 그대로 반환합니다. "
+"즉, \"GET\", \"POST\" 등과 같이 대문자로 반환됩니다."
 
 #: ../../source/installation/upgrade_450.rst:61
 msgid ""
 "If you want lowercase HTTP method names, use PHP's ``strtolower()`` "
 "function::"
-msgstr ""
+msgstr "소문자 HTTP 메서드 이름이 필요하면 PHP의 ``strtolower()`` 함수를 사용하십시오::"
 
 #: ../../source/installation/upgrade_450.rst:65
 msgid "And you should use uppercase HTTP method names in your app code."
-msgstr ""
+msgstr "애플리케이션 코드에서는 대문자 HTTP 메서드 이름을 사용해야 합니다."
 
 #: ../../source/installation/upgrade_450.rst:68
 #: ../../source/installation/upgrade_450.rst:280
 #: ../../source/installation/upgrade_450.rst:353
 msgid "app/Config/Filters.php"
-msgstr ""
+msgstr "app/Config/Filters.php"
 
 #: ../../source/installation/upgrade_450.rst:70
 msgid ""
 "You should update the keys to uppercase in ``$methods`` in "
 "**app/Config/Filters.php**::"
-msgstr ""
+msgstr "**app/Config/Filters.php**\ 의 ``$methods``\ 에서 키를 대문자로 업데이트해야 합니다::"
 
 #: ../../source/installation/upgrade_450.rst:78
 msgid "CURLRequest::request()"
-msgstr ""
+msgstr "CURLRequest::request()"
 
 #: ../../source/installation/upgrade_450.rst:80
 msgid ""
 "In previous versions, you could pass lowercase HTTP methods to the "
 "``request()`` method. But this bug has been fixed."
-msgstr ""
+msgstr "이전 버전에서는 ``request()`` 메서드에 소문자 HTTP 메서드를 전달할 수 있었습니다. 이 버그가 수정되었습니다."
 
 #: ../../source/installation/upgrade_450.rst:83
 msgid ""
 "Now you must pass the correct HTTP method names like ``GET``, ``POST``. "
 "Otherwise you would get the error response::"
-msgstr ""
+msgstr "이제 ``GET``, ``POST`` 등 올바른 HTTP 메서드 이름을 전달해야 합니다. 그렇지 않으면 오류 응답을 받게 됩니다::"
 
 #: ../../source/installation/upgrade_450.rst:96
 msgid "Nested Route Groups and Options"
-msgstr ""
+msgstr "중첩된 라우트 그룹과 옵션"
 
 #: ../../source/installation/upgrade_450.rst:98
 msgid ""
 "A bug that prevented options passed to outer ``group()`` from being "
 "merged with options in inner ``group()`` has been fixed."
-msgstr ""
+msgstr "외부 ``group()``\ 에 전달된 옵션이 내부 ``group()``\ 의 옵션과 병합되지 않던 버그가 수정되었습니다."
 
 #: ../../source/installation/upgrade_450.rst:101
 msgid ""
 "Check and correct your route configuration as it could change the values "
 "of the options applied."
-msgstr ""
+msgstr "적용된 옵션의 값이 변경될 수 있으므로 라우트 설정을 확인하고 수정하십시오."
 
 #: ../../source/installation/upgrade_450.rst:104
 msgid "For example,"
-msgstr ""
+msgstr "예시:"
 
 #: ../../source/installation/upgrade_450.rst:120
 msgid ""
@@ -173,10 +180,12 @@ msgid ""
 "``admin/users``. In previous versions, it is executed only for the route "
 "``admin``. See also :ref:`routing-nesting-groups`."
 msgstr ""
+"이제 ``csrf`` 필터는 ``admin``\ 과 ``admin/users`` 라우트 모두에 대해 실행됩니다. "
+"이전 버전에서는 ``admin`` 라우트에만 실행되었습니다. :ref:`routing-nesting-groups`\ 도 참조하십시오."
 
 #: ../../source/installation/upgrade_450.rst:127
 msgid "Filter Execution Order"
-msgstr ""
+msgstr "필터 실행 순서"
 
 #: ../../source/installation/upgrade_450.rst:129
 msgid ""
@@ -185,34 +194,37 @@ msgid ""
 "``true`` to ``Config\\Feature::$oldFilterOrder``. See also :ref:`filter-"
 "execution-order`."
 msgstr ""
+"컨트롤러 필터의 실행 순서가 변경되었습니다. 이전 버전과 동일한 실행 순서를 유지하려면 "
+"``Config\\Feature::$oldFilterOrder``\ 를 ``true``\ 로 설정하십시오. "
+":ref:`filter-execution-order`\ 도 참조하십시오."
 
 #: ../../source/installation/upgrade_450.rst:133
 msgid "The order of execution of filter groups has been changed."
-msgstr ""
+msgstr "필터 그룹의 실행 순서가 변경되었습니다."
 
 #: ../../source/installation/upgrade_450.rst:135
 #: ../../source/installation/upgrade_450.rst:161
 msgid "Before Filters::"
-msgstr ""
+msgstr "Before 필터::"
 
 #: ../../source/installation/upgrade_450.rst:140
 #: ../../source/installation/upgrade_450.rst:166
 msgid "After Filters::"
-msgstr ""
+msgstr "After 필터::"
 
 #: ../../source/installation/upgrade_450.rst:145
 msgid ""
 "2. The After Filters in *Route* filters and *Filters* filters execution "
 "order is now reversed."
-msgstr ""
+msgstr "2. *Route* 필터와 *Filters* 필터의 After 필터 실행 순서가 반전되었습니다."
 
 #: ../../source/installation/upgrade_450.rst:148
 msgid "When you have the following configuration:"
-msgstr ""
+msgstr "다음 설정을 사용하는 경우:"
 
 #: ../../source/installation/upgrade_450.rst:174
 msgid "API\\\\ResponseTrait and String Data"
-msgstr ""
+msgstr "API\\\\ResponseTrait과 문자열 데이터"
 
 #: ../../source/installation/upgrade_450.rst:176
 msgid ""
@@ -220,22 +232,26 @@ msgid ""
 "framework returned an HTML response, even if the response format was "
 "determined to be JSON."
 msgstr ""
+"이전 버전에서는 트레이트 메서드에 문자열 데이터를 전달하면 응답 형식이 JSON으로 결정되어도 "
+"프레임워크가 HTML 응답을 반환했습니다."
 
 #: ../../source/installation/upgrade_450.rst:179
 msgid ""
 "Now if you pass string data, it returns a JSON response correctly. See "
 "also :ref:`api-response-trait-handling-response-types`."
 msgstr ""
+"이제 문자열 데이터를 전달하면 JSON 응답을 올바르게 반환합니다. "
+":ref:`api-response-trait-handling-response-types`\ 도 참조하십시오."
 
 #: ../../source/installation/upgrade_450.rst:182
 msgid ""
 "You can keep the behavior in previous versions if you set the "
 "``$stringAsHtml`` property to ``true`` in your controller."
-msgstr ""
+msgstr "컨트롤러에서 ``$stringAsHtml`` 속성을 ``true``\ 로 설정하면 이전 버전의 동작을 유지할 수 있습니다."
 
 #: ../../source/installation/upgrade_450.rst:186
 msgid "FileLocator::findQualifiedNameFromPath()"
-msgstr ""
+msgstr "FileLocator::findQualifiedNameFromPath()"
 
 #: ../../source/installation/upgrade_450.rst:188
 msgid ""
@@ -243,30 +259,32 @@ msgid ""
 "returns Fully Qualified Classnames with a leading ``\\``. Now the leading"
 " ``\\`` has been removed."
 msgstr ""
+"이전 버전에서 ``FileLocator::findQualifiedNameFromPath()``\ 는 선행 ``\\``\ 가 있는 "
+"완전히 정규화된 클래스명을 반환했습니다. 이제 선행 ``\\``\ 가 제거되었습니다."
 
 #: ../../source/installation/upgrade_450.rst:191
 msgid "If you have code that expects a leading ``\\``, fix it."
-msgstr ""
+msgstr "선행 ``\\``\ 를 기대하는 코드가 있다면 수정하십시오."
 
 #: ../../source/installation/upgrade_450.rst:194
 msgid "BaseModel::getIdValue()"
-msgstr ""
+msgstr "BaseModel::getIdValue()"
 
 #: ../../source/installation/upgrade_450.rst:196
 msgid ""
 "The ``BaseModel::getIdValue()`` has been changed to ``abstract``, and the"
 " implementation has been removed."
-msgstr ""
+msgstr "``BaseModel::getIdValue()``\ 가 ``abstract``\ 로 변경되었으며 구현이 제거되었습니다."
 
 #: ../../source/installation/upgrade_450.rst:199
 msgid ""
 "If you extneds ``BaseModel``, implement the ``getIdValue()`` method in "
 "the child class."
-msgstr ""
+msgstr "``BaseModel``\ 을 확장하는 경우 자식 클래스에 ``getIdValue()`` 메서드를 구현하십시오."
 
 #: ../../source/installation/upgrade_450.rst:202
 msgid "Factories"
-msgstr ""
+msgstr "Factories"
 
 #: ../../source/installation/upgrade_450.rst:204
 msgid ""
@@ -274,23 +292,25 @@ msgid ""
 "unlikely event, you have inherited the Factories, stop inheriting and "
 "copy the code into your Factories class."
 msgstr ""
+":doc:`../concepts/factories`\ 가 final 클래스로 변경되었습니다. "
+"드물게 Factories를 상속한 경우 상속을 중단하고 코드를 자체 Factories 클래스에 복사하십시오."
 
 #: ../../source/installation/upgrade_450.rst:209
 msgid "Auto Routing (Legacy)"
-msgstr ""
+msgstr "자동 라우팅(레거시)"
 
 #: ../../source/installation/upgrade_450.rst:211
 msgid ""
 "In previous versions, the controller filters might be executed even when "
 "the corresponding controller was not found."
-msgstr ""
+msgstr "이전 버전에서는 해당 컨트롤러를 찾지 못해도 컨트롤러 필터가 실행될 수 있었습니다."
 
 #: ../../source/installation/upgrade_450.rst:214
 msgid ""
 "This bug has been fixed and now a ``PageNotFoundException`` will be "
 "thrown and the filters will not be executed if the controller is not "
 "found."
-msgstr ""
+msgstr "이 버그가 수정되어 이제 컨트롤러를 찾지 못하면 ``PageNotFoundException``\ 이 발생하고 필터는 실행되지 않습니다."
 
 #: ../../source/installation/upgrade_450.rst:217
 msgid ""
@@ -298,10 +318,12 @@ msgid ""
 "global filters to be executed even for non-existent pages, use the new "
 ":ref:`v450-required-filters`."
 msgstr ""
+"이 버그에 의존하는 코드가 있는 경우, 예를 들어 존재하지 않는 페이지에도 전역 필터가 실행되기를 기대한다면 "
+"새로운 :ref:`v450-required-filters`\ 를 사용하십시오."
 
 #: ../../source/installation/upgrade_450.rst:221
 msgid "Method Signature Changes"
-msgstr ""
+msgstr "메서드 시그니처 변경사항"
 
 #: ../../source/installation/upgrade_450.rst:223
 msgid ""
@@ -309,10 +331,12 @@ msgid ""
 "should update their APIs to reflect the changes. See :ref:`ChangeLog "
 "<v450-method-signature-changes>` for details."
 msgstr ""
+"일부 메서드 시그니처가 변경되었습니다. 이를 확장하는 클래스는 변경사항을 반영하여 API를 업데이트해야 합니다. "
+"자세한 내용은 :ref:`변경 로그 <v450-method-signature-changes>`\ 를 참조하십시오."
 
 #: ../../source/installation/upgrade_450.rst:228
 msgid "Removed Deprecated Items"
-msgstr ""
+msgstr "사용 중단 항목 제거"
 
 #: ../../source/installation/upgrade_450.rst:230
 msgid ""
@@ -320,28 +344,32 @@ msgid ""
 "items, or extending these classes, upgrade your code. See :ref:`ChangeLog"
 " <v450-removed-deprecated-items>` for details."
 msgstr ""
+"일부 사용 중단된 항목이 제거되었습니다. 이 항목들을 아직 사용하거나 해당 클래스를 확장하는 경우 코드를 업그레이드하십시오. "
+"자세한 내용은 :ref:`변경 로그 <v450-removed-deprecated-items>`\ 를 참조하십시오."
 
 #: ../../source/installation/upgrade_450.rst:235
 msgid "Breaking Enhancements"
-msgstr ""
+msgstr "주요 변경을 수반하는 개선사항"
 
 #: ../../source/installation/upgrade_450.rst:240
 msgid "404 Override Status Code"
-msgstr ""
+msgstr "404 오버라이드 상태 코드"
 
 #: ../../source/installation/upgrade_450.rst:242
 msgid ""
 "In previous versions, :ref:`404-override` returned responses with the "
 "status code ``200`` by default. Now it returns ``404`` by default."
 msgstr ""
+"이전 버전에서 :ref:`404-override`\ 는 기본적으로 상태 코드 ``200``\ 으로 응답을 반환했습니다. "
+"이제 기본적으로 ``404``\ 를 반환합니다."
 
 #: ../../source/installation/upgrade_450.rst:245
 msgid "If you want ``200``, you need to set it in the controller::"
-msgstr ""
+msgstr "``200``\ 을 원하면 컨트롤러에서 설정해야 합니다::"
 
 #: ../../source/installation/upgrade_450.rst:254
 msgid "Validation::run() Signature"
-msgstr ""
+msgstr "Validation::run() 시그니처"
 
 #: ../../source/installation/upgrade_450.rst:256
 msgid ""
@@ -350,10 +378,13 @@ msgid ""
 "typehint on the ``$dbGroup`` parameter was removed. Extending classes "
 "should likewise remove the parameter so as not to break LSP."
 msgstr ""
+"``Validation::run()``\ 와 ``ValidationInterface::run()``\ 의 메서드 시그니처가 변경되었습니다. "
+"``$dbGroup`` 매개변수의 ``?string`` 타입힌트가 제거되었습니다. "
+"LSP를 위반하지 않으려면 확장 클래스도 동일하게 매개변수를 제거해야 합니다."
 
 #: ../../source/installation/upgrade_450.rst:262
 msgid "Project Files"
-msgstr ""
+msgstr "프로젝트 파일"
 
 #: ../../source/installation/upgrade_450.rst:264
 msgid ""
@@ -361,6 +392,8 @@ msgid ""
 "received updates. Due to these files being outside of the **system** "
 "scope they will not be changed without your intervention."
 msgstr ""
+"**프로젝트 공간** (root, app, public, writable)의 일부 파일이 업데이트되었습니다. "
+"이 파일들은 **system** 범위 밖에 있으므로 직접 변경하지 않으면 수정되지 않습니다."
 
 #: ../../source/installation/upgrade_450.rst:267
 #, python-format
@@ -369,10 +402,12 @@ msgid ""
 "merging changes to the project space: `Explore on Packagist "
 "<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
 msgstr ""
+"프로젝트 공간의 변경사항 병합을 도와주는 서드파티 CodeIgniter 모듈이 있습니다: "
+"`Packagist에서 찾기 <https://packagist.org/explore/?query=codeigniter4%20updates>`_."
 
 #: ../../source/installation/upgrade_450.rst:271
 msgid "Content Changes"
-msgstr ""
+msgstr "콘텐츠 변경사항"
 
 #: ../../source/installation/upgrade_450.rst:273
 msgid ""
@@ -380,135 +415,142 @@ msgid ""
 "or visual adjustments) and it is recommended that you merge the updated "
 "versions with your application:"
 msgstr ""
+"다음 파일들은 중요한 변경사항(사용 중단 또는 시각적 조정 포함)이 있으므로 "
+"업데이트된 버전을 애플리케이션에 병합하는 것을 권장합니다:"
 
 #: ../../source/installation/upgrade_450.rst:277
 msgid "Config"
-msgstr ""
+msgstr "설정"
 
 #: ../../source/installation/upgrade_450.rst:282
 msgid ""
 "Required Filters have been added, so the following changes were made. See"
 " also :ref:`ChangeLog <v450-required-filters>`."
 msgstr ""
+"필수 필터가 추가되어 다음과 같은 변경이 이루어졌습니다. "
+":ref:`변경 로그 <v450-required-filters>`\ 도 참조하십시오."
 
 #: ../../source/installation/upgrade_450.rst:285
 msgid "The base class has been changed::"
-msgstr ""
+msgstr "기본 클래스가 변경되었습니다::"
 
 #: ../../source/installation/upgrade_450.rst:289
 msgid "The following items are added in the ``$aliases`` property::"
-msgstr ""
+msgstr "``$aliases`` 속성에 다음 항목이 추가되었습니다::"
 
 #: ../../source/installation/upgrade_450.rst:298
 msgid "A new property ``$required`` is added, and set as the following::"
-msgstr ""
+msgstr "새로운 속성 ``$required``\ 가 추가되어 다음과 같이 설정되었습니다::"
 
 #: ../../source/installation/upgrade_450.rst:312
 msgid "The  ``'toolbar'`` in the ``$global['after']`` was removed."
-msgstr ""
+msgstr "``$global['after']``\ 의 ``'toolbar'``\ 가 제거되었습니다."
 
 #: ../../source/installation/upgrade_450.rst:315
 msgid "Others"
-msgstr ""
+msgstr "기타"
 
 #: ../../source/installation/upgrade_450.rst:317
 #: ../../source/installation/upgrade_450.rst:348
 msgid "app/Config/Boot/production.php"
-msgstr ""
+msgstr "app/Config/Boot/production.php"
 
 #: ../../source/installation/upgrade_450.rst:318
 msgid ""
 "The default error level to ``error_reporting()`` has been changed to "
 "``E_ALL & ~E_DEPRECATED``."
-msgstr ""
+msgstr "``error_reporting()``\ 의 기본 오류 레벨이 ``E_ALL & ~E_DEPRECATED``\ 로 변경되었습니다."
 
 #: ../../source/installation/upgrade_450.rst:319
 #: ../../source/installation/upgrade_450.rst:350
 msgid "app/Config/Cors.php"
-msgstr ""
+msgstr "app/Config/Cors.php"
 
 #: ../../source/installation/upgrade_450.rst:320
 msgid "Added to handle CORS configuration."
-msgstr ""
+msgstr "CORS 설정을 처리하기 위해 추가되었습니다."
 
 #: ../../source/installation/upgrade_450.rst:321
 #: ../../source/installation/upgrade_450.rst:351
 msgid "app/Config/Database.php"
-msgstr ""
+msgstr "app/Config/Database.php"
 
 #: ../../source/installation/upgrade_450.rst:322
 msgid ""
 "The default value of ``charset`` in ``$default`` has been change to "
 "``utf8mb4``."
-msgstr ""
+msgstr "``$default``\ 의 ``charset`` 기본값이 ``utf8mb4``\ 로 변경되었습니다."
 
 #: ../../source/installation/upgrade_450.rst:323
 msgid ""
 "The default value of ``DBCollat`` in ``$default`` has been change to "
 "``utf8mb4_general_ci``."
-msgstr ""
+msgstr "``$default``\ 의 ``DBCollat`` 기본값이 ``utf8mb4_general_ci``\ 로 변경되었습니다."
 
 #: ../../source/installation/upgrade_450.rst:324
 msgid "The default value of ``DBCollat`` in ``$tests`` has been change to ``''``."
-msgstr ""
+msgstr "``$tests``\ 의 ``DBCollat`` 기본값이 ``''``\ 로 변경되었습니다."
 
 #: ../../source/installation/upgrade_450.rst:325
 #: ../../source/installation/upgrade_450.rst:352
 msgid "app/Config/Feature.php"
-msgstr ""
+msgstr "app/Config/Feature.php"
 
 #: ../../source/installation/upgrade_450.rst:326
 msgid ""
 "``Config\\Feature::$oldFilterOrder`` has been added. See :ref:`filter-"
 "execution-order`."
-msgstr ""
+msgstr "``Config\\Feature::$oldFilterOrder``\ 가 추가되었습니다. :ref:`filter-execution-order`\ 를 참조하십시오."
 
 #: ../../source/installation/upgrade_450.rst:328
 msgid ""
 "``Config\\Feature::$limitZeroAsAll`` has been added. See :ref:`v450"
 "-query-builder-limit-0-behavior`."
 msgstr ""
+"``Config\\Feature::$limitZeroAsAll``\ 가 추가되었습니다. "
+":ref:`v450-query-builder-limit-0-behavior`\ 를 참조하십시오."
 
 #: ../../source/installation/upgrade_450.rst:330
 msgid ""
 "``Config\\Feature::$multipleFilters`` has been removed, because now :ref"
 ":`multiple-filters` are always enabled."
 msgstr ""
+"이제 :ref:`multiple-filters`\ 가 항상 활성화되므로 ``Config\\Feature::$multipleFilters``\ 가 제거되었습니다."
 
 #: ../../source/installation/upgrade_450.rst:332
 #: ../../source/installation/upgrade_450.rst:355
 msgid "app/Config/Kint.php"
-msgstr ""
+msgstr "app/Config/Kint.php"
 
 #: ../../source/installation/upgrade_450.rst:333
 msgid ""
 "It no longer extends ``BaseConfig`` because enabling :ref:`factories-"
 "config-caching` could cause errors."
-msgstr ""
+msgstr ":ref:`factories-config-caching`\ 을 활성화하면 오류가 발생할 수 있으므로 더 이상 ``BaseConfig``\ 를 확장하지 않습니다."
 
 #: ../../source/installation/upgrade_450.rst:335
 #: ../../source/installation/upgrade_450.rst:356
 msgid "app/Config/Optimize.php"
-msgstr ""
+msgstr "app/Config/Optimize.php"
 
 #: ../../source/installation/upgrade_450.rst:336
 msgid "Added to handle optimization configuration."
-msgstr ""
+msgstr "최적화 설정을 처리하기 위해 추가되었습니다."
 
 #: ../../source/installation/upgrade_450.rst:337
 #: ../../source/installation/upgrade_450.rst:358
 msgid "app/Config/Security.php"
-msgstr ""
+msgstr "app/Config/Security.php"
 
 #: ../../source/installation/upgrade_450.rst:338
 msgid ""
 "The property ``$redirect`` has been changed to ``true`` in ``production``"
 " environment."
-msgstr ""
+msgstr "``production`` 환경에서 ``$redirect`` 속성이 ``true``\ 로 변경되었습니다."
 
 #: ../../source/installation/upgrade_450.rst:342
 msgid "All Changes"
-msgstr ""
+msgstr "모든 변경사항"
 
 #: ../../source/installation/upgrade_450.rst:344
 msgid ""
@@ -516,60 +558,61 @@ msgid ""
 "changes; many will be simple comments or formatting that have no effect "
 "on the runtime:"
 msgstr ""
+"다음은 **프로젝트 공간**\ 에서 변경된 모든 파일 목록입니다. "
+"많은 파일들이 런타임에 영향을 미치지 않는 단순한 주석이나 형식 변경입니다:"
 
 #: ../../source/installation/upgrade_450.rst:347
 msgid "app/Config/Autoload.php"
-msgstr ""
+msgstr "app/Config/Autoload.php"
 
 #: ../../source/installation/upgrade_450.rst:349
 msgid "app/Config/Cache.php"
-msgstr ""
+msgstr "app/Config/Cache.php"
 
 #: ../../source/installation/upgrade_450.rst:354
 msgid "app/Config/Generators.php"
-msgstr ""
+msgstr "app/Config/Generators.php"
 
 #: ../../source/installation/upgrade_450.rst:357
 msgid "app/Config/Routing.php"
-msgstr ""
+msgstr "app/Config/Routing.php"
 
 #: ../../source/installation/upgrade_450.rst:359
 msgid "app/Config/Session.php"
-msgstr ""
+msgstr "app/Config/Session.php"
 
 #: ../../source/installation/upgrade_450.rst:360
 msgid "app/Views/errors/cli/error_exception.php"
-msgstr ""
+msgstr "app/Views/errors/cli/error_exception.php"
 
 #: ../../source/installation/upgrade_450.rst:361
 msgid "app/Views/errors/html/error_exception.php"
-msgstr ""
+msgstr "app/Views/errors/html/error_exception.php"
 
 #: ../../source/installation/upgrade_450.rst:362
 msgid "app/Views/welcome_message.php"
-msgstr ""
+msgstr "app/Views/welcome_message.php"
 
 #: ../../source/installation/upgrade_450.rst:363
 msgid "composer.json"
-msgstr ""
+msgstr "composer.json"
 
 #: ../../source/installation/upgrade_450.rst:364
 msgid "env"
-msgstr ""
+msgstr "env"
 
 #: ../../source/installation/upgrade_450.rst:365
 msgid "phpunit.xml.dist"
-msgstr ""
+msgstr "phpunit.xml.dist"
 
 #: ../../source/installation/upgrade_450.rst:366
 msgid "preload.php"
-msgstr ""
+msgstr "preload.php"
 
 #: ../../source/installation/upgrade_450.rst:367
 msgid "public/index.php"
-msgstr ""
+msgstr "public/index.php"
 
 #: ../../source/installation/upgrade_450.rst:368
 msgid "spark"
-msgstr ""
-
+msgstr "spark"

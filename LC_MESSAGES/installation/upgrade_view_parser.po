@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,37 +21,39 @@ msgstr ""
 
 #: ../../source/installation/upgrade_view_parser.rst:2
 msgid "Upgrade View Parser"
-msgstr ""
+msgstr "뷰 파서 업그레이드"
 
 #: ../../source/installation/upgrade_view_parser.rst:9
 msgid "Documentations"
-msgstr ""
+msgstr "문서"
 
 #: ../../source/installation/upgrade_view_parser.rst:11
 msgid ""
 "`Template Parser Documentation CodeIgniter 3.x "
 "<http://codeigniter.com/userguide3/libraries/parser.html>`_"
 msgstr ""
+"`템플릿 파서 문서 CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/libraries/parser.html>`_"
 
 #: ../../source/installation/upgrade_view_parser.rst:12
 msgid ":doc:`View Parser Documentation CodeIgniter 4.x </outgoing/view_parser>`"
-msgstr ""
+msgstr ":doc:`뷰 파서 문서 CodeIgniter 4.x </outgoing/view_parser>`"
 
 #: ../../source/installation/upgrade_view_parser.rst:15
 msgid "What has been changed"
-msgstr ""
+msgstr "변경된 사항"
 
 #: ../../source/installation/upgrade_view_parser.rst:16
 msgid "You have to change the implementation and loading of the Parser Library."
-msgstr ""
+msgstr "파서 라이브러리의 구현과 로드 방법을 변경해야 합니다."
 
 #: ../../source/installation/upgrade_view_parser.rst:17
 msgid "The Views can copied from CI3. Usually no changes there are required."
-msgstr ""
+msgstr "뷰는 CI3에서 복사할 수 있습니다. 일반적으로 변경이 필요하지 않습니다."
 
 #: ../../source/installation/upgrade_view_parser.rst:20
 msgid "Upgrade Guide"
-msgstr ""
+msgstr "업그레이드 가이드"
 
 #: ../../source/installation/upgrade_view_parser.rst:21
 msgid ""
@@ -60,6 +61,8 @@ msgid ""
 "``$this->load->library('parser');`` with ``$parser = "
 "service('parser');``."
 msgstr ""
+"뷰 파서 라이브러리를 사용한 모든 곳에서 ``$this->load->library('parser');``\ 를 "
+"``$parser = service('parser');``\ 으로 교체하십시오."
 
 #: ../../source/installation/upgrade_view_parser.rst:22
 msgid ""
@@ -67,16 +70,17 @@ msgid ""
 "``$this->parser->parse('blog_template', $data);`` to ``return "
 "$parser->setData($data)->render('blog_template');``."
 msgstr ""
+"컨트롤러의 렌더링 부분을 ``$this->parser->parse('blog_template', $data);``\ 에서 "
+"``return $parser->setData($data)->render('blog_template');``\ 으로 변경해야 합니다."
 
 #: ../../source/installation/upgrade_view_parser.rst:25
 msgid "Code Example"
-msgstr ""
+msgstr "코드 예제"
 
 #: ../../source/installation/upgrade_view_parser.rst:28
 msgid "CodeIgniter Version 3.x"
-msgstr ""
+msgstr "CodeIgniter 버전 3.x"
 
 #: ../../source/installation/upgrade_view_parser.rst:33
 msgid "CodeIgniter Version 4.x"
-msgstr ""
-
+msgstr "CodeIgniter 버전 4.x"

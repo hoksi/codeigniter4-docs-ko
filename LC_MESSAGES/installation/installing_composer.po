@@ -217,31 +217,31 @@ msgstr "예를 들어, v4.5.0이 출시된 후 v4.4.7에서 v4.4.8로 업그레�
 
 #: ../../source/installation/installing_composer.rst:122
 #: ../../source/installation/installing_composer.rst:282
-#, fuzzy
 msgid ""
 "In that case, open **composer.json** in your project root folder, and "
 "specify the framework version:"
-msgstr "그런 다음 프로젝트 루트 폴더의 **composer.json**\\ 을 열고 프레임워크 버전을 지정합니다."
+msgstr "이 경우 프로젝트 루트 폴더의 **composer.json**\\ 을 열고 프레임워크 버전을 지정합니다."
 
 #: ../../source/installation/installing_composer.rst:139
 #: ../../source/installation/installing_composer.rst:295
 msgid "Pros"
-msgstr ""
+msgstr "장점"
 
 #: ../../source/installation/installing_composer.rst:141
 msgid "Simple installation; easy to update."
-msgstr ""
+msgstr "간단한 설치, 쉬운 업데이트."
 
 #: ../../source/installation/installing_composer.rst:144
 #: ../../source/installation/installing_composer.rst:300
 msgid "Cons"
-msgstr ""
+msgstr "단점"
 
 #: ../../source/installation/installing_composer.rst:146
 msgid ""
 "You still need to check for file changes in the **project space** (root, "
 "app, public, writable) and merge them after updating."
 msgstr ""
+"업데이트 후 **프로젝트 공간**(루트, app, public, writable)의 파일 변경 사항을 확인하고 병합해야 합니다."
 
 #: ../../source/installation/installing_composer.rst:149
 #: ../../source/installation/installing_composer.rst:305
@@ -251,31 +251,32 @@ msgid ""
 "merging changes to the project space: `Explore on Packagist "
 "<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
 msgstr ""
+"프로젝트 공간의 변경 사항 병합을 도와주는 서드파티 CodeIgniter 모듈이 있습니다: `Packagist에서 탐색 "
+"<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
 
 #: ../../source/installation/installing_composer.rst:154
 #: ../../source/installation/installing_composer.rst:310
 msgid "Structure"
-msgstr ""
+msgstr "구조"
 
 #: ../../source/installation/installing_composer.rst:156
 #: ../../source/installation/installing_composer.rst:312
-#, fuzzy
 msgid "Folders in your project after set up:"
-msgstr "프로젝트 루트 상위 폴더에서:"
+msgstr "설정 후 프로젝트의 폴더 구조:"
 
 #: ../../source/installation/installing_composer.rst:158
 #: ../../source/installation/installing_composer.rst:314
 msgid "app, public, tests, writable"
-msgstr ""
+msgstr "app, public, tests, writable"
 
 #: ../../source/installation/installing_composer.rst:159
 #: ../../source/installation/installing_composer.rst:315
 msgid "vendor/codeigniter4/framework/system"
-msgstr ""
+msgstr "vendor/codeigniter4/framework/system"
 
 #: ../../source/installation/installing_composer.rst:164
 msgid "Latest Dev"
-msgstr ""
+msgstr "최신 개발 버전"
 
 #: ../../source/installation/installing_composer.rst:166
 msgid ""
@@ -285,6 +286,9 @@ msgid ""
 "to live with the latest unreleased changes, which may be unstable. This "
 "way you can help find bugs and improve new features."
 msgstr ""
+"App Starter 저장소에는 프레임워크의 현재 안정 릴리스와 최신 개발 브랜치 사이에서 Composer 소스를 전환하는 "
+"``builds`` 스크립트가 포함되어 있습니다. 불안정할 수 있는 최신 미출시 변경 사항을 사용하려는 개발자를 위해 이 스크립트를 "
+"사용하세요. 이를 통해 버그를 찾고 새로운 기능을 개선하는 데 도움을 줄 수 있습니다."
 
 #: ../../source/installation/installing_composer.rst:171
 msgid ""
@@ -293,6 +297,8 @@ msgid ""
 "Note that this differs from the released user guide, and will pertain to "
 "the develop branch explicitly."
 msgstr ""
+"`개발 사용자 가이드 <https://codeigniter4.github.io/CodeIgniter4/>`_\\ 는 온라인에서 "
+"접근할 수 있습니다. 이는 출시된 사용자 가이드와 다르며, 개발 브랜치에 명시적으로 해당된다는 점에 유의하세요."
 
 #: ../../source/installation/installing_composer.rst:175
 msgid ""
@@ -300,22 +306,24 @@ msgid ""
 "to be changed. This is useful if you have additional places in the code "
 "that mention the directory with the framework."
 msgstr ""
+"스크립트를 실행하기 전에 변경될 파일 목록인 ``$files``\\ 를 확인하세요. 이는 코드에서 프레임워크 디렉터리를 언급하는 "
+"추가 위치가 있을 때 유용합니다."
 
 #: ../../source/installation/installing_composer.rst:178
 msgid ""
 "You should not rely on the version of the framework in your project - the"
 " development code may contain an incorrect number."
 msgstr ""
+"프로젝트의 프레임워크 버전에 의존해서는 안 됩니다. 개발 코드에는 잘못된 버전 번호가 포함될 수 있습니다."
 
 #: ../../source/installation/installing_composer.rst:182
 msgid "Update for Latest Dev"
-msgstr ""
+msgstr "최신 개발 버전으로 업데이트"
 
 #: ../../source/installation/installing_composer.rst:184
 #: ../../source/installation/installing_composer.rst:233
-#, fuzzy
 msgid "In your project root:"
-msgstr "프로젝트 루트 상위 폴더에서:"
+msgstr "프로젝트 루트에서:"
 
 #: ../../source/installation/installing_composer.rst:190
 msgid ""
@@ -323,6 +331,8 @@ msgid ""
 "``develop`` branch of the working repository, and update the "
 "corresponding paths in config and XML files."
 msgstr ""
+"위의 명령은 **composer.json**\\ 을 작업 저장소의 ``develop`` 브랜치를 가리키도록 업데이트하고, 설정 및 "
+"XML 파일의 해당 경로를 업데이트합니다."
 
 #: ../../source/installation/installing_composer.rst:193
 msgid ""
@@ -330,14 +340,16 @@ msgid ""
 "sync your vendor folder with the latest target build. Then, check the "
 ":doc:`upgrading` and update project files if necessary."
 msgstr ""
+"``builds`` 명령을 사용한 후 반드시 ``composer update``\\ 를 실행하여 vendor 폴더를 최신 대상 빌드와 "
+"동기화하세요. 그런 다음 :doc:`upgrading`\\ 을 확인하고 필요한 경우 프로젝트 파일을 업데이트하세요."
 
 #: ../../source/installation/installing_composer.rst:198
 msgid "Next Minor Version"
-msgstr ""
+msgstr "다음 마이너 버전"
 
 #: ../../source/installation/installing_composer.rst:200
 msgid "If you want to use the next minor version branch:"
-msgstr ""
+msgstr "다음 마이너 버전 브랜치를 사용하려면:"
 
 #: ../../source/installation/installing_composer.rst:206
 #, python-brace-format
@@ -347,18 +359,21 @@ msgid ""
 "(**user_guide_src/source/installation/upgrade_{version}.rst**) and update"
 " project files if necessary."
 msgstr ""
+"``composer update``\\ 를 실행하여 vendor 폴더를 최신 대상 빌드와 동기화하세요. 그런 다음 업그레이드 가이드 "
+"(**user_guide_src/source/installation/upgrade_{version}.rst**)를 확인하고 "
+"필요한 경우 프로젝트 파일을 업데이트하세요."
 
 #: ../../source/installation/installing_composer.rst:212
 msgid "Revert to Stable Release"
-msgstr ""
+msgstr "안정 릴리스로 되돌리기"
 
 #: ../../source/installation/installing_composer.rst:214
 msgid "To revert the changes run:"
-msgstr ""
+msgstr "변경 사항을 되돌리려면 다음을 실행하세요:"
 
 #: ../../source/installation/installing_composer.rst:221
 msgid "Adding CodeIgniter4 to an Existing Project"
-msgstr ""
+msgstr "기존 프로젝트에 CodeIgniter4 추가"
 
 #: ../../source/installation/installing_composer.rst:223
 msgid ""
@@ -367,28 +382,35 @@ msgid ""
 "\"Manual Installation\" can also be added to an existing project using "
 "Composer."
 msgstr ""
+"\"수동 설치\"에서 설명된 동일한 `CodeIgniter 4 프레임워크 "
+"<https://github.com/codeigniter4/framework>`_ 저장소를 Composer를 사용하여 기존 "
+"프로젝트에 추가할 수도 있습니다."
 
 #: ../../source/installation/installing_composer.rst:230
 msgid ""
 "Develop your app inside the ``app`` folder, and the ``public`` folder "
 "will be your document root."
-msgstr ""
+msgstr "``app`` 폴더 안에서 앱을 개발하고, ``public`` 폴더가 문서 루트가 됩니다."
 
 #: ../../source/installation/installing_composer.rst:251
 msgid "Setting Up"
-msgstr ""
+msgstr "설정"
 
 #: ../../source/installation/installing_composer.rst:253
 msgid ""
 "Copy the **app**, **public**, **tests** and **writable** folders from "
 "**vendor/codeigniter4/framework** to your project root"
 msgstr ""
+"**vendor/codeigniter4/framework**\\ 에서 **app**, **public**, **tests**, "
+"**writable** 폴더를 프로젝트 루트에 복사하세요."
 
 #: ../../source/installation/installing_composer.rst:254
 msgid ""
 "Copy the **env**, **phpunit.dist.xml** and **spark** files, from "
 "**vendor/codeigniter4/framework** to your project root"
 msgstr ""
+"**vendor/codeigniter4/framework**\\ 에서 **env**, **phpunit.dist.xml**, "
+"**spark** 파일을 프로젝트 루트에 복사하세요."
 
 #: ../../source/installation/installing_composer.rst:255
 msgid ""
@@ -396,39 +418,39 @@ msgid ""
 "**app/Config/Paths.php** to refer to the vendor one, e.g., ``__DIR__ . "
 "'/../../vendor/codeigniter4/framework/system'``."
 msgstr ""
+"**app/Config/Paths.php**\\ 의 ``$systemDirectory`` 속성을 vendor 경로를 참조하도록 조정해야 "
+"합니다. 예: ``__DIR__ . '/../../vendor/codeigniter4/framework/system'``."
 
 #: ../../source/installation/installing_composer.rst:260
-#, fuzzy
 msgid ""
 "A few initial configurations are required. See :ref:`initial-"
 "configuration` for the details."
-msgstr "설치 후 몇 가지 초기 설정이 필요합니다. 자세한 내용은 :ref:`initial-configuration`\\ 를 참조하세요."
+msgstr "몇 가지 초기 설정이 필요합니다. 자세한 내용은 :ref:`initial-configuration`\\ 를 참조하세요."
 
 #: ../../source/installation/installing_composer.rst:297
 msgid "Relatively simple installation; easy to update."
-msgstr ""
+msgstr "비교적 간단한 설치, 쉬운 업데이트."
 
 #: ../../source/installation/installing_composer.rst:302
 msgid ""
 "You still need to check for file changes in the **project space** (root, "
 "app, public, writable) after updating."
 msgstr ""
+"업데이트 후 **프로젝트 공간**(루트, app, public, writable)의 파일 변경 사항을 확인해야 합니다."
 
 #: ../../source/installation/installing_composer.rst:318
-#, fuzzy
 msgid "Translations Installation"
-msgstr "Composer 설치"
+msgstr "번역 설치"
 
 #: ../../source/installation/installing_composer.rst:320
 msgid ""
 "If you want to take advantage of the system message translations, they "
 "can be added to your project in a similar fashion."
-msgstr ""
+msgstr "시스템 메시지 번역을 활용하려면 비슷한 방법으로 프로젝트에 추가할 수 있습니다."
 
 #: ../../source/installation/installing_composer.rst:323
-#, fuzzy
 msgid "From the command line inside your project root:"
-msgstr "새로운 출시가 있을 때마다 프로젝트 루트의 명령줄에서 다음을 실행합니다:"
+msgstr "프로젝트 루트의 명령줄에서:"
 
 #: ../../source/installation/installing_composer.rst:329
 msgid ""
@@ -436,6 +458,8 @@ msgid ""
 " it to your **app/Language** folder. These will be updated along with the"
 " framework whenever you do a ``composer update``."
 msgstr ""
+"**vendor/codeigniter4/translations/Language** 폴더의 내용을 **app/Language** "
+"폴더에 복사하세요. 이 파일들은 ``composer update``\\ 를 실행할 때마다 프레임워크와 함께 업데이트됩니다."
 
 #~ msgid "In that case, open **composer.json** in your project root folder, and "
 #~ msgstr "이 경우 프로젝트 루트 폴더의 **composer.json**\\ 을 열고 "
@@ -464,4 +488,3 @@ msgstr ""
 #~ "the framework whenever you do a "
 #~ "``composer update``."
 #~ msgstr ""
-

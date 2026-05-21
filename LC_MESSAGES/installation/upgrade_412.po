@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,35 +21,37 @@ msgstr ""
 
 #: ../../source/installation/upgrade_412.rst:3
 msgid "Upgrading from 4.1.1 to 4.1.2"
-msgstr ""
+msgstr "4.1.1에서 4.1.2로 업그레이드"
 
 #: ../../source/installation/upgrade_412.rst:5
 msgid ""
 "Please refer to the upgrade instructions corresponding to your "
 "installation method."
-msgstr ""
+msgstr "설치 방법에 해당하는 업그레이드 지침을 참조하십시오."
 
 #: ../../source/installation/upgrade_412.rst:7
 msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
-msgstr ""
+msgstr ":ref:`Composer 설치 앱 스타터 업그레이드 <app-starter-upgrading>`"
 
 #: ../../source/installation/upgrade_412.rst:8
 msgid ""
 ":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
 "Upgrading <adding-codeigniter4-upgrading>`"
 msgstr ""
+":ref:`Composer 설치 - 기존 프로젝트에 CodeIgniter4 추가 업그레이드 "
+"<adding-codeigniter4-upgrading>`"
 
 #: ../../source/installation/upgrade_412.rst:9
 msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
-msgstr ""
+msgstr ":ref:`수동 설치 업그레이드 <installing-manual-upgrading>`"
 
 #: ../../source/installation/upgrade_412.rst:16
 msgid "Breaking Changes"
-msgstr ""
+msgstr "주요 변경사항"
 
 #: ../../source/installation/upgrade_412.rst:19
 msgid "current_url() and indexPage"
-msgstr ""
+msgstr "current_url()과 indexPage"
 
 #: ../../source/installation/upgrade_412.rst:21
 msgid ""
@@ -63,10 +64,17 @@ msgid ""
 "Pager, Form Helper, Pager, and View Parser). Update your projects "
 "accordingly."
 msgstr ""
+"``current_url()``\ 의 `버그 "
+"<https://github.com/codeigniter4/CodeIgniter4/issues/4116>`_\ 로 인해 "
+"프로젝트 설정에 따라 결과 URI가 올바르지 않을 수 있었습니다. 가장 중요한 문제는 "
+"``indexPage``\ 가 포함되지 *않았다*\ 는 점입니다. "
+"``App::$indexPage``\ 를 사용하는 프로젝트는 ``current_url()``\ 과 "
+"이에 의존하는 모든 기능(Response Testing, Pager, Form Helper, View Parser 포함)의 "
+"값이 변경될 것을 예상하고 프로젝트를 업데이트하십시오."
 
 #: ../../source/installation/upgrade_412.rst:28
 msgid "Cache Keys"
-msgstr ""
+msgstr "캐시 키"
 
 #: ../../source/installation/upgrade_412.rst:30
 msgid ""
@@ -74,6 +82,9 @@ msgid ""
 "cache drivers now pass all keys through validation, roughly matching "
 "PSR-6's recommendations:"
 msgstr ""
+"캐시 핸들러는 키에 대한 호환성이 크게 달랐습니다. "
+"업데이트된 캐시 드라이버는 이제 PSR-6 권장사항에 대략적으로 맞게 "
+"모든 키를 유효성 검사를 통해 처리합니다:"
 
 #: ../../source/installation/upgrade_412.rst:33
 #, python-brace-format
@@ -89,14 +100,23 @@ msgid ""
 "extensions and MUST NOT be supported by implementing libraries: "
 "``{}()/\\@:``"
 msgstr ""
+"캐시 항목을 고유하게 식별하는 최소 하나의 문자로 이루어진 문자열입니다. "
+"구현 라이브러리는 UTF-8 인코딩에서 A-Z, a-z, 0-9, _, . 문자로 구성된 "
+"최대 64자 길이의 키를 반드시 지원해야 합니다. "
+"구현 라이브러리는 추가 문자, 인코딩 또는 더 긴 길이를 지원할 수 있지만 "
+"최소한 위의 요건은 충족해야 합니다. "
+"라이브러리는 키 문자열의 적절한 이스케이프 처리를 직접 담당하되 "
+"원본 수정되지 않은 키 문자열을 반환할 수 있어야 합니다. "
+"다음 문자는 향후 확장을 위해 예약되어 있으므로 구현 라이브러리에서 지원해서는 안 됩니다: "
+"``{}()/\\@:``"
 
 #: ../../source/installation/upgrade_412.rst:41
 msgid "Update your projects to remove any invalid cache keys."
-msgstr ""
+msgstr "유효하지 않은 캐시 키를 제거하도록 프로젝트를 업데이트하십시오."
 
 #: ../../source/installation/upgrade_412.rst:44
 msgid "BaseConnection::query() Return Values"
-msgstr ""
+msgstr "BaseConnection::query() 반환값"
 
 #: ../../source/installation/upgrade_412.rst:46
 msgid ""
@@ -110,14 +130,23 @@ msgid ""
 "DBMS-specific override ``isWriteType()`` in the relevant Connection "
 "class."
 msgstr ""
+"이전 버전에서 ``BaseConnection::query()`` 메서드는 쿼리가 실패했더라도 "
+"잘못되게 BaseResult 객체를 반환했습니다. "
+"이제 이 메서드는 실패한 쿼리에 대해 ``false``\ 를 반환하고 "
+"(``DBDebug``\ 가 ``true``\ 인 경우 예외를 던지며), "
+"쓰기 유형 쿼리에 대해서는 boolean을 반환합니다. "
+"``query()`` 메서드의 모든 사용을 검토하고 반환값이 Result 객체 대신 "
+"boolean일 수 있는지 확인하십시오. "
+"쓰기 유형 쿼리가 무엇인지 파악하려면 ``BaseConnection::isWriteType()``\ 와 "
+"관련 Connection 클래스의 DBMS별 ``isWriteType()`` 오버라이드를 확인하십시오."
 
 #: ../../source/installation/upgrade_412.rst:54
 msgid "Breaking Enhancements"
-msgstr ""
+msgstr "주요 기능 변경사항"
 
 #: ../../source/installation/upgrade_412.rst:57
 msgid "ConnectionInterface::isWriteType() Declaration Added"
-msgstr ""
+msgstr "ConnectionInterface::isWriteType() 선언 추가"
 
 #: ../../source/installation/upgrade_412.rst:59
 msgid ""
@@ -127,10 +156,15 @@ msgid ""
 " then that class will provide a basic ``isWriteType()`` method which you "
 "might want to override."
 msgstr ""
+"ConnectionInterface를 구현하는 클래스를 작성한 경우, "
+"이제 ``public function isWriteType($sql): bool``\ 로 선언된 "
+"``isWriteType()`` 메서드를 구현해야 합니다. "
+"클래스가 BaseConnection을 상속한다면 해당 클래스에서 기본 ``isWriteType()`` 메서드를 "
+"제공하므로 필요에 따라 오버라이드할 수 있습니다."
 
 #: ../../source/installation/upgrade_412.rst:64
 msgid "Test Traits"
-msgstr ""
+msgstr "테스트 Trait"
 
 #: ../../source/installation/upgrade_412.rst:66
 msgid ""
@@ -143,10 +177,16 @@ msgid ""
 "your test cases to extend the main test case and use any traits you need."
 " For example:"
 msgstr ""
+"``CodeIgniter\\Test`` 네임스페이스는 개발자의 테스트 케이스 작성을 돕기 위해 "
+"크게 개선되었습니다. 가장 주목할 만한 것은 테스트 확장이 다양한 테스트 케이스 요구에 맞게 "
+"선택적으로 사용할 수 있도록 Trait으로 이동되었다는 점입니다. "
+"``CIDatabaseTestCase``\ 와 ``FeatureTestCase`` 클래스는 사용 중단되었으며, "
+"해당 메서드들은 각각 ``DatabaseTestTrait``\ 과 ``FeatureTestTrait``\ 으로 이동되었습니다. "
+"테스트 케이스를 메인 테스트 케이스를 상속하고 필요한 trait을 사용하도록 업데이트하십시오. 예:"
 
 #: ../../source/installation/upgrade_412.rst:75
 msgid "... becomes:"
-msgstr ""
+msgstr "... 다음과 같이 변경됩니다:"
 
 #: ../../source/installation/upgrade_412.rst:79
 msgid ""
@@ -154,10 +194,12 @@ msgid ""
 "``ControllerTestTrait`` to standardize approach and take advantage of the"
 " updated response testing (below)."
 msgstr ""
+"마지막으로, ``ControllerTester``\ 는 접근 방식을 표준화하고 "
+"업데이트된 응답 테스팅(아래 참조)을 활용하기 위해 ``ControllerTestTrait``\ 으로 대체되었습니다."
 
 #: ../../source/installation/upgrade_412.rst:83
 msgid "Test Responses"
-msgstr ""
+msgstr "테스트 응답"
 
 #: ../../source/installation/upgrade_412.rst:85
 msgid ""
@@ -168,6 +210,11 @@ msgid ""
 "\"behind the scenes\" by ``ControllerTestTrait`` and ``FeatureTestCase``,"
 " but two changes to be aware of:"
 msgstr ""
+"응답 테스팅 도구가 통합 및 개선되었습니다. "
+"새로운 ``TestResponse``\ 가 ``ControllerResponse``\ 와 ``FeatureResponse``\ 를 대체하며 "
+"두 클래스에서 기대하는 완전한 메서드 및 프로퍼티 집합을 제공합니다. "
+"대부분의 경우 이러한 변경은 ``ControllerTestTrait``\ 과 ``FeatureTestCase``\ 에 의해 "
+"\"내부적으로\" 처리되지만 다음 두 가지 변경사항에 주의하십시오:"
 
 #: ../../source/installation/upgrade_412.rst:91
 msgid ""
@@ -175,6 +222,8 @@ msgid ""
 "protected and should only be access through their getter methods, "
 "``request()`` and ``response()``"
 msgstr ""
+"``TestResponse``\ 의 ``$request``\ 와 ``$response`` 프로퍼티는 protected로 선언되어 있으며, "
+"getter 메서드인 ``request()``\ 와 ``response()``\ 를 통해서만 접근해야 합니다"
 
 #: ../../source/installation/upgrade_412.rst:92
 msgid ""
@@ -182,10 +231,12 @@ msgid ""
 "but rather uses the Response methods directly, e.g.: ``$body = "
 "$result->response()->getBody();``"
 msgstr ""
+"``TestResponse``\ 는 ``getBody()``\ 와 ``setBody()`` 메서드가 없으며, "
+"대신 Response 메서드를 직접 사용합니다. 예: ``$body = $result->response()->getBody();``"
 
 #: ../../source/installation/upgrade_412.rst:95
 msgid "Project Files"
-msgstr ""
+msgstr "프로젝트 파일"
 
 #: ../../source/installation/upgrade_412.rst:97
 #, python-format
@@ -197,6 +248,11 @@ msgid ""
 " project space: `Explore on Packagist "
 "<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
 msgstr ""
+"프로젝트 공간(root, app, public, writable)의 많은 파일이 업데이트되었습니다. "
+"이러한 파일들은 시스템 범위 외부에 있으므로 직접 개입하지 않으면 변경되지 않습니다. "
+"프로젝트 공간의 변경사항 병합을 도와주는 서드파티 CodeIgniter 모듈이 있습니다: "
+"`Packagist에서 찾아보기 "
+"<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
 
 #: ../../source/installation/upgrade_412.rst:102
 msgid ""
@@ -205,10 +261,13 @@ msgid ""
 "optional until the next major version, and any mandatory changes will be "
 "covered in the sections above."
 msgstr ""
+"버그 수정을 위한 매우 드문 경우를 제외하고, 프로젝트 공간 파일에 대한 변경사항은 "
+"애플리케이션을 중단시키지 않습니다. 여기에 명시된 모든 변경사항은 다음 주요 버전까지 선택 사항이며, "
+"필수 변경사항은 위 섹션에서 다룹니다."
 
 #: ../../source/installation/upgrade_412.rst:107
 msgid "Content Changes"
-msgstr ""
+msgstr "내용 변경사항"
 
 #: ../../source/installation/upgrade_412.rst:109
 msgid ""
@@ -216,54 +275,56 @@ msgid ""
 "or visual adjustments) and it is recommended that you merge the updated "
 "versions with your application:"
 msgstr ""
+"다음 파일들은 중요한 변경(사용 중단 또는 시각적 조정 포함)이 있었으며, "
+"업데이트된 버전을 애플리케이션에 병합하는 것을 권장합니다:"
 
 #: ../../source/installation/upgrade_412.rst:112
 #: ../../source/installation/upgrade_412.rst:128
 msgid "``app/Config/App.php``"
-msgstr ""
+msgstr "``app/Config/App.php``"
 
 #: ../../source/installation/upgrade_412.rst:113
 #: ../../source/installation/upgrade_412.rst:129
 msgid "``app/Config/Autoload.php``"
-msgstr ""
+msgstr "``app/Config/Autoload.php``"
 
 #: ../../source/installation/upgrade_412.rst:114
 #: ../../source/installation/upgrade_412.rst:131
 msgid "``app/Config/Cookie.php``"
-msgstr ""
+msgstr "``app/Config/Cookie.php``"
 
 #: ../../source/installation/upgrade_412.rst:115
 #: ../../source/installation/upgrade_412.rst:132
 msgid "``app/Config/Events.php``"
-msgstr ""
+msgstr "``app/Config/Events.php``"
 
 #: ../../source/installation/upgrade_412.rst:116
 #: ../../source/installation/upgrade_412.rst:133
 msgid "``app/Config/Exceptions.php``"
-msgstr ""
+msgstr "``app/Config/Exceptions.php``"
 
 #: ../../source/installation/upgrade_412.rst:117
 #: ../../source/installation/upgrade_412.rst:137
 msgid "``app/Config/Security.php``"
-msgstr ""
+msgstr "``app/Config/Security.php``"
 
 #: ../../source/installation/upgrade_412.rst:118
 msgid "``app/Views/errors/html/*``"
-msgstr ""
+msgstr "``app/Views/errors/html/*``"
 
 #: ../../source/installation/upgrade_412.rst:119
 #: ../../source/installation/upgrade_412.rst:145
 msgid "``env``"
-msgstr ""
+msgstr "``env``"
 
 #: ../../source/installation/upgrade_412.rst:120
 #: ../../source/installation/upgrade_412.rst:151
 msgid "``spark``"
-msgstr ""
+msgstr "``spark``"
 
 #: ../../source/installation/upgrade_412.rst:123
 msgid "All Changes"
-msgstr ""
+msgstr "전체 변경사항"
 
 #: ../../source/installation/upgrade_412.rst:125
 msgid ""
@@ -271,68 +332,69 @@ msgid ""
 "many will be simple comments or formatting that have no effect on the "
 "runtime:"
 msgstr ""
+"다음은 변경이 있었던 프로젝트 공간의 모든 파일 목록입니다; "
+"많은 파일이 런타임에 영향을 미치지 않는 단순한 주석 또는 서식 변경입니다:"
 
 #: ../../source/installation/upgrade_412.rst:130
 msgid "``app/Config/ContentSecurityPolicy.php``"
-msgstr ""
+msgstr "``app/Config/ContentSecurityPolicy.php``"
 
 #: ../../source/installation/upgrade_412.rst:134
 msgid "``app/Config/Logger.php``"
-msgstr ""
+msgstr "``app/Config/Logger.php``"
 
 #: ../../source/installation/upgrade_412.rst:135
 msgid "``app/Config/Mimes.php``"
-msgstr ""
+msgstr "``app/Config/Mimes.php``"
 
 #: ../../source/installation/upgrade_412.rst:136
 msgid "``app/Config/Modules.php``"
-msgstr ""
+msgstr "``app/Config/Modules.php``"
 
 #: ../../source/installation/upgrade_412.rst:138
 msgid "``app/Controllers/BaseController.php``"
-msgstr ""
+msgstr "``app/Controllers/BaseController.php``"
 
 #: ../../source/installation/upgrade_412.rst:139
 msgid "``app/Views/errors/html/debug.css``"
-msgstr ""
+msgstr "``app/Views/errors/html/debug.css``"
 
 #: ../../source/installation/upgrade_412.rst:140
 msgid "``app/Views/errors/html/error_404.php``"
-msgstr ""
+msgstr "``app/Views/errors/html/error_404.php``"
 
 #: ../../source/installation/upgrade_412.rst:141
 msgid "``app/Views/errors/html/error_exception.php``"
-msgstr ""
+msgstr "``app/Views/errors/html/error_exception.php``"
 
 #: ../../source/installation/upgrade_412.rst:142
 msgid "``app/Views/welcome_message.php``"
-msgstr ""
+msgstr "``app/Views/welcome_message.php``"
 
 #: ../../source/installation/upgrade_412.rst:143
 msgid "``composer.json``"
-msgstr ""
+msgstr "``composer.json``"
 
 #: ../../source/installation/upgrade_412.rst:144
 msgid "``contributing/guidelines.rst``"
-msgstr ""
+msgstr "``contributing/guidelines.rst``"
 
 #: ../../source/installation/upgrade_412.rst:146
 msgid "``phpstan.neon.dist``"
-msgstr ""
+msgstr "``phpstan.neon.dist``"
 
 #: ../../source/installation/upgrade_412.rst:147
 msgid "``phpunit.xml.dist``"
-msgstr ""
+msgstr "``phpunit.xml.dist``"
 
 #: ../../source/installation/upgrade_412.rst:148
 msgid "``public/.htaccess``"
-msgstr ""
+msgstr "``public/.htaccess``"
 
 #: ../../source/installation/upgrade_412.rst:149
 msgid "``public/index.php``"
-msgstr ""
+msgstr "``public/index.php``"
 
 #: ../../source/installation/upgrade_412.rst:150
 msgid "``rector.php``"
-msgstr ""
-
+msgstr "``rector.php``"

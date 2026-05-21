@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,31 +21,33 @@ msgstr ""
 
 #: ../../source/installation/upgrade_457.rst:3
 msgid "Upgrading from 4.5.6 to 4.5.7"
-msgstr ""
+msgstr "4.5.6에서 4.5.7로 업그레이드"
 
 #: ../../source/installation/upgrade_457.rst:5
 msgid ""
 "Please refer to the upgrade instructions corresponding to your "
 "installation method."
-msgstr ""
+msgstr "설치 방법에 해당하는 업그레이드 지침을 참조하십시오."
 
 #: ../../source/installation/upgrade_457.rst:7
 msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
-msgstr ""
+msgstr ":ref:`Composer 설치 앱 스타터 업그레이드 <app-starter-upgrading>`"
 
 #: ../../source/installation/upgrade_457.rst:8
 msgid ""
 ":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
 "Upgrading <adding-codeigniter4-upgrading>`"
 msgstr ""
+":ref:`Composer 설치 - 기존 프로젝트에 CodeIgniter4 추가 업그레이드 "
+"<adding-codeigniter4-upgrading>`"
 
 #: ../../source/installation/upgrade_457.rst:9
 msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
-msgstr ""
+msgstr ":ref:`수동 설치 업그레이드 <installing-manual-upgrading>`"
 
 #: ../../source/installation/upgrade_457.rst:17
 msgid "Project Files"
-msgstr ""
+msgstr "프로젝트 파일"
 
 #: ../../source/installation/upgrade_457.rst:19
 msgid ""
@@ -54,6 +55,8 @@ msgid ""
 "received updates. Due to these files being outside of the **system** "
 "scope they will not be changed without your intervention."
 msgstr ""
+"**프로젝트 공간** (root, app, public, writable)의 일부 파일이 업데이트되었습니다. "
+"이 파일들은 **system** 범위 밖에 있으므로 직접 개입하지 않으면 변경되지 않습니다."
 
 #: ../../source/installation/upgrade_457.rst:22
 #, python-format
@@ -62,10 +65,12 @@ msgid ""
 "merging changes to the project space: `Explore on Packagist "
 "<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
 msgstr ""
+"프로젝트 공간의 변경 사항 병합을 지원하는 서드파티 CodeIgniter 모듈이 있습니다: "
+"`Packagist에서 탐색 <https://packagist.org/explore/?query=codeigniter4%20updates>`_."
 
 #: ../../source/installation/upgrade_457.rst:27
 msgid "All Changes"
-msgstr ""
+msgstr "모든 변경 사항"
 
 #: ../../source/installation/upgrade_457.rst:29
 msgid ""
@@ -73,8 +78,9 @@ msgid ""
 "changes; many will be simple comments or formatting that have no effect "
 "on the runtime:"
 msgstr ""
+"다음은 **프로젝트 공간**에서 변경된 모든 파일의 목록입니다. "
+"많은 파일이 런타임에 영향을 미치지 않는 단순한 주석이나 형식 변경일 수 있습니다:"
 
 #: ../../source/installation/upgrade_457.rst:32
 msgid "app/Views/errors/cli/error_exception.php"
-msgstr ""
-
+msgstr "app/Views/errors/cli/error_exception.php"

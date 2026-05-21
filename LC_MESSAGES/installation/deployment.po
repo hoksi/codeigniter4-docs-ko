@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,61 +21,63 @@ msgstr ""
 
 #: ../../source/installation/deployment.rst:3
 msgid "Deployment"
-msgstr ""
+msgstr "배포"
 
 #: ../../source/installation/deployment.rst:11
 msgid "Optimization"
-msgstr ""
+msgstr "최적화"
 
 #: ../../source/installation/deployment.rst:13
 msgid ""
 "Before deploying your CodeIgniter application to production, there are "
 "several things you can do to make your application run more efficiently."
 msgstr ""
+"CodeIgniter 애플리케이션을 운영 환경에 배포하기 전에 애플리케이션을 더 효율적으로 실행하기 위해 할 수 있는 몇 가지 "
+"작업이 있습니다."
 
 #: ../../source/installation/deployment.rst:16
 msgid ""
 "This section describes the optimization features that CodeIgniter "
 "provides."
-msgstr ""
+msgstr "이 섹션에서는 CodeIgniter가 제공하는 최적화 기능에 대해 설명합니다."
 
 #: ../../source/installation/deployment.rst:21
 msgid "spark optimize"
-msgstr ""
+msgstr "spark optimize"
 
 #: ../../source/installation/deployment.rst:25
 msgid "The ``spark optimize`` command performs the following optimizations:"
-msgstr ""
+msgstr "``spark optimize`` 명령은 다음과 같은 최적화를 수행합니다:"
 
 #: ../../source/installation/deployment.rst:27
 msgid "`Removing Dev Packages`_"
-msgstr ""
+msgstr "`개발 패키지 제거 <Removing Dev Packages_>`_"
 
 #: ../../source/installation/deployment.rst:28
 msgid "Enabling `Config Caching`_"
-msgstr ""
+msgstr "`Config 캐싱 <Config Caching_>`_\\ 활성화"
 
 #: ../../source/installation/deployment.rst:29
 msgid "Enabling `FileLocator Caching`_"
-msgstr ""
+msgstr "`FileLocator 캐싱 <FileLocator Caching_>`_\\ 활성화"
 
 #: ../../source/installation/deployment.rst:31
 msgid ""
 "Do not use ``spark optimize`` when running the app in the "
 ":doc:`worker_mode`."
-msgstr ""
+msgstr ":doc:`worker_mode`\\ 에서 앱을 실행할 때는 ``spark optimize``\\ 를 사용하지 마세요."
 
 #: ../../source/installation/deployment.rst:34
 msgid "Composer Optimization"
-msgstr ""
+msgstr "Composer 최적화"
 
 #: ../../source/installation/deployment.rst:37
 msgid "Removing Dev Packages"
-msgstr ""
+msgstr "개발 패키지 제거"
 
 #: ../../source/installation/deployment.rst:39
 msgid "When you deploy, don't forget to run the following command:"
-msgstr ""
+msgstr "배포할 때 다음 명령을 실행하는 것을 잊지 마세요:"
 
 #: ../../source/installation/deployment.rst:45
 msgid ""
@@ -84,10 +85,12 @@ msgid ""
 "that are not needed in the production environment. This will greatly "
 "reduce the vendor folder size."
 msgstr ""
+"위의 명령은 운영 환경에서 필요하지 않은 개발 전용 Composer 패키지를 제거합니다. 이를 통해 vendor 폴더 크기를 크게 "
+"줄일 수 있습니다."
 
 #: ../../source/installation/deployment.rst:50
 msgid "Specifying Packages to Discover"
-msgstr ""
+msgstr "검색할 패키지 지정"
 
 #: ../../source/installation/deployment.rst:52
 msgid ""
@@ -96,34 +99,38 @@ msgid ""
 "CodeIgniter packages, so specifying the packages to be scanned prevents "
 "unnecessary scanning."
 msgstr ""
+"Composer 패키지 자동 검색(Auto-Discovery)이 활성화된 경우, 필요할 때 모든 Composer 패키지가 스캔됩니다. "
+"하지만 CodeIgniter 패키지가 아닌 패키지를 스캔할 필요가 없으므로, 스캔할 패키지를 지정하면 불필요한 스캔을 방지할 수 있습니다."
 
 #: ../../source/installation/deployment.rst:56
 msgid "See :ref:`modules-specify-composer-packages`."
-msgstr ""
+msgstr ":ref:`modules-specify-composer-packages`\\ 를 참조하세요."
 
 #: ../../source/installation/deployment.rst:59
 msgid "Config Caching"
-msgstr ""
+msgstr "Config 캐싱"
 
 #: ../../source/installation/deployment.rst:61
 msgid ""
 "Once cached, configuration values are never changed until the cache is "
 "deleted, even if the configuration file or **.env** is changed."
 msgstr ""
+"한 번 캐시되면 설정 파일이나 **.env**\\ 가 변경되더라도 캐시가 삭제될 때까지 설정 값은 변경되지 않습니다."
 
 #: ../../source/installation/deployment.rst:64
 msgid ""
 "Caching the Config objects can improve performance. However, the cache "
 "must be manually deleted when changing Config values."
 msgstr ""
+"Config 객체를 캐싱하면 성능이 향상될 수 있습니다. 단, Config 값을 변경할 때는 캐시를 수동으로 삭제해야 합니다."
 
 #: ../../source/installation/deployment.rst:67
 msgid "See :ref:`factories-config-caching`."
-msgstr ""
+msgstr ":ref:`factories-config-caching`\\ 을 참조하세요."
 
 #: ../../source/installation/deployment.rst:70
 msgid "FileLocator Caching"
-msgstr ""
+msgstr "FileLocator 캐싱"
 
 #: ../../source/installation/deployment.rst:72
 msgid ""
@@ -131,14 +138,16 @@ msgid ""
 "However, the cache must be manually deleted when adding/deleting/changing"
 " file paths."
 msgstr ""
+"FileLocator가 찾은 파일 경로를 캐싱하면 성능이 향상될 수 있습니다. 단, 파일 경로를 추가/삭제/변경할 때는 캐시를 수동으로 "
+"삭제해야 합니다."
 
 #: ../../source/installation/deployment.rst:75
 msgid "See :ref:`file-locator-caching`."
-msgstr ""
+msgstr ":ref:`file-locator-caching`\\ 을 참조하세요."
 
 #: ../../source/installation/deployment.rst:78
 msgid "PHP Preloading"
-msgstr ""
+msgstr "PHP 프리로딩"
 
 #: ../../source/installation/deployment.rst:80
 msgid ""
@@ -149,6 +158,9 @@ msgid ""
 "this comes at the cost of increased memory usage and requires restarting "
 "the PHP engine for changes to take effect."
 msgstr ""
+"PHP 프리로딩을 사용하면 서버 시작 시 함수와 클래스 같은 필수 파일을 메모리에 로드하도록 지시할 수 있습니다. 이를 통해 이러한 "
+"요소들이 모든 요청에 대해 즉시 사용 가능해지고, 일반적인 로딩 과정을 건너뛰어 애플리케이션 성능을 향상시킵니다. 다만 메모리 사용량이 "
+"증가하며, 변경 사항을 적용하려면 PHP 엔진을 재시작해야 합니다."
 
 #: ../../source/installation/deployment.rst:85
 msgid ""
@@ -157,10 +169,13 @@ msgid ""
 "`preload script "
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/preload.php>`_."
 msgstr ""
+"`프리로딩 <https://www.php.net/manual/en/opcache.preloading.php>`_\\ 을 사용하려면 "
+"`프리로드 스크립트 <https://github.com/codeigniter4/CodeIgniter4/blob/develop/preload.php>`_\\ 를 "
+"제공합니다."
 
 #: ../../source/installation/deployment.rst:89
 msgid "Requirement"
-msgstr ""
+msgstr "요구 사항"
 
 #: ../../source/installation/deployment.rst:91
 msgid ""
@@ -172,16 +187,21 @@ msgid ""
 " handler. Preloading keeps the relevant definitions in memory by reading "
 "the files specified in ``opcache.preload``."
 msgstr ""
+"프리로딩을 사용하려면 전용 PHP 핸들러가 하나 필요합니다. 일반적으로 웹 서버는 하나의 PHP 핸들러를 사용하도록 구성되므로 "
+"하나의 앱에는 전용 웹 서버가 필요합니다. 하나의 웹 서버에서 여러 앱에 프리로딩을 사용하려면 각 가상 호스트가 하나의 PHP "
+"핸들러(예: 여러 PHP-FPM)를 사용하도록 서버를 구성하세요. 프리로딩은 ``opcache.preload``\\ 에 지정된 파일을 "
+"읽어 관련 정의를 메모리에 유지합니다."
 
 #: ../../source/installation/deployment.rst:95
 msgid ""
 "See :ref:`running-multiple-app` to make one core CodeIgniter4 to handle "
 "your multiple apps."
 msgstr ""
+"하나의 CodeIgniter4 코어로 여러 앱을 처리하려면 :ref:`running-multiple-app`\\ 을 참조하세요."
 
 #: ../../source/installation/deployment.rst:98
 msgid "Configuration"
-msgstr ""
+msgstr "설정"
 
 #: ../../source/installation/deployment.rst:100
 msgid ""
@@ -190,6 +210,9 @@ msgid ""
 "``opcache.preload=/path/to/preload.php`` and "
 "``opcache.preload_user=myuser``."
 msgstr ""
+"PHP에서 INI 설정을 분리한 경우 ``php.ini`` 또는 ``xx-opcache.ini``\\ 를 열고 "
+"``opcache.preload=/path/to/preload.php``\\ 와 ``opcache.preload_user=myuser``\\ 를 "
+"설정하는 것을 권장합니다."
 
 #: ../../source/installation/deployment.rst:102
 msgid ""
@@ -197,16 +220,19 @@ msgid ""
 "location of the split INI configuration, just run ``php --ini`` or open "
 "file ``phpinfo()`` and search *Additional .ini files parsed*."
 msgstr ""
+"``myuser``\\ 는 웹 서버에서 실행 중인 사용자입니다. 분리된 INI 설정의 위치를 찾으려면 ``php --ini``\\ 를 "
+"실행하거나 ``phpinfo()`` 파일을 열어 *Additional .ini files parsed*\\ 를 검색하세요."
 
 #: ../../source/installation/deployment.rst:104
 msgid ""
 "Make sure you use the appstarter installation. If using manual "
 "installation, you must change the directory in ``include`` path."
 msgstr ""
+"appstarter 설치를 사용하고 있는지 확인하세요. 수동 설치를 사용하는 경우 ``include`` 경로의 디렉터리를 변경해야 합니다."
 
 #: ../../source/installation/deployment.rst:112
 msgid "Deployment to Shared Hosting Services"
-msgstr ""
+msgstr "공유 호스팅 서비스에 배포"
 
 #: ../../source/installation/deployment.rst:115
 msgid ""
@@ -214,22 +240,25 @@ msgid ""
 "inside the **public** folder, for better security and separation of "
 "components."
 msgstr ""
+"**index.php**\\ 는 더 이상 프로젝트 루트에 없습니다! 보안 강화와 컴포넌트 분리를 위해 **public** 폴더 안으로 "
+"이동되었습니다."
 
 #: ../../source/installation/deployment.rst:118
 msgid ""
 "This means that you should configure your web server to \"point\" to your"
 " project's **public** folder, and not to the project root."
 msgstr ""
+"이는 웹 서버가 프로젝트 루트가 아닌 프로젝트의 **public** 폴더를 \"가리키도록\" 설정해야 함을 의미합니다."
 
 #: ../../source/installation/deployment.rst:122
 msgid "Specifying the Document Root"
-msgstr ""
+msgstr "문서 루트 지정"
 
 #: ../../source/installation/deployment.rst:124
 msgid ""
 "The best way is to set the document root to the **public** folder in the "
 "server configuration::"
-msgstr ""
+msgstr "가장 좋은 방법은 서버 설정에서 문서 루트를 **public** 폴더로 설정하는 것입니다::"
 
 #: ../../source/installation/deployment.rst:130
 msgid ""
@@ -237,16 +266,19 @@ msgid ""
 "document root. Unfortunately, if you cannot change the document root, go "
 "to the next way."
 msgstr ""
+"호스팅 서비스 제공업체에 문서 루트를 변경할 수 있는지 확인하세요. 아쉽게도 문서 루트를 변경할 수 없는 경우 다음 방법으로 "
+"진행하세요."
 
 #: ../../source/installation/deployment.rst:134
 msgid "Using Two Directories"
-msgstr ""
+msgstr "두 디렉터리 사용"
 
 #: ../../source/installation/deployment.rst:136
 msgid ""
 "The second way is to use two directories, and adjust the path. One is for"
 " the application and the other is the default document root."
 msgstr ""
+"두 번째 방법은 두 개의 디렉터리를 사용하고 경로를 조정하는 것입니다. 하나는 애플리케이션용이고 다른 하나는 기본 문서 루트용입니다."
 
 #: ../../source/installation/deployment.rst:139
 msgid ""
@@ -254,38 +286,44 @@ msgid ""
 "default document root) and the other files to the directory for the "
 "application::"
 msgstr ""
+"**public** 폴더의 내용을 **public_html**(기본 문서 루트)에 업로드하고 나머지 파일은 애플리케이션 디렉터리에 "
+"업로드하세요::"
 
 #: ../../source/installation/deployment.rst:152
 msgid ""
 "See `Install CodeIgniter 4 on Shared Hosting (cPanel) "
 "<https://forum.codeigniter.com/showthread.php?tid=76779>`_ for details."
 msgstr ""
+"자세한 내용은 `공유 호스팅(cPanel)에 CodeIgniter 4 설치 "
+"<https://forum.codeigniter.com/showthread.php?tid=76779>`_\\ 를 참조하세요."
 
 #: ../../source/installation/deployment.rst:157
 msgid "Adding .htaccess"
-msgstr ""
+msgstr ".htaccess 추가"
 
 #: ../../source/installation/deployment.rst:159
 msgid "The last resort is to add **.htaccess** to the project root."
-msgstr ""
+msgstr "마지막 방법은 프로젝트 루트에 **.htaccess**\\ 를 추가하는 것입니다."
 
 #: ../../source/installation/deployment.rst:161
 msgid ""
 "It is not recommended that you place the project folder in the document "
 "root. However, if you have no other choice, you can use this."
 msgstr ""
+"프로젝트 폴더를 문서 루트에 두는 것은 권장되지 않습니다. 하지만 다른 선택지가 없다면 이 방법을 사용할 수 있습니다."
 
 #: ../../source/installation/deployment.rst:164
 msgid ""
 "Place your project folder as follows, where **public_html** is the "
 "document root, and create the **.htaccess** file::"
 msgstr ""
+"**public_html**\\ 이 문서 루트인 상황에서 프로젝트 폴더를 다음과 같이 배치하고 **.htaccess** 파일을 "
+"생성하세요::"
 
 #: ../../source/installation/deployment.rst:172
 msgid "And edit **.htaccess** as follows:"
-msgstr ""
+msgstr "그리고 **.htaccess**\\ 를 다음과 같이 편집하세요:"
 
 #: ../../source/installation/deployment.rst:186
 msgid "And remove the redirect settings in **public/.htaccess**:"
-msgstr ""
-
+msgstr "그리고 **public/.htaccess**\\ 의 리다이렉트 설정을 제거하세요:"

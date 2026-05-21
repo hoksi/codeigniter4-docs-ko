@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,69 +21,76 @@ msgstr ""
 
 #: ../../source/installation/upgrade_models.rst:2
 msgid "Upgrade Models"
-msgstr ""
+msgstr "모델 업그레이드"
 
 #: ../../source/installation/upgrade_models.rst:9
 msgid "Documentations"
-msgstr ""
+msgstr "문서"
 
 #: ../../source/installation/upgrade_models.rst:11
 msgid ""
 "`Model Documentation CodeIgniter 3.x "
 "<http://codeigniter.com/userguide3/general/models.html>`_"
 msgstr ""
+"`모델 문서 CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/general/models.html>`_"
 
 #: ../../source/installation/upgrade_models.rst:12
 msgid ":doc:`Model Documentation CodeIgniter 4.x </models/model>`"
-msgstr ""
+msgstr ":doc:`모델 문서 CodeIgniter 4.x </models/model>`"
 
 #: ../../source/installation/upgrade_models.rst:15
 msgid "What has been changed"
-msgstr ""
+msgstr "변경된 사항"
 
 #: ../../source/installation/upgrade_models.rst:17
 msgid ""
 "The CI4 model has much more functionality, including automatic database "
 "connection, basic CRUD, in-model validation, and automatic pagination."
 msgstr ""
+"CI4 모델은 자동 데이터베이스 연결, 기본 CRUD, 모델 내 유효성 검사, 자동 페이지네이션을 포함한 "
+"훨씬 더 많은 기능을 갖추고 있습니다."
 
 #: ../../source/installation/upgrade_models.rst:18
 msgid ""
 "Since namespaces has been added to CodeIgniter 4, the models must be "
 "changed to support namespaces."
 msgstr ""
+"CodeIgniter 4에 네임스페이스가 추가되었으므로, 모델을 네임스페이스를 지원하도록 변경해야 합니다."
 
 #: ../../source/installation/upgrade_models.rst:21
 msgid "Upgrade Guide"
-msgstr ""
+msgstr "업그레이드 가이드"
 
 #: ../../source/installation/upgrade_models.rst:23
 msgid "First, move all model files to the folder **app/Models**."
-msgstr ""
+msgstr "먼저 모든 모델 파일을 **app/Models** 폴더로 이동하십시오."
 
 #: ../../source/installation/upgrade_models.rst:24
 msgid "Add this line just after the opening php tag: ``namespace App\\Models;``."
-msgstr ""
+msgstr "PHP 여는 태그 바로 뒤에 다음 줄을 추가하십시오: ``namespace App\\Models;``"
 
 #: ../../source/installation/upgrade_models.rst:25
 msgid ""
 "Below the ``namespace App\\Models;`` line add this line: ``use "
 "CodeIgniter\\Model;``."
 msgstr ""
+"``namespace App\\Models;`` 줄 아래에 다음 줄을 추가하십시오: ``use CodeIgniter\\Model;``"
 
 #: ../../source/installation/upgrade_models.rst:26
 msgid "Replace ``extends CI_Model`` with ``extends Model``."
-msgstr ""
+msgstr "``extends CI_Model``\ 을 ``extends Model``\ 로 교체하십시오."
 
 #: ../../source/installation/upgrade_models.rst:27
 msgid "Add the ``protected $table`` property and set the table name."
-msgstr ""
+msgstr "``protected $table`` 속성을 추가하고 테이블 이름을 설정하십시오."
 
 #: ../../source/installation/upgrade_models.rst:28
 msgid ""
 "Add the ``protected $allowedFields`` property and set the array of field "
 "names to allow to insert/update."
 msgstr ""
+"``protected $allowedFields`` 속성을 추가하고 삽입/업데이트를 허용할 필드 이름 배열을 설정하십시오."
 
 #: ../../source/installation/upgrade_models.rst:29
 msgid ""
@@ -93,6 +99,9 @@ msgid ""
 "component. Alternatively, you can use the :php:func:`model()` function: "
 "``$this->x = model('X');``."
 msgstr ""
+"CI3의 ``$this->load->model('x');`` 대신, 이제 컴포넌트의 네임스페이스 규칙을 따라 "
+"``$this->x = new X();``\ 를 사용합니다. 또는 :php:func:`model()` 함수를 사용할 수 있습니다: "
+"``$this->x = model('X');``"
 
 #: ../../source/installation/upgrade_models.rst:31
 msgid ""
@@ -102,6 +111,10 @@ msgid ""
 " ``namespace App\\Models\\Users;`` and the model path in the version 4 "
 "should look like this: **app/Models/Users/UserContact.php**"
 msgstr ""
+"모델 구조에 하위 디렉토리를 사용하는 경우 이에 맞게 네임스페이스를 변경해야 합니다. "
+"예: **application/models/users/user_contact.php**\ 에 위치한 버전 3 모델이 있다면, "
+"네임스페이스는 ``namespace App\\Models\\Users;``\ 여야 하고 버전 4의 모델 경로는 "
+"**app/Models/Users/UserContact.php**\ 와 같아야 합니다."
 
 #: ../../source/installation/upgrade_models.rst:34
 msgid ""
@@ -111,30 +124,34 @@ msgid ""
 "there is an ``insert($data)`` method. You can optionally make use of all "
 "those built-in methods and migrate your code to the new methods."
 msgstr ""
+"CI4의 새 모델에는 많은 내장 메서드가 있습니다. 예를 들어, ``find($id)`` 메서드를 사용하면 "
+"기본 키가 ``$id``\ 와 같은 데이터를 찾을 수 있습니다. 데이터 삽입도 이전보다 쉬워졌습니다. "
+"CI4에는 ``insert($data)`` 메서드가 있습니다. 선택적으로 이러한 내장 메서드를 모두 활용하여 "
+"코드를 새 메서드로 마이그레이션할 수 있습니다."
 
 #: ../../source/installation/upgrade_models.rst:37
 msgid "You can find more information to those methods in :doc:`../models/model`."
-msgstr ""
+msgstr "이러한 메서드에 대한 자세한 정보는 :doc:`../models/model`\ 에서 확인할 수 있습니다."
 
 #: ../../source/installation/upgrade_models.rst:40
 msgid "Code Example"
-msgstr ""
+msgstr "코드 예제"
 
 #: ../../source/installation/upgrade_models.rst:43
 msgid "CodeIgniter Version 3.x"
-msgstr ""
+msgstr "CodeIgniter 버전 3.x"
 
 #: ../../source/installation/upgrade_models.rst:45
 msgid "Path: **application/models**:"
-msgstr ""
+msgstr "경로: **application/models**:"
 
 #: ../../source/installation/upgrade_models.rst:50
 msgid "CodeIgniter Version 4.x"
-msgstr ""
+msgstr "CodeIgniter 버전 4.x"
 
 #: ../../source/installation/upgrade_models.rst:52
 msgid "Path: **app/Models**:"
-msgstr ""
+msgstr "경로: **app/Models**:"
 
 #: ../../source/installation/upgrade_models.rst:56
 msgid ""
@@ -142,8 +159,9 @@ msgid ""
 "Builder directly in the model. Note that when you use Query Builder "
 "directly, you cannot use features in CodeIgniter's Model."
 msgstr ""
+"위 코드는 CI3에서 CI4로의 직접 변환입니다. 모델에서 쿼리 빌더를 직접 사용합니다. "
+"쿼리 빌더를 직접 사용할 때는 CodeIgniter 모델의 기능을 사용할 수 없다는 점에 유의하십시오."
 
 #: ../../source/installation/upgrade_models.rst:60
 msgid "If you want to use CodeIgniter's Model features, the code will be:"
-msgstr ""
-
+msgstr "CodeIgniter의 모델 기능을 사용하려면 코드는 다음과 같습니다:"

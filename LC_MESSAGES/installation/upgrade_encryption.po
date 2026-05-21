@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,37 +21,42 @@ msgstr ""
 
 #: ../../source/installation/upgrade_encryption.rst:2
 msgid "Upgrade Encryption"
-msgstr ""
+msgstr "암호화 업그레이드"
 
 #: ../../source/installation/upgrade_encryption.rst:9
 msgid "Documentations"
-msgstr ""
+msgstr "문서"
 
 #: ../../source/installation/upgrade_encryption.rst:11
 msgid ""
 "`Encryption Library Documentation CodeIgniter 3.x "
 "<http://codeigniter.com/userguide3/libraries/encryption.html>`_"
 msgstr ""
+"`암호화 라이브러리 문서 CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/libraries/encryption.html>`_"
 
 #: ../../source/installation/upgrade_encryption.rst:12
 msgid ""
 ":doc:`Encryption Service Documentation CodeIgniter 4.x "
 "</libraries/encryption>`"
 msgstr ""
+":doc:`암호화 서비스 문서 CodeIgniter 4.x "
+"</libraries/encryption>`"
 
 #: ../../source/installation/upgrade_encryption.rst:15
 msgid "What has been changed"
-msgstr ""
+msgstr "변경된 사항"
 
 #: ../../source/installation/upgrade_encryption.rst:17
 msgid ""
 "The support for ``MCrypt`` has been dropped, as that has been deprecated "
 "as of PHP 7.2."
 msgstr ""
+"PHP 7.2부터 deprecated된 ``MCrypt``\ 에 대한 지원이 중단되었습니다."
 
 #: ../../source/installation/upgrade_encryption.rst:20
 msgid "Upgrade Guide"
-msgstr ""
+msgstr "업그레이드 가이드"
 
 #: ../../source/installation/upgrade_encryption.rst:22
 msgid ""
@@ -60,6 +64,9 @@ msgid ""
 "from **application/config/config.php** to ``public $key = 'abc123';`` in "
 "**app/Config/Encryption.php**."
 msgstr ""
+"설정에서 ``$config['encryption_key'] = 'abc123';``\ 이 "
+"**application/config/config.php**\ 에서 **app/Config/Encryption.php**\ 의 "
+"``public $key = 'abc123';``\ 으로 이동되었습니다."
 
 #: ../../source/installation/upgrade_encryption.rst:23
 msgid ""
@@ -67,6 +74,8 @@ msgid ""
 "settings to maintain compatibility. See :ref:`encryption-compatible-with-"
 "ci3`."
 msgstr ""
+"CI3의 암호화로 암호화된 데이터를 복호화해야 하는 경우, 호환성을 유지하도록 설정을 구성하십시오. "
+":ref:`encryption-compatible-with-ci3`\ 를 참조하십시오."
 
 #: ../../source/installation/upgrade_encryption.rst:24
 msgid ""
@@ -75,16 +84,18 @@ msgid ""
 "service('encrypter');`` and change the methods for encryption and "
 "decrypting like in the following code example."
 msgstr ""
+"암호화 라이브러리를 사용한 모든 곳에서 ``$this->load->library('encryption');``\ 을 "
+"``$encrypter = service('encrypter');``\ 로 교체하고, 다음 코드 예제와 같이 "
+"암호화 및 복호화 메서드를 변경해야 합니다."
 
 #: ../../source/installation/upgrade_encryption.rst:27
 msgid "Code Example"
-msgstr ""
+msgstr "코드 예제"
 
 #: ../../source/installation/upgrade_encryption.rst:30
 msgid "CodeIgniter Version 3.x"
-msgstr ""
+msgstr "CodeIgniter 버전 3.x"
 
 #: ../../source/installation/upgrade_encryption.rst:35
 msgid "CodeIgniter Version 4.x"
-msgstr ""
-
+msgstr "CodeIgniter 버전 4.x"

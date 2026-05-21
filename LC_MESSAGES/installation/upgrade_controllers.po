@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,43 +21,48 @@ msgstr ""
 
 #: ../../source/installation/upgrade_controllers.rst:2
 msgid "Upgrade Controllers"
-msgstr ""
+msgstr "컨트롤러 업그레이드"
 
 #: ../../source/installation/upgrade_controllers.rst:9
 msgid "Documentations"
-msgstr ""
+msgstr "문서"
 
 #: ../../source/installation/upgrade_controllers.rst:11
 msgid ""
 "`Controller Documentation CodeIgniter 3.x "
 "<http://codeigniter.com/userguide3/general/controllers.html>`_"
 msgstr ""
+"`컨트롤러 문서 CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/general/controllers.html>`_"
 
 #: ../../source/installation/upgrade_controllers.rst:12
 msgid ":doc:`Controller Documentation CodeIgniter 4.x </incoming/controllers>`"
-msgstr ""
+msgstr ":doc:`컨트롤러 문서 CodeIgniter 4.x </incoming/controllers>`"
 
 #: ../../source/installation/upgrade_controllers.rst:15
 msgid "What has been changed"
-msgstr ""
+msgstr "변경된 사항"
 
 #: ../../source/installation/upgrade_controllers.rst:17
 msgid ""
 "Since namespaces have been added to CodeIgniter 4, the controllers must "
 "be changed to support namespaces."
 msgstr ""
+"CodeIgniter 4에 네임스페이스가 추가되었으므로, 컨트롤러를 네임스페이스를 지원하도록 변경해야 합니다."
 
 #: ../../source/installation/upgrade_controllers.rst:18
 msgid ""
 "The constructor of CI4 Controller does not automatically load core "
 "classes into the properties."
 msgstr ""
+"CI4 컨트롤러의 생성자는 코어 클래스를 속성에 자동으로 로드하지 않습니다."
 
 #: ../../source/installation/upgrade_controllers.rst:19
 msgid ""
 "CI4's Controller has a special constructor :ref:`initController() "
 "<controller-constructor>`."
 msgstr ""
+"CI4의 컨트롤러는 특별한 생성자 :ref:`initController() <controller-constructor>`\ 를 가지고 있습니다."
 
 #: ../../source/installation/upgrade_controllers.rst:20
 msgid ""
@@ -66,12 +70,16 @@ msgid ""
 ":doc:`Responses </outgoing/response>` objects for you to work with - more"
 " powerful than the CI3-way."
 msgstr ""
+"CI4는 CI3 방식보다 더 강력한 :doc:`Request </incoming/incomingrequest>` 및 "
+":doc:`Responses </outgoing/response>` 객체를 제공합니다."
 
 #: ../../source/installation/upgrade_controllers.rst:22
 msgid ""
 "If you want a base controller (``MY_Controller`` in CI3), use "
 "**app/Controllers/BaseController.php**."
 msgstr ""
+"기본 컨트롤러(CI3의 ``MY_Controller``)가 필요하면 "
+"**app/Controllers/BaseController.php**\ 를 사용하십시오."
 
 #: ../../source/installation/upgrade_controllers.rst:23
 msgid ""
@@ -79,36 +87,41 @@ msgid ""
 "it is recommended that a string or Response object be returned from "
 "Controllers."
 msgstr ""
+"CI3처럼 컨트롤러 내에서 ``echo``\ 를 호출하는 것은 여전히 지원되지만, "
+"컨트롤러에서 문자열 또는 Response 객체를 반환하는 것이 권장됩니다."
 
 #: ../../source/installation/upgrade_controllers.rst:27
 msgid "Upgrade Guide"
-msgstr ""
+msgstr "업그레이드 가이드"
 
 #: ../../source/installation/upgrade_controllers.rst:29
 msgid "First, move all controller files to the folder **app/Controllers**."
-msgstr ""
+msgstr "먼저 모든 컨트롤러 파일을 **app/Controllers** 폴더로 이동하십시오."
 
 #: ../../source/installation/upgrade_controllers.rst:30
 msgid ""
 "Add this line just after the opening php tag: ``namespace "
 "App\\Controllers;``"
 msgstr ""
+"PHP 여는 태그 바로 뒤에 다음 줄을 추가하십시오: ``namespace App\\Controllers;``"
 
 #: ../../source/installation/upgrade_controllers.rst:31
 msgid "Replace ``extends CI_Controller`` with ``extends BaseController``."
-msgstr ""
+msgstr "``extends CI_Controller``\ 를 ``extends BaseController``\ 로 교체하십시오."
 
 #: ../../source/installation/upgrade_controllers.rst:32
 msgid ""
 "Remove the line ``defined('BASEPATH') OR exit('No direct script access "
 "allowed');`` if it exists."
 msgstr ""
+"``defined('BASEPATH') OR exit('No direct script access allowed');`` 줄이 있으면 제거하십시오."
 
 #: ../../source/installation/upgrade_controllers.rst:34
 msgid ""
 "If you use sub-directories in your controller structure, you have to "
 "change the namespace according to that."
 msgstr ""
+"컨트롤러 구조에 하위 디렉토리를 사용하는 경우, 이에 맞게 네임스페이스를 변경해야 합니다."
 
 #: ../../source/installation/upgrade_controllers.rst:38
 msgid ""
@@ -119,6 +132,10 @@ msgid ""
 "**app/Controllers/Users/Auth/Register.php**. Make sure to have the first "
 "letters of the sub-directories as capitalized."
 msgstr ""
+"예를 들어, **application/controllers/users/auth/Register.php**\ 에 위치한 버전 3 컨트롤러가 있다면, "
+"네임스페이스는 ``namespace App\\Controllers\\Users\\Auth;``\ 여야 하고 "
+"버전 4에서 컨트롤러 경로는 **app/Controllers/Users/Auth/Register.php**\ 와 같아야 합니다. "
+"하위 디렉토리의 첫 글자는 반드시 대문자로 작성하십시오."
 
 #: ../../source/installation/upgrade_controllers.rst:40
 msgid ""
@@ -126,24 +143,25 @@ msgid ""
 "definition in order to extend the ``BaseController``: ``use "
 "App\\Controllers\\BaseController;``"
 msgstr ""
+"그 다음 ``BaseController``\ 를 확장하기 위해 네임스페이스 정의 아래에 ``use`` 구문을 추가해야 합니다: "
+"``use App\\Controllers\\BaseController;``"
 
 #: ../../source/installation/upgrade_controllers.rst:43
 msgid "Code Example"
-msgstr ""
+msgstr "코드 예제"
 
 #: ../../source/installation/upgrade_controllers.rst:46
 msgid "CodeIgniter Version 3.x"
-msgstr ""
+msgstr "CodeIgniter 버전 3.x"
 
 #: ../../source/installation/upgrade_controllers.rst:48
 msgid "Path: **application/controllers**:"
-msgstr ""
+msgstr "경로: **application/controllers**:"
 
 #: ../../source/installation/upgrade_controllers.rst:53
 msgid "CodeIgniter Version 4.x"
-msgstr ""
+msgstr "CodeIgniter 버전 4.x"
 
 #: ../../source/installation/upgrade_controllers.rst:55
 msgid "Path: **app/Controllers**:"
-msgstr ""
-
+msgstr "경로: **app/Controllers**:"
