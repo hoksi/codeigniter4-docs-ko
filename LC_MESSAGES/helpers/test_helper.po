@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,61 +21,62 @@ msgstr ""
 
 #: ../../source/helpers/test_helper.rst:3
 msgid "Test Helper"
-msgstr ""
+msgstr "테스트(Test) 헬퍼"
 
 #: ../../source/helpers/test_helper.rst:5
 msgid ""
 "The Test Helper file contains functions that assist in testing your "
 "project."
 msgstr ""
+"테스트(Test) 헬퍼 파일에는 프로젝트 테스트를 지원하는 함수가 포함되어 있습니다."
 
 #: ../../source/helpers/test_helper.rst:12
 msgid "Loading this Helper"
-msgstr ""
+msgstr "헬퍼 로드"
 
 #: ../../source/helpers/test_helper.rst:14
 msgid "This helper is loaded using the following code:"
-msgstr ""
+msgstr "이 헬퍼는 다음 코드를 사용하여 로드합니다:"
 
 #: ../../source/helpers/test_helper.rst:19
 msgid "Available Functions"
-msgstr ""
+msgstr "사용 가능한 함수"
 
 #: ../../source/helpers/test_helper.rst:21
 msgid "The following functions are available:"
-msgstr ""
+msgstr "다음 함수를 사용할 수 있습니다:"
 
 #: ../../source/helpers/test_helper.rst
 msgid "Parameters"
-msgstr ""
+msgstr "매개변수"
 
 #: ../../source/helpers/test_helper.rst:25
 msgid "Instance or name of the model to use with Fabricator"
-msgstr ""
+msgstr "Fabricator와 함께 사용할 모델의 인스턴스 또는 이름"
 
 #: ../../source/helpers/test_helper.rst:26
 msgid "Overriding data to pass to Fabricator::setOverrides()"
-msgstr ""
+msgstr "Fabricator::setOverrides()에 전달할 재정의 데이터"
 
 #: ../../source/helpers/test_helper.rst
 msgid "Returns"
-msgstr ""
+msgstr "반환값"
 
 #: ../../source/helpers/test_helper.rst:27
 msgid "A random fake item created and added to the database by Fabricator"
-msgstr ""
+msgstr "Fabricator가 생성하여 데이터베이스에 추가한 임의의 가짜 항목"
 
 #: ../../source/helpers/test_helper.rst
 msgid "Return type"
-msgstr ""
+msgstr "반환 타입"
 
 #: ../../source/helpers/test_helper.rst:30
 msgid ""
 "Uses ``CodeIgniter\\Test\\Fabricator`` to create a random item and add it"
 " to the database."
 msgstr ""
+"``CodeIgniter\\Test\\Fabricator``\ 를 사용하여 임의의 항목을 생성하고 데이터베이스에 추가합니다."
 
 #: ../../source/helpers/test_helper.rst:32
 msgid "Usage example:"
-msgstr ""
-
+msgstr "사용 예:"

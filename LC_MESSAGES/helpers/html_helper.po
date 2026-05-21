@@ -1,17 +1,16 @@
-# SOME DESCRIPTIVE TITLE.
+# CodeIgniter 4 User Guide Korean Translation.
 # Copyright (C) 2019-2026 CodeIgniter Foundation
 # This file is distributed under the same license as the CodeIgniter
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+# hoksi <hoksi@github.com>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-05-21 00:00+0900\n"
+"Last-Translator: hoksi <hoksi@github.com>\n"
 "Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -22,15 +21,15 @@ msgstr ""
 
 #: ../../source/helpers/html_helper.rst:3
 msgid "HTML Helper"
-msgstr ""
+msgstr "HTML 헬퍼(HTML Helper)"
 
 #: ../../source/helpers/html_helper.rst:5
 msgid "The HTML Helper file contains functions that assist in working with HTML."
-msgstr ""
+msgstr "HTML 헬퍼 파일은 HTML 작업을 돕는 함수들을 포함하고 있습니다."
 
 #: ../../source/helpers/html_helper.rst:12
 msgid "Configuration"
-msgstr ""
+msgstr "설정"
 
 #: ../../source/helpers/html_helper.rst:14
 msgid ""
@@ -39,56 +38,60 @@ msgid ""
 "need to be compatible with XHTML, you must set the ``$html5`` property in"
 " **app/Config/DocTypes.php** to ``false``."
 msgstr ""
+"``v4.3.0``\\ 부터 ``html_helper`` 함수의 void HTML 요소(예: ``<img>``)는 기본적으로 HTML5 "
+"호환으로 변경되었습니다. XHTML과 호환되어야 하는 경우 **app/Config/DocTypes.php**\\ 의 "
+"``$html5`` 속성을 ``false``\\ 로 설정해야 합니다."
 
 #: ../../source/helpers/html_helper.rst:17
 msgid "Loading this Helper"
-msgstr ""
+msgstr "헬퍼 로드하기"
 
 #: ../../source/helpers/html_helper.rst:19
 msgid "This helper is loaded using the following code:"
-msgstr ""
+msgstr "이 헬퍼는 다음 코드를 사용하여 로드합니다:"
 
 #: ../../source/helpers/html_helper.rst:24
 msgid "Available Functions"
-msgstr ""
+msgstr "사용 가능한 함수"
 
 #: ../../source/helpers/html_helper.rst:26
 msgid "The following functions are available:"
-msgstr ""
+msgstr "다음 함수들을 사용할 수 있습니다:"
 
 #: ../../source/helpers/html_helper.rst
 msgid "Parameters"
-msgstr ""
+msgstr "매개변수"
 
 #: ../../source/helpers/html_helper.rst:30
 msgid "Image source URI, or array of attributes and values"
-msgstr ""
+msgstr "이미지 소스 URI, 또는 속성과 값의 배열"
 
 #: ../../source/helpers/html_helper.rst:31
 msgid "Should ``Config\\App::$indexPage`` be added to the source path"
-msgstr ""
+msgstr "소스 경로에 ``Config\\App::$indexPage``\\ 를 추가할지 여부"
 
 #: ../../source/helpers/html_helper.rst:32
 msgid "Additional HTML attributes"
-msgstr ""
+msgstr "추가 HTML 속성"
 
 #: ../../source/helpers/html_helper.rst
 msgid "Returns"
-msgstr ""
+msgstr "반환값"
 
 #: ../../source/helpers/html_helper.rst:33
 msgid "An HTML image element"
-msgstr ""
+msgstr "HTML 이미지 요소"
 
 #: ../../source/helpers/html_helper.rst
 msgid "Return type"
-msgstr ""
+msgstr "반환 타입"
 
 #: ../../source/helpers/html_helper.rst:36
 msgid ""
 "Lets you create HTML ``<img>`` elements. The first parameter contains the"
 " image source. Example:"
 msgstr ""
+"HTML ``<img>`` 요소를 생성할 수 있습니다. 첫 번째 매개변수에는 이미지 소스가 들어갑니다. 예제:"
 
 #: ../../source/helpers/html_helper.rst:41
 msgid ""
@@ -97,6 +100,8 @@ msgid ""
 "address it creates. Presumably, this would be if you were using a media "
 "controller:"
 msgstr ""
+"선택적 두 번째 매개변수로 true/false 값을 사용하여 생성되는 주소에 ``Config\\App::$indexPage``\\ 를 "
+"*src*\\ 에 추가할지 여부를 지정할 수 있습니다. 미디어 컨트롤러를 사용하는 경우에 해당합니다:"
 
 #: ../../source/helpers/html_helper.rst:47
 msgid ""
@@ -105,37 +110,41 @@ msgid ""
 "attribute is not provided, CodeIgniter will generate one with empty "
 "string."
 msgstr ""
+"또한 첫 번째 매개변수로 연관 배열을 전달하면 모든 속성과 값을 완전히 제어할 수 있습니다. "
+"*alt* 속성이 제공되지 않으면 CodeIgniter가 빈 문자열로 자동 생성합니다."
 
 #: ../../source/helpers/html_helper.rst:51
 #: ../../source/helpers/html_helper.rst:95
 #: ../../source/helpers/html_helper.rst:120
 #: ../../source/helpers/html_helper.rst:352
 msgid "Example:"
-msgstr ""
+msgstr "예제:"
 
 #: ../../source/helpers/html_helper.rst:57
 msgid "Path to the image file"
-msgstr ""
+msgstr "이미지 파일 경로"
 
 #: ../../source/helpers/html_helper.rst:58
 msgid "MIME type to use, or null to guess"
-msgstr ""
+msgstr "사용할 MIME 타입, 또는 자동 감지를 위한 null"
 
 #: ../../source/helpers/html_helper.rst:59
 msgid "base64 encoded binary image string"
-msgstr ""
+msgstr "base64 인코딩된 바이너리 이미지 문자열"
 
 #: ../../source/helpers/html_helper.rst:62
 msgid ""
 "Generates a src-ready string from an image using the \"data:\" protocol. "
 "Example:"
 msgstr ""
+"\"data:\" 프로토콜을 사용하여 이미지로부터 src에 사용 가능한 문자열을 생성합니다. 예제:"
 
 #: ../../source/helpers/html_helper.rst:67
 msgid ""
 "There is an optional second parameter to specify the MIME type, otherwise"
 " the function will use your Mimes config to guess:"
 msgstr ""
+"선택적 두 번째 매개변수로 MIME 타입을 지정할 수 있으며, 지정하지 않으면 함수가 Mimes 설정을 사용하여 추측합니다:"
 
 #: ../../source/helpers/html_helper.rst:72
 msgid ""
@@ -144,38 +153,41 @@ msgid ""
 "large files, but it provides a convenient way of serving images from your"
 " app that are not web-accessible (e.g., in **public/**)."
 msgstr ""
+"``$path``\\ 는 존재해야 하며 ``data:`` 프로토콜이 지원하는 읽기 가능한 이미지 형식이어야 합니다. "
+"이 함수는 매우 큰 파일에는 권장되지 않지만, 웹에서 직접 접근할 수 없는 이미지(예: **public/** 외부)를 "
+"앱에서 제공하는 편리한 방법을 제공합니다."
 
 #: ../../source/helpers/html_helper.rst:78
 msgid "The source of the link file"
-msgstr ""
+msgstr "링크 파일의 소스"
 
 #: ../../source/helpers/html_helper.rst:79
 msgid "Relation type"
-msgstr ""
+msgstr "관계 타입"
 
 #: ../../source/helpers/html_helper.rst:80
 msgid "Type of the related document"
-msgstr ""
+msgstr "연결된 문서의 타입"
 
 #: ../../source/helpers/html_helper.rst:81
 msgid "Link title"
-msgstr ""
+msgstr "링크 제목"
 
 #: ../../source/helpers/html_helper.rst:82
 msgid "Media type"
-msgstr ""
+msgstr "미디어 타입"
 
 #: ../../source/helpers/html_helper.rst:83
 msgid "Should indexPage be added to the link path"
-msgstr ""
+msgstr "링크 경로에 indexPage를 추가할지 여부"
 
 #: ../../source/helpers/html_helper.rst:84
 msgid "Hreflang type"
-msgstr ""
+msgstr "Hreflang 타입"
 
 #: ../../source/helpers/html_helper.rst:85
 msgid "An HTML link element"
-msgstr ""
+msgstr "HTML link 요소"
 
 #: ../../source/helpers/html_helper.rst:88
 msgid ""
@@ -183,6 +195,8 @@ msgid ""
 "links, as well as other links. The parameters are *href*, with optional "
 "*rel*, *type*, *title*, *media*, *indexPage* and *hreflang*."
 msgstr ""
+"HTML ``<link>`` 요소를 생성할 수 있습니다. 스타일시트 링크 및 다른 링크에 유용합니다. "
+"매개변수는 *href*\\ 이며, 선택적으로 *rel*, *type*, *title*, *media*, *indexPage*, *hreflang*\\ 을 사용할 수 있습니다."
 
 #: ../../source/helpers/html_helper.rst:92
 msgid ""
@@ -190,36 +204,47 @@ msgid ""
 "the page specified by ``$config['indexPage']`` added to the address it "
 "creates."
 msgstr ""
+"*indexPage*\\ 는 생성되는 주소에 ``$config['indexPage']``\\ 로 지정된 페이지를 "
+"*href*\\ 에 추가할지 여부를 지정하는 불리언 값입니다."
+
+#: ../../source/helpers/html_helper.rst:95
+#: ../../source/helpers/html_helper.rst:120
+#: ../../source/helpers/html_helper.rst:352
+msgid "Example:"
+msgstr "예제:"
 
 #: ../../source/helpers/html_helper.rst:99
 msgid "Further examples:"
-msgstr ""
+msgstr "추가 예제:"
 
 #: ../../source/helpers/html_helper.rst:103
 msgid ""
 "Alternately, an associative array can be passed to the ``link_tag()`` "
 "function for complete control over all attributes and values:"
 msgstr ""
+"또는 연관 배열을 ``link_tag()`` 함수에 전달하면 모든 속성과 값을 완전히 제어할 수 있습니다:"
 
 #: ../../source/helpers/html_helper.rst:110
 msgid ""
 "The source name or URL of a JavaScript file, or an associative array "
 "specifying the attributes"
 msgstr ""
+"JavaScript 파일의 소스 이름 또는 URL, 또는 속성을 지정하는 연관 배열"
 
 #: ../../source/helpers/html_helper.rst:111
 msgid "Whether to treat ``$src`` as a routed URI string"
-msgstr ""
+msgstr "``$src``\\ 를 라우팅된 URI 문자열로 처리할지 여부"
 
 #: ../../source/helpers/html_helper.rst:112
 msgid "An HTML script element"
-msgstr ""
+msgstr "HTML script 요소"
 
 #: ../../source/helpers/html_helper.rst:115
 msgid ""
 "Lets you create HTML ``<script>`` elements. The parameters are *src* and "
 "optional *indexPage*."
 msgstr ""
+"HTML ``<script>`` 요소를 생성할 수 있습니다. 매개변수는 *src*\\ 와 선택적 *indexPage*\\ 입니다."
 
 #: ../../source/helpers/html_helper.rst:117
 msgid ""
@@ -227,17 +252,20 @@ msgid ""
 "the page specified by ``$config['indexPage']`` added to the address it "
 "creates."
 msgstr ""
+"*indexPage*\\ 는 생성되는 주소에 ``$config['indexPage']``\\ 로 지정된 페이지를 "
+"*src*\\ 에 추가할지 여부를 지정하는 불리언 값입니다."
 
 #: ../../source/helpers/html_helper.rst:124
 msgid ""
 "Alternately, an associative array can be passed to the ``script_tag()`` "
 "function for complete control over all attributes and values:"
 msgstr ""
+"또는 연관 배열을 ``script_tag()`` 함수에 전달하면 모든 속성과 값을 완전히 제어할 수 있습니다:"
 
 #: ../../source/helpers/html_helper.rst:131
 #: ../../source/helpers/html_helper.rst:204
 msgid "List entries"
-msgstr ""
+msgstr "목록 항목"
 
 #: ../../source/helpers/html_helper.rst:132
 #: ../../source/helpers/html_helper.rst:205
@@ -247,38 +275,40 @@ msgstr ""
 #: ../../source/helpers/html_helper.rst:294
 #: ../../source/helpers/html_helper.rst:320
 msgid "HTML attributes"
-msgstr ""
+msgstr "HTML 속성"
 
 #: ../../source/helpers/html_helper.rst:133
 msgid "An HTML unordered list element"
-msgstr ""
+msgstr "HTML 비순서 목록 요소"
 
 #: ../../source/helpers/html_helper.rst:136
 msgid ""
 "Permits you to generate an unordered HTML list from a simple or multi-"
 "dimensional array. Example:"
 msgstr ""
+"단순 배열 또는 다차원 배열로부터 비순서 HTML 목록을 생성할 수 있습니다. 예제:"
 
 #: ../../source/helpers/html_helper.rst:141
 #: ../../source/helpers/html_helper.rst:156
 #: ../../source/helpers/html_helper.rst:227
 #: ../../source/helpers/html_helper.rst:305
 msgid "The above code will produce this:"
-msgstr ""
+msgstr "위의 코드는 다음을 생성합니다:"
 
 #: ../../source/helpers/html_helper.rst:152
 msgid "Here is a more complex example, using a multi-dimensional array:"
-msgstr ""
+msgstr "다차원 배열을 사용하는 더 복잡한 예제입니다:"
 
 #: ../../source/helpers/html_helper.rst:206
 msgid "An HTML ordered list element"
-msgstr ""
+msgstr "HTML 순서 목록 요소"
 
 #: ../../source/helpers/html_helper.rst:209
 msgid ""
 "Identical to :php:func:`ul()`, only it produces ``<ol>`` element for "
 "ordered lists instead of ``<ul>``."
 msgstr ""
+":php:func:`ul()`\\ 과 동일하지만, ``<ul>`` 대신 순서 목록을 위한 ``<ol>`` 요소를 생성합니다."
 
 #: ../../source/helpers/html_helper.rst:214
 #: ../../source/helpers/html_helper.rst:253
@@ -286,175 +316,186 @@ msgid ""
 "Either a source string or an array of sources. See :php:func:`source()` "
 "function"
 msgstr ""
+"소스 문자열 또는 소스 배열. :php:func:`source()` 함수 참고"
 
 #: ../../source/helpers/html_helper.rst:215
 msgid ""
 "The message to display if the video element is not supported by the "
 "browser"
 msgstr ""
+"브라우저에서 video 요소를 지원하지 않을 때 표시할 메시지"
 
 #: ../../source/helpers/html_helper.rst:217
 #: ../../source/helpers/html_helper.rst:256
 msgid "Use the track function inside an array. See :php:func:`track()` function"
-msgstr ""
+msgstr "배열 안에서 track 함수를 사용합니다. :php:func:`track()` 함수 참고"
 
 #: ../../source/helpers/html_helper.rst:218
 msgid "Should indexPage be added to the video source path"
-msgstr ""
+msgstr "비디오 소스 경로에 indexPage를 추가할지 여부"
 
 #: ../../source/helpers/html_helper.rst:219
 msgid "An HTML video element"
-msgstr ""
+msgstr "HTML video 요소"
 
 #: ../../source/helpers/html_helper.rst:222
 msgid ""
 "Permits you to generate an HTML video element from a source string or an "
 "array of sources. Example:"
 msgstr ""
+"소스 문자열 또는 소스 배열로부터 HTML video 요소를 생성할 수 있습니다. 예제:"
 
 #: ../../source/helpers/html_helper.rst:254
 msgid ""
 "The message to display if the audio element is not supported by the "
 "browser"
 msgstr ""
+"브라우저에서 audio 요소를 지원하지 않을 때 표시할 메시지"
 
 #: ../../source/helpers/html_helper.rst:257
 msgid "Should indexPage be added to the audio source path"
-msgstr ""
+msgstr "오디오 소스 경로에 indexPage를 추가할지 여부"
 
 #: ../../source/helpers/html_helper.rst:258
 msgid "An HTML audio element"
-msgstr ""
+msgstr "HTML audio 요소"
 
 #: ../../source/helpers/html_helper.rst:261
 msgid ""
 "Identical to :php:func:`video()`, only it produces ``<audio>`` element "
 "instead of ``<video>``."
 msgstr ""
+":php:func:`video()`\\ 와 동일하지만, ``<video>`` 대신 ``<audio>`` 요소를 생성합니다."
 
 #: ../../source/helpers/html_helper.rst:265
 msgid "The path of the media resource"
-msgstr ""
+msgstr "미디어 리소스의 경로"
 
 #: ../../source/helpers/html_helper.rst:266
 msgid "The MIME-type of the resource with optional codecs parameters"
-msgstr ""
+msgstr "선택적 코덱 매개변수가 포함된 리소스의 MIME 타입"
 
 #: ../../source/helpers/html_helper.rst:268
 msgid "An HTML source element"
-msgstr ""
+msgstr "HTML source 요소"
 
 #: ../../source/helpers/html_helper.rst:271
 msgid ""
 "Lets you create HTML ``<source>`` elements. The first parameter contains "
 "the path of the resource. Example:"
 msgstr ""
+"HTML ``<source>`` 요소를 생성할 수 있습니다. 첫 번째 매개변수에는 리소스의 경로가 들어갑니다. 예제:"
 
 #: ../../source/helpers/html_helper.rst:278
 msgid "The path of the resource to embed"
-msgstr ""
+msgstr "삽입할 리소스의 경로"
 
 #: ../../source/helpers/html_helper.rst:279
 msgid "MIME-type"
-msgstr ""
+msgstr "MIME 타입"
 
 #: ../../source/helpers/html_helper.rst:281
 msgid "Should indexPage be added to the source path"
-msgstr ""
+msgstr "소스 경로에 indexPage를 추가할지 여부"
 
 #: ../../source/helpers/html_helper.rst:282
 msgid "An HTML embed element"
-msgstr ""
+msgstr "HTML embed 요소"
 
 #: ../../source/helpers/html_helper.rst:285
 msgid ""
 "Lets you create HTML ``<embed>`` elements. The first parameter contains "
 "the embed source. Example:"
 msgstr ""
+"HTML ``<embed>`` 요소를 생성할 수 있습니다. 첫 번째 매개변수에는 삽입 소스가 들어갑니다. 예제:"
 
 #: ../../source/helpers/html_helper.rst:292
 msgid "A resource URL"
-msgstr ""
+msgstr "리소스 URL"
 
 #: ../../source/helpers/html_helper.rst:293
 msgid "Content-type of the resource"
-msgstr ""
+msgstr "리소스의 Content-type"
 
 #: ../../source/helpers/html_helper.rst:295
 msgid "Should indexPage be added to the resource URL"
-msgstr ""
+msgstr "리소스 URL에 indexPage를 추가할지 여부"
 
 #: ../../source/helpers/html_helper.rst:296
 msgid "Use the param function inside an array. See :php:func:`param()` function"
-msgstr ""
+msgstr "배열 안에서 param 함수를 사용합니다. :php:func:`param()` 함수 참고"
 
 #: ../../source/helpers/html_helper.rst:297
 msgid "An HTML object element"
-msgstr ""
+msgstr "HTML object 요소"
 
 #: ../../source/helpers/html_helper.rst:300
 msgid ""
 "Lets you create HTML ``<object>`` elements. The first parameter contains "
 "the object data. Example:"
 msgstr ""
+"HTML ``<object>`` 요소를 생성할 수 있습니다. 첫 번째 매개변수에는 object 데이터가 들어갑니다. 예제:"
 
 #: ../../source/helpers/html_helper.rst:318
 msgid "The name of the parameter"
-msgstr ""
+msgstr "매개변수의 이름"
 
 #: ../../source/helpers/html_helper.rst:319
 msgid "The value of the parameter"
-msgstr ""
+msgstr "매개변수의 값"
 
 #: ../../source/helpers/html_helper.rst:321
 msgid "An HTML param element"
-msgstr ""
+msgstr "HTML param 요소"
 
 #: ../../source/helpers/html_helper.rst:324
 msgid ""
 "Lets you create HTML ``<param>`` elements. The first parameter contains "
 "the param source. Example:"
 msgstr ""
+"HTML ``<param>`` 요소를 생성할 수 있습니다. 첫 번째 매개변수에는 param 소스가 들어갑니다. 예제:"
 
 #: ../../source/helpers/html_helper.rst:331
 msgid "The path of the track (.vtt file)"
-msgstr ""
+msgstr "트랙 파일(.vtt 파일)의 경로"
 
 #: ../../source/helpers/html_helper.rst:332
 msgid "The kind of timed track"
-msgstr ""
+msgstr "시간 기반 트랙의 종류"
 
 #: ../../source/helpers/html_helper.rst:333
 msgid "The language of the timed track"
-msgstr ""
+msgstr "시간 기반 트랙의 언어"
 
 #: ../../source/helpers/html_helper.rst:334
 msgid "A user-readable title for the timed track"
-msgstr ""
+msgstr "시간 기반 트랙의 사용자가 읽을 수 있는 제목"
 
 #: ../../source/helpers/html_helper.rst:335
 msgid "An HTML track element"
-msgstr ""
+msgstr "HTML track 요소"
 
 #: ../../source/helpers/html_helper.rst:338
 msgid ""
 "Generates a track element to specify timed tracks. The tracks are "
 "formatted in WebVTT format. Example:"
 msgstr ""
+"시간 기반 트랙을 지정하는 track 요소를 생성합니다. 트랙은 WebVTT 형식으로 작성됩니다. 예제:"
 
 #: ../../source/helpers/html_helper.rst:345
 msgid "Doctype name"
-msgstr ""
+msgstr "Doctype 이름"
 
 #: ../../source/helpers/html_helper.rst:346
 msgid "An HTML DocType declaration"
-msgstr ""
+msgstr "HTML DocType 선언"
 
 #: ../../source/helpers/html_helper.rst:349
 msgid ""
 "Helps you generate document type declarations (DTD's). HTML 5 is used by "
 "default, but many doctypes are available."
 msgstr ""
+"문서 타입 선언(DTD)을 생성하는 데 도움을 줍니다. 기본적으로 HTML 5가 사용되지만, 다양한 doctype을 사용할 수 있습니다."
 
 #: ../../source/helpers/html_helper.rst:356
 msgid ""
@@ -462,232 +503,260 @@ msgid ""
 "from **app/Config/DocTypes.php**, or they could be overridden in your "
 "**.env** configuration."
 msgstr ""
+"다음은 미리 정의된 doctype 목록입니다. 이 값들은 **app/Config/DocTypes.php**\\ 에서 가져오거나 "
+"**.env** 설정에서 재정의할 수 있습니다."
 
 #: ../../source/helpers/html_helper.rst:360
 msgid "Document type"
-msgstr ""
+msgstr "문서 타입"
 
 #: ../../source/helpers/html_helper.rst:360
 msgid "$type parameter"
-msgstr ""
+msgstr "$type 매개변수"
 
 #: ../../source/helpers/html_helper.rst:360
 msgid "Result"
-msgstr ""
+msgstr "결과"
 
 #: ../../source/helpers/html_helper.rst:362
 msgid "XHTML 1.1"
-msgstr ""
+msgstr "XHTML 1.1"
 
 #: ../../source/helpers/html_helper.rst:362
 msgid "xhtml11"
-msgstr ""
+msgstr "xhtml11"
 
 #: ../../source/helpers/html_helper.rst:362
 msgid ""
 "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" "
 "\"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">"
 msgstr ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" "
+"\"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">"
 
 #: ../../source/helpers/html_helper.rst:363
 msgid "XHTML 1.0 Strict"
-msgstr ""
+msgstr "XHTML 1.0 Strict"
 
 #: ../../source/helpers/html_helper.rst:363
 msgid "xhtml1-strict"
-msgstr ""
+msgstr "xhtml1-strict"
 
 #: ../../source/helpers/html_helper.rst:363
 msgid ""
 "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" "
 "\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">"
 msgstr ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" "
+"\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">"
 
 #: ../../source/helpers/html_helper.rst:364
 msgid "XHTML 1.0 Transitional"
-msgstr ""
+msgstr "XHTML 1.0 Transitional"
 
 #: ../../source/helpers/html_helper.rst:364
 msgid "xhtml1-trans"
-msgstr ""
+msgstr "xhtml1-trans"
 
 #: ../../source/helpers/html_helper.rst:364
 msgid ""
 "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" "
 "\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">"
 msgstr ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" "
+"\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">"
 
 #: ../../source/helpers/html_helper.rst:365
 msgid "XHTML 1.0 Frameset"
-msgstr ""
+msgstr "XHTML 1.0 Frameset"
 
 #: ../../source/helpers/html_helper.rst:365
 msgid "xhtml1-frame"
-msgstr ""
+msgstr "xhtml1-frame"
 
 #: ../../source/helpers/html_helper.rst:365
 msgid ""
 "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Frameset//EN\" "
 "\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd\">"
 msgstr ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Frameset//EN\" "
+"\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd\">"
 
 #: ../../source/helpers/html_helper.rst:366
 msgid "XHTML Basic 1.1"
-msgstr ""
+msgstr "XHTML Basic 1.1"
 
 #: ../../source/helpers/html_helper.rst:366
 msgid "xhtml-basic11"
-msgstr ""
+msgstr "xhtml-basic11"
 
 #: ../../source/helpers/html_helper.rst:366
 msgid ""
 "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML Basic 1.1//EN\" "
 "\"http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd\">"
 msgstr ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML Basic 1.1//EN\" "
+"\"http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd\">"
 
 #: ../../source/helpers/html_helper.rst:367
 msgid "HTML 5"
-msgstr ""
+msgstr "HTML 5"
 
 #: ../../source/helpers/html_helper.rst:367
 msgid "html5"
-msgstr ""
+msgstr "html5"
 
 #: ../../source/helpers/html_helper.rst:367
 msgid "<!DOCTYPE html>"
-msgstr ""
+msgstr "<!DOCTYPE html>"
 
 #: ../../source/helpers/html_helper.rst:368
 msgid "HTML 4 Strict"
-msgstr ""
+msgstr "HTML 4 Strict"
 
 #: ../../source/helpers/html_helper.rst:368
 msgid "html4-strict"
-msgstr ""
+msgstr "html4-strict"
 
 #: ../../source/helpers/html_helper.rst:368
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" "
 "\"http://www.w3.org/TR/html4/strict.dtd\">"
 msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" "
+"\"http://www.w3.org/TR/html4/strict.dtd\">"
 
 #: ../../source/helpers/html_helper.rst:369
 msgid "HTML 4 Transitional"
-msgstr ""
+msgstr "HTML 4 Transitional"
 
 #: ../../source/helpers/html_helper.rst:369
 msgid "html4-trans"
-msgstr ""
+msgstr "html4-trans"
 
 #: ../../source/helpers/html_helper.rst:369
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" "
 "\"http://www.w3.org/TR/html4/loose.dtd\">"
 msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" "
+"\"http://www.w3.org/TR/html4/loose.dtd\">"
 
 #: ../../source/helpers/html_helper.rst:370
 msgid "HTML 4 Frameset"
-msgstr ""
+msgstr "HTML 4 Frameset"
 
 #: ../../source/helpers/html_helper.rst:370
 msgid "html4-frame"
-msgstr ""
+msgstr "html4-frame"
 
 #: ../../source/helpers/html_helper.rst:370
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Frameset//EN\" "
 "\"http://www.w3.org/TR/html4/frameset.dtd\">"
 msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Frameset//EN\" "
+"\"http://www.w3.org/TR/html4/frameset.dtd\">"
 
 #: ../../source/helpers/html_helper.rst:371
 msgid "MathML 1.01"
-msgstr ""
+msgstr "MathML 1.01"
 
 #: ../../source/helpers/html_helper.rst:371
 msgid "mathml1"
-msgstr ""
+msgstr "mathml1"
 
 #: ../../source/helpers/html_helper.rst:371
 msgid "<!DOCTYPE math SYSTEM \"http://www.w3.org/Math/DTD/mathml1/mathml.dtd\">"
-msgstr ""
+msgstr "<!DOCTYPE math SYSTEM \"http://www.w3.org/Math/DTD/mathml1/mathml.dtd\">"
 
 #: ../../source/helpers/html_helper.rst:372
 msgid "MathML 2.0"
-msgstr ""
+msgstr "MathML 2.0"
 
 #: ../../source/helpers/html_helper.rst:372
 msgid "mathml2"
-msgstr ""
+msgstr "mathml2"
 
 #: ../../source/helpers/html_helper.rst:372
 msgid ""
 "<!DOCTYPE math PUBLIC \"-//W3C//DTD MathML 2.0//EN\" "
 "\"http://www.w3.org/Math/DTD/mathml2/mathml2.dtd\">"
 msgstr ""
+"<!DOCTYPE math PUBLIC \"-//W3C//DTD MathML 2.0//EN\" "
+"\"http://www.w3.org/Math/DTD/mathml2/mathml2.dtd\">"
 
 #: ../../source/helpers/html_helper.rst:373
 msgid "SVG 1.0"
-msgstr ""
+msgstr "SVG 1.0"
 
 #: ../../source/helpers/html_helper.rst:373
 msgid "svg10"
-msgstr ""
+msgstr "svg10"
 
 #: ../../source/helpers/html_helper.rst:373
 msgid ""
 "<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.0//EN\" "
 "\"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd\">"
 msgstr ""
+"<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.0//EN\" "
+"\"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd\">"
 
 #: ../../source/helpers/html_helper.rst:374
 msgid "SVG 1.1 Full"
-msgstr ""
+msgstr "SVG 1.1 Full"
 
 #: ../../source/helpers/html_helper.rst:374
 msgid "svg11"
-msgstr ""
+msgstr "svg11"
 
 #: ../../source/helpers/html_helper.rst:374
 msgid ""
 "<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" "
 "\"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">"
 msgstr ""
+"<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" "
+"\"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">"
 
 #: ../../source/helpers/html_helper.rst:375
 msgid "SVG 1.1 Basic"
-msgstr ""
+msgstr "SVG 1.1 Basic"
 
 #: ../../source/helpers/html_helper.rst:375
 msgid "svg11-basic"
-msgstr ""
+msgstr "svg11-basic"
 
 #: ../../source/helpers/html_helper.rst:375
 msgid ""
 "<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1 Basic//EN\" "
 "\"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-basic.dtd\">"
 msgstr ""
+"<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1 Basic//EN\" "
+"\"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-basic.dtd\">"
 
 #: ../../source/helpers/html_helper.rst:376
 msgid "SVG 1.1 Tiny"
-msgstr ""
+msgstr "SVG 1.1 Tiny"
 
 #: ../../source/helpers/html_helper.rst:376
 msgid "svg11-tiny"
-msgstr ""
+msgstr "svg11-tiny"
 
 #: ../../source/helpers/html_helper.rst:376
 msgid ""
 "<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1 Tiny//EN\" "
 "\"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd\">"
 msgstr ""
+"<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1 Tiny//EN\" "
+"\"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd\">"
 
 #: ../../source/helpers/html_helper.rst:377
 msgid "XHTML+MathML+SVG (XHTML host)"
-msgstr ""
+msgstr "XHTML+MathML+SVG (XHTML host)"
 
 #: ../../source/helpers/html_helper.rst:377
 msgid "xhtml-math-svg-xh"
-msgstr ""
+msgstr "xhtml-math-svg-xh"
 
 #: ../../source/helpers/html_helper.rst:377
 msgid ""
@@ -695,14 +764,17 @@ msgid ""
 "1.1//EN\" \"http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-"
 "svg.dtd\">"
 msgstr ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG "
+"1.1//EN\" \"http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-"
+"svg.dtd\">"
 
 #: ../../source/helpers/html_helper.rst:378
 msgid "XHTML+MathML+SVG (SVG host)"
-msgstr ""
+msgstr "XHTML+MathML+SVG (SVG host)"
 
 #: ../../source/helpers/html_helper.rst:378
 msgid "xhtml-math-svg-sh"
-msgstr ""
+msgstr "xhtml-math-svg-sh"
 
 #: ../../source/helpers/html_helper.rst:378
 msgid ""
@@ -710,32 +782,38 @@ msgid ""
 " 1.1//EN\" \"http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-"
 "svg.dtd\">"
 msgstr ""
+"<!DOCTYPE svg:svg PUBLIC \"-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG"
+" 1.1//EN\" \"http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-"
+"svg.dtd\">"
 
 #: ../../source/helpers/html_helper.rst:379
 msgid "XHTML+RDFa 1.0"
-msgstr ""
+msgstr "XHTML+RDFa 1.0"
 
 #: ../../source/helpers/html_helper.rst:379
 msgid "xhtml-rdfa-1"
-msgstr ""
+msgstr "xhtml-rdfa-1"
 
 #: ../../source/helpers/html_helper.rst:379
 msgid ""
 "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.0//EN\" "
 "\"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd\">"
 msgstr ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.0//EN\" "
+"\"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd\">"
 
 #: ../../source/helpers/html_helper.rst:380
 msgid "XHTML+RDFa 1.1"
-msgstr ""
+msgstr "XHTML+RDFa 1.1"
 
 #: ../../source/helpers/html_helper.rst:380
 msgid "xhtml-rdfa-2"
-msgstr ""
+msgstr "xhtml-rdfa-2"
 
 #: ../../source/helpers/html_helper.rst:380
 msgid ""
 "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.1//EN\" "
 "\"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd\">"
 msgstr ""
-
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.1//EN\" "
+"\"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd\">"
