@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../source/extending/contributing.rst:3
 msgid "Contributing to CodeIgniter"
-msgstr ""
+msgstr "CodeIgniter에 기여하기"
 
 #: ../../source/extending/contributing.rst:5
 msgid ""
@@ -33,6 +32,12 @@ msgid ""
 "requests/about-pull-requests>`_ on the `CodeIgniter4 repository "
 "<https://github.com/codeigniter4/CodeIgniter4>`_ on GitHub."
 msgstr ""
+"CodeIgniter는 커뮤니티 주도 프로젝트로, 커뮤니티로부터 코드 및 문서 기여를 받습니다. "
+"이러한 기여는 GitHub의 `CodeIgniter4 저장소 "
+"<https://github.com/codeigniter4/CodeIgniter4>`_\ 에 Issues 또는 "
+"`Pull Requests "
+"<https://help.github.com/en/github/collaborating-with-issues-and-pull-"
+"requests/about-pull-requests>`_\ 의 형태로 이루어집니다."
 
 #: ../../source/extending/contributing.rst:10
 msgid ""
@@ -41,4 +46,6 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/tree/develop/contributing>`_"
 " section of our code repository."
 msgstr ""
-
+"기여하고 싶다면 코드 저장소의 `Contributing to CodeIgniter4 "
+"<https://github.com/codeigniter4/CodeIgniter4/tree/develop/contributing>`_"
+" 섹션을 참조하세요."

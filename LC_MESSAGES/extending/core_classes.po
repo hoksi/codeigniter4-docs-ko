@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../source/extending/core_classes.rst:3
 msgid "Creating Core System Classes"
-msgstr ""
+msgstr "코어 시스템 클래스 만들기"
 
 #: ../../source/extending/core_classes.rst:5
 msgid ""
@@ -31,6 +30,8 @@ msgid ""
 "however, to swap any of the core system classes with your own version or "
 "even just extend the core versions."
 msgstr ""
+"CodeIgniter가 실행될 때마다 코어 프레임워크의 일부로 자동으로 초기화되는 여러 베이스 클래스가 있습니다. "
+"하지만 코어 시스템 클래스 중 어떤 것이든 자신만의 버전으로 교체하거나 코어 버전을 확장하는 것도 가능합니다."
 
 #: ../../source/extending/core_classes.rst:9
 msgid ""
@@ -38,196 +39,201 @@ msgid ""
 "replace or extend them does exist for those who would like to "
 "significantly alter the CodeIgniter core.**"
 msgstr ""
+"**대부분의 사용자는 이 작업을 할 필요가 없지만, CodeIgniter 코어를 크게 수정하려는 사람들을 위해 "
+"교체하거나 확장하는 옵션이 존재합니다.**"
 
 #: ../../source/extending/core_classes.rst:12
 msgid ""
 "Messing with a core system class has a lot of implications, so make sure "
 "you know what you are doing before attempting it."
 msgstr ""
+"코어 시스템 클래스를 수정하면 많은 영향을 미치므로, 시도하기 전에 자신이 무엇을 하는지 "
+"반드시 이해하고 있어야 합니다."
 
 #: ../../source/extending/core_classes.rst:20
 msgid "System Class List"
-msgstr ""
+msgstr "시스템 클래스 목록"
 
 #: ../../source/extending/core_classes.rst:22
 msgid ""
 "The following is a list of the core system classes that are invoked every"
 " time CodeIgniter runs:"
-msgstr ""
+msgstr "다음은 CodeIgniter가 실행될 때마다 호출되는 코어 시스템 클래스 목록입니다:"
 
 #: ../../source/extending/core_classes.rst:24
 msgid "``CodeIgniter\\Autoloader\\Autoloader``"
-msgstr ""
+msgstr "``CodeIgniter\\Autoloader\\Autoloader``"
 
 #: ../../source/extending/core_classes.rst:25
 msgid "``CodeIgniter\\Autoloader\\FileLocator``"
-msgstr ""
+msgstr "``CodeIgniter\\Autoloader\\FileLocator``"
 
 #: ../../source/extending/core_classes.rst:26
 msgid "``CodeIgniter\\Cache\\CacheFactory``"
-msgstr ""
+msgstr "``CodeIgniter\\Cache\\CacheFactory``"
 
 #: ../../source/extending/core_classes.rst:27
 msgid "``CodeIgniter\\Cache\\Handlers\\BaseHandler``"
-msgstr ""
+msgstr "``CodeIgniter\\Cache\\Handlers\\BaseHandler``"
 
 #: ../../source/extending/core_classes.rst:28
 msgid "``CodeIgniter\\Cache\\Handlers\\FileHandler``"
-msgstr ""
+msgstr "``CodeIgniter\\Cache\\Handlers\\FileHandler``"
 
 #: ../../source/extending/core_classes.rst:29
 msgid "``CodeIgniter\\Cache\\ResponseCache``"
-msgstr ""
+msgstr "``CodeIgniter\\Cache\\ResponseCache``"
 
 #: ../../source/extending/core_classes.rst:30
 msgid "``CodeIgniter\\CodeIgniter``"
-msgstr ""
+msgstr "``CodeIgniter\\CodeIgniter``"
 
 #: ../../source/extending/core_classes.rst:31
 msgid "``CodeIgniter\\Config\\BaseService``"
-msgstr ""
+msgstr "``CodeIgniter\\Config\\BaseService``"
 
 #: ../../source/extending/core_classes.rst:32
 msgid "``CodeIgniter\\Config\\DotEnv``"
-msgstr ""
+msgstr "``CodeIgniter\\Config\\DotEnv``"
 
 #: ../../source/extending/core_classes.rst:33
 msgid "``CodeIgniter\\Config\\Factories``"
-msgstr ""
+msgstr "``CodeIgniter\\Config\\Factories``"
 
 #: ../../source/extending/core_classes.rst:34
 msgid "``CodeIgniter\\Config\\Services``"
-msgstr ""
+msgstr "``CodeIgniter\\Config\\Services``"
 
 #: ../../source/extending/core_classes.rst:35
 msgid "``CodeIgniter\\Controller``"
-msgstr ""
+msgstr "``CodeIgniter\\Controller``"
 
 #: ../../source/extending/core_classes.rst:36
 msgid "``CodeIgniter\\Cookie\\Cookie``"
-msgstr ""
+msgstr "``CodeIgniter\\Cookie\\Cookie``"
 
 #: ../../source/extending/core_classes.rst:37
 msgid "``CodeIgniter\\Cookie\\CookieStore``"
-msgstr ""
+msgstr "``CodeIgniter\\Cookie\\CookieStore``"
 
 #: ../../source/extending/core_classes.rst:38
 msgid "``CodeIgniter\\Debug\\Exceptions``"
-msgstr ""
+msgstr "``CodeIgniter\\Debug\\Exceptions``"
 
 #: ../../source/extending/core_classes.rst:39
 msgid "``CodeIgniter\\Debug\\Timer``"
-msgstr ""
+msgstr "``CodeIgniter\\Debug\\Timer``"
 
 #: ../../source/extending/core_classes.rst:40
 msgid "``CodeIgniter\\Events\\Events``"
-msgstr ""
+msgstr "``CodeIgniter\\Events\\Events``"
 
 #: ../../source/extending/core_classes.rst:41
 msgid "``CodeIgniter\\Filters\\Filters``"
-msgstr ""
+msgstr "``CodeIgniter\\Filters\\Filters``"
 
 #: ../../source/extending/core_classes.rst:42
 msgid "``CodeIgniter\\HTTP\\CLIRequest`` (if launched from command line only)"
-msgstr ""
+msgstr "``CodeIgniter\\HTTP\\CLIRequest`` (커맨드 라인에서 실행 시에만)"
 
 #: ../../source/extending/core_classes.rst:43
 msgid "``CodeIgniter\\HTTP\\ContentSecurityPolicy``"
-msgstr ""
+msgstr "``CodeIgniter\\HTTP\\ContentSecurityPolicy``"
 
 #: ../../source/extending/core_classes.rst:44
 msgid "``CodeIgniter\\HTTP\\Header``"
-msgstr ""
+msgstr "``CodeIgniter\\HTTP\\Header``"
 
 #: ../../source/extending/core_classes.rst:45
 msgid "``CodeIgniter\\HTTP\\IncomingRequest`` (if launched over HTTP)"
-msgstr ""
+msgstr "``CodeIgniter\\HTTP\\IncomingRequest`` (HTTP로 실행 시에만)"
 
 #: ../../source/extending/core_classes.rst:46
 msgid "``CodeIgniter\\HTTP\\Message``"
-msgstr ""
+msgstr "``CodeIgniter\\HTTP\\Message``"
 
 #: ../../source/extending/core_classes.rst:47
 msgid "``CodeIgniter\\HTTP\\OutgoingRequest``"
-msgstr ""
+msgstr "``CodeIgniter\\HTTP\\OutgoingRequest``"
 
 #: ../../source/extending/core_classes.rst:48
 msgid "``CodeIgniter\\HTTP\\Request``"
-msgstr ""
+msgstr "``CodeIgniter\\HTTP\\Request``"
 
 #: ../../source/extending/core_classes.rst:49
 msgid "``CodeIgniter\\HTTP\\Response``"
-msgstr ""
+msgstr "``CodeIgniter\\HTTP\\Response``"
 
 #: ../../source/extending/core_classes.rst:50
 msgid "``CodeIgniter\\HTTP\\SiteURI``"
-msgstr ""
+msgstr "``CodeIgniter\\HTTP\\SiteURI``"
 
 #: ../../source/extending/core_classes.rst:51
 msgid "``CodeIgniter\\HTTP\\SiteURIFactory``"
-msgstr ""
+msgstr "``CodeIgniter\\HTTP\\SiteURIFactory``"
 
 #: ../../source/extending/core_classes.rst:52
 msgid "``CodeIgniter\\HTTP\\URI``"
-msgstr ""
+msgstr "``CodeIgniter\\HTTP\\URI``"
 
 #: ../../source/extending/core_classes.rst:53
 msgid "``CodeIgniter\\HTTP\\UserAgent`` (if launched over HTTP)"
-msgstr ""
+msgstr "``CodeIgniter\\HTTP\\UserAgent`` (HTTP로 실행 시에만)"
 
 #: ../../source/extending/core_classes.rst:54
 msgid "``CodeIgniter\\Log\\Logger``"
-msgstr ""
+msgstr "``CodeIgniter\\Log\\Logger``"
 
 #: ../../source/extending/core_classes.rst:55
 msgid "``CodeIgniter\\Log\\Handlers\\BaseHandler``"
-msgstr ""
+msgstr "``CodeIgniter\\Log\\Handlers\\BaseHandler``"
 
 #: ../../source/extending/core_classes.rst:56
 msgid "``CodeIgniter\\Log\\Handlers\\FileHandler``"
-msgstr ""
+msgstr "``CodeIgniter\\Log\\Handlers\\FileHandler``"
 
 #: ../../source/extending/core_classes.rst:57
 msgid "``CodeIgniter\\Router\\RouteCollection``"
-msgstr ""
+msgstr "``CodeIgniter\\Router\\RouteCollection``"
 
 #: ../../source/extending/core_classes.rst:58
 msgid "``CodeIgniter\\Router\\Router``"
-msgstr ""
+msgstr "``CodeIgniter\\Router\\Router``"
 
 #: ../../source/extending/core_classes.rst:59
 msgid "``CodeIgniter\\Superglobals``"
-msgstr ""
+msgstr "``CodeIgniter\\Superglobals``"
 
 #: ../../source/extending/core_classes.rst:60
 msgid "``CodeIgniter\\View\\View``"
-msgstr ""
+msgstr "``CodeIgniter\\View\\View``"
 
 #: ../../source/extending/core_classes.rst:63
 msgid "Replacing Core Classes"
-msgstr ""
+msgstr "코어 클래스 교체"
 
 #: ../../source/extending/core_classes.rst:65
 msgid "To use one of your own system classes instead of a default one, ensure:"
-msgstr ""
+msgstr "기본 클래스 대신 직접 만든 시스템 클래스를 사용하려면 다음을 확인하세요:"
 
 #: ../../source/extending/core_classes.rst:67
 msgid "the :doc:`Autoloader <../concepts/autoloader>` can find your class,"
-msgstr ""
+msgstr ":doc:`자동 로더 <../concepts/autoloader>`\ 가 클래스를 찾을 수 있어야 하고,"
 
 #: ../../source/extending/core_classes.rst:68
 msgid "your new class implements the appropriate interface,"
-msgstr ""
+msgstr "새 클래스가 적절한 인터페이스를 구현해야 하며,"
 
 #: ../../source/extending/core_classes.rst:69
 msgid ""
 "and modify the appropriate :doc:`Service <../concepts/services>` to load "
 "your class in place of the core class."
 msgstr ""
+"코어 클래스 대신 클래스를 로드하도록 적절한 :doc:`서비스 <../concepts/services>`\ 를 수정해야 합니다."
 
 #: ../../source/extending/core_classes.rst:72
 msgid "Creating Your Class"
-msgstr ""
+msgstr "클래스 만들기"
 
 #: ../../source/extending/core_classes.rst:74
 msgid ""
@@ -235,20 +241,24 @@ msgid ""
 "that you would like to use in place of the core system class, you would "
 "create your class like this:"
 msgstr ""
+"예를 들어, 코어 시스템 클래스 대신 사용하려는 새 ``App\\Libraries\\RouteCollection`` "
+"클래스가 있다면 다음과 같이 클래스를 만듭니다:"
 
 #: ../../source/extending/core_classes.rst:80
 msgid "Adding the Service"
-msgstr ""
+msgstr "서비스 추가"
 
 #: ../../source/extending/core_classes.rst:82
 msgid ""
 "Then you would add the ``routes`` service in **app/Config/Services.php** "
 "to load your class instead:"
 msgstr ""
+"그런 다음 **app/Config/Services.php**\ 에 ``routes`` 서비스를 추가하여 "
+"클래스를 대신 로드하도록 합니다:"
 
 #: ../../source/extending/core_classes.rst:87
 msgid "Extending Core Classes"
-msgstr ""
+msgstr "코어 클래스 확장"
 
 #: ../../source/extending/core_classes.rst:89
 msgid ""
@@ -258,22 +268,26 @@ msgid ""
 "the class is nearly identical to `Replacing Core Classes`_ with one "
 "exception:"
 msgstr ""
+"기존 라이브러리에 메서드 한두 개를 추가하는 등 일부 기능만 추가하면 된다면, "
+"라이브러리 전체를 다시 만드는 것은 과도합니다. 이 경우에는 단순히 클래스를 확장하는 것이 좋습니다. "
+"클래스 확장은 `코어 클래스 교체`_\ 와 거의 동일하지만 한 가지 예외가 있습니다:"
 
 #: ../../source/extending/core_classes.rst:93
 msgid "The class declaration must extend the parent class."
-msgstr ""
+msgstr "클래스 선언이 부모 클래스를 확장해야 합니다."
 
 #: ../../source/extending/core_classes.rst:95
 msgid ""
 "For example, to extend the native ``RouteCollection`` class, you would "
 "declare your class with:"
 msgstr ""
+"예를 들어, 기본 ``RouteCollection`` 클래스를 확장하려면 다음과 같이 클래스를 선언합니다:"
 
 #: ../../source/extending/core_classes.rst:99
 msgid ""
 "If you need to use a constructor in your class make sure you extend the "
 "parent constructor:"
-msgstr ""
+msgstr "클래스에서 생성자를 사용해야 하는 경우 반드시 부모 생성자를 확장해야 합니다:"
 
 #: ../../source/extending/core_classes.rst:103
 msgid ""
@@ -282,4 +296,5 @@ msgid ""
 " is known as \"method overriding\"). This allows you to substantially "
 "alter the CodeIgniter core."
 msgstr ""
-
+"**팁:** 클래스에서 부모 클래스의 메서드와 동일한 이름의 함수는 기본 것 대신 사용됩니다 "
+"(이를 \"메서드 오버라이딩\"이라고 합니다). 이를 통해 CodeIgniter 코어를 크게 수정할 수 있습니다."

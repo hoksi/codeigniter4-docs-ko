@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,43 +21,47 @@ msgstr ""
 
 #: ../../source/extending/composer_packages.rst:3
 msgid "Creating Composer Packages"
-msgstr ""
+msgstr "Composer 패키지 만들기"
 
 #: ../../source/extending/composer_packages.rst:5
 msgid ""
 "You can make the :doc:`../general/modules` you create into Composer "
 "packages, or can create a Composer package for CodeIgniter 4."
 msgstr ""
+"직접 만든 :doc:`../general/modules`\ 을 Composer 패키지로 만들거나, "
+"CodeIgniter 4용 Composer 패키지를 만들 수 있습니다."
 
 #: ../../source/extending/composer_packages.rst:14
 msgid "Folder Structure"
-msgstr ""
+msgstr "폴더 구조"
 
 #: ../../source/extending/composer_packages.rst:16
 msgid "Here's a typical directory structure for a Composer package::"
-msgstr ""
+msgstr "다음은 Composer 패키지의 일반적인 디렉터리 구조입니다::"
 
 #: ../../source/extending/composer_packages.rst:31
 msgid "Creating composer.json"
-msgstr ""
+msgstr "composer.json 만들기"
 
 #: ../../source/extending/composer_packages.rst:33
 msgid ""
 "In the root of your package directory, create a **composer.json** file. "
 "This file defines metadata about your package and its dependencies."
 msgstr ""
+"패키지 디렉터리의 루트에 **composer.json** 파일을 만듭니다. "
+"이 파일은 패키지와 그 의존성에 대한 메타데이터를 정의합니다."
 
 #: ../../source/extending/composer_packages.rst:36
 msgid "The ``composer init`` command helps you create it."
-msgstr ""
+msgstr "``composer init`` 명령이 파일 생성을 도와줍니다."
 
 #: ../../source/extending/composer_packages.rst:38
 msgid "For example, **composer.json** might look like this::"
-msgstr ""
+msgstr "예를 들어, **composer.json**\ 은 다음과 같은 형태일 수 있습니다::"
 
 #: ../../source/extending/composer_packages.rst:65
 msgid "Package Name"
-msgstr ""
+msgstr "패키지 이름"
 
 #: ../../source/extending/composer_packages.rst:67
 msgid ""
@@ -66,48 +69,56 @@ msgid ""
 " in the format \"vendor-name/package-name\" with all lowercase. Here is a"
 " common example:"
 msgstr ""
+"여기서 ``name`` 필드가 중요합니다. 패키지 이름은 일반적으로 모두 소문자로 "
+"\"vendor-name/package-name\" 형식으로 작성합니다. 일반적인 예시는 다음과 같습니다:"
 
 #: ../../source/extending/composer_packages.rst:70
 msgid ""
 "``your-vendor-name``: The name that identifies the vendor (creator of the"
 " package), such as your name or your organization."
 msgstr ""
+"``your-vendor-name``: 벤더(패키지 제작자)를 식별하는 이름으로, 본인의 이름이나 조직명 등을 사용합니다."
 
 #: ../../source/extending/composer_packages.rst:72
 msgid "``your-package-name``: The name of the package you are creating."
-msgstr ""
+msgstr "``your-package-name``: 만드는 패키지의 이름입니다."
 
 #: ../../source/extending/composer_packages.rst:74
 msgid ""
 "Thus, it is important to make the name unique to distinguish it from "
 "other packages. Uniqueness is especially important when publishing."
 msgstr ""
+"따라서 다른 패키지와 구별하기 위해 이름을 고유하게 만드는 것이 중요합니다. "
+"특히 배포 시에는 고유성이 매우 중요합니다."
 
 #: ../../source/extending/composer_packages.rst:78
 msgid "Namespace"
-msgstr ""
+msgstr "네임스페이스"
 
 #: ../../source/extending/composer_packages.rst:80
 msgid ""
 "The package name then determines the vendor namespace in "
 "``autoload.psr4``."
 msgstr ""
+"패키지 이름은 ``autoload.psr4``\ 의 벤더 네임스페이스를 결정합니다."
 
 #: ../../source/extending/composer_packages.rst:82
 msgid ""
 "If your package name is ``your-vendor/your-package``, the vendor "
 "namespace must be ``YourVendor``. So you would write like the following::"
 msgstr ""
+"패키지 이름이 ``your-vendor/your-package``\ 이면, 벤더 네임스페이스는 "
+"``YourVendor``\ 이어야 합니다. 따라서 다음과 같이 작성합니다::"
 
 #: ../../source/extending/composer_packages.rst:91
 msgid ""
 "This setting instructs Composer to autoload the source code for your "
 "package."
-msgstr ""
+msgstr "이 설정은 Composer에게 패키지의 소스 코드를 자동으로 로드하도록 지시합니다."
 
 #: ../../source/extending/composer_packages.rst:94
 msgid "Choosing License"
-msgstr ""
+msgstr "라이선스 선택"
 
 #: ../../source/extending/composer_packages.rst:96
 msgid ""
@@ -115,10 +126,12 @@ msgid ""
 "https://choosealicense.com/. Many PHP packages, including CodeIgniter, "
 "use the MIT license."
 msgstr ""
+"오픈 소스 라이선스에 익숙하지 않다면 https://choosealicense.com/\ 을 참조하세요. "
+"CodeIgniter를 포함한 많은 PHP 패키지가 MIT 라이선스를 사용합니다."
 
 #: ../../source/extending/composer_packages.rst:101
 msgid "Preparing Development Tools"
-msgstr ""
+msgstr "개발 도구 준비"
 
 #: ../../source/extending/composer_packages.rst:103
 msgid ""
@@ -126,14 +139,17 @@ msgid ""
 "them. You can easily install and configure such tools with `CodeIgniter "
 "DevKit <https://github.com/codeigniter4/devkit>`_."
 msgstr ""
+"코드 품질을 보장하는 데 도움이 되는 다양한 도구가 있습니다. 이러한 도구들을 사용하는 것이 좋습니다. "
+"`CodeIgniter DevKit <https://github.com/codeigniter4/devkit>`_\ 을 사용하면 "
+"이러한 도구를 쉽게 설치하고 구성할 수 있습니다."
 
 #: ../../source/extending/composer_packages.rst:108
 msgid "Installing DevKit"
-msgstr ""
+msgstr "DevKit 설치"
 
 #: ../../source/extending/composer_packages.rst:110
 msgid "In the root of your package directory, run the following commands:"
-msgstr ""
+msgstr "패키지 디렉터리의 루트에서 다음 명령을 실행합니다:"
 
 #: ../../source/extending/composer_packages.rst:118
 msgid ""
@@ -142,10 +158,13 @@ msgid ""
 "**vendor/codeigniter4/devkit/src/Template**. Copy the files in it to your"
 " project root folder, and edit them for your needs."
 msgstr ""
+"DevKit은 개발에 도움이 되는 다양한 Composer 패키지를 설치하고, "
+"**vendor/codeigniter4/devkit/src/Template**\ 에 해당 템플릿을 설치합니다. "
+"그 안의 파일을 프로젝트 루트 폴더에 복사하고 필요에 맞게 편집하세요."
 
 #: ../../source/extending/composer_packages.rst:123
 msgid "Configuring Coding Standards Fixer"
-msgstr ""
+msgstr "코딩 표준 수정기 구성"
 
 #: ../../source/extending/composer_packages.rst:125
 msgid ""
@@ -153,38 +172,45 @@ msgid ""
 "<https://github.com/CodeIgniter/coding-standard>`_ based on `PHP-CS-Fixer"
 " <https://github.com/PHP-CS-Fixer/PHP-CS-Fixer>`_."
 msgstr ""
+"DevKit은 `PHP-CS-Fixer <https://github.com/PHP-CS-Fixer/PHP-CS-Fixer>`_\ 를 "
+"기반으로 한 `CodeIgniter Coding Standard <https://github.com/CodeIgniter/coding-standard>`_\ 을 "
+"사용하는 코딩 표준 수정기를 제공합니다."
 
 #: ../../source/extending/composer_packages.rst:129
 msgid ""
 "Copy **vendor/codeigniter4/devkit/src/Template/.php-cs-fixer.dist.php** "
 "to your project root folder."
 msgstr ""
+"**vendor/codeigniter4/devkit/src/Template/.php-cs-fixer.dist.php**\ 를 "
+"프로젝트 루트 폴더에 복사합니다."
 
 #: ../../source/extending/composer_packages.rst:132
 msgid "Create the **build** folder for the cache file::"
-msgstr ""
+msgstr "캐시 파일을 위한 **build** 폴더를 만듭니다::"
 
 #: ../../source/extending/composer_packages.rst:138
 msgid "Open **.php-cs-fixer.dist.php** in your editor, and fix the folder path::"
-msgstr ""
+msgstr "편집기에서 **.php-cs-fixer.dist.php**\ 를 열고 폴더 경로를 수정합니다::"
 
 #: ../../source/extending/composer_packages.rst:152
 msgid "That't it. Now you can run Coding Standards Fixer:"
-msgstr ""
+msgstr "이제 코딩 표준 수정기를 실행할 수 있습니다:"
 
 #: ../../source/extending/composer_packages.rst:158
 msgid ""
 "If you add ``scripts.cs-fix`` in your **composer.json**, you can run it "
 "with ``composer cs-fix`` command::"
 msgstr ""
+"**composer.json**\ 에 ``scripts.cs-fix``\ 를 추가하면 ``composer cs-fix`` 명령으로 "
+"실행할 수 있습니다::"
 
 #: ../../source/extending/composer_packages.rst:171
 msgid "Config Files"
-msgstr ""
+msgstr "설정 파일"
 
 #: ../../source/extending/composer_packages.rst:174
 msgid "Allowing Users to Override Settings"
-msgstr ""
+msgstr "사용자가 설정을 재정의할 수 있도록 허용"
 
 #: ../../source/extending/composer_packages.rst:176
 msgid ""
@@ -192,6 +218,9 @@ msgid ""
 " override the settings, use :php:func:`config()` with the short classname"
 " like ``config('YourConfig')`` to call the configuration file."
 msgstr ""
+"패키지에 설정 파일이 있고 사용자가 설정을 재정의할 수 있도록 하려면, "
+"설정 파일을 호출할 때 ``config('YourConfig')``\ 처럼 짧은 클래스명과 함께 "
+":php:func:`config()`\ 를 사용하세요."
 
 #: ../../source/extending/composer_packages.rst:180
 msgid ""
@@ -200,10 +229,13 @@ msgid ""
 "extends the package Config class like "
 "``YourVendor\\YourPackage\\Config\\YourConfig``."
 msgstr ""
+"그러면 사용자는 ``YourVendor\\YourPackage\\Config\\YourConfig``\ 와 같은 패키지 "
+"Config 클래스를 확장하는 동일한 짧은 클래스명의 설정 클래스를 **app/Config**\ 에 "
+"배치하여 패키지 설정을 재정의할 수 있습니다."
 
 #: ../../source/extending/composer_packages.rst:185
 msgid "Overriding Settings in app/Config"
-msgstr ""
+msgstr "app/Config에서 설정 재정의"
 
 #: ../../source/extending/composer_packages.rst:187
 msgid ""
@@ -211,30 +243,32 @@ msgid ""
 "**app/Config** folder, you can use :ref:`Implicit Registrars "
 "<registrars>`."
 msgstr ""
+"**app/Config** 폴더의 알려진 설정을 재정의하거나 추가해야 하는 경우, "
+":ref:`암묵적 등록자 <registrars>`\ 를 사용할 수 있습니다."
 
 #: ../../source/extending/composer_packages.rst:192
 msgid "References"
-msgstr ""
+msgstr "참고 자료"
 
 #: ../../source/extending/composer_packages.rst:194
 msgid ""
 "We have published some official packages. You can use these packages as "
 "references when creating your own packages:"
 msgstr ""
+"공식 패키지가 일부 게시되어 있습니다. 직접 패키지를 만들 때 이 패키지들을 참고로 활용할 수 있습니다:"
 
 #: ../../source/extending/composer_packages.rst:197
 msgid "https://github.com/codeigniter4/shield"
-msgstr ""
+msgstr "https://github.com/codeigniter4/shield"
 
 #: ../../source/extending/composer_packages.rst:198
 msgid "https://github.com/codeigniter4/settings"
-msgstr ""
+msgstr "https://github.com/codeigniter4/settings"
 
 #: ../../source/extending/composer_packages.rst:199
 msgid "https://github.com/codeigniter4/tasks"
-msgstr ""
+msgstr "https://github.com/codeigniter4/tasks"
 
 #: ../../source/extending/composer_packages.rst:200
 msgid "https://github.com/codeigniter4/cache"
-msgstr ""
-
+msgstr "https://github.com/codeigniter4/cache"
