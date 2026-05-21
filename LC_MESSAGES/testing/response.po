@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../source/testing/response.rst:3
 msgid "Testing Responses"
-msgstr ""
+msgstr "응답 테스트"
 
 #: ../../source/testing/response.rst:5
 msgid ""
@@ -33,10 +32,14 @@ msgid ""
 "<feature>`, but you can always create your own directly using any "
 "``ResponseInterface``:"
 msgstr ""
+"``TestResponse`` 클래스는 테스트 케이스에서 응답을 파싱하고 테스트하는 데 유용한 "
+"다양한 함수를 제공합니다. 일반적으로 ``TestResponse``\ 는 "
+":doc:`컨트롤러 테스트 <controllers>` 또는 :doc:`HTTP 기능 테스트 <feature>`\ 의 "
+"결과로 제공되지만, 임의의 ``ResponseInterface``\ 를 사용하여 직접 생성할 수도 있습니다:"
 
 #: ../../source/testing/response.rst:18
 msgid "Testing the Response"
-msgstr ""
+msgstr "응답 테스트하기"
 
 #: ../../source/testing/response.rst:20
 msgid ""
@@ -44,34 +47,36 @@ msgid ""
 " created one yourself, there are a number of new assertions that you can "
 "use in your tests."
 msgstr ""
+"테스트 결과로 ``TestResponse``\ 를 받았든 직접 생성했든, 테스트에서 사용할 수 있는 "
+"다양한 새로운 어설션들이 있습니다."
 
 #: ../../source/testing/response.rst:24
 msgid "Accessing Request/Response"
-msgstr ""
+msgstr "요청/응답 접근"
 
 #: ../../source/testing/response.rst:27
 msgid "request()"
-msgstr ""
+msgstr "request()"
 
 #: ../../source/testing/response.rst:29
 msgid "You can access directly the Request object, if it was set during testing:"
-msgstr ""
+msgstr "테스트 중에 설정된 경우 Request 객체에 직접 접근할 수 있습니다:"
 
 #: ../../source/testing/response.rst:35
 msgid "response()"
-msgstr ""
+msgstr "response()"
 
 #: ../../source/testing/response.rst:37
 msgid "This allows you direct access to the response object:"
-msgstr ""
+msgstr "이를 통해 응답 객체에 직접 접근할 수 있습니다:"
 
 #: ../../source/testing/response.rst:43
 msgid "Checking Response Status"
-msgstr ""
+msgstr "응답 상태 확인"
 
 #: ../../source/testing/response.rst:46
 msgid "isOK()"
-msgstr ""
+msgstr "isOK()"
 
 #: ../../source/testing/response.rst:48
 msgid ""
@@ -80,70 +85,77 @@ msgid ""
 "the 200 or 300's. An empty body is not considered valid, unless in "
 "redirects."
 msgstr ""
+"응답이 \"정상\"으로 판단되는지 여부에 따라 불리언 true/false를 반환합니다. "
+"이는 주로 200번대 또는 300번대의 응답 상태 코드로 결정됩니다. "
+"리다이렉트가 아닌 경우 빈 본문은 유효하지 않은 것으로 간주됩니다."
 
 #: ../../source/testing/response.rst:55
 msgid "assertOK()"
-msgstr ""
+msgstr "assertOK()"
 
 #: ../../source/testing/response.rst:57
 msgid ""
 "This assertion simply uses the ``isOK()`` method to test a response. "
 "``assertNotOK()`` is the inverse of this assertion."
 msgstr ""
+"이 어설션은 단순히 ``isOK()`` 메서드를 사용하여 응답을 테스트합니다. "
+"``assertNotOK()``\ 은 이 어설션의 반대입니다."
 
 #: ../../source/testing/response.rst:63
 msgid "isRedirect()"
-msgstr ""
+msgstr "isRedirect()"
 
 #: ../../source/testing/response.rst:65
 msgid ""
 "Returns a boolean true/false based on whether the response is a "
 "redirected response."
-msgstr ""
+msgstr "응답이 리다이렉트 응답인지 여부에 따라 불리언 true/false를 반환합니다."
 
 #: ../../source/testing/response.rst:71
 msgid "assertRedirect()"
-msgstr ""
+msgstr "assertRedirect()"
 
 #: ../../source/testing/response.rst:73
 msgid ""
 "Asserts that the Response is an instance of RedirectResponse. "
 "``assertNotRedirect()`` is the inverse of this assertion."
 msgstr ""
+"응답이 RedirectResponse의 인스턴스임을 어설션합니다. "
+"``assertNotRedirect()``\ 은 이 어설션의 반대입니다."
 
 #: ../../source/testing/response.rst:79
 msgid "assertRedirectTo()"
-msgstr ""
+msgstr "assertRedirectTo()"
 
 #: ../../source/testing/response.rst:81
 msgid ""
 "Asserts that the Response is an instance of RedirectResponse and the "
 "destination matches the uri given."
-msgstr ""
+msgstr "응답이 RedirectResponse의 인스턴스이고 목적지가 주어진 URI와 일치하는지 어설션합니다."
 
 #: ../../source/testing/response.rst:88
 msgid "getRedirectUrl()"
-msgstr ""
+msgstr "getRedirectUrl()"
 
 #: ../../source/testing/response.rst:90
 msgid "Returns the URL set for a RedirectResponse, or null for failure."
-msgstr ""
+msgstr "RedirectResponse에 설정된 URL을 반환하거나, 실패 시 null을 반환합니다."
 
 #: ../../source/testing/response.rst:96
 msgid "assertStatus(int $code)"
-msgstr ""
+msgstr "assertStatus(int $code)"
 
 #: ../../source/testing/response.rst:98
 msgid "Asserts that the HTTP status code returned matches $code."
-msgstr ""
+msgstr "반환된 HTTP 상태 코드가 $code와 일치하는지 어설션합니다."
 
 #: ../../source/testing/response.rst:106
 msgid "Session Assertions"
-msgstr ""
+msgstr "세션 어설션"
 
 #: ../../source/testing/response.rst:109
 msgid "assertSessionHas(string $key, $value = null)"
-msgstr ""
+msgstr "assertSessionHas(string $key, $value = null)"
 
 #: ../../source/testing/response.rst:111
 msgid ""
@@ -151,44 +163,48 @@ msgid ""
 "passed, will also assert that the variable's value matches what was "
 "specified."
 msgstr ""
+"결과 세션에 값이 존재하는지 어설션합니다. $value가 전달된 경우 변수의 값이 "
+"지정된 값과 일치하는지도 함께 어설션합니다."
 
 #: ../../source/testing/response.rst:118
 msgid "assertSessionMissing(string $key)"
-msgstr ""
+msgstr "assertSessionMissing(string $key)"
 
 #: ../../source/testing/response.rst:120
 msgid "Asserts that the resulting session does not include the specified $key."
-msgstr ""
+msgstr "결과 세션에 지정된 $key가 포함되지 않는지 어설션합니다."
 
 #: ../../source/testing/response.rst:126
 msgid "Header Assertions"
-msgstr ""
+msgstr "헤더 어설션"
 
 #: ../../source/testing/response.rst:129
 msgid "assertHeader(string $key, $value = null)"
-msgstr ""
+msgstr "assertHeader(string $key, $value = null)"
 
 #: ../../source/testing/response.rst:131
 msgid ""
 "Asserts that a header named ``$key`` exists in the response. If "
 "``$value`` is not empty, will also assert that the values match."
 msgstr ""
+"응답에 ``$key``\ 라는 이름의 헤더가 존재하는지 어설션합니다. "
+"``$value``\ 가 비어 있지 않은 경우 값이 일치하는지도 함께 어설션합니다."
 
 #: ../../source/testing/response.rst:138
 msgid "assertHeaderMissing(string $key)"
-msgstr ""
+msgstr "assertHeaderMissing(string $key)"
 
 #: ../../source/testing/response.rst:140
 msgid "Asserts that a header name ``$key`` does not exist in the response."
-msgstr ""
+msgstr "응답에 ``$key``\ 라는 이름의 헤더가 존재하지 않는지 어설션합니다."
 
 #: ../../source/testing/response.rst:146
 msgid "Cookie Assertions"
-msgstr ""
+msgstr "쿠키 어설션"
 
 #: ../../source/testing/response.rst:149
 msgid "assertCookie(string $key, $value = null, string $prefix = '')"
-msgstr ""
+msgstr "assertCookie(string $key, $value = null, string $prefix = '')"
 
 #: ../../source/testing/response.rst:151
 msgid ""
@@ -197,28 +213,33 @@ msgid ""
 "set the cookie prefix, if needed, by passing it in as the third "
 "parameter."
 msgstr ""
+"응답에 ``$key``\ 라는 이름의 쿠키가 존재하는지 어설션합니다. "
+"``$value``\ 가 비어 있지 않은 경우 값이 일치하는지도 함께 어설션합니다. "
+"필요한 경우 세 번째 매개변수로 쿠키 접두사를 설정할 수 있습니다."
 
 #: ../../source/testing/response.rst:158
 msgid "assertCookieMissing(string $key)"
-msgstr ""
+msgstr "assertCookieMissing(string $key)"
 
 #: ../../source/testing/response.rst:160
 msgid "Asserts that a cookie named ``$key`` does not exist in the response."
-msgstr ""
+msgstr "응답에 ``$key``\ 라는 이름의 쿠키가 존재하지 않는지 어설션합니다."
 
 #: ../../source/testing/response.rst:166
 msgid "assertCookieExpired(string $key, string $prefix = '')"
-msgstr ""
+msgstr "assertCookieExpired(string $key, string $prefix = '')"
 
 #: ../../source/testing/response.rst:168
 msgid ""
 "Asserts that a cookie named ``$key`` exists, but has expired. You can set"
 " the cookie prefix, if needed, by passing it in as the second parameter."
 msgstr ""
+"``$key``\ 라는 이름의 쿠키가 존재하지만 만료되었는지 어설션합니다. "
+"필요한 경우 두 번째 매개변수로 쿠키 접두사를 설정할 수 있습니다."
 
 #: ../../source/testing/response.rst:175
 msgid "DOM Helpers"
-msgstr ""
+msgstr "DOM 헬퍼"
 
 #: ../../source/testing/response.rst:177
 msgid ""
@@ -226,10 +247,12 @@ msgid ""
 "the HTML output within the response. These are useful for using within "
 "assertions in your tests."
 msgstr ""
+"반환된 응답에는 응답 내의 HTML 출력을 검사하는 다양한 헬퍼 메서드가 포함되어 있습니다. "
+"이 메서드들은 테스트의 어설션 내에서 유용하게 사용할 수 있습니다."
 
 #: ../../source/testing/response.rst:181
 msgid "see()"
-msgstr ""
+msgstr "see()"
 
 #: ../../source/testing/response.rst:183
 msgid ""
@@ -237,14 +260,16 @@ msgid ""
 " either by itself, or more specifically within a tag, as specified by "
 "type, class, or id:"
 msgstr ""
+"페이지의 텍스트가 단독으로 존재하는지, 또는 type, class, id로 지정된 태그 내에 "
+"더 구체적으로 존재하는지 여부에 따라 불리언 true/false를 반환합니다:"
 
 #: ../../source/testing/response.rst:190
 msgid "The ``dontSee()`` method is the exact opposite:"
-msgstr ""
+msgstr "``dontSee()`` 메서드는 정반대입니다:"
 
 #: ../../source/testing/response.rst:196
 msgid "seeElement()"
-msgstr ""
+msgstr "seeElement()"
 
 #: ../../source/testing/response.rst:198
 msgid ""
@@ -252,40 +277,42 @@ msgid ""
 "previous methods, but do not look at the values of the elements. Instead,"
 " they simply check that the elements exist on the page:"
 msgstr ""
+"``seeElement()``\ 와 ``dontSeeElement()``\ 는 이전 메서드들과 매우 유사하지만, "
+"요소의 값은 확인하지 않습니다. 대신 페이지에 요소가 존재하는지만 단순히 확인합니다:"
 
 #: ../../source/testing/response.rst:205
 msgid "seeLink()"
-msgstr ""
+msgstr "seeLink()"
 
 #: ../../source/testing/response.rst:207
 msgid ""
 "You can use ``seeLink()`` to ensure that a link appears on the page with "
 "the specified text:"
-msgstr ""
+msgstr "``seeLink()``\ 를 사용하여 지정된 텍스트가 있는 링크가 페이지에 존재하는지 확인할 수 있습니다:"
 
 #: ../../source/testing/response.rst:213
 msgid "seeInField()"
-msgstr ""
+msgstr "seeInField()"
 
 #: ../../source/testing/response.rst:215
 msgid ""
 "The ``seeInField()`` method checks for any input tags exist with the name"
 " and value:"
-msgstr ""
+msgstr "``seeInField()`` 메서드는 이름과 값이 있는 입력 태그가 존재하는지 확인합니다:"
 
 #: ../../source/testing/response.rst:221
 msgid "seeCheckboxIsChecked()"
-msgstr ""
+msgstr "seeCheckboxIsChecked()"
 
 #: ../../source/testing/response.rst:223
 msgid ""
 "Finally, you can check if a checkbox exists and is checked with the "
 "``seeCheckboxIsChecked()`` method:"
-msgstr ""
+msgstr "마지막으로, ``seeCheckboxIsChecked()`` 메서드를 사용하여 체크박스가 존재하고 선택되었는지 확인할 수 있습니다:"
 
 #: ../../source/testing/response.rst:229
 msgid "seeXPath()"
-msgstr ""
+msgstr "seeXPath()"
 
 #: ../../source/testing/response.rst:233
 msgid ""
@@ -293,134 +320,146 @@ msgid ""
 " gives you. This method is aimed at more advanced users who want to write"
 " a more complex expressions using the DOMXPath object directly:"
 msgstr ""
+"``seeXPath()``\ 를 사용하면 xpath의 모든 기능을 활용할 수 있습니다. "
+"이 메서드는 DOMXPath 객체를 직접 사용하여 더 복잡한 표현식을 작성하려는 "
+"고급 사용자를 위한 것입니다:"
 
 #: ../../source/testing/response.rst:240
 msgid "The ``dontSeeXPath()`` method is the exact opposite:"
-msgstr ""
+msgstr "``dontSeeXPath()`` 메서드는 정반대입니다:"
 
 #: ../../source/testing/response.rst:246
 msgid "DOM Assertions"
-msgstr ""
+msgstr "DOM 어설션"
 
 #: ../../source/testing/response.rst:248
 msgid ""
 "You can perform tests to see if specific elements/text/etc exist with the"
 " body of the response with the following assertions."
-msgstr ""
+msgstr "다음 어설션을 사용하여 응답 본문에 특정 요소/텍스트 등이 존재하는지 테스트할 수 있습니다."
 
 #: ../../source/testing/response.rst:252
 msgid "assertSee(string $search = null, string $element = null)"
-msgstr ""
+msgstr "assertSee(string $search = null, string $element = null)"
 
 #: ../../source/testing/response.rst:254
 msgid ""
 "Asserts that text/HTML is on the page, either by itself or - more "
 "specifically - within a tag, as specified by type, class, or id:"
 msgstr ""
+"페이지에 텍스트/HTML이 단독으로 또는 type, class, id로 지정된 태그 내에 "
+"더 구체적으로 존재하는지 어설션합니다:"
 
 #: ../../source/testing/response.rst:261
 msgid "assertDontSee(string $search = null, string $element = null)"
-msgstr ""
+msgstr "assertDontSee(string $search = null, string $element = null)"
 
 #: ../../source/testing/response.rst:263
 msgid "Asserts the exact opposite of the ``assertSee()`` method:"
-msgstr ""
+msgstr "``assertSee()`` 메서드의 정반대를 어설션합니다:"
 
 #: ../../source/testing/response.rst:269
 msgid "assertSeeElement(string $search)"
-msgstr ""
+msgstr "assertSeeElement(string $search)"
 
 #: ../../source/testing/response.rst:271
 msgid ""
 "Similar to ``assertSee()``, however this only checks for an existing "
 "element. It does not check for specific text:"
 msgstr ""
+"``assertSee()``\ 와 유사하지만, 기존 요소의 존재만 확인합니다. "
+"특정 텍스트는 확인하지 않습니다:"
 
 #: ../../source/testing/response.rst:277
 msgid "assertDontSeeElement(string $search)"
-msgstr ""
+msgstr "assertDontSeeElement(string $search)"
 
 #: ../../source/testing/response.rst:279
 msgid ""
 "Similar to ``assertSee()``, however this only checks for an existing "
 "element that is missing. It does not check for specific text:"
 msgstr ""
+"``assertSee()``\ 와 유사하지만, 존재하지 않는 요소만 확인합니다. "
+"특정 텍스트는 확인하지 않습니다:"
 
 #: ../../source/testing/response.rst:286
 msgid "assertSeeLink(string $text, string $details = null)"
-msgstr ""
+msgstr "assertSeeLink(string $text, string $details = null)"
 
 #: ../../source/testing/response.rst:288
 msgid ""
 "Asserts that an anchor tag is found with matching ``$text`` as the body "
 "of the tag:"
-msgstr ""
+msgstr "태그 본문으로 ``$text``\ 와 일치하는 앵커 태그가 있는지 어설션합니다:"
 
 #: ../../source/testing/response.rst:294
 msgid "assertSeeInField(string $field, string $value = null)"
-msgstr ""
+msgstr "assertSeeInField(string $field, string $value = null)"
 
 #: ../../source/testing/response.rst:296
 msgid "Asserts that an input tag exists with the name and value:"
-msgstr ""
+msgstr "이름과 값이 있는 입력 태그가 존재하는지 어설션합니다:"
 
 #: ../../source/testing/response.rst:302
 msgid "Working with JSON"
-msgstr ""
+msgstr "JSON 다루기"
 
 #: ../../source/testing/response.rst:304
 msgid ""
 "Responses will frequently contain JSON responses, especially when working"
 " with API methods. The following methods can help to test the responses."
 msgstr ""
+"특히 API 메서드를 사용할 때 응답에 JSON 응답이 포함되는 경우가 많습니다. "
+"다음 메서드들을 사용하여 응답을 테스트할 수 있습니다."
 
 #: ../../source/testing/response.rst:308
 msgid "getJSON()"
-msgstr ""
+msgstr "getJSON()"
 
 #: ../../source/testing/response.rst:310
 msgid "This method will return the body of the response as a JSON string:"
-msgstr ""
+msgstr "이 메서드는 응답 본문을 JSON 문자열로 반환합니다:"
 
 #: ../../source/testing/response.rst:315
 msgid ""
 "You can use this method to determine if ``$response`` actually holds JSON"
 " content:"
-msgstr ""
+msgstr "이 메서드를 사용하여 ``$response``\ 가 실제로 JSON 콘텐츠를 포함하는지 확인할 수 있습니다:"
 
 #: ../../source/testing/response.rst:320
 msgid "Be aware that the JSON string will be pretty-printed in the result."
-msgstr ""
+msgstr "결과에서 JSON 문자열이 보기 좋게 들여쓰기(pretty-print)되어 출력된다는 점에 유의하십시오."
 
 #: ../../source/testing/response.rst:323
 msgid "assertJSONFragment(array $fragment)"
-msgstr ""
+msgstr "assertJSONFragment(array $fragment)"
 
 #: ../../source/testing/response.rst:325
 msgid ""
 "Asserts that ``$fragment`` is found within the JSON response. It does not"
 " need to match the entire JSON value."
 msgstr ""
+"``$fragment``\ 가 JSON 응답 내에 존재하는지 어설션합니다. "
+"전체 JSON 값과 일치할 필요는 없습니다."
 
 #: ../../source/testing/response.rst:331
 msgid "assertJSONExact($test)"
-msgstr ""
+msgstr "assertJSONExact($test)"
 
 #: ../../source/testing/response.rst:333
 msgid ""
 "Similar to ``assertJSONFragment()``, but checks the entire JSON response "
 "to ensure exact matches."
-msgstr ""
+msgstr "``assertJSONFragment()``\ 와 유사하지만, 전체 JSON 응답을 검사하여 정확한 일치를 보장합니다."
 
 #: ../../source/testing/response.rst:336
 msgid "Working with XML"
-msgstr ""
+msgstr "XML 다루기"
 
 #: ../../source/testing/response.rst:339
 msgid "getXML()"
-msgstr ""
+msgstr "getXML()"
 
 #: ../../source/testing/response.rst:341
 msgid "If your application returns XML, you can retrieve it through this method."
-msgstr ""
-
+msgstr "애플리케이션이 XML을 반환하는 경우 이 메서드를 통해 가져올 수 있습니다."

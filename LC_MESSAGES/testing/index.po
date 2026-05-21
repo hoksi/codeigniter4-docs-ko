@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,35 +21,35 @@ msgstr ""
 
 #: ../../source/testing/index.rst:8
 msgid "Getting Started"
-msgstr ""
+msgstr "시작하기"
 
 #: ../../source/testing/index.rst:8
 msgid "Database"
-msgstr ""
+msgstr "데이터베이스"
 
 #: ../../source/testing/index.rst:8
 msgid "Generating Data"
-msgstr ""
+msgstr "데이터 생성"
 
 #: ../../source/testing/index.rst:8
 msgid "Controller Testing"
-msgstr ""
+msgstr "컨트롤러 테스트"
 
 #: ../../source/testing/index.rst:8
 msgid "HTTP Testing"
-msgstr ""
+msgstr "HTTP 테스트"
 
 #: ../../source/testing/index.rst:8
 msgid "Mocking"
-msgstr ""
+msgstr "모킹"
 
 #: ../../source/testing/index.rst:8
 msgid "Session Testing"
-msgstr ""
+msgstr "세션 테스트"
 
 #: ../../source/testing/index.rst:3
 msgid "Testing"
-msgstr ""
+msgstr "테스트"
 
 #: ../../source/testing/index.rst:5
 msgid ""
@@ -58,4 +57,5 @@ msgid ""
 "application thoroughly. The following sections should get you quickly "
 "testing your applications."
 msgstr ""
-
+"CodeIgniter는 애플리케이션을 철저하게 테스트하고 디버그하는 데 도움이 되는 "
+"다양한 도구를 함께 제공합니다. 다음 섹션들을 통해 애플리케이션 테스트를 빠르게 시작할 수 있습니다."

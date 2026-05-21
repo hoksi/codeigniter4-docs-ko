@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../source/testing/fabricator.rst:3
 msgid "Generating Test Data"
-msgstr ""
+msgstr "테스트 데이터 생성"
 
 #: ../../source/testing/fabricator.rst:5
 msgid ""
@@ -32,10 +31,14 @@ msgid ""
 "random data. Use fabricators in your seeds or test cases to stage fake "
 "data for your unit tests."
 msgstr ""
+"애플리케이션의 테스트를 실행하기 위해 샘플 데이터가 필요한 경우가 많습니다. "
+"``Fabricator``\ 클래스는 `Faker <https://github.com/FakerPHP/Faker>`_\ 를 "
+"사용하여 모델을 임의 데이터 생성기로 변환합니다. 시드(seed) 또는 테스트 케이스에서 "
+"패브리케이터(Fabricator)를 사용하여 단위 테스트를 위한 가짜 데이터를 준비하십시오."
 
 #: ../../source/testing/fabricator.rst:14
 msgid "Supported Models"
-msgstr ""
+msgstr "지원되는 모델"
 
 #: ../../source/testing/fabricator.rst:16
 msgid ""
@@ -44,30 +47,35 @@ msgid ""
 "ensuring they implement "
 "``CodeIgniter\\Test\\Interfaces\\FabricatorModel``:"
 msgstr ""
+"``Fabricator``\ 는 프레임워크의 핵심 모델인 ``CodeIgniter\\Model``\ 을 상속하는 "
+"모든 모델을 지원합니다. ``CodeIgniter\\Test\\Interfaces\\FabricatorModel``\ 을 "
+"구현한 커스텀 모델을 사용할 수도 있습니다:"
 
 #: ../../source/testing/fabricator.rst:21
 msgid ""
 "In addition to methods, the interface outlines some necessary properties "
 "for the target model. Please see the interface code for details."
 msgstr ""
+"메서드 외에도, 인터페이스는 대상 모델에 필요한 몇 가지 속성을 정의합니다. "
+"자세한 내용은 인터페이스 코드를 참고하십시오."
 
 #: ../../source/testing/fabricator.rst:24
 msgid "Loading Fabricators"
-msgstr ""
+msgstr "패브리케이터 로드"
 
 #: ../../source/testing/fabricator.rst:26
 msgid "At its most basic a fabricator takes the model to act on:"
-msgstr ""
+msgstr "가장 기본적인 형태에서, 패브리케이터는 작동할 모델을 인자로 받습니다:"
 
 #: ../../source/testing/fabricator.rst:30
 msgid ""
 "The parameter can be a string specifying the name of the model, or an "
 "instance of the model itself:"
-msgstr ""
+msgstr "매개변수는 모델의 이름을 지정하는 문자열이거나 모델 인스턴스 자체일 수 있습니다:"
 
 #: ../../source/testing/fabricator.rst:35
 msgid "Defining Formatters"
-msgstr ""
+msgstr "포매터 정의"
 
 #: ../../source/testing/fabricator.rst:37
 msgid ""
@@ -80,16 +88,22 @@ msgid ""
 " will want to specify the formatters to use as the second parameter to "
 "the constructor:"
 msgstr ""
+"Faker는 포매터로부터 데이터를 요청하여 생성합니다. 포매터가 정의되지 않은 경우, "
+"``Fabricator``\ 는 필드 이름과 모델 속성을 기반으로 가장 적절한 포매터를 추측하며, "
+"``$fabricator->defaultFormatter``\ 로 폴백됩니다. 필드 이름이 일반적인 포매터와 "
+"일치하거나 필드 내용이 크게 중요하지 않다면 이 방법도 괜찮지만, 대부분의 경우 "
+"생성자의 두 번째 매개변수로 사용할 포매터를 직접 지정하는 것이 좋습니다:"
 
 #: ../../source/testing/fabricator.rst:45
 msgid ""
 "You can also change the formatters after a fabricator is initialized by "
 "using the ``setFormatters()`` method."
 msgstr ""
+"패브리케이터가 초기화된 후에도 ``setFormatters()`` 메서드를 사용하여 포매터를 변경할 수 있습니다."
 
 #: ../../source/testing/fabricator.rst:48
 msgid "Advanced Formatting"
-msgstr ""
+msgstr "고급 포맷팅"
 
 #: ../../source/testing/fabricator.rst:50
 msgid ""
@@ -99,6 +113,9 @@ msgid ""
 "``fake()`` method where you can define exactly what the faked data should"
 " look like:"
 msgstr ""
+"포매터의 기본 반환값으로 충분하지 않을 때도 있습니다. Faker 프로바이더는 대부분의 "
+"포매터에 매개변수를 허용하여 임의 데이터의 범위를 더 제한할 수 있습니다. 패브리케이터는 "
+"모델에서 ``fake()`` 메서드를 찾아, 그 안에서 가짜 데이터의 형태를 정확하게 정의할 수 있습니다:"
 
 #: ../../source/testing/fabricator.rst:56
 msgid ""
@@ -108,6 +125,10 @@ msgid ""
 "app configuration, neither of which are possible using the "
 "``$formatters`` parameter."
 msgstr ""
+"이 예시에서 처음 세 값은 이전의 포매터와 동일하다는 점에 주목하십시오. 그러나 "
+"``avatar``\ 의 경우 기본값이 아닌 다른 이미지 크기를 요청했고, ``login``\ 은 "
+"앱 설정에 따른 조건문을 사용했는데, 이 두 가지는 ``$formatters`` 매개변수로는 "
+"불가능한 것들입니다."
 
 #: ../../source/testing/fabricator.rst:60
 msgid ""
@@ -115,10 +136,12 @@ msgid ""
 " so it is a good practice to define a child class in your test support "
 "folder:"
 msgstr ""
+"테스트 데이터를 프로덕션 모델과 분리하고 싶을 수 있으므로, 테스트 지원 폴더에 "
+"자식 클래스를 정의하는 것이 좋은 방법입니다:"
 
 #: ../../source/testing/fabricator.rst:66
 msgid "Setting Modifiers"
-msgstr ""
+msgstr "수정자 설정"
 
 #: ../../source/testing/fabricator.rst:70
 msgid ""
@@ -126,6 +149,9 @@ msgid ""
 " ``valid()``, to be called before any provider. Fabricator fully supports"
 " these modifiers by providing dedicated methods."
 msgstr ""
+"Faker는 모든 프로바이더 호출 전에 사용하는 세 가지 특별한 프로바이더인 ``unique()``, "
+"``optional()``, ``valid()``\ 를 제공합니다. 패브리케이터는 전용 메서드를 통해 "
+"이러한 수정자를 완전히 지원합니다."
 
 #: ../../source/testing/fabricator.rst:76
 msgid ""
@@ -133,16 +159,20 @@ msgid ""
 "modifiers as-is. You can refer to `Faker's documentation on modifiers`_ "
 "for details."
 msgstr ""
+"필드 이름 다음에 전달된 인수는 수정자에게 그대로 전달됩니다. 자세한 내용은 "
+"`Faker의 수정자 문서`_\ 를 참고하십시오."
 
 #: ../../source/testing/fabricator.rst:81
 msgid ""
 "Instead of calling each method on Fabricator, you may use Faker's "
 "modifiers directly if you are using the ``fake()`` method on your models."
 msgstr ""
+"패브리케이터(Fabricator)의 각 메서드를 호출하는 대신, 모델에서 ``fake()`` 메서드를 "
+"사용하는 경우 Faker의 수정자를 직접 사용할 수도 있습니다."
 
 #: ../../source/testing/fabricator.rst:87
 msgid "Localization"
-msgstr ""
+msgstr "로컬라이제이션"
 
 #: ../../source/testing/fabricator.rst:89
 msgid ""
@@ -150,6 +180,9 @@ msgid ""
 "determine which providers support your locale. Specify a locale in the "
 "third parameter while initiating a fabricator:"
 msgstr ""
+"Faker는 다양한 로케일을 지원합니다. 어떤 프로바이더가 원하는 로케일을 지원하는지 "
+"확인하려면 해당 문서를 참고하십시오. 패브리케이터를 초기화할 때 세 번째 매개변수에 "
+"로케일을 지정합니다:"
 
 #: ../../source/testing/fabricator.rst:94
 msgid ""
@@ -157,24 +190,28 @@ msgid ""
 "**app/Config/App.php** as ``defaultLocale``. You can check the locale of "
 "an existing fabricator using its ``getLocale()`` method."
 msgstr ""
+"로케일을 지정하지 않으면 **app/Config/App.php**\ 에서 ``defaultLocale``\ 로 "
+"정의된 로케일을 사용합니다. ``getLocale()`` 메서드를 통해 기존 패브리케이터의 "
+"로케일을 확인할 수 있습니다."
 
 #: ../../source/testing/fabricator.rst:98
 msgid "Faking the Data"
-msgstr ""
+msgstr "데이터 위조"
 
 #: ../../source/testing/fabricator.rst:100
 msgid ""
 "Once you have a properly-initialized fabricator it is easy to generate "
 "test data with the ``make()`` command:"
 msgstr ""
+"패브리케이터가 올바르게 초기화되면 ``make()`` 명령으로 테스트 데이터를 쉽게 생성할 수 있습니다:"
 
 #: ../../source/testing/fabricator.rst:104
 msgid "You might get back something like this:"
-msgstr ""
+msgstr "다음과 같은 결과를 얻을 수 있습니다:"
 
 #: ../../source/testing/fabricator.rst:108
 msgid "You can also get a lot of them back by supplying a count:"
-msgstr ""
+msgstr "개수를 지정하여 여러 개를 한 번에 얻을 수도 있습니다:"
 
 #: ../../source/testing/fabricator.rst:112
 msgid ""
@@ -182,6 +219,8 @@ msgid ""
 "representative model, but you can force a type using the methods "
 "directly:"
 msgstr ""
+"``make()``\ 의 반환 타입은 해당 모델에 정의된 타입을 따르지만, 메서드를 직접 "
+"사용하여 타입을 강제 지정할 수도 있습니다:"
 
 #: ../../source/testing/fabricator.rst:117
 msgid ""
@@ -192,12 +231,17 @@ msgid ""
 "timestamps the return from ``create()`` can differ from ``make()``. You "
 "might get back something like this:"
 msgstr ""
+"``make()``\ 의 반환값은 테스트에서 사용하거나 데이터베이스에 삽입할 준비가 된 "
+"상태입니다. 또는 ``Fabricator``\ 에 포함된 ``create()`` 명령을 사용하면 "
+"데이터베이스에 자동으로 삽입하고 결과를 반환합니다. 모델 콜백, 데이터베이스 포맷팅, "
+"기본 키 및 타임스탬프와 같은 특수 키로 인해 ``create()``\ 의 반환값은 ``make()``\ 와 "
+"다를 수 있습니다. 다음과 같은 결과를 얻을 수 있습니다:"
 
 #: ../../source/testing/fabricator.rst:124
 msgid ""
 "Similar to ``make()`` you can supply a count to insert and return an "
 "array of objects:"
-msgstr ""
+msgstr "``make()``\ 와 마찬가지로 개수를 지정하여 객체 배열을 삽입하고 반환받을 수 있습니다:"
 
 #: ../../source/testing/fabricator.rst:128
 msgid ""
@@ -206,10 +250,14 @@ msgid ""
 "second parameter to allowing mocking the object, returning the object "
 "with extra database fields above without actually touching the database:"
 msgstr ""
+"마지막으로, 실제 데이터베이스를 사용하지 않으면서도 완전한 데이터베이스 객체로 "
+"테스트하고 싶은 경우가 있습니다. ``create()``\ 는 두 번째 매개변수를 통해 객체 모킹을 "
+"허용하며, 데이터베이스에 실제로 접근하지 않고 위에서 설명한 추가 데이터베이스 필드가 "
+"포함된 객체를 반환합니다:"
 
 #: ../../source/testing/fabricator.rst:135
 msgid "Specifying Test Data"
-msgstr ""
+msgstr "테스트 데이터 지정"
 
 #: ../../source/testing/fabricator.rst:137
 msgid ""
@@ -218,32 +266,39 @@ msgid ""
 "Rather then creating a new fabricator for each variant you can use "
 "``setOverrides()`` to specify the value for any fields:"
 msgstr ""
+"자동 생성된 데이터도 좋지만, 포매터 설정을 변경하지 않고 특정 필드에 고정 값을 "
+"지정하고 싶은 경우가 있습니다. 각 변형마다 새 패브리케이터를 만드는 대신 "
+"``setOverrides()``\ 를 사용하여 원하는 필드의 값을 지정할 수 있습니다:"
 
 #: ../../source/testing/fabricator.rst:143
 msgid ""
 "Now any data generated with ``make()`` or ``create()`` will always use "
 "\"Bobby\" for the ``first`` field:"
 msgstr ""
+"이제 ``make()`` 또는 ``create()``\ 로 생성된 모든 데이터의 ``first`` 필드에는 "
+"항상 \"Bobby\"가 사용됩니다:"
 
 #: ../../source/testing/fabricator.rst:147
 msgid ""
 "``setOverrides()`` can take a second parameter to indicate whether this "
 "should be a persistent override or only for a single action:"
 msgstr ""
+"``setOverrides()``\ 는 두 번째 매개변수를 통해 재정의가 영구적으로 유지될지, "
+"단일 동작에만 적용될지를 지정할 수 있습니다:"
 
 #: ../../source/testing/fabricator.rst:152
 msgid "Notice after the first return the fabricator stops using the overrides:"
-msgstr ""
+msgstr "첫 번째 반환 후에는 패브리케이터가 재정의를 사용하지 않게 되는 것을 확인하십시오:"
 
 #: ../../source/testing/fabricator.rst:156
 msgid ""
 "If no second parameter is supplied then passed values will persist by "
 "default."
-msgstr ""
+msgstr "두 번째 매개변수를 지정하지 않으면 전달된 값은 기본적으로 영구 유지됩니다."
 
 #: ../../source/testing/fabricator.rst:159
 msgid "Test Helper"
-msgstr ""
+msgstr "테스트 헬퍼"
 
 #: ../../source/testing/fabricator.rst:161
 msgid ""
@@ -251,20 +306,22 @@ msgid ""
 "Test Helper provides the ``fake($model, $overrides, $persist = true)`` "
 "function to do just this:"
 msgstr ""
+"테스트를 위해 일회성 가짜 객체만 필요한 경우가 많습니다. 테스트 헬퍼는 이를 위해 "
+"``fake($model, $overrides, $persist = true)`` 함수를 제공합니다:"
 
 #: ../../source/testing/fabricator.rst:166
 msgid "This is equivalent to:"
-msgstr ""
+msgstr "이것은 다음과 동일합니다:"
 
 #: ../../source/testing/fabricator.rst:170
 msgid ""
 "If you just need a fake object without saving it to the database you can "
 "pass false into the persist parameter."
-msgstr ""
+msgstr "데이터베이스에 저장하지 않고 가짜 객체만 필요한 경우, persist 매개변수에 false를 전달하면 됩니다."
 
 #: ../../source/testing/fabricator.rst:173
 msgid "Table Counts"
-msgstr ""
+msgstr "테이블 카운트"
 
 #: ../../source/testing/fabricator.rst:175
 msgid ""
@@ -272,6 +329,8 @@ msgid ""
 "``Fabricator`` provides a static count of the number of faked items you "
 "have created for each table. Consider the following example:"
 msgstr ""
+"가짜 데이터가 다른 가짜 데이터에 의존하는 경우가 자주 있습니다. ``Fabricator``\ 는 "
+"각 테이블에 생성된 가짜 항목 수에 대한 정적 카운트를 제공합니다. 다음 예시를 살펴보십시오:"
 
 #: ../../source/testing/fabricator.rst:179
 msgid ""
@@ -281,34 +340,42 @@ msgid ""
 "users but don't want to assign them to a non-existent group ID. Your "
 "model's fake method could look like this:"
 msgstr ""
+"프로젝트에 사용자와 그룹이 있다고 가정합니다. 테스트 케이스에서 다양한 크기의 그룹 "
+"시나리오를 만들기 위해 ``Fabricator``\ 를 사용하여 여러 그룹을 생성합니다. 이제 "
+"가짜 사용자를 만들고 싶지만 존재하지 않는 그룹 ID에 할당하고 싶지 않은 경우, "
+"모델의 fake 메서드는 다음과 같이 작성할 수 있습니다:"
 
 #: ../../source/testing/fabricator.rst:186
 msgid ""
 "Now creating a new user will ensure it is a part of a valid group: "
 "``$user = fake(UserModel::class);``"
 msgstr ""
+"이제 새 사용자를 생성하면 유효한 그룹에 속하게 됩니다: "
+"``$user = fake(UserModel::class);``"
 
 #: ../../source/testing/fabricator.rst:189
 msgid "Methods"
-msgstr ""
+msgstr "메서드"
 
 #: ../../source/testing/fabricator.rst:191
 msgid ""
 "``Fabricator`` handles the counts internally but you can also access "
 "these static methods to assist with using them:"
 msgstr ""
+"``Fabricator``\ 는 내부적으로 카운트를 관리하지만, 다음 정적 메서드를 통해 "
+"직접 접근하여 활용할 수도 있습니다:"
 
 #: ../../source/testing/fabricator.rst:195
 msgid "getCount(string $table): int"
-msgstr ""
+msgstr "getCount(string $table): int"
 
 #: ../../source/testing/fabricator.rst:197
 msgid "Return the current value for a specific table (default: 0)."
-msgstr ""
+msgstr "특정 테이블의 현재 카운트 값을 반환합니다 (기본값: 0)."
 
 #: ../../source/testing/fabricator.rst:200
 msgid "setCount(string $table, int $count): int"
-msgstr ""
+msgstr "setCount(string $table, int $count): int"
 
 #: ../../source/testing/fabricator.rst:202
 msgid ""
@@ -316,34 +383,41 @@ msgid ""
 "some test items without using a fabricator that you still wanted factored"
 " into the final counts."
 msgstr ""
+"특정 테이블의 카운트 값을 수동으로 설정합니다. 예를 들어, 패브리케이터를 사용하지 않고 "
+"테스트 항목을 생성했지만 최종 카운트에 포함시키고 싶은 경우에 사용합니다."
 
 #: ../../source/testing/fabricator.rst:206
 msgid "upCount(string $table): int"
-msgstr ""
+msgstr "upCount(string $table): int"
 
 #: ../../source/testing/fabricator.rst:208
 msgid ""
 "Increment the value for a specific table by one and return the new value."
 " (This is what is used internally with ``Fabricator::create()``)."
 msgstr ""
+"특정 테이블의 카운트 값을 1 증가시키고 새 값을 반환합니다. "
+"(이것은 ``Fabricator::create()``\ 에서 내부적으로 사용됩니다.)"
 
 #: ../../source/testing/fabricator.rst:212
 msgid "downCount(string $table): int"
-msgstr ""
+msgstr "downCount(string $table): int"
 
 #: ../../source/testing/fabricator.rst:214
 msgid ""
 "Decrement the value for a specific table by one and return the new value,"
 " for example if you deleted a fake item but wanted to track the change."
 msgstr ""
+"특정 테이블의 카운트 값을 1 감소시키고 새 값을 반환합니다. 예를 들어, 가짜 항목을 "
+"삭제했지만 변경 사항을 추적하고 싶은 경우에 사용합니다."
 
 #: ../../source/testing/fabricator.rst:218
 msgid "resetCounts()"
-msgstr ""
+msgstr "resetCounts()"
 
 #: ../../source/testing/fabricator.rst:220
 msgid ""
 "Resets all counts. Good idea to call this between test cases (though "
 "using ``CIUnitTestCase::$refresh = true`` does it automatically)."
 msgstr ""
-
+"모든 카운트를 초기화합니다. 테스트 케이스 사이에 이 메서드를 호출하는 것이 좋습니다 "
+"(``CIUnitTestCase::$refresh = true``\ 를 사용하면 자동으로 처리됩니다)."

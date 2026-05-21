@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../source/testing/mocking.rst:3
 msgid "Mocking System Classes"
-msgstr ""
+msgstr "시스템 클래스 모킹"
 
 #: ../../source/testing/mocking.rst:5
 msgid ""
@@ -33,16 +32,22 @@ msgid ""
 "during the execution of the test. This might be checking data gets cached"
 " correctly, emails were sent correctly, etc."
 msgstr ""
+"프레임워크 내의 여러 컴포넌트는 테스트 중에 사용할 수 있는 모의(mock) 버전의 "
+"클래스를 제공합니다. 이러한 클래스들은 테스트 실행 중에 일반 클래스를 대체하며, "
+"테스트 실행 중에 특정 동작이 발생했는지(또는 발생하지 않았는지) 검증하기 위한 "
+"추가적인 어설션을 제공하는 경우가 많습니다. 예를 들어 데이터가 올바르게 캐시되었는지, "
+"이메일이 올바르게 발송되었는지 등을 확인할 수 있습니다."
 
 #: ../../source/testing/mocking.rst:15
 msgid "Cache"
-msgstr ""
+msgstr "캐시"
 
 #: ../../source/testing/mocking.rst:17
 msgid ""
 "You can mock the cache with the ``mock()`` method, using the "
 "``CacheFactory`` as its only parameter."
 msgstr ""
+"``CacheFactory``\ 를 유일한 매개변수로 사용하여 ``mock()`` 메서드로 캐시를 모킹할 수 있습니다."
 
 #: ../../source/testing/mocking.rst:21
 msgid ""
@@ -51,6 +56,10 @@ msgid ""
 "class, so any calls within your code to ``service('cache')`` or "
 "``Config\\Services::cache()`` will use the mocked class within its place."
 msgstr ""
+"이 메서드는 직접 사용할 수 있는 ``CodeIgniter\\Test\\Mock\\MockCache`` 인스턴스를 "
+"반환하면서, 동시에 Service 클래스에 모의 객체를 삽입합니다. 따라서 코드 내에서 "
+"``service('cache')`` 또는 ``Config\\Services::cache()``\ 를 호출하면 "
+"모의 클래스가 대신 사용됩니다."
 
 #: ../../source/testing/mocking.rst:25
 msgid ""
@@ -58,10 +67,13 @@ msgid ""
 "should call either the ``clean()`` or ``bypass()`` methods during the "
 "test ``setUp()`` to ensure a clean slate when your tests run."
 msgstr ""
+"단일 파일 내의 여러 테스트 메서드에서 이를 사용하는 경우, 테스트 실행 시 깨끗한 상태를 "
+"보장하기 위해 테스트 ``setUp()``\ 에서 ``clean()`` 또는 ``bypass()`` 메서드를 "
+"호출해야 합니다."
 
 #: ../../source/testing/mocking.rst:29
 msgid "Additional Methods"
-msgstr ""
+msgstr "추가 메서드"
 
 #: ../../source/testing/mocking.rst:31
 msgid ""
@@ -69,14 +81,16 @@ msgid ""
 "the ``bypass()`` method. This will emulate using the dummy handler and "
 "ensures that your test does not rely on cached data for your tests."
 msgstr ""
+"``bypass()`` 메서드를 사용하여 모의 캐시 핸들러가 캐싱을 전혀 수행하지 않도록 "
+"지시할 수 있습니다. 이렇게 하면 더미 핸들러를 사용하는 것과 같이 동작하며, "
+"테스트가 캐시된 데이터에 의존하지 않도록 보장합니다."
 
 #: ../../source/testing/mocking.rst:37
 msgid "Available Assertions"
-msgstr ""
+msgstr "사용 가능한 어설션"
 
 #: ../../source/testing/mocking.rst:39
 msgid ""
 "The following new assertions are available on the mocked class for using "
 "during testing:"
-msgstr ""
-
+msgstr "테스트 중에 사용할 수 있는 다음과 같은 새로운 어설션들이 모의 클래스에서 제공됩니다:"

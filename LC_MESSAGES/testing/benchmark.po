@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../source/testing/benchmark.rst:3
 msgid "Benchmarking"
-msgstr ""
+msgstr "벤치마킹"
 
 #: ../../source/testing/benchmark.rst:5
 msgid ""
@@ -33,6 +32,10 @@ msgid ""
 "variations and runs those tests, recording performance and memory "
 "statistics to help you decide which version is the best."
 msgstr ""
+"CodeIgniter는 코드를 벤치마크하고 다양한 옵션을 테스트하는 데 도움이 되는 두 가지 별도의 도구를 제공합니다: "
+"**Timer**\ 와 **Iterator**\ 입니다. 타이머(Timer)는 스크립트 실행 중 두 지점 사이의 시간을 쉽게 "
+"계산할 수 있게 해 줍니다. 이터레이터(Iterator)는 여러 변형을 설정하고 해당 테스트를 실행하여 성능 및 메모리 통계를 "
+"기록함으로써 어떤 버전이 가장 좋은지 결정하는 데 도움을 줍니다."
 
 #: ../../source/testing/benchmark.rst:10
 msgid ""
@@ -40,10 +43,12 @@ msgid ""
 "framework is invoked until right before sending the output to the user, "
 "enabling a very accurate timing of the entire system execution."
 msgstr ""
+"Timer 클래스는 항상 활성 상태이며, 프레임워크가 호출되는 순간부터 사용자에게 출력을 보내기 직전까지 실행되어 전체 시스템 "
+"실행 시간을 매우 정확하게 측정할 수 있습니다."
 
 #: ../../source/testing/benchmark.rst:19
 msgid "Using the Timer"
-msgstr ""
+msgstr "타이머 사용"
 
 #: ../../source/testing/benchmark.rst:21
 msgid ""
@@ -52,10 +57,12 @@ msgid ""
 "performance of different aspects of your application. All measurement is "
 "done using the ``start()`` and ``stop()`` methods."
 msgstr ""
+"타이머를 사용하면 애플리케이션 실행 중 두 시점 사이의 시간을 측정할 수 있습니다. 이를 통해 애플리케이션의 다양한 측면의 "
+"성능을 간단하게 측정할 수 있습니다. 모든 측정은 ``start()``\ 와 ``stop()`` 메서드를 사용하여 이루어집니다."
 
 #: ../../source/testing/benchmark.rst:26
 msgid "Timer::start()"
-msgstr ""
+msgstr "Timer::start()"
 
 #: ../../source/testing/benchmark.rst:28
 msgid ""
@@ -63,36 +70,42 @@ msgid ""
 "You can use any string as the name of the timer. It is only used for you "
 "to reference later to know which measurement is which:"
 msgstr ""
+"``start()`` 메서드는 하나의 매개변수, 즉 이 타이머의 이름을 받습니다. 타이머 이름으로는 어떤 문자열이든 사용할 수 "
+"있습니다. 이는 나중에 어떤 측정값인지 참조하기 위해서만 사용됩니다:"
 
 #: ../../source/testing/benchmark.rst:34
 msgid "Timer::stop()"
-msgstr ""
+msgstr "Timer::stop()"
 
 #: ../../source/testing/benchmark.rst:36
 msgid ""
 "The ``stop()`` method takes the name of the timer that you want to stop "
 "as the only parameter, also:"
 msgstr ""
+"``stop()`` 메서드는 중지하려는 타이머의 이름을 유일한 매개변수로 받습니다:"
 
 #: ../../source/testing/benchmark.rst:40
 msgid ""
 "The name is not case-sensitive, but otherwise must match the name you "
 "gave it when you started the timer."
 msgstr ""
+"이름은 대소문자를 구분하지 않지만, 타이머를 시작할 때 지정한 이름과 일치해야 합니다."
 
 #: ../../source/testing/benchmark.rst:43
 msgid "timer()"
-msgstr ""
+msgstr "timer()"
 
 #: ../../source/testing/benchmark.rst:45
 msgid ""
 "Alternatively, you can use the :doc:`global function "
 "</general/common_functions>` ``timer()`` to start and stop timers:"
 msgstr ""
+"또는 :doc:`전역 함수 </general/common_functions>`\ 인 ``timer()``\ 를 사용하여 타이머를 "
+"시작하고 중지할 수 있습니다:"
 
 #: ../../source/testing/benchmark.rst:53
 msgid "Timer::record()"
-msgstr ""
+msgstr "Timer::record()"
 
 #: ../../source/testing/benchmark.rst:57
 msgid ""
@@ -101,20 +114,24 @@ msgid ""
 "measures its execution time. Methods ``start()`` and ``stop()`` will be "
 "called automatically around the function call."
 msgstr ""
+"v4.3.0부터는 매우 작은 코드 블록을 벤치마크하는 경우 ``record()`` 메서드를 사용할 수도 있습니다. 이 메서드는 "
+"매개변수가 없는 callable을 받아 실행 시간을 측정합니다. ``start()``\ 와 ``stop()`` 메서드는 함수 호출 "
+"전후에 자동으로 호출됩니다."
 
 #: ../../source/testing/benchmark.rst:63
 msgid "You can also return the callable's return value for further processing."
-msgstr ""
+msgstr "나중에 처리하기 위해 callable의 반환값을 반환할 수도 있습니다."
 
 #: ../../source/testing/benchmark.rst:67
 msgid ""
 "The same functionality is also available when passing callable to "
 "``timer()`` as second parameter."
 msgstr ""
+"``timer()``\ 에 callable을 두 번째 매개변수로 전달할 때도 동일한 기능을 사용할 수 있습니다."
 
 #: ../../source/testing/benchmark.rst:72
 msgid "Viewing Your Benchmark Points"
-msgstr ""
+msgstr "벤치마크 지점 확인"
 
 #: ../../source/testing/benchmark.rst:74
 msgid ""
@@ -124,6 +141,9 @@ msgid ""
 "``getTimers()`` method. This returns an array of benchmark information, "
 "including start, end, and duration:"
 msgstr ""
+"애플리케이션이 실행되면 설정한 모든 타이머가 Timer 클래스에 의해 수집됩니다. 단, 자동으로 표시되지는 않습니다. "
+"``getTimers()`` 메서드를 호출하여 모든 타이머를 가져올 수 있습니다. 이 메서드는 시작, 종료, 지속 시간을 포함한 "
+"벤치마크 정보 배열을 반환합니다:"
 
 #: ../../source/testing/benchmark.rst:80
 msgid ""
@@ -131,16 +151,18 @@ msgid ""
 " number of decimal places you want to be shown as the only parameter. The"
 " default value is 4 numbers behind the decimal point:"
 msgstr ""
+"표시할 소수점 자릿수를 유일한 매개변수로 전달하여 계산된 지속 시간의 정밀도를 변경할 수 있습니다. 기본값은 소수점 이하 4자리입니다:"
 
 #: ../../source/testing/benchmark.rst:85
 msgid ""
 "The timers are automatically displayed in the :doc:`Debug Toolbar "
 "</testing/debugging>`."
 msgstr ""
+"타이머는 :doc:`디버그 툴바 </testing/debugging>`\ 에 자동으로 표시됩니다."
 
 #: ../../source/testing/benchmark.rst:88
 msgid "Displaying Execution Time"
-msgstr ""
+msgstr "실행 시간 표시"
 
 #: ../../source/testing/benchmark.rst:90
 msgid ""
@@ -150,10 +172,13 @@ msgid ""
 "parameter is the name of the timer to display. The second is the number "
 "of decimal places to display. This defaults to 4:"
 msgstr ""
+"``getTimers()`` 메서드가 프로젝트의 모든 타이머에 대한 원시 데이터를 제공하는 반면, ``getElapsedTime()`` "
+"메서드를 사용하면 단일 타이머의 지속 시간을 초 단위로 가져올 수 있습니다. 첫 번째 매개변수는 표시할 타이머의 이름이고, 두 "
+"번째는 표시할 소수점 자릿수입니다. 기본값은 4입니다:"
 
 #: ../../source/testing/benchmark.rst:98
 msgid "Using the Iterator"
-msgstr ""
+msgstr "이터레이터 사용"
 
 #: ../../source/testing/benchmark.rst:100
 msgid ""
@@ -164,10 +189,13 @@ msgid ""
 "to get a clearer picture of performance. The results can then be "
 "retrieved and used by your script, or displayed as an HTML table."
 msgstr ""
+"이터레이터는 솔루션의 여러 변형을 시험해 보고 속도 차이 및 메모리 사용 패턴의 차이를 확인할 수 있도록 설계된 간단한 도구입니다. "
+"실행할 \"작업\"을 원하는 만큼 추가할 수 있으며, 클래스는 성능을 더 명확하게 파악하기 위해 해당 작업을 수백 또는 수천 번 "
+"실행합니다. 결과는 스크립트에서 가져와 사용하거나 HTML 테이블로 표시할 수 있습니다."
 
 #: ../../source/testing/benchmark.rst:106
 msgid "Creating Tasks To Run"
-msgstr ""
+msgstr "실행할 작업 생성"
 
 #: ../../source/testing/benchmark.rst:108
 msgid ""
@@ -176,10 +204,12 @@ msgid ""
 " ``add()`` method. The first parameter is a name you want to refer to "
 "this test by. The second parameter is the Closure, itself:"
 msgstr ""
+"작업은 클로저(Closure) 내에 정의됩니다. 작업이 생성하는 모든 출력은 자동으로 버려집니다. ``add()`` 메서드를 통해 "
+"Iterator 클래스에 추가됩니다. 첫 번째 매개변수는 이 테스트를 참조할 이름이고, 두 번째 매개변수는 클로저 자체입니다:"
 
 #: ../../source/testing/benchmark.rst:115
 msgid "Running the Tasks"
-msgstr ""
+msgstr "작업 실행"
 
 #: ../../source/testing/benchmark.rst:117
 msgid ""
@@ -189,6 +219,9 @@ msgid ""
 "run the tests more times than that, you can pass the number as the first "
 "parameter:"
 msgstr ""
+"실행할 작업을 추가한 후에는 ``run()`` 메서드를 사용하여 작업을 여러 번 반복 실행할 수 있습니다. 기본적으로 각 작업을 "
+"1000번 실행합니다. 이는 대부분의 간단한 테스트에 충분합니다. 그보다 더 많이 테스트를 실행해야 하는 경우 첫 번째 매개변수로 "
+"횟수를 전달할 수 있습니다:"
 
 #: ../../source/testing/benchmark.rst:123
 msgid ""
@@ -196,4 +229,5 @@ msgid ""
 "test. If you don't want the results, you can pass in ``false`` as the "
 "second parameter:"
 msgstr ""
-
+"실행이 완료되면 테스트 결과가 담긴 HTML 테이블을 반환합니다. 결과가 필요 없다면 두 번째 매개변수로 ``false``\ 를 "
+"전달할 수 있습니다:"
