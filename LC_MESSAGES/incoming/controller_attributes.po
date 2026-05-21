@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../source/incoming/controller_attributes.rst:5
 msgid "Controller Attributes"
-msgstr ""
+msgstr "컨트롤러 속성"
 
 #: ../../source/incoming/controller_attributes.rst:7
 msgid ""
@@ -33,10 +32,13 @@ msgid ""
 "routing methods, including auto-routing, which allows for a near feature-"
 "parity between the more robust route declarations and auto-routing."
 msgstr ""
+"PHP 속성은 컨트롤러 클래스와 메서드에 필터와 기타 메타데이터를 정의하는 데 사용할 수 있습니다. 이렇게 하면 설정이 영향을 "
+"받는 코드와 가까이 유지되며, 특정 컨트롤러나 메서드에 어떤 필터가 적용되는지 한눈에 더 쉽게 파악할 수 있습니다. 이는 자동 "
+"라우팅을 포함한 모든 라우팅 방식에서 동작하며, 더 견고한 라우트 선언과 자동 라우팅 사이의 기능 차이를 거의 없애 줍니다."
 
 #: ../../source/incoming/controller_attributes.rst:14
 msgid "Getting Started"
-msgstr ""
+msgstr "시작하기"
 
 #: ../../source/incoming/controller_attributes.rst:16
 msgid ""
@@ -44,12 +46,14 @@ msgid ""
 "specific method. The following example shows how to apply the ``Filters``"
 " attribute to a controller class:"
 msgstr ""
+"컨트롤러 속성은 클래스 전체 또는 특정 메서드에 적용할 수 있습니다. 다음 예제는 컨트롤러 클래스에 ``Filters`` 속성을 "
+"적용하는 방법을 보여줍니다:"
 
 #: ../../source/incoming/controller_attributes.rst:20
 msgid ""
 "In this example, the ``Auth`` filter will be applied to all methods in "
 "``AdminController``."
-msgstr ""
+msgstr "이 예제에서는 ``Auth`` 필터가 ``AdminController``\\ 의 모든 메서드에 적용됩니다."
 
 #: ../../source/incoming/controller_attributes.rst:22
 msgid ""
@@ -57,31 +61,33 @@ msgid ""
 "a controller. This allows you to apply filters only to certain methods, "
 "while leaving others unaffected. Here's an example:"
 msgstr ""
+"컨트롤러의 특정 메서드에만 ``Filters`` 속성을 적용할 수도 있습니다. 이렇게 하면 특정 메서드에만 필터를 적용하고 다른 "
+"메서드는 영향을 받지 않게 할 수 있습니다. 예제는 다음과 같습니다:"
 
 #: ../../source/incoming/controller_attributes.rst:26
 msgid ""
 "Class-level and method-level attributes can work together to provide a "
 "flexible way to manage your routes at the controller level."
-msgstr ""
+msgstr "클래스 수준과 메서드 수준의 속성은 함께 작동하여 컨트롤러 수준에서 라우트를 유연하게 관리할 수 있게 합니다."
 
 #: ../../source/incoming/controller_attributes.rst:29
 msgid "Disabling Attributes"
-msgstr ""
+msgstr "속성 비활성화"
 
 #: ../../source/incoming/controller_attributes.rst:31
 msgid ""
 "If you know that you will not be using attributes in your application, "
 "you can disable the feature by setting the ``$useControllerAttributes`` "
 "property in your ``app/Config/Routing.php`` file to ``false``."
-msgstr ""
+msgstr "애플리케이션에서 속성을 사용하지 않을 것이 확실하다면 ``app/Config/Routing.php`` 파일의 ``$useControllerAttributes`` 속성을 ``false``\\ 로 설정하여 기능을 비활성화할 수 있습니다."
 
 #: ../../source/incoming/controller_attributes.rst:34
 msgid "Provided Attributes"
-msgstr ""
+msgstr "제공되는 속성"
 
 #: ../../source/incoming/controller_attributes.rst:37
 msgid "Filter"
-msgstr ""
+msgstr "필터"
 
 #: ../../source/incoming/controller_attributes.rst:39
 msgid ""
@@ -91,23 +97,26 @@ msgid ""
 "parameters to the filters. Here's an example of how to use the "
 "``Filters`` attribute:"
 msgstr ""
+"``Filters`` 속성을 사용하면 컨트롤러 클래스나 메서드에 적용할 하나 이상의 필터를 지정할 수 있습니다. 컨트롤러 작업 전"
+" 또는 후에 실행할 필터를 지정할 수 있으며, 필터에 매개변수를 전달할 수도 있습니다. ``Filters`` 속성 사용 예제는 "
+"다음과 같습니다:"
 
 #: ../../source/incoming/controller_attributes.rst:45
 msgid ""
 "When filters are applied both by an attribute and in the filter "
 "configuration file, they will both be applied, but that could lead to "
 "unexpected results."
-msgstr ""
+msgstr "필터가 속성과 필터 설정 파일 양쪽에서 적용되면 둘 다 적용되지만, 예상하지 못한 결과가 생길 수 있습니다."
 
 #: ../../source/incoming/controller_attributes.rst:49
 msgid ""
 "Please remember that every parameter applied to the filter will be "
 "converted to a string. This behavior affects only filters."
-msgstr ""
+msgstr "필터에 적용되는 모든 매개변수는 문자열로 변환된다는 점을 기억하세요. 이 동작은 필터에만 영향을 줍니다."
 
 #: ../../source/incoming/controller_attributes.rst:52
 msgid "Restrict"
-msgstr ""
+msgstr "제한"
 
 #: ../../source/incoming/controller_attributes.rst:54
 msgid ""
@@ -116,10 +125,12 @@ msgid ""
 "application is running in. Here's an example of how to use the "
 "``Restrict`` attribute:"
 msgstr ""
+"``Restrict`` 속성을 사용하면 도메인, 서브도메인 또는 애플리케이션이 실행되는 환경을 기준으로 클래스나 메서드에 대한 "
+"접근을 제한할 수 있습니다. ``Restrict`` 속성 사용 예제는 다음과 같습니다:"
 
 #: ../../source/incoming/controller_attributes.rst:60
 msgid "Cache"
-msgstr ""
+msgstr "캐시"
 
 #: ../../source/incoming/controller_attributes.rst:62
 msgid ""
@@ -128,10 +139,12 @@ msgid ""
 "seconds, and optionally a cache key. Here's an example of how to use the "
 "``Cache`` attribute:"
 msgstr ""
+"``Cache`` 속성을 사용하면 컨트롤러 메서드의 출력을 지정한 시간 동안 캐시할 수 있습니다. 초 단위 지속 시간을 지정할 "
+"수 있고, 선택적으로 캐시 키도 지정할 수 있습니다. ``Cache`` 속성 사용 예제는 다음과 같습니다:"
 
 #: ../../source/incoming/controller_attributes.rst:67
 msgid "Custom Attributes"
-msgstr ""
+msgstr "사용자 정의 속성"
 
 #: ../../source/incoming/controller_attributes.rst:69
 msgid ""
@@ -142,10 +155,12 @@ msgid ""
 "Here's an example of a custom attribute that adds a custom header to the "
 "response:"
 msgstr ""
+"컨트롤러와 메서드에 메타데이터나 동작을 추가하기 위해 직접 사용자 정의 속성을 만들 수도 있습니다. 사용자 정의 속성은 "
+"``CodeIgniter\\Router\\Attributes\\RouteAttributeInterface`` 인터페이스를 구현해야 "
+"합니다. 다음은 응답에 사용자 정의 헤더를 추가하는 사용자 정의 속성의 예제입니다:"
 
 #: ../../source/incoming/controller_attributes.rst:73
 msgid ""
 "You can then apply this custom attribute to a controller class or method "
 "just like the built-in attributes:"
-msgstr ""
-
+msgstr "그다음에는 이 사용자 정의 속성을 내장 속성과 마찬가지로 컨트롤러 클래스나 메서드에 적용할 수 있습니다:"

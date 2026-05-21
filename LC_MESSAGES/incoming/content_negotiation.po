@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,11 +21,11 @@ msgstr ""
 
 #: ../../source/incoming/content_negotiation.rst:3
 msgid "Content Negotiation"
-msgstr ""
+msgstr "콘텐츠 협상"
 
 #: ../../source/incoming/content_negotiation.rst:11
 msgid "What is Content Negotiation?"
-msgstr ""
+msgstr "콘텐츠 협상이란 무엇인가요?"
 
 #: ../../source/incoming/content_negotiation.rst:13
 msgid ""
@@ -37,13 +36,13 @@ msgid ""
 "PNG, what type of compression is supported and more. This is done by "
 "analyzing four different headers which can each support multiple value "
 "options, each with their own priority."
-msgstr ""
+msgstr "콘텐츠 협상은 클라이언트와 서버가 각각 처리할 수 있는 형식에 따라 클라이언트에 반환할 콘텐츠 유형을 결정하는 방법입니다. 예를 들어 클라이언트가 HTML을 원할지 JSON을 원할지, 이미지를 JPEG로 반환할지 PNG로 반환할지, 어떤 압축 방식을 지원하는지 등을 결정하는 데 사용할 수 있습니다. 이는 각기 우선순위를 가진 여러 값을 지원할 수 있는 네 개의 서로 다른 헤더를 분석하여 수행됩니다."
 
 #: ../../source/incoming/content_negotiation.rst:18
 msgid ""
 "Trying to match this up manually can be pretty challenging. CodeIgniter "
 "provides the ``Negotiator`` class that can handle this for you."
-msgstr ""
+msgstr "수동으로 일치시키려면 상당히 까다로울 수 있습니다. CodeIgniter는 이를 처리해 주는 ``Negotiator`` 클래스를 제공합니다."
 
 #: ../../source/incoming/content_negotiation.rst:21
 msgid ""
@@ -51,7 +50,7 @@ msgid ""
 "specification that allows a single resource to serve more than one type "
 "of content, allowing the clients to request the type of data that works "
 "best for them."
-msgstr ""
+msgstr "본질적으로 콘텐츠 협상은 단일 리소스가 여러 유형의 콘텐츠를 제공할 수 있도록 하는 HTTP 규격의 일부로, 클라이언트가 자신에게 가장 적합한 데이터 유형을 요청할 수 있게 합니다."
 
 #: ../../source/incoming/content_negotiation.rst:25
 msgid ""
@@ -60,49 +59,47 @@ msgid ""
 " looks at the available file types the client is requesting and selects "
 "the best match from the image formats that it supports, in this case "
 "likely choosing a JPEG image to return."
-msgstr ""
+msgstr "이의 전형적인 예로 PNG 파일을 표시할 수 없는 브라우저가 GIF나 JPEG만 요청할 수 있습니다. 서버는 요청을 받으면 클라이언트가 요청한 사용 가능한 파일 형식을 확인하고, 지원하는 이미지 형식 중 가장 적합한 것을 선택합니다. 이 경우 JPEG 이미지를 반환할 가능성이 큽니다."
 
 #: ../../source/incoming/content_negotiation.rst:30
 msgid "This same negotiation can happen with four types of data:"
-msgstr ""
-
+msgstr "이러한 협상은 다음 네 가지 데이터 유형에 대해 발생할 수 있습니다:"```
 #: ../../source/incoming/content_negotiation.rst:32
 msgid ""
 "**Media/Document Type** - this could be image format, or HTML vs. XML or "
 "JSON."
-msgstr ""
+msgstr "**미디어/문서 유형** - 이미지 형식이 될 수 있으며, HTML, XML 또는 JSON과 같은 형식 간의 차이를 의미합니다."
 
 #: ../../source/incoming/content_negotiation.rst:33
 msgid ""
 "**Character Set** - The character set the returned document should be set"
 " in. Typically is UTF-8."
-msgstr ""
+msgstr "**문자 인코딩** - 반환되는 문서에 설정해야 하는 문자 인코딩입니다. 일반적으로 UTF-8을 사용합니다."
 
 #: ../../source/incoming/content_negotiation.rst:34
 msgid ""
 "**Document Encoding** - Typically the type of compression used on the "
 "results."
-msgstr ""
+msgstr "**문서 인코딩** - 일반적으로 결과물에 사용되는 압축 유형을 의미합니다."
 
 #: ../../source/incoming/content_negotiation.rst:35
 msgid ""
 "**Document Language** - For sites that support multiple languages, this "
 "helps determine which to return."
-msgstr ""
+msgstr "**문서 언어** - 다국어를 지원하는 사이트의 경우 어떤 언어를 반환할지 결정하는 데 도움이 됩니다."
 
 #: ../../source/incoming/content_negotiation.rst:39
 msgid "Loading the Class"
-msgstr ""
+msgstr "클래스 로딩"
 
 #: ../../source/incoming/content_negotiation.rst:41
 msgid "You can load an instance of the class manually through the Service class:"
-msgstr ""
-
+msgstr "Service 클래스를 통해 이 클래스의 인스턴스를 수동으로 로드할 수 있습니다:"
 #: ../../source/incoming/content_negotiation.rst:45
 msgid ""
 "This will grab the current request instance and automatically inject it "
 "into the Negotiator class."
-msgstr ""
+msgstr "이는 현재 요청 인스턴스를 가져와 Negotiator 클래스에 자동으로 주입합니다."
 
 #: ../../source/incoming/content_negotiation.rst:47
 msgid ""
@@ -110,29 +107,28 @@ msgid ""
 "accessed through this request's ``IncomingRequest`` instance. While you "
 "cannot access it directly this way, you can easily access all of methods "
 "through the ``negotiate()`` method:"
-msgstr ""
-
+msgstr "이 클래스는 별도로 로드할 필요가 없습니다. 대신 이 요청의 ``IncomingRequest`` 인스턴스를 통해 접근할 수 있습니다. 직접 접근할 수는 없지만, ``negotiate()`` 메서드를 통해 모든 메서드에 쉽게 접근할 수 있습니다:"
 #: ../../source/incoming/content_negotiation.rst:53
 msgid ""
 "When accessed this way, the first parameter is the type of content you're"
 " trying to find a match for, while the second is an array of supported "
 "values."
-msgstr ""
+msgstr "이렇게 접근하면 첫 번째 매개변수는 찾고자 하는 콘텐츠 유형이고, 두 번째는 지원되는 값들의 배열입니다."
 
 #: ../../source/incoming/content_negotiation.rst:58
 msgid "Negotiating"
-msgstr ""
+msgstr "협상하기"
 
 #: ../../source/incoming/content_negotiation.rst:60
 msgid ""
 "In this section, we will discuss the 4 types of content that can be "
 "negotiated and show how that would look using both of the methods "
 "described above to access the negotiator."
-msgstr ""
+msgstr "이 섹션에서는 협상할 수 있는 네 가지 유형의 콘텐츠를 논의하고, 위에서 설명한 두 가지 방법으로 Negotiator를 사용하는 예를 보여줍니다."
 
 #: ../../source/incoming/content_negotiation.rst:64
 msgid "Media"
-msgstr ""
+msgstr "미디어"
 
 #: ../../source/incoming/content_negotiation.rst:66
 msgid ""
@@ -141,14 +137,13 @@ msgid ""
 "available. A common example is the client telling the server what format "
 "it wants the data in. This is especially common in APIs. For example, a "
 "client might request JSON formatted data from an API endpoint::"
-msgstr ""
-
+msgstr "첫 번째로 살펴볼 것은 '미디어' 협상입니다. 이는 ``Accept`` 헤더에 의해 제공되며 가장 복잡한 헤더 중 하나입니다. 일반적인 예로는 클라이언트가 서버에 원하는 데이터 형식을 알려주는 경우가 있습니다. 이는 API에서 특히 흔하며, 예를 들어 클라이언트가 API 엔드포인트에서 JSON 형식의 데이터를 요청할 수 있습니다::"
 #: ../../source/incoming/content_negotiation.rst:74
 msgid ""
 "The server now needs to provide a list of what type of content it can "
 "provide. In this example, the API might be able to return data as raw "
 "HTML, JSON, or XML. This list should be provided in order of preference:"
-msgstr ""
+msgstr "서버는 이제 제공할 수 있는 콘텐츠 유형 목록을 제공해야 합니다. 이 예에서 API는 원시 HTML, JSON 또는 XML로 데이터를 반환할 수 있습니다. 이 목록은 선호 순서대로 제공되어야 합니다:"
 
 #: ../../source/incoming/content_negotiation.rst:79
 msgid ""
@@ -158,12 +153,11 @@ msgid ""
 "would be returned. In some cases, though, you might need to enforce the "
 "format to be a strict match. If you pass ``true`` as the final value, it "
 "will return an empty string if no match is found:"
-msgstr ""
+msgstr "이 경우 클라이언트와 서버가 데이터 형식을 JSON으로 합의할 수 있으므로 negotiate 메서드에서 'json'이 반환됩니다. 기본적으로 일치하는 항목이 없으면 ``$supported``\배열의 첫 번째 요소가 반환됩니다. 그러나 경우에 따라 형식을 엄격하게 일치시키도록 강제할 필요가 있습니다. 마지막 값으로 ``true``를 전달하면 일치 항목이 없을 때 빈 문자열을 반환합니다:"
 
 #: ../../source/incoming/content_negotiation.rst:87
 msgid "Language"
-msgstr ""
-
+msgstr "언어"
 #: ../../source/incoming/content_negotiation.rst:89
 msgid ""
 "Another common usage is to determine the language the content should be "
@@ -172,25 +166,25 @@ msgid ""
 "multiple translations of content will find this useful, since the browser"
 " will typically send the preferred language along in the ``Accept-"
 "Language`` header::"
-msgstr ""
+msgstr "또 다른 일반적인 용도는 콘텐츠가 어떤 언어로 제공되어야 하는지를 결정하는 것입니다. 단일 언어 사이트를 운영 중이라면 큰 차이가 없겠지만, 여러 번역을 제공할 수 있는 사이트는 브라우저가 일반적으로 ``Accept-Language`` 헤더에 선호 언어를 함께 전송하므로 이 기능을 유용하게 사용할 수 있습니다::"
 
 #: ../../source/incoming/content_negotiation.rst:97
 msgid ""
 "In this example, the browser would prefer French, with a second choice of"
 " English. If your website supports English and German you would do "
 "something like:"
-msgstr ""
+msgstr "이 예에서는 브라우저가 프랑스를 우선으로 선호하고, 두 번째로 영어를 선호합니다. 웹사이트가 영어와 독일어를 지원한다면 다음과 같이 할 수 있습니다:"
 
 #: ../../source/incoming/content_negotiation.rst:102
 msgid ""
 "In this example, 'en' would be returned as the current language. If no "
 "match is found, it will return the first element in the ``$supported`` "
 "array, so that should always be the preferred language."
-msgstr ""
+msgstr "이 예에서는 'en'이 현재 언어로 반환됩니다. 일치 항목이 없으면 항상 ``$supported``\배열의 첫 번째 요소가 반환되므로, 해당 항목은 항상 기본 선호 언어여야 합니다."
 
 #: ../../source/incoming/content_negotiation.rst:106
 msgid "Strict Locale Negotiation"
-msgstr ""
+msgstr "엄격 로케일 협상"
 
 #: ../../source/incoming/content_negotiation.rst:110
 msgid ""
@@ -199,15 +193,13 @@ msgid ""
 "is usually sufficient. But sometimes we want to be able to distinguish "
 "between regional versions such as ``en-US`` and ``en-GB`` to serve "
 "different content."
-msgstr ""
-
+msgstr "기본적으로 로케일은 손실 비교 방식으로 결정됩니다. 따라서 로케일 문자열의 첫 부분(언어)만 고려됩니다. 이는 일반적으로 충분하지만, 경우에 따라 ``en-US``와 ``en-GB``와 같은 지역 버전을 구분하여 다른 콘텐츠를 제공해야 할 때가 있습니다."
 #: ../../source/incoming/content_negotiation.rst:114
 msgid ""
 "For such cases, we have introduced a new setting that can be enabled via "
 "``Config\\Feature::$strictLocaleNegotiation``. This will ensure that the "
 "strict comparison will be made in the first place."
-msgstr ""
-
+msgstr "이러한 경우를 위해 ``Config\\Feature::$strictLocaleNegotiation``\을 통해 활성화할 수 있는 새 설정을 도입했습니다. 이를 통해 먼저 엄격한 비교가 수행되도록 보장합니다."
 #: ../../source/incoming/content_negotiation.rst:119
 msgid ""
 "CodeIgniter comes with translations only for primary language tags ('en',"
@@ -217,27 +209,27 @@ msgid ""
 "translation files, you **must also change** the folder names for "
 "CodeIgniter's translation files to match what you put in the "
 "``$supportedLocales`` array."
-msgstr ""
+msgstr "CodeIgniter는 기본 언어 태그('en', 'fr' 등)에 대해서만 번역을 제공합니다. 따라서 이 기능을 활성화하고 ``Config\\App::$supportedLocales``\설정에 지역 언어 태그('en-US', 'fr-FR' 등)를 포함하는 경우, 자체 번역 파일이 있다면 CodeIgniter의 번역 파일 폴더 이름도 ``$supportedLocales``\ 배열에 맞게 변경해야 한다는 점을 유의하세요."
 
 #: ../../source/incoming/content_negotiation.rst:124
 msgid ""
 "Now let's consider the below example. The browser's preferred language "
 "will be set as this::"
-msgstr ""
+msgstr "이제 아래 예를 살펴보겠습니다. 브라우저의 선호 언어는 다음과 같이 설정됩니다::"
 
 #: ../../source/incoming/content_negotiation.rst:129
 msgid ""
 "In this example, the browser would prefer French, with a second choice of"
 " English (United Kingdom). Your website on another hand supports German "
 "and English (United States):"
-msgstr ""
+msgstr "이 예에서는 브라우저가 프랑스를 우선으로 선호하고, 두 번째로 영국 영어를 선호합니다. 반면 귀하의 웹사이트는 독일어와 미국 영어를 지원합니다:"
 
 #: ../../source/incoming/content_negotiation.rst:134
 msgid ""
 "In this example, 'en-US' would be returned as the current language. If no"
 " match is found, it will return the first element in the ``$supported`` "
 "array. Here is how exactly the locale selection process works."
-msgstr ""
+msgstr "이 예에서는 'en-US'가 현재 언어로 반환됩니다. 일치 항목이 없으면 ``$supported``\배열의 첫 번째 요소가 반환됩니다. 로케일 선택 과정은 다음과 같이 작동합니다."
 
 #: ../../source/incoming/content_negotiation.rst:137
 msgid ""
@@ -247,58 +239,57 @@ msgid ""
 "general locale (in this case 'en') which again is not in our array. Then "
 "we will search for the regional locale 'en-'. And that's when our value "
 "from the ``$supported`` array will be matched. We will return 'en-US'."
-msgstr ""
+msgstr "브라우저가 'fr'를 선호하더라도 이것이 ``$supported``\ 배열에 없다면 문제가 발생합니다. 'en-GB'에서도 같은 문제가 발생하지만, 여기서는 변형을 검색할 수 있습니다. 먼저 가장 일반적인 로케일(이 경우 'en')로 대체를 시도하고, 이것이 배열에 없다면 지역 로케일 'en-'을 검색합니다. 그러면 ``$supported``\배열의 값과 일치하여 'en-US'를 반환합니다."
 
 #: ../../source/incoming/content_negotiation.rst:142
 msgid "So the process of selecting a locale is as follows:"
-msgstr ""
+msgstr "따라서 로케일 선택 과정은 다음과 같습니다:"
 
 #: ../../source/incoming/content_negotiation.rst:144
 msgid "strict match ('en-GB') - ISO 639-1 plus ISO 3166-1 alpha-2"
-msgstr ""
+msgstr "엄격 일치('en-GB') - ISO 639-1 및 ISO 3166-1 alpha-2"
 
 #: ../../source/incoming/content_negotiation.rst:145
 msgid "general locale match ('en') - ISO 639-1"
-msgstr ""
+msgstr "일반 로케일 일치('en') - ISO 639-1"
 
 #: ../../source/incoming/content_negotiation.rst:146
 msgid ""
 "regional locale match ('en-') - ISO 639-1 plus \"wildcard\" for ISO "
 "3166-1 alpha-2"
-msgstr ""
+msgstr "지역 로케일 일치('en-') - ISO 639-1 및 ISO 3166-1 alpha-2의 와일드카드"
 
 #: ../../source/incoming/content_negotiation.rst:149
 msgid "Encoding"
-msgstr ""
+msgstr "인코딩"
 
 #: ../../source/incoming/content_negotiation.rst:151
 msgid ""
 "The ``Accept-Encoding`` header contains the character sets the client "
 "prefers to receive, and is used to specify the type of compression the "
 "client supports::"
-msgstr ""
+msgstr "``Accept-Encoding`` 헤더에는 클라이언트가 선호하는 문자 집합이 포함되며, 클라이언트가 지원하는 압축 유형을 지정하는 데 사용됩니다::"
 
 #: ../../source/incoming/content_negotiation.rst:157
 msgid ""
 "Your web server will define what types of compression you can use. Some, "
 "like Apache, only support **gzip**:"
-msgstr ""
+msgstr "웹 서버는 사용할 수 있는 압축 유형을 정의합니다. 일부 서버(예: Apache)는 **gzip**\만 지원합니다:"
 
 #: ../../source/incoming/content_negotiation.rst:161
 msgid "See more at `Wikipedia <https://en.wikipedia.org/wiki/HTTP_compression>`_."
-msgstr ""
+msgstr "자세한 내용은 `Wikipedia <https://en.wikipedia.org/wiki/HTTP_compression>`_\를 참조하세요."
 
 #: ../../source/incoming/content_negotiation.rst:164
 msgid "Character Set"
-msgstr ""
+msgstr "문자 집합"
 
 #: ../../source/incoming/content_negotiation.rst:166
 msgid ""
 "The desired character set is passed through the ``Accept-Charset`` "
 "header::"
-msgstr ""
+msgstr "원하는 문자 집합은 ``Accept-Charset`` 헤더를 통해 전달됩니다::"
 
 #: ../../source/incoming/content_negotiation.rst:171
 msgid "By default, if no matches are found, **utf-8** will be returned:"
-msgstr ""
-
+msgstr "기본적으로 일치 항목이 없으면 **utf-8**\이 반환됩니다:"

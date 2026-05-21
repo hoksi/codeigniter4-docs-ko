@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -12,17 +11,17 @@ msgstr ""
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../source/outgoing/api_transformers.rst:5
 msgid "API Resources"
-msgstr ""
+msgstr "API 리소스"
 
 #: ../../source/outgoing/api_transformers.rst:7
 msgid ""
@@ -30,149 +29,162 @@ msgid ""
 "consistent format before sending them to the client. API Resources, "
 "implemented through transformers, provide a clean way to convert your "
 "entities, arrays, or objects into structured API responses. They help "
-"separate your internal data structure from what you expose through your "
-"API, making it easier to maintain and evolve your API over time."
+"separate your internal data structure from what you expose through your API,"
+" making it easier to maintain and evolve your API over time."
 msgstr ""
+"API를 구축할 때 데이터 모델을 클라이언트에 보내기 전에 일관된 형식으로 변환해야 하는 경우가 많습니다. 변환기를 통해 구현된 API "
+"리소스는 엔터티, 배열 또는 개체를 구조화된 API 응답으로 변환하는 깔끔한 방법을 제공합니다. API를 통해 노출되는 데이터 구조와 "
+"내부 데이터 구조를 분리하는 데 도움이 되므로 시간이 지남에 따라 API를 더 쉽게 유지 관리하고 발전시킬 수 있습니다."
 
 #: ../../source/outgoing/api_transformers.rst:18
 msgid "Quick Example"
-msgstr ""
+msgstr "빠른 예"
 
 #: ../../source/outgoing/api_transformers.rst:20
 msgid ""
-"The following example shows a common usage pattern for transformers in "
-"your application."
-msgstr ""
+"The following example shows a common usage pattern for transformers in your "
+"application."
+msgstr "다음 예에서는 애플리케이션의 변환기에 대한 일반적인 사용 패턴을 보여줍니다."
 
 #: ../../source/outgoing/api_transformers.rst:24
 msgid ""
-"In this example, the ``UserTransformer`` defines which fields from a user"
-" entity should be included in the API response. The ``transform()`` "
-"method converts a single resource, while ``transformMany()`` handles "
-"collections of resources."
+"In this example, the ``UserTransformer`` defines which fields from a user "
+"entity should be included in the API response. The ``transform()`` method "
+"converts a single resource, while ``transformMany()`` handles collections of"
+" resources."
 msgstr ""
+"이 예에서 ``UserTransformer``\\은 API 응답에 포함되어야 하는 사용자 엔터티의 필드를 정의합니다. "
+"``transform()`` 메서드는 단일 리소스를 변환하는 반면 ``transformMany()``\\는 리소스 컬렉션을 처리합니다."
 
 #: ../../source/outgoing/api_transformers.rst:30
 msgid "Creating a Transformer"
-msgstr ""
+msgstr "변환기 만들기"
 
 #: ../../source/outgoing/api_transformers.rst:32
 msgid ""
-"To create a transformer, extend the ``BaseTransformer`` class and "
-"implement the ``toArray()`` method to define your API resource structure."
-" The ``toArray()`` method receives the resource being transformed as a "
-"parameter, allowing you to access and transform its data."
+"To create a transformer, extend the ``BaseTransformer`` class and implement "
+"the ``toArray()`` method to define your API resource structure. The "
+"``toArray()`` method receives the resource being transformed as a parameter,"
+" allowing you to access and transform its data."
 msgstr ""
+"변환기를 생성하려면 ``BaseTransformer`` 클래스를 확장하고 ``toArray()`` 메서드를 구현하여 API 리소스 구조를"
+" 정의하세요. ``toArray()`` 메서드는 변환되는 리소스를 매개변수로 수신하여 해당 데이터에 액세스하고 변환할 수 있도록 합니다."
 
 #: ../../source/outgoing/api_transformers.rst:37
 msgid "Basic Transformer"
-msgstr ""
+msgstr "기본 변압기"
 
 #: ../../source/outgoing/api_transformers.rst:41
 msgid ""
-"The ``toArray()`` method receives the resource (entity, array, or object)"
-" as its parameter and defines the structure of your API response. You can"
-" include any fields you want from the resource, and you can also rename "
-"or transform values as needed."
+"The ``toArray()`` method receives the resource (entity, array, or object) as"
+" its parameter and defines the structure of your API response. You can "
+"include any fields you want from the resource, and you can also rename or "
+"transform values as needed."
 msgstr ""
+"``toArray()`` 메서드는 리소스(엔티티, 배열 또는 객체)를 매개변수로 수신하고 API 응답의 구조를 정의합니다. 리소스에서 "
+"원하는 필드를 포함할 수 있으며 필요에 따라 값의 이름을 바꾸거나 변환할 수도 있습니다."
 
 #: ../../source/outgoing/api_transformers.rst:46
 msgid "Generating Transformer Files"
-msgstr ""
+msgstr "변환기 파일 생성"
 
 #: ../../source/outgoing/api_transformers.rst:48
 msgid ""
-"CodeIgniter provides a CLI command to quickly generate transformer "
-"skeleton files:"
-msgstr ""
+"CodeIgniter provides a CLI command to quickly generate transformer skeleton "
+"files:"
+msgstr "CodeIgniter는 변환기 뼈대 파일을 빠르게 생성하기 위한 CLI 명령을 제공합니다."
 
 #: ../../source/outgoing/api_transformers.rst:54
 msgid ""
-"This creates a new transformer file at **app/Transformers/User.php** with"
-" the basic structure already in place."
-msgstr ""
+"This creates a new transformer file at **app/Transformers/User.php** with "
+"the basic structure already in place."
+msgstr "이렇게 하면 기본 구조가 이미 있는 **app/Transformers/User.php**\\에 새 변환기 파일이 생성됩니다."
 
 #: ../../source/outgoing/api_transformers.rst:57
 msgid "Command Options"
-msgstr ""
+msgstr "명령 옵션"
 
 #: ../../source/outgoing/api_transformers.rst:59
 msgid "The ``make:transformer`` command supports several options:"
-msgstr ""
+msgstr "``make:transformer`` 명령은 여러 옵션을 지원합니다."
 
 #: ../../source/outgoing/api_transformers.rst:61
 msgid "**--suffix**"
-msgstr ""
+msgstr "**--접미사**"
 
 #: ../../source/outgoing/api_transformers.rst:62
 msgid "Appends \"Transformer\" to the class name:"
-msgstr ""
+msgstr "클래스 이름에 \"Transformer\"를 추가합니다."
 
 #: ../../source/outgoing/api_transformers.rst:68
 msgid "Creates **app/Transformers/UserTransformer.php**"
-msgstr ""
+msgstr "**app/Transformers/UserTransformer.php**\\를 생성합니다."
 
 #: ../../source/outgoing/api_transformers.rst:70
 msgid "**--namespace**"
-msgstr ""
+msgstr "**--네임스페이스**"
 
 #: ../../source/outgoing/api_transformers.rst:71
 msgid "Specifies a custom root namespace:"
-msgstr ""
+msgstr "사용자 정의 루트 네임스페이스를 지정합니다."
 
 #: ../../source/outgoing/api_transformers.rst:77
 msgid "**--force**"
-msgstr ""
+msgstr "**--힘**"
 
 #: ../../source/outgoing/api_transformers.rst:78
 msgid "Forces overwriting an existing file:"
-msgstr ""
+msgstr "기존 파일을 강제로 덮어씁니다."
 
 #: ../../source/outgoing/api_transformers.rst:85
 msgid "Subdirectories"
-msgstr ""
+msgstr "하위 디렉터리"
 
 #: ../../source/outgoing/api_transformers.rst:87
 msgid ""
-"You can organize transformers into subdirectories by including the path "
-"in the name:"
-msgstr ""
+"You can organize transformers into subdirectories by including the path in "
+"the name:"
+msgstr "이름에 경로를 포함하여 변환기를 하위 디렉터리로 구성할 수 있습니다."
 
 #: ../../source/outgoing/api_transformers.rst:93
 msgid ""
 "This creates **app/Transformers/Api/V1/User.php** with the appropriate "
 "namespace ``App\\Transformers\\Api\\V1``."
 msgstr ""
+"그러면 적절한 네임스페이스 ``App\\Transformers\\Api\\V1``\\을 사용하여 "
+"**app/Transformers/Api/V1/User.php**\\가 생성됩니다."
 
 #: ../../source/outgoing/api_transformers.rst:96
 msgid "Using Transformers in Controllers"
-msgstr ""
+msgstr "컨트롤러에서 Transformer 사용"
 
 #: ../../source/outgoing/api_transformers.rst:98
 msgid ""
 "Once you've created a transformer, you can use it in your controllers to "
 "transform data before returning it to the client."
-msgstr ""
+msgstr "변환기를 만든 후에는 클라이언트에 반환하기 전에 컨트롤러에서 이를 사용하여 데이터를 변환할 수 있습니다."
 
 #: ../../source/outgoing/api_transformers.rst:105
 msgid "Field Filtering"
-msgstr ""
+msgstr "필드 필터링"
 
 #: ../../source/outgoing/api_transformers.rst:107
 msgid ""
 "The transformer automatically supports field filtering through the "
-"``fields`` query parameter of the current URL. This allows API clients to"
-" request only specific fields they need, reducing bandwidth and improving"
-" performance."
+"``fields`` query parameter of the current URL. This allows API clients to "
+"request only specific fields they need, reducing bandwidth and improving "
+"performance."
 msgstr ""
+"변환기는 현재 URL의 ``fields`` 쿼리 매개변수를 통해 필드 필터링을 자동으로 지원합니다. 이를 통해 API 클라이언트는 필요한"
+" 특정 필드만 요청할 수 있으므로 대역폭이 줄어들고 성능이 향상됩니다."
 
 #: ../../source/outgoing/api_transformers.rst:112
 msgid "A request to ``/users/1?fields=id,name`` would return only:"
-msgstr ""
+msgstr "``/users/1?fields=id,name``\\에 대한 요청은 다음만 반환합니다."
 
 #: ../../source/outgoing/api_transformers.rst:122
 msgid "Restricting Available Fields"
-msgstr ""
+msgstr "사용 가능한 필드 제한"
 
 #: ../../source/outgoing/api_transformers.rst:124
 msgid ""
@@ -180,6 +192,8 @@ msgid ""
 "method. You can restrict which fields are allowed by overriding the "
 "``getAllowedFields()`` method:"
 msgstr ""
+"기본적으로 클라이언트는 ``toArray()`` 메서드에 정의된 모든 필드를 요청할 수 있습니다. "
+"``getAllowedFields()`` 메소드를 재정의하여 허용되는 필드를 제한할 수 있습니다."
 
 #: ../../source/outgoing/api_transformers.rst:129
 msgid ""
@@ -187,23 +201,28 @@ msgid ""
 "``ApiException`` will be thrown because ``email`` is not in the allowed "
 "fields list."
 msgstr ""
+"이제 클라이언트가 ``/users/1?fields=email``\\을 요청하더라도 ``email``\\이 허용된 필드 목록에 없기 때문에"
+" ``ApiException``\\이 발생합니다."
 
 #: ../../source/outgoing/api_transformers.rst:134
 msgid "Including Related Resources"
-msgstr ""
+msgstr "관련 리소스 포함"
 
 #: ../../source/outgoing/api_transformers.rst:136
 msgid ""
-"Transformers support loading of related resources through the ``include``"
-" query parameter. This follows a common API pattern where clients can "
-"specify which relationships they want included. While relationships are "
-"the most frequent use case, you can include any additional data you want "
-"by defining custom include methods."
+"Transformers support loading of related resources through the ``include`` "
+"query parameter. This follows a common API pattern where clients can specify"
+" which relationships they want included. While relationships are the most "
+"frequent use case, you can include any additional data you want by defining "
+"custom include methods."
 msgstr ""
+"변환기는 ``include`` 쿼리 매개변수를 통해 관련 리소스 로드를 지원합니다. 이는 클라이언트가 포함할 관계를 지정할 수 있는 "
+"일반적인 API 패턴을 따릅니다. 관계가 가장 자주 사용되는 사례이지만 사용자 정의 포함 방법을 정의하여 원하는 추가 데이터를 포함할 수"
+" 있습니다."
 
 #: ../../source/outgoing/api_transformers.rst:142
 msgid "Defining Include Methods"
-msgstr ""
+msgstr "포함 방법 정의"
 
 #: ../../source/outgoing/api_transformers.rst:144
 msgid ""
@@ -211,51 +230,58 @@ msgid ""
 "``include`` followed by the resource name. Inside these methods, you can "
 "access the current resource being transformed via ``$this->resource``:"
 msgstr ""
+"관련 리소스 포함을 지원하려면 ``include`` 접두사와 리소스 이름이 붙은 메서드를 생성하세요. 이러한 메소드 내에서 "
+"``$this->resource``\\을 통해 변환 중인 현재 리소스에 액세스할 수 있습니다."
 
 #: ../../source/outgoing/api_transformers.rst:150
 msgid ""
-"Note how the include methods use ``$this->resource['id']`` to access the "
-"ID of the user being transformed. The ``$this->resource`` property is "
+"Note how the include methods use ``$this->resource['id']`` to access the ID "
+"of the user being transformed. The ``$this->resource`` property is "
 "automatically set by the transformer when ``transform()`` is called."
 msgstr ""
+"포함 메소드가 ``$this->resource['id']``\\을 사용하여 변환 중인 사용자의 ID에 액세스하는 방법에 유의하십시오. "
+"``$this->resource`` 속성은 ``transform()``\\이 호출될 때 변환기에 의해 자동으로 설정됩니다."
 
 #: ../../source/outgoing/api_transformers.rst:153
 msgid "Clients can now request: ``/users/1?include=posts,comments``"
-msgstr ""
+msgstr "이제 클라이언트는 다음을 요청할 수 있습니다: ``/users/1?include=posts,comments``"
 
 #: ../../source/outgoing/api_transformers.rst:155
 msgid "The response would include:"
-msgstr ""
+msgstr "응답에는 다음이 포함됩니다."
 
 #: ../../source/outgoing/api_transformers.rst:178
 msgid "Restricting Available Includes"
-msgstr ""
+msgstr "사용 가능한 포함 제한"
 
 #: ../../source/outgoing/api_transformers.rst:180
 msgid ""
 "Similar to field filtering, you can restrict which relationships can be "
 "included by overriding the ``getAllowedIncludes()`` method:"
 msgstr ""
+"필드 필터링과 마찬가지로 ``getAllowedIncludes()`` 메서드를 재정의하여 포함할 수 있는 관계를 제한할 수 있습니다."
 
 #: ../../source/outgoing/api_transformers.rst:185
 msgid "If you want to disable all includes, return an empty array:"
-msgstr ""
+msgstr "모든 포함을 비활성화하려면 빈 배열을 반환하십시오."
 
 #: ../../source/outgoing/api_transformers.rst:190
 msgid "Include Validation"
-msgstr ""
+msgstr "검증 포함"
 
 #: ../../source/outgoing/api_transformers.rst:192
 msgid ""
 "The transformer automatically validates that any requested includes have "
-"corresponding ``include*()`` methods defined in your transformer class. "
-"If a client requests an include that doesn't exist, an ``ApiException`` "
-"will be thrown."
+"corresponding ``include*()`` methods defined in your transformer class. If a"
+" client requests an include that doesn't exist, an ``ApiException`` will be "
+"thrown."
 msgstr ""
+"변환기는 요청된 모든 포함에 변환기 클래스에 정의된 해당 ``include*()`` 메서드가 있는지 자동으로 확인합니다. 클라이언트가 "
+"존재하지 않는 포함을 요청하면 ``ApiException``\\이 발생합니다."
 
 #: ../../source/outgoing/api_transformers.rst:196
 msgid "For example, if a client requests::"
-msgstr ""
+msgstr "예를 들어 클라이언트가 requests::인 경우"
 
 #: ../../source/outgoing/api_transformers.rst:200
 msgid ""
@@ -263,161 +289,173 @@ msgid ""
 "exception will be thrown with the message: \"Missing include method for: "
 "invalid\"."
 msgstr ""
+"그리고 변환기에 ``includeInvalid()`` 메서드가 없으면 \"다음에 대한 포함 메서드 누락: 유효하지 않음\"이라는 메시지와"
+" 함께 예외가 발생합니다."
 
 #: ../../source/outgoing/api_transformers.rst:203
 msgid "This helps catch typos and prevents unexpected behavior."
-msgstr ""
+msgstr "이는 오타를 파악하고 예상치 못한 동작을 방지하는 데 도움이 됩니다."
 
 #: ../../source/outgoing/api_transformers.rst:207
 msgid "Transforming Collections"
-msgstr ""
+msgstr "컬렉션의 변화"
 
 #: ../../source/outgoing/api_transformers.rst:209
 msgid ""
 "The ``transformMany()`` method makes it easy to transform arrays of "
 "resources:"
-msgstr ""
+msgstr "``transformMany()`` 메서드를 사용하면 리소스 배열을 쉽게 변환할 수 있습니다."
 
 #: ../../source/outgoing/api_transformers.rst:213
 msgid ""
-"The ``transformMany()`` method applies the same transformation logic to "
-"each item in the collection, including any field filtering or includes "
-"specified in the request."
+"The ``transformMany()`` method applies the same transformation logic to each"
+" item in the collection, including any field filtering or includes specified"
+" in the request."
 msgstr ""
+"``transformMany()`` 메서드는 요청에 지정된 필드 필터링 또는 포함을 포함하여 컬렉션의 각 항목에 동일한 변환 논리를 "
+"적용합니다."
 
 #: ../../source/outgoing/api_transformers.rst:218
 msgid "Working with Different Data Types"
-msgstr ""
+msgstr "다양한 데이터 유형 작업"
 
 #: ../../source/outgoing/api_transformers.rst:220
 msgid "Transformers can handle various data types, not just entities."
-msgstr ""
+msgstr "변환기는 엔터티뿐만 아니라 다양한 데이터 유형을 처리할 수 있습니다."
 
 #: ../../source/outgoing/api_transformers.rst:223
 msgid "Transforming Entities"
-msgstr ""
+msgstr "엔터티 변환"
 
 #: ../../source/outgoing/api_transformers.rst:225
 msgid ""
-"When you pass an ``Entity`` instance to ``transform()``, it automatically"
-" calls the entity's ``toArray()`` method to get the data:"
+"When you pass an ``Entity`` instance to ``transform()``, it automatically "
+"calls the entity's ``toArray()`` method to get the data:"
 msgstr ""
+"``Entity`` 인스턴스를 ``transform()``\\에 전달하면 자동으로 엔터티의 ``toArray()`` 메서드를 호출하여 "
+"데이터를 가져옵니다."
 
 #: ../../source/outgoing/api_transformers.rst:231
 msgid "Transforming Arrays"
-msgstr ""
+msgstr "배열 변환"
 
 #: ../../source/outgoing/api_transformers.rst:233
 msgid "You can transform plain arrays as well:"
-msgstr ""
+msgstr "일반 배열도 변환할 수 있습니다."
 
 #: ../../source/outgoing/api_transformers.rst:238
 msgid "Transforming Objects"
-msgstr ""
+msgstr "객체 변형"
 
 #: ../../source/outgoing/api_transformers.rst:240
 msgid "Any object can be cast to an array and transformed:"
-msgstr ""
+msgstr "모든 객체를 배열로 캐스팅하고 변환할 수 있습니다."
 
 #: ../../source/outgoing/api_transformers.rst:245
 msgid "Using toArray() Only"
-msgstr ""
+msgstr "toArray()만 사용"
 
 #: ../../source/outgoing/api_transformers.rst:247
 msgid ""
-"If you don't pass a resource to ``transform()``, it will use the data "
-"from your ``toArray()`` method:"
-msgstr ""
+"If you don't pass a resource to ``transform()``, it will use the data from "
+"your ``toArray()`` method:"
+msgstr "``transform()``\\에 리소스를 전달하지 않으면 ``toArray()`` 메서드의 데이터가 사용됩니다."
 
 #: ../../source/outgoing/api_transformers.rst:253
 msgid "Class Reference"
-msgstr ""
+msgstr "수업 참고자료"
 
 #: ../../source/outgoing/api_transformers.rst
 msgid "Parameters"
-msgstr ""
+msgstr "매개변수"
 
 #: ../../source/outgoing/api_transformers.rst:261
 msgid ""
-"Optional request instance. If not provided, the global request will be "
-"used."
-msgstr ""
+"Optional request instance. If not provided, the global request will be used."
+msgstr "선택적 요청 인스턴스. 제공되지 않으면 전역 요청이 사용됩니다."
 
 #: ../../source/outgoing/api_transformers.rst:263
 msgid ""
 "Initializes the transformer and extracts the ``fields`` and ``include`` "
 "query parameters from the request."
-msgstr ""
+msgstr "변환기를 초기화하고 요청에서 ``fields`` 및 ``include`` 쿼리 매개변수를 추출합니다."
 
 #: ../../source/outgoing/api_transformers.rst:267
 msgid "The resource being transformed (Entity, array, object, or null)"
-msgstr ""
+msgstr "변환되는 리소스(엔티티, 배열, 개체 또는 null)"
 
 #: ../../source/outgoing/api_transformers.rst
 msgid "Returns"
-msgstr ""
+msgstr "보고"
 
 #: ../../source/outgoing/api_transformers.rst:268
 msgid "The array representation of the resource"
-msgstr ""
+msgstr "리소스의 배열 표현"
 
 #: ../../source/outgoing/api_transformers.rst
 msgid "Return type"
-msgstr ""
+msgstr "반환 유형"
 
 #: ../../source/outgoing/api_transformers.rst:271
 msgid ""
 "This abstract method must be implemented by child classes to define the "
 "structure of the API resource. The resource parameter contains the data "
-"being transformed. Return an array with the fields you want to include in"
-" the API response, accessing data from the ``$resource`` parameter."
+"being transformed. Return an array with the fields you want to include in "
+"the API response, accessing data from the ``$resource`` parameter."
 msgstr ""
+"API 리소스의 구조를 정의하려면 하위 클래스에서 이 추상 메서드를 구현해야 합니다. 리소스 매개변수에는 변환되는 데이터가 포함됩니다. "
+"``$resource`` 매개변수의 데이터에 액세스하여 API 응답에 포함하려는 필드가 포함된 배열을 반환합니다."
 
 #: ../../source/outgoing/api_transformers.rst:279
 msgid "The resource to transform (Entity, array, object, or null)"
-msgstr ""
+msgstr "변환할 리소스(엔티티, 배열, 개체 또는 null)"
 
 #: ../../source/outgoing/api_transformers.rst:280
 msgid "The transformed array"
-msgstr ""
+msgstr "변환된 배열"
 
 #: ../../source/outgoing/api_transformers.rst:283
 msgid ""
-"Transforms the given resource into an array by calling ``toArray()`` with"
-" the resource data. If ``$resource`` is ``null``, passes ``null`` to "
-"``toArray()``. If it's an Entity, extracts its array representation "
-"first. Otherwise, casts it to an array."
+"Transforms the given resource into an array by calling ``toArray()`` with "
+"the resource data. If ``$resource`` is ``null``, passes ``null`` to "
+"``toArray()``. If it's an Entity, extracts its array representation first. "
+"Otherwise, casts it to an array."
 msgstr ""
+"리소스 데이터로 ``toArray()``\\을 호출하여 지정된 리소스를 배열로 변환합니다. ``$resource``\\이 "
+"``null``\\인 경우 ``null``\\을 ``toArray()``\\에 전달합니다. 엔터티인 경우 먼저 배열 표현을 추출합니다. "
+"그렇지 않으면 배열로 캐스팅합니다."
 
 #: ../../source/outgoing/api_transformers.rst:287
 msgid ""
-"The resource is also stored in ``$this->resource`` so include methods can"
-" access it."
-msgstr ""
+"The resource is also stored in ``$this->resource`` so include methods can "
+"access it."
+msgstr "리소스는 ``$this->resource``\\에도 저장되므로 include 메소드에서 액세스할 수 있습니다."
 
 #: ../../source/outgoing/api_transformers.rst:289
 msgid ""
-"The method automatically applies field filtering and includes based on "
-"query parameters."
-msgstr ""
+"The method automatically applies field filtering and includes based on query"
+" parameters."
+msgstr "이 메서드는 필드 필터링을 자동으로 적용하고 쿼리 매개변수를 기반으로 포함합니다."
 
 #: ../../source/outgoing/api_transformers.rst:295
 msgid "The array of resources to transform"
-msgstr ""
+msgstr "변환할 리소스 배열"
 
 #: ../../source/outgoing/api_transformers.rst:296
 msgid "Array of transformed resources"
-msgstr ""
+msgstr "변환된 리소스 배열"
 
 #: ../../source/outgoing/api_transformers.rst:299
 msgid ""
 "Transforms a collection of resources by calling ``transform()`` on each "
 "item. Field filtering and includes are applied consistently to all items."
 msgstr ""
+"각 항목에 대해 ``transform()``\\을 호출하여 리소스 컬렉션을 변환합니다. 필드 필터링 및 포함은 모든 항목에 일관되게 "
+"적용됩니다."
 
 #: ../../source/outgoing/api_transformers.rst:306
 msgid "Array of allowed field names, or ``null`` to allow all fields"
-msgstr ""
+msgstr "허용되는 필드 이름의 배열 또는 모든 필드를 허용하는 ``null``"
 
 #: ../../source/outgoing/api_transformers.rst:309
 msgid ""
@@ -426,59 +464,64 @@ msgid ""
 "fields from ``toArray()``. Return an array of field names to create a "
 "whitelist of allowed fields."
 msgstr ""
+"``fields`` 쿼리 매개변수를 통해 요청할 수 있는 필드를 제한하려면 이 메서드를 재정의하세요. ``toArray()`` 메서드의 모든"
+" 필드를 허용하려면 null (기본값)을 반환합니다. 허용된 필드의 화이트리스트를 생성하려면 필드 이름 배열을 반환합니다."
 
 #: ../../source/outgoing/api_transformers.rst:317
 msgid "Array of allowed include names, or ``null`` to allow all includes"
-msgstr ""
+msgstr "허용된 포함 이름의 배열 또는 모든 포함을 허용하는 ``null``"
 
 #: ../../source/outgoing/api_transformers.rst:320
 msgid ""
-"Override this method to restrict which related resources can be included "
-"via the ``include`` query parameter. Return ``null`` (the default) to "
-"allow all includes that have corresponding methods. Return an array of "
-"include names to create a whitelist. Return an empty array to disable all"
-" includes."
+"Override this method to restrict which related resources can be included via"
+" the ``include`` query parameter. Return ``null`` (the default) to allow all"
+" includes that have corresponding methods. Return an array of include names "
+"to create a whitelist. Return an empty array to disable all includes."
 msgstr ""
+"``include`` 쿼리 매개변수를 통해 포함될 수 있는 관련 리소스를 제한하려면 이 메서드를 재정의하세요. 해당 메서드가 있는 모든 "
+"포함을 허용하려면 null (기본값)을 반환합니다. 화이트리스트를 생성하려면 포함 이름의 배열을 반환합니다. 모든 포함을 "
+"비활성화하려면 빈 배열을 반환합니다."
 
 #: ../../source/outgoing/api_transformers.rst:328
 msgid "Exception Reference"
-msgstr ""
+msgstr "예외 참조"
 
 #: ../../source/outgoing/api_transformers.rst:334
 msgid "The invalid field name(s)"
-msgstr ""
+msgstr "잘못된 필드 이름"
 
 #: ../../source/outgoing/api_transformers.rst:335
 #: ../../source/outgoing/api_transformers.rst:344
 #: ../../source/outgoing/api_transformers.rst:353
 msgid "ApiException instance"
-msgstr ""
+msgstr "ApiException 인스턴스"
 
 #: ../../source/outgoing/api_transformers.rst:338
 msgid ""
 "Thrown when a client requests a field via the ``fields`` query parameter "
 "that is not in the allowed fields list."
-msgstr ""
+msgstr "클라이언트가 허용된 필드 목록에 없는 ``fields`` 쿼리 매개변수를 통해 필드를 요청할 때 발생합니다."
 
 #: ../../source/outgoing/api_transformers.rst:343
 msgid "The invalid include name(s)"
-msgstr ""
+msgstr "잘못된 포함 이름입니다."
 
 #: ../../source/outgoing/api_transformers.rst:347
 msgid ""
-"Thrown when a client requests an include via the ``include`` query "
-"parameter that is not in the allowed includes list."
-msgstr ""
+"Thrown when a client requests an include via the ``include`` query parameter"
+" that is not in the allowed includes list."
+msgstr "클라이언트가 허용된 포함 목록에 없는 ``include`` 쿼리 매개변수를 통해 포함을 요청할 때 발생합니다."
 
 #: ../../source/outgoing/api_transformers.rst:352
 msgid "The missing include method name"
-msgstr ""
+msgstr "누락된 포함 메소드 이름"
 
 #: ../../source/outgoing/api_transformers.rst:356
 msgid ""
 "Thrown when a client requests an include via the ``include`` query "
-"parameter, but the corresponding ``include*()`` method does not exist in "
-"the transformer class. This validation ensures that all requested "
-"includes have proper handler methods defined."
+"parameter, but the corresponding ``include*()`` method does not exist in the"
+" transformer class. This validation ensures that all requested includes have"
+" proper handler methods defined."
 msgstr ""
-
+"클라이언트가 ``include`` 쿼리 매개변수를 통해 포함을 요청했지만 해당 ``include*()`` 메서드가 변환기 클래스에 없을 "
+"때 발생합니다. 이 유효성 검사를 통해 요청된 모든 포함에 적절한 처리기 메서드가 정의되어 있는지 확인합니다."

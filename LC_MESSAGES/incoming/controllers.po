@@ -223,7 +223,6 @@ msgid "The controller also provides the convenience method ``validate()``."
 msgstr "컨트롤러는 또한 ``validate()``\\ 라는 편의 메서드도 제공합니다."
 
 #: ../../source/incoming/controllers.rst:122
-#, fuzzy
 msgid ""
 "Instead of ``validate()``, use ``validateData()`` to validate POST data "
 "only. ``validate()`` uses ``$request->getVar()`` which returns ``$_GET``,"
@@ -739,4 +738,3 @@ msgstr "마치며"
 #: ../../source/incoming/controllers.rst:408
 msgid "That, in a nutshell, is all there is to know about controllers."
 msgstr "간단히 말해, 이것이 컨트롤러에 대해 알아야 할 전부입니다."
-

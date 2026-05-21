@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,9 +21,8 @@ msgstr ""
 
 #: ../../source/incoming/index.rst:3
 msgid "Controllers and Routing"
-msgstr ""
+msgstr "컨트롤러와 라우팅"
 
 #: ../../source/incoming/index.rst:5
 msgid "Controllers handle incoming requests."
-msgstr ""
-
+msgstr "컨트롤러는 들어오는 요청을 처리합니다."

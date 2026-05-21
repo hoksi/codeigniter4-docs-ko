@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -12,187 +11,210 @@ msgstr ""
 "POT-Creation-Date: 2026-05-14 16:28+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../source/outgoing/view_parser.rst:3
 msgid "View Parser"
-msgstr ""
+msgstr "파서 보기"
 
 #: ../../source/outgoing/view_parser.rst:9
 msgid ""
-"The View Parser can perform simple text substitution for pseudo-variables"
-" contained within your view files. It can parse simple variables or "
-"variable tag pairs."
+"The View Parser can perform simple text substitution for pseudo-variables "
+"contained within your view files. It can parse simple variables or variable "
+"tag pairs."
 msgstr ""
+"View Parser는 뷰 파일에 포함된 의사 변수에 대한 간단한 텍스트 대체를 수행할 수 있습니다. 간단한 변수나 변수 태그 쌍을 구문"
+" 분석할 수 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:13
 msgid ""
 "Pseudo-variable names or control constructs are enclosed in braces, like "
 "this::"
-msgstr ""
+msgstr "의사 변수 이름이나 제어 구문은 this::처럼 중괄호로 묶습니다."
 
 #: ../../source/outgoing/view_parser.rst:30
 msgid ""
 "These variables are not actual PHP variables, but rather plain text "
-"representations that allow you to eliminate PHP from your templates (view"
-" files)."
-msgstr ""
+"representations that allow you to eliminate PHP from your templates (view "
+"files)."
+msgstr "이러한 변수는 실제 PHP 변수가 아니라 템플릿(파일 보기)에서 PHP를 제거할 수 있는 일반 텍스트 표현입니다."
 
 #: ../../source/outgoing/view_parser.rst:34
 msgid ""
-"CodeIgniter does **not** require you to use this class since using pure "
-"PHP in your view pages (for instance using the :doc:`View renderer "
-"</outgoing/view_renderer>` ) lets them run a little faster. However, some"
-" developers prefer to use some form of template engine if they work with "
+"CodeIgniter does **not** require you to use this class since using pure PHP "
+"in your view pages (for instance using the :doc:`View renderer "
+"</outgoing/view_renderer>` ) lets them run a little faster. However, some "
+"developers prefer to use some form of template engine if they work with "
 "designers who they feel would find some confusion working with PHP."
 msgstr ""
+"CodeIgniter에서는 보기 페이지에서 순수 PHP를 사용하면(예: :doc:`View renderer "
+"</outgoing/view_renderer>` 사용) 이 클래스를 좀 더 빠르게 실행할 수 있으므로 이 클래스를 사용할 필요가 "
+"**없습니다**. 그러나 일부 개발자는 PHP 작업에 혼란을 느낄 것이라고 생각하는 디자이너와 작업하는 경우 특정 형태의 템플릿 엔진을 "
+"사용하는 것을 선호합니다."
 
 #: ../../source/outgoing/view_parser.rst:44
 msgid "Using the View Parser Class"
-msgstr ""
+msgstr "뷰 파서 클래스 사용"
 
 #: ../../source/outgoing/view_parser.rst:46
 msgid "The simplest method to load the parser class is through its service:"
-msgstr ""
+msgstr "파서 클래스를 로드하는 가장 간단한 방법은 해당 서비스를 이용하는 것입니다."
 
 #: ../../source/outgoing/view_parser.rst:50
 msgid ""
 "Alternately, if you are not using the ``Parser`` class as your default "
 "renderer, you can instantiate it directly:"
-msgstr ""
+msgstr "또는 ``Parser`` 클래스를 기본 렌더러로 사용하지 않는 경우 직접 인스턴스화할 수 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:55
 msgid ""
 "Then you can use any of the three standard rendering methods that it "
 "provides: ``render()``, ``setVar()`` and ``setData()``. You will also be "
-"able to specify delimiters directly, through the ``setDelimiters()`` "
-"method."
+"able to specify delimiters directly, through the ``setDelimiters()`` method."
 msgstr ""
+"그런 다음 제공되는 세 가지 표준 렌더링 방법인 ``render()``, ``setVar()`` 및 ``setData()`` 중 하나를 "
+"사용할 수 있습니다. ``setDelimiters()`` 메소드를 통해 구분 기호를 직접 지정할 수도 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:60
 msgid ""
-"Using the ``Parser``, your view templates are processed only by the "
-"Parser itself, and not like a conventional view PHP script. PHP code in "
-"such a script is ignored by the parser, and only substitutions are "
-"performed."
+"Using the ``Parser``, your view templates are processed only by the Parser "
+"itself, and not like a conventional view PHP script. PHP code in such a "
+"script is ignored by the parser, and only substitutions are performed."
 msgstr ""
+"``Parser``\\을 사용하면 뷰 템플릿은 파서 자체에 의해서만 처리되며 기존 뷰 PHP 스크립트와는 다릅니다. 이러한 스크립트의 "
+"PHP 코드는 파서에서 무시되며 대체만 수행됩니다."
 
 #: ../../source/outgoing/view_parser.rst:64
 msgid "This is purposeful: view files with no PHP."
-msgstr ""
+msgstr "이것은 목적이 있습니다: PHP 없이 파일을 봅니다."
 
 #: ../../source/outgoing/view_parser.rst:67
 msgid "What It Does"
-msgstr ""
+msgstr "그것이 하는 일"
 
 #: ../../source/outgoing/view_parser.rst:69
 msgid ""
 "The ``Parser`` class processes \"PHP/HTML scripts\" stored in the "
 "application's view path. These scripts can not contain any PHP."
 msgstr ""
+"``Parser`` 클래스는 애플리케이션의 보기 경로에 저장된 \"PHP/HTML 스크립트\"를 처리합니다. 이 스크립트에는 PHP가 "
+"포함될 수 없습니다."
 
 #: ../../source/outgoing/view_parser.rst:72
 msgid ""
 "Each view parameter (which we refer to as a pseudo-variable) triggers a "
 "substitution, based on the type of value you provided for it. Pseudo-"
 "variables are not extracted into PHP variables; instead their value is "
-"accessed through the pseudo-variable syntax, where its name is referenced"
-" inside braces."
+"accessed through the pseudo-variable syntax, where its name is referenced "
+"inside braces."
 msgstr ""
+"각 보기 매개변수(의사 변수라고 함)는 제공한 값 유형에 따라 대체를 트리거합니다. 의사 변수는 PHP 변수로 추출되지 않습니다. 대신 "
+"해당 값은 의사 변수 구문을 통해 액세스되며 해당 이름은 중괄호 안에서 참조됩니다."
 
 #: ../../source/outgoing/view_parser.rst:77
 msgid ""
-"The Parser class uses an associative array internally, to accumulate "
-"pseudo-variable settings until you call its ``render()``. This means that"
-" your pseudo-variable names need to be unique, or a later parameter "
-"setting will over-ride an earlier one."
+"The Parser class uses an associative array internally, to accumulate pseudo-"
+"variable settings until you call its ``render()``. This means that your "
+"pseudo-variable names need to be unique, or a later parameter setting will "
+"over-ride an earlier one."
 msgstr ""
+"Parser 클래스는 내부적으로 연관 배열을 사용하여 ``render()``\\을 호출할 때까지 의사 변수 설정을 축적합니다. 이는 의사"
+" 변수 이름이 고유해야 함을 의미합니다. 그렇지 않으면 이후 매개변수 설정이 이전 매개변수 설정을 재정의합니다."
 
 #: ../../source/outgoing/view_parser.rst:81
 msgid ""
-"This also impacts escaping parameter values for different contexts inside"
-" your script. You will have to give each escaped value a unique parameter"
-" name."
+"This also impacts escaping parameter values for different contexts inside "
+"your script. You will have to give each escaped value a unique parameter "
+"name."
 msgstr ""
+"이는 스크립트 내부의 다양한 컨텍스트에 대한 이스케이프 매개변수 값에도 영향을 미칩니다. 이스케이프된 각 값에 고유한 매개변수 이름을 "
+"지정해야 합니다."
 
 #: ../../source/outgoing/view_parser.rst:85
 msgid "Parser Templates"
-msgstr ""
+msgstr "파서 템플릿"
 
 #: ../../source/outgoing/view_parser.rst:87
 msgid ""
-"You can use the ``render()`` method to parse (or render) simple "
-"templates, like this:"
-msgstr ""
+"You can use the ``render()`` method to parse (or render) simple templates, "
+"like this:"
+msgstr "``render()`` 메소드를 사용하여 다음과 같이 간단한 템플릿을 구문 분석(또는 렌더링)할 수 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:92
 msgid ""
-"View parameters are passed to ``setData()`` as an associative array of "
-"data to be replaced in the template."
-msgstr ""
+"View parameters are passed to ``setData()`` as an associative array of data "
+"to be replaced in the template."
+msgstr "보기 매개변수는 템플릿에서 대체될 데이터의 연관 배열로 ``setData()``\\에 전달됩니다."
 
 #: ../../source/outgoing/view_parser.rst:95
 #, python-brace-format
 msgid ""
 "In the above example, the template would contain two variables: "
 "``{blog_title}`` and ``{blog_heading}``"
-msgstr ""
+msgstr "위의 예에서 템플릿에는 ``{blog_title}`` 및 ``{blog_heading}``\\의 두 가지 변수가 포함됩니다."
 
 #: ../../source/outgoing/view_parser.rst:97
 msgid ""
-"The first parameter to ``render()`` contains the name of the template, "
-"where ``blog_template`` is the name of your view template file."
+"The first parameter to ``render()`` contains the name of the template, where"
+" ``blog_template`` is the name of your view template file."
 msgstr ""
+"``render()``\\의 첫 번째 매개변수에는 템플릿 이름이 포함됩니다. 여기서 ``blog_template``\\은 보기 템플릿 "
+"파일의 이름입니다."
 
 #: ../../source/outgoing/view_parser.rst:100
 msgid ""
-"If the file extension is omitted, then the views are expected to end with"
-" the .php extension."
-msgstr ""
+"If the file extension is omitted, then the views are expected to end with "
+"the .php extension."
+msgstr "파일 확장자를 생략하면 뷰는 .php 확장자로 끝날 것으로 예상됩니다."
 
 #: ../../source/outgoing/view_parser.rst:103
 msgid "Parser Configuration Options"
-msgstr ""
+msgstr "파서 구성 옵션"
 
 #: ../../source/outgoing/view_parser.rst:105
 msgid ""
 "Several options can be passed to the ``render()`` or ``renderString()`` "
 "methods."
-msgstr ""
+msgstr "여러 옵션을 ``render()`` 또는 ``renderString()`` 메서드에 전달할 수 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:107
 msgid ""
 "``cache`` - the time in seconds, to save a view's results; ignored for "
 "``renderString()``"
-msgstr ""
+msgstr "``cache`` - 보기 결과를 저장하는 시간(초)입니다. ``renderString()`` 동안 무시됨"
 
 #: ../../source/outgoing/view_parser.rst:108
 msgid ""
-"``cache_name`` - the ID used to save/retrieve a cached view result; "
-"defaults to the viewpath; ignored for renderString()"
+"``cache_name`` - the ID used to save/retrieve a cached view result; defaults"
+" to the viewpath; ignored for renderString()"
 msgstr ""
+"``cache_name`` - 캐시된 보기 결과를 저장/검색하는 데 사용되는 ID입니다. 기본값은 뷰 경로입니다. "
+"renderString()에서는 무시됩니다."
 
 #: ../../source/outgoing/view_parser.rst:110
 msgid ""
 "``saveData`` - true if the view data parameters should be retained for "
 "subsequent calls; default is **true**"
 msgstr ""
+"``saveData`` - 후속 호출을 위해 뷰 데이터 매개변수를 유지해야 하는 경우 true입니다. 기본값은 **true**\\입니다."
 
 #: ../../source/outgoing/view_parser.rst:112
 msgid ""
-"``cascadeData`` - true if pseudo-variable settings should be passed on to"
-" nested substitutions; default is **true**"
+"``cascadeData`` - true if pseudo-variable settings should be passed on to "
+"nested substitutions; default is **true**"
 msgstr ""
+"``cascadeData`` - 의사 변수 설정을 중첩된 대체 항목에 전달해야 하는 경우 true입니다. 기본값은 "
+"**true**\\입니다."
 
 #: ../../source/outgoing/view_parser.rst:119
 msgid "Substitution Variations"
-msgstr ""
+msgstr "대체 변형"
 
 #: ../../source/outgoing/view_parser.rst:121
 msgid ""
@@ -200,238 +222,278 @@ msgid ""
 "nested. Substitutions are performed in the same sequence that pseudo-"
 "variables were added."
 msgstr ""
+"지원되는 대체 유형에는 단순, 반복, 중첩의 세 가지 유형이 있습니다. 대체는 의사 변수가 추가된 것과 동일한 순서로 수행됩니다."
 
 #: ../../source/outgoing/view_parser.rst:124
 msgid ""
 "The **simple substitution** performed by the parser is a one-to-one "
-"replacement of pseudo-variables where the corresponding data parameter "
-"has either a scalar or string value, as in this example:"
+"replacement of pseudo-variables where the corresponding data parameter has "
+"either a scalar or string value, as in this example:"
 msgstr ""
+"파서가 수행하는 **간단한 대체**\\는 다음 예와 같이 해당 데이터 매개변수가 스칼라 또는 문자열 값을 갖는 의사 변수의 일대일 "
+"대체입니다."
 
 #: ../../source/outgoing/view_parser.rst:130
 msgid ""
 "The ``Parser`` takes substitution a lot further with \"variable pairs\", "
-"used for nested substitutions or looping, and with some advanced "
-"constructs for conditional substitution."
+"used for nested substitutions or looping, and with some advanced constructs "
+"for conditional substitution."
 msgstr ""
+"``Parser``\\은 중첩된 대체 또는 루핑에 사용되는 \"변수 쌍\"과 조건부 대체를 위한 일부 고급 구성을 사용하여 훨씬 더 많은"
+" 대체를 수행합니다."
 
 #: ../../source/outgoing/view_parser.rst:134
 msgid "When the parser executes, it will generally"
-msgstr ""
+msgstr "파서가 실행되면 일반적으로"
 
 #: ../../source/outgoing/view_parser.rst:136
 msgid "handle any conditional substitutions"
-msgstr ""
+msgstr "조건부 대체 처리"
 
 #: ../../source/outgoing/view_parser.rst:137
 msgid "handle any nested/looping substitutions"
-msgstr ""
+msgstr "중첩/루핑 대체 처리"
 
 #: ../../source/outgoing/view_parser.rst:138
 msgid "handle the remaining single substitutions"
-msgstr ""
+msgstr "나머지 단일 대체 처리"
 
 #: ../../source/outgoing/view_parser.rst:141
 msgid "Loop Substitutions"
-msgstr ""
+msgstr "루프 대체"
 
 #: ../../source/outgoing/view_parser.rst:143
 msgid ""
 "A loop substitution happens when the value for a pseudo-variable is a "
 "sequential array of arrays, like an array of row settings."
-msgstr ""
+msgstr "루프 대체는 의사 변수의 값이 행 설정 배열과 같은 순차적 배열 배열일 때 발생합니다."
 
 #: ../../source/outgoing/view_parser.rst:146
 msgid ""
-"The above example code allows simple variables to be replaced. What if "
-"you would like an entire block of variables to be repeated, with each "
-"iteration containing new values? Consider the template example we showed "
-"at the top of the page::"
+"The above example code allows simple variables to be replaced. What if you "
+"would like an entire block of variables to be repeated, with each iteration "
+"containing new values? Consider the template example we showed at the top of"
+" the page::"
 msgstr ""
+"위의 예제 코드를 사용하면 간단한 변수를 바꿀 수 있습니다. 전체 변수 블록을 반복하고 각 반복에 새 값이 포함되도록 하려면 어떻게 해야"
+" 합니까? page:: 상단에 표시된 템플릿 예를 고려해 보세요."
 
 #: ../../source/outgoing/view_parser.rst:166
 #, python-brace-format
 msgid ""
 "In the above code you'll notice a pair of variables: ``{blog_entries}`` "
-"data... ``{/blog_entries}``. In a case like this, the entire chunk of "
-"data between these pairs would be repeated multiple times, corresponding "
-"to the number of rows in the \"blog_entries\" element of the parameters "
-"array."
+"data... ``{/blog_entries}``. In a case like this, the entire chunk of data "
+"between these pairs would be repeated multiple times, corresponding to the "
+"number of rows in the \"blog_entries\" element of the parameters array."
 msgstr ""
+"위 코드에서는 변수 쌍(``{blog_entries}`` data... ``{/blog_entries}``)을 볼 수 있습니다. 이와 "
+"같은 경우 이러한 쌍 사이의 전체 데이터 청크는 매개변수 배열의 \"blog_entries\" 요소에 있는 행 수에 따라 여러 번 "
+"반복됩니다."
 
 #: ../../source/outgoing/view_parser.rst:171
 msgid ""
-"Parsing variable pairs is done using the identical code shown above to "
-"parse single variables, except, you will add a multi-dimensional array "
+"Parsing variable pairs is done using the identical code shown above to parse"
+" single variables, except, you will add a multi-dimensional array "
 "corresponding to your variable pair data. Consider this example:"
 msgstr ""
+"변수 쌍 구문 분석은 단일 변수 구문 분석을 위해 위에 표시된 동일한 코드를 사용하여 수행됩니다. 단, 변수 쌍 데이터에 해당하는 다차원"
+" 배열을 추가한다는 점만 다릅니다. 다음 예를 고려하십시오."
 
 #: ../../source/outgoing/view_parser.rst:177
 msgid ""
-"The value for the pseudo-variable ``blog_entries`` is a sequential array "
-"of associative arrays. The outer level does not have keys associated with"
-" each of the nested \"rows\"."
+"The value for the pseudo-variable ``blog_entries`` is a sequential array of "
+"associative arrays. The outer level does not have keys associated with each "
+"of the nested \"rows\"."
 msgstr ""
+"의사 변수 ``blog_entries``\\의 값은 연관 배열의 순차적 배열입니다. 외부 레벨에는 중첩된 각 \"행\"과 연관된 키가 "
+"없습니다."
 
 #: ../../source/outgoing/view_parser.rst:181
 msgid ""
-"If your \"pair\" data is coming from a database result, which is already "
-"a multi-dimensional array, you can simply use the database "
+"If your \"pair\" data is coming from a database result, which is already a "
+"multi-dimensional array, you can simply use the database "
 "``getResultArray()`` method:"
 msgstr ""
+"\"쌍\" 데이터가 이미 다차원 배열인 데이터베이스 결과에서 나오는 경우 간단히 데이터베이스 ``getResultArray()`` "
+"메서드를 사용할 수 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:187
 msgid ""
-"If the array you are trying to loop over contains objects instead of "
-"arrays, the parser will first look for an ``asArray()`` method on the "
-"object. If it exists, that method will be called and the resulting array "
-"is then looped over just as described above. If no ``asArray()`` method "
-"exists, the object will be cast as an array and its public properties "
-"will be made available to the Parser."
+"If the array you are trying to loop over contains objects instead of arrays,"
+" the parser will first look for an ``asArray()`` method on the object. If it"
+" exists, that method will be called and the resulting array is then looped "
+"over just as described above. If no ``asArray()`` method exists, the object "
+"will be cast as an array and its public properties will be made available to"
+" the Parser."
 msgstr ""
+"루프하려는 배열에 배열 대신 개체가 포함되어 있으면 파서는 먼저 개체에서 ``asArray()`` 메서드를 찾습니다. 존재하는 경우 해당"
+" 메서드가 호출되고 결과 배열은 위에서 설명한 대로 반복됩니다. ``asArray()`` 메서드가 없으면 개체는 배열로 캐스팅되고 해당 "
+"공용 속성을 파서에서 사용할 수 있게 됩니다."
 
 #: ../../source/outgoing/view_parser.rst:193
 msgid ""
 "This is especially useful with the Entity classes, which has an "
-"``asArray()`` method that returns all public and protected properties "
-"(minus the _options property) and makes them available to the Parser."
+"``asArray()`` method that returns all public and protected properties (minus"
+" the _options property) and makes them available to the Parser."
 msgstr ""
+"이는 모든 공용 및 보호 속성(_options 속성 제외)을 반환하고 이를 파서에서 사용할 수 있게 만드는 ``asArray()`` "
+"메서드가 있는 Entity 클래스에 특히 유용합니다."
 
 #: ../../source/outgoing/view_parser.rst:198
 msgid "Nested Substitutions"
-msgstr ""
+msgstr "중첩된 대체"
 
 #: ../../source/outgoing/view_parser.rst:200
 msgid ""
 "A nested substitution happens when the value for a pseudo-variable is an "
 "associative array of values, like a record from a database:"
-msgstr ""
+msgstr "중첩된 대체는 의사 변수의 값이 데이터베이스의 레코드와 같은 값의 연관 배열인 경우 발생합니다."
 
 #: ../../source/outgoing/view_parser.rst:205
 msgid ""
-"The value for the pseudo-variable ``blog_entries`` is an associative "
-"array. The key/value pairs defined inside it will be exposed inside the "
-"variable pair loop for that variable."
+"The value for the pseudo-variable ``blog_entries`` is an associative array. "
+"The key/value pairs defined inside it will be exposed inside the variable "
+"pair loop for that variable."
 msgstr ""
+"의사 변수 ``blog_entries``\\의 값은 연관 배열입니다. 내부에 정의된 키/값 쌍은 해당 변수에 대한 변수 쌍 루프 내부에 "
+"노출됩니다."
 
 #: ../../source/outgoing/view_parser.rst:209
 msgid "A **blog_template.php** that might work for the above::"
-msgstr ""
+msgstr "above::에서 작동할 수 있는 **blog_template.php**"
 
 #: ../../source/outgoing/view_parser.rst:219
 msgid ""
 "If you would like the other pseudo-variables accessible inside the "
-"``blog_entries`` scope, then make sure that the ``cascadeData`` option is"
-" set to true."
+"``blog_entries`` scope, then make sure that the ``cascadeData`` option is "
+"set to true."
 msgstr ""
+"``blog_entries`` 범위 내에서 다른 의사 변수에 액세스하려면 ``cascadeData`` 옵션이 true로 설정되어 있는지 "
+"확인하세요."
 
 #: ../../source/outgoing/view_parser.rst:223
 msgid "Comments"
-msgstr ""
+msgstr "댓글"
 
 #: ../../source/outgoing/view_parser.rst:225
 #, python-brace-format
 msgid ""
-"You can place comments in your templates that will be ignored and removed"
-" during parsing by wrapping the comments in a ``{#  #}`` symbols."
-msgstr ""
+"You can place comments in your templates that will be ignored and removed "
+"during parsing by wrapping the comments in a ``{#  #}`` symbols."
+msgstr "주석을 ``{#  #}`` 기호로 묶어 구문 분석 중에 무시되고 제거될 주석을 템플릿에 배치할 수 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:239
 msgid "Cascading Data"
-msgstr ""
+msgstr "계단식 데이터"
 
 #: ../../source/outgoing/view_parser.rst:241
 msgid ""
-"With both a nested and a loop substitution, you have the option of "
-"cascading data pairs into the inner substitution."
-msgstr ""
+"With both a nested and a loop substitution, you have the option of cascading"
+" data pairs into the inner substitution."
+msgstr "중첩 및 루프 대체를 모두 사용하면 데이터 쌍을 내부 대체에 계단식으로 연결할 수 있는 옵션이 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:244
 msgid "The following example is not impacted by cascading:"
-msgstr ""
+msgstr "다음 예는 계단식 배열의 영향을 받지 않습니다."
 
 #: ../../source/outgoing/view_parser.rst:248
 msgid "This example gives different results, depending on cascading:"
-msgstr ""
+msgstr "이 예는 계단식에 따라 다른 결과를 제공합니다."
 
 #: ../../source/outgoing/view_parser.rst:253
 msgid "Preventing Parsing"
-msgstr ""
+msgstr "구문 분석 방지"
 
 #: ../../source/outgoing/view_parser.rst:255
 #, python-brace-format
 msgid ""
-"You can specify portions of the page to not be parsed with the "
-"``{noparse}`` ``{/noparse}`` tag pair. Anything in this section will stay"
-" exactly as it is, with no variable substitution, looping, etc, happening"
-" to the markup between the brackets."
+"You can specify portions of the page to not be parsed with the ``{noparse}``"
+" ``{/noparse}`` tag pair. Anything in this section will stay exactly as it "
+"is, with no variable substitution, looping, etc, happening to the markup "
+"between the brackets."
 msgstr ""
+"``{noparse}`` ``{/noparse}`` 태그 쌍을 사용하여 구문 분석되지 않을 페이지 부분을 지정할 수 있습니다. 이 섹션의"
+" 모든 내용은 대괄호 사이의 마크업에서 변수 대체, 반복 등이 발생하지 않고 그대로 유지됩니다."
 
 #: ../../source/outgoing/view_parser.rst:265
 msgid "Conditional Logic"
-msgstr ""
+msgstr "조건부 논리"
 
 #: ../../source/outgoing/view_parser.rst:267
 msgid ""
 "The Parser class supports some basic conditionals to handle ``if``, "
-"``else``, and ``elseif`` syntax. All ``if`` blocks must be closed with an"
-" ``endif`` tag::"
+"``else``, and ``elseif`` syntax. All ``if`` blocks must be closed with an "
+"``endif`` tag::"
 msgstr ""
+"Parser 클래스는 ``if``, ``else`` 및 ``elseif`` 구문을 처리하기 위한 몇 가지 기본 조건을 지원합니다. 모든 "
+"``if`` 블록은 ``endif`` tag::로 닫아야 합니다."
 
 #: ../../source/outgoing/view_parser.rst:274
 msgid "This simple block is converted to the following during parsing:"
-msgstr ""
+msgstr "이 간단한 블록은 구문 분석 중에 다음으로 변환됩니다."
 
 #: ../../source/outgoing/view_parser.rst:278
 msgid ""
-"All variables used within if statements must have been previously set "
-"with the same name. Other than that, it is treated exactly like a "
-"standard PHP conditional, and all standard PHP rules would apply here. "
-"You can use any of the comparison operators you would normally, like "
-"``==``, ``===``, ``!==``, ``<``, ``>``, etc."
+"All variables used within if statements must have been previously set with "
+"the same name. Other than that, it is treated exactly like a standard PHP "
+"conditional, and all standard PHP rules would apply here. You can use any of"
+" the comparison operators you would normally, like ``==``, ``===``, ``!==``,"
+" ``<``, ``>``, etc."
 msgstr ""
+"if 문 내에서 사용되는 모든 변수는 이전에 동일한 이름으로 설정되어 있어야 합니다. 그 외에는 표준 PHP 조건부와 똑같이 처리되며 "
+"모든 표준 PHP 규칙이 여기에 적용됩니다. ``==``, ``===``, ``!==``, ``<``, ``>`` 등과 같이 일반적으로 "
+"사용하는 비교 연산자를 사용할 수 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:292
 msgid ""
-"In the background, conditionals are parsed using an ``eval()``, so you "
-"must ensure that you take care with the user data that is used within "
+"In the background, conditionals are parsed using an ``eval()``, so you must "
+"ensure that you take care with the user data that is used within "
 "conditionals, or you could open your application up to security risks."
 msgstr ""
+"백그라운드에서 조건문은 ``eval()``\\을 사용하여 구문 분석되므로 조건문 내에서 사용되는 사용자 데이터를 주의 깊게 다루어야 "
+"합니다. 그렇지 않으면 애플리케이션이 보안 위험에 노출될 수 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:296
 msgid "Changing the Conditional Delimiters"
-msgstr ""
+msgstr "조건부 구분 기호 변경"
 
 #: ../../source/outgoing/view_parser.rst:298
 msgid ""
-"If you have JavaScript code like the following in your templates, the "
-"Parser raises a syntax error because there are strings that can be "
-"interpreted as a conditional::"
+"If you have JavaScript code like the following in your templates, the Parser"
+" raises a syntax error because there are strings that can be interpreted as "
+"a conditional::"
 msgstr ""
+"템플릿에 다음과 같은 JavaScript 코드가 있는 경우 conditional::으로 해석될 수 있는 문자열이 있기 때문에 구문 "
+"분석기는 구문 오류를 발생시킵니다."
 
 #: ../../source/outgoing/view_parser.rst:308
 msgid ""
 "In that case, you can change the delimiters for conditionals with the "
 "``setConditionalDelimiters()`` method to avoid misinterpretations:"
 msgstr ""
+"이 경우 잘못된 해석을 피하기 위해 ``setConditionalDelimiters()`` 메서드를 사용하여 조건문의 구분 기호를 변경할"
+" 수 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:312
 msgid "In this case, you will write code in your template::"
-msgstr ""
+msgstr "이 경우 template::에 코드를 작성합니다."
 
 #: ../../source/outgoing/view_parser.rst:321
 msgid "Escaping Data"
-msgstr ""
+msgstr "데이터 이스케이프"
 
 #: ../../source/outgoing/view_parser.rst:323
 msgid ""
-"By default, all variable substitution is escaped to help prevent XSS "
-"attacks on your pages. CodeIgniter's ``esc()`` method supports several "
-"different contexts, like general ``html``, when it's in an HTML ``attr``,"
-" in ``css``, etc. If nothing else is specified, the data will be assumed "
-"to be in an HTML context. You can specify the context used by using the "
-"``esc()`` filter::"
+"By default, all variable substitution is escaped to help prevent XSS attacks"
+" on your pages. CodeIgniter's ``esc()`` method supports several different "
+"contexts, like general ``html``, when it's in an HTML ``attr``, in ``css``, "
+"etc. If nothing else is specified, the data will be assumed to be in an HTML"
+" context. You can specify the context used by using the ``esc()`` filter::"
 msgstr ""
+"기본적으로 페이지에 대한 XSS 공격을 방지하기 위해 모든 변수 대체가 이스케이프됩니다. CodeIgniter의 ``esc()`` "
+"메서드는 HTML ``attr``, ``css`` 등에 있을 때 일반 ``html``\\과 같은 여러 가지 다른 컨텍스트를 지원합니다. "
+"다른 항목이 지정되지 않으면 데이터가 HTML 컨텍스트에 있는 것으로 간주됩니다. ``esc()`` filter::를 사용하여 사용되는 "
+"컨텍스트를 지정할 수 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:331
 msgid ""
@@ -439,404 +501,408 @@ msgid ""
 "escaped. You can do this by adding exclamation marks to the opening and "
 "closing braces::"
 msgstr ""
+"탈출하지 않고 사용해야 할 것이 절대적으로 필요한 때가 있을 것입니다. braces:: 열기 및 닫기에 느낌표를 추가하면 됩니다."
 
 #: ../../source/outgoing/view_parser.rst:337
 msgid "Filters"
-msgstr ""
+msgstr "필터"
 
 #: ../../source/outgoing/view_parser.rst:339
 msgid ""
-"Any single variable substitution can have one or more filters applied to "
-"it to modify the way it is presented. These are not intended to "
-"drastically change the output, but provide ways to reuse the same "
-"variable data but with different presentations. The ``esc`` filter "
-"discussed above is one example. Dates are another common use case, where "
-"you might need to format the same data differently in several sections on"
-" the same page."
+"Any single variable substitution can have one or more filters applied to it "
+"to modify the way it is presented. These are not intended to drastically "
+"change the output, but provide ways to reuse the same variable data but with"
+" different presentations. The ``esc`` filter discussed above is one example."
+" Dates are another common use case, where you might need to format the same "
+"data differently in several sections on the same page."
 msgstr ""
+"단일 변수 대체에는 하나 이상의 필터가 적용되어 표시 방식을 수정할 수 있습니다. 이는 출력을 크게 변경하려는 것이 아니라 동일한 변수 "
+"데이터를 다른 프레젠테이션으로 재사용하는 방법을 제공합니다. 위에서 설명한 ``esc`` 필터는 한 가지 예입니다. 날짜는 또 다른 "
+"일반적인 사용 사례로, 동일한 페이지의 여러 섹션에서 동일한 데이터의 형식을 다르게 지정해야 할 수 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:344
 msgid ""
 "Filters are commands that come after the pseudo-variable name, and are "
 "separated by the pipe symbol, ``|``::"
-msgstr ""
+msgstr "필터는 의사 변수 이름 뒤에 오는 명령이며 파이프 기호 __PH_0__::로 구분됩니다."
 
 #: ../../source/outgoing/view_parser.rst:349
 msgid ""
-"If the parameter takes any arguments, they must be separated by commas "
-"and enclosed in parentheses::"
-msgstr ""
+"If the parameter takes any arguments, they must be separated by commas and "
+"enclosed in parentheses::"
+msgstr "매개변수가 인수를 취하는 경우 쉼표로 구분하고 parentheses::로 묶어야 합니다."
 
 #: ../../source/outgoing/view_parser.rst:353
 msgid ""
 "Multiple filters can be applied to the value by piping multiple ones "
 "together. They are processed in order, from left to right::"
-msgstr ""
+msgstr "여러 필터를 함께 연결하여 여러 필터를 값에 적용할 수 있습니다. 왼쪽부터 right::까지 순서대로 처리됩니다."
 
 #: ../../source/outgoing/view_parser.rst:359
 msgid "Provided Filters"
-msgstr ""
+msgstr "제공되는 필터"
 
 #: ../../source/outgoing/view_parser.rst:361
 msgid "The following filters are available when using the parser:"
-msgstr ""
+msgstr "파서를 사용할 때 다음 필터를 사용할 수 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:364
 msgid "Filter"
-msgstr ""
+msgstr "필터"
 
 #: ../../source/outgoing/view_parser.rst:364
 #: ../../source/outgoing/view_parser.rst:468
 msgid "Arguments"
-msgstr ""
+msgstr "인수"
 
 #: ../../source/outgoing/view_parser.rst:364
 #: ../../source/outgoing/view_parser.rst:468
 msgid "Description"
-msgstr ""
+msgstr "설명"
 
 #: ../../source/outgoing/view_parser.rst:364
 #: ../../source/outgoing/view_parser.rst:468
 msgid "Example"
-msgstr ""
+msgstr "예"
 
 #: ../../source/outgoing/view_parser.rst:366
 msgid "abs"
-msgstr ""
+msgstr "복근"
 
 #: ../../source/outgoing/view_parser.rst:366
 msgid "Displays the absolute value of a number."
-msgstr ""
+msgstr "숫자의 절대값을 표시합니다."
 
 #: ../../source/outgoing/view_parser.rst:366
 #, python-brace-format
 msgid "{ v|abs }"
-msgstr ""
+msgstr "{ v|abs }"
 
 #: ../../source/outgoing/view_parser.rst:368
 msgid "capitalize"
-msgstr ""
+msgstr "대문자로 쓰다"
 
 #: ../../source/outgoing/view_parser.rst:368
 msgid ""
 "Displays the string in sentence case: all lowercase with firstletter "
 "capitalized."
-msgstr ""
+msgstr "문자열을 문장 케이스로 표시합니다. 첫 글자는 모두 소문자이고 대문자입니다."
 
 #: ../../source/outgoing/view_parser.rst:368
 #, python-brace-format
 msgid "{ v|capitalize}"
-msgstr ""
+msgstr "{ v|capitalize}"
 
 #: ../../source/outgoing/view_parser.rst:371
 msgid "date"
-msgstr ""
+msgstr "날짜"
 
 #: ../../source/outgoing/view_parser.rst:371
 msgid "format (Y-m-d)"
-msgstr ""
+msgstr "형식(Y-m-d)"
 
 #: ../../source/outgoing/view_parser.rst:371
 msgid "A PHP **date**-compatible formatting string."
-msgstr ""
+msgstr "PHP **날짜** 호환 형식 문자열입니다."
 
 #: ../../source/outgoing/view_parser.rst:371
 #, python-brace-format
 msgid "{ v|date(Y-m-d) }"
-msgstr ""
+msgstr "{ v|date(Y-m-d) }"
 
 #: ../../source/outgoing/view_parser.rst:373
 msgid "date_modify"
-msgstr ""
+msgstr "날짜_수정"
 
 #: ../../source/outgoing/view_parser.rst:373
 msgid "value to add / subtract"
-msgstr ""
+msgstr "더하거나 뺄 값"
 
 #: ../../source/outgoing/view_parser.rst:373
 msgid ""
 "A **strtotime** compatible string to modify the date, like ``+5 day`` or "
 "``-1 week``."
-msgstr ""
+msgstr "``+5 day`` 또는 ``-1 week``\\과 같이 날짜를 수정하기 위한 **strtotime** 호환 문자열입니다."
 
 #: ../../source/outgoing/view_parser.rst:373
 #, python-brace-format
 msgid "{ v|date_modify(+1 day) }"
-msgstr ""
+msgstr "{ v|date_modify(+1 day) }"
 
 #: ../../source/outgoing/view_parser.rst:376
 msgid "default"
-msgstr ""
+msgstr "기본"
 
 #: ../../source/outgoing/view_parser.rst:376
 msgid "default value"
-msgstr ""
+msgstr "기본값"
 
 #: ../../source/outgoing/view_parser.rst:376
 msgid "Displays the default value if the variable is `empty()`_."
-msgstr ""
+msgstr "변수가 `empty()`_\\인 경우 기본값을 표시합니다."
 
 #: ../../source/outgoing/view_parser.rst:376
 #, python-brace-format
 msgid "{ v|default(just in case) }"
-msgstr ""
+msgstr "{ v|default(just in case) }"
 
 #: ../../source/outgoing/view_parser.rst:378
 msgid "esc"
-msgstr ""
+msgstr "에스"
 
 #: ../../source/outgoing/view_parser.rst:378
 msgid "html, attr, css, js"
-msgstr ""
+msgstr "HTML, 속성, CSS, JS"
 
 #: ../../source/outgoing/view_parser.rst:378
 msgid "Specifies the context to escape the data."
-msgstr ""
+msgstr "데이터를 이스케이프할 컨텍스트를 지정합니다."
 
 #: ../../source/outgoing/view_parser.rst:378
 #, python-brace-format
 msgid "{ v|esc(attr) }"
-msgstr ""
+msgstr "{ v|esc(attr) }"
 
 #: ../../source/outgoing/view_parser.rst:381
 msgid "excerpt"
-msgstr ""
+msgstr "발췌"
 
 #: ../../source/outgoing/view_parser.rst:381
 msgid "phrase, radius"
-msgstr ""
+msgstr "문구, 반경"
 
 #: ../../source/outgoing/view_parser.rst:381
 msgid ""
 "Returns the text within a radius of words from a given phrase. Same as "
 "**excerpt** helper function."
-msgstr ""
+msgstr "주어진 구문에서 단어 반경 내의 텍스트를 반환합니다. **발췌** 도우미 기능과 동일합니다."
 
 #: ../../source/outgoing/view_parser.rst:381
 #, python-brace-format
 msgid "{ v|excerpt(green giant, 20) }"
-msgstr ""
+msgstr "{ v|excerpt(green giant, 20) }"
 
 #: ../../source/outgoing/view_parser.rst:384
 msgid "highlight"
-msgstr ""
+msgstr "가장 밝은 부분"
 
 #: ../../source/outgoing/view_parser.rst:384
 msgid "phrase"
-msgstr ""
+msgstr "구절"
 
 #: ../../source/outgoing/view_parser.rst:384
 msgid "Highlights a given phrase within the text using '<mark></mark>' tags."
-msgstr ""
+msgstr "'<mark></mark>' 태그를 사용하여 텍스트 내에서 특정 문구를 강조 표시합니다."
 
 #: ../../source/outgoing/view_parser.rst:384
 #, python-brace-format
 msgid "{ v|highlight(view parser) }"
-msgstr ""
+msgstr "{ v|highlight(view parser) }"
 
 #: ../../source/outgoing/view_parser.rst:387
 msgid "highlight_code"
-msgstr ""
+msgstr "하이라이트_코드"
 
 #: ../../source/outgoing/view_parser.rst:387
 msgid "Highlights code samples with HTML/CSS."
-msgstr ""
+msgstr "HTML/CSS로 코드 샘플을 강조 표시합니다."
 
 #: ../../source/outgoing/view_parser.rst:387
 #, python-brace-format
 msgid "{ v|highlight_code }"
-msgstr ""
+msgstr "{ v|highlight_code }"
 
 #: ../../source/outgoing/view_parser.rst:389
 msgid "limit_chars"
-msgstr ""
+msgstr "한도_문자"
 
 #: ../../source/outgoing/view_parser.rst:389
 #: ../../source/outgoing/view_parser.rst:391
 msgid "limit"
-msgstr ""
+msgstr "한계"
 
 #: ../../source/outgoing/view_parser.rst:389
 msgid "Limits the number of characters to $limit."
-msgstr ""
+msgstr "문자 수를 $limit으로 제한합니다."
 
 #: ../../source/outgoing/view_parser.rst:389
 #, python-brace-format
 msgid "{ v|limit_chars(100) }"
-msgstr ""
+msgstr "{ v|limit_chars(100) }"
 
 #: ../../source/outgoing/view_parser.rst:391
 msgid "limit_words"
-msgstr ""
+msgstr "한도_단어"
 
 #: ../../source/outgoing/view_parser.rst:391
 msgid "Limits the number of words to $limit."
-msgstr ""
+msgstr "단어 수를 $limit으로 제한합니다."
 
 #: ../../source/outgoing/view_parser.rst:391
 #, python-brace-format
 msgid "{ v|limit_words(20) }"
-msgstr ""
+msgstr "{ v|limit_words(20) }"
 
 #: ../../source/outgoing/view_parser.rst:393
 msgid "local_currency"
-msgstr ""
+msgstr "지역_통화"
 
 #: ../../source/outgoing/view_parser.rst:393
 msgid "currency, locale, fraction"
-msgstr ""
+msgstr "통화, 로케일, 분수"
 
 #: ../../source/outgoing/view_parser.rst:393
 msgid ""
 "Displays a localized version of a currency. \"currency\" valueis any "
 "3-letter ISO 4217 currency code."
-msgstr ""
+msgstr "통화의 현지화된 버전을 표시합니다. \"통화\" 값은 3자리 ISO 4217 통화 코드입니다."
 
 #: ../../source/outgoing/view_parser.rst:393
 #, python-brace-format
 msgid "{ v|local_currency(EUR,en_US) }"
-msgstr ""
+msgstr "{ v|local_currency(EUR,en_US) }"
 
 #: ../../source/outgoing/view_parser.rst:397
 msgid "local_number"
-msgstr ""
+msgstr "지역_번호"
 
 #: ../../source/outgoing/view_parser.rst:397
 msgid "type, precision, locale"
-msgstr ""
+msgstr "유형, 정밀도, 로케일"
 
 #: ../../source/outgoing/view_parser.rst:397
 msgid ""
-"Displays a localized version of a number. \"type\" can be one of: "
-"decimal, currency, percent, scientific, spellout, ordinal, duration."
-msgstr ""
+"Displays a localized version of a number. \"type\" can be one of: decimal, "
+"currency, percent, scientific, spellout, ordinal, duration."
+msgstr "숫자의 현지화된 버전을 표시합니다. \"유형\"은 소수, 통화, 백분율, 과학, 철자법, 서수, 기간 중 하나일 수 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:397
 #, python-brace-format
 msgid "{ v|local_number(decimal,2,en_US) }"
-msgstr ""
+msgstr "{ v|local_number(decimal,2,en_US) }"
 
 #: ../../source/outgoing/view_parser.rst:401
 msgid "lower"
-msgstr ""
+msgstr "낮추다"
 
 #: ../../source/outgoing/view_parser.rst:401
 msgid "Converts a string to lowercase."
-msgstr ""
+msgstr "문자열을 소문자로 변환합니다."
 
 #: ../../source/outgoing/view_parser.rst:401
 #, python-brace-format
 msgid "{ v|lower }"
-msgstr ""
+msgstr "{ v|lower }"
 
 #: ../../source/outgoing/view_parser.rst:403
 msgid "nl2br"
-msgstr ""
+msgstr "nl2br"
 
 #: ../../source/outgoing/view_parser.rst:403
 msgid "Replaces all newline characters (\\n) to an HTML <br/> tag."
-msgstr ""
+msgstr "모든 개행 문자(\\n)를 HTML <br/> 태그로 바꿉니다."
 
 #: ../../source/outgoing/view_parser.rst:403
 #, python-brace-format
 msgid "{ v|nl2br }"
-msgstr ""
+msgstr "{ v|nl2br }"
 
 #: ../../source/outgoing/view_parser.rst:405
 msgid "number_format"
-msgstr ""
+msgstr "숫자_형식"
 
 #: ../../source/outgoing/view_parser.rst:405
 msgid "places"
-msgstr ""
+msgstr "장소"
 
 #: ../../source/outgoing/view_parser.rst:405
 msgid "Wraps PHP **number_format** function for use within the parser."
-msgstr ""
+msgstr "파서 내에서 사용할 수 있도록 PHP **number_format** 함수를 래핑합니다."
 
 #: ../../source/outgoing/view_parser.rst:405
 #, python-brace-format
 msgid "{ v|number_format(3) }"
-msgstr ""
+msgstr "{ v|number_format(3) }"
 
 #: ../../source/outgoing/view_parser.rst:408
 msgid "prose"
-msgstr ""
+msgstr "산문"
 
 #: ../../source/outgoing/view_parser.rst:408
 msgid ""
-"Takes a body of text and uses the **auto_typography()** method to turn it"
-" into prettier, easier-to-read, prose."
-msgstr ""
+"Takes a body of text and uses the **auto_typography()** method to turn it "
+"into prettier, easier-to-read, prose."
+msgstr "텍스트 본문을 가져와서 **auto_typography()** 메서드를 사용하여 더 보기 좋고 읽기 쉬운 산문으로 바꿉니다."
 
 #: ../../source/outgoing/view_parser.rst:408
 #, python-brace-format
 msgid "{ v|prose }"
-msgstr ""
+msgstr "{ v|prose }"
 
 #: ../../source/outgoing/view_parser.rst:411
 msgid "round"
-msgstr ""
+msgstr "둥근"
 
 #: ../../source/outgoing/view_parser.rst:411
 msgid "places, type"
-msgstr ""
+msgstr "장소, 유형"
 
 #: ../../source/outgoing/view_parser.rst:411
 msgid ""
-"Rounds a number to the specified places. Types of **ceil** and **floor** "
-"can be passed to use those functions instead."
+"Rounds a number to the specified places. Types of **ceil** and **floor** can"
+" be passed to use those functions instead."
 msgstr ""
+"숫자를 지정된 위치로 반올림합니다. 대신 **ceil** 및 **floor** 유형을 전달하여 해당 함수를 사용할 수 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:411
 #, python-brace-format
 msgid "{ v|round(3) } { v|round(ceil) }"
-msgstr ""
+msgstr "{ v|round(3) } { v|round(ceil) }"
 
 #: ../../source/outgoing/view_parser.rst:414
 msgid "strip_tags"
-msgstr ""
+msgstr "스트립_태그"
 
 #: ../../source/outgoing/view_parser.rst:414
 msgid "allowed chars"
-msgstr ""
+msgstr "허용되는 문자"
 
 #: ../../source/outgoing/view_parser.rst:414
 msgid "Wraps PHP **strip_tags**. Can accept a string of allowed tags."
-msgstr ""
+msgstr "PHP **strip_tags**\\를 래핑합니다. 허용된 태그 문자열을 허용할 수 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:414
 #, python-brace-format
 msgid "{ v|strip_tags(<br>) }"
-msgstr ""
+msgstr "{ v|strip_tags(<br>) }"
 
 #: ../../source/outgoing/view_parser.rst:417
 msgid "title"
-msgstr ""
+msgstr "제목"
 
 #: ../../source/outgoing/view_parser.rst:417
 msgid ""
 "Displays a \"title case\" version of the string, with all lowercase, and "
 "each word capitalized."
-msgstr ""
+msgstr "문자열의 \"제목 케이스\" 버전을 모두 소문자로 표시하고 각 단어는 대문자로 표시합니다."
 
 #: ../../source/outgoing/view_parser.rst:417
 #, python-brace-format
 msgid "{ v|title }"
-msgstr ""
+msgstr "{ v|title }"
 
 #: ../../source/outgoing/view_parser.rst:420
 msgid "upper"
-msgstr ""
+msgstr "높은"
 
 #: ../../source/outgoing/view_parser.rst:420
 msgid "Displays the string in all uppercase."
-msgstr ""
+msgstr "문자열을 모두 대문자로 표시합니다."
 
 #: ../../source/outgoing/view_parser.rst:420
 #, python-brace-format
 msgid "{ v|upper }"
-msgstr ""
+msgstr "{ v|upper }"
 
 #: ../../source/outgoing/view_parser.rst:425
 msgid ""
@@ -844,452 +910,472 @@ msgid ""
 "<https://www.php.net/manual/en/numberformatter.create.php>`_ for details "
 "relevant to the \"local_number\" filter."
 msgstr ""
+"\"local_number\" 필터와 관련된 자세한 내용은 `PHP's NumberFormatter "
+"<https://www.php.net/manual/en/numberformatter.create.php>`_\\을 참조하세요."
 
 #: ../../source/outgoing/view_parser.rst:429
 msgid "Custom Filters"
-msgstr ""
+msgstr "맞춤 필터"
 
 #: ../../source/outgoing/view_parser.rst:431
 msgid ""
-"You can easily create your own filters by editing **app/Config/View.php**"
-" and adding new entries to the ``$filters`` array. Each key is the name "
-"which the filter is called by in the view, and its value is any valid PHP"
-" callable:"
+"You can easily create your own filters by editing **app/Config/View.php** "
+"and adding new entries to the ``$filters`` array. Each key is the name which"
+" the filter is called by in the view, and its value is any valid PHP "
+"callable:"
 msgstr ""
+"**app/Config/View.php**\\를 편집하고 ``$filters`` 배열에 새 항목을 추가하여 자신만의 필터를 쉽게 만들 수"
+" 있습니다. 각 키는 뷰에서 필터가 호출되는 이름이며 해당 값은 호출 가능한 유효한 PHP입니다."
 
 #: ../../source/outgoing/view_parser.rst:438
 msgid "Parser Plugins"
-msgstr ""
+msgstr "파서 플러그인"
 
 #: ../../source/outgoing/view_parser.rst:440
 #, python-brace-format
 msgid ""
 "Plugins allow you to extend the parser, adding custom features for each "
-"project. They can be any PHP callable, making them very simple to "
-"implement. Within templates, plugins are specified by ``{+ +}`` tags::"
+"project. They can be any PHP callable, making them very simple to implement."
+" Within templates, plugins are specified by ``{+ +}`` tags::"
 msgstr ""
+"플러그인을 사용하면 파서를 확장하여 각 프로젝트에 대한 사용자 정의 기능을 추가할 수 있습니다. PHP 호출이 가능하므로 구현이 매우 "
+"간단합니다. 템플릿 내에서 플러그인은 ``{+ +}`` tags::로 지정됩니다."
 
 #: ../../source/outgoing/view_parser.rst:445
 msgid ""
 "This example shows a plugin named **foo**. It can manipulate any of the "
-"content between its opening and closing tags. In this example, it could "
-"work with the text \" inner content \". Plugins are processed before any "
-"pseudo-variable replacements happen."
+"content between its opening and closing tags. In this example, it could work"
+" with the text \" inner content \". Plugins are processed before any pseudo-"
+"variable replacements happen."
 msgstr ""
+"이 예에서는 **foo**\\라는 플러그인을 보여줍니다. 여는 태그와 닫는 태그 사이의 모든 내용을 조작할 수 있습니다. 이 예에서는 "
+"\"inner content\"라는 텍스트로 작업할 수 있습니다. 플러그인은 의사 변수 교체가 발생하기 전에 처리됩니다."
 
 #: ../../source/outgoing/view_parser.rst:449
 msgid ""
-"While plugins will often consist of tag pairs, like shown above, they can"
-" also be a single tag, with no closing tag::"
-msgstr ""
+"While plugins will often consist of tag pairs, like shown above, they can "
+"also be a single tag, with no closing tag::"
+msgstr "플러그인은 위에 표시된 것처럼 태그 쌍으로 구성되는 경우가 많지만 닫는 tag:: 없이 단일 태그일 수도 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:453
 msgid ""
-"Opening tags can also contain parameters that can customize how the "
-"plugin works. The parameters are represented as key/value pairs::"
+"Opening tags can also contain parameters that can customize how the plugin "
+"works. The parameters are represented as key/value pairs::"
 msgstr ""
+"여는 태그에는 플러그인 작동 방식을 사용자 정의할 수 있는 매개변수도 포함될 수 있습니다. 매개변수는 키/값 pairs::으로 "
+"표시됩니다."
 
 #: ../../source/outgoing/view_parser.rst:458
 msgid "Parameters can also be single values::"
-msgstr ""
+msgstr "매개변수는 단일 values::일 수도 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:463
 msgid "Provided Plugins"
-msgstr ""
+msgstr "제공되는 플러그인"
 
 #: ../../source/outgoing/view_parser.rst:465
 msgid "The following plugins are available when using the parser:"
-msgstr ""
+msgstr "파서를 사용할 때 다음 플러그인을 사용할 수 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:468
 msgid "Plugin"
-msgstr ""
+msgstr "플러그인"
 
 #: ../../source/outgoing/view_parser.rst:470
 msgid "current_url"
-msgstr ""
+msgstr "현재_url"
 
 #: ../../source/outgoing/view_parser.rst:470
 msgid "Alias for the current_url helper function."
-msgstr ""
+msgstr "current_url 도우미 함수의 별칭입니다."
 
 #: ../../source/outgoing/view_parser.rst:470
 #, python-brace-format
 msgid "``{+ current_url +}``"
-msgstr ""
+msgstr "``{+ current_url +}``"
 
 #: ../../source/outgoing/view_parser.rst:471
 msgid "previous_url"
-msgstr ""
+msgstr "이전_URL"
 
 #: ../../source/outgoing/view_parser.rst:471
 msgid "Alias for the previous_url helper function."
-msgstr ""
+msgstr "Previous_url 도우미 함수의 별칭입니다."
 
 #: ../../source/outgoing/view_parser.rst:471
 #, python-brace-format
 msgid "``{+ previous_url +}``"
-msgstr ""
+msgstr "``{+ previous_url +}``"
 
 #: ../../source/outgoing/view_parser.rst:472
 msgid "siteURL"
-msgstr ""
+msgstr "사이트URL"
 
 #: ../../source/outgoing/view_parser.rst:472
 msgid "Alias for the site_url helper function."
-msgstr ""
+msgstr "site_url 도우미 함수의 별칭입니다."
 
 #: ../../source/outgoing/view_parser.rst:472
 #, python-brace-format
 msgid "``{+ siteURL \"login\" +}``"
-msgstr ""
+msgstr "``{+ siteURL \"login\" +}``"
 
 #: ../../source/outgoing/view_parser.rst:473
 msgid "mailto"
-msgstr ""
+msgstr "메일토"
 
 #: ../../source/outgoing/view_parser.rst:473
 #: ../../source/outgoing/view_parser.rst:474
 msgid "email, title, attributes"
-msgstr ""
+msgstr "이메일, 제목, 속성"
 
 #: ../../source/outgoing/view_parser.rst:473
 msgid "Alias for the mailto helper function."
-msgstr ""
+msgstr "mailto 도우미 기능의 별칭입니다."
 
 #: ../../source/outgoing/view_parser.rst:473
 #, python-brace-format
 msgid "``{+ mailto email=foo@example.com title=\"Stranger Things\" +}``"
-msgstr ""
+msgstr "``{+ mailto email=foo@example.com title=\"Stranger Things\" +}``"
 
 #: ../../source/outgoing/view_parser.rst:474
 msgid "safe_mailto"
-msgstr ""
+msgstr "safe_mailto"
 
 #: ../../source/outgoing/view_parser.rst:474
 msgid "Alias for the safe_mailto helper function."
-msgstr ""
+msgstr "safe_mailto 도우미 함수의 별칭입니다."
 
 #: ../../source/outgoing/view_parser.rst:474
 #, python-brace-format
 msgid "``{+ safe_mailto email=foo@example.com title=\"Stranger Things\" +}``"
-msgstr ""
+msgstr "``{+ safe_mailto email=foo@example.com title=\"Stranger Things\" +}``"
 
 #: ../../source/outgoing/view_parser.rst:475
 msgid "lang"
-msgstr ""
+msgstr "랭"
 
 #: ../../source/outgoing/view_parser.rst:475
 msgid "language string"
-msgstr ""
+msgstr "언어 문자열"
 
 #: ../../source/outgoing/view_parser.rst:475
 msgid "Alias for the lang helper function."
-msgstr ""
+msgstr "lang 도우미 함수의 별칭입니다."
 
 #: ../../source/outgoing/view_parser.rst:475
 #, python-brace-format
 msgid "``{+ lang number.terabyteAbbr +}``"
-msgstr ""
+msgstr "``{+ lang number.terabyteAbbr +}``"
 
 #: ../../source/outgoing/view_parser.rst:476
 msgid "validation_errors"
-msgstr ""
+msgstr "유효성 검사_오류"
 
 #: ../../source/outgoing/view_parser.rst:476
 msgid "fieldname(optional)"
-msgstr ""
+msgstr "필드명(선택사항)"
 
 #: ../../source/outgoing/view_parser.rst:476
 msgid ""
-"Returns either error string for the field (if specified) or all "
-"validation errors."
-msgstr ""
+"Returns either error string for the field (if specified) or all validation "
+"errors."
+msgstr "필드에 대한 오류 문자열(지정된 경우) 또는 모든 유효성 검사 오류를 반환합니다."
 
 #: ../../source/outgoing/view_parser.rst:476
 #, python-brace-format
 msgid "``{+ validation_errors +} , {+ validation_errors field=\"email\" +}``"
-msgstr ""
+msgstr "``{+ validation_errors +} , {+ validation_errors field=\"email\" +}``"
 
 #: ../../source/outgoing/view_parser.rst:478
 msgid "route"
-msgstr ""
+msgstr "노선"
 
 #: ../../source/outgoing/view_parser.rst:478
 msgid "route name"
-msgstr ""
+msgstr "노선명"
 
 #: ../../source/outgoing/view_parser.rst:478
 msgid "Alias for the route_to helper function."
-msgstr ""
+msgstr "Route_to 도우미 함수의 별칭입니다."
 
 #: ../../source/outgoing/view_parser.rst:478
 #, python-brace-format
 msgid "``{+ route \"login\" +}``"
-msgstr ""
+msgstr "``{+ route \"login\" +}``"
 
 #: ../../source/outgoing/view_parser.rst:479
 msgid "csp_script_nonce"
-msgstr ""
+msgstr "csp_script_nonce"
 
 #: ../../source/outgoing/view_parser.rst:479
 msgid "Alias for the csp_script_nonce helper function."
-msgstr ""
+msgstr "csp_script_nonce 도우미 함수의 별칭입니다."
 
 #: ../../source/outgoing/view_parser.rst:479
 #, python-brace-format
 msgid "``{+ csp_script_nonce +}``"
-msgstr ""
+msgstr "``{+ csp_script_nonce +}``"
 
 #: ../../source/outgoing/view_parser.rst:481
 msgid "csp_style_nonce"
-msgstr ""
+msgstr "csp_style_nonce"
 
 #: ../../source/outgoing/view_parser.rst:481
 msgid "Alias for the csp_style_nonce helper function."
-msgstr ""
+msgstr "csp_style_nonce 도우미 함수의 별칭입니다."
 
 #: ../../source/outgoing/view_parser.rst:481
 #, python-brace-format
 msgid "``{+ csp_style_nonce +}``"
-msgstr ""
+msgstr "``{+ csp_style_nonce +}``"
 
 #: ../../source/outgoing/view_parser.rst:486
 msgid "Registering a Plugin"
-msgstr ""
+msgstr "플러그인 등록"
 
 #: ../../source/outgoing/view_parser.rst:488
 msgid ""
 "At its simplest, all you need to do to register a new plugin and make it "
 "ready for use is to add it to the **app/Config/View.php**, under the "
-"``$plugins`` array. The key is the name of the plugin that is used within"
-" the template file. The value is any valid PHP callable, including static"
-" class methods:"
+"``$plugins`` array. The key is the name of the plugin that is used within "
+"the template file. The value is any valid PHP callable, including static "
+"class methods:"
 msgstr ""
+"가장 간단하게 새 플러그인을 등록하고 사용할 준비를 하기 위해 해야 할 일은 해당 플러그인을 "
+"**app/Config/View.php**\\의 ``$plugins`` 배열 아래에 추가하는 것뿐입니다. 키는 템플릿 파일 내에서 "
+"사용되는 플러그인의 이름입니다. 값은 정적 클래스 메서드를 포함하여 유효한 PHP 호출 가능입니다."
 
 #: ../../source/outgoing/view_parser.rst:494
 msgid ""
 "You can also use closures, but these can only be defined in the config "
 "file's constructor:"
-msgstr ""
+msgstr "클로저를 사용할 수도 있지만 이는 구성 파일의 생성자에서만 정의할 수 있습니다."
 
 #: ../../source/outgoing/view_parser.rst:498
 msgid ""
 "If the callable is on its own, it is treated as a single tag, not an "
 "open/close one. It will be replaced by the return value from the plugin:"
 msgstr ""
+"호출 가능 항목이 자체적으로 존재하는 경우 열기/닫기 태그가 아닌 단일 태그로 처리됩니다. 이는 플러그인의 반환 값으로 대체됩니다."
 
 #: ../../source/outgoing/view_parser.rst:503
 msgid ""
-"If the callable is wrapped in an array, it is treated as an open/close "
-"tag pair that can operate on any of the content between its tags:"
-msgstr ""
+"If the callable is wrapped in an array, it is treated as an open/close tag "
+"pair that can operate on any of the content between its tags:"
+msgstr "콜러블이 배열로 래핑된 경우 태그 사이의 모든 콘텐츠에 대해 작동할 수 있는 열기/닫기 태그 쌍으로 처리됩니다."
 
 #: ../../source/outgoing/view_parser.rst:510
 msgid "Usage Notes"
-msgstr ""
+msgstr "사용법 참고 사항"
 
 #: ../../source/outgoing/view_parser.rst:512
 msgid ""
 "If you include substitution parameters that are not referenced in your "
 "template, they are ignored:"
-msgstr ""
+msgstr "템플릿에서 참조되지 않는 대체 매개변수를 포함하면 해당 매개변수는 무시됩니다."
 
 #: ../../source/outgoing/view_parser.rst:517
 msgid ""
-"If you do not include a substitution parameter that is referenced in your"
-" template, the original pseudo-variable is shown in the result:"
-msgstr ""
+"If you do not include a substitution parameter that is referenced in your "
+"template, the original pseudo-variable is shown in the result:"
+msgstr "템플릿에서 참조되는 대체 매개변수를 포함하지 않으면 원래 의사 변수가 결과에 표시됩니다."
 
 #: ../../source/outgoing/view_parser.rst:522
 msgid ""
-"If you provide a string substitution parameter when an array is expected,"
-" i.e., for a variable pair, the substitution is done for the opening "
-"variable pair tag, but the closing variable pair tag is not rendered "
-"properly:"
+"If you provide a string substitution parameter when an array is expected, "
+"i.e., for a variable pair, the substitution is done for the opening variable"
+" pair tag, but the closing variable pair tag is not rendered properly:"
 msgstr ""
+"배열이 예상될 때(예: 변수 쌍의 경우) 문자열 대체 매개변수를 제공하는 경우 여는 변수 쌍 태그에 대한 대체가 수행되지만 닫는 변수 쌍"
+" 태그는 제대로 렌더링되지 않습니다."
 
 #: ../../source/outgoing/view_parser.rst:529
 msgid "View Fragments"
-msgstr ""
+msgstr "조각 보기"
 
 #: ../../source/outgoing/view_parser.rst:531
 msgid ""
-"You do not have to use variable pairs to get the effect of iteration in "
-"your views. It is possible to use a view fragment for what would be "
-"inside a variable pair, and to control the iteration in your controller "
-"instead of in the view."
+"You do not have to use variable pairs to get the effect of iteration in your"
+" views. It is possible to use a view fragment for what would be inside a "
+"variable pair, and to control the iteration in your controller instead of in"
+" the view."
 msgstr ""
+"뷰에서 반복 효과를 얻기 위해 변수 쌍을 사용할 필요는 없습니다. 변수 쌍 내부에 있는 항목에 대해 뷰 조각을 사용하고 뷰 대신 "
+"컨트롤러에서 반복을 제어하는 ​​것이 가능합니다."
 
 #: ../../source/outgoing/view_parser.rst:536
 msgid "An example with the iteration controlled in the view::"
-msgstr ""
+msgstr "view::에서 반복이 제어되는 예"
 
 #: ../../source/outgoing/view_parser.rst:551
 #: ../../source/outgoing/view_parser.rst:563
 msgid "Result::"
-msgstr ""
+msgstr "Result::"
 
 #: ../../source/outgoing/view_parser.rst:558
 msgid ""
 "An example with the iteration controlled in the controller, using a view "
 "fragment:"
-msgstr ""
+msgstr "뷰 프래그먼트를 사용하여 컨트롤러에서 반복을 제어하는 ​​예:"
 
 #: ../../source/outgoing/view_parser.rst:572
 msgid "Class Reference"
-msgstr ""
+msgstr "수업 참고자료"
 
 #: ../../source/outgoing/view_parser.rst
 msgid "Parameters"
-msgstr ""
+msgstr "매개변수"
 
 #: ../../source/outgoing/view_parser.rst:580
 msgid "File name of the view source"
-msgstr ""
+msgstr "뷰 소스의 파일 이름"
 
 #: ../../source/outgoing/view_parser.rst:581
 #: ../../source/outgoing/view_parser.rst:603
 msgid "Array of options, as key/value pairs"
-msgstr ""
+msgstr "키/값 쌍으로 구성된 옵션 배열"
 
 #: ../../source/outgoing/view_parser.rst:582
 #: ../../source/outgoing/view_parser.rst:604
 msgid ""
-"If true, will save data for use with any other calls, if false, will "
-"clean the data after rendering the view."
-msgstr ""
+"If true, will save data for use with any other calls, if false, will clean "
+"the data after rendering the view."
+msgstr "true인 경우 다른 호출에 사용할 데이터를 저장하고, false인 경우 뷰를 렌더링한 후 데이터를 정리합니다."
 
 #: ../../source/outgoing/view_parser.rst
 msgid "Returns"
-msgstr ""
+msgstr "보고"
 
 #: ../../source/outgoing/view_parser.rst:583
 #: ../../source/outgoing/view_parser.rst:605
 msgid "The rendered text for the chosen view"
-msgstr ""
+msgstr "선택한 뷰에 대해 렌더링된 텍스트"
 
 #: ../../source/outgoing/view_parser.rst
 msgid "Return type"
-msgstr ""
+msgstr "반환 유형"
 
 #: ../../source/outgoing/view_parser.rst:586
 msgid ""
-"Builds the output based upon a file name and any data that has already "
-"been set:"
-msgstr ""
+"Builds the output based upon a file name and any data that has already been "
+"set:"
+msgstr "파일 이름과 이미 설정된 데이터를 기반으로 출력을 작성합니다."
 
 #: ../../source/outgoing/view_parser.rst:590
 msgid "Options supported:"
-msgstr ""
+msgstr "지원되는 옵션:"
 
 #: ../../source/outgoing/view_parser.rst:592
 msgid "``cache`` - the time in seconds, to save a view's results"
-msgstr ""
+msgstr "``cache`` - 보기 결과를 저장하는 시간(초)"
 
 #: ../../source/outgoing/view_parser.rst:593
 msgid ""
-"``cache_name`` - the ID used to save/retrieve a cached view result; "
-"defaults to the viewpath"
-msgstr ""
+"``cache_name`` - the ID used to save/retrieve a cached view result; defaults"
+" to the viewpath"
+msgstr "``cache_name`` - 캐시된 보기 결과를 저장/검색하는 데 사용되는 ID입니다. 기본값은 뷰 경로입니다."
 
 #: ../../source/outgoing/view_parser.rst:594
 msgid ""
 "``cascadeData`` - true if the data pairs in effect when a nested or loop "
 "substitution occurs should be propagated"
-msgstr ""
+msgstr "``cascadeData`` - 중첩 또는 루프 대체가 발생할 때 적용되는 데이터 쌍을 전파해야 하는 경우 true"
 
 #: ../../source/outgoing/view_parser.rst:595
 msgid ""
 "``saveData`` - true if the view data parameter should be retained for "
 "subsequent calls"
-msgstr ""
+msgstr "``saveData`` - 후속 호출을 위해 뷰 데이터 매개변수를 유지해야 하는 경우 true"
 
 #: ../../source/outgoing/view_parser.rst:597
 msgid ""
 "Any conditional substitutions are performed first, then remaining "
 "substitutions are performed for each data pair."
-msgstr ""
+msgstr "조건부 대체가 먼저 수행된 다음 각 데이터 쌍에 대해 나머지 대체가 수행됩니다."
 
 #: ../../source/outgoing/view_parser.rst:602
 msgid "View source provided as a string"
-msgstr ""
+msgstr "문자열로 제공되는 소스 보기"
 
 #: ../../source/outgoing/view_parser.rst:608
 msgid ""
-"Builds the output based upon a provided template source and any data that"
-" has already been set:"
-msgstr ""
+"Builds the output based upon a provided template source and any data that "
+"has already been set:"
+msgstr "제공된 템플릿 소스와 이미 설정된 데이터를 기반으로 출력을 작성합니다."
 
 #: ../../source/outgoing/view_parser.rst:612
 msgid "Options supported, and behavior, as above."
-msgstr ""
+msgstr "지원되는 옵션 및 동작은 위와 같습니다."
 
 #: ../../source/outgoing/view_parser.rst:616
 msgid "Array of view data strings, as key/value pairs"
-msgstr ""
+msgstr "키/값 쌍으로 된 뷰 데이터 문자열 배열"
 
 #: ../../source/outgoing/view_parser.rst:617
 #: ../../source/outgoing/view_parser.rst:632
 msgid "The context to use for data escaping."
-msgstr ""
+msgstr "데이터 이스케이프에 사용할 컨텍스트입니다."
 
 #: ../../source/outgoing/view_parser.rst:618
 #: ../../source/outgoing/view_parser.rst:633
 #: ../../source/outgoing/view_parser.rst:647
 #: ../../source/outgoing/view_parser.rst:658
 msgid "The Renderer, for method chaining"
-msgstr ""
+msgstr "메소드 체이닝을 위한 렌더러"
 
 #: ../../source/outgoing/view_parser.rst:621
 msgid "Sets several pieces of view data at once:"
-msgstr ""
+msgstr "여러 뷰 데이터를 한 번에 설정합니다."
 
 #: ../../source/outgoing/view_parser.rst:625
 msgid ""
-"Supported escape contexts: html, css, js, url, or attr or raw. If 'raw', "
-"no escaping will happen."
+"Supported escape contexts: html, css, js, url, or attr or raw. If 'raw', no "
+"escaping will happen."
 msgstr ""
+"지원되는 이스케이프 컨텍스트: html, css, js, url, attr 또는 raw. 'raw'인 경우 이스케이프가 발생하지 "
+"않습니다."
 
 #: ../../source/outgoing/view_parser.rst:630
 msgid "Name of the view data variable"
-msgstr ""
+msgstr "뷰 데이터 변수의 이름"
 
 #: ../../source/outgoing/view_parser.rst:631
 msgid "The value of this view data"
-msgstr ""
+msgstr "이 뷰 데이터의 가치"
 
 #: ../../source/outgoing/view_parser.rst:636
 msgid "Sets a single piece of view data:"
-msgstr ""
+msgstr "단일 뷰 데이터를 설정합니다."
 
 #: ../../source/outgoing/view_parser.rst:640
 msgid ""
 "Supported escape contexts: html, css, js, url, attr or raw. If 'raw', no "
 "escaping will happen."
 msgstr ""
+"지원되는 이스케이프 컨텍스트: html, css, js, url, attr 또는 raw. 'raw'인 경우 이스케이프가 발생하지 "
+"않습니다."
 
 #: ../../source/outgoing/view_parser.rst:645
 msgid "Left delimiter for substitution fields"
-msgstr ""
+msgstr "대체 필드의 왼쪽 구분 기호"
 
 #: ../../source/outgoing/view_parser.rst:646
 msgid "right delimiter for substitution fields"
-msgstr ""
+msgstr "대체 필드의 오른쪽 구분 기호"
 
 #: ../../source/outgoing/view_parser.rst:650
 msgid "Override the substitution field delimiters:"
-msgstr ""
+msgstr "대체 필드 구분 기호를 재정의합니다."
 
 #: ../../source/outgoing/view_parser.rst:656
 msgid "Left delimiter for conditionals"
-msgstr ""
+msgstr "조건문의 왼쪽 구분 기호"
 
 #: ../../source/outgoing/view_parser.rst:657
 msgid "right delimiter for conditionals"
-msgstr ""
+msgstr "조건문의 오른쪽 구분 기호"
 
 #: ../../source/outgoing/view_parser.rst:661
 msgid "Override the conditional delimiters:"
-msgstr ""
-
+msgstr "조건부 구분 기호를 재정의합니다."

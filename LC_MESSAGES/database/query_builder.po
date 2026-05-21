@@ -95,7 +95,7 @@ msgid ""
 "use cases and is not designed to prevent all attacks. Therefore, you should "
 "never feed in user input to them without proper validation."
 msgstr ""
-"또한 기본적으로 **SQL 문자열**\\ 의 **식별자** 및 식별자를 적절하게 보호하려고 시도합니다. 그러나 많은 사용 사례에서 잘 "
+"또한 기본적으로 SQL 문자열의 식별자 및 식별자를 적절하게 보호하려고 시도합니다. 그러나 많은 사용 사례에서 잘 "
 "작동하도록 구현되었으며 모든 공격을 방지하도록 설계되지 않았습니다. 따라서 적절한 유효성 검사 없이 사용자 입력을 입력해서는 안 됩니다."
 
 #: ../../source/database/query_builder.rst:45
@@ -139,7 +139,7 @@ msgstr "다음 방법을 사용하면 SQL **SELECT** 문을 작성할 수 있습
 
 #: ../../source/database/query_builder.rst:71
 msgid "Get"
-msgstr "얻다"
+msgstr "Get"
 
 #: ../../source/database/query_builder.rst:74
 msgid "$builder->get()"
@@ -177,8 +177,7 @@ msgid ""
 "Compiles the selection query just like ``$builder->get()`` but does not "
 "*run* the query. This method simply returns the SQL query as a string."
 msgstr ""
-"``$builder->get()``처럼 선택 쿼리를 컴파일하지만 쿼리를 *실행*하지는 않습니다. 이 메서드는 단순히 SQL 쿼리를 "
-"문자열로 반환합니다."
+"선택 쿼리를 컴파일하지만 쿼리를 실행하지는 않습니다. 이 메서드는 단순히 SQL 쿼리를 문자열로 반환합니다."
 
 #: ../../source/database/query_builder.rst:100
 #: ../../source/database/query_builder.rst:871
@@ -228,7 +227,7 @@ msgstr "자세한 내용은 아래의 ``where()`` 메서드를 읽어보세요."
 
 #: ../../source/database/query_builder.rst:127
 msgid "Select"
-msgstr "선택하다"
+msgstr "Select"
 
 #: ../../source/database/query_builder.rst:130
 msgid "$builder->select()"
@@ -261,7 +260,7 @@ msgstr ""
 #: ../../source/database/query_builder.rst:150
 #: ../../source/database/query_builder.rst:271
 msgid "RawSql"
-msgstr "원시 SQL"
+msgstr "RawSql"
 
 #: ../../source/database/query_builder.rst:154
 msgid ""
@@ -364,7 +363,7 @@ msgstr "SELECT 섹션에 하위 쿼리를 추가합니다."
 
 #: ../../source/database/query_builder.rst:216
 msgid "From"
-msgstr "에서"
+msgstr "From"
 
 #: ../../source/database/query_builder.rst:219
 msgid "$builder->from()"
@@ -385,7 +384,7 @@ msgstr ""
 
 #: ../../source/database/query_builder.rst:232
 msgid "Subqueries"
-msgstr "하위 쿼리"
+msgstr "Subqueries"
 
 #: ../../source/database/query_builder.rst:235
 msgid "$builder->fromSubquery()"
@@ -405,7 +404,7 @@ msgstr "``$db->newQuery()`` 메서드를 사용하여 하위 쿼리를 기본 �
 
 #: ../../source/database/query_builder.rst:248
 msgid "Join"
-msgstr "가입하다"
+msgstr "Join"
 
 #: ../../source/database/query_builder.rst:253
 msgid "$builder->join()"
@@ -444,7 +443,7 @@ msgstr "특정 데이터 찾기"
 
 #: ../../source/database/query_builder.rst:286
 msgid "Where"
-msgstr "어디"
+msgstr "Where"
 
 #: ../../source/database/query_builder.rst:289
 msgid "$builder->where()"
@@ -525,7 +524,7 @@ msgstr ""
 
 #: ../../source/database/query_builder.rst:343
 msgid "5. RawSql"
-msgstr "5. 원시 SQL"
+msgstr "5. RawSql"
 
 #: ../../source/database/query_builder.rst:347
 msgid ""
@@ -537,7 +536,7 @@ msgstr ""
 
 #: ../../source/database/query_builder.rst:356
 msgid "6. Subqueries"
-msgstr "6. 하위 쿼리"
+msgstr "6. Subqueries"
 
 #: ../../source/database/query_builder.rst:361
 msgid "$builder->orWhere()"
@@ -610,7 +609,7 @@ msgstr "유사한 데이터 찾기"
 
 #: ../../source/database/query_builder.rst:421
 msgid "Like"
-msgstr "좋다"
+msgstr "Like"
 
 #: ../../source/database/query_builder.rst:424
 msgid "$builder->like()"
@@ -648,17 +647,16 @@ msgid ""
 "optional third argument. Your options are ``none``, ``before``, ``after`` "
 "and ``both`` (which is the default)."
 msgstr ""
-"와일드카드(**%**)가 배치되는 위치를 제어하려면 선택적 세 번째 인수를 사용할 수 있습니다. 옵션은 ``none``, "
-"``before``, ``after`` 및 ``both``(기본값)입니다."
+"와일드카드 %가 배치되는 위치를 제어하려면 선택적 세 번째 인수를 사용할 수 있습니다. 옵션은 none, before, after 및 both(기본값)입니다."
 
 #: ../../source/database/query_builder.rst:453
 #: ../../source/database/query_builder.rst:613
 msgid "2. Associative array method"
-msgstr "2. 연관배열 방법"
+msgstr "2. 연관배열 메서드"
 
 #: ../../source/database/query_builder.rst:460
 msgid "3. RawSql"
-msgstr "3. 원시 SQL"
+msgstr "3. RawSql"
 
 #: ../../source/database/query_builder.rst:464
 msgid ""
@@ -815,8 +813,7 @@ msgid ""
 "optional third argument. Your options are ``before``, ``after`` and ``both``"
 " (which is the default)."
 msgstr ""
-"와일드카드(**%**)가 배치되는 위치를 제어하려면 선택적 세 번째 인수를 사용할 수 있습니다. 옵션은 ``before``, "
-"``after`` 및 ``both``(기본값)입니다."
+"와일드카드 %가 배치되는 위치를 제어하려면 선택적 세 번째 인수를 사용할 수 있습니다. 옵션은 before, after 및 both(기본값)입니다."
 
 #: ../../source/database/query_builder.rst:618
 msgid "$builder->orHavingLike()"
@@ -844,11 +841,11 @@ msgstr "이 방법은 여러 인스턴스가 **OR**\\ 로 결합된다는 점을
 
 #: ../../source/database/query_builder.rst:643
 msgid "Ordering Results"
-msgstr "주문 결과"
+msgstr "정렬 결과"
 
 #: ../../source/database/query_builder.rst:646
 msgid "OrderBy"
-msgstr "주문 기준"
+msgstr "OrderBy"
 
 #: ../../source/database/query_builder.rst:649
 msgid "$builder->orderBy()"
@@ -856,7 +853,7 @@ msgstr "$builder->orderBy()"
 
 #: ../../source/database/query_builder.rst:651
 msgid "Lets you set an **ORDER BY** clause."
-msgstr "**ORDER BY** 절을 설정할 수 있습니다."
+msgstr "ORDER BY 절을 설정할 수 있습니다."
 
 #: ../../source/database/query_builder.rst:653
 msgid ""
@@ -869,7 +866,7 @@ msgid ""
 "The second parameter lets you set the direction of the result. Options are "
 "``ASC``, ``DESC`` AND ``RANDOM``."
 msgstr ""
-"두 번째 매개변수를 사용하면 결과의 방향을 설정할 수 있습니다. 옵션은 ``ASC``, ``DESC`` 및 ``RANDOM``입니다."
+"두 번째 매개변수를 사용하면 결과의 방향을 설정할 수 있습니다. 옵션은 ASC, DESC 및 RANDOM입니다."
 
 #: ../../source/database/query_builder.rst:660
 msgid "You can also pass your own string in the first parameter:"
@@ -887,11 +884,11 @@ msgstr "``RANDOM`` 방향 옵션을 선택하면 숫자 시드 값을 지정하�
 
 #: ../../source/database/query_builder.rst:675
 msgid "Limiting or Counting Results"
-msgstr "결과 제한 또는 계산"
+msgstr "결과 제한 또는 카운팅"
 
 #: ../../source/database/query_builder.rst:678
 msgid "Limit"
-msgstr "한계"
+msgstr "Limit"
 
 #: ../../source/database/query_builder.rst:681
 msgid "$builder->limit()"
@@ -958,16 +955,16 @@ msgid ""
 "that you may have passed to ``select()`` as well. If you need to keep them, "
 "you can pass ``false`` as the first parameter."
 msgstr ""
-"``countAllResult()`` 메서드와 마찬가지로 이 메서드는 ``select()``\\ 에 전달했을 수 있는 모든 필드 값도 "
-"재설정합니다. 이를 유지해야 하는 경우 ``false``\\ 를 첫 번째 매개변수로 전달할 수 있습니다."
+"countAllResult() 메서드와 마찬가지로 이 메서드는 select()에 전달했을 수 있는 모든 필드 값도 "
+"재설정합니다. 이를 유지해야 하는 경우 false를 첫 번째 매개변수로 전달할 수 있습니다."
 
 #: ../../source/database/query_builder.rst:730
 msgid "Union queries"
-msgstr "통합 쿼리"
+msgstr "Union 쿼리"
 
 #: ../../source/database/query_builder.rst:733
 msgid "Union"
-msgstr "노동 조합"
+msgstr "Union"
 
 #: ../../source/database/query_builder.rst:736
 msgid "$builder->union()"
@@ -1214,9 +1211,9 @@ msgid ""
 " also be used on **insertBatch**, **update** and **delete** (when "
 "supported). Here is an example using the array of the above example:"
 msgstr ""
-"제공한 데이터를 기반으로 삽입 무시 문자열을 생성하고 쿼리를 실행합니다. 따라서 동일한 기본 키를 가진 항목이 이미 존재하는 경우 쿼리가"
-" 삽입되지 않습니다. 선택적으로 **부울**\\ 을 메소드에 전달할 수 있습니다. **insertBatch**, **update** 및 "
-"**delete**(지원되는 경우)에도 사용할 수 있습니다. 다음은 위 예제의 배열을 사용하는 예제입니다."
+"제공한 데이터를 기반으로 삽입 무시 문자열을 생성하고 쿼리를 실행합니다. 따라서 동일한 기본 키를 가진 항목이 이미 존재하는 경우 쿼리가 "
+"삽입되지 않습니다. 선택적으로 불리언 값을 메서드에 전달할 수 있습니다. insertBatch, update 및 delete(지원되는 경우)에도 "
+"사용할 수 있습니다. 다음은 위 예제의 배열을 사용하는 예제입니다."
 
 #: ../../source/database/query_builder.rst:866
 msgid "$builder->getCompiledInsert()"
@@ -1227,8 +1224,7 @@ msgid ""
 "Compiles the insertion query just like ``$builder->insert()`` but does not "
 "*run* the query. This method simply returns the SQL query as a string."
 msgstr ""
-"``$builder->insert()``처럼 삽입 쿼리를 컴파일하지만 쿼리를 *실행*하지는 않습니다. 이 메서드는 단순히 SQL 쿼리를 "
-"문자열로 반환합니다."
+"삽입 쿼리를 컴파일하지만 쿼리를 실행하지는 않습니다. 이 메서드는 단순히 SQL 쿼리를 문자열로 반환합니다."
 
 #: ../../source/database/query_builder.rst:875
 msgid ""
@@ -1329,8 +1325,7 @@ msgid ""
 "Compiles the upsert query just like ``$builder->upsert()`` but does not "
 "*run* the query. This method simply returns the SQL query as a string."
 msgstr ""
-"``$builder->upsert()``처럼 upsert 쿼리를 컴파일하지만 쿼리를 *실행*하지는 않습니다. 이 메서드는 단순히 SQL "
-"쿼리를 문자열로 반환합니다."
+"upsert 쿼리를 컴파일하지만 쿼리를 실행하지는 않습니다. 이 메서드는 단순히 SQL 쿼리를 문자열로 반환합니다."
 
 #: ../../source/database/query_builder.rst:968
 msgid "This method doesn't work for batch upserts."
@@ -1550,7 +1545,7 @@ msgstr ""
 msgid ""
 "For more information view documentation for "
 "`$builder->getCompiledInsert()`_."
-msgstr "자세한 내용은 `$builder->getCompiledInsert()`_에 대한 문서를 참조하세요."
+msgstr "자세한 내용은 `$builder->getCompiledInsert()`_\\에 대한 문서를 참조하세요."
 
 #: ../../source/database/query_builder.rst:1136
 msgid "This method doesn't work for batched updates."
@@ -2595,8 +2590,7 @@ msgid ""
 "When more than ``$batch_size`` rows are provided, multiple ``INSERT`` "
 "queries will be executed, each trying to insert up to ``$batch_size`` rows."
 msgstr ""
-"``$batch_size``개 이상의 행이 제공되면 여러 개의 ``INSERT`` 쿼리가 실행되며 각각 최대 "
-"``$batch_size``개 행을 삽입하려고 시도합니다."
+"배치 크기보다 많은 행이 제공되면 여러 개의 INSERT 쿼리가 실행되며 각각 최대 배치 크기만큼의 행을 삽입하려고 시도합니다."
 
 #: ../../source/database/query_builder.rst:1889
 #: ../../source/database/query_builder.rst:1993
@@ -2653,8 +2647,7 @@ msgid ""
 "When more than ``$batch_size`` rows are provided, multiple ``UPSERT`` "
 "queries will be executed, each trying to upsert up to ``$batch_size`` rows."
 msgstr ""
-"``$batch_size``개 이상의 행이 제공되면 여러 개의 ``UPSERT`` 쿼리가 실행되며 각각 최대 "
-"``$batch_size``개 행을 업데이트하려고 시도합니다."
+"배치 크기보다 많은 행이 제공되면 여러 개의 UPSERT 쿼리가 실행되며 각각 최대 배치 크기만큼의 행을 업서트하려고 시도합니다."
 
 #: ../../source/database/query_builder.rst:1937
 msgid "Compiles and executes an ``UPDATE`` statement."
