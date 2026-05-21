@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,9 +21,8 @@ msgstr ""
 
 #: ../../source/extending/index.rst:3
 msgid "Extending CodeIgniter"
-msgstr ""
+msgstr "CodeIgniter 확장"
 
 #: ../../source/extending/index.rst:5
 msgid "CodeIgniter 4 has been designed to be easy to extend or build upon."
-msgstr ""
-
+msgstr "CodeIgniter 4는 쉽게 확장하거나 그 위에 구축할 수 있도록 설계되었습니다."
