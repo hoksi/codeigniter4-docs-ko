@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../source/libraries/time.rst:3
 msgid "Times and Dates"
-msgstr ""
+msgstr "시간과 날짜"
 
 #: ../../source/libraries/time.rst:5
 msgid ""
@@ -32,6 +31,9 @@ msgid ""
 "correctly for different locales. This class is the ``Time`` class and "
 "lives in the ``CodeIgniter\\I18n`` namespace."
 msgstr ""
+"CodeIgniter는 PHP의 DateTimeImmutable 클래스를 기반으로 하는 완전히 로케일화된 불변 날짜/시간 클래스를 제공합니다. "
+"이 클래스는 Intl 확장의 기능을 사용하여 타임존 간 시간을 변환하고 다양한 로케일에 맞게 출력을 올바르게 표시합니다. "
+"이 클래스는 ``Time`` 클래스이며 ``CodeIgniter\\I18n`` 네임스페이스에 있습니다."
 
 #: ../../source/libraries/time.rst:9
 msgid ""
@@ -39,6 +41,8 @@ msgid ""
 " that you need that this class doesn't provide, you can likely find them "
 "within the `DateTimeImmutable`_  class itself."
 msgstr ""
+"Time 클래스는 ``DateTimeImmutable``\ 을 확장하므로, 이 클래스가 제공하지 않는 기능이 필요하다면 "
+"`DateTimeImmutable`_ 클래스 자체에서 찾을 수 있을 것입니다."
 
 #: ../../source/libraries/time.rst:14
 msgid ""
@@ -47,16 +51,21 @@ msgid ""
 " you need the old Time class for backward compatibility, you can use "
 "deprecated ``TimeLegacy`` class for the time being."
 msgstr ""
+"v4.3.0 이전에는 Time 클래스가 ``DateTime``\ 을 확장했으며 일부 상속된 메서드가 현재 객체 상태를 변경했습니다. "
+"이 버그는 v4.3.0에서 수정되었습니다. "
+"하위 호환성을 위해 이전 Time 클래스가 필요하다면 당분간 더 이상 사용되지 않는 ``TimeLegacy`` 클래스를 사용할 수 있습니다."
 
 #: ../../source/libraries/time.rst:24
 msgid "Instantiating"
-msgstr ""
+msgstr "인스턴스화"
 
 #: ../../source/libraries/time.rst:26
 msgid ""
 "There are several ways that a new Time instance can be created. The first"
 " is simply to create a new instance like any other class."
 msgstr ""
+"새 Time 인스턴스를 생성하는 방법은 여러 가지가 있습니다. "
+"첫 번째는 다른 클래스와 마찬가지로 단순히 새 인스턴스를 생성하는 것입니다."
 
 #: ../../source/libraries/time.rst:29
 msgid ""
@@ -65,6 +74,9 @@ msgid ""
 "constructor can parse. See `Supported Date and Time Formats`_ for "
 "details."
 msgstr ""
+"이 방법을 사용하면 원하는 시간을 나타내는 문자열을 전달할 수 있습니다. "
+"PHP의 `DateTimeImmutable`_ 생성자가 파싱할 수 있는 모든 문자열을 사용할 수 있습니다. "
+"자세한 내용은 `Supported Date and Time Formats`_\ 를 참조하세요."
 
 #: ../../source/libraries/time.rst:37
 msgid ""
@@ -76,10 +88,16 @@ msgid ""
 "<https://www.php.net/manual/en/class.locale.php>`__ class. If no locale "
 "or timezone is provided, the application defaults will be used."
 msgstr ""
+"두 번째와 세 번째 매개변수에 각각 타임존과 로케일을 나타내는 문자열을 전달할 수 있습니다. "
+"타임존은 PHP의 `DateTimeZone <https://www.php.net/manual/en/timezones.php>`__ 클래스가 "
+"지원하는 모든 타임존을 사용할 수 있습니다. "
+"로케일은 PHP의 `Locale <https://www.php.net/manual/en/class.locale.php>`__ 클래스가 "
+"지원하는 모든 로케일을 사용할 수 있습니다. "
+"로케일이나 타임존이 제공되지 않으면 애플리케이션 기본값이 사용됩니다."
 
 #: ../../source/libraries/time.rst:45
 msgid "now()"
-msgstr ""
+msgstr "now()"
 
 #: ../../source/libraries/time.rst:47
 msgid ""
@@ -89,10 +107,14 @@ msgid ""
 "locale in the second and third parameters, respectively. If no locale or "
 "timezone is provided, the application defaults will be used."
 msgstr ""
+"Time 클래스는 클래스를 인스턴스화하는 여러 헬퍼 메서드를 가지고 있습니다. "
+"첫 번째는 현재 시간으로 설정된 새 인스턴스를 반환하는 ``now()`` 메서드입니다. "
+"두 번째와 세 번째 매개변수에 각각 타임존과 로케일을 나타내는 문자열을 전달할 수 있습니다. "
+"로케일이나 타임존이 제공되지 않으면 애플리케이션 기본값이 사용됩니다."
 
 #: ../../source/libraries/time.rst:54
 msgid "parse()"
-msgstr ""
+msgstr "parse()"
 
 #: ../../source/libraries/time.rst:56
 msgid ""
@@ -101,10 +123,13 @@ msgid ""
 " parameter, a timezone as the second parameter, and the locale as the "
 "third parameter:"
 msgstr ""
+"이 헬퍼 메서드는 기본 생성자의 정적 버전입니다. "
+"DateTimeImmutable의 생성자에 사용 가능한 문자열을 첫 번째 매개변수로, "
+"타임존을 두 번째 매개변수로, 로케일을 세 번째 매개변수로 받습니다:"
 
 #: ../../source/libraries/time.rst:62
 msgid "today()"
-msgstr ""
+msgstr "today()"
 
 #: ../../source/libraries/time.rst:64
 msgid ""
@@ -112,10 +137,12 @@ msgid ""
 "time set to midnight. It accepts strings for the timezone and locale in "
 "the first and second parameters:"
 msgstr ""
+"날짜를 현재 날짜로, 시간을 자정으로 설정한 새 인스턴스를 반환합니다. "
+"첫 번째와 두 번째 매개변수로 타임존과 로케일 문자열을 받습니다:"
 
 #: ../../source/libraries/time.rst:70
 msgid "yesterday()"
-msgstr ""
+msgstr "yesterday()"
 
 #: ../../source/libraries/time.rst:72
 msgid ""
@@ -123,10 +150,12 @@ msgid ""
 "time set to midnight. It accepts strings for the timezone and locale in "
 "the first and second parameters:"
 msgstr ""
+"날짜를 어제 날짜로, 시간을 자정으로 설정한 새 인스턴스를 반환합니다. "
+"첫 번째와 두 번째 매개변수로 타임존과 로케일 문자열을 받습니다:"
 
 #: ../../source/libraries/time.rst:78
 msgid "tomorrow()"
-msgstr ""
+msgstr "tomorrow()"
 
 #: ../../source/libraries/time.rst:80
 msgid ""
@@ -134,10 +163,12 @@ msgid ""
 "set to midnight. It accepts strings for the timezone and locale in the "
 "first and second parameters:"
 msgstr ""
+"날짜를 내일 날짜로, 시간을 자정으로 설정한 새 인스턴스를 반환합니다. "
+"첫 번째와 두 번째 매개변수로 타임존과 로케일 문자열을 받습니다:"
 
 #: ../../source/libraries/time.rst:86
 msgid "createFromDate()"
-msgstr ""
+msgstr "createFromDate()"
 
 #: ../../source/libraries/time.rst:88
 msgid ""
@@ -146,10 +177,13 @@ msgid ""
 "the current year, month and day. Accepts strings for the timezone and "
 "locale in the fourth and fifth parameters:"
 msgstr ""
+"**year**, **month**, **day**\ 를 개별 입력으로 받아 새 인스턴스를 반환합니다. "
+"이 매개변수 중 하나라도 제공되지 않으면 현재 연도, 월, 일을 사용합니다. "
+"네 번째와 다섯 번째 매개변수로 타임존과 로케일 문자열을 받습니다:"
 
 #: ../../source/libraries/time.rst:95
 msgid "createFromTime()"
-msgstr ""
+msgstr "createFromTime()"
 
 #: ../../source/libraries/time.rst:97
 msgid ""
@@ -158,10 +192,13 @@ msgid ""
 "date portion of the Time instance. Accepts strings for the timezone and "
 "locale in the fourth and fifth parameters:"
 msgstr ""
+"``createFromDate()``\ 와 유사하지만 **hours**, **minutes**, **seconds**\ 에만 관여합니다. "
+"Time 인스턴스의 날짜 부분에는 현재 날짜를 사용합니다. "
+"네 번째와 다섯 번째 매개변수로 타임존과 로케일 문자열을 받습니다:"
 
 #: ../../source/libraries/time.rst:104
 msgid "create()"
-msgstr ""
+msgstr "create()"
 
 #: ../../source/libraries/time.rst:106
 msgid ""
@@ -170,10 +207,14 @@ msgid ""
 "Any value not provided will use the current date and time. Accepts "
 "strings for the timezone and locale in the fourth and fifth parameters:"
 msgstr ""
+"앞의 두 메서드의 조합으로, **year**, **month**, **day**, **hour**, **minutes**, **seconds**\ 를 "
+"개별 매개변수로 받습니다. "
+"제공되지 않은 값은 현재 날짜와 시간을 사용합니다. "
+"네 번째와 다섯 번째 매개변수로 타임존과 로케일 문자열을 받습니다:"
 
 #: ../../source/libraries/time.rst:113
 msgid "createFromFormat()"
-msgstr ""
+msgstr "createFromFormat()"
 
 #: ../../source/libraries/time.rst:115
 msgid ""
@@ -181,22 +222,25 @@ msgid ""
 "This allows the timezone to be set at the same time, and returns a "
 "``Time`` instance, instead of DateTimeImmutable:"
 msgstr ""
+"이는 DateTimeImmutable의 동일한 이름의 메서드를 대체합니다. "
+"타임존을 동시에 설정할 수 있으며, DateTimeImmutable 대신 ``Time`` 인스턴스를 반환합니다:"
 
 #: ../../source/libraries/time.rst:123
 msgid "createFromTimestamp()"
-msgstr ""
+msgstr "createFromTimestamp()"
 
 #: ../../source/libraries/time.rst:125
 msgid ""
 "This method takes a UNIX timestamp and, optionally, the timezone and "
 "locale, to create a new Time instance:"
 msgstr ""
+"이 메서드는 UNIX 타임스탬프와 선택적으로 타임존과 로케일을 받아 새 Time 인스턴스를 생성합니다:"
 
 #: ../../source/libraries/time.rst:130
 msgid ""
 "If you do not explicitly pass a timezone, it returns a Time instance with"
 " **UTC**."
-msgstr ""
+msgstr "타임존을 명시적으로 전달하지 않으면 **UTC**\ 로 Time 인스턴스를 반환합니다."
 
 #: ../../source/libraries/time.rst:132
 msgid ""
@@ -204,16 +248,19 @@ msgid ""
 "(i.e. explicitly pass a timezone) unless using UTC as the default "
 "timezone."
 msgstr ""
+"UTC를 기본 타임존으로 사용하지 않는 한, 항상 2개의 매개변수(즉, 타임존을 명시적으로 전달)로 "
+"``createFromTimestamp()``\ 를 호출하는 것을 권장합니다."
 
 #: ../../source/libraries/time.rst:135
 msgid ""
 "In v4.4.6 to prior to v4.6.0, this method returned a Time instance with "
 "the default timezone when you do not specify a timezone."
 msgstr ""
+"v4.4.6부터 v4.6.0 이전까지 이 메서드는 타임존을 지정하지 않으면 기본 타임존으로 Time 인스턴스를 반환했습니다."
 
 #: ../../source/libraries/time.rst:139
 msgid "createFromInstance()"
-msgstr ""
+msgstr "createFromInstance()"
 
 #: ../../source/libraries/time.rst:141
 msgid ""
@@ -222,10 +269,13 @@ msgid ""
 "setting the locale. The timezone will be automatically determined from "
 "the DateTime instance passed in:"
 msgstr ""
+"DateTime 인스턴스를 제공하는 다른 라이브러리와 작업할 때, 이 메서드를 사용하여 "
+"선택적으로 로케일을 설정하면서 Time 인스턴스로 변환할 수 있습니다. "
+"타임존은 전달된 DateTime 인스턴스에서 자동으로 결정됩니다:"
 
 #: ../../source/libraries/time.rst:148
 msgid "toDateTime()"
-msgstr ""
+msgstr "toDateTime()"
 
 #: ../../source/libraries/time.rst:150
 msgid ""
@@ -234,10 +284,13 @@ msgid ""
 "DateTime instance. This preserves the timezone setting, but loses the "
 "locale, since DateTime is not aware of locales:"
 msgstr ""
+"인스턴스화 메서드는 아니지만, 이 메서드는 **instance** 메서드의 반대로 "
+"Time 인스턴스를 DateTime 인스턴스로 변환할 수 있습니다. "
+"타임존 설정은 유지되지만, DateTime은 로케일을 인식하지 못하므로 로케일은 손실됩니다:"
 
 #: ../../source/libraries/time.rst:159
 msgid "Displaying the Value"
-msgstr ""
+msgstr "값 표시"
 
 #: ../../source/libraries/time.rst:161
 msgid ""
@@ -247,10 +300,14 @@ msgid ""
 "class does provide a number of helper methods to display localized "
 "versions of the value, though."
 msgstr ""
+"Time 클래스는 DateTimeImmutable을 확장하므로 ``format()`` 메서드를 포함하여 "
+"제공하는 모든 출력 메서드를 사용할 수 있습니다. "
+"그러나 DateTimeImmutable 메서드는 로케일화된 결과를 제공하지 않습니다. "
+"그래도 Time 클래스는 값의 로케일화된 버전을 표시하는 여러 헬퍼 메서드를 제공합니다."
 
 #: ../../source/libraries/time.rst:166
 msgid "toLocalizedString()"
-msgstr ""
+msgstr "toLocalizedString()"
 
 #: ../../source/libraries/time.rst:168
 msgid ""
@@ -261,10 +318,15 @@ msgid ""
 "full listing of values can be found `here <https://unicode-org.github.io"
 "/icu-docs/apidoc/released/icu4c/classSimpleDateFormat.html#details>`__."
 msgstr ""
+"이것은 DateTimeImmutable의 ``format()`` 메서드의 로케일화된 버전입니다. "
+"익숙한 값을 사용하는 대신 `IntlDateFormatter "
+"<https://www.php.net/manual/en/class.intldateformatter.php>`__ 클래스가 허용하는 값을 사용해야 합니다. "
+"전체 값 목록은 `여기 <https://unicode-org.github.io"
+"/icu-docs/apidoc/released/icu4c/classSimpleDateFormat.html#details>`__\ 에서 확인할 수 있습니다."
 
 #: ../../source/libraries/time.rst:177
 msgid "toDateTimeString()"
-msgstr ""
+msgstr "toDateTimeString()"
 
 #: ../../source/libraries/time.rst:179
 msgid ""
@@ -274,26 +336,30 @@ msgid ""
 "having to remember their values. This will return a localized version of "
 "string formatted as (``Y-m-d H:i:s``):"
 msgstr ""
+"이것은 `IntlDateFormatter "
+"<https://www.php.net/manual/en/class.intldateformatter.php>`_\ 의 값을 기억하지 않아도 "
+"사용할 수 있는 세 가지 헬퍼 메서드 중 첫 번째입니다. "
+"(``Y-m-d H:i:s``) 형식으로 로케일화된 문자열을 반환합니다:"
 
 #: ../../source/libraries/time.rst:185
 msgid "toDateString()"
-msgstr ""
+msgstr "toDateString()"
 
 #: ../../source/libraries/time.rst:187
 msgid "Displays just the localized date portion of the Time:"
-msgstr ""
+msgstr "Time\ 의 로케일화된 날짜 부분만 표시합니다:"
 
 #: ../../source/libraries/time.rst:192
 msgid "toTimeString()"
-msgstr ""
+msgstr "toTimeString()"
 
 #: ../../source/libraries/time.rst:194
 msgid "Displays just the localized time portion of the value:"
-msgstr ""
+msgstr "값의 로케일화된 시간 부분만 표시합니다:"
 
 #: ../../source/libraries/time.rst:199 ../../source/libraries/time.rst:453
 msgid "humanize()"
-msgstr ""
+msgstr "humanize()"
 
 #: ../../source/libraries/time.rst:201
 msgid ""
@@ -302,82 +368,84 @@ msgid ""
 "geared towards being easily understood. It can create strings like '3 "
 "hours ago', 'in 1 month', etc:"
 msgstr ""
+"이 메서드는 현재 날짜/시간과 인스턴스의 차이를 쉽게 이해할 수 있는 사람이 읽기 좋은 형식의 문자열로 반환합니다. "
+"'3 hours ago', 'in 1 month' 등과 같은 문자열을 생성할 수 있습니다:"
 
 #: ../../source/libraries/time.rst:207 ../../source/libraries/time.rst:461
 msgid "The exact time displayed is determined in the following manner:"
-msgstr ""
+msgstr "표시되는 정확한 시간은 다음과 같은 방식으로 결정됩니다:"
 
 #: ../../source/libraries/time.rst:210 ../../source/libraries/time.rst:464
 msgid "Time difference"
-msgstr ""
+msgstr "시간 차이"
 
 #: ../../source/libraries/time.rst:210 ../../source/libraries/time.rst:464
 msgid "Result"
-msgstr ""
+msgstr "결과"
 
 #: ../../source/libraries/time.rst:212 ../../source/libraries/time.rst:466
 msgid "1 year < $time < 2 years"
-msgstr ""
+msgstr "1 year < $time < 2 years"
 
 #: ../../source/libraries/time.rst:212 ../../source/libraries/time.rst:466
 msgid "in 1 year / 1 year ago"
-msgstr ""
+msgstr "in 1 year / 1 year ago"
 
 #: ../../source/libraries/time.rst:213 ../../source/libraries/time.rst:467
 msgid "1 month < $time < 1 year"
-msgstr ""
+msgstr "1 month < $time < 1 year"
 
 #: ../../source/libraries/time.rst:213 ../../source/libraries/time.rst:467
 msgid "in 6 months / 6 months ago"
-msgstr ""
+msgstr "in 6 months / 6 months ago"
 
 #: ../../source/libraries/time.rst:214 ../../source/libraries/time.rst:468
 msgid "7 days < $time < 1 month"
-msgstr ""
+msgstr "7 days < $time < 1 month"
 
 #: ../../source/libraries/time.rst:214 ../../source/libraries/time.rst:468
 msgid "in 3 weeks / 3 weeks ago"
-msgstr ""
+msgstr "in 3 weeks / 3 weeks ago"
 
 #: ../../source/libraries/time.rst:215 ../../source/libraries/time.rst:469
 msgid "today < $time < 7 days"
-msgstr ""
+msgstr "today < $time < 7 days"
 
 #: ../../source/libraries/time.rst:215 ../../source/libraries/time.rst:469
 msgid "in 4 days / 4 days ago"
-msgstr ""
+msgstr "in 4 days / 4 days ago"
 
 #: ../../source/libraries/time.rst:216
 msgid "$time == yesterday / tomorrow"
-msgstr ""
+msgstr "$time == yesterday / tomorrow"
 
 #: ../../source/libraries/time.rst:216
 msgid "Yesterday / Tomorrow"
-msgstr ""
+msgstr "Yesterday / Tomorrow"
 
 #: ../../source/libraries/time.rst:217
 msgid "59 minutes < $time < 1 day"
-msgstr ""
+msgstr "59 minutes < $time < 1 day"
 
 #: ../../source/libraries/time.rst:217
 msgid "in 2 hours / 2 hours ago"
-msgstr ""
+msgstr "in 2 hours / 2 hours ago"
 
 #: ../../source/libraries/time.rst:218
 msgid "now < $time < 1 hour"
-msgstr ""
+msgstr "now < $time < 1 hour"
 
 #: ../../source/libraries/time.rst:218 ../../source/libraries/time.rst:471
 msgid "in 35 minutes / 35 minutes ago"
-msgstr ""
+msgstr "in 35 minutes / 35 minutes ago"
 
 #: ../../source/libraries/time.rst:219
 msgid "$time == now"
-msgstr ""
+msgstr "$time == now"
 
 #: ../../source/libraries/time.rst:219 ../../source/libraries/time.rst:472
 msgid "Now"
-msgstr ""
+msgstr "Now"
 
 #: ../../source/libraries/time.rst:222 ../../source/libraries/time.rst:475
 #, python-brace-format
@@ -386,10 +454,12 @@ msgid ""
 "**system/Language/en/Time.php**. If you want to overwrite them, create "
 "**app/Language/{locale}/Time.php**."
 msgstr ""
+"결과 문자열은 언어 파일인 **system/Language/en/Time.php**\ 에서 가져옵니다. "
+"재정의하려면 **app/Language/{locale}/Time.php**\ 를 생성하세요."
 
 #: ../../source/libraries/time.rst:227
 msgid "Working with Individual Values"
-msgstr ""
+msgstr "개별 값 다루기"
 
 #: ../../source/libraries/time.rst:229
 msgid ""
@@ -399,6 +469,8 @@ msgid ""
 "be fully localized and respect the locale that the Time instance was "
 "created with."
 msgstr ""
+"Time 객체는 기존 인스턴스의 연도, 월, 시간 등의 개별 항목을 가져오고 설정할 수 있는 여러 메서드를 제공합니다. "
+"다음 메서드를 통해 가져온 모든 값은 완전히 로케일화되어 Time 인스턴스가 생성될 때 사용된 로케일을 따릅니다."
 
 #: ../../source/libraries/time.rst:233
 msgid ""
@@ -406,62 +478,68 @@ msgid ""
 "as if they were a class property. So, any calls to methods like "
 "``getYear()`` can also be accessed through ``$time->year``, and so on."
 msgstr ""
+"다음의 모든 ``getX()``\ 와 ``setX()`` 메서드는 클래스 속성처럼 사용할 수도 있습니다. "
+"따라서 ``getYear()``\ 와 같은 메서드 호출은 ``$time->year``\ 를 통해서도 접근할 수 있습니다."
 
 #: ../../source/libraries/time.rst:237
 msgid "Getters"
-msgstr ""
+msgstr "게터"
 
 #: ../../source/libraries/time.rst:239
 msgid "The following basic getters exist:"
-msgstr ""
+msgstr "다음과 같은 기본 게터가 있습니다:"
 
 #: ../../source/libraries/time.rst:243
 msgid ""
 "In addition to these, a number of methods exist to provide additional "
 "information about the date:"
-msgstr ""
+msgstr "이 외에도 날짜에 대한 추가 정보를 제공하는 여러 메서드가 있습니다:"
 
 #: ../../source/libraries/time.rst:248
 msgid "getAge()"
-msgstr ""
+msgstr "getAge()"
 
 #: ../../source/libraries/time.rst:250
 msgid ""
 "Returns the age, in years, between the Time instance and the current "
 "time. Perfect for checking the age of someone based on their birthday:"
 msgstr ""
+"Time 인스턴스와 현재 시간 사이의 나이를 년 단위로 반환합니다. "
+"생일을 기반으로 누군가의 나이를 확인하는 데 완벽합니다:"
 
 #: ../../source/libraries/time.rst:256
 msgid "getDST()"
-msgstr ""
+msgstr "getDST()"
 
 #: ../../source/libraries/time.rst:258
 msgid ""
 "Returns boolean true/false based on whether the Time instance is "
 "currently observing Daylight Savings Time:"
 msgstr ""
+"Time 인스턴스가 현재 일광 절약 시간제를 따르고 있는지 여부에 따라 boolean true/false를 반환합니다:"
 
 #: ../../source/libraries/time.rst:263
 msgid "getLocal()"
-msgstr ""
+msgstr "getLocal()"
 
 #: ../../source/libraries/time.rst:265
 msgid ""
 "Returns boolean true if the Time instance is in the same timezone as the "
 "application is currently running in:"
 msgstr ""
+"Time 인스턴스가 애플리케이션이 현재 실행 중인 것과 동일한 타임존에 있으면 boolean true를 반환합니다:"
 
 #: ../../source/libraries/time.rst:270
 msgid "getUtc()"
-msgstr ""
+msgstr "getUtc()"
 
 #: ../../source/libraries/time.rst:272
 msgid "Returns boolean true if the Time instance is in UTC time:"
-msgstr ""
+msgstr "Time 인스턴스가 UTC 시간이면 boolean true를 반환합니다:"
 
 #: ../../source/libraries/time.rst:277
 msgid "getTimezone()"
-msgstr ""
+msgstr "getTimezone()"
 
 #: ../../source/libraries/time.rst:279
 msgid ""
@@ -469,54 +547,59 @@ msgid ""
 "<https://www.php.net/manual/en/class.datetimezone.php>`__ object set the "
 "timezone of the Time instance:"
 msgstr ""
+"Time 인스턴스의 타임존으로 설정된 새 `DateTimeZone "
+"<https://www.php.net/manual/en/class.datetimezone.php>`__ 객체를 반환합니다:"
 
 #: ../../source/libraries/time.rst:285
 msgid "getTimezoneName()"
-msgstr ""
+msgstr "getTimezoneName()"
 
 #: ../../source/libraries/time.rst:287
 msgid ""
 "Returns the full `timezone string "
 "<https://www.php.net/manual/en/timezones.php>`__ of the Time instance:"
 msgstr ""
+"Time 인스턴스의 전체 `타임존 문자열 "
+"<https://www.php.net/manual/en/timezones.php>`__\ 을 반환합니다:"
 
 #: ../../source/libraries/time.rst:292
 msgid "Setters"
-msgstr ""
+msgstr "세터"
 
 #: ../../source/libraries/time.rst:294
 msgid ""
 "The following basic setters exist. If any of the values set are out of "
 "range, an ``InvalidArgumentExeption`` will be thrown."
 msgstr ""
+"다음과 같은 기본 세터가 있습니다. 설정된 값이 범위를 벗어나면 ``InvalidArgumentExeption``\ 이 발생합니다."
 
 #: ../../source/libraries/time.rst:297
 msgid ""
 "All setters will return a new Time instance, leaving the original "
 "instance untouched."
-msgstr ""
+msgstr "모든 세터는 원본 인스턴스를 그대로 두고 새 Time 인스턴스를 반환합니다."
 
 #: ../../source/libraries/time.rst:299
 msgid ""
 "All setters will throw an InvalidArgumentException if the value is out of"
 " range."
-msgstr ""
+msgstr "모든 세터는 값이 범위를 벗어나면 InvalidArgumentException을 발생시킵니다."
 
 #: ../../source/libraries/time.rst:304
 msgid "setTimezone()"
-msgstr ""
+msgstr "setTimezone()"
 
 #: ../../source/libraries/time.rst:306
 msgid "Converts the time from it's current timezone into the new one:"
-msgstr ""
+msgstr "현재 타임존에서 새 타임존으로 시간을 변환합니다:"
 
 #: ../../source/libraries/time.rst:311
 msgid "setTimestamp()"
-msgstr ""
+msgstr "setTimestamp()"
 
 #: ../../source/libraries/time.rst:313
 msgid "Returns a new instance with the date set to the new timestamp:"
-msgstr ""
+msgstr "날짜를 새 타임스탬프로 설정한 새 인스턴스를 반환합니다:"
 
 #: ../../source/libraries/time.rst:317
 msgid ""
@@ -524,10 +607,12 @@ msgid ""
 "date/time. See :ref:`Upgrading Guide <upgrade-460-time-set-timestamp>` "
 "for details."
 msgstr ""
+"v4.6.0 이전에는 버그로 인해 이 메서드가 잘못된 날짜/시간을 반환할 수 있었습니다. "
+"자세한 내용은 :ref:`업그레이드 가이드 <upgrade-460-time-set-timestamp>`\ 를 참조하세요."
 
 #: ../../source/libraries/time.rst:321
 msgid "Modifying the Value"
-msgstr ""
+msgstr "값 수정"
 
 #: ../../source/libraries/time.rst:323
 msgid ""
@@ -535,10 +620,12 @@ msgid ""
 "subtracting values to the current Time. This will not modify the existing"
 " Time instance, but will return a new instance."
 msgstr ""
+"다음 메서드를 사용하면 현재 Time에 값을 더하거나 빼서 날짜를 수정할 수 있습니다. "
+"기존 Time 인스턴스는 수정되지 않고 새 인스턴스를 반환합니다."
 
 #: ../../source/libraries/time.rst:329
 msgid "addCalendarMonths() / subCalendarMonths()"
-msgstr ""
+msgstr "addCalendarMonths() / subCalendarMonths()"
 
 #: ../../source/libraries/time.rst:331
 msgid ""
@@ -548,82 +635,85 @@ msgid ""
 "between ``addMonths()`` and ``addCalendarMonths()`` for an initial date "
 "of ``2025-01-31``."
 msgstr ""
+"전체 달력 월을 더하거나 빼서 현재 Time을 수정합니다. "
+"반복 날짜에서 달력 월이 건너뛰어지지 않아야 하는 경우 이 메서드가 유용할 수 있습니다. "
+"초기 날짜 ``2025-01-31``\ 에 대한 ``addMonths()``\ 와 ``addCalendarMonths()``\ 의 비교는 아래 표를 참조하세요."
 
 #: ../../source/libraries/time.rst:336
 msgid "$months"
-msgstr ""
+msgstr "$months"
 
 #: ../../source/libraries/time.rst:336
 msgid "addMonths()"
-msgstr ""
+msgstr "addMonths()"
 
 #: ../../source/libraries/time.rst:336
 msgid "addCalendarMonths()"
-msgstr ""
+msgstr "addCalendarMonths()"
 
 #: ../../source/libraries/time.rst:338
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: ../../source/libraries/time.rst:338
 msgid "2025-03-03"
-msgstr ""
+msgstr "2025-03-03"
 
 #: ../../source/libraries/time.rst:338
 msgid "2025-02-28"
-msgstr ""
+msgstr "2025-02-28"
 
 #: ../../source/libraries/time.rst:339
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: ../../source/libraries/time.rst:339
 msgid "2025-03-31"
-msgstr ""
+msgstr "2025-03-31"
 
 #: ../../source/libraries/time.rst:340
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: ../../source/libraries/time.rst:340
 msgid "2025-05-01"
-msgstr ""
+msgstr "2025-05-01"
 
 #: ../../source/libraries/time.rst:340
 msgid "2025-04-30"
-msgstr ""
+msgstr "2025-04-30"
 
 #: ../../source/libraries/time.rst:341
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: ../../source/libraries/time.rst:341
 msgid "2025-05-31"
-msgstr ""
+msgstr "2025-05-31"
 
 #: ../../source/libraries/time.rst:342
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: ../../source/libraries/time.rst:342
 msgid "2025-07-01"
-msgstr ""
+msgstr "2025-07-01"
 
 #: ../../source/libraries/time.rst:342
 msgid "2025-06-30"
-msgstr ""
+msgstr "2025-06-30"
 
 #: ../../source/libraries/time.rst:343
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: ../../source/libraries/time.rst:343
 msgid "2025-07-31"
-msgstr ""
+msgstr "2025-07-31"
 
 #: ../../source/libraries/time.rst:347
 msgid "Comparing Two Times"
-msgstr ""
+msgstr "두 시간 비교"
 
 #: ../../source/libraries/time.rst:349
 msgid ""
@@ -631,10 +721,12 @@ msgid ""
 "another. All comparisons are first converted to UTC before comparisons "
 "are done, to ensure that different timezones respond correctly."
 msgstr ""
+"다음 메서드를 사용하면 하나의 Time 인스턴스를 다른 인스턴스와 비교할 수 있습니다. "
+"모든 비교는 다른 타임존이 올바르게 처리되도록 비교 전에 먼저 UTC로 변환됩니다."
 
 #: ../../source/libraries/time.rst:353
 msgid "equals()"
-msgstr ""
+msgstr "equals()"
 
 #: ../../source/libraries/time.rst:355
 msgid ""
@@ -643,6 +735,8 @@ msgid ""
 " are not required to be in the same timezone, as both times are converted"
 " to UTC and compared that way:"
 msgstr ""
+"전달된 datetime이 현재 인스턴스와 같은지 결정합니다. "
+"여기서 같다는 것은 동일한 순간을 나타낸다는 의미이며, 두 시간 모두 UTC로 변환하여 비교하므로 동일한 타임존에 있을 필요는 없습니다:"
 
 #: ../../source/libraries/time.rst:361 ../../source/libraries/time.rst:383
 msgid ""
@@ -652,66 +746,77 @@ msgid ""
 "parameter, you can pass a timezone string in as the second parameter. If "
 "no timezone is given, the system default will be used:"
 msgstr ""
+"비교 대상 값은 Time 인스턴스, DateTime 인스턴스, 또는 새 DateTime 인스턴스가 이해할 수 있는 형식의 전체 날짜/시간 문자열일 수 있습니다. "
+"첫 번째 매개변수로 문자열을 전달할 때, 두 번째 매개변수로 타임존 문자열을 전달할 수 있습니다. "
+"타임존이 제공되지 않으면 시스템 기본값이 사용됩니다:"
 
 #: ../../source/libraries/time.rst:368
 msgid "sameAs()"
-msgstr ""
+msgstr "sameAs()"
 
 #: ../../source/libraries/time.rst:370
 msgid ""
 "This is identical to the ``equals()`` method, except that it only returns"
 " true when the date, time, AND timezone are all identical:"
 msgstr ""
+"``equals()`` 메서드와 동일하지만, 날짜, 시간, 타임존이 모두 동일할 때만 true를 반환합니다:"
 
 #: ../../source/libraries/time.rst:376
 msgid "isBefore()"
-msgstr ""
+msgstr "isBefore()"
 
 #: ../../source/libraries/time.rst:378
 msgid ""
 "Checks if the passed in time is before the current instance. The "
 "comparison is done against the UTC versions of both times:"
 msgstr ""
+"전달된 시간이 현재 인스턴스보다 이전인지 확인합니다. "
+"비교는 두 시간의 UTC 버전을 기준으로 수행됩니다:"
 
 #: ../../source/libraries/time.rst:390
 msgid "isAfter()"
-msgstr ""
+msgstr "isAfter()"
 
 #: ../../source/libraries/time.rst:392
 msgid ""
 "Works exactly the same as ``isBefore()`` except checks if the time is "
 "after the time passed in:"
 msgstr ""
+"``isBefore()``\ 와 완전히 동일하게 작동하지만 전달된 시간 이후인지 확인합니다:"
 
 #: ../../source/libraries/time.rst:399
 msgid "isPast()"
-msgstr ""
+msgstr "isPast()"
 
 #: ../../source/libraries/time.rst:403
 msgid ""
 "Determines if the current instance's time is in the past, relative to "
 "\"now\". It returns a boolean true/false:"
 msgstr ""
+"현재 인스턴스의 시간이 \"now\"를 기준으로 과거인지 결정합니다. boolean true/false를 반환합니다:"
 
 #: ../../source/libraries/time.rst:411
 msgid "isFuture()"
-msgstr ""
+msgstr "isFuture()"
 
 #: ../../source/libraries/time.rst:415
 msgid ""
 "Determines if the current instance's time is in the future, relative to "
 "\"now\". It returns a boolean true/false:"
 msgstr ""
+"현재 인스턴스의 시간이 \"now\"를 기준으로 미래인지 결정합니다. boolean true/false를 반환합니다:"
 
 #: ../../source/libraries/time.rst:423
 msgid "Viewing Differences"
-msgstr ""
+msgstr "차이 보기"
 
 #: ../../source/libraries/time.rst:425
 msgid ""
 "To compare two Times directly, you would use the ``difference()`` method,"
 " which returns a ``CodeIgniter\\I18n\\TimeDifference`` instance."
 msgstr ""
+"두 Time을 직접 비교하려면 ``CodeIgniter\\I18n\\TimeDifference`` 인스턴스를 반환하는 "
+"``difference()`` 메서드를 사용합니다."
 
 #: ../../source/libraries/time.rst:428
 msgid ""
@@ -719,6 +824,8 @@ msgid ""
 "string with the date/time. If a string is passed in the first parameter, "
 "the second parameter can be a timezone string:"
 msgstr ""
+"첫 번째 매개변수는 Time 인스턴스, DateTime 인스턴스, 또는 날짜/시간이 포함된 문자열입니다. "
+"첫 번째 매개변수로 문자열을 전달하면 두 번째 매개변수로 타임존 문자열을 사용할 수 있습니다:"
 
 #: ../../source/libraries/time.rst:433
 msgid ""
@@ -727,6 +834,8 @@ msgid ""
 "The value returned will be negative if it was in the past, or positive if"
 " in the future from the original time:"
 msgstr ""
+"TimeDifference 인스턴스를 얻으면 두 시간의 차이에 대한 정보를 찾기 위해 사용할 수 있는 여러 메서드가 있습니다. "
+"반환되는 값은 원래 시간보다 과거이면 음수, 미래이면 양수입니다:"
 
 #: ../../source/libraries/time.rst:439
 msgid ""
@@ -734,18 +843,22 @@ msgid ""
 "comparison. This could lead to unexpected results when containing a day "
 "differed from 24 hours due to Daylight Saving Time (DST)."
 msgstr ""
+"v4.4.7 이전에는 Time이 비교 전에 항상 타임존을 UTC로 변환했습니다. "
+"이로 인해 일광 절약 시간제(DST)로 인해 하루가 24시간과 다를 때 예상치 못한 결과가 발생할 수 있었습니다."
 
 #: ../../source/libraries/time.rst:443
 msgid ""
 "Starting with v4.4.7, when comparing date/times that are in the same time"
 " zone, the comparison is performed as is, without conversion to UTC."
 msgstr ""
+"v4.4.7부터 동일한 타임존에 있는 날짜/시간을 비교할 때 UTC로 변환하지 않고 그대로 비교합니다."
 
 #: ../../source/libraries/time.rst:448
 msgid ""
 "You can use either ``getX()`` methods, or access the calculate values as "
 "if they were properties:"
 msgstr ""
+"``getX()`` 메서드를 사용하거나 속성처럼 계산된 값에 접근할 수 있습니다:"
 
 #: ../../source/libraries/time.rst:455
 msgid ""
@@ -755,22 +868,25 @@ msgid ""
 " hours ago', 'in 1 month', etc. The biggest difference is in how very "
 "recent dates are handled:"
 msgstr ""
+"Time의 ``humanize()`` 메서드와 마찬가지로, 두 시간의 차이를 쉽게 이해할 수 있는 사람이 읽기 좋은 형식의 문자열로 반환합니다. "
+"'3 hours ago', 'in 1 month' 등과 같은 문자열을 생성할 수 있습니다. "
+"가장 큰 차이는 매우 최근 날짜를 처리하는 방식에 있습니다:"
 
 #: ../../source/libraries/time.rst:470
 msgid "1 hour < $time < 1 day"
-msgstr ""
+msgstr "1 hour < $time < 1 day"
 
 #: ../../source/libraries/time.rst:470
 msgid "in 8 hours / 8 hours ago"
-msgstr ""
+msgstr "in 8 hours / 8 hours ago"
 
 #: ../../source/libraries/time.rst:471
 msgid "1 minute < $time < 1 hour"
-msgstr ""
+msgstr "1 minute < $time < 1 hour"
 
 #: ../../source/libraries/time.rst:472
 msgid "$time < 1 minute"
-msgstr ""
+msgstr "$time < 1 minute"
 
 #~ msgid ""
 #~ "Determines if the current instance's "
@@ -785,4 +901,3 @@ msgstr ""
 #~ " \"now\". It returns a boolean "
 #~ "true/false::"
 #~ msgstr ""
-

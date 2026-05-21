@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../source/libraries/caching.rst:3
 msgid "Caching Driver"
-msgstr ""
+msgstr "캐싱 드라이버"
 
 #: ../../source/libraries/caching.rst:5
 msgid ""
@@ -31,26 +30,30 @@ msgid ""
 "server requirements, and a Fatal Exception will be thrown if server "
 "requirements are not met."
 msgstr ""
+"CodeIgniter는 가장 널리 사용되는 빠르고 동적인 캐싱 방식을 감싸는 래퍼를 제공합니다. "
+"파일 기반 캐싱을 제외한 모든 캐싱은 특정 서버 요구 사항이 필요하며, 서버 요구 사항이 "
+"충족되지 않으면 치명적 예외(Fatal Exception)가 발생합니다."
 
 #: ../../source/libraries/caching.rst:16
 msgid "Example Usage"
-msgstr ""
+msgstr "사용 예시"
 
 #: ../../source/libraries/caching.rst:18
 msgid ""
 "The following example shows a common usage pattern within your "
 "controllers."
-msgstr ""
+msgstr "다음 예시는 컨트롤러 내에서의 일반적인 사용 패턴을 보여줍니다."
 
 #: ../../source/libraries/caching.rst:22
 msgid ""
 "You can grab an instance of the cache engine directly through the global "
 "function ``service()``:"
 msgstr ""
+"전역 함수 ``service()``\ 를 통해 캐시 엔진의 인스턴스를 직접 가져올 수 있습니다:"
 
 #: ../../source/libraries/caching.rst:30
 msgid "Configuring the Cache"
-msgstr ""
+msgstr "캐시 설정"
 
 #: ../../source/libraries/caching.rst:32
 msgid ""
@@ -58,10 +61,12 @@ msgid ""
 "**app/Config/Cache.php**. In that file, the following items are "
 "available."
 msgstr ""
+"캐시 엔진에 관한 모든 설정은 **app/Config/Cache.php**\ 에서 이루어집니다. "
+"해당 파일에서 다음 항목들을 설정할 수 있습니다."
 
 #: ../../source/libraries/caching.rst:36
 msgid "$handler"
-msgstr ""
+msgstr "$handler"
 
 #: ../../source/libraries/caching.rst:38
 msgid ""
@@ -69,10 +74,12 @@ msgid ""
 " when starting up the engine. Available names are: apcu, dummy, file, "
 "memcached, redis, predis, wincache."
 msgstr ""
+"엔진이 시작될 때 기본 핸들러로 사용할 핸들러의 이름입니다. "
+"사용 가능한 이름은 apcu, dummy, file, memcached, redis, predis, wincache입니다."
 
 #: ../../source/libraries/caching.rst:42
 msgid "$backupHandler"
-msgstr ""
+msgstr "$backupHandler"
 
 #: ../../source/libraries/caching.rst:44
 msgid ""
@@ -81,24 +88,29 @@ msgid ""
 "since the file system is always available, but may not fit more complex, "
 "multi-server setups."
 msgstr ""
+"첫 번째 선택인 ``$handler``\ 를 사용할 수 없는 경우, 다음으로 불러올 캐시 핸들러입니다. "
+"파일 시스템은 항상 사용 가능하므로 일반적으로 ``File`` 핸들러를 사용하지만, "
+"복잡한 멀티 서버 환경에는 적합하지 않을 수 있습니다."
 
 #: ../../source/libraries/caching.rst:49
 msgid "$prefix"
-msgstr ""
+msgstr "$prefix"
 
 #: ../../source/libraries/caching.rst:51
 msgid ""
 "If you have more than one application using the same cache storage, you "
 "can add a custom prefix string here that is prepended to all key names."
 msgstr ""
+"동일한 캐시 저장소를 사용하는 애플리케이션이 두 개 이상인 경우, "
+"모든 키 이름 앞에 붙일 사용자 정의 접두사 문자열을 여기에 추가할 수 있습니다."
 
 #: ../../source/libraries/caching.rst:55
 msgid "$ttl"
-msgstr ""
+msgstr "$ttl"
 
 #: ../../source/libraries/caching.rst:57
 msgid "The default number of seconds to save items when none is specified."
-msgstr ""
+msgstr "항목을 저장할 기본 시간(초)으로, 별도로 지정하지 않을 때 사용됩니다."
 
 #: ../../source/libraries/caching.rst:59
 msgid ""
@@ -106,40 +118,44 @@ msgid ""
 "coded, but may be useful to projects and modules. This will replace the "
 "hard-coded value in a future release."
 msgstr ""
+"경고: 이 값은 60초가 하드코딩된 프레임워크 핸들러에서는 사용되지 않지만, "
+"프로젝트와 모듈에서는 유용하게 쓰일 수 있습니다. "
+"향후 릴리즈에서 하드코딩된 값을 대체할 예정입니다."
 
 #: ../../source/libraries/caching.rst:63
 msgid "$file"
-msgstr ""
+msgstr "$file"
 
 #: ../../source/libraries/caching.rst:65
 msgid ""
 "This is an array of settings specific to the  **File** handler to "
 "determine how it should save the cache files."
 msgstr ""
+"**File** 핸들러에 특화된 설정 배열로, 캐시 파일을 어떻게 저장할지 결정합니다."
 
 #: ../../source/libraries/caching.rst:68
 msgid "$memcached"
-msgstr ""
+msgstr "$memcached"
 
 #: ../../source/libraries/caching.rst:70
 msgid ""
 "This is an array of servers that will be used when using the "
 "**Memcached** handler."
-msgstr ""
+msgstr "**Memcached** 핸들러를 사용할 때 이용할 서버의 배열입니다."
 
 #: ../../source/libraries/caching.rst:73
 msgid "$redis"
-msgstr ""
+msgstr "$redis"
 
 #: ../../source/libraries/caching.rst:75
 msgid ""
 "The settings for the Redis server that you wish to use when using the "
 "**Redis** and **Predis** handler."
-msgstr ""
+msgstr "**Redis** 및 **Predis** 핸들러를 사용할 때 연결할 Redis 서버의 설정입니다."
 
 #: ../../source/libraries/caching.rst:79
 msgid "Command-Line Tools"
-msgstr ""
+msgstr "커맨드라인 도구"
 
 #: ../../source/libraries/caching.rst:81
 msgid ""
@@ -147,63 +163,68 @@ msgid ""
 " are available from the command line to help you work with Cache. These "
 "tools are not required to use Cache driver but might help you."
 msgstr ""
+"CodeIgniter는 캐시 작업을 도와주는 여러 :doc:`커맨드 </cli/spark_commands>`\ 를 "
+"커맨드라인에서 사용할 수 있도록 제공합니다. "
+"이 도구들은 캐시 드라이버를 사용하는 데 필수는 아니지만 유용하게 활용할 수 있습니다."
 
 #: ../../source/libraries/caching.rst:86
 msgid "cache:clear"
-msgstr ""
+msgstr "cache:clear"
 
 #: ../../source/libraries/caching.rst:88
 msgid "Clears the current system caches:"
-msgstr ""
+msgstr "현재 시스템 캐시를 지웁니다:"
 
 #: ../../source/libraries/caching.rst:95
 msgid "cache:info"
-msgstr ""
+msgstr "cache:info"
 
 #: ../../source/libraries/caching.rst:97
 msgid "Shows file cache information in the current system:"
-msgstr ""
+msgstr "현재 시스템의 파일 캐시 정보를 표시합니다:"
 
 #: ../../source/libraries/caching.rst:103
 msgid "This command only supports the File cache handler."
-msgstr ""
+msgstr "이 명령은 파일 캐시 핸들러만 지원합니다."
 
 #: ../../source/libraries/caching.rst:107
 msgid "Class Reference"
-msgstr ""
+msgstr "클래스 레퍼런스"
 
 #: ../../source/libraries/caching.rst
 msgid "Returns"
-msgstr ""
+msgstr "반환값"
 
 #: ../../source/libraries/caching.rst:115
 msgid "``true`` if supported, ``false`` if not"
-msgstr ""
+msgstr "지원되면 ``true``\, 지원되지 않으면 ``false``"
 
 #: ../../source/libraries/caching.rst
 msgid "Return type"
-msgstr ""
+msgstr "반환 타입"
 
 #: ../../source/libraries/caching.rst
 msgid "Parameters"
-msgstr ""
+msgstr "파라미터"
 
 #: ../../source/libraries/caching.rst:120
 #: ../../source/libraries/caching.rst:133
 #: ../../source/libraries/caching.rst:144
 #: ../../source/libraries/caching.rst:243
 msgid "Cache item name"
-msgstr ""
+msgstr "캐시 항목 이름"
 
 #: ../../source/libraries/caching.rst:121
 msgid "Item value or ``null`` if not found"
-msgstr ""
+msgstr "항목 값 또는 찾을 수 없는 경우 ``null``"
 
 #: ../../source/libraries/caching.rst:124
 msgid ""
 "This method will attempt to fetch an item from the cache store. If the "
 "item does not exist, the method will return null."
 msgstr ""
+"이 메서드는 캐시 저장소에서 항목을 가져오려고 시도합니다. "
+"항목이 존재하지 않으면 null을 반환합니다."
 
 #: ../../source/libraries/caching.rst:127
 #: ../../source/libraries/caching.rst:153
@@ -216,63 +237,69 @@ msgstr ""
 #: ../../source/libraries/caching.rst:250
 #: ../../source/libraries/caching.rst:268
 msgid "Example:"
-msgstr ""
+msgstr "예시:"
 
 #: ../../source/libraries/caching.rst:134
 msgid "Time to live in seconds"
-msgstr ""
+msgstr "초 단위의 유효 시간(TTL)"
 
 #: ../../source/libraries/caching.rst:135
 msgid "Callback to invoke when the cache item returns null"
-msgstr ""
+msgstr "캐시 항목이 null을 반환할 때 호출할 콜백"
 
 #: ../../source/libraries/caching.rst:136
 msgid "The value of the cache item"
-msgstr ""
+msgstr "캐시 항목의 값"
 
 #: ../../source/libraries/caching.rst:139
 msgid ""
 "Gets an item from the cache. If ``null`` was returned, this will invoke "
 "the callback and save the result. Either way, this will return the value."
 msgstr ""
+"캐시에서 항목을 가져옵니다. ``null``\ 이 반환된 경우 콜백을 호출하고 결과를 저장합니다. "
+"어느 경우든 값을 반환합니다."
 
 #: ../../source/libraries/caching.rst:145
 msgid "the data to save"
-msgstr ""
+msgstr "저장할 데이터"
 
 #: ../../source/libraries/caching.rst:146
 msgid "Time To Live, in seconds (default 60)"
-msgstr ""
+msgstr "유효 시간(TTL), 초 단위 (기본값 60)"
 
 #: ../../source/libraries/caching.rst:147
 #: ../../source/libraries/caching.rst:160
 #: ../../source/libraries/caching.rst:217
 msgid "``true`` on success, ``false`` on failure"
-msgstr ""
+msgstr "성공 시 ``true``\, 실패 시 ``false``"
 
 #: ../../source/libraries/caching.rst:150
 msgid ""
 "This method will save an item to the cache store. If saving fails, the "
 "method will return ``false``."
 msgstr ""
+"이 메서드는 캐시 저장소에 항목을 저장합니다. "
+"저장에 실패하면 ``false``\ 를 반환합니다."
 
 #: ../../source/libraries/caching.rst:159
 msgid "name of cached item"
-msgstr ""
+msgstr "캐시된 항목의 이름"
 
 #: ../../source/libraries/caching.rst:163
 msgid ""
 "This method will delete a specific item from the cache store. If item "
 "deletion fails, the method will return false."
 msgstr ""
+"이 메서드는 캐시 저장소에서 특정 항목을 삭제합니다. "
+"항목 삭제에 실패하면 false를 반환합니다."
 
 #: ../../source/libraries/caching.rst:172
 msgid "glob-style pattern to match cached items keys"
-msgstr ""
+msgstr "캐시된 항목 키와 매칭할 glob 스타일 패턴"
 
 #: ../../source/libraries/caching.rst:173
 msgid "number of deleted items"
-msgstr ""
+msgstr "삭제된 항목 수"
 
 #: ../../source/libraries/caching.rst:176
 msgid ""
@@ -280,6 +307,8 @@ msgid ""
 "matching their keys against a glob-style pattern. It will return the "
 "total number of deleted items."
 msgstr ""
+"이 메서드는 glob 스타일 패턴과 키를 매칭하여 캐시 저장소에서 여러 항목을 한 번에 삭제합니다. "
+"삭제된 항목의 총 수를 반환합니다."
 
 #: ../../source/libraries/caching.rst:179
 msgid ""
@@ -287,58 +316,64 @@ msgid ""
 "to limitations, it couldn't be implemented for Memcached and Wincache "
 "handlers."
 msgstr ""
+"이 메서드는 File, Redis, Predis 핸들러에 대해서만 구현되어 있습니다. "
+"제한으로 인해 Memcached 및 Wincache 핸들러에는 구현되지 않았습니다."
 
 #: ../../source/libraries/caching.rst:186
 msgid ""
 "For more information on glob-style syntax, please see `Glob (programming)"
 " <https://en.wikipedia.org/wiki/Glob_(programming)#Syntax>`_."
 msgstr ""
+"glob 스타일 문법에 대한 자세한 내용은 `Glob (programming)"
+" <https://en.wikipedia.org/wiki/Glob_(programming)#Syntax>`_\ 을 참조하십시오."
 
 #: ../../source/libraries/caching.rst:191
 #: ../../source/libraries/caching.rst:204
 msgid "Cache ID"
-msgstr ""
+msgstr "캐시 ID"
 
 #: ../../source/libraries/caching.rst:192
 msgid "Step/value to add"
-msgstr ""
+msgstr "추가할 단계/값"
 
 #: ../../source/libraries/caching.rst:193
 #: ../../source/libraries/caching.rst:206
 msgid "New value on success, ``false`` on failure"
-msgstr ""
+msgstr "성공 시 새 값, 실패 시 ``false``"
 
 #: ../../source/libraries/caching.rst:196
 msgid "Performs atomic incrementation of a raw stored value."
-msgstr ""
+msgstr "원시 저장 값을 원자적으로 증가시킵니다."
 
 #: ../../source/libraries/caching.rst:205
 msgid "Step/value to reduce by"
-msgstr ""
+msgstr "감소시킬 단계/값"
 
 #: ../../source/libraries/caching.rst:209
 msgid "Performs atomic decrementation of a raw stored value."
-msgstr ""
+msgstr "원시 저장 값을 원자적으로 감소시킵니다."
 
 #: ../../source/libraries/caching.rst:220
 msgid ""
 "This method will 'clean' the entire cache. If the deletion of the cache "
 "files fails, the method will return false."
 msgstr ""
+"이 메서드는 전체 캐시를 '정리'합니다. "
+"캐시 파일 삭제에 실패하면 false를 반환합니다."
 
 #: ../../source/libraries/caching.rst:229
 msgid "Information on the entire cache database"
-msgstr ""
+msgstr "전체 캐시 데이터베이스에 대한 정보"
 
 #: ../../source/libraries/caching.rst:232
 msgid "This method will return information on the entire cache."
-msgstr ""
+msgstr "이 메서드는 전체 캐시에 대한 정보를 반환합니다."
 
 #: ../../source/libraries/caching.rst:238
 msgid ""
 "The information returned and the structure of the data is dependent on "
 "which adapter is being used."
-msgstr ""
+msgstr "반환되는 정보와 데이터 구조는 사용 중인 어댑터에 따라 달라집니다."
 
 #: ../../source/libraries/caching.rst:244
 msgid ""
@@ -346,12 +381,15 @@ msgid ""
 "with at least the \"expire\" key for absolute epoch expiry (``null`` for "
 "never expires)."
 msgstr ""
+"캐시된 항목의 메타데이터입니다. 항목이 없으면 ``null``\, "
+"있으면 절대 에포크 만료 시간에 대한 \"expire\" 키를 최소한 포함하는 배열을 반환합니다 "
+"(만료되지 않으면 ``null``\)."
 
 #: ../../source/libraries/caching.rst:247
 msgid ""
 "This method will return detailed information on a specific item in the "
 "cache."
-msgstr ""
+msgstr "이 메서드는 캐시에서 특정 항목에 대한 자세한 정보를 반환합니다."
 
 #: ../../source/libraries/caching.rst:254
 msgid ""
@@ -359,20 +397,24 @@ msgid ""
 "which adapter is being used. Some adapters (File, Memcached, Wincache) "
 "still return ``false`` for missing items."
 msgstr ""
+"반환되는 정보와 데이터 구조는 사용 중인 어댑터에 따라 달라집니다. "
+"일부 어댑터(File, Memcached, Wincache)는 항목이 없을 때 여전히 ``false``\ 를 반환합니다."
 
 #: ../../source/libraries/caching.rst:260
 msgid "Potential cache key"
-msgstr ""
+msgstr "잠재적 캐시 키"
 
 #: ../../source/libraries/caching.rst:261
 msgid "Optional prefix"
-msgstr ""
+msgstr "선택적 접두사"
 
 #: ../../source/libraries/caching.rst:262
 msgid ""
 "The verified and prefixed key. If the key exceeds the driver's max key "
 "length it will be hashed."
 msgstr ""
+"검증되고 접두사가 붙은 키입니다. "
+"키가 드라이버의 최대 키 길이를 초과하면 해시 처리됩니다."
 
 #: ../../source/libraries/caching.rst:265
 msgid ""
@@ -380,70 +422,78 @@ msgid ""
 "will throw an ``InvalidArgumentException`` for non-strings, invalid "
 "characters, and empty lengths."
 msgstr ""
+"이 메서드는 핸들러 메서드에서 키의 유효성을 검사하는 데 사용됩니다. "
+"비문자열, 유효하지 않은 문자, 빈 길이에 대해 ``InvalidArgumentException``\ 을 발생시킵니다."
 
 #: ../../source/libraries/caching.rst:274
 msgid "Drivers"
-msgstr ""
+msgstr "드라이버"
 
 #: ../../source/libraries/caching.rst:277
 msgid "APCu Caching"
-msgstr ""
+msgstr "APCu 캐싱"
 
 #: ../../source/libraries/caching.rst:279
 msgid "APCu is an in-memory key-value store for PHP."
-msgstr ""
+msgstr "APCu는 PHP용 인메모리 키-값 저장소입니다."
 
 #: ../../source/libraries/caching.rst:281
 msgid "To use it, you need the `APCu PHP extension <https://www.php.net/apcu>`_."
-msgstr ""
+msgstr "사용하려면 `APCu PHP 확장 <https://www.php.net/apcu>`_\ 이 필요합니다."
 
 #: ../../source/libraries/caching.rst:284
 msgid "File-based Caching"
-msgstr ""
+msgstr "파일 기반 캐싱"
 
 #: ../../source/libraries/caching.rst:286
 msgid "This requires a cache directory to be really writable by the application."
-msgstr ""
+msgstr "이 방식은 애플리케이션이 캐시 디렉터리에 실제로 쓰기 권한을 가져야 합니다."
 
 #: ../../source/libraries/caching.rst:288
 msgid ""
 "Use this with care, and make sure to benchmark your application, as a "
 "point can come where disk I/O will negate positive gains by caching."
 msgstr ""
+"이 방식은 주의해서 사용하고 애플리케이션의 성능을 벤치마크하십시오. "
+"디스크 I/O가 캐싱의 이점을 상쇄할 수 있는 지점이 올 수 있습니다."
 
 #: ../../source/libraries/caching.rst:292
 msgid "Memcached Caching"
-msgstr ""
+msgstr "Memcached 캐싱"
 
 #: ../../source/libraries/caching.rst:294
 msgid ""
 "Memcached servers can be specified in the cache configuration file. "
 "Available options are:"
-msgstr ""
+msgstr "Memcached 서버는 캐시 설정 파일에서 지정할 수 있습니다. 사용 가능한 옵션은 다음과 같습니다:"
 
 #: ../../source/libraries/caching.rst:298
 msgid ""
 "For more information on Memcached, please see "
 "`https://www.php.net/memcached <https://www.php.net/memcached>`_."
 msgstr ""
+"Memcached에 대한 자세한 내용은 "
+"`https://www.php.net/memcached <https://www.php.net/memcached>`_\ 을 참조하십시오."
 
 #: ../../source/libraries/caching.rst:302
 msgid "WinCache Caching"
-msgstr ""
+msgstr "WinCache 캐싱"
 
 #: ../../source/libraries/caching.rst:304
 msgid "Under Windows, you can also utilize the WinCache driver."
-msgstr ""
+msgstr "Windows 환경에서는 WinCache 드라이버를 사용할 수도 있습니다."
 
 #: ../../source/libraries/caching.rst:306
 msgid ""
 "For more information on WinCache, please see "
 "`https://www.php.net/wincache <https://www.php.net/wincache>`_."
 msgstr ""
+"WinCache에 대한 자세한 내용은 "
+"`https://www.php.net/wincache <https://www.php.net/wincache>`_\ 을 참조하십시오."
 
 #: ../../source/libraries/caching.rst:310
 msgid "Redis Caching"
-msgstr ""
+msgstr "Redis 캐싱"
 
 #: ../../source/libraries/caching.rst:312
 msgid ""
@@ -451,22 +501,29 @@ msgid ""
 "mode. To use it, you need `Redis server and phpredis PHP extension "
 "<https://github.com/phpredis/phpredis>`_."
 msgstr ""
+"Redis는 LRU 캐시 모드로 동작할 수 있는 인메모리 키-값 저장소입니다. "
+"사용하려면 `Redis 서버와 phpredis PHP 확장 "
+"<https://github.com/phpredis/phpredis>`_\ 이 필요합니다."
 
 #: ../../source/libraries/caching.rst:315
 msgid ""
 "Config options to connect to redis server stored in the cache "
 "configuration file. Available options are:"
 msgstr ""
+"Redis 서버에 연결하기 위한 설정 옵션은 캐시 설정 파일에 저장됩니다. "
+"사용 가능한 옵션은 다음과 같습니다:"
 
 #: ../../source/libraries/caching.rst:319
 msgid ""
 "For more information on Redis, please see `https://redis.io "
 "<https://redis.io>`_."
 msgstr ""
+"Redis에 대한 자세한 내용은 `https://redis.io "
+"<https://redis.io>`_\ 를 참조하십시오."
 
 #: ../../source/libraries/caching.rst:323
 msgid "Predis Caching"
-msgstr ""
+msgstr "Predis 캐싱"
 
 #: ../../source/libraries/caching.rst:325
 msgid ""
@@ -474,16 +531,20 @@ msgid ""
 "Redis key-value store. To use it, from the command line inside your "
 "project root:"
 msgstr ""
+"Predis는 Redis 키-값 저장소를 위한 유연하고 기능이 완전한 PHP 클라이언트 라이브러리입니다. "
+"사용하려면 프로젝트 루트에서 커맨드라인을 실행하십시오:"
 
 #: ../../source/libraries/caching.rst:332
 msgid ""
 "For more information on Redis, please see `https://github.com/nrk/predis "
 "<https://github.com/nrk/predis>`_."
 msgstr ""
+"Predis에 대한 자세한 내용은 `https://github.com/nrk/predis "
+"<https://github.com/nrk/predis>`_\ 를 참조하십시오."
 
 #: ../../source/libraries/caching.rst:336
 msgid "Dummy Cache"
-msgstr ""
+msgstr "더미 캐시"
 
 #: ../../source/libraries/caching.rst:338
 msgid ""
@@ -491,4 +552,6 @@ msgid ""
 " lets you keep your caching code in place in environments that don't "
 "support your chosen cache."
 msgstr ""
-
+"이것은 항상 캐시 미스가 발생하는 캐싱 백엔드입니다. "
+"데이터를 저장하지 않지만, 선택한 캐시를 지원하지 않는 환경에서도 "
+"캐싱 코드를 그대로 유지할 수 있게 해줍니다."

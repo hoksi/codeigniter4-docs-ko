@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../source/libraries/throttler.rst:3
 msgid "Throttler"
-msgstr ""
+msgstr "스로틀러"
 
 #: ../../source/libraries/throttler.rst:9
 msgid ""
@@ -33,10 +32,14 @@ msgid ""
 " prevent brute force attacks. The class itself can be used for anything "
 "that you need to throttle based on actions within a set time interval."
 msgstr ""
+"스로틀러 클래스는 특정 기간 내에 활동을 일정 횟수로 제한하는 매우 간단한 방법을 제공합니다. "
+"주로 API에 속도 제한을 적용하거나, 무차별 대입 공격을 방지하기 위해 "
+"사용자가 폼에 시도할 수 있는 횟수를 제한하는 데 사용됩니다. "
+"이 클래스는 설정된 시간 간격 내의 동작을 기반으로 스로틀이 필요한 모든 경우에 사용할 수 있습니다."
 
 #: ../../source/libraries/throttler.rst:16
 msgid "Overview"
-msgstr ""
+msgstr "개요"
 
 #: ../../source/libraries/throttler.rst:18
 msgid ""
@@ -48,6 +51,11 @@ msgid ""
 " the available tokens, by default. Let's walk through an example to make "
 "this clear."
 msgstr ""
+"스로틀러는 `토큰 버킷 <https://en.wikipedia.org/wiki/Token_bucket>`_ 알고리즘의 "
+"단순화된 버전을 구현합니다. 기본적으로 원하는 각 동작을 버킷으로 취급합니다. "
+"``check()`` 메서드를 호출할 때 버킷의 크기, 버킷이 담을 수 있는 토큰 수, 그리고 시간 간격을 지정합니다. "
+"기본적으로 ``check()`` 호출마다 사용 가능한 토큰 중 1개를 사용합니다. "
+"이를 명확히 하기 위해 예시를 살펴보겠습니다."
 
 #: ../../source/libraries/throttler.rst:23
 msgid ""
@@ -57,6 +65,10 @@ msgid ""
 "holds, and the third being the amount of time it takes the bucket to "
 "refill:"
 msgstr ""
+"1초마다 한 번씩 동작이 발생하기를 원한다고 가정해 보겠습니다. "
+"스로틀러에 대한 첫 번째 호출은 다음과 같습니다. "
+"첫 번째 매개변수는 버킷 이름, 두 번째 매개변수는 버킷이 담을 수 있는 토큰 수, "
+"세 번째는 버킷이 완전히 채워지는 데 걸리는 시간입니다:"
 
 #: ../../source/libraries/throttler.rst:29
 msgid ""
@@ -65,6 +77,8 @@ msgid ""
 "readable. This says that the bucket allows 60 actions every minute, or 1 "
 "action every second."
 msgstr ""
+"여기서는 가독성을 높이기 위해 시간에 :doc:`전역 상수 </general/common_functions>`\\ 중 하나를 사용합니다. "
+"이는 버킷이 매 분마다 60번의 동작, 즉 매 초마다 1번의 동작을 허용한다는 의미입니다."
 
 #: ../../source/libraries/throttler.rst:32
 msgid ""
@@ -74,6 +88,10 @@ msgid ""
 " second, potentially slowing down the requests enough that the attack is "
 "no longer worth it."
 msgstr ""
+"서드파티 스크립트가 URL을 반복적으로 요청하려 한다고 가정해 보겠습니다. "
+"처음에는 1초 미만에 60개의 토큰을 모두 사용할 수 있습니다. "
+"그러나 그 이후에는 스로틀러가 초당 하나의 동작만 허용하므로, "
+"요청 속도를 충분히 늦춰 공격이 더 이상 효과적이지 않게 됩니다."
 
 #: ../../source/libraries/throttler.rst:36
 msgid ""
@@ -81,10 +99,12 @@ msgid ""
 "a handler other than dummy. For best performance, an in-memory cache, "
 "like Redis or Memcached, is recommended."
 msgstr ""
+"스로틀러 클래스가 작동하려면 캐시 라이브러리가 dummy 이외의 핸들러를 사용하도록 설정되어 있어야 합니다. "
+"최상의 성능을 위해 Redis 또는 Memcached와 같은 인메모리 캐시를 권장합니다."
 
 #: ../../source/libraries/throttler.rst:41
 msgid "Rate Limiting"
-msgstr ""
+msgstr "속도 제한"
 
 #: ../../source/libraries/throttler.rst:43
 msgid ""
@@ -95,16 +115,21 @@ msgid ""
 "through how it works, and how you could set it up and start using it in "
 "your application."
 msgstr ""
+"스로틀러 클래스 자체는 속도 제한이나 요청 스로틀을 수행하지 않지만, "
+"이를 구현하는 핵심 요소입니다. "
+"IP 주소당 초당 하나의 요청으로 매우 간단한 속도 제한을 구현하는 :doc:`필터 </incoming/filters>` 예시가 제공됩니다. "
+"여기서는 작동 방식과 애플리케이션에서 설정하고 사용하는 방법을 살펴보겠습니다."
 
 #: ../../source/libraries/throttler.rst:49
 msgid "The Code"
-msgstr ""
+msgstr "코드"
 
 #: ../../source/libraries/throttler.rst:51
 msgid ""
 "You could make your own Throttler filter, at "
 "**app/Filters/Throttle.php**, along the lines of:"
 msgstr ""
+"**app/Filters/Throttle.php**\\ 에 다음과 같이 자신만의 스로틀러 필터를 만들 수 있습니다:"
 
 #: ../../source/libraries/throttler.rst:56
 msgid ""
@@ -116,10 +141,16 @@ msgid ""
 "controller. This example will throttle based on a single IP address "
 "across all requests made to the site, not per page."
 msgstr ""
+"실행 시 이 메서드는 먼저 스로틀러 인스턴스를 가져옵니다. "
+"그런 다음 IP 주소를 버킷 이름으로 사용하고 초당 하나의 요청으로 제한하도록 설정합니다. "
+"스로틀러가 확인을 거부하여 false를 반환하면, "
+"상태 코드를 429 - Too Many Attempts로 설정한 응답을 반환하고 "
+"스크립트 실행이 컨트롤러에 도달하기 전에 종료됩니다. "
+"이 예시는 페이지별이 아닌 사이트에 대한 모든 요청에서 단일 IP 주소를 기반으로 스로틀을 적용합니다."
 
 #: ../../source/libraries/throttler.rst:63
 msgid "Applying the Filter"
-msgstr ""
+msgstr "필터 적용"
 
 #: ../../source/libraries/throttler.rst:65
 msgid ""
@@ -129,10 +160,14 @@ msgid ""
 "In order to apply this to incoming requests, you need to edit "
 "**app/Config/Filters.php** and first add an alias to the filter:"
 msgstr ""
+"반드시 사이트의 모든 페이지에 스로틀을 적용할 필요는 없습니다. "
+"많은 웹 애플리케이션에서는 POST 요청에만 적용하는 것이 가장 합리적이지만, "
+"API의 경우 사용자가 보내는 모든 요청을 제한하고 싶을 수 있습니다. "
+"수신 요청에 이를 적용하려면 **app/Config/Filters.php**\\ 를 편집하고 먼저 필터에 별칭을 추가해야 합니다:"
 
 #: ../../source/libraries/throttler.rst:72
 msgid "Next, we assign it to all POST requests made on the site:"
-msgstr ""
+msgstr "다음으로 사이트에서 발생하는 모든 POST 요청에 할당합니다:"
 
 #: ../../source/libraries/throttler.rst:76
 msgid ""
@@ -141,49 +176,53 @@ msgid ""
 "permits any HTTP method to access a controller. Accessing the controller "
 "with a method you don't expect could bypass the filter."
 msgstr ""
+"``$methods`` 필터를 사용하는 경우 :ref:`자동 라우팅(레거시) <use-defined-routes-only>`\\ 을 "
+"비활성화해야 합니다. :ref:`auto-routing-legacy`\\ 는 모든 HTTP 메서드가 컨트롤러에 접근하는 것을 허용하기 때문입니다. "
+"예상하지 못한 메서드로 컨트롤러에 접근하면 필터를 우회할 수 있습니다."
 
 #: ../../source/libraries/throttler.rst:80
 msgid ""
 "And that's all there is to it. Now all POST requests made on the site "
 "will have to be rate limited."
 msgstr ""
+"이것으로 모든 설정이 완료됩니다. 이제 사이트에서 발생하는 모든 POST 요청에 속도 제한이 적용됩니다."
 
 #: ../../source/libraries/throttler.rst:84
 msgid "Class Reference"
-msgstr ""
+msgstr "클래스 레퍼런스"
 
 #: ../../source/libraries/throttler.rst
 msgid "Parameters"
-msgstr ""
+msgstr "매개변수"
 
 #: ../../source/libraries/throttler.rst:88
 #: ../../source/libraries/throttler.rst:110
 msgid "The name of the bucket"
-msgstr ""
+msgstr "버킷의 이름"
 
 #: ../../source/libraries/throttler.rst:89
 msgid "The number of tokens the bucket holds"
-msgstr ""
+msgstr "버킷이 담을 수 있는 토큰 수"
 
 #: ../../source/libraries/throttler.rst:90
 msgid "The number of seconds it takes for a bucket to completely fill"
-msgstr ""
+msgstr "버킷이 완전히 채워지는 데 걸리는 초 단위 시간"
 
 #: ../../source/libraries/throttler.rst:91
 msgid "The number of tokens that are spent on this action"
-msgstr ""
+msgstr "이 동작에 소비되는 토큰 수"
 
 #: ../../source/libraries/throttler.rst
 msgid "Returns"
-msgstr ""
+msgstr "반환값"
 
 #: ../../source/libraries/throttler.rst:92
 msgid "true if action can be performed, false if not"
-msgstr ""
+msgstr "동작을 수행할 수 있으면 true, 그렇지 않으면 false"
 
 #: ../../source/libraries/throttler.rst
 msgid "Return type"
-msgstr ""
+msgstr "반환 타입"
 
 #: ../../source/libraries/throttler.rst:95
 msgid ""
@@ -191,10 +230,12 @@ msgid ""
 "many have been used within the allotted time limit. During each check the"
 " available tokens are reduced by $cost if successful."
 msgstr ""
+"버킷 내에 남은 토큰이 있는지, 또는 허용된 시간 제한 내에 너무 많이 사용되었는지 확인합니다. "
+"확인이 성공적으로 이루어질 때마다 사용 가능한 토큰이 $cost만큼 감소합니다."
 
 #: ../../source/libraries/throttler.rst:101
 msgid "The number of seconds until another token should be available."
-msgstr ""
+msgstr "다음 토큰이 사용 가능해지기까지의 초 단위 시간."
 
 #: ../../source/libraries/throttler.rst:104
 msgid ""
@@ -203,12 +244,14 @@ msgid ""
 "action can be tried again. In this case, the minimum enforced wait time "
 "is one second."
 msgstr ""
+"``check()``\\ 가 실행되어 false를 반환한 후, 이 메서드를 사용하여 "
+"새 토큰이 사용 가능해지고 동작을 다시 시도할 수 있을 때까지의 시간을 확인할 수 있습니다. "
+"이 경우 최소 강제 대기 시간은 1초입니다."
 
 #: ../../source/libraries/throttler.rst:111
 msgid "$this"
-msgstr ""
+msgstr "$this"
 
 #: ../../source/libraries/throttler.rst:114
 msgid "Removes & resets the bucket. Won't fail if the bucket doesn't exist."
-msgstr ""
-
+msgstr "버킷을 제거하고 초기화합니다. 버킷이 존재하지 않아도 실패하지 않습니다."

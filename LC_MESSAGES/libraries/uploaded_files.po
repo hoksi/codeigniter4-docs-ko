@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../source/libraries/uploaded_files.rst:3
 msgid "Working with Uploaded Files"
-msgstr ""
+msgstr "업로드된 파일 다루기"
 
 #: ../../source/libraries/uploaded_files.rst:5
 msgid ""
@@ -31,58 +30,65 @@ msgid ""
 "extends the :doc:`File class </libraries/files>` and thus gains all of "
 "the features of that class."
 msgstr ""
+"CodeIgniter는 PHP의 ``$_FILES`` 배열을 직접 사용하는 것보다 폼을 통해 업로드된 파일을 "
+"훨씬 간단하고 안전하게 다룰 수 있게 해줍니다. "
+"이는 :doc:`File 클래스 </libraries/files>`\ 를 확장하므로 해당 클래스의 모든 기능을 사용할 수 있습니다."
 
 #: ../../source/libraries/uploaded_files.rst:10
 msgid ""
 "This is not the same as the File Uploading class in CodeIgniter 3. This "
 "provides a raw interface to the uploaded files with a few small features."
 msgstr ""
+"이것은 CodeIgniter 3의 파일 업로드 클래스와 다릅니다. "
+"업로드된 파일에 대한 원시 인터페이스를 몇 가지 기능과 함께 제공합니다."
 
 #: ../../source/libraries/uploaded_files.rst:21
 msgid "File Upload Form Tutorial"
-msgstr ""
+msgstr "파일 업로드 폼 튜토리얼"
 
 #: ../../source/libraries/uploaded_files.rst:23
 msgid "Uploading a file involves the following general process:"
-msgstr ""
+msgstr "파일 업로드는 다음과 같은 일반적인 과정을 포함합니다:"
 
 #: ../../source/libraries/uploaded_files.rst:25
 msgid ""
 "An upload form is displayed, allowing a user to select a file and upload "
 "it."
-msgstr ""
+msgstr "사용자가 파일을 선택하고 업로드할 수 있는 업로드 폼이 표시됩니다."
 
 #: ../../source/libraries/uploaded_files.rst:27
 msgid ""
 "When the form is submitted, the file is uploaded to the destination you "
 "specify."
-msgstr ""
+msgstr "폼이 제출되면 지정한 목적지에 파일이 업로드됩니다."
 
 #: ../../source/libraries/uploaded_files.rst:29
 msgid ""
 "Along the way, the file is validated to make sure it is allowed to be "
 "uploaded based on the preferences you set."
-msgstr ""
+msgstr "이 과정에서 설정한 기본 설정에 따라 파일이 업로드 허용 여부를 검증합니다."
 
 #: ../../source/libraries/uploaded_files.rst:31
 msgid "Once uploaded, the user will be shown a success message."
-msgstr ""
+msgstr "업로드가 완료되면 사용자에게 성공 메시지가 표시됩니다."
 
 #: ../../source/libraries/uploaded_files.rst:33
 msgid ""
 "To demonstrate this process here is a brief tutorial. Afterward you'll "
 "find reference information."
-msgstr ""
+msgstr "이 과정을 설명하기 위한 간략한 튜토리얼이 있습니다. 이후에 참조 정보를 확인할 수 있습니다."
 
 #: ../../source/libraries/uploaded_files.rst:37
 msgid "Creating the Upload Form"
-msgstr ""
+msgstr "업로드 폼 만들기"
 
 #: ../../source/libraries/uploaded_files.rst:39
 msgid ""
 "Using a text editor, create a form called **upload_form.php**. In it, "
 "place this code and save it to your **app/Views** directory:"
 msgstr ""
+"텍스트 편집기를 사용하여 **upload_form.php**\ 라는 폼을 만듭니다. "
+"그 안에 이 코드를 넣고 **app/Views** 디렉터리에 저장합니다:"
 
 #: ../../source/libraries/uploaded_files.rst:44
 msgid ""
@@ -90,44 +96,53 @@ msgid ""
 "File uploads require a multipart form, so the helper creates the proper "
 "syntax for you."
 msgstr ""
+"폼 헬퍼를 사용하여 폼 여는 태그를 생성하고 있음을 알 수 있습니다. "
+"파일 업로드는 멀티파트 폼이 필요하므로 헬퍼가 적절한 구문을 생성해 줍니다."
 
 #: ../../source/libraries/uploaded_files.rst:48
 msgid ""
 "You'll also notice we have an ``$errors`` variable. This is so we can "
 "show error messages in the event the user does something wrong."
 msgstr ""
+"``$errors`` 변수도 있음을 알 수 있습니다. "
+"사용자가 잘못된 작업을 한 경우 오류 메시지를 표시하기 위해 사용됩니다."
 
 #: ../../source/libraries/uploaded_files.rst:53
 msgid "The Success Page"
-msgstr ""
+msgstr "성공 페이지"
 
 #: ../../source/libraries/uploaded_files.rst:55
 msgid ""
 "Using a text editor, create a form called **upload_success.php**. In it, "
 "place this code and save it to your **app/Views** directory::"
 msgstr ""
+"텍스트 편집기를 사용하여 **upload_success.php**\ 라는 폼을 만듭니다. "
+"그 안에 이 코드를 넣고 **app/Views** 디렉터리에 저장합니다::"
 
 #: ../../source/libraries/uploaded_files.rst:79
 msgid "The Controller"
-msgstr ""
+msgstr "컨트롤러"
 
 #: ../../source/libraries/uploaded_files.rst:81
 msgid ""
 "Using a text editor, create a controller called **Upload.php**. In it, "
 "place this code and save it to your **app/Controllers** directory:"
 msgstr ""
+"텍스트 편집기를 사용하여 **Upload.php**\ 라는 컨트롤러를 만듭니다. "
+"그 안에 이 코드를 넣고 **app/Controllers** 디렉터리에 저장합니다:"
 
 #: ../../source/libraries/uploaded_files.rst:86
 msgid ""
 "Only the :ref:`rules-for-file-uploads` can be used to validate uploaded "
 "files."
-msgstr ""
+msgstr "업로드된 파일의 유효성 검사에는 :ref:`rules-for-file-uploads`\ 만 사용할 수 있습니다."
 
 #: ../../source/libraries/uploaded_files.rst:88
 msgid ""
 "Therefore, the rule ``required`` cannot be used either, so if the file is"
 " required, use the rule ``uploaded`` instead."
 msgstr ""
+"따라서 ``required`` 규칙도 사용할 수 없으므로, 파일이 필수인 경우 대신 ``uploaded`` 규칙을 사용하십시오."
 
 #: ../../source/libraries/uploaded_files.rst:91
 msgid ""
@@ -135,38 +150,42 @@ msgid ""
 "``$this->validateData()``. It is because the file validation rules get "
 "the data for the uploaded file directly from the Request object."
 msgstr ""
+"``$this->validateData()``\ 의 첫 번째 인수로 빈 배열(``[]``)이 전달된다는 점에 주목하십시오. "
+"파일 유효성 검사 규칙이 업로드된 파일의 데이터를 Request 객체에서 직접 가져오기 때문입니다."
 
 #: ../../source/libraries/uploaded_files.rst:95
 msgid ""
 "If the form has fields other than file upload, pass the field data as the"
 " first argument."
-msgstr ""
+msgstr "폼에 파일 업로드 외의 다른 필드가 있다면 필드 데이터를 첫 번째 인수로 전달합니다."
 
 #: ../../source/libraries/uploaded_files.rst:99
 msgid "The Routes"
-msgstr ""
+msgstr "라우트"
 
 #: ../../source/libraries/uploaded_files.rst:101
 msgid ""
 "Using a text editor, open **app/Config/Routes.php**. In it, add the "
 "following two routes:"
 msgstr ""
+"텍스트 편집기를 사용하여 **app/Config/Routes.php**\ 를 엽니다. "
+"그 안에 다음 두 라우트를 추가합니다:"
 
 #: ../../source/libraries/uploaded_files.rst:106
 msgid "The Upload Directory"
-msgstr ""
+msgstr "업로드 디렉터리"
 
 #: ../../source/libraries/uploaded_files.rst:108
 msgid "The uploaded files are stored in the **writable/uploads/** directory."
-msgstr ""
+msgstr "업로드된 파일은 **writable/uploads/** 디렉터리에 저장됩니다."
 
 #: ../../source/libraries/uploaded_files.rst:111
 msgid "Try it!"
-msgstr ""
+msgstr "사용해 보세요!"
 
 #: ../../source/libraries/uploaded_files.rst:113
 msgid "To try your form, visit your site using a URL similar to this one::"
-msgstr ""
+msgstr "폼을 사용해 보려면 다음과 유사한 URL로 사이트를 방문합니다::"
 
 #: ../../source/libraries/uploaded_files.rst:117
 msgid ""
@@ -174,14 +193,16 @@ msgid ""
 "**jpg**, **gif**, **png**, or **webp**). If the path in your controller "
 "is correct it should work."
 msgstr ""
+"업로드 폼이 표시될 것입니다. 이미지 파일(**jpg**, **gif**, **png**, 또는 **webp**)을 업로드해 보세요. "
+"컨트롤러의 경로가 올바르면 작동해야 합니다."
 
 #: ../../source/libraries/uploaded_files.rst:125
 msgid "Accessing Files"
-msgstr ""
+msgstr "파일 접근"
 
 #: ../../source/libraries/uploaded_files.rst:128
 msgid "All Files"
-msgstr ""
+msgstr "모든 파일"
 
 #: ../../source/libraries/uploaded_files.rst:130
 msgid ""
@@ -192,6 +213,10 @@ msgid ""
 "these situations by standardizing your usage of files behind a common "
 "interface."
 msgstr ""
+"파일을 업로드하면 PHP에서 ``$_FILES`` 슈퍼전역 변수를 통해 기본적으로 접근할 수 있습니다. "
+"이 배열은 여러 파일을 동시에 업로드할 때 몇 가지 주요 단점이 있으며, "
+"많은 개발자가 인식하지 못하는 잠재적인 보안 취약점이 있습니다. "
+"CodeIgniter는 공통 인터페이스 뒤에서 파일 사용을 표준화하여 이러한 두 가지 상황을 모두 해결합니다."
 
 #: ../../source/libraries/uploaded_files.rst:135
 msgid ""
@@ -200,6 +225,9 @@ msgid ""
 "``getFiles()``. This will return an array of files represented by "
 "instances of ``CodeIgniter\\HTTP\\Files\\UploadedFile``:"
 msgstr ""
+"파일은 현재 ``IncomingRequest`` 인스턴스를 통해 접근합니다. "
+"이 요청과 함께 업로드된 모든 파일을 가져오려면 ``getFiles()``\ 를 사용합니다. "
+"``CodeIgniter\\HTTP\\Files\\UploadedFile``\ 의 인스턴스로 표현되는 파일 배열을 반환합니다:"
 
 #: ../../source/libraries/uploaded_files.rst:140
 msgid ""
@@ -208,10 +236,13 @@ msgid ""
 "manner that you would expect. With the simplest usage, a single file "
 "might be submitted like::"
 msgstr ""
+"물론 파일 입력의 이름을 지정하는 방법은 여러 가지가 있으며, 가장 단순한 방법이 아니면 "
+"예상치 못한 결과가 발생할 수 있습니다. 배열은 예상하는 방식으로 반환됩니다. "
+"가장 단순한 사용법으로 단일 파일은 다음과 같이 제출될 수 있습니다::"
 
 #: ../../source/libraries/uploaded_files.rst:145
 msgid "Which would return a simple array like::"
-msgstr ""
+msgstr "이는 다음과 같은 단순 배열을 반환합니다::"
 
 #: ../../source/libraries/uploaded_files.rst:151
 msgid ""
@@ -220,29 +251,33 @@ msgid ""
 " still exist. You can check that the file was actually uploaded by the "
 "``isValid()`` method in UploadedFile. See :ref:`verify-a-file`."
 msgstr ""
+"UploadedFile 인스턴스는 ``$_FILES``\ 에 대응합니다. "
+"사용자가 제출 버튼만 클릭하고 파일을 업로드하지 않더라도 인스턴스는 존재합니다. "
+"UploadedFile의 ``isValid()`` 메서드로 파일이 실제로 업로드되었는지 확인할 수 있습니다. "
+":ref:`verify-a-file`\ 을 참조하십시오."
 
 #: ../../source/libraries/uploaded_files.rst:153
 #: ../../source/libraries/uploaded_files.rst:205
 msgid ""
 "If you used an array notation for the name, the input would look "
 "something like::"
-msgstr ""
+msgstr "이름에 배열 표기법을 사용한 경우 입력은 다음과 같이 표시됩니다::"
 
 #: ../../source/libraries/uploaded_files.rst:157
 msgid "The array returned by ``getFiles()`` would look more like this::"
-msgstr ""
+msgstr "``getFiles()``\ 가 반환하는 배열은 다음과 같습니다::"
 
 #: ../../source/libraries/uploaded_files.rst:168
 msgid "In some cases, you may specify an array of files to upload::"
-msgstr ""
+msgstr "경우에 따라 업로드할 파일 배열을 지정할 수 있습니다::"
 
 #: ../../source/libraries/uploaded_files.rst:173
 msgid "In this case, the returned array of files would be more like::"
-msgstr ""
+msgstr "이 경우 반환되는 파일 배열은 다음과 같습니다::"
 
 #: ../../source/libraries/uploaded_files.rst:187
 msgid "Single File"
-msgstr ""
+msgstr "단일 파일"
 
 #: ../../source/libraries/uploaded_files.rst:189
 msgid ""
@@ -250,81 +285,88 @@ msgid ""
 "retrieve the file instance directly. This will return an instance of "
 "``CodeIgniter\\HTTP\\Files\\UploadedFile``:"
 msgstr ""
+"단일 파일에만 접근하면 되는 경우 ``getFile()``\ 을 사용하여 파일 인스턴스를 직접 가져올 수 있습니다. "
+"``CodeIgniter\\HTTP\\Files\\UploadedFile``\ 의 인스턴스를 반환합니다:"
 
 #: ../../source/libraries/uploaded_files.rst:192
 msgid "Simplest usage"
-msgstr ""
+msgstr "가장 단순한 사용법"
 
 #: ../../source/libraries/uploaded_files.rst:194
 #: ../../source/libraries/uploaded_files.rst:385
 msgid "With the simplest usage, a single file might be submitted like::"
-msgstr ""
+msgstr "가장 단순한 사용법으로 단일 파일은 다음과 같이 제출될 수 있습니다::"
 
 #: ../../source/libraries/uploaded_files.rst:198
 msgid "Which would return a simple file instance like:"
-msgstr ""
+msgstr "이는 다음과 같은 단순 파일 인스턴스를 반환합니다:"
 
 #: ../../source/libraries/uploaded_files.rst:203
 msgid "Array notation"
-msgstr ""
+msgstr "배열 표기법"
 
 #: ../../source/libraries/uploaded_files.rst:209
 msgid "For get the file instance:"
-msgstr ""
+msgstr "파일 인스턴스를 가져오려면:"
 
 #: ../../source/libraries/uploaded_files.rst:214
 msgid "Multiple files"
-msgstr ""
+msgstr "여러 파일"
 
 #: ../../source/libraries/uploaded_files.rst:220
 #: ../../source/libraries/uploaded_files.rst:228
 #: ../../source/libraries/uploaded_files.rst:241
 msgid "In controller:"
-msgstr ""
+msgstr "컨트롤러에서:"
 
 #: ../../source/libraries/uploaded_files.rst:224
 msgid "where the ``images`` is a loop from the form field name."
-msgstr ""
+msgstr "여기서 ``images``\ 는 폼 필드 이름으로부터의 반복입니다."
 
 #: ../../source/libraries/uploaded_files.rst:226
 msgid ""
 "If there are multiple files with the same name you can use ``getFile()`` "
 "to retrieve every file individually."
 msgstr ""
+"같은 이름의 파일이 여러 개인 경우 ``getFile()``\ 을 사용하여 각 파일을 개별적으로 가져올 수 있습니다."
 
 #: ../../source/libraries/uploaded_files.rst:232
 msgid ""
 "You might find it easier to use ``getFileMultiple()``, to get an array of"
 " uploaded files with the same name:"
 msgstr ""
+"같은 이름의 업로드된 파일 배열을 가져오려면 ``getFileMultiple()``\ 을 사용하는 것이 더 편리할 수 있습니다:"
 
 #: ../../source/libraries/uploaded_files.rst:236
 msgid "Another example::"
-msgstr ""
+msgstr "다른 예시::"
 
 #: ../../source/libraries/uploaded_files.rst:245
 msgid "Using ``getFiles()`` is more appropriate."
-msgstr ""
+msgstr "``getFiles()``\ 를 사용하는 것이 더 적절합니다."
 
 #: ../../source/libraries/uploaded_files.rst:249
 msgid "Working with the File"
-msgstr ""
+msgstr "파일 다루기"
 
 #: ../../source/libraries/uploaded_files.rst:251
 msgid ""
 "Once you've retrieved the UploadedFile instance, you can get information "
 "about the file in safe ways, as well as move the file to a new location."
 msgstr ""
+"UploadedFile 인스턴스를 가져온 후에는 파일에 대한 정보를 안전하게 얻을 수 있으며 "
+"파일을 새 위치로 이동할 수도 있습니다."
 
 #: ../../source/libraries/uploaded_files.rst:257
 msgid "Verify a File"
-msgstr ""
+msgstr "파일 검증"
 
 #: ../../source/libraries/uploaded_files.rst:259
 msgid ""
 "You can check that a file was actually uploaded via HTTP with no errors "
 "by calling the ``isValid()`` method:"
 msgstr ""
+"``isValid()`` 메서드를 호출하여 파일이 오류 없이 HTTP를 통해 실제로 업로드되었는지 확인할 수 있습니다:"
 
 #: ../../source/libraries/uploaded_files.rst:263
 msgid ""
@@ -333,42 +375,45 @@ msgid ""
 " and ``getErrorString()`` methods. The following errors can be discovered"
 " through this method:"
 msgstr ""
+"이 예시에서 볼 수 있듯이, 파일에 업로드 오류가 있으면 ``getError()`` 및 ``getErrorString()`` "
+"메서드로 오류 코드(정수)와 오류 메시지를 가져올 수 있습니다. "
+"이 메서드를 통해 다음 오류를 발견할 수 있습니다:"
 
 #: ../../source/libraries/uploaded_files.rst:267
 msgid "The file exceeds your ``upload_max_filesize`` ini directive."
-msgstr ""
+msgstr "파일이 ``upload_max_filesize`` ini 지시자를 초과합니다."
 
 #: ../../source/libraries/uploaded_files.rst:268
 msgid "The file exceeds the upload limit defined in your form."
-msgstr ""
+msgstr "파일이 폼에 정의된 업로드 제한을 초과합니다."
 
 #: ../../source/libraries/uploaded_files.rst:269
 msgid "The file was only partially uploaded."
-msgstr ""
+msgstr "파일이 일부만 업로드되었습니다."
 
 #: ../../source/libraries/uploaded_files.rst:270
 msgid "No file was uploaded."
-msgstr ""
+msgstr "업로드된 파일이 없습니다."
 
 #: ../../source/libraries/uploaded_files.rst:271
 msgid "The file could not be written on disk."
-msgstr ""
+msgstr "파일을 디스크에 쓸 수 없습니다."
 
 #: ../../source/libraries/uploaded_files.rst:272
 msgid "File could not be uploaded: missing temporary directory."
-msgstr ""
+msgstr "파일을 업로드할 수 없습니다: 임시 디렉터리가 없습니다."
 
 #: ../../source/libraries/uploaded_files.rst:273
 msgid "File upload was stopped by a PHP extension."
-msgstr ""
+msgstr "PHP 확장에 의해 파일 업로드가 중단되었습니다."
 
 #: ../../source/libraries/uploaded_files.rst:276
 msgid "File Names"
-msgstr ""
+msgstr "파일 이름"
 
 #: ../../source/libraries/uploaded_files.rst:279
 msgid "getName()"
-msgstr ""
+msgstr "getName()"
 
 #: ../../source/libraries/uploaded_files.rst:281
 msgid ""
@@ -377,60 +422,67 @@ msgid ""
 "client, and should not be trusted. If the file has been moved, this will "
 "return the final name of the moved file:"
 msgstr ""
+"``getName()`` 메서드로 클라이언트가 제공한 원래 파일 이름을 가져올 수 있습니다. "
+"이는 일반적으로 클라이언트가 보낸 파일 이름이므로 신뢰해서는 안 됩니다. "
+"파일이 이동된 경우 이동된 파일의 최종 이름을 반환합니다:"
 
 #: ../../source/libraries/uploaded_files.rst:288
 msgid "getClientName()"
-msgstr ""
+msgstr "getClientName()"
 
 #: ../../source/libraries/uploaded_files.rst:290
 msgid ""
 "Always returns the original name of the uploaded file as sent by the "
 "client, even if the file has been moved:"
 msgstr ""
+"파일이 이동된 경우에도 클라이언트가 보낸 업로드된 파일의 원래 이름을 항상 반환합니다:"
 
 #: ../../source/libraries/uploaded_files.rst:295
 msgid "getTempName()"
-msgstr ""
+msgstr "getTempName()"
 
 #: ../../source/libraries/uploaded_files.rst:297
 msgid ""
 "To get the full path of the temp file that was created during the upload,"
 " you can use the ``getTempName()`` method:"
 msgstr ""
+"업로드 중 생성된 임시 파일의 전체 경로를 가져오려면 ``getTempName()`` 메서드를 사용할 수 있습니다:"
 
 #: ../../source/libraries/uploaded_files.rst:302
 msgid "Other File Info"
-msgstr ""
+msgstr "기타 파일 정보"
 
 #: ../../source/libraries/uploaded_files.rst:305
 msgid "getClientExtension()"
-msgstr ""
+msgstr "getClientExtension()"
 
 #: ../../source/libraries/uploaded_files.rst:307
 msgid ""
 "Returns the original file extension, based on the file name that was "
 "uploaded:"
-msgstr ""
+msgstr "업로드된 파일 이름을 기반으로 원래 파일 확장자를 반환합니다:"
 
 #: ../../source/libraries/uploaded_files.rst:311
 msgid ""
 "This is NOT a trusted source. For a trusted version, use "
 "``guessExtension()`` instead."
-msgstr ""
+msgstr "이것은 신뢰할 수 없는 출처입니다. 신뢰할 수 있는 버전은 대신 ``guessExtension()``\ 을 사용하십시오."
 
 #: ../../source/libraries/uploaded_files.rst:314
 msgid "getClientMimeType()"
-msgstr ""
+msgstr "getClientMimeType()"
 
 #: ../../source/libraries/uploaded_files.rst:316
 msgid ""
 "Returns the mime type of the file as provided by the client. This is NOT "
 "a trusted value. For a trusted version, use ``getMimeType()`` instead:"
 msgstr ""
+"클라이언트가 제공한 파일의 MIME 타입을 반환합니다. 이것은 신뢰할 수 없는 값입니다. "
+"신뢰할 수 있는 버전은 대신 ``getMimeType()``\ 을 사용하십시오:"
 
 #: ../../source/libraries/uploaded_files.rst:322
 msgid "getClientPath()"
-msgstr ""
+msgstr "getClientPath()"
 
 #: ../../source/libraries/uploaded_files.rst:326
 msgid ""
@@ -439,14 +491,17 @@ msgid ""
 "client has uploaded files via directory upload. In PHP versions below "
 "8.1, this returns ``null``"
 msgstr ""
+"클라이언트가 디렉터리 업로드를 통해 파일을 업로드한 경우 업로드된 파일의 "
+"`webkit 상대 경로 <https://developer.mozilla.org/en-US/docs/Web/API/File/webkitRelativePath>`_\ 를 반환합니다. "
+"PHP 8.1 미만 버전에서는 ``null``\ 을 반환합니다."
 
 #: ../../source/libraries/uploaded_files.rst:332
 msgid "Moving Files"
-msgstr ""
+msgstr "파일 이동"
 
 #: ../../source/libraries/uploaded_files.rst:335
 msgid "with Original Filename"
-msgstr ""
+msgstr "원래 파일 이름으로"
 
 #: ../../source/libraries/uploaded_files.rst:337
 msgid ""
@@ -454,22 +509,24 @@ msgid ""
 "``move()`` method. This takes the directory to move the file to as the "
 "first parameter:"
 msgstr ""
+"각 파일은 적절하게 이름 붙여진 ``move()`` 메서드를 사용하여 새 위치로 이동할 수 있습니다. "
+"첫 번째 파라미터로 파일을 이동할 디렉터리를 받습니다:"
 
 #: ../../source/libraries/uploaded_files.rst:342
 msgid "By default, the original filename was used."
-msgstr ""
+msgstr "기본적으로 원래 파일 이름이 사용됩니다."
 
 #: ../../source/libraries/uploaded_files.rst:345
 msgid "with New Filename"
-msgstr ""
+msgstr "새 파일 이름으로"
 
 #: ../../source/libraries/uploaded_files.rst:347
 msgid "You can specify a new filename by passing it as the second parameter:"
-msgstr ""
+msgstr "두 번째 파라미터로 전달하여 새 파일 이름을 지정할 수 있습니다:"
 
 #: ../../source/libraries/uploaded_files.rst:352
 msgid "Overwriting Existing File"
-msgstr ""
+msgstr "기존 파일 덮어쓰기"
 
 #: ../../source/libraries/uploaded_files.rst:354
 msgid ""
@@ -477,16 +534,18 @@ msgid ""
 "be used. For example, if **image_name.jpg** already exists in the "
 "directory, then the filename will be **image_name_1.jpg** automatically."
 msgstr ""
+"기본적으로 대상 파일이 이미 존재하면 새 파일 이름이 사용됩니다. "
+"예를 들어, 디렉터리에 **image_name.jpg**\ 가 이미 존재하면 파일 이름은 자동으로 **image_name_1.jpg**\ 가 됩니다."
 
 #: ../../source/libraries/uploaded_files.rst:358
 msgid ""
 "You can overwrite the existing file by passing ``true`` as the third "
 "parameter:"
-msgstr ""
+msgstr "세 번째 파라미터로 ``true``\ 를 전달하여 기존 파일을 덮어쓸 수 있습니다:"
 
 #: ../../source/libraries/uploaded_files.rst:364
 msgid "Check if the File Moved"
-msgstr ""
+msgstr "파일 이동 여부 확인"
 
 #: ../../source/libraries/uploaded_files.rst:366
 msgid ""
@@ -494,42 +553,44 @@ msgid ""
 " if a file has been moved already with the ``hasMoved()`` method, which "
 "returns a boolean:"
 msgstr ""
+"파일이 이동되면 임시 파일이 삭제됩니다. "
+"``hasMoved()`` 메서드로 파일이 이미 이동되었는지 확인할 수 있으며, 불리언을 반환합니다:"
 
 #: ../../source/libraries/uploaded_files.rst:372
 msgid "When Moving Fails"
-msgstr ""
+msgstr "이동 실패 시"
 
 #: ../../source/libraries/uploaded_files.rst:374
 #: ../../source/libraries/uploaded_files.rst:399
 msgid ""
 "Moving an uploaded file can fail, with an ``HTTPException``, under "
 "several circumstances:"
-msgstr ""
+msgstr "업로드된 파일 이동은 다음과 같은 여러 상황에서 ``HTTPException``\ 과 함께 실패할 수 있습니다:"
 
 #: ../../source/libraries/uploaded_files.rst:376
 #: ../../source/libraries/uploaded_files.rst:401
 msgid "the file has already been moved"
-msgstr ""
+msgstr "파일이 이미 이동된 경우"
 
 #: ../../source/libraries/uploaded_files.rst:377
 #: ../../source/libraries/uploaded_files.rst:402
 msgid "the file did not upload successfully"
-msgstr ""
+msgstr "파일이 성공적으로 업로드되지 않은 경우"
 
 #: ../../source/libraries/uploaded_files.rst:378
 #: ../../source/libraries/uploaded_files.rst:403
 msgid "the file move operation fails (e.g., improper permissions)"
-msgstr ""
+msgstr "파일 이동 작업이 실패한 경우 (예: 권한 부족)"
 
 #: ../../source/libraries/uploaded_files.rst:381
 msgid "Store Files"
-msgstr ""
+msgstr "파일 저장"
 
 #: ../../source/libraries/uploaded_files.rst:383
 msgid ""
 "Each file can be moved to its new location with the aptly named "
 "``store()`` method."
-msgstr ""
+msgstr "각 파일은 적절하게 이름 붙여진 ``store()`` 메서드를 사용하여 새 위치로 이동할 수 있습니다."
 
 #: ../../source/libraries/uploaded_files.rst:389
 msgid ""
@@ -537,10 +598,13 @@ msgid ""
 " **YYYYMMDD** folder and random file name will be created. Returns a file"
 " path:"
 msgstr ""
+"기본적으로 업로드 파일은 **writable/uploads** 디렉터리에 저장됩니다. "
+"**YYYYMMDD** 폴더와 무작위 파일 이름이 생성됩니다. 파일 경로를 반환합니다:"
 
 #: ../../source/libraries/uploaded_files.rst:394
 msgid ""
 "You can specify a directory to move the file to as the first parameter. A"
 " new filename by passing it as the second parameter:"
 msgstr ""
-
+"첫 번째 파라미터로 파일을 이동할 디렉터리를 지정할 수 있습니다. "
+"두 번째 파라미터로 전달하여 새 파일 이름을 지정합니다:"

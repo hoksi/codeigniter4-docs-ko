@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../source/libraries/honeypot.rst:3
 msgid "Honeypot Class"
-msgstr ""
+msgstr "허니팟 클래스"
 
 #: ../../source/libraries/honeypot.rst:5
 msgid ""
@@ -33,10 +32,16 @@ msgid ""
 " Bot. When data is entered into the field, it's assumed the request is "
 "coming from a Bot, and you can throw a ``HoneypotException``."
 msgstr ""
+"허니팟 클래스는 **app/Config/Filters.php** 파일에서 활성화된 경우, 봇(Bot)이 "
+"CodeIgniter4 애플리케이션에 요청을 보낼 때를 감지할 수 있게 해줍니다. "
+"이는 모든 폼에 폼 필드를 추가하는 방식으로 동작하며, 이 폼 필드는 "
+"사람에게는 숨겨져 있지만 봇에게는 접근 가능합니다. "
+"해당 필드에 데이터가 입력되면 요청이 봇으로부터 왔다고 간주하며, "
+"``HoneypotException``\\ 을 발생시킬 수 있습니다."
 
 #: ../../source/libraries/honeypot.rst:16
 msgid "Enabling Honeypot"
-msgstr ""
+msgstr "허니팟 활성화"
 
 #: ../../source/libraries/honeypot.rst:18
 msgid ""
@@ -44,6 +49,8 @@ msgid ""
 "**app/Config/Filters.php**. Just uncomment honeypot from the ``$globals``"
 " array, like:"
 msgstr ""
+"허니팟을 활성화하려면 **app/Config/Filters.php**\\ 를 수정해야 합니다. "
+"``$globals`` 배열에서 honeypot의 주석을 해제하면 됩니다:"
 
 #: ../../source/libraries/honeypot.rst:23
 msgid ""
@@ -51,34 +58,41 @@ msgid ""
 "If it is not suitable, make your own at **app/Filters/Honeypot.php**, and"
 " modify the ``$aliases`` in **app/Config/Filters.php** appropriately."
 msgstr ""
+"샘플 허니팟 필터가 **system/Filters/Honeypot.php**\\ 로 제공됩니다. "
+"적합하지 않은 경우 **app/Filters/Honeypot.php**\\ 에 직접 만들고, "
+"**app/Config/Filters.php**\\ 의 ``$aliases``\\ 를 적절히 수정하십시오."
 
 #: ../../source/libraries/honeypot.rst:29
 msgid "Customizing Honeypot"
-msgstr ""
+msgstr "허니팟 사용자 정의"
 
 #: ../../source/libraries/honeypot.rst:31
 msgid ""
 "Honeypot can be customized. The fields below can be set either in "
 "**app/Config/Honeypot.php** or in **.env**."
 msgstr ""
+"허니팟은 사용자 정의가 가능합니다. 아래 필드는 **app/Config/Honeypot.php** 또는 **.env**\\ 에서 설정할 수 있습니다."
 
 #: ../../source/libraries/honeypot.rst:34
 msgid ""
 "``$hidden`` - ``true`` or ``false`` to control visibility of the honeypot"
 " field; default is ``true``"
 msgstr ""
+"``$hidden`` - 허니팟 필드의 가시성을 제어하는 ``true`` 또는 ``false``\\ ; 기본값은 ``true``"
 
 #: ../../source/libraries/honeypot.rst:35
 msgid ""
 "``$label`` - HTML label for the honeypot field, default is ``'Fill This "
 "Field'``"
 msgstr ""
+"``$label`` - 허니팟 필드의 HTML 레이블, 기본값은 ``'Fill This Field'``"
 
 #: ../../source/libraries/honeypot.rst:36
 msgid ""
 "``$name`` - name of the HTML form field used for the template; default is"
 " ``'honeypot'``"
 msgstr ""
+"``$name`` - 템플릿에 사용되는 HTML 폼 필드의 이름; 기본값은 ``'honeypot'``"
 
 #: ../../source/libraries/honeypot.rst:37
 #, python-brace-format
@@ -87,6 +101,8 @@ msgid ""
 "``'<label>{label}</label><input type=\"text\" name=\"{name}\" "
 "value=\"\">'``"
 msgstr ""
+"``$template`` - 허니팟에 사용되는 폼 필드 템플릿; 기본값은 "
+"``'<label>{label}</label><input type=\"text\" name=\"{name}\" value=\"\">'``"
 
 #: ../../source/libraries/honeypot.rst:38
 #, python-brace-format
@@ -95,6 +111,9 @@ msgid ""
 "style=\"display:none\">{template}</div>'``. If you enables CSP, you can "
 "remove ``style=\"display:none\"``."
 msgstr ""
+"``$container`` - 템플릿을 감싸는 컨테이너 태그; 기본값은 ``'<div "
+"style=\"display:none\">{template}</div>'``\\ . CSP를 활성화하는 경우 "
+"``style=\"display:none\"``\\ 을 제거할 수 있습니다."
 
 #: ../../source/libraries/honeypot.rst:40
 msgid ""
@@ -102,4 +121,5 @@ msgid ""
 "enable CSP. You can change the id attribute for the container tag; "
 "default is ``'hpc'``"
 msgstr ""
-
+"``$containerId`` - [v4.3.0 이후] 이 설정은 CSP를 활성화할 때만 사용됩니다. "
+"컨테이너 태그의 id 속성을 변경할 수 있으며, 기본값은 ``'hpc'``\\ 입니다."
