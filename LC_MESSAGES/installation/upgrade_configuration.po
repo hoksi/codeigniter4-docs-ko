@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,33 +21,38 @@ msgstr ""
 
 #: ../../source/installation/upgrade_configuration.rst:2
 msgid "Upgrade Configuration"
-msgstr ""
+msgstr "설정 업그레이드"
 
 #: ../../source/installation/upgrade_configuration.rst:9
 msgid "Documentations"
-msgstr ""
+msgstr "문서"
 
 #: ../../source/installation/upgrade_configuration.rst:11
 msgid ""
 "`Config Documentation CodeIgniter 3.x "
 "<http://codeigniter.com/userguide3/libraries/config.html>`_"
 msgstr ""
+"`Config 문서 CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/libraries/config.html>`_"
 
 #: ../../source/installation/upgrade_configuration.rst:12
 msgid ""
 ":doc:`Configuration Documentation CodeIgniter 4.x "
 "</general/configuration>`"
 msgstr ""
+":doc:`설정 문서 CodeIgniter 4.x "
+"</general/configuration>`"
 
 #: ../../source/installation/upgrade_configuration.rst:15
 msgid "What has been changed"
-msgstr ""
+msgstr "변경된 사항"
 
 #: ../../source/installation/upgrade_configuration.rst:17
 msgid ""
 "In CI4, the configurations are now stored in classes which extend "
 "``CodeIgniter\\Config\\BaseConfig``."
 msgstr ""
+"CI4에서 설정은 이제 ``CodeIgniter\\Config\\BaseConfig``\ 를 확장하는 클래스에 저장됩니다."
 
 #: ../../source/installation/upgrade_configuration.rst:18
 msgid ""
@@ -56,20 +60,23 @@ msgid ""
 "**app/Config/App.php** and some other files like "
 "**app/Config/Security.php** for the specific classes."
 msgstr ""
+"CI3의 **application/config/config.php**\ 는 **app/Config/App.php** 및 "
+"특정 클래스를 위한 **app/Config/Security.php**\ 와 같은 다른 파일로 분리됩니다."
 
 #: ../../source/installation/upgrade_configuration.rst:20
 msgid ""
 "Within the configuration class, the config values are stored in public "
 "class properties."
 msgstr ""
+"설정 클래스 내에서 설정 값은 public 클래스 속성에 저장됩니다."
 
 #: ../../source/installation/upgrade_configuration.rst:21
 msgid "The method to fetch config values has been changed."
-msgstr ""
+msgstr "설정 값을 가져오는 방법이 변경되었습니다."
 
 #: ../../source/installation/upgrade_configuration.rst:24
 msgid "Upgrade Guide"
-msgstr ""
+msgstr "업그레이드 가이드"
 
 #: ../../source/installation/upgrade_configuration.rst:26
 msgid ""
@@ -77,6 +84,8 @@ msgid ""
 "to the changes in the CI3 files. The config names are pretty much the "
 "same as in CI3."
 msgstr ""
+"CI3 파일의 변경 사항에 따라 기본 CI4 설정 파일의 값을 변경해야 합니다. "
+"설정 이름은 CI3과 거의 동일합니다."
 
 #: ../../source/installation/upgrade_configuration.rst:28
 msgid ""
@@ -85,6 +94,9 @@ msgid ""
 "**app/Config**. These classes should be in the ``Config`` namespace and "
 "should extend ``CodeIgniter\\Config\\BaseConfig``."
 msgstr ""
+"CI3 프로젝트에서 커스텀 설정 파일을 사용하는 경우, CI4 프로젝트의 **app/Config**\ 에 "
+"새 PHP 클래스로 해당 파일을 만들어야 합니다. 이 클래스들은 ``Config`` 네임스페이스에 속해야 하며 "
+"``CodeIgniter\\Config\\BaseConfig``\ 를 확장해야 합니다."
 
 #: ../../source/installation/upgrade_configuration.rst:31
 msgid ""
@@ -92,6 +104,8 @@ msgid ""
 "variables from the CI3 config into the new CI4 config class as public "
 "class properties."
 msgstr ""
+"모든 커스텀 설정 클래스를 만든 후, CI3 설정의 변수를 새 CI4 설정 클래스의 "
+"public 클래스 속성으로 복사해야 합니다."
 
 #: ../../source/installation/upgrade_configuration.rst:33
 msgid ""
@@ -100,24 +114,26 @@ msgid ""
 "``$this->config->item('item_name');``. You have to change this into "
 "``config('MyConfig')->item_name;``."
 msgstr ""
+"이제 설정 값을 가져오는 모든 곳에서 설정 가져오기 구문을 변경해야 합니다. "
+"CI3 구문은 ``$this->config->item('item_name');``\ 과 같습니다. "
+"이것을 ``config('MyConfig')->item_name;``\ 으로 변경해야 합니다."
 
 #: ../../source/installation/upgrade_configuration.rst:38
 msgid "Code Example"
-msgstr ""
+msgstr "코드 예제"
 
 #: ../../source/installation/upgrade_configuration.rst:41
 msgid "CodeIgniter Version 3.x"
-msgstr ""
+msgstr "CodeIgniter 버전 3.x"
 
 #: ../../source/installation/upgrade_configuration.rst:43
 msgid "Path: **application/config/site.php**:"
-msgstr ""
+msgstr "경로: **application/config/site.php**:"
 
 #: ../../source/installation/upgrade_configuration.rst:48
 msgid "CodeIgniter Version 4.x"
-msgstr ""
+msgstr "CodeIgniter 버전 4.x"
 
 #: ../../source/installation/upgrade_configuration.rst:50
 msgid "Path: **app/Config/Site.php**:"
-msgstr ""
-
+msgstr "경로: **app/Config/Site.php**:"

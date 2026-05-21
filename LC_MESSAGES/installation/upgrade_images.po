@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,79 +21,88 @@ msgstr ""
 
 #: ../../source/installation/upgrade_images.rst:2
 msgid "Upgrade Image Manipulation Class"
-msgstr ""
+msgstr "이미지 조작 클래스 업그레이드"
 
 #: ../../source/installation/upgrade_images.rst:9
 msgid "Documentations"
-msgstr ""
+msgstr "문서"
 
 #: ../../source/installation/upgrade_images.rst:11
 msgid ""
 "`Image Manipulation Class Documentation CodeIgniter 3.x "
 "<https://www.codeigniter.com/userguide3/libraries/image_lib.html>`_"
 msgstr ""
+"`이미지 조작 클래스 문서 CodeIgniter 3.x "
+"<https://www.codeigniter.com/userguide3/libraries/image_lib.html>`_"
 
 #: ../../source/installation/upgrade_images.rst:12
 msgid ""
 ":doc:`Image Manipulation Class Documentation CodeIgniter 4.x "
 "<../libraries/images>`"
 msgstr ""
+":doc:`이미지 조작 클래스 문서 CodeIgniter 4.x "
+"<../libraries/images>`"
 
 #: ../../source/installation/upgrade_images.rst:15
 msgid "What has been changed"
-msgstr ""
+msgstr "변경된 사항"
 
 #: ../../source/installation/upgrade_images.rst:16
 msgid ""
 "The preferences passed to the constructor or ``initialize()`` method in "
 "CI3 have been changed to be specified in the new methods in CI4."
 msgstr ""
+"CI3에서 생성자 또는 ``initialize()`` 메서드에 전달되던 설정이 CI4의 새 메서드에서 지정하는 방식으로 변경되었습니다."
 
 #: ../../source/installation/upgrade_images.rst:18
 msgid "Some preferences like ``create_thumb`` are removed."
-msgstr ""
+msgstr "``create_thumb``\ 과 같은 일부 설정이 제거되었습니다."
 
 #: ../../source/installation/upgrade_images.rst:19
 msgid ""
 "In CI4, the ``save()`` method must be called to save the manipulated "
 "image."
 msgstr ""
+"CI4에서는 조작된 이미지를 저장하기 위해 ``save()`` 메서드를 호출해야 합니다."
 
 #: ../../source/installation/upgrade_images.rst:20
 msgid ""
 "The ``display_errors()`` has been removed, and an exception will be "
 "thrown if an error occurs."
 msgstr ""
+"``display_errors()``\ 가 제거되었으며, 오류 발생 시 예외가 던져집니다."
 
 #: ../../source/installation/upgrade_images.rst:24
 msgid "Upgrade Guide"
-msgstr ""
+msgstr "업그레이드 가이드"
 
 #: ../../source/installation/upgrade_images.rst:25
 msgid ""
 "Within your class change the ``$this->load->library('image_lib');`` to "
 "``$image = \\Config\\Services::image();``."
 msgstr ""
+"클래스 내에서 ``$this->load->library('image_lib');``\ 을 "
+"``$image = \\Config\\Services::image();``\ 로 변경하십시오."
 
 #: ../../source/installation/upgrade_images.rst:27
 msgid ""
 "Change the preferences passed to the constructor or ``initialize()`` "
 "method to be specified in the corresponding methods."
 msgstr ""
+"생성자 또는 ``initialize()`` 메서드에 전달되던 설정을 해당 메서드에서 지정하는 방식으로 변경하십시오."
 
 #: ../../source/installation/upgrade_images.rst:29
 msgid "Call the ``save()`` method to save the file."
-msgstr ""
+msgstr "파일을 저장하려면 ``save()`` 메서드를 호출하십시오."
 
 #: ../../source/installation/upgrade_images.rst:32
 msgid "Code Example"
-msgstr ""
+msgstr "코드 예제"
 
 #: ../../source/installation/upgrade_images.rst:35
 msgid "CodeIgniter Version 3.x"
-msgstr ""
+msgstr "CodeIgniter 버전 3.x"
 
 #: ../../source/installation/upgrade_images.rst:40
 msgid "CodeIgniter Version 4.x"
-msgstr ""
-
+msgstr "CodeIgniter 버전 4.x"

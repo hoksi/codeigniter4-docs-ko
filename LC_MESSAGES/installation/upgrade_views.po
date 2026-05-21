@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,25 +21,27 @@ msgstr ""
 
 #: ../../source/installation/upgrade_views.rst:2
 msgid "Upgrade Views"
-msgstr ""
+msgstr "뷰 업그레이드"
 
 #: ../../source/installation/upgrade_views.rst:9
 msgid "Documentations"
-msgstr ""
+msgstr "문서"
 
 #: ../../source/installation/upgrade_views.rst:11
 msgid ""
 "`View Documentation CodeIgniter 3.x "
 "<http://codeigniter.com/userguide3/general/views.html>`_"
 msgstr ""
+"`뷰 문서 CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/general/views.html>`_"
 
 #: ../../source/installation/upgrade_views.rst:12
 msgid ":doc:`View Documentation CodeIgniter 4.x </outgoing/views>`"
-msgstr ""
+msgstr ":doc:`뷰 문서 CodeIgniter 4.x </outgoing/views>`"
 
 #: ../../source/installation/upgrade_views.rst:15
 msgid "What has been changed"
-msgstr ""
+msgstr "변경된 사항"
 
 #: ../../source/installation/upgrade_views.rst:17
 msgid ""
@@ -48,72 +49,82 @@ msgid ""
 "instead of CI3's ``$this->load->view('x');``, you can use ``return "
 "view('x');``."
 msgstr ""
+"뷰는 이전과 매우 유사하지만 호출 방식이 다릅니다. CI3의 ``$this->load->view('x');`` 대신 "
+"``return view('x');``\ 를 사용할 수 있습니다."
 
 #: ../../source/installation/upgrade_views.rst:19
 msgid ""
 "CI4 supports :doc:`../outgoing/view_cells` to build your response in "
 "pieces, and :doc:`../outgoing/view_layouts` for page layout."
 msgstr ""
+"CI4는 응답을 조각으로 구성하기 위한 :doc:`../outgoing/view_cells`\ 와 "
+"페이지 레이아웃을 위한 :doc:`../outgoing/view_layouts`\ 를 지원합니다."
 
 #: ../../source/installation/upgrade_views.rst:21
 msgid ""
 "The :doc:`Template Parser <../outgoing/view_parser>` is still there, and "
 "substantially enhanced."
 msgstr ""
+":doc:`템플릿 파서 <../outgoing/view_parser>`\ 는 여전히 존재하며 크게 향상되었습니다."
 
 #: ../../source/installation/upgrade_views.rst:24
 msgid "Upgrade Guide"
-msgstr ""
+msgstr "업그레이드 가이드"
 
 #: ../../source/installation/upgrade_views.rst:26
 msgid "First, move all views  to the folder **app/Views**"
-msgstr ""
+msgstr "먼저 모든 뷰를 **app/Views** 폴더로 이동하십시오."
 
 #: ../../source/installation/upgrade_views.rst:27
 msgid "Change the loading syntax of views in every script where you load views:"
-msgstr ""
+msgstr "뷰를 로드하는 모든 스크립트에서 뷰 로드 구문을 변경하십시오:"
 
 #: ../../source/installation/upgrade_views.rst:28
 msgid ""
 "from ``$this->load->view('directory_name/file_name')`` to ``return "
 "view('directory_name/file_name');``"
 msgstr ""
+"``$this->load->view('directory_name/file_name')``\ 에서 "
+"``return view('directory_name/file_name');``\ 으로"
 
 #: ../../source/installation/upgrade_views.rst:29
 msgid ""
 "from ``$content = $this->load->view('file', $data, TRUE);`` to ``$content"
 " = view('file', $data);``"
 msgstr ""
+"``$content = $this->load->view('file', $data, TRUE);``\ 에서 "
+"``$content = view('file', $data);``\ 으로"
 
 #: ../../source/installation/upgrade_views.rst:30
 msgid ""
 "(optional) You can change the echo syntax in views from ``<?php echo "
 "$title; ?>`` to ``<?= $title ?>``"
 msgstr ""
+"(선택 사항) 뷰의 echo 구문을 ``<?php echo $title; ?>``\ 에서 ``<?= $title ?>``\ 으로 변경할 수 있습니다."
 
 #: ../../source/installation/upgrade_views.rst:31
 msgid ""
 "Remove the line ``defined('BASEPATH') OR exit('No direct script access "
 "allowed');`` if it exists."
 msgstr ""
+"``defined('BASEPATH') OR exit('No direct script access allowed');`` 줄이 있으면 제거하십시오."
 
 #: ../../source/installation/upgrade_views.rst:34
 msgid "Code Example"
-msgstr ""
+msgstr "코드 예제"
 
 #: ../../source/installation/upgrade_views.rst:37
 msgid "CodeIgniter Version 3.x"
-msgstr ""
+msgstr "CodeIgniter 버전 3.x"
 
 #: ../../source/installation/upgrade_views.rst:39
 msgid "Path: **application/views**:"
-msgstr ""
+msgstr "경로: **application/views**:"
 
 #: ../../source/installation/upgrade_views.rst:44
 msgid "CodeIgniter Version 4.x"
-msgstr ""
+msgstr "CodeIgniter 버전 4.x"
 
 #: ../../source/installation/upgrade_views.rst:46
 msgid "Path: **app/Views**:"
-msgstr ""
-
+msgstr "경로: **app/Views**:"

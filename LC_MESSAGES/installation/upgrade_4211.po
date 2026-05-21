@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,35 +21,37 @@ msgstr ""
 
 #: ../../source/installation/upgrade_4211.rst:3
 msgid "Upgrading from 4.2.10 to 4.2.11"
-msgstr ""
+msgstr "4.2.10에서 4.2.11로 업그레이드"
 
 #: ../../source/installation/upgrade_4211.rst:5
 msgid ""
 "Please refer to the upgrade instructions corresponding to your "
 "installation method."
-msgstr ""
+msgstr "설치 방법에 해당하는 업그레이드 지침을 참조하십시오."
 
 #: ../../source/installation/upgrade_4211.rst:7
 msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
-msgstr ""
+msgstr ":ref:`Composer 설치 앱 스타터 업그레이드 <app-starter-upgrading>`"
 
 #: ../../source/installation/upgrade_4211.rst:8
 msgid ""
 ":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
 "Upgrading <adding-codeigniter4-upgrading>`"
 msgstr ""
+":ref:`Composer 설치 기존 프로젝트에 CodeIgniter4 추가 업그레이드 "
+"<adding-codeigniter4-upgrading>`"
 
 #: ../../source/installation/upgrade_4211.rst:9
 msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
-msgstr ""
+msgstr ":ref:`수동 설치 업그레이드 <installing-manual-upgrading>`"
 
 #: ../../source/installation/upgrade_4211.rst:16
 msgid "Breaking Changes"
-msgstr ""
+msgstr "주요 변경사항"
 
 #: ../../source/installation/upgrade_4211.rst:21
 msgid "Config\\\\App::$proxyIPs"
-msgstr ""
+msgstr "Config\\\\App::$proxyIPs"
 
 #: ../../source/installation/upgrade_4211.rst:23
 msgid ""
@@ -58,14 +59,16 @@ msgid ""
 "address and the HTTP header name for the client IP address pair as an "
 "array::"
 msgstr ""
+"설정 값 형식이 변경되었습니다. 이제 프록시 IP 주소와 클라이언트 IP 주소용 "
+"HTTP 헤더 이름을 배열 쌍으로 설정해야 합니다::"
 
 #: ../../source/installation/upgrade_4211.rst:30
 msgid "``ConfigException`` will be thrown for old format config value."
-msgstr ""
+msgstr "이전 형식의 설정 값을 사용하면 ``ConfigException``\\ 이 발생합니다."
 
 #: ../../source/installation/upgrade_4211.rst:35
 msgid "Session Handler Key Changes"
-msgstr ""
+msgstr "세션 핸들러 키 변경사항"
 
 #: ../../source/installation/upgrade_4211.rst:37
 msgid ""
@@ -75,6 +78,9 @@ msgid ""
 "will be invalidated after the upgrade if you are using these session "
 "handlers."
 msgstr ""
+":ref:`sessions-databasehandler-driver`, :ref:`sessions-memcachedhandler-driver`, "
+":ref:`sessions-redishandler-driver`\\ 의 세션 데이터 레코드 키가 변경되었습니다. "
+"따라서 이러한 세션 핸들러를 사용하는 경우 업그레이드 후 기존 세션 데이터가 무효화됩니다."
 
 #: ../../source/installation/upgrade_4211.rst:42
 msgid ""
@@ -82,12 +88,16 @@ msgid ""
 "table now contains the session cookie name "
 "(``Config\\App::$sessionCookieName``)."
 msgstr ""
+"``DatabaseHandler``\\ 를 사용할 때, 세션 테이블의 ``id`` 컬럼 값에 이제 "
+"세션 쿠키 이름(``Config\\App::$sessionCookieName``)이 포함됩니다."
 
 #: ../../source/installation/upgrade_4211.rst:44
 msgid ""
 "When using ``MemcachedHandler`` or ``RedisHandler``, the key value "
 "contains the session cookie name (``Config\\App::$sessionCookieName``)."
 msgstr ""
+"``MemcachedHandler`` 또는 ``RedisHandler``\\ 를 사용할 때, 키 값에 "
+"세션 쿠키 이름(``Config\\App::$sessionCookieName``)이 포함됩니다."
 
 #: ../../source/installation/upgrade_4211.rst:47
 msgid ""
@@ -95,30 +105,34 @@ msgid ""
 "bytes). If the following values exceed those maximum length, the session "
 "will not work properly."
 msgstr ""
+"``id`` 컬럼과 Memcached 키에는 최대 길이 제한(250바이트)이 있습니다. "
+"다음 값들이 해당 최대 길이를 초과하면 세션이 제대로 작동하지 않습니다."
 
 #: ../../source/installation/upgrade_4211.rst:50
 msgid ""
 "the session cookie name, delimiter, and session id (32 characters by "
 "default) when using ``DatabaseHandler``"
 msgstr ""
+"``DatabaseHandler``\\ 를 사용할 때 세션 쿠키 이름, 구분자, 세션 ID(기본값 32자)"
 
 #: ../../source/installation/upgrade_4211.rst:52
 msgid ""
 "the prefix (``ci_session``), session cookie name, delimiters, and session"
 " id when using  ``MemcachedHandler``"
 msgstr ""
+"``MemcachedHandler``\\ 를 사용할 때 접두사(``ci_session``), 세션 쿠키 이름, 구분자, 세션 ID"
 
 #: ../../source/installation/upgrade_4211.rst:56
 msgid "Project Files"
-msgstr ""
+msgstr "프로젝트 파일"
 
 #: ../../source/installation/upgrade_4211.rst:58
 msgid "Version 4.2.11 did not alter any executable code in project files."
-msgstr ""
+msgstr "버전 4.2.11은 프로젝트 파일의 실행 가능한 코드를 변경하지 않았습니다."
 
 #: ../../source/installation/upgrade_4211.rst:61
 msgid "All Changes"
-msgstr ""
+msgstr "모든 변경사항"
 
 #: ../../source/installation/upgrade_4211.rst:63
 msgid ""
@@ -126,32 +140,33 @@ msgid ""
 "changes; many will be simple comments or formatting that have no effect "
 "on the runtime:"
 msgstr ""
+"다음은 **프로젝트 공간**\\ 에서 변경된 모든 파일의 목록입니다. "
+"대부분은 런타임에 영향을 미치지 않는 단순한 주석이나 형식 변경입니다:"
 
 #: ../../source/installation/upgrade_4211.rst:66
 msgid "app/Config/App.php"
-msgstr ""
+msgstr "app/Config/App.php"
 
 #: ../../source/installation/upgrade_4211.rst:67
 msgid "app/Config/Autoload.php"
-msgstr ""
+msgstr "app/Config/Autoload.php"
 
 #: ../../source/installation/upgrade_4211.rst:68
 msgid "app/Config/Logger.php"
-msgstr ""
+msgstr "app/Config/Logger.php"
 
 #: ../../source/installation/upgrade_4211.rst:69
 msgid "app/Config/Toolbar.php"
-msgstr ""
+msgstr "app/Config/Toolbar.php"
 
 #: ../../source/installation/upgrade_4211.rst:70
 msgid "app/Views/welcome_message.php"
-msgstr ""
+msgstr "app/Views/welcome_message.php"
 
 #: ../../source/installation/upgrade_4211.rst:71
 msgid "composer.json"
-msgstr ""
+msgstr "composer.json"
 
 #: ../../source/installation/upgrade_4211.rst:72
 msgid "phpunit.xml.dist"
-msgstr ""
-
+msgstr "phpunit.xml.dist"

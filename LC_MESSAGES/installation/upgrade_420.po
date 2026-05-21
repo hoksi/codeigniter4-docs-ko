@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,63 +21,67 @@ msgstr ""
 
 #: ../../source/installation/upgrade_420.rst:3
 msgid "Upgrading from 4.1.9 to 4.2.0"
-msgstr ""
+msgstr "4.1.9에서 4.2.0으로 업그레이드"
 
 #: ../../source/installation/upgrade_420.rst:5
 msgid ""
 "Please refer to the upgrade instructions corresponding to your "
 "installation method."
-msgstr ""
+msgstr "설치 방법에 해당하는 업그레이드 지침을 참조하십시오."
 
 #: ../../source/installation/upgrade_420.rst:7
 msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
-msgstr ""
+msgstr ":ref:`Composer 설치 앱 스타터 업그레이드 <app-starter-upgrading>`"
 
 #: ../../source/installation/upgrade_420.rst:8
 msgid ""
 ":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
 "Upgrading <adding-codeigniter4-upgrading>`"
 msgstr ""
+":ref:`Composer 설치 기존 프로젝트에 CodeIgniter4 추가 업그레이드 "
+"<adding-codeigniter4-upgrading>`"
 
 #: ../../source/installation/upgrade_420.rst:9
 msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
-msgstr ""
+msgstr ":ref:`수동 설치 업그레이드 <installing-manual-upgrading>`"
 
 #: ../../source/installation/upgrade_420.rst:16
 msgid "Mandatory File Changes"
-msgstr ""
+msgstr "필수 파일 변경사항"
 
 #: ../../source/installation/upgrade_420.rst:19
 msgid "index.php and spark"
-msgstr ""
+msgstr "index.php와 spark"
 
 #: ../../source/installation/upgrade_420.rst:21
 msgid ""
 "The following files received significant changes and **you must merge the"
 " updated versions** with your application:"
 msgstr ""
+"다음 파일들은 중요한 변경사항이 있으므로 **업데이트된 버전을 반드시 병합**\\ 해야 합니다:"
 
 #: ../../source/installation/upgrade_420.rst:24
 msgid "``public/index.php``"
-msgstr ""
+msgstr "``public/index.php``"
 
 #: ../../source/installation/upgrade_420.rst:25
 msgid "``spark``"
-msgstr ""
+msgstr "``spark``"
 
 #: ../../source/installation/upgrade_420.rst:27
 msgid ""
 "If you don't update the above two files, CodeIgniter will not work at all"
 " after running ``composer update``."
 msgstr ""
+"위의 두 파일을 업데이트하지 않으면 ``composer update``\\ 를 실행한 후 CodeIgniter가 전혀 작동하지 않습니다."
 
 #: ../../source/installation/upgrade_420.rst:30
 msgid "The upgrade procedure, for example, is as follows:"
-msgstr ""
+msgstr "업그레이드 절차는 예를 들어 다음과 같습니다:"
 
 #: ../../source/installation/upgrade_420.rst:39
 msgid "Config/Constants.php"
-msgstr ""
+msgstr "Config/Constants.php"
 
 #: ../../source/installation/upgrade_420.rst:41
 msgid ""
@@ -90,14 +93,20 @@ msgid ""
 "``CodeIgniter\\Events\\Events::PRIORITY_NORMAL`` and "
 "``CodeIgniter\\Events\\Events::PRIORITY_HIGH``."
 msgstr ""
+"``EVENT_PRIORITY_LOW``, ``EVENT_PRIORITY_NORMAL``, ``EVENT_PRIORITY_HIGH`` "
+"상수는 사용 중단(deprecated)되었으며, 정의가 ``app/Config/Constants.php``\\ 로 이동되었습니다. "
+"이 상수들을 사용하는 경우 ``app/Config/Constants.php``\\ 에 정의하거나, "
+"새로운 클래스 상수인 ``CodeIgniter\\Events\\Events::PRIORITY_LOW``, "
+"``CodeIgniter\\Events\\Events::PRIORITY_NORMAL``, "
+"``CodeIgniter\\Events\\Events::PRIORITY_HIGH``\\ 를 사용하십시오."
 
 #: ../../source/installation/upgrade_420.rst:44
 msgid "composer.json"
-msgstr ""
+msgstr "composer.json"
 
 #: ../../source/installation/upgrade_420.rst:46
 msgid "This procedure is not required in v4.5.0 or later."
-msgstr ""
+msgstr "이 절차는 v4.5.0 이상에서는 필요하지 않습니다."
 
 #: ../../source/installation/upgrade_420.rst:48
 msgid ""
@@ -106,10 +115,13 @@ msgid ""
 "``/composer.json``'s ``autoload.psr-4`` like the following, you need to "
 "remove these lines, and run ``composer dump-autoload``."
 msgstr ""
+"Composer를 사용하고, CodeIgniter v4.1.9 이하를 설치했을 때 ``/composer.json``\\ 의 "
+"``autoload.psr-4``\\ 에 ``App\\\\``\\ 와 ``Config\\\\`` 네임스페이스가 있다면, "
+"해당 줄을 제거한 후 ``composer dump-autoload``\\ 를 실행해야 합니다."
 
 #: ../../source/installation/upgrade_420.rst:66
 msgid "Breaking Changes"
-msgstr ""
+msgstr "주요 변경사항"
 
 #: ../../source/installation/upgrade_420.rst:68
 msgid ""
@@ -121,10 +133,15 @@ msgid ""
 "<https://www.php.net/manual/en/opcache.preloading.php>`_ easier to "
 "implement."
 msgstr ""
+"``system/bootstrap.php`` 파일은 더 이상 ``CodeIgniter`` 인스턴스를 반환하지 않으며, "
+"``.env`` 파일도 로드하지 않습니다(이제 ``index.php``\\ 와 ``spark``\\ 에서 처리됩니다). "
+"이러한 동작에 의존하는 코드가 있다면 더 이상 작동하지 않으므로 수정해야 합니다. "
+"이 변경은 `Preloading <https://www.php.net/manual/en/opcache.preloading.php>`_\\ 을 "
+"더 쉽게 구현하기 위해 이루어졌습니다."
 
 #: ../../source/installation/upgrade_420.rst:71
 msgid "Breaking Enhancements"
-msgstr ""
+msgstr "주요 개선사항"
 
 #: ../../source/installation/upgrade_420.rst:73
 msgid ""
@@ -132,6 +149,9 @@ msgid ""
 "``string`` typehint on the ``$rules`` parameter was removed. Extending "
 "classes should likewise remove the parameter so as not to break LSP."
 msgstr ""
+"``Validation::setRule()`` 메서드\\ 의 서명이 변경되었습니다. "
+"``$rules`` 파라미터의 ``string`` 타입힌트가 제거되었습니다. "
+"LSP를 위반하지 않도록 하위 클래스도 마찬가지로 파라미터를 변경해야 합니다."
 
 #: ../../source/installation/upgrade_420.rst:74
 msgid ""
@@ -140,10 +160,14 @@ msgid ""
 "``string`` typehint on the ``$cond`` parameter was removed. Extending "
 "classes should likewise remove the parameter so as not to break LSP."
 msgstr ""
+"``CodeIgniter\\Database\\BaseBuilder::join()``\\ 과 "
+"``CodeIgniter\\Database\\*\\Builder::join()`` 메서드\\ 의 서명이 변경되었습니다. "
+"``$cond`` 파라미터의 ``string`` 타입힌트가 제거되었습니다. "
+"LSP를 위반하지 않도록 하위 클래스도 마찬가지로 파라미터를 변경해야 합니다."
 
 #: ../../source/installation/upgrade_420.rst:77
 msgid "Project Files"
-msgstr ""
+msgstr "프로젝트 파일"
 
 #: ../../source/installation/upgrade_420.rst:79
 #, python-format
@@ -155,6 +179,10 @@ msgid ""
 "to the project space: `Explore on Packagist "
 "<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
 msgstr ""
+"**프로젝트 공간** (root, app, public, writable)의 많은 파일이 업데이트되었습니다. "
+"이 파일들은 **system** 범위 밖에 있으므로 직접 개입하지 않으면 변경되지 않습니다. "
+"프로젝트 공간의 변경사항 병합을 돕는 서드파티 CodeIgniter 모듈이 있습니다: "
+"`Packagist에서 탐색 <https://packagist.org/explore/?query=codeigniter4%20updates>`_."
 
 #: ../../source/installation/upgrade_420.rst:84
 msgid ""
@@ -163,10 +191,13 @@ msgid ""
 "optional until the next major version, and any mandatory changes will be "
 "covered in the sections above."
 msgstr ""
+"버그 수정을 위한 매우 드문 경우를 제외하고, 프로젝트 공간의 파일 변경은 애플리케이션을 손상시키지 않습니다. "
+"여기에 기재된 모든 변경사항은 다음 주요 버전까지 선택 사항이며, "
+"필수 변경사항은 위의 섹션에서 다루고 있습니다."
 
 #: ../../source/installation/upgrade_420.rst:89
 msgid "Content Changes"
-msgstr ""
+msgstr "콘텐츠 변경사항"
 
 #: ../../source/installation/upgrade_420.rst:91
 msgid ""
@@ -174,20 +205,22 @@ msgid ""
 "or visual adjustments) and it is recommended that you merge the updated "
 "versions with your application:"
 msgstr ""
+"다음 파일들은 중요한 변경사항(사용 중단 또는 시각적 조정 포함)이 있으며, "
+"업데이트된 버전을 애플리케이션에 병합할 것을 권장합니다:"
 
 #: ../../source/installation/upgrade_420.rst:94
 msgid "``app/Config/Routes.php``"
-msgstr ""
+msgstr "``app/Config/Routes.php``"
 
 #: ../../source/installation/upgrade_420.rst:95
 msgid ""
 "To make the default configuration more secure, auto-routing has been "
 "changed to disabled by default."
-msgstr ""
+msgstr "기본 설정을 보다 안전하게 만들기 위해 자동 라우팅이 기본적으로 비활성화로 변경되었습니다."
 
 #: ../../source/installation/upgrade_420.rst:98
 msgid "All Changes"
-msgstr ""
+msgstr "모든 변경사항"
 
 #: ../../source/installation/upgrade_420.rst:100
 msgid ""
@@ -195,108 +228,109 @@ msgid ""
 "changes; many will be simple comments or formatting that have no effect "
 "on the runtime:"
 msgstr ""
+"다음은 **프로젝트 공간**\\ 에서 변경된 모든 파일의 목록입니다. "
+"대부분은 런타임에 영향을 미치지 않는 단순한 주석이나 형식 변경입니다:"
 
 #: ../../source/installation/upgrade_420.rst:103
 msgid "app/Config/App.php"
-msgstr ""
+msgstr "app/Config/App.php"
 
 #: ../../source/installation/upgrade_420.rst:104
 msgid "app/Config/Constants.php"
-msgstr ""
+msgstr "app/Config/Constants.php"
 
 #: ../../source/installation/upgrade_420.rst:105
 msgid "app/Config/ContentSecurityPolicy.php"
-msgstr ""
+msgstr "app/Config/ContentSecurityPolicy.php"
 
 #: ../../source/installation/upgrade_420.rst:106
 msgid "app/Config/Database.php"
-msgstr ""
+msgstr "app/Config/Database.php"
 
 #: ../../source/installation/upgrade_420.rst:107
 msgid "app/Config/Events.php"
-msgstr ""
+msgstr "app/Config/Events.php"
 
 #: ../../source/installation/upgrade_420.rst:108
 msgid "app/Config/Feature.php"
-msgstr ""
+msgstr "app/Config/Feature.php"
 
 #: ../../source/installation/upgrade_420.rst:109
 msgid "app/Config/Filters.php"
-msgstr ""
+msgstr "app/Config/Filters.php"
 
 #: ../../source/installation/upgrade_420.rst:110
 msgid "app/Config/Format.php"
-msgstr ""
+msgstr "app/Config/Format.php"
 
 #: ../../source/installation/upgrade_420.rst:111
 msgid "app/Config/Logger.php"
-msgstr ""
+msgstr "app/Config/Logger.php"
 
 #: ../../source/installation/upgrade_420.rst:112
 msgid "app/Config/Mimes.php"
-msgstr ""
+msgstr "app/Config/Mimes.php"
 
 #: ../../source/installation/upgrade_420.rst:113
 msgid "app/Config/Publisher.php"
-msgstr ""
+msgstr "app/Config/Publisher.php"
 
 #: ../../source/installation/upgrade_420.rst:114
 msgid "app/Config/Routes.php"
-msgstr ""
+msgstr "app/Config/Routes.php"
 
 #: ../../source/installation/upgrade_420.rst:115
 msgid "app/Config/Security.php"
-msgstr ""
+msgstr "app/Config/Security.php"
 
 #: ../../source/installation/upgrade_420.rst:116
 msgid "app/Config/Validation.php"
-msgstr ""
+msgstr "app/Config/Validation.php"
 
 #: ../../source/installation/upgrade_420.rst:117
 msgid "app/Config/View.php"
-msgstr ""
+msgstr "app/Config/View.php"
 
 #: ../../source/installation/upgrade_420.rst:118
 msgid "app/Controllers/BaseController.php"
-msgstr ""
+msgstr "app/Controllers/BaseController.php"
 
 #: ../../source/installation/upgrade_420.rst:119
 msgid "app/Views/errors/html/debug.css"
-msgstr ""
+msgstr "app/Views/errors/html/debug.css"
 
 #: ../../source/installation/upgrade_420.rst:120
 msgid "app/Views/errors/html/debug.js"
-msgstr ""
+msgstr "app/Views/errors/html/debug.js"
 
 #: ../../source/installation/upgrade_420.rst:121
 msgid "app/Views/errors/html/error_404.php"
-msgstr ""
+msgstr "app/Views/errors/html/error_404.php"
 
 #: ../../source/installation/upgrade_420.rst:122
 msgid "app/Views/errors/html/error_exception.php"
-msgstr ""
+msgstr "app/Views/errors/html/error_exception.php"
 
 #: ../../source/installation/upgrade_420.rst:123
 msgid "app/Views/errors/html/production.php"
-msgstr ""
+msgstr "app/Views/errors/html/production.php"
 
 #: ../../source/installation/upgrade_420.rst:124
 msgid "app/Views/welcome_message.php"
-msgstr ""
+msgstr "app/Views/welcome_message.php"
 
 #: ../../source/installation/upgrade_420.rst:125
 msgid "app/index.html"
-msgstr ""
+msgstr "app/index.html"
 
 #: ../../source/installation/upgrade_420.rst:126
 msgid "preload.php"
-msgstr ""
+msgstr "preload.php"
 
 #: ../../source/installation/upgrade_420.rst:127
 msgid "public/index.php"
-msgstr ""
+msgstr "public/index.php"
 
 #: ../../source/installation/upgrade_420.rst:128
 msgid "spark"
-msgstr ""
-
+msgstr "spark"

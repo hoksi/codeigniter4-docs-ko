@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,31 +21,33 @@ msgstr ""
 
 #: ../../source/installation/upgrade_418.rst:3
 msgid "Upgrading from 4.1.7 to 4.1.8"
-msgstr ""
+msgstr "4.1.7에서 4.1.8로 업그레이드"
 
 #: ../../source/installation/upgrade_418.rst:5
 msgid ""
 "Please refer to the upgrade instructions corresponding to your "
 "installation method."
-msgstr ""
+msgstr "설치 방법에 해당하는 업그레이드 지침을 참조하십시오."
 
 #: ../../source/installation/upgrade_418.rst:7
 msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
-msgstr ""
+msgstr ":ref:`Composer 설치 앱 스타터 업그레이드 <app-starter-upgrading>`"
 
 #: ../../source/installation/upgrade_418.rst:8
 msgid ""
 ":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
 "Upgrading <adding-codeigniter4-upgrading>`"
 msgstr ""
+":ref:`Composer 설치 - 기존 프로젝트에 CodeIgniter4 추가 업그레이드 "
+"<adding-codeigniter4-upgrading>`"
 
 #: ../../source/installation/upgrade_418.rst:9
 msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
-msgstr ""
+msgstr ":ref:`수동 설치 업그레이드 <installing-manual-upgrading>`"
 
 #: ../../source/installation/upgrade_418.rst:16
 msgid "Breaking Changes"
-msgstr ""
+msgstr "주요 변경사항"
 
 #: ../../source/installation/upgrade_418.rst:18
 msgid ""
@@ -56,4 +57,8 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-7528-7jg5-6g62>`_"
 " for more information."
 msgstr ""
-
+"``API\\ResponseTrait``\ 의 보안 문제로 인해 모든 trait 메서드가 이제 ``protected``\ 로 "
+"범위가 지정되었습니다. 자세한 내용은 "
+"`보안 권고 GHSA-7528-7jg5-6g62 "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-7528-7jg5-6g62>`_"
+"\ 를 참조하십시오."

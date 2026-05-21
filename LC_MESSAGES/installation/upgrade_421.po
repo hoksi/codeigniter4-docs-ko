@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,36 +21,38 @@ msgstr ""
 
 #: ../../source/installation/upgrade_421.rst:3
 msgid "Upgrading from 4.2.0 to 4.2.1"
-msgstr ""
+msgstr "4.2.0에서 4.2.1으로 업그레이드"
 
 #: ../../source/installation/upgrade_421.rst:5
 msgid ""
 "Please refer to the upgrade instructions corresponding to your "
 "installation method."
-msgstr ""
+msgstr "설치 방법에 해당하는 업그레이드 지침을 참조하십시오."
 
 #: ../../source/installation/upgrade_421.rst:7
 msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
-msgstr ""
+msgstr ":ref:`Composer 설치 앱 스타터 업그레이드 <app-starter-upgrading>`"
 
 #: ../../source/installation/upgrade_421.rst:8
 msgid ""
 ":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
 "Upgrading <adding-codeigniter4-upgrading>`"
 msgstr ""
+":ref:`Composer 설치 기존 프로젝트에 CodeIgniter4 추가 업그레이드 "
+"<adding-codeigniter4-upgrading>`"
 
 #: ../../source/installation/upgrade_421.rst:9
 msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
-msgstr ""
+msgstr ":ref:`수동 설치 업그레이드 <installing-manual-upgrading>`"
 
 #: ../../source/installation/upgrade_421.rst:16
 msgid "Mandatory File Changes"
-msgstr ""
+msgstr "필수 파일 변경사항"
 
 #: ../../source/installation/upgrade_421.rst:19
 #: ../../source/installation/upgrade_421.rst:88
 msgid "app/Config/Mimes.php"
-msgstr ""
+msgstr "app/Config/Mimes.php"
 
 #: ../../source/installation/upgrade_421.rst:21
 msgid ""
@@ -59,14 +60,16 @@ msgid ""
 "was updated to fix a bug. Also, the logic of "
 "``Mimes::getExtensionFromType()`` was changed."
 msgstr ""
+"**app/Config/Mimes.php**\\ 에서 파일 확장자와 MIME 타입의 매핑이 버그 수정을 위해 업데이트되었습니다. "
+"또한 ``Mimes::getExtensionFromType()``\\ 의 로직도 변경되었습니다."
 
 #: ../../source/installation/upgrade_421.rst:24
 msgid "Breaking Changes"
-msgstr ""
+msgstr "주요 변경사항"
 
 #: ../../source/installation/upgrade_421.rst:29
 msgid "get_cookie()"
-msgstr ""
+msgstr "get_cookie()"
 
 #: ../../source/installation/upgrade_421.rst:31
 msgid ""
@@ -74,40 +77,46 @@ msgid ""
 " without a prefix, the previous ``get_cookie()`` had the tricky behavior "
 "of returning the cookie without the prefix."
 msgstr ""
+"접두사가 붙은 이름의 쿠키와 접두사 없이 동일한 이름의 쿠키가 모두 있는 경우, "
+"이전 ``get_cookie()``\\ 는 접두사 없는 쿠키를 반환하는 불명확한 동작을 가지고 있었습니다."
 
 #: ../../source/installation/upgrade_421.rst:33
 msgid ""
 "For example, when ``Config\\Cookie::$prefix`` is ``prefix_``, there are "
 "two cookies, ``test`` and ``prefix_test``:"
 msgstr ""
+"예를 들어, ``Config\\Cookie::$prefix``\\ 가 ``prefix_``\\ 일 때 ``test``\\ 와 "
+"``prefix_test`` 두 개의 쿠키가 있는 경우:"
 
 #: ../../source/installation/upgrade_421.rst:42
 msgid "Previously, ``get_cookie()`` returns the following:"
-msgstr ""
+msgstr "이전에는 ``get_cookie()``\\ 가 다음을 반환했습니다:"
 
 #: ../../source/installation/upgrade_421.rst:49
 msgid ""
 "Now the behavior has been fixed as a bug, and has been changed like the "
 "following."
-msgstr ""
+msgstr "이제 이 동작은 버그로 수정되어 다음과 같이 변경되었습니다."
 
 #: ../../source/installation/upgrade_421.rst:57
 msgid "If you depend on the previous behavior, you need to change your code."
-msgstr ""
+msgstr "이전 동작에 의존하는 경우 코드를 변경해야 합니다."
 
 #: ../../source/installation/upgrade_421.rst:59
 msgid ""
 "In the example above, if there is only one cookie ``prefix_test``, the "
 "previous ``get_cookie('test')`` also returns ``\"CI Cookie\"``."
 msgstr ""
+"위의 예에서 ``prefix_test`` 쿠키만 있는 경우, 이전 ``get_cookie('test')``\\ 도 "
+"``\"CI Cookie\"``\\ 를 반환했습니다."
 
 #: ../../source/installation/upgrade_421.rst:63
 msgid "Breaking Enhancements"
-msgstr ""
+msgstr "주요 개선사항"
 
 #: ../../source/installation/upgrade_421.rst:67
 msgid "Project Files"
-msgstr ""
+msgstr "프로젝트 파일"
 
 #: ../../source/installation/upgrade_421.rst:69
 #, python-format
@@ -119,6 +128,10 @@ msgid ""
 "to the project space: `Explore on Packagist "
 "<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
 msgstr ""
+"**프로젝트 공간** (root, app, public, writable)의 많은 파일이 업데이트되었습니다. "
+"이 파일들은 **system** 범위 밖에 있으므로 직접 개입하지 않으면 변경되지 않습니다. "
+"프로젝트 공간의 변경사항 병합을 돕는 서드파티 CodeIgniter 모듈이 있습니다: "
+"`Packagist에서 탐색 <https://packagist.org/explore/?query=codeigniter4%20updates>`_."
 
 #: ../../source/installation/upgrade_421.rst:74
 msgid ""
@@ -127,14 +140,17 @@ msgid ""
 "optional until the next major version, and any mandatory changes will be "
 "covered in the sections above."
 msgstr ""
+"버그 수정을 위한 매우 드문 경우를 제외하고, 프로젝트 공간의 파일 변경은 애플리케이션을 손상시키지 않습니다. "
+"여기에 기재된 모든 변경사항은 다음 주요 버전까지 선택 사항이며, "
+"필수 변경사항은 위의 섹션에서 다루고 있습니다."
 
 #: ../../source/installation/upgrade_421.rst:79
 msgid "Content Changes"
-msgstr ""
+msgstr "콘텐츠 변경사항"
 
 #: ../../source/installation/upgrade_421.rst:83
 msgid "All Changes"
-msgstr ""
+msgstr "모든 변경사항"
 
 #: ../../source/installation/upgrade_421.rst:85
 msgid ""
@@ -142,4 +158,5 @@ msgid ""
 "changes; many will be simple comments or formatting that have no effect "
 "on the runtime:"
 msgstr ""
-
+"다음은 **프로젝트 공간**\\ 에서 변경된 모든 파일의 목록입니다. "
+"대부분은 런타임에 영향을 미치지 않는 단순한 주석이나 형식 변경입니다:"

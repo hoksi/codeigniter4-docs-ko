@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,21 +21,23 @@ msgstr ""
 
 #: ../../source/installation/upgrade_security.rst:2
 msgid "Upgrade Security"
-msgstr ""
+msgstr "보안 업그레이드"
 
 #: ../../source/installation/upgrade_security.rst:9
 msgid "Documentations"
-msgstr ""
+msgstr "문서"
 
 #: ../../source/installation/upgrade_security.rst:11
 msgid ""
 "`Security Class Documentation CodeIgniter 3.x "
 "<http://codeigniter.com/userguide3/libraries/security.html>`_"
 msgstr ""
+"`보안 클래스 문서 CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/libraries/security.html>`_"
 
 #: ../../source/installation/upgrade_security.rst:12
 msgid ":doc:`Security Documentation CodeIgniter 4.x </libraries/security>`"
-msgstr ""
+msgstr ":doc:`보안 문서 CodeIgniter 4.x </libraries/security>`"
 
 #: ../../source/installation/upgrade_security.rst:15
 msgid ""
@@ -45,24 +46,28 @@ msgid ""
 " CSRF field in your forms. So you do not have to upgrade this by "
 "yourself."
 msgstr ""
+":doc:`../helpers/form_helper`\ 를 사용하고 CSRF 필터를 전역적으로 활성화하면, "
+":php:func:`form_open()`\ 이 폼에 숨겨진 CSRF 필드를 자동으로 삽입합니다. "
+"따라서 직접 업그레이드할 필요가 없습니다."
 
 #: ../../source/installation/upgrade_security.rst:18
 msgid "What has been changed"
-msgstr ""
+msgstr "변경된 사항"
 
 #: ../../source/installation/upgrade_security.rst:19
 msgid "The method to implement CSRF tokens to HTML forms has been changed."
-msgstr ""
+msgstr "HTML 폼에 CSRF 토큰을 구현하는 방법이 변경되었습니다."
 
 #: ../../source/installation/upgrade_security.rst:22
 msgid "Upgrade Guide"
-msgstr ""
+msgstr "업그레이드 가이드"
 
 #: ../../source/installation/upgrade_security.rst:23
 msgid ""
 "To enable CSRF protection in CI4 you have to enable it in "
 "**app/Config/Filters.php**:"
 msgstr ""
+"CI4에서 CSRF 보호를 활성화하려면 **app/Config/Filters.php**\ 에서 활성화해야 합니다:"
 
 #: ../../source/installation/upgrade_security.rst:27
 msgid ""
@@ -70,22 +75,25 @@ msgid ""
 "looks similar to ``<input type=\"hidden\" name=\"<?= $csrf['name'] ?>\" "
 "value=\"<?= $csrf['hash'] ?>\" />``."
 msgstr ""
+"HTML 폼에서 ``<input type=\"hidden\" name=\"<?= $csrf['name'] ?>\" "
+"value=\"<?= $csrf['hash'] ?>\" />``\ 와 유사한 CSRF 입력 필드를 제거해야 합니다."
 
 #: ../../source/installation/upgrade_security.rst:28
 msgid ""
 "Now, within your HTML forms you have to add ``<?= csrf_field() ?>`` "
 "somewhere in the form body, unless you are using ``form_open()``."
 msgstr ""
+"이제 ``form_open()``\ 을 사용하지 않는 경우, HTML 폼의 본문 어딘가에 "
+"``<?= csrf_field() ?>``\ 를 추가해야 합니다."
 
 #: ../../source/installation/upgrade_security.rst:31
 msgid "Code Example"
-msgstr ""
+msgstr "코드 예제"
 
 #: ../../source/installation/upgrade_security.rst:34
 msgid "CodeIgniter Version 3.x"
-msgstr ""
+msgstr "CodeIgniter 버전 3.x"
 
 #: ../../source/installation/upgrade_security.rst:39
 msgid "CodeIgniter Version 4.x"
-msgstr ""
-
+msgstr "CodeIgniter 버전 4.x"

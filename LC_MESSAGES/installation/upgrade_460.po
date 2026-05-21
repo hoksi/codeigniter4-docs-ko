@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,35 +21,37 @@ msgstr ""
 
 #: ../../source/installation/upgrade_460.rst:3
 msgid "Upgrading from 4.5.8 to 4.6.0"
-msgstr ""
+msgstr "4.5.8에서 4.6.0으로 업그레이드"
 
 #: ../../source/installation/upgrade_460.rst:5
 msgid ""
 "Please refer to the upgrade instructions corresponding to your "
 "installation method."
-msgstr ""
+msgstr "설치 방법에 해당하는 업그레이드 지침을 참조하십시오."
 
 #: ../../source/installation/upgrade_460.rst:7
 msgid ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
-msgstr ""
+msgstr ":ref:`Composer 설치 앱 스타터 업그레이드 <app-starter-upgrading>`"
 
 #: ../../source/installation/upgrade_460.rst:8
 msgid ""
 ":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
 "Upgrading <adding-codeigniter4-upgrading>`"
 msgstr ""
+":ref:`Composer 설치 - 기존 프로젝트에 CodeIgniter4 추가 업그레이드 "
+"<adding-codeigniter4-upgrading>`"
 
 #: ../../source/installation/upgrade_460.rst:9
 msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
-msgstr ""
+msgstr ":ref:`수동 설치 업그레이드 <installing-manual-upgrading>`"
 
 #: ../../source/installation/upgrade_460.rst:17
 msgid "Breaking Changes"
-msgstr ""
+msgstr "주요 변경사항"
 
 #: ../../source/installation/upgrade_460.rst:20
 msgid "Exception Changes"
-msgstr ""
+msgstr "예외 변경사항"
 
 #: ../../source/installation/upgrade_460.rst:22
 msgid ""
@@ -58,16 +59,19 @@ msgid ""
 "exception classes have changed parent classes. See :ref:`ChangeLog <v460"
 "-behavior-changes-exceptions>` for details."
 msgstr ""
+"일부 클래스에서 던지는 예외 클래스가 변경되었습니다. 일부 예외 클래스의 "
+"부모 클래스도 변경되었습니다. 자세한 내용은 :ref:`변경 로그 <v460"
+"-behavior-changes-exceptions>`\ 를 참조하십시오."
 
 #: ../../source/installation/upgrade_460.rst:26
 msgid ""
 "If you have code that catches these exceptions, change the exception "
 "classes."
-msgstr ""
+msgstr "이 예외를 catch하는 코드가 있다면 예외 클래스를 변경하십시오."
 
 #: ../../source/installation/upgrade_460.rst:31
 msgid "Time::createFromTimestamp() Timezone Change"
-msgstr ""
+msgstr "Time::createFromTimestamp()\ 의 타임존 변경"
 
 #: ../../source/installation/upgrade_460.rst:33
 msgid ""
@@ -76,54 +80,63 @@ msgid ""
 "Time instance with **UTC**. In v4.4.6 to prior to v4.6.0, a Time instance"
 " with the currently set default timezone was returned."
 msgstr ""
+"타임존을 명시적으로 전달하지 않으면 이제 "
+":ref:`Time::createFromTimestamp() <time-createfromtimestamp>`\ 는 "
+"**UTC** 타임존의 Time 인스턴스를 반환합니다. v4.4.6부터 v4.6.0 이전까지는 "
+"현재 설정된 기본 타임존의 Time 인스턴스가 반환되었습니다."
 
 #: ../../source/installation/upgrade_460.rst:38
 msgid ""
 "This behavior change normalizes behavior with changes in PHP 8.4 which "
 "adds a new ``DateTimeInterface::createFromTimestamp()`` method."
 msgstr ""
+"이 동작 변경은 새로운 ``DateTimeInterface::createFromTimestamp()`` 메서드를 "
+"추가한 PHP 8.4의 변경 사항에 맞춰 동작을 표준화합니다."
 
 #: ../../source/installation/upgrade_460.rst:41
 msgid ""
 "If you want to keep the default timezone, you need to pass the timezone "
 "as the second parameter::"
 msgstr ""
+"기본 타임존을 유지하려면 두 번째 매개변수로 타임존을 전달해야 합니다::"
 
 #: ../../source/installation/upgrade_460.rst:51
 msgid "Time keeps Microseconds"
-msgstr ""
+msgstr "Time이 마이크로초를 유지합니다"
 
 #: ../../source/installation/upgrade_460.rst:53
 msgid ""
 "In previous versions, :doc:`Time <../libraries/time>` lost microseconds "
 "in some cases. But the bugs have been fixed."
 msgstr ""
+"이전 버전에서 :doc:`Time <../libraries/time>`\ 은 일부 경우에 마이크로초를 "
+"잃었습니다. 이 버그들이 수정되었습니다."
 
 #: ../../source/installation/upgrade_460.rst:56
 msgid "The results of the ``Time`` comparison may differ due to these fixes:"
-msgstr ""
+msgstr "이 수정으로 인해 ``Time`` 비교 결과가 달라질 수 있습니다:"
 
 #: ../../source/installation/upgrade_460.rst:61
 msgid "In a such case, you need to remove the microseconds:"
-msgstr ""
+msgstr "이 경우 마이크로초를 제거해야 합니다:"
 
 #: ../../source/installation/upgrade_460.rst:66
 msgid "The following cases now keeps microseconds:"
-msgstr ""
+msgstr "다음 경우에는 이제 마이크로초가 유지됩니다:"
 
 #: ../../source/installation/upgrade_460.rst:74
 msgid ""
 "Note that ``Time`` with the current time has been holding microseconds "
 "since before."
-msgstr ""
+msgstr "현재 시간을 가진 ``Time``\ 은 이전부터 마이크로초를 유지해 왔음에 주의하십시오."
 
 #: ../../source/installation/upgrade_460.rst:79
 msgid "Also, methods that returns an ``int`` still lose the microseconds."
-msgstr ""
+msgstr "또한 ``int``\ 를 반환하는 메서드는 여전히 마이크로초를 잃습니다."
 
 #: ../../source/installation/upgrade_460.rst:87
 msgid "Time::setTimestamp() Behavior Fix"
-msgstr ""
+msgstr "Time::setTimestamp()\ 의 동작 수정"
 
 #: ../../source/installation/upgrade_460.rst:89
 msgid ""
@@ -131,20 +144,23 @@ msgid ""
 "instance with a timezone other than the default timezone might return a "
 "Time instance with the wrong date/time."
 msgstr ""
+"이전 버전에서 기본 타임존이 아닌 타임존을 가진 Time 인스턴스에 "
+"``Time::setTimestamp()``\ 를 호출하면 잘못된 날짜/시간의 Time 인스턴스가 "
+"반환될 수 있었습니다."
 
 #: ../../source/installation/upgrade_460.rst:93
 msgid ""
 "This bug has been fixed, and it now behaves in the same way as "
 "``DateTimeImmutable``:"
-msgstr ""
+msgstr "이 버그가 수정되었으며 이제 ``DateTimeImmutable``\ 과 동일하게 동작합니다:"
 
 #: ../../source/installation/upgrade_460.rst:98
 msgid "Note that if you use the default timezone, the behavior is not changed:"
-msgstr ""
+msgstr "기본 타임존을 사용하는 경우에는 동작이 변경되지 않습니다:"
 
 #: ../../source/installation/upgrade_460.rst:106
 msgid "Registrars with Dirty Hack"
-msgstr ""
+msgstr "비정상적인 방법을 사용하는 Registrar"
 
 #: ../../source/installation/upgrade_460.rst:108
 msgid ""
@@ -153,12 +169,17 @@ msgid ""
 "class (which extends ``CodeIgniter\\Config\\BaseConfig``), "
 "``ConfigException`` will be raised."
 msgstr ""
+":ref:`registrars`\ 의 자동 탐색이 두 번 실행되는 것을 방지하기 위해 "
+"registrar 클래스가 로드되거나 인스턴스화될 때 ``CodeIgniter\\Config\\BaseConfig``\ 를 "
+"확장하는 설정 클래스를 인스턴스화하면 ``ConfigException``\ 이 발생합니다."
 
 #: ../../source/installation/upgrade_460.rst:112
 msgid ""
 "This is because if Auto-Discovery of Registrars is performed twice, "
 "duplicate values may be added to properties of Config classes."
 msgstr ""
+"Registrar의 자동 탐색이 두 번 수행되면 설정 클래스의 속성에 "
+"중복 값이 추가될 수 있기 때문입니다."
 
 #: ../../source/installation/upgrade_460.rst:115
 msgid ""
@@ -166,20 +187,24 @@ msgid ""
 "be modified so that they do not instantiate any Config class when loaded "
 "or instantiated."
 msgstr ""
+"모든 registrar 클래스(모든 네임스페이스의 **Config/Registrar.php**)는 "
+"로드되거나 인스턴스화될 때 어떤 설정 클래스도 인스턴스화하지 않도록 수정해야 합니다."
 
 #: ../../source/installation/upgrade_460.rst:118
 msgid ""
 "If the packages/modules you are using provide such registrar classes, the"
 " registrar classes in the packages/modules need to be fixed."
 msgstr ""
+"사용 중인 패키지/모듈에 이런 registrar 클래스가 포함된 경우 "
+"해당 패키지/모듈의 registrar 클래스를 수정해야 합니다."
 
 #: ../../source/installation/upgrade_460.rst:121
 msgid "The following is an example of code that will no longer work:"
-msgstr ""
+msgstr "다음은 더 이상 작동하지 않는 코드 예시입니다:"
 
 #: ../../source/installation/upgrade_460.rst:128
 msgid "Session ID (SID) Change"
-msgstr ""
+msgstr "세션 ID (SID) 변경"
 
 #: ../../source/installation/upgrade_460.rst:130
 msgid ""
@@ -187,24 +212,28 @@ msgid ""
 "character SIDs, with 4 bits of entropy per character. This change is to "
 "match the behavior of PHP 9."
 msgstr ""
+"이제 :doc:`../libraries/sessions`\ 는 PHP 기본값인 문자당 4비트 엔트로피를 가진 "
+"32자 SID를 강제로 사용합니다. 이 변경은 PHP 9의 동작에 맞추기 위한 것입니다."
 
 #: ../../source/installation/upgrade_460.rst:134
 msgid "In other words, the following settings are always used:"
-msgstr ""
+msgstr "즉, 다음 설정이 항상 사용됩니다:"
 
 #: ../../source/installation/upgrade_460.rst:141
 msgid ""
 "In previous versions, the PHP ini settings was respected. So this change "
 "may change your SID length."
 msgstr ""
+"이전 버전에서는 PHP ini 설정이 적용되었습니다. 따라서 이 변경으로 인해 "
+"SID 길이가 달라질 수 있습니다."
 
 #: ../../source/installation/upgrade_460.rst:144
 msgid "If you cannot accept this change, customize the Session library."
-msgstr ""
+msgstr "이 변경을 수용할 수 없다면 Session 라이브러리를 커스터마이즈하십시오."
 
 #: ../../source/installation/upgrade_460.rst:147
 msgid "Interface Changes"
-msgstr ""
+msgstr "인터페이스 변경사항"
 
 #: ../../source/installation/upgrade_460.rst:149
 msgid ""
@@ -212,10 +241,13 @@ msgid ""
 " update their APIs to reflect the changes. See :ref:`ChangeLog <v460"
 "-interface-changes>` for details."
 msgstr ""
+"일부 인터페이스가 변경되었습니다. 이를 구현하는 클래스는 변경 사항을 반영하도록 "
+"API를 업데이트해야 합니다. 자세한 내용은 :ref:`변경 로그 <v460-interface-changes>`\ 를 "
+"참조하십시오."
 
 #: ../../source/installation/upgrade_460.rst:154
 msgid "Method Signature Changes"
-msgstr ""
+msgstr "메서드 시그니처 변경사항"
 
 #: ../../source/installation/upgrade_460.rst:156
 msgid ""
@@ -223,10 +255,13 @@ msgid ""
 "should update their APIs to reflect the changes. See :ref:`ChangeLog "
 "<v460-method-signature-changes>` for details."
 msgstr ""
+"일부 메서드 시그니처가 변경되었습니다. 이를 확장하는 클래스는 변경 사항을 반영하도록 "
+"API를 업데이트해야 합니다. 자세한 내용은 :ref:`변경 로그 "
+"<v460-method-signature-changes>`\ 를 참조하십시오."
 
 #: ../../source/installation/upgrade_460.rst:161
 msgid "Removed Deprecated Items"
-msgstr ""
+msgstr "사용 중단 항목 제거"
 
 #: ../../source/installation/upgrade_460.rst:163
 msgid ""
@@ -234,36 +269,42 @@ msgid ""
 "items, or extending these classes, upgrade your code. See :ref:`ChangeLog"
 " <v460-removed-deprecated-items>` for details."
 msgstr ""
+"일부 사용 중단된 항목이 제거되었습니다. 이러한 항목을 아직 사용하거나 해당 클래스를 "
+"확장하고 있다면 코드를 업그레이드하십시오. 자세한 내용은 :ref:`변경 로그"
+" <v460-removed-deprecated-items>`\ 를 참조하십시오."
 
 #: ../../source/installation/upgrade_460.rst:169
 msgid "Breaking Enhancements"
-msgstr ""
+msgstr "호환성을 깨는 개선사항"
 
 #: ../../source/installation/upgrade_460.rst:174
 msgid "Filters Changes"
-msgstr ""
+msgstr "필터 변경사항"
 
 #: ../../source/installation/upgrade_460.rst:176
 msgid ""
 "The ``Filters`` class has been changed to allow multiple runs of the same"
 " filter with different arguments in before or after."
 msgstr ""
+"``Filters`` 클래스가 before 또는 after에서 동일한 필터를 다른 인수로 여러 번 "
+"실행할 수 있도록 변경되었습니다."
 
 #: ../../source/installation/upgrade_460.rst:179
 msgid ""
 "If you are extending ``Filters``, you will need to modify it to conform "
 "to the following changes:"
 msgstr ""
+"``Filters``\ 를 확장하고 있다면 다음 변경 사항에 맞게 수정해야 합니다:"
 
 #: ../../source/installation/upgrade_460.rst:182
 msgid ""
 "The structure of the array properties ``$filters`` and "
 "``$filtersClasses`` have been changed."
-msgstr ""
+msgstr "배열 속성 ``$filters``\ 와 ``$filtersClasses``\ 의 구조가 변경되었습니다."
 
 #: ../../source/installation/upgrade_460.rst:184
 msgid "The properties ``$arguments`` and ``$argumentsClass`` are no longer used."
-msgstr ""
+msgstr "속성 ``$arguments``\ 와 ``$argumentsClass``\ 는 더 이상 사용되지 않습니다."
 
 #: ../../source/installation/upgrade_460.rst:185
 msgid ""
@@ -271,10 +312,12 @@ msgid ""
 "instantiated multiple times. If a filter class is used both before and "
 "after, the same instance is used."
 msgstr ""
+"``Filters``\ 는 동일한 필터 클래스가 여러 번 인스턴스화되지 않도록 변경되었습니다. "
+"필터 클래스가 before와 after 모두에 사용되면 동일한 인스턴스가 사용됩니다."
 
 #: ../../source/installation/upgrade_460.rst:191
 msgid "Project Files"
-msgstr ""
+msgstr "프로젝트 파일"
 
 #: ../../source/installation/upgrade_460.rst:193
 msgid ""
@@ -282,6 +325,8 @@ msgid ""
 "received updates. Due to these files being outside of the **system** "
 "scope they will not be changed without your intervention."
 msgstr ""
+"**프로젝트 공간** (root, app, public, writable)의 일부 파일이 업데이트되었습니다. "
+"이 파일들은 **system** 범위 밖에 있으므로 직접 개입하지 않으면 변경되지 않습니다."
 
 #: ../../source/installation/upgrade_460.rst:196
 #, python-format
@@ -290,10 +335,12 @@ msgid ""
 "merging changes to the project space: `Explore on Packagist "
 "<https://packagist.org/explore/?query=codeigniter4%20updates>`_."
 msgstr ""
+"프로젝트 공간의 변경 사항 병합을 지원하는 서드파티 CodeIgniter 모듈이 있습니다: "
+"`Packagist에서 탐색 <https://packagist.org/explore/?query=codeigniter4%20updates>`_."
 
 #: ../../source/installation/upgrade_460.rst:200
 msgid "Content Changes"
-msgstr ""
+msgstr "콘텐츠 변경 사항"
 
 #: ../../source/installation/upgrade_460.rst:202
 msgid ""
@@ -301,39 +348,41 @@ msgid ""
 "or visual adjustments) and it is recommended that you merge the updated "
 "versions with your application:"
 msgstr ""
+"다음 파일들은 중요한 변경(사용 중단 또는 시각적 조정 포함)이 있었으므로 "
+"업데이트된 버전을 애플리케이션에 병합하는 것을 권장합니다:"
 
 #: ../../source/installation/upgrade_460.rst:206
 msgid "Config"
-msgstr ""
+msgstr "설정"
 
 #: ../../source/installation/upgrade_460.rst:208
 #: ../../source/installation/upgrade_460.rst:225
 msgid "app/Config/Feature.php"
-msgstr ""
+msgstr "app/Config/Feature.php"
 
 #: ../../source/installation/upgrade_460.rst:209
 msgid "``Config\\Feature::$autoRoutesImproved`` has been changed to ``true``."
-msgstr ""
+msgstr "``Config\\Feature::$autoRoutesImproved``\ 가 ``true``\ 로 변경되었습니다."
 
 #: ../../source/installation/upgrade_460.rst:210
 msgid "``Config\\Feature::$strictLocaleNegotiation`` has been added."
-msgstr ""
+msgstr "``Config\\Feature::$strictLocaleNegotiation``\ 이 추가되었습니다."
 
 #: ../../source/installation/upgrade_460.rst:211
 #: ../../source/installation/upgrade_460.rst:228
 msgid "app/Config/Routing.php"
-msgstr ""
+msgstr "app/Config/Routing.php"
 
 #: ../../source/installation/upgrade_460.rst:212
 msgid ""
 "``Config\\Routing::$translateUriToCamelCase`` has been changed to "
 "``true``."
-msgstr ""
+msgstr "``Config\\Routing::$translateUriToCamelCase``\ 가 ``true``\ 로 변경되었습니다."
 
 #: ../../source/installation/upgrade_460.rst:213
 #: ../../source/installation/upgrade_460.rst:227
 msgid "app/Config/Kint.php"
-msgstr ""
+msgstr "app/Config/Kint.php"
 
 #: ../../source/installation/upgrade_460.rst:214
 msgid ""
@@ -341,10 +390,13 @@ msgid ""
 "``AbstractRenderer::SORT_FULL``. Leaving this property in your code will "
 "cause a runtime error due to the undefined constant."
 msgstr ""
+"``Config\\Kint::$richSort``\ 가 제거되었습니다. v6의 Kint는 더 이상 "
+"``AbstractRenderer::SORT_FULL``\ 을 사용하지 않습니다. 이 속성을 코드에 남겨두면 "
+"정의되지 않은 상수로 인해 런타임 오류가 발생합니다."
 
 #: ../../source/installation/upgrade_460.rst:217
 msgid "All Changes"
-msgstr ""
+msgstr "모든 변경 사항"
 
 #: ../../source/installation/upgrade_460.rst:219
 msgid ""
@@ -352,44 +404,45 @@ msgid ""
 "changes; many will be simple comments or formatting that have no effect "
 "on the runtime:"
 msgstr ""
+"다음은 **프로젝트 공간**에서 변경된 모든 파일의 목록입니다. "
+"많은 파일이 런타임에 영향을 미치지 않는 단순한 주석이나 형식 변경일 수 있습니다:"
 
 #: ../../source/installation/upgrade_460.rst:222
 msgid "app/Config/Cache.php"
-msgstr ""
+msgstr "app/Config/Cache.php"
 
 #: ../../source/installation/upgrade_460.rst:223
 msgid "app/Config/Constants.php"
-msgstr ""
+msgstr "app/Config/Constants.php"
 
 #: ../../source/installation/upgrade_460.rst:224
 msgid "app/Config/Database.php"
-msgstr ""
+msgstr "app/Config/Database.php"
 
 #: ../../source/installation/upgrade_460.rst:226
 msgid "app/Config/Format.php"
-msgstr ""
+msgstr "app/Config/Format.php"
 
 #: ../../source/installation/upgrade_460.rst:229
 msgid "app/Config/Security.php"
-msgstr ""
+msgstr "app/Config/Security.php"
 
 #: ../../source/installation/upgrade_460.rst:230
 msgid "app/Views/errors/html/debug.css"
-msgstr ""
+msgstr "app/Views/errors/html/debug.css"
 
 #: ../../source/installation/upgrade_460.rst:231
 msgid "app/Views/errors/html/error_400.php"
-msgstr ""
+msgstr "app/Views/errors/html/error_400.php"
 
 #: ../../source/installation/upgrade_460.rst:232
 msgid "preload.php"
-msgstr ""
+msgstr "preload.php"
 
 #: ../../source/installation/upgrade_460.rst:233
 msgid "public/index.php"
-msgstr ""
+msgstr "public/index.php"
 
 #: ../../source/installation/upgrade_460.rst:234
 msgid "spark"
-msgstr ""
-
+msgstr "spark"

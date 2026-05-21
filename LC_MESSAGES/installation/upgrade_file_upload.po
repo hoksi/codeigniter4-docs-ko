@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,27 +21,31 @@ msgstr ""
 
 #: ../../source/installation/upgrade_file_upload.rst:2
 msgid "Upgrade Working with Uploaded Files"
-msgstr ""
+msgstr "업로드 파일 작업 업그레이드"
 
 #: ../../source/installation/upgrade_file_upload.rst:9
 msgid "Documentations"
-msgstr ""
+msgstr "문서"
 
 #: ../../source/installation/upgrade_file_upload.rst:10
 msgid ""
 "`File Uploading Class Documentation CodeIgniter 3.x "
 "<http://codeigniter.com/userguide3/libraries/file_uploading.html>`_"
 msgstr ""
+"`파일 업로드 클래스 문서 CodeIgniter 3.x "
+"<http://codeigniter.com/userguide3/libraries/file_uploading.html>`_"
 
 #: ../../source/installation/upgrade_file_upload.rst:11
 msgid ""
 ":doc:`Working with Uploaded Files Documentation CodeIgniter 4.x "
 "</libraries/uploaded_files>`"
 msgstr ""
+":doc:`업로드 파일 작업 문서 CodeIgniter 4.x "
+"</libraries/uploaded_files>`"
 
 #: ../../source/installation/upgrade_file_upload.rst:14
 msgid "What has been changed"
-msgstr ""
+msgstr "변경된 사항"
 
 #: ../../source/installation/upgrade_file_upload.rst:15
 msgid ""
@@ -50,10 +53,12 @@ msgid ""
 " if the file got uploaded without errors and moving / storing files is "
 "simpler."
 msgstr ""
+"파일 업로드 기능이 많이 변경되었습니다. 이제 파일이 오류 없이 업로드되었는지 확인할 수 있으며 "
+"파일 이동/저장이 더 간단해졌습니다."
 
 #: ../../source/installation/upgrade_file_upload.rst:18
 msgid "Upgrade Guide"
-msgstr ""
+msgstr "업그레이드 가이드"
 
 #: ../../source/installation/upgrade_file_upload.rst:19
 msgid ""
@@ -65,20 +70,23 @@ msgid ""
 "'user_name.jpg');``. This will store the file in "
 "**writable/uploads/head_img/user_name.jpg**."
 msgstr ""
+"CI4에서는 ``$file = $this->request->getFile('userfile')``\ 으로 업로드된 파일에 접근합니다. "
+"그런 다음 ``$file->isValid()``\ 로 파일이 성공적으로 업로드되었는지 유효성을 검사할 수 있습니다. "
+"파일을 저장하려면 ``$path = $this->request->getFile('userfile')->store('head_img/', 'user_name.jpg');``\ 을 "
+"사용할 수 있습니다. 이렇게 하면 파일이 **writable/uploads/head_img/user_name.jpg**\ 에 저장됩니다."
 
 #: ../../source/installation/upgrade_file_upload.rst:22
 msgid "You have to change your file uploading code to match the new methods."
-msgstr ""
+msgstr "새 메서드에 맞게 파일 업로드 코드를 변경해야 합니다."
 
 #: ../../source/installation/upgrade_file_upload.rst:25
 msgid "Code Example"
-msgstr ""
+msgstr "코드 예제"
 
 #: ../../source/installation/upgrade_file_upload.rst:28
 msgid "CodeIgniter Version 3.x"
-msgstr ""
+msgstr "CodeIgniter 버전 3.x"
 
 #: ../../source/installation/upgrade_file_upload.rst:33
 msgid "CodeIgniter Version 4.x"
-msgstr ""
-
+msgstr "CodeIgniter 버전 4.x"
