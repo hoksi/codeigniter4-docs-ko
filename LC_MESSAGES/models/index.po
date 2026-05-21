@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,19 +21,19 @@ msgstr ""
 
 #: ../../source/models/index.rst:8
 msgid "Using CodeIgniter's Model"
-msgstr ""
+msgstr "CodeIgniter 모델 사용"
 
 #: ../../source/models/index.rst:8
 msgid "Using Entity Classes"
-msgstr ""
+msgstr "엔티티 클래스 사용"
 
 #: ../../source/models/index.rst:3
 msgid "Modeling Data"
-msgstr ""
+msgstr "데이터 모델링"
 
 #: ../../source/models/index.rst:5
 msgid ""
 "CodeIgniter comes with rich tools for modeling and working with your "
 "database tables and records."
-msgstr ""
+msgstr "CodeIgniter는 데이터베이스 테이블과 레코드를 모델링하고 작업하기 위한 풍부한 도구를 제공합니다."
 
