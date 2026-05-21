@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../source/dbmgmt/migration.rst:3
 msgid "Database Migrations"
-msgstr ""
+msgstr "데이터베이스 마이그레이션"
 
 #: ../../source/dbmgmt/migration.rst:5
 msgid ""
@@ -33,6 +32,10 @@ msgid ""
 "changes need to be run against the production machines next time you "
 "deploy."
 msgstr ""
+"마이그레이션은 데이터베이스를 구조적이고 체계적인 방식으로 변경할 수 있는 편리한 방법입니다. "
+"SQL 조각을 직접 편집할 수도 있지만, 그럴 경우 다른 개발자들에게 해당 변경 사항을 "
+"실행해야 한다고 알려주어야 할 책임이 생깁니다. 또한 다음에 배포할 때 프로덕션 서버에 "
+"어떤 변경 사항을 적용해야 하는지도 추적해야 합니다."
 
 #: ../../source/dbmgmt/migration.rst:11
 msgid ""
@@ -42,50 +45,60 @@ msgid ""
 "most recent state. You can also use ``spark migrate --all`` to include "
 "migrations from all namespaces."
 msgstr ""
+"데이터베이스 테이블 **migrations**\ 는 이미 실행된 마이그레이션을 추적하므로, "
+"마이그레이션 파일을 준비한 다음 ``spark migrate`` 명령을 실행하여 데이터베이스를 "
+"최신 상태로 만들기만 하면 됩니다. 또한 ``spark migrate --all``\ 을 사용하여 "
+"모든 네임스페이스의 마이그레이션을 포함할 수 있습니다."
 
 #: ../../source/dbmgmt/migration.rst:23
 msgid "Migration File Names"
-msgstr ""
+msgstr "마이그레이션 파일 이름"
 
 #: ../../source/dbmgmt/migration.rst:25
 msgid ""
 "A migration file name is made up of a timestamp prefix, an underscore "
 "(``_``), and a descriptive name (classname)."
 msgstr ""
+"마이그레이션 파일 이름은 타임스탬프 접두사, 밑줄(``_``), 그리고 설명적인 이름(클래스명)으로 구성됩니다."
 
 #: ../../source/dbmgmt/migration.rst:28
 msgid "2024-09-08-013653_AddBlogTable.php"
-msgstr ""
+msgstr "2024-09-08-013653_AddBlogTable.php"
 
 #: ../../source/dbmgmt/migration.rst:30
 msgid ""
 "Each migration is numbered using the timestamp (**2024-09-08-013653**) "
 "when the migration was created, in **YYYY-MM-DD-HHIISS** format."
 msgstr ""
+"각 마이그레이션은 생성 시점의 타임스탬프(**2024-09-08-013653**)를 사용하여 번호가 매겨지며, "
+"**YYYY-MM-DD-HHIISS** 형식을 따릅니다."
 
 #: ../../source/dbmgmt/migration.rst:33
 msgid ""
 "The descriptive name (**AddBlogTable**) for the migration is a classname "
 "in PHP. So you must name a valid classname."
 msgstr ""
+"마이그레이션의 설명적 이름(**AddBlogTable**)은 PHP의 클래스명입니다. "
+"따라서 유효한 클래스명으로 지정해야 합니다."
 
 #: ../../source/dbmgmt/migration.rst:36
 msgid ""
 "The year, month, day, and time in a prefix can be separated from each "
 "other by dashes (``-``), underscores (``_``), or not at all. For example:"
 msgstr ""
+"접두사의 연, 월, 일, 시간은 대시(``-``), 밑줄(``_``)로 구분하거나 구분 없이 사용할 수 있습니다. 예:"
 
 #: ../../source/dbmgmt/migration.rst:39
 msgid "2012-10-31-100538_AlterBlogTrackViews.php"
-msgstr ""
+msgstr "2012-10-31-100538_AlterBlogTrackViews.php"
 
 #: ../../source/dbmgmt/migration.rst:40
 msgid "2012_10_31_100539_AlterBlogAddTranslations.php"
-msgstr ""
+msgstr "2012_10_31_100539_AlterBlogAddTranslations.php"
 
 #: ../../source/dbmgmt/migration.rst:41
 msgid "20121031100537_AddBlog.php"
-msgstr ""
+msgstr "20121031100537_AddBlog.php"
 
 #: ../../source/dbmgmt/migration.rst:43
 msgid ""
@@ -93,10 +106,12 @@ msgid ""
 "the method taken. This helps prevent numbering conflicts when working in "
 "a team environment."
 msgstr ""
+"각 마이그레이션은 사용하는 메서드에 따라 숫자 순서대로 앞으로 또는 뒤로 실행됩니다. "
+"이는 팀 환경에서 작업할 때 번호 충돌을 방지하는 데 도움이 됩니다."
 
 #: ../../source/dbmgmt/migration.rst:49
 msgid "Create a Migration"
-msgstr ""
+msgstr "마이그레이션 생성"
 
 #: ../../source/dbmgmt/migration.rst:51
 msgid ""
@@ -104,12 +119,16 @@ msgid ""
 "migrations go in the **app/Database/Migrations/** directory and have "
 "names such as **2022-01-31-013057_AddBlog.php**."
 msgstr ""
+"이것은 블로그가 있는 새 사이트의 첫 번째 마이그레이션입니다. "
+"모든 마이그레이션은 **app/Database/Migrations/** 디렉터리에 위치하며 "
+"**2022-01-31-013057_AddBlog.php**\ 와 같은 이름을 사용합니다."
 
 #: ../../source/dbmgmt/migration.rst:57
 msgid ""
 "The database connection and the database Forge class are both available "
 "to you through ``$this->db`` and ``$this->forge``, respectively."
 msgstr ""
+"데이터베이스 연결과 데이터베이스 Forge 클래스는 각각 ``$this->db``\ 와 ``$this->forge``\ 를 통해 사용할 수 있습니다."
 
 #: ../../source/dbmgmt/migration.rst:60
 msgid ""
@@ -117,16 +136,19 @@ msgid ""
 "migration file. See `make:migration`_ in :ref:`command-line-tools` for "
 "more details."
 msgstr ""
+"또는 커맨드라인 호출을 사용하여 마이그레이션 스켈레톤 파일을 생성할 수 있습니다. "
+"자세한 내용은 :ref:`command-line-tools`\ 의 `make:migration`_\ 을 참조하세요."
 
 #: ../../source/dbmgmt/migration.rst:63
 msgid ""
 "Since the migration class is a PHP class, the classname must be unique in"
 " every migration file."
 msgstr ""
+"마이그레이션 클래스는 PHP 클래스이므로, 클래스명은 모든 마이그레이션 파일에서 고유해야 합니다."
 
 #: ../../source/dbmgmt/migration.rst:66
 msgid "Foreign Keys"
-msgstr ""
+msgstr "외래 키"
 
 #: ../../source/dbmgmt/migration.rst:68
 msgid ""
@@ -136,10 +158,13 @@ msgid ""
 "``disableForeignKeyChecks()`` and ``enableForeignKeyChecks()`` methods on"
 " the database connection."
 msgstr ""
+"테이블에 외래 키가 포함되어 있으면 테이블이나 컬럼을 삭제하려 할 때 마이그레이션에서 "
+"문제가 발생할 수 있습니다. 마이그레이션 실행 중 외래 키 검사를 일시적으로 우회하려면 "
+"데이터베이스 연결에서 ``disableForeignKeyChecks()``\ 와 ``enableForeignKeyChecks()`` 메서드를 사용하세요."
 
 #: ../../source/dbmgmt/migration.rst:75
 msgid "Database Groups"
-msgstr ""
+msgstr "데이터베이스 그룹"
 
 #: ../../source/dbmgmt/migration.rst:77
 msgid ""
@@ -148,6 +173,9 @@ msgid ""
 "it will run against the ``$defaultGroup`` as specified in that same "
 "configuration file."
 msgstr ""
+"마이그레이션은 단일 데이터베이스 그룹에 대해서만 실행됩니다. "
+"**app/Config/Database.php**\ 에 여러 그룹이 정의된 경우, 기본적으로 동일한 "
+"설정 파일에 지정된 ``$defaultGroup``\ 에 대해 실행됩니다."
 
 #: ../../source/dbmgmt/migration.rst:81
 msgid ""
@@ -155,6 +183,9 @@ msgid ""
 " groups. Perhaps you have one database that is used for all general site "
 "information, while another database is used for mission critical data."
 msgstr ""
+"데이터베이스 그룹마다 다른 스키마가 필요한 경우도 있습니다. "
+"예를 들어 하나의 데이터베이스는 일반적인 사이트 정보에 사용되고, "
+"다른 데이터베이스는 중요한 데이터에 사용될 수 있습니다."
 
 #: ../../source/dbmgmt/migration.rst:85
 msgid ""
@@ -162,16 +193,19 @@ msgid ""
 "setting the ``$DBGroup`` property on your migration. This name must match"
 " the name of the database group exactly:"
 msgstr ""
+"마이그레이션에서 ``$DBGroup`` 속성을 설정하여 올바른 그룹에 대해서만 마이그레이션이 "
+"실행되도록 할 수 있습니다. 이 이름은 데이터베이스 그룹 이름과 정확히 일치해야 합니다:"
 
 #: ../../source/dbmgmt/migration.rst:91
 msgid ""
 "The **migrations** table that tracks which migrations have already been "
 "run will be always created in the default database group."
 msgstr ""
+"이미 실행된 마이그레이션을 추적하는 **migrations** 테이블은 항상 기본 데이터베이스 그룹에 생성됩니다."
 
 #: ../../source/dbmgmt/migration.rst:95
 msgid "Namespaces"
-msgstr ""
+msgstr "네임스페이스"
 
 #: ../../source/dbmgmt/migration.rst:97
 msgid ""
@@ -181,18 +215,25 @@ msgid ""
 " names. It will include all migrations it finds in "
 "**Database/Migrations**."
 msgstr ""
+"마이그레이션 라이브러리는 **app/Config/Autoload.php**\ 에 정의하거나 Composer와 같은 "
+"외부 소스에서 로드한 모든 네임스페이스를 ``$psr4`` 속성을 사용하여 디렉터리 이름을 "
+"매칭하는 방식으로 자동으로 스캔합니다. **Database/Migrations**\ 에서 찾은 "
+"모든 마이그레이션을 포함합니다."
 
 #: ../../source/dbmgmt/migration.rst:102
 msgid ""
 "Each namespace has its own version sequence, this will help you upgrade "
 "and downgrade each module (namespace) without affecting other namespaces."
 msgstr ""
+"각 네임스페이스는 자체 버전 순서를 가지며, 이를 통해 다른 네임스페이스에 영향을 주지 않고 "
+"각 모듈(네임스페이스)을 업그레이드 및 다운그레이드할 수 있습니다."
 
 #: ../../source/dbmgmt/migration.rst:104
 msgid ""
 "For example, assume that we have the following namespaces defined in our "
 "Autoload configuration file:"
 msgstr ""
+"예를 들어, Autoload 설정 파일에 다음과 같은 네임스페이스가 정의되어 있다고 가정합니다:"
 
 #: ../../source/dbmgmt/migration.rst:110
 msgid ""
@@ -201,10 +242,13 @@ msgid ""
 "**ROOTPATH/MyCompany/Database/Migrations**. This makes it simple to "
 "include migrations in your re-usable, modular code suites."
 msgstr ""
+"이는 **APPPATH/Database/Migrations**\ 와 **ROOTPATH/MyCompany/Database/Migrations** "
+"양쪽에 위치한 마이그레이션을 탐색합니다. 이를 통해 재사용 가능한 모듈식 코드 패키지에 "
+"마이그레이션을 간편하게 포함시킬 수 있습니다."
 
 #: ../../source/dbmgmt/migration.rst:118
 msgid "Command-Line Tools"
-msgstr ""
+msgstr "커맨드라인 도구"
 
 #: ../../source/dbmgmt/migration.rst:120
 msgid ""
@@ -214,18 +258,21 @@ msgid ""
 "The tools primarily provide access to the same methods that are available"
 " within the MigrationRunner class."
 msgstr ""
+"CodeIgniter는 커맨드라인에서 마이그레이션 작업을 돕기 위한 여러 :doc:`명령어 </cli/spark_commands>`\ 를 "
+"제공합니다. 이 도구들은 사용하고자 하는 분들에게 편의를 제공합니다. "
+"주로 MigrationRunner 클래스 내에서 사용 가능한 동일한 메서드에 대한 접근을 제공합니다."
 
 #: ../../source/dbmgmt/migration.rst:125
 msgid "migrate"
-msgstr ""
+msgstr "migrate"
 
 #: ../../source/dbmgmt/migration.rst:127
 msgid "Migrates a database group with all available migrations:"
-msgstr ""
+msgstr "사용 가능한 모든 마이그레이션으로 데이터베이스 그룹을 마이그레이션합니다:"
 
 #: ../../source/dbmgmt/migration.rst:133
 msgid "You can use ``migrate`` with the following options:"
-msgstr ""
+msgstr "``migrate``\ 는 다음 옵션과 함께 사용할 수 있습니다:"
 
 #: ../../source/dbmgmt/migration.rst:135 ../../source/dbmgmt/migration.rst:182
 msgid ""
@@ -233,28 +280,31 @@ msgid ""
 " specified database group will be run. If not specified, all migrations "
 "will be run."
 msgstr ""
+"``-g`` - 데이터베이스 그룹을 지정합니다. 지정된 경우 해당 데이터베이스 그룹의 마이그레이션만 실행됩니다. "
+"지정하지 않으면 모든 마이그레이션이 실행됩니다."
 
 #: ../../source/dbmgmt/migration.rst:136 ../../source/dbmgmt/migration.rst:183
 msgid "``-n`` - to choose namespace, otherwise ``App`` namespace will be used."
-msgstr ""
+msgstr "``-n`` - 네임스페이스를 선택합니다. 지정하지 않으면 ``App`` 네임스페이스가 사용됩니다."
 
 #: ../../source/dbmgmt/migration.rst:137
 msgid "``--all`` - to migrate all namespaces to the latest migration."
-msgstr ""
+msgstr "``--all`` - 모든 네임스페이스를 최신 마이그레이션으로 마이그레이션합니다."
 
 #: ../../source/dbmgmt/migration.rst:139
 msgid ""
 "This example will migrate ``Acme\\Blog`` namespace with any new "
 "migrations on the test database group:"
 msgstr ""
+"이 예제는 test 데이터베이스 그룹에서 ``Acme\\Blog`` 네임스페이스의 새 마이그레이션을 실행합니다:"
 
 #: ../../source/dbmgmt/migration.rst:141
 msgid "For Unix:"
-msgstr ""
+msgstr "Unix의 경우:"
 
 #: ../../source/dbmgmt/migration.rst:147
 msgid "For Windows:"
-msgstr ""
+msgstr "Windows의 경우:"
 
 #: ../../source/dbmgmt/migration.rst:153
 msgid ""
@@ -264,60 +314,66 @@ msgid ""
 " to minimize any potential conflicts between the main application and any"
 " modules."
 msgstr ""
+"``--all`` 옵션을 사용하면 아직 실행되지 않은 마이그레이션을 찾기 위해 모든 네임스페이스를 스캔합니다. "
+"이것들은 모두 수집된 후 생성 날짜별로 그룹으로 정렬됩니다. "
+"이는 메인 애플리케이션과 모든 모듈 간의 잠재적 충돌을 최소화하는 데 도움이 됩니다."
 
 #: ../../source/dbmgmt/migration.rst:158
 msgid "migrate:rollback"
-msgstr ""
+msgstr "migrate:rollback"
 
 #: ../../source/dbmgmt/migration.rst:160
 msgid "Rolls back all migrations to a blank slate, effectively migration 0:"
-msgstr ""
+msgstr "모든 마이그레이션을 초기 상태(마이그레이션 0)로 롤백합니다:"
 
 #: ../../source/dbmgmt/migration.rst:166
 msgid "You can use ``migrate:rollback`` with the following options:"
-msgstr ""
+msgstr "``migrate:rollback``\ 은 다음 옵션과 함께 사용할 수 있습니다:"
 
 #: ../../source/dbmgmt/migration.rst:168
 msgid "``-b`` - to choose a batch: natural numbers specify the batch."
-msgstr ""
+msgstr "``-b`` - 배치를 선택합니다: 자연수로 배치를 지정합니다."
 
 #: ../../source/dbmgmt/migration.rst:169 ../../source/dbmgmt/migration.rst:185
 msgid ""
 "``-f`` - to force a bypass confirmation question, it is only asked in a "
 "production environment."
 msgstr ""
+"``-f`` - 확인 질문을 강제로 건너뜁니다. 이 질문은 프로덕션 환경에서만 표시됩니다."
 
 #: ../../source/dbmgmt/migration.rst:172
 msgid "migrate:refresh"
-msgstr ""
+msgstr "migrate:refresh"
 
 #: ../../source/dbmgmt/migration.rst:174
 msgid ""
 "Refreshes the database state by first rolling back all migrations, and "
 "then migrating all:"
 msgstr ""
+"먼저 모든 마이그레이션을 롤백한 다음 전체 마이그레이션을 실행하여 데이터베이스 상태를 새로 고칩니다:"
 
 #: ../../source/dbmgmt/migration.rst:180
 msgid "You can use ``migrate:refresh`` with the following options:"
-msgstr ""
+msgstr "``migrate:refresh``\ 는 다음 옵션과 함께 사용할 수 있습니다:"
 
 #: ../../source/dbmgmt/migration.rst:184
 msgid "``--all`` - to refresh all namespaces."
-msgstr ""
+msgstr "``--all`` - 모든 네임스페이스를 새로 고칩니다."
 
 #: ../../source/dbmgmt/migration.rst:188
 msgid "migrate:status"
-msgstr ""
+msgstr "migrate:status"
 
 #: ../../source/dbmgmt/migration.rst:190
 msgid ""
 "Displays a list of all migrations and the date and time they ran, or '--'"
 " if they have not been run:"
 msgstr ""
+"모든 마이그레이션 목록과 실행 날짜 및 시간을 표시하거나, 실행되지 않은 경우 '--'를 표시합니다:"
 
 #: ../../source/dbmgmt/migration.rst:206
 msgid "You can use ``migrate:status`` with the following options:"
-msgstr ""
+msgstr "``migrate:status``\ 는 다음 옵션과 함께 사용할 수 있습니다:"
 
 #: ../../source/dbmgmt/migration.rst:208
 msgid ""
@@ -325,10 +381,12 @@ msgid ""
 " specified database group will be checked. If not specified, all "
 "migrations will be checked."
 msgstr ""
+"``-g`` - 데이터베이스 그룹을 지정합니다. 지정된 경우 해당 데이터베이스 그룹의 마이그레이션만 확인됩니다. "
+"지정하지 않으면 모든 마이그레이션이 확인됩니다."
 
 #: ../../source/dbmgmt/migration.rst:211
 msgid "make:migration"
-msgstr ""
+msgstr "make:migration"
 
 #: ../../source/dbmgmt/migration.rst:213
 msgid ""
@@ -336,161 +394,170 @@ msgid ""
 "automatically prepends the current timestamp. The class name it creates "
 "is the Pascal case version of the filename."
 msgstr ""
+"**app/Database/Migrations**\ 에 마이그레이션 스켈레톤 파일을 생성합니다. "
+"현재 타임스탬프를 자동으로 앞에 붙입니다. 생성되는 클래스명은 파일명의 파스칼 케이스 버전입니다."
 
 #: ../../source/dbmgmt/migration.rst:221
 msgid "You can use ``make:migration`` with the following options:"
-msgstr ""
+msgstr "``make:migration``\ 은 다음 옵션과 함께 사용할 수 있습니다:"
 
 #: ../../source/dbmgmt/migration.rst:223
 msgid "``--namespace`` - Set root namespace. Default: ``APP_NAMESPACE``."
-msgstr ""
+msgstr "``--namespace`` - 루트 네임스페이스를 설정합니다. 기본값: ``APP_NAMESPACE``."
 
 #: ../../source/dbmgmt/migration.rst:224
 msgid "``--suffix``    - Append the component title to the class name."
-msgstr ""
+msgstr "``--suffix``    - 클래스명에 컴포넌트 제목을 추가합니다."
 
 #: ../../source/dbmgmt/migration.rst:226
 msgid ""
 "The following options are also available to generate the migration file "
 "for database sessions:"
 msgstr ""
+"데이터베이스 세션을 위한 마이그레이션 파일을 생성하는 데 사용할 수 있는 추가 옵션도 있습니다:"
 
 #: ../../source/dbmgmt/migration.rst:229
 msgid "``--session``   - Generates the migration file for database sessions."
-msgstr ""
+msgstr "``--session``   - 데이터베이스 세션용 마이그레이션 파일을 생성합니다."
 
 #: ../../source/dbmgmt/migration.rst:230
 msgid ""
 "``--table``     - Table name to use for database sessions. Default: "
 "``ci_sessions``."
 msgstr ""
+"``--table``     - 데이터베이스 세션에 사용할 테이블 이름입니다. 기본값: ``ci_sessions``."
 
 #: ../../source/dbmgmt/migration.rst:231
 msgid ""
 "``--dbgroup``   - Database group to use for database sessions. Default: "
 "``default``."
 msgstr ""
+"``--dbgroup``   - 데이터베이스 세션에 사용할 데이터베이스 그룹입니다. 기본값: ``default``."
 
 #: ../../source/dbmgmt/migration.rst:235
 msgid "Migration Preferences"
-msgstr ""
+msgstr "마이그레이션 환경설정"
 
 #: ../../source/dbmgmt/migration.rst:237
 msgid ""
 "The following is a table of all the config options for migrations, "
 "available in **app/Config/Migrations.php**."
 msgstr ""
+"다음은 **app/Config/Migrations.php**\ 에서 사용할 수 있는 마이그레이션의 모든 설정 옵션 테이블입니다."
 
 #: ../../source/dbmgmt/migration.rst:240
 msgid "Preference"
-msgstr ""
+msgstr "설정 항목"
 
 #: ../../source/dbmgmt/migration.rst:240
 msgid "Default"
-msgstr ""
+msgstr "기본값"
 
 #: ../../source/dbmgmt/migration.rst:240
 msgid "Options"
-msgstr ""
+msgstr "옵션"
 
 #: ../../source/dbmgmt/migration.rst:240
 msgid "Description"
-msgstr ""
+msgstr "설명"
 
 #: ../../source/dbmgmt/migration.rst:242
 msgid "**enabled**"
-msgstr ""
+msgstr "**enabled**"
 
 #: ../../source/dbmgmt/migration.rst:242
 msgid "true"
-msgstr ""
+msgstr "true"
 
 #: ../../source/dbmgmt/migration.rst:242 ../../source/dbmgmt/migration.rst:247
 msgid "true / false"
-msgstr ""
+msgstr "true / false"
 
 #: ../../source/dbmgmt/migration.rst:242
 msgid "Enable or disable migrations."
-msgstr ""
+msgstr "마이그레이션을 활성화하거나 비활성화합니다."
 
 #: ../../source/dbmgmt/migration.rst:243
 msgid "**table**"
-msgstr ""
+msgstr "**table**"
 
 #: ../../source/dbmgmt/migration.rst:243
 msgid "migrations"
-msgstr ""
+msgstr "migrations"
 
 #: ../../source/dbmgmt/migration.rst:243
 msgid "None"
-msgstr ""
+msgstr "없음"
 
 #: ../../source/dbmgmt/migration.rst:243
 msgid ""
 "The table name for storing the schema version number. This table is "
 "always created in the default database group (``$defaultGroup``)."
 msgstr ""
+"스키마 버전 번호를 저장하는 테이블 이름입니다. 이 테이블은 항상 기본 데이터베이스 그룹(``$defaultGroup``)에 생성됩니다."
 
 #: ../../source/dbmgmt/migration.rst:246
 msgid "**timestampFormat**"
-msgstr ""
+msgstr "**timestampFormat**"
 
 #: ../../source/dbmgmt/migration.rst:246
 msgid "Y-m-d-His\\_"
-msgstr ""
+msgstr "Y-m-d-His\\_"
 
 #: ../../source/dbmgmt/migration.rst:246
 msgid "The format to use for timestamps when creating a migration."
-msgstr ""
+msgstr "마이그레이션 생성 시 타임스탬프에 사용할 형식입니다."
 
 #: ../../source/dbmgmt/migration.rst:247
 msgid "**lock**"
-msgstr ""
+msgstr "**lock**"
 
 #: ../../source/dbmgmt/migration.rst:247
 msgid "false"
-msgstr ""
+msgstr "false"
 
 #: ../../source/dbmgmt/migration.rst:247
 msgid ""
 "Enable distributed locking to prevent concurrent migrations in multi-"
 "process environments (e.g., Kubernetes)."
 msgstr ""
+"멀티 프로세스 환경(예: Kubernetes)에서 동시 마이그레이션을 방지하기 위한 분산 잠금을 활성화합니다."
 
 #: ../../source/dbmgmt/migration.rst:253
 msgid "Class Reference"
-msgstr ""
+msgstr "클래스 레퍼런스"
 
 #: ../../source/dbmgmt/migration.rst
 msgid "Returns"
-msgstr ""
+msgstr "반환값"
 
 #: ../../source/dbmgmt/migration.rst:261
 msgid "An array of migration files"
-msgstr ""
+msgstr "마이그레이션 파일 배열"
 
 #: ../../source/dbmgmt/migration.rst
 msgid "Return type"
-msgstr ""
+msgstr "반환 타입"
 
 #: ../../source/dbmgmt/migration.rst:264
 msgid ""
 "An array of migration filenames are returned that are found in the "
 "``path`` property."
 msgstr ""
+"``path`` 속성에서 찾은 마이그레이션 파일명 배열이 반환됩니다."
 
 #: ../../source/dbmgmt/migration.rst
 msgid "Parameters"
-msgstr ""
+msgstr "매개변수"
 
 #: ../../source/dbmgmt/migration.rst:268 ../../source/dbmgmt/migration.rst:278
 #: ../../source/dbmgmt/migration.rst:290
 msgid "database group name, if null default database group will be used."
-msgstr ""
+msgstr "데이터베이스 그룹 이름. null이면 기본 데이터베이스 그룹이 사용됩니다."
 
 #: ../../source/dbmgmt/migration.rst:269 ../../source/dbmgmt/migration.rst:291
 msgid "``true`` on success, ``false`` on failure"
-msgstr ""
+msgstr "성공 시 ``true``, 실패 시 ``false``"
 
 #: ../../source/dbmgmt/migration.rst:272
 msgid ""
@@ -498,6 +565,8 @@ msgid ""
 "which migrations have not yet been run, and runs them in order of their "
 "version (namespaces intermingled)."
 msgstr ""
+"네임스페이스(또는 모든 네임스페이스)에 대한 마이그레이션을 찾고, 아직 실행되지 않은 마이그레이션을 "
+"파악한 후, 버전 순서대로(네임스페이스가 혼합된 형태로) 실행합니다."
 
 #: ../../source/dbmgmt/migration.rst:277
 msgid ""
@@ -505,24 +574,27 @@ msgid ""
 " negative refers to the relative batch (e.g., -3 means \"three batches "
 "back\")"
 msgstr ""
+"다운그레이드할 이전 배치; 1 이상은 배치를 지정하고, 0은 전체 롤백, 음수는 상대적 배치를 의미합니다 "
+"(예: -3은 \"3 배치 이전\"을 의미)"
 
 #: ../../source/dbmgmt/migration.rst:279
 msgid "``true`` on success, ``false`` on failure or no migrations are found"
-msgstr ""
+msgstr "성공 시 ``true``, 실패 또는 마이그레이션을 찾을 수 없는 경우 ``false``"
 
 #: ../../source/dbmgmt/migration.rst:282
 msgid ""
 "Regress can be used to roll back changes to a previous state, batch by "
 "batch."
 msgstr ""
+"Regress는 변경 사항을 배치 단위로 이전 상태로 롤백하는 데 사용할 수 있습니다."
 
 #: ../../source/dbmgmt/migration.rst:288
 msgid "path to a valid migration file."
-msgstr ""
+msgstr "유효한 마이그레이션 파일의 경로."
 
 #: ../../source/dbmgmt/migration.rst:289
 msgid "namespace of the provided migration."
-msgstr ""
+msgstr "제공된 마이그레이션의 네임스페이스."
 
 #: ../../source/dbmgmt/migration.rst:294
 msgid ""
@@ -530,34 +602,36 @@ msgid ""
 "Method ``up()`` or ``down()`` is detected based on whether it has already"
 " been migrated."
 msgstr ""
+"순서나 배치에 관계없이 단일 파일을 강제로 마이그레이션합니다. "
+"``up()`` 또는 ``down()`` 메서드는 이미 마이그레이션되었는지 여부에 따라 자동으로 감지됩니다."
 
 #: ../../source/dbmgmt/migration.rst:296
 msgid ""
 "This method is recommended only for testing and could cause data "
 "consistency issues."
 msgstr ""
+"이 메서드는 테스트 용도로만 권장되며 데이터 일관성 문제를 일으킬 수 있습니다."
 
 #: ../../source/dbmgmt/migration.rst:300
 msgid "application namespace. ``null`` is all namespaces."
-msgstr ""
+msgstr "애플리케이션 네임스페이스. ``null``\ 이면 모든 네임스페이스를 대상으로 합니다."
 
 #: ../../source/dbmgmt/migration.rst:301 ../../source/dbmgmt/migration.rst:313
 msgid "The current MigrationRunner instance"
-msgstr ""
+msgstr "현재 MigrationRunner 인스턴스"
 
 #: ../../source/dbmgmt/migration.rst:304
 msgid "Sets the namespace the library should look for migration files:"
-msgstr ""
+msgstr "라이브러리가 마이그레이션 파일을 탐색할 네임스페이스를 설정합니다:"
 
 #: ../../source/dbmgmt/migration.rst:308
 msgid "If you set ``null``, it looks for migration files in all namespaces."
-msgstr ""
+msgstr "``null``\ 로 설정하면 모든 네임스페이스에서 마이그레이션 파일을 탐색합니다."
 
 #: ../../source/dbmgmt/migration.rst:312
 msgid "database group name."
-msgstr ""
+msgstr "데이터베이스 그룹 이름."
 
 #: ../../source/dbmgmt/migration.rst:316
 msgid "Sets the group the library should look for migration files:"
-msgstr ""
-
+msgstr "라이브러리가 마이그레이션 파일을 탐색할 그룹을 설정합니다:"

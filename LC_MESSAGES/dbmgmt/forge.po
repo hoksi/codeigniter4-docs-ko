@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,53 +21,56 @@ msgstr ""
 
 #: ../../source/dbmgmt/forge.rst:3
 msgid "Database Forge Class"
-msgstr ""
+msgstr "데이터베이스 Forge 클래스"
 
 #: ../../source/dbmgmt/forge.rst:5
 msgid ""
 "The Database Forge Class contains methods that help you manage your "
 "database."
-msgstr ""
+msgstr "데이터베이스 Forge 클래스는 데이터베이스를 관리하는 데 도움이 되는 메서드를 포함합니다."
 
 #: ../../source/dbmgmt/forge.rst:14
 msgid "Initializing the Forge Class"
-msgstr ""
+msgstr "Forge 클래스 초기화"
 
 #: ../../source/dbmgmt/forge.rst:16
 msgid ""
 "In order to initialize the Forge class, your database driver must already"
 " be running, since the Forge class relies on it."
 msgstr ""
+"Forge 클래스를 초기화하려면 데이터베이스 드라이버가 이미 실행 중이어야 합니다. Forge 클래스는 데이터베이스 드라이버에 "
+"의존하기 때문입니다."
 
 #: ../../source/dbmgmt/forge.rst:19
 msgid "Load the Forge Class as follows:"
-msgstr ""
+msgstr "Forge 클래스를 다음과 같이 로드합니다:"
 
 #: ../../source/dbmgmt/forge.rst:23
 msgid ""
 "You can also pass another database group name to the DB Forge loader, in "
 "case the database you want to manage isn't the default one:"
 msgstr ""
+"관리하려는 데이터베이스가 기본 데이터베이스가 아닌 경우, DB Forge 로더에 다른 데이터베이스 그룹 이름을 전달할 수도 있습니다:"
 
 #: ../../source/dbmgmt/forge.rst:28
 msgid ""
 "In the above example, we're passing the name of a different database "
 "group to connect to as the first parameter."
-msgstr ""
+msgstr "위 예제에서는 연결할 다른 데이터베이스 그룹의 이름을 첫 번째 매개변수로 전달합니다."
 
 #: ../../source/dbmgmt/forge.rst:33
 msgid "Creating and Dropping Databases"
-msgstr ""
+msgstr "데이터베이스 생성 및 삭제"
 
 #: ../../source/dbmgmt/forge.rst:36
 msgid "$forge->createDatabase('db_name')"
-msgstr ""
+msgstr "$forge->createDatabase('db_name')"
 
 #: ../../source/dbmgmt/forge.rst:38
 msgid ""
 "Permits you to create the database specified in the first parameter. "
 "Returns true/false based on success or failure:"
-msgstr ""
+msgstr "첫 번째 매개변수에 지정한 데이터베이스를 생성할 수 있습니다. 성공 또는 실패에 따라 true/false를 반환합니다:"
 
 #: ../../source/dbmgmt/forge.rst:43
 msgid ""
@@ -76,20 +78,22 @@ msgid ""
 " or will check if a database exists before creating it (depending on "
 "DBMS)."
 msgstr ""
+"선택적 두 번째 매개변수를 true로 설정하면 ``IF EXISTS`` 구문을 추가하거나 데이터베이스를 생성하기 전에 해당 "
+"데이터베이스가 존재하는지 확인합니다(DBMS에 따라 다름)."
 
 #: ../../source/dbmgmt/forge.rst:49
 msgid "$forge->dropDatabase('db_name')"
-msgstr ""
+msgstr "$forge->dropDatabase('db_name')"
 
 #: ../../source/dbmgmt/forge.rst:51
 msgid ""
 "Permits you to drop the database specified in the first parameter. "
 "Returns true/false based on success or failure:"
-msgstr ""
+msgstr "첫 번째 매개변수에 지정한 데이터베이스를 삭제할 수 있습니다. 성공 또는 실패에 따라 true/false를 반환합니다:"
 
 #: ../../source/dbmgmt/forge.rst:57
 msgid "Creating Databases in the Command Line"
-msgstr ""
+msgstr "커맨드 라인에서 데이터베이스 생성"
 
 #: ../../source/dbmgmt/forge.rst:59
 msgid ""
@@ -98,18 +102,21 @@ msgid ""
 " it is assumed that the database is not yet existing. Otherwise, "
 "CodeIgniter will complain that the database creation has failed."
 msgstr ""
+"CodeIgniter는 전용 ``db:create`` 명령을 사용하여 터미널에서 직접 데이터베이스를 생성하는 것을 지원합니다. 이 "
+"명령을 사용할 때는 데이터베이스가 아직 존재하지 않는 것으로 가정합니다. 그렇지 않으면 CodeIgniter는 데이터베이스 "
+"생성에 실패했다고 오류를 표시합니다."
 
 #: ../../source/dbmgmt/forge.rst:63
 msgid ""
 "To start, just type the command and the name of the database (e.g., "
 "``foo``):"
-msgstr ""
+msgstr "시작하려면 명령과 데이터베이스 이름(예: ``foo``)을 입력합니다:"
 
 #: ../../source/dbmgmt/forge.rst:69
 msgid ""
 "If everything went fine, you should expect the ``Database \"foo\" "
 "successfully created.`` message displayed."
-msgstr ""
+msgstr "모든 것이 정상적으로 진행되면 ``Database \"foo\" successfully created.`` 메시지가 표시됩니다."
 
 #: ../../source/dbmgmt/forge.rst:71
 msgid ""
@@ -119,10 +126,13 @@ msgid ""
 "``sqlite`` and defaults to ``db``. Remember that these should not be "
 "preceded by a period. :"
 msgstr ""
+"테스트 환경에 있거나 SQLite3 드라이버를 사용하는 경우, ``--ext`` 옵션을 사용하여 데이터베이스가 생성될 파일의 확장자를 "
+"전달할 수 있습니다. 유효한 값은 ``db``\ 와 ``sqlite``\ 이며, 기본값은 ``db``\ 입니다. 이 값들 앞에 "
+"마침표를 붙이지 않아야 합니다. :"
 
 #: ../../source/dbmgmt/forge.rst:80
 msgid "The above command will create the db file in **WRITEPATH/foo.sqlite**."
-msgstr ""
+msgstr "위 명령은 **WRITEPATH/foo.sqlite**\ 에 db 파일을 생성합니다."
 
 #: ../../source/dbmgmt/forge.rst:82
 msgid ""
@@ -130,10 +140,12 @@ msgid ""
 "the command will still produce a success message but no database file is "
 "created. This is because SQLite3 will just use an in-memory database."
 msgstr ""
+"특수한 SQLite3 데이터베이스 이름 ``:memory:``\ 를 사용하면 명령이 성공 메시지를 출력하지만 데이터베이스 파일은 "
+"생성되지 않습니다. 이는 SQLite3가 인메모리 데이터베이스를 사용하기 때문입니다."
 
 #: ../../source/dbmgmt/forge.rst:88
 msgid "Creating Tables"
-msgstr ""
+msgstr "테이블 생성"
 
 #: ../../source/dbmgmt/forge.rst:90
 msgid ""
@@ -141,14 +153,16 @@ msgid ""
 "fields, add keys to the table, alter columns. CodeIgniter provides a "
 "mechanism for this."
 msgstr ""
+"테이블을 생성할 때 수행하고 싶은 작업이 여러 가지 있을 수 있습니다. 필드 추가, 테이블에 키 추가, 컬럼 변경 등이 그 예입니다. "
+"CodeIgniter는 이를 위한 메커니즘을 제공합니다."
 
 #: ../../source/dbmgmt/forge.rst:97
 msgid "Adding Fields"
-msgstr ""
+msgstr "필드 추가"
 
 #: ../../source/dbmgmt/forge.rst:100
 msgid "$forge->addField()"
-msgstr ""
+msgstr "$forge->addField()"
 
 #: ../../source/dbmgmt/forge.rst:102
 msgid ""
@@ -156,32 +170,38 @@ msgid ""
 "you must include a ``type`` key that relates to the datatype of the "
 "field."
 msgstr ""
+"필드는 일반적으로 연관 배열을 통해 생성됩니다. 배열 내에는 필드의 데이터 타입에 해당하는 ``type`` 키를 반드시 포함해야 "
+"합니다."
 
 #: ../../source/dbmgmt/forge.rst:105
 msgid ""
 "For example, ``INT``, ``VARCHAR``, ``TEXT``, etc. Many datatypes (for "
 "example ``VARCHAR``) also require a ``constraint`` key."
 msgstr ""
+"예를 들어 ``INT``, ``VARCHAR``, ``TEXT`` 등이 있습니다. 많은 데이터 타입(예: ``VARCHAR``)은 "
+"``constraint`` 키도 필요합니다."
 
 #: ../../source/dbmgmt/forge.rst:110
 msgid "Additionally, the following key/values can be used:"
-msgstr ""
+msgstr "추가로 다음과 같은 키/값을 사용할 수 있습니다:"
 
 #: ../../source/dbmgmt/forge.rst:112
 msgid "``unsigned``/true : to generate ``UNSIGNED`` in the field definition."
-msgstr ""
+msgstr "``unsigned``/true : 필드 정의에 ``UNSIGNED``\ 를 생성합니다."
 
 #: ../../source/dbmgmt/forge.rst:113
 msgid ""
 "``default``/value : to generate ``DEFAULT`` constraint in the field "
 "definition."
-msgstr ""
+msgstr "``default``/값 : 필드 정의에 ``DEFAULT`` 제약 조건을 생성합니다."
 
 #: ../../source/dbmgmt/forge.rst:114
 msgid ""
 "``null``/true : to generate ``NULL`` in the field definition. Without "
 "this, the field will default to ``NOT NULL``."
 msgstr ""
+"``null``/true : 필드 정의에 ``NULL``\ 을 생성합니다. 이를 지정하지 않으면 필드의 기본값은 ``NOT "
+"NULL``\ 이 됩니다."
 
 #: ../../source/dbmgmt/forge.rst:116
 msgid ""
@@ -189,10 +209,12 @@ msgid ""
 "Note that the field type must be a type that supports this, such as "
 "``INTEGER``."
 msgstr ""
+"``auto_increment``/true : 필드에 auto_increment 플래그를 생성합니다. 필드 타입이 ``INTEGER``\ 와 "
+"같이 이를 지원하는 타입이어야 합니다."
 
 #: ../../source/dbmgmt/forge.rst:119
 msgid "``unique``/true : to generate a unique key for the field definition."
-msgstr ""
+msgstr "``unique``/true : 필드 정의에 유니크 키를 생성합니다."
 
 #: ../../source/dbmgmt/forge.rst:123
 msgid ""
@@ -200,14 +222,16 @@ msgid ""
 "``$forge->addField($fields)`` followed by a call to the "
 ":ref:`createTable() <creating-a-table>`  method."
 msgstr ""
+"필드를 정의한 후, ``$forge->addField($fields)``\ 를 사용하여 필드를 추가하고 "
+":ref:`createTable() <creating-a-table>` 메서드를 호출합니다."
 
 #: ../../source/dbmgmt/forge.rst:128
 msgid "Notes on Data Types"
-msgstr ""
+msgstr "데이터 타입에 대한 참고 사항"
 
 #: ../../source/dbmgmt/forge.rst:131
 msgid "Floating-Point Types"
-msgstr ""
+msgstr "부동 소수점 타입"
 
 #: ../../source/dbmgmt/forge.rst:133
 msgid ""
@@ -215,16 +239,20 @@ msgid ""
 "approximate values. Therefore, they should not be used when exact values "
 "are needed."
 msgstr ""
+"``FLOAT``\ 과 ``DOUBLE``\ 과 같은 부동 소수점 타입은 근사값을 나타냅니다. 따라서 정확한 값이 필요한 경우에는 "
+"사용하지 않아야 합니다."
 
 #: ../../source/dbmgmt/forge.rst:152
 msgid ""
 "When it is important to preserve exact precision, for example with "
 "monetary data, ``DECIMAL`` or ``NUMERIC`` should be used."
 msgstr ""
+"통화 데이터와 같이 정확한 정밀도를 유지하는 것이 중요한 경우에는 ``DECIMAL`` 또는 ``NUMERIC``\ 을 사용해야 "
+"합니다."
 
 #: ../../source/dbmgmt/forge.rst:156
 msgid "TEXT"
-msgstr ""
+msgstr "TEXT"
 
 #: ../../source/dbmgmt/forge.rst:158
 msgid ""
@@ -233,24 +261,30 @@ msgid ""
 "<https://learn.microsoft.com/en-us/sql/t-sql/data-types/ntext-text-and-"
 "image-transact-sql?view=sql-server-ver16>`_."
 msgstr ""
+"``TEXT``\ 는 SQLSRV에서 사용하지 않아야 합니다. 이는 더 이상 사용되지 않습니다. `ntext, text, and "
+"image (Transact-SQL) - SQL Server | Microsoft Learn "
+"<https://learn.microsoft.com/en-us/sql/t-sql/data-types/ntext-text-and-"
+"image-transact-sql?view=sql-server-ver16>`_\ 을 참조하세요."
 
 #: ../../source/dbmgmt/forge.rst:162
 msgid "ENUM"
-msgstr ""
+msgstr "ENUM"
 
 #: ../../source/dbmgmt/forge.rst:164
 msgid "Not all databases support ``ENUM``."
-msgstr ""
+msgstr "모든 데이터베이스가 ``ENUM``\ 을 지원하는 것은 아닙니다."
 
 #: ../../source/dbmgmt/forge.rst:166
 msgid ""
 "Starting with v4.5.0, ``SQLSRV`` Forge converts ``ENUM`` data types to "
 "``VARCHAR(n)``. Previous versions converted to ``TEXT``."
 msgstr ""
+"v4.5.0부터 ``SQLSRV`` Forge는 ``ENUM`` 데이터 타입을 ``VARCHAR(n)``\ 으로 변환합니다. 이전 "
+"버전에서는 ``TEXT``\ 로 변환되었습니다."
 
 #: ../../source/dbmgmt/forge.rst:172
 msgid "Raw Sql Strings as Default Values"
-msgstr ""
+msgstr "기본값으로 Raw SQL 문자열 사용"
 
 #: ../../source/dbmgmt/forge.rst:176
 msgid ""
@@ -258,36 +292,40 @@ msgid ""
 "``CodeIgniter\\Database\\RawSql`` instance, which expresses raw SQL "
 "strings."
 msgstr ""
+"v4.2.0부터 ``$forge->addField()``\ 는 raw SQL 문자열을 표현하는 "
+"``CodeIgniter\\Database\\RawSql`` 인스턴스를 허용합니다."
 
 #: ../../source/dbmgmt/forge.rst:180
 msgid ""
 "When you use ``RawSql``, you MUST escape the data manually. Failure to do"
 " so could result in SQL injections."
 msgstr ""
+"``RawSql``\ 을 사용할 때는 데이터를 수동으로 이스케이프해야 합니다. 그렇지 않으면 SQL 인젝션이 발생할 수 있습니다."
 
 #: ../../source/dbmgmt/forge.rst:183
 msgid "Passing Strings as Fields"
-msgstr ""
+msgstr "문자열을 필드로 전달"
 
 #: ../../source/dbmgmt/forge.rst:185
 msgid ""
 "If you know exactly how you want a field to be created, you can pass the "
 "string into the field definitions with ``addField()``:"
 msgstr ""
+"필드를 어떻게 생성할지 정확히 알고 있다면, ``addField()``\ 를 사용하여 문자열을 필드 정의에 전달할 수 있습니다:"
 
 #: ../../source/dbmgmt/forge.rst:190
 msgid ""
 "Passing raw strings as fields cannot be followed by ``addKey()`` calls on"
 " those fields."
-msgstr ""
+msgstr "raw 문자열을 필드로 전달한 경우, 해당 필드에 대해 ``addKey()`` 호출을 이어서 사용할 수 없습니다."
 
 #: ../../source/dbmgmt/forge.rst:192
 msgid "Multiple calls to ``addField()`` are cumulative."
-msgstr ""
+msgstr "``addField()``\ 를 여러 번 호출하면 누적됩니다."
 
 #: ../../source/dbmgmt/forge.rst:195
 msgid "Creating an id Field"
-msgstr ""
+msgstr "id 필드 생성"
 
 #: ../../source/dbmgmt/forge.rst:197
 msgid ""
@@ -295,14 +333,15 @@ msgid ""
 " will automatically be assigned as an INT(9) auto_incrementing Primary "
 "Key."
 msgstr ""
+"id 필드 생성에는 특별한 예외가 있습니다. 타입이 id인 필드는 자동으로 INT(9) auto_increment 기본 키로 지정됩니다."
 
 #: ../../source/dbmgmt/forge.rst:206
 msgid "Adding Keys"
-msgstr ""
+msgstr "키 추가"
 
 #: ../../source/dbmgmt/forge.rst:209
 msgid "$forge->addKey()"
-msgstr ""
+msgstr "$forge->addKey()"
 
 #: ../../source/dbmgmt/forge.rst:211
 msgid ""
@@ -313,36 +352,40 @@ msgid ""
 "fourth parameter. Note that ``addKey()`` must be followed by a call to "
 "``createTable()`` or ``processIndexes()`` when the table already exists."
 msgstr ""
+"일반적으로 테이블에 키를 추가하고 싶을 것입니다. 이는 ``$forge->addKey('field')``\ 로 수행합니다. 선택적 두 "
+"번째 매개변수를 true로 설정하면 기본 키가 되고, 세 번째 매개변수를 true로 설정하면 유니크 키가 됩니다. 네 번째 "
+"매개변수로 이름을 지정할 수 있습니다. 테이블이 이미 존재하는 경우 ``addKey()`` 이후에 반드시 ``createTable()`` "
+"또는 ``processIndexes()``\ 를 호출해야 합니다."
 
 #: ../../source/dbmgmt/forge.rst:219
 msgid ""
 "Multiple column non-primary keys must be sent as an array. Sample output "
 "below is for MySQL."
-msgstr ""
+msgstr "여러 컬럼의 비기본 키는 배열로 전달해야 합니다. 아래 샘플 출력은 MySQL에 대한 것입니다."
 
 #: ../../source/dbmgmt/forge.rst:225
 msgid "$forge->addPrimaryKey()"
-msgstr ""
+msgstr "$forge->addPrimaryKey()"
 
 #: ../../source/dbmgmt/forge.rst:228
 msgid "$forge->addUniqueKey()"
-msgstr ""
+msgstr "$forge->addUniqueKey()"
 
 #: ../../source/dbmgmt/forge.rst:230
 msgid ""
 "To make code reading more objective it is also possible to add primary "
 "and unique keys with specific methods:"
-msgstr ""
+msgstr "코드를 더 명확하게 읽을 수 있도록 특정 메서드를 사용하여 기본 키와 유니크 키를 추가할 수도 있습니다:"
 
 #: ../../source/dbmgmt/forge.rst:235
 msgid ""
 "When you add a primary key, MySQL and SQLite will assume the name "
 "``PRIMARY`` even if a name is provided."
-msgstr ""
+msgstr "기본 키를 추가할 때, MySQL과 SQLite는 이름을 제공하더라도 ``PRIMARY``\ 로 이름을 사용합니다."
 
 #: ../../source/dbmgmt/forge.rst:240
 msgid "Adding Foreign Keys"
-msgstr ""
+msgstr "외래 키 추가"
 
 #: ../../source/dbmgmt/forge.rst:242
 msgid ""
@@ -350,36 +393,40 @@ msgid ""
 "tables. For tables that support Foreign Keys, you may add them directly "
 "in forge:"
 msgstr ""
+"외래 키는 테이블 간의 관계와 동작을 강제하는 데 도움이 됩니다. 외래 키를 지원하는 테이블의 경우 forge에서 직접 추가할 수 "
+"있습니다:"
 
 #: ../../source/dbmgmt/forge.rst:247
 msgid ""
 "You can specify the desired action for the \"on update\" and \"on "
 "delete\" properties of the constraint as well as the name:"
-msgstr ""
+msgstr "제약 조건의 \"on update\" 및 \"on delete\" 속성에 대해 원하는 동작과 이름을 지정할 수 있습니다:"
 
 #: ../../source/dbmgmt/forge.rst:251
 msgid ""
 "SQLite3 does not support the naming of foreign keys. CodeIgniter will "
 "refer to them by ``prefix_table_column_foreign``."
 msgstr ""
+"SQLite3는 외래 키 이름 지정을 지원하지 않습니다. CodeIgniter는 ``prefix_table_column_foreign``\ 으로 "
+"외래 키를 참조합니다."
 
 #: ../../source/dbmgmt/forge.rst:256
 msgid "Creating a Table"
-msgstr ""
+msgstr "테이블 생성하기"
 
 #: ../../source/dbmgmt/forge.rst:258
 msgid "After fields and keys have been declared, you can create a new table with"
-msgstr ""
+msgstr "필드와 키를 선언한 후, 다음을 사용하여 새 테이블을 생성할 수 있습니다"
 
 #: ../../source/dbmgmt/forge.rst:263
 msgid ""
 "An optional second parameter set to true will create the table only if it"
 " doesn't already exist."
-msgstr ""
+msgstr "선택적 두 번째 매개변수를 true로 설정하면 테이블이 존재하지 않는 경우에만 테이블을 생성합니다."
 
 #: ../../source/dbmgmt/forge.rst:267
 msgid "You could also pass optional table attributes, such as MySQL's ``ENGINE``:"
-msgstr ""
+msgstr "MySQL의 ``ENGINE``\ 과 같은 선택적 테이블 속성을 전달할 수도 있습니다:"
 
 #: ../../source/dbmgmt/forge.rst:271
 msgid ""
@@ -387,20 +434,22 @@ msgid ""
 "``createTable()`` will always add them with your configured *charset* and"
 " *DBCollat* values, as long as they are not empty (MySQL only)."
 msgstr ""
+"``CHARACTER SET`` 및/또는 ``COLLATE`` 속성을 지정하지 않으면, 설정된 *charset*\ 과 *DBCollat* "
+"값이 비어 있지 않는 한 ``createTable()``\ 은 항상 해당 값을 추가합니다(MySQL 전용)."
 
 #: ../../source/dbmgmt/forge.rst:277
 msgid "Dropping Tables"
-msgstr ""
+msgstr "테이블 삭제"
 
 #: ../../source/dbmgmt/forge.rst:280
 msgid "Dropping a Table"
-msgstr ""
+msgstr "테이블 삭제하기"
 
 #: ../../source/dbmgmt/forge.rst:282
 msgid ""
 "Execute a ``DROP TABLE`` statement and optionally add an ``IF EXISTS`` "
 "clause."
-msgstr ""
+msgstr "``DROP TABLE`` 구문을 실행하고 선택적으로 ``IF EXISTS`` 절을 추가합니다."
 
 #: ../../source/dbmgmt/forge.rst:286
 msgid ""
@@ -408,18 +457,20 @@ msgid ""
 "be required for some drivers to handle removal of tables with foreign "
 "keys."
 msgstr ""
+"세 번째 매개변수를 전달하여 ``CASCADE`` 옵션을 추가할 수 있습니다. 이는 일부 드라이버에서 외래 키가 있는 테이블 삭제를 "
+"처리하는 데 필요할 수 있습니다."
 
 #: ../../source/dbmgmt/forge.rst:293
 msgid "Modifying Tables"
-msgstr ""
+msgstr "테이블 수정"
 
 #: ../../source/dbmgmt/forge.rst:296
 msgid "Adding a Field to a Table"
-msgstr ""
+msgstr "테이블에 필드 추가"
 
 #: ../../source/dbmgmt/forge.rst:299
 msgid "$forge->addColumn()"
-msgstr ""
+msgstr "$forge->addColumn()"
 
 #: ../../source/dbmgmt/forge.rst:301
 msgid ""
@@ -427,46 +478,50 @@ msgid ""
 "accepts the same field array as :ref:`Creating Tables <adding-fields>`, "
 "and can be used to add additional fields."
 msgstr ""
+"``addColumn()`` 메서드는 기존 테이블을 수정하는 데 사용됩니다. :ref:`테이블 생성 <adding-fields>`\ 과 "
+"동일한 필드 배열을 허용하며, 추가 필드를 추가하는 데 사용할 수 있습니다."
 
 #: ../../source/dbmgmt/forge.rst:305
 msgid ""
 "Unlike when creating a table, if ``null`` is not specified, the column "
 "will be ``NULL``, not ``NOT NULL``."
 msgstr ""
+"테이블을 생성할 때와 달리, ``null``\ 을 지정하지 않으면 컬럼은 ``NOT NULL``\ 이 아닌 ``NULL``\ 이 됩니다."
 
 #: ../../source/dbmgmt/forge.rst:310
 msgid ""
 "If you are using MySQL or CUBIRD, then you can take advantage of their "
 "``AFTER`` and ``FIRST`` clauses to position the new column."
 msgstr ""
+"MySQL 또는 CUBRID를 사용하는 경우 ``AFTER`` 및 ``FIRST`` 절을 활용하여 새 컬럼의 위치를 지정할 수 있습니다."
 
 #: ../../source/dbmgmt/forge.rst:313
 msgid "Examples:"
-msgstr ""
+msgstr "예:"
 
 #: ../../source/dbmgmt/forge.rst:318
 msgid "Dropping Fields From a Table"
-msgstr ""
+msgstr "테이블에서 필드 삭제"
 
 #: ../../source/dbmgmt/forge.rst:323
 msgid "$forge->dropColumn()"
-msgstr ""
+msgstr "$forge->dropColumn()"
 
 #: ../../source/dbmgmt/forge.rst:325
 msgid "Used to remove a column from a table."
-msgstr ""
+msgstr "테이블에서 컬럼을 제거하는 데 사용됩니다."
 
 #: ../../source/dbmgmt/forge.rst:329
 msgid "Used to remove multiple columns from a table."
-msgstr ""
+msgstr "테이블에서 여러 컬럼을 제거하는 데 사용됩니다."
 
 #: ../../source/dbmgmt/forge.rst:334
 msgid "Modifying a Field in a Table"
-msgstr ""
+msgstr "테이블의 필드 수정"
 
 #: ../../source/dbmgmt/forge.rst:339
 msgid "$forge->modifyColumn()"
-msgstr ""
+msgstr "$forge->modifyColumn()"
 
 #: ../../source/dbmgmt/forge.rst:341
 msgid ""
@@ -475,6 +530,8 @@ msgid ""
 "change the name, you can add a \"name\" key into the field defining "
 "array."
 msgstr ""
+"이 메서드의 사용법은 ``addColumn()``\ 과 동일하지만, 새 컬럼을 추가하는 대신 기존 컬럼을 변경합니다. 이름을 "
+"변경하려면 필드 정의 배열에 \"name\" 키를 추가할 수 있습니다."
 
 #: ../../source/dbmgmt/forge.rst:347
 msgid ""
@@ -483,22 +540,29 @@ msgid ""
 "when creating a table, if ``null`` is not specified, the column will be "
 "``NULL``, not ``NOT NULL``."
 msgstr ""
+"``modifyColumn()``\ 은 ``NULL``/``NOT NULL``\ 을 예상치 못하게 변경할 수 있습니다. 따라서 항상 "
+"``null`` 키의 값을 명시적으로 지정하는 것이 좋습니다. 테이블을 생성할 때와 달리, ``null``\ 을 지정하지 않으면 컬럼은 "
+"``NOT NULL``\ 이 아닌 ``NULL``\ 이 됩니다."
 
 #: ../../source/dbmgmt/forge.rst:352
 msgid ""
 "Due to a bug, prior v4.3.4, SQLite3 may not set ``NOT NULL`` even if you "
 "specify ``'null' => false``."
 msgstr ""
+"버그로 인해 v4.3.4 이전 버전에서 SQLite3는 ``'null' => false``\ 를 지정해도 ``NOT NULL``\ 을 "
+"설정하지 않을 수 있습니다."
 
 #: ../../source/dbmgmt/forge.rst:355
 msgid ""
 "Due to a bug, prior v4.3.4, Postgres and SQLSRV set ``NOT NULL`` even if "
 "you specify ``'null' => true``."
 msgstr ""
+"버그로 인해 v4.3.4 이전 버전에서 Postgres와 SQLSRV는 ``'null' => true``\ 를 지정해도 ``NOT "
+"NULL``\ 을 설정합니다."
 
 #: ../../source/dbmgmt/forge.rst:361
 msgid "Adding Keys to a Table"
-msgstr ""
+msgstr "테이블에 키 추가"
 
 #: ../../source/dbmgmt/forge.rst:365
 msgid ""
@@ -506,58 +570,60 @@ msgid ""
 "``addPrimaryKey()``, ``addUniqueKey()`` or ``addForeignKey()`` and "
 "``processIndexes()``:"
 msgstr ""
+"``addKey()``, ``addPrimaryKey()``, ``addUniqueKey()`` 또는 ``addForeignKey()``\ 와 "
+"``processIndexes()``\ 를 사용하여 기존 테이블에 키를 추가할 수 있습니다:"
 
 #: ../../source/dbmgmt/forge.rst:373
 msgid "Dropping a Primary Key"
-msgstr ""
+msgstr "기본 키 삭제"
 
 #: ../../source/dbmgmt/forge.rst:377
 msgid "Execute a DROP PRIMARY KEY."
-msgstr ""
+msgstr "DROP PRIMARY KEY를 실행합니다."
 
 #: ../../source/dbmgmt/forge.rst:382
 msgid "Dropping a Key"
-msgstr ""
+msgstr "키 삭제"
 
 #: ../../source/dbmgmt/forge.rst:384
 msgid "Execute a DROP KEY."
-msgstr ""
+msgstr "DROP KEY를 실행합니다."
 
 #: ../../source/dbmgmt/forge.rst:389
 msgid "Dropping a Foreign Key"
-msgstr ""
+msgstr "외래 키 삭제"
 
 #: ../../source/dbmgmt/forge.rst:391
 msgid "Execute a DROP FOREIGN KEY."
-msgstr ""
+msgstr "DROP FOREIGN KEY를 실행합니다."
 
 #: ../../source/dbmgmt/forge.rst:396
 msgid "Renaming a Table"
-msgstr ""
+msgstr "테이블 이름 변경"
 
 #: ../../source/dbmgmt/forge.rst:398
 msgid "Executes a TABLE rename"
-msgstr ""
+msgstr "TABLE 이름 변경을 실행합니다"
 
 #: ../../source/dbmgmt/forge.rst:404
 msgid "Class Reference"
-msgstr ""
+msgstr "클래스 레퍼런스"
 
 #: ../../source/dbmgmt/forge.rst
 msgid "Parameters"
-msgstr ""
+msgstr "매개변수"
 
 #: ../../source/dbmgmt/forge.rst:412
 msgid "Table name to add the column to"
-msgstr ""
+msgstr "컬럼을 추가할 테이블 이름"
 
 #: ../../source/dbmgmt/forge.rst:413 ../../source/dbmgmt/forge.rst:560
 msgid "Column definition(s)"
-msgstr ""
+msgstr "컬럼 정의"
 
 #: ../../source/dbmgmt/forge.rst
 msgid "Returns"
-msgstr ""
+msgstr "반환값"
 
 #: ../../source/dbmgmt/forge.rst:414 ../../source/dbmgmt/forge.rst:481
 #: ../../source/dbmgmt/forge.rst:500 ../../source/dbmgmt/forge.rst:508
@@ -565,212 +631,212 @@ msgstr ""
 #: ../../source/dbmgmt/forge.rst:540 ../../source/dbmgmt/forge.rst:550
 #: ../../source/dbmgmt/forge.rst:561
 msgid "true on success, false on failure"
-msgstr ""
+msgstr "성공 시 true, 실패 시 false"
 
 #: ../../source/dbmgmt/forge.rst
 msgid "Return type"
-msgstr ""
+msgstr "반환 타입"
 
 #: ../../source/dbmgmt/forge.rst:417
 msgid ""
 "Adds a column to an existing table. Usage: See `Adding a Field to a "
 "Table`_."
-msgstr ""
+msgstr "기존 테이블에 컬럼을 추가합니다. 사용법: `테이블에 필드 추가`_\ 를 참조하세요."
 
 #: ../../source/dbmgmt/forge.rst:421
 msgid "Field definition to add"
-msgstr ""
+msgstr "추가할 필드 정의"
 
 #: ../../source/dbmgmt/forge.rst:422 ../../source/dbmgmt/forge.rst:435
 #: ../../source/dbmgmt/forge.rst:448 ../../source/dbmgmt/forge.rst:459
 #: ../../source/dbmgmt/forge.rst:470
 msgid "``\\CodeIgniter\\Database\\Forge`` instance (method chaining)"
-msgstr ""
+msgstr "``\\CodeIgniter\\Database\\Forge`` 인스턴스 (메서드 체이닝)"
 
 #: ../../source/dbmgmt/forge.rst:423 ../../source/dbmgmt/forge.rst:436
 #: ../../source/dbmgmt/forge.rst:449 ../../source/dbmgmt/forge.rst:460
 #: ../../source/dbmgmt/forge.rst:471
 msgid "``\\CodeIgniter\\Database\\Forge``"
-msgstr ""
+msgstr "``\\CodeIgniter\\Database\\Forge``"
 
 #: ../../source/dbmgmt/forge.rst:425
 msgid ""
 "Adds a field to the set that will be used to create a table. Usage: See "
 "`Adding Fields`_."
-msgstr ""
+msgstr "테이블 생성에 사용될 집합에 필드를 추가합니다. 사용법: `필드 추가`_\ 를 참조하세요."
 
 #: ../../source/dbmgmt/forge.rst:429 ../../source/dbmgmt/forge.rst:444
 #: ../../source/dbmgmt/forge.rst:457 ../../source/dbmgmt/forge.rst:468
 msgid "Name of a key field or an array of fields"
-msgstr ""
+msgstr "키 필드 이름 또는 필드 배열"
 
 #: ../../source/dbmgmt/forge.rst:430
 msgid "Name of a parent table"
-msgstr ""
+msgstr "부모 테이블 이름"
 
 #: ../../source/dbmgmt/forge.rst:431
 msgid "Name of a parent table field or an array of fields"
-msgstr ""
+msgstr "부모 테이블 필드 이름 또는 필드 배열"
 
 #: ../../source/dbmgmt/forge.rst:432
 msgid "Desired action for the \"on update\""
-msgstr ""
+msgstr "\"on update\"에 대한 원하는 동작"
 
 #: ../../source/dbmgmt/forge.rst:433
 msgid "Desired action for the \"on delete\""
-msgstr ""
+msgstr "\"on delete\"에 대한 원하는 동작"
 
 #: ../../source/dbmgmt/forge.rst:434
 msgid "Name of foreign key. This does not work with SQLite3"
-msgstr ""
+msgstr "외래 키 이름. SQLite3에서는 동작하지 않습니다"
 
 #: ../../source/dbmgmt/forge.rst:438
 msgid ""
 "Adds a foreign key to the set that will be used to create a table. Usage:"
 " See `Adding Foreign Keys`_."
-msgstr ""
+msgstr "테이블 생성에 사용될 집합에 외래 키를 추가합니다. 사용법: `외래 키 추가`_\ 를 참조하세요."
 
 #: ../../source/dbmgmt/forge.rst:440
 msgid "``$fkName`` can be used since v4.3.0."
-msgstr ""
+msgstr "``$fkName``\ 은 v4.3.0부터 사용할 수 있습니다."
 
 #: ../../source/dbmgmt/forge.rst:445
 msgid "Set to true if it should be a primary key or a regular one"
-msgstr ""
+msgstr "기본 키 또는 일반 키로 설정하려면 true로 설정합니다"
 
 #: ../../source/dbmgmt/forge.rst:446
 msgid "Set to true if it should be a unique key or a regular one"
-msgstr ""
+msgstr "유니크 키 또는 일반 키로 설정하려면 true로 설정합니다"
 
 #: ../../source/dbmgmt/forge.rst:447 ../../source/dbmgmt/forge.rst:458
 #: ../../source/dbmgmt/forge.rst:469
 msgid "Name of key to be added"
-msgstr ""
+msgstr "추가할 키 이름"
 
 #: ../../source/dbmgmt/forge.rst:451
 msgid ""
 "Adds a key to the set that will be used to create a table. Usage: See "
 "`Adding Keys`_."
-msgstr ""
+msgstr "테이블 생성에 사용될 집합에 키를 추가합니다. 사용법: `키 추가`_\ 를 참조하세요."
 
 #: ../../source/dbmgmt/forge.rst:453 ../../source/dbmgmt/forge.rst:464
 #: ../../source/dbmgmt/forge.rst:475 ../../source/dbmgmt/forge.rst:534
 msgid "``$keyName`` can be used since v4.3.0."
-msgstr ""
+msgstr "``$keyName``\ 은 v4.3.0부터 사용할 수 있습니다."
 
 #: ../../source/dbmgmt/forge.rst:462
 msgid ""
 "Adds a primary key to the set that will be used to create a table. Usage:"
 " See `Adding Keys`_."
-msgstr ""
+msgstr "테이블 생성에 사용될 집합에 기본 키를 추가합니다. 사용법: `키 추가`_\ 를 참조하세요."
 
 #: ../../source/dbmgmt/forge.rst:473
 msgid ""
 "Adds a unique key to the set that will be used to create a table. Usage: "
 "See `Adding Keys`_."
-msgstr ""
+msgstr "테이블 생성에 사용될 집합에 유니크 키를 추가합니다. 사용법: `키 추가`_\ 를 참조하세요."
 
 #: ../../source/dbmgmt/forge.rst:479
 msgid "Name of the database to create"
-msgstr ""
+msgstr "생성할 데이터베이스 이름"
 
 #: ../../source/dbmgmt/forge.rst:480
 msgid "Set to true to add an ``IF NOT EXISTS`` clause or check if database exists"
-msgstr ""
+msgstr "``IF NOT EXISTS`` 절을 추가하거나 데이터베이스 존재 여부를 확인하려면 true로 설정합니다"
 
 #: ../../source/dbmgmt/forge.rst:484
 msgid "Creates a new database. Usage: See `Creating and Dropping Databases`_."
-msgstr ""
+msgstr "새 데이터베이스를 생성합니다. 사용법: `데이터베이스 생성 및 삭제`_\ 를 참조하세요."
 
 #: ../../source/dbmgmt/forge.rst:488
 msgid "Name of the table to create"
-msgstr ""
+msgstr "생성할 테이블 이름"
 
 #: ../../source/dbmgmt/forge.rst:489
 msgid "Set to true to add an ``IF NOT EXISTS`` clause"
-msgstr ""
+msgstr "``IF NOT EXISTS`` 절을 추가하려면 true로 설정합니다"
 
 #: ../../source/dbmgmt/forge.rst:490
 msgid "An associative array of table attributes"
-msgstr ""
+msgstr "테이블 속성의 연관 배열"
 
 #: ../../source/dbmgmt/forge.rst:491 ../../source/dbmgmt/forge.rst:570
 msgid "Query object on success, false on failure"
-msgstr ""
+msgstr "성공 시 쿼리 객체, 실패 시 false"
 
 #: ../../source/dbmgmt/forge.rst:494
 msgid "Creates a new table. Usage: See `Creating a Table`_."
-msgstr ""
+msgstr "새 테이블을 생성합니다. 사용법: `테이블 생성`_\ 을 참조하세요."
 
 #: ../../source/dbmgmt/forge.rst:498 ../../source/dbmgmt/forge.rst:559
 msgid "Table name"
-msgstr ""
+msgstr "테이블 이름"
 
 #: ../../source/dbmgmt/forge.rst:499
 msgid "Comma-delimited string or an array of column names"
-msgstr ""
+msgstr "쉼표로 구분된 문자열 또는 컬럼 이름의 배열"
 
 #: ../../source/dbmgmt/forge.rst:503
 msgid ""
 "Drops single or multiple columns from a table. Usage: See `Dropping "
 "Fields From a Table`_."
-msgstr ""
+msgstr "테이블에서 단일 또는 여러 컬럼을 삭제합니다. 사용법: `테이블에서 필드 삭제`_\ 를 참조하세요."
 
 #: ../../source/dbmgmt/forge.rst:507
 msgid "Name of the database to drop"
-msgstr ""
+msgstr "삭제할 데이터베이스 이름"
 
 #: ../../source/dbmgmt/forge.rst:511
 msgid "Drops a database. Usage: See `Creating and Dropping Databases`_."
-msgstr ""
+msgstr "데이터베이스를 삭제합니다. 사용법: `데이터베이스 생성 및 삭제`_\ 를 참조하세요."
 
 #: ../../source/dbmgmt/forge.rst:515
 msgid "Name of table that has key"
-msgstr ""
+msgstr "키가 있는 테이블 이름"
 
 #: ../../source/dbmgmt/forge.rst:516
 msgid "Name of key to be dropped"
-msgstr ""
+msgstr "삭제할 키 이름"
 
 #: ../../source/dbmgmt/forge.rst:517
 msgid "If database prefix should be added to ``$keyName``"
-msgstr ""
+msgstr "``$keyName``\ 에 데이터베이스 접두사를 추가해야 하는지 여부"
 
 #: ../../source/dbmgmt/forge.rst:521
 msgid "Drops an index or unique index."
-msgstr ""
+msgstr "인덱스 또는 유니크 인덱스를 삭제합니다."
 
 #: ../../source/dbmgmt/forge.rst:523
 msgid "``$keyName`` and ``$prefixKeyName`` can be used since v4.3.0."
-msgstr ""
+msgstr "``$keyName``\ 과 ``$prefixKeyName``\ 은 v4.3.0부터 사용할 수 있습니다."
 
 #: ../../source/dbmgmt/forge.rst:527
 msgid "Name of table to drop primary key"
-msgstr ""
+msgstr "기본 키를 삭제할 테이블 이름"
 
 #: ../../source/dbmgmt/forge.rst:528
 msgid "Name of primary key to be dropped"
-msgstr ""
+msgstr "삭제할 기본 키 이름"
 
 #: ../../source/dbmgmt/forge.rst:532
 msgid "Drops a primary key from a table."
-msgstr ""
+msgstr "테이블에서 기본 키를 삭제합니다."
 
 #: ../../source/dbmgmt/forge.rst:538
 msgid "Name of the table to drop"
-msgstr ""
+msgstr "삭제할 테이블 이름"
 
 #: ../../source/dbmgmt/forge.rst:539
 msgid "Set to true to add an ``IF EXISTS`` clause"
-msgstr ""
+msgstr "``IF EXISTS`` 절을 추가하려면 true로 설정합니다"
 
 #: ../../source/dbmgmt/forge.rst:543
 msgid "Drops a table. Usage: See `Dropping a Table`_."
-msgstr ""
+msgstr "테이블을 삭제합니다. 사용법: `테이블 삭제`_\ 를 참조하세요."
 
 #: ../../source/dbmgmt/forge.rst:549
 msgid "Name of the table to add indexes to"
-msgstr ""
+msgstr "인덱스를 추가할 테이블 이름"
 
 #: ../../source/dbmgmt/forge.rst:553
 msgid ""
@@ -778,20 +844,21 @@ msgid ""
 " ``addForeignKey()`` to add indexes to an existing table. See `Adding "
 "Keys to a Table`_."
 msgstr ""
+"``addKey()``, ``addPrimaryKey()``, ``addUniqueKey()``, ``addForeignKey()`` 이후에 "
+"사용하여 기존 테이블에 인덱스를 추가합니다. `테이블에 키 추가`_\ 를 참조하세요."
 
 #: ../../source/dbmgmt/forge.rst:564
 msgid "Modifies a table column. Usage: See `Modifying a Field in a Table`_."
-msgstr ""
+msgstr "테이블 컬럼을 수정합니다. 사용법: `테이블의 필드 수정`_\ 을 참조하세요."
 
 #: ../../source/dbmgmt/forge.rst:568
 msgid "Current of the table"
-msgstr ""
+msgstr "현재 테이블 이름"
 
 #: ../../source/dbmgmt/forge.rst:569
 msgid "New name of the table"
-msgstr ""
+msgstr "테이블의 새 이름"
 
 #: ../../source/dbmgmt/forge.rst:573
 msgid "Renames a table. Usage: See `Renaming a Table`_."
-msgstr ""
-
+msgstr "테이블 이름을 변경합니다. 사용법: `테이블 이름 변경`_\ 을 참조하세요."
