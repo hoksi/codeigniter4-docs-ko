@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"msgfmt --check /home/hoksi/codeigniter/CodeIgniter4/user_guide_src/source/locale/ko/LC_MESSAGES/libraries/validation.po -o /dev/null 2>&1 && echo \\\"OK\\\"\",\"description\":\"Validate PO file sy...",
-  "error": "Exit code 127\n/bin/bash: line 1: msgfmt: command not found",
-  "timestamp": "2026-05-21T04:24:44.913Z",
-  "retry_count": 1
-}
