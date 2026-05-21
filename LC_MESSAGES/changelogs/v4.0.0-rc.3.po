@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,574 +21,574 @@ msgstr ""
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:2
 msgid "Version 4.0.0-rc.3"
-msgstr ""
+msgstr "버전 4.0.0-rc.3"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:4
 msgid "Release Date: Oct 19, 2019"
-msgstr ""
+msgstr "릴리즈 날짜: 2019년 10월 19일"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:6
 msgid "**RC.3 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4의 RC.3(릴리즈 후보 3) 릴리즈**"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:13
 msgid "Enhancements"
-msgstr ""
+msgstr "개선 사항"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:15
 msgid "Beefed up database, session & routing handling."
-msgstr ""
+msgstr "데이터베이스, 세션 및 라우팅 처리 기능 강화."
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:16
 msgid "Fixed numerous bugs & user guide errata."
-msgstr ""
+msgstr "다수의 버그 및 사용자 가이드 오류 수정."
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:19
 msgid "App Changes"
-msgstr ""
+msgstr "앱 변경사항"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:21
 msgid "New $CSRFHeaderName property in App/Config/App"
-msgstr ""
+msgstr "App/Config/App에 새로운 $CSRFHeaderName 프로퍼티 추가"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:24
 msgid "Message Changes"
-msgstr ""
+msgstr "메시지 변경사항"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:27
 msgid "Changed Files"
-msgstr ""
+msgstr "변경된 파일"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:29
 msgid "The list of changed files follows, with PR numbers shown."
-msgstr ""
+msgstr "PR 번호와 함께 변경된 파일 목록이 아래에 나열됩니다."
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:31
 msgid "admin/"
-msgstr ""
+msgstr "admin/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:33
 msgid "app/"
-msgstr ""
+msgstr "app/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:34
 #: ../../source/changelogs/v4.0.0-rc.3.rst:89
 msgid "Config/"
-msgstr ""
+msgstr "Config/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:35
 msgid "App #2272"
-msgstr ""
+msgstr "App #2272"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:37
 msgid "public/"
-msgstr ""
+msgstr "public/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:39
 msgid "system/"
-msgstr ""
+msgstr "system/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:40
 msgid "Autoloader/"
-msgstr ""
+msgstr "Autoloader/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:41
 msgid "FileLocator #2336"
-msgstr ""
+msgstr "FileLocator #2336"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:42
 #: ../../source/changelogs/v4.0.0-rc.3.rst:93
 msgid "Database/"
-msgstr ""
+msgstr "Database/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:43
 msgid "MySQLi/Forge #2100"
-msgstr ""
+msgstr "MySQLi/Forge #2100"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:44
 msgid "Postgre/Forge #2100"
-msgstr ""
+msgstr "Postgre/Forge #2100"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:45
 msgid "SQLite3/Forge #2100"
-msgstr ""
+msgstr "SQLite3/Forge #2100"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:46
 msgid "BaseBuilder #2252, 2312"
-msgstr ""
+msgstr "BaseBuilder #2252, 2312"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:47
 msgid "Forge $2100"
-msgstr ""
+msgstr "Forge $2100"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:48
 msgid "Migration #2303"
-msgstr ""
+msgstr "Migration #2303"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:49
 msgid "MigrationRunner #2303"
-msgstr ""
+msgstr "MigrationRunner #2303"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:50
 msgid "Debug/"
-msgstr ""
+msgstr "Debug/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:51
 msgid "Exceptions #2288"
-msgstr ""
+msgstr "Exceptions #2288"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:52
 msgid "Toolbar/Collectors/"
-msgstr ""
+msgstr "Toolbar/Collectors/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:53
 msgid "Route #2300"
-msgstr ""
+msgstr "Route #2300"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:54
 msgid "Toolbar #2315"
-msgstr ""
+msgstr "Toolbar #2315"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:55
 msgid "Views/ #2283"
-msgstr ""
+msgstr "Views/ #2283"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:56
 #: ../../source/changelogs/v4.0.0-rc.3.rst:98
 msgid "Helpers/"
-msgstr ""
+msgstr "Helpers/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:57
 #: ../../source/changelogs/v4.0.0-rc.3.rst:120
 msgid "inflector_helper #2296"
-msgstr ""
+msgstr "inflector_helper #2296"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:58
 msgid "url_helper #2325"
-msgstr ""
+msgstr "url_helper #2325"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:59
 #: ../../source/changelogs/v4.0.0-rc.3.rst:101
 msgid "HTTP/"
-msgstr ""
+msgstr "HTTP/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:60
 msgid "CURLRequest #2285, 2305"
-msgstr ""
+msgstr "CURLRequest #2285, 2305"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:61
 msgid "Files/UploadedFile #2123"
-msgstr ""
+msgstr "Files/UploadedFile #2123"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:62
 msgid "Language/en/"
-msgstr ""
+msgstr "Language/en/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:63
 msgid "Encryption #2311"
-msgstr ""
+msgstr "Encryption #2311"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:64
 msgid "RESTful #2311"
-msgstr ""
+msgstr "RESTful #2311"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:65
 msgid "Session #2311"
-msgstr ""
+msgstr "Session #2311"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:66
 msgid "Router/"
-msgstr ""
+msgstr "Router/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:67
 msgid "Exceptions/RedirectException #2338"
-msgstr ""
+msgstr "Exceptions/RedirectException #2338"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:68
 msgid "Router #2308, 2338"
-msgstr ""
+msgstr "Router #2308, 2338"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:69
 #: ../../source/changelogs/v4.0.0-rc.3.rst:105
 msgid "Security/"
-msgstr ""
+msgstr "Security/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:70
 msgid "Security #2272, 2279"
-msgstr ""
+msgstr "Security #2272, 2279"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:71
 #: ../../source/changelogs/v4.0.0-rc.3.rst:107
 msgid "Session/"
-msgstr ""
+msgstr "Session/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:72
 msgid "Handlers/"
-msgstr ""
+msgstr "Handlers/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:73
 msgid "DatabaseHandler #2298"
-msgstr ""
+msgstr "DatabaseHandler #2298"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:74
 msgid "FileHandler #2298, 2307"
-msgstr ""
+msgstr "FileHandler #2298, 2307"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:75
 msgid "MemcachedHandler #2298"
-msgstr ""
+msgstr "MemcachedHandler #2298"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:76
 msgid "RedisHandler #2298"
-msgstr ""
+msgstr "RedisHandler #2298"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:77
 msgid "Session #2339"
-msgstr ""
+msgstr "Session #2339"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:78
 msgid "Validation/"
-msgstr ""
+msgstr "Validation/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:79
 msgid "Validation #2284, 2341"
-msgstr ""
+msgstr "Validation #2284, 2341"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:80
 msgid "View/"
-msgstr ""
+msgstr "View/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:81
 msgid "View #2324"
-msgstr ""
+msgstr "View #2324"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:82
 msgid "CodeIgniter #2338"
-msgstr ""
+msgstr "CodeIgniter #2338"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:83
 msgid "Common #2279"
-msgstr ""
+msgstr "Common #2279"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:84
 msgid "Model #2289, 2332"
-msgstr ""
+msgstr "Model #2289, 2332"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:86
 msgid "tests/README.md #2345"
-msgstr ""
+msgstr "tests/README.md #2345"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:88
 msgid "tests/_support/"
-msgstr ""
+msgstr "tests/_support/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:90
 msgid "MockAppConfig #2272"
-msgstr ""
+msgstr "MockAppConfig #2272"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:92
 msgid "tests/system/"
-msgstr ""
+msgstr "tests/system/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:94
 msgid "Builder/"
-msgstr ""
+msgstr "Builder/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:95
 msgid "UpdateTest #2295"
-msgstr ""
+msgstr "UpdateTest #2295"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:96
 msgid "Live/"
-msgstr ""
+msgstr "Live/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:97
 msgid "ForgeTest #2100"
-msgstr ""
+msgstr "ForgeTest #2100"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:99
 msgid "InflectorHelperTest #2296"
-msgstr ""
+msgstr "InflectorHelperTest #2296"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:100
 msgid "URLHelperTest #2325"
-msgstr ""
+msgstr "URLHelperTest #2325"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:102
 msgid "CURLRequestTest #2285"
-msgstr ""
+msgstr "CURLRequestTest #2285"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:103
 msgid "Log/"
-msgstr ""
+msgstr "Log/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:104
 msgid "FileHandlerTest #2346"
-msgstr ""
+msgstr "FileHandlerTest #2346"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:106
 msgid "SecurityTest #2279"
-msgstr ""
+msgstr "SecurityTest #2279"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:108
 msgid "SessionTest #2339"
-msgstr ""
+msgstr "SessionTest #2339"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:109
 msgid "CommonFunctionsTest #2279"
-msgstr ""
+msgstr "CommonFunctionsTest #2279"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:111
 msgid "user_guide_src/"
-msgstr ""
+msgstr "user_guide_src/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:112
 msgid "dbmgmt/"
-msgstr ""
+msgstr "dbmgmt/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:113
 msgid "forge #2100"
-msgstr ""
+msgstr "forge #2100"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:114
 msgid "migration #2337"
-msgstr ""
+msgstr "migration #2337"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:115
 msgid "general/"
-msgstr ""
+msgstr "general/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:116
 msgid "common_functions #2279"
-msgstr ""
+msgstr "common_functions #2279"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:117
 msgid "errors #2338"
-msgstr ""
+msgstr "errors #2338"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:118
 msgid "modules #2290"
-msgstr ""
+msgstr "modules #2290"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:119
 msgid "helpers/"
-msgstr ""
+msgstr "helpers/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:121
 msgid "incoming/"
-msgstr ""
+msgstr "incoming/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:122
 msgid "message #2282"
-msgstr ""
+msgstr "message #2282"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:123
 msgid "restful #2313, 2321, 2333"
-msgstr ""
+msgstr "restful #2313, 2321, 2333"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:124
 msgid "routing #2327"
-msgstr ""
+msgstr "routing #2327"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:125
 msgid "libraries/"
-msgstr ""
+msgstr "libraries/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:126
 msgid "curlrequest #2305"
-msgstr ""
+msgstr "curlrequest #2305"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:127
 msgid "security #2279"
-msgstr ""
+msgstr "security #2279"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:128
 msgid "models/"
-msgstr ""
+msgstr "models/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:129
 msgid "model #2316, 2332"
-msgstr ""
+msgstr "model #2316, 2332"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:130
 msgid "outgoing/"
-msgstr ""
+msgstr "outgoing/"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:131
 msgid "table #2337"
-msgstr ""
+msgstr "table #2337"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:134
 msgid "PRs merged"
-msgstr ""
+msgstr "병합된 PR 목록"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:136
 msgid "#2348 CodeIgniter Foundation gets copyright"
-msgstr ""
+msgstr "#2348 CodeIgniter Foundation 저작권 적용"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:137
 msgid "#2346 Fix FilerHandlerTest.php wierdness"
-msgstr ""
+msgstr "#2346 FilerHandlerTest.php 이상 동작 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:138
 msgid "#2345 Tests readme polish"
-msgstr ""
+msgstr "#2345 테스트 README 문서 개선"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:139
 msgid "#2344 Setup vs Set Up"
-msgstr ""
+msgstr "#2344 Setup과 Set Up 표기 통일"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:140
 msgid "#2343 User guide minor fixes. Fix class names and code area"
-msgstr ""
+msgstr "#2343 사용자 가이드 소규모 수정. 클래스 이름 및 코드 영역 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:141
 msgid "#2341 Simplify Validation::getErrors()"
-msgstr ""
+msgstr "#2341 Validation::getErrors()\ 단순화"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:142
 msgid "#2339 Fix Session::get('key') returns null when value is (int) 0"
-msgstr ""
+msgstr "#2339 값이 (int) 0일 때 Session::get('key')\ 가 null을 반환하는 버그 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:143
 msgid "#2338 Revert RedirectException change"
-msgstr ""
+msgstr "#2338 RedirectException 변경 사항 되돌리기"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:144
 msgid "#2337 Guide: Minor grammar corrections"
-msgstr ""
+msgstr "#2337 가이드: 문법 소규모 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:145
 msgid "#2336 Correct cleaning of namespaces in Windows"
-msgstr ""
+msgstr "#2336 Windows에서 네임스페이스 정리 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:146
 msgid "#2333 Guide: RESTful table formatting"
-msgstr ""
+msgstr "#2333 가이드: RESTful 테이블 형식 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:147
 msgid "#2332 Change after methods to use actual data"
-msgstr ""
+msgstr "#2332 after 메서드가 실제 데이터를 사용하도록 변경"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:148
 msgid "#2328 Update Application structure"
-msgstr ""
+msgstr "#2328 애플리케이션 구조 업데이트"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:149
 msgid "#2327 Correct the tourint UG page"
-msgstr ""
+msgstr "#2327 tourint 사용자 가이드 페이지 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:150
 msgid "#2325 Fix bug in url_title() function with diacritics"
-msgstr ""
+msgstr "#2325 발음 구별 부호가 있는 경우 url_title()\ 함수의 버그 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:151
 msgid "#2324 Renderer Toolbar Debug Toggle"
-msgstr ""
+msgstr "#2324 렌더러 툴바 디버그 토글 추가"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:152
 msgid "#2321 Update RESTful User Guide"
-msgstr ""
+msgstr "#2321 RESTful 사용자 가이드 업데이트"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:153
 msgid "#2316 Add getValidationRules() to model UG page"
-msgstr ""
+msgstr "#2316 모델 사용자 가이드 페이지에 getValidationRules()\ 추가"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:154
 msgid "#2315 Enhance Toolbar::renderTimeline"
-msgstr ""
+msgstr "#2315 Toolbar::renderTimeline 기능 강화"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:155
 msgid "#2313 RESTful User Guide cleanup"
-msgstr ""
+msgstr "#2313 RESTful 사용자 가이드 정리"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:156
 msgid "#2312 BaseBuilder variable type fix"
-msgstr ""
+msgstr "#2312 BaseBuilder 변수 타입 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:157
 msgid "#2311 Convert all language returns to single quote"
-msgstr ""
+msgstr "#2311 모든 언어 반환값을 단일 따옴표로 변환"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:158
 msgid "#2308 Bugfix extra autoroute slashes"
-msgstr ""
+msgstr "#2308 자동 라우트 추가 슬래시 버그 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:159
 msgid "#2307 Resolve session save handler issue"
-msgstr ""
+msgstr "#2307 세션 저장 핸들러 문제 해결"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:160
 msgid "#2305 Fix curl debug bug"
-msgstr ""
+msgstr "#2305 curl 디버그 버그 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:161
 msgid "#2303 Use DBGroup variable from migration class if defined"
-msgstr ""
+msgstr "#2303 마이그레이션 클래스에 DBGroup 변수가 정의된 경우 이를 사용"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:162
 msgid ""
 "#2300 Routes collector for toolbar should not die when a method name is "
 "calculated through _remap"
 msgstr ""
+"#2300 _remap을 통해 메서드 이름이 계산될 때 툴바의 Routes 수집기가 오류로 종료되지 않도록 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:163
 msgid "#2298 fix issue on session_regenerate"
-msgstr ""
+msgstr "#2298 session_regenerate 관련 문제 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:164
 msgid "#2296 Add counted() to Inflector Helper"
-msgstr ""
+msgstr "#2296 Inflector Helper에 counted()\ 추가"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:165
 msgid "#2295 Test set() method in Builder class more"
-msgstr ""
+msgstr "#2295 Builder 클래스의 set()\ 메서드 추가 테스트"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:166
 msgid "#2290 Fix Code Modules documentation for psr4 namespace configuration"
-msgstr ""
+msgstr "#2290 psr4 네임스페이스 설정에 대한 코드 모듈 문서 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:167
 msgid "#2289 Don't restrict model's access to properties in a read-only manner"
-msgstr ""
+msgstr "#2289 모델의 프로퍼티 접근을 읽기 전용으로 제한하지 않도록 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:168
 msgid "#2288 Fix line numbering in Debug/Exceptions class"
-msgstr ""
+msgstr "#2288 Debug/Exceptions 클래스의 줄 번호 처리 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:169
 msgid "#2285 Fix error with Host header for CURLRequest class"
-msgstr ""
+msgstr "#2285 CURLRequest 클래스의 Host 헤더 오류 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:170
 msgid "#2284 Fix getErrors() for validation with redirect"
-msgstr ""
+msgstr "#2284 리다이렉트 시 유효성 검사 getErrors()\ 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:171
 msgid "#2283 Hotfix: Rename collectors _*.tpl.php to _*.tpl"
-msgstr ""
+msgstr "#2283 핫픽스: collectors _*.tpl.php를 _*.tpl로 이름 변경"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:172
 msgid "#2282 Fix user guide for Message class"
-msgstr ""
+msgstr "#2282 Message 클래스 사용자 가이드 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:173
 msgid "#2279 Bug in CSRF parameter cleanup"
-msgstr ""
+msgstr "#2279 CSRF 파라미터 정리 버그 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:174
 msgid "#2272 Handle X-CSRF-TOKEN - CSRF"
-msgstr ""
+msgstr "#2272 X-CSRF-TOKEN CSRF 헤더 처리"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:175
 msgid "#2252 Batch Update Where Reset"
-msgstr ""
+msgstr "#2252 배치 업데이트 시 Where 초기화 수정"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:176
 msgid "#2123 WIP fix store() default value bug"
-msgstr ""
+msgstr "#2123 store()\ 기본값 버그 수정 (진행 중)"
 
 #: ../../source/changelogs/v4.0.0-rc.3.rst:177
 msgid "#2100 Added validation on exists database before created for MySQLi"
-msgstr ""
-
+msgstr "#2100 MySQLi에서 데이터베이스 생성 전 존재 여부 유효성 검사 추가"

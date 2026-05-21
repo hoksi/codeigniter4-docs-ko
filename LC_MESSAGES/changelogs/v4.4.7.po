@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,19 +21,19 @@ msgstr ""
 
 #: ../../source/changelogs/v4.4.7.rst:3
 msgid "Version 4.4.7"
-msgstr ""
+msgstr "버전 4.4.7"
 
 #: ../../source/changelogs/v4.4.7.rst:5
 msgid "Release Date: March 29, 2024"
-msgstr ""
+msgstr "릴리스 날짜: 2024년 3월 29일"
 
 #: ../../source/changelogs/v4.4.7.rst:7
 msgid "**4.4.7 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4 4.4.7 릴리스**"
 
 #: ../../source/changelogs/v4.4.7.rst:15
 msgid "SECURITY"
-msgstr ""
+msgstr "보안"
 
 #: ../../source/changelogs/v4.4.7.rst:17
 msgid ""
@@ -43,6 +42,10 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-"
 "39fp-mqmm-gxj6>`_ for more information."
 msgstr ""
+"**언어:** *Language 클래스 DoS 취약점*\ 이 수정되었습니다. 자세한 내용은 "
+"`보안 권고 GHSA-39fp-mqmm-gxj6 "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-"
+"39fp-mqmm-gxj6>`_\ 를 참고하세요."
 
 #: ../../source/changelogs/v4.4.7.rst:20
 msgid ""
@@ -52,16 +55,22 @@ msgid ""
 " users need to add a setting to enable it. See :ref:`urls-uri-security` "
 "for details."
 msgstr ""
+"**URI 보안:** URI에 허용되지 않는 문자열이 포함되지 않았는지 확인하는 기능이 추가되었습니다. "
+"이 확인은 CodeIgniter 3에서 발견된 URI 보안과 동일합니다. "
+"기본적으로 활성화되어 있지만, 업그레이드한 사용자는 활성화하기 위해 설정을 추가해야 합니다. "
+"자세한 내용은 :ref:`urls-uri-security`\ 를 참고하세요."
 
 #: ../../source/changelogs/v4.4.7.rst:24
 msgid ""
 "**Filters:** A bug where URI paths processed by Filters were not URL-"
 "decoded has been fixed. See :ref:`upgrade-447-filter-paths` for details."
 msgstr ""
+"**필터:** 필터에서 처리하는 URI 경로가 URL 디코딩되지 않던 버그가 수정되었습니다. "
+"자세한 내용은 :ref:`upgrade-447-filter-paths`\ 를 참고하세요."
 
 #: ../../source/changelogs/v4.4.7.rst:29
 msgid "BREAKING"
-msgstr ""
+msgstr "주요 변경사항"
 
 #: ../../source/changelogs/v4.4.7.rst:31
 msgid ""
@@ -71,10 +80,13 @@ msgid ""
 " See :ref:`Note in Times and Dates <time-viewing-differences>` for "
 "details."
 msgstr ""
+"이전 버전에서 ``Time::difference()``\ 로 날짜를 비교할 때 일광 절약 시간(DST)으로 인해 "
+"24시간이 아닌 날이 포함된 경우 예상치 못한 결과가 반환되었습니다. 이 버그가 수정되었습니다. "
+"자세한 내용은 :ref:`Times and Dates 참고사항 <time-viewing-differences>`\ 를 참고하세요."
 
 #: ../../source/changelogs/v4.4.7.rst:38
 msgid "Bugs Fixed"
-msgstr ""
+msgstr "버그 수정"
 
 #: ../../source/changelogs/v4.4.7.rst:40
 msgid ""
@@ -82,4 +94,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
 " for a complete list of bugs fixed."
 msgstr ""
-
+"수정된 버그의 전체 목록은 저장소의 `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_\ 를 참고하세요."

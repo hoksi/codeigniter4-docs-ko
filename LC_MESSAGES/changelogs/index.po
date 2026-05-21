@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,17 +21,16 @@ msgstr ""
 
 #: ../../source/changelogs/index.rst:3
 msgid "Change Logs"
-msgstr ""
+msgstr "변경 로그"
 
 #: ../../source/changelogs/index.rst:6
 msgid "Version |version|"
-msgstr ""
+msgstr "버전 |version|"
 
 #: ../../source/changelogs/index.rst:8
 msgid "**List of all CodeIgniter4 releases**"
-msgstr ""
+msgstr "**모든 CodeIgniter4 릴리즈 목록**"
 
 #: ../../source/changelogs/index.rst:10
 msgid "See all the changes."
-msgstr ""
-
+msgstr "모든 변경 사항을 확인하십시오."

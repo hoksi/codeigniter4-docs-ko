@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,19 +21,19 @@ msgstr ""
 
 #: ../../source/changelogs/v4.2.7.rst:2
 msgid "Version 4.2.7"
-msgstr ""
+msgstr "버전 4.2.7"
 
 #: ../../source/changelogs/v4.2.7.rst:4
 msgid "Release Date: October 6, 2022"
-msgstr ""
+msgstr "릴리즈 날짜: 2022년 10월 6일"
 
 #: ../../source/changelogs/v4.2.7.rst:6
 msgid "**4.2.7 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4\ 의 4.2.7 릴리즈**"
 
 #: ../../source/changelogs/v4.2.7.rst:13
 msgid "SECURITY"
-msgstr ""
+msgstr "보안"
 
 #: ../../source/changelogs/v4.2.7.rst:15
 msgid ""
@@ -43,16 +42,18 @@ msgid ""
 " <https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-"
 "745p-r637-7vvp>`_ for more information."
 msgstr ""
+"*Config\\Cookie에 설정된 Secure 또는 HttpOnly 플래그가 발행된 쿠키에 반영되지 않는 문제*\ 가 수정되었습니다. "
+"자세한 내용은 `보안 권고사항 GHSA-745p-r637-7vvp <https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-745p-r637-7vvp>`_\ 을 참조하십시오."
 
 #: ../../source/changelogs/v4.2.7.rst:16
 msgid ""
 "Fixed a bug that prevents CSP headers from being sent when "
 "``Config\\ContentSecurityPolicy::$autoNonce`` is false."
-msgstr ""
+msgstr "``Config\\ContentSecurityPolicy::$autoNonce``\ 가 false일 때 CSP 헤더가 전송되지 않는 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.2.7.rst:19
 msgid "BREAKING"
-msgstr ""
+msgstr "주요 변경사항"
 
 #: ../../source/changelogs/v4.2.7.rst:21
 msgid ""
@@ -61,12 +62,14 @@ msgid ""
 "Now the default values of ``$secure`` and ``$httponly`` are ``null``, and"
 " these values will be replaced with the ``Config\\Cookie`` values."
 msgstr ""
+":php:func:`set_cookie()`\ 와 :php:meth:`CodeIgniter\\HTTP\\Response::setCookie()`\ 의 파라미터 기본값이 수정되었습니다. "
+"이제 ``$secure``\ 와 ``$httponly``\ 의 기본값이 ``null``\ 이며, 이 값들은 ``Config\\Cookie`` 값으로 대체됩니다."
 
 #: ../../source/changelogs/v4.2.7.rst:22
 msgid ""
 "``Time::__toString()`` is now locale-independent. It returns database-"
 "compatible strings like '2022-09-07 12:00:00' in any locale."
-msgstr ""
+msgstr "``Time::__toString()``\ 이 이제 로케일에 독립적입니다. 어떤 로케일에서도 '2022-09-07 12:00:00'\ 과 같이 데이터베이스 호환 문자열을 반환합니다."
 
 #: ../../source/changelogs/v4.2.7.rst:23
 msgid ""
@@ -74,22 +77,23 @@ msgid ""
 "``Validation\\StrictRules\\Rule::required_without()`` parameters have "
 "been changed and the logic of these rule has also been fixed."
 msgstr ""
+"유효성 검사 규칙 ``Validation\\Rule::required_without()``\ 과 ``Validation\\StrictRules\\Rule::required_without()``\ 의 파라미터가 변경되었으며 이 규칙의 로직도 수정되었습니다."
 
 #: ../../source/changelogs/v4.2.7.rst:26
 msgid "Message Changes"
-msgstr ""
+msgstr "메시지 변경"
 
 #: ../../source/changelogs/v4.2.7.rst:28
 msgid "Fixed typos in some items in ``Language/en/Email.php``."
-msgstr ""
+msgstr "``Language/en/Email.php``\ 의 일부 항목에서 오타가 수정되었습니다."
 
 #: ../../source/changelogs/v4.2.7.rst:29
 msgid "Added missing item ``valid_json`` in ``Language/en/Validation.php``."
-msgstr ""
+msgstr "``Language/en/Validation.php``\ 에 누락된 항목 ``valid_json``\ 이 추가되었습니다."
 
 #: ../../source/changelogs/v4.2.7.rst:32
 msgid "Bugs Fixed"
-msgstr ""
+msgstr "버그 수정"
 
 #: ../../source/changelogs/v4.2.7.rst:34
 msgid ""
@@ -97,4 +101,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/changelogs/CHANGELOG_4.2.md>`_"
 " for a complete list of bugs fixed."
 msgstr ""
-
+"수정된 버그의 전체 목록은 저장소의 `CHANGELOG_4.2.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/changelogs/CHANGELOG_4.2.md>`_\ 을 참조하십시오."

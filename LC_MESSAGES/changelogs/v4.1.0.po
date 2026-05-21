@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,19 +21,19 @@ msgstr ""
 
 #: ../../source/changelogs/v4.1.0.rst:2
 msgid "Version 4.1.0"
-msgstr ""
+msgstr "버전 4.1.0"
 
 #: ../../source/changelogs/v4.1.0.rst:4
 msgid "Release Date: January 31, 2021"
-msgstr ""
+msgstr "릴리즈 날짜: 2021년 1월 31일"
 
 #: ../../source/changelogs/v4.1.0.rst:6
 msgid "**4.1.0 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4\ 의 4.1.0 릴리즈**"
 
 #: ../../source/changelogs/v4.1.0.rst:13
 msgid "BREAKING"
-msgstr ""
+msgstr "주요 변경사항"
 
 #: ../../source/changelogs/v4.1.0.rst:15
 msgid ""
@@ -42,28 +41,30 @@ msgid ""
 "non-namespaced classes in transition to CodeIgniter v4. Since v4.1.0, "
 "this support was removed."
 msgstr ""
+"``Autoloader::loadLegacy()`` 메서드는 이전에 CodeIgniter v4로의 전환 시 네임스페이스 없는 클래스 마이그레이션에 사용되었습니다. "
+"v4.1.0부터 이 지원이 제거되었습니다."
 
 #: ../../source/changelogs/v4.1.0.rst:18
 msgid "Changes"
-msgstr ""
+msgstr "변경 사항"
 
 #: ../../source/changelogs/v4.1.0.rst:20
 msgid "Dropped support for PHP 7.2"
-msgstr ""
+msgstr "PHP 7.2 지원이 중단되었습니다."
 
 #: ../../source/changelogs/v4.1.0.rst:23
 msgid "Deprecations"
-msgstr ""
+msgstr "사용 중단"
 
 #: ../../source/changelogs/v4.1.0.rst:25
 msgid ""
 "Deprecated ``Model::fillPlaceholders()`` method, use "
 "``Validation::fillPlaceholders()`` instead."
-msgstr ""
+msgstr "``Model::fillPlaceholders()`` 메서드가 사용 중단되었습니다. 대신 ``Validation::fillPlaceholders()``\ 를 사용하십시오."
 
 #: ../../source/changelogs/v4.1.0.rst:28
 msgid "Bugs Fixed"
-msgstr ""
+msgstr "버그 수정"
 
 #: ../../source/changelogs/v4.1.0.rst:30
 msgid ""
@@ -71,4 +72,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/changelogs/CHANGELOG_4.1.md>`_"
 " for a complete list of bugs fixed."
 msgstr ""
-
+"수정된 버그의 전체 목록은 저장소의 `CHANGELOG_4.1.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/changelogs/CHANGELOG_4.1.md>`_\ 을 참조하십시오."

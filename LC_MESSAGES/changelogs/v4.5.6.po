@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,61 +21,68 @@ msgstr ""
 
 #: ../../source/changelogs/v4.5.6.rst:3
 msgid "Version 4.5.6"
-msgstr ""
+msgstr "버전 4.5.6"
 
 #: ../../source/changelogs/v4.5.6.rst:5
 msgid "Release Date: December 28, 2024"
-msgstr ""
+msgstr "릴리스 날짜: 2024년 12월 28일"
 
 #: ../../source/changelogs/v4.5.6.rst:7
 msgid "**4.5.6 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4 4.5.6 릴리스**"
 
 #: ../../source/changelogs/v4.5.6.rst:15
 msgid "Bugs Fixed"
-msgstr ""
+msgstr "버그 수정"
 
 #: ../../source/changelogs/v4.5.6.rst:17
 msgid ""
 "**RequestTrait:** Fixed a bug where the ``fetchGlobal()`` method did not "
 "allow handling data by numeric key when stored as a list."
 msgstr ""
+"**RequestTrait:** 데이터가 목록으로 저장될 때 ``fetchGlobal()`` 메서드가 숫자 키로 데이터를 처리하지 못하던 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.5.6.rst:18
 msgid ""
 "**Session Library:** The session initialization debug message now uses "
 "the correct log type \"debug\" instead of \"info\"."
 msgstr ""
+"**세션 라이브러리:** 세션 초기화 디버그 메시지가 이제 \"info\" 대신 올바른 로그 타입인 \"debug\"를 사용합니다."
 
 #: ../../source/changelogs/v4.5.6.rst:19
 msgid ""
 "**Validation:** Fixed the ``getValidated()`` method that did not return "
 "valid data when validation rules used multiple asterisks."
 msgstr ""
+"**유효성 검사:** 유효성 검사 규칙에 여러 개의 와일드카드(*)가 사용될 때 ``getValidated()`` 메서드가 유효한 데이터를 반환하지 않던 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.5.6.rst:20
 msgid ""
 "**Database:** Fixed the case insensitivity option in the ``like()`` "
 "method when dealing with accented characters."
 msgstr ""
+"**데이터베이스:** 악센트 문자를 처리할 때 ``like()`` 메서드의 대소문자 무시 옵션이 올바르게 동작하지 않던 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.5.6.rst:21
 msgid ""
 "**Parser:** Fixed bug that caused equal key names to be replaced by the "
 "key name defined first."
 msgstr ""
+"**파서:** 동일한 키 이름이 먼저 정의된 키 이름으로 대체되던 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.5.6.rst:22
 msgid ""
 "**DownloadResponse:** Fixed a bug that prevented setting custom cache "
 "headers. We can now also use the ``setCache()`` method."
 msgstr ""
+"**DownloadResponse:** 사용자 정의 캐시 헤더를 설정할 수 없던 버그가 수정되었습니다. 이제 ``setCache()`` 메서드도 사용할 수 있습니다."
 
 #: ../../source/changelogs/v4.5.6.rst:23
 msgid ""
 "**DownloadResponse:** Fixed a bug involving sending a custom \"Expires-"
 "Disposition\" header."
 msgstr ""
+"**DownloadResponse:** 사용자 정의 \"Expires-Disposition\" 헤더 전송과 관련된 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.5.6.rst:24
 msgid ""
@@ -84,18 +90,21 @@ msgid ""
 "`Routing::$translateURIDashes` is set to `true` and a route is defined "
 "using a closure."
 msgstr ""
+"**라우팅:** `Routing::$translateURIDashes`\ 가 `true`\ 로 설정되어 있고 클로저를 사용하여 라우트가 정의될 때 `str_replace()`\ 에서 발생하던 TypeError가 수정되었습니다."
 
 #: ../../source/changelogs/v4.5.6.rst:25
 msgid ""
 "**Validation:** Fixed a bug where complex language strings were not "
 "properly handled."
 msgstr ""
+"**유효성 검사:** 복잡한 언어 문자열이 올바르게 처리되지 않던 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.5.6.rst:26
 msgid ""
 "**CURLRequest:** Added support for handling proxy responses using HTTP "
 "versions other than 1.1."
 msgstr ""
+"**CURLRequest:** HTTP 1.1 이외의 버전을 사용하는 프록시 응답 처리 지원이 추가되었습니다."
 
 #: ../../source/changelogs/v4.5.6.rst:27
 msgid ""
@@ -103,6 +112,7 @@ msgid ""
 "``Postgre\\Connection::reconnect()`` method to throw an error when the "
 "connection had not yet been established."
 msgstr ""
+"**데이터베이스:** 연결이 아직 설정되지 않은 상태에서 ``Postgre\\Connection::reconnect()`` 메서드가 오류를 던지던 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.5.6.rst:28
 msgid ""
@@ -110,12 +120,14 @@ msgid ""
 "not correctly recognize the primary key in the ``Entity`` object if a "
 "data mapping for the primary key was used."
 msgstr ""
+"**모델:** 기본 키에 대한 데이터 매핑이 사용된 경우 ``Model::getIdValue()`` 메서드가 ``Entity`` 객체에서 기본 키를 올바르게 인식하지 못하던 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.5.6.rst:29
 msgid ""
 "**Database:** Fixed a bug in prepared statement to correctly handle "
 "binary data."
 msgstr ""
+"**데이터베이스:** 바이너리 데이터를 올바르게 처리하기 위한 준비된 구문(prepared statement)의 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.5.6.rst:31
 msgid ""
@@ -123,4 +135,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
 " for a complete list of bugs fixed."
 msgstr ""
-
+"수정된 버그의 전체 목록은 저장소의 `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_\ 를 참고하세요."

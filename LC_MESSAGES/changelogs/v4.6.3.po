@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,29 +21,30 @@ msgstr ""
 
 #: ../../source/changelogs/v4.6.3.rst:3
 msgid "Version 4.6.3"
-msgstr ""
+msgstr "버전 4.6.3"
 
 #: ../../source/changelogs/v4.6.3.rst:5
 msgid "Release Date: August 2, 2025"
-msgstr ""
+msgstr "릴리스 날짜: 2025년 8월 2일"
 
 #: ../../source/changelogs/v4.6.3.rst:7
 msgid "**4.6.3 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4 4.6.3 릴리스**"
 
 #: ../../source/changelogs/v4.6.3.rst:15
 msgid "Bugs Fixed"
-msgstr ""
+msgstr "버그 수정"
 
 #: ../../source/changelogs/v4.6.3.rst:17
 msgid "**Email:** Fixed a bug with CID check when building email attachments."
-msgstr ""
+msgstr "**Email:** 이메일 첨부 파일 생성 시 CID 확인과 관련된 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.6.3.rst:18
 msgid ""
 "**Email:** Fixed a bug with SMTP connection resource validation in the "
 "class destructor."
 msgstr ""
+"**Email:** 클래스 소멸자에서 SMTP 연결 리소스 유효성 검사와 관련된 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.6.3.rst:20
 msgid ""
@@ -52,4 +52,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
 " for a complete list of bugs fixed."
 msgstr ""
-
+"수정된 버그의 전체 목록은 저장소의 `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_\\ 를 참조하세요."

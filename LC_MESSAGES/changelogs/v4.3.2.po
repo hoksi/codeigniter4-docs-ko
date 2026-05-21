@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,27 +21,27 @@ msgstr ""
 
 #: ../../source/changelogs/v4.3.2.rst:2
 msgid "Version 4.3.2"
-msgstr ""
+msgstr "버전 4.3.2"
 
 #: ../../source/changelogs/v4.3.2.rst:4
 msgid "Release Date: February 18, 2023"
-msgstr ""
+msgstr "릴리스 날짜: 2023년 2월 18일"
 
 #: ../../source/changelogs/v4.3.2.rst:6
 msgid "**4.3.2 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4 4.3.2 릴리스**"
 
 #: ../../source/changelogs/v4.3.2.rst:13
 msgid "BREAKING"
-msgstr ""
+msgstr "주요 변경사항"
 
 #: ../../source/changelogs/v4.3.2.rst:16
 msgid "Behavior Changes"
-msgstr ""
+msgstr "동작 변경"
 
 #: ../../source/changelogs/v4.3.2.rst:19
 msgid "base_url()"
-msgstr ""
+msgstr "base_url()"
 
 #: ../../source/changelogs/v4.3.2.rst:21
 msgid ""
@@ -50,22 +49,27 @@ msgid ""
 "argument returned baseURL without a trailing slash (``/``) like "
 "``http://localhost:8080``."
 msgstr ""
+"버그로 인해 이전 버전에서 인수 없이 호출하는 :php:func:`base_url()`\ 은 "
+"``http://localhost:8080``\ 처럼 후행 슬래시 (``/``) 없이 baseURL을 반환했습니다."
 
 #: ../../source/changelogs/v4.3.2.rst:23
 msgid ""
 "Now it returns baseURL with a trailing slash. This is the same behavior "
 "as ``base_url()`` in CodeIgniter 3."
 msgstr ""
+"이제 후행 슬래시를 포함한 baseURL을 반환합니다. 이는 CodeIgniter 3의 ``base_url()``\ 과 동일한 동작입니다."
 
 #: ../../source/changelogs/v4.3.2.rst:29
 msgid "uri_string()"
-msgstr ""
+msgstr "uri_string()"
 
 #: ../../source/changelogs/v4.3.2.rst:31
 msgid ""
 "The parameter ``$relative`` in :php:func:`uri_string()` was removed. Due "
 "to a bug, the function always returned a path relative to baseURL."
 msgstr ""
+":php:func:`uri_string()`\ 의 매개변수 ``$relative``\ 가 제거되었습니다. "
+"버그로 인해 이 함수는 항상 baseURL에 대한 상대 경로를 반환했습니다."
 
 #: ../../source/changelogs/v4.3.2.rst:33
 msgid ""
@@ -73,36 +77,38 @@ msgid ""
 "This is the same behavior as ``uri_string()`` in CodeIgniter 3. In "
 "previous versions it returned ``/``."
 msgstr ""
+"baseURL에 접근할 때 이제 빈 문자열 (``''``)을 반환합니다. "
+"이는 CodeIgniter 3의 ``uri_string()``\ 과 동일한 동작입니다. 이전 버전에서는 ``/``\ 를 반환했습니다."
 
 #: ../../source/changelogs/v4.3.2.rst:38
 msgid "Bugs Fixed"
-msgstr ""
+msgstr "버그 수정"
 
 #: ../../source/changelogs/v4.3.2.rst:40
 msgid ""
 "**QueryBuilder:** ``where()`` generates incorrect SQL when using "
 "``RawSql``"
-msgstr ""
+msgstr "**QueryBuilder:** ``RawSql`` 사용 시 ``where()``\ 가 잘못된 SQL을 생성하는 문제"
 
 #: ../../source/changelogs/v4.3.2.rst:41
 msgid "**QueryBuilder:** ``RawSql`` passed to ``set()`` disappears without error"
-msgstr ""
+msgstr "**QueryBuilder:** ``set()``\ 에 전달된 ``RawSql``\ 이 오류 없이 사라지는 문제"
 
 #: ../../source/changelogs/v4.3.2.rst:42
 msgid "**Session:** Can't connect to Redis with ``RedisHandler`` over TLS"
-msgstr ""
+msgstr "**세션:** TLS를 통해 ``RedisHandler``\ 로 Redis에 연결할 수 없는 문제"
 
 #: ../../source/changelogs/v4.3.2.rst:43
 msgid "**Autoloader:** May not add Composer package's namespaces"
-msgstr ""
+msgstr "**자동 로더:** Composer 패키지의 네임스페이스를 추가하지 못할 수 있는 문제"
 
 #: ../../source/changelogs/v4.3.2.rst:44
 msgid "**Parser:** ``!`` does not work if delimiters are changed"
-msgstr ""
+msgstr "**파서:** 구분자가 변경된 경우 ``!``\ 가 동작하지 않는 문제"
 
 #: ../../source/changelogs/v4.3.2.rst:45
 msgid "**UserGuide:** Added missing items in ChangeLog and Upgrading Guide v4.3.0"
-msgstr ""
+msgstr "**사용자 가이드:** 변경 로그 및 업그레이드 가이드 v4.3.0에 누락된 항목 추가"
 
 #: ../../source/changelogs/v4.3.2.rst:47
 msgid ""
@@ -110,4 +116,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
 " for a complete list of bugs fixed."
 msgstr ""
-
+"수정된 버그의 전체 목록은 저장소의 `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_\ 를 참고하세요."

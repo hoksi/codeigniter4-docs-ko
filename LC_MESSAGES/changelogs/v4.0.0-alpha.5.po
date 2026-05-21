@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,966 +21,965 @@ msgstr ""
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:2
 msgid "Version 4.0.0-alpha.5"
-msgstr ""
+msgstr "버전 4.0.0-alpha.5"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:4
 msgid "Release Date: Jan 30, 2019"
-msgstr ""
+msgstr "출시일: 2019년 1월 30일"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:6
 msgid "**Next alpha release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4\ 의 다음 알파 릴리스**"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:13
 msgid "Highlights"
-msgstr ""
+msgstr "주요 사항"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:15
 msgid "added $maxQueries setting to app/Config/Toolbar.php"
-msgstr ""
+msgstr "app/Config/Toolbar.php에 $maxQueries 설정 추가됨"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:16
 msgid "updated PHP dependency to 7.2"
-msgstr ""
+msgstr "PHP 의존성이 7.2로 업데이트됨"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:17
 msgid ""
 "new feature branches have been created for the email and queue modules, "
 "so they don't impact the release of 4.0.0"
-msgstr ""
+msgstr "이메일 및 큐 모듈을 위한 새로운 기능 브랜치가 생성되어 4.0.0 릴리스에 영향을 주지 않습니다"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:18
 msgid ""
 "dropped several language messages that were unused (eg "
 "Migrations.missingTable) and added some new (eg Migrations.invalidType)"
-msgstr ""
+msgstr "사용되지 않는 언어 메시지 일부가 제거되고(예: Migrations.missingTable) 새로운 메시지가 추가됨(예: Migrations.invalidType)"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:19
 msgid "lots of bug fixes, especially for the database support"
-msgstr ""
+msgstr "특히 데이터베이스 지원과 관련된 다수의 버그 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:20
 msgid ""
 "provided filters (CSRF, Honeypot, DebugToolbar) have been moved from "
 "app/Filters/ to system/Filters/"
-msgstr ""
+msgstr "제공되는 필터(CSRF, Honeypot, DebugToolbar)\ 가 app/Filters/에서 system/Filters/로 이동됨"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:21
 msgid "revisited the installation and tutorial sections of the user guide"
-msgstr ""
+msgstr "사용자 가이드의 설치 및 튜토리얼 섹션이 재검토됨"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:22
 msgid "code coverage is at 77% ... getting ever closer to our target of 80% :)"
-msgstr ""
+msgstr "코드 커버리지가 77%에 도달... 목표인 80%에 점점 가까워지고 있습니다 :)"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:24
 msgid ""
 "We hope this will be the last alpha, and that the next pre-release will "
 "be our first beta ... fingers crossed!"
-msgstr ""
+msgstr "이번이 마지막 알파 릴리스가 되고, 다음 사전 릴리스는 첫 번째 베타가 되길 바랍니다 ... 행운을 빕니다!"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:27
 msgid "Changed Files"
-msgstr ""
+msgstr "변경된 파일"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:29
 msgid "The list of changed files follows, with PR numbers shown."
-msgstr ""
+msgstr "PR 번호와 함께 변경된 파일 목록이 아래에 나열됩니다."
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:31
 msgid "admin/"
-msgstr ""
+msgstr "admin/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:32
 msgid "starter/"
-msgstr ""
+msgstr "starter/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:33
 msgid "README.md #1637"
-msgstr ""
+msgstr "README.md #1637"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:34
 msgid "app/Config/Paths.php #1685"
-msgstr ""
+msgstr "app/Config/Paths.php #1685"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:35
 msgid "release-appstarter #1685"
-msgstr ""
+msgstr "release-appstarter #1685"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:37
 msgid "app/"
-msgstr ""
+msgstr "app/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:38
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:57
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:123
 msgid "Config/"
-msgstr ""
+msgstr "Config/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:39
 msgid "Filters #1686"
-msgstr ""
+msgstr "Filters #1686"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:40
 msgid "Modules #1665"
-msgstr ""
+msgstr "Modules #1665"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:41
 msgid "Services #614216"
-msgstr ""
+msgstr "Services #614216"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:42
 msgid "Toolbar"
-msgstr ""
+msgstr "Toolbar"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:44
 msgid "contributing/"
-msgstr ""
+msgstr "contributing/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:45
 msgid "guidelines.rst #1671, #1673"
-msgstr ""
+msgstr "guidelines.rst #1671, #1673"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:46
 msgid "internals.rst #1671"
-msgstr ""
+msgstr "internals.rst #1671"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:48
 msgid "public/"
-msgstr ""
+msgstr "public/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:49
 msgid "index.php #1648, #1670"
-msgstr ""
+msgstr "index.php #1648, #1670"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:51
 msgid "system/"
-msgstr ""
+msgstr "system/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:52
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:117
 msgid "Autoloader/"
-msgstr ""
+msgstr "Autoloader/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:53
 msgid "Autoloader #1665, #1672"
-msgstr ""
+msgstr "Autoloader #1665, #1672"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:54
 msgid "FileLocator #1665"
-msgstr ""
+msgstr "FileLocator #1665"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:55
 msgid "Commands/"
-msgstr ""
+msgstr "Commands/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:56
 msgid "Database/MigrationRollback #1683"
-msgstr ""
+msgstr "Database/MigrationRollback #1683"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:58
 msgid "BaseConfig #1635"
-msgstr ""
+msgstr "BaseConfig #1635"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:59
 msgid "BaseService #1635, #1665"
-msgstr ""
+msgstr "BaseService #1635, #1665"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:60
 msgid "Paths #1626"
-msgstr ""
+msgstr "Paths #1626"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:61
 msgid "Services #614216, #3a4ade, #1643"
-msgstr ""
+msgstr "Services #614216, #3a4ade, #1643"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:62
 msgid "View #1616"
-msgstr ""
+msgstr "View #1616"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:63
 msgid "Database/"
-msgstr ""
+msgstr "Database/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:64
 msgid "BaseBuilder #1640, #1663, #1677"
-msgstr ""
+msgstr "BaseBuilder #1640, #1663, #1677"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:65
 msgid "BaseConnection #1677"
-msgstr ""
+msgstr "BaseConnection #1677"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:66
 msgid "Config #6b8b8b, #1660"
-msgstr ""
+msgstr "Config #6b8b8b, #1660"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:67
 msgid "MigrationRunner #81d371, #1660"
-msgstr ""
+msgstr "MigrationRunner #81d371, #1660"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:68
 msgid "Query #1677"
-msgstr ""
+msgstr "Query #1677"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:69
 msgid "Database/Postgre/"
-msgstr ""
+msgstr "Database/Postgre/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:70
 msgid "Builder #d2b377"
-msgstr ""
+msgstr "Builder #d2b377"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:71
 msgid "Debug/Toolbar/Collectors/"
-msgstr ""
+msgstr "Debug/Toolbar/Collectors/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:72
 msgid "Logs #1654"
-msgstr ""
+msgstr "Logs #1654"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:73
 msgid "Views #3a4ade"
-msgstr ""
+msgstr "Views #3a4ade"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:74
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:143
 msgid "Events/"
-msgstr ""
+msgstr "Events/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:75
 msgid "Events #1635"
-msgstr ""
+msgstr "Events #1635"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:76
 msgid "Exceptions/"
-msgstr ""
+msgstr "Exceptions/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:77
 msgid "ConfigException #1660"
-msgstr ""
+msgstr "ConfigException #1660"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:78
 msgid "Files/"
-msgstr ""
+msgstr "Files/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:79
 msgid "Exceptions/FileException #1636"
-msgstr ""
+msgstr "Exceptions/FileException #1636"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:80
 msgid "File #1636"
-msgstr ""
+msgstr "File #1636"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:81
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:145
 msgid "Filters/"
-msgstr ""
+msgstr "Filters/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:82
 msgid "Filters #1635, #1625, #6dab8f"
-msgstr ""
+msgstr "Filters #1635, #1625, #6dab8f"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:83
 msgid "CSRF #1686"
-msgstr ""
+msgstr "CSRF #1686"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:84
 msgid "DebugToolbar #1686"
-msgstr ""
+msgstr "DebugToolbar #1686"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:85
 msgid "Honeypot #1686"
-msgstr ""
+msgstr "Honeypot #1686"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:86
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:150
 msgid "Helpers/"
-msgstr ""
+msgstr "Helpers/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:87
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:182
 msgid "form_helper #1633"
-msgstr ""
+msgstr "form_helper #1633"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:88
 msgid "html_helper #1538"
-msgstr ""
+msgstr "html_helper #1538"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:89
 msgid "xml_helper #1641"
-msgstr ""
+msgstr "xml_helper #1641"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:90
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:155
 msgid "HTTP/"
-msgstr ""
+msgstr "HTTP/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:91
 msgid "ContentSecurityPolicy #1641, #1642"
-msgstr ""
+msgstr "ContentSecurityPolicy #1641, #1642"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:92
 msgid "URI #2e698a"
-msgstr ""
+msgstr "URI #2e698a"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:93
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:158
 msgid "Language/"
-msgstr ""
+msgstr "Language/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:94
 msgid "/en/Files #1636"
-msgstr ""
+msgstr "/en/Files #1636"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:95
 msgid "Language #1641"
-msgstr ""
+msgstr "Language #1641"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:96
 msgid "Log/"
-msgstr ""
+msgstr "Log/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:97
 msgid "Handlers/FileHandler #1641"
-msgstr ""
+msgstr "Handlers/FileHandler #1641"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:98
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:160
 msgid "Router/"
-msgstr ""
+msgstr "Router/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:99
 msgid "RouteCollection #1665, #5951c3"
-msgstr ""
+msgstr "RouteCollection #1665, #5951c3"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:100
 msgid "Router #9e435c, #7993a7, #1678"
-msgstr ""
+msgstr "Router #9e435c, #7993a7, #1678"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:101
 msgid "Session/"
-msgstr ""
+msgstr "Session/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:102
 msgid "Handlers/BaseHandler #1684"
-msgstr ""
+msgstr "Handlers/BaseHandler #1684"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:103
 msgid "Handlers/FileHandler #1684"
-msgstr ""
+msgstr "Handlers/FileHandler #1684"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:104
 msgid "Handlers/MemcachedHandler #1679"
-msgstr ""
+msgstr "Handlers/MemcachedHandler #1679"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:105
 msgid "Session #1679"
-msgstr ""
+msgstr "Session #1679"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:106
 msgid "bootstrap #81d371, #1665"
-msgstr ""
+msgstr "bootstrap #81d371, #1665"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:107
 msgid "Common #1660"
-msgstr ""
+msgstr "Common #1660"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:108
 msgid "Entity #1623, #1622"
-msgstr ""
+msgstr "Entity #1623, #1622"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:109
 msgid "Model #1617, #1632, #1656, #1689"
-msgstr ""
+msgstr "Model #1617, #1632, #1656, #1689"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:111
 msgid "tests/"
-msgstr ""
+msgstr "tests/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:112
 msgid "README.md #1671"
-msgstr ""
+msgstr "README.md #1671"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:114
 msgid "tests/system/"
-msgstr ""
+msgstr "tests/system/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:115
 msgid "API/"
-msgstr ""
+msgstr "API/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:116
 msgid "ResponseTraitTest #1635"
-msgstr ""
+msgstr "ResponseTraitTest #1635"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:118
 msgid "AutoloaderTest #1665"
-msgstr ""
+msgstr "AutoloaderTest #1665"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:119
 msgid "FileLocatorTest #1665, #1686"
-msgstr ""
+msgstr "FileLocatorTest #1665, #1686"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:120
 msgid "CLI/"
-msgstr ""
+msgstr "CLI/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:121
 msgid "CommandRunnerTest #1635"
-msgstr ""
+msgstr "CommandRunnerTest #1635"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:122
 msgid "CommandsTest #1635"
-msgstr ""
+msgstr "CommandsTest #1635"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:124
 msgid "BaseConfigTest #1635"
-msgstr ""
+msgstr "BaseConfigTest #1635"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:125
 msgid "ConfigTest #1643"
-msgstr ""
+msgstr "ConfigTest #1643"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:126
 msgid "ServicesTest #1635, #1643"
-msgstr ""
+msgstr "ServicesTest #1635, #1643"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:127
 msgid "Database/Builder/"
-msgstr ""
+msgstr "Database/Builder/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:128
 msgid "AliasTest #bea1dd"
-msgstr ""
+msgstr "AliasTest #bea1dd"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:129
 msgid "DeleteTest #1677"
-msgstr ""
+msgstr "DeleteTest #1677"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:130
 msgid "GroupTest #1640"
-msgstr ""
+msgstr "GroupTest #1640"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:131
 msgid "InsertTest #1640, #1677"
-msgstr ""
+msgstr "InsertTest #1640, #1677"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:132
 msgid "LikeTest #1640, #1677"
-msgstr ""
+msgstr "LikeTest #1640, #1677"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:133
 msgid "SelectTest #1663"
-msgstr ""
+msgstr "SelectTest #1663"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:134
 msgid "UpdateTest #1640, #1677"
-msgstr ""
+msgstr "UpdateTest #1640, #1677"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:135
 msgid "WhereTest #1640, #1677"
-msgstr ""
+msgstr "WhereTest #1640, #1677"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:136
 msgid "Database/Live/"
-msgstr ""
+msgstr "Database/Live/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:137
 msgid "AliasTest #1675"
-msgstr ""
+msgstr "AliasTest #1675"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:138
 msgid "ConnectTest #1660, #1675"
-msgstr ""
+msgstr "ConnectTest #1660, #1675"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:139
 msgid "ForgeTest #6b8b8b"
-msgstr ""
+msgstr "ForgeTest #6b8b8b"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:140
 msgid "InsertTest #1677"
-msgstr ""
+msgstr "InsertTest #1677"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:141
 msgid "Migrations/MigrationRunnerTest #1660, #1675"
-msgstr ""
+msgstr "Migrations/MigrationRunnerTest #1660, #1675"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:142
 msgid "ModelTest #1617, #1689"
-msgstr ""
+msgstr "ModelTest #1617, #1689"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:144
 msgid "EventTest #1635"
-msgstr ""
+msgstr "EventTest #1635"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:146
 msgid "CSRFTest #1686"
-msgstr ""
+msgstr "CSRFTest #1686"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:147
 msgid "DebugToolbarTest #1686"
-msgstr ""
+msgstr "DebugToolbarTest #1686"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:148
 msgid "FiltersTest #1635, #6dab8f, #1686"
-msgstr ""
+msgstr "FiltersTest #1635, #6dab8f, #1686"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:149
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:154
 msgid "HoneypotTest #1686"
-msgstr ""
+msgstr "HoneypotTest #1686"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:151
 msgid "FormHelperTest #1633"
-msgstr ""
+msgstr "FormHelperTest #1633"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:152
 msgid "XMLHelperTest #1641"
-msgstr ""
+msgstr "XMLHelperTest #1641"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:153
 msgid "Honeypot/"
-msgstr ""
+msgstr "Honeypot/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:156
 msgid "ContentSecurityPolicyTest #1641"
-msgstr ""
+msgstr "ContentSecurityPolicyTest #1641"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:157
 msgid "IncomingRequestTest #1641"
-msgstr ""
+msgstr "IncomingRequestTest #1641"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:159
 msgid "LanguageTest #1643"
-msgstr ""
+msgstr "LanguageTest #1643"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:161
 msgid "RouteCollectionTest #5951c3"
-msgstr ""
+msgstr "RouteCollectionTest #5951c3"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:162
 msgid "RouterTest #9e435c"
-msgstr ""
+msgstr "RouterTest #9e435c"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:163
 msgid "Validation/"
-msgstr ""
+msgstr "Validation/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:164
 msgid "RulesTest #1689"
-msgstr ""
+msgstr "RulesTest #1689"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:165
 msgid "View/"
-msgstr ""
+msgstr "View/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:166
 msgid "ParserPluginTest #1669"
-msgstr ""
+msgstr "ParserPluginTest #1669"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:167
 msgid "ParserTest #1669"
-msgstr ""
+msgstr "ParserTest #1669"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:169
 msgid "user_guide_src/"
-msgstr ""
+msgstr "user_guide_src/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:171
 msgid "concepts/"
-msgstr ""
+msgstr "concepts/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:172
 msgid "autoloader #1665"
-msgstr ""
+msgstr "autoloader #1665"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:173
 msgid "structure #1648"
-msgstr ""
+msgstr "structure #1648"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:174
 msgid "database/"
-msgstr ""
+msgstr "database/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:175
 msgid "connecting #1660"
-msgstr ""
+msgstr "connecting #1660"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:176
 msgid "transactions #1645"
-msgstr ""
+msgstr "transactions #1645"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:177
 msgid "general/"
-msgstr ""
+msgstr "general/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:178
 msgid "configuration #1643"
-msgstr ""
+msgstr "configuration #1643"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:179
 msgid "managing_apps #5f305a, #1648"
-msgstr ""
+msgstr "managing_apps #5f305a, #1648"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:180
 msgid "modules #1613, #1665"
-msgstr ""
+msgstr "modules #1613, #1665"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:181
 msgid "helpers/"
-msgstr ""
+msgstr "helpers/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:183
 msgid "incoming/"
-msgstr ""
+msgstr "incoming/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:184
 msgid "filters #1686"
-msgstr ""
+msgstr "filters #1686"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:185
 msgid "index #4a1886"
-msgstr ""
+msgstr "index #4a1886"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:186
 msgid "methodspoofing #4a1886"
-msgstr ""
+msgstr "methodspoofing #4a1886"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:187
 msgid "installation/"
-msgstr ""
+msgstr "installation/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:188
 msgid "index #1690, #1693"
-msgstr ""
+msgstr "index #1690, #1693"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:189
 msgid "installing_composer #1673, #1690"
-msgstr ""
+msgstr "installing_composer #1673, #1690"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:190
 msgid "installing_git #1673, #1690"
-msgstr ""
+msgstr "installing_git #1673, #1690"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:191
 msgid "installing_manual #1673, #1690"
-msgstr ""
+msgstr "installing_manual #1673, #1690"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:192
 msgid "repositories #1673, #1690"
-msgstr ""
+msgstr "repositories #1673, #1690"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:193
 msgid "running #1690, #1691"
-msgstr ""
+msgstr "running #1690, #1691"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:194
 msgid "troubleshooting #1690, #1693"
-msgstr ""
+msgstr "troubleshooting #1690, #1693"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:195
 msgid "libraries/"
-msgstr ""
+msgstr "libraries/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:196
 msgid "honeypot #1686"
-msgstr ""
+msgstr "honeypot #1686"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:197
 msgid "index #1643, #1690"
-msgstr ""
+msgstr "index #1643, #1690"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:198
 msgid "throttler #1686"
-msgstr ""
+msgstr "throttler #1686"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:199
 msgid "tutorial/"
-msgstr ""
+msgstr "tutorial/"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:200
 msgid "create_news_item  #1693"
-msgstr ""
+msgstr "create_news_item  #1693"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:201
 msgid "index #1693"
-msgstr ""
+msgstr "index #1693"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:202
 msgid "news_section #1693"
-msgstr ""
+msgstr "news_section #1693"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:203
 msgid "static_pages #1693"
-msgstr ""
+msgstr "static_pages #1693"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:205
 msgid "composer.json #1670"
-msgstr ""
+msgstr "composer.json #1670"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:206
 msgid "contributing.md #1670"
-msgstr ""
+msgstr "contributing.md #1670"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:207
 msgid "README.md #1670"
-msgstr ""
+msgstr "README.md #1670"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:208
 msgid "spark #1648"
-msgstr ""
+msgstr "spark #1648"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:209
 msgid ".travis.yml #1649, #1670"
-msgstr ""
+msgstr ".travis.yml #1649, #1670"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:212
 msgid "PRs merged"
-msgstr ""
+msgstr "병합된 PR"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:214
 msgid "#1693 Docs/tutorial"
-msgstr ""
+msgstr "#1693 문서/튜토리얼"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:215
 msgid "#5951c3 Allow domain/sub-domain routes to overwrite existing routes"
-msgstr ""
+msgstr "#5951c3 도메인/서브도메인 라우트가 기존 라우트를 덮어쓸 수 있도록 허용"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:216
 msgid "#1691 Update the running docs"
-msgstr ""
+msgstr "#1691 실행 문서 업데이트"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:217
 msgid "#1690 Rework install docs"
-msgstr ""
+msgstr "#1690 설치 문서 재작성"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:218
 msgid "#bea1dd Additional AliasTests for potential LeftJoin issue"
-msgstr ""
+msgstr "#bea1dd 잠재적인 LeftJoin 문제에 대한 추가 AliasTest"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:219
 msgid "#1689 Model Validation Fix"
-msgstr ""
+msgstr "#1689 모델 유효성 검사 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:220
 msgid "#1687 Add copyright blocks to filters"
-msgstr ""
+msgstr "#1687 필터에 저작권 블록 추가"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:221
 msgid "#1686 Refactor/filters"
-msgstr ""
+msgstr "#1686 필터 리팩토링"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:222
 msgid "#1685 Fix admin - app starter creation"
-msgstr ""
+msgstr "#1685 관리자 - 앱 스타터 생성 문제 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:223
 msgid "#1684 Updating session id cleanup for filehandler"
-msgstr ""
+msgstr "#1684 파일 핸들러의 세션 ID 정리 업데이트"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:224
 msgid "#1683 Fix migrate:refresh bug"
-msgstr ""
+msgstr "#1683 migrate:refresh 버그 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:225
 msgid "#d2b377 Fix Postgres replace command to work new way of storing binds"
-msgstr ""
+msgstr "#d2b377 새로운 바인딩 저장 방식에 맞게 Postgres replace 명령 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:226
 msgid "#4a1886 Document method spoofing"
-msgstr ""
+msgstr "#4a1886 메서드 스푸핑 문서화"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:227
 msgid "#2e698a urldecode URI keys as well as values."
-msgstr ""
+msgstr "#2e698a URI 값뿐만 아니라 키도 urldecode 처리"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:228
 msgid "#1679 save_path - for memcached"
-msgstr ""
+msgstr "#1679 memcached용 save_path 처리"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:229
 msgid "#1678 fix route not replacing forward slashes"
-msgstr ""
+msgstr "#1678 라우트가 슬래시를 교체하지 않는 문제 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:230
 msgid "#1677 Implement Don't Escape feature for db engine"
-msgstr ""
+msgstr "#1677 데이터베이스 엔진에 이스케이프 방지 기능 구현"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:231
 msgid "#1675 Add missing test group directives"
-msgstr ""
+msgstr "#1675 누락된 테스트 그룹 지시어 추가"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:232
 msgid "#1674 Update changelog"
-msgstr ""
+msgstr "#1674 변경 로그 업데이트"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:233
 msgid "#1673 Updated download & installation docs"
-msgstr ""
+msgstr "#1673 다운로드 및 설치 문서 업데이트"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:234
 msgid "#1672 Update Autoloader.php"
-msgstr ""
+msgstr "#1672 Autoloader.php 업데이트"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:235
 msgid "#1670 Update PHP dependency to 7.2"
-msgstr ""
+msgstr "#1670 PHP 의존성을 7.2로 업데이트"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:236
 msgid "#1671 Update docs"
-msgstr ""
+msgstr "#1671 문서 업데이트"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:237
 msgid "#1669 Enhance Parser & Plugin testing"
-msgstr ""
+msgstr "#1669 Parser 및 Plugin 테스트 강화"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:238
 msgid "#1665 Composer PSR4 namespaces are now part of the modules auto-discovery"
-msgstr ""
+msgstr "#1665 Composer PSR4 네임스페이스가 이제 모듈 자동 검색의 일부로 포함됨"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:239
 msgid "#6dab8f Filters match case-insensitively"
-msgstr ""
+msgstr "#6dab8f 필터가 대소문자를 구분하지 않고 매칭됨"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:240
 msgid "#1663 Fix bind issue that occurred when using whereIn"
-msgstr ""
+msgstr "#1663 whereIn 사용 시 발생하던 바인딩 문제 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:241
 msgid "#1660 Migrations Tests and database tweaks"
-msgstr ""
+msgstr "#1660 마이그레이션 테스트 및 데이터베이스 조정"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:242
 msgid ""
 "#1656 DBGroup in __get(), allows to validate \"database\" data outside "
 "the model"
-msgstr ""
+msgstr "#1656 __get()에서 DBGroup 처리, 모델 외부에서 \"database\" 데이터 유효성 검사 허용"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:243
 msgid "#1654 Toolbar - Return Logger::$logCache items"
-msgstr ""
+msgstr "#1654 Toolbar - Logger::$logCache 항목 반환"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:244
 msgid "#1649 remove php 7.3 from \"allow_failures\" in travis config"
-msgstr ""
+msgstr "#1649 travis 설정의 \"allow_failures\"에서 PHP 7.3 제거"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:245
 msgid "#1648 Update \"managing apps\" docs"
-msgstr ""
+msgstr "#1648 \"앱 관리\" 문서 업데이트"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:246
 msgid "#1645 Fix transaction enabling confusing (docu)"
-msgstr ""
+msgstr "#1645 트랜잭션 활성화 관련 혼란스러운 문서 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:247
 msgid "#1643 Remove email module"
-msgstr ""
+msgstr "#1643 이메일 모듈 제거"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:248
 msgid "#1642 CSP nonce attribute value in \"\""
-msgstr ""
+msgstr "#1642 CSP nonce 속성 값을 빈 따옴표로 처리"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:249
 msgid "#81d371 Safety checks for config files during autoload and migrations"
-msgstr ""
+msgstr "#81d371 자동 로드 및 마이그레이션 중 설정 파일에 대한 안전성 검사"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:250
 msgid "#1641 More unit testing tweaks"
-msgstr ""
+msgstr "#1641 추가 단위 테스트 조정"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:251
 msgid "#1640 Update getCompiledX methods in BaseBuilder"
-msgstr ""
+msgstr "#1640 BaseBuilder의 getCompiledX 메서드 업데이트"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:252
 msgid "#1637 Fix starter README"
-msgstr ""
+msgstr "#1637 스타터 README 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:253
 msgid "#1636 Refactor Files module"
-msgstr ""
+msgstr "#1636 Files 모듈 리팩토링"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:254
 msgid "#5f305a UG - Typo in managing apps"
-msgstr ""
+msgstr "#5f305a 사용자 가이드 - 앱 관리 섹션 오타 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:255
 msgid "#1635 Unit testing enhancements"
-msgstr ""
+msgstr "#1635 단위 테스트 개선"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:256
 msgid "#1633 Uses csrf_field and form_hidden"
-msgstr ""
+msgstr "#1633 csrf_field 및 form_hidden 사용"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:257
 msgid "#1632 DBGroup should be passed to ->run instead of ->setRules"
-msgstr ""
+msgstr "#1632 DBGroup은 ->setRules 대신 ->run에 전달되어야 함"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:258
 msgid "#1631 move use statement after License doc at UploadedFile class"
-msgstr ""
+msgstr "#1631 UploadedFile 클래스에서 use 구문을 라이선스 주석 뒤로 이동"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:259
 msgid "#1630 Update copyright to 2019"
-msgstr ""
+msgstr "#1630 저작권을 2019년으로 업데이트"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:260
 msgid "#1629 \"application\" to \"app\" directory doc and comments"
-msgstr ""
+msgstr "#1629 문서 및 주석에서 \"application\" 디렉터리를 \"app\"으로 변경"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:261
 msgid "#3a4ade view() now properly reads the app config again"
-msgstr ""
+msgstr "#3a4ade view()\ 가 이제 앱 설정을 올바르게 다시 읽음"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:262
 msgid "#7993a7 Final piece to get translateURIDashes working appropriately"
-msgstr ""
+msgstr "#7993a7 translateURIDashes\ 가 올바르게 동작하도록 하는 마지막 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:263
 msgid "#9e435c TranslateURIDashes fix"
-msgstr ""
+msgstr "#9e435c TranslateURIDashes 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:264
 msgid "#1626 clean up Paths::$viewDirectory property"
-msgstr ""
+msgstr "#1626 Paths::$viewDirectory 프로퍼티 정리"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:265
 msgid "#1625 After matches is not set empty"
-msgstr ""
+msgstr "#1625 매칭 후 빈 값으로 설정되지 않는 문제 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:266
 msgid "#1623 Property was not cast if was defined as nullable"
-msgstr ""
+msgstr "#1623 nullable로 정의된 프로퍼티가 캐스팅되지 않던 문제 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:267
 msgid "#1622 Nullable support for __set"
-msgstr ""
+msgstr "#1622 __set에 nullable 지원 추가"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:268
 msgid "#1617 countAllResults() should respect soft deletes"
-msgstr ""
+msgstr "#1617 countAllResults()\ 가 소프트 삭제를 고려하도록 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:269
 msgid "#1616 Fix View config merge order"
-msgstr ""
+msgstr "#1616 View 설정 병합 순서 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:270
 msgid ""
 "#614216 Moved honeypot service out of the app Services file to the system"
 " Services where it belongs"
-msgstr ""
+msgstr "#614216 honeypot 서비스를 앱 Services 파일에서 시스템 Services로 이동"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:271
 msgid ""
 "#6b8b8b Allow db forge and utils to take an array of connection info "
 "instead of a group name"
-msgstr ""
+msgstr "#6b8b8b db forge 및 유틸리티가 그룹 이름 대신 연결 정보 배열을 받을 수 있도록 허용"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:272
 msgid "#1613 Typo in documentation"
-msgstr ""
+msgstr "#1613 문서의 오타 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.5.rst:273
 msgid "#1538 img fix(?) - html_helper"
-msgstr ""
-
+msgstr "#1538 img 수정(?) - html_helper"

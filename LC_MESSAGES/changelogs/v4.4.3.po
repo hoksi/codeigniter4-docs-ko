@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,19 +21,19 @@ msgstr ""
 
 #: ../../source/changelogs/v4.4.3.rst:2
 msgid "Version 4.4.3"
-msgstr ""
+msgstr "버전 4.4.3"
 
 #: ../../source/changelogs/v4.4.3.rst:4
 msgid "Release Date: October 26, 2023"
-msgstr ""
+msgstr "릴리스 날짜: 2023년 10월 26일"
 
 #: ../../source/changelogs/v4.4.3.rst:6
 msgid "**4.4.3 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4 4.4.3 릴리스**"
 
 #: ../../source/changelogs/v4.4.3.rst:13
 msgid "SECURITY"
-msgstr ""
+msgstr "보안"
 
 #: ../../source/changelogs/v4.4.3.rst:15
 msgid ""
@@ -43,16 +42,21 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-"
 "hwxf-qxj7-7rfj>`_ for more information."
 msgstr ""
+"*프로덕션 환경에서 상세 오류 보고서가 표시됨*\ 이 수정되었습니다. 자세한 내용은 "
+"`보안 권고 GHSA-hwxf-qxj7-7rfj "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-"
+"hwxf-qxj7-7rfj>`_\ 를 참고하세요."
 
 #: ../../source/changelogs/v4.4.3.rst:20
 msgid "Bugs Fixed"
-msgstr ""
+msgstr "버그 수정"
 
 #: ../../source/changelogs/v4.4.3.rst:22
 msgid ""
 "**UserGuide:** Fixed the descriptions for ``pre_system`` and "
 "``post_system`` in :ref:`event-points`."
 msgstr ""
+"**사용자 가이드:** :ref:`event-points`\ 에서 ``pre_system``\ 과 ``post_system``\ 에 대한 설명이 수정되었습니다."
 
 #: ../../source/changelogs/v4.4.3.rst:25
 msgid ""
@@ -60,4 +64,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
 " for a complete list of bugs fixed."
 msgstr ""
-
+"수정된 버그의 전체 목록은 저장소의 `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_\ 를 참고하세요."

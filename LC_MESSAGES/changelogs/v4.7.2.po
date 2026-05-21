@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,19 +21,19 @@ msgstr ""
 
 #: ../../source/changelogs/v4.7.2.rst:3
 msgid "Version 4.7.2"
-msgstr ""
+msgstr "버전 4.7.2"
 
 #: ../../source/changelogs/v4.7.2.rst:5
 msgid "Release Date: March 24, 2026"
-msgstr ""
+msgstr "릴리스 날짜: 2026년 3월 24일"
 
 #: ../../source/changelogs/v4.7.2.rst:7
 msgid "**4.7.2 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4 4.7.2 릴리스**"
 
 #: ../../source/changelogs/v4.7.2.rst:15
 msgid "Bugs Fixed"
-msgstr ""
+msgstr "버그 수정"
 
 #: ../../source/changelogs/v4.7.2.rst:17
 msgid ""
@@ -44,6 +43,9 @@ msgid ""
 "``IncomingRequest::getJSON()`` to fail on valid ``application/json`` "
 "requests."
 msgstr ""
+"**Security:** CSRF 토큰이 ``X-CSRF-TOKEN`` 헤더를 통해 제공될 때 성공적인 검증 후 "
+"CSRF 필터가 JSON 요청 본문을 손상시킬 수 있는 버그가 수정되었습니다. "
+"이로 인해 유효한 ``application/json`` 요청에서 ``IncomingRequest::getJSON()``\\ 이 실패했습니다."
 
 #: ../../source/changelogs/v4.7.2.rst:21
 msgid ""
@@ -51,6 +53,8 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
 " for a complete list of bugs fixed."
 msgstr ""
+"수정된 버그의 전체 목록은 저장소의 `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_\\ 를 참조하세요."
 
 #~ msgid ""
 #~ "**Security:** Fixed a bug where the "
@@ -65,4 +69,3 @@ msgstr ""
 #~ " to fail on valid ``application/json`` "
 #~ "requests."
 #~ msgstr ""
-

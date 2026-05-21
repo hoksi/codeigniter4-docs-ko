@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,31 +21,33 @@ msgstr ""
 
 #: ../../source/changelogs/v4.5.7.rst:3
 msgid "Version 4.5.7"
-msgstr ""
+msgstr "버전 4.5.7"
 
 #: ../../source/changelogs/v4.5.7.rst:5
 msgid "Release Date: December 31, 2024"
-msgstr ""
+msgstr "릴리스 날짜: 2024년 12월 31일"
 
 #: ../../source/changelogs/v4.5.7.rst:7
 msgid "**4.5.7 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4 4.5.7 릴리스**"
 
 #: ../../source/changelogs/v4.5.7.rst:15
 msgid "Bugs Fixed"
-msgstr ""
+msgstr "버그 수정"
 
 #: ../../source/changelogs/v4.5.7.rst:17
 msgid ""
 "**Common:** Fixed a bug where the ``helper()`` method may throw "
 "`FileNotFoundException` on valid namespaced helper."
 msgstr ""
+"**Common:** 유효한 네임스페이스 헬퍼에서 ``helper()`` 메서드가 `FileNotFoundException`\ 을 던질 수 있던 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.5.7.rst:18
 msgid ""
 "**Forge:** Fixed an issue where `SQLite3`'s Forge always returns `false` "
 "when calling ``dropColumn()``."
 msgstr ""
+"**Forge:** `SQLite3`\ 의 Forge가 ``dropColumn()``\ 을 호출할 때 항상 `false`\ 를 반환하던 문제가 수정되었습니다."
 
 #: ../../source/changelogs/v4.5.7.rst:20
 msgid ""
@@ -54,4 +55,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
 " for a complete list of bugs fixed."
 msgstr ""
-
+"수정된 버그의 전체 목록은 저장소의 `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_\ 를 참고하세요."
