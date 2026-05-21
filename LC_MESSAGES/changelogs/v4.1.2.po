@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,19 +21,19 @@ msgstr ""
 
 #: ../../source/changelogs/v4.1.2.rst:2
 msgid "Version 4.1.2"
-msgstr ""
+msgstr "버전 4.1.2"
 
 #: ../../source/changelogs/v4.1.2.rst:4
 msgid "Release Date: May 16, 2021"
-msgstr ""
+msgstr "릴리즈 날짜: 2021년 5월 16일"
 
 #: ../../source/changelogs/v4.1.2.rst:6
 msgid "**4.1.2 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4\ 의 4.1.2 릴리즈**"
 
 #: ../../source/changelogs/v4.1.2.rst:13
 msgid "BREAKING"
-msgstr ""
+msgstr "주요 변경사항"
 
 #: ../../source/changelogs/v4.1.2.rst:15
 msgid ""
@@ -45,34 +44,37 @@ msgid ""
 "and all its dependencies (including Response Testing, Pager, Form Helper,"
 " Pager, and View Parser)."
 msgstr ""
+"``indexPage``\ 가 있는 설정에서 반환값에 해당 값이 포함되지 않던 ``current_url()``\ 의 "
+"`버그 <https://github.com/codeigniter4/CodeIgniter4/issues/4116>`_\ 가 수정되었습니다. "
+"``App::$indexPage``\ 를 사용하는 경우 ``current_url()``\ 과 모든 의존 항목(Response Testing, Pager, Form Helper, Pager, View Parser 포함)에서 변경된 값을 기대해야 합니다."
 
 #: ../../source/changelogs/v4.1.2.rst:21
 msgid "Enhancements"
-msgstr ""
+msgstr "개선 사항"
 
 #: ../../source/changelogs/v4.1.2.rst:23
 msgid ""
 "New HTTP classes, ``Cookie`` and ``CookieStore``, for abstracting web "
 "cookies."
-msgstr ""
+msgstr "웹 쿠키를 추상화하기 위한 새로운 HTTP 클래스 ``Cookie``\ 와 ``CookieStore``\ 가 추가되었습니다."
 
 #: ../../source/changelogs/v4.1.2.rst:24
 msgid "New ``assertRedirectTo()`` assertion available for HTTP tests."
-msgstr ""
+msgstr "HTTP 테스트에서 사용 가능한 새로운 ``assertRedirectTo()`` 단언이 추가되었습니다."
 
 #: ../../source/changelogs/v4.1.2.rst:25
 msgid "New logger handler, ``ErrorlogHandler``, that writes to ``error_log()``."
-msgstr ""
+msgstr "``error_log()``\ 에 기록하는 새로운 로거 핸들러 ``ErrorlogHandler``\ 가 추가되었습니다."
 
 #: ../../source/changelogs/v4.1.2.rst:26
 msgid "Entity. Added custom type casting functionality."
-msgstr ""
+msgstr "Entity에 사용자 정의 타입 캐스팅 기능이 추가되었습니다."
 
 #: ../../source/changelogs/v4.1.2.rst:27
 msgid ""
 "New option in routing. The ``priority`` option lower the priority of "
 "specific route processing."
-msgstr ""
+msgstr "라우팅에 새로운 옵션이 추가되었습니다. ``priority`` 옵션으로 특정 라우트 처리의 우선순위를 낮출 수 있습니다."
 
 #: ../../source/changelogs/v4.1.2.rst:28
 msgid ""
@@ -80,58 +82,60 @@ msgid ""
 "classes. The list of `non-class` files will be listed in the ``$files`` "
 "property of ``Config\\Autoload`` class."
 msgstr ""
+"``Autoloader`` 클래스가 이제 PHP 클래스를 포함하지 않는 파일도 로드할 수 있습니다. "
+"`비클래스` 파일 목록은 ``Config\\Autoload`` 클래스의 ``$files`` 속성에 나열됩니다."
 
 #: ../../source/changelogs/v4.1.2.rst:31
 msgid "Changes"
-msgstr ""
+msgstr "변경 사항"
 
 #: ../../source/changelogs/v4.1.2.rst:33
 msgid "Layouts in views now support nested sections."
-msgstr ""
+msgstr "뷰의 레이아웃이 이제 중첩 섹션을 지원합니다."
 
 #: ../../source/changelogs/v4.1.2.rst:34
 msgid ""
 "``Response::getCookie`` now returns a ``Cookie`` instance instead of an "
 "array of cookie attributes."
-msgstr ""
+msgstr "``Response::getCookie``\ 가 이제 쿠키 속성 배열 대신 ``Cookie`` 인스턴스를 반환합니다."
 
 #: ../../source/changelogs/v4.1.2.rst:35
 msgid ""
 "``Response::getCookies`` now returns an array of ``Cookie`` instances "
 "instead of array of array of attributes."
-msgstr ""
+msgstr "``Response::getCookies``\ 가 이제 속성 배열의 배열 대신 ``Cookie`` 인스턴스 배열을 반환합니다."
 
 #: ../../source/changelogs/v4.1.2.rst:36
 msgid ""
 "To eliminate warnings from modern browsers' consoles, empty samesite "
 "values will be defaulted to ``Lax`` on cookie dispatch."
-msgstr ""
+msgstr "최신 브라우저 콘솔의 경고를 제거하기 위해, 쿠키 전송 시 빈 samesite 값이 기본적으로 ``Lax``\ 로 설정됩니다."
 
 #: ../../source/changelogs/v4.1.2.rst:37
 msgid ""
 "`Model::errors()` and `BaseModel::errors()` now always returns `array`; "
 "there was no definition change but the docblock has been updated."
-msgstr ""
+msgstr "`Model::errors()`\ 와 `BaseModel::errors()`\ 가 이제 항상 `array`\ 를 반환합니다. 정의 변경은 없었지만 docblock이 업데이트되었습니다."
 
 #: ../../source/changelogs/v4.1.2.rst:38
 msgid ""
 "``Entity::castAs`` has changed behavior. Added new parameter ``$method``."
 " Type casting has been moved to separate handlers."
-msgstr ""
+msgstr "``Entity::castAs``\ 의 동작이 변경되었습니다. 새로운 파라미터 ``$method``\ 가 추가되었으며, 타입 캐스팅이 별도 핸들러로 이동되었습니다."
 
 #: ../../source/changelogs/v4.1.2.rst:39
 msgid ""
 "Entity. Timestamp casting now throws an exception when an invalid value "
 "is passed"
-msgstr ""
+msgstr "Entity의 타임스탬프 캐스팅이 이제 유효하지 않은 값이 전달되면 예외를 발생시킵니다."
 
 #: ../../source/changelogs/v4.1.2.rst:40
 msgid "``Entity::castAsJson`` uses external cast handler ``JsonCast::get``."
-msgstr ""
+msgstr "``Entity::castAsJson``\ 이 외부 캐스트 핸들러 ``JsonCast::get``\ 을 사용합니다."
 
 #: ../../source/changelogs/v4.1.2.rst:41
 msgid "``Entity::mutateDate`` uses external cast handler ``DatetimeCast::get``."
-msgstr ""
+msgstr "``Entity::mutateDate``\ 가 외부 캐스트 핸들러 ``DatetimeCast::get``\ 을 사용합니다."
 
 #: ../../source/changelogs/v4.1.2.rst:42
 msgid ""
@@ -141,6 +145,8 @@ msgid ""
 " now disallowed because it can get system environment variables, like "
 "``PATH``."
 msgstr ""
+"``Config\\**`` 클래스가 ``.env``\ 에서 각 속성 값을 가져오려면 이제 클래스 이름으로 속성에 네임스페이스를 지정해야 합니다. "
+"이전에는 속성 이름만으로 충분했지만, ``PATH``\ 와 같은 시스템 환경 변수를 가져올 수 있기 때문에 이제는 허용되지 않습니다."
 
 #: ../../source/changelogs/v4.1.2.rst:43
 msgid ""
@@ -148,6 +154,8 @@ msgid ""
 "use. As this is used by ``dot_array_search``, users should not use "
 "``_array_search_dot`` directly in their code."
 msgstr ""
+"배열 헬퍼 ``_array_search_dot``\ 이 이제 ``@internal`` 용도로 표시되었습니다. "
+"이는 ``dot_array_search``\ 에서 사용되므로 사용자는 코드에서 ``_array_search_dot``\ 을 직접 사용해서는 안 됩니다."
 
 #: ../../source/changelogs/v4.1.2.rst:44
 msgid ""
@@ -157,92 +165,94 @@ msgid ""
 "Wincache Handlers still return ``false`` which will become ``null`` in a "
 "future release."
 msgstr ""
+"``CacheInterface::getMetaData()``\ 는 캐시 미스 시 ``null``\ 을, 또는 절대 에포크 만료 시간으로 설정된 \"expires\" 키를 최소한 포함하는 배열을, "
+"\"만료 없음\"의 경우 ``null``\ 을 반환합니다. File, Memcached, Wincache 핸들러는 여전히 ``false``\ 를 반환하며 향후 릴리즈에서 ``null``\ 로 변경될 예정입니다."
 
 #: ../../source/changelogs/v4.1.2.rst:47
 msgid "Deprecations"
-msgstr ""
+msgstr "사용 중단"
 
 #: ../../source/changelogs/v4.1.2.rst:49
 msgid "Deprecated ``CodeIgniter\\View\\View::$currentSection`` property."
-msgstr ""
+msgstr "``CodeIgniter\\View\\View::$currentSection`` 속성이 사용 중단되었습니다."
 
 #: ../../source/changelogs/v4.1.2.rst:50
 msgid ""
 "Language strings and exceptions on invalid cookie samesite are deprecated"
 " for the ``CookieException``'s own exception message."
-msgstr ""
+msgstr "잘못된 쿠키 samesite에 대한 언어 문자열과 예외가 ``CookieException``\ 의 자체 예외 메시지로 대체되어 사용 중단되었습니다."
 
 #: ../../source/changelogs/v4.1.2.rst:51
 msgid "Deprecated `CodeIgniter\\Entity` in favor of `CodeIgniter\\Entity\\Entity`"
-msgstr ""
+msgstr "`CodeIgniter\\Entity`\ 가 `CodeIgniter\\Entity\\Entity`\ 로 대체되어 사용 중단되었습니다."
 
 #: ../../source/changelogs/v4.1.2.rst:52
 msgid ""
 "Deprecated cookie-related properties of ``Response`` in order to use the "
 "``Cookie`` class."
-msgstr ""
+msgstr "``Cookie`` 클래스를 사용하기 위해 ``Response``\ 의 쿠키 관련 속성이 사용 중단되었습니다."
 
 #: ../../source/changelogs/v4.1.2.rst:53
 msgid ""
 "Deprecated cookie-related properties of ``Security`` in order to use the "
 "``Cookie`` class."
-msgstr ""
+msgstr "``Cookie`` 클래스를 사용하기 위해 ``Security``\ 의 쿠키 관련 속성이 사용 중단되었습니다."
 
 #: ../../source/changelogs/v4.1.2.rst:54
 msgid ""
 "Deprecated cookie-related properties of ``Session`` in order to use the "
 "``Cookie`` class."
-msgstr ""
+msgstr "``Cookie`` 클래스를 사용하기 위해 ``Session``\ 의 쿠키 관련 속성이 사용 중단되었습니다."
 
 #: ../../source/changelogs/v4.1.2.rst:55
 msgid ""
 "Deprecated ``Security::isExpired()`` to use the ``Cookie``'s internal "
 "expires status."
-msgstr ""
+msgstr "``Cookie``\ 의 내부 만료 상태를 사용하기 위해 ``Security::isExpired()``\ 가 사용 중단되었습니다."
 
 #: ../../source/changelogs/v4.1.2.rst:56
 msgid ""
 "Deprecated ``CIDatabaseTestCase`` to use the ``DatabaseTestTrait`` "
 "instead."
-msgstr ""
+msgstr "``CIDatabaseTestCase``\ 가 ``DatabaseTestTrait``\ 로 대체되어 사용 중단되었습니다."
 
 #: ../../source/changelogs/v4.1.2.rst:57
 msgid "Deprecated ``FeatureTestCase`` to use the ``FeatureTestTrait`` instead."
-msgstr ""
+msgstr "``FeatureTestCase``\ 가 ``FeatureTestTrait``\ 로 대체되어 사용 중단되었습니다."
 
 #: ../../source/changelogs/v4.1.2.rst:58
 msgid ""
 "Deprecated ``ControllerTester`` to use the ``ControllerTestTrait`` "
 "instead."
-msgstr ""
+msgstr "``ControllerTester``\ 가 ``ControllerTestTrait``\ 로 대체되어 사용 중단되었습니다."
 
 #: ../../source/changelogs/v4.1.2.rst:59
 msgid ""
 "Consolidated and deprecated ``ControllerResponse`` and "
 "``FeatureResponse`` in favor of ``TestResponse``."
-msgstr ""
+msgstr "``ControllerResponse``\ 와 ``FeatureResponse``\ 가 ``TestResponse``\ 로 통합되어 사용 중단되었습니다."
 
 #: ../../source/changelogs/v4.1.2.rst:60
 msgid ""
 "Deprecated ``Time::instance()``, use ``Time::createFromInstance()`` "
 "instead (now accepts ``DateTimeInterface``)."
-msgstr ""
+msgstr "``Time::instance()``\ 가 사용 중단되었습니다. 대신 ``Time::createFromInstance()``\ 를 사용하십시오(이제 ``DateTimeInterface``\ 를 허용합니다)."
 
 #: ../../source/changelogs/v4.1.2.rst:61
 msgid ""
 "Deprecated ``IncomingRequest::removeRelativeDirectory()``, use "
 "``URI::removeDotSegments()`` instead"
-msgstr ""
+msgstr "``IncomingRequest::removeRelativeDirectory()``\ 가 사용 중단되었습니다. 대신 ``URI::removeDotSegments()``\ 를 사용하십시오."
 
 #: ../../source/changelogs/v4.1.2.rst:62
 msgid ""
 "Deprecated ``\\API\\ResponseTrait::failValidationError()`` to use "
 "``\\API\\ResponseTrait::failValidationErrors()`` instead"
-msgstr ""
+msgstr "``\\API\\ResponseTrait::failValidationError()``\ 가 사용 중단되었습니다. 대신 ``\\API\\ResponseTrait::failValidationErrors()``\ 를 사용하십시오."
 
 #: ../../source/changelogs/v4.1.2.rst:65
 msgid "Bugs Fixed"
-msgstr ""
+msgstr "버그 수정"
 
 #: ../../source/changelogs/v4.1.2.rst:67
 msgid ""
@@ -250,6 +260,8 @@ msgid ""
 "(unless ``DBDebug==true``, in which case an exception will be thrown) and"
 " returns boolean values for write-type queries as specified in the docs."
 msgstr ""
+"``BaseConnection::query()``\ 가 이제 실패한 쿼리에 대해 ``false``\ 를 반환합니다 "
+"(``DBDebug==true``\ 인 경우 예외가 발생합니다). 또한 문서에 명시된 대로 쓰기 형식 쿼리에 대해 불리언 값을 반환합니다."
 
 #: ../../source/changelogs/v4.1.2.rst:69
 msgid ""
@@ -257,4 +269,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/changelogs/CHANGELOG_4.1.md>`_"
 " for a complete list of bugs fixed."
 msgstr ""
-
+"수정된 버그의 전체 목록은 저장소의 `CHANGELOG_4.1.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/changelogs/CHANGELOG_4.1.md>`_\ 을 참조하십시오."

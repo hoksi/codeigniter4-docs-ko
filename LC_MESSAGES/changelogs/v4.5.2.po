@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,27 +21,27 @@ msgstr ""
 
 #: ../../source/changelogs/v4.5.2.rst:3
 msgid "Version 4.5.2"
-msgstr ""
+msgstr "버전 4.5.2"
 
 #: ../../source/changelogs/v4.5.2.rst:5
 msgid "Release Date: June 10, 2024"
-msgstr ""
+msgstr "릴리스 날짜: 2024년 6월 10일"
 
 #: ../../source/changelogs/v4.5.2.rst:7
 msgid "**4.5.2 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4 4.5.2 릴리스**"
 
 #: ../../source/changelogs/v4.5.2.rst:15
 msgid "Message Changes"
-msgstr ""
+msgstr "메시지 변경사항"
 
 #: ../../source/changelogs/v4.5.2.rst:17
 msgid "Added ``Security.insecureCookie`` message."
-msgstr ""
+msgstr "``Security.insecureCookie`` 메시지가 추가되었습니다."
 
 #: ../../source/changelogs/v4.5.2.rst:21
 msgid "Bugs Fixed"
-msgstr ""
+msgstr "버그 수정"
 
 #: ../../source/changelogs/v4.5.2.rst:23
 msgid ""
@@ -50,4 +49,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
 " for a complete list of bugs fixed."
 msgstr ""
-
+"수정된 버그의 전체 목록은 저장소의 `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_\ 를 참고하세요."

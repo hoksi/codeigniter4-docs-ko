@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,19 +21,19 @@ msgstr ""
 
 #: ../../source/changelogs/v4.1.6.rst:2
 msgid "Version 4.1.6"
-msgstr ""
+msgstr "버전 4.1.6"
 
 #: ../../source/changelogs/v4.1.6.rst:4
 msgid "Release Date: January 3, 2022"
-msgstr ""
+msgstr "릴리즈 날짜: 2022년 1월 3일"
 
 #: ../../source/changelogs/v4.1.6.rst:6
 msgid "**4.1.6 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4\ 의 4.1.6 릴리즈**"
 
 #: ../../source/changelogs/v4.1.6.rst:13
 msgid "SECURITY"
-msgstr ""
+msgstr "보안"
 
 #: ../../source/changelogs/v4.1.6.rst:15
 msgid ""
@@ -43,20 +42,22 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-"
 "w6jr-wj64-mc9x>`_ for more information."
 msgstr ""
+"``old()`` 함수에서 발견된 *신뢰할 수 없는 데이터의 역직렬화* 문제가 수정되었습니다. "
+"자세한 내용은 `보안 권고사항 <https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-w6jr-wj64-mc9x>`_\ 을 참조하십시오."
 
 #: ../../source/changelogs/v4.1.6.rst:18
 msgid "BREAKING"
-msgstr ""
+msgstr "주요 변경사항"
 
 #: ../../source/changelogs/v4.1.6.rst:20
 msgid ""
 "Multiple table names will no longer be stored in "
 "``BaseBuilder::$tableName`` - an empty string will be used instead."
-msgstr ""
+msgstr "여러 테이블 이름이 더 이상 ``BaseBuilder::$tableName``\ 에 저장되지 않으며, 대신 빈 문자열이 사용됩니다."
 
 #: ../../source/changelogs/v4.1.6.rst:25
 msgid "Validation changes"
-msgstr ""
+msgstr "유효성 검사 변경 사항"
 
 #: ../../source/changelogs/v4.1.6.rst:27
 msgid ""
@@ -65,6 +66,9 @@ msgid ""
 " a ``TypeError``. But the previous version's results are probably "
 "incorrect."
 msgstr ""
+"이전 버전의 유효성 검사는 배열 항목을 처리하지 못했습니다. "
+"버그 수정으로 인해 유효성 검사 결과가 다르거나 ``TypeError``\ 가 발생할 수 있습니다. "
+"하지만 이전 버전의 결과는 아마도 잘못된 것이었습니다."
 
 #: ../../source/changelogs/v4.1.6.rst:31
 msgid ""
@@ -75,34 +79,37 @@ msgid ""
 "other hand, the current version passes the array to the validation rule "
 "as a whole."
 msgstr ""
+"유효성 검사는 ``contacts.*.name``\ 과 같은 복수 필드와 단일 필드의 유효성 검사 프로세스를 분리했습니다. "
+"단일 필드에 배열 데이터가 있을 때, 이전 버전은 배열의 각 요소를 검사했으며 유효성 검사 규칙은 배열의 요소를 파라미터로 받았습니다. "
+"반면 현재 버전은 배열 전체를 유효성 검사 규칙에 전달합니다."
 
 #: ../../source/changelogs/v4.1.6.rst:38
 msgid "Enhancements"
-msgstr ""
+msgstr "개선 사항"
 
 #: ../../source/changelogs/v4.1.6.rst:40
 msgid "Full support for PHP 8.1."
-msgstr ""
+msgstr "PHP 8.1에 대한 완전한 지원이 추가되었습니다."
 
 #: ../../source/changelogs/v4.1.6.rst:41
 msgid ""
 "Database pane on debug toolbar now displays location where Query was "
 "called from. Also displays full backtrace."
-msgstr ""
+msgstr "디버그 툴바의 데이터베이스 패널에 이제 쿼리가 호출된 위치가 표시됩니다. 또한 전체 백트레이스도 표시됩니다."
 
 #: ../../source/changelogs/v4.1.6.rst:42
 msgid ""
 ":ref:`Subqueries <query-builder-where-subquery>` in QueryBuilder can now "
 "be an instance of the BaseBuilder class."
-msgstr ""
+msgstr "QueryBuilder의 :ref:`서브쿼리 <query-builder-where-subquery>`\ 가 이제 BaseBuilder 클래스의 인스턴스일 수 있습니다."
 
 #: ../../source/changelogs/v4.1.6.rst:43
 msgid "Kint was updated from ^3.3 to ^4.0."
-msgstr ""
+msgstr "Kint가 ^3.3에서 ^4.0으로 업데이트되었습니다."
 
 #: ../../source/changelogs/v4.1.6.rst:46
 msgid "Changes"
-msgstr ""
+msgstr "변경 사항"
 
 #: ../../source/changelogs/v4.1.6.rst:48
 msgid ""
@@ -110,52 +117,54 @@ msgid ""
 "Now the ``Security`` and ``CookieStore`` class don't send cookies, set "
 "them to the Response."
 msgstr ""
+"쿠키 전송 프로세스가 ``Response`` 클래스로 이동되었습니다. "
+"이제 ``Security``\ 와 ``CookieStore`` 클래스는 쿠키를 전송하지 않고, Response에 설정합니다."
 
 #: ../../source/changelogs/v4.1.6.rst:51
 msgid "Deprecations"
-msgstr ""
+msgstr "사용 중단"
 
 #: ../../source/changelogs/v4.1.6.rst:53
 msgid "``Seeder::faker()`` and ``Seeder::$faker`` are deprecated."
-msgstr ""
+msgstr "``Seeder::faker()``\ 와 ``Seeder::$faker``\ 가 사용 중단되었습니다."
 
 #: ../../source/changelogs/v4.1.6.rst:54
 msgid "``BaseBuilder::cleanClone()`` is deprecated."
-msgstr ""
+msgstr "``BaseBuilder::cleanClone()``\ 이 사용 중단되었습니다."
 
 #: ../../source/changelogs/v4.1.6.rst:57
 msgid "Sending Cookies"
-msgstr ""
+msgstr "쿠키 전송"
 
 #: ../../source/changelogs/v4.1.6.rst:59
 msgid ""
 "The process of sending cookies has been moved to the ``Response`` class. "
 "And the following methods are deprecated:"
-msgstr ""
+msgstr "쿠키 전송 프로세스가 ``Response`` 클래스로 이동되었습니다. 또한 다음 메서드들이 사용 중단되었습니다:"
 
 #: ../../source/changelogs/v4.1.6.rst:62
 msgid "``CookieStore::dispatch()``"
-msgstr ""
+msgstr "``CookieStore::dispatch()``"
 
 #: ../../source/changelogs/v4.1.6.rst:63
 msgid "``CookieStore::setRawCookie()``"
-msgstr ""
+msgstr "``CookieStore::setRawCookie()``"
 
 #: ../../source/changelogs/v4.1.6.rst:64
 msgid "``CookieStore::setCookie()``"
-msgstr ""
+msgstr "``CookieStore::setCookie()``"
 
 #: ../../source/changelogs/v4.1.6.rst:65
 msgid "``Security::sendCookie()``"
-msgstr ""
+msgstr "``Security::sendCookie()``"
 
 #: ../../source/changelogs/v4.1.6.rst:66
 msgid "``Security::doSendCookie()``"
-msgstr ""
+msgstr "``Security::doSendCookie()``"
 
 #: ../../source/changelogs/v4.1.6.rst:69
 msgid "Bugs Fixed"
-msgstr ""
+msgstr "버그 수정"
 
 #: ../../source/changelogs/v4.1.6.rst:71
 msgid ""
@@ -163,4 +172,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/changelogs/CHANGELOG_4.1.md>`_"
 " for a complete list of bugs fixed."
 msgstr ""
-
+"수정된 버그의 전체 목록은 저장소의 `CHANGELOG_4.1.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/changelogs/CHANGELOG_4.1.md>`_\ 을 참조하십시오."

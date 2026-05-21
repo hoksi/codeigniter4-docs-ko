@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,23 +21,23 @@ msgstr ""
 
 #: ../../source/changelogs/v4.4.6.rst:3
 msgid "Version 4.4.6"
-msgstr ""
+msgstr "버전 4.4.6"
 
 #: ../../source/changelogs/v4.4.6.rst:5
 msgid "Release Date: February 24, 2024"
-msgstr ""
+msgstr "릴리스 날짜: 2024년 2월 24일"
 
 #: ../../source/changelogs/v4.4.6.rst:7
 msgid "**4.4.6 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4 4.4.6 릴리스**"
 
 #: ../../source/changelogs/v4.4.6.rst:15
 msgid "BREAKING"
-msgstr ""
+msgstr "주요 변경사항"
 
 #: ../../source/changelogs/v4.4.6.rst:18
 msgid "Time::createFromTimestamp()"
-msgstr ""
+msgstr "Time::createFromTimestamp()"
 
 #: ../../source/changelogs/v4.4.6.rst:20
 msgid ""
@@ -46,32 +45,34 @@ msgid ""
 "createfromtimestamp>` to return a Time instance with a timezone of UTC "
 "has been fixed."
 msgstr ""
+":ref:`Time::createFromTimestamp() <time-createfromtimestamp>`\ 가 UTC 시간대의 "
+"Time 인스턴스를 반환하던 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.4.6.rst:23
 msgid ""
 "Starting with this version, when you do not specify a timezone, a Time "
 "instance with the app's timezone is returned by default."
-msgstr ""
+msgstr "이 버전부터는 시간대를 지정하지 않으면 기본적으로 앱의 시간대를 가진 Time 인스턴스가 반환됩니다."
 
 #: ../../source/changelogs/v4.4.6.rst:28
 msgid "Bugs Fixed"
-msgstr ""
+msgstr "버그 수정"
 
 #: ../../source/changelogs/v4.4.6.rst:30
 msgid ""
 "**Session:** Fixed a bug in Redis session handler that caused locking to "
 "fail and the session data to be cleared."
-msgstr ""
+msgstr "**세션:** 잠금이 실패하고 세션 데이터가 지워지던 Redis 세션 핸들러의 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.4.6.rst:32
 msgid ""
 "**DB Forge:** Fixed a bug in SQLite3 Forge that caused "
 "``Forge::modifyColumn()`` to incorrectly modify table definitions."
-msgstr ""
+msgstr "**DB Forge:** ``Forge::modifyColumn()``\ 이 테이블 정의를 잘못 수정하던 SQLite3 Forge의 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.4.6.rst:34
 msgid "**CSP:** Fixed a bug that CSP blocked some elements in the Debug Toolbar."
-msgstr ""
+msgstr "**CSP:** CSP가 Debug Toolbar의 일부 요소를 차단하던 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.4.6.rst:36
 msgid ""
@@ -79,4 +80,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
 " for a complete list of bugs fixed."
 msgstr ""
-
+"수정된 버그의 전체 목록은 저장소의 `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_\ 를 참고하세요."

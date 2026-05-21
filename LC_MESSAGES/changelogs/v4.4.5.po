@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,25 +21,25 @@ msgstr ""
 
 #: ../../source/changelogs/v4.4.5.rst:3
 msgid "Version 4.4.5"
-msgstr ""
+msgstr "버전 4.4.5"
 
 #: ../../source/changelogs/v4.4.5.rst:5
 msgid "Release Date: January 27, 2024"
-msgstr ""
+msgstr "릴리스 날짜: 2024년 1월 27일"
 
 #: ../../source/changelogs/v4.4.5.rst:7
 msgid "**4.4.5 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4 4.4.5 릴리스**"
 
 #: ../../source/changelogs/v4.4.5.rst:15
 msgid "Bugs Fixed"
-msgstr ""
+msgstr "버그 수정"
 
 #: ../../source/changelogs/v4.4.5.rst:17
 msgid ""
 "**QueryBuilder:** Fixed a bug that the ``updateBatch()`` method does not "
 "work due to type errors on PostgreSQL."
-msgstr ""
+msgstr "**QueryBuilder:** PostgreSQL에서 타입 오류로 인해 ``updateBatch()`` 메서드가 작동하지 않던 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.4.5.rst:20
 msgid ""
@@ -48,4 +47,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
 " for a complete list of bugs fixed."
 msgstr ""
-
+"수정된 버그의 전체 목록은 저장소의 `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_\ 를 참고하세요."

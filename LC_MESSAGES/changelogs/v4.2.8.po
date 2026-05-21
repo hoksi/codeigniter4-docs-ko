@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,29 +21,29 @@ msgstr ""
 
 #: ../../source/changelogs/v4.2.8.rst:2
 msgid "Version 4.2.8"
-msgstr ""
+msgstr "버전 4.2.8"
 
 #: ../../source/changelogs/v4.2.8.rst:4
 msgid "Release Date: October 30, 2022"
-msgstr ""
+msgstr "릴리즈 날짜: 2022년 10월 30일"
 
 #: ../../source/changelogs/v4.2.8.rst:6
 msgid "**4.2.8 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4\ 의 4.2.8 릴리즈**"
 
 #: ../../source/changelogs/v4.2.8.rst:13
 msgid "Deprecations"
-msgstr ""
+msgstr "사용 중단"
 
 #: ../../source/changelogs/v4.2.8.rst:15
 msgid ""
 "The third parameter ``$returnResponse`` of "
 "``CodeIgniter::handleRequest()`` is deprecated."
-msgstr ""
+msgstr "``CodeIgniter::handleRequest()``\ 의 세 번째 파라미터 ``$returnResponse``\ 가 사용 중단되었습니다."
 
 #: ../../source/changelogs/v4.2.8.rst:18
 msgid "Bugs Fixed"
-msgstr ""
+msgstr "버그 수정"
 
 #: ../../source/changelogs/v4.2.8.rst:20
 msgid ""
@@ -52,27 +51,29 @@ msgid ""
 " and ``CodeIgniter\\HTTP\\IncomingRequest::getGetPost()`` methods didn't "
 "return values from the other stream when ``index`` was set to ``null``."
 msgstr ""
+"``index``\ 가 ``null``\ 로 설정되었을 때 ``CodeIgniter\\HTTP\\IncomingRequest::getPostGet()``\ 과 "
+"``CodeIgniter\\HTTP\\IncomingRequest::getGetPost()`` 메서드가 다른 스트림의 값을 반환하지 않던 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.2.8.rst:21
 msgid ""
 "Fixed a bug when ``binds`` weren't cleaned properly when calling "
 "``CodeIgniter\\Database\\Postgre::replace()`` multiple times in the "
 "context."
-msgstr ""
+msgstr "컨텍스트에서 ``CodeIgniter\\Database\\Postgre::replace()``\ 를 여러 번 호출할 때 ``binds``\ 가 올바르게 정리되지 않던 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.2.8.rst:22
 msgid ""
 "Fixed a bug when the "
 "``CodeIgniter\\Database\\SQLSRV\\PreparedQuery::_getResult()`` was "
 "returning the bool value instead of the resource."
-msgstr ""
+msgstr "``CodeIgniter\\Database\\SQLSRV\\PreparedQuery::_getResult()``\ 가 리소스 대신 bool 값을 반환하던 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.2.8.rst:23
 msgid ""
 "Fixed a bug in the error handler where in cases the callback cannot "
 "process the error level it does not pass the error to PHP's standard "
 "error handler."
-msgstr ""
+msgstr "콜백이 오류 수준을 처리할 수 없는 경우 PHP의 표준 오류 핸들러에 오류를 전달하지 않던 오류 핸들러의 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.2.8.rst:25
 msgid ""
@@ -80,4 +81,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/changelogs/CHANGELOG_4.2.md>`_"
 " for a complete list of bugs fixed."
 msgstr ""
-
+"수정된 버그의 전체 목록은 저장소의 `CHANGELOG_4.2.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/changelogs/CHANGELOG_4.2.md>`_\ 을 참조하십시오."

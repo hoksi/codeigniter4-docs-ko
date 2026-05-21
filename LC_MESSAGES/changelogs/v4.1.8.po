@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,19 +21,19 @@ msgstr ""
 
 #: ../../source/changelogs/v4.1.8.rst:2
 msgid "Version 4.1.8"
-msgstr ""
+msgstr "버전 4.1.8"
 
 #: ../../source/changelogs/v4.1.8.rst:4
 msgid "Release Date: January 24, 2022"
-msgstr ""
+msgstr "릴리즈 날짜: 2022년 1월 24일"
 
 #: ../../source/changelogs/v4.1.8.rst:6
 msgid "**4.1.8 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4\ 의 4.1.8 릴리즈**"
 
 #: ../../source/changelogs/v4.1.8.rst:13
 msgid "SECURITY"
-msgstr ""
+msgstr "보안"
 
 #: ../../source/changelogs/v4.1.8.rst:15
 msgid ""
@@ -43,4 +42,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-7528-7jg5-6g62>`_"
 " for more information."
 msgstr ""
-
+"``API\\ResponseTrait``\ 의 *XSS 취약점*\ 이 수정되었습니다. "
+"자세한 내용은 `보안 권고사항 <https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-7528-7jg5-6g62>`_\ 을 참조하십시오."

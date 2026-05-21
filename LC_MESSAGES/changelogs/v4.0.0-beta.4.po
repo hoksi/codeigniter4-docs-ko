@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,680 +21,684 @@ msgstr ""
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:2
 msgid "Version 4.0.0-beta.4"
-msgstr ""
+msgstr "버전 4.0.0-beta.4"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:4
 msgid "Release Date: Jul 25, 2019"
-msgstr ""
+msgstr "릴리스 날짜: 2019년 7월 25일"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:11
 msgid "Highlights"
-msgstr ""
+msgstr "주요 내용"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:13
 msgid "There are some breaking changes..."
-msgstr ""
+msgstr "일부 주요 변경사항이 있습니다..."
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:15
 msgid "The Entity class has been refactored;"
-msgstr ""
+msgstr "Entity 클래스가 리팩터링되었습니다;"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:16
 msgid "The Model class changing has been updated to better handle soft deletes"
-msgstr ""
+msgstr "소프트 삭제를 더 잘 처리하도록 Model 클래스가 업데이트되었습니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:17
 msgid "The routing has been beefed up"
-msgstr ""
+msgstr "라우팅 기능이 강화되었습니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:20
 msgid "New Messages"
-msgstr ""
+msgstr "새로운 메시지"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:22
 msgid "new translation key: Database/noDateFormat"
-msgstr ""
+msgstr "새로운 번역 키: Database/noDateFormat"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:25
 msgid "App Changes"
-msgstr ""
+msgstr "앱 변경사항"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:28
 msgid "Testing Changes"
-msgstr ""
+msgstr "테스팅 변경사항"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:30
 msgid "enhanced database & migration testing in tests/_support"
-msgstr ""
+msgstr "tests/_support에서 데이터베이스 및 마이그레이션 테스팅이 개선되었습니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:33
 msgid "Changed Files"
-msgstr ""
+msgstr "변경된 파일"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:35
 msgid "The list of changed files follows, with PR numbers shown."
-msgstr ""
+msgstr "변경된 파일 목록은 다음과 같으며, PR 번호가 함께 표시됩니다."
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:37
 msgid "admin/"
-msgstr ""
+msgstr "admin/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:39
 msgid "app/"
-msgstr ""
+msgstr "app/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:40
 msgid "Controllers/"
-msgstr ""
+msgstr "Controllers/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:41
 msgid "Home #1999"
-msgstr ""
+msgstr "Home #1999"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:43
 msgid "public/"
-msgstr ""
+msgstr "public/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:45
 msgid "system/"
-msgstr ""
+msgstr "system/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:46
 msgid "Autoloader/"
-msgstr ""
+msgstr "Autoloader/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:47
 msgid "FileLocator #2059, #2064"
-msgstr ""
+msgstr "FileLocator #2059, #2064"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:48
 msgid "Cache/"
-msgstr ""
+msgstr "Cache/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:49
 msgid "CacheFactory #2060"
-msgstr ""
+msgstr "CacheFactory #2060"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:50
 msgid "Handlers/"
-msgstr ""
+msgstr "Handlers/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:51
 msgid "MemcachedHandler #2060"
-msgstr ""
+msgstr "MemcachedHandler #2060"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:52
 msgid "PredisHandler #2060"
-msgstr ""
+msgstr "PredisHandler #2060"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:53
 msgid "RedisHandler #2060"
-msgstr ""
+msgstr "RedisHandler #2060"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:54
 msgid "Commands/"
-msgstr ""
+msgstr "Commands/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:55
 msgid "Utilities/Routes #2008"
-msgstr ""
+msgstr "Utilities/Routes #2008"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:56
 msgid "Config/"
-msgstr ""
+msgstr "Config/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:57
 msgid "Config #2079"
-msgstr ""
+msgstr "Config #2079"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:58
 msgid "Services #2024"
-msgstr ""
+msgstr "Services #2024"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:59
 #: ../../source/changelogs/v4.0.0-beta.4.rst:115
 msgid "Database/"
-msgstr ""
+msgstr "Database/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:60
 msgid "MySQLi/"
-msgstr ""
+msgstr "MySQLi/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:61
 #: ../../source/changelogs/v4.0.0-beta.4.rst:64
 #: ../../source/changelogs/v4.0.0-beta.4.rst:67
 msgid "Connection #2042"
-msgstr ""
+msgstr "Connection #2042"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:62
 #: ../../source/changelogs/v4.0.0-beta.4.rst:65
 #: ../../source/changelogs/v4.0.0-beta.4.rst:69
 msgid "Result #2011"
-msgstr ""
+msgstr "Result #2011"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:63
 msgid "Postgre/"
-msgstr ""
+msgstr "Postgre/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:66
 msgid "SQLite3/"
-msgstr ""
+msgstr "SQLite3/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:68
 #: ../../source/changelogs/v4.0.0-beta.4.rst:74
 msgid "Forge #2042"
-msgstr ""
+msgstr "Forge #2042"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:70
 msgid "Table #2042"
-msgstr ""
+msgstr "Table #2042"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:71
 msgid "BaseBuilder #1989"
-msgstr ""
+msgstr "BaseBuilder #1989"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:72
 msgid "BaseConnection #2042"
-msgstr ""
+msgstr "BaseConnection #2042"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:73
 msgid "BaseResult #2002"
-msgstr ""
+msgstr "BaseResult #2002"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:75
 msgid "MigratiopnRollback #2035"
-msgstr ""
+msgstr "MigratiopnRollback #2035"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:76
 msgid "MigrationRunner #2019"
-msgstr ""
+msgstr "MigrationRunner #2019"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:77
 msgid "Debug/"
-msgstr ""
+msgstr "Debug/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:78
 msgid "Toolbar/Collectors/Routes #2030"
-msgstr ""
+msgstr "Toolbar/Collectors/Routes #2030"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:79
 msgid "Exceptions."
-msgstr ""
+msgstr "Exceptions."
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:80
 msgid "ModelException #2054"
-msgstr ""
+msgstr "ModelException #2054"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:81
 msgid "Files/"
-msgstr ""
+msgstr "Files/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:82
 msgid "File #2104"
-msgstr ""
+msgstr "File #2104"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:83
 msgid "Filters/"
-msgstr ""
+msgstr "Filters/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:84
 msgid "Filters #2039"
-msgstr ""
+msgstr "Filters #2039"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:85
 #: ../../source/changelogs/v4.0.0-beta.4.rst:146
 msgid "helpers/"
-msgstr ""
+msgstr "helpers/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:86
 #: ../../source/changelogs/v4.0.0-beta.4.rst:147
 msgid "date_helper #2091"
-msgstr ""
+msgstr "date_helper #2091"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:87
 #: ../../source/changelogs/v4.0.0-beta.4.rst:123
 msgid "HTTP/"
-msgstr ""
+msgstr "HTTP/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:88
 #: ../../source/changelogs/v4.0.0-beta.4.rst:124
 msgid "CLIRequest #2024"
-msgstr ""
+msgstr "CLIRequest #2024"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:89
 msgid "CURLRequest #1996, #2050"
-msgstr ""
+msgstr "CURLRequest #1996, #2050"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:90
 msgid "IncomingRequest #2063"
-msgstr ""
+msgstr "IncomingRequest #2063"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:91
 msgid "Request #2024"
-msgstr ""
+msgstr "Request #2024"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:92
 msgid "Language/en/"
-msgstr ""
+msgstr "Language/en/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:93
 msgid "Database #2054"
-msgstr ""
+msgstr "Database #2054"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:94
 msgid "Pager/"
-msgstr ""
+msgstr "Pager/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:95
 msgid "Pager #2026"
-msgstr ""
+msgstr "Pager #2026"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:96
 #: ../../source/changelogs/v4.0.0-beta.4.rst:126
 msgid "Router/"
-msgstr ""
+msgstr "Router/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:97
 msgid "RouteCollection #1959, #2012, #2024"
-msgstr ""
+msgstr "RouteCollection #1959, #2012, #2024"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:98
 msgid "Router #2024, #2031, #2043"
-msgstr ""
+msgstr "Router #2024, #2031, #2043"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:99
 msgid "RouterInterface #2024"
-msgstr ""
+msgstr "RouterInterface #2024"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:100
 msgid "Session/"
-msgstr ""
+msgstr "Session/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:101
 msgid "Handlers/ArrayHandler #2014"
-msgstr ""
+msgstr "Handlers/ArrayHandler #2014"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:102
 #: ../../source/changelogs/v4.0.0-beta.4.rst:129
 msgid "Test/"
-msgstr ""
+msgstr "Test/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:103
 msgid "CIUnitTestCase #2002"
-msgstr ""
+msgstr "CIUnitTestCase #2002"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:104
 msgid "FeatureTestCase #2043"
-msgstr ""
+msgstr "FeatureTestCase #2043"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:105
 #: ../../source/changelogs/v4.0.0-beta.4.rst:131
 msgid "Throttle/"
-msgstr ""
+msgstr "Throttle/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:106
 msgid "Throttler #2074"
-msgstr ""
+msgstr "Throttler #2074"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:107
 msgid "CodeIgniter #2012, #2024"
-msgstr ""
+msgstr "CodeIgniter #2012, #2024"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:108
 msgid "Common #2036"
-msgstr ""
+msgstr "Common #2036"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:109
 msgid "Entity #2002, #2004, #2011, #2081"
-msgstr ""
+msgstr "Entity #2002, #2004, #2011, #2081"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:110
 msgid "Model #2050, #2051, #2053, #2054"
-msgstr ""
+msgstr "Model #2050, #2051, #2053, #2054"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:112
 msgid "tests/system/"
-msgstr ""
+msgstr "tests/system/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:113
 msgid "CLI/"
-msgstr ""
+msgstr "CLI/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:114
 msgid "ConsoleTest #2024"
-msgstr ""
+msgstr "ConsoleTest #2024"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:116
 msgid "Live/"
-msgstr ""
+msgstr "Live/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:117
 msgid "DbUtilsTest #2051, #2053"
-msgstr ""
+msgstr "DbUtilsTest #2051, #2053"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:118
 msgid "ForgeTest #2019, #2042"
-msgstr ""
+msgstr "ForgeTest #2019, #2042"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:119
 msgid "ModelTest #2002, #2051, #2053, #2054"
-msgstr ""
+msgstr "ModelTest #2002, #2051, #2053, #2054"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:120
 msgid "SQLite/AlterTablesTest #2042"
-msgstr ""
+msgstr "SQLite/AlterTablesTest #2042"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:121
 msgid "WhereTest #2052"
-msgstr ""
+msgstr "WhereTest #2052"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:122
 msgid "Migrations/MigrationRunnerTest #2019"
-msgstr ""
+msgstr "Migrations/MigrationRunnerTest #2019"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:125
 msgid "CURLRequestTest #1996"
-msgstr ""
+msgstr "CURLRequestTest #1996"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:127
 msgid "RouteCollectionTest #1959, #2012, #2024"
-msgstr ""
+msgstr "RouteCollectionTest #1959, #2012, #2024"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:128
 msgid "RouterTest #2024, #2043"
-msgstr ""
+msgstr "RouterTest #2024, #2043"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:130
 msgid "FeatureTestCaseTest #2043"
-msgstr ""
+msgstr "FeatureTestCaseTest #2043"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:132
 msgid "ThrottleTest #2074"
-msgstr ""
+msgstr "ThrottleTest #2074"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:133
 msgid "View/"
-msgstr ""
+msgstr "View/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:134
 msgid "ParserTest #2005"
-msgstr ""
+msgstr "ParserTest #2005"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:135
 msgid "CodeIgniterTest #2024"
-msgstr ""
+msgstr "CodeIgniterTest #2024"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:136
 msgid "EntityTest #2002, #2004"
-msgstr ""
+msgstr "EntityTest #2002, #2004"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:138
 msgid "user_guide_src/"
-msgstr ""
+msgstr "user_guide_src/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:139
 msgid "concepts/"
-msgstr ""
+msgstr "concepts/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:140
 msgid "autoloader #2035, #2071"
-msgstr ""
+msgstr "autoloader #2035, #2071"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:141
 msgid "database/"
-msgstr ""
+msgstr "database/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:142
 msgid "query_builder #2035"
-msgstr ""
+msgstr "query_builder #2035"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:143
 msgid "dbmgmt/"
-msgstr ""
+msgstr "dbmgmt/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:144
 msgid "forge #2042"
-msgstr ""
+msgstr "forge #2042"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:145
 msgid "migration #2042"
-msgstr ""
+msgstr "migration #2042"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:148
 msgid "incoming/"
-msgstr ""
+msgstr "incoming/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:149
 msgid "routing #2035"
-msgstr ""
+msgstr "routing #2035"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:150
 msgid "installation/"
-msgstr ""
+msgstr "installation/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:151
 msgid "installing_composer #2015, #2035"
-msgstr ""
+msgstr "installing_composer #2015, #2035"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:152
 msgid "libraries/"
-msgstr ""
+msgstr "libraries/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:153
 msgid "pagination #2026"
-msgstr ""
+msgstr "pagination #2026"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:154
 msgid "sessions #2014, #2035"
-msgstr ""
+msgstr "sessions #2014, #2035"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:155
 msgid "validaiton #2069"
-msgstr ""
+msgstr "validaiton #2069"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:156
 msgid "uploaded_files #2104"
-msgstr ""
+msgstr "uploaded_files #2104"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:157
 msgid "models/"
-msgstr ""
+msgstr "models/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:158
 msgid "entitites #2002, #2004, #2035"
-msgstr ""
+msgstr "entitites #2002, #2004, #2035"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:159
 msgid "model #2051, #2053, #2054"
-msgstr ""
+msgstr "model #2051, #2053, #2054"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:160
 msgid "outgoing/"
-msgstr ""
+msgstr "outgoing/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:161
 msgid "view_parser #e21823, 32005"
-msgstr ""
+msgstr "view_parser #e21823, 32005"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:162
 msgid "testing/"
-msgstr ""
+msgstr "testing/"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:163
 msgid "database #2051, #2053"
-msgstr ""
+msgstr "database #2051, #2053"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:166
 msgid "PRs merged"
-msgstr ""
+msgstr "병합된 PR"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:168
 msgid "#2104 File & UploadFile Fixes"
-msgstr ""
+msgstr "#2104 File 및 UploadFile 수정"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:169
 msgid "#2091 Timezone select"
-msgstr ""
+msgstr "#2091 타임존 선택"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:170
 msgid "#2081 JSON format checking improved"
-msgstr ""
+msgstr "#2081 JSON 형식 검사가 개선되었습니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:171
 msgid "#2079 Update config() to check all namespaces"
-msgstr ""
+msgstr "#2079 config()\ 를 모든 네임스페이스를 검사하도록 업데이트하였습니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:172
 msgid "#2074 Throttler can access bucket for bucket life time"
-msgstr ""
+msgstr "#2074 Throttler가 버킷 수명 동안 버킷에 접근할 수 있습니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:173
 msgid "#2071 Fix autoloader.rst formatting"
-msgstr ""
+msgstr "#2071 autoloader.rst 서식을 수정하였습니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:174
 msgid "#2069 validation rule: then -> than (spelling)"
-msgstr ""
+msgstr "#2069 유효성 검사 규칙: then -> than (맞춤법 수정)"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:175
 msgid "#2064 Bugfix file locator slash error"
-msgstr ""
+msgstr "#2064 파일 로케이터 슬래시 오류를 버그 수정하였습니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:176
 msgid "#2063 Ensure query vars are part of request->uri. Fixes #2062"
-msgstr ""
+msgstr "#2063 쿼리 변수가 request->uri의 일부가 되도록 보장합니다. #2062 수정"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:177
 msgid "#2060 Cache Drive Backups"
-msgstr ""
+msgstr "#2060 캐시 드라이버 백업"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:178
 msgid "#2059 Add multi-path support to `locateFile()`"
-msgstr ""
+msgstr "#2059 `locateFile()`\ 에 다중 경로 지원을 추가하였습니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:179
 msgid "#2054 Add model exceptions for missing/invalid dateFormat"
-msgstr ""
+msgstr "#2054 누락되거나 잘못된 dateFormat에 대한 모델 예외를 추가하였습니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:180
 msgid ""
 "#2053 Change Model's deleted flag to a deleted_at datetime/timestamp. "
 "Fixes #2041"
 msgstr ""
+"#2053 Model의 삭제 플래그를 deleted_at 날짜/시간 타임스탬프로 변경하였습니다. #2041 수정"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:181
 msgid "#2052 Add various tests for (not) null"
-msgstr ""
+msgstr "#2052 (not) null에 대한 다양한 테스트를 추가하였습니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:182
 msgid "#2051 Soft deletes use deleted_at"
-msgstr ""
+msgstr "#2051 소프트 삭제가 deleted_at을 사용합니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:183
 msgid "#2050 Stash insert ID before event trigger"
-msgstr ""
+msgstr "#2050 이벤트 트리거 전에 삽입 ID를 임시 저장합니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:184
 msgid "#2043 Zero params should be passed through when routing. Fixes #2032"
-msgstr ""
+msgstr "#2043 라우팅 시 0 값 파라미터도 전달되어야 합니다. #2032 수정"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:185
 msgid "#2042 SQLite3 now supports dropping foreign keys. Fixes #1982"
-msgstr ""
+msgstr "#2042 SQLite3이 이제 외래 키 삭제를 지원합니다. #1982 수정"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:186
 msgid "#2040 Update CURLRequest.php"
-msgstr ""
+msgstr "#2040 CURLRequest.php를 업데이트하였습니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:187
 msgid ""
 "#2039 Restrict filter matching of uris so they require an exact match. "
 "Fixes #2038"
 msgstr ""
+"#2039 URI의 필터 매칭을 정확히 일치하도록 제한합니다. #2038 수정"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:188
 msgid "#2036 Make `force_https()` send headers before exit"
-msgstr ""
+msgstr "#2036 `force_https()`\ 가 종료 전에 헤더를 전송하도록 합니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:189
 msgid "#2035 Various typos and Guide corrections"
-msgstr ""
+msgstr "#2035 다양한 오타 및 가이드 수정"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:190
 msgid "#2031 Fallback to server request for default method"
-msgstr ""
+msgstr "#2031 기본 메서드를 서버 요청으로 폴백합니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:191
 msgid "#2030 Support the new `router` service in Debug Toolbar"
-msgstr ""
+msgstr "#2030 디버그 툴바에서 새로운 `router` 서비스를 지원합니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:192
 msgid "#2026 Extension Pager::makeLinks (optional grup name)"
-msgstr ""
+msgstr "#2026 Pager::makeLinks 확장 (선택적 그룹 이름)"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:193
 msgid ""
 "#2024 Refactor the way the router and route collection determine the "
 "current HTTP verb"
 msgstr ""
+"#2024 라우터와 라우트 컬렉션이 현재 HTTP 메서드를 결정하는 방식을 리팩터링하였습니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:194
 msgid ""
 "#2019 SQLite and Mysql driver additional tests and migration runner test "
 "fixes"
 msgstr ""
+"#2019 SQLite 및 MySQL 드라이버 추가 테스트 및 마이그레이션 실행기 테스트 수정"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:195
 msgid "#2015 Direct user to follow the upgrade steps after installation"
-msgstr ""
+msgstr "#2015 설치 후 업그레이드 단계를 따르도록 사용자를 안내합니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:196
 msgid "#2014 Added a new Session/ArrayHandler that can be used during testing"
-msgstr ""
+msgstr "#2014 테스트 중에 사용할 수 있는 새로운 Session/ArrayHandler를 추가하였습니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:197
 msgid "#2012 Use request->method for HTTP verb"
-msgstr ""
+msgstr "#2012 HTTP 메서드에 request->method를 사용합니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:198
 msgid "#2011 Set the raw data array without any mutations for the Entity"
-msgstr ""
+msgstr "#2011 Entity에 대해 변형 없이 원시 데이터 배열을 설정합니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:199
 msgid "#2008 Add `patch` method to command \"routes\""
-msgstr ""
+msgstr "#2008 \"routes\" 명령에 `patch` 메서드를 추가하였습니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:200
 msgid "#2005 Plugin closures docs update and test"
-msgstr ""
+msgstr "#2005 플러그인 클로저 문서 업데이트 및 테스트"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:201
 msgid "#2004 Allow hasChanged() without parameter"
-msgstr ""
+msgstr "#2004 파라미터 없이 hasChanged()를 호출할 수 있도록 허용합니다"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:202
 msgid "#2002 Entity Refactor"
-msgstr ""
+msgstr "#2002 Entity 리팩터링"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:203
 msgid ""
 "#1999 use CodeIgniter\\Controller; not needed since Home Controller "
 "extends ..."
 msgstr ""
+"#1999 Home Controller가 상속하므로 use CodeIgniter\\Controller;\ 는 불필요합니다 ..."
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:204
 msgid "#1996 Attempting to fix CURLRequest debug issue. #1994"
-msgstr ""
+msgstr "#1996 CURLRequest 디버그 문제를 수정하려 시도합니다. #1994"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:205
 msgid "#e21823 Corrected docs for parser plugins. Closes #1995"
-msgstr ""
+msgstr "#e21823 파서 플러그인 문서를 수정하였습니다. #1995 종료"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:206
 msgid "#1989 argument set() must by type of string - cannot agree"
-msgstr ""
+msgstr "#1989 set()의 인수는 문자열 타입이어야 합니다 - 동의 불가"
 
 #: ../../source/changelogs/v4.0.0-beta.4.rst:207
 msgid "#1959 Prevent reverseRoute from searching closures"
-msgstr ""
-
+msgstr "#1959 reverseRoute가 클로저를 검색하지 않도록 방지합니다"

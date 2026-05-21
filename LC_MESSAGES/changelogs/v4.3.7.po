@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,25 +21,27 @@ msgstr ""
 
 #: ../../source/changelogs/v4.3.7.rst:2
 msgid "Version 4.3.7"
-msgstr ""
+msgstr "버전 4.3.7"
 
 #: ../../source/changelogs/v4.3.7.rst:4
 msgid "Release Date: July 30, 2023"
-msgstr ""
+msgstr "릴리스 날짜: 2023년 7월 30일"
 
 #: ../../source/changelogs/v4.3.7.rst:6
 msgid "**4.3.7 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4 4.3.7 릴리스**"
 
 #: ../../source/changelogs/v4.3.7.rst:13
 msgid "BREAKING"
-msgstr ""
+msgstr "주요 변경사항"
 
 #: ../../source/changelogs/v4.3.7.rst:15
 msgid ""
 "**RouteCollection:** The second parameter ``bool $includeWildcard = "
 "true`` has been added to the ``RouteCollection::getRoutes()`` method."
 msgstr ""
+"**RouteCollection:** ``RouteCollection::getRoutes()`` 메서드에 두 번째 매개변수 "
+"``bool $includeWildcard = true``\ 가 추가되었습니다."
 
 #: ../../source/changelogs/v4.3.7.rst:17
 msgid ""
@@ -48,6 +49,8 @@ msgid ""
 "``AutoRouter::__construct()`` has been changed from "
 "``$protectedControllers`` to ``$cliRoutes``."
 msgstr ""
+"**AutoRouting Legacy:** ``AutoRouter::__construct()``\ 의 첫 번째 매개변수가 "
+"``$protectedControllers``\ 에서 ``$cliRoutes``\ 로 변경되었습니다."
 
 #: ../../source/changelogs/v4.3.7.rst:19
 msgid ""
@@ -56,6 +59,8 @@ msgid ""
 "changed. See :ref:`Upgrading Guide <upgrade-437-feature-testing>` for "
 "details."
 msgstr ""
+"**FeatureTestTrait:** :ref:`withBodyFormat() <feature-formatting-the-request>` 사용 시 "
+"요청 본문의 우선순위가 변경되었습니다. 자세한 내용은 :ref:`업그레이드 가이드 <upgrade-437-feature-testing>`\ 를 참고하세요."
 
 #: ../../source/changelogs/v4.3.7.rst:22
 msgid ""
@@ -63,10 +68,12 @@ msgid ""
 "been changed from \"**rules array**\" to \"**array** of **rules array** "
 "and **customErrors array**\" (``[rules, customErrors]``)."
 msgstr ""
+"**유효성 검사:** ``Validation::loadRuleGroup()``\ 의 반환값이 \"**규칙 배열**\"\ 에서 "
+"\"**규칙 배열**\ 과 **customErrors 배열**\ 의 **배열**\" (``[rules, customErrors]**)으로 변경되었습니다."
 
 #: ../../source/changelogs/v4.3.7.rst:27
 msgid "Changes"
-msgstr ""
+msgstr "변경"
 
 #: ../../source/changelogs/v4.3.7.rst:29
 msgid ""
@@ -74,10 +81,12 @@ msgid ""
 "previously returned \"1000\", has been corrected to return \"1 thousand\""
 " when the number is exactly 1000, for example."
 msgstr ""
+"이전에 \"1000\"\ 을 반환하던 숫자 헬퍼 함수 :php:func:`number_to_amount()`\ 가 "
+"숫자가 정확히 1000일 때 \"1 thousand\"\ 를 반환하도록 수정되었습니다."
 
 #: ../../source/changelogs/v4.3.7.rst:34
 msgid "Bugs Fixed"
-msgstr ""
+msgstr "버그 수정"
 
 #: ../../source/changelogs/v4.3.7.rst:36
 msgid ""
@@ -85,6 +94,8 @@ msgid ""
 "``$routes->add()``, the controller's other methods were inaccessible from"
 " the web browser."
 msgstr ""
+"**AutoRouting Legacy:** ``$routes->add()``\ 로 라우트를 추가할 때 웹 브라우저에서 "
+"컨트롤러의 다른 메서드에 접근할 수 없던 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.3.7.rst:40
 msgid ""
@@ -92,4 +103,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
 " for a complete list of bugs fixed."
 msgstr ""
-
+"수정된 버그의 전체 목록은 저장소의 `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_\ 를 참고하세요."

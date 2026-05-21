@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,764 +21,763 @@ msgstr ""
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:2
 msgid "Version 4.0.0-alpha.4"
-msgstr ""
+msgstr "버전 4.0.0-alpha.4"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:4
 msgid "Release Date: Dec 15, 2018"
-msgstr ""
+msgstr "출시일: 2018년 12월 15일"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:6
 msgid "**Next alpha release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4\ 의 다음 알파 릴리스**"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:13
 msgid "Highlights"
-msgstr ""
+msgstr "주요 사항"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:15
 msgid "Refactor for consistency: folder application renamed to app;"
-msgstr ""
+msgstr "일관성을 위한 리팩토링: application 폴더가 app으로 이름 변경됨;"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:16
 msgid "constant BASEPATH renamed to SYSTEMPATH"
-msgstr ""
+msgstr "상수 BASEPATH가 SYSTEMPATH로 이름 변경됨"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:17
 msgid "Debug toolbar gets its own config, history collector"
-msgstr ""
+msgstr "디버그 툴바에 전용 설정 및 히스토리 수집기가 추가됨"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:18
 msgid "Numerous corrections and enhancements"
-msgstr ""
+msgstr "다수의 수정 및 개선 사항"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:21
 msgid "Changed Files"
-msgstr ""
+msgstr "변경된 파일"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:23
 msgid "The list of changed files follows, with PR numbers shown."
-msgstr ""
+msgstr "PR 번호와 함께 변경된 파일 목록이 아래에 나열됩니다."
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:25
 msgid "admin/"
-msgstr ""
+msgstr "admin/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:26
 msgid "docbot #1573"
-msgstr ""
+msgstr "docbot #1573"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:27
 msgid "framework/composer.json #1555"
-msgstr ""
+msgstr "framework/composer.json #1555"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:28
 msgid "release #1573"
-msgstr ""
+msgstr "release #1573"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:29
 msgid "release-deploy #1573"
-msgstr ""
+msgstr "release-deploy #1573"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:30
 msgid "starter/composer.json #1573, #1600"
-msgstr ""
+msgstr "starter/composer.json #1573, #1600"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:32
 msgid "app/"
-msgstr ""
+msgstr "app/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:33
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:56
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:104
 msgid "Config/"
-msgstr ""
+msgstr "Config/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:34
 msgid "App #1571"
-msgstr ""
+msgstr "App #1571"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:35
 msgid "Autoload #1579"
-msgstr ""
+msgstr "Autoload #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:36
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:74
 msgid "ContentSecurityPolicy #1581"
-msgstr ""
+msgstr "ContentSecurityPolicy #1581"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:37
 msgid "Events #1571, #1595"
-msgstr ""
+msgstr "Events #1571, #1595"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:38
 msgid "Paths #1579"
-msgstr ""
+msgstr "Paths #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:39
 msgid "Routes #1579"
-msgstr ""
+msgstr "Routes #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:40
 msgid "Services #1579"
-msgstr ""
+msgstr "Services #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:41
 msgid "Toolbar #1571, #1579"
-msgstr ""
+msgstr "Toolbar #1571, #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:42
 msgid "Filters/"
-msgstr ""
+msgstr "Filters/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:43
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:67
 msgid "Toolbar #1571"
-msgstr ""
+msgstr "Toolbar #1571"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:44
 msgid "Views/"
-msgstr ""
+msgstr "Views/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:45
 msgid "errors/* #1579"
-msgstr ""
+msgstr "errors/* #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:47
 msgid "public/"
-msgstr ""
+msgstr "public/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:48
 msgid "index #1579"
-msgstr ""
+msgstr "index #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:50
 msgid "system/"
-msgstr ""
+msgstr "system/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:51
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:101
 msgid "Autoloader/"
-msgstr ""
+msgstr "Autoloader/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:52
 msgid "Autoloader #1562"
-msgstr ""
+msgstr "Autoloader #1562"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:53
 msgid "FileLocator #1562, #1579"
-msgstr ""
+msgstr "FileLocator #1562, #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:54
 msgid "CLI/"
-msgstr ""
+msgstr "CLI/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:55
 msgid "CommandRunner #1562"
-msgstr ""
+msgstr "CommandRunner #1562"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:57
 msgid "AutoloadConfig #1555, #1579"
-msgstr ""
+msgstr "AutoloadConfig #1555, #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:58
 msgid "BaseConfig #1562"
-msgstr ""
+msgstr "BaseConfig #1562"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:59
 msgid "Services #1571, #1562"
-msgstr ""
+msgstr "Services #1571, #1562"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:60
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:106
 msgid "Database/"
-msgstr ""
+msgstr "Database/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:61
 msgid "BaseBuilder #a0fc68"
-msgstr ""
+msgstr "BaseBuilder #a0fc68"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:62
 msgid "MigrationRunner #1585"
-msgstr ""
+msgstr "MigrationRunner #1585"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:63
 msgid "MySQLi/Connection #1561, #8f205a"
-msgstr ""
+msgstr "MySQLi/Connection #1561, #8f205a"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:64
 msgid "Debug/"
-msgstr ""
+msgstr "Debug/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:65
 msgid "Collectors/* #1571, #1589, #1579"
-msgstr ""
+msgstr "Collectors/* #1571, #1589, #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:66
 msgid "Exceptions #1579"
-msgstr ""
+msgstr "Exceptions #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:68
 msgid "Views/toolbar.tpl #1571"
-msgstr ""
+msgstr "Views/toolbar.tpl #1571"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:69
 msgid "Views/toolbarloader.js #1594"
-msgstr ""
+msgstr "Views/toolbarloader.js #1594"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:70
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:110
 msgid "Helpers/"
-msgstr ""
+msgstr "Helpers/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:71
 msgid "form_helper #1548"
-msgstr ""
+msgstr "form_helper #1548"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:72
 msgid "url_helper #1588"
-msgstr ""
+msgstr "url_helper #1588"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:73
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:113
 msgid "HTTP/"
-msgstr ""
+msgstr "HTTP/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:75
 msgid "DownloadResponse"
-msgstr ""
+msgstr "DownloadResponse"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:76
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:120
 msgid "I18n/"
-msgstr ""
+msgstr "I18n/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:77
 msgid "Time #1603"
-msgstr ""
+msgstr "Time #1603"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:78
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:123
 msgid "Language/"
-msgstr ""
+msgstr "Language/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:79
 msgid "Language #1587, #1562, #1610"
-msgstr ""
+msgstr "Language #1587, #1562, #1610"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:80
 msgid "en/"
-msgstr ""
+msgstr "en/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:81
 msgid "CLI #1562"
-msgstr ""
+msgstr "CLI #1562"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:82
 msgid "HTTP #d7dfc5"
-msgstr ""
+msgstr "HTTP #d7dfc5"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:83
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:125
 msgid "Log/"
-msgstr ""
+msgstr "Log/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:84
 msgid "Handlers/FileHandler #1579"
-msgstr ""
+msgstr "Handlers/FileHandler #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:85
 msgid "Logger #1562, #1579"
-msgstr ""
+msgstr "Logger #1562, #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:86
 msgid "Session/"
-msgstr ""
+msgstr "Session/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:87
 msgid "Handlers/DatabaseHandler #1598"
-msgstr ""
+msgstr "Handlers/DatabaseHandler #1598"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:88
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:130
 msgid "Test/"
-msgstr ""
+msgstr "Test/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:89
 msgid "CIUnitTest #1581, #1593, #1579"
-msgstr ""
+msgstr "CIUnitTest #1581, #1593, #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:90
 msgid "FeatureResponse #1593"
-msgstr ""
+msgstr "FeatureResponse #1593"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:91
 msgid "FeatureTestCase #1593"
-msgstr ""
+msgstr "FeatureTestCase #1593"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:92
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:136
 msgid "View/"
-msgstr ""
+msgstr "View/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:93
 msgid "View #1571, #1579"
-msgstr ""
+msgstr "View #1571, #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:94
 msgid "bootstrap #1579"
-msgstr ""
+msgstr "bootstrap #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:95
 msgid "CodeIgniter #ab8b5b, #1579"
-msgstr ""
+msgstr "CodeIgniter #ab8b5b, #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:96
 msgid "Common #1569, #1563, #1562, #1601, #1579"
-msgstr ""
+msgstr "Common #1569, #1563, #1562, #1601, #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:97
 msgid "Entity #4c7bfe, #1575"
-msgstr ""
+msgstr "Entity #4c7bfe, #1575"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:98
 msgid "Model #1602, #a0fc68"
-msgstr ""
+msgstr "Model #1602, #a0fc68"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:100
 msgid "tests/"
-msgstr ""
+msgstr "tests/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:102
 msgid "AutolaoderTest #1562, #1579"
-msgstr ""
+msgstr "AutolaoderTest #1562, #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:103
 msgid "FileLocatorTest #1562, #1579"
-msgstr ""
+msgstr "FileLocatorTest #1562, #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:105
 msgid "ServicesTest #1562"
-msgstr ""
+msgstr "ServicesTest #1562"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:107
 msgid "Live/ModelTest #1602, #a0fc68"
-msgstr ""
+msgstr "Live/ModelTest #1602, #a0fc68"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:108
 msgid "Files/"
-msgstr ""
+msgstr "Files/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:109
 msgid "FileTest #1579"
-msgstr ""
+msgstr "FileTest #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:111
 msgid "FormHelperTest #1548"
-msgstr ""
+msgstr "FormHelperTest #1548"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:112
 msgid "URLHelperTest #1588"
-msgstr ""
+msgstr "URLHelperTest #1588"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:114
 msgid "ContentSecurityPolicyTest #1581"
-msgstr ""
+msgstr "ContentSecurityPolicyTest #1581"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:115
 msgid "DownloadResponseTest #1576, #1579"
-msgstr ""
+msgstr "DownloadResponseTest #1576, #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:116
 msgid "IncomingRequestDetectingTest #1576"
-msgstr ""
+msgstr "IncomingRequestDetectingTest #1576"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:117
 msgid "IncomingRequestTest #1576"
-msgstr ""
+msgstr "IncomingRequestTest #1576"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:118
 msgid "RedirectResponseTest #1562"
-msgstr ""
+msgstr "RedirectResponseTest #1562"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:119
 msgid "ResponseTest #1576"
-msgstr ""
+msgstr "ResponseTest #1576"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:121
 msgid "TimeDifferenceTest #1603"
-msgstr ""
+msgstr "TimeDifferenceTest #1603"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:122
 msgid "TimeTest #1603"
-msgstr ""
+msgstr "TimeTest #1603"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:124
 msgid "-LanguageTest #1587, #1610"
-msgstr ""
+msgstr "-LanguageTest #1587, #1610"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:126
 msgid "FileHandlerTest #1579"
-msgstr ""
+msgstr "FileHandlerTest #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:127
 msgid "Router/"
-msgstr ""
+msgstr "Router/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:128
 msgid "RouterCollectionTest #1562"
-msgstr ""
+msgstr "RouterCollectionTest #1562"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:129
 msgid "RouterTest #1562"
-msgstr ""
+msgstr "RouterTest #1562"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:131
 msgid "FeatureResponseTest #1593"
-msgstr ""
+msgstr "FeatureResponseTest #1593"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:132
 msgid "FeatureTestCaseTest #1593"
-msgstr ""
+msgstr "FeatureTestCaseTest #1593"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:133
 msgid "TestCaseTest #1593"
-msgstr ""
+msgstr "TestCaseTest #1593"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:134
 msgid "Validation/"
-msgstr ""
+msgstr "Validation/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:135
 msgid "ValidationTest #1562"
-msgstr ""
+msgstr "ValidationTest #1562"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:137
 msgid "ParserPluginTest #1562"
-msgstr ""
+msgstr "ParserPluginTest #1562"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:138
 msgid "ParserTest #1562"
-msgstr ""
+msgstr "ParserTest #1562"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:139
 msgid "ViewTest #1562"
-msgstr ""
+msgstr "ViewTest #1562"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:140
 msgid "CodeIgniterTest #1562"
-msgstr ""
+msgstr "CodeIgniterTest #1562"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:141
 msgid "CommonFunctionsTest #1569, #1562"
-msgstr ""
+msgstr "CommonFunctionsTest #1569, #1562"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:142
 msgid "EntityTest #4c7bfe, #1575"
-msgstr ""
+msgstr "EntityTest #4c7bfe, #1575"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:144
 msgid "user_guide_src/source/"
-msgstr ""
+msgstr "user_guide_src/source/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:145
 msgid "cli/"
-msgstr ""
+msgstr "cli/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:146
 msgid "cli #1579"
-msgstr ""
+msgstr "cli #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:147
 msgid "cli_commands #1579"
-msgstr ""
+msgstr "cli_commands #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:148
 msgid "concepts/"
-msgstr ""
+msgstr "concepts/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:149
 msgid "autoloader #1579"
-msgstr ""
+msgstr "autoloader #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:150
 msgid "mvc #1579"
-msgstr ""
+msgstr "mvc #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:151
 msgid "services #1579"
-msgstr ""
+msgstr "services #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:152
 msgid "structure #1579"
-msgstr ""
+msgstr "structure #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:153
 msgid "database/"
-msgstr ""
+msgstr "database/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:154
 msgid "configuration #1579"
-msgstr ""
+msgstr "configuration #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:155
 msgid "dbmgt/"
-msgstr ""
+msgstr "dbmgt/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:156
 msgid "migration #1579"
-msgstr ""
+msgstr "migration #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:157
 msgid "seeds #1579"
-msgstr ""
+msgstr "seeds #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:158
 msgid "general/"
-msgstr ""
+msgstr "general/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:159
 msgid "common_functions #d7dfc5, #1579"
-msgstr ""
+msgstr "common_functions #d7dfc5, #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:160
 msgid "configuration #1608"
-msgstr ""
+msgstr "configuration #1608"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:161
 msgid "errors #1579"
-msgstr ""
+msgstr "errors #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:162
 msgid "installation/"
-msgstr ""
+msgstr "installation/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:163
 msgid "downloads #1579"
-msgstr ""
+msgstr "downloads #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:164
 msgid "models/"
-msgstr ""
+msgstr "models/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:165
 msgid "entities #547792, #1575"
-msgstr ""
+msgstr "entities #547792, #1575"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:166
 msgid "outgoing/"
-msgstr ""
+msgstr "outgoing/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:167
 msgid "localization #1610"
-msgstr ""
+msgstr "localization #1610"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:168
 msgid "response #1581, #1579"
-msgstr ""
+msgstr "response #1581, #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:169
 msgid "view_parser #1579"
-msgstr ""
+msgstr "view_parser #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:170
 msgid "testing/"
-msgstr ""
+msgstr "testing/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:171
 msgid "debugging #1579"
-msgstr ""
+msgstr "debugging #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:172
 msgid "overview #1593, #1579"
-msgstr ""
+msgstr "overview #1593, #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:173
 msgid "tutorial/"
-msgstr ""
+msgstr "tutorial/"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:174
 msgid "news_section #1586"
-msgstr ""
+msgstr "news_section #1586"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:175
 msgid "static_pages #1579"
-msgstr ""
+msgstr "static_pages #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:177
 msgid "composer.json #1555"
-msgstr ""
+msgstr "composer.json #1555"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:178
 msgid "ComposerScripts #1551"
-msgstr ""
+msgstr "ComposerScripts #1551"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:179
 msgid "spark #1579"
-msgstr ""
+msgstr "spark #1579"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:180
 msgid "Vagrantfile.dist #1459"
-msgstr ""
+msgstr "Vagrantfile.dist #1459"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:183
 msgid "PRs merged"
-msgstr ""
+msgstr "병합된 PR"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:185
 msgid "#1610 Test, fix & enhance Language"
-msgstr ""
+msgstr "#1610 Language\ 의 테스트, 수정 및 개선"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:186
 msgid "#a0fc68 Clear binds after inserts, updates, and find queries"
-msgstr ""
+msgstr "#a0fc68 insert, update, find 쿼리 후 바인딩 초기화"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:187
 msgid "#1608 Note about environment configuration in UG"
-msgstr ""
+msgstr "#1608 사용자 가이드에 환경 설정에 관한 참고 사항 추가"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:188
 msgid "#1606 release framework script clean up"
-msgstr ""
+msgstr "#1606 프레임워크 릴리스 스크립트 정리"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:189
 msgid "#1603 Flesh out I18n testing"
-msgstr ""
+msgstr "#1603 I18n 테스트 보강"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:190
 msgid "#8f305a Catch mysql connection errors and sanitize username and password"
-msgstr ""
+msgstr "#8f305a MySQL 연결 오류 처리 및 사용자 이름·비밀번호 정제"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:191
 msgid "#1602 Model's first and update didn't work primary key-less tables"
-msgstr ""
+msgstr "#1602 기본 키가 없는 테이블에서 Model의 first 및 update가 동작하지 않던 문제 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:192
 msgid "#1601 clean up \\Config\\Services in Common.php"
-msgstr ""
+msgstr "#1601 Common.php에서 \\Config\\Services 정리"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:193
 msgid "#1600 admin/starter/composer.json clean up"
-msgstr ""
+msgstr "#1600 admin/starter/composer.json 정리"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:194
 msgid "#1598 use $defaultGroup as default value for database session DBGroup"
-msgstr ""
+msgstr "#1598 데이터베이스 세션 DBGroup의 기본값으로 $defaultGroup 사용"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:195
 msgid "#1595 handle fatal error via pre_system"
-msgstr ""
+msgstr "#1595 pre_system을 통한 치명적 오류 처리"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:196
 msgid "#1594 Fix Toolbar invalid css"
-msgstr ""
+msgstr "#1594 Toolbar의 잘못된 CSS 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:197
 msgid "#1593 Flesh out the Test package testing"
-msgstr ""
+msgstr "#1593 Test 패키지 테스트 보강"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:198
 msgid "#1589 Fix Toolbar file loading throw exception"
-msgstr ""
+msgstr "#1589 Toolbar 파일 로딩 시 예외 발생 문제 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:199
 msgid "#1588 Fix site_url generate invalid url"
-msgstr ""
+msgstr "#1588 site_url이 잘못된 URL을 생성하는 문제 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:200
 msgid "#1587 Add Language fallback"
-msgstr ""
+msgstr "#1587 Language 폴백 추가"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:201
 msgid "#1586 Fix model namespace in tutorial"
-msgstr ""
+msgstr "#1586 튜토리얼의 모델 네임스페이스 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:202
 msgid "#1585 Type hint MigrationRunner methods"
-msgstr ""
+msgstr "#1585 MigrationRunner 메서드에 타입 힌트 추가"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:203
 msgid "#4c7bfe Entity fill() now respects mapped properties"
-msgstr ""
+msgstr "#4c7bfe Entity의 fill()\ 이 매핑된 프로퍼티를 이제 올바르게 처리함"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:204
 msgid "#547792 Add _get and _set notes for Entity class"
-msgstr ""
+msgstr "#547792 Entity 클래스의 _get 및 _set 관련 설명 추가"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:205
 msgid "#1582 Fix changelog index & common functions UG indent"
-msgstr ""
+msgstr "#1582 변경 로그 인덱스 및 공통 함수 사용자 가이드 들여쓰기 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:206
 msgid "#1581 ContentSecurityPolicy testing & enhancement"
-msgstr ""
+msgstr "#1581 ContentSecurityPolicy 테스트 및 개선"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:207
 msgid "#1579 Use Absolute Paths"
-msgstr ""
+msgstr "#1579 절대 경로 사용"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:208
 msgid "#1576 Testing13/http"
-msgstr ""
+msgstr "#1576 Testing13/http"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:209
 msgid "#1575 Adds ?integer, ?double, ?string, etc. cast types"
-msgstr ""
+msgstr "#1575 ?integer, ?double, ?string 등 nullable 캐스트 타입 추가"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:210
 msgid "#ab8b5b Set baseURL to example.com during testing by default."
-msgstr ""
+msgstr "#ab8b5b 테스트 시 baseURL의 기본값을 example.com으로 설정"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:211
 msgid "#d7dfc5 Doc tweaks for redirects"
-msgstr ""
+msgstr "#d7dfc5 리다이렉트 관련 문서 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:212
 msgid "#1573 Lessons learned"
-msgstr ""
+msgstr "#1573 교훈 정리"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:213
 msgid "#1571 Toolbar updates"
-msgstr ""
+msgstr "#1571 Toolbar 업데이트"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:214
 msgid "#1569 Test esc() with different encodings and ignore app-only helpers"
-msgstr ""
+msgstr "#1569 다양한 인코딩으로 esc() 테스트 및 앱 전용 헬퍼 무시"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:215
 msgid "#1563 id attribute support added for csrf_field"
-msgstr ""
+msgstr "#1563 csrf_field에 id 속성 지원 추가"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:216
 msgid "#1562 Integrates Autoloader and FileLocator"
-msgstr ""
+msgstr "#1562 Autoloader와 FileLocator 통합"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:217
 msgid "#1561 Update Connection.php"
-msgstr ""
+msgstr "#1561 Connection.php 업데이트"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:218
 msgid "#1557 remove \\ prefix on use statements"
-msgstr ""
+msgstr "#1557 use 구문에서 \\ 접두사 제거"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:219
 msgid ""
 "#1556 using protected intead of public modifier for setUp() function in "
 "tests"
-msgstr ""
+msgstr "#1556 테스트에서 setUp() 함수에 public 대신 protected 접근 제어자 사용"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:220
 msgid "#1555 autoload clean up: remove Psr\\Log namespace from composer.json"
-msgstr ""
+msgstr "#1555 자동 로드 정리: composer.json에서 Psr\\Log 네임스페이스 제거"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:221
 msgid "#1551 remove manual define \"system/\" directory prefix at ComposerScripts"
-msgstr ""
+msgstr "#1551 ComposerScripts에서 \"system/\" 디렉터리 접두사 수동 정의 제거"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:222
 msgid "#1548 allows to set empty html attr"
-msgstr ""
+msgstr "#1548 빈 HTML 속성 설정 허용"
 
 #: ../../source/changelogs/v4.0.0-alpha.4.rst:223
 msgid "#1459 Add Vagrantfile"
-msgstr ""
-
+msgstr "#1459 Vagrantfile 추가"

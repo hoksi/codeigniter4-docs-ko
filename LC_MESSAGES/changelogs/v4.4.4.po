@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,23 +21,23 @@ msgstr ""
 
 #: ../../source/changelogs/v4.4.4.rst:3
 msgid "Version 4.4.4"
-msgstr ""
+msgstr "버전 4.4.4"
 
 #: ../../source/changelogs/v4.4.4.rst:5
 msgid "Release Date: December 28, 2023"
-msgstr ""
+msgstr "릴리스 날짜: 2023년 12월 28일"
 
 #: ../../source/changelogs/v4.4.4.rst:7
 msgid "**4.4.4 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4 4.4.4 릴리스**"
 
 #: ../../source/changelogs/v4.4.4.rst:15
 msgid "BREAKING"
-msgstr ""
+msgstr "주요 변경사항"
 
 #: ../../source/changelogs/v4.4.4.rst:18
 msgid "Validation with Dot Array Syntax"
-msgstr ""
+msgstr "점 배열 구문을 사용한 유효성 검사"
 
 #: ../../source/changelogs/v4.4.4.rst:20
 msgid ""
@@ -46,20 +45,23 @@ msgid ""
 "correct dimensions as \"dot array syntax\". See :ref:`Upgrading "
 "<upgrade-444-validation-with-dot-array-syntax>` for details."
 msgstr ""
+"와일드카드 ``*``\ 를 사용하는 유효성 검사 규칙은 이제 \"점 배열 구문\"으로서 올바른 차원의 데이터만 검사합니다. "
+"자세한 내용은 :ref:`업그레이드 <upgrade-444-validation-with-dot-array-syntax>`\ 를 참고하세요."
 
 #: ../../source/changelogs/v4.4.4.rst:25
 msgid "Validation rules matches and differs"
-msgstr ""
+msgstr "유효성 검사 규칙 matches와 differs"
 
 #: ../../source/changelogs/v4.4.4.rst:27
 msgid ""
 "Bugs have been fixed in the case where ``matches`` and ``differs`` in the"
 " Strict and Traditional rules validate data of non-string types."
 msgstr ""
+"엄격한 규칙과 전통적인 규칙에서 ``matches``\ 와 ``differs``\ 가 문자열이 아닌 타입의 데이터를 검사하는 경우의 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.4.4.rst:31
 msgid "The use of the `ssl_key` option in CURLRequest was removed"
-msgstr ""
+msgstr "CURLRequest에서 `ssl_key` 옵션 사용이 제거됨"
 
 #: ../../source/changelogs/v4.4.4.rst:33
 msgid ""
@@ -68,40 +70,43 @@ msgid ""
 "according to documentation. You can define your CA bundle via the "
 "`verify` option."
 msgstr ""
+"버그로 인해 CURLRequest에서 CA 번들을 정의하기 위해 문서화되지 않은 `ssl_key` 설정 옵션을 사용했습니다. "
+"이 문제가 수정되어 이제 문서에 따라 작동합니다. `verify` 옵션을 통해 CA 번들을 정의할 수 있습니다."
 
 #: ../../source/changelogs/v4.4.4.rst:37
 msgid "Filesystem Helper"
-msgstr ""
+msgstr "파일 시스템 헬퍼"
 
 #: ../../source/changelogs/v4.4.4.rst:39
 msgid ""
 ":php:func:`get_filenames()` now follows symlink folders, which it "
 "previously just returned without following."
 msgstr ""
+":php:func:`get_filenames()`\ 이 이제 심볼릭 링크 폴더를 따라가며, 이전에는 따라가지 않고 반환했습니다."
 
 #: ../../source/changelogs/v4.4.4.rst:44
 msgid "Enhancements"
-msgstr ""
+msgstr "개선"
 
 #: ../../source/changelogs/v4.4.4.rst:46
 msgid "Full support for PHP 8.3."
-msgstr ""
+msgstr "PHP 8.3 완전 지원."
 
 #: ../../source/changelogs/v4.4.4.rst:50
 msgid "Message Changes"
-msgstr ""
+msgstr "메시지 변경"
 
 #: ../../source/changelogs/v4.4.4.rst:52
 msgid "Added ``HTTP.invalidJSON`` error message."
-msgstr ""
+msgstr "``HTTP.invalidJSON`` 오류 메시지가 추가되었습니다."
 
 #: ../../source/changelogs/v4.4.4.rst:53
 msgid "Added ``HTTP.unsupportedJSONFormat`` error message."
-msgstr ""
+msgstr "``HTTP.unsupportedJSONFormat`` 오류 메시지가 추가되었습니다."
 
 #: ../../source/changelogs/v4.4.4.rst:57
 msgid "Deprecations"
-msgstr ""
+msgstr "사용 중단"
 
 #: ../../source/changelogs/v4.4.4.rst:59
 msgid ""
@@ -109,16 +114,18 @@ msgid ""
 "method is deprecated. This method does not work from the beginning. Use "
 ":php:func:`env()` instead."
 msgstr ""
+"**요청:** :php:meth:`CodeIgniter\\\\HTTP\\\\Request::getEnv()` 메서드가 사용 중단되었습니다. "
+"이 메서드는 처음부터 작동하지 않았습니다. 대신 :php:func:`env()`\ 를 사용하세요."
 
 #: ../../source/changelogs/v4.4.4.rst:65
 msgid "Bugs Fixed"
-msgstr ""
+msgstr "버그 수정"
 
 #: ../../source/changelogs/v4.4.4.rst:67
 msgid ""
 "**CURLRequest:** Fixed a bug where the hostname was checked even if "
 "options 'verify' was set to *false*."
-msgstr ""
+msgstr "**CURLRequest:** 옵션 'verify'가 *false*\ 로 설정되어도 호스트명을 확인하던 버그가 수정되었습니다."
 
 #: ../../source/changelogs/v4.4.4.rst:69
 msgid ""
@@ -126,4 +133,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
 " for a complete list of bugs fixed."
 msgstr ""
-
+"수정된 버그의 전체 목록은 저장소의 `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_\ 를 참고하세요."

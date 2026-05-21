@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,19 +21,19 @@ msgstr ""
 
 #: ../../source/changelogs/v4.5.5.rst:3
 msgid "Version 4.5.5"
-msgstr ""
+msgstr "버전 4.5.5"
 
 #: ../../source/changelogs/v4.5.5.rst:5
 msgid "Release Date: September 7, 2024"
-msgstr ""
+msgstr "릴리스 날짜: 2024년 9월 7일"
 
 #: ../../source/changelogs/v4.5.5.rst:7
 msgid "**4.5.5 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4 4.5.5 릴리스**"
 
 #: ../../source/changelogs/v4.5.5.rst:15
 msgid "Bugs Fixed"
-msgstr ""
+msgstr "버그 수정"
 
 #: ../../source/changelogs/v4.5.5.rst:17
 msgid ""
@@ -42,6 +41,8 @@ msgid ""
 ":php:func:`auto_link()` was old has been fixed. As a result of this fix, "
 "the same regular expression as CodeIgniter 3 is now used."
 msgstr ""
+"**URL 헬퍼:** :php:func:`auto_link()`\ 의 정규 표현식이 구버전이었던 버그가 수정되었습니다. "
+"이 수정으로 인해 이제 CodeIgniter 3과 동일한 정규 표현식이 사용됩니다."
 
 #: ../../source/changelogs/v4.5.5.rst:21
 msgid ""
@@ -49,4 +50,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
 " for a complete list of bugs fixed."
 msgstr ""
-
+"수정된 버그의 전체 목록은 저장소의 `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_\ 를 참고하세요."

@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,19 +21,19 @@ msgstr ""
 
 #: ../../source/changelogs/v4.1.9.rst:2
 msgid "Version 4.1.9"
-msgstr ""
+msgstr "버전 4.1.9"
 
 #: ../../source/changelogs/v4.1.9.rst:4
 msgid "Release Date: February 25, 2022"
-msgstr ""
+msgstr "릴리즈 날짜: 2022년 2월 25일"
 
 #: ../../source/changelogs/v4.1.9.rst:6
 msgid "**4.1.9 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4\ 의 4.1.9 릴리즈**"
 
 #: ../../source/changelogs/v4.1.9.rst:13
 msgid "SECURITY"
-msgstr ""
+msgstr "보안"
 
 #: ../../source/changelogs/v4.1.9.rst:15
 msgid ""
@@ -43,6 +42,8 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-"
 "xjp4-6w75-qrj7>`_ for more information."
 msgstr ""
+"*원격 CLI 명령 실행 취약점*\ 이 수정되었습니다. "
+"자세한 내용은 `보안 권고사항 GHSA-xjp4-6w75-qrj7 <https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-xjp4-6w75-qrj7>`_\ 을 참조하십시오."
 
 #: ../../source/changelogs/v4.1.9.rst:16
 msgid ""
@@ -51,4 +52,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-"
 "4v37-24gm-h554>`_ for more information."
 msgstr ""
-
+"*크로스 사이트 요청 위조(CSRF) 보호 우회 취약점*\ 이 수정되었습니다. "
+"자세한 내용은 `보안 권고사항 GHSA-4v37-24gm-h554 <https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-4v37-24gm-h554>`_\ 을 참조하십시오."

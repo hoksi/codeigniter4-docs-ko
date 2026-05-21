@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,47 +21,49 @@ msgstr ""
 
 #: ../../source/changelogs/v4.3.1.rst:2
 msgid "Version 4.3.1"
-msgstr ""
+msgstr "버전 4.3.1"
 
 #: ../../source/changelogs/v4.3.1.rst:4
 msgid "Release Date: January 14, 2023"
-msgstr ""
+msgstr "릴리스 날짜: 2023년 1월 14일"
 
 #: ../../source/changelogs/v4.3.1.rst:6
 msgid "**4.3.1 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4 4.3.1 릴리스**"
 
 #: ../../source/changelogs/v4.3.1.rst:13
 msgid "Bugs Fixed"
-msgstr ""
+msgstr "버그 수정"
 
 #: ../../source/changelogs/v4.3.1.rst:15
 msgid ""
 "Fixed: some environment variable (**.env**) values were not reflected in "
 "Email Config"
-msgstr ""
+msgstr "수정됨: 일부 환경 변수 (**.env**) 값이 Email Config에 반영되지 않던 문제"
 
 #: ../../source/changelogs/v4.3.1.rst:16
 msgid "Fixed: TypeError in Validation ``is_unique`` and ``is_not_unique``"
-msgstr ""
+msgstr "수정됨: 유효성 검사 ``is_unique``\ 와 ``is_not_unique``\ 에서 TypeError 발생 문제"
 
 #: ../../source/changelogs/v4.3.1.rst:17
 msgid ""
 "Fixed: revert method name ``BaseBuilder::resetQuery()`` changed "
 "accidentally"
-msgstr ""
+msgstr "수정됨: 실수로 변경된 메서드 이름 ``BaseBuilder::resetQuery()`` 복원"
 
 #: ../../source/changelogs/v4.3.1.rst:18
 msgid ""
 "Fixed: handling float in Validation Strcit Rules (``greater_than``, "
 "``greater_than_equal_to``, ``less_than``, ``less_than_equal_to``)"
 msgstr ""
+"수정됨: 유효성 검사 엄격한 규칙 (``greater_than``, ``greater_than_equal_to``, "
+"``less_than``, ``less_than_equal_to``)에서 float 처리 문제"
 
 #: ../../source/changelogs/v4.3.1.rst:19
 msgid ""
 "Fixed: missing instruction for ``Config\\Exceptions`` in PHP 8.2 in the "
 "user guide"
-msgstr ""
+msgstr "수정됨: 사용자 가이드에서 PHP 8.2의 ``Config\\Exceptions``\ 에 대한 설명 누락"
 
 #: ../../source/changelogs/v4.3.1.rst:21
 msgid ""
@@ -70,4 +71,5 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
 " for a complete list of bugs fixed."
 msgstr ""
-
+"수정된 버그의 전체 목록은 저장소의 `CHANGELOG.md "
+"<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_\ 를 참고하세요."

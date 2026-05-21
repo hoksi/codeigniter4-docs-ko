@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,734 +21,733 @@ msgstr ""
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:2
 msgid "Version 4.0.0-alpha.2"
-msgstr ""
+msgstr "버전 4.0.0-알파.2"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:4
 msgid "Release Date: Oct 26, 2018"
-msgstr ""
+msgstr "릴리즈 날짜: 2018년 10월 26일"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:6
 msgid "**Second alpha release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4\ 의 두 번째 알파 릴리즈**"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:13
 msgid "Changed Files"
-msgstr ""
+msgstr "변경된 파일"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:15
 msgid "The list of changed files follows, with PR numbers shown."
-msgstr ""
+msgstr "PR 번호와 함께 변경된 파일 목록이 아래에 나열됩니다."
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:17
 msgid "application /"
-msgstr ""
+msgstr "application /"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:18
 msgid "composer.json #1312"
-msgstr ""
+msgstr "composer.json #1312"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:19
 msgid "Config/Boot/development, production, testing #1312"
-msgstr ""
+msgstr "Config/Boot/development, production, testing #1312"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:20
 msgid "Config/Paths #1341"
-msgstr ""
+msgstr "Config/Paths #1341"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:21
 msgid "Config/Routes #1281"
-msgstr ""
+msgstr "Config/Routes #1281"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:22
 msgid "Filters/Honeypot #1314"
-msgstr ""
+msgstr "Filters/Honeypot #1314"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:23
 msgid "Views/errors/cli/error_404 #1272"
-msgstr ""
+msgstr "Views/errors/cli/error_404 #1272"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:24
 msgid "Views/welcome_message #1342"
-msgstr ""
+msgstr "Views/welcome_message #1342"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:26
 msgid "public /"
-msgstr ""
+msgstr "public /"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:27
 msgid ".htaccess #1281"
-msgstr ""
+msgstr ".htaccess #1281"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:28
 msgid "index #1295, #1313"
-msgstr ""
+msgstr "index #1295, #1313"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:30
 msgid "system /"
-msgstr ""
+msgstr "system /"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:31
 msgid "CLI/"
-msgstr ""
+msgstr "CLI/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:32
 msgid "CommandRunner #1350, #1356"
-msgstr ""
+msgstr "CommandRunner #1350, #1356"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:33
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:85
 msgid "Commands/"
-msgstr ""
+msgstr "Commands/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:34
 msgid "Server/Serve #1313"
-msgstr ""
+msgstr "Server/Serve #1313"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:35
 msgid "Config/"
-msgstr ""
+msgstr "Config/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:36
 msgid "AutoloadConfig #1271"
-msgstr ""
+msgstr "AutoloadConfig #1271"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:37
 msgid "Services #1341"
-msgstr ""
+msgstr "Services #1341"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:38
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:87
 msgid "Database/"
-msgstr ""
+msgstr "Database/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:39
 msgid "BaseBuilder #1217"
-msgstr ""
+msgstr "BaseBuilder #1217"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:40
 msgid "BaseUtils #1209, #1329"
-msgstr ""
+msgstr "BaseUtils #1209, #1329"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:41
 msgid "Database #1339"
-msgstr ""
+msgstr "Database #1339"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:42
 msgid "MySQLi/Utils #1209"
-msgstr ""
+msgstr "MySQLi/Utils #1209"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:43
 msgid "Debug/Toolbar/"
-msgstr ""
+msgstr "Debug/Toolbar/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:44
 msgid "Views/toolbar.css #1342"
-msgstr ""
+msgstr "Views/toolbar.css #1342"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:45
 msgid "Exceptions/"
-msgstr ""
+msgstr "Exceptions/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:46
 msgid "CastException #1283"
-msgstr ""
+msgstr "CastException #1283"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:47
 msgid "DownloadException #1239"
-msgstr ""
+msgstr "DownloadException #1239"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:48
 msgid "FrameworkException #1313"
-msgstr ""
+msgstr "FrameworkException #1313"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:49
 msgid "Filters/"
-msgstr ""
+msgstr "Filters/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:50
 msgid "Filters #1239"
-msgstr ""
+msgstr "Filters #1239"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:51
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:92
 msgid "Helpers/"
-msgstr ""
+msgstr "Helpers/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:52
 msgid "cookie_helper #1286"
-msgstr ""
+msgstr "cookie_helper #1286"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:53
 msgid "form_helper #1244, #1327"
-msgstr ""
+msgstr "form_helper #1244, #1327"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:54
 msgid "url_helper #1321"
-msgstr ""
+msgstr "url_helper #1321"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:55
 msgid "xml_helper #1209"
-msgstr ""
+msgstr "xml_helper #1209"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:56
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:94
 msgid "Honeypot/"
-msgstr ""
+msgstr "Honeypot/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:57
 msgid "Honeypot #1314"
-msgstr ""
+msgstr "Honeypot #1314"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:58
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:96
 msgid "HTTP/"
-msgstr ""
+msgstr "HTTP/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:59
 msgid "CliRequest #1303"
-msgstr ""
+msgstr "CliRequest #1303"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:60
 msgid "CURLRequest #1303"
-msgstr ""
+msgstr "CURLRequest #1303"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:61
 msgid "DownloadResponse #1239"
-msgstr ""
+msgstr "DownloadResponse #1239"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:62
 msgid "Exceptions/HTTPException #1303"
-msgstr ""
+msgstr "Exceptions/HTTPException #1303"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:63
 msgid "IncomingRequest #1304, #1313"
-msgstr ""
+msgstr "IncomingRequest #1304, #1313"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:64
 msgid "Negotiate #1306"
-msgstr ""
+msgstr "Negotiate #1306"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:65
 msgid "RedirectResponse #1300, #1306, #1329"
-msgstr ""
+msgstr "RedirectResponse #1300, #1306, #1329"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:66
 msgid "Response #1239, #1286"
-msgstr ""
+msgstr "Response #1239, #1286"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:67
 msgid "ResponseInterface #1239"
-msgstr ""
+msgstr "ResponseInterface #1239"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:68
 msgid "URI #1300"
-msgstr ""
+msgstr "URI #1300"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:69
 msgid "Language/en/"
-msgstr ""
+msgstr "Language/en/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:70
 msgid "Cast #1283"
-msgstr ""
+msgstr "Cast #1283"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:71
 msgid "HTTP #1239"
-msgstr ""
+msgstr "HTTP #1239"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:72
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:108
 msgid "Router/"
-msgstr ""
+msgstr "Router/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:73
 msgid "RouteCollection #1285, #1355"
-msgstr ""
+msgstr "RouteCollection #1285, #1355"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:74
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:110
 msgid "Test/"
-msgstr ""
+msgstr "Test/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:75
 msgid "CIUnitTestCase #1312, #1361"
-msgstr ""
+msgstr "CIUnitTestCase #1312, #1361"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:76
 msgid "FeatureTestCase #1282"
-msgstr ""
+msgstr "FeatureTestCase #1282"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:77
 msgid "CodeIgniter #1239 #1337"
-msgstr ""
+msgstr "CodeIgniter #1239 #1337"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:78
 msgid "Common #1291"
-msgstr ""
+msgstr "Common #1291"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:79
 msgid "Entity #1283, #1311"
-msgstr ""
+msgstr "Entity #1283, #1311"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:80
 msgid "Model #1311"
-msgstr ""
+msgstr "Model #1311"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:82
 msgid "tests /"
-msgstr ""
+msgstr "tests /"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:83
 msgid "API/"
-msgstr ""
+msgstr "API/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:84
 msgid "ResponseTraitTest #1302"
-msgstr ""
+msgstr "ResponseTraitTest #1302"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:86
 msgid "CommandsTest #1356"
-msgstr ""
+msgstr "CommandsTest #1356"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:88
 msgid "BaseBuilderTest #1217"
-msgstr ""
+msgstr "BaseBuilderTest #1217"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:89
 msgid "Live/ModelTest #1311"
-msgstr ""
+msgstr "Live/ModelTest #1311"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:90
 msgid "Debug/"
-msgstr ""
+msgstr "Debug/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:91
 msgid "TimerTest #1273"
-msgstr ""
+msgstr "TimerTest #1273"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:93
 msgid "CookieHelperTest #1286"
-msgstr ""
+msgstr "CookieHelperTest #1286"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:95
 msgid "HoneypotTest #1314"
-msgstr ""
+msgstr "HoneypotTest #1314"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:97
 msgid "Files/"
-msgstr ""
+msgstr "Files/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:98
 msgid "FileMovingTest #1302"
-msgstr ""
+msgstr "FileMovingTest #1302"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:99
 msgid "UploadedFileTest #1302"
-msgstr ""
+msgstr "UploadedFileTest #1302"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:100
 msgid "CLIRequestTest #1303"
-msgstr ""
+msgstr "CLIRequestTest #1303"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:101
 msgid "CURLRequestTest #1303"
-msgstr ""
+msgstr "CURLRequestTest #1303"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:102
 msgid "DownloadResponseTest #1239"
-msgstr ""
+msgstr "DownloadResponseTest #1239"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:103
 msgid "NegotiateTest #1306"
-msgstr ""
+msgstr "NegotiateTest #1306"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:104
 msgid "RedirectResponseTest #1300, #1306, #1329"
-msgstr ""
+msgstr "RedirectResponseTest #1300, #1306, #1329"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:105
 msgid "ResponseTest #1239"
-msgstr ""
+msgstr "ResponseTest #1239"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:106
 msgid "I18n/"
-msgstr ""
+msgstr "I18n/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:107
 msgid "TimeTest #1273, #1316"
-msgstr ""
+msgstr "TimeTest #1273, #1316"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:109
 msgid "RouteTest #1285, #1355"
-msgstr ""
+msgstr "RouteTest #1285, #1355"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:111
 msgid "TestCaseEmissionsTest #1312"
-msgstr ""
+msgstr "TestCaseEmissionsTest #1312"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:112
 msgid "TestCaseTest #1312"
-msgstr ""
+msgstr "TestCaseTest #1312"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:113
 msgid "View/"
-msgstr ""
+msgstr "View/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:114
 msgid "ParserTest #1311"
-msgstr ""
+msgstr "ParserTest #1311"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:115
 msgid "EntityTest #1319"
-msgstr ""
+msgstr "EntityTest #1319"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:117
 msgid "user_guide_src /source/"
-msgstr ""
+msgstr "user_guide_src /source/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:118
 msgid "cli/"
-msgstr ""
+msgstr "cli/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:119
 msgid "cli_request #1303"
-msgstr ""
+msgstr "cli_request #1303"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:120
 msgid "database/"
-msgstr ""
+msgstr "database/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:121
 msgid "query_builder #1217"
-msgstr ""
+msgstr "query_builder #1217"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:122
 msgid "utilities #1209"
-msgstr ""
+msgstr "utilities #1209"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:123
 msgid "extending/"
-msgstr ""
+msgstr "extending/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:124
 msgid "contributing #1280"
-msgstr ""
+msgstr "contributing #1280"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:125
 msgid "general/"
-msgstr ""
+msgstr "general/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:126
 msgid "common_functions #1300, #1329"
-msgstr ""
+msgstr "common_functions #1300, #1329"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:127
 msgid "helpers #1291"
-msgstr ""
+msgstr "helpers #1291"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:128
 msgid "managing_apps #1341"
-msgstr ""
+msgstr "managing_apps #1341"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:129
 msgid "helpers/"
-msgstr ""
+msgstr "helpers/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:130
 msgid "xml_helper #1321"
-msgstr ""
+msgstr "xml_helper #1321"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:131
 msgid "incoming/"
-msgstr ""
+msgstr "incoming/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:132
 msgid "controllers #1323"
-msgstr ""
+msgstr "controllers #1323"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:133
 msgid "routing #1337"
-msgstr ""
+msgstr "routing #1337"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:134
 msgid "intro/"
-msgstr ""
+msgstr "intro/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:135
 msgid "requirements #1280, #1303"
-msgstr ""
+msgstr "requirements #1280, #1303"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:136
 msgid "installation/ #1280, #1303"
-msgstr ""
+msgstr "installation/ #1280, #1303"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:137
 msgid "troubleshooting #1265"
-msgstr ""
+msgstr "troubleshooting #1265"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:138
 msgid "libraries/"
-msgstr ""
+msgstr "libraries/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:139
 msgid "curlrequest #1303"
-msgstr ""
+msgstr "curlrequest #1303"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:140
 msgid "honeypot #1314"
-msgstr ""
+msgstr "honeypot #1314"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:141
 msgid "sessions #1333"
-msgstr ""
+msgstr "sessions #1333"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:142
 msgid "uploaded_files #1302"
-msgstr ""
+msgstr "uploaded_files #1302"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:143
 msgid "models/"
-msgstr ""
+msgstr "models/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:144
 msgid "entities #1283"
-msgstr ""
+msgstr "entities #1283"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:145
 msgid "outgoing/"
-msgstr ""
+msgstr "outgoing/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:146
 msgid "response #1340"
-msgstr ""
+msgstr "response #1340"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:147
 msgid "testing/"
-msgstr ""
+msgstr "testing/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:148
 msgid "overview #1312"
-msgstr ""
+msgstr "overview #1312"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:149
 msgid "tutorial... #1265, #1281, #1294"
-msgstr ""
+msgstr "tutorial... #1265, #1281, #1294"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:151
 msgid "/"
-msgstr ""
+msgstr "/"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:152
 msgid "spark #1305"
-msgstr ""
+msgstr "spark #1305"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:155
 msgid "PRs merged"
-msgstr ""
+msgstr "병합된 PR 목록"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:157
 msgid "#1361 Add timing assertion to CIUnitTestCase"
-msgstr ""
+msgstr "#1361 CIUnitTestCase\ 에 타이밍 어설션 추가"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:158
 msgid "#1312 Add headerEmitted assertions to CIUnitTestCase"
-msgstr ""
+msgstr "#1312 CIUnitTestCase\ 에 headerEmitted 어설션 추가"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:159
 msgid "#1356 Testing/commands"
-msgstr ""
+msgstr "#1356 Testing/commands"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:160
 msgid "#1355 Handle duplicate HTTP verb and generic rules properly"
-msgstr ""
+msgstr "#1355 중복 HTTP 동사 및 일반 규칙 처리 개선"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:161
 msgid "#1350 Checks if class is instantiable and is a command"
-msgstr ""
+msgstr "#1350 클래스가 인스턴스화 가능하고 커맨드인지 확인"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:162
 msgid "#1348 Fix sphinx formatting in sessions"
-msgstr ""
+msgstr "#1348 세션 문서의 Sphinx 형식 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:163
 msgid "#1347 Fix sphinx formatting in sessions"
-msgstr ""
+msgstr "#1347 세션 문서의 Sphinx 형식 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:164
 msgid "#1342 Toolbar Styles"
-msgstr ""
+msgstr "#1342 툴바 스타일"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:165
 msgid "#1341 Make viewpath configurable in Paths.php. Fixes #1296"
-msgstr ""
+msgstr "#1341 Paths.php\ 에서 뷰 경로를 설정 가능하도록 수정. #1296 해결"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:166
 msgid ""
 "#1340 Update docs for downloads to reflect the need to return it. Fixes "
 "#1331"
-msgstr ""
+msgstr "#1340 다운로드 문서를 반환 필요성에 맞게 업데이트. #1331 해결"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:167
 msgid "#1339 Fix error where Forge class might not be returned. Fixes #1225"
-msgstr ""
+msgstr "#1339 Forge\ 클래스가 반환되지 않을 수 있는 오류 수정. #1225 해결"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:168
 msgid "#1337 Filter in the router Fixes #1315"
-msgstr ""
+msgstr "#1337 라우터의 필터 수정. #1315 해결"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:169
 msgid "#1336 Revert alpha.2"
-msgstr ""
+msgstr "#1336 알파.2 되돌리기"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:170
 msgid "#1334 Proposed changelog for alpha.2"
-msgstr ""
+msgstr "#1334 알파.2 변경 로그 제안"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:171
 msgid "#1333 Error in user guide for session config. Fixes #1330"
-msgstr ""
+msgstr "#1333 세션 설정 사용자 가이드의 오류 수정. #1330 해결"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:172
 msgid "#1329 Tweaks"
-msgstr ""
+msgstr "#1329 세부 조정"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:173
 msgid "#1327 FIX form_hidden and form_open - value escaping as is in form_input."
-msgstr ""
+msgstr "#1327 form_hidden\ 과 form_open\ 의 값 이스케이프 처리를 form_input\ 과 동일하게 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:174
 msgid "#1323 Fix doc error : show_404() doesn't exist any more"
-msgstr ""
+msgstr "#1323 문서 오류 수정: show_404()\ 는 더 이상 존재하지 않음"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:175
 msgid "#1321 Added missing xml_helper UG page"
-msgstr ""
+msgstr "#1321 누락된 xml_helper 사용자 가이드 페이지 추가"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:176
 msgid "#1319 Testing/entity"
-msgstr ""
+msgstr "#1319 Testing/entity"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:177
 msgid "#1316 Refactor TimeTest"
-msgstr ""
+msgstr "#1316 TimeTest 리팩터링"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:178
 msgid "#1314 Fix & expand Honeypot & its tests"
-msgstr ""
+msgstr "#1314 Honeypot\ 및 테스트 수정 및 확장"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:179
 msgid "#1313 Clean exception"
-msgstr ""
+msgstr "#1313 예외 처리 정리"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:180
 msgid ""
 "#1311 Entities store an original stack of values to compare against so we"
 " d..."
-msgstr ""
+msgstr "#1311 엔티티가 비교를 위해 원본 값 스택을 저장하도록 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:181
 msgid "#1306 Testing3/http"
-msgstr ""
+msgstr "#1306 Testing3/http"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:182
 msgid "#1305 Change chdir('public') to chdir($public)"
-msgstr ""
+msgstr "#1305 chdir('public')\ 을 chdir($public)\ 으로 변경"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:183
 msgid "#1304 Refactor script name stripping in parseRequestURI()"
-msgstr ""
+msgstr "#1304 parseRequestURI()\ 의 스크립트 이름 제거 로직 리팩터링"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:184
 msgid "#1303 Testing/http"
-msgstr ""
+msgstr "#1303 Testing/http"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:185
 msgid "#1302 Exception: No Formatter defined for mime type ''"
-msgstr ""
+msgstr "#1302 예외: 빈 MIME 타입에 대한 Formatter\ 가 정의되지 않음"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:186
 msgid "#1300 Allow redirect with Query Vars from the current request."
-msgstr ""
+msgstr "#1300 현재 요청의 쿼리 변수를 포함한 리다이렉트 허용"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:187
 msgid "#1295 Fix grammar in front controller comment."
-msgstr ""
+msgstr "#1295 프론트 컨트롤러 주석의 문법 오류 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:188
 msgid "#1294 Updated final tutorial page. Fixes #1292"
-msgstr ""
+msgstr "#1294 마지막 튜토리얼 페이지 업데이트. #1292 해결"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:189
 msgid "#1291 Allows extending of helpers. Fixes #1264"
-msgstr ""
+msgstr "#1291 헬퍼 확장 허용. #1264 해결"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:190
 msgid "#1286 Cookies"
-msgstr ""
+msgstr "#1286 쿠키"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:191
 msgid ""
 "#1285 Ensure current HTTP verb routes are matched prior to any * matched "
 "ro..."
-msgstr ""
+msgstr "#1285 와일드카드(*) 매칭 라우트보다 현재 HTTP 동사 라우트를 먼저 매칭하도록 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:192
 msgid "#1283 Entities"
-msgstr ""
+msgstr "#1283 엔티티"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:193
 msgid ""
 "#1282 system/Test/FeatureTestCase::setupRequest(), minor fixes phpdoc "
 "block..."
-msgstr ""
+msgstr "#1282 system/Test/FeatureTestCase::setupRequest()\ 의 phpdoc 블록 소폭 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:194
 msgid "#1281 Tut"
-msgstr ""
+msgstr "#1281 튜토리얼"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:195
 msgid "#1280 Add contributing reference to user guide"
-msgstr ""
+msgstr "#1280 사용자 가이드에 기여 안내 참조 추가"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:196
 msgid "#1273 Fix/timing"
-msgstr ""
+msgstr "#1273 타이밍 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:197
 msgid "#1272 Fix undefined variable \"heading\" in cli 404"
-msgstr ""
+msgstr "#1272 CLI 404\ 에서 미정의 변수 \"heading\" 수정"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:198
 msgid ""
 "#1271 remove inexistent \"CodeIgniter\\Loader\" from "
 "AutoloadConfig::classmap"
-msgstr ""
+msgstr "#1271 AutoloadConfig::classmap\ 에서 존재하지 않는 \"CodeIgniter\\Loader\" 제거"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:199
 msgid "#1269 Release notes & process"
-msgstr ""
+msgstr "#1269 릴리즈 노트 및 프로세스"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:200
 msgid "#1266 Adjusting the release build scripts"
-msgstr ""
+msgstr "#1266 릴리즈 빌드 스크립트 조정"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:201
 msgid "#1265 WIP Fix docs re PHP server"
-msgstr ""
+msgstr "#1265 PHP 서버 관련 문서 수정 (작업 중)"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:202
 msgid "#1245 Fix #1244 (form_hidden declaration)"
-msgstr ""
+msgstr "#1245 #1244 수정 (form_hidden 선언)"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:203
 msgid "#1239 [Unsolicited PR] I changed the download method to testable."
-msgstr ""
+msgstr "#1239 [자발적 PR] 다운로드 메서드를 테스트 가능하도록 변경"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:204
 msgid "#1217 Optional parameter for resetSelect() call in Builder's countAll();"
-msgstr ""
+msgstr "#1217 Builder\ 의 countAll()\ 에서 resetSelect() 호출에 선택적 파라미터 추가"
 
 #: ../../source/changelogs/v4.0.0-alpha.2.rst:205
 msgid "#1209 Fix undefined function xml_convert at Database\\BaseUtils"
-msgstr ""
-
+msgstr "#1209 Database\\BaseUtils\ 의 미정의 함수 xml_convert 수정"

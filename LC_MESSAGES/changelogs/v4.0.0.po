@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,72 +21,71 @@ msgstr ""
 
 #: ../../source/changelogs/v4.0.0.rst:2
 msgid "Version 4.0.0"
-msgstr ""
+msgstr "버전 4.0.0"
 
 #: ../../source/changelogs/v4.0.0.rst:4
 msgid "Release Date: February 24, 2020"
-msgstr ""
+msgstr "릴리즈 날짜: 2020년 2월 24일"
 
 #: ../../source/changelogs/v4.0.0.rst:6
 msgid "**4.0 release of CodeIgniter4**"
-msgstr ""
+msgstr "**CodeIgniter4\ 의 4.0 릴리즈**"
 
 #: ../../source/changelogs/v4.0.0.rst:13
 msgid "Enhancements"
-msgstr ""
+msgstr "개선 사항"
 
 #: ../../source/changelogs/v4.0.0.rst:15
 msgid "Updated welcome view file"
-msgstr ""
+msgstr "환영 뷰 파일이 업데이트되었습니다."
 
 #: ../../source/changelogs/v4.0.0.rst:16
 msgid "Debug Toolbar now supports dark mode"
-msgstr ""
+msgstr "디버그 툴바가 이제 다크 모드를 지원합니다."
 
 #: ../../source/changelogs/v4.0.0.rst:17
 msgid "New alpha_numeric_punct validation rule"
-msgstr ""
+msgstr "새로운 alpha_numeric_punct 유효성 검사 규칙이 추가되었습니다."
 
 #: ../../source/changelogs/v4.0.0.rst:18
 msgid ""
 "Kint was updated from the 2.x branch to the latest 3.x branch, with new "
 "config file to specify options"
-msgstr ""
+msgstr "Kint가 2.x 브랜치에서 최신 3.x 브랜치로 업데이트되었으며, 옵션을 지정하는 새로운 설정 파일이 추가되었습니다."
 
 #: ../../source/changelogs/v4.0.0.rst:19
 msgid "Additional docs for getting started"
-msgstr ""
+msgstr "시작하기 위한 추가 문서가 제공됩니다."
 
 #: ../../source/changelogs/v4.0.0.rst:20
 msgid "CLI fixed to better handle complex arguments"
-msgstr ""
+msgstr "CLI가 복잡한 인수를 더 잘 처리하도록 수정되었습니다."
 
 #: ../../source/changelogs/v4.0.0.rst:21
 msgid "Improvements to File class"
-msgstr ""
+msgstr "File 클래스가 개선되었습니다."
 
 #: ../../source/changelogs/v4.0.0.rst:22
 msgid "New :php:func:`model()` helper method for easy singleton Models."
-msgstr ""
+msgstr "싱글톤 모델을 쉽게 사용할 수 있는 새로운 :php:func:`model()` 헬퍼 메서드가 추가되었습니다."
 
 #: ../../source/changelogs/v4.0.0.rst:23
 msgid ""
 "Tests completely reorganized to make app-level tests simpler out of the "
 "box."
-msgstr ""
+msgstr "앱 수준 테스트를 기본적으로 더 간단하게 만들기 위해 테스트가 완전히 재구성되었습니다."
 
 #: ../../source/changelogs/v4.0.0.rst:26
 msgid "Repo Changes"
-msgstr ""
+msgstr "저장소 변경 사항"
 
 #: ../../source/changelogs/v4.0.0.rst:28
 msgid "The devstarter repo has been deprecated."
-msgstr ""
+msgstr "devstarter 저장소가 사용 중단되었습니다."
 
 #: ../../source/changelogs/v4.0.0.rst:30
 msgid ""
 "We now have an automated changelog generated in the `CHANGELOG.md "
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_"
 " file in the main repo. See it for more details."
-msgstr ""
-
+msgstr "이제 메인 저장소의 `CHANGELOG.md <https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_ 파일에 자동으로 생성된 변경 로그가 있습니다. 자세한 내용은 해당 파일을 참조하십시오."
