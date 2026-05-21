@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,21 +21,23 @@ msgstr ""
 
 #: ../../source/libraries/user_agent.rst:3
 msgid "User Agent Class"
-msgstr ""
+msgstr "사용자 에이전트 클래스"
 
 #: ../../source/libraries/user_agent.rst:5
 msgid ""
 "The User Agent Class provides functions that help identify information "
 "about the browser, mobile device, or robot visiting your site."
 msgstr ""
+"사용자 에이전트 클래스는 사이트를 방문하는 브라우저, 모바일 기기 또는 로봇에 대한 정보를 "
+"식별하는 데 도움이 되는 함수를 제공합니다."
 
 #: ../../source/libraries/user_agent.rst:14
 msgid "Using the User Agent Class"
-msgstr ""
+msgstr "사용자 에이전트 클래스 사용하기"
 
 #: ../../source/libraries/user_agent.rst:17
 msgid "Initializing the Class"
-msgstr ""
+msgstr "클래스 초기화하기"
 
 #: ../../source/libraries/user_agent.rst:19
 msgid ""
@@ -45,10 +46,13 @@ msgid ""
 "you will have a request instance in your controller that you can retrieve"
 " the User Agent class from:"
 msgstr ""
+"사용자 에이전트 클래스는 현재 :doc:`IncomingRequest </incoming/incomingrequest>` "
+"인스턴스에서 항상 직접 사용할 수 있습니다. 기본적으로 컨트롤러에 요청 인스턴스가 있으며 "
+"거기서 사용자 에이전트 클래스를 가져올 수 있습니다:"
 
 #: ../../source/libraries/user_agent.rst:26
 msgid "User Agent Definitions"
-msgstr ""
+msgstr "사용자 에이전트 정의"
 
 #: ../../source/libraries/user_agent.rst:28
 msgid ""
@@ -56,10 +60,12 @@ msgid ""
 "**app/Config/UserAgents.php**. You may add items to the various user "
 "agent arrays if needed."
 msgstr ""
+"사용자 에이전트 이름 정의는 **app/Config/UserAgents.php**\\ 에 위치한 설정 파일에 있습니다. "
+"필요에 따라 다양한 사용자 에이전트 배열에 항목을 추가할 수 있습니다."
 
 #: ../../source/libraries/user_agent.rst:33
 msgid "Example"
-msgstr ""
+msgstr "예시"
 
 #: ../../source/libraries/user_agent.rst:35
 msgid ""
@@ -68,34 +74,36 @@ msgid ""
 "device, or a robot. It will also gather the platform information if it is"
 " available:"
 msgstr ""
+"사용자 에이전트 클래스가 초기화되면 사이트를 탐색하는 사용자 에이전트가 웹 브라우저인지, "
+"모바일 기기인지, 로봇인지 판별을 시도합니다. 가능한 경우 플랫폼 정보도 수집합니다:"
 
 #: ../../source/libraries/user_agent.rst:44
 msgid "Class Reference"
-msgstr ""
+msgstr "클래스 레퍼런스"
 
 #: ../../source/libraries/user_agent.rst
 msgid "Parameters"
-msgstr ""
+msgstr "매개변수"
 
 #: ../../source/libraries/user_agent.rst:52
 msgid "Optional browser name"
-msgstr ""
+msgstr "선택적 브라우저 이름"
 
 #: ../../source/libraries/user_agent.rst
 msgid "Returns"
-msgstr ""
+msgstr "반환값"
 
 #: ../../source/libraries/user_agent.rst:53
 msgid "true if the user agent is a (specified) browser, false if not"
-msgstr ""
+msgstr "사용자 에이전트가 (지정된) 브라우저이면 true, 아니면 false"
 
 #: ../../source/libraries/user_agent.rst
 msgid "Return type"
-msgstr ""
+msgstr "반환 타입"
 
 #: ../../source/libraries/user_agent.rst:56
 msgid "Returns true/false (boolean) if the user agent is a known web browser."
-msgstr ""
+msgstr "사용자 에이전트가 알려진 웹 브라우저이면 true/false(불리언)를 반환합니다."
 
 #: ../../source/libraries/user_agent.rst:60
 msgid ""
@@ -104,30 +112,32 @@ msgid ""
 "**app/Config/UserAgents.php** if you want to add new browsers or change "
 "the strings."
 msgstr ""
+"이 예시에서 \"Safari\" 문자열은 브라우저 정의 목록의 배열 키입니다. 새로운 브라우저를 추가하거나 "
+"문자열을 변경하려면 **app/Config/UserAgents.php**\\ 에서 이 목록을 찾을 수 있습니다."
 
 #: ../../source/libraries/user_agent.rst:66
 msgid "Optional mobile device name"
-msgstr ""
+msgstr "선택적 모바일 기기 이름"
 
 #: ../../source/libraries/user_agent.rst:67
 msgid "true if the user agent is a (specified) mobile device, false if not"
-msgstr ""
+msgstr "사용자 에이전트가 (지정된) 모바일 기기이면 true, 아니면 false"
 
 #: ../../source/libraries/user_agent.rst:70
 msgid "Returns true/false (boolean) if the user agent is a known mobile device."
-msgstr ""
+msgstr "사용자 에이전트가 알려진 모바일 기기이면 true/false(불리언)를 반환합니다."
 
 #: ../../source/libraries/user_agent.rst:76
 msgid "Optional robot name"
-msgstr ""
+msgstr "선택적 로봇 이름"
 
 #: ../../source/libraries/user_agent.rst:77
 msgid "true if the user agent is a (specified) robot, false if not"
-msgstr ""
+msgstr "사용자 에이전트가 (지정된) 로봇이면 true, 아니면 false"
 
 #: ../../source/libraries/user_agent.rst:80
 msgid "Returns true/false (boolean) if the user agent is a known robot."
-msgstr ""
+msgstr "사용자 에이전트가 알려진 로봇이면 true/false(불리언)를 반환합니다."
 
 #: ../../source/libraries/user_agent.rst:82
 msgid ""
@@ -137,90 +147,99 @@ msgid ""
 " bots that commonly visit your site are missing from the list you can add"
 " them to your **app/Config/UserAgents.php** file."
 msgstr ""
+"사용자 에이전트 라이브러리에는 가장 일반적인 로봇 정의만 포함되어 있습니다. "
+"이는 봇의 완전한 목록이 아닙니다. 수백 개의 봇이 있으므로 각각을 검색하는 것은 그다지 효율적이지 않습니다. "
+"사이트를 자주 방문하는 일부 봇이 목록에 없다면 **app/Config/UserAgents.php** 파일에 추가할 수 있습니다."
 
 #: ../../source/libraries/user_agent.rst:89
 msgid "true if the user agent is a referral, false if not"
-msgstr ""
+msgstr "사용자 에이전트가 리퍼럴이면 true, 아니면 false"
 
 #: ../../source/libraries/user_agent.rst:92
 msgid ""
 "Returns true/false (boolean) if the user agent was referred from another "
 "site."
 msgstr ""
+"사용자 에이전트가 다른 사이트에서 참조되었으면 true/false(불리언)를 반환합니다."
 
 #: ../../source/libraries/user_agent.rst:96
 msgid "Detected browser or an empty string"
-msgstr ""
+msgstr "감지된 브라우저 이름 또는 빈 문자열"
 
 #: ../../source/libraries/user_agent.rst:99
 msgid "Returns a string containing the name of the web browser viewing your site."
-msgstr ""
+msgstr "사이트를 보고 있는 웹 브라우저의 이름이 담긴 문자열을 반환합니다."
 
 #: ../../source/libraries/user_agent.rst:103
 msgid "Detected browser version or an empty string"
-msgstr ""
+msgstr "감지된 브라우저 버전 또는 빈 문자열"
 
 #: ../../source/libraries/user_agent.rst:106
 msgid ""
 "Returns a string containing the version number of the web browser viewing"
 " your site."
 msgstr ""
+"사이트를 보고 있는 웹 브라우저의 버전 번호가 담긴 문자열을 반환합니다."
 
 #: ../../source/libraries/user_agent.rst:110
 msgid "Detected mobile device brand or an empty string"
-msgstr ""
+msgstr "감지된 모바일 기기 브랜드 또는 빈 문자열"
 
 #: ../../source/libraries/user_agent.rst:113
 msgid ""
 "Returns a string containing the name of the mobile device viewing your "
 "site."
 msgstr ""
+"사이트를 보고 있는 모바일 기기의 이름이 담긴 문자열을 반환합니다."
 
 #: ../../source/libraries/user_agent.rst:117
 msgid "Detected robot name or an empty string"
-msgstr ""
+msgstr "감지된 로봇 이름 또는 빈 문자열"
 
 #: ../../source/libraries/user_agent.rst:120
 msgid "Returns a string containing the name of the robot viewing your site."
-msgstr ""
+msgstr "사이트를 보고 있는 로봇의 이름이 담긴 문자열을 반환합니다."
 
 #: ../../source/libraries/user_agent.rst:124
 msgid "Detected operating system or an empty string"
-msgstr ""
+msgstr "감지된 운영 체제 또는 빈 문자열"
 
 #: ../../source/libraries/user_agent.rst:127
 msgid ""
 "Returns a string containing the platform viewing your site (Linux, "
 "Windows, OS X, etc.)."
 msgstr ""
+"사이트를 보고 있는 플랫폼(Linux, Windows, OS X 등)이 담긴 문자열을 반환합니다."
 
 #: ../../source/libraries/user_agent.rst:131
 msgid "Detected referrer or an empty string"
-msgstr ""
+msgstr "감지된 리퍼러 또는 빈 문자열"
 
 #: ../../source/libraries/user_agent.rst:134
 msgid ""
 "The referrer, if the user agent was referred from another site. Typically"
 " you'll test for this as follows:"
 msgstr ""
+"사용자 에이전트가 다른 사이트에서 참조된 경우의 리퍼러입니다. 일반적으로 다음과 같이 확인합니다:"
 
 #: ../../source/libraries/user_agent.rst:140
 msgid "Full user agent string or an empty string"
-msgstr ""
+msgstr "전체 사용자 에이전트 문자열 또는 빈 문자열"
 
 #: ../../source/libraries/user_agent.rst:143
 msgid ""
 "Returns a string containing the full user agent string. Typically it will"
 " be something like this::"
 msgstr ""
+"전체 사용자 에이전트 문자열이 담긴 문자열을 반환합니다. 일반적으로 다음과 같은 형태입니다::"
 
 #: ../../source/libraries/user_agent.rst:149
 msgid "A custom user-agent string"
-msgstr ""
+msgstr "사용자 정의 사용자 에이전트 문자열"
 
 #: ../../source/libraries/user_agent.rst:152
 msgid ""
 "Parses a custom user-agent string, different from the one reported by the"
 " current visitor."
 msgstr ""
-
+"현재 방문자가 보고한 것과 다른 사용자 정의 사용자 에이전트 문자열을 파싱합니다."

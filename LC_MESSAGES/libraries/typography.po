@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,17 +21,18 @@ msgstr ""
 
 #: ../../source/libraries/typography.rst:3
 msgid "Typography"
-msgstr ""
+msgstr "타이포그래피"
 
 #: ../../source/libraries/typography.rst:5
 msgid ""
 "The Typography library contains methods that help you format text in "
 "semantically relevant ways."
 msgstr ""
+"타이포그래피 라이브러리는 텍스트를 의미론적으로 올바른 방식으로 포맷하는 데 도움이 되는 메서드를 포함하고 있습니다."
 
 #: ../../source/libraries/typography.rst:14
 msgid "Loading the Library"
-msgstr ""
+msgstr "라이브러리 로드"
 
 #: ../../source/libraries/typography.rst:16
 msgid ""
@@ -40,50 +40,52 @@ msgid ""
 "``Config\\Services``, though you usually will not need to load it "
 "manually:"
 msgstr ""
+"CodeIgniter의 모든 서비스와 마찬가지로 ``Config\\Services``\\ 를 통해 로드할 수 있지만, "
+"일반적으로 수동으로 로드할 필요는 없습니다:"
 
 #: ../../source/libraries/typography.rst:23
 msgid "Available static functions"
-msgstr ""
+msgstr "사용 가능한 정적 함수"
 
 #: ../../source/libraries/typography.rst:25
 msgid "The following functions are available:"
-msgstr ""
+msgstr "다음 함수를 사용할 수 있습니다:"
 
 #: ../../source/libraries/typography.rst
 msgid "Parameters"
-msgstr ""
+msgstr "매개변수"
 
 #: ../../source/libraries/typography.rst:29
 #: ../../source/libraries/typography.rst:48
 #: ../../source/libraries/typography.rst:62
 msgid "Input string"
-msgstr ""
+msgstr "입력 문자열"
 
 #: ../../source/libraries/typography.rst:30
 msgid "Whether to reduce multiple instances of double newlines to two"
-msgstr ""
+msgstr "연속된 이중 개행을 두 개로 줄일지 여부"
 
 #: ../../source/libraries/typography.rst
 msgid "Returns"
-msgstr ""
+msgstr "반환값"
 
 #: ../../source/libraries/typography.rst:31
 msgid "HTML-formatted typography-safe string"
-msgstr ""
+msgstr "HTML 형식의 타이포그래피 안전 문자열"
 
 #: ../../source/libraries/typography.rst
 msgid "Return type"
-msgstr ""
+msgstr "반환 타입"
 
 #: ../../source/libraries/typography.rst:34
 msgid "Formats text so that it is semantically and typographically correct HTML."
-msgstr ""
+msgstr "텍스트를 의미론적으로 그리고 타이포그래피적으로 올바른 HTML로 포맷합니다."
 
 #: ../../source/libraries/typography.rst:37
 #: ../../source/libraries/typography.rst:56
 #: ../../source/libraries/typography.rst:70
 msgid "Usage example:"
-msgstr ""
+msgstr "사용 예시:"
 
 #: ../../source/libraries/typography.rst:41
 msgid ""
@@ -91,20 +93,24 @@ msgid ""
 "have a lot of content being formatted. If you choose to use this function"
 " you may want to consider :doc:`caching <../general/caching>` your pages."
 msgstr ""
+"타이포그래피 포맷팅은 특히 많은 콘텐츠를 포맷하는 경우 프로세서를 많이 사용할 수 있습니다. "
+"이 함수를 사용하려는 경우 페이지 :doc:`캐싱 <../general/caching>`\\ 을 고려할 수 있습니다."
 
 #: ../../source/libraries/typography.rst:49
 msgid "String with formatted characters."
-msgstr ""
+msgstr "포맷된 문자가 포함된 문자열."
 
 #: ../../source/libraries/typography.rst:52
 msgid ""
 "This function mainly converts double and single quotes to curly entities,"
 " but it also converts em-dashes, double spaces, and ampersands."
 msgstr ""
+"이 함수는 주로 큰따옴표와 작은따옴표를 곱슬 기호로 변환하지만, "
+"em 대시, 이중 공백, 앰퍼샌드도 변환합니다."
 
 #: ../../source/libraries/typography.rst:63
 msgid "String with HTML-formatted line breaks"
-msgstr ""
+msgstr "HTML 형식의 줄바꿈이 포함된 문자열"
 
 #: ../../source/libraries/typography.rst:66
 msgid ""
@@ -112,4 +118,5 @@ msgid ""
 "tags. This function is identical to the native PHP ``nl2br()`` function, "
 "except that it ignores ``<pre>`` tags."
 msgstr ""
-
+"``<pre>`` 태그 내에 있지 않은 경우 개행 문자를 ``<br />`` 태그로 변환합니다. "
+"이 함수는 ``<pre>`` 태그를 무시한다는 점을 제외하면 PHP 기본 함수인 ``nl2br()``\\ 과 동일합니다."

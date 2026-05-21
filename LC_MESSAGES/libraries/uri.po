@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../source/libraries/uri.rst:3
 msgid "Working with URIs"
-msgstr ""
+msgstr "URI 작업하기"
 
 #: ../../source/libraries/uri.rst:5
 msgid ""
@@ -32,30 +31,36 @@ msgid ""
 "well as adding relative URI to an existing one and have it resolved "
 "safely and correctly."
 msgstr ""
+"CodeIgniter는 애플리케이션에서 URI를 다루기 위한 객체 지향 솔루션을 제공합니다. "
+"이를 사용하면 URI가 아무리 복잡하더라도 구조가 항상 올바른지 간단하게 확인할 수 있으며, "
+"기존 URI에 상대 URI를 추가하고 안전하고 올바르게 해석할 수 있습니다."
 
 #: ../../source/libraries/uri.rst:15
 msgid "Creating URI instances"
-msgstr ""
+msgstr "URI 인스턴스 생성하기"
 
 #: ../../source/libraries/uri.rst:17
 msgid "Creating a URI instance is as simple as creating a new class instance."
-msgstr ""
+msgstr "URI 인스턴스를 생성하는 것은 새 클래스 인스턴스를 생성하는 것만큼 간단합니다."
 
 #: ../../source/libraries/uri.rst:19
 msgid ""
 "When you create the new instance, you can pass a full or partial URL in "
 "the constructor and it will be parsed into its appropriate sections:"
 msgstr ""
+"새 인스턴스를 생성할 때 생성자에 전체 또는 부분 URL을 전달할 수 있으며, "
+"적절한 섹션으로 파싱됩니다."
 
 #: ../../source/libraries/uri.rst:25
 msgid ""
 "Alternatively, you can use the :php:func:`service()` function to return "
 "an instance for you:"
 msgstr ""
+"또는 :php:func:`service()` 함수를 사용하여 인스턴스를 반환받을 수 있습니다."
 
 #: ../../source/libraries/uri.rst:30
 msgid "Since v4.4.0, if you don't pass a URL, it returns the current URI:"
-msgstr ""
+msgstr "v4.4.0부터 URL을 전달하지 않으면 현재 URI를 반환합니다."
 
 #: ../../source/libraries/uri.rst:35
 msgid ""
@@ -63,10 +68,12 @@ msgid ""
 " class. The ``URI`` class is for general URIs, but the ``SiteURI`` class "
 "is for your site URIs."
 msgstr ""
+"위 코드는 ``URI`` 클래스를 확장한 ``SiteURI`` 인스턴스를 반환합니다. "
+"``URI`` 클래스는 일반 URI를 위한 것이고, ``SiteURI`` 클래스는 사이트 URI를 위한 것입니다."
 
 #: ../../source/libraries/uri.rst:40
 msgid "The Current URI"
-msgstr ""
+msgstr "현재 URI"
 
 #: ../../source/libraries/uri.rst:42
 msgid ""
@@ -74,12 +81,15 @@ msgid ""
 "can use the :php:func:`current_url()` function available in the "
 ":doc:`../helpers/url_helper`:"
 msgstr ""
+"요청의 현재 URL을 나타내는 객체가 필요할 때 :doc:`../helpers/url_helper`\ 에서 "
+"사용 가능한 :php:func:`current_url()` 함수를 사용할 수 있습니다."
 
 #: ../../source/libraries/uri.rst:48
 msgid ""
 "You must pass ``true`` as the first parameter, otherwise, it will return "
 "the string representation of the current URL."
 msgstr ""
+"첫 번째 매개변수로 ``true``\ 를 전달해야 합니다. 그렇지 않으면 현재 URL의 문자열 표현을 반환합니다."
 
 #: ../../source/libraries/uri.rst:50
 msgid ""
@@ -88,6 +98,8 @@ msgid ""
 "``Config\\App`` (``baseURL``, ``indexPage``, and "
 "``forceGlobalSecureRequests``)."
 msgstr ""
+"이 URI는 현재 요청 객체와 ``Config\\App``\ 의 설정(``baseURL``, ``indexPage``, "
+"``forceGlobalSecureRequests``)에 의해 결정된 경로(``baseURL``\ 에 상대적인)를 기반으로 합니다."
 
 #: ../../source/libraries/uri.rst:53
 msgid ""
@@ -95,16 +107,18 @@ msgid ""
 "``CodeIgniter\\Controller``, you can also get the current SiteURI "
 "instance:"
 msgstr ""
+"``CodeIgniter\\Controller``\ 를 확장한 컨트롤러 안에 있다면, 현재 SiteURI 인스턴스를 가져올 수도 있습니다."
 
 #: ../../source/libraries/uri.rst:61
 msgid "URI Strings"
-msgstr ""
+msgstr "URI 문자열"
 
 #: ../../source/libraries/uri.rst:63
 msgid ""
 "Many times, all you really want is to get a string representation of a "
 "URI. This is easy to do by simply casting the URI as a string:"
 msgstr ""
+"대부분의 경우 URI의 문자열 표현을 얻는 것이 필요합니다. URI를 문자열로 캐스팅하기만 하면 간단하게 처리할 수 있습니다."
 
 #: ../../source/libraries/uri.rst:68
 msgid ""
@@ -112,6 +126,8 @@ msgid ""
 "formatted correctly, you can generate a string using the URI class' "
 "static ``createURIString()`` method:"
 msgstr ""
+"URI의 각 구성 요소를 알고 있고 형식이 올바른지 확인만 하고 싶다면, URI 클래스의 정적 메서드인 "
+"``createURIString()``\ 을 사용하여 문자열을 생성할 수 있습니다."
 
 #: ../../source/libraries/uri.rst:73
 msgid ""
@@ -120,10 +136,12 @@ msgid ""
 "unaltered string representation then use ``URI::createURIString()`` "
 "instead."
 msgstr ""
+"``URI``\ 를 문자열로 캐스팅하면 ``Config\\App``\ 에 정의된 설정에 맞게 프로젝트 URL을 조정하려고 합니다. "
+"정확하고 변경되지 않은 문자열 표현이 필요한 경우 ``URI::createURIString()``\ 을 사용하세요."
 
 #: ../../source/libraries/uri.rst:79
 msgid "The URI Parts"
-msgstr ""
+msgstr "URI 구성 요소"
 
 #: ../../source/libraries/uri.rst:81
 msgid ""
@@ -131,20 +149,23 @@ msgid ""
 "parts of the URI. This section will provide details on what those parts "
 "are, and how to work with them."
 msgstr ""
+"URI 인스턴스가 있으면 URI의 다양한 구성 요소를 설정하거나 가져올 수 있습니다. "
+"이 섹션에서는 해당 구성 요소가 무엇인지, 그리고 그것들을 다루는 방법을 자세히 설명합니다."
 
 #: ../../source/libraries/uri.rst:85
 msgid "Scheme"
-msgstr ""
+msgstr "스킴"
 
 #: ../../source/libraries/uri.rst:87
 msgid ""
 "The scheme is frequently 'http' or 'https', but any scheme is supported, "
 "including 'file', 'mailto', etc."
 msgstr ""
+"스킴은 보통 'http' 또는 'https'이지만, 'file', 'mailto' 등 모든 스킴이 지원됩니다."
 
 #: ../../source/libraries/uri.rst:92
 msgid "Authority"
-msgstr ""
+msgstr "권한(Authority)"
 
 #: ../../source/libraries/uri.rst:94
 msgid ""
@@ -153,6 +174,9 @@ msgid ""
 "You can retrieve all of these pieces as one single string with the "
 "``getAuthority()`` method, or you can manipulate the individual parts."
 msgstr ""
+"많은 URI에는 '권한(authority)'으로 통칭되는 여러 요소가 포함됩니다. "
+"여기에는 사용자 정보, 호스트, 포트 번호가 포함됩니다. "
+"``getAuthority()`` 메서드로 이 모든 구성 요소를 하나의 문자열로 가져오거나, 개별 구성 요소를 조작할 수 있습니다."
 
 #: ../../source/libraries/uri.rst:100
 msgid ""
@@ -162,22 +186,24 @@ msgid ""
 "show that password until you turn it off again, so always make sure that "
 "you turn it off as soon as you are finished with it:"
 msgstr ""
+"기본적으로 비밀번호 부분은 표시되지 않습니다. 비밀번호를 표시하려면 ``showPassword()`` 메서드를 사용할 수 있습니다. "
+"이 URI 인스턴스는 비밀번호 표시를 끌 때까지 계속 표시하므로, 사용이 끝나면 반드시 비밀번호 표시를 꺼야 합니다."
 
 #: ../../source/libraries/uri.rst:106
 msgid ""
 "If you do not want to display the port, pass in ``true`` as the only "
 "parameter:"
-msgstr ""
+msgstr "포트를 표시하지 않으려면 유일한 매개변수로 ``true``\ 를 전달하세요."
 
 #: ../../source/libraries/uri.rst:110
 msgid ""
 "If the current port is the default port for the scheme it will never be "
 "displayed."
-msgstr ""
+msgstr "현재 포트가 스킴의 기본 포트인 경우 포트는 표시되지 않습니다."
 
 #: ../../source/libraries/uri.rst:113
 msgid "UserInfo"
-msgstr ""
+msgstr "사용자 정보(UserInfo)"
 
 #: ../../source/libraries/uri.rst:115
 msgid ""
@@ -185,16 +211,19 @@ msgid ""
 "see with an FTP URI. While you can get this as part of the Authority, you"
 " can also retrieve it yourself:"
 msgstr ""
+"사용자 정보 섹션은 FTP URI에서 볼 수 있는 사용자 이름과 비밀번호입니다. "
+"권한(Authority)의 일부로 가져올 수도 있지만, 직접 가져올 수도 있습니다."
 
 #: ../../source/libraries/uri.rst:120
 msgid ""
 "By default, it will not display the password, but you can override that "
 "with the ``showPassword()`` method:"
 msgstr ""
+"기본적으로 비밀번호는 표시되지 않지만, ``showPassword()`` 메서드로 이를 재정의할 수 있습니다."
 
 #: ../../source/libraries/uri.rst:125
 msgid "Host"
-msgstr ""
+msgstr "호스트"
 
 #: ../../source/libraries/uri.rst:127
 msgid ""
@@ -202,38 +231,42 @@ msgid ""
 " can be easily set and retrieved with the ``getHost()`` and ``setHost()``"
 " methods:"
 msgstr ""
+"URI의 호스트 부분은 일반적으로 URL의 도메인 이름입니다. "
+"``getHost()`` 및 ``setHost()`` 메서드로 쉽게 설정하고 가져올 수 있습니다."
 
 #: ../../source/libraries/uri.rst:133
 msgid "Port"
-msgstr ""
+msgstr "포트"
 
 #: ../../source/libraries/uri.rst:135
 msgid ""
 "The port is an integer number between 0 and 65535. Each scheme has a "
 "default value associated with it."
-msgstr ""
+msgstr "포트는 0에서 65535 사이의 정수입니다. 각 스킴에는 연관된 기본값이 있습니다."
 
 #: ../../source/libraries/uri.rst:139
 msgid ""
 "When using the ``setPort()`` method, the port will be checked that it is "
 "within the valid range and assigned."
-msgstr ""
+msgstr "``setPort()`` 메서드를 사용할 때 포트가 유효한 범위 내에 있는지 확인한 후 할당됩니다."
 
 #: ../../source/libraries/uri.rst:142
 msgid "Path"
-msgstr ""
+msgstr "경로"
 
 #: ../../source/libraries/uri.rst:144
 msgid ""
 "The path is all of the segments within the site itself. As expected, the "
 "``getPath()`` and ``setPath()`` methods can be used to manipulate it:"
 msgstr ""
+"경로는 사이트 내의 모든 세그먼트로 구성됩니다. "
+"예상대로 ``getPath()`` 및 ``setPath()`` 메서드를 사용하여 조작할 수 있습니다."
 
 #: ../../source/libraries/uri.rst:149
 msgid ""
 "When setting the path it is sanitized to encode any dangerous characters,"
 " and remove dot segments for safety."
-msgstr ""
+msgstr "경로를 설정할 때 위험한 문자를 인코딩하고 안전을 위해 점 세그먼트를 제거하는 처리가 이루어집니다."
 
 #: ../../source/libraries/uri.rst:152
 msgid ""
@@ -241,50 +274,52 @@ msgid ""
 "path relative to baseURL, and the ``SiteURI::getPath()`` method always "
 "returns the full URI path with leading ``/``."
 msgstr ""
+"v4.4.0부터 ``SiteURI::getRoutePath()`` 메서드는 baseURL에 상대적인 URI 경로를 반환하고, "
+"``SiteURI::getPath()`` 메서드는 항상 선행 ``/``\ 가 있는 전체 URI 경로를 반환합니다."
 
 #: ../../source/libraries/uri.rst:157
 msgid "Query"
-msgstr ""
+msgstr "쿼리"
 
 #: ../../source/libraries/uri.rst:159
 msgid ""
 "The query data can be manipulated through the class using simple string "
 "representations."
-msgstr ""
+msgstr "쿼리 데이터는 단순한 문자열 표현을 사용하여 클래스를 통해 조작할 수 있습니다."
 
 #: ../../source/libraries/uri.rst:162
 msgid "Getting/Setting Query"
-msgstr ""
+msgstr "쿼리 가져오기/설정하기"
 
 #: ../../source/libraries/uri.rst:164
 msgid "Query values can only be set as a string currently."
-msgstr ""
+msgstr "현재 쿼리 값은 문자열로만 설정할 수 있습니다."
 
 #: ../../source/libraries/uri.rst:169
 msgid "The ``setQuery()`` method overwrites existing query variables."
-msgstr ""
+msgstr "``setQuery()`` 메서드는 기존 쿼리 변수를 덮어씁니다."
 
 #: ../../source/libraries/uri.rst:171
 msgid ""
 "Query values cannot contain fragments. An InvalidArgumentException will "
 "be thrown if it does."
-msgstr ""
+msgstr "쿼리 값에는 프래그먼트가 포함될 수 없습니다. 포함될 경우 InvalidArgumentException이 발생합니다."
 
 #: ../../source/libraries/uri.rst:174
 msgid "Setting Query from Array"
-msgstr ""
+msgstr "배열로 쿼리 설정하기"
 
 #: ../../source/libraries/uri.rst:176
 msgid "You can set query values using an array:"
-msgstr ""
+msgstr "배열을 사용하여 쿼리 값을 설정할 수 있습니다."
 
 #: ../../source/libraries/uri.rst:180
 msgid "The ``setQueryArray()`` method overwrites existing query variables."
-msgstr ""
+msgstr "``setQueryArray()`` 메서드는 기존 쿼리 변수를 덮어씁니다."
 
 #: ../../source/libraries/uri.rst:183
 msgid "Adding Query Value"
-msgstr ""
+msgstr "쿼리 값 추가하기"
 
 #: ../../source/libraries/uri.rst:185
 msgid ""
@@ -293,24 +328,27 @@ msgid ""
 "parameter is the name of the variable, and the second parameter is the "
 "value:"
 msgstr ""
+"``addQuery()`` 메서드를 사용하면 기존 쿼리 변수를 제거하지 않고 쿼리 변수 컬렉션에 값을 추가할 수 있습니다. "
+"첫 번째 매개변수는 변수 이름이고, 두 번째 매개변수는 값입니다."
 
 #: ../../source/libraries/uri.rst:192
 msgid "Filtering Query Values"
-msgstr ""
+msgstr "쿼리 값 필터링하기"
 
 #: ../../source/libraries/uri.rst:194
 msgid ""
 "You can filter the query values returned by passing an options array to "
 "the ``getQuery()`` method, with either an *only* or an *except* key:"
 msgstr ""
+"``getQuery()`` 메서드에 *only* 또는 *except* 키가 있는 옵션 배열을 전달하여 반환되는 쿼리 값을 필터링할 수 있습니다."
 
 #: ../../source/libraries/uri.rst:199
 msgid "This only changes the values returned during this one call."
-msgstr ""
+msgstr "이는 이번 호출 중에 반환되는 값만 변경합니다."
 
 #: ../../source/libraries/uri.rst:202
 msgid "Changing Query Values"
-msgstr ""
+msgstr "쿼리 값 변경하기"
 
 #: ../../source/libraries/uri.rst:204
 msgid ""
@@ -318,6 +356,8 @@ msgid ""
 "use the ``stripQuery()`` and ``keepQuery()`` methods to change the actual"
 " object's query variable collection:"
 msgstr ""
+"URI의 쿼리 값을 더 영구적으로 변경해야 한다면, ``stripQuery()`` 및 ``keepQuery()`` 메서드를 사용하여 "
+"실제 객체의 쿼리 변수 컬렉션을 변경할 수 있습니다."
 
 #: ../../source/libraries/uri.rst:209
 msgid ""
@@ -326,10 +366,12 @@ msgid ""
 " rules (which allow key names to contain dots), you can use a special "
 "method ``useRawQueryString()`` beforehand."
 msgstr ""
+"기본적으로 ``setQuery()`` 및 ``setQueryArray()`` 메서드는 데이터를 준비하기 위해 네이티브 ``parse_str()`` 함수를 사용합니다. "
+"더 유연한 규칙(키 이름에 점을 포함하도록 허용)을 사용하려면 사전에 특수 메서드 ``useRawQueryString()``\ 을 사용할 수 있습니다."
 
 #: ../../source/libraries/uri.rst:214
 msgid "Fragment"
-msgstr ""
+msgstr "프래그먼트"
 
 #: ../../source/libraries/uri.rst:216
 msgid ""
@@ -337,14 +379,16 @@ msgid ""
 "sign (``#``). In HTML URLs these are links to an on-page anchor. Media "
 "URI's can make use of them in various other ways."
 msgstr ""
+"프래그먼트는 파운드 기호(``#``) 뒤에 오는 URL 끝 부분입니다. "
+"HTML URL에서는 페이지 내 앵커 링크이며, 미디어 URI에서는 다양한 방식으로 활용될 수 있습니다."
 
 #: ../../source/libraries/uri.rst:223
 msgid "URI Segments"
-msgstr ""
+msgstr "URI 세그먼트"
 
 #: ../../source/libraries/uri.rst:225
 msgid "Each section of the path between the slashes is a single segment."
-msgstr ""
+msgstr "슬래시 사이의 경로 각 섹션이 하나의 세그먼트입니다."
 
 #: ../../source/libraries/uri.rst:227
 msgid ""
@@ -352,6 +396,8 @@ msgid ""
 "relative to the baseURL. If your baseURL contains sub folders, the values"
 " will be different from the current URI path."
 msgstr ""
+"사이트 URI의 경우, URI 세그먼트는 baseURL에 상대적인 URI 경로 부분만을 의미합니다. "
+"baseURL에 하위 폴더가 포함된 경우 값이 현재 URI 경로와 다를 수 있습니다."
 
 #: ../../source/libraries/uri.rst:231
 msgid ""
@@ -359,6 +405,8 @@ msgid ""
 "segments are. The segments start at 1 being the furthest left of the "
 "path."
 msgstr ""
+"URI 클래스는 세그먼트의 값을 확인하는 간단한 방법을 제공합니다. "
+"세그먼트는 경로의 가장 왼쪽인 1번부터 시작합니다."
 
 #: ../../source/libraries/uri.rst:236
 msgid ""
@@ -366,6 +414,8 @@ msgid ""
 "using the second parameter of the ``getSegment()`` method. The default is"
 " empty string."
 msgstr ""
+"``getSegment()`` 메서드의 두 번째 매개변수를 사용하여 특정 세그먼트의 다른 기본값을 설정할 수도 있습니다. "
+"기본값은 빈 문자열입니다."
 
 #: ../../source/libraries/uri.rst:240
 msgid ""
@@ -373,18 +423,20 @@ msgid ""
 "segment, an exception will be thrown by default. You could prevent "
 "throwing exceptions with the ``setSilent()`` method."
 msgstr ""
+"마지막 +1 세그먼트를 가져올 수 있습니다. 마지막 +2 이상의 세그먼트를 가져오려고 하면 기본적으로 예외가 발생합니다. "
+"``setSilent()`` 메서드를 사용하여 예외 발생을 방지할 수 있습니다."
 
 #: ../../source/libraries/uri.rst:244
 msgid "You can get a count of the total segments:"
-msgstr ""
+msgstr "전체 세그먼트 수를 가져올 수 있습니다."
 
 #: ../../source/libraries/uri.rst:248
 msgid "Finally, you can retrieve an array of all of the segments:"
-msgstr ""
+msgstr "마지막으로 모든 세그먼트의 배열을 가져올 수 있습니다."
 
 #: ../../source/libraries/uri.rst:254
 msgid "Disable Throwing Exceptions"
-msgstr ""
+msgstr "예외 발생 비활성화"
 
 #: ../../source/libraries/uri.rst:256
 msgid ""
@@ -392,4 +444,5 @@ msgid ""
 "want to disable it, you can set a special flag that will prevent throwing"
 " exceptions."
 msgstr ""
-
+"기본적으로 이 클래스의 일부 메서드는 예외를 발생시킬 수 있습니다. "
+"이를 비활성화하려면 예외 발생을 방지하는 특별한 플래그를 설정할 수 있습니다."

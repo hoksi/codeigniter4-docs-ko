@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,7 +21,7 @@ msgstr ""
 
 #: ../../source/libraries/curlrequest.rst:3
 msgid "CURLRequest Class"
-msgstr ""
+msgstr "CURLRequest 클래스"
 
 #: ../../source/libraries/curlrequest.rst:5
 msgid ""
@@ -31,6 +30,8 @@ msgid ""
 " the contents of a Google search, retrieve a web page or image, or "
 "communicate with an API, among many other things."
 msgstr ""
+"``CURLRequest`` 클래스는 CURL 기반의 경량 HTTP 클라이언트로, 다른 웹사이트 및 서버와 통신할 수 있게 해줍니다. "
+"Google 검색 결과를 가져오거나, 웹 페이지 또는 이미지를 가져오거나, API와 통신하는 등 다양한 용도로 사용할 수 있습니다."
 
 #: ../../source/libraries/curlrequest.rst:13
 msgid ""
@@ -41,6 +42,10 @@ msgid ""
 "than what this library provides, you will have to change very little to "
 "move over to use Guzzle."
 msgstr ""
+"이 클래스는 널리 사용되는 라이브러리 중 하나인 `Guzzle HTTP Client "
+"<http://docs.guzzlephp.org/en/latest/>`_\ 를 모델로 하고 있습니다. "
+"가능한 한 동일한 문법을 유지하도록 설계되어, 이 라이브러리가 제공하는 것보다 더 강력한 기능이 필요한 경우 "
+"Guzzle로 마이그레이션하는 데 최소한의 변경만 필요합니다."
 
 #: ../../source/libraries/curlrequest.rst:18
 msgid ""
@@ -50,20 +55,24 @@ msgid ""
 " but not all hosts will provide it, so please check with your host to "
 "verify if you run into problems."
 msgstr ""
+"이 클래스를 사용하려면 PHP에 `cURL 라이브러리 "
+"<https://www.php.net/manual/en/book.curl.php>`_\ 가 설치되어 있어야 합니다. "
+"일반적으로 널리 제공되는 라이브러리이지만, 모든 호스팅 환경에서 제공되는 것은 아니므로 문제가 발생하면 호스팅 업체에 확인하세요."
 
 #: ../../source/libraries/curlrequest.rst:24
 msgid "Config for CURLRequest"
-msgstr ""
+msgstr "CURLRequest 설정"
 
 #: ../../source/libraries/curlrequest.rst:29
 msgid "Sharing Connection"
-msgstr ""
+msgstr "연결 공유"
 
 #: ../../source/libraries/curlrequest.rst:33
 msgid ""
 "By default, this option is enabled with the constants "
 "``CURL_LOCK_DATA_CONNECT`` and ``CURL_LOCK_DATA_DNS``."
 msgstr ""
+"기본적으로 이 옵션은 ``CURL_LOCK_DATA_CONNECT``\ 와 ``CURL_LOCK_DATA_DNS`` 상수로 활성화되어 있습니다."
 
 #: ../../source/libraries/curlrequest.rst:35
 msgid ""
@@ -72,14 +81,18 @@ msgid ""
 "<https://www.php.net/manual/en/curl.constants.php#constant.curl-lock-"
 "data-connect>`_ in **app/Config/CURLRequest.php**:"
 msgstr ""
+"요청 간에 연결을 공유하려면 **app/Config/CURLRequest.php**\ 에서 "
+"``$shareConnectionOptions``\ 에 배열 상수 `CURL_LOCK_DATA_* "
+"<https://www.php.net/manual/en/curl.constants.php#constant.curl-lock-"
+"data-connect>`_\ 를 설정하세요:"
 
 #: ../../source/libraries/curlrequest.rst:39
 msgid "or when you want to disable it, just change to empty array:"
-msgstr ""
+msgstr "비활성화하려면 빈 배열로 변경하세요:"
 
 #: ../../source/libraries/curlrequest.rst:46
 msgid "Sharing Options"
-msgstr ""
+msgstr "옵션 공유"
 
 #: ../../source/libraries/curlrequest.rst:48
 msgid ""
@@ -87,44 +100,52 @@ msgid ""
 " projects. Even if you are already using it, we recommend that you "
 "disable it."
 msgstr ""
+"이 설정은 하위 호환성을 위해서만 존재합니다. 새 프로젝트에서는 사용하지 마세요. "
+"이미 사용 중이더라도 비활성화하는 것을 권장합니다."
 
 #: ../../source/libraries/curlrequest.rst:52
 msgid "Since v4.4.0, the default value has been changed to ``false``."
-msgstr ""
+msgstr "v4.4.0부터 기본값이 ``false``\ 로 변경되었습니다."
 
 #: ../../source/libraries/curlrequest.rst:54
 msgid ""
 "If you want to share all the options between requests, set "
 "``$shareOptions`` to ``true`` in **app/Config/CURLRequest.php**:"
 msgstr ""
+"요청 간에 모든 옵션을 공유하려면 **app/Config/CURLRequest.php**\ 에서 "
+"``$shareOptions``\ 를 ``true``\ 로 설정하세요:"
 
 #: ../../source/libraries/curlrequest.rst:59
 msgid ""
 "If you send more than one request with an instance of the class, this "
 "behavior may cause an error request with unnecessary headers and body."
 msgstr ""
+"클래스 인스턴스로 두 개 이상의 요청을 보내는 경우, 이 동작으로 인해 불필요한 헤더와 본문이 포함된 오류 요청이 발생할 수 있습니다."
 
 #: ../../source/libraries/curlrequest.rst:62
 msgid ""
 "Before v4.2.0, the request body is not reset even if ``$shareOptions`` is"
 " false due to a bug."
 msgstr ""
+"v4.2.0 이전에는 버그로 인해 ``$shareOptions``\ 가 false여도 요청 본문이 초기화되지 않았습니다."
 
 #: ../../source/libraries/curlrequest.rst:66
 msgid "Loading the Library"
-msgstr ""
+msgstr "라이브러리 로딩"
 
 #: ../../source/libraries/curlrequest.rst:68
 msgid ""
 "The library can be loaded either manually or through the :doc:`Services "
 "class </concepts/services>`."
 msgstr ""
+"라이브러리는 수동으로 또는 :doc:`Services 클래스 </concepts/services>`\ 를 통해 로드할 수 있습니다."
 
 #: ../../source/libraries/curlrequest.rst:70
 msgid ""
 "To load with the Services class call the ``curlrequest()`` method or "
 "global function ``service()``:"
 msgstr ""
+"Services 클래스로 로드하려면 ``curlrequest()`` 메서드나 전역 함수 ``service()``\ 를 호출하세요:"
 
 #: ../../source/libraries/curlrequest.rst:74
 msgid ""
@@ -132,6 +153,8 @@ msgid ""
 "modify how cURL will handle the request. The options are described later "
 "in this document:"
 msgstr ""
+"첫 번째 매개변수로 기본 옵션 배열을 전달하여 cURL이 요청을 처리하는 방식을 수정할 수 있습니다. "
+"옵션에 대한 설명은 이 문서의 뒷부분에서 다룹니다:"
 
 #: ../../source/libraries/curlrequest.rst:79
 msgid ""
@@ -139,6 +162,8 @@ msgid ""
 "constructor will be used for all requests. Other options will be reset "
 "after sending a request."
 msgstr ""
+"``$shareOptions``\ 가 false이면, 클래스 생성자에 전달된 기본 옵션이 모든 요청에 사용됩니다. "
+"다른 옵션들은 요청을 보낸 후 초기화됩니다."
 
 #: ../../source/libraries/curlrequest.rst:81
 msgid ""
@@ -147,10 +172,15 @@ msgid ""
 "second parameter is a URI instance. The third parameter is a Response "
 "object. The fourth parameter is the optional default ``$options`` array:"
 msgstr ""
+"클래스를 수동으로 생성할 때는 몇 가지 의존성을 전달해야 합니다. "
+"첫 번째 매개변수는 ``Config\\App`` 클래스의 인스턴스이고, "
+"두 번째 매개변수는 URI 인스턴스이며, "
+"세 번째 매개변수는 Response 객체입니다. "
+"네 번째 매개변수는 선택적 기본 ``$options`` 배열입니다:"
 
 #: ../../source/libraries/curlrequest.rst:89
 msgid "Working with the Library"
-msgstr ""
+msgstr "라이브러리 사용"
 
 #: ../../source/libraries/curlrequest.rst:91
 msgid ""
@@ -159,10 +189,12 @@ msgid ""
 "to handle the communications. After that you have complete control over "
 "how the information is handled."
 msgstr ""
+"CURL 요청 작업은 단순히 Request를 생성하고 :doc:`Response 객체 </outgoing/response>`\ 를 "
+"반환받는 것입니다. 통신을 처리하기 위한 것이며, 이후에는 정보 처리 방법을 완전히 제어할 수 있습니다."
 
 #: ../../source/libraries/curlrequest.rst:96
 msgid "Making Requests"
-msgstr ""
+msgstr "요청 보내기"
 
 #: ../../source/libraries/curlrequest.rst:98
 msgid ""
@@ -170,6 +202,8 @@ msgid ""
 "off the request, and then returns a Response instance to you. This takes "
 "the HTTP method, the url and an array of options as the parameters."
 msgstr ""
+"대부분의 통신은 ``request()`` 메서드를 통해 이루어지며, 이 메서드는 요청을 실행하고 Response 인스턴스를 반환합니다. "
+"HTTP 메서드, URL, 옵션 배열을 매개변수로 받습니다."
 
 #: ../../source/libraries/curlrequest.rst:103
 msgid ""
@@ -177,6 +211,8 @@ msgid ""
 "returned is greater than or equal to 400. If you want to get the "
 "response, see the `http_errors`_ option."
 msgstr ""
+"기본적으로 CURLRequest는 반환된 HTTP 코드가 400 이상이면 ``HTTPException``\ 을 발생시킵니다. "
+"응답을 받으려면 `http_errors`_ 옵션을 참조하세요."
 
 #: ../../source/libraries/curlrequest.rst:107
 msgid ""
@@ -185,12 +221,16 @@ msgid ""
 "If you want to use the options to all requests, pass the options in the "
 "constructor."
 msgstr ""
+"``$shareOptions``\ 가 false이면, 메서드에 전달된 옵션이 해당 요청에만 사용됩니다. "
+"요청을 보낸 후 초기화됩니다. "
+"모든 요청에 옵션을 적용하려면 생성자에서 옵션을 전달하세요."
 
 #: ../../source/libraries/curlrequest.rst:109
 msgid ""
 "Since the response is an instance of ``CodeIgniter\\HTTP\\Response`` you "
 "have all of the normal information available to you:"
 msgstr ""
+"응답은 ``CodeIgniter\\HTTP\\Response``\ 의 인스턴스이므로 모든 일반 정보를 사용할 수 있습니다:"
 
 #: ../../source/libraries/curlrequest.rst:114
 msgid ""
@@ -198,10 +238,12 @@ msgid ""
 " following shortcut methods. They each take the URL as the first "
 "parameter and an array of options as the second:"
 msgstr ""
+"``request()`` 메서드가 가장 유연하지만, 다음과 같은 단축 메서드도 사용할 수 있습니다. "
+"각각 URL을 첫 번째 매개변수로, 옵션 배열을 두 번째 매개변수로 받습니다:"
 
 #: ../../source/libraries/curlrequest.rst:120
 msgid "Base URI"
-msgstr ""
+msgstr "기본 URI"
 
 #: ../../source/libraries/curlrequest.rst:122
 msgid ""
@@ -210,6 +252,9 @@ msgid ""
 "requests with that client using relative URLs. This is especially handy "
 "when working with APIs:"
 msgstr ""
+"``baseURI``\ 는 클래스 인스턴스화 시 옵션 중 하나로 설정할 수 있습니다. "
+"기본 URI를 설정하면 해당 클라이언트로 보내는 모든 요청에 상대 URL을 사용할 수 있습니다. "
+"API 작업 시 특히 유용합니다:"
 
 #: ../../source/libraries/curlrequest.rst:128
 msgid ""
@@ -219,66 +264,70 @@ msgid ""
 "<https://tools.ietf.org/html/rfc3986#section-5.2>`_. To save you some "
 "time, here are some examples of how the combinations are resolved."
 msgstr ""
+"``request()`` 메서드나 단축 메서드에 상대 URI를 제공하면, "
+"`RFC 2986, 섹션 2 <https://tools.ietf.org/html/rfc3986#section-5.2>`_\ 에 "
+"설명된 규칙에 따라 baseURI와 결합됩니다. "
+"다음은 조합이 어떻게 해결되는지 보여주는 몇 가지 예시입니다."
 
 #: ../../source/libraries/curlrequest.rst:134
 msgid "baseURI"
-msgstr ""
+msgstr "baseURI"
 
 #: ../../source/libraries/curlrequest.rst:134
 msgid "URI"
-msgstr ""
+msgstr "URI"
 
 #: ../../source/libraries/curlrequest.rst:134
 msgid "Result"
-msgstr ""
+msgstr "결과"
 
 #: ../../source/libraries/curlrequest.rst:136
 #: ../../source/libraries/curlrequest.rst:140
 msgid "\\http://foo.com"
-msgstr ""
+msgstr "\\http://foo.com"
 
 #: ../../source/libraries/curlrequest.rst:136
 #: ../../source/libraries/curlrequest.rst:137
 msgid "/bar"
-msgstr ""
+msgstr "/bar"
 
 #: ../../source/libraries/curlrequest.rst:136
 #: ../../source/libraries/curlrequest.rst:137
 #: ../../source/libraries/curlrequest.rst:138
 #: ../../source/libraries/curlrequest.rst:141
 msgid "\\http://foo.com/bar"
-msgstr ""
+msgstr "\\http://foo.com/bar"
 
 #: ../../source/libraries/curlrequest.rst:137
 #: ../../source/libraries/curlrequest.rst:138
 msgid "\\http://foo.com/foo"
-msgstr ""
+msgstr "\\http://foo.com/foo"
 
 #: ../../source/libraries/curlrequest.rst:138
 #: ../../source/libraries/curlrequest.rst:139
 #: ../../source/libraries/curlrequest.rst:141
 msgid "bar"
-msgstr ""
+msgstr "bar"
 
 #: ../../source/libraries/curlrequest.rst:139
 msgid "\\http://foo.com/foo/"
-msgstr ""
+msgstr "\\http://foo.com/foo/"
 
 #: ../../source/libraries/curlrequest.rst:139
 msgid "\\http://foo.com/foo/bar"
-msgstr ""
+msgstr "\\http://foo.com/foo/bar"
 
 #: ../../source/libraries/curlrequest.rst:140
 msgid "\\http://baz.com"
-msgstr ""
+msgstr "\\http://baz.com"
 
 #: ../../source/libraries/curlrequest.rst:141
 msgid "\\http://foo.com/?bar"
-msgstr ""
+msgstr "\\http://foo.com/?bar"
 
 #: ../../source/libraries/curlrequest.rst:145
 msgid "Using Responses"
-msgstr ""
+msgstr "응답 사용"
 
 #: ../../source/libraries/curlrequest.rst:147
 msgid ""
@@ -286,18 +335,20 @@ msgid ""
 "useful information and some helpful methods. The most commonly used "
 "methods let you determine the response itself."
 msgstr ""
+"각 ``request()`` 호출은 유용한 정보와 편리한 메서드를 포함하는 Response 객체를 반환합니다. "
+"가장 자주 사용되는 메서드는 응답 자체를 확인하는 데 사용됩니다."
 
 #: ../../source/libraries/curlrequest.rst:150
 msgid "You can get the status code and reason phrase of the response:"
-msgstr ""
+msgstr "응답의 상태 코드와 이유 문구를 가져올 수 있습니다:"
 
 #: ../../source/libraries/curlrequest.rst:154
 msgid "You can retrieve headers from the response:"
-msgstr ""
+msgstr "응답에서 헤더를 가져올 수 있습니다:"
 
 #: ../../source/libraries/curlrequest.rst:158
 msgid "The body can be retrieved using the ``getBody()`` method:"
-msgstr ""
+msgstr "본문은 ``getBody()`` 메서드를 사용하여 가져올 수 있습니다:"
 
 #: ../../source/libraries/curlrequest.rst:162
 msgid ""
@@ -305,20 +356,23 @@ msgid ""
 "type requires formatting, you will need to ensure that your script "
 "handles that:"
 msgstr ""
+"본문은 원격 서버에서 제공하는 원시 본문입니다. "
+"콘텐츠 타입에 형식화가 필요한 경우, 스크립트에서 이를 처리해야 합니다:"
 
 #: ../../source/libraries/curlrequest.rst:169
 msgid "Request Options"
-msgstr ""
+msgstr "요청 옵션"
 
 #: ../../source/libraries/curlrequest.rst:171
 msgid ""
 "This section describes all of the available options you may pass into the"
 " constructor, the ``request()`` method, or any of the shortcut methods."
 msgstr ""
+"이 섹션에서는 생성자, ``request()`` 메서드 또는 단축 메서드에 전달할 수 있는 모든 옵션에 대해 설명합니다."
 
 #: ../../source/libraries/curlrequest.rst:175
 msgid "allow_redirects"
-msgstr ""
+msgstr "allow_redirects"
 
 #: ../../source/libraries/curlrequest.rst:177
 msgid ""
@@ -326,36 +380,41 @@ msgid ""
 "servers send back. The ``allow_redirects`` option allows you to modify "
 "how that works."
 msgstr ""
+"기본적으로 cURL은 원격 서버에서 반환하는 \"Location:\" 헤더를 따르지 않습니다. "
+"``allow_redirects`` 옵션을 사용하면 이 동작을 수정할 수 있습니다."
 
 #: ../../source/libraries/curlrequest.rst:180
 msgid "If you set the value to ``true``, then it will follow redirects:"
-msgstr ""
+msgstr "값을 ``true``\ 로 설정하면 리다이렉트를 따릅니다:"
 
 #: ../../source/libraries/curlrequest.rst:184
 msgid ""
 "Please note that enabling redirects may redirect to a URL that you do not"
 " expect and may enable SSRF attacks."
 msgstr ""
+"리다이렉트를 활성화하면 예상하지 못한 URL로 리다이렉트될 수 있으며 SSRF 공격이 가능해질 수 있습니다."
 
 #: ../../source/libraries/curlrequest.rst:187
 msgid "Setting it to ``false`` will apply the default settings to the request:"
-msgstr ""
+msgstr "``false``\ 로 설정하면 요청에 기본 설정이 적용됩니다:"
 
 #: ../../source/libraries/curlrequest.rst:191
 msgid ""
 "You can pass in array as the value of the ``allow_redirects`` option to "
 "specify new settings in place of the defaults:"
 msgstr ""
+"``allow_redirects`` 옵션의 값으로 배열을 전달하여 기본값 대신 새 설정을 지정할 수 있습니다:"
 
 #: ../../source/libraries/curlrequest.rst:195
 msgid ""
 "Following redirects does not work when PHP is in safe_mode or "
 "open_basedir is enabled."
 msgstr ""
+"PHP가 safe_mode 모드이거나 open_basedir이 활성화된 경우 리다이렉트 따르기가 작동하지 않습니다."
 
 #: ../../source/libraries/curlrequest.rst:198
 msgid "auth"
-msgstr ""
+msgstr "auth"
 
 #: ../../source/libraries/curlrequest.rst:200
 msgid ""
@@ -368,10 +427,15 @@ msgid ""
 "password. The third parameter should be the type of authentication to "
 "use, either ``basic`` or ``digest``:"
 msgstr ""
+"`HTTP Basic <https://www.ietf.org/rfc/rfc2069.txt>`_\ 과 `Digest "
+"<https://www.ietf.org/rfc/rfc2069.txt>`_ 인증 세부 정보를 제공할 수 있습니다. "
+"Digest 인증을 지원하기 위해 스크립트에 추가 작업이 필요할 수 있습니다. 이 옵션은 사용자 이름과 비밀번호를 전달하기만 합니다. "
+"값은 첫 번째 요소가 사용자 이름이고 두 번째 요소가 비밀번호인 배열이어야 합니다. "
+"세 번째 매개변수는 ``basic`` 또는 ``digest`` 중 사용할 인증 유형이어야 합니다:"
 
 #: ../../source/libraries/curlrequest.rst:209
 msgid "body"
-msgstr ""
+msgstr "body"
 
 #: ../../source/libraries/curlrequest.rst:211
 msgid ""
@@ -379,6 +443,8 @@ msgid ""
 "support them, like PUT, OR POST. The first way is to use the "
 "``setBody()`` method:"
 msgstr ""
+"PUT, POST 등 본문을 지원하는 요청 유형에 대해 요청 본문을 설정하는 두 가지 방법이 있습니다. "
+"첫 번째 방법은 ``setBody()`` 메서드를 사용하는 것입니다:"
 
 #: ../../source/libraries/curlrequest.rst:216
 msgid ""
@@ -386,10 +452,13 @@ msgid ""
 " maintain Guzzle API compatibility, and functions the exact same way as "
 "the previous example. The value must be a string:"
 msgstr ""
+"두 번째 방법은 ``body`` 옵션을 전달하는 것입니다. "
+"이는 Guzzle API 호환성을 유지하기 위해 제공되며, 앞의 예제와 동일하게 동작합니다. "
+"값은 문자열이어야 합니다:"
 
 #: ../../source/libraries/curlrequest.rst:222
 msgid "cert"
-msgstr ""
+msgstr "cert"
 
 #: ../../source/libraries/curlrequest.rst:224
 msgid ""
@@ -398,10 +467,12 @@ msgid ""
 "password is required, set the value to an array with the first element as"
 " the path to the certificate, and the second as the password:"
 msgstr ""
+"PEM 형식의 클라이언트 측 인증서 위치를 지정하려면 ``cert`` 옵션으로 파일의 전체 경로를 문자열로 전달하세요. "
+"비밀번호가 필요한 경우 값을 첫 번째 요소가 인증서 경로이고 두 번째 요소가 비밀번호인 배열로 설정하세요:"
 
 #: ../../source/libraries/curlrequest.rst:231
 msgid "connect_timeout"
-msgstr ""
+msgstr "connect_timeout"
 
 #: ../../source/libraries/curlrequest.rst:233
 msgid ""
@@ -410,10 +481,13 @@ msgid ""
 "passing the amount of time in seconds with the ``connect_timeout`` "
 "option. You can pass 0 to wait indefinitely:"
 msgstr ""
+"기본적으로 CodeIgniter는 cURL이 웹사이트에 연결을 시도하는 시간에 제한을 두지 않습니다. "
+"이 값을 수정하려면 ``connect_timeout`` 옵션으로 초 단위 시간을 전달하세요. "
+"무제한 대기하려면 0을 전달하세요:"
 
 #: ../../source/libraries/curlrequest.rst:240
 msgid "cookie"
-msgstr ""
+msgstr "cookie"
 
 #: ../../source/libraries/curlrequest.rst:242
 msgid ""
@@ -421,16 +495,19 @@ msgid ""
 "from, and to save cookie values to. This is done using the "
 "``CURL_COOKIEJAR`` and ``CURL_COOKIEFILE`` options. An example:"
 msgstr ""
+"CURL이 쿠키 값을 읽고 저장할 파일명을 지정합니다. "
+"``CURL_COOKIEJAR``\ 와 ``CURL_COOKIEFILE`` 옵션을 사용하여 처리됩니다. 예시:"
 
 #: ../../source/libraries/curlrequest.rst:249
 msgid "debug"
-msgstr ""
+msgstr "debug"
 
 #: ../../source/libraries/curlrequest.rst:251
 msgid ""
 "When ``debug`` is passed and set to ``true``, this will enable additional"
 " debugging to echo to STDERR during the script execution."
 msgstr ""
+"``debug``\ 가 ``true``\ 로 설정되면 스크립트 실행 중에 STDERR에 추가 디버그 출력을 활성화합니다."
 
 #: ../../source/libraries/curlrequest.rst:254
 msgid ""
@@ -439,24 +516,27 @@ msgid ""
 "the output in the console. Otherwise, the output will be written to the "
 "server's error log."
 msgstr ""
+"``CURLOPT_VERBOSE``\ 를 전달하고 출력을 에코하는 방식으로 처리됩니다. "
+"``spark serve``\ 로 내장 서버를 실행 중이면 콘솔에서 출력을 볼 수 있으며, "
+"그렇지 않으면 서버의 오류 로그에 기록됩니다."
 
 #: ../../source/libraries/curlrequest.rst:260
 msgid ""
 "You can pass a filename as the value for debug to have the output written"
 " to a file:"
-msgstr ""
+msgstr "debug 값으로 파일명을 전달하면 출력이 파일에 기록됩니다:"
 
 #: ../../source/libraries/curlrequest.rst:265
 msgid "delay"
-msgstr ""
+msgstr "delay"
 
 #: ../../source/libraries/curlrequest.rst:267
 msgid "Allows you to pause a number of milliseconds before sending the request:"
-msgstr ""
+msgstr "요청을 보내기 전에 지정한 밀리초만큼 일시 중지할 수 있습니다:"
 
 #: ../../source/libraries/curlrequest.rst:272
 msgid "dns_cache_timeout"
-msgstr ""
+msgstr "dns_cache_timeout"
 
 #: ../../source/libraries/curlrequest.rst:276
 msgid ""
@@ -465,6 +545,8 @@ msgid ""
 "passing an amount of time in seconds with the ``dns_cache_timeout`` "
 "option."
 msgstr ""
+"기본적으로 CodeIgniter는 DNS 캐시 타임아웃 값(``120``초)을 변경하지 않습니다. "
+"이 값을 수정하려면 ``dns_cache_timeout`` 옵션으로 초 단위 시간을 전달하세요."
 
 #: ../../source/libraries/curlrequest.rst:281
 msgid ""
@@ -473,10 +555,13 @@ msgid ""
 "documentation, you can set to zero (``0``) to completely disable caching,"
 " or set to ``-1`` to make the cached entries remain forever."
 msgstr ""
+"`libcurl <https://curl.se/libcurl/c/CURLOPT_DNS_CACHE_TIMEOUT.html>`__ "
+"문서에 따르면, ``0``\ 으로 설정하면 캐싱을 완전히 비활성화하고, "
+"``-1``\ 로 설정하면 캐시 항목이 영원히 유지됩니다."
 
 #: ../../source/libraries/curlrequest.rst:284
 msgid "form_params"
-msgstr ""
+msgstr "form_params"
 
 #: ../../source/libraries/curlrequest.rst:286
 msgid ""
@@ -485,6 +570,9 @@ msgid ""
 "This will set the ``Content-Type`` header to ``application/x-www-form-"
 "urlencoded`` if it's not already set:"
 msgstr ""
+"``form_params`` 옵션에 연관 배열을 전달하여 application/x-www-form-urlencoded POST 요청으로 "
+"폼 데이터를 보낼 수 있습니다. 아직 설정되지 않은 경우 ``Content-Type`` 헤더를 "
+"``application/x-www-form-urlencoded``\ 로 설정합니다:"
 
 #: ../../source/libraries/curlrequest.rst:292
 msgid ""
@@ -493,20 +581,24 @@ msgid ""
 "-www-form-urlencoded`` request, and ``multipart`` for ``multipart/form-"
 "data`` requests."
 msgstr ""
+"``form_params``\ 는 `multipart`_ 옵션과 함께 사용할 수 없습니다. 둘 중 하나를 선택해야 합니다. "
+"``application/x-www-form-urlencoded`` 요청에는 ``form_params``\ 를 사용하고, "
+"``multipart/form-data`` 요청에는 ``multipart``\ 를 사용하세요."
 
 #: ../../source/libraries/curlrequest.rst:299
 msgid "fresh_connect"
-msgstr ""
+msgstr "fresh_connect"
 
 #: ../../source/libraries/curlrequest.rst:303
 msgid ""
 "By default, the request is sent using a fresh connection. You can disable"
 " this behavior using the ``fresh_connect`` option:"
 msgstr ""
+"기본적으로 요청은 새 연결을 사용하여 전송됩니다. ``fresh_connect`` 옵션을 사용하여 이 동작을 비활성화할 수 있습니다:"
 
 #: ../../source/libraries/curlrequest.rst:308
 msgid "headers"
-msgstr ""
+msgstr "headers"
 
 #: ../../source/libraries/curlrequest.rst:310
 msgid ""
@@ -515,6 +607,9 @@ msgid ""
 " in as an option. Each key is the name of a header, and each value is a "
 "string or array of strings representing the header field values:"
 msgstr ""
+"``setHeader()`` 메서드를 사용하여 요청에 필요한 헤더를 설정할 수도 있지만, "
+"옵션으로 헤더의 연관 배열을 전달할 수도 있습니다. "
+"각 키는 헤더 이름이고, 각 값은 헤더 필드 값을 나타내는 문자열 또는 문자열 배열입니다:"
 
 #: ../../source/libraries/curlrequest.rst:316
 msgid ""
@@ -522,26 +617,29 @@ msgid ""
 "values that will be overridden later by any further headers arrays or "
 "calls to ``setHeader()``."
 msgstr ""
+"헤더가 생성자에 전달된 경우 기본값으로 처리되며, 이후 헤더 배열이나 ``setHeader()`` 호출로 재정의될 수 있습니다."
 
 #: ../../source/libraries/curlrequest.rst:320
 msgid "http_errors"
-msgstr ""
+msgstr "http_errors"
 
 #: ../../source/libraries/curlrequest.rst:322
 msgid ""
 "By default, CURLRequest will throw ``HTTPException`` if the HTTP code "
 "returned is greater than or equal to 400."
 msgstr ""
+"기본적으로 CURLRequest는 반환된 HTTP 코드가 400 이상이면 ``HTTPException``\ 을 발생시킵니다."
 
 #: ../../source/libraries/curlrequest.rst:325
 msgid ""
 "If you want to see the response body, you can set ``http_errors`` to "
 "``false`` to return the content instead:"
 msgstr ""
+"응답 본문을 확인하려면 ``http_errors``\ 를 ``false``\ 로 설정하여 대신 콘텐츠를 반환할 수 있습니다:"
 
 #: ../../source/libraries/curlrequest.rst:331
 msgid "json"
-msgstr ""
+msgstr "json"
 
 #: ../../source/libraries/curlrequest.rst:333
 msgid ""
@@ -550,6 +648,9 @@ msgid ""
 "added, overwriting any Content-Type that might be already set. The data "
 "provided to this option can be any value that ``json_encode()`` accepts:"
 msgstr ""
+"``json`` 옵션은 JSON 인코딩된 데이터를 요청 본문으로 쉽게 업로드하는 데 사용됩니다. "
+"``application/json``\ 의 Content-Type 헤더가 추가되어 기존에 설정된 Content-Type을 덮어씁니다. "
+"이 옵션에 제공되는 데이터는 ``json_encode()``\ 가 허용하는 모든 값일 수 있습니다:"
 
 #: ../../source/libraries/curlrequest.rst:339
 msgid ""
@@ -559,10 +660,13 @@ msgid ""
 "method of CURLRequest, and set the Content-Type header with the "
 "``setHeader()`` method."
 msgstr ""
+"이 옵션은 ``json_encode()`` 함수나 Content-Type 헤더를 커스터마이즈하는 것을 허용하지 않습니다. "
+"그 기능이 필요하면 데이터를 직접 인코딩하여 CURLRequest의 ``setBody()`` 메서드로 전달하고, "
+"``setHeader()`` 메서드로 Content-Type 헤더를 설정해야 합니다."
 
 #: ../../source/libraries/curlrequest.rst:344
 msgid "multipart"
-msgstr ""
+msgstr "multipart"
 
 #: ../../source/libraries/curlrequest.rst:346
 msgid ""
@@ -570,6 +674,8 @@ msgid ""
 "use the ``multipart`` option, along with the `CURLFile Class "
 "<https://www.php.net/manual/en/class.curlfile.php>`_."
 msgstr ""
+"POST 요청으로 파일과 다른 데이터를 보내야 할 때 ``multipart`` 옵션을 `CURLFile 클래스 "
+"<https://www.php.net/manual/en/class.curlfile.php>`_\ 와 함께 사용할 수 있습니다."
 
 #: ../../source/libraries/curlrequest.rst:349
 msgid ""
@@ -578,6 +684,9 @@ msgid ""
 " an ``@`` has been disabled. Any files that you want to send must be "
 "passed as instances of CURLFile:"
 msgstr ""
+"값은 전송할 POST 데이터의 연관 배열이어야 합니다. "
+"보다 안전한 사용을 위해 파일 이름 앞에 ``@``\ 를 붙이는 레거시 파일 업로드 방식은 비활성화되었습니다. "
+"전송할 파일은 CURLFile 인스턴스로 전달해야 합니다:"
 
 #: ../../source/libraries/curlrequest.rst:355
 msgid ""
@@ -586,30 +695,34 @@ msgid ""
 "urlencoded`` requests, and ``multipart`` for ``multipart/form-data`` "
 "requests."
 msgstr ""
+"``multipart``\ 는 `form_params`_ 옵션과 함께 사용할 수 없습니다. 둘 중 하나만 사용할 수 있습니다. "
+"``application/x-www-form-urlencoded`` 요청에는 ``form_params``\ 를, "
+"``multipart/form-data`` 요청에는 ``multipart``\ 를 사용하세요."
 
 #: ../../source/libraries/curlrequest.rst:362
 msgid "proxy"
-msgstr ""
+msgstr "proxy"
 
 #: ../../source/libraries/curlrequest.rst:366
 msgid ""
 "You can set a proxy by passing an associative array as the ``proxy`` "
 "option:"
-msgstr ""
+msgstr "``proxy`` 옵션으로 연관 배열을 전달하여 프록시를 설정할 수 있습니다:"
 
 #: ../../source/libraries/curlrequest.rst:371
 msgid "query"
-msgstr ""
+msgstr "query"
 
 #: ../../source/libraries/curlrequest.rst:373
 msgid ""
 "You can pass along data to send as query string variables by passing an "
 "associative array as the ``query`` option:"
 msgstr ""
+"``query`` 옵션으로 연관 배열을 전달하여 쿼리 문자열 변수로 데이터를 전송할 수 있습니다:"
 
 #: ../../source/libraries/curlrequest.rst:378
 msgid "timeout"
-msgstr ""
+msgstr "timeout"
 
 #: ../../source/libraries/curlrequest.rst:380
 msgid ""
@@ -618,18 +731,20 @@ msgid ""
 " should be the number of seconds you want the functions to execute for. "
 "Use 0 to wait indefinitely:"
 msgstr ""
+"기본적으로 cURL 함수는 시간 제한 없이 실행됩니다. ``timeout`` 옵션으로 이를 수정할 수 있습니다. "
+"값은 함수가 실행될 초 단위 시간이어야 합니다. 무제한 대기하려면 0을 사용하세요:"
 
 #: ../../source/libraries/curlrequest.rst:386
 msgid "user_agent"
-msgstr ""
+msgstr "user_agent"
 
 #: ../../source/libraries/curlrequest.rst:388
 msgid "Allows specifying the User Agent for requests:"
-msgstr ""
+msgstr "요청에 사용할 User Agent를 지정할 수 있습니다:"
 
 #: ../../source/libraries/curlrequest.rst:393
 msgid "verify"
-msgstr ""
+msgstr "verify"
 
 #: ../../source/libraries/curlrequest.rst:395
 msgid ""
@@ -641,20 +756,26 @@ msgid ""
 " to a string that contains the path to a CA bundle to enable verification"
 " with a custom certificate. The default value is true:"
 msgstr ""
+"이 옵션은 SSL 인증서 검증 동작을 설명합니다. ``verify`` 옵션이 ``true``\ 이면 "
+"SSL 인증서 검증을 활성화하고 운영 체제가 제공하는 기본 CA 번들을 사용합니다. "
+"``false``\ 로 설정하면 인증서 검증을 비활성화합니다(이는 보안에 취약하며 중간자 공격을 허용합니다!). "
+"CA 번들 경로를 포함하는 문자열로 설정하여 사용자 정의 인증서로 검증을 활성화할 수 있습니다. "
+"기본값은 true입니다:"
 
 #: ../../source/libraries/curlrequest.rst:406
 msgid "force_ip_resolve"
-msgstr ""
+msgstr "force_ip_resolve"
 
 #: ../../source/libraries/curlrequest.rst:410
 msgid ""
 "To set the HTTP handlers to use ``v4`` only ipv4 protocol or ``v6`` for "
 "ipv6 protocol:"
 msgstr ""
+"HTTP 핸들러가 IPv4 프로토콜만 사용하려면 ``v4``\ 를, IPv6 프로토콜을 사용하려면 ``v6``\ 을 설정합니다:"
 
 #: ../../source/libraries/curlrequest.rst:415
 msgid "version"
-msgstr ""
+msgstr "version"
 
 #: ../../source/libraries/curlrequest.rst:417
 msgid ""
@@ -662,4 +783,5 @@ msgid ""
 "version number (typically either ``1.0`` or ``1.1``, ``2.0`` is supported"
 " since v4.3.0.):"
 msgstr ""
-
+"사용할 HTTP 프로토콜을 설정하려면 버전 번호를 문자열 또는 실수형으로 전달하세요 "
+"(일반적으로 ``1.0`` 또는 ``1.1``\ 이며, ``2.0``\ 은 v4.3.0부터 지원됩니다):"
