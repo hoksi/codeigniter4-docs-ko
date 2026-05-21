@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -22,21 +21,20 @@ msgstr ""
 
 #: ../../source/dbmgmt/index.rst:7
 msgid "Database Forge"
-msgstr ""
+msgstr "데이터베이스 Forge"
 
 #: ../../source/dbmgmt/index.rst:7
 msgid "Database Migrations"
-msgstr ""
+msgstr "데이터베이스 마이그레이션"
 
 #: ../../source/dbmgmt/index.rst:7
 msgid "Database Seeding"
-msgstr ""
+msgstr "데이터베이스 시딩"
 
 #: ../../source/dbmgmt/index.rst:3
 msgid "Managing Databases"
-msgstr ""
+msgstr "데이터베이스 관리"
 
 #: ../../source/dbmgmt/index.rst:5
 msgid "CodeIgniter comes with tools to restructure or seed your database."
-msgstr ""
-
+msgstr "CodeIgniter는 데이터베이스를 재구성하거나 시딩하기 위한 도구를 제공합니다."
