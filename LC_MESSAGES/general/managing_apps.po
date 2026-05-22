@@ -177,7 +177,7 @@ msgstr ""
 msgid ""
 "To avoid this risk in such setups, it is recommended that you ensure the "
 "``.env`` file is located outside any web-accessible directories."
-msgstr "이런 구성에서 위험을 피하려면 ``.env`` 파일을 웹에서 접근 가능한 디렉터리 밖에 두는 것을 권장합니다."
+msgstr "이런 설정에서 위험을 피하려면 ``.env`` 파일을 웹에서 접근 가능한 디렉터리 밖에 두는 것을 권장합니다."
 
 #: ../../source/general/managing_apps.rst:120
 msgid ""

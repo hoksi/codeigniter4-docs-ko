@@ -42,8 +42,8 @@ msgid ""
 "``production`` environment, a more generic message is displayed to keep the "
 "best user experience for your users."
 msgstr ""
-"환경 설정에 따라 오류 또는 예외가 발생했을 때의 기본 작업은 응용 프로그램이 ``production`` 환경에서 실행되지 않는 한 "
-"자세한 오류 보고서를 표시하는 것입니다. ``production`` 환경에서는 사용자에게 최상의 사용자 경험을 유지하기 위해 보다 "
+"환경 설정에 따라 오류 또는 예외가 발생했을 때의 기본 작업은 애플리케이션이 ``production`` 환경에서 실행되지 않는 한 "
+"상세 오류 보고서를 표시하는 것입니다. ``production`` 환경에서는 사용자에게 최상의 사용자 경험을 유지하기 위해 보다 "
 "일반적인 메시지가 표시됩니다."
 
 #: ../../source/general/errors.rst:18
@@ -125,7 +125,7 @@ msgid ""
 "When ``display_errors`` in PHP ini setting is enabled, CodeIgniter will "
 "display a detailed error report with all errors"
 msgstr ""
-"PHP ini 설정에서 ``display_errors``\\ 이 활성화되면 CodeIgniter는 모든 오류와 함께 자세한 오류 보고서를"
+"PHP ini 설정에서 ``display_errors``\\ 이 활성화되면 CodeIgniter는 모든 오류와 함께 상세 오류 보고서를"
 " 표시합니다."
 
 #: ../../source/general/errors.rst:63
@@ -134,7 +134,7 @@ msgid ""
 "``development`` and ``testing`` environments, and will not display any "
 "errors in the ``production`` environment."
 msgstr ""
-"따라서 기본적으로 CodeIgniter는 ``development`` 및 ``testing`` 환경에서 자세한 오류 보고서를 표시하고 "
+"따라서 기본적으로 CodeIgniter는 ``development`` 및 ``testing`` 환경에서 상세 오류 보고서를 표시하고 "
 "``production`` 환경에서는 오류를 표시하지 않습니다."
 
 #: ../../source/general/errors.rst:69
@@ -157,12 +157,12 @@ msgid ""
 " ``$_ENV``. As a side effect, this means that if the detailed error report "
 "is displayed, **your secure credentials are publicly exposed**."
 msgstr ""
-"**.env** 파일의 설정이 ``$_SERVER`` 및 ``$_ENV``\\ 에 추가됩니다. 부작용으로 이는 자세한 오류 보고서가 "
-"표시되면 **your secure credentials are publicly exposed**\\ 을 의미합니다."
+"**.env** 파일의 설정이 ``$_SERVER`` 및 ``$_ENV``\\ 에 추가된다는 점에 주의하세요. 그 부작용으로, 상세 "
+"오류 보고서가 표시되면 **보안 자격 증명이 공개적으로 노출됩니다**\\ ."
 
 #: ../../source/general/errors.rst:79
 msgid "Logging Exceptions"
-msgstr "로깅 예외"
+msgstr "예외 로깅"
 
 #: ../../source/general/errors.rst:81
 msgid ""
@@ -253,7 +253,7 @@ msgstr ""
 msgid ""
 "After that, subsequent deprecations will be logged as configured without "
 "throwing as exceptions."
-msgstr "그 이후에는 후속 지원 중단이 예외 없이 구성된 것으로 기록됩니다."
+msgstr "그 이후에는 후속 지원 중단이 예외 없이 설정된 것으로 기록됩니다."
 
 #: ../../source/general/errors.rst:133
 msgid "This feature also works with user deprecations:"
@@ -305,7 +305,7 @@ msgstr "프레임워크에서 발생하는 두 가지 기본 예외 클래스가
 
 #: ../../source/general/errors.rst:159
 msgid "LogicException"
-msgstr "논리예외"
+msgstr "LogicException"
 
 #: ../../source/general/errors.rst:161
 msgid ""
@@ -318,7 +318,7 @@ msgstr ""
 
 #: ../../source/general/errors.rst:166
 msgid "RuntimeException"
-msgstr "런타임예외"
+msgstr "RuntimeException"
 
 #: ../../source/general/errors.rst:168
 msgid ""
@@ -335,7 +335,7 @@ msgstr "다음 프레임워크 예외도 사용할 수 있습니다."
 
 #: ../../source/general/errors.rst:174
 msgid "PageNotFoundException"
-msgstr "PageNotFound예외"
+msgstr "PageNotFoundException"
 
 #: ../../source/general/errors.rst:176
 msgid "This is used to signal a 404, Page Not Found error:"
@@ -351,7 +351,7 @@ msgstr "404 페이지의 기본 메시지 대신 표시될 예외에 메시지�
 msgid ""
 "For the default 404 view file location, see :ref:`http-status-code-and-"
 "error-views`."
-msgstr "기본 404 보기 파일 위치는 :ref:`http-status-code-and-error-views`\\ 을 참조하세요."
+msgstr "기본 404 뷰 파일 위치는 :ref:`http-status-code-and-error-views`\\ 을 참조하세요."
 
 #: ../../source/general/errors.rst:184
 msgid ""
@@ -364,13 +364,13 @@ msgstr ""
 
 #: ../../source/general/errors.rst:188
 msgid "ConfigException"
-msgstr "구성 예외"
+msgstr "ConfigException"
 
 #: ../../source/general/errors.rst:190
 msgid ""
 "This exception should be used when the values from the configuration class "
 "are invalid, or when the config class is not the right type, etc:"
-msgstr "이 예외는 구성 클래스의 값이 유효하지 않거나 구성 클래스가 올바른 유형이 아닌 경우 등에 사용해야 합니다."
+msgstr "이 예외는 설정 클래스의 값이 유효하지 않거나 설정 클래스가 올바른 유형이 아닌 경우 등에 사용해야 합니다."
 
 #: ../../source/general/errors.rst:195
 msgid "This provides an exit code of 3."
@@ -378,7 +378,7 @@ msgstr "이는 종료 코드 3을 제공합니다."
 
 #: ../../source/general/errors.rst:198
 msgid "DatabaseException"
-msgstr "데이터베이스예외"
+msgstr "DatabaseException"
 
 #: ../../source/general/errors.rst:200
 msgid ""
@@ -392,7 +392,7 @@ msgstr "이는 종료 코드 8을 제공합니다."
 
 #: ../../source/general/errors.rst:208
 msgid "RedirectException"
-msgstr "리디렉션예외"
+msgstr "RedirectException"
 
 #: ../../source/general/errors.rst:210
 msgid ""
@@ -450,13 +450,13 @@ msgstr ""
 
 #: ../../source/general/errors.rst:244
 msgid "HTTP Status Code and Error Views"
-msgstr "HTTP 상태 코드 및 오류 보기"
+msgstr "HTTP 상태 코드 및 오류 뷰"
 
 #: ../../source/general/errors.rst:246
 msgid ""
 "The exception handler displays the error view corresponding to the HTTP "
 "status code, if one exists."
-msgstr "예외 핸들러는 HTTP 상태 코드(있는 경우)에 해당하는 오류 보기를 표시합니다."
+msgstr "예외 핸들러는 HTTP 상태 코드(있는 경우)에 해당하는 오류 뷰를 표시합니다."
 
 #: ../../source/general/errors.rst:249
 msgid ""
@@ -486,13 +486,13 @@ msgid ""
 "is selected and a detailed error report is displayed."
 msgstr ""
 "PHP ini 설정에서 ``display_errors``\\ 이 켜져 있으면 **error_exception.php**\\ 이 선택되고 "
-"자세한 오류 보고서가 표시됩니다."
+"상세 오류 보고서가 표시됩니다."
 
 #: ../../source/general/errors.rst:261
 msgid ""
 "You should customize all of the error views in the **app/Views/errors/html**"
 " folder for your site."
-msgstr "사이트의 **app/Views/errors/html** 폴더에 있는 모든 오류 보기를 사용자 정의해야 합니다."
+msgstr "사이트의 **app/Views/errors/html** 폴더에 있는 모든 오류 뷰를 사용자 정의해야 합니다."
 
 #: ../../source/general/errors.rst:264
 msgid ""
@@ -500,7 +500,7 @@ msgid ""
 "if you want to create an error view for \"400 Bad Request\", add "
 "**error_400.php**."
 msgstr ""
-"특정 HTTP 상태 코드에 대한 오류 보기를 생성할 수도 있습니다. 예를 들어 \"400 Bad Request\"에 대한 오류 보기를 "
+"특정 HTTP 상태 코드에 대한 오류 뷰를 생성할 수도 있습니다. 예를 들어 \"400 Bad Request\"에 대한 오류 뷰를 "
 "생성하려면 **error_400.php**\\ 을 추가합니다."
 
 #: ../../source/general/errors.rst:267
@@ -510,8 +510,8 @@ msgid ""
 "view file must be implemented in such a way that it does not display "
 "detailed error messages in production environment by yourself."
 msgstr ""
-"해당 HTTP 상태 코드가 포함된 오류 보기 파일이 존재하는 경우 예외 처리기는 환경에 관계없이 해당 파일을 표시합니다. 뷰 파일은 "
-"프로덕션 환경에서 자체적으로 자세한 오류 메시지를 표시하지 않도록 구현해야 합니다."
+"해당 HTTP 상태 코드가 포함된 오류 뷰 파일이 존재하는 경우 예외 처리기는 환경에 관계없이 해당 파일을 표시합니다. 뷰 파일은 "
+"프로덕션 환경에서 자체적으로 상세 오류 메시지를 표시하지 않도록 구현해야 합니다."
 
 #: ../../source/general/errors.rst:275
 msgid "Specify Exit Code in Your Exception"
@@ -558,7 +558,7 @@ msgid ""
 msgstr ""
 "첫 번째 단계는 ``CodeIgniter\\Debug\\ExceptionHandlerInterface``\\ 을 구현하는 새 클래스를 "
 "만드는 것입니다. ``CodeIgniter\\Debug\\BaseExceptionHandler``\\ 을(를) 확장할 수도 있습니다. 이"
-" 클래스에는 기본 예외 처리기에서 사용되는 여러 유틸리티 메서드가 포함되어 있습니다. 새 핸들러는 단일 메소드인 "
+" 클래스에는 기본 예외 처리기에서 사용되는 여러 유틸리티 메서드가 포함되어 있습니다. 새 핸들러는 단일 메서드인 "
 "``handle()``\\ 를 구현해야 합니다."
 
 #: ../../source/general/errors.rst:304
@@ -568,8 +568,8 @@ msgid ""
 "``BaseExceptionHandler`` provides a number of other helper functions and "
 "objects."
 msgstr ""
-"이 예에서는 일반적으로 필요한 최소 코드 양을 정의합니다. 즉, 보기를 표시하고 적절한 종료 코드로 종료합니다. 그러나 "
-"``BaseExceptionHandler``\\ 은 다양한 다른 도우미 함수와 개체를 제공합니다."
+"이 예에서는 일반적으로 필요한 최소 코드 양을 정의합니다. 즉, 뷰를 표시하고 적절한 종료 코드로 종료합니다. 그러나 "
+"``BaseExceptionHandler``\\ 은 다양한 다른 헬퍼 함수와 개체를 제공합니다."
 
 #: ../../source/general/errors.rst:308
 msgid "Configuring the New Handler"

@@ -39,7 +39,7 @@ msgid ""
 "controllers, models, views, config files, helpers, language files, etc. "
 "Modules may contain as few, or as many, of these as you like."
 msgstr ""
-"컨트롤러, 모델, 보기, 구성 파일, 도우미, 언어 파일 등과 같은 프레임워크 내의 모든 표준 파일 형식이 지원됩니다. 모듈에는 원하는 "
+"컨트롤러, 모델, 보기, 설정 파일, 헬퍼, 언어 파일 등과 같은 프레임워크 내의 모든 표준 파일 형식이 지원됩니다. 모듈에는 원하는 "
 "만큼 이러한 파일 형식이 포함될 수 있습니다."
 
 #: ../../source/general/modules.rst:12
@@ -62,7 +62,7 @@ msgid ""
 "**app/Config/Autoload.php**, in the ``$psr4`` property."
 msgstr ""
 "모듈 기능의 핵심 요소는 CodeIgniter가 사용하는 :doc:`PSR-4 compatible autoloading "
-"<../concepts/autoloader>`\\ 에서 나옵니다. 모든 코드에서 PSR-4 자동 로더와 네임스페이스를 사용할 수 있지만 "
+"<../concepts/autoloader>`\\ 에서 나옵니다. 모든 코드에서 PSR-4 오토로더와 네임스페이스를 사용할 수 있지만 "
 "모듈을 최대한 활용하는 기본 방법은 코드에 네임스페이스를 지정하고 이를 ``$psr4`` 속성의 "
 "**app/Config/Autoload.php**\\ 에 추가하는 것입니다."
 
@@ -226,7 +226,7 @@ msgstr ""
 
 #: ../../source/general/modules.rst:115
 msgid "Discovery and Composer"
-msgstr "발견과 작곡가"
+msgstr "검색과 Composer"
 
 #: ../../source/general/modules.rst:117
 msgid ""
@@ -285,7 +285,7 @@ msgstr ""
 
 #: ../../source/general/modules.rst:152
 msgid "Routes"
-msgstr "노선"
+msgstr "라우트"
 
 #: ../../source/general/modules.rst:154
 msgid ""
@@ -294,7 +294,7 @@ msgid ""
 "described above."
 msgstr ""
 "기본적으로 :doc:`routes <../incoming/routing>`\\ 은 모듈 내에서 자동으로 검색됩니다. 위에서 설명한 대로 "
-"**Modules** 구성 파일에서 끌 수 있습니다."
+"**Modules** 설정 파일에서 끌 수 있습니다."
 
 #: ../../source/general/modules.rst:157
 msgid ""
@@ -330,7 +330,7 @@ msgid ""
 "described above."
 msgstr ""
 "기본적으로 :doc:`filters <../incoming/filters>`\\ 은 모듈 내에서 자동으로 검색됩니다. 위에서 설명한 대로"
-" **Modules** 구성 파일에서 끌 수 있습니다."
+" **Modules** 설정 파일에서 끌 수 있습니다."
 
 #: ../../source/general/modules.rst:178
 msgid ""
@@ -368,14 +368,14 @@ msgstr "여기에 필요한 입력량을 줄이려면 **group** 라우팅 기능
 
 #: ../../source/general/modules.rst:198
 msgid "Config Files"
-msgstr "구성 파일"
+msgstr "설정 파일"
 
 #: ../../source/general/modules.rst:200
 msgid ""
 "No special change is needed when working with configuration files. These are"
 " still namespaced classes and loaded with the ``new`` command:"
 msgstr ""
-"구성 파일 작업 시 특별한 변경이 필요하지 않습니다. 이들은 여전히 ​​네임스페이스 클래스이며 ``new`` 명령으로 로드됩니다."
+"설정 파일 작업 시 특별한 변경이 필요하지 않습니다. 이들은 여전히 ​​네임스페이스 클래스이며 ``new`` 명령으로 로드됩니다."
 
 #: ../../source/general/modules.rst:205
 msgid ""
@@ -383,7 +383,7 @@ msgid ""
 ":php:func:`config()` function that is always available, and you pass a short"
 " classname to it."
 msgstr ""
-"구성 파일은 항상 사용 가능한 :php:func:`config()` 함수를 사용할 때마다 자동으로 검색되며 짧은 클래스 이름을 "
+"설정 파일은 항상 사용 가능한 :php:func:`config()` 함수를 사용할 때마다 자동으로 검색되며 짧은 클래스 이름을 "
 "전달합니다."
 
 #: ../../source/general/modules.rst:207
@@ -392,7 +392,7 @@ msgid ""
 " need to override or add to known configurations in **app/Config/** should "
 "use :ref:`Implicit Registrars <registrars>`."
 msgstr ""
-"모듈에서 동일한 짧은 클래스 이름을 사용하지 않는 것이 좋습니다. **app/Config/**\\ 의 알려진 구성을 재정의하거나 추가해야"
+"모듈에서 동일한 짧은 클래스 이름을 사용하지 않는 것이 좋습니다. **app/Config/**\\ 의 알려진 설정을 재정의하거나 추가해야"
 " 하는 모듈은 :ref:`Implicit Registrars <registrars>`\\ 을 사용해야 합니다."
 
 #: ../../source/general/modules.rst:210
@@ -419,7 +419,7 @@ msgstr ""
 
 #: ../../source/general/modules.rst:222
 msgid "Seeds"
-msgstr "씨앗"
+msgstr "시드"
 
 #: ../../source/general/modules.rst:224
 msgid ""
@@ -448,7 +448,7 @@ msgid ""
 "using the :php:func:`helper()` function, as long as it is within the "
 "namespaces **Helpers** directory:"
 msgstr ""
-"도우미는 네임스페이스 **Helpers** 디렉터리 내에 있는 한 :php:func:`helper()` 함수를 사용할 때 정의된 "
+"헬퍼는 네임스페이스 **Helpers** 디렉터리 내에 있는 한 :php:func:`helper()` 함수를 사용할 때 정의된 "
 "네임스페이스 내에서 자동으로 검색됩니다."
 
 #: ../../source/general/modules.rst:249
@@ -469,12 +469,12 @@ msgid ""
 "the :php:func:`lang()` function, as long as the file follows the same "
 "directory structures as the main application directory."
 msgstr ""
-"언어 파일은 기본 응용 프로그램 디렉터리와 동일한 디렉터리 구조를 따르는 한 :php:func:`lang()` 함수를 사용할 때 정의된 "
+"언어 파일은 기본 애플리케이션 디렉터리와 동일한 디렉터리 구조를 따르는 한 :php:func:`lang()` 함수를 사용할 때 정의된 "
 "네임스페이스에서 자동으로 찾습니다."
 
 #: ../../source/general/modules.rst:259
 msgid "Libraries"
-msgstr "도서관"
+msgstr "라이브러리"
 
 #: ../../source/general/modules.rst:261
 msgid ""

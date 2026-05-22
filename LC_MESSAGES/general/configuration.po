@@ -30,7 +30,7 @@ msgid ""
 "initial settings. CodeIgniter configuration files define simple classes "
 "where the required settings are public properties."
 msgstr ""
-"모든 프레임워크는 구성 파일을 사용하여 수많은 매개변수와 초기 설정을 정의합니다. CodeIgniter 구성 파일은 필수 설정이 공용 "
+"모든 프레임워크는 설정 파일을 사용하여 수많은 매개변수와 초기 설정을 정의합니다. CodeIgniter 설정 파일은 필수 설정이 공용 "
 "속성인 간단한 클래스를 정의합니다."
 
 #: ../../source/general/configuration.rst:9
@@ -41,13 +41,13 @@ msgid ""
 "uses it. You will find the application configuration files in the "
 "**app/Config** folder."
 msgstr ""
-"다른 많은 프레임워크와 달리 CodeIgniter 구성 가능 항목은 단일 파일에 포함되지 않습니다. 대신 구성 가능한 항목이 필요한 각 "
-"클래스에는 해당 항목을 사용하는 클래스와 동일한 이름의 구성 파일이 있습니다. **app/Config** 폴더에서 애플리케이션 구성 "
+"다른 많은 프레임워크와 달리 CodeIgniter 설정 가능 항목은 단일 파일에 포함되지 않습니다. 대신 설정 가능한 항목이 필요한 각 "
+"클래스에는 해당 항목을 사용하는 클래스와 동일한 이름의 설정 파일이 있습니다. **app/Config** 폴더에서 애플리케이션 구성 "
 "파일을 찾을 수 있습니다."
 
 #: ../../source/general/configuration.rst:20
 msgid "What are Configuration Classes?"
-msgstr "구성 클래스란 무엇입니까?"
+msgstr "설정 클래스란 무엇입니까?"
 
 #: ../../source/general/configuration.rst:22
 msgid ""
@@ -57,8 +57,8 @@ msgid ""
 "application operates, rather than responding to each user's individual "
 "settings."
 msgstr ""
-"구성 클래스는 시스템 기본 구성 값을 정의하는 데 사용됩니다. 시스템 구성 값은 일반적으로 *static*\\ 입니다. 구성 클래스는 각"
-" 사용자의 개별 설정에 응답하는 대신 애플리케이션 작동 방식을 구성하는 설정을 유지하기 위한 것입니다."
+"설정 클래스는 시스템 기본 설정 값을 정의하는 데 사용됩니다. 시스템 설정 값은 일반적으로 *static*\\ 입니다. 설정 클래스는 각"
+" 사용자의 개별 설정에 응답하는 대신 애플리케이션 작동 방식을 설정하는 설정을 유지하기 위한 것입니다."
 
 #: ../../source/general/configuration.rst:27
 msgid ""
@@ -68,7 +68,7 @@ msgid ""
 " This is especially important if you utilize :ref:`factories-config-"
 "caching`."
 msgstr ""
-"나중에 실행하는 동안 구성 클래스를 인스턴스화하는 동안 설정된 값을 변경하는 것은 권장되지 않습니다. 즉, 구성 클래스를 불변 클래스 "
+"나중에 실행하는 동안 설정 클래스를 인스턴스화하는 동안 설정된 값을 변경하는 것은 권장되지 않습니다. 즉, 설정 클래스를 불변 클래스 "
 "또는 읽기 전용 클래스로 처리하는 것이 좋습니다. :ref:`factories-config-caching`\\ 을 활용하는 경우 이는 "
 "특히 중요합니다."
 
@@ -76,29 +76,29 @@ msgstr ""
 msgid ""
 "Configuration values can be hard-coded in the class files or obtained from "
 "environment variables at instantiation."
-msgstr "구성 값은 클래스 파일에 하드 코딩되거나 인스턴스화 시 환경 변수에서 얻을 수 있습니다."
+msgstr "설정 값은 클래스 파일에 하드 코딩되거나 인스턴스화 시 환경 변수에서 얻을 수 있습니다."
 
 #: ../../source/general/configuration.rst:36
 msgid "Working with Configuration Files"
-msgstr "구성 파일 작업"
+msgstr "설정 파일 작업"
 
 #: ../../source/general/configuration.rst:39
 msgid "Getting a Config Object"
-msgstr "구성 개체 가져오기"
+msgstr "설정 객체 가져오기"
 
 #: ../../source/general/configuration.rst:41
 msgid ""
 "You can access configuration files for your classes in several different "
 "ways."
-msgstr "여러 가지 방법으로 클래스의 구성 파일에 액세스할 수 있습니다."
+msgstr "여러 가지 방법으로 클래스의 설정 파일에 액세스할 수 있습니다."
 
 #: ../../source/general/configuration.rst:44
 msgid "new keyword"
-msgstr "새 키워드"
+msgstr "`new` 키워드"
 
 #: ../../source/general/configuration.rst:46
 msgid "By using the ``new`` keyword to create an instance:"
-msgstr "``new`` 키워드를 사용하여 인스턴스를 생성합니다."
+msgstr "``new`` 키워드를 사용해 인스턴스를 생성합니다:"
 
 #: ../../source/general/configuration.rst:53
 msgid "config()"
@@ -123,7 +123,7 @@ msgid ""
 "with ``Config``. Using this namespace in your application will provide the "
 "best performance since it knows exactly where to find the files."
 msgstr ""
-"CodeIgniter와 함께 제공되는 모든 구성 파일은 ``Config``\\ 으로 네임스페이스가 지정됩니다. 애플리케이션에서 이 "
+"CodeIgniter와 함께 제공되는 모든 설정 파일은 ``Config``\\ 으로 네임스페이스가 지정됩니다. 애플리케이션에서 이 "
 "네임스페이스를 사용하면 파일을 찾을 위치를 정확히 알 수 있으므로 최상의 성능을 제공할 수 있습니다."
 
 #: ../../source/general/configuration.rst:67
@@ -139,17 +139,17 @@ msgstr ""
 
 #: ../../source/general/configuration.rst:73
 msgid "Getting a Config Property"
-msgstr "구성 속성 가져오기"
+msgstr "설정 속성 가져오기"
 
 #: ../../source/general/configuration.rst:75
 msgid ""
 "All configuration object properties are public, so you access the settings "
 "like any other property:"
-msgstr "모든 구성 개체 속성은 공개되므로 다른 속성과 마찬가지로 설정에 액세스할 수 있습니다."
+msgstr "모든 설정 객체 속성은 공개되므로 다른 속성과 마찬가지로 설정에 액세스할 수 있습니다."
 
 #: ../../source/general/configuration.rst:80
 msgid "Creating Configuration Files"
-msgstr "구성 파일 생성"
+msgstr "설정 파일 생성"
 
 #: ../../source/general/configuration.rst:82
 msgid ""
@@ -157,14 +157,14 @@ msgid ""
 "desired location. The default file location (recommended for most cases) is "
 "**app/Config**."
 msgstr ""
-"새 구성이 필요한 경우 먼저 원하는 위치에 새 파일을 만듭니다. 기본 파일 위치(대부분의 경우 권장됨)는 **app/Config**\\ "
+"새 설정이 필요한 경우 먼저 원하는 위치에 새 파일을 만듭니다. 기본 파일 위치(대부분의 경우 권장됨)는 **app/Config**\\ "
 "입니다."
 
 #: ../../source/general/configuration.rst:85
 msgid ""
 "You can put configuration files in any **Config** folder by using a "
 "different namespace."
-msgstr "다른 네임스페이스를 사용하여 모든 **Config** 폴더에 구성 파일을 넣을 수 있습니다."
+msgstr "다른 네임스페이스를 사용하여 모든 **Config** 폴더에 설정 파일을 넣을 수 있습니다."
 
 #: ../../source/general/configuration.rst:87
 msgid ""
@@ -196,7 +196,7 @@ msgid ""
 msgstr ""
 "오늘날 애플리케이션 설정에 대한 모범 사례 중 하나는 환경 변수를 사용하는 것입니다. 그 이유 중 하나는 코드를 변경하지 않고도 배포 "
 "간에 환경 변수를 쉽게 변경할 수 있기 때문입니다. 구성은 배포 전반에 걸쳐 많이 변경될 수 있지만 코드는 그렇지 않습니다. 예를 들어 "
-"개발자의 로컬 시스템 및 프로덕션 서버와 같은 여러 환경에는 일반적으로 각 특정 설정에 대해 서로 다른 구성 값이 필요합니다."
+"개발자의 로컬 시스템 및 프로덕션 서버와 같은 여러 환경에는 일반적으로 각 특정 설정에 대해 서로 다른 설정 값이 필요합니다."
 
 #: ../../source/general/configuration.rst:99
 msgid ""
@@ -289,10 +289,9 @@ msgid ""
 "report in the ``development`` environment is shown, **your secure "
 "credentials are publicly exposed**."
 msgstr ""
-"**.env** 파일의 설정이 ``$_SERVER`` 및 ``$_ENV``\\ 에 추가됩니다. 부작용으로 이는 CodeIgniter "
-"애플리케이션이 (예를 들어) ``var_dump($_ENV)`` 또는 ``phpinfo()``(디버깅 또는 기타 유효한 이유로)를 "
-"생성하거나 ``development`` 환경의 자세한 오류 보고서가 표시되는 경우 **your secure credentials are "
-"publicly exposed**\\ 을 의미합니다."
+"**.env** 파일의 설정이 ``$_SERVER`` 및 ``$_ENV``\\ 에 추가된다는 점에 주의하세요. 그 부작용으로, "
+"(예를 들어) CodeIgniter 애플리케이션이 디버깅 등의 이유로 ``var_dump($_ENV)`` 또는 ``phpinfo()`` "
+"를 생성하거나 ``development`` 환경의 상세 오류 보고서가 표시되면 **보안 자격 증명이 공개적으로 노출됩니다**\\ ."
 
 #: ../../source/general/configuration.rst:146
 msgid "Nesting Variables"
@@ -343,14 +342,14 @@ msgstr ""
 
 #: ../../source/general/configuration.rst:197
 msgid "Configuration Classes and Environment Variables"
-msgstr "구성 클래스 및 환경 변수"
+msgstr "설정 클래스 및 환경 변수"
 
 #: ../../source/general/configuration.rst:199
 msgid ""
 "When you instantiate a configuration class, any *namespaced* environment "
 "variables are considered for merging into the configuration object's "
 "properties."
-msgstr "구성 클래스를 인스턴스화할 때 구성 개체의 속성에 병합하기 위해 모든 *namespaced* 환경 변수가 고려됩니다."
+msgstr "설정 클래스를 인스턴스화할 때 설정 객체의 속성에 병합하기 위해 모든 *namespaced* 환경 변수가 고려됩니다."
 
 #: ../../source/general/configuration.rst:202
 msgid ""
@@ -380,8 +379,8 @@ msgid ""
 "configuration class properties are left unchanged. In this usage, the prefix"
 " must be the full (case-sensitive) namespace of the class."
 msgstr ""
-"네임스페이스 변수의 접두사가 구성 클래스의 네임스페이스와 정확히 일치하는 경우 설정의 후행 부분(점 뒤)이 구성 속성으로 처리됩니다. "
-"기존 구성 속성과 일치하는 경우 환경 변수 값이 구성 파일의 해당 값을 대체합니다. 일치하는 항목이 없으면 구성 클래스 속성은 변경되지 "
+"네임스페이스 변수의 접두사가 설정 클래스의 네임스페이스와 정확히 일치하는 경우 설정의 후행 부분(점 뒤)이 설정 속성으로 처리됩니다. "
+"기존 설정 속성과 일치하는 경우 환경 변수 값이 설정 파일의 해당 값을 대체합니다. 일치하는 항목이 없으면 설정 클래스 속성은 변경되지 "
 "않고 그대로 유지됩니다. 이 사용법에서 접두사는 클래스의 전체(대소문자 구분) 네임스페이스여야 합니다."
 
 #: ../../source/general/configuration.rst:221
@@ -390,7 +389,7 @@ msgid ""
 "must exactly match the full namespace and property names as defined in the "
 "configuration class file."
 msgstr ""
-"네임스페이스 접두사와 속성 이름은 모두 대소문자를 구분합니다. 구성 클래스 파일에 정의된 전체 네임스페이스 및 속성 이름과 정확히 "
+"네임스페이스 접두사와 속성 이름은 모두 대소문자를 구분합니다. 설정 클래스 파일에 정의된 전체 네임스페이스 및 속성 이름과 정확히 "
 "일치해야 합니다."
 
 #: ../../source/general/configuration.rst:223
@@ -400,8 +399,8 @@ msgid ""
 "matches the class name, the value from **.env** replaces the configuration "
 "file value."
 msgstr ""
-"구성 클래스 이름의 소문자 버전만 사용하는 네임스페이스인 *short prefix*\\ 의 경우에도 마찬가지입니다. 짧은 접두사가 클래스"
-" 이름과 일치하면 **.env**\\ 의 값이 구성 파일 값을 대체합니다."
+"설정 클래스 이름의 소문자 버전만 사용하는 네임스페이스인 *short prefix*\\ 의 경우에도 마찬가지입니다. 짧은 접두사가 클래스"
+" 이름과 일치하면 **.env**\\ 의 값이 설정 파일 값을 대체합니다."
 
 #: ../../source/general/configuration.rst:232
 msgid "Since v4.1.5, you can also write with underscores::"
@@ -422,8 +421,8 @@ msgid ""
 "It is very important to always remember that environment variables contained"
 " in your **.env** are **only replacements for existing scalar values**."
 msgstr ""
-"**.env**\\ 에 포함된 환경 변수는 **only replacements for existing scalar values**\\ "
-"이라는 점을 항상 기억하는 것이 매우 중요합니다."
+"**.env**\\ 에 포함된 환경 변수는 **기존 스칼라 값을 대체하는 용도로만 사용된다**\\ 는 점을 항상 기억하는 것이 매우 "
+"중요합니다."
 
 #: ../../source/general/configuration.rst:247
 msgid ""
@@ -450,7 +449,7 @@ msgid ""
 " run time."
 msgstr ""
 "예를 들어, ``app.myNewConfig = foo``\\ 을 **.env**\\ 에 넣고 ``Config\\App``\\ 가 "
-"마술처럼 런타임에 해당 속성과 값을 갖기를 기대할 수는 없습니다."
+"런타임에 마법처럼 해당 속성과 값을 갖기를 기대할 수는 없습니다."
 
 #: ../../source/general/configuration.rst:257
 msgid ""
@@ -476,14 +475,14 @@ msgid ""
 "environment variable name is treated as an array reference if it also "
 "contains a dot."
 msgstr ""
-"네임스페이스 환경 변수는 추가로 배열로 처리될 수 있습니다. 접두사가 구성 클래스와 일치하는 경우 환경 변수 이름의 나머지 부분에도 점이"
+"네임스페이스 환경 변수는 추가로 배열로 처리될 수 있습니다. 접두사가 설정 클래스와 일치하는 경우 환경 변수 이름의 나머지 부분에도 점이"
 " 포함되어 있으면 배열 참조로 처리됩니다."
 
 #: ../../source/general/configuration.rst:280
 msgid ""
 "If this was referring to a SimpleConfig configuration object, the above "
 "example would be treated as:"
-msgstr "이것이 SimpleConfig 구성 객체를 참조하는 경우 위 예는 다음과 같이 처리됩니다."
+msgstr "이것이 SimpleConfig 설정 객체를 참조하는 경우 위 예는 다음과 같이 처리됩니다."
 
 #: ../../source/general/configuration.rst:284
 msgid "Any other elements of the ``$address`` property would be unchanged."
@@ -513,9 +512,9 @@ msgid ""
 " and API keys and other information that should not be exposed. But anything"
 " that changes between deployments is fair-game."
 msgstr ""
-"파일에는 애플리케이션에서 사용하는 모든 구성 클래스에 대해 가능한 모든 설정이 포함되어서는 안 됩니다. 실제로 환경에 특정한 항목이나 "
-"비밀번호, API 키, 기타 노출되어서는 안 되는 정보와 같은 민감한 세부 정보만 포함해야 합니다. 그러나 배포 간에 변경되는 모든 "
-"사항은 공정한 게임입니다."
+"파일에는 애플리케이션에서 사용하는 모든 설정 클래스에 대한 가능한 모든 설정이 포함되어서는 안 됩니다. 실제로는 환경에 특정한 "
+"항목이나 비밀번호, API 키, 기타 노출되어서는 안 되는 민감한 정보만 포함해야 합니다. 다만 배포 간에 달라지는 항목은 무엇이든 "
+"포함할 수 있습니다."
 
 #: ../../source/general/configuration.rst:302
 msgid ""
@@ -536,7 +535,7 @@ msgstr ""
 
 #: ../../source/general/configuration.rst:309
 msgid "Registrars"
-msgstr "등록기관"
+msgstr "등록기"
 
 #: ../../source/general/configuration.rst:311
 msgid ""
@@ -544,7 +543,7 @@ msgid ""
 "configuration properties. Registrars provide a means of altering a "
 "configuration at runtime across namespaces and files."
 msgstr ""
-"\"등록자\"는 추가 구성 속성을 제공할 수 있는 다른 클래스입니다. 등록자는 런타임 시 네임스페이스와 파일 전반에 걸쳐 구성을 변경하는"
+"\"등록기\"는 추가 설정 속성을 제공할 수 있는 다른 클래스입니다. 등록기는 런타임 시 네임스페이스와 파일 전반에 걸쳐 설정을 변경하는"
 " 수단을 제공합니다."
 
 #: ../../source/general/configuration.rst:314
@@ -554,24 +553,24 @@ msgid ""
 "object is instantiated."
 msgstr ""
 ":doc:`Modules </general/modules>`\\ 에서 :ref:`auto-discovery`\\ 이 활성화된 경우 등록 "
-"기관이 작동합니다. Config 객체가 인스턴스화될 때 구성 속성을 변경합니다."
+"기관이 작동합니다. Config 객체가 인스턴스화될 때 설정 속성을 변경합니다."
 
 #: ../../source/general/configuration.rst:321
 msgid ""
 "There are two ways to implement a Registrar: **implicit** and **explicit**."
-msgstr "등록자를 구현하는 방법에는 **implicit** 및 **explicit**\\ 의 두 가지 방법이 있습니다."
+msgstr "등록기를 구현하는 방법에는 **implicit** 및 **explicit**\\ 의 두 가지 방법이 있습니다."
 
 #: ../../source/general/configuration.rst:323
 msgid "Values from **.env** always take priority over Registrars."
-msgstr "**.env**\\ 의 값은 항상 등록자보다 우선합니다."
+msgstr "**.env**\\ 의 값은 항상 등록기보다 우선합니다."
 
 #: ../../source/general/configuration.rst:326
 msgid "Implicit Registrars"
-msgstr "암시적 등록자"
+msgstr "암시적 등록기"
 
 #: ../../source/general/configuration.rst:328
 msgid "Implicit Registrars can change any Config class properties."
-msgstr "암시적 등록자는 모든 구성 클래스 속성을 변경할 수 있습니다."
+msgstr "암시적 등록기는 모든 설정 클래스 속성을 변경할 수 있습니다."
 
 #: ../../source/general/configuration.rst:330
 msgid ""
@@ -579,8 +578,8 @@ msgid ""
 "**Config/Registrar.php** file. These files are classes whose methods are "
 "named for each configuration class you wish to extend."
 msgstr ""
-"모든 네임스페이스는 **Config/Registrar.php** 파일을 사용하여 암시적 등록자를 정의할 수 있습니다. 이러한 파일은 "
-"확장하려는 각 구성 클래스에 대해 메서드 이름이 지정된 클래스입니다."
+"모든 네임스페이스는 **Config/Registrar.php** 파일을 사용하여 암시적 등록기를 정의할 수 있습니다. 이러한 파일은 "
+"확장하려는 각 설정 클래스에 대해 메서드 이름이 지정된 클래스입니다."
 
 #: ../../source/general/configuration.rst:334
 msgid ""
@@ -590,7 +589,7 @@ msgid ""
 "would be a ``Registrar`` class with the single ``Pager()`` method (note the "
 "case-sensitivity):"
 msgstr ""
-"예를 들어, 타사 모듈이나 Composer 패키지는 개발자가 이미 구성한 내용을 덮어쓰지 않고 ``Config\\Pager``\\ 에 "
+"예를 들어, 서드파티 모듈이나 Composer 패키지는 개발자가 이미 구성한 내용을 덮어쓰지 않고 ``Config\\Pager``\\ 에 "
 "추가 템플릿을 제공하려고 할 수 있습니다. **src/Config/Registrar.php**\\ 에는 단일 ``Pager()`` "
 "메서드가 있는 ``Registrar`` 클래스가 있습니다(대소문자 구분 참고)."
 
@@ -600,18 +599,18 @@ msgid ""
 "the properties of the target config file. Existing values are merged, and "
 "Registrar properties have overwrite priority."
 msgstr ""
-"등록자 메서드는 항상 대상 구성 파일의 속성에 해당하는 키와 함께 배열을 반환해야 합니다. 기존 값은 병합되고 등록자 속성은 덮어쓰기 "
+"등록기 메서드는 항상 대상 설정 파일의 속성에 해당하는 키와 함께 배열을 반환해야 합니다. 기존 값은 병합되고 등록기 속성은 덮어쓰기 "
 "우선순위를 가집니다."
 
 #: ../../source/general/configuration.rst:346
 msgid "Explicit Registrars"
-msgstr "명시적 등록자"
+msgstr "명시적 등록기"
 
 #: ../../source/general/configuration.rst:348
 msgid ""
 "Explicit Registrars can only change the Config class properties in which "
 "they are registered."
-msgstr "명시적 등록자는 자신이 등록된 Config 클래스 속성만 변경할 수 있습니다."
+msgstr "명시적 등록기는 자신이 등록된 Config 클래스 속성만 변경할 수 있습니다."
 
 #: ../../source/general/configuration.rst:351
 msgid ""
@@ -619,7 +618,7 @@ msgid ""
 "This is done by adding a ``$registrars`` property to your configuration "
 "file, holding an array of the names of candidate registrars:"
 msgstr ""
-"구성 파일은 명시적으로 원하는 만큼의 등록자를 지정할 수도 있습니다. 이는 후보 등록기관의 이름 배열을 보유하는 구성 파일에 "
+"설정 파일은 명시적으로 원하는 만큼의 등록기를 지정할 수도 있습니다. 이는 후보 등록기의 이름 배열을 보유하는 설정 파일에 "
 "``$registrars`` 속성을 추가하여 수행됩니다."
 
 #: ../../source/general/configuration.rst:357
@@ -628,7 +627,7 @@ msgid ""
 "static function with the same name as the configuration class, and it should"
 " return an associative array of property settings."
 msgstr ""
-"이렇게 식별된 클래스가 \"등록자\" 역할을 하려면 구성 클래스와 동일한 이름을 가진 정적 함수가 있어야 하며 속성 설정의 연관 배열을 "
+"이렇게 식별된 클래스가 \"등록기\" 역할을 하려면 설정 클래스와 동일한 이름을 가진 정적 함수가 있어야 하며 속성 설정의 연관 배열을 "
 "반환해야 합니다."
 
 #: ../../source/general/configuration.rst:361
@@ -638,12 +637,12 @@ msgid ""
 "invoke the method named for the configuration class and incorporate any "
 "returned properties."
 msgstr ""
-"구성 개체가 인스턴스화되면 ``$registrars``\\ 의 지정된 클래스를 반복합니다. 이러한 각 클래스에 대해 구성 클래스에 대해 "
+"설정 객체가 인스턴스화되면 ``$registrars``\\ 의 지정된 클래스를 반복합니다. 이러한 각 클래스에 대해 설정 클래스에 대해 "
 "명명된 메서드를 호출하고 반환된 속성을 통합합니다."
 
 #: ../../source/general/configuration.rst:365
 msgid "A sample configuration class setup for this:"
-msgstr "이에 대한 샘플 구성 클래스 설정은 다음과 같습니다."
+msgstr "이에 대한 샘플 설정 클래스 설정은 다음과 같습니다."
 
 #: ../../source/general/configuration.rst:369
 msgid "... and the associated regional sales model might look like:"
@@ -657,11 +656,11 @@ msgid ""
 "\"registrar\". The resulting configuration properties:"
 msgstr ""
 "위의 예에서 ``MySalesConfig``\\ 이 인스턴스화되면 세 가지 속성이 선언되지만 ``$target`` 속성의 값은 "
-"``RegionalSales``\\ 을 \"등록자\"로 처리하여 재정의됩니다. 결과 구성 속성은 다음과 같습니다."
+"``RegionalSales``\\ 을 \"등록기\"로 처리하여 재정의됩니다. 결과 설정 속성은 다음과 같습니다."
 
 #: ../../source/general/configuration.rst:382
 msgid "Confirming Config Values"
-msgstr "구성 값 확인"
+msgstr "설정 값 확인"
 
 #: ../../source/general/configuration.rst:384
 msgid ""
@@ -683,7 +682,7 @@ msgstr ""
 
 #: ../../source/general/configuration.rst:394
 msgid "config:check"
-msgstr "구성:확인"
+msgstr "config:check"
 
 #: ../../source/general/configuration.rst:398
 msgid "For example, if you want to check the ``Config\\App`` instance:"
@@ -695,12 +694,12 @@ msgstr "출력은 다음과 같습니다."
 
 #: ../../source/general/configuration.rst:427
 msgid "You can see if Config Caching is enabled or not."
-msgstr "구성 캐싱이 활성화되어 있는지 여부를 확인할 수 있습니다."
+msgstr "설정 캐싱이 활성화되어 있는지 여부를 확인할 수 있습니다."
 
 #: ../../source/general/configuration.rst:429
 msgid ""
 "If Config Caching is enabled, the cached values are used permanently. See "
 ":ref:`factories-config-caching` for details."
 msgstr ""
-"구성 캐싱이 활성화되면 캐시된 값이 영구적으로 사용됩니다. 자세한 내용은 :ref:`factories-config-caching`\\ 을"
+"설정 캐싱이 활성화되면 캐시된 값이 영구적으로 사용됩니다. 자세한 내용은 :ref:`factories-config-caching`\\ 을"
 " 참조하세요."
