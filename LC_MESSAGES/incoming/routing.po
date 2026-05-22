@@ -118,7 +118,7 @@ msgid ""
 "method <routing-default-method>`, which is usually ``index()``:"
 msgstr ""
 "첫 번째 세그먼트에 **journals**\\ 라는 단어가 포함된 URL은 ``\\App\\Controllers\\Blogs`` "
-"클래스와 보통 ``index()``\\ 인 :ref:`기본 메서드 <routing-default-method>`\\ 로 매핑됩니다."
+"클래스와 보통 ``index()``\\ 인 :ref:`\ 기본 메서드 <routing-default-method>`\\ 로 매핑됩니다."
 
 #: ../../source/incoming/routing.rst:57
 msgid ""
@@ -362,7 +362,7 @@ msgid ""
 "as it is reserved for use in :doc:`localization "
 "</outgoing/localization>`."
 msgstr ""
-"``{locale}``\\ 은 :doc:`다국어화(localization) </outgoing/localization>`\\ 를 "
+"``{locale}``\\ 은 :doc:`\ 다국어화(localization) </outgoing/localization>`\\ 를 "
 "위해 예약되어 있으므로 자리표시자나 라우트의 다른 부분으로 사용할 수 없습니다."
 
 #: ../../source/incoming/routing.rst:192
@@ -414,7 +414,7 @@ msgid ""
 "<https://www.php.net/manual/en/functions.arguments.php#functions"
 ".variable-arg-list>`_:"
 msgstr ""
-"또는 `가변 길이 인수 목록 "
+"또는 `\ 가변 길이 인수 목록 "
 "<https://www.php.net/manual/ko/functions.arguments.php#functions"
 ".variable-arg-list>`_\\ 을 사용할 수 있습니다."
 
@@ -612,7 +612,7 @@ msgid ""
 "does not protect **GET** requests. If the URI specified in the ``add()`` "
 "method is accessible by the GET method, the CSRF protection will not "
 "work."
-msgstr "``add()`` 메서드는 편리해 보이지만, 앞에서 설명한 HTTP 동사 기반 라우트를 항상 사용하는 것이 더 안전합니다. :doc:`CSRF 보호 </libraries/security>`를 사용하더라도 **GET** 요청은 보호하지 않습니다. ``add()`` 메서드에 지정한 URI가 GET 메서드로 접근 가능하다면 CSRF 보호는 작동하지 않습니다."
+msgstr "``add()`` 메서드는 편리해 보이지만, 앞에서 설명한 HTTP 동사 기반 라우트를 항상 사용하는 것이 더 안전합니다. :doc:`CSRF 보호 </libraries/security>`\ 를 사용하더라도 **GET** 요청은 보호하지 않습니다. ``add()`` 메서드에 지정한 URI가 GET 메서드로 접근 가능하다면 CSRF 보호는 작동하지 않습니다."
 
 #: ../../source/incoming/routing.rst:332
 msgid ""
@@ -636,7 +636,7 @@ msgstr "여러 라우트 매핑"
 msgid ""
 "The ``map()`` method is not recommended as well as ``add()`` because it "
 "calls ``add()`` internally."
-msgstr "``map()`` 메서드도 내부적으로 ``add()``를 호출하므로 ``add()``와 마찬가지로 권장되지 않습니다."
+msgstr "``map()`` 메서드도 내부적으로 ``add()``\ 를 호출하므로 ``add()``\ 와 마찬가지로 권장되지 않습니다."
 
 #: ../../source/incoming/routing.rst:351
 msgid ""
@@ -676,7 +676,7 @@ msgid ""
 "If you enable :ref:`auto-routing-legacy` and place the command file in "
 "**app/Controllers**, anyone could access the command with the help of "
 "Auto Routing (Legacy) via HTTP."
-msgstr ":ref:`auto-routing-legacy`\\ 를 활성화하고 명령 파일을 **app/Controllers**에 두면, 누구나 HTTP를 통해 Auto Routing (Legacy)의 도움으로 해당 명령에 접근할 수 있습니다."
+msgstr ":ref:`auto-routing-legacy`\\ 를 활성화하고 명령 파일을 **app/Controllers**\ 에 두면, 누구나 HTTP를 통해 Auto Routing (Legacy)의 도움으로 해당 명령에 접근할 수 있습니다."
 
 #: ../../source/incoming/routing.rst:378
 msgid "Global Options"
@@ -707,7 +707,7 @@ msgstr "필터 값은 문자열 하나 또는 문자열 배열일 수 있습니�
 
 #: ../../source/incoming/routing.rst:394
 msgid "matching the aliases defined in **app/Config/Filters.php**."
-msgstr "``app/Config/Filters.php``에 정의된 별칭과 일치합니다."
+msgstr "``app/Config/Filters.php``\ 에 정의된 별칭과 일치합니다."
 
 #: ../../source/incoming/routing.rst:395
 msgid "filter classnames"
@@ -717,7 +717,7 @@ msgstr "필터 클래스 이름"
 msgid ""
 "See :ref:`Controller Filters <filters-aliases>` for more information on "
 "defining aliases."
-msgstr "별칭 정의에 대한 자세한 내용은 :ref:`Controller Filters <filters-aliases>`를 참조하십시오."
+msgstr "별칭 정의에 대한 자세한 내용은 :ref:`Controller Filters <filters-aliases>`\ 를 참조하십시오."
 
 #: ../../source/incoming/routing.rst:399
 msgid ""
@@ -727,7 +727,7 @@ msgid ""
 "that a controller can be accessed via a different URL than the configured"
 " route, in which case the filter you specified to the route will not be "
 "applied. See :ref:`use-defined-routes-only` to disable auto-routing."
-msgstr "필터를 **app/Config/Routes.php**에서 라우트에 지정한 경우(**app/Config/Filters.php**가 아님), Auto Routing (Legacy)를 비활성화하는 것이 좋습니다. :ref:`auto-routing-legacy`가 활성화되어 있으면 컨트롤러가 설정된 라우트와 다른 URL로 접근될 수 있으며, 이 경우 라우트에 지정한 필터가 적용되지 않을 수 있습니다. 자동 라우팅을 비활성화하려면 :ref:`use-defined-routes-only`를 참조하십시오."
+msgstr "필터를 **app/Config/Routes.php**\ 에서 라우트에 지정한 경우(**app/Config/Filters.php**\ 가 아님), Auto Routing (Legacy)를 비활성화하는 것이 좋습니다. :ref:`auto-routing-legacy`\ 가 활성화되어 있으면 컨트롤러가 설정된 라우트와 다른 URL로 접근될 수 있으며, 이 경우 라우트에 지정한 필터가 적용되지 않을 수 있습니다. 자동 라우팅을 비활성화하려면 :ref:`use-defined-routes-only`\ 를 참조하십시오."
 
 #: ../../source/incoming/routing.rst:407
 msgid "Alias Filter"
@@ -763,7 +763,7 @@ msgid ""
 "*Multiple Filters* were disabled by default. If you want to use with "
 "prior to v4.5.0, See :ref:`Upgrading from 4.1.4 to 4.1.5 <upgrade-415"
 "-multiple-filters-for-a-route>` for the details."
-msgstr "v4.5.0부터 *Multiple Filters*는 항상 활성화됩니다. v4.5.0 이전에는 *Multiple Filters*가 기본적으로 비활성화되어 있었습니다. v4.5.0 이전 버전에서 사용하려면 자세한 내용은 :ref:`4.1.4에서 4.1.5로 업그레이드 <upgrade-415-multiple-filters-for-a-route>`를 참조하십시오."
+msgstr "v4.5.0부터 *Multiple Filters*\ 는 항상 활성화됩니다. v4.5.0 이전에는 *Multiple Filters*\ 가 기본적으로 비활성화되어 있었습니다. v4.5.0 이전 버전에서 사용하려면 자세한 내용은 :ref:`4.1.4에서 4.1.5로 업그레이드 <upgrade-415-multiple-filters-for-a-route>`\ 를 참조하십시오."
 
 #: ../../source/incoming/routing.rst:439
 msgid "You can specify an array for the filter value:"
@@ -782,7 +782,7 @@ msgid ""
 "In this example, the array ``['dual', 'noreturn']`` will be passed in "
 "``$arguments`` to the filter's ``before()`` and ``after()`` "
 "implementation methods."
-msgstr "이 예제에서는 배열 ``['dual', 'noreturn']``이 필터의 ``before()`` 및 ``after()`` 구현 메서드의 ``$arguments``로 전달됩니다."
+msgstr "이 예제에서는 배열 ``['dual', 'noreturn']``\ 이 필터의 ``before()`` 및 ``after()`` 구현 메서드의 ``$arguments``\ 로 전달됩니다."
 
 #: ../../source/incoming/routing.rst:456
 msgid "Assigning Namespace"
@@ -794,7 +794,7 @@ msgid ""
 "generated controllers, you can also specify a different namespace to be "
 "used in any options array, with the ``namespace`` option. The value "
 "should be the namespace you want modified:"
-msgstr "생성된 컨트롤러 앞에는 :ref:`routing-default-namespace`가 붙지만, ``namespace`` 옵션을 사용하여 옵션 배열에서 다른 네임스페이스를 지정할 수도 있습니다. 값은 수정하려는 네임스페이스여야 합니다:"
+msgstr "생성된 컨트롤러 앞에는 :ref:`routing-default-namespace`\ 가 붙지만, ``namespace`` 옵션을 사용하여 옵션 배열에서 다른 네임스페이스를 지정할 수도 있습니다. 값은 수정하려는 네임스페이스여야 합니다:"
 
 #: ../../source/incoming/routing.rst:464
 msgid ""
@@ -803,7 +803,7 @@ msgid ""
 "multiple routes, the new namespace is attached to all routes generated by"
 " that function or, in the case of ``group()``, all routes generated while"
 " in the closure."
-msgstr "새 네임스페이스는 get, post 등 단일 라우트를 생성하는 메서드 호출에만 적용됩니다. 여러 라우트를 생성하는 메서드의 경우에는 해당 함수로 생성된 모든 라우트에 새 네임스페이스가 적용되며, ``group()``의 경우에는 클로저 안에서 생성된 모든 라우트에 적용됩니다."
+msgstr "새 네임스페이스는 get, post 등 단일 라우트를 생성하는 메서드 호출에만 적용됩니다. 여러 라우트를 생성하는 메서드의 경우에는 해당 함수로 생성된 모든 라우트에 새 네임스페이스가 적용되며, ``group()``\ 의 경우에는 클로저 안에서 생성된 모든 라우트에 적용됩니다."
 
 #: ../../source/incoming/routing.rst:469
 msgid "Limit to Hostname"
@@ -821,7 +821,7 @@ msgid ""
 "This example would only allow the specified hosts to work if the domain "
 "exactly matched **accounts.example.com**. It would not work under the "
 "main site at **example.com**."
-msgstr "이 예제는 도메인이 정확히 **accounts.example.com**과 일치할 때만 지정한 호스트가 동작하도록 허용합니다. 메인 사이트 **example.com**에서는 동작하지 않습니다."
+msgstr "이 예제는 도메인이 정확히 **accounts.example.com**\ 과 일치할 때만 지정한 호스트가 동작하도록 허용합니다. 메인 사이트 **example.com**\ 에서는 동작하지 않습니다."
 
 #: ../../source/incoming/routing.rst:480
 msgid "Restrict by Multiple Hostnames"
@@ -919,7 +919,7 @@ msgid ""
 "of the route:"
 msgstr ""
 "라우트에 이름을 붙이면 애플리케이션의 취약성을 줄일 수 있습니다. 이는 나중에 호출할 수 있도록 라우트에 이름을 부여하는 "
-"기능이며, 라우트 정의가 바뀌더라도 :php:func:`url_to()`로 만든 애플리케이션 내 링크는 변경 없이 그대로 "
+"기능이며, 라우트 정의가 바뀌더라도 :php:func:`url_to()`\ 로 만든 애플리케이션 내 링크는 변경 없이 그대로 "
 "동작합니다. 라우트 이름은 ``as`` 옵션에 이름을 전달해서 지정합니다:"
 
 #: ../../source/incoming/routing.rst:544
@@ -946,7 +946,7 @@ msgid ""
 "'PostController::edit/$1', ['as' => 'edit']);``), the second route will "
 "not be registered because its name will conflict with the automatically "
 "assigned name of the first route."
-msgstr "``routing-priority``\\ 에 따르면, 이름 없는 라우트가 먼저 정의된 뒤 같은 경로 이름을 가진 명명된 라우트가 나중에 정의되면, 두 번째 라우트는 자동 할당된 첫 번째 라우트 이름과 충돌하므로 등록되지 않습니다."
+msgstr ":ref:`routing-priority`\\ 에 따르면, 이름 없는 라우트가 먼저 정의된 뒤 같은 경로 이름을 가진 명명된 라우트가 나중에 정의되면, 두 번째 라우트는 자동 할당된 첫 번째 라우트 이름과 충돌하므로 등록되지 않습니다."
 
 #: ../../source/incoming/routing.rst:555
 msgid "Grouping Routes"
@@ -966,7 +966,7 @@ msgstr ""
 msgid ""
 "This would prefix the **users** and **blog** URIs with **admin**, "
 "handling URLs like **admin/users** and **admin/blog**."
-msgstr "이렇게 하면 **users** 및 **blog** URI 앞에 **admin**\\ 이 붙어 **admin/users** 및 **admin/blog**를 처리합니다."
+msgstr "이렇게 하면 **users** 및 **blog** URI 앞에 **admin**\\ 이 붙어 **admin/users** 및 **admin/blog**\ 를 처리합니다."
 
 #: ../../source/incoming/routing.rst:566
 msgid "Setting Namespace"
@@ -1046,7 +1046,7 @@ msgid ""
 "``myfilter1:config`` for the route ``admin``, and ``myfilter1:config`` "
 "and ``myfilter2:region`` for the route ``admin/users/list``."
 msgstr ""
-"바깥쪽 ``group()``\\ 에 전달된 ``filter`` 옵션은 안쪽 ``group()``의 필터 옵션과 병합됩니다. 위 코드는 ``admin`` 라우트에 ``myfilter1:config``를 실행하고, ``admin/users/list`` 라우트에 ``myfilter1:config``와 ``myfilter2:region``을 실행합니다."
+"바깥쪽 ``group()``\\ 에 전달된 ``filter`` 옵션은 안쪽 ``group()``\ 의 필터 옵션과 병합됩니다. 위 코드는 ``admin`` 라우트에 ``myfilter1:config``\ 를 실행하고, ``admin/users/list`` 라우트에 ``myfilter1:config``\ 와 ``myfilter2:region``\ 을 실행합니다."
 
 #: ../../source/incoming/routing.rst:613
 msgid ""
@@ -1058,13 +1058,13 @@ msgstr "v4.6.0 이전에는 동일한 필터를 서로 다른 인수로 여러 �
 msgid ""
 "Any other overlapping options passed to the inner ``group()`` will "
 "overwrite their values."
-msgstr "안쪽 ``group()``에 전달된 다른 겹치는 옵션은 해당 값으로 덮어씌워집니다."
+msgstr "안쪽 ``group()``\ 에 전달된 다른 겹치는 옵션은 해당 값으로 덮어씌워집니다."
 
 #: ../../source/incoming/routing.rst:618
 msgid ""
 "Prior to v4.5.0, due to a bug, options passed to the outer ``group()`` "
 "are not merged with the inner ``group()`` options."
-msgstr "v4.5.0 이전에는 버그로 인해 바깥쪽 ``group()``에 전달된 옵션이 안쪽 ``group()`` 옵션과 병합되지 않았습니다."
+msgstr "v4.5.0 이전에는 버그로 인해 바깥쪽 ``group()``\ 에 전달된 옵션이 안쪽 ``group()`` 옵션과 병합되지 않았습니다."
 
 #: ../../source/incoming/routing.rst:624
 msgid "Route Priority"
@@ -1101,7 +1101,7 @@ msgid ""
 "of route processing using the ``priority`` option. The parameter accepts "
 "positive integers and zero. The higher the number specified in the "
 "``priority``, the lower route priority in the processing queue:"
-msgstr "모듈을 사용할 때 애플리케이션의 라우트에 와일드카드가 포함되어 있으면 문제가 될 수 있습니다. 그러면 모듈 라우트가 올바르게 처리되지 않습니다. ``priority`` 옵션을 사용해 라우트 처리 우선순위를 낮추면 이 문제를 해결할 수 있습니다. 이 매개변수는 양의 정수와 0을 받을 수 있습니다. ``priority``에서 지정한 숫자가 클수록 처리 큐에서의 라우트 우선순위는 낮아집니다:"
+msgstr "모듈을 사용할 때 애플리케이션의 라우트에 와일드카드가 포함되어 있으면 문제가 될 수 있습니다. 그러면 모듈 라우트가 올바르게 처리되지 않습니다. ``priority`` 옵션을 사용해 라우트 처리 우선순위를 낮추면 이 문제를 해결할 수 있습니다. 이 매개변수는 양의 정수와 0을 받을 수 있습니다. ``priority``\ 에서 지정한 숫자가 클수록 처리 큐에서의 라우트 우선순위는 낮아집니다:"
 
 #: ../../source/incoming/routing.rst:643
 msgid ""
@@ -1124,14 +1124,14 @@ msgid ""
 "The RoutesCollection class provides several options that affect all "
 "routes, and can be modified to meet your application's needs. These "
 "options are available in **app/Config/Routing.php**."
-msgstr "RoutesCollection 클래스는 모든 라우트에 영향을 주는 여러 옵션을 제공하며, 애플리케이션의 요구에 맞게 수정할 수 있습니다. 이러한 옵션은 **app/Config/Routing.php**에서 사용할 수 있습니다."
+msgstr "RoutesCollection 클래스는 모든 라우트에 영향을 주는 여러 옵션을 제공하며, 애플리케이션의 요구에 맞게 수정할 수 있습니다. 이러한 옵션은 **app/Config/Routing.php**\ 에서 사용할 수 있습니다."
 
 #: ../../source/incoming/routing.rst:658
 msgid ""
 "The config file **app/Config/Routing.php** has been added since v4.4.0. "
 "In previous versions, the setter methods were used in "
 "**app/Config/Routes.php** to change settings."
-msgstr "구성 파일 **app/Config/Routing.php**는 v4.4.0부터 추가되었습니다. 이전 버전에서는 **app/Config/Routes.php**에서 설정을 변경하기 위해 setter 메서드를 사용했습니다."
+msgstr "구성 파일 **app/Config/Routing.php**\ 는 v4.4.0부터 추가되었습니다. 이전 버전에서는 **app/Config/Routes.php**\ 에서 설정을 변경하기 위해 setter 메서드를 사용했습니다."
 
 #: ../../source/incoming/routing.rst:665
 msgid "Default Namespace"
@@ -1142,7 +1142,7 @@ msgid ""
 "When matching a controller to a route, the router will add the default "
 "namespace value to the front of the controller specified by the route. By"
 " default, this value is ``App\\Controllers``."
-msgstr "라우트에 컨트롤러를 매칭할 때 라우터는 라우트에 지정된 컨트롤러 앞에 기본 네임스페이스 값을 추가합니다. 기본값은 ``App\\Controllers``입니다."
+msgstr "라우트에 컨트롤러를 매칭할 때 라우터는 라우트에 지정된 컨트롤러 앞에 기본 네임스페이스 값을 추가합니다. 기본값은 ``App\\Controllers``\ 입니다."
 
 #: ../../source/incoming/routing.rst:670
 msgid ""
@@ -1165,7 +1165,7 @@ msgstr "기본 메서드"
 msgid ""
 "This setting is used when the route handler only has the controller name "
 "and no method name listed. The default value is ``index``. ::"
-msgstr "이 설정은 라우트 핸들러에 컨트롤러 이름만 있고 메서드 이름이 없는 경우에 사용됩니다. 기본값은 ``index``입니다. ::"
+msgstr "이 설정은 라우트 핸들러에 컨트롤러 이름만 있고 메서드 이름이 없는 경우에 사용됩니다. 기본값은 ``index``\ 입니다. ::"
 
 #: ../../source/incoming/routing.rst:692
 msgid ""
@@ -1173,7 +1173,7 @@ msgid ""
 "Routing (Improved) <routing-auto-routing-improved-default-method>` or "
 ":ref:`Auto Routing (Legacy) <routing-auto-routing-legacy-default-"
 "method>`."
-msgstr "``$defaultMethod``는 Auto Routing에서도 자주 사용됩니다. 자세한 내용은 :ref:`Auto Routing (Improved) <routing-auto-routing-improved-default-method>` 또는 :ref:`Auto Routing (Legacy) <routing-auto-routing-legacy-default-method>`\\ 를 참조하십시오."
+msgstr "``$defaultMethod``\ 는 Auto Routing에서도 자주 사용됩니다. 자세한 내용은 :ref:`Auto Routing (Improved) <routing-auto-routing-improved-default-method>` 또는 :ref:`Auto Routing (Legacy) <routing-auto-routing-legacy-default-method>`\\ 를 참조하십시오."
 
 #: ../../source/incoming/routing.rst:696
 msgid "If you define the following route::"
@@ -1189,7 +1189,7 @@ msgstr "``App\\Controllers\\Home`` 컨트롤러의 ``index()`` 메서드는 라�
 msgid ""
 "Method names beginning with ``_`` cannot be used as the default method. "
 "However, starting with v4.5.0, ``__invoke`` method is allowed."
-msgstr "``_``로 시작하는 메서드 이름은 기본 메서드로 사용할 수 없습니다. 그러나 v4.5.0부터는 ``__invoke`` 메서드를 사용할 수 있습니다."
+msgstr "``_``\ 로 시작하는 메서드 이름은 기본 메서드로 사용할 수 없습니다. 그러나 v4.5.0부터는 ``__invoke`` 메서드를 사용할 수 있습니다."
 
 #: ../../source/incoming/routing.rst:707
 msgid "Translate URI Dashes"
@@ -1211,7 +1211,7 @@ msgid ""
 "controller method, one URI for dashes (e.g., **foo-bar**) and one URI for"
 " underscores (e.g., **foo_bar**). This was incorrect behavior. Since "
 "v4.4.0, the URI for underscores (**foo_bar**) is not accessible."
-msgstr "Auto Routing (Improved)를 사용할 때 v4.4.0 이전에는 ``$translateURIDashes``가 true이면 두 개의 URI가 하나의 컨트롤러 메서드에 대응했습니다. 대시용 URI(예: **foo-bar**)와 밑줄용 URI(예: **foo_bar**)가 그것입니다. 이는 잘못된 동작이었습니다. v4.4.0부터는 밑줄용 URI(**foo_bar**)에 접근할 수 없습니다."
+msgstr "Auto Routing (Improved)를 사용할 때 v4.4.0 이전에는 ``$translateURIDashes``\ 가 true이면 두 개의 URI가 하나의 컨트롤러 메서드에 대응했습니다. 대시용 URI(예: **foo-bar**)와 밑줄용 URI(예: **foo_bar**)가 그것입니다. 이는 잘못된 동작이었습니다. v4.4.0부터는 밑줄용 URI(**foo_bar**)에 접근할 수 없습니다."
 
 #: ../../source/incoming/routing.rst:723
 msgid "Use Defined Routes Only"
@@ -1239,7 +1239,9 @@ msgid ""
 "If you use the :doc:`CSRF protection </libraries/security>`, it does not "
 "protect **GET** requests. If the URI is accessible by the GET method, the"
 " CSRF protection will not work."
-msgstr "``:doc:`CSRF 보호 </libraries/security>```? maybe translation. Need line here: ``:doc:`CSRF 보호 </libraries/security>`를 사용하더라도 **GET** 요청은 보호하지 않습니다. URI가 GET 메서드로 접근 가능하다면 CSRF 보호는 작동하지 않습니다.`"
+msgstr ""
+":doc:`CSRF 보호 </libraries/security>`\\ 를 사용하더라도 **GET** 요청은 보호하지 않습니다. "
+"URI가 GET 메서드로 접근 가능하다면 CSRF 보호는 작동하지 않습니다."
 
 #: ../../source/incoming/routing.rst:741
 msgid "404 Override"
@@ -1267,7 +1269,7 @@ msgid ""
 "If you want to change the status code in the controller, see "
 ":php:meth:`CodeIgniter\\\\HTTP\\\\Response::setStatusCode()` for "
 "information on how to set the status code."
-msgstr "v4.5.0부터 404 Override 기능은 기본적으로 Response 상태 코드를 ``404``로 설정합니다. 이전 버전에서는 코드가 ``200``이었습니다. 컨트롤러에서 상태 코드를 바꾸려면 :php:meth:`CodeIgniter\\HTTP\\Response::setStatusCode()`\\ 를 참고하십시오."
+msgstr "v4.5.0부터 404 Override 기능은 기본적으로 Response 상태 코드를 ``404``\ 로 설정합니다. 이전 버전에서는 코드가 ``200``\ 이었습니다. 컨트롤러에서 상태 코드를 바꾸려면 :php:meth:`CodeIgniter\\HTTP\\Response::setStatusCode()`\\ 를 참고하십시오."
 
 #: ../../source/incoming/routing.rst:762
 msgid "Route Processing by Priority"
@@ -1279,7 +1281,7 @@ msgid ""
 "the priority is defined in the route option. Disabled by default. This "
 "functionality affects all routes. For an example use of lowering the "
 "priority see :ref:`routing-priority`:"
-msgstr "라우트 큐를 우선순위에 따라 처리할지 여부를 켜거나 끕니다. 우선순위를 낮추는 설정은 라우트 옵션으로 지정합니다. 기본값은 비활성화입니다. 이 기능은 모든 라우트에 영향을 미칩니다. 우선순위를 낮추는 사용 예는 :ref:`routing-priority`를 참고하십시오:"
+msgstr "라우트 큐를 우선순위에 따라 처리할지 여부를 켜거나 끕니다. 우선순위를 낮추는 설정은 라우트 옵션으로 지정합니다. 기본값은 비활성화입니다. 이 기능은 모든 라우트에 영향을 미칩니다. 우선순위를 낮추는 사용 예는 :ref:`routing-priority`\ 를 참고하십시오:"
 
 #: ../../source/incoming/routing.rst:773
 msgid "Multiple URI Segments as One Parameter"
@@ -1290,14 +1292,14 @@ msgid ""
 "When this option is enabled, a placeholder that matches multiple "
 "segments, such as ``(:any)``, will be passed directly as it is to one "
 "parameter, even if it contains multiple segments."
-msgstr "이 옵션을 활성화하면 ``(:any)``처럼 여러 세그먼트와 일치하는 자리표시자는 여러 세그먼트를 포함하더라도 그대로 하나의 매개변수로 전달됩니다."
+msgstr "이 옵션을 활성화하면 ``(:any)``\ 처럼 여러 세그먼트와 일치하는 자리표시자는 여러 세그먼트를 포함하더라도 그대로 하나의 매개변수로 전달됩니다."
 
 #: ../../source/incoming/routing.rst:787
 msgid ""
 "will match **product/123**, **product/123/456**, **product/123/456/789** "
 "and so on. And if the URI is **product/123/456**, ``123/456`` will be "
 "passed to the first parameter of the ``Catalog::productLookup()`` method."
-msgstr "그러면 **product/123**, **product/123/456**, **product/123/456/789** 등과 일치합니다. 그리고 URI가 **product/123/456**인 경우 ``123/456``이 ``Catalog::productLookup()`` 메서드의 첫 번째 매개변수로 전달됩니다."
+msgstr "그러면 **product/123**, **product/123/456**, **product/123/456/789** 등과 일치합니다. 그리고 URI가 **product/123/456**\ 인 경우 ``123/456``\ 이 ``Catalog::productLookup()`` 메서드의 첫 번째 매개변수로 전달됩니다."
 
 #: ../../source/incoming/routing.rst:792 ../../source/incoming/routing.rst:941
 msgid "Auto Routing (Improved)"
@@ -1320,7 +1322,7 @@ msgid ""
 "This feature exists only for backward compatibility. Do not use it in new"
 " projects. Even if you are already using it, we recommend that you use "
 "the :ref:`auto-routing-improved` instead."
-msgstr "이 기능은 하위 호환성을 위해서만 존재합니다. 새 프로젝트에서는 사용하지 마십시오. 이미 사용 중이더라도 :ref:`auto-routing-improved`를 사용하는 것이 좋습니다."
+msgstr "이 기능은 하위 호환성을 위해서만 존재합니다. 새 프로젝트에서는 사용하지 마십시오. 이미 사용 중이더라도 :ref:`auto-routing-improved`\ 를 사용하는 것이 좋습니다."
 
 #: ../../source/incoming/routing.rst:809
 msgid ""
@@ -1333,7 +1335,7 @@ msgstr "Auto Routing (Legacy)는 CodeIgniter 3의 라우팅 시스템입니다. 
 msgid ""
 "It is recommended that all routes are defined in the "
 "**app/Config/Routes.php** file, or to use :ref:`auto-routing-improved`,"
-msgstr "모든 라우트는 **app/Config/Routes.php** 파일에서 정의하거나 :ref:`auto-routing-improved`를 사용하도록 권장합니다."
+msgstr "모든 라우트는 **app/Config/Routes.php** 파일에서 정의하거나 :ref:`auto-routing-improved`\ 를 사용하도록 권장합니다."
 
 #: ../../source/incoming/routing.rst:815
 msgid ""
@@ -1346,7 +1348,7 @@ msgstr "설정 오류와 잘못된 코딩을 방지하려면 Auto Routing (Legac
 msgid ""
 "Auto Routing (Legacy) routes an HTTP request with **any** HTTP method to "
 "a controller method."
-msgstr "Auto Routing (Legacy)는 **모든** HTTP 메서드의 HTTP 요청을 컨트롤러 메서드로 라우팅합니다."
+msgstr "Auto Routing (Legacy)는 **\ 모든** HTTP 메서드의 HTTP 요청을 컨트롤러 메서드로 라우팅합니다."
 
 #: ../../source/incoming/routing.rst:822
 msgid "Enable Auto Routing (Legacy)"
@@ -1356,13 +1358,13 @@ msgstr "Auto Routing (Legacy) 활성화"
 msgid ""
 "To use it, you need to change the setting ``$autoRoute`` option to "
 "``true`` in **app/Config/Routing.php**::"
-msgstr "사용하려면 **app/Config/Routing.php**에서 ``$autoRoute`` 옵션을 ``true``로 변경해야 합니다::"
+msgstr "사용하려면 **app/Config/Routing.php**\ 에서 ``$autoRoute`` 옵션을 ``true``\ 로 변경해야 합니다::"
 
 #: ../../source/incoming/routing.rst:830
 msgid ""
 "And set the property ``$autoRoutesImproved`` to ``false`` in "
 "**app/Config/Feature.php**::"
-msgstr "그리고 **app/Config/Feature.php**에서 ``$autoRoutesImproved`` 속성을 ``false``로 설정합니다::"
+msgstr "그리고 **app/Config/Feature.php**\ 에서 ``$autoRoutesImproved`` 속성을 ``false``\ 로 설정합니다::"
 
 #: ../../source/incoming/routing.rst:835
 msgid "URI Segments (Legacy)"
@@ -1378,11 +1380,11 @@ msgstr "Model-View-Controller 접근 방식에서 URL의 세그먼트는 보통 
 msgid ""
 "The first segment represents the controller **class** that should be "
 "invoked."
-msgstr "첫 번째 세그먼트는 호출되어야 하는 컨트롤러 **클래스**를 나타냅니다."
+msgstr "첫 번째 세그먼트는 호출되어야 하는 컨트롤러 **\ 클래스**\ 를 나타냅니다."
 
 #: ../../source/incoming/routing.rst:842
 msgid "The second segment represents the class **method** that should be called."
-msgstr "두 번째 세그먼트는 호출되어야 하는 클래스 **메서드**를 나타냅니다."
+msgstr "두 번째 세그먼트는 호출되어야 하는 클래스 **\ 메서드**\ 를 나타냅니다."
 
 #: ../../source/incoming/routing.rst:843
 msgid ""
@@ -1399,13 +1401,13 @@ msgid ""
 "In the above example, CodeIgniter would attempt to find a controller "
 "named **Helloworld.php** and executes ``index()`` method with passing "
 "``'1'`` as the first argument."
-msgstr "위의 예에서 CodeIgniter는 **Helloworld.php**라는 컨트롤러를 찾고 ``index()`` 메서드를 실행하며 ``'1'``을 첫 번째 인수로 전달하려고 시도합니다."
+msgstr "위의 예에서 CodeIgniter는 **Helloworld.php**\ 라는 컨트롤러를 찾고 ``index()`` 메서드를 실행하며 ``'1'``\ 을 첫 번째 인수로 전달하려고 시도합니다."
 
 #: ../../source/incoming/routing.rst:852 ../../source/incoming/routing.rst:883
 msgid ""
 "See :ref:`Auto Routing (Legacy) in Controllers <controller-auto-routing-"
 "legacy>` for more info."
-msgstr "자세한 내용은 :ref:`컨트롤러의 Auto Routing (Legacy) <controller-auto-routing-legacy>`를 참조하십시오."
+msgstr "자세한 내용은 :ref:`\ 컨트롤러의 Auto Routing (Legacy) <controller-auto-routing-legacy>`\ 를 참조하십시오."
 
 #: ../../source/incoming/routing.rst:857
 msgid "Configuration Options (Legacy)"
@@ -1434,7 +1436,7 @@ msgstr "사용자가 사이트의 루트(예: **example.com**)를 방문하면, 
 msgid ""
 "The default value for this is ``Home`` which matches the controller at "
 "**app/Controllers/Home.php**::"
-msgstr "이 값의 기본값은 ``Home``이며, **app/Controllers/Home.php**에 있는 컨트롤러와 일치합니다::"
+msgstr "이 값의 기본값은 ``Home``\ 이며, **app/Controllers/Home.php**\ 에 있는 컨트롤러와 일치합니다::"
 
 #: ../../source/incoming/routing.rst:877
 msgid "For Directory URI (Legacy)"
@@ -1447,7 +1449,7 @@ msgid ""
 "directory. For example, if the user visits **example.com/admin**, if a "
 "controller was found at **app/Controllers/Admin/Home.php**, it would be "
 "used."
-msgstr "일치하는 라우트를 찾지 못했을 때도 기본 컨트롤러가 사용되며, URI가 컨트롤러 디렉터리의 디렉터리를 가리키는 경우에도 사용됩니다. 예를 들어 사용자가 **example.com/admin**을 방문했을 때 **app/Controllers/Admin/Home.php**에 컨트롤러가 있으면 그것이 사용됩니다."
+msgstr "일치하는 라우트를 찾지 못했을 때도 기본 컨트롤러가 사용되며, URI가 컨트롤러 디렉터리의 디렉터리를 가리키는 경우에도 사용됩니다. 예를 들어 사용자가 **example.com/admin**\ 을 방문했을 때 **app/Controllers/Admin/Home.php**\ 에 컨트롤러가 있으면 그것이 사용됩니다."
 
 #: ../../source/incoming/routing.rst:888
 msgid "Default Method (Legacy)"
@@ -1459,14 +1461,14 @@ msgid ""
 "determine the default method that is used when a controller is found that"
 " matches the URI, but no segment exists for the method. The default value"
 " is ``index``."
-msgstr "이는 기본 컨트롤러 설정과 비슷하게 동작하지만, URI와 일치하는 컨트롤러를 찾았으나 메서드에 해당하는 세그먼트가 없을 때 사용할 기본 메서드를 결정하는 데 사용됩니다. 기본값은 ``index``입니다."
+msgstr "이는 기본 컨트롤러 설정과 비슷하게 동작하지만, URI와 일치하는 컨트롤러를 찾았으나 메서드에 해당하는 세그먼트가 없을 때 사용할 기본 메서드를 결정하는 데 사용됩니다. 기본값은 ``index``\ 입니다."
 
 #: ../../source/incoming/routing.rst:894
 msgid ""
 "In this example, if the user were to visit **example.com/products**, and "
 "a ``Products`` controller existed, the ``Products::listAll()`` method "
 "would be executed::"
-msgstr "이 예에서 사용자가 **example.com/products**를 방문하고 ``Products`` 컨트롤러가 존재하면 ``Products::listAll()`` 메서드가 실행됩니다::"
+msgstr "이 예에서 사용자가 **example.com/products**\ 를 방문하고 ``Products`` 컨트롤러가 존재하면 ``Products::listAll()`` 메서드가 실행됩니다::"
 
 #: ../../source/incoming/routing.rst:900
 msgid "Confirming Routes"
@@ -1476,7 +1478,7 @@ msgstr "라우트 확인"
 msgid ""
 "CodeIgniter has the following :doc:`command </cli/spark_commands>` to "
 "display all routes."
-msgstr "CodeIgniter에는 모든 라우트를 표시하는 다음 :doc:`명령 </cli/spark_commands>`\\ 이 있습니다."
+msgstr "CodeIgniter에는 모든 라우트를 표시하는 다음 :doc:`\ 명령 </cli/spark_commands>`\\ 이 있습니다."
 
 #: ../../source/incoming/routing.rst:907
 msgid "spark routes"
@@ -1504,7 +1506,7 @@ msgstr "*Route* 열은 일치시킬 라우트 경로를 보여줍니다. 정의�
 msgid ""
 "Since v4.3.0, the *Name* column shows the route name. ``»`` indicates the"
 " name is the same as the route path."
-msgstr "v4.3.0부터 *Name* 열은 라우트 이름을 표시합니다. ``»``는 이름이 라우트 경로와 같음을 나타냅니다."
+msgstr "v4.3.0부터 *Name* 열은 라우트 이름을 표시합니다. ``»``\ 는 이름이 라우트 경로와 같음을 나타냅니다."
 
 #: ../../source/incoming/routing.rst:932
 #, python-brace-format
@@ -1515,8 +1517,8 @@ msgid ""
 "**app/Config/Filters.php**), or it is displayed as ``<unknown>``."
 msgstr ""
 "시스템이 완벽하지는 않습니다. ``([^/]+)`` 또는 ``{locale}`` 같은 정규식 패턴을 포함한 라우트의 경우, "
-"표시되는 *Filters*가 정확하지 않을 수 있으며(**app/Config/Filters.php**에서 필터에 대해 복잡한 URI "
-"패턴을 설정한 경우), 또는 ``<unknown>``으로 표시될 수 있습니다."
+"표시되는 *Filters*가 정확하지 않을 수 있으며(**app/Config/Filters.php**\ 에서 필터에 대해 복잡한 URI "
+"패턴을 설정한 경우), 또는 ``<unknown>``\ 으로 표시될 수 있습니다."
 
 #: ../../source/incoming/routing.rst:937
 msgid ""
@@ -1530,13 +1532,13 @@ msgstr "Auto Routing (Improved)를 사용할 때 출력은 다음과 같습니�
 
 #: ../../source/incoming/routing.rst:953
 msgid "The *Method* will be like ``GET(auto)``."
-msgstr "*Method*는 ``GET(auto)``와 같이 표시됩니다."
+msgstr "*Method*\ 는 ``GET(auto)``\ 와 같이 표시됩니다."
 
 #: ../../source/incoming/routing.rst:955
 msgid ""
 "``/..`` in the *Route* column indicates one segment. ``[/..]`` indicates "
 "it is optional."
-msgstr "``/..``는 *Route* 열에서 하나의 세그먼트를 의미합니다. ``[/..]``는 선택 사항임을 나타냅니다."
+msgstr "``/..``\ 는 *Route* 열에서 하나의 세그먼트를 의미합니다. ``[/..]``\ 는 선택 사항임을 나타냅니다."
 
 #: ../../source/incoming/routing.rst:957 ../../source/incoming/routing.rst:995
 msgid ""
@@ -1545,7 +1547,7 @@ msgid ""
 " but the command will show only ``home``."
 msgstr ""
 "auto-routing이 활성화되어 있고 ``home`` 라우트가 있으면 ``Home``, ``hOme``, ``hoMe``, "
-"``HOME`` 등으로도 접근할 수 있지만 명령은 ``home``만 표시합니다."
+"``HOME`` 등으로도 접근할 수 있지만 명령은 ``home``\ 만 표시합니다."
 
 #: ../../source/incoming/routing.rst:959
 msgid ""
@@ -1553,7 +1555,7 @@ msgid ""
 "an invalid route that won't be routed, but the controller has a public "
 "method for routing."
 msgstr ""
-"다음과 같이 ``x``로 시작하는 라우트가 보이면, 이는 라우팅되지 않는 잘못된 라우트이지만 컨트롤러에는 라우팅 가능한 "
+"다음과 같이 ``x``\ 로 시작하는 라우트가 보이면, 이는 라우팅되지 않는 잘못된 라우트이지만 컨트롤러에는 라우팅 가능한 "
 "public 메서드가 있음을 의미합니다."
 
 #: ../../source/incoming/routing.rst:970
@@ -1580,11 +1582,11 @@ msgstr "Auto Routing (Legacy)를 사용할 때 출력은 다음과 같습니다:
 
 #: ../../source/incoming/routing.rst:991
 msgid "The *Method* will be ``auto``."
-msgstr "*Method*는 ``auto``입니다."
+msgstr "*Method*\ 는 ``auto``\ 입니다."
 
 #: ../../source/incoming/routing.rst:993
 msgid "``[/...]`` in the *Route* column indicates any number of segments."
-msgstr "*Route* 열의 ``[/...]``는 임의 개수의 세그먼트를 의미합니다."
+msgstr "*Route* 열의 ``[/...]``\ 는 임의 개수의 세그먼트를 의미합니다."
 
 #: ../../source/incoming/routing.rst:1000
 msgid "Sort by Handler"
@@ -1685,7 +1687,7 @@ msgid ""
 "``redirect`` key. To access the values of these parameters, we can call "
 "``Router::getMatchedRouteOptions()``. Here is an example of the returned "
 "array:"
-msgstr "라우트를 정의할 때 ``filter``, ``namespace``, ``hostname``, ``subdomain``, ``offset``, ``priority``, ``as`` 같은 선택적 매개변수가 있을 수 있습니다. 이들은 모두 앞에서 설명했습니다. 또한 ``addRedirect()``를 사용하면 ``redirect`` 키도 기대할 수 있습니다. 이러한 매개변수의 값을 가져오려면 ``Router::getMatchedRouteOptions()``를 호출하면 됩니다. 반환되는 배열의 예는 다음과 같습니다:"
+msgstr "라우트를 정의할 때 ``filter``, ``namespace``, ``hostname``, ``subdomain``, ``offset``, ``priority``, ``as`` 같은 선택적 매개변수가 있을 수 있습니다. 이들은 모두 앞에서 설명했습니다. 또한 ``addRedirect()``\ 를 사용하면 ``redirect`` 키도 기대할 수 있습니다. 이러한 매개변수의 값을 가져오려면 ``Router::getMatchedRouteOptions()``\ 를 호출하면 됩니다. 반환되는 배열의 예는 다음과 같습니다:"
 
 #~ msgid "You can sort the routes by *Handler*:"
 #~ msgstr ""

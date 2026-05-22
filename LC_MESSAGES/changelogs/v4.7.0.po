@@ -106,14 +106,14 @@ msgid ""
 "values will now throw ``InvalidArgumentException`` instead of "
 "``DatabaseException``."
 msgstr ""
-"``insert()``\\ 와 ``insertBatch()``(``useAutoIncrement``\\ 가 비활성화된 경우), "
-"``update()``, ``delete()`` 메서드가 이제 데이터베이스 쿼리를 실행하기 **전에** "
+"``insert()``\\ 와 ``insertBatch()``\ (``useAutoIncrement``\\ 가 비활성화된 경우), "
+"``update()``, ``delete()`` 메서드가 이제 데이터베이스 쿼리를 실행하기 **\ 전에** "
 "기본 키 값의 유효성을 검사합니다. 유효하지 않은 기본 키 값은 이제 "
 "``DatabaseException`` 대신 ``InvalidArgumentException``\\ 을 발생시킵니다."
 
 #: ../../source/changelogs/v4.7.0.rst:52 ../../source/changelogs/v4.7.0.rst:128
 msgid "**What Changed:**"
-msgstr "**변경된 내용:**"
+msgstr "**\ 변경된 내용:**"
 
 #: ../../source/changelogs/v4.7.0.rst:54
 msgid ""
@@ -121,12 +121,12 @@ msgid ""
 "``InvalidArgumentException`` with specific error messages instead of "
 "generic ``DatabaseException`` from the database layer."
 msgstr ""
-"**예외 타입:** 유효하지 않은 기본 키는 이제 데이터베이스 계층의 일반적인 "
+"**\ 예외 타입:** 유효하지 않은 기본 키는 이제 데이터베이스 계층의 일반적인 "
 "``DatabaseException`` 대신 구체적인 오류 메시지와 함께 ``InvalidArgumentException``\\ 을 발생시킵니다."
 
 #: ../../source/changelogs/v4.7.0.rst:56
 msgid "**Validation timing:**"
-msgstr "**유효성 검사 시점:**"
+msgstr "**\ 유효성 검사 시점:**"
 
 #: ../../source/changelogs/v4.7.0.rst:57
 msgid ""
@@ -135,7 +135,7 @@ msgid ""
 "are executed."
 msgstr ""
 "``update()``\\ 와 ``delete()``\\ 의 경우: ``beforeUpdate``/``beforeDelete`` 이벤트 이전, "
-"그리고 데이터베이스 쿼리가 실행되기 **전에** 유효성 검사가 이루어집니다."
+"그리고 데이터베이스 쿼리가 실행되기 **\ 전에** 유효성 검사가 이루어집니다."
 
 #: ../../source/changelogs/v4.7.0.rst:59
 msgid ""
@@ -143,15 +143,15 @@ msgid ""
 " Validation happens **after** the ``beforeInsert`` event but **before** "
 "database queries are executed."
 msgstr ""
-"``insert()``\\ 와 ``insertBatch()``(자동 증가가 비활성화된 경우): "
-"``beforeInsert`` 이벤트 **이후**, 데이터베이스 쿼리가 실행되기 **전에** 유효성 검사가 이루어집니다."
+"``insert()``\\ 와 ``insertBatch()``\ (자동 증가가 비활성화된 경우): "
+"``beforeInsert`` 이벤트 **\ 이후**, 데이터베이스 쿼리가 실행되기 **\ 전에** 유효성 검사가 이루어집니다."
 
 #: ../../source/changelogs/v4.7.0.rst:62
 msgid ""
 "**Invalid values:** The following values are now explicitly rejected as "
 "primary keys:"
 msgstr ""
-"**유효하지 않은 값:** 다음 값들은 이제 기본 키로 명시적으로 거부됩니다:"
+"**\ 유효하지 않은 값:** 다음 값들은 이제 기본 키로 명시적으로 거부됩니다:"
 
 #: ../../source/changelogs/v4.7.0.rst:63
 msgid "``null`` (for insert when auto-increment is disabled)"
@@ -190,7 +190,7 @@ msgid ""
 "**Note:** ``RawSql`` objects are allowed as primary key values for "
 "complex scenarios where you need to use raw SQL expressions."
 msgstr ""
-"**참고:** ``RawSql`` 객체는 원시 SQL 표현식을 사용해야 하는 복잡한 시나리오에서 "
+"**\ 참고:** ``RawSql`` 객체는 원시 SQL 표현식을 사용해야 하는 복잡한 시나리오에서 "
 "기본 키 값으로 허용됩니다."
 
 #: ../../source/changelogs/v4.7.0.rst:75
@@ -231,7 +231,7 @@ msgid ""
 "comparison, detecting changes in nested structures, object properties, "
 "and array elements."
 msgstr ""
-"**객체와 배열**\\ 은 이제 JSON 인코딩되고 정규화되어 비교되며, "
+"**\ 객체와 배열**\\ 은 이제 JSON 인코딩되고 정규화되어 비교되며, "
 "중첩 구조, 객체 속성 및 배열 요소의 변경사항을 감지합니다."
 
 #: ../../source/changelogs/v4.7.0.rst:90
@@ -239,7 +239,7 @@ msgid ""
 "**Enums** (both ``BackedEnum`` and ``UnitEnum``) are properly tracked by "
 "their backing value or case name."
 msgstr ""
-"**열거형**(``BackedEnum``\\ 과 ``UnitEnum`` 모두)은 이제 백킹 값 또는 케이스 이름으로 "
+"**\ 열거형**\ (``BackedEnum``\\ 과 ``UnitEnum`` 모두)은 이제 백킹 값 또는 케이스 이름으로 "
 "올바르게 추적됩니다."
 
 #: ../../source/changelogs/v4.7.0.rst:92
@@ -247,14 +247,14 @@ msgid ""
 "**DateTime objects** (``DateTimeInterface``) are compared using their ISO"
 " 8601 representation including timezone information."
 msgstr ""
-"**DateTime 객체**(``DateTimeInterface``)는 타임존 정보를 포함한 ISO 8601 표현을 사용하여 비교됩니다."
+"**DateTime 객체**\ (``DateTimeInterface``)는 타임존 정보를 포함한 ISO 8601 표현을 사용하여 비교됩니다."
 
 #: ../../source/changelogs/v4.7.0.rst:94
 msgid ""
 "**Collections** (``Traversable``) such as ``ArrayObject`` and "
 "``ArrayIterator`` are converted to arrays for comparison."
 msgstr ""
-"``ArrayObject``\\ 와 ``ArrayIterator`` 같은 **컬렉션**(``Traversable``)은 "
+"``ArrayObject``\\ 와 ``ArrayIterator`` 같은 **\ 컬렉션**\ (``Traversable``)은 "
 "비교를 위해 배열로 변환됩니다."
 
 #: ../../source/changelogs/v4.7.0.rst:96
@@ -263,7 +263,7 @@ msgid ""
 "string representation when properties are not accessible (fallback for "
 "objects with private properties)."
 msgstr ""
-"``__toString()`` 메서드를 가진 **값 객체**\\ 는 속성에 접근할 수 없을 때(비공개 속성을 가진 "
+"``__toString()`` 메서드를 가진 **\ 값 객체**\\ 는 속성에 접근할 수 없을 때(비공개 속성을 가진 "
 "객체에 대한 폴백) 문자열 표현으로 비교됩니다."
 
 #: ../../source/changelogs/v4.7.0.rst:98
@@ -272,7 +272,7 @@ msgid ""
 "objects, and objects with ``toArray()`` methods are recursively "
 "normalized for accurate change detection."
 msgstr ""
-"**중첩 엔티티**(``toRawArray()`` 사용), ``JsonSerializable`` 객체 및 ``toArray()`` 메서드를 가진 "
+"**\ 중첩 엔티티**\ (``toRawArray()`` 사용), ``JsonSerializable`` 객체 및 ``toArray()`` 메서드를 가진 "
 "객체는 정확한 변경 감지를 위해 재귀적으로 정규화됩니다."
 
 #: ../../source/changelogs/v4.7.0.rst:100
@@ -281,7 +281,7 @@ msgid ""
 " use direct comparison with an optimization when all entity attributes "
 "are scalars."
 msgstr ""
-"**스칼라 값**(문자열, 정수, 부동소수점, 불리언, null)은 모든 엔티티 속성이 스칼라일 때 "
+"**\ 스칼라 값**\ (문자열, 정수, 부동소수점, 불리언, null)은 모든 엔티티 속성이 스칼라일 때 "
 "최적화를 통해 직접 비교를 계속 사용합니다."
 
 #: ../../source/changelogs/v4.7.0.rst:103
@@ -376,7 +376,7 @@ msgstr ""
 
 #: ../../source/changelogs/v4.7.0.rst:137
 msgid "**Impact:**"
-msgstr "**영향:**"
+msgstr "**\ 영향:**"
 
 #: ../../source/changelogs/v4.7.0.rst:139
 msgid ""
@@ -384,30 +384,30 @@ msgid ""
 "``encrypt()`` or ``decrypt()`` and expected that the ``key`` will persist"
 " for subsequent operations. Most users are **not affected**:"
 msgstr ""
-"**영향을 받는 경우:** ``$params``\\ 를 통해 ``encrypt()`` 또는 ``decrypt()``\\ 에 키를 전달하고 "
+"**\ 영향을 받는 경우:** ``$params``\\ 를 통해 ``encrypt()`` 또는 ``decrypt()``\\ 에 키를 전달하고 "
 "이후 작업을 위해 해당 키가 유지될 것으로 기대한 경우에만 영향을 받습니다. "
-"대부분의 사용자는 **영향을 받지 않습니다**:"
+"대부분의 사용자는 **\ 영향을 받지 않습니다**:"
 
 #: ../../source/changelogs/v4.7.0.rst:142
 msgid ""
 "**Not affected:** You always pass the key via ``$params`` for each "
 "operation"
 msgstr ""
-"**영향 없음:** 각 작업마다 항상 ``$params``\\ 를 통해 키를 전달하는 경우"
+"**\ 영향 없음:** 각 작업마다 항상 ``$params``\\ 를 통해 키를 전달하는 경우"
 
 #: ../../source/changelogs/v4.7.0.rst:143
 msgid ""
 "**Not affected:** You never use ``$params`` and always configure keys via"
 " ``Config\\Encryption``"
 msgstr ""
-"**영향 없음:** ``$params``\\ 를 사용하지 않고 항상 ``Config\\Encryption``\\ 을 통해 키를 설정하는 경우"
+"**\ 영향 없음:** ``$params``\\ 를 사용하지 않고 항상 ``Config\\Encryption``\\ 을 통해 키를 설정하는 경우"
 
 #: ../../source/changelogs/v4.7.0.rst:144
 msgid ""
 "**Affected:** You passed a key via ``$params`` once and expected it to be"
 " remembered"
 msgstr ""
-"**영향 있음:** ``$params``\\ 를 통해 한 번 키를 전달하고 그 키가 기억될 것으로 기대한 경우"
+"**\ 영향 있음:** ``$params``\\ 를 통해 한 번 키를 전달하고 그 키가 기억될 것으로 기대한 경우"
 
 #: ../../source/changelogs/v4.7.0.rst:146
 msgid ""
@@ -420,11 +420,11 @@ msgstr ""
 
 #: ../../source/changelogs/v4.7.0.rst:149
 msgid "**Example of affected code:**"
-msgstr "**영향받는 코드 예시:**"
+msgstr "**\ 영향받는 코드 예시:**"
 
 #: ../../source/changelogs/v4.7.0.rst:164
 msgid "**Migration:**"
-msgstr "**마이그레이션:**"
+msgstr "**\ 마이그레이션:**"
 
 #: ../../source/changelogs/v4.7.0.rst:166
 msgid ""
@@ -443,7 +443,7 @@ msgid ""
 "interfaces from scratch, you will need to update your implementations to "
 "include the new methods to ensure compatibility."
 msgstr ""
-"**참고:** 이 인터페이스를 처음부터 구현한 클래스가 있다면, "
+"**\ 참고:** 이 인터페이스를 처음부터 구현한 클래스가 있다면, "
 "호환성을 보장하기 위해 새 메서드를 포함하도록 구현을 업데이트해야 합니다."
 
 #: ../../source/changelogs/v4.7.0.rst:183
@@ -745,7 +745,7 @@ msgid ""
 "``DataCaster`` to ``?DataCaster`` (nullable)."
 msgstr ""
 "**Entity:** ``CodeIgniter\\Entity\\Entity::$dataCaster`` 보호된 속성 타입이 "
-"``DataCaster``\\ 에서 ``?DataCaster``(nullable)로 변경되었습니다."
+"``DataCaster``\\ 에서 ``?DataCaster``\ (nullable)로 변경되었습니다."
 
 #: ../../source/changelogs/v4.7.0.rst:252
 msgid "Removed Deprecated Items"
@@ -912,7 +912,7 @@ msgid ""
 msgstr ""
 "**Cache:** ``PageCache`` 필터로 캐시할 수 있는 HTTP 상태 코드를 제어하는 "
 "``Config\\Cache::$cacheStatusCodes``\\ 가 추가되었습니다. "
-"기본값은 ``[]``(하위 호환성을 위한 모든 상태 코드)입니다. "
+"기본값은 ``[]``\ (하위 호환성을 위한 모든 상태 코드)입니다. "
 "성공적인 응답만 캐시하려면 권장 값인 ``[200]``\\ 을 사용하세요. "
 "자세한 내용은 :ref:`$cacheStatusCodes 설정 <web_page_caching_cache_status_codes>`\\ 을 참조하세요."
 
@@ -1044,7 +1044,7 @@ msgid ""
 msgstr ""
 "**View:** **app/Views/overrides** 디렉토리 내에 일치하는 파일 구조를 배치하여 "
 "네임스페이스가 지정된 뷰(예: 모듈/패키지)를 재정의하는 기능이 추가되었습니다. "
-"자세한 내용은 :ref:`네임스페이스 뷰 재정의 <views-overriding-namespaced-views>`\\ 를 참조하세요."
+"자세한 내용은 :ref:`\ 네임스페이스 뷰 재정의 <views-overriding-namespaced-views>`\\ 를 참조하세요."
 
 #: ../../source/changelogs/v4.7.0.rst:307
 msgid "Commands"
@@ -1211,7 +1211,7 @@ msgid ""
 msgstr ""
 "**Controller Attributes:** 컨트롤러 클래스와 메서드에 필터 및 기타 메타데이터를 정의하기 위한 "
 "PHP 속성(Attributes) 지원이 추가되었습니다. "
-"자세한 내용은 :ref:`컨트롤러 속성 <incoming/controller_attributes>`\\ 를 참조하세요."
+"자세한 내용은 :ref:`\ 컨트롤러 속성 <incoming/controller_attributes>`\\ 를 참조하세요."
 
 #: ../../source/changelogs/v4.7.0.rst:358
 msgid "Message Changes"
@@ -1410,7 +1410,7 @@ msgid ""
 "Toolbar enabled."
 msgstr ""
 "**Toolbar:** 디버그 툴바가 활성화된 페이지에서 AJAX 유사 요청(HTMX, Turbo, Unpoly 등)을 "
-"수행할 때 **최대 콜 스택 크기 초과** 충돌이 발생하는 문제가 수정되었습니다."
+"수행할 때 **\ 최대 콜 스택 크기 초과** 충돌이 발생하는 문제가 수정되었습니다."
 
 #: ../../source/changelogs/v4.7.0.rst:401
 msgid ""

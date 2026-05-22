@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../../source/installation/upgrade_472.rst:9
 msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
-msgstr ":ref:`수동 설치 업그레이드 <installing-manual-upgrading>`"
+msgstr ":ref:`\ 수동 설치 업그레이드 <installing-manual-upgrading>`"
 
 #: ../../source/installation/upgrade_472.rst:17
 msgid "Project Files"
@@ -55,7 +55,7 @@ msgid ""
 "received updates. Due to these files being outside of the **system** "
 "scope they will not be changed without your intervention."
 msgstr ""
-"**프로젝트 공간** (root, app, public, writable)의 일부 파일이 업데이트되었습니다. "
+"**\ 프로젝트 공간** (root, app, public, writable)의 일부 파일이 업데이트되었습니다. "
 "이 파일들은 **system** 범위 밖에 있으므로 직접 개입하지 않으면 변경되지 않습니다."
 
 #: ../../source/installation/upgrade_472.rst:22
@@ -99,7 +99,7 @@ msgid ""
 "changes; many will be simple comments or formatting that have no effect "
 "on the runtime:"
 msgstr ""
-"다음은 **프로젝트 공간**에서 변경된 모든 파일의 목록입니다. "
+"다음은 **\ 프로젝트 공간**\ 에서 변경된 모든 파일의 목록입니다. "
 "많은 파일이 런타임에 영향을 미치지 않는 단순한 주석이나 형식 변경일 수 있습니다:"
 
 #: ../../source/installation/upgrade_472.rst:43

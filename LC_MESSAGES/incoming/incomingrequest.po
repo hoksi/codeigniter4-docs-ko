@@ -41,7 +41,7 @@ msgid ""
 "An instance of the request class already populated for you if the current"
 " class is a descendant of ``CodeIgniter\\Controller`` and can be accessed"
 " as a class property:"
-msgstr "현재 클래스가 ``CodeIgniter\\Controller``의 자손인 경우 요청 클래스의 인스턴스가 이미 채워져 있으며 클래스 속성으로 접근할 수 있습니다:"}
+msgstr "현재 클래스가 ``CodeIgniter\\Controller``\ 의 자손인 경우 요청 클래스의 인스턴스가 이미 채워져 있으며 클래스 속성으로 접근할 수 있습니다:"}
 
 #: ../../source/incoming/incomingrequest.rst:21
 msgid ""
@@ -84,7 +84,7 @@ msgstr "is() 메서드"
 msgid ""
 "Since v4.3.0, you can use the ``is()`` method. It accepts an HTTP method,"
 " ``'ajax'``, or ``'json'``, and returns boolean."
-msgstr "v4.3.0부터는 ``is()`` 메서드를 사용할 수 있습니다. 이 메서드는 HTTP 메서드, ``'ajax'`` 또는 ``'json'``을 인자로 받아 불리언을 반환합니다." }
+msgstr "v4.3.0부터는 ``is()`` 메서드를 사용할 수 있습니다. 이 메서드는 HTTP 메서드, ``'ajax'`` 또는 ``'json'``\ 을 인자로 받아 불리언을 반환합니다." }
 
 #: ../../source/incoming/incomingrequest.rst:53
 msgid ""
@@ -116,7 +116,7 @@ msgstr "v4.5.0 이전에는 기본적으로 메서드가 소문자 문자열(예
 
 #: ../../source/incoming/incomingrequest.rst:70
 msgid "You can get a lowercase version by wrapping the call in ``strtolower()``::"
-msgstr "``strtolower()``로 감싸면 소문자 버전을 얻을 수 있습니다::"}
+msgstr "``strtolower()``\ 로 감싸면 소문자 버전을 얻을 수 있습니다::"}
 
 #: ../../source/incoming/incomingrequest.rst:75
 msgid ""
@@ -134,7 +134,7 @@ msgid ""
 "``$_SERVER`` and ``$_ENV`` through the Request object. The data is not "
 "automatically filtered and returns the raw input data as passed in the "
 "request."
-msgstr "Request 객체를 통해 ``$_GET``, ``$_POST``, ``$_COOKIE``, ``$_SERVER``, ``$_ENV``에서 입력을 가져올 수 있습니다. 이 데이터는 자동으로 필터링되지 않으며 요청으로 전달된 원시 입력 데이터가 반환됩니다."}
+msgstr "Request 객체를 통해 ``$_GET``, ``$_POST``, ``$_COOKIE``, ``$_SERVER``, ``$_ENV``\ 에서 입력을 가져올 수 있습니다. 이 데이터는 자동으로 필터링되지 않으며 요청으로 전달된 원시 입력 데이터가 반환됩니다."}
 
 #: ../../source/incoming/incomingrequest.rst:86
 msgid ""
@@ -153,7 +153,7 @@ msgstr \"요청 접근하기\"}
 
 #: ../../source/incoming/incomingrequest.rst:16
 msgid \"\"An instance of the request class already populated for you if the current\" class is a descendant of ``CodeIgniter\\Controller`` and can be accessed\" as a class property:\"
-msgstr \"현재 클래스가 ``CodeIgniter\\Controller``의 자손인 경우 요청 클래스의 인스턴스가 이미 채워져 있으며 클래스 속성으로 접근할 수 있습니다:\"}
+msgstr \"현재 클래스가 ``CodeIgniter\\Controller``\ 의 자손인 경우 요청 클래스의 인스턴스가 이미 채워져 있으며 클래스 속성으로 접근할 수 있습니다:\"}
 
 #: ../../source/incoming/incomingrequest.rst:21
 msgid \"\"If you are not within a controller, but still need access to the \"application's Request object, you can get a copy of it through the \":doc:`Services class </concepts/services>`:\"
@@ -181,7 +181,7 @@ msgstr \"is() 메서드\"
 
 #: ../../source/incoming/incomingrequest.rst:50
 msgid \"\"Since v4.3.0, you can use the ``is()`` method. It accepts an HTTP method,\" ``'ajax'``, or ``'json'``, and returns boolean.\"
-msgstr \"v4.3.0부터는 ``is()`` 메서드를 사용할 수 있습니다. 이 메서드는 HTTP 메서드, ``'ajax'`` 또는 ``'json'``을 인자로 받아 불리언을 반환합니다.\" }
+msgstr \"v4.3.0부터는 ``is()`` 메서드를 사용할 수 있습니다. 이 메서드는 HTTP 메서드, ``'ajax'`` 또는 ``'json'``\ 을 인자로 받아 불리언을 반환합니다.\" }
 
 #: ../../source/incoming/incomingrequest.rst:53
 msgid \"\"HTTP method should be case-sensitive, but the parameter is case-\"insensitive.\"
@@ -205,7 +205,7 @@ msgstr \"v4.5.0 이전에는 기본적으로 메서드가 소문자 문자열(�
 
 #: ../../source/incoming/incomingrequest.rst:70
 msgid \"You can get a lowercase version by wrapping the call in ``strtolower()``::\"
-msgstr \"``strtolower()``로 감싸면 소문자 버전을 얻을 수 있습니다::\"}
+msgstr \"``strtolower()``\ 로 감싸면 소문자 버전을 얻을 수 있습니다::\"}
 
 #: ../../source/incoming/incomingrequest.rst:75
 msgid \"\"You can also check if the request was made through and HTTPS connection \"with the ``isSecure()`` method:\"
@@ -217,7 +217,7 @@ msgstr \"입력 데이터 가져오기\"}
 
 #: ../../source/incoming/incomingrequest.rst:82
 msgid \"\"You can retrieve input from ``$_GET``, ``$_POST``, ``$_COOKIE``, \"``$_SERVER`` and ``$_ENV`` through the Request object. The data is not \"automatically filtered and returns the raw input data as passed in the \"request.\"
-msgstr \"Request 객체를 통해 ``$_GET``, ``$_POST``, ``$_COOKIE``, ``$_SERVER``, ``$_ENV``에서 입력을 가져올 수 있습니다. 이 데이터는 자동으로 필터링되지 않으며 요청으로 전달된 원시 입력 데이터가 반환됩니다.\"}
+msgstr \"Request 객체를 통해 ``$_GET``, ``$_POST``, ``$_COOKIE``, ``$_SERVER``, ``$_ENV``\ 에서 입력을 가져올 수 있습니다. 이 데이터는 자동으로 필터링되지 않으며 요청으로 전달된 원시 입력 데이터가 반환됩니다.\"}
 
 #: ../../source/incoming/incomingrequest.rst:86
 msgid \"\"It is bad practice to use global variables. Basically, it should be \"avoided and it is recommended to use methods of the Request object."
@@ -432,18 +432,23 @@ msgid ""
 "function is used for the filtering. Head over to the PHP manual for a "
 "list of `valid filter types "
 "<https://www.php.net/manual/en/filters.php>`_."
-msgstr "To maintain security of your application, you will want to filter all \"input as you access it. You can pass the type of filter to use as the \"second parameter of any of these methods. The native ``filter_var()`` \"function is used for the filtering. Head over to the PHP manual for a \"list of `valid filter types \"<https://www.php.net/manual/en/filters.php>`_."
+msgstr ""
+"애플리케이션의 보안을 유지하려면 입력값에 접근할 때 필터링하는 것이 좋습니다. 이러한 메서드의 두 번째 인수로 사용할 "
+"필터 유형을 전달할 수 있습니다. 필터링에는 기본 제공 ``filter_var()`` 함수가 사용됩니다. 유효한 필터 유형 목록은 "
+"PHP 매뉴얼의 `valid filter types <https://www.php.net/manual/en/filters.php>`_\\ 을 참고하세요."
 
 #: ../../source/incoming/incomingrequest.rst:224
 msgid "Filtering a POST variable would look like this:"
-msgstr "Filtering a POST variable would look like this:"
+msgstr "POST 변수 필터링 예시:"
 
 #: ../../source/incoming/incomingrequest.rst:228
 msgid ""
 "All of the methods mentioned above support the filter type passed in as "
 "the second parameter, with the exception of ``getJSON()`` and "
 "``getRawInput()``."
-msgstr "All of the methods mentioned above support the filter type passed in as \"the second parameter, with the exception of ``getJSON()`` and \"``getRawInput()``."
+msgstr ""
+"위에서 언급한 모든 메서드는 두 번째 인수로 필터 유형을 지원하지만, ``getJSON()`` 과 "
+"``getRawInput()`` 은 예외입니다."
 
 #: ../../source/incoming/incomingrequest.rst:232
 msgid "Retrieving Headers"
@@ -586,87 +591,87 @@ msgstr "The methods provided by the parent classes that are available are:"
 
 #: ../../source/incoming/incomingrequest.rst:313
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Request::getIPAddress`"
-msgstr "``CodeIgniter\\HTTP\\Request::getIPAddress``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Request::getIPAddress`"
 
 #: ../../source/incoming/incomingrequest.rst:314
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Request::isValidIP`"
-msgstr "``CodeIgniter\\HTTP\\Request::isValidIP``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Request::isValidIP`"
 
 #: ../../source/incoming/incomingrequest.rst:315
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Request::getMethod`"
-msgstr "``CodeIgniter\\HTTP\\Request::getMethod``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Request::getMethod`"
 
 #: ../../source/incoming/incomingrequest.rst:316
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Request::setMethod`"
-msgstr "``CodeIgniter\\HTTP\\Request::setMethod``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Request::setMethod`"
 
 #: ../../source/incoming/incomingrequest.rst:317
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Request::getServer`"
-msgstr "``CodeIgniter\\HTTP\\Request::getServer``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Request::getServer`"
 
 #: ../../source/incoming/incomingrequest.rst:318
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Request::setGlobal`"
-msgstr "``CodeIgniter\\HTTP\\Request::setGlobal``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Request::setGlobal`"
 
 #: ../../source/incoming/incomingrequest.rst:319
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Request::fetchGlobal`"
-msgstr "``CodeIgniter\\HTTP\\Request::fetchGlobal``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Request::fetchGlobal`"
 
 #: ../../source/incoming/incomingrequest.rst:320
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::getBody`"
-msgstr "``CodeIgniter\\HTTP\\Message::getBody``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::getBody`"
 
 #: ../../source/incoming/incomingrequest.rst:321
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::setBody`"
-msgstr "``CodeIgniter\\HTTP\\Message::setBody``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::setBody`"
 
 #: ../../source/incoming/incomingrequest.rst:322
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::appendBody`"
-msgstr "``CodeIgniter\\HTTP\\Message::appendBody``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::appendBody`"
 
 #: ../../source/incoming/incomingrequest.rst:323
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::populateHeaders`"
-msgstr "``CodeIgniter\\HTTP\\Message::populateHeaders``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::populateHeaders`"
 
 #: ../../source/incoming/incomingrequest.rst:324
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::headers`"
-msgstr "``CodeIgniter\\HTTP\\Message::headers``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::headers`"
 
 #: ../../source/incoming/incomingrequest.rst:325
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::header`"
-msgstr "``CodeIgniter\\HTTP\\Message::header``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::header`"
 
 #: ../../source/incoming/incomingrequest.rst:326
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::hasHeader`"
-msgstr "``CodeIgniter\\HTTP\\Message::hasHeader``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::hasHeader`"
 
 #: ../../source/incoming/incomingrequest.rst:327
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::getHeaderLine`"
-msgstr "``CodeIgniter\\HTTP\\Message::getHeaderLine``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::getHeaderLine`"
 
 #: ../../source/incoming/incomingrequest.rst:328
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::setHeader`"
-msgstr "``CodeIgniter\\HTTP\\Message::setHeader``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::setHeader`"
 
 #: ../../source/incoming/incomingrequest.rst:329
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::removeHeader`"
-msgstr "``CodeIgniter\\HTTP\\Message::removeHeader``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::removeHeader`"
 
 #: ../../source/incoming/incomingrequest.rst:330
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::appendHeader`"
-msgstr "``CodeIgniter\\HTTP\\Message::appendHeader``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::appendHeader`"
 
 #: ../../source/incoming/incomingrequest.rst:331
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::prependHeader`"
-msgstr "``CodeIgniter\\HTTP\\Message::prependHeader``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::prependHeader`"
 
 #: ../../source/incoming/incomingrequest.rst:332
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::getProtocolVersion`"
-msgstr "``CodeIgniter\\HTTP\\Message::getProtocolVersion``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::getProtocolVersion`"
 
 #: ../../source/incoming/incomingrequest.rst:333
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::setProtocolVersion`"
-msgstr "``CodeIgniter\\HTTP\\Message::setProtocolVersion``"
+msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::setProtocolVersion`"
 
 #: ../../source/incoming/incomingrequest.rst
 msgid "Returns"
@@ -720,7 +725,9 @@ msgstr "The type of filter to apply. A list of filters can be found in `Types of
 msgid ""
 "Flags to apply. A list of flags can be found in `Filter flags "
 "<https://www.php.net/manual/en/filter.constants.php#filter.constants.flags.generic>`__."
-msgstr "Flags to apply. A list of flags can be found in `Filter flags \"<https://www.php.net/manual/en/filter.constants.php#filter.constants.flags.generic>`__."
+msgstr ""
+"Flags to apply. A list of flags can be found in `Filter flags "
+"<https://www.php.net/manual/en/filter.constants.php#filter.constants.flags.generic>`__."
 
 #: ../../source/incoming/incomingrequest.rst:361
 msgid ""
@@ -783,13 +790,17 @@ msgstr "Same rule applied here, to retrieve the parameters with filtering, set \
 msgid ""
 "The type of filter to apply. A list of filters can be found `here "
 "<https://www.php.net/manual/en/filters.php>`__."
-msgstr "The type of filter to apply. A list of filters can be found `here \"<https://www.php.net/manual/en/filters.php>`__."
+msgstr ""
+"The type of filter to apply. A list of filters can be found `here "
+"<https://www.php.net/manual/en/filters.php>`__."
 
 #: ../../source/incoming/incomingrequest.rst:414
 msgid ""
 "Flags to apply. A list of flags can be found `here "
 "<https://www.php.net/manual/en/filter.constants.php#filter.constants.flags.generic>`__."
-msgstr "Flags to apply. A list of flags can be found `here \"<https://www.php.net/manual/en/filter.constants.php#filter.constants.flags.generic>`__."
+msgstr ""
+"Flags to apply. A list of flags can be found `here "
+"<https://www.php.net/manual/en/filter.constants.php#filter.constants.flags.generic>`__."
 
 #: ../../source/incoming/incomingrequest.rst:416
 msgid ""
