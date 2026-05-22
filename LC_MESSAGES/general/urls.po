@@ -99,7 +99,7 @@ msgstr "URI 경로"
 #: ../../source/general/urls.rst:36 ../../source/general/urls.rst:37
 #: ../../source/general/urls.rst:56
 msgid "/blog/news/2022/10"
-msgstr "/블로그/뉴스/2022/10"
+msgstr "/blog/news/2022/10"
 
 #: ../../source/general/urls.rst:37 ../../source/general/urls.rst:56
 msgid "Route path"
@@ -116,7 +116,7 @@ msgstr "쿼리"
 
 #: ../../source/general/urls.rst:39 ../../source/general/urls.rst:58
 msgid "page=2"
-msgstr "페이지=2"
+msgstr "page=2"
 
 #: ../../source/general/urls.rst:43
 msgid "Base URL contains Sub folders"
@@ -155,7 +155,7 @@ msgid ""
 " malicious data can be passed to your application. URIs may only contain the"
 " following:"
 msgstr ""
-"CodeIgniter는 악성 데이터가 애플리케이션에 전달될 가능성을 최소화하기 위해 URI 문자열(경로 경로)에 허용되는 문자를 상당히 "
+"CodeIgniter는 악성 데이터가 애플리케이션에 전달될 가능성을 최소화하기 위해 URI 문자열(라우트 경로)에 허용되는 문자를 상당히 "
 "제한합니다. URI에는 다음만 포함될 수 있습니다."
 
 #: ../../source/general/urls.rst:78
@@ -168,11 +168,11 @@ msgstr "물결표: ``~``"
 
 #: ../../source/general/urls.rst:80
 msgid "Percent sign: ``%``"
-msgstr "백분율 기호: ``%``"
+msgstr "퍼센트 기호: ``%``"
 
 #: ../../source/general/urls.rst:81
 msgid "Period: ``.``"
-msgstr "기간: ``.``"
+msgstr "마침표: ``.``"
 
 #: ../../source/general/urls.rst:82
 msgid "Colon: ``:``"
@@ -244,7 +244,7 @@ msgstr ""
 
 #: ../../source/general/urls.rst:122
 msgid "Apache Web Server"
-msgstr "아파치 웹 서버"
+msgstr "Apache 웹 서버"
 
 #: ../../source/general/urls.rst:124
 msgid ""
@@ -265,7 +265,7 @@ msgstr ""
 
 #: ../../source/general/urls.rst:138
 msgid "These specific rules might not work for all server configurations."
-msgstr "이러한 특정 규칙은 모든 서버 구성에 적용되지 않을 수 있습니다."
+msgstr "이러한 특정 규칙은 모든 서버 설정에 적용되지 않을 수 있습니다."
 
 #: ../../source/general/urls.rst:140
 msgid ""
@@ -283,7 +283,7 @@ msgid ""
 "directive to get the same effect as we did with the above Apache "
 "configuration:"
 msgstr ""
-"nginx에서는 위치 블록을 정의하고 ``try_files`` 지시문을 사용하여 위의 Apache 구성에서와 동일한 효과를 얻을 수 "
+"nginx에서는 위치 블록을 정의하고 ``try_files`` 지시문을 사용하여 위의 Apache 설정에서와 동일한 효과를 얻을 수 "
 "있습니다."
 
 #: ../../source/general/urls.rst:156

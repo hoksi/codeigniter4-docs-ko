@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../source/general/common_functions.rst:3
 msgid "Global Functions and Constants"
-msgstr "전역 함수 및 상수"
+msgstr "전역 함수와 상수"
 
 #: ../../source/general/common_functions.rst:5
 msgid ""
@@ -30,16 +30,16 @@ msgid ""
 "defined, and are available to you at any point. These do not require loading"
 " any additional libraries or helpers."
 msgstr ""
-"CodeIgniter는 전역적으로 정의되고 언제든지 사용할 수 있는 몇 가지 함수와 변수를 제공합니다. 추가 라이브러리나 도우미를 로드할"
+"CodeIgniter는 전역적으로 정의되어 언제든지 사용할 수 있는 몇 가지 함수와 변수를 제공합니다. 추가 라이브러리나 헬퍼를 로드할"
 " 필요가 없습니다."
 
 #: ../../source/general/common_functions.rst:14
 msgid "Global Functions"
-msgstr "글로벌 기능"
+msgstr "전역 함수"
 
 #: ../../source/general/common_functions.rst:17
 msgid "Service Accessors"
-msgstr "서비스 접근자"
+msgstr "서비스 액세서"
 
 #: ../../source/general/common_functions.rst
 msgid "Parameters"
@@ -47,19 +47,19 @@ msgstr "매개변수"
 
 #: ../../source/general/common_functions.rst:21
 msgid "The cache name of the item to retrieve from cache (Optional)"
-msgstr "캐시에서 검색할 항목의 캐시 이름(선택 사항)"
+msgstr "캐시에서 가져올 항목의 캐시 이름(선택 사항)"
 
 #: ../../source/general/common_functions.rst
 msgid "Returns"
-msgstr "보고"
+msgstr "반환"
 
 #: ../../source/general/common_functions.rst:22
 msgid "Either the cache object, or the item retrieved from the cache"
-msgstr "캐시 객체 또는 캐시에서 검색된 항목"
+msgstr "캐시 객체 또는 캐시에서 가져온 항목"
 
 #: ../../source/general/common_functions.rst
 msgid "Return type"
-msgstr "반환 유형"
+msgstr "반환 타입"
 
 #: ../../source/general/common_functions.rst:25
 msgid ""
@@ -67,16 +67,16 @@ msgid ""
 "provided, will return the value of $key as stored in the cache currently, or"
 " null if no value is found."
 msgstr ""
-"$key이 제공되지 않으면 캐시 엔진 인스턴스를 반환합니다. $key이 제공되면 현재 캐시에 저장된 $key 값을 반환하거나, 값이 "
+"$key가 제공되지 않으면 캐시 엔진 인스턴스를 반환합니다. $key가 제공되면 현재 캐시에 저장된 $key 값을 반환하고, 값이 "
 "없으면 null을 반환합니다."
 
 #: ../../source/general/common_functions.rst:29
 msgid "Examples:"
-msgstr "예:"
+msgstr "예시:"
 
 #: ../../source/general/common_functions.rst:35
 msgid "The config classname."
-msgstr "구성 클래스 이름입니다."
+msgstr "설정 클래스 이름입니다."
 
 #: ../../source/general/common_functions.rst:36
 #: ../../source/general/common_functions.rst:122
@@ -85,11 +85,11 @@ msgstr "공유 인스턴스를 반환할지 여부입니다."
 
 #: ../../source/general/common_functions.rst:37
 msgid "The config instances."
-msgstr "구성 인스턴스."
+msgstr "설정 인스턴스."
 
 #: ../../source/general/common_functions.rst:40
 msgid "More simple way of getting config instances from Factories."
-msgstr "팩토리에서 구성 인스턴스를 가져오는 더 간단한 방법입니다."
+msgstr "Factories에서 설정 인스턴스를 가져오는 더 간단한 방법입니다."
 
 #: ../../source/general/common_functions.rst:42
 msgid ""
@@ -97,15 +97,15 @@ msgid ""
 "<factories-config>` for details."
 msgstr ""
 "자세한 내용은 :ref:`Configuration <configuration-config>` 및 :ref:`Factories "
-"<factories-config>`\\ 을 참조하세요."
+"<factories-config>`\\ 를 참조하세요."
 
 #: ../../source/general/common_functions.rst:45
 msgid ""
 "The ``config()`` uses ``Factories::config()`` internally. See "
 ":ref:`factories-loading-class` for details on the first parameter ``$name``."
 msgstr ""
-"``config()``\\ 은 내부적으로 ``Factories::config()``\\ 을 사용합니다. 첫 번째 매개변수 "
-"``$name``\\ 에 대한 자세한 내용은 :ref:`factories-loading-class`\\ 을 참조하세요."
+"``config()``\\ 는 내부적으로 ``Factories::config()``\\ 를 사용합니다. 첫 번째 매개변수 "
+"``$name``\\ 에 대한 자세한 내용은 :ref:`factories-loading-class`\\ 를 참조하세요."
 
 #: ../../source/general/common_functions.rst:50
 msgid "Cookie name"
@@ -129,7 +129,7 @@ msgstr "``Cookie`` 인스턴스"
 
 #: ../../source/general/common_functions.rst
 msgid "throws"
-msgstr "던진다"
+msgstr "예외 발생"
 
 #: ../../source/general/common_functions.rst:55
 msgid "``CookieException``"
@@ -137,7 +137,7 @@ msgstr "``CookieException``"
 
 #: ../../source/general/common_functions.rst:57
 msgid "Simpler way to create a new Cookie instance."
-msgstr "새 쿠키 인스턴스를 생성하는 더 간단한 방법입니다."
+msgstr "새 Cookie 인스턴스를 생성하는 더 간단한 방법입니다."
 
 #: ../../source/general/common_functions.rst:61
 msgid ""
@@ -162,15 +162,15 @@ msgstr ""
 
 #: ../../source/general/common_functions.rst:66
 msgid "Fetches the global ``CookieStore`` instance held by ``Response``."
-msgstr "``Response``\\ 이 보유한 전역 ``CookieStore`` 인스턴스를 가져옵니다."
+msgstr "``Response``\\ 가 보유한 전역 ``CookieStore`` 인스턴스를 가져옵니다."
 
 #: ../../source/general/common_functions.rst:70
 msgid "The name of the environment variable to retrieve"
-msgstr "검색할 환경 변수의 이름"
+msgstr "가져올 환경 변수의 이름"
 
 #: ../../source/general/common_functions.rst:71
 msgid "The default value to return if no value is found."
-msgstr "값이 없을 경우 반환할 기본값입니다."
+msgstr "값을 찾을 수 없을 때 반환할 기본값입니다."
 
 #: ../../source/general/common_functions.rst:72
 msgid "The environment variable, the default value, or null."
@@ -182,8 +182,8 @@ msgid ""
 " return a default value if it is not found. Will format boolean values to "
 "actual booleans instead of string representations."
 msgstr ""
-"이전에 환경에 설정된 값을 검색하거나, 찾을 수 없는 경우 기본값을 반환하는 데 사용됩니다. 문자열 표현 대신 부울 값을 실제 부울로 "
-"형식화합니다."
+"이전에 환경에 설정된 값을 가져오거나, 찾을 수 없는 경우 기본값을 반환하는 데 사용됩니다. 불리언 값은 문자열 표현 대신 실제 "
+"불리언으로 변환됩니다."
 
 #: ../../source/general/common_functions.rst:79
 msgid ""
@@ -214,15 +214,16 @@ msgid ""
 "Escapes data for inclusion in web pages, to help prevent XSS attacks. This "
 "uses the Laminas Escaper library to handle the actual filtering of the data."
 msgstr ""
-"XSS 공격을 방지하기 위해 웹 페이지에 포함할 데이터를 이스케이프합니다. 이는 Laminas Escaper 라이브러리를 사용하여 "
-"데이터의 실제 필터링을 처리합니다."
+"XSS 공격을 방지하기 위해 웹 페이지에 포함될 데이터를 이스케이프합니다. 실제 데이터 필터링은 Laminas Escaper "
+"라이브러리를 사용하여 처리합니다."
 
 #: ../../source/general/common_functions.rst:94
 msgid ""
 "If $data is a string, then it simply escapes and returns it. If $data is an "
 "array, then it loops over it, escaping each 'value' of the key/value pairs."
 msgstr ""
-"$data이 문자열이면 단순히 이스케이프하여 반환합니다. $data이 배열인 경우 키/값 쌍의 각 '값'을 이스케이프하여 반복합니다."
+"$data가 문자열이면 단순히 이스케이프하여 반환합니다. $data가 배열이면 이를 순회하면서 키/값 쌍의 각 '값'을 "
+"이스케이프합니다."
 
 #: ../../source/general/common_functions.rst:97
 msgid ""
@@ -231,11 +232,11 @@ msgstr "유효한 컨텍스트 값: ``html``, ``js``, ``css``, ``url``, ``attr``
 
 #: ../../source/general/common_functions.rst:101
 msgid "The name of the helper file to load, or an array of names."
-msgstr "로드할 도우미 파일의 이름 또는 이름 배열입니다."
+msgstr "로드할 헬퍼 파일의 이름 또는 이름의 배열입니다."
 
 #: ../../source/general/common_functions.rst:103
 msgid "Loads a helper file."
-msgstr "도우미 파일을 로드합니다."
+msgstr "헬퍼 파일을 로드합니다."
 
 #: ../../source/general/common_functions.rst:105
 msgid "For full details, see the :doc:`helpers` page."
@@ -330,7 +331,7 @@ msgid ""
 msgstr ""
 ":doc:`form helper </helpers/form_helper>`\\ 에서 :php:func:`set_value()`, "
 ":php:func:`set_select()`, :php:func:`set_checkbox()` 및 "
-":php:func:`set_radio()` 함수를 사용하는 경우 이 기능이 내장되어 있습니다. 양식 도우미를 사용하지 않을 때만 이 "
+":php:func:`set_radio()` 함수를 사용하는 경우 이 기능이 내장되어 있습니다. 양식 헬퍼를 사용하지 않을 때만 이 "
 "기능을 사용해야 합니다."
 
 #: ../../source/general/common_functions.rst:155
@@ -368,7 +369,7 @@ msgid ""
 " running."
 msgstr ""
 "Timer 클래스에 대한 빠른 액세스를 제공하는 편리한 메서드입니다. 벤치마크 포인트의 이름을 유일한 매개변수로 전달할 수 있습니다. 이"
-" 시점부터 타이밍이 시작되거나, 이 이름의 타이머가 이미 실행 중인 경우 타이밍이 중지됩니다."
+" 시점부터 타이머가 시작되거나, 이 이름의 타이머가 이미 실행 중인 경우 타이머가 중지됩니다."
 
 #: ../../source/general/common_functions.rst:178
 msgid "The name of the file to load"
@@ -394,7 +395,7 @@ msgid ""
 "Controllers, libraries, and routed closures."
 msgstr ""
 "현재 RendererInterface 호환 클래스(기본적으로 :doc:`View <../outgoing/view_renderer>` "
-"클래스)를 잡고 지정된 뷰를 렌더링하도록 지시합니다. 컨트롤러, 라이브러리, 라우팅 클로저에서 사용할 수 있는 편리한 메소드를 간단히 "
+"클래스)를 잡고 지정된 뷰를 렌더링하도록 지시합니다. 컨트롤러, 라이브러리, 라우트 클로저에서 사용할 수 있는 편리한 메서드를 간단히 "
 "제공합니다."
 
 #: ../../source/general/common_functions.rst:190
@@ -431,7 +432,7 @@ msgstr ""
 msgid ""
 "The ``$option`` array is provided primarily to facilitate third-party "
 "integrations with libraries like Twig."
-msgstr "``$option`` 배열은 주로 Twig와 같은 라이브러리와의 타사 통합을 용이하게 하기 위해 제공됩니다."
+msgstr "``$option`` 배열은 주로 Twig와 같은 라이브러리와의 서드파티 통합을 용이하게 하기 위해 제공됩니다."
 
 #: ../../source/general/common_functions.rst:203
 msgid ""
@@ -454,7 +455,7 @@ msgstr "자세한 내용은 :doc:`View Cells </outgoing/view_cells>` 페이지�
 
 #: ../../source/general/common_functions.rst:218
 msgid "Miscellaneous Functions"
-msgstr "기타 기능"
+msgstr "기타 함수"
 
 #: ../../source/general/common_functions.rst:222
 msgid "The timezone the application has been set to display dates in."
@@ -563,7 +564,7 @@ msgstr "이 함수는 ``Config\\App:$forceGlobalSecureRequests``\\ 을 true로 �
 
 #: ../../source/general/common_functions.rst:298
 msgid "Function to check for"
-msgstr "확인하는 기능"
+msgstr "확인할 함수"
 
 #: ../../source/general/common_functions.rst:299
 msgid "true if the function exists and is safe to call, false otherwise."
@@ -616,7 +617,7 @@ msgstr "$message에서 대체되어야 하는 태그 및 해당 값의 연관 �
 
 #: ../../source/general/common_functions.rst:331
 msgid "void"
-msgstr "무효의"
+msgstr "void"
 
 #: ../../source/general/common_functions.rst:334
 msgid ""
@@ -637,7 +638,7 @@ msgid ""
 "Level can be one of the following values: ``emergency``, ``alert``, "
 "``critical``, ``error``, ``warning``, ``notice``, ``info``, or ``debug``."
 msgstr ""
-"레벨은 ``emergency``, ``alert``, ``critical``, ``error``, ``warning``, "
+"수준은 ``emergency``, ``alert``, ``critical``, ``error``, ``warning``, "
 "``notice``, ``info`` 또는 ``debug`` 값 중 하나일 수 있습니다."
 
 #: ../../source/general/common_functions.rst:343
@@ -650,7 +651,7 @@ msgstr ""
 
 #: ../../source/general/common_functions.rst:348
 msgid "The route name or Controller::method to redirect the user to."
-msgstr "사용자를 리디렉션할 경로 이름 또는 Controller::method입니다."
+msgstr "사용자를 리디렉션할 라우트 이름 또는 Controller::메서드입니다."
 
 #: ../../source/general/common_functions.rst:351
 msgid ""
@@ -700,23 +701,23 @@ msgstr "이 함수는 ``Services::response()`` 및 ``service('response')``\\ 에
 
 #: ../../source/general/common_functions.rst:388
 msgid "Route name or Controller::method"
-msgstr "경로 이름 또는 Controller::method"
+msgstr "라우트 이름 또는 Controller::메서드"
 
 #: ../../source/general/common_functions.rst:389
 msgid ""
 "One or more parameters to be passed to the route. The last parameter allows "
 "you to set the locale."
-msgstr "경로에 전달될 하나 이상의 매개변수입니다. 마지막 매개변수를 사용하면 로케일을 설정할 수 있습니다."
+msgstr "라우트에 전달될 하나 이상의 매개변수입니다. 마지막 매개변수를 사용하면 로케일을 설정할 수 있습니다."
 
 #: ../../source/general/common_functions.rst:390
 msgid "a route path (URI path relative to baseURL)"
-msgstr "경로 경로(baseURL에 상대적인 URI 경로)"
+msgstr "라우트 경로(baseURL에 상대적인 URI 경로)"
 
 #: ../../source/general/common_functions.rst:393
 msgid ""
 "This function requires the controller/method to have a route defined in "
 "**app/Config/Routes.php**."
-msgstr "이 기능을 사용하려면 컨트롤러/메소드에 **app/Config/Routes.php**\\ 에 경로가 정의되어 있어야 합니다."
+msgstr "이 기능을 사용하려면 컨트롤러/메서드에 **app/Config/Routes.php**\\ 에 라우트가 정의되어 있어야 합니다."
 
 #: ../../source/general/common_functions.rst:395
 msgid ""
@@ -725,7 +726,7 @@ msgid ""
 "the URI to link. In that case, just use :php:func:`url_to()` instead. See "
 "also :ref:`urls-url-structure`."
 msgstr ""
-"``route_to()``\\ 은 사이트의 전체 URI 경로가 아닌 *route* 경로를 반환합니다. **baseURL**\\ 에 하위 "
+"``route_to()``\\ 은 사이트의 전체 URI 경로가 아닌 *라우트* 경로를 반환합니다. **baseURL**\\ 에 하위 "
 "폴더가 포함된 경우 반환 값은 연결할 URI와 동일하지 않습니다. 이 경우 대신 :php:func:`url_to()`\\ 을 사용하세요."
 " :ref:`urls-url-structure`\\ 도 참조하세요."
 
@@ -733,11 +734,11 @@ msgstr ""
 msgid ""
 "Generates a route for you based on a controller::method combination. Will "
 "take parameters into effect, if provided."
-msgstr "컨트롤러::메소드 조합을 기반으로 경로를 생성합니다. 제공된 경우 매개변수를 적용합니다."
+msgstr "컨트롤러::메서드 조합을 기반으로 라우트를 생성합니다. 제공된 경우 매개변수를 적용합니다."
 
 #: ../../source/general/common_functions.rst:404
 msgid "Generates a route for you based on a route name."
-msgstr "경로 이름을 기반으로 경로를 생성합니다."
+msgstr "라우트 이름을 기반으로 라우트를 생성합니다."
 
 #: ../../source/general/common_functions.rst:408
 #, python-brace-format
@@ -754,7 +755,7 @@ msgstr "로드할 서비스의 이름"
 #: ../../source/general/common_functions.rst:415
 #: ../../source/general/common_functions.rst:430
 msgid "One or more parameters to pass to the service method."
-msgstr "서비스 메소드에 전달할 하나 이상의 매개변수입니다."
+msgstr "서비스 메서드에 전달할 하나 이상의 매개변수입니다."
 
 #: ../../source/general/common_functions.rst:416
 #: ../../source/general/common_functions.rst:431
@@ -782,15 +783,15 @@ msgstr ""
 
 #: ../../source/general/common_functions.rst:440
 msgid "Config item name"
-msgstr "구성 항목 이름"
+msgstr "설정 항목 이름"
 
 #: ../../source/general/common_functions.rst:441
 msgid "The configuration item or null if the item doesn't exist"
-msgstr "구성 항목 또는 항목이 존재하지 않는 경우 null"
+msgstr "설정 항목 또는 항목이 존재하지 않는 경우 null"
 
 #: ../../source/general/common_functions.rst:444
 msgid "Fetch a config file item with slash appended (if not empty)"
-msgstr "슬래시가 추가된 구성 파일 항목 가져오기(비어 있지 않은 경우)"
+msgstr "슬래시가 추가된 설정 파일 항목 가져오기(비어 있지 않은 경우)"
 
 #: ../../source/general/common_functions.rst:448
 msgid "string, array of key value pairs, or object"
@@ -808,7 +809,7 @@ msgstr "쉼표로 구분된 속성 키/값 쌍을 포함하는 문자열"
 msgid ""
 "Helper function used to convert a string, array, or object of attributes to "
 "a string."
-msgstr "문자열, 배열 또는 속성 개체를 문자열로 변환하는 데 사용되는 도우미 함수입니다."
+msgstr "문자열, 배열 또는 속성 개체를 문자열로 변환하는 데 사용되는 헬퍼 함수입니다."
 
 #: ../../source/general/common_functions.rst:457
 msgid "Global Constants"
@@ -838,7 +839,7 @@ msgstr "**system** 디렉터리의 경로입니다."
 
 #: ../../source/general/common_functions.rst:478
 msgid "The path to the directory that holds the front controller."
-msgstr "전면 컨트롤러가 있는 디렉터리의 경로입니다."
+msgstr "프론트 컨트롤러가 있는 디렉터리의 경로입니다."
 
 #: ../../source/general/common_functions.rst:482
 msgid "The path to the **writable** directory."
@@ -846,7 +847,7 @@ msgstr "**writable** 디렉터리의 경로입니다."
 
 #: ../../source/general/common_functions.rst:485
 msgid "Time Constants"
-msgstr "시상수"
+msgstr "시간 상수"
 
 #: ../../source/general/common_functions.rst:489
 msgid "Equals 1."

@@ -74,7 +74,7 @@ msgstr "헬퍼는 일반적으로 **system/Helpers** 또는 **app/Helpers** 디�
 
 #: ../../source/general/helpers.rst:37
 msgid "Loading Helpers"
-msgstr "헬퍼 로딩"
+msgstr "헬퍼 로드"
 
 #: ../../source/general/helpers.rst:39
 msgid ""
@@ -84,7 +84,7 @@ msgstr ":doc:`../helpers/url_helper`\\ 은 항상 로드되므로 직접 로드�
 
 #: ../../source/general/helpers.rst:42
 msgid "Loading a Helper"
-msgstr "헬퍼 로딩"
+msgstr "헬퍼 로드"
 
 #: ../../source/general/helpers.rst:44
 msgid "Loading a helper file is quite simple using the following method:"
@@ -120,7 +120,7 @@ msgstr ""
 
 #: ../../source/general/helpers.rst:63
 msgid "Auto-Discovery and Composer Packages"
-msgstr "자동 검색 및 작성기 패키지"
+msgstr "자동 검색과 Composer 패키지"
 
 #: ../../source/general/helpers.rst:65
 msgid ""
@@ -129,7 +129,7 @@ msgid ""
 "by the spark command. See :ref:`confirming-namespaces`."
 msgstr ""
 "기본적으로 CodeIgniter는 :ref:`auto-discovery`\\ 으로 정의된 모든 네임스페이스에서 헬퍼 파일을 검색합니다."
-" Spark 명령으로 정의된 네임스페이스를 확인할 수 있습니다. :ref:`confirming-namespaces`\\ 을(를) "
+" spark 명령으로 정의된 네임스페이스를 확인할 수 있습니다. :ref:`confirming-namespaces`\\ 을(를) "
 "참조하세요."
 
 #: ../../source/general/helpers.rst:69
@@ -169,7 +169,7 @@ msgid ""
 " this application."
 msgstr ""
 ":php:func:`helper()` 함수는 정의된 모든 네임스페이스를 검색하고 동일한 이름의 일치하는 모든 헬퍼를 로드합니다. 이를 "
-"통해 모든 모듈의 헬퍼는 물론 이 응용 프로그램을 위해 특별히 만든 헬퍼도 로드할 수 있습니다."
+"통해 모든 모듈의 헬퍼는 물론 이 애플리케이션을 위해 특별히 만든 헬퍼도 로드할 수 있습니다."
 
 #: ../../source/general/helpers.rst:86
 msgid "The load order is as follows:"
@@ -192,7 +192,7 @@ msgstr "system/Helpers - 기본 파일이 마지막으로 로드됩니다."
 
 #: ../../source/general/helpers.rst:93
 msgid "Loading Multiple Helpers"
-msgstr "여러 헬퍼 로딩"
+msgstr "여러 헬퍼 로드"
 
 #: ../../source/general/helpers.rst:95
 msgid ""
@@ -280,7 +280,7 @@ msgstr ""
 
 #: ../../source/general/helpers.rst:147
 msgid "Auto-loading Helpers"
-msgstr "자동 로딩 헬퍼"
+msgstr "헬퍼 자동 로드"
 
 #: ../../source/general/helpers.rst:151
 msgid ""
@@ -307,7 +307,7 @@ msgid ""
 "For example, to create a link using the :php:func:`anchor()` function in one"
 " of your view files you would do this:"
 msgstr ""
-"예를 들어, 보기 파일 중 하나에서 :php:func:`anchor()` 함수를 사용하여 링크를 생성하려면 다음을 수행합니다."
+"예를 들어, 뷰 파일 중 하나에서 :php:func:`anchor()` 함수를 사용하여 링크를 생성하려면 다음을 수행합니다."
 
 #: ../../source/general/helpers.rst:168
 msgid ""
@@ -339,7 +339,7 @@ msgstr ""
 
 #: ../../source/general/helpers.rst:185
 msgid "You can add as many functions as you like to a single helper file."
-msgstr "단일 헬퍼 파일에 원하는 만큼 많은 함수를 추가할 수 있습니다."
+msgstr "단일 헬퍼 파일에 원하는 만큼 함수를 추가할 수 있습니다."
 
 #: ../../source/general/helpers.rst:188
 msgid "\"Extending\" Helpers"
@@ -389,7 +389,7 @@ msgstr "헬퍼 파일이 로드되는 순서는 `Load Order`_\\ 을 참조하세
 
 #: ../../source/general/helpers.rst:215
 msgid "Now What?"
-msgstr "이제 무엇을?"
+msgstr "이제 무엇을 할까요?"
 
 #: ../../source/general/helpers.rst:217
 msgid ""
