@@ -1,24 +1,133 @@
 # codeigniter4-docs-ko
 
-CodeIgniter 4 User Guide Korean Translation.
+CodeIgniter 4 사용자 가이드 한국어 번역 저장소입니다.
 
-## Files in this repository
+이 저장소는 [CodeIgniter4](https://github.com/hoksi/CodeIgniter4) 저장소의 `user_guide_src/source/locale/ko` 경로에 서브모듈로 포함됩니다.
 
-- `LC_MESSAGES/*.po`: translation source files
-- `LC_MESSAGES/*.mo`: compiled message catalogs
-- `LC_MESSAGES/**/*.html`: generated HTML output for review
+---
 
-## Translation workflow
+## 한국어 HTML 빌드 방법
 
-1. Update or generate `.po` files from the Sphinx gettext output.
-2. Translate entries in `msgstr`.
-3. Rebuild HTML and review the generated pages.
-4. Keep markup rules consistent with the translation guide.
+### 사전 준비
 
-## Translation guide
+- Python 3.10 이상
+- Git (서브모듈 지원)
 
-Follow `TRANSLATION_GUIDE.md` in this folder for the Korean translation rules, especially:
+---
 
-- reST markup and Korean particle handling
-- backslash usage after inline markup
-- build and verification workflow
+### 1. 저장소 클론 및 서브모듈 초기화
+
+```bash
+git clone https://github.com/hoksi/CodeIgniter4.git
+cd CodeIgniter4/user_guide_src
+
+# ko 서브모듈 초기화 및 체크아웃
+git submodule update --init source/locale/ko
+```
+
+이미 클론된 상태라면 서브모듈만 업데이트합니다.
+
+```bash
+cd CodeIgniter4/user_guide_src
+git submodule update --remote source/locale/ko
+```
+
+---
+
+### 2. Python 가상 환경 설정
+
+`user_guide_src` 폴더에서 실행합니다.
+
+```bash
+# 가상 환경 생성
+python3 -m venv .venv
+
+# 가상 환경 활성화 (Linux / macOS)
+source .venv/bin/activate
+
+# 가상 환경 활성화 (Windows)
+.venv\Scripts\activate
+
+# 의존성 설치
+pip install -r requirements.txt
+```
+
+---
+
+### 3. 한국어 HTML 빌드
+
+```bash
+# user_guide_src 폴더에서 실행
+.venv/bin/sphinx-build -b html -D language='ko' source build/html
+```
+
+빌드가 완료되면 `build/html/` 폴더에 HTML 파일이 생성됩니다.
+
+빌드 성공 시 출력 예시:
+
+```
+build succeeded.
+The HTML pages are in build/html.
+```
+
+---
+
+### 4. 클린 빌드 (기존 빌드 결과물 제거 후 재빌드)
+
+```bash
+# 기존 빌드 결과물 삭제
+rm -rf build/html
+
+# 한국어 HTML 재빌드
+.venv/bin/sphinx-build -b html -D language='ko' source build/html
+```
+
+---
+
+### 5. 빌드 경고 확인
+
+정상적인 번역 상태라면 경고(WARNING) 없이 빌드가 완료됩니다.
+경고가 발생하면 해당 PO 파일의 RST 마크업을 확인하세요.
+자세한 내용은 [TRANSLATION_GUIDE.md](TRANSLATION_GUIDE.md)를 참고하세요.
+
+---
+
+## 디렉터리 구조
+
+```
+user_guide_src/
+├── source/
+│   ├── locale/
+│   │   └── ko/                  ← 이 저장소 (서브모듈)
+│   │       └── LC_MESSAGES/
+│   │           ├── database/
+│   │           │   └── query_builder.po
+│   │           ├── incoming/
+│   │           │   └── routing.po
+│   │           └── ...
+│   └── ...
+├── build/
+│   └── html/                    ← 빌드 결과물 (한국어 HTML)
+├── requirements.txt
+└── .venv/                       ← Python 가상 환경
+```
+
+---
+
+## 번역 파일 수정 후 빌드
+
+PO 파일(`LC_MESSAGES/**/*.po`)을 수정한 뒤 빌드를 실행하면 변경 사항이 반영됩니다.
+
+```bash
+# PO 파일 수정 후 재빌드 (증분 빌드 - 변경된 파일만 처리)
+.venv/bin/sphinx-build -b html -D language='ko' source build/html
+
+# 전체 재빌드
+rm -rf build/html && .venv/bin/sphinx-build -b html -D language='ko' source build/html
+```
+
+---
+
+## 번역 가이드
+
+번역 규칙 및 RST 마크업 처리 방법은 [TRANSLATION_GUIDE.md](TRANSLATION_GUIDE.md)를 참고하세요.
