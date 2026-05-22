@@ -36,7 +36,7 @@ msgid ""
 "If you are not familiar with Composer, we recommend you read `Basic usage"
 " <https://getcomposer.org/doc/01-basic-usage.md>`_ first."
 msgstr ""
-"Composer에 익숙하지 않다면 `기본 사용법 <https://getcomposer.org/doc/01-basic-"
+"Composer에 익숙하지 않다면 `\ 기본 사용법 <https://getcomposer.org/doc/01-basic-"
 "usage.md>`_\\ 을 먼저 읽어보는 것을 권장합니다."
 
 #: ../../source/installation/installing_composer.rst:15
@@ -58,7 +58,7 @@ msgid ""
 "dependencies) when you clone the repository to a new system."
 msgstr ""
 "코드를 저장하거나 다른 사람과 협업하기 위해 Git 저장소를 사용하는 경우, **vendor** 폴더는 일반적으로 \"git "
-"ignored\" 상태여야 합니다. 이러한 경우 저장소를 새로운 시스템에 복제할 때 ``composer install``(또는 모든"
+"ignored\" 상태여야 합니다. 이러한 경우 저장소를 새로운 시스템에 복제할 때 ``composer install``\ (또는 모든"
 " Composer 의존성을 업데이트하려면 ``composer update``)을 실행해야 합니다."
 
 #: ../../source/installation/installing_composer.rst:27
@@ -112,7 +112,7 @@ msgid ""
 "v4.4.0, this restriction has been removed."
 msgstr ""
 "v4.4.0 이전의 CodeIgniter 오토로더는 특정 운영체제의 파일 이름에서 허용되지 않는 특수 문자를 허용하지 않았습니다. "
-"사용할 수 있는 기호는 ``/``, ``_``, ``.``, ``:``, ``\\`` 및 공백이었습니다. 따라서 ``(``, "
+"사용할 수 있는 기호는 ``/``, ``_``, ``.``, ``:``, ``\\`` 및 공백이었습니다. 따라서 ``\ (``, "
 "``)`` 등과 같은 특수 문자가 포함된 폴더 아래에 CodeIgniter를 설치하면 작동하지 않았습니다. v4.4.0부터 이 "
 "제한이 제거되었습니다."
 
@@ -200,7 +200,7 @@ msgid ""
 "Read the :doc:`upgrade instructions <upgrading>` and :doc:`change log "
 "<../changelogs/index>`, and check Breaking Changes and Enhancements."
 msgstr ""
-":doc:`업그레이드 지침 <upgrading>` 및 :doc:`변경 로그 <../changelogs/index>`\\ 를 읽고 "
+":doc:`\ 업그레이드 지침 <upgrading>` 및 :doc:`\ 변경 로그 <../changelogs/index>`\\ 를 읽고 "
 "호환성이 중단되는 변경 사항(Breaking Changes)과 개선 사항을 확인하세요."
 
 #: ../../source/installation/installing_composer.rst:118
@@ -241,7 +241,7 @@ msgid ""
 "You still need to check for file changes in the **project space** (root, "
 "app, public, writable) and merge them after updating."
 msgstr ""
-"업데이트 후 **프로젝트 공간**(루트, app, public, writable)의 파일 변경 사항을 확인하고 병합해야 합니다."
+"업데이트 후 **\ 프로젝트 공간**\ (루트, app, public, writable)의 파일 변경 사항을 확인하고 병합해야 합니다."
 
 #: ../../source/installation/installing_composer.rst:149
 #: ../../source/installation/installing_composer.rst:305
@@ -297,7 +297,7 @@ msgid ""
 "Note that this differs from the released user guide, and will pertain to "
 "the develop branch explicitly."
 msgstr ""
-"`개발 사용자 가이드 <https://codeigniter4.github.io/CodeIgniter4/>`_\\ 는 온라인에서 "
+"`\ 개발 사용자 가이드 <https://codeigniter4.github.io/CodeIgniter4/>`_\\ 는 온라인에서 "
 "접근할 수 있습니다. 이는 출시된 사용자 가이드와 다르며, 개발 브랜치에 명시적으로 해당된다는 점에 유의하세요."
 
 #: ../../source/installation/installing_composer.rst:175
@@ -436,7 +436,7 @@ msgid ""
 "You still need to check for file changes in the **project space** (root, "
 "app, public, writable) after updating."
 msgstr ""
-"업데이트 후 **프로젝트 공간**(루트, app, public, writable)의 파일 변경 사항을 확인해야 합니다."
+"업데이트 후 **\ 프로젝트 공간**\ (루트, app, public, writable)의 파일 변경 사항을 확인해야 합니다."
 
 #: ../../source/installation/installing_composer.rst:318
 msgid "Translations Installation"

@@ -34,7 +34,7 @@ msgid ""
 "`Richardson Maturity Model "
 "<https://martinfowler.com/articles/richardsonMaturityModel.html>`_ a "
 "gentler introduction."
-msgstr "Representational State Transfer(REST)은 분산 애플리케이션을 위한 아키텍처 스타일로, Roy Fielding이 2000년 박사학위 논문 `Architectural Styles and the Design of Network-based Software Architectures <https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm>`_에서 처음 설명했습니다. 다소 딱딱한 내용일 수 있으니 Martin Fowler의 `Richardson Maturity Model <https://martinfowler.com/articles/richardsonMaturityModel.html>`_을 함께 읽어보면 더 친절한 소개가 될 것입니다."
+msgstr "Representational State Transfer(REST)은 분산 애플리케이션을 위한 아키텍처 스타일로, Roy Fielding이 2000년 박사학위 논문 `Architectural Styles and the Design of Network-based Software Architectures <https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm>`_\ 에서 처음 설명했습니다. 다소 딱딱한 내용일 수 있으니 Martin Fowler의 `Richardson Maturity Model <https://martinfowler.com/articles/richardsonMaturityModel.html>`_\ 을 함께 읽어보면 더 친절한 소개가 될 것입니다."
 
 #: ../../source/incoming/restful.rst:18
 msgid ""
@@ -48,7 +48,7 @@ msgstr "REST는 다양한 방식으로 해석되거나 오해되어 왔습니다
 msgid ""
 "CodeIgniter makes it easy to create RESTful APIs for your resources, with"
 " its resource routes and `ResourceController`."
-msgstr "CodeIgniter는 리소스 라우트와 `ResourceController`를 통해 리소스용 RESTful API를 쉽게 만들 수 있도록 도와줍니다."
+msgstr "CodeIgniter는 리소스 라우트와 `ResourceController`\ 를 통해 리소스용 RESTful API를 쉽게 만들 수 있도록 도와줍니다."
 
 #: ../../source/incoming/restful.rst:28
 msgid "Resource Routes"
@@ -122,14 +122,14 @@ msgid ""
 "should be **an array** or **comma separated list** of method names that "
 "should be created. Only routes that match one of these methods will be "
 "created. The rest will be ignored:"
-msgstr "``only`` 옵션으로 생성되는 라우트를 제한할 수 있습니다. 이 옵션은 생성할 메서드 이름의 **배열** 또는 **쉼표로 구분된 목록**이어야 하며, 해당 메서드와 일치하는 라우트만 생성됩니다. 나머지는 무시됩니다:"
+msgstr "``only`` 옵션으로 생성되는 라우트를 제한할 수 있습니다. 이 옵션은 생성할 메서드 이름의 **\ 배열** 또는 **\ 쉼표로 구분된 목록**\ 이어야 하며, 해당 메서드와 일치하는 라우트만 생성됩니다. 나머지는 무시됩니다:"
 
 #: ../../source/incoming/restful.rst:77 ../../source/incoming/restful.rst:153
 msgid ""
 "Otherwise you can remove unused routes with the ``except`` option. This "
 "should also be **an array** or **comma separated list** of method names. "
 "This option run after ``only``:"
-msgstr "또는 ``except`` 옵션으로 사용하지 않는 라우트를 제거할 수 있습니다. 이 옵션 역시 메서드 이름의 **배열** 또는 **쉼표로 구분된 목록**이어야 하며, 이 옵션은 ``only`` 이후에 적용됩니다:"
+msgstr "또는 ``except`` 옵션으로 사용하지 않는 라우트를 제거할 수 있습니다. 이 옵션 역시 메서드 이름의 **\ 배열** 또는 **\ 쉼표로 구분된 목록**\ 이어야 하며, 이 옵션은 ``only`` 이후에 적용됩니다:"
 
 #: ../../source/incoming/restful.rst:81
 msgid ""
@@ -145,7 +145,7 @@ msgstr "ResourceController"
 msgid ""
 "The ``ResourceController`` provides a convenient starting point for your "
 "RESTful API, with methods that correspond to the resource routes above."
-msgstr "``ResourceController``는 위의 리소스 라우트에 대응하는 메서드를 제공하여 RESTful API를 시작하기 위한 편리한 기반을 제공합니다."
+msgstr "``ResourceController``\ 는 위의 리소스 라우트에 대응하는 메서드를 제공하여 RESTful API를 시작하기 위한 편리한 기반을 제공합니다."
 
 #: ../../source/incoming/restful.rst:90
 msgid ""
@@ -180,7 +180,7 @@ msgstr "프레젠테이션은 일반 컨트롤러로 처리할 수 있으므로 
 msgid ""
 "You would not have routes for `photos` for both a resource and a "
 "presenter controller. You need to distinguish them, for instance:"
-msgstr "동일한 `photos`에 대해 리소스와 프레젠터 컨트롤러 둘 다 라우트를 가지지 않도록 구분해야 합니다. 예를 들어 다음과 같이 구별할 수 있습니다:"
+msgstr "동일한 `photos`\ 에 대해 리소스와 프레젠터 컨트롤러 둘 다 라우트를 가지지 않도록 구분해야 합니다. 예를 들어 다음과 같이 구별할 수 있습니다:"
 
 #: ../../source/incoming/restful.rst:121
 msgid ""
@@ -203,7 +203,7 @@ msgid ""
 "The ``ResourcePresenter`` provides a convenient starting point for "
 "presenting views of your resource, and processing data from forms in "
 "those views, with methods that align to the resource routes above."
-msgstr "``ResourcePresenter``는 리소스의 뷰를 표시하고, 해당 뷰의 폼 데이터를 처리하기 위한 편리한 시작점을 제공하며, 위의 리소스 라우트와 일치하는 메서드를 제공합니다."
+msgstr "``ResourcePresenter``\ 는 리소스의 뷰를 표시하고, 해당 뷰의 폼 데이터를 처리하기 위한 편리한 시작점을 제공하며, 위의 리소스 라우트와 일치하는 메서드를 제공합니다."
 
 #: ../../source/incoming/restful.rst:167
 msgid ""
@@ -220,7 +220,7 @@ msgid ""
 "This table presents a comparison of the default routes created by "
 "`resource()` and `presenter()` with their corresponding Controller "
 "functions."
-msgstr "이 표는 ``resource()``와 ``presenter()``가 생성하는 기본 라우트와 해당 컨트롤러 함수들을 비교하여 보여줍니다."
+msgstr "이 표는 ``resource()``\ 와 ``presenter()``\ 가 생성하는 기본 라우트와 해당 컨트롤러 함수들을 비교하여 보여줍니다."
 
 #: ../../source/incoming/restful.rst:184
 msgid "Operation"
@@ -248,7 +248,7 @@ msgstr "프레젠터 함수"
 
 #: ../../source/incoming/restful.rst:186
 msgid "**New**"
-msgstr "**새로 만들기**"
+msgstr "**\ 새로 만들기**"
 
 #: ../../source/incoming/restful.rst:186 ../../source/incoming/restful.rst:189
 #: ../../source/incoming/restful.rst:190 ../../source/incoming/restful.rst:191
@@ -266,7 +266,7 @@ msgstr "``new()``"
 
 #: ../../source/incoming/restful.rst:187
 msgid "**Create**"
-msgstr "**생성**"
+msgstr "**\ 생성**"
 
 #: ../../source/incoming/restful.rst:187 ../../source/incoming/restful.rst:188
 #: ../../source/incoming/restful.rst:194 ../../source/incoming/restful.rst:197
@@ -291,7 +291,7 @@ msgstr "photos/create"
 
 #: ../../source/incoming/restful.rst:189
 msgid "**List**"
-msgstr "**목록**"
+msgstr "**\ 목록**"
 
 #: ../../source/incoming/restful.rst:189
 msgid "``index()``"
@@ -299,7 +299,7 @@ msgstr "``index()``"
 
 #: ../../source/incoming/restful.rst:190
 msgid "**Show**"
-msgstr "**보기**"
+msgstr "**\ 보기**"
 
 #: ../../source/incoming/restful.rst:190 ../../source/incoming/restful.rst:193
 #: ../../source/incoming/restful.rst:194 ../../source/incoming/restful.rst:196
@@ -320,7 +320,7 @@ msgstr "photos/show/(:segment)"
 
 #: ../../source/incoming/restful.rst:192
 msgid "**Edit**"
-msgstr "**편집**"
+msgstr "**\ 편집**"
 
 #: ../../source/incoming/restful.rst:192
 msgid "photos/(:segment)/edit"
@@ -336,7 +336,7 @@ msgstr "``edit($id = null)``"
 
 #: ../../source/incoming/restful.rst:193
 msgid "**Update**"
-msgstr "**업데이트**"
+msgstr "**\ 업데이트**"
 
 #: ../../source/incoming/restful.rst:193
 msgid "PUT/PATCH"
@@ -356,7 +356,7 @@ msgstr "photos/update/(:segment)"
 
 #: ../../source/incoming/restful.rst:195
 msgid "**Remove**"
-msgstr "**제거**"
+msgstr "**\ 제거**"
 
 #: ../../source/incoming/restful.rst:195
 msgid "photos/remove/(:segment)"
@@ -368,7 +368,7 @@ msgstr "``remove($id = null)``"
 
 #: ../../source/incoming/restful.rst:196
 msgid "**Delete**"
-msgstr "**삭제**"
+msgstr "**\ 삭제**"
 
 #: ../../source/incoming/restful.rst:196
 msgid "DELETE"

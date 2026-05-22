@@ -51,7 +51,7 @@ msgstr "``spark optimize`` 명령은 다음과 같은 최적화를 수행합니�
 
 #: ../../source/installation/deployment.rst:27
 msgid "`Removing Dev Packages`_"
-msgstr "`개발 패키지 제거 <Removing Dev Packages_>`_"
+msgstr "`\ 개발 패키지 제거 <Removing Dev Packages_>`_"
 
 #: ../../source/installation/deployment.rst:28
 msgid "Enabling `Config Caching`_"
@@ -169,8 +169,8 @@ msgid ""
 "`preload script "
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/preload.php>`_."
 msgstr ""
-"`프리로딩 <https://www.php.net/manual/en/opcache.preloading.php>`_\\ 을 사용하려면 "
-"`프리로드 스크립트 <https://github.com/codeigniter4/CodeIgniter4/blob/develop/preload.php>`_\\ 를 "
+"`\ 프리로딩 <https://www.php.net/manual/en/opcache.preloading.php>`_\\ 을 사용하려면 "
+"`\ 프리로드 스크립트 <https://github.com/codeigniter4/CodeIgniter4/blob/develop/preload.php>`_\\ 를 "
 "제공합니다."
 
 #: ../../source/installation/deployment.rst:89
@@ -286,7 +286,7 @@ msgid ""
 "default document root) and the other files to the directory for the "
 "application::"
 msgstr ""
-"**public** 폴더의 내용을 **public_html**(기본 문서 루트)에 업로드하고 나머지 파일은 애플리케이션 디렉터리에 "
+"**public** 폴더의 내용을 **public_html**\ (기본 문서 루트)에 업로드하고 나머지 파일은 애플리케이션 디렉터리에 "
 "업로드하세요::"
 
 #: ../../source/installation/deployment.rst:152
@@ -294,7 +294,7 @@ msgid ""
 "See `Install CodeIgniter 4 on Shared Hosting (cPanel) "
 "<https://forum.codeigniter.com/showthread.php?tid=76779>`_ for details."
 msgstr ""
-"자세한 내용은 `공유 호스팅(cPanel)에 CodeIgniter 4 설치 "
+"자세한 내용은 `\ 공유 호스팅(cPanel)에 CodeIgniter 4 설치 "
 "<https://forum.codeigniter.com/showthread.php?tid=76779>`_\\ 를 참조하세요."
 
 #: ../../source/installation/deployment.rst:157

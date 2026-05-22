@@ -49,11 +49,11 @@ msgstr "라이브러리 및 헬퍼"
 
 #: ../../source/index.rst:94
 msgid "Advanced Topics"
-msgstr ""
+msgstr "고급 주제"
 
 #: ../../source/index.rst:119
 msgid "Official Packages"
-msgstr ""
+msgstr "공식 패키지"
 
 #~ msgid "Testing & Debugging"
 #~ msgstr "테스트 및 디버깅"

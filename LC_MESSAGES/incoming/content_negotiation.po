@@ -68,25 +68,25 @@ msgstr "이러한 협상은 다음 네 가지 데이터 유형에 대해 발생�
 msgid ""
 "**Media/Document Type** - this could be image format, or HTML vs. XML or "
 "JSON."
-msgstr "**미디어/문서 유형** - 이미지 형식이 될 수 있으며, HTML, XML 또는 JSON과 같은 형식 간의 차이를 의미합니다."
+msgstr "**\ 미디어/문서 유형** - 이미지 형식이 될 수 있으며, HTML, XML 또는 JSON과 같은 형식 간의 차이를 의미합니다."
 
 #: ../../source/incoming/content_negotiation.rst:33
 msgid ""
 "**Character Set** - The character set the returned document should be set"
 " in. Typically is UTF-8."
-msgstr "**문자 인코딩** - 반환되는 문서에 설정해야 하는 문자 인코딩입니다. 일반적으로 UTF-8을 사용합니다."
+msgstr "**\ 문자 인코딩** - 반환되는 문서에 설정해야 하는 문자 인코딩입니다. 일반적으로 UTF-8을 사용합니다."
 
 #: ../../source/incoming/content_negotiation.rst:34
 msgid ""
 "**Document Encoding** - Typically the type of compression used on the "
 "results."
-msgstr "**문서 인코딩** - 일반적으로 결과물에 사용되는 압축 유형을 의미합니다."
+msgstr "**\ 문서 인코딩** - 일반적으로 결과물에 사용되는 압축 유형을 의미합니다."
 
 #: ../../source/incoming/content_negotiation.rst:35
 msgid ""
 "**Document Language** - For sites that support multiple languages, this "
 "helps determine which to return."
-msgstr "**문서 언어** - 다국어를 지원하는 사이트의 경우 어떤 언어를 반환할지 결정하는 데 도움이 됩니다."
+msgstr "**\ 문서 언어** - 다국어를 지원하는 사이트의 경우 어떤 언어를 반환할지 결정하는 데 도움이 됩니다."
 
 #: ../../source/incoming/content_negotiation.rst:39
 msgid "Loading the Class"
@@ -153,7 +153,7 @@ msgid ""
 "would be returned. In some cases, though, you might need to enforce the "
 "format to be a strict match. If you pass ``true`` as the final value, it "
 "will return an empty string if no match is found:"
-msgstr "이 경우 클라이언트와 서버가 데이터 형식을 JSON으로 합의할 수 있으므로 negotiate 메서드에서 'json'이 반환됩니다. 기본적으로 일치하는 항목이 없으면 ``$supported``\배열의 첫 번째 요소가 반환됩니다. 그러나 경우에 따라 형식을 엄격하게 일치시키도록 강제할 필요가 있습니다. 마지막 값으로 ``true``를 전달하면 일치 항목이 없을 때 빈 문자열을 반환합니다:"
+msgstr "이 경우 클라이언트와 서버가 데이터 형식을 JSON으로 합의할 수 있으므로 negotiate 메서드에서 'json'이 반환됩니다. 기본적으로 일치하는 항목이 없으면 ``$supported``\배열의 첫 번째 요소가 반환됩니다. 그러나 경우에 따라 형식을 엄격하게 일치시키도록 강제할 필요가 있습니다. 마지막 값으로 ``true``\ 를 전달하면 일치 항목이 없을 때 빈 문자열을 반환합니다:"
 
 #: ../../source/incoming/content_negotiation.rst:87
 msgid "Language"
@@ -193,7 +193,7 @@ msgid ""
 "is usually sufficient. But sometimes we want to be able to distinguish "
 "between regional versions such as ``en-US`` and ``en-GB`` to serve "
 "different content."
-msgstr "기본적으로 로케일은 손실 비교 방식으로 결정됩니다. 따라서 로케일 문자열의 첫 부분(언어)만 고려됩니다. 이는 일반적으로 충분하지만, 경우에 따라 ``en-US``와 ``en-GB``와 같은 지역 버전을 구분하여 다른 콘텐츠를 제공해야 할 때가 있습니다."
+msgstr "기본적으로 로케일은 손실 비교 방식으로 결정됩니다. 따라서 로케일 문자열의 첫 부분(언어)만 고려됩니다. 이는 일반적으로 충분하지만, 경우에 따라 ``en-US``\ 와 ``en-GB``\ 와 같은 지역 버전을 구분하여 다른 콘텐츠를 제공해야 할 때가 있습니다."
 #: ../../source/incoming/content_negotiation.rst:114
 msgid ""
 "For such cases, we have introduced a new setting that can be enabled via "
