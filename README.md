@@ -19,17 +19,23 @@ CodeIgniter 4 사용자 가이드 한국어 번역 저장소입니다.
 
 ```bash
 git clone https://github.com/hoksi/CodeIgniter4.git
-cd CodeIgniter4/user_guide_src
+cd CodeIgniter4
 
 # ko 서브모듈 초기화 및 체크아웃
-git submodule update --init source/locale/ko
+git submodule update --init user_guide_src/source/locale/ko
 ```
 
-이미 클론된 상태라면 서브모듈만 업데이트합니다.
+이미 클론된 상태라면 서브모듈만 최신으로 업데이트합니다.
 
 ```bash
-cd CodeIgniter4/user_guide_src
-git submodule update --remote source/locale/ko
+cd CodeIgniter4
+git submodule update --remote user_guide_src/source/locale/ko
+```
+
+이후 빌드 명령은 모두 `CodeIgniter4/user_guide_src` 폴더에서 실행합니다.
+
+```bash
+cd user_guide_src
 ```
 
 ---
