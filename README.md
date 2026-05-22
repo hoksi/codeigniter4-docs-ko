@@ -114,6 +114,81 @@ user_guide_src/
 
 ---
 
+## PO 파일 업데이트 방법
+
+원본 RST 문서가 변경되면 POT 파일을 재생성한 뒤 PO 파일에 새 항목을 반영해야 합니다.
+
+### 1. sphinx-intl 설치
+
+`sphinx-intl`은 기본 `requirements.txt`에 포함되어 있지 않으므로 별도로 설치합니다.
+
+```bash
+pip install sphinx-intl
+```
+
+---
+
+### 2. POT 파일 생성
+
+`user_guide_src` 폴더에서 gettext 빌더로 POT 파일을 생성합니다.
+
+```bash
+.venv/bin/sphinx-build -b gettext source build/gettext
+```
+
+실행 결과 `build/gettext/` 폴더에 `.pot` 파일이 생성됩니다.
+
+---
+
+### 3. PO 파일 업데이트
+
+`sphinx-intl update` 명령으로 기존 PO 파일에 새 항목을 추가합니다.
+
+```bash
+.venv/bin/sphinx-intl update -p build/gettext -l ko -d source/locale
+```
+
+- 기존 번역 항목은 유지됩니다.
+- 원본에서 추가된 항목은 `msgstr ""`로 추가됩니다.
+- 원본에서 삭제된 항목은 `#~ msgid` 형식으로 주석 처리됩니다.
+
+---
+
+### 4. 신규/변경 항목 번역
+
+업데이트된 PO 파일에서 `msgstr ""`인 항목을 찾아 번역합니다.
+
+```bash
+# 미번역 항목 확인 (msgstr이 비어 있는 항목)
+grep -rn 'msgstr ""' source/locale/ko/LC_MESSAGES/ | grep -v "^Binary"
+```
+
+번역 완료 후 빌드로 검증합니다.
+
+```bash
+.venv/bin/sphinx-build -b html -D language='ko' source build/html
+```
+
+---
+
+### 전체 워크플로우 요약
+
+```
+RST 문서 변경
+    ↓
+sphinx-build -b gettext   → build/gettext/*.pot 생성
+    ↓
+sphinx-intl update        → LC_MESSAGES/**/*.po 업데이트 (신규 항목 추가)
+    ↓
+PO 파일 편집              → 신규 msgstr 번역
+    ↓
+sphinx-build -b html      → build/html/ 에 한국어 HTML 생성
+    ↓
+git commit & push         → ko 서브모듈에 커밋
+```
+
+---
+
 ## 번역 파일 수정 후 빌드
 
 PO 파일(`LC_MESSAGES/**/*.po`)을 수정한 뒤 빌드를 실행하면 변경 사항이 반영됩니다.
