@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
@@ -88,8 +87,8 @@ msgid ""
 "Since v4.3.0, you can write tests for these methods with "
 "``PhpStreamWrapper``. See :ref:`testing-cli-input`."
 msgstr ""
-"v4.3.0부터는 ``PhpStreamWrapper``\로 이 메서드들을 테스트할 수 있습니다. :ref:`testing-cli-"
-"input`\을 참고하세요."
+"v4.3.0부터는 ``PhpStreamWrapper``\\ 로 이 메서드들을 테스트할 수 있습니다. :ref:`testing-cli-"
+"input`\\ 을 참고하세요."
 
 #: ../../source/cli/cli_library.rst:38
 msgid "prompt()"
@@ -133,7 +132,7 @@ msgid ""
 " to select an option by its key instead of its value:"
 msgstr ""
 "prompt의 미리 정의된 답변(옵션)은 설명이 필요하거나 값으로 선택하기에는 너무 복잡할 수 있습니다. "
-"``promptByKey()``\\는 사용자가 값 대신 키로 옵션을 선택할 수 있게 해 줍니다:"
+"``promptByKey()``\\ 는 사용자가 값 대신 키로 옵션을 선택할 수 있게 해 줍니다:"
 
 #: ../../source/cli/cli_library.rst:69
 msgid "Named keys are also possible:"
@@ -163,7 +162,7 @@ msgid ""
 "The method ``promptByMultipleKeys()``, unlike ``promptByKey()``, does not "
 "support named keys or validation."
 msgstr ""
-"``promptByMultipleKeys()`` 메서드는 ``promptByKey()``\와 달리 이름이 있는 키나 검증을 지원하지 "
+"``promptByMultipleKeys()`` 메서드는 ``promptByKey()``\\ 와 달리 이름이 있는 키나 검증을 지원하지 "
 "않습니다."
 
 #: ../../source/cli/cli_library.rst:89
@@ -335,8 +334,8 @@ msgid ""
 "information, only the actual error messages. You use it exactly as you would"
 " the ``write()`` method:"
 msgstr ""
-"오류를 출력해야 한다면 그에 맞는 이름의 ``error()`` 메서드를 사용해야 합니다. 이 메서드는 ``write()``\와 "
-"``color()``\처럼 STDOUT이 아니라 STDERR에 연한 빨간색 텍스트를 출력합니다. 오류를 감시하는 스크립트가 전체 정보 대신"
+"오류를 출력해야 한다면 그에 맞는 이름의 ``error()`` 메서드를 사용해야 합니다. 이 메서드는 ``write()``\\ 와 "
+"``color()``\\ 처럼 STDOUT이 아니라 STDERR에 연한 빨간색 텍스트를 출력합니다. 오류를 감시하는 스크립트가 전체 정보 대신"
 " 실제 오류 메시지만 걸러 보게 하고 싶을 때 유용합니다. 사용법은 ``write()`` 메서드와 동일합니다:"
 
 #: ../../source/cli/cli_library.rst:176
@@ -432,7 +431,7 @@ msgid ""
 "pass ``false`` as the first parameter and the progress bar will be removed."
 msgstr ""
 "사용하려면 현재 단계를 첫 번째 매개변수로, 전체 단계 수를 두 번째 매개변수로 전달하세요. 완료율과 표시 길이는 그 숫자를 기준으로 "
-"결정됩니다. 작업이 끝나면 첫 번째 매개변수로 ``false``\를 전달하면 진행 표시줄이 제거됩니다."
+"결정됩니다. 작업이 끝나면 첫 번째 매개변수로 ``false``\\ 를 전달하면 진행 표시줄이 제거됩니다."
 
 #: ../../source/cli/cli_library.rst:244
 msgid "table()"
