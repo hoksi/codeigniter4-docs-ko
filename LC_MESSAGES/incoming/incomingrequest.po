@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/incoming/incomingrequest.rst:3
 msgid "IncomingRequest Class"
-msgstr "IncomingRequest 클래스"}
+msgstr "IncomingRequest 클래스"
 
 #: ../../source/incoming/incomingrequest.rst:5
 msgid ""
@@ -34,39 +34,39 @@ msgstr "IncomingRequest 클래스는 브라우저 같은 클라이언트로부�
 
 #: ../../source/incoming/incomingrequest.rst:14
 msgid "Accessing the Request"
-msgstr "요청 접근하기"}
+msgstr "요청 접근하기"
 
 #: ../../source/incoming/incomingrequest.rst:16
 msgid ""
 "An instance of the request class already populated for you if the current"
 " class is a descendant of ``CodeIgniter\\Controller`` and can be accessed"
 " as a class property:"
-msgstr "현재 클래스가 ``CodeIgniter\\Controller``\ 의 자손인 경우 요청 클래스의 인스턴스가 이미 채워져 있으며 클래스 속성으로 접근할 수 있습니다:"}
+msgstr "현재 클래스가 ``CodeIgniter\\Controller``\ 의 자손인 경우 요청 클래스의 인스턴스가 이미 채워져 있으며 클래스 속성으로 접근할 수 있습니다:"
 
 #: ../../source/incoming/incomingrequest.rst:21
 msgid ""
 "If you are not within a controller, but still need access to the "
 "application's Request object, you can get a copy of it through the "
 ":doc:`Services class </concepts/services>`:"
-msgstr "컨트롤러 내부가 아니더라도 애플리케이션의 Request 객체에 접근해야 하면 :doc:`Services class </concepts/services>`\\를 통해 그 복사본을 가져올 수 있습니다:"}
+msgstr "컨트롤러 내부가 아니더라도 애플리케이션의 Request 객체에 접근해야 하면 :doc:`Services class </concepts/services>`\\를 통해 그 복사본을 가져올 수 있습니다:"
 
 #: ../../source/incoming/incomingrequest.rst:26
 msgid ""
 "It's preferable, though, to pass the request in as a dependency if the "
 "class is anything other than the controller, where you can save it as a "
 "class property:"
-msgstr "다만, 컨트롤러가 아닌 클래스에서는 요청을 의존성으로 주입해 클래스 속성으로 저장하는 것이 바람직합니다:"}
+msgstr "다만, 컨트롤러가 아닌 클래스에서는 요청을 의존성으로 주입해 클래스 속성으로 저장하는 것이 바람직합니다:"
 
 #: ../../source/incoming/incomingrequest.rst:32
 msgid "Determining Request Type"
-msgstr "요청 유형 확인"}
+msgstr "요청 유형 확인"
 
 #: ../../source/incoming/incomingrequest.rst:34
 msgid ""
 "A request could be of several types, including an AJAX request or a "
 "request from the command line. This can be checked with the ``isAJAX()`` "
 "and ``isCLI()`` methods:"
-msgstr "요청은 AJAX 요청이나 커맨드 라인에서의 요청 등 여러 유형일 수 있습니다. 이는 ``isAJAX()`` 및 ``isCLI()`` 메서드로 확인할 수 있습니다:"}
+msgstr "요청은 AJAX 요청이나 커맨드 라인에서의 요청 등 여러 유형일 수 있습니다. 이는 ``isAJAX()`` 및 ``isCLI()`` 메서드로 확인할 수 있습니다:"
 
 #: ../../source/incoming/incomingrequest.rst:39
 msgid ""
@@ -74,7 +74,7 @@ msgid ""
 " in some cases is not sent by default in XHR requests via JavaScript "
 "(i.e., fetch). See the :doc:`AJAX Requests </general/ajax>` section on "
 "how to avoid this problem."
-msgstr "``isAJAX()`` 메서드는 ``X-Requested-With`` 헤더에 의존하는데, 경우에 따라 JavaScript의 XHR 요청(예: fetch)에서는 기본적으로 전송되지 않습니다. 이 문제를 피하는 방법은 :doc:`AJAX Requests </general/ajax>` 섹션을 참조하세요."}
+msgstr "``isAJAX()`` 메서드는 ``X-Requested-With`` 헤더에 의존하는데, 경우에 따라 JavaScript의 XHR 요청(예: fetch)에서는 기본적으로 전송되지 않습니다. 이 문제를 피하는 방법은 :doc:`AJAX Requests </general/ajax>` 섹션을 참조하세요."
 
 #: ../../source/incoming/incomingrequest.rst:46
 msgid "is()"
@@ -90,43 +90,43 @@ msgstr "v4.3.0부터는 ``is()`` 메서드를 사용할 수 있습니다. 이 �
 msgid ""
 "HTTP method should be case-sensitive, but the parameter is case-"
 "insensitive."
-msgstr "HTTP 메서드는 대소문자를 구분해야 하지만, 파라미터는 대소문자를 구분하지 않습니다."}
+msgstr "HTTP 메서드는 대소문자를 구분해야 하지만, 파라미터는 대소문자를 구분하지 않습니다."
 
 #: ../../source/incoming/incomingrequest.rst:58
 msgid "getMethod()"
-msgstr "getMethod()"}
+msgstr "getMethod()"
 
 #: ../../source/incoming/incomingrequest.rst:60
 msgid ""
 "You can check the HTTP method that this request represents with the "
 "``getMethod()`` method:"
-msgstr "이 요청이 나타내는 HTTP 메서드는 ``getMethod()`` 메서드로 확인할 수 있습니다:"}
+msgstr "이 요청이 나타내는 HTTP 메서드는 ``getMethod()`` 메서드로 확인할 수 있습니다:"
 
 #: ../../source/incoming/incomingrequest.rst:64
 msgid ""
 "The HTTP method is case-sensitive, and by convention, standardized "
 "methods are defined in all-uppercase US-ASCII letters."
-msgstr "HTTP 메서드는 대소문자를 구분하며, 관례상 표준화된 메서드는 모두 대문자 US-ASCII 문자로 정의됩니다."}
+msgstr "HTTP 메서드는 대소문자를 구분하며, 관례상 표준화된 메서드는 모두 대문자 US-ASCII 문자로 정의됩니다."
 
 #: ../../source/incoming/incomingrequest.rst:67
 msgid ""
 "Prior to v4.5.0, by default, the method was returned as a lowercase "
 "string (i.e., ``'get'``, ``'post'``, etc). But it was a bug."
-msgstr "v4.5.0 이전에는 기본적으로 메서드가 소문자 문자열(예: ``'get'``, ``'post'`` 등)로 반환되었으나, 이는 버그였습니다."}
+msgstr "v4.5.0 이전에는 기본적으로 메서드가 소문자 문자열(예: ``'get'``, ``'post'`` 등)로 반환되었으나, 이는 버그였습니다."
 
 #: ../../source/incoming/incomingrequest.rst:70
 msgid "You can get a lowercase version by wrapping the call in ``strtolower()``::"
-msgstr "``strtolower()``\ 로 감싸면 소문자 버전을 얻을 수 있습니다::"}
+msgstr "``strtolower()``\ 로 감싸면 소문자 버전을 얻을 수 있습니다::"
 
 #: ../../source/incoming/incomingrequest.rst:75
 msgid ""
 "You can also check if the request was made through and HTTPS connection "
 "with the ``isSecure()`` method:"
-msgstr "요청이 HTTPS 연결을 통해 이루어졌는지 여부는 ``isSecure()`` 메서드로 확인할 수 있습니다:"}
+msgstr "요청이 HTTPS 연결을 통해 이루어졌는지 여부는 ``isSecure()`` 메서드로 확인할 수 있습니다:"
 
 #: ../../source/incoming/incomingrequest.rst:80
 msgid "Retrieving Input"
-msgstr "입력 데이터 가져오기"}
+msgstr "입력 데이터 가져오기"
 
 #: ../../source/incoming/incomingrequest.rst:82
 msgid ""
@@ -134,14 +134,14 @@ msgid ""
 "``$_SERVER`` and ``$_ENV`` through the Request object. The data is not "
 "automatically filtered and returns the raw input data as passed in the "
 "request."
-msgstr "Request 객체를 통해 ``$_GET``, ``$_POST``, ``$_COOKIE``, ``$_SERVER``, ``$_ENV``\ 에서 입력을 가져올 수 있습니다. 이 데이터는 자동으로 필터링되지 않으며 요청으로 전달된 원시 입력 데이터가 반환됩니다."}
+msgstr "Request 객체를 통해 ``$_GET``, ``$_POST``, ``$_COOKIE``, ``$_SERVER``, ``$_ENV``\ 에서 입력을 가져올 수 있습니다. 이 데이터는 자동으로 필터링되지 않으며 요청으로 전달된 원시 입력 데이터가 반환됩니다."
 
 #: ../../source/incoming/incomingrequest.rst:86
 msgid ""
 "It is bad practice to use global variables. Basically, it should be "
 "avoided and it is recommended to use methods of the Request object."
 msgstr "IncomingRequest Class\"
-msgstr \"IncomingRequest 클래스\"}
+msgstr \"IncomingRequest 클래스\"
 
 #: ../../source/incoming/incomingrequest.rst:5
 msgid \"\"The IncomingRequest class provides an object-oriented representation of \"an HTTP request from a client, like a browser. It extends from, and has \"access to all the methods of the :doc:`Request </incoming/request>` and \":doc:`Message </incoming/message>` classes, in addition to the methods \"listed below.\"
@@ -149,31 +149,31 @@ msgstr \"IncomingRequest 클래스는 브라우저 같은 클라이언트로부�
 
 #: ../../source/incoming/incomingrequest.rst:14
 msgid \"Accessing the Request\"
-msgstr \"요청 접근하기\"}
+msgstr \"요청 접근하기\"
 
 #: ../../source/incoming/incomingrequest.rst:16
 msgid \"\"An instance of the request class already populated for you if the current\" class is a descendant of ``CodeIgniter\\Controller`` and can be accessed\" as a class property:\"
-msgstr \"현재 클래스가 ``CodeIgniter\\Controller``\ 의 자손인 경우 요청 클래스의 인스턴스가 이미 채워져 있으며 클래스 속성으로 접근할 수 있습니다:\"}
+msgstr \"현재 클래스가 ``CodeIgniter\\Controller``\ 의 자손인 경우 요청 클래스의 인스턴스가 이미 채워져 있으며 클래스 속성으로 접근할 수 있습니다:\"
 
 #: ../../source/incoming/incomingrequest.rst:21
 msgid \"\"If you are not within a controller, but still need access to the \"application's Request object, you can get a copy of it through the \":doc:`Services class </concepts/services>`:\"
-msgstr \"컨트롤러 내부가 아니더라도 애플리케이션의 Request 객체에 접근해야 하면 :doc:`Services class </concepts/services>`\\를 통해 그 복사본을 가져올 수 있습니다:\"}
+msgstr \"컨트롤러 내부가 아니더라도 애플리케이션의 Request 객체에 접근해야 하면 :doc:`Services class </concepts/services>`\\를 통해 그 복사본을 가져올 수 있습니다:\"
 
 #: ../../source/incoming/incomingrequest.rst:26
 msgid \"\"It's preferable, though, to pass the request in as a dependency if the \"class is anything other than the controller, where you can save it as a \"class property:\"
-msgstr \"다만, 컨트롤러가 아닌 클래스에서는 요청을 의존성으로 주입해 클래스 속성으로 저장하는 것이 바람직합니다:\"}
+msgstr \"다만, 컨트롤러가 아닌 클래스에서는 요청을 의존성으로 주입해 클래스 속성으로 저장하는 것이 바람직합니다:\"
 
 #: ../../source/incoming/incomingrequest.rst:32
 msgid \"Determining Request Type\"
-msgstr \"요청 유형 확인\"}
+msgstr \"요청 유형 확인\"
 
 #: ../../source/incoming/incomingrequest.rst:34
 msgid \"\"A request could be of several types, including an AJAX request or a \"request from the command line. This can be checked with the ``isAJAX()`` \"and ``isCLI()`` methods:\"
-msgstr \"요청은 AJAX 요청이나 커맨드 라인에서의 요청 등 여러 유형일 수 있습니다. 이는 ``isAJAX()`` 및 ``isCLI()`` 메서드로 확인할 수 있습니다:\"}
+msgstr \"요청은 AJAX 요청이나 커맨드 라인에서의 요청 등 여러 유형일 수 있습니다. 이는 ``isAJAX()`` 및 ``isCLI()`` 메서드로 확인할 수 있습니다:\"
 
 #: ../../source/incoming/incomingrequest.rst:39
 msgid \"\"The ``isAJAX()`` method depends on the ``X-Requested-With`` header, which\" in some cases is not sent by default in XHR requests via JavaScript \"(i.e., fetch). See the :doc:`AJAX Requests </general/ajax>` section on \"how to avoid this problem.\"
-msgstr \"``isAJAX()`` 메서드는 ``X-Requested-With`` 헤더에 의존하는데, 경우에 따라 JavaScript의 XHR 요청(예: fetch)에서는 기본적으로 전송되지 않습니다. 이 문제를 피하는 방법은 :doc:`AJAX Requests </general/ajax>` 섹션을 참조하세요.\"}
+msgstr \"``isAJAX()`` 메서드는 ``X-Requested-With`` 헤더에 의존하는데, 경우에 따라 JavaScript의 XHR 요청(예: fetch)에서는 기본적으로 전송되지 않습니다. 이 문제를 피하는 방법은 :doc:`AJAX Requests </general/ajax>` 섹션을 참조하세요.\"
 
 #: ../../source/incoming/incomingrequest.rst:46
 msgid \"is()\"
@@ -185,39 +185,39 @@ msgstr \"v4.3.0부터는 ``is()`` 메서드를 사용할 수 있습니다. 이 �
 
 #: ../../source/incoming/incomingrequest.rst:53
 msgid \"\"HTTP method should be case-sensitive, but the parameter is case-\"insensitive.\"
-msgstr \"HTTP 메서드는 대소문자를 구분해야 하지만, 파라미터는 대소문자를 구분하지 않습니다.\"}
+msgstr \"HTTP 메서드는 대소문자를 구분해야 하지만, 파라미터는 대소문자를 구분하지 않습니다.\"
 
 #: ../../source/incoming/incomingrequest.rst:58
 msgid \"getMethod()\"
-msgstr \"getMethod()\"}
+msgstr \"getMethod()\"
 
 #: ../../source/incoming/incomingrequest.rst:60
 msgid \"\"You can check the HTTP method that this request represents with the \"``getMethod()`` method:\"
-msgstr \"이 요청이 나타내는 HTTP 메서드는 ``getMethod()`` 메서드로 확인할 수 있습니다:\"}
+msgstr \"이 요청이 나타내는 HTTP 메서드는 ``getMethod()`` 메서드로 확인할 수 있습니다:\"
 
 #: ../../source/incoming/incomingrequest.rst:64
 msgid \"\"The HTTP method is case-sensitive, and by convention, standardized \"methods are defined in all-uppercase US-ASCII letters.\"
-msgstr \"HTTP 메서드는 대소문자를 구분하며, 관례상 표준화된 메서드는 모두 대문자 US-ASCII 문자로 정의됩니다.\"}
+msgstr \"HTTP 메서드는 대소문자를 구분하며, 관례상 표준화된 메서드는 모두 대문자 US-ASCII 문자로 정의됩니다.\"
 
 #: ../../source/incoming/incomingrequest.rst:67
 msgid \"\"Prior to v4.5.0, by default, the method was returned as a lowercase \"string (i.e., ``'get'``, ``'post'``, etc). But it was a bug.\"
-msgstr \"v4.5.0 이전에는 기본적으로 메서드가 소문자 문자열(예: ``'get'``, ``'post'`` 등)로 반환되었으나, 이는 버그였습니다.\"}
+msgstr \"v4.5.0 이전에는 기본적으로 메서드가 소문자 문자열(예: ``'get'``, ``'post'`` 등)로 반환되었으나, 이는 버그였습니다.\"
 
 #: ../../source/incoming/incomingrequest.rst:70
 msgid \"You can get a lowercase version by wrapping the call in ``strtolower()``::\"
-msgstr \"``strtolower()``\ 로 감싸면 소문자 버전을 얻을 수 있습니다::\"}
+msgstr \"``strtolower()``\ 로 감싸면 소문자 버전을 얻을 수 있습니다::\"
 
 #: ../../source/incoming/incomingrequest.rst:75
 msgid \"\"You can also check if the request was made through and HTTPS connection \"with the ``isSecure()`` method:\"
-msgstr \"요청이 HTTPS 연결을 통해 이루어졌는지 여부는 ``isSecure()`` 메서드로 확인할 수 있습니다:\"}
+msgstr \"요청이 HTTPS 연결을 통해 이루어졌는지 여부는 ``isSecure()`` 메서드로 확인할 수 있습니다:\"
 
 #: ../../source/incoming/incomingrequest.rst:80
 msgid \"Retrieving Input\"
-msgstr \"입력 데이터 가져오기\"}
+msgstr \"입력 데이터 가져오기\"
 
 #: ../../source/incoming/incomingrequest.rst:82
 msgid \"\"You can retrieve input from ``$_GET``, ``$_POST``, ``$_COOKIE``, \"``$_SERVER`` and ``$_ENV`` through the Request object. The data is not \"automatically filtered and returns the raw input data as passed in the \"request.\"
-msgstr \"Request 객체를 통해 ``$_GET``, ``$_POST``, ``$_COOKIE``, ``$_SERVER``, ``$_ENV``\ 에서 입력을 가져올 수 있습니다. 이 데이터는 자동으로 필터링되지 않으며 요청으로 전달된 원시 입력 데이터가 반환됩니다.\"}
+msgstr \"Request 객체를 통해 ``$_GET``, ``$_POST``, ``$_COOKIE``, ``$_SERVER``, ``$_ENV``\ 에서 입력을 가져올 수 있습니다. 이 데이터는 자동으로 필터링되지 않으며 요청으로 전달된 원시 입력 데이터가 반환됩니다.\"
 
 #: ../../source/incoming/incomingrequest.rst:86
 msgid \"\"It is bad practice to use global variables. Basically, it should be \"avoided and it is recommended to use methods of the Request object."
