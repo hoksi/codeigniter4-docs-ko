@@ -252,13 +252,13 @@ msgstr ""
 
 #: ../../source/installation/deployment.rst:122
 msgid "Specifying the Document Root"
-msgstr "문서 루트 지정"
+msgstr "웹 루트 지정"
 
 #: ../../source/installation/deployment.rst:124
 msgid ""
 "The best way is to set the document root to the **public** folder in the "
 "server configuration::"
-msgstr "가장 좋은 방법은 서버 설정에서 문서 루트를 **public** 폴더로 설정하는 것입니다::"
+msgstr "가장 좋은 방법은 서버 설정에서 웹 루트를 **public** 폴더로 설정하는 것입니다::"
 
 #: ../../source/installation/deployment.rst:130
 msgid ""
@@ -266,7 +266,7 @@ msgid ""
 "document root. Unfortunately, if you cannot change the document root, go "
 "to the next way."
 msgstr ""
-"호스팅 서비스 제공업체에 문서 루트를 변경할 수 있는지 확인하세요. 아쉽게도 문서 루트를 변경할 수 없는 경우 다음 방법으로 "
+"호스팅 서비스 제공업체에 웹 루트를 변경할 수 있는지 확인하세요. 아쉽게도 웹 루트를 변경할 수 없는 경우 다음 방법으로 "
 "진행하세요."
 
 #: ../../source/installation/deployment.rst:134
@@ -278,7 +278,7 @@ msgid ""
 "The second way is to use two directories, and adjust the path. One is for"
 " the application and the other is the default document root."
 msgstr ""
-"두 번째 방법은 두 개의 디렉터리를 사용하고 경로를 조정하는 것입니다. 하나는 애플리케이션용이고 다른 하나는 기본 문서 루트용입니다."
+"두 번째 방법은 두 개의 디렉터리를 사용하고 경로를 조정하는 것입니다. 하나는 애플리케이션용이고 다른 하나는 기본 웹 루트용입니다."
 
 #: ../../source/installation/deployment.rst:139
 msgid ""
@@ -286,7 +286,7 @@ msgid ""
 "default document root) and the other files to the directory for the "
 "application::"
 msgstr ""
-"**public** 폴더의 내용을 **public_html** (기본 문서 루트)에 업로드하고 나머지 파일은 애플리케이션 디렉터리에 "
+"**public** 폴더의 내용을 **public_html** (기본 웹 루트)에 업로드하고 나머지 파일은 애플리케이션 디렉터리에 "
 "업로드하세요::"
 
 #: ../../source/installation/deployment.rst:152
@@ -310,14 +310,14 @@ msgid ""
 "It is not recommended that you place the project folder in the document "
 "root. However, if you have no other choice, you can use this."
 msgstr ""
-"프로젝트 폴더를 문서 루트에 두는 것은 권장되지 않습니다. 하지만 다른 선택지가 없다면 이 방법을 사용할 수 있습니다."
+"프로젝트 폴더를 웹 루트에 두는 것은 권장되지 않습니다. 하지만 다른 선택지가 없다면 이 방법을 사용할 수 있습니다."
 
 #: ../../source/installation/deployment.rst:164
 msgid ""
 "Place your project folder as follows, where **public_html** is the "
 "document root, and create the **.htaccess** file::"
 msgstr ""
-"**public_html**\\ 이 문서 루트인 상황에서 프로젝트 폴더를 다음과 같이 배치하고 **.htaccess** 파일을 "
+"**public_html**\\ 이 웹 루트인 상황에서 프로젝트 폴더를 다음과 같이 배치하고 **.htaccess** 파일을 "
 "생성하세요::"
 
 #: ../../source/installation/deployment.rst:172
