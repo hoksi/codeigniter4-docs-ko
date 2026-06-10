@@ -1,0 +1,3414 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-10 16:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ko <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/testing/benchmark.rst:3
+msgid "Benchmarking"
+msgstr "벤치마킹"
+
+#: ../../source/testing/benchmark.rst:5
+msgid ""
+"CodeIgniter provides two separate tools to help you benchmark your code and "
+"test different options: the **Timer** and the **Iterator**. The Timer allows"
+" you to easily calculate the time between two points in the execution of "
+"your script. The Iterator allows you to set up several variations and runs "
+"those tests, recording performance and memory statistics to help you decide "
+"which version is the best."
+msgstr ""
+"CodeIgniter는 코드를 벤치마크하고 다양한 옵션을 테스트하는 데 도움이 되는 두 가지 별도의 도구를 제공합니다: "
+"**Timer**\\ 와 **Iterator**\\ 입니다. 타이머(Timer)는 스크립트 실행 중 두 지점 사이의 시간을 쉽게 계산할 "
+"수 있게 해 줍니다. 이터레이터(Iterator)는 여러 변형을 설정하고 해당 테스트를 실행하여 성능 및 메모리 통계를 기록함으로써 어떤"
+" 버전이 가장 좋은지 결정하는 데 도움을 줍니다."
+
+#: ../../source/testing/benchmark.rst:10
+msgid ""
+"The Timer class is always active, being started from the moment the "
+"framework is invoked until right before sending the output to the user, "
+"enabling a very accurate timing of the entire system execution."
+msgstr ""
+"Timer 클래스는 항상 활성 상태이며, 프레임워크가 호출되는 순간부터 사용자에게 출력을 보내기 직전까지 실행되어 전체 시스템 실행 "
+"시간을 매우 정확하게 측정할 수 있습니다."
+
+#: ../../source/testing/benchmark.rst:19
+msgid "Using the Timer"
+msgstr "타이머 사용"
+
+#: ../../source/testing/benchmark.rst:21
+msgid ""
+"With the Timer, you can measure the time between two moments in the "
+"execution of your application. This makes it simple to measure the "
+"performance of different aspects of your application. All measurement is "
+"done using the ``start()`` and ``stop()`` methods."
+msgstr ""
+"타이머를 사용하면 애플리케이션 실행 중 두 시점 사이의 시간을 측정할 수 있습니다. 이를 통해 애플리케이션의 다양한 측면의 성능을 "
+"간단하게 측정할 수 있습니다. 모든 측정은 ``start()``\\ 와 ``stop()`` 메서드를 사용하여 이루어집니다."
+
+#: ../../source/testing/benchmark.rst:26
+msgid "Timer::start()"
+msgstr "Timer::start()"
+
+#: ../../source/testing/benchmark.rst:28
+msgid ""
+"The ``start()`` method takes a single parameter: the name of this timer. You"
+" can use any string as the name of the timer. It is only used for you to "
+"reference later to know which measurement is which:"
+msgstr ""
+"``start()`` 메서드는 하나의 매개변수, 즉 이 타이머의 이름을 받습니다. 타이머 이름으로는 어떤 문자열이든 사용할 수 있습니다."
+" 이는 나중에 어떤 측정값인지 참조하기 위해서만 사용됩니다:"
+
+#: ../../source/testing/benchmark.rst:34
+msgid "Timer::stop()"
+msgstr "Timer::stop()"
+
+#: ../../source/testing/benchmark.rst:36
+msgid ""
+"The ``stop()`` method takes the name of the timer that you want to stop as "
+"the only parameter, also:"
+msgstr "``stop()`` 메서드는 중지하려는 타이머의 이름을 유일한 매개변수로 받습니다:"
+
+#: ../../source/testing/benchmark.rst:40
+msgid ""
+"The name is not case-sensitive, but otherwise must match the name you gave "
+"it when you started the timer."
+msgstr "이름은 대소문자를 구분하지 않지만, 타이머를 시작할 때 지정한 이름과 일치해야 합니다."
+
+#: ../../source/testing/benchmark.rst:43
+msgid "timer()"
+msgstr "timer()"
+
+#: ../../source/testing/benchmark.rst:45
+msgid ""
+"Alternatively, you can use the :doc:`global function "
+"</general/common_functions>` ``timer()`` to start and stop timers:"
+msgstr ""
+"또는 :doc:`전역 함수 </general/common_functions>`\\ 인 ``timer()``\\ 를 사용하여 타이머를 "
+"시작하고 중지할 수 있습니다:"
+
+#: ../../source/testing/benchmark.rst:53
+msgid "Timer::record()"
+msgstr "Timer::record()"
+
+#: ../../source/testing/benchmark.rst:57
+msgid ""
+"Since v4.3.0, if you use very small code blocks to benchmark, you can also "
+"use the ``record()`` method. It accepts a no-parameter callable and measures"
+" its execution time. Methods ``start()`` and ``stop()`` will be called "
+"automatically around the function call."
+msgstr ""
+"v4.3.0부터는 매우 작은 코드 블록을 벤치마크하는 경우 ``record()`` 메서드를 사용할 수도 있습니다. 이 메서드는 매개변수가"
+" 없는 callable을 받아 실행 시간을 측정합니다. ``start()``\\ 와 ``stop()`` 메서드는 함수 호출 전후에 "
+"자동으로 호출됩니다."
+
+#: ../../source/testing/benchmark.rst:63
+msgid ""
+"You can also return the callable's return value for further processing."
+msgstr "나중에 처리하기 위해 callable의 반환값을 반환할 수도 있습니다."
+
+#: ../../source/testing/benchmark.rst:67
+msgid ""
+"The same functionality is also available when passing callable to "
+"``timer()`` as second parameter."
+msgstr "``timer()``\\ 에 callable을 두 번째 매개변수로 전달할 때도 동일한 기능을 사용할 수 있습니다."
+
+#: ../../source/testing/benchmark.rst:72
+msgid "Viewing Your Benchmark Points"
+msgstr "벤치마크 지점 확인"
+
+#: ../../source/testing/benchmark.rst:74
+msgid ""
+"When your application runs, all of the timers that you have set are "
+"collected by the Timer class. It does not automatically display them, "
+"though. You can retrieve all of your timers by calling the ``getTimers()`` "
+"method. This returns an array of benchmark information, including start, "
+"end, and duration:"
+msgstr ""
+"애플리케이션이 실행되면 설정한 모든 타이머가 Timer 클래스에 의해 수집됩니다. 단, 자동으로 표시되지는 않습니다. "
+"``getTimers()`` 메서드를 호출하여 모든 타이머를 가져올 수 있습니다. 이 메서드는 시작, 종료, 지속 시간을 포함한 벤치마크"
+" 정보 배열을 반환합니다:"
+
+#: ../../source/testing/benchmark.rst:80
+msgid ""
+"You can change the precision of the calculated duration by passing in the "
+"number of decimal places you want to be shown as the only parameter. The "
+"default value is 4 numbers behind the decimal point:"
+msgstr ""
+"표시할 소수점 자릿수를 유일한 매개변수로 전달하여 계산된 지속 시간의 정밀도를 변경할 수 있습니다. 기본값은 소수점 이하 4자리입니다:"
+
+#: ../../source/testing/benchmark.rst:85
+msgid ""
+"The timers are automatically displayed in the :doc:`Debug Toolbar "
+"</testing/debugging>`."
+msgstr "타이머는 :doc:`디버그 툴바 </testing/debugging>`\\ 에 자동으로 표시됩니다."
+
+#: ../../source/testing/benchmark.rst:88
+msgid "Displaying Execution Time"
+msgstr "실행 시간 표시"
+
+#: ../../source/testing/benchmark.rst:90
+msgid ""
+"While the ``getTimers()`` method will give you the raw data for all of the "
+"timers in your project, you can retrieve the duration of a single timer, in "
+"seconds, with the ``getElapsedTime()`` method. The first parameter is the "
+"name of the timer to display. The second is the number of decimal places to "
+"display. This defaults to 4:"
+msgstr ""
+"``getTimers()`` 메서드가 프로젝트의 모든 타이머에 대한 원시 데이터를 제공하는 반면, ``getElapsedTime()`` "
+"메서드를 사용하면 단일 타이머의 지속 시간을 초 단위로 가져올 수 있습니다. 첫 번째 매개변수는 표시할 타이머의 이름이고, 두 번째는 "
+"표시할 소수점 자릿수입니다. 기본값은 4입니다:"
+
+#: ../../source/testing/benchmark.rst:98
+msgid "Using the Iterator"
+msgstr "이터레이터 사용"
+
+#: ../../source/testing/benchmark.rst:100
+msgid ""
+"The Iterator is a simple tool that is designed to allow you to try out "
+"multiple variations on a solution to see the speed differences and different"
+" memory usage patterns. You can add any number of \"tasks\" for it to run "
+"and the class will run the task hundreds or thousands of times to get a "
+"clearer picture of performance. The results can then be retrieved and used "
+"by your script, or displayed as an HTML table."
+msgstr ""
+"이터레이터는 솔루션의 여러 변형을 시험해 보고 속도 차이 및 메모리 사용 패턴의 차이를 확인할 수 있도록 설계된 간단한 도구입니다. "
+"실행할 \"작업\"을 원하는 만큼 추가할 수 있으며, 클래스는 성능을 더 명확하게 파악하기 위해 해당 작업을 수백 또는 수천 번 "
+"실행합니다. 결과는 스크립트에서 가져와 사용하거나 HTML 테이블로 표시할 수 있습니다."
+
+#: ../../source/testing/benchmark.rst:106
+msgid "Creating Tasks To Run"
+msgstr "실행할 작업 생성"
+
+#: ../../source/testing/benchmark.rst:108
+msgid ""
+"Tasks are defined within Closures. Any output the task creates will be "
+"discarded automatically. They are added to the Iterator class through the "
+"``add()`` method. The first parameter is a name you want to refer to this "
+"test by. The second parameter is the Closure, itself:"
+msgstr ""
+"작업은 클로저(Closure) 내에 정의됩니다. 작업이 생성하는 모든 출력은 자동으로 버려집니다. ``add()`` 메서드를 통해 "
+"Iterator 클래스에 추가됩니다. 첫 번째 매개변수는 이 테스트를 참조할 이름이고, 두 번째 매개변수는 클로저 자체입니다:"
+
+#: ../../source/testing/benchmark.rst:115
+msgid "Running the Tasks"
+msgstr "작업 실행"
+
+#: ../../source/testing/benchmark.rst:117
+msgid ""
+"Once you've added the tasks to run, you can use the ``run()`` method to loop"
+" over the tasks many times. By default, it will run each task 1000 times. "
+"This is probably sufficient for most simple tests. If you need to run the "
+"tests more times than that, you can pass the number as the first parameter:"
+msgstr ""
+"실행할 작업을 추가한 후에는 ``run()`` 메서드를 사용하여 작업을 여러 번 반복 실행할 수 있습니다. 기본적으로 각 작업을 "
+"1000번 실행합니다. 이는 대부분의 간단한 테스트에 충분합니다. 그보다 더 많이 테스트를 실행해야 하는 경우 첫 번째 매개변수로 횟수를"
+" 전달할 수 있습니다:"
+
+#: ../../source/testing/benchmark.rst:123
+msgid ""
+"Once it has run, it will return an HTML table with the results of the test. "
+"If you don't want the results, you can pass in ``false`` as the second "
+"parameter:"
+msgstr ""
+"실행이 완료되면 테스트 결과가 담긴 HTML 테이블을 반환합니다. 결과가 필요 없다면 두 번째 매개변수로 ``false``\\ 를 전달할"
+" 수 있습니다:"
+
+#: ../../source/testing/cli.rst:3
+msgid "Testing CLI Commands"
+msgstr "CLI 명령 테스트"
+
+#: ../../source/testing/cli.rst:13
+msgid "Using MockInputOutput"
+msgstr "MockInputOutput 사용"
+
+#: ../../source/testing/cli.rst:18
+msgid "MockInputOutput"
+msgstr "MockInputOutput"
+
+#: ../../source/testing/cli.rst:20
+msgid ""
+"**MockInputOutput** provides an easy way to write tests for commands that "
+"require user input, such as ``CLI::prompt()``, ``CLI::wait()``, and "
+"``CLI::input()``."
+msgstr ""
+"**MockInputOutput**\\ 은 ``CLI::prompt()``, ``CLI::wait()``, "
+"``CLI::input()``\\ 과 같이 사용자 입력이 필요한 명령에 대한 테스트를 작성하는 쉬운 방법을 제공합니다."
+
+#: ../../source/testing/cli.rst:23
+msgid ""
+"You can replace the ``InputOutput`` class with ``MockInputOutput`` during "
+"test execution to capture inputs and outputs."
+msgstr ""
+"테스트 실행 중에 ``InputOutput`` 클래스를 ``MockInputOutput``\\ 으로 교체하여 입력과 출력을 캡처할 수 "
+"있습니다."
+
+#: ../../source/testing/cli.rst:26
+msgid ""
+"When you use ``MockInputOutput``, you don't need to use :ref:`stream-filter-"
+"trait`, :ref:`ci-test-stream-filter`, and :ref:`php-stream-wrapper`."
+msgstr ""
+"``MockInputOutput``\\ 을 사용할 때는 :ref:`stream-filter-trait`, :ref:`ci-test-"
+"stream-filter`, :ref:`php-stream-wrapper`\\ 를 사용할 필요가 없습니다."
+
+#: ../../source/testing/cli.rst:31 ../../source/testing/controllers.rst:32
+#: ../../source/testing/database.rst:108
+msgid "Helper Methods"
+msgstr "헬퍼 메서드"
+
+#: ../../source/testing/cli.rst:34
+msgid "getOutput(?int $index = null): string"
+msgstr "getOutput(?int $index = null): string"
+
+#: ../../source/testing/cli.rst:36
+msgid "Gets the output."
+msgstr "출력을 가져옵니다."
+
+#: ../../source/testing/cli.rst:38
+msgid ""
+"If you call it like ``$io->getOutput()``, it returns the whole output "
+"string."
+msgstr "``$io->getOutput()``\\ 처럼 호출하면 전체 출력 문자열을 반환합니다."
+
+#: ../../source/testing/cli.rst:39
+msgid ""
+"If you specify ``0`` or a positive number, it returns the output array item."
+" Each item has the output of a ``CLI::fwrite()`` call."
+msgstr ""
+"``0`` 또는 양수를 지정하면 출력 배열의 해당 항목을 반환합니다. 각 항목에는 ``CLI::fwrite()`` 호출의 출력이 담겨 "
+"있습니다."
+
+#: ../../source/testing/cli.rst:41
+msgid ""
+"If you specify a negative number ``-n``, it returns the last ``n``-th item "
+"of the output array."
+msgstr "음수 ``-n``\\ 을 지정하면 출력 배열의 마지막에서 ``n``\\ 번째 항목을 반환합니다."
+
+#: ../../source/testing/cli.rst:45
+msgid "getOutputs(): array"
+msgstr "getOutputs(): array"
+
+#: ../../source/testing/cli.rst:47
+msgid ""
+"Returns the output array. Each item has the output of a ``CLI::fwrite()`` "
+"call."
+msgstr "출력 배열을 반환합니다. 각 항목에는 ``CLI::fwrite()`` 호출의 출력이 담겨 있습니다."
+
+#: ../../source/testing/cli.rst:50 ../../source/testing/cli.rst:83
+#: ../../source/testing/cli.rst:109 ../../source/testing/cli.rst:140
+msgid "How to Use"
+msgstr "사용 방법"
+
+#: ../../source/testing/cli.rst:52
+msgid ""
+"``CLI::setInputOutput()`` can set the ``MockInputOutput`` instance to the "
+"``CLI`` class."
+msgstr ""
+"``CLI::setInputOutput()``\\ 는 ``MockInputOutput`` 인스턴스를 ``CLI`` 클래스에 설정할 수 "
+"있습니다."
+
+#: ../../source/testing/cli.rst:53
+msgid ""
+"``CLI::resetInputOutput()`` resets the ``InputOutput`` instance in the "
+"``CLI`` class."
+msgstr ""
+"``CLI::resetInputOutput()``\\ 은 ``CLI`` 클래스의 ``InputOutput`` 인스턴스를 초기화합니다."
+
+#: ../../source/testing/cli.rst:54
+msgid "``MockInputOutput::setInputs()`` sets the user input array."
+msgstr "``MockInputOutput::setInputs()``\\ 는 사용자 입력 배열을 설정합니다."
+
+#: ../../source/testing/cli.rst:55
+msgid "``MockInputOutput::getOutput()`` gets the command output."
+msgstr "``MockInputOutput::getOutput()``\\ 은 명령 출력을 가져옵니다."
+
+#: ../../source/testing/cli.rst:57
+msgid "The following test code is to test the command ``spark db:table``:"
+msgstr "다음 테스트 코드는 ``spark db:table`` 명령을 테스트하기 위한 것입니다:"
+
+#: ../../source/testing/cli.rst:63
+msgid "Without MockInputOutput"
+msgstr "MockInputOutput 없이 사용"
+
+#: ../../source/testing/cli.rst:68
+msgid "Testing CLI Output"
+msgstr "CLI 출력 테스트"
+
+#: ../../source/testing/cli.rst:73
+msgid "StreamFilterTrait"
+msgstr "StreamFilterTrait"
+
+#: ../../source/testing/cli.rst:77
+msgid "**StreamFilterTrait** provides an alternate to these helper methods."
+msgstr "**StreamFilterTrait**\\ 은 이러한 헬퍼 메서드의 대안을 제공합니다."
+
+#: ../../source/testing/cli.rst:79
+msgid ""
+"You may need to test things that are difficult to test. Sometimes, capturing"
+" a stream, like PHP's own STDOUT, or STDERR, might be helpful. The "
+"``StreamFilterTrait`` helps you capture the output from the stream of your "
+"choice."
+msgstr ""
+"테스트하기 어려운 것들을 테스트해야 할 수도 있습니다. 때로는 PHP의 STDOUT이나 STDERR 같은 스트림을 캡처하는 것이 도움이 "
+"될 수 있습니다. ``StreamFilterTrait``\\ 은 원하는 스트림의 출력을 캡처하는 데 도움을 줍니다."
+
+#: ../../source/testing/cli.rst:85
+msgid ""
+"``StreamFilterTrait::getStreamFilterBuffer()`` gets the captured data from "
+"the buffer."
+msgstr "``StreamFilterTrait::getStreamFilterBuffer()``\\ 는 버퍼에서 캡처된 데이터를 가져옵니다."
+
+#: ../../source/testing/cli.rst:86
+msgid "``StreamFilterTrait::resetStreamFilterBuffer()`` resets captured data."
+msgstr "``StreamFilterTrait::resetStreamFilterBuffer()``\\ 는 캡처된 데이터를 초기화합니다."
+
+#: ../../source/testing/cli.rst:88 ../../source/testing/cli.rst:153
+msgid "An example demonstrating this inside one of your test cases:"
+msgstr "테스트 케이스 내에서 이를 사용하는 예시:"
+
+#: ../../source/testing/cli.rst:92
+msgid ""
+"The ``StreamFilterTrait`` has a configurator that is called automatically. "
+"See :ref:`Testing Traits <testing-overview-traits>`."
+msgstr ""
+"``StreamFilterTrait``\\ 에는 자동으로 호출되는 설정자(configurator)가 있습니다. :ref:`테스트 트레이트"
+" <testing-overview-traits>`\\ 를 참조하십시오."
+
+#: ../../source/testing/cli.rst:95
+msgid ""
+"If you override the ``setUp()`` or ``tearDown()`` methods in your test, then"
+" you must call the ``parent::setUp()`` and ``parent::tearDown()`` methods "
+"respectively to configure the ``StreamFilterTrait``."
+msgstr ""
+"테스트에서 ``setUp()`` 또는 ``tearDown()`` 메서드를 오버라이드하는 경우, ``StreamFilterTrait``\\"
+" 을 구성하기 위해 각각 ``parent::setUp()``\\ 과 ``parent::tearDown()`` 메서드를 호출해야 합니다."
+
+#: ../../source/testing/cli.rst:101
+msgid "CITestStreamFilter"
+msgstr "CITestStreamFilter"
+
+#: ../../source/testing/cli.rst:103
+msgid "**CITestStreamFilter** for manual/single use."
+msgstr "**CITestStreamFilter**\\ 는 수동/단독 사용을 위한 것입니다."
+
+#: ../../source/testing/cli.rst:105
+msgid ""
+"If you need to capture streams in only one test, then instead of using the "
+"StreamFilterTrait trait, you can manually add a filter to streams."
+msgstr ""
+"하나의 테스트에서만 스트림을 캡처해야 하는 경우, StreamFilterTrait 트레이트를 사용하는 대신 스트림에 필터를 수동으로 "
+"추가할 수 있습니다."
+
+#: ../../source/testing/cli.rst:111
+msgid "``CITestStreamFilter::registration()`` Filter registration."
+msgstr "``CITestStreamFilter::registration()`` 필터 등록."
+
+#: ../../source/testing/cli.rst:112
+msgid ""
+"``CITestStreamFilter::addOutputFilter()`` Adding a filter to the output "
+"stream."
+msgstr "``CITestStreamFilter::addOutputFilter()`` 출력 스트림에 필터 추가."
+
+#: ../../source/testing/cli.rst:113
+msgid ""
+"``CITestStreamFilter::addErrorFilter()`` Adding a filter to the error "
+"stream."
+msgstr "``CITestStreamFilter::addErrorFilter()`` 에러 스트림에 필터 추가."
+
+#: ../../source/testing/cli.rst:114
+msgid ""
+"``CITestStreamFilter::removeOutputFilter()`` Removing a filter from the "
+"output stream."
+msgstr "``CITestStreamFilter::removeOutputFilter()`` 출력 스트림에서 필터 제거."
+
+#: ../../source/testing/cli.rst:115
+msgid ""
+"``CITestStreamFilter::removeErrorFilter()`` Removing a filter from the error"
+" stream."
+msgstr "``CITestStreamFilter::removeErrorFilter()`` 에러 스트림에서 필터 제거."
+
+#: ../../source/testing/cli.rst:122
+msgid "Testing CLI Input"
+msgstr "CLI 입력 테스트"
+
+#: ../../source/testing/cli.rst:127
+msgid "PhpStreamWrapper"
+msgstr "PhpStreamWrapper"
+
+#: ../../source/testing/cli.rst:131
+msgid ""
+"**PhpStreamWrapper** provides a way to write tests for methods that require "
+"user input, such as ``CLI::prompt()``, ``CLI::wait()``, and "
+"``CLI::input()``."
+msgstr ""
+"**PhpStreamWrapper**\\ 은 ``CLI::prompt()``, ``CLI::wait()``, "
+"``CLI::input()``\\ 과 같이 사용자 입력이 필요한 메서드에 대한 테스트를 작성하는 방법을 제공합니다."
+
+#: ../../source/testing/cli.rst:134
+msgid ""
+"The PhpStreamWrapper is a stream wrapper class. If you don't know PHP's "
+"stream wrapper, see `The streamWrapper class "
+"<https://www.php.net/manual/en/class.streamwrapper.php>`_ in the PHP maual."
+msgstr ""
+"PhpStreamWrapper는 스트림 래퍼(stream wrapper) 클래스입니다. PHP의 스트림 래퍼를 모른다면 PHP 매뉴얼의 "
+"`streamWrapper 클래스 "
+"<https://www.php.net/manual/en/class.streamwrapper.php>`_\\ 를 참조하십시오."
+
+#: ../../source/testing/cli.rst:142
+msgid ""
+"``PhpStreamWrapper::register()`` Register the ``PhpStreamWrapper`` to the "
+"``php`` protocol."
+msgstr ""
+"``PhpStreamWrapper::register()`` ``PhpStreamWrapper``\\ 를 ``php`` 프로토콜에 "
+"등록합니다."
+
+#: ../../source/testing/cli.rst:143
+msgid ""
+"``PhpStreamWrapper::restore()`` Restore the php protocol wrapper back to the"
+" PHP built-in wrapper."
+msgstr "``PhpStreamWrapper::restore()`` php 프로토콜 래퍼를 PHP 내장 래퍼로 복원합니다."
+
+#: ../../source/testing/cli.rst:144
+msgid "``PhpStreamWrapper::setContent()`` Set the input data."
+msgstr "``PhpStreamWrapper::setContent()`` 입력 데이터를 설정합니다."
+
+#: ../../source/testing/cli.rst:146
+msgid ""
+"The PhpStreamWrapper is intended for only testing ``php://stdin``. But when "
+"you register it, it handles all the `php protocol "
+"<https://www.php.net/manual/en/wrappers.php.php>`_ streams, such as "
+"``php://stdout``, ``php://stderr``, ``php://memory``. So it is strongly "
+"recommended that ``PhpStreamWrapper`` be registered/unregistered only when "
+"needed. Otherwise, it will interfere with other built-in php streams while "
+"registered."
+msgstr ""
+"PhpStreamWrapper는 ``php://stdin`` 테스트 전용으로 설계되었습니다. 하지만 등록하면 "
+"``php://stdout``, ``php://stderr``, ``php://memory``\\ 와 같은 모든 `php 프로토콜 "
+"<https://www.php.net/manual/en/wrappers.php.php>`_ 스트림을 처리합니다. 따라서 "
+"``PhpStreamWrapper``\\ 는 필요할 때만 등록/해제하는 것을 강력히 권장합니다. 그렇지 않으면 등록된 동안 다른 PHP "
+"내장 스트림에 간섭할 수 있습니다."
+
+#: ../../source/testing/controllers.rst:3
+msgid "Testing Controllers"
+msgstr "컨트롤러 테스트"
+
+#: ../../source/testing/controllers.rst:5
+msgid ""
+"Testing your controllers is made convenient with a couple of new helper "
+"classes and traits. When testing controllers, you can execute the code "
+"within a controller, without first running through the entire application "
+"bootstrap process. Often times, using the :doc:`Feature Testing tools "
+"<feature>` will be simpler, but this functionality is here in case you need "
+"it."
+msgstr ""
+"몇 가지 새로운 헬퍼 클래스와 트레이트를 통해 컨트롤러 테스트가 편리해졌습니다. 컨트롤러를 테스트할 때, 전체 애플리케이션 부트스트랩 "
+"과정을 거치지 않고도 컨트롤러 내의 코드를 실행할 수 있습니다. 대부분의 경우 :doc:`기능 테스트 도구 <feature>`\\ 를 "
+"사용하는 것이 더 간단하지만, 필요한 경우를 위해 이 기능도 제공됩니다."
+
+#: ../../source/testing/controllers.rst:10
+msgid ""
+"Because the entire framework has not been bootstrapped, there will be times "
+"when you cannot test a controller this way."
+msgstr "전체 프레임워크가 부트스트랩되지 않았기 때문에, 이 방법으로 컨트롤러를 테스트할 수 없는 경우가 있습니다."
+
+#: ../../source/testing/controllers.rst:18
+#: ../../source/testing/controllers.rst:130
+msgid "The Helper Trait"
+msgstr "헬퍼 트레이트"
+
+#: ../../source/testing/controllers.rst:20
+msgid ""
+"To enable Controller Testing you need to use the ``ControllerTestTrait`` "
+"trait within your tests:"
+msgstr "컨트롤러 테스트를 활성화하려면 테스트 내에서 ``ControllerTestTrait`` 트레이트를 사용해야 합니다:"
+
+#: ../../source/testing/controllers.rst:24
+msgid ""
+"Once the trait has been included, you can start setting up the environment, "
+"including the request and response classes, the request body, URI, and more."
+" You specify the controller to use with the ``controller()`` method, passing"
+" in the fully qualified class name of your controller. Finally, call the "
+"``execute()`` method with the name of the method to run as the parameter:"
+msgstr ""
+"트레이트가 포함되면 요청 및 응답 클래스, 요청 본문, URI 등을 포함한 환경 설정을 시작할 수 있습니다. 컨트롤러의 완전한 정규화 "
+"클래스명을 ``controller()`` 메서드에 전달하여 사용할 컨트롤러를 지정합니다. 마지막으로 실행할 메서드 이름을 매개변수로 "
+"``execute()`` 메서드를 호출합니다:"
+
+#: ../../source/testing/controllers.rst:35
+msgid "controller($class)"
+msgstr "controller($class)"
+
+#: ../../source/testing/controllers.rst:37
+msgid ""
+"Specifies the class name of the controller to test. The first parameter must"
+" be a fully qualified class name (i.e., include the namespace):"
+msgstr "테스트할 컨트롤러의 클래스명을 지정합니다. 첫 번째 매개변수는 완전한 정규화 클래스명(즉, 네임스페이스 포함)이어야 합니다:"
+
+#: ../../source/testing/controllers.rst:43
+msgid "execute(string $method, ...$params)"
+msgstr "execute(string $method, ...$params)"
+
+#: ../../source/testing/controllers.rst:45
+msgid ""
+"Executes the specified method within the controller. The first parameter is "
+"the name of the method to run:"
+msgstr "컨트롤러 내에서 지정된 메서드를 실행합니다. 첫 번째 매개변수는 실행할 메서드의 이름입니다:"
+
+#: ../../source/testing/controllers.rst:49
+msgid ""
+"By specifying the second and subsequent parameters, you can pass them to the"
+" controller method."
+msgstr "두 번째 이후의 매개변수를 지정하여 컨트롤러 메서드에 전달할 수 있습니다."
+
+#: ../../source/testing/controllers.rst:51
+msgid ""
+"This returns a new helper class that provides a number of routines for "
+"checking the response itself. See below for details."
+msgstr ""
+"이 메서드는 응답 자체를 확인하기 위한 여러 루틴을 제공하는 새로운 헬퍼 클래스를 반환합니다. 자세한 내용은 아래를 참조하십시오."
+
+#: ../../source/testing/controllers.rst:55
+msgid "withConfig($config)"
+msgstr "withConfig($config)"
+
+#: ../../source/testing/controllers.rst:57
+msgid ""
+"Allows you to pass in a modified version of **app/Config/App.php** to test "
+"with different settings:"
+msgstr "다른 설정으로 테스트하기 위해 수정된 버전의 **app/Config/App.php**\\ 를 전달할 수 있습니다:"
+
+#: ../../source/testing/controllers.rst:61
+msgid ""
+"If you do not provide one, the application's App config file will be used."
+msgstr "제공하지 않으면 애플리케이션의 App 설정 파일이 사용됩니다."
+
+#: ../../source/testing/controllers.rst:64
+msgid "withRequest($request)"
+msgstr "withRequest($request)"
+
+#: ../../source/testing/controllers.rst:66
+msgid ""
+"Allows you to provide an **IncomingRequest** instance tailored to your "
+"testing needs:"
+msgstr "테스트 요구에 맞게 구성된 **IncomingRequest** 인스턴스를 제공할 수 있습니다:"
+
+#: ../../source/testing/controllers.rst:70
+msgid ""
+"If you do not provide one, a new IncomingRequest instance with the default "
+"application values will be passed into your controller."
+msgstr "제공하지 않으면 기본 애플리케이션 값을 가진 새 IncomingRequest 인스턴스가 컨트롤러에 전달됩니다."
+
+#: ../../source/testing/controllers.rst:74
+msgid "withResponse($response)"
+msgstr "withResponse($response)"
+
+#: ../../source/testing/controllers.rst:76
+msgid "Allows you to provide a **Response** instance:"
+msgstr "**Response** 인스턴스를 제공할 수 있습니다:"
+
+#: ../../source/testing/controllers.rst:80
+msgid ""
+"If you do not provide one, a new Response instance with the default "
+"application values will be passed into your controller."
+msgstr "제공하지 않으면 기본 애플리케이션 값을 가진 새 Response 인스턴스가 컨트롤러에 전달됩니다."
+
+#: ../../source/testing/controllers.rst:84
+msgid "withLogger($logger)"
+msgstr "withLogger($logger)"
+
+#: ../../source/testing/controllers.rst:86
+msgid "Allows you to provide a **Logger** instance:"
+msgstr "**Logger** 인스턴스를 제공할 수 있습니다:"
+
+#: ../../source/testing/controllers.rst:90
+msgid ""
+"If you do not provide one, a new Logger instance with the default "
+"configuration values will be passed into your controller."
+msgstr "제공하지 않으면 기본 설정 값을 가진 새 Logger 인스턴스가 컨트롤러에 전달됩니다."
+
+#: ../../source/testing/controllers.rst:94
+msgid "withUri(string $uri)"
+msgstr "withUri(string $uri)"
+
+#: ../../source/testing/controllers.rst:96
+msgid ""
+"Allows you to provide a new URI that simulates the URL the client was "
+"visiting when this controller was run. This is helpful if you need to check "
+"URI segments within your controller. The only parameter is a string "
+"representing a valid URI:"
+msgstr ""
+"이 컨트롤러가 실행될 때 클라이언트가 방문하던 URL을 시뮬레이션하는 새 URI를 제공할 수 있습니다. 컨트롤러 내에서 URI 세그먼트를"
+" 확인해야 할 때 유용합니다. 유일한 매개변수는 유효한 URI를 나타내는 문자열입니다:"
+
+#: ../../source/testing/controllers.rst:102
+msgid ""
+"It is a good practice to always provide the URI during testing to avoid "
+"surprises."
+msgstr "예상치 못한 문제를 피하기 위해 테스트 시 항상 URI를 제공하는 것이 좋은 관행입니다."
+
+#: ../../source/testing/controllers.rst:104
+msgid ""
+"Since v4.4.0, this method creates a new Request instance with the URI. "
+"Because the Request instance should have the URI instance. Also if the "
+"hostname in the URI string is invalid with ``Config\\App``, the valid "
+"hostname will be set."
+msgstr ""
+"v4.4.0부터 이 메서드는 URI를 포함한 새 Request 인스턴스를 생성합니다. Request 인스턴스는 URI 인스턴스를 가져야 "
+"하기 때문입니다. 또한 URI 문자열의 호스트명이 ``Config\\App``\\ 에서 유효하지 않은 경우, 유효한 호스트명이 "
+"설정됩니다."
+
+#: ../../source/testing/controllers.rst:110
+msgid "withBody($body)"
+msgstr "withBody($body)"
+
+#: ../../source/testing/controllers.rst:112
+msgid ""
+"Allows you to provide a custom body for the request. This can be helpful "
+"when testing API controllers where you need to set a JSON value as the body."
+" The only parameter is a string that represents the body of the request:"
+msgstr ""
+"요청에 커스텀 본문을 제공할 수 있습니다. JSON 값을 본문으로 설정해야 하는 API 컨트롤러를 테스트할 때 유용합니다. 유일한 "
+"매개변수는 요청 본문을 나타내는 문자열입니다:"
+
+#: ../../source/testing/controllers.rst:118
+#: ../../source/testing/feature.rst:125
+msgid "Checking the Response"
+msgstr "응답 확인"
+
+#: ../../source/testing/controllers.rst:120
+msgid ""
+"``ControllerTestTrait::execute()`` returns an instance of a "
+"``TestResponse``. See :doc:`Testing Responses <response>` on how to use this"
+" class to perform additional assertions and verification in your test cases."
+msgstr ""
+"``ControllerTestTrait::execute()``\\ 는 ``TestResponse`` 인스턴스를 반환합니다. 테스트 "
+"케이스에서 추가 어설션 및 검증을 수행하기 위해 이 클래스를 사용하는 방법은 :doc:`응답 테스트 <response>`\\ 를 "
+"참조하십시오."
+
+#: ../../source/testing/controllers.rst:124
+msgid "Filter Testing"
+msgstr "필터 테스트"
+
+#: ../../source/testing/controllers.rst:126
+msgid ""
+"Similar to Controller Testing, the framework provides tools to help with "
+"creating tests for custom :doc:`Filters </incoming/filters>` and your "
+"projects use of them in routing."
+msgstr ""
+"컨트롤러 테스트와 유사하게, 프레임워크는 커스텀 :doc:`필터 </incoming/filters>`\\ 와 라우팅에서의 사용에 대한 "
+"테스트 작성을 돕는 도구를 제공합니다."
+
+#: ../../source/testing/controllers.rst:132
+msgid ""
+"Just like with the Controller Tester you need to include the "
+"``FilterTestTrait`` in your test cases to enable these features:"
+msgstr ""
+"컨트롤러 테스터와 마찬가지로, 이 기능들을 활성화하려면 테스트 케이스에 ``FilterTestTrait``\\ 을 포함해야 합니다:"
+
+#: ../../source/testing/controllers.rst:138
+msgid "Configuration"
+msgstr "설정"
+
+#: ../../source/testing/controllers.rst:140
+msgid ""
+"Because of the logical overlap with Controller Testing ``FilterTestTrait`` "
+"is designed to work together with ``ControllerTestTrait`` should you need "
+"both on the same class. Once the trait has been included ``CIUnitTestCase`` "
+"will detect its ``setUp`` method and prepare all the components needed for "
+"your tests. Should you need a special configuration you can alter any of the"
+" properties before calling the support methods:"
+msgstr ""
+"컨트롤러 테스트와의 논리적 중복으로 인해, ``FilterTestTrait``\\ 은 동일한 클래스에서 둘 다 필요한 경우 "
+"``ControllerTestTrait``\\ 과 함께 동작하도록 설계되었습니다. 트레이트가 포함되면 "
+"``CIUnitTestCase``\\ 가 ``setUp`` 메서드를 감지하고 테스트에 필요한 모든 컴포넌트를 준비합니다. 특수한 설정이 "
+"필요한 경우, 지원 메서드를 호출하기 전에 속성을 변경할 수 있습니다:"
+
+#: ../../source/testing/controllers.rst:146
+msgid ""
+"``$request`` A prepared version of the default ``IncomingRequest`` service"
+msgstr "``$request`` 기본 ``IncomingRequest`` 서비스의 준비된 버전"
+
+#: ../../source/testing/controllers.rst:147
+msgid ""
+"``$response`` A prepared version of the default ``ResponseInterface`` "
+"service"
+msgstr "``$response`` 기본 ``ResponseInterface`` 서비스의 준비된 버전"
+
+#: ../../source/testing/controllers.rst:148
+msgid ""
+"``$filtersConfig`` The default ``Config\\Filters`` configuration (note: "
+"discovery is handle by ``Filters`` so this will not include module aliases)"
+msgstr ""
+"``$filtersConfig`` 기본 ``Config\\Filters`` 설정 (참고: 검색은 ``Filters``\\ 에 의해 "
+"처리되므로 모듈 별칭은 포함되지 않습니다)"
+
+#: ../../source/testing/controllers.rst:149
+msgid ""
+"``$filters`` An instance of ``CodeIgniter\\Filters\\Filters`` using the "
+"three components above"
+msgstr "``$filters`` 위의 세 컴포넌트를 사용하는 ``CodeIgniter\\Filters\\Filters`` 인스턴스"
+
+#: ../../source/testing/controllers.rst:150
+msgid ""
+"``$collection`` A prepared version of ``RouteCollection`` which includes the"
+" discovery of ``Config\\Routes``"
+msgstr ""
+"``$collection`` ``Config\\Routes`` 검색을 포함하는 ``RouteCollection``\\ 의 준비된 버전"
+
+#: ../../source/testing/controllers.rst:152
+msgid ""
+"The default configuration will usually be best for your testing since it "
+"most closely emulates a \"live\" project, but (for example) if you wanted to"
+" simulate a filter triggering accidentally on an unfiltered route you could "
+"add it to the Config:"
+msgstr ""
+"기본 설정은 \"라이브\" 프로젝트를 가장 가깝게 에뮬레이션하므로 일반적으로 테스트에 가장 적합합니다. 하지만 예를 들어 필터가 걸려있지"
+" 않은 라우트에서 실수로 필터가 트리거되는 것을 시뮬레이션하려면 Config에 추가할 수 있습니다:"
+
+#: ../../source/testing/controllers.rst:159
+msgid "Checking Routes"
+msgstr "라우트 확인"
+
+#: ../../source/testing/controllers.rst:161
+msgid ""
+"The first helper method is ``getFiltersForRoute()`` which will simulate the "
+"provided route and return a list of all Filters (by their alias) that would "
+"have run for the given position (\"before\" or \"after\"), without actually "
+"executing any controller or routing code. This has a large performance "
+"advantage over Controller and HTTP Testing."
+msgstr ""
+"첫 번째 헬퍼 메서드는 ``getFiltersForRoute()``\\ 로, 제공된 라우트를 시뮬레이션하고 실제 컨트롤러나 라우팅 코드를"
+" 실행하지 않고 주어진 위치(\"before\" 또는 \"after\")에서 실행되었을 모든 필터(별칭으로)의 목록을 반환합니다. 이는 "
+"컨트롤러 및 HTTP 테스트에 비해 큰 성능 이점을 가집니다."
+
+#: ../../source/testing/controllers.rst
+msgid "Parameters"
+msgstr "매개변수"
+
+#: ../../source/testing/controllers.rst:168
+msgid "The URI to check"
+msgstr "확인할 URI"
+
+#: ../../source/testing/controllers.rst:169
+msgid "The filter method to check, \"before\" or \"after\""
+msgstr "확인할 필터 메서드, \"before\" 또는 \"after\""
+
+#: ../../source/testing/controllers.rst
+msgid "Returns"
+msgstr "반환값"
+
+#: ../../source/testing/controllers.rst:170
+msgid "Aliases for each filter that would have run"
+msgstr "실행되었을 각 필터의 별칭"
+
+#: ../../source/testing/controllers.rst
+msgid "Return type"
+msgstr "반환 타입"
+
+#: ../../source/testing/controllers.rst:173
+#: ../../source/testing/controllers.rst:191
+msgid "Usage example:"
+msgstr "사용 예시:"
+
+#: ../../source/testing/controllers.rst:178
+msgid "Calling Filter Methods"
+msgstr "필터 메서드 호출"
+
+#: ../../source/testing/controllers.rst:180
+msgid ""
+"The properties describe in Configuration are all set up to ensure maximum "
+"performance without interfering or interference from other tests. The next "
+"helper method will return a callable method using these properties to test "
+"your Filter code safely and check the results."
+msgstr ""
+"설정 섹션에서 설명한 속성들은 다른 테스트의 간섭이나 영향 없이 최대 성능을 보장하도록 모두 설정됩니다. 다음 헬퍼 메서드는 이러한 "
+"속성들을 사용하여 필터 코드를 안전하게 테스트하고 결과를 확인하는 callable 메서드를 반환합니다."
+
+#: ../../source/testing/controllers.rst:186
+msgid "The filter instance, class, or alias"
+msgstr "필터 인스턴스, 클래스 또는 별칭"
+
+#: ../../source/testing/controllers.rst:187
+msgid "The filter method to run, \"before\" or \"after\""
+msgstr "실행할 필터 메서드, \"before\" 또는 \"after\""
+
+#: ../../source/testing/controllers.rst:188
+msgid "A callable method to run the simulated Filter event"
+msgstr "시뮬레이션된 필터 이벤트를 실행하는 callable 메서드"
+
+#: ../../source/testing/controllers.rst:195
+msgid ""
+"Notice how the ``Closure`` can take input parameters which are passed to "
+"your filter method."
+msgstr "``Closure``\\ 가 필터 메서드에 전달되는 입력 매개변수를 받을 수 있다는 점에 주목하십시오."
+
+#: ../../source/testing/controllers.rst:198
+#: ../../source/testing/database.rst:151
+msgid "Assertions"
+msgstr "어설션"
+
+#: ../../source/testing/controllers.rst:200
+msgid ""
+"In addition to the helper methods above ``FilterTestTrait`` also comes with "
+"some assertions to streamline your test methods."
+msgstr ""
+"위의 헬퍼 메서드 외에도 ``FilterTestTrait``\\ 에는 테스트 메서드를 간소화하기 위한 몇 가지 어설션도 포함되어 "
+"있습니다."
+
+#: ../../source/testing/controllers.rst:204
+msgid "assertFilter()"
+msgstr "assertFilter()"
+
+#: ../../source/testing/controllers.rst:206
+msgid ""
+"The ``assertFilter()`` method checks that the given route at position uses "
+"the filter (by its alias):"
+msgstr "``assertFilter()`` 메서드는 특정 위치의 주어진 라우트가 해당 필터(별칭으로)를 사용하는지 확인합니다:"
+
+#: ../../source/testing/controllers.rst:211
+msgid "assertNotFilter()"
+msgstr "assertNotFilter()"
+
+#: ../../source/testing/controllers.rst:213
+msgid ""
+"The ``assertNotFilter()`` method checks that the given route at position "
+"does not use the filter (by its alias):"
+msgstr ""
+"``assertNotFilter()`` 메서드는 특정 위치의 주어진 라우트가 해당 필터(별칭으로)를 사용하지 않는지 확인합니다:"
+
+#: ../../source/testing/controllers.rst:218
+msgid "assertHasFilters()"
+msgstr "assertHasFilters()"
+
+#: ../../source/testing/controllers.rst:220
+msgid ""
+"The ``assertHasFilters()`` method checks that the given route at position "
+"has at least one filter set:"
+msgstr ""
+"``assertHasFilters()`` 메서드는 특정 위치의 주어진 라우트에 최소 하나 이상의 필터가 설정되어 있는지 확인합니다:"
+
+#: ../../source/testing/controllers.rst:225
+msgid "assertNotHasFilters()"
+msgstr "assertNotHasFilters()"
+
+#: ../../source/testing/controllers.rst:227
+msgid ""
+"The ``assertNotHasFilters()`` method checks that the given route at position"
+" has no filters set:"
+msgstr "``assertNotHasFilters()`` 메서드는 특정 위치의 주어진 라우트에 설정된 필터가 없는지 확인합니다:"
+
+#: ../../source/testing/database.rst:3
+msgid "Testing Your Database"
+msgstr "데이터베이스 테스트"
+
+#: ../../source/testing/database.rst:10 ../../source/testing/feature.rst:15
+#: ../../source/testing/overview.rst:70
+msgid "The Test Class"
+msgstr "테스트 클래스"
+
+#: ../../source/testing/database.rst:12
+msgid ""
+"In order to take advantage of the built-in database tools that CodeIgniter "
+"provides for testing, your tests must extend ``CIUnitTestCase`` and use the "
+"``DatabaseTestTrait``:"
+msgstr ""
+"CodeIgniter가 테스트를 위해 제공하는 내장 데이터베이스 도구를 활용하려면, 테스트가 ``CIUnitTestCase``\\ 를 "
+"확장하고 ``DatabaseTestTrait``\\ 을 사용해야 합니다:"
+
+#: ../../source/testing/database.rst:17
+msgid ""
+"Because special functionality executed during the ``setUp()`` and "
+"``tearDown()`` phases, you must ensure that you call the parent's methods if"
+" you need to use those methods, otherwise you will lose much of the "
+"functionality described here:"
+msgstr ""
+"``setUp()``\\ 과 ``tearDown()`` 단계에서 특수 기능이 실행되기 때문에, 해당 메서드를 사용해야 하는 경우 반드시 "
+"부모의 메서드를 호출해야 합니다. 그렇지 않으면 여기서 설명하는 많은 기능을 사용할 수 없게 됩니다:"
+
+#: ../../source/testing/database.rst:24
+msgid "Setting Up a Test Database"
+msgstr "테스트 데이터베이스 설정"
+
+#: ../../source/testing/database.rst:26
+msgid ""
+"When running database tests, you need to provide a database that can be used"
+" during testing. Instead of using the PHPUnit built-in database features, "
+"the framework provides tools specific to CodeIgniter. The first step is to "
+"ensure that you have set up a ``tests`` database group in "
+"**app/Config/Database.php**. This specifies a database connection that is "
+"only used while running tests, to keep your other data safe."
+msgstr ""
+"데이터베이스 테스트를 실행할 때는 테스트 중에 사용할 수 있는 데이터베이스를 제공해야 합니다. PHPUnit의 내장 데이터베이스 기능을 "
+"사용하는 대신, 프레임워크는 CodeIgniter에 특화된 도구를 제공합니다. 첫 번째 단계는 "
+"**app/Config/Database.php**\\ 에 ``tests`` 데이터베이스 그룹이 설정되어 있는지 확인하는 것입니다. 이는 "
+"다른 데이터를 안전하게 보호하기 위해 테스트 실행 중에만 사용되는 데이터베이스 연결을 지정합니다."
+
+#: ../../source/testing/database.rst:31
+msgid ""
+"If you have multiple developers on your team, you will likely want to keep "
+"your credentials stored in the **.env** file. To do so, edit the file to "
+"ensure the following lines are present and have the correct information::"
+msgstr ""
+"팀에 여러 개발자가 있는 경우, 자격 증명을 **.env** 파일에 저장하는 것이 좋습니다. 이를 위해 파일을 편집하여 다음 줄이 올바른"
+" 정보와 함께 있는지 확인하십시오::"
+
+#: ../../source/testing/database.rst:44
+msgid "Migrations and Seeds"
+msgstr "마이그레이션과 시딩"
+
+#: ../../source/testing/database.rst:46
+msgid ""
+"When running tests, you need to ensure that your database has the correct "
+"schema set up and that it is in a known state for every test. You can use "
+"migrations and seeds to set up your database, by adding a couple of class "
+"properties to your test."
+msgstr ""
+"테스트를 실행할 때는 데이터베이스에 올바른 스키마가 설정되어 있고 모든 테스트에 대해 알려진 상태인지 확인해야 합니다. 테스트에 몇 가지"
+" 클래스 속성을 추가하여 마이그레이션과 시드를 사용해 데이터베이스를 설정할 수 있습니다."
+
+#: ../../source/testing/database.rst:53
+msgid "Migrations"
+msgstr "마이그레이션"
+
+#: ../../source/testing/database.rst:56
+msgid "$migrate"
+msgstr "$migrate"
+
+#: ../../source/testing/database.rst:58
+msgid ""
+"This boolean value determines whether the database migration runs before "
+"test. By default, the database is always migrated to the latest available "
+"state as defined by ``$namespace``. If ``false``, migration never runs. If "
+"you want to disable migration, set ``false``."
+msgstr ""
+"이 불리언 값은 테스트 전에 데이터베이스 마이그레이션이 실행될지 여부를 결정합니다. 기본적으로 데이터베이스는 "
+"``$namespace``\\ 에 정의된 최신 가능 상태로 항상 마이그레이션됩니다. ``false``\\ 이면 마이그레이션이 실행되지 "
+"않습니다. 마이그레이션을 비활성화하려면 ``false``\\ 로 설정하십시오."
+
+#: ../../source/testing/database.rst:63
+msgid "$migrateOnce"
+msgstr "$migrateOnce"
+
+#: ../../source/testing/database.rst:65
+msgid ""
+"This boolean value determines whether the database migration runs only once."
+" If you want to run migration once before the first test, set ``true``. If "
+"not present or ``false``, migration runs before each test."
+msgstr ""
+"이 불리언 값은 데이터베이스 마이그레이션이 한 번만 실행될지 여부를 결정합니다. 첫 번째 테스트 전에 마이그레이션을 한 번만 실행하려면 "
+"``true``\\ 로 설정하십시오. 없거나 ``false``\\ 이면 각 테스트 전에 마이그레이션이 실행됩니다."
+
+#: ../../source/testing/database.rst:70
+msgid "$refresh"
+msgstr "$refresh"
+
+#: ../../source/testing/database.rst:72
+msgid ""
+"This boolean value determines whether the database is completely refreshed "
+"before test. If ``true``, all migrations are rolled back to version 0."
+msgstr ""
+"이 불리언 값은 테스트 전에 데이터베이스가 완전히 초기화될지 여부를 결정합니다. ``true``\\ 이면 모든 마이그레이션이 버전 0으로"
+" 롤백됩니다."
+
+#: ../../source/testing/database.rst:76
+msgid "$namespace"
+msgstr "$namespace"
+
+#: ../../source/testing/database.rst:78
+msgid ""
+"By default, CodeIgniter will look in **tests/_support/Database/Migrations** "
+"to locate the migrations that it should run during testing. You can change "
+"this location by specifying a new namespace in the ``$namespace`` "
+"properties. This should not include the **Database\\\\Migrations** sub-"
+"namespace but just the base namespace."
+msgstr ""
+"기본적으로 CodeIgniter는 테스트 중에 실행할 마이그레이션을 찾기 위해 "
+"**tests/_support/Database/Migrations**\\ 를 확인합니다. ``$namespace`` 속성에 새 "
+"네임스페이스를 지정하여 이 위치를 변경할 수 있습니다. 이는 **Database\\\\Migrations** 하위 네임스페이스가 아닌 "
+"기본 네임스페이스만 포함해야 합니다."
+
+#: ../../source/testing/database.rst:82
+msgid ""
+"If you set this property to ``null``, it runs migrations from all available "
+"namespaces like ``php spark migrate --all``."
+msgstr ""
+"이 속성을 ``null``\\ 로 설정하면 ``php spark migrate --all``\\ 과 같이 사용 가능한 모든 네임스페이스의"
+" 마이그레이션을 실행합니다."
+
+#: ../../source/testing/database.rst:85
+msgid "Seeds"
+msgstr "시드"
+
+#: ../../source/testing/database.rst:88
+msgid "$seed"
+msgstr "$seed"
+
+#: ../../source/testing/database.rst:90
+msgid ""
+"If present and not empty, this specifies the name of a Seed file that is "
+"used to populate the database with test data prior to test running."
+msgstr ""
+"존재하고 비어있지 않으면, 테스트 실행 전에 데이터베이스에 테스트 데이터를 채우는 데 사용되는 시드 파일의 이름을 지정합니다."
+
+#: ../../source/testing/database.rst:94
+msgid "$seedOnce"
+msgstr "$seedOnce"
+
+#: ../../source/testing/database.rst:96
+msgid ""
+"This boolean value determines whether the database seeding runs only once. "
+"If you want to run database seeding once before the first test, set "
+"``true``. If not present or ``false``, database seeding runs before each "
+"test."
+msgstr ""
+"이 불리언 값은 데이터베이스 시딩이 한 번만 실행될지 여부를 결정합니다. 첫 번째 테스트 전에 데이터베이스 시딩을 한 번만 실행하려면 "
+"``true``\\ 로 설정하십시오. 없거나 ``false``\\ 이면 각 테스트 전에 데이터베이스 시딩이 실행됩니다."
+
+#: ../../source/testing/database.rst:101
+msgid "$basePath"
+msgstr "$basePath"
+
+#: ../../source/testing/database.rst:103
+msgid ""
+"By default, CodeIgniter will look in **tests/_support/Database/Seeds** to "
+"locate the seeds that it should run during testing. You can change this "
+"directory by specifying the ``$basePath`` property. This should not include "
+"the **Seeds** directory, but the path to the single directory that holds the"
+" sub-directory."
+msgstr ""
+"기본적으로 CodeIgniter는 테스트 중에 실행할 시드를 찾기 위해 **tests/_support/Database/Seeds**\\ "
+"를 확인합니다. ``$basePath`` 속성을 지정하여 이 디렉터리를 변경할 수 있습니다. 이는 **Seeds** 디렉터리가 아닌 하위"
+" 디렉터리를 포함하는 단일 디렉터리의 경로여야 합니다."
+
+#: ../../source/testing/database.rst:110
+msgid ""
+"The **DatabaseTestTrait** class provides several helper methods to aid in "
+"testing your database."
+msgstr "**DatabaseTestTrait** 클래스는 데이터베이스 테스트를 돕기 위한 여러 헬퍼 메서드를 제공합니다."
+
+#: ../../source/testing/database.rst:113
+msgid "Changing Database State"
+msgstr "데이터베이스 상태 변경"
+
+#: ../../source/testing/database.rst:116
+msgid "regressDatabase()"
+msgstr "regressDatabase()"
+
+#: ../../source/testing/database.rst:118
+msgid ""
+"Called during ``$refresh`` described above, this method is available if you "
+"need to reset the database manually."
+msgstr ""
+"위에서 설명한 ``$refresh`` 중에 호출되며, 데이터베이스를 수동으로 재설정해야 할 때 이 메서드를 사용할 수 있습니다."
+
+#: ../../source/testing/database.rst:121
+msgid "migrateDatabase()"
+msgstr "migrateDatabase()"
+
+#: ../../source/testing/database.rst:123
+msgid ""
+"Called during ``setUp()``, this method is available if you need to run "
+"migrations manually."
+msgstr "``setUp()`` 중에 호출되며, 마이그레이션을 수동으로 실행해야 할 때 이 메서드를 사용할 수 있습니다."
+
+#: ../../source/testing/database.rst:126
+msgid "seed($name)"
+msgstr "seed($name)"
+
+#: ../../source/testing/database.rst:128
+msgid ""
+"Allows you to manually load a Seed into the database. The only parameter is "
+"the name of the seed to run. The seed must be present within the path "
+"specified in ``$basePath``."
+msgstr ""
+"데이터베이스에 시드를 수동으로 로드할 수 있습니다. 유일한 매개변수는 실행할 시드의 이름입니다. 시드는 ``$basePath``\\ 에 "
+"지정된 경로 내에 있어야 합니다."
+
+#: ../../source/testing/database.rst:132
+msgid "hasInDatabase($table, $data)"
+msgstr "hasInDatabase($table, $data)"
+
+#: ../../source/testing/database.rst:134
+msgid ""
+"Inserts a new row into the database. This row is removed after the current "
+"test runs. ``$data`` is an associative array with the data to insert into "
+"the table."
+msgstr ""
+"데이터베이스에 새 행을 삽입합니다. 이 행은 현재 테스트가 실행된 후 제거됩니다. ``$data``\\ 는 테이블에 삽입할 데이터가 담긴"
+" 연관 배열입니다."
+
+#: ../../source/testing/database.rst:140
+msgid "Getting Data from Database"
+msgstr "데이터베이스에서 데이터 가져오기"
+
+#: ../../source/testing/database.rst:143
+msgid "grabFromDatabase($table, $column, $criteria)"
+msgstr "grabFromDatabase($table, $column, $criteria)"
+
+#: ../../source/testing/database.rst:145
+msgid ""
+"Returns the value of ``$column`` from the specified table where the row "
+"matches ``$criteria``. If more than one row is found, it will only return "
+"the first one."
+msgstr ""
+"행이 ``$criteria``\\ 와 일치하는 지정된 테이블에서 ``$column``\\ 의 값을 반환합니다. 두 개 이상의 행이 "
+"발견되면 첫 번째 행만 반환합니다."
+
+#: ../../source/testing/database.rst:154
+msgid "dontSeeInDatabase($table, $criteria)"
+msgstr "dontSeeInDatabase($table, $criteria)"
+
+#: ../../source/testing/database.rst:156
+msgid ""
+"Asserts that a row with criteria matching the key/value pairs in "
+"``$criteria`` DOES NOT exist in the database."
+msgstr "``$criteria``\\ 의 키/값 쌍과 일치하는 기준을 가진 행이 데이터베이스에 존재하지 않음을 어설션합니다."
+
+#: ../../source/testing/database.rst:161
+msgid "seeInDatabase($table, $criteria)"
+msgstr "seeInDatabase($table, $criteria)"
+
+#: ../../source/testing/database.rst:163
+msgid ""
+"Asserts that a row with criteria matching the key/value pairs in "
+"``$criteria`` DOES exist in the database."
+msgstr "``$criteria``\\ 의 키/값 쌍과 일치하는 기준을 가진 행이 데이터베이스에 존재함을 어설션합니다."
+
+#: ../../source/testing/database.rst:168
+msgid "seeNumRecords($expected, $table, $criteria)"
+msgstr "seeNumRecords($expected, $table, $criteria)"
+
+#: ../../source/testing/database.rst:170
+msgid ""
+"Asserts that a number of matching rows are found in the database that match "
+"``$criteria``."
+msgstr "``$criteria``\\ 와 일치하는 지정된 수의 행이 데이터베이스에서 발견됨을 어설션합니다."
+
+#: ../../source/testing/debugging.rst:3
+msgid "Debugging Your Application"
+msgstr "애플리케이션 디버깅"
+
+#: ../../source/testing/debugging.rst:11
+msgid "Checking Logs"
+msgstr "로그 확인"
+
+#: ../../source/testing/debugging.rst:16
+msgid "CodeIgniter Error Logs"
+msgstr "CodeIgniter 오류 로그"
+
+#: ../../source/testing/debugging.rst:18
+msgid ""
+"CodeIgniter logs error messages, according to the settings in "
+"**app/Config/Logger.php**."
+msgstr "CodeIgniter는 **app/Config/Logger.php**\\ 의 설정에 따라 오류 메시지를 기록합니다."
+
+#: ../../source/testing/debugging.rst:20
+msgid ""
+"The default configuration has daily log files stored in **writable/logs**. "
+"It would be a good idea to check them if things aren't working the way you "
+"expect!"
+msgstr ""
+"기본 설정에서는 일별 로그 파일이 **writable/logs**\\ 에 저장됩니다. 예상대로 동작하지 않는 경우 확인해 보는 것이 "
+"좋습니다!"
+
+#: ../../source/testing/debugging.rst:23
+msgid ""
+"You can adjust the error threshold to see more or fewer messages. See "
+":ref:`Logging <logging-configuration>` for details."
+msgstr ""
+"더 많거나 더 적은 메시지를 보기 위해 오류 임계값을 조정할 수 있습니다. 자세한 내용은 :ref:`로깅 <logging-"
+"configuration>`\\ 을 참조하십시오."
+
+#: ../../source/testing/debugging.rst:27
+msgid "Logging All SQL Queries"
+msgstr "모든 SQL 쿼리 로깅"
+
+#: ../../source/testing/debugging.rst:29
+msgid ""
+"All SQL queries issued by CodeIgniter can be logged. See :ref:`Database "
+"Events <database-events-dbquery>` for details."
+msgstr ""
+"CodeIgniter가 발행하는 모든 SQL 쿼리를 기록할 수 있습니다. 자세한 내용은 :ref:`데이터베이스 이벤트 <database-"
+"events-dbquery>`\\ 를 참조하십시오."
+
+#: ../../source/testing/debugging.rst:34
+msgid "Replacing var_dump()"
+msgstr "var_dump() 대체"
+
+#: ../../source/testing/debugging.rst:36
+msgid ""
+"While using Xdebug and a good IDE can be indispensable to debug your "
+"application, sometimes a quick ``var_dump()`` is all you need. CodeIgniter "
+"makes that even better by bundling in the excellent `Kint <https://kint-"
+"php.github.io/kint/>`_ debugging tool for PHP."
+msgstr ""
+"Xdebug와 좋은 IDE를 사용하는 것이 애플리케이션 디버깅에 필수적일 수 있지만, 때로는 빠른 ``var_dump()``\\ 만으로도"
+" 충분합니다. CodeIgniter는 PHP용 탁월한 `Kint <https://kint-php.github.io/kint/>`_ 디버깅"
+" 도구를 번들로 제공하여 더욱 편리하게 만들었습니다."
+
+#: ../../source/testing/debugging.rst:41
+msgid ""
+"This goes way beyond your usual tool, providing many alternate pieces of "
+"data, like formatting timestamps into recognizable dates, showing you "
+"hexcodes as colors, display array data like a table for easy reading, and "
+"much, much more."
+msgstr ""
+"이는 일반적인 도구를 훨씬 뛰어넘어, 타임스탬프를 인식 가능한 날짜로 포맷하거나, 16진수 코드를 색상으로 표시하거나, 배열 데이터를 "
+"테이블 형태로 표시하는 등 다양한 추가 데이터를 제공합니다."
+
+#: ../../source/testing/debugging.rst:46
+msgid "Enabling Kint"
+msgstr "Kint 활성화"
+
+#: ../../source/testing/debugging.rst:48
+msgid ""
+"By default, Kint is enabled in **development** and **testing** "
+":doc:`environments </general/environments>` only. It will be enabled "
+"whenever the constant ``CI_DEBUG`` is defined and its value is truthy. This "
+"is defined in the boot files (e.g. **app/Config/Boot/development.php**)."
+msgstr ""
+"기본적으로 Kint는 **development**\\ 와 **testing** :doc:`환경 "
+"</general/environments>`\\ 에서만 활성화됩니다. 상수 ``CI_DEBUG``\\ 가 정의되고 그 값이 참일 때마다 "
+"활성화됩니다. 이는 부트 파일(예: **app/Config/Boot/development.php**)에 정의되어 있습니다."
+
+#: ../../source/testing/debugging.rst:53
+msgid "Using Kint"
+msgstr "Kint 사용"
+
+#: ../../source/testing/debugging.rst:56
+msgid "d()"
+msgstr "d()"
+
+#: ../../source/testing/debugging.rst:58
+msgid ""
+"The ``d()`` method dumps all of the data it knows about the contents passed "
+"as the only parameter to the screen, and allows the script to continue "
+"executing:"
+msgstr ""
+"``d()`` 메서드는 유일한 매개변수로 전달된 내용에 대해 알고 있는 모든 데이터를 화면에 덤프하고, 스크립트가 계속 실행되도록 "
+"합니다:"
+
+#: ../../source/testing/debugging.rst:65
+msgid "dd()"
+msgstr "dd()"
+
+#: ../../source/testing/debugging.rst:67
+msgid ""
+"This method is identical to ``d()``, except that it also ``die()`` and no "
+"further code is executed this request."
+msgstr "이 메서드는 ``d()``\\ 와 동일하지만, ``die()``\\ 도 호출하여 해당 요청에서 더 이상의 코드가 실행되지 않습니다."
+
+#: ../../source/testing/debugging.rst:70
+msgid "trace()"
+msgstr "trace()"
+
+#: ../../source/testing/debugging.rst:72
+msgid ""
+"This provides a backtrace to the current execution point, with Kint's own "
+"unique spin:"
+msgstr "현재 실행 지점까지의 백트레이스를 Kint 고유의 방식으로 제공합니다:"
+
+#: ../../source/testing/debugging.rst:77
+msgid ""
+"For more information, see `Kint's page <https://kint-"
+"php.github.io/kint//>`_."
+msgstr "자세한 내용은 `Kint 페이지 <https://kint-php.github.io/kint//>`_\\ 를 참조하십시오."
+
+#: ../../source/testing/debugging.rst:83
+msgid "The Debug Toolbar"
+msgstr "디버그 툴바"
+
+#: ../../source/testing/debugging.rst:85
+msgid ""
+"The Debug Toolbar provides at-a-glance information about the current page "
+"request, including benchmark results, queries you have run, request and "
+"response data, and more. This can all prove very useful during development "
+"to help you debug and optimize."
+msgstr ""
+"디버그 툴바는 벤치마크 결과, 실행한 쿼리, 요청 및 응답 데이터 등 현재 페이지 요청에 대한 정보를 한눈에 제공합니다. 이 모든 것이 "
+"디버그 및 최적화에 매우 유용합니다."
+
+#: ../../source/testing/debugging.rst:89
+msgid ""
+"The Debug Toolbar is still under construction with several planned features "
+"not yet implemented."
+msgstr "디버그 툴바는 아직 개발 중이며 계획된 여러 기능이 아직 구현되지 않았습니다."
+
+#: ../../source/testing/debugging.rst:92
+msgid "Enabling the Toolbar"
+msgstr "툴바 활성화"
+
+#: ../../source/testing/debugging.rst:94
+msgid ""
+"The toolbar is enabled by default in any :doc:`environment "
+"</general/environments>` *except* **production**. It will be shown whenever "
+"the constant ``CI_DEBUG`` is defined and its value is truthy. This is "
+"defined in the boot files (e.g. **app/Config/Boot/development.php**) and can"
+" be modified there to determine what environment to show."
+msgstr ""
+"툴바는 **production**\\ 을 *제외한* 모든 :doc:`환경 </general/environments>`\\ 에서 기본적으로"
+" 활성화됩니다. 상수 ``CI_DEBUG``\\ 가 정의되고 그 값이 참일 때마다 표시됩니다. 이는 부트 파일(예: "
+"**app/Config/Boot/development.php**)에 정의되어 있으며, 표시할 환경을 결정하기 위해 그곳에서 수정할 수 "
+"있습니다."
+
+#: ../../source/testing/debugging.rst:98
+msgid ""
+"The Debug Toolbar is not displayed when your ``baseURL`` setting (in "
+"**app/Config/App.php** or ``app.baseURL`` in **.env**) does not match your "
+"actual URL."
+msgstr ""
+"``baseURL`` 설정(**app/Config/App.php**\\ 의 값 또는 **.env**\\ 의 "
+"``app.baseURL``)이 실제 URL과 일치하지 않으면 디버그 툴바가 표시되지 않습니다."
+
+#: ../../source/testing/debugging.rst:100
+msgid ""
+"The toolbar itself is displayed as an :doc:`After Filter "
+"</incoming/filters>`. You can stop it from ever running by removing "
+"``'toolbar'`` from the ``$required`` (or ``$globals``) property of "
+"**app/Config/Filters.php**."
+msgstr ""
+"툴바 자체는 :doc:`After 필터 </incoming/filters>`\\ 로 표시됩니다. "
+"**app/Config/Filters.php**\\ 의 ``$required`` (또는 ``$globals``) 속성에서 "
+"``'toolbar'``\\ 를 제거하면 실행을 중단할 수 있습니다."
+
+#: ../../source/testing/debugging.rst:103
+msgid "Prior to v4.5.0, the toolbar was set to ``$globals`` by default."
+msgstr "v4.5.0 이전에는 툴바가 기본적으로 ``$globals``\\ 로 설정되었습니다."
+
+#: ../../source/testing/debugging.rst:106
+msgid "Choosing What to Show"
+msgstr "표시할 내용 선택"
+
+#: ../../source/testing/debugging.rst:108
+msgid ""
+"CodeIgniter ships with several Collectors that, as the name implies, collect"
+" data to display on the toolbar. You can easily make your own to customize "
+"the toolbar. To determine which collectors are shown, again head over to the"
+" **app/Config/Toolbar.php** configuration file:"
+msgstr ""
+"CodeIgniter에는 이름에서 알 수 있듯이 툴바에 표시할 데이터를 수집하는 여러 Collector가 포함되어 있습니다. 툴바를 "
+"커스터마이즈하기 위해 직접 만들 수도 있습니다. 어떤 collector가 표시될지 결정하려면 "
+"**app/Config/Toolbar.php** 설정 파일로 이동하십시오:"
+
+#: ../../source/testing/debugging.rst:114
+msgid ""
+"Comment out any collectors that you do not want to show. Add custom "
+"Collectors here by providing the fully-qualified class name. The exact "
+"collectors that appear here will affect which tabs are shown, as well as "
+"what information is shown on the Timeline."
+msgstr ""
+"표시하지 않으려는 collector는 주석 처리하십시오. 완전한 정규화 클래스명을 제공하여 여기에 커스텀 Collector를 "
+"추가하십시오. 여기에 나타나는 정확한 collector는 어떤 탭이 표시될지와 타임라인에 어떤 정보가 표시될지에 영향을 미칩니다."
+
+#: ../../source/testing/debugging.rst:118
+msgid ""
+"Some tabs, like Database and Logs, will only display when they have content "
+"to show. Otherwise, they are removed to help out on smaller displays."
+msgstr ""
+"데이터베이스나 로그와 같은 일부 탭은 표시할 내용이 있을 때만 표시됩니다. 그렇지 않으면 작은 화면에서의 공간을 위해 제거됩니다."
+
+#: ../../source/testing/debugging.rst:121
+msgid "The Collectors that ship with CodeIgniter are:"
+msgstr "CodeIgniter에 포함된 Collector는 다음과 같습니다:"
+
+#: ../../source/testing/debugging.rst:123
+msgid ""
+"**Timers** collects all of the benchmark data, both by the system and by "
+"your application."
+msgstr "**Timers**\\ 는 시스템과 애플리케이션 모두의 벤치마크 데이터를 수집합니다."
+
+#: ../../source/testing/debugging.rst:124
+msgid ""
+"**Database** Displays a list of queries that all database connections have "
+"performed, and their execution time."
+msgstr "**Database**\\ 는 모든 데이터베이스 연결이 수행한 쿼리 목록과 그 실행 시간을 표시합니다."
+
+#: ../../source/testing/debugging.rst:125
+msgid ""
+"**Logs** Any information that was logged will be displayed here. In long-"
+"running systems, or systems with many items being logged, this can cause "
+"memory issues and should be disabled."
+msgstr ""
+"**Logs**\\ 는 기록된 모든 정보가 여기에 표시됩니다. 오래 실행되는 시스템이나 많은 항목이 기록되는 시스템에서는 메모리 문제를 "
+"일으킬 수 있으므로 비활성화해야 합니다."
+
+#: ../../source/testing/debugging.rst:126
+msgid ""
+"**Views** Displays render time for views on the timeline, and shows any data"
+" passed to the views on a separate tab."
+msgstr "**Views**\\ 는 타임라인에 뷰의 렌더링 시간을 표시하고, 뷰에 전달된 데이터를 별도의 탭에 표시합니다."
+
+#: ../../source/testing/debugging.rst:127
+msgid ""
+"**Cache** Will display information about cache hits and misses, and "
+"execution times."
+msgstr "**Cache**\\ 는 캐시 적중 및 미적중에 대한 정보와 실행 시간을 표시합니다."
+
+#: ../../source/testing/debugging.rst:128
+msgid ""
+"**Files** displays a list of all files that have been loaded during this "
+"request."
+msgstr "**Files**\\ 는 이 요청 중에 로드된 모든 파일의 목록을 표시합니다."
+
+#: ../../source/testing/debugging.rst:129
+msgid ""
+"**Routes** displays information about the current route and all routes "
+"defined in the system."
+msgstr "**Routes**\\ 는 현재 라우트와 시스템에 정의된 모든 라우트에 대한 정보를 표시합니다."
+
+#: ../../source/testing/debugging.rst:130
+msgid ""
+"**Events** displays a list of all events that have been loaded during this "
+"request."
+msgstr "**Events**\\ 는 이 요청 중에 로드된 모든 이벤트의 목록을 표시합니다."
+
+#: ../../source/testing/debugging.rst:133
+msgid "Setting Benchmark Points"
+msgstr "벤치마크 지점 설정"
+
+#: ../../source/testing/debugging.rst:135
+msgid ""
+"In order for the Profiler to compile and display your benchmark data you "
+"must name your mark points using specific syntax."
+msgstr "프로파일러가 벤치마크 데이터를 컴파일하고 표시하려면 특정 구문을 사용하여 마크 지점에 이름을 지정해야 합니다."
+
+#: ../../source/testing/debugging.rst:137
+msgid ""
+"Please read the information on setting Benchmark points in the "
+":doc:`Benchmark Library </testing/benchmark>` page."
+msgstr ""
+":doc:`벤치마크 라이브러리 </testing/benchmark>` 페이지에서 벤치마크 지점 설정에 대한 정보를 읽어보십시오."
+
+#: ../../source/testing/debugging.rst:140
+msgid "Creating Custom Collectors"
+msgstr "커스텀 Collector 생성"
+
+#: ../../source/testing/debugging.rst:142
+msgid ""
+"Creating custom collectors is a straightforward task. You create a new "
+"class, fully-namespaced so that the autoloader can locate it, that extends "
+"``CodeIgniter\\Debug\\Toolbar\\Collectors\\BaseCollector``. This provides a "
+"number of methods that you can override, and has four required class "
+"properties that you must correctly set depending on how you want the "
+"Collector to work:"
+msgstr ""
+"커스텀 collector 생성은 간단한 작업입니다. 오토로더가 찾을 수 있도록 완전한 네임스페이스를 포함하여 "
+"``CodeIgniter\\Debug\\Toolbar\\Collectors\\BaseCollector``\\ 를 확장하는 새 클래스를 "
+"만듭니다. 이는 오버라이드할 수 있는 여러 메서드를 제공하며, Collector가 동작하는 방식에 따라 올바르게 설정해야 하는 네 가지 "
+"필수 클래스 속성이 있습니다:"
+
+#: ../../source/testing/debugging.rst:149
+msgid ""
+"**$hasTimeline** should be set to ``true`` for any Collector that wants to "
+"display information in the toolbar's timeline. If this is true, you will "
+"need to implement the ``formatTimelineData()`` method to format and return "
+"the data for display."
+msgstr ""
+"**$hasTimeline**\\ 은 툴바의 타임라인에 정보를 표시하려는 Collector에 대해 ``true``\\ 로 설정해야 "
+"합니다. 이 값이 true이면 표시를 위한 데이터를 포맷하고 반환하는 ``formatTimelineData()`` 메서드를 구현해야 "
+"합니다."
+
+#: ../../source/testing/debugging.rst:153
+msgid ""
+"**$hasTabContent** should be ``true`` if the Collector wants to display its "
+"own tab with custom content. If this is true, you will need to provide a "
+"``$title``, implement the ``display()`` method to render out tab's contents,"
+" and might need to implement the ``getTitleDetails()`` method if you want to"
+" display additional information just to the right of the tab content's "
+"title."
+msgstr ""
+"**$hasTabContent**\\ 은 Collector가 커스텀 내용이 있는 자체 탭을 표시하려는 경우 ``true``\\ 여야 "
+"합니다. 이 값이 true이면 ``$title``\\ 을 제공하고, 탭 내용을 렌더링하는 ``display()`` 메서드를 구현해야 "
+"하며, 탭 내용 제목 바로 오른쪽에 추가 정보를 표시하려면 ``getTitleDetails()`` 메서드도 구현해야 할 수 있습니다."
+
+#: ../../source/testing/debugging.rst:158
+msgid ""
+"**$hasVarData** should be ``true`` if this Collector wants to add additional"
+" data to the ``Vars`` tab. If this is true, you will need to implement the "
+"``getVarData()`` method."
+msgstr ""
+"**$hasVarData**\\ 는 이 Collector가 ``Vars`` 탭에 추가 데이터를 추가하려는 경우 ``true``\\ 여야 "
+"합니다. 이 값이 true이면 ``getVarData()`` 메서드를 구현해야 합니다."
+
+#: ../../source/testing/debugging.rst:161
+msgid "**$title** is displayed on open tabs."
+msgstr "**$title**\\ 은 열린 탭에 표시됩니다."
+
+#: ../../source/testing/debugging.rst:164
+msgid "Displaying a Toolbar Tab"
+msgstr "툴바 탭 표시"
+
+#: ../../source/testing/debugging.rst:166
+msgid "To display a toolbar tab you must:"
+msgstr "툴바 탭을 표시하려면 다음을 수행해야 합니다:"
+
+#: ../../source/testing/debugging.rst:168
+msgid ""
+"Fill in ``$title`` with the text displayed as both the toolbar title and the"
+" tab header."
+msgstr "툴바 제목과 탭 헤더 모두에 표시되는 텍스트로 ``$title``\\ 을 채우십시오."
+
+#: ../../source/testing/debugging.rst:169
+msgid "Set ``$hasTabContent`` to ``true``."
+msgstr "``$hasTabContent``\\ 를 ``true``\\ 로 설정하십시오."
+
+#: ../../source/testing/debugging.rst:170
+msgid "Implement the ``display()`` method."
+msgstr "``display()`` 메서드를 구현하십시오."
+
+#: ../../source/testing/debugging.rst:171
+msgid "Optionally, implement the ``getTitleDetails()`` method."
+msgstr "선택적으로 ``getTitleDetails()`` 메서드를 구현하십시오."
+
+#: ../../source/testing/debugging.rst:173
+msgid ""
+"The ``display()`` creates the HTML that is displayed within the tab itself. "
+"It does not need to worry about the title of the tab, as that is "
+"automatically handled by the toolbar. It should return a string of HTML."
+msgstr ""
+"``display()``\\ 는 탭 자체 내에 표시되는 HTML을 생성합니다. 탭의 제목은 툴바에 의해 자동으로 처리되므로 걱정할 필요가"
+" 없습니다. HTML 문자열을 반환해야 합니다."
+
+#: ../../source/testing/debugging.rst:176
+msgid ""
+"The ``getTitleDetails()`` method should return a string that is displayed "
+"just to the right of the tab's title. it can be used to provide additional "
+"overview information. For example, the Database tab displays the total "
+"number of queries across all connections, while the Files tab displays the "
+"total number of files."
+msgstr ""
+"``getTitleDetails()`` 메서드는 탭 제목 바로 오른쪽에 표시되는 문자열을 반환해야 합니다. 추가적인 개요 정보를 제공하는"
+" 데 사용할 수 있습니다. 예를 들어, 데이터베이스 탭은 모든 연결에 걸친 총 쿼리 수를 표시하고, 파일 탭은 총 파일 수를 표시합니다."
+
+#: ../../source/testing/debugging.rst:181
+msgid "Providing Timeline Data"
+msgstr "타임라인 데이터 제공"
+
+#: ../../source/testing/debugging.rst:183
+msgid "To provide information to be displayed in the Timeline you must:"
+msgstr "타임라인에 표시될 정보를 제공하려면 다음을 수행해야 합니다:"
+
+#: ../../source/testing/debugging.rst:185
+msgid "Set ``$hasTimeline`` to ``true``."
+msgstr "``$hasTimeline``\\ 을 ``true``\\ 로 설정하십시오."
+
+#: ../../source/testing/debugging.rst:186
+msgid "Implement the ``formatTimelineData()`` method."
+msgstr "``formatTimelineData()`` 메서드를 구현하십시오."
+
+#: ../../source/testing/debugging.rst:188
+msgid ""
+"The ``formatTimelineData()`` method must return an array of arrays formatted"
+" in a way that the timeline can use it to sort it correctly and display the "
+"correct information. The inner arrays must include the following "
+"information:"
+msgstr ""
+"``formatTimelineData()`` 메서드는 타임라인이 올바르게 정렬하고 정보를 표시하는 데 사용할 수 있는 방식으로 포맷된 "
+"배열의 배열을 반환해야 합니다. 내부 배열에는 다음 정보가 포함되어야 합니다:"
+
+#: ../../source/testing/debugging.rst:194
+msgid "Providing Vars"
+msgstr "Vars 제공"
+
+#: ../../source/testing/debugging.rst:196
+msgid "To add data to the Vars tab you must:"
+msgstr "Vars 탭에 데이터를 추가하려면 다음을 수행해야 합니다:"
+
+#: ../../source/testing/debugging.rst:198
+msgid "Set ``$hasVarData`` to ``true``"
+msgstr "``$hasVarData``\\ 를 ``true``\\ 로 설정하십시오"
+
+#: ../../source/testing/debugging.rst:199
+msgid "Implement ``getVarData()`` method."
+msgstr "``getVarData()`` 메서드를 구현하십시오."
+
+#: ../../source/testing/debugging.rst:201
+msgid ""
+"The ``getVarData()`` method should return an array containing arrays of "
+"key/value pairs to display. The name of the outer array's key is the name of"
+" the section on the Vars tab:"
+msgstr ""
+"``getVarData()`` 메서드는 표시할 키/값 쌍의 배열을 포함하는 배열을 반환해야 합니다. 외부 배열의 키 이름이 Vars 탭의"
+" 섹션 이름이 됩니다:"
+
+#: ../../source/testing/debugging.rst:209
+msgid "Hot Reloading"
+msgstr "핫 리로딩"
+
+#: ../../source/testing/debugging.rst:213
+msgid ""
+"The Debug Toolbar includes a feature called Hot Reloading that allows you to"
+" make changes to your application's code and have them automatically "
+"reloaded in the browser without having to refresh the page. This is a great "
+"time-saver during development."
+msgstr ""
+"디버그 툴바에는 핫 리로딩(Hot Reloading)이라는 기능이 포함되어 있습니다. 이 기능을 사용하면 애플리케이션 코드를 변경하면 "
+"페이지를 새로 고침하지 않고도 브라우저에서 자동으로 다시 로드됩니다. 개발 중에 시간을 크게 절약해 줍니다."
+
+#: ../../source/testing/debugging.rst:215
+msgid ""
+"To enable Hot Reloading while you are developing, you can click the button "
+"on the left side of the toolbar that looks like a refresh icon. This will "
+"enable Hot Reloading for all pages until you disable it."
+msgstr ""
+"개발 중에 핫 리로딩을 활성화하려면 툴바 왼쪽에 있는 새로 고침 아이콘처럼 생긴 버튼을 클릭하면 됩니다. 비활성화할 때까지 모든 페이지에"
+" 대해 핫 리로딩이 활성화됩니다."
+
+#: ../../source/testing/debugging.rst:217
+msgid ""
+"Hot Reloading works by scanning the files within the **app** directory every"
+" second and looking for changes. If it finds any, it will send a message to "
+"the browser to reload the page. It does not scan any other directories, so "
+"if you are making changes to files outside of the **app** directory, you "
+"will need to manually refresh the page."
+msgstr ""
+"핫 리로딩은 **app** 디렉터리 내의 파일을 매초 스캔하여 변경 사항을 찾습니다. 변경 사항이 발견되면 브라우저에 페이지를 다시 "
+"로드하라는 메시지를 보냅니다. 다른 디렉터리는 스캔하지 않으므로, **app** 디렉터리 외부의 파일을 변경하는 경우 수동으로 페이지를 "
+"새로 고침해야 합니다."
+
+#: ../../source/testing/debugging.rst:219
+msgid ""
+"If you need to watch files outside of the **app** directory, or are finding "
+"it slow due to the size of your project, you can specify the directories to "
+"scan and the file extensions to scan for in the ``$watchedDirectories`` and "
+"``$watchedExtensions`` properties of the **app/Config/Toolbar.php** "
+"configuration file."
+msgstr ""
+"**app** 디렉터리 외부의 파일을 감시해야 하거나 프로젝트 크기로 인해 느리다고 느끼는 경우, "
+"**app/Config/Toolbar.php** 설정 파일의 ``$watchedDirectories``\\ 와 "
+"``$watchedExtensions`` 속성에서 스캔할 디렉터리와 파일 확장자를 지정할 수 있습니다."
+
+#: ../../source/testing/fabricator.rst:3
+msgid "Generating Test Data"
+msgstr "테스트 데이터 생성"
+
+#: ../../source/testing/fabricator.rst:5
+msgid ""
+"Often you will need sample data for your application to run its tests. The "
+"``Fabricator`` class uses `Faker <https://github.com/FakerPHP/Faker>`_ to "
+"turn models into generators of random data. Use fabricators in your seeds or"
+" test cases to stage fake data for your unit tests."
+msgstr ""
+"애플리케이션의 테스트를 실행하기 위해 샘플 데이터가 필요한 경우가 많습니다. ``Fabricator``\\ 클래스는 `Faker "
+"<https://github.com/FakerPHP/Faker>`_\\ 를 사용하여 모델을 임의 데이터 생성기로 변환합니다. "
+"시드(seed) 또는 테스트 케이스에서 패브리케이터(Fabricator)를 사용하여 단위 테스트를 위한 가짜 데이터를 준비하십시오."
+
+#: ../../source/testing/fabricator.rst:14
+msgid "Supported Models"
+msgstr "지원되는 모델"
+
+#: ../../source/testing/fabricator.rst:16
+msgid ""
+"``Fabricator`` supports any model that extends the framework's core model, "
+"``CodeIgniter\\Model``. You may use your own custom models by ensuring they "
+"implement ``CodeIgniter\\Test\\Interfaces\\FabricatorModel``:"
+msgstr ""
+"``Fabricator``\\ 는 프레임워크의 핵심 모델인 ``CodeIgniter\\Model``\\ 을 상속하는 모든 모델을 "
+"지원합니다. ``CodeIgniter\\Test\\Interfaces\\FabricatorModel``\\ 을 구현한 커스텀 모델을 "
+"사용할 수도 있습니다:"
+
+#: ../../source/testing/fabricator.rst:21
+msgid ""
+"In addition to methods, the interface outlines some necessary properties for"
+" the target model. Please see the interface code for details."
+msgstr "메서드 외에도, 인터페이스는 대상 모델에 필요한 몇 가지 속성을 정의합니다. 자세한 내용은 인터페이스 코드를 참고하십시오."
+
+#: ../../source/testing/fabricator.rst:24
+msgid "Loading Fabricators"
+msgstr "패브리케이터 로드"
+
+#: ../../source/testing/fabricator.rst:26
+msgid "At its most basic a fabricator takes the model to act on:"
+msgstr "가장 기본적인 형태에서, 패브리케이터는 작동할 모델을 인자로 받습니다:"
+
+#: ../../source/testing/fabricator.rst:30
+msgid ""
+"The parameter can be a string specifying the name of the model, or an "
+"instance of the model itself:"
+msgstr "매개변수는 모델의 이름을 지정하는 문자열이거나 모델 인스턴스 자체일 수 있습니다:"
+
+#: ../../source/testing/fabricator.rst:35
+msgid "Defining Formatters"
+msgstr "포매터 정의"
+
+#: ../../source/testing/fabricator.rst:37
+msgid ""
+"Faker generates data by requesting it from a formatter. With no formatters "
+"defined, ``Fabricator`` will attempt to guess at the most appropriate fit "
+"based on the field name and properties of the model it represents, falling "
+"back on ``$fabricator->defaultFormatter``. This may be fine if your field "
+"names correspond with common formatters, or if you don't care much about the"
+" content of the fields, but most of the time you will want to specify the "
+"formatters to use as the second parameter to the constructor:"
+msgstr ""
+"Faker는 포매터로부터 데이터를 요청하여 생성합니다. 포매터가 정의되지 않은 경우, ``Fabricator``\\ 는 필드 이름과 모델"
+" 속성을 기반으로 가장 적절한 포매터를 추측하며, ``$fabricator->defaultFormatter``\\ 로 폴백됩니다. 필드 "
+"이름이 일반적인 포매터와 일치하거나 필드 내용이 크게 중요하지 않다면 이 방법도 괜찮지만, 대부분의 경우 생성자의 두 번째 매개변수로 "
+"사용할 포매터를 직접 지정하는 것이 좋습니다:"
+
+#: ../../source/testing/fabricator.rst:45
+msgid ""
+"You can also change the formatters after a fabricator is initialized by "
+"using the ``setFormatters()`` method."
+msgstr "패브리케이터가 초기화된 후에도 ``setFormatters()`` 메서드를 사용하여 포매터를 변경할 수 있습니다."
+
+#: ../../source/testing/fabricator.rst:48
+msgid "Advanced Formatting"
+msgstr "고급 포맷팅"
+
+#: ../../source/testing/fabricator.rst:50
+msgid ""
+"Sometimes the default return of a formatter is not enough. Faker providers "
+"allow parameters to most formatters to further limit the scope of random "
+"data. A fabricator will check its representative model for the ``fake()`` "
+"method where you can define exactly what the faked data should look like:"
+msgstr ""
+"포매터의 기본 반환값으로 충분하지 않을 때도 있습니다. Faker 프로바이더는 대부분의 포매터에 매개변수를 허용하여 임의 데이터의 범위를"
+" 더 제한할 수 있습니다. 패브리케이터는 모델에서 ``fake()`` 메서드를 찾아, 그 안에서 가짜 데이터의 형태를 정확하게 정의할 수"
+" 있습니다:"
+
+#: ../../source/testing/fabricator.rst:56
+msgid ""
+"Notice in this example how the first three values are equivalent to the "
+"formatters from before. However for ``avatar`` we have requested an image "
+"size other than the default and ``login`` uses a conditional based on app "
+"configuration, neither of which are possible using the ``$formatters`` "
+"parameter."
+msgstr ""
+"이 예시에서 처음 세 값은 이전의 포매터와 동일하다는 점에 주목하십시오. 그러나 ``avatar``\\ 의 경우 기본값이 아닌 다른 "
+"이미지 크기를 요청했고, ``login``\\ 은 앱 설정에 따른 조건문을 사용했는데, 이 두 가지는 ``$formatters`` "
+"매개변수로는 불가능한 것들입니다."
+
+#: ../../source/testing/fabricator.rst:60
+msgid ""
+"You may want to keep your test data separate from your production models, so"
+" it is a good practice to define a child class in your test support folder:"
+msgstr ""
+"테스트 데이터를 프로덕션 모델과 분리하고 싶을 수 있으므로, 테스트 지원 폴더에 자식 클래스를 정의하는 것이 좋은 방법입니다:"
+
+#: ../../source/testing/fabricator.rst:66
+msgid "Setting Modifiers"
+msgstr "수정자 설정"
+
+#: ../../source/testing/fabricator.rst:70
+msgid ""
+"Faker provides three special providers, ``unique()``, ``optional()``, and "
+"``valid()``, to be called before any provider. Fabricator fully supports "
+"these modifiers by providing dedicated methods."
+msgstr ""
+"Faker는 모든 프로바이더 호출 전에 사용하는 세 가지 특별한 프로바이더인 ``unique()``, ``optional()``, "
+"``valid()``\\ 를 제공합니다. 패브리케이터는 전용 메서드를 통해 이러한 수정자를 완전히 지원합니다."
+
+#: ../../source/testing/fabricator.rst:76
+msgid ""
+"The arguments passed after the field name are passed directly to the "
+"modifiers as-is. You can refer to `Faker's documentation on modifiers`_ for "
+"details."
+msgstr "필드 이름 다음에 전달된 인수는 수정자에게 그대로 전달됩니다. 자세한 내용은 `Faker의 수정자 문서`_\\ 를 참고하십시오."
+
+#: ../../source/testing/fabricator.rst:81
+msgid ""
+"Instead of calling each method on Fabricator, you may use Faker's modifiers "
+"directly if you are using the ``fake()`` method on your models."
+msgstr ""
+"패브리케이터(Fabricator)의 각 메서드를 호출하는 대신, 모델에서 ``fake()`` 메서드를 사용하는 경우 Faker의 수정자를"
+" 직접 사용할 수도 있습니다."
+
+#: ../../source/testing/fabricator.rst:87
+msgid "Localization"
+msgstr "로컬라이제이션"
+
+#: ../../source/testing/fabricator.rst:89
+msgid ""
+"Faker supports a lot of different locales. Check their documentation to "
+"determine which providers support your locale. Specify a locale in the third"
+" parameter while initiating a fabricator:"
+msgstr ""
+"Faker는 다양한 로케일을 지원합니다. 어떤 프로바이더가 원하는 로케일을 지원하는지 확인하려면 해당 문서를 참고하십시오. 패브리케이터를"
+" 초기화할 때 세 번째 매개변수에 로케일을 지정합니다:"
+
+#: ../../source/testing/fabricator.rst:94
+msgid ""
+"If no locale is specified it will use the one defined in "
+"**app/Config/App.php** as ``defaultLocale``. You can check the locale of an "
+"existing fabricator using its ``getLocale()`` method."
+msgstr ""
+"로케일을 지정하지 않으면 **app/Config/App.php**\\ 에서 ``defaultLocale``\\ 로 정의된 로케일을 "
+"사용합니다. ``getLocale()`` 메서드를 통해 기존 패브리케이터의 로케일을 확인할 수 있습니다."
+
+#: ../../source/testing/fabricator.rst:98
+msgid "Faking the Data"
+msgstr "데이터 위조"
+
+#: ../../source/testing/fabricator.rst:100
+msgid ""
+"Once you have a properly-initialized fabricator it is easy to generate test "
+"data with the ``make()`` command:"
+msgstr "패브리케이터가 올바르게 초기화되면 ``make()`` 명령으로 테스트 데이터를 쉽게 생성할 수 있습니다:"
+
+#: ../../source/testing/fabricator.rst:104
+msgid "You might get back something like this:"
+msgstr "다음과 같은 결과를 얻을 수 있습니다:"
+
+#: ../../source/testing/fabricator.rst:108
+msgid "You can also get a lot of them back by supplying a count:"
+msgstr "개수를 지정하여 여러 개를 한 번에 얻을 수도 있습니다:"
+
+#: ../../source/testing/fabricator.rst:112
+msgid ""
+"The return type of ``make()`` mimics what is defined in the representative "
+"model, but you can force a type using the methods directly:"
+msgstr ""
+"``make()``\\ 의 반환 타입은 해당 모델에 정의된 타입을 따르지만, 메서드를 직접 사용하여 타입을 강제 지정할 수도 있습니다:"
+
+#: ../../source/testing/fabricator.rst:117
+msgid ""
+"The return from ``make()`` is ready to be used in tests or inserted into the"
+" database. Alternatively ``Fabricator`` includes the ``create()`` command to"
+" insert it for you, and return the result. Due to model callbacks, database "
+"formatting, and special keys like primary and timestamps the return from "
+"``create()`` can differ from ``make()``. You might get back something like "
+"this:"
+msgstr ""
+"``make()``\\ 의 반환값은 테스트에서 사용하거나 데이터베이스에 삽입할 준비가 된 상태입니다. 또는 ``Fabricator``\\"
+" 에 포함된 ``create()`` 명령을 사용하면 데이터베이스에 자동으로 삽입하고 결과를 반환합니다. 모델 콜백, 데이터베이스 포맷팅,"
+" 기본 키 및 타임스탬프와 같은 특수 키로 인해 ``create()``\\ 의 반환값은 ``make()``\\ 와 다를 수 있습니다. "
+"다음과 같은 결과를 얻을 수 있습니다:"
+
+#: ../../source/testing/fabricator.rst:124
+msgid ""
+"Similar to ``make()`` you can supply a count to insert and return an array "
+"of objects:"
+msgstr "``make()``\\ 와 마찬가지로 개수를 지정하여 객체 배열을 삽입하고 반환받을 수 있습니다:"
+
+#: ../../source/testing/fabricator.rst:128
+msgid ""
+"Finally, there may be times you want to test with the full database object "
+"but you are not actually using a database. ``create()`` takes a second "
+"parameter to allowing mocking the object, returning the object with extra "
+"database fields above without actually touching the database:"
+msgstr ""
+"마지막으로, 실제 데이터베이스를 사용하지 않으면서도 완전한 데이터베이스 객체로 테스트하고 싶은 경우가 있습니다. "
+"``create()``\\ 는 두 번째 매개변수를 통해 객체 모킹을 허용하며, 데이터베이스에 실제로 접근하지 않고 위에서 설명한 추가 "
+"데이터베이스 필드가 포함된 객체를 반환합니다:"
+
+#: ../../source/testing/fabricator.rst:135
+msgid "Specifying Test Data"
+msgstr "테스트 데이터 지정"
+
+#: ../../source/testing/fabricator.rst:137
+msgid ""
+"Generated data is great, but sometimes you may want to supply a specific "
+"field for a test without compromising your formatters configuration. Rather "
+"then creating a new fabricator for each variant you can use "
+"``setOverrides()`` to specify the value for any fields:"
+msgstr ""
+"자동 생성된 데이터도 좋지만, 포매터 설정을 변경하지 않고 특정 필드에 고정 값을 지정하고 싶은 경우가 있습니다. 각 변형마다 새 "
+"패브리케이터를 만드는 대신 ``setOverrides()``\\ 를 사용하여 원하는 필드의 값을 지정할 수 있습니다:"
+
+#: ../../source/testing/fabricator.rst:143
+msgid ""
+"Now any data generated with ``make()`` or ``create()`` will always use "
+"\"Bobby\" for the ``first`` field:"
+msgstr ""
+"이제 ``make()`` 또는 ``create()``\\ 로 생성된 모든 데이터의 ``first`` 필드에는 항상 \"Bobby\"가 "
+"사용됩니다:"
+
+#: ../../source/testing/fabricator.rst:147
+msgid ""
+"``setOverrides()`` can take a second parameter to indicate whether this "
+"should be a persistent override or only for a single action:"
+msgstr ""
+"``setOverrides()``\\ 는 두 번째 매개변수를 통해 재정의가 영구적으로 유지될지, 단일 동작에만 적용될지를 지정할 수 "
+"있습니다:"
+
+#: ../../source/testing/fabricator.rst:152
+msgid ""
+"Notice after the first return the fabricator stops using the overrides:"
+msgstr "첫 번째 반환 후에는 패브리케이터가 재정의를 사용하지 않게 되는 것을 확인하십시오:"
+
+#: ../../source/testing/fabricator.rst:156
+msgid ""
+"If no second parameter is supplied then passed values will persist by "
+"default."
+msgstr "두 번째 매개변수를 지정하지 않으면 전달된 값은 기본적으로 영구 유지됩니다."
+
+#: ../../source/testing/fabricator.rst:159
+msgid "Test Helper"
+msgstr "테스트 헬퍼"
+
+#: ../../source/testing/fabricator.rst:161
+msgid ""
+"Often all you will need is a one-and-done fake object for testing. The Test "
+"Helper provides the ``fake($model, $overrides, $persist = true)`` function "
+"to do just this:"
+msgstr ""
+"테스트를 위해 일회성 가짜 객체만 필요한 경우가 많습니다. 테스트 헬퍼는 이를 위해 ``fake($model, $overrides, "
+"$persist = true)`` 함수를 제공합니다:"
+
+#: ../../source/testing/fabricator.rst:166
+msgid "This is equivalent to:"
+msgstr "이것은 다음과 동일합니다:"
+
+#: ../../source/testing/fabricator.rst:170
+msgid ""
+"If you just need a fake object without saving it to the database you can "
+"pass false into the persist parameter."
+msgstr "데이터베이스에 저장하지 않고 가짜 객체만 필요한 경우, persist 매개변수에 false를 전달하면 됩니다."
+
+#: ../../source/testing/fabricator.rst:173
+msgid "Table Counts"
+msgstr "테이블 카운트"
+
+#: ../../source/testing/fabricator.rst:175
+msgid ""
+"Frequently your faked data will depend on other faked data. ``Fabricator`` "
+"provides a static count of the number of faked items you have created for "
+"each table. Consider the following example:"
+msgstr ""
+"가짜 데이터가 다른 가짜 데이터에 의존하는 경우가 자주 있습니다. ``Fabricator``\\ 는 각 테이블에 생성된 가짜 항목 수에 "
+"대한 정적 카운트를 제공합니다. 다음 예시를 살펴보십시오:"
+
+#: ../../source/testing/fabricator.rst:179
+msgid ""
+"Your project has users and groups. In your test case you want to create "
+"various scenarios with groups of different sizes, so you use ``Fabricator`` "
+"to create a bunch of groups. Now you want to create fake users but don't "
+"want to assign them to a non-existent group ID. Your model's fake method "
+"could look like this:"
+msgstr ""
+"프로젝트에 사용자와 그룹이 있다고 가정합니다. 테스트 케이스에서 다양한 크기의 그룹 시나리오를 만들기 위해 ``Fabricator``\\"
+" 를 사용하여 여러 그룹을 생성합니다. 이제 가짜 사용자를 만들고 싶지만 존재하지 않는 그룹 ID에 할당하고 싶지 않은 경우, 모델의 "
+"fake 메서드는 다음과 같이 작성할 수 있습니다:"
+
+#: ../../source/testing/fabricator.rst:186
+msgid ""
+"Now creating a new user will ensure it is a part of a valid group: ``$user ="
+" fake(UserModel::class);``"
+msgstr "이제 새 사용자를 생성하면 유효한 그룹에 속하게 됩니다: ``$user = fake(UserModel::class);``"
+
+#: ../../source/testing/fabricator.rst:189
+msgid "Methods"
+msgstr "메서드"
+
+#: ../../source/testing/fabricator.rst:191
+msgid ""
+"``Fabricator`` handles the counts internally but you can also access these "
+"static methods to assist with using them:"
+msgstr "``Fabricator``\\ 는 내부적으로 카운트를 관리하지만, 다음 정적 메서드를 통해 직접 접근하여 활용할 수도 있습니다:"
+
+#: ../../source/testing/fabricator.rst:195
+msgid "getCount(string $table): int"
+msgstr "getCount(string $table): int"
+
+#: ../../source/testing/fabricator.rst:197
+msgid "Return the current value for a specific table (default: 0)."
+msgstr "특정 테이블의 현재 카운트 값을 반환합니다 (기본값: 0)."
+
+#: ../../source/testing/fabricator.rst:200
+msgid "setCount(string $table, int $count): int"
+msgstr "setCount(string $table, int $count): int"
+
+#: ../../source/testing/fabricator.rst:202
+msgid ""
+"Set the value for a specific table manually, for example if you create some "
+"test items without using a fabricator that you still wanted factored into "
+"the final counts."
+msgstr ""
+"특정 테이블의 카운트 값을 수동으로 설정합니다. 예를 들어, 패브리케이터를 사용하지 않고 테스트 항목을 생성했지만 최종 카운트에 "
+"포함시키고 싶은 경우에 사용합니다."
+
+#: ../../source/testing/fabricator.rst:206
+msgid "upCount(string $table): int"
+msgstr "upCount(string $table): int"
+
+#: ../../source/testing/fabricator.rst:208
+msgid ""
+"Increment the value for a specific table by one and return the new value. "
+"(This is what is used internally with ``Fabricator::create()``)."
+msgstr ""
+"특정 테이블의 카운트 값을 1 증가시키고 새 값을 반환합니다. (이것은 ``Fabricator::create()``\\ 에서 내부적으로 "
+"사용됩니다.)"
+
+#: ../../source/testing/fabricator.rst:212
+msgid "downCount(string $table): int"
+msgstr "downCount(string $table): int"
+
+#: ../../source/testing/fabricator.rst:214
+msgid ""
+"Decrement the value for a specific table by one and return the new value, "
+"for example if you deleted a fake item but wanted to track the change."
+msgstr ""
+"특정 테이블의 카운트 값을 1 감소시키고 새 값을 반환합니다. 예를 들어, 가짜 항목을 삭제했지만 변경 사항을 추적하고 싶은 경우에 "
+"사용합니다."
+
+#: ../../source/testing/fabricator.rst:218
+msgid "resetCounts()"
+msgstr "resetCounts()"
+
+#: ../../source/testing/fabricator.rst:220
+msgid ""
+"Resets all counts. Good idea to call this between test cases (though using "
+"``CIUnitTestCase::$refresh = true`` does it automatically)."
+msgstr ""
+"모든 카운트를 초기화합니다. 테스트 케이스 사이에 이 메서드를 호출하는 것이 좋습니다 (``CIUnitTestCase::$refresh "
+"= true``\\ 를 사용하면 자동으로 처리됩니다)."
+
+#: ../../source/testing/feature.rst:3
+msgid "HTTP Feature Testing"
+msgstr "HTTP 기능 테스트"
+
+#: ../../source/testing/feature.rst:5
+msgid ""
+"Feature testing allows you to view the results of a single call to your "
+"application. This might be returning the results of a single web form, "
+"hitting an API endpoint, and more. This is handy because it allows you to "
+"test the entire life-cycle of a single request, ensuring that the routing "
+"works, the response is the correct format, analyze the results, and more."
+msgstr ""
+"기능 테스트(Feature Testing)를 사용하면 애플리케이션에 대한 단일 호출의 결과를 확인할 수 있습니다. 단일 웹 폼의 결과를 "
+"반환하거나 API 엔드포인트를 호출하는 것 등이 이에 해당합니다. 이 방법은 단일 요청의 전체 생명주기를 테스트하여 라우팅이 올바르게 "
+"작동하는지, 응답이 올바른 형식인지, 결과를 분석하는 등 다양한 검증을 할 수 있어 편리합니다."
+
+#: ../../source/testing/feature.rst:17
+msgid ""
+"Feature testing requires that all of your test classes use the "
+"``CodeIgniter\\Test\\DatabaseTestTrait`` and "
+"``CodeIgniter\\Test\\FeatureTestTrait`` traits. Since these testing tools "
+"rely on proper database staging you must always ensure that "
+"``parent::setUp()`` and ``parent::tearDown()`` are called if you implement "
+"your own methods."
+msgstr ""
+"기능 테스트를 사용하려면 모든 테스트 클래스에서 ``CodeIgniter\\Test\\DatabaseTestTrait``\\ 와 "
+"``CodeIgniter\\Test\\FeatureTestTrait`` 트레이트를 사용해야 합니다. 이 테스트 도구들은 데이터베이스의 "
+"올바른 준비 과정에 의존하므로, 자체 메서드를 구현할 경우 반드시 ``parent::setUp()``\\ 과 "
+"``parent::tearDown()``\\ 이 호출되도록 해야 합니다."
+
+#: ../../source/testing/feature.rst:27
+msgid "Requesting a Page"
+msgstr "페이지 요청"
+
+#: ../../source/testing/feature.rst:29
+msgid ""
+"Essentially, feature tests simply allows you to call an endpoint on your "
+"application and get the results back. To do this, you use the ``call()`` "
+"method."
+msgstr ""
+"기본적으로 기능 테스트는 애플리케이션의 엔드포인트를 호출하고 결과를 반환받을 수 있게 해줍니다. 이를 위해 ``call()`` 메서드를 "
+"사용합니다."
+
+#: ../../source/testing/feature.rst:32
+msgid ""
+"The first parameter is the HTTP method to use (most frequently either "
+"``GET`` or ``POST``)."
+msgstr "첫 번째 매개변수는 사용할 HTTP 메서드입니다 (주로 ``GET`` 또는 ``POST``)."
+
+#: ../../source/testing/feature.rst:33
+msgid "The second parameter is the URI path on your site to test."
+msgstr "두 번째 매개변수는 테스트할 사이트의 URI 경로입니다."
+
+#: ../../source/testing/feature.rst:34
+msgid ""
+"The third parameter ``$params`` accepts an array that is used to populate "
+"the superglobal variables for the HTTP verb you are using. So, a method of "
+"**GET** would have the ``$_GET`` variable populated, while a **POST** "
+"request would have the ``$_POST`` array populated. The ``$params`` is also "
+"used in :ref:`feature-formatting-the-request`."
+msgstr ""
+"세 번째 매개변수 ``$params``\\ 는 사용 중인 HTTP 동사에 해당하는 슈퍼글로벌 변수를 채우는 데 사용되는 배열을 받습니다."
+" 따라서 **GET** 메서드는 ``$_GET`` 변수를 채우고, **POST** 요청은 ``$_POST`` 배열을 채웁니다. "
+"``$params``\\ 는 :ref:`feature-formatting-the-request`\\ 에서도 사용됩니다."
+
+#: ../../source/testing/feature.rst:40
+msgid ""
+"The ``$params`` array does not make sense for every HTTP verb, but is "
+"included for consistency."
+msgstr "``$params`` 배열이 모든 HTTP 동사에 적합한 것은 아니지만, 일관성을 위해 포함되어 있습니다."
+
+#: ../../source/testing/feature.rst:47
+msgid "Shorthand Methods"
+msgstr "축약 메서드"
+
+#: ../../source/testing/feature.rst:49
+msgid ""
+"Shorthand methods for each of the HTTP verbs exist to ease typing and make "
+"things clearer:"
+msgstr "각 HTTP 동사에 대한 축약 메서드가 있어 더 간결하고 명확하게 작성할 수 있습니다:"
+
+#: ../../source/testing/feature.rst:55
+msgid "Setting Different Routes"
+msgstr "다른 라우트 설정"
+
+#: ../../source/testing/feature.rst:57
+msgid ""
+"You can use a custom collection of routes by passing an array of \"routes\" "
+"into the ``withRoutes()`` method. This will override any existing routes in "
+"the system:"
+msgstr ""
+"``withRoutes()`` 메서드에 \"routes\" 배열을 전달하여 커스텀 라우트 모음을 사용할 수 있습니다. 이렇게 하면 "
+"시스템의 기존 라우트가 재정의됩니다:"
+
+#: ../../source/testing/feature.rst:63
+msgid ""
+"Each of the \"routes\" is a 3 element array containing the HTTP verb (or "
+"\"add\" for all), the URI to match, and the routing destination."
+msgstr "각 \"route\"는 HTTP 동사(모든 메서드의 경우 \"add\"), 매칭할 URI, 라우팅 대상으로 구성된 3개 요소의 배열입니다."
+
+#: ../../source/testing/feature.rst:69
+msgid "Setting Session Values"
+msgstr "세션 값 설정"
+
+#: ../../source/testing/feature.rst:71
+msgid ""
+"You can set custom session values to use during a single test with the "
+"``withSession()`` method. This takes an array of key/value pairs that should"
+" exist within the ``$_SESSION`` variable when this request is made, or "
+"``null`` to indicate that the current values of ``$_SESSION`` should be "
+"used. This is handy for testing authentication and more."
+msgstr ""
+"``withSession()`` 메서드를 사용하여 단일 테스트에서 사용할 커스텀 세션 값을 설정할 수 있습니다. 이 메서드는 요청 시 "
+"``$_SESSION`` 변수에 존재해야 하는 키/값 쌍의 배열을 받거나, 현재 ``$_SESSION`` 값을 사용하도록 "
+"``null``\\ 을 받습니다. 인증 테스트 등에 유용합니다."
+
+#: ../../source/testing/feature.rst:79
+msgid "Setting Headers"
+msgstr "헤더 설정"
+
+#: ../../source/testing/feature.rst:81
+msgid ""
+"You can set header values with the ``withHeaders()`` method. This takes an "
+"array of key/value pairs that would be passed as a header into the call:"
+msgstr ""
+"``withHeaders()`` 메서드를 사용하여 헤더 값을 설정할 수 있습니다. 이 메서드는 호출 시 헤더로 전달될 키/값 쌍의 배열을"
+" 받습니다:"
+
+#: ../../source/testing/feature.rst:88
+msgid "Bypassing Events"
+msgstr "이벤트 건너뛰기"
+
+#: ../../source/testing/feature.rst:90
+msgid ""
+"Events are handy to use in your application, but can be problematic during "
+"testing. Especially events that are used to send out emails. You can tell "
+"the system to skip any event handling with the ``skipEvents()`` method:"
+msgstr ""
+"이벤트는 애플리케이션에서 유용하게 사용되지만, 테스트 중에는 문제가 될 수 있습니다. 특히 이메일을 발송하는 이벤트가 그렇습니다. "
+"``skipEvents()`` 메서드를 사용하여 모든 이벤트 처리를 건너뛰도록 시스템에 지시할 수 있습니다:"
+
+#: ../../source/testing/feature.rst:99
+msgid "Formatting the Request"
+msgstr "요청 형식 지정"
+
+#: ../../source/testing/feature.rst:101
+msgid ""
+"You can set the format of your request's body using the ``withBodyFormat()``"
+" method. Currently this supports either ``json`` or ``xml``. This is useful "
+"when testing JSON or XML APIs so that you can set the request in the form "
+"that the controller will expect."
+msgstr ""
+"``withBodyFormat()`` 메서드를 사용하여 요청 본문의 형식을 설정할 수 있습니다. 현재 ``json`` 또는 "
+"``xml``\\ 을 지원합니다. 컨트롤러가 기대하는 형식으로 요청을 설정할 수 있어 JSON 또는 XML API를 테스트할 때 "
+"유용합니다."
+
+#: ../../source/testing/feature.rst:105
+msgid ""
+"This will take the parameters passed into ``call()``, ``post()``, "
+"``get()``... and assign them to the body of the request in the given format."
+msgstr ""
+"이 메서드는 ``call()``, ``post()``, ``get()`` 등에 전달된 매개변수를 받아 지정된 형식으로 요청 본문에 "
+"할당합니다."
+
+#: ../../source/testing/feature.rst:108
+msgid ""
+"This will also set the `Content-Type` header for your request accordingly."
+msgstr "이 메서드는 요청에 맞게 `Content-Type` 헤더도 함께 설정합니다."
+
+#: ../../source/testing/feature.rst:116
+msgid "Setting the Body"
+msgstr "본문 설정"
+
+#: ../../source/testing/feature.rst:118
+msgid ""
+"You can set the body of your request with the ``withBody()`` method. This "
+"allows you to format the body how you want to format it. It is recommended "
+"that you use this if you have more complicated XMLs to test."
+msgstr ""
+"``withBody()`` 메서드를 사용하여 요청 본문을 직접 설정할 수 있습니다. 원하는 형식으로 자유롭게 본문을 작성할 수 있습니다."
+" 복잡한 XML을 테스트해야 하는 경우 이 메서드를 사용하는 것을 권장합니다."
+
+#: ../../source/testing/feature.rst:121
+msgid ""
+"This will not set the `Content-Type` header for you. If you need that, you "
+"can set it with the ``withHeaders()`` method."
+msgstr ""
+"이 메서드는 `Content-Type` 헤더를 자동으로 설정하지 않습니다. 필요한 경우 ``withHeaders()`` 메서드를 사용하여"
+" 설정할 수 있습니다."
+
+#: ../../source/testing/feature.rst:127
+msgid ""
+"``FeatureTestTrait::call()`` returns an instance of a ``TestResponse``. See "
+":doc:`Testing Responses <response>` on how to use this class to perform "
+"additional assertions and verification in your test cases."
+msgstr ""
+"``FeatureTestTrait::call()``\\ 은 ``TestResponse``\\ 의 인스턴스를 반환합니다. 테스트 케이스에서"
+" 추가 어설션 및 검증을 수행하는 방법은 :doc:`응답 테스트 <response>`\\ 를 참고하십시오."
+
+#: ../../source/testing/index.rst:8
+msgid "Getting Started"
+msgstr "시작하기"
+
+#: ../../source/testing/index.rst:8
+msgid "Database"
+msgstr "데이터베이스"
+
+#: ../../source/testing/index.rst:8
+msgid "Generating Data"
+msgstr "데이터 생성"
+
+#: ../../source/testing/index.rst:8
+msgid "Controller Testing"
+msgstr "컨트롤러 테스트"
+
+#: ../../source/testing/index.rst:8
+msgid "HTTP Testing"
+msgstr "HTTP 테스트"
+
+#: ../../source/testing/index.rst:8
+msgid "Mocking"
+msgstr "모킹"
+
+#: ../../source/testing/index.rst:8 ../../source/testing/session_testing.rst:3
+msgid "Session Testing"
+msgstr "세션 테스트"
+
+#: ../../source/testing/index.rst:3 ../../source/testing/overview.rst:3
+msgid "Testing"
+msgstr "테스트"
+
+#: ../../source/testing/index.rst:5
+msgid ""
+"CodeIgniter ships with a number of tools to help you test and debug your "
+"application thoroughly. The following sections should get you quickly "
+"testing your applications."
+msgstr ""
+"CodeIgniter는 애플리케이션을 철저하게 테스트하고 디버그하는 데 도움이 되는 다양한 도구를 함께 제공합니다. 다음 섹션들을 통해 "
+"애플리케이션 테스트를 빠르게 시작할 수 있습니다."
+
+#: ../../source/testing/mocking.rst:3
+msgid "Mocking System Classes"
+msgstr "시스템 클래스 모킹"
+
+#: ../../source/testing/mocking.rst:5
+msgid ""
+"Several components within the framework provide mocked versions of their "
+"classes that can be used during testing. These classes can take the place of"
+" the normal class during test execution, often providing additional "
+"assertions to test that actions have taken place (or not taken place) during"
+" the execution of the test. This might be checking data gets cached "
+"correctly, emails were sent correctly, etc."
+msgstr ""
+"프레임워크 내의 여러 컴포넌트는 테스트 중에 사용할 수 있는 모의(mock) 버전의 클래스를 제공합니다. 이러한 클래스들은 테스트 실행 "
+"중에 일반 클래스를 대체하며, 테스트 실행 중에 특정 동작이 발생했는지(또는 발생하지 않았는지) 검증하기 위한 추가적인 어설션을 제공하는"
+" 경우가 많습니다. 예를 들어 데이터가 올바르게 캐시되었는지, 이메일이 올바르게 발송되었는지 등을 확인할 수 있습니다."
+
+#: ../../source/testing/mocking.rst:15
+msgid "Cache"
+msgstr "캐시"
+
+#: ../../source/testing/mocking.rst:17
+msgid ""
+"You can mock the cache with the ``mock()`` method, using the "
+"``CacheFactory`` as its only parameter."
+msgstr "``CacheFactory``\\ 를 유일한 매개변수로 사용하여 ``mock()`` 메서드로 캐시를 모킹할 수 있습니다."
+
+#: ../../source/testing/mocking.rst:21
+msgid ""
+"While this returns an instance of ``CodeIgniter\\Test\\Mock\\MockCache`` "
+"that you can use directly, it also inserts the mock into the Service class, "
+"so any calls within your code to ``service('cache')`` or "
+"``Config\\Services::cache()`` will use the mocked class within its place."
+msgstr ""
+"이 메서드는 직접 사용할 수 있는 ``CodeIgniter\\Test\\Mock\\MockCache`` 인스턴스를 반환하면서, 동시에 "
+"Service 클래스에 모의 객체를 삽입합니다. 따라서 코드 내에서 ``service('cache')`` 또는 "
+"``Config\\Services::cache()``\\ 를 호출하면 모의 클래스가 대신 사용됩니다."
+
+#: ../../source/testing/mocking.rst:25
+msgid ""
+"When using this in more than one test method within a single file you should"
+" call either the ``clean()`` or ``bypass()`` methods during the test "
+"``setUp()`` to ensure a clean slate when your tests run."
+msgstr ""
+"단일 파일 내의 여러 테스트 메서드에서 이를 사용하는 경우, 테스트 실행 시 깨끗한 상태를 보장하기 위해 테스트 ``setUp()``\\"
+" 에서 ``clean()`` 또는 ``bypass()`` 메서드를 호출해야 합니다."
+
+#: ../../source/testing/mocking.rst:29
+msgid "Additional Methods"
+msgstr "추가 메서드"
+
+#: ../../source/testing/mocking.rst:31
+msgid ""
+"You can instruct the mocked cache handler to never do any caching with the "
+"``bypass()`` method. This will emulate using the dummy handler and ensures "
+"that your test does not rely on cached data for your tests."
+msgstr ""
+"``bypass()`` 메서드를 사용하여 모의 캐시 핸들러가 캐싱을 전혀 수행하지 않도록 지시할 수 있습니다. 이렇게 하면 더미 핸들러를"
+" 사용하는 것과 같이 동작하며, 테스트가 캐시된 데이터에 의존하지 않도록 보장합니다."
+
+#: ../../source/testing/mocking.rst:37
+msgid "Available Assertions"
+msgstr "사용 가능한 어설션"
+
+#: ../../source/testing/mocking.rst:39
+msgid ""
+"The following new assertions are available on the mocked class for using "
+"during testing:"
+msgstr "테스트 중에 사용할 수 있는 다음과 같은 새로운 어설션들이 모의 클래스에서 제공됩니다:"
+
+#: ../../source/testing/overview.rst:5
+msgid ""
+"CodeIgniter has been built to make testing both the framework and your "
+"application as simple as possible. Support for `PHPUnit "
+"<https://phpunit.de/>`__ is built in, and the framework provides a number of"
+" convenient helper methods to make testing every aspect of your application "
+"as painless as possible."
+msgstr ""
+"CodeIgniter는 프레임워크와 애플리케이션 모두를 최대한 쉽게 테스트할 수 있도록 설계되었습니다. `PHPUnit "
+"<https://phpunit.de/>`__\\ 에 대한 지원이 내장되어 있으며, 애플리케이션의 모든 측면을 가능한 한 쉽게 테스트할 수"
+" 있도록 다양한 편의 헬퍼 메서드를 제공합니다."
+
+#: ../../source/testing/overview.rst:15
+msgid "System Set Up"
+msgstr "시스템 설정"
+
+#: ../../source/testing/overview.rst:18
+msgid "Installing PHPUnit"
+msgstr "PHPUnit 설치"
+
+#: ../../source/testing/overview.rst:20
+msgid ""
+"CodeIgniter uses `PHPUnit <https://phpunit.de/>`__ as the basis for all of "
+"its testing. There are two ways to install PHPUnit to use within your "
+"system."
+msgstr ""
+"CodeIgniter는 모든 테스트의 기반으로 `PHPUnit <https://phpunit.de/>`__\\ 을 사용합니다. 시스템에서"
+" PHPUnit을 설치하는 방법은 두 가지가 있습니다."
+
+#: ../../source/testing/overview.rst:24
+msgid "Composer"
+msgstr "Composer"
+
+#: ../../source/testing/overview.rst:26
+msgid ""
+"The recommended method is to install it in your project using `Composer "
+"<https://getcomposer.org/>`__. While it's possible to install it globally we"
+" do not recommend it, since it can cause compatibility issues with other "
+"projects on your system as time goes on."
+msgstr ""
+"권장하는 방법은 `Composer <https://getcomposer.org/>`__\\ 를 사용하여 프로젝트에 설치하는 것입니다. "
+"전역 설치도 가능하지만, 시간이 지남에 따라 시스템의 다른 프로젝트와 호환성 문제가 발생할 수 있으므로 권장하지 않습니다."
+
+#: ../../source/testing/overview.rst:30
+msgid ""
+"Ensure that you have Composer installed on your system. From the project "
+"root (the directory that contains the application and system directories) "
+"type the following from the command line:"
+msgstr ""
+"시스템에 Composer가 설치되어 있는지 확인하십시오. 프로젝트 루트(애플리케이션 및 시스템 디렉토리가 포함된 디렉토리)에서 커맨드 "
+"라인에 다음을 입력하십시오:"
+
+#: ../../source/testing/overview.rst:37
+msgid ""
+"This will install the correct version for your current PHP version. Once "
+"that is done, you can run all of the tests for this project by typing:"
+msgstr ""
+"이렇게 하면 현재 PHP 버전에 맞는 올바른 버전이 설치됩니다. 설치가 완료되면 다음을 입력하여 이 프로젝트의 모든 테스트를 실행할 수 "
+"있습니다:"
+
+#: ../../source/testing/overview.rst:44
+msgid "If you are using Windows, use the following command:"
+msgstr "Windows를 사용하는 경우 다음 명령을 사용하십시오:"
+
+#: ../../source/testing/overview.rst:51
+msgid "Phar"
+msgstr "Phar"
+
+#: ../../source/testing/overview.rst:53
+msgid ""
+"The other option is to download the .phar file from the `PHPUnit "
+"<https://phpunit.de/getting-started/phpunit-9.html>`__ site. This is a "
+"standalone file that should be placed within your project root."
+msgstr ""
+"다른 옵션은 `PHPUnit <https://phpunit.de/getting-started/phpunit-9.html>`__ 사이트에서"
+" .phar 파일을 다운로드하는 것입니다. 이 파일은 프로젝트 루트에 배치해야 하는 독립 실행형 파일입니다."
+
+#: ../../source/testing/overview.rst:58
+msgid "Testing Your Application"
+msgstr "애플리케이션 테스트"
+
+#: ../../source/testing/overview.rst:61
+msgid "PHPUnit Configuration"
+msgstr "PHPUnit 설정"
+
+#: ../../source/testing/overview.rst:63
+msgid ""
+"In your CodeIgniter project root, there is the ``phpunit.dist.xml`` file. "
+"This controls unit testing of your application. If you provide your own "
+"``phpunit.xml``, it will over-ride this."
+msgstr ""
+"CodeIgniter 프로젝트 루트에는 ``phpunit.dist.xml`` 파일이 있습니다. 이 파일은 애플리케이션의 단위 테스트를 "
+"제어합니다. 직접 ``phpunit.xml``\\ 을 제공하면 이 파일을 재정의합니다."
+
+#: ../../source/testing/overview.rst:67
+msgid ""
+"By default, test files are placed under the **tests** directory in the "
+"project root."
+msgstr "기본적으로 테스트 파일은 프로젝트 루트의 **tests** 디렉토리 아래에 배치됩니다."
+
+#: ../../source/testing/overview.rst:72
+msgid ""
+"In order to take advantage of the additional tools provided, your tests must"
+" extend ``CodeIgniter\\Test\\CIUnitTestCase``."
+msgstr "제공되는 추가 도구를 활용하려면 테스트가 ``CodeIgniter\\Test\\CIUnitTestCase``\\ 를 상속해야 합니다."
+
+#: ../../source/testing/overview.rst:75
+msgid ""
+"There are no rules for how test files must be placed. However, we recommend "
+"that you establish placement rules in advance so that you can quickly "
+"understand where the test files are located."
+msgstr ""
+"테스트 파일 배치에 대한 규칙은 없습니다. 그러나 테스트 파일의 위치를 빠르게 파악할 수 있도록 미리 배치 규칙을 정해두는 것을 "
+"권장합니다."
+
+#: ../../source/testing/overview.rst:79
+msgid ""
+"In this document, the test files corresponding to the classes in the **app**"
+" directory will be placed in the **tests/app** directory. To test a new "
+"library, **app/Libraries/Foo.php**, you would create a new file at "
+"**tests/app/Libraries/FooTest.php**:"
+msgstr ""
+"이 문서에서는 **app** 디렉토리의 클래스에 해당하는 테스트 파일을 **tests/app** 디렉토리에 배치합니다. 새 라이브러리 "
+"**app/Libraries/Foo.php**\\ 를 테스트하려면 **tests/app/Libraries/FooTest.php**\\ 에"
+" 새 파일을 생성합니다:"
+
+#: ../../source/testing/overview.rst:86
+msgid ""
+"To test one of your models, **app/Models/UserModel.php**, you might end up "
+"with something like this in **tests/app/Models/UserModelTest.php**:"
+msgstr ""
+"모델 **app/Models/UserModel.php**\\ 를 테스트하려면 "
+"**tests/app/Models/UserModelTest.php**\\ 에 다음과 같이 작성하게 됩니다:"
+
+#: ../../source/testing/overview.rst:91
+msgid ""
+"You can create any directory structure that fits your testing style/needs. "
+"When namespacing the test classes, remember that the **app** directory is "
+"the root of the ``App`` namespace, so any classes you use must have the "
+"correct namespace relative to ``App``."
+msgstr ""
+"테스트 스타일이나 필요에 맞는 디렉토리 구조를 자유롭게 생성할 수 있습니다. 테스트 클래스에 네임스페이스를 지정할 때, **app** "
+"디렉토리가 ``App`` 네임스페이스의 루트임을 기억하십시오. 따라서 사용하는 모든 클래스는 ``App``\\ 에 상대적인 올바른 "
+"네임스페이스를 가져야 합니다."
+
+#: ../../source/testing/overview.rst:95
+msgid ""
+"Namespaces are not strictly required for test classes, but they are helpful "
+"to ensure no class names collide."
+msgstr "테스트 클래스에 네임스페이스가 반드시 필요한 것은 아니지만, 클래스 이름 충돌을 방지하는 데 도움이 됩니다."
+
+#: ../../source/testing/overview.rst:97
+msgid ""
+"When testing database results, you must use the :doc:`DatabaseTestTrait "
+"<database>` in your class."
+msgstr ""
+"데이터베이스 결과를 테스트할 때는 클래스에서 :doc:`DatabaseTestTrait <database>`\\ 을 사용해야 합니다."
+
+#: ../../source/testing/overview.rst:100
+msgid "Staging"
+msgstr "준비 단계"
+
+#: ../../source/testing/overview.rst:102
+msgid ""
+"Most tests require some preparation in order to run correctly. PHPUnit's "
+"``TestCase`` provides four methods to help with staging and clean up::"
+msgstr ""
+"대부분의 테스트는 올바르게 실행되기 위해 어느 정도의 준비가 필요합니다. PHPUnit의 ``TestCase``\\ 는 준비 및 정리를 "
+"위한 네 가지 메서드를 제공합니다::"
+
+#: ../../source/testing/overview.rst:111
+msgid ""
+"The static methods ``setUpBeforeClass()`` and ``tearDownAfterClass()`` run "
+"before and after the entire test case, whereas the protected methods "
+"``setUp()`` and ``tearDown()`` run between each test."
+msgstr ""
+"정적 메서드 ``setUpBeforeClass()``\\ 와 ``tearDownAfterClass()``\\ 는 전체 테스트 케이스 "
+"전후에 실행되는 반면, 보호된 메서드 ``setUp()``\\ 과 ``tearDown()``\\ 은 각 테스트 사이에 실행됩니다."
+
+#: ../../source/testing/overview.rst:114
+msgid ""
+"If you implement any of these special functions, make sure you run their "
+"parent as well so extended test cases do not interfere with staging:"
+msgstr ""
+"이러한 특수 메서드 중 하나를 구현하는 경우, 확장된 테스트 케이스가 준비 단계를 방해하지 않도록 반드시 부모 메서드도 호출해야 합니다:"
+
+#: ../../source/testing/overview.rst:122
+msgid "Traits"
+msgstr "트레이트"
+
+#: ../../source/testing/overview.rst:124
+#, python-brace-format
+msgid ""
+"A common way to enhance your tests is using traits to consolidate staging "
+"across different test cases. ``CIUnitTestCase`` will detect any class traits"
+" and look for staging methods to run named for the trait itself (i.e. "
+"`setUp{NameOfTrait}()` and `tearDown{NameOfTrait}()`)."
+msgstr ""
+"테스트를 향상시키는 일반적인 방법은 트레이트를 사용하여 여러 테스트 케이스에 걸쳐 준비 단계를 통합하는 것입니다. "
+"``CIUnitTestCase``\\ 는 클래스 트레이트를 감지하고 트레이트 이름에 따라 명명된 준비 메서드를 찾아 실행합니다 (예: "
+"`setUp{NameOfTrait}()`\\ 와 `tearDown{NameOfTrait}()`)."
+
+#: ../../source/testing/overview.rst:128
+msgid ""
+"For example, if you needed to add authentication to some of your test cases "
+"you could create an authentication trait with a set up method to fake a "
+"logged in user:"
+msgstr ""
+"예를 들어, 일부 테스트 케이스에 인증을 추가해야 하는 경우 로그인한 사용자를 가장하는 설정 메서드가 있는 인증 트레이트를 생성할 수 "
+"있습니다:"
+
+#: ../../source/testing/overview.rst:137
+msgid "Additional Assertions"
+msgstr "추가 어설션"
+
+#: ../../source/testing/overview.rst:139
+msgid ""
+"``CIUnitTestCase`` provides additional unit testing assertions that you "
+"might find useful."
+msgstr "``CIUnitTestCase``\\ 는 유용하게 활용할 수 있는 추가적인 단위 테스트 어설션을 제공합니다."
+
+#: ../../source/testing/overview.rst:142
+msgid "assertLogged($level, $expectedMessage)"
+msgstr "assertLogged($level, $expectedMessage)"
+
+#: ../../source/testing/overview.rst:144
+msgid "Ensure that something you expected to be logged was actually logged:"
+msgstr "예상했던 내용이 실제로 로그에 기록되었는지 확인합니다:"
+
+#: ../../source/testing/overview.rst:147
+msgid "assertLogContains($level, $logMessage)"
+msgstr "assertLogContains($level, $logMessage)"
+
+#: ../../source/testing/overview.rst:149
+msgid ""
+"Ensure that there's a record in the logs which contains a message part."
+msgstr "로그에 메시지 일부를 포함하는 레코드가 있는지 확인합니다."
+
+#: ../../source/testing/overview.rst:154
+msgid "assertEventTriggered($eventName)"
+msgstr "assertEventTriggered($eventName)"
+
+#: ../../source/testing/overview.rst:156
+msgid "Ensure that an event you expected to be triggered actually was:"
+msgstr "예상했던 이벤트가 실제로 트리거되었는지 확인합니다:"
+
+#: ../../source/testing/overview.rst:161
+msgid "assertHeaderEmitted($header, $ignoreCase = false)"
+msgstr "assertHeaderEmitted($header, $ignoreCase = false)"
+
+#: ../../source/testing/overview.rst:163
+msgid "Ensure that a header or cookie was actually emitted:"
+msgstr "헤더 또는 쿠키가 실제로 전송되었는지 확인합니다:"
+
+#: ../../source/testing/overview.rst:167 ../../source/testing/overview.rst:181
+msgid ""
+"The test case with this should be run as a separate process (with "
+"`@runInSeparateProcess annotation`_ or `RunInSeparateProcess attribute`_) in"
+" PHPUnit."
+msgstr ""
+"이를 사용하는 테스트 케이스는 PHPUnit에서 별도의 프로세스로 실행해야 합니다 (`@runInSeparateProcess "
+"annotation`_ 또는 `RunInSeparateProcess attribute`_ 사용)."
+
+#: ../../source/testing/overview.rst:175
+msgid "assertHeaderNotEmitted($header, $ignoreCase = false)"
+msgstr "assertHeaderNotEmitted($header, $ignoreCase = false)"
+
+#: ../../source/testing/overview.rst:177
+msgid "Ensure that a header or cookie was not emitted:"
+msgstr "헤더 또는 쿠키가 전송되지 않았는지 확인합니다:"
+
+#: ../../source/testing/overview.rst:186
+msgid "assertCloseEnough($expected, $actual, $message = '', $tolerance = 1)"
+msgstr "assertCloseEnough($expected, $actual, $message = '', $tolerance = 1)"
+
+#: ../../source/testing/overview.rst:188
+msgid ""
+"For extended execution time testing, tests that the absolute difference "
+"between expected and actual time is within the prescribed tolerance:"
+msgstr "확장된 실행 시간 테스트를 위해, 예상 시간과 실제 시간의 절대 차이가 지정된 허용 범위 내에 있는지 테스트합니다:"
+
+#: ../../source/testing/overview.rst:193 ../../source/testing/overview.rst:203
+msgid ""
+"The above test will allow the actual time to be either 660 or 661 seconds."
+msgstr "위 테스트는 실제 시간이 660초 또는 661초인 경우를 허용합니다."
+
+#: ../../source/testing/overview.rst:196
+msgid ""
+"assertCloseEnoughString($expected, $actual, $message = '', $tolerance = 1)"
+msgstr ""
+"assertCloseEnoughString($expected, $actual, $message = '', $tolerance = 1)"
+
+#: ../../source/testing/overview.rst:198
+msgid ""
+"For extended execution time testing, tests that the absolute difference "
+"between expected and actual time, formatted as strings, is within the "
+"prescribed tolerance:"
+msgstr ""
+"확장된 실행 시간 테스트를 위해, 문자열로 형식화된 예상 시간과 실제 시간의 절대 차이가 지정된 허용 범위 내에 있는지 테스트합니다:"
+
+#: ../../source/testing/overview.rst:206
+msgid "Accessing Protected/Private Properties"
+msgstr "보호된/비공개 속성 접근"
+
+#: ../../source/testing/overview.rst:208
+msgid ""
+"When testing, you can use the following setter and getter methods to access "
+"protected and private methods and properties in the classes that you are "
+"testing."
+msgstr ""
+"테스트 시, 다음의 세터 및 게터 메서드를 사용하여 테스트 중인 클래스의 보호된 메서드와 비공개 메서드 및 속성에 접근할 수 있습니다."
+
+#: ../../source/testing/overview.rst:212
+msgid "getPrivateMethodInvoker($instance, $method)"
+msgstr "getPrivateMethodInvoker($instance, $method)"
+
+#: ../../source/testing/overview.rst:214
+msgid ""
+"Enables you to call private methods from outside the class. This returns a "
+"function that can be called. The first parameter is an instance of the class"
+" to test. The second parameter is the name of the method you want to call."
+msgstr ""
+"클래스 외부에서 비공개 메서드를 호출할 수 있게 합니다. 호출 가능한 함수를 반환합니다. 첫 번째 매개변수는 테스트할 클래스의 "
+"인스턴스이고, 두 번째 매개변수는 호출하려는 메서드의 이름입니다."
+
+#: ../../source/testing/overview.rst:220
+msgid "getPrivateProperty($instance, $property)"
+msgstr "getPrivateProperty($instance, $property)"
+
+#: ../../source/testing/overview.rst:222
+msgid ""
+"Retrieves the value of a private/protected class property from an instance "
+"of a class. The first parameter is an instance of the class to test. The "
+"second parameter is the name of the property."
+msgstr ""
+"클래스 인스턴스에서 비공개/보호된 클래스 속성의 값을 가져옵니다. 첫 번째 매개변수는 테스트할 클래스의 인스턴스이고, 두 번째 매개변수는"
+" 속성의 이름입니다."
+
+#: ../../source/testing/overview.rst:228
+msgid "setPrivateProperty($instance, $property, $value)"
+msgstr "setPrivateProperty($instance, $property, $value)"
+
+#: ../../source/testing/overview.rst:230
+msgid ""
+"Set a protected value within a class instance. The first parameter is an "
+"instance of the class to test. The second parameter is the name of the "
+"property to set the value of. The third parameter is the value to set it to:"
+msgstr ""
+"클래스 인스턴스 내에서 보호된 값을 설정합니다. 첫 번째 매개변수는 테스트할 클래스의 인스턴스이고, 두 번째 매개변수는 값을 설정할 "
+"속성의 이름이며, 세 번째 매개변수는 설정할 값입니다:"
+
+#: ../../source/testing/overview.rst:236
+msgid "Mocking Services"
+msgstr "서비스 모킹"
+
+#: ../../source/testing/overview.rst:238
+msgid ""
+"You will often find that you need to mock one of the services defined in "
+"**app/Config/Services.php** to limit your tests to only the code in "
+"question, while simulating various responses from the services. This is "
+"especially true when testing controllers and other integration testing. The "
+"**Services** class provides the following methods to simplify this."
+msgstr ""
+"테스트를 관련 코드만으로 제한하면서 서비스로부터 다양한 응답을 시뮬레이션하기 위해 **app/Config/Services.php**\\ "
+"에 정의된 서비스 중 하나를 모킹해야 하는 경우가 자주 있습니다. 이는 컨트롤러 테스트 및 기타 통합 테스트 시 특히 그렇습니다. "
+"**Services** 클래스는 이를 간소화하기 위한 다음 메서드들을 제공합니다."
+
+#: ../../source/testing/overview.rst:244
+msgid "Services::injectMock()"
+msgstr "Services::injectMock()"
+
+#: ../../source/testing/overview.rst:246
+msgid ""
+"This method allows you to define the exact instance that will be returned by"
+" the Services class. You can use this to set properties of a service so that"
+" it behaves in a certain way, or replace a service with a mocked class."
+msgstr ""
+"이 메서드를 사용하면 Services 클래스에서 반환될 정확한 인스턴스를 정의할 수 있습니다. 서비스가 특정 방식으로 동작하도록 속성을 "
+"설정하거나, 서비스를 모의 클래스로 대체하는 데 사용할 수 있습니다."
+
+#: ../../source/testing/overview.rst:251
+msgid ""
+"The first parameter is the service that you are replacing. The name must "
+"match the function name in the Services class exactly. The second parameter "
+"is the instance to replace it with."
+msgstr ""
+"첫 번째 매개변수는 교체할 서비스입니다. 이름은 Services 클래스의 함수 이름과 정확히 일치해야 합니다. 두 번째 매개변수는 교체할"
+" 인스턴스입니다."
+
+#: ../../source/testing/overview.rst:255
+msgid "Services::reset()"
+msgstr "Services::reset()"
+
+#: ../../source/testing/overview.rst:257
+msgid ""
+"Removes all mocked classes from the Services class, bringing it back to its "
+"original state."
+msgstr "Services 클래스에서 모든 모의 클래스를 제거하여 원래 상태로 되돌립니다."
+
+#: ../../source/testing/overview.rst:259
+msgid ""
+"You can also use the ``$this->resetServices()`` method that "
+"``CIUnitTestCase`` provides."
+msgstr ""
+"``CIUnitTestCase``\\ 가 제공하는 ``$this->resetServices()`` 메서드를 사용할 수도 있습니다."
+
+#: ../../source/testing/overview.rst:261
+msgid ""
+"This method resets the all states of Services, and the ``RouteCollection`` "
+"will have no routes. If you want to use your routes to be loaded, you need "
+"to call the ``loadRoutes()`` method like "
+"``Services::routes()->loadRoutes()``."
+msgstr ""
+"이 메서드는 Services의 모든 상태를 초기화하며, ``RouteCollection``\\ 에 라우트가 없게 됩니다. 라우트를 "
+"불러오려면 ``Services::routes()->loadRoutes()``\\ 와 같이 ``loadRoutes()`` 메서드를 호출해야"
+" 합니다."
+
+#: ../../source/testing/overview.rst:266
+msgid "Services::resetSingle(string $name)"
+msgstr "Services::resetSingle(string $name)"
+
+#: ../../source/testing/overview.rst:268
+msgid ""
+"Removes any mock and shared instances for a single service, by its name."
+msgstr "이름으로 단일 서비스의 모든 모의 및 공유 인스턴스를 제거합니다."
+
+#: ../../source/testing/overview.rst:270
+msgid ""
+"The ``Cache``, ``Email`` and ``Session`` services are mocked by default to "
+"prevent intrusive testing behavior. To prevent these from mocking remove "
+"their method callback from the class property: ``$setUpMethods = "
+"['mockEmail', 'mockSession'];``"
+msgstr ""
+"``Cache``, ``Email``, ``Session`` 서비스는 침투적인 테스트 동작을 방지하기 위해 기본적으로 모킹됩니다. 모킹을"
+" 방지하려면 클래스 속성에서 해당 메서드 콜백을 제거하십시오: ``$setUpMethods = ['mockEmail', "
+"'mockSession'];``"
+
+#: ../../source/testing/overview.rst:273
+msgid "Mocking Factory Instances"
+msgstr "팩토리 인스턴스 모킹"
+
+#: ../../source/testing/overview.rst:275
+msgid ""
+"Similar to Services, you may find yourself needing to supply a pre-"
+"configured class instance during testing that will be used with "
+"``Factories``. Use the same ``Factories::injectMock()`` and "
+"``Factories::reset()`` static methods like **Services**, but they take an "
+"additional preceding parameter for the component name:"
+msgstr ""
+"Services와 마찬가지로, 테스트 중에 ``Factories``\\ 와 함께 사용할 사전 구성된 클래스 인스턴스를 제공해야 하는 "
+"경우가 있습니다. **Services**\\ 와 동일한 ``Factories::injectMock()``\\ 과 "
+"``Factories::reset()`` 정적 메서드를 사용하지만, 컴포넌트 이름을 위한 추가 선행 매개변수가 필요합니다:"
+
+#: ../../source/testing/overview.rst:282
+msgid ""
+"All component Factories are reset by default between each test. Modify your "
+"test case's ``$setUpMethods`` if you need instances to persist."
+msgstr ""
+"모든 컴포넌트 팩토리는 기본적으로 각 테스트 사이에 초기화됩니다. 인스턴스를 유지해야 하는 경우 테스트 케이스의 "
+"``$setUpMethods``\\ 를 수정하십시오."
+
+#: ../../source/testing/overview.rst:285
+msgid "Testing and Time"
+msgstr "테스트와 시간"
+
+#: ../../source/testing/overview.rst:287
+msgid ""
+"Testing time-dependent code can be challenging. However, when using the "
+":doc:`Time <../libraries/time>` class, the current time can be fixed or "
+"changed at will during testing."
+msgstr ""
+"시간에 의존하는 코드를 테스트하는 것은 어려울 수 있습니다. 그러나 :doc:`Time <../libraries/time>` 클래스를 "
+"사용하면 테스트 중에 현재 시간을 자유롭게 고정하거나 변경할 수 있습니다."
+
+#: ../../source/testing/overview.rst:291
+msgid "Below is a sample test code that fixes the current time:"
+msgstr "다음은 현재 시간을 고정하는 샘플 테스트 코드입니다:"
+
+#: ../../source/testing/overview.rst:295
+msgid ""
+"You can fix the current time with the ``Time::setTestNow()`` method. "
+"Optionally, you can specify a locale as the second parameter."
+msgstr ""
+"``Time::setTestNow()`` 메서드를 사용하여 현재 시간을 고정할 수 있습니다. 선택적으로 두 번째 매개변수에 로케일을 "
+"지정할 수 있습니다."
+
+#: ../../source/testing/overview.rst:298
+msgid ""
+"Don't forget to reset the current time after the test with calling it "
+"without parameters."
+msgstr "테스트 후에는 매개변수 없이 호출하여 현재 시간을 반드시 초기화하는 것을 잊지 마십시오."
+
+#: ../../source/testing/response.rst:3
+msgid "Testing Responses"
+msgstr "응답 테스트"
+
+#: ../../source/testing/response.rst:5
+msgid ""
+"The ``TestResponse`` class provides a number of helpful functions for "
+"parsing and testing responses from your test cases. Usually a "
+"``TestResponse`` will be provided for you as a result of your "
+":doc:`Controller Tests <controllers>` or :doc:`HTTP Feature Tests "
+"<feature>`, but you can always create your own directly using any "
+"``ResponseInterface``:"
+msgstr ""
+"``TestResponse`` 클래스는 테스트 케이스에서 응답을 파싱하고 테스트하는 데 유용한 다양한 함수를 제공합니다. 일반적으로 "
+"``TestResponse``\\ 는 :doc:`컨트롤러 테스트 <controllers>` 또는 :doc:`HTTP 기능 테스트 "
+"<feature>`\\ 의 결과로 제공되지만, 임의의 ``ResponseInterface``\\ 를 사용하여 직접 생성할 수도 있습니다:"
+
+#: ../../source/testing/response.rst:18
+msgid "Testing the Response"
+msgstr "응답 테스트하기"
+
+#: ../../source/testing/response.rst:20
+msgid ""
+"Whether you have received a ``TestResponse`` as a result of your tests or "
+"created one yourself, there are a number of new assertions that you can use "
+"in your tests."
+msgstr ""
+"테스트 결과로 ``TestResponse``\\ 를 받았든 직접 생성했든, 테스트에서 사용할 수 있는 다양한 새로운 어설션들이 있습니다."
+
+#: ../../source/testing/response.rst:24
+msgid "Accessing Request/Response"
+msgstr "요청/응답 접근"
+
+#: ../../source/testing/response.rst:27
+msgid "request()"
+msgstr "request()"
+
+#: ../../source/testing/response.rst:29
+msgid ""
+"You can access directly the Request object, if it was set during testing:"
+msgstr "테스트 중에 설정된 경우 Request 객체에 직접 접근할 수 있습니다:"
+
+#: ../../source/testing/response.rst:35
+msgid "response()"
+msgstr "response()"
+
+#: ../../source/testing/response.rst:37
+msgid "This allows you direct access to the response object:"
+msgstr "이를 통해 응답 객체에 직접 접근할 수 있습니다:"
+
+#: ../../source/testing/response.rst:43
+msgid "Checking Response Status"
+msgstr "응답 상태 확인"
+
+#: ../../source/testing/response.rst:46
+msgid "isOK()"
+msgstr "isOK()"
+
+#: ../../source/testing/response.rst:48
+msgid ""
+"Returns a boolean true/false based on whether the response is perceived to "
+"be \"ok\". This is primarily determined by a response status code in the 200"
+" or 300's. An empty body is not considered valid, unless in redirects."
+msgstr ""
+"응답이 \"정상\"으로 판단되는지 여부에 따라 불리언 true/false를 반환합니다. 이는 주로 200번대 또는 300번대의 응답 상태"
+" 코드로 결정됩니다. 리다이렉트가 아닌 경우 빈 본문은 유효하지 않은 것으로 간주됩니다."
+
+#: ../../source/testing/response.rst:55
+msgid "assertOK()"
+msgstr "assertOK()"
+
+#: ../../source/testing/response.rst:57
+msgid ""
+"This assertion simply uses the ``isOK()`` method to test a response. "
+"``assertNotOK()`` is the inverse of this assertion."
+msgstr ""
+"이 어설션은 단순히 ``isOK()`` 메서드를 사용하여 응답을 테스트합니다. ``assertNotOK()``\\ 은 이 어설션의 "
+"반대입니다."
+
+#: ../../source/testing/response.rst:63
+msgid "isRedirect()"
+msgstr "isRedirect()"
+
+#: ../../source/testing/response.rst:65
+msgid ""
+"Returns a boolean true/false based on whether the response is a redirected "
+"response."
+msgstr "응답이 리다이렉트 응답인지 여부에 따라 불리언 true/false를 반환합니다."
+
+#: ../../source/testing/response.rst:71
+msgid "assertRedirect()"
+msgstr "assertRedirect()"
+
+#: ../../source/testing/response.rst:73
+msgid ""
+"Asserts that the Response is an instance of RedirectResponse. "
+"``assertNotRedirect()`` is the inverse of this assertion."
+msgstr ""
+"응답이 RedirectResponse의 인스턴스임을 어설션합니다. ``assertNotRedirect()``\\ 은 이 어설션의 "
+"반대입니다."
+
+#: ../../source/testing/response.rst:79
+msgid "assertRedirectTo()"
+msgstr "assertRedirectTo()"
+
+#: ../../source/testing/response.rst:81
+msgid ""
+"Asserts that the Response is an instance of RedirectResponse and the "
+"destination matches the uri given."
+msgstr "응답이 RedirectResponse의 인스턴스이고 목적지가 주어진 URI와 일치하는지 어설션합니다."
+
+#: ../../source/testing/response.rst:88
+msgid "getRedirectUrl()"
+msgstr "getRedirectUrl()"
+
+#: ../../source/testing/response.rst:90
+msgid "Returns the URL set for a RedirectResponse, or null for failure."
+msgstr "RedirectResponse에 설정된 URL을 반환하거나, 실패 시 null을 반환합니다."
+
+#: ../../source/testing/response.rst:96
+msgid "assertStatus(int $code)"
+msgstr "assertStatus(int $code)"
+
+#: ../../source/testing/response.rst:98
+msgid "Asserts that the HTTP status code returned matches $code."
+msgstr "반환된 HTTP 상태 코드가 $code와 일치하는지 어설션합니다."
+
+#: ../../source/testing/response.rst:106
+#: ../../source/testing/session_testing.rst:43
+msgid "Session Assertions"
+msgstr "세션 어설션"
+
+#: ../../source/testing/response.rst:109
+msgid "assertSessionHas(string $key, $value = null)"
+msgstr "assertSessionHas(string $key, $value = null)"
+
+#: ../../source/testing/response.rst:111
+msgid ""
+"Asserts that a value exists in the resulting session. If $value is passed, "
+"will also assert that the variable's value matches what was specified."
+msgstr ""
+"결과 세션에 값이 존재하는지 어설션합니다. $value가 전달된 경우 변수의 값이 지정된 값과 일치하는지도 함께 어설션합니다."
+
+#: ../../source/testing/response.rst:118
+msgid "assertSessionMissing(string $key)"
+msgstr "assertSessionMissing(string $key)"
+
+#: ../../source/testing/response.rst:120
+msgid ""
+"Asserts that the resulting session does not include the specified $key."
+msgstr "결과 세션에 지정된 $key가 포함되지 않는지 어설션합니다."
+
+#: ../../source/testing/response.rst:126
+msgid "Header Assertions"
+msgstr "헤더 어설션"
+
+#: ../../source/testing/response.rst:129
+msgid "assertHeader(string $key, $value = null)"
+msgstr "assertHeader(string $key, $value = null)"
+
+#: ../../source/testing/response.rst:131
+msgid ""
+"Asserts that a header named ``$key`` exists in the response. If ``$value`` "
+"is not empty, will also assert that the values match."
+msgstr ""
+"응답에 ``$key``\\ 라는 이름의 헤더가 존재하는지 어설션합니다. ``$value``\\ 가 비어 있지 않은 경우 값이 일치하는지도"
+" 함께 어설션합니다."
+
+#: ../../source/testing/response.rst:138
+msgid "assertHeaderMissing(string $key)"
+msgstr "assertHeaderMissing(string $key)"
+
+#: ../../source/testing/response.rst:140
+msgid "Asserts that a header name ``$key`` does not exist in the response."
+msgstr "응답에 ``$key``\\ 라는 이름의 헤더가 존재하지 않는지 어설션합니다."
+
+#: ../../source/testing/response.rst:146
+msgid "Cookie Assertions"
+msgstr "쿠키 어설션"
+
+#: ../../source/testing/response.rst:149
+msgid "assertCookie(string $key, $value = null, string $prefix = '')"
+msgstr "assertCookie(string $key, $value = null, string $prefix = '')"
+
+#: ../../source/testing/response.rst:151
+msgid ""
+"Asserts that a cookie named ``$key`` exists in the response. If ``$value`` "
+"is not empty, will also assert that the values match. You can set the cookie"
+" prefix, if needed, by passing it in as the third parameter."
+msgstr ""
+"응답에 ``$key``\\ 라는 이름의 쿠키가 존재하는지 어설션합니다. ``$value``\\ 가 비어 있지 않은 경우 값이 일치하는지도"
+" 함께 어설션합니다. 필요한 경우 세 번째 매개변수로 쿠키 접두사를 설정할 수 있습니다."
+
+#: ../../source/testing/response.rst:158
+msgid "assertCookieMissing(string $key)"
+msgstr "assertCookieMissing(string $key)"
+
+#: ../../source/testing/response.rst:160
+msgid "Asserts that a cookie named ``$key`` does not exist in the response."
+msgstr "응답에 ``$key``\\ 라는 이름의 쿠키가 존재하지 않는지 어설션합니다."
+
+#: ../../source/testing/response.rst:166
+msgid "assertCookieExpired(string $key, string $prefix = '')"
+msgstr "assertCookieExpired(string $key, string $prefix = '')"
+
+#: ../../source/testing/response.rst:168
+msgid ""
+"Asserts that a cookie named ``$key`` exists, but has expired. You can set "
+"the cookie prefix, if needed, by passing it in as the second parameter."
+msgstr ""
+"``$key``\\ 라는 이름의 쿠키가 존재하지만 만료되었는지 어설션합니다. 필요한 경우 두 번째 매개변수로 쿠키 접두사를 설정할 수 "
+"있습니다."
+
+#: ../../source/testing/response.rst:175
+msgid "DOM Helpers"
+msgstr "DOM 헬퍼"
+
+#: ../../source/testing/response.rst:177
+msgid ""
+"The response you get back contains a number of helper methods to inspect the"
+" HTML output within the response. These are useful for using within "
+"assertions in your tests."
+msgstr ""
+"반환된 응답에는 응답 내의 HTML 출력을 검사하는 다양한 헬퍼 메서드가 포함되어 있습니다. 이 메서드들은 테스트의 어설션 내에서 "
+"유용하게 사용할 수 있습니다."
+
+#: ../../source/testing/response.rst:181
+msgid "see()"
+msgstr "see()"
+
+#: ../../source/testing/response.rst:183
+msgid ""
+"Returns a boolean true/false based on whether the text on the page exists "
+"either by itself, or more specifically within a tag, as specified by type, "
+"class, or id:"
+msgstr ""
+"페이지의 텍스트가 단독으로 존재하는지, 또는 type, class, id로 지정된 태그 내에 더 구체적으로 존재하는지 여부에 따라 불리언"
+" true/false를 반환합니다:"
+
+#: ../../source/testing/response.rst:190
+msgid "The ``dontSee()`` method is the exact opposite:"
+msgstr "``dontSee()`` 메서드는 정반대입니다:"
+
+#: ../../source/testing/response.rst:196
+msgid "seeElement()"
+msgstr "seeElement()"
+
+#: ../../source/testing/response.rst:198
+msgid ""
+"The ``seeElement()`` and ``dontSeeElement()`` are very similar to the "
+"previous methods, but do not look at the values of the elements. Instead, "
+"they simply check that the elements exist on the page:"
+msgstr ""
+"``seeElement()``\\ 와 ``dontSeeElement()``\\ 는 이전 메서드들과 매우 유사하지만, 요소의 값은 확인하지"
+" 않습니다. 대신 페이지에 요소가 존재하는지만 단순히 확인합니다:"
+
+#: ../../source/testing/response.rst:205
+msgid "seeLink()"
+msgstr "seeLink()"
+
+#: ../../source/testing/response.rst:207
+msgid ""
+"You can use ``seeLink()`` to ensure that a link appears on the page with the"
+" specified text:"
+msgstr "``seeLink()``\\ 를 사용하여 지정된 텍스트가 있는 링크가 페이지에 존재하는지 확인할 수 있습니다:"
+
+#: ../../source/testing/response.rst:213
+msgid "seeInField()"
+msgstr "seeInField()"
+
+#: ../../source/testing/response.rst:215
+msgid ""
+"The ``seeInField()`` method checks for any input tags exist with the name "
+"and value:"
+msgstr "``seeInField()`` 메서드는 이름과 값이 있는 입력 태그가 존재하는지 확인합니다:"
+
+#: ../../source/testing/response.rst:221
+msgid "seeCheckboxIsChecked()"
+msgstr "seeCheckboxIsChecked()"
+
+#: ../../source/testing/response.rst:223
+msgid ""
+"Finally, you can check if a checkbox exists and is checked with the "
+"``seeCheckboxIsChecked()`` method:"
+msgstr ""
+"마지막으로, ``seeCheckboxIsChecked()`` 메서드를 사용하여 체크박스가 존재하고 선택되었는지 확인할 수 있습니다:"
+
+#: ../../source/testing/response.rst:229
+msgid "seeXPath()"
+msgstr "seeXPath()"
+
+#: ../../source/testing/response.rst:233
+msgid ""
+"You can use ``seeXPath()`` to take advantage of the full power that xpath "
+"gives you. This method is aimed at more advanced users who want to write a "
+"more complex expressions using the DOMXPath object directly:"
+msgstr ""
+"``seeXPath()``\\ 를 사용하면 xpath의 모든 기능을 활용할 수 있습니다. 이 메서드는 DOMXPath 객체를 직접 "
+"사용하여 더 복잡한 표현식을 작성하려는 고급 사용자를 위한 것입니다:"
+
+#: ../../source/testing/response.rst:240
+msgid "The ``dontSeeXPath()`` method is the exact opposite:"
+msgstr "``dontSeeXPath()`` 메서드는 정반대입니다:"
+
+#: ../../source/testing/response.rst:246
+msgid "DOM Assertions"
+msgstr "DOM 어설션"
+
+#: ../../source/testing/response.rst:248
+msgid ""
+"You can perform tests to see if specific elements/text/etc exist with the "
+"body of the response with the following assertions."
+msgstr "다음 어설션을 사용하여 응답 본문에 특정 요소/텍스트 등이 존재하는지 테스트할 수 있습니다."
+
+#: ../../source/testing/response.rst:252
+msgid "assertSee(string $search = null, string $element = null)"
+msgstr "assertSee(string $search = null, string $element = null)"
+
+#: ../../source/testing/response.rst:254
+msgid ""
+"Asserts that text/HTML is on the page, either by itself or - more "
+"specifically - within a tag, as specified by type, class, or id:"
+msgstr ""
+"페이지에 텍스트/HTML이 단독으로 또는 type, class, id로 지정된 태그 내에 더 구체적으로 존재하는지 어설션합니다:"
+
+#: ../../source/testing/response.rst:261
+msgid "assertDontSee(string $search = null, string $element = null)"
+msgstr "assertDontSee(string $search = null, string $element = null)"
+
+#: ../../source/testing/response.rst:263
+msgid "Asserts the exact opposite of the ``assertSee()`` method:"
+msgstr "``assertSee()`` 메서드의 정반대를 어설션합니다:"
+
+#: ../../source/testing/response.rst:269
+msgid "assertSeeElement(string $search)"
+msgstr "assertSeeElement(string $search)"
+
+#: ../../source/testing/response.rst:271
+msgid ""
+"Similar to ``assertSee()``, however this only checks for an existing "
+"element. It does not check for specific text:"
+msgstr "``assertSee()``\\ 와 유사하지만, 기존 요소의 존재만 확인합니다. 특정 텍스트는 확인하지 않습니다:"
+
+#: ../../source/testing/response.rst:277
+msgid "assertDontSeeElement(string $search)"
+msgstr "assertDontSeeElement(string $search)"
+
+#: ../../source/testing/response.rst:279
+msgid ""
+"Similar to ``assertSee()``, however this only checks for an existing element"
+" that is missing. It does not check for specific text:"
+msgstr "``assertSee()``\\ 와 유사하지만, 존재하지 않는 요소만 확인합니다. 특정 텍스트는 확인하지 않습니다:"
+
+#: ../../source/testing/response.rst:286
+msgid "assertSeeLink(string $text, string $details = null)"
+msgstr "assertSeeLink(string $text, string $details = null)"
+
+#: ../../source/testing/response.rst:288
+msgid ""
+"Asserts that an anchor tag is found with matching ``$text`` as the body of "
+"the tag:"
+msgstr "태그 본문으로 ``$text``\\ 와 일치하는 앵커 태그가 있는지 어설션합니다:"
+
+#: ../../source/testing/response.rst:294
+msgid "assertSeeInField(string $field, string $value = null)"
+msgstr "assertSeeInField(string $field, string $value = null)"
+
+#: ../../source/testing/response.rst:296
+msgid "Asserts that an input tag exists with the name and value:"
+msgstr "이름과 값이 있는 입력 태그가 존재하는지 어설션합니다:"
+
+#: ../../source/testing/response.rst:302
+msgid "Working with JSON"
+msgstr "JSON 다루기"
+
+#: ../../source/testing/response.rst:304
+msgid ""
+"Responses will frequently contain JSON responses, especially when working "
+"with API methods. The following methods can help to test the responses."
+msgstr ""
+"특히 API 메서드를 사용할 때 응답에 JSON 응답이 포함되는 경우가 많습니다. 다음 메서드들을 사용하여 응답을 테스트할 수 있습니다."
+
+#: ../../source/testing/response.rst:308
+msgid "getJSON()"
+msgstr "getJSON()"
+
+#: ../../source/testing/response.rst:310
+msgid "This method will return the body of the response as a JSON string:"
+msgstr "이 메서드는 응답 본문을 JSON 문자열로 반환합니다:"
+
+#: ../../source/testing/response.rst:315
+msgid ""
+"You can use this method to determine if ``$response`` actually holds JSON "
+"content:"
+msgstr "이 메서드를 사용하여 ``$response``\\ 가 실제로 JSON 콘텐츠를 포함하는지 확인할 수 있습니다:"
+
+#: ../../source/testing/response.rst:320
+msgid "Be aware that the JSON string will be pretty-printed in the result."
+msgstr "결과에서 JSON 문자열이 보기 좋게 들여쓰기(pretty-print)되어 출력된다는 점에 유의하십시오."
+
+#: ../../source/testing/response.rst:323
+msgid "assertJSONFragment(array $fragment)"
+msgstr "assertJSONFragment(array $fragment)"
+
+#: ../../source/testing/response.rst:325
+msgid ""
+"Asserts that ``$fragment`` is found within the JSON response. It does not "
+"need to match the entire JSON value."
+msgstr "``$fragment``\\ 가 JSON 응답 내에 존재하는지 어설션합니다. 전체 JSON 값과 일치할 필요는 없습니다."
+
+#: ../../source/testing/response.rst:331
+msgid "assertJSONExact($test)"
+msgstr "assertJSONExact($test)"
+
+#: ../../source/testing/response.rst:333
+msgid ""
+"Similar to ``assertJSONFragment()``, but checks the entire JSON response to "
+"ensure exact matches."
+msgstr "``assertJSONFragment()``\\ 와 유사하지만, 전체 JSON 응답을 검사하여 정확한 일치를 보장합니다."
+
+#: ../../source/testing/response.rst:336
+msgid "Working with XML"
+msgstr "XML 다루기"
+
+#: ../../source/testing/response.rst:339
+msgid "getXML()"
+msgstr "getXML()"
+
+#: ../../source/testing/response.rst:341
+msgid ""
+"If your application returns XML, you can retrieve it through this method."
+msgstr "애플리케이션이 XML을 반환하는 경우 이 메서드를 통해 가져올 수 있습니다."
+
+#: ../../source/testing/session_testing.rst:5
+msgid ""
+"Testing session behavior in your application is made simple with the "
+"ArrayHandler session driver. Unlike other session drivers, ArrayHandler does"
+" not persist data to disk, database, or external storage. This allows you to"
+" simulate session interactions safely during unit or integration tests, "
+"without affecting real session data."
+msgstr ""
+"ArrayHandler 세션 드라이버를 사용하면 애플리케이션의 세션 동작을 간단하게 테스트할 수 있습니다. 다른 세션 드라이버와 달리, "
+"ArrayHandler는 디스크, 데이터베이스 또는 외부 저장소에 데이터를 저장하지 않습니다. 이를 통해 실제 세션 데이터에 영향을 주지"
+" 않고 단위 테스트 또는 통합 테스트 중에 안전하게 세션 상호작용을 시뮬레이션할 수 있습니다."
+
+#: ../../source/testing/session_testing.rst:9
+msgid ""
+"Using this driver, you can set, retrieve, and assert session data entirely "
+"in memory, making your tests faster and more isolated. While in most "
+"production scenarios you would use file, database, or cache-backed sessions,"
+" ArrayHandler exists specifically to support testing workflows and prevent "
+"side effects."
+msgstr ""
+"이 드라이버를 사용하면 세션 데이터를 완전히 메모리 내에서 설정, 검색 및 어설션할 수 있어 테스트를 더 빠르고 격리된 상태로 유지할 수"
+" 있습니다. 대부분의 프로덕션 환경에서는 파일, 데이터베이스 또는 캐시 기반 세션을 사용하지만, ArrayHandler는 테스트 "
+"워크플로우를 지원하고 부작용을 방지하기 위해 특별히 존재합니다."
+
+#: ../../source/testing/session_testing.rst:17
+msgid "Initializing Sessions"
+msgstr "세션 초기화"
+
+#: ../../source/testing/session_testing.rst:19
+msgid ""
+"You can initialize a session using the ArrayHandler driver for testing. This"
+" example shows how to create a session instance with a proper configuration:"
+msgstr ""
+"테스트를 위해 ArrayHandler 드라이버를 사용하여 세션을 초기화할 수 있습니다. 다음 예시는 적절한 설정으로 세션 인스턴스를 "
+"생성하는 방법을 보여줍니다:"
+
+#: ../../source/testing/session_testing.rst:24
+msgid "Setting and Retrieving Data"
+msgstr "데이터 설정 및 검색"
+
+#: ../../source/testing/session_testing.rst:26
+msgid ""
+"Once initialized, you can set session values and retrieve them as usual:"
+msgstr "초기화 후에는 평소와 같이 세션 값을 설정하고 검색할 수 있습니다:"
+
+#: ../../source/testing/session_testing.rst:32
+msgid ""
+"Session data is stored in memory and lasts as long as the ArrayHandler "
+"object exists; after the object is destroyed (typically at the end of a "
+"request or test), the data is lost."
+msgstr ""
+"세션 데이터는 메모리에 저장되며 ArrayHandler 객체가 존재하는 동안만 유지됩니다. 객체가 소멸되면(일반적으로 요청 또는 테스트 "
+"종료 시) 데이터는 사라집니다."
+
+#: ../../source/testing/session_testing.rst:36
+msgid "Example Test Case"
+msgstr "테스트 케이스 예시"
+
+#: ../../source/testing/session_testing.rst:38
+msgid ""
+"Here's a simple example demonstrating usage of the ArrayHandler in a PHPUnit"
+" test:"
+msgstr "다음은 PHPUnit 테스트에서 ArrayHandler 사용법을 보여주는 간단한 예시입니다:"
+
+#: ../../source/testing/session_testing.rst:46
+msgid "Using PHPUnit Assertions with ArrayHandler"
+msgstr "ArrayHandler와 함께 PHPUnit 어설션 사용"
+
+#: ../../source/testing/session_testing.rst:48
+msgid ""
+"When testing sessions directly with Session and ArrayHandler in a unit test,"
+" use standard PHPUnit assertions. ``assertSessionHas()`` and "
+"``assertSessionMissing()`` are not available in this context because you are"
+" interacting directly with the session object, not a response object."
+msgstr ""
+"단위 테스트에서 Session과 ArrayHandler를 사용하여 세션을 직접 테스트할 때는 표준 PHPUnit 어설션을 사용합니다. "
+"응답 객체가 아닌 세션 객체와 직접 상호작용하기 때문에 이 컨텍스트에서는 ``assertSessionHas()``\\ 와 "
+"``assertSessionMissing()``\\ 을 사용할 수 없습니다."
+
+#: ../../source/testing/session_testing.rst:55
+msgid "Session Assertions via TestResponse"
+msgstr "TestResponse를 통한 세션 어설션"
+
+#: ../../source/testing/session_testing.rst:57
+msgid ""
+"When testing controllers or HTTP responses, you can use CodeIgniter 4’s "
+"session assertion helpers, such as ``assertSessionHas()`` and "
+"``assertSessionMissing()``, which are available on the ``TestResponse`` "
+"object. These helpers allow you to assert the state of the session during "
+"the HTTP request/response lifecycle. See more: :ref:`Session Assertions "
+"<response-session-assertions>`"
+msgstr ""
+
+#: ../../source/testing/session_testing.rst:64
+msgid "Custom Session Values"
+msgstr "커스텀 세션 값"
+
+#: ../../source/testing/session_testing.rst:66
+msgid ""
+"In Feature Tests, you can provide custom session data for a single test "
+"using the ``withSession()`` method. This allows you to simulate session "
+"states such as logged-in users or specific roles during the request. For "
+"full details and examples, see: :ref:`Setting Session Values <feature-"
+"setting-session-values>`"
+msgstr ""
+"기능 테스트에서는 ``withSession()`` 메서드를 사용하여 단일 테스트에 대한 커스텀 세션 데이터를 제공할 수 있습니다. 이를 "
+"통해 요청 중에 로그인한 사용자나 특정 역할과 같은 세션 상태를 시뮬레이션할 수 있습니다. 자세한 내용과 예시는 :ref:`세션 값 설정"
+" <feature-setting-session-values>`\\ 을 참고하십시오."

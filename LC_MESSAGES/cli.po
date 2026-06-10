@@ -1,0 +1,2207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-10 16:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ko <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/cli/cli_commands.rst:3
+msgid "Creating Spark Commands"
+msgstr "Spark 명령 만들기"
+
+#: ../../source/cli/cli_commands.rst:5
+msgid ""
+"While the ability to use Controllers via CLI like any other route is "
+"convenient, you might find times where you need a little something "
+"different. That's where Spark commands come in. They are simple classes that"
+" do not need to have routes defined for, making them perfect for building "
+"tools that developers can use to make their jobs simpler, whether by "
+"handling migrations or database seeding, checking cronjob status, or even "
+"building out custom code generators for your company."
+msgstr ""
+"컨트롤러를 CLI에서 다른 라우트처럼 사용할 수 있는 기능은 편리하지만, 때로는 조금 다른 방식이 필요할 수 있습니다. 이때 Spark "
+"명령이 유용합니다. Spark 명령은 라우트를 정의할 필요가 없는 단순한 클래스이므로, 마이그레이션 처리나 데이터베이스 시딩, cron "
+"작업 상태 확인, 회사용 커스텀 코드 생성기 제작 같은 개발 작업을 더 쉽게 만들어 주는 도구를 만들기에 적합합니다."
+
+#: ../../source/cli/cli_commands.rst:17
+msgid "Creating New Commands"
+msgstr "새 명령 만들기"
+
+#: ../../source/cli/cli_commands.rst:19
+msgid ""
+"You can very easily create new commands to use in your own development. Each"
+" class must be in its own file, and must extend "
+"``CodeIgniter\\CLI\\BaseCommand``, and implement the ``run()`` method."
+msgstr ""
+"개발에 사용할 새 명령은 아주 쉽게 만들 수 있습니다. 각 클래스는 반드시 별도 파일에 있어야 하며, "
+"``CodeIgniter\\CLI\\BaseCommand`` 를 확장하고 ``run()`` 메서드를 구현해야 합니다."
+
+#: ../../source/cli/cli_commands.rst:22
+msgid ""
+"The following properties should be used in order to get listed in CLI "
+"commands and to add help functionality to your command:"
+msgstr "CLI 명령 목록에 표시되고 도움말 기능을 추가하려면 다음 속성들을 사용해야 합니다:"
+
+#: ../../source/cli/cli_commands.rst:24
+msgid ""
+"``$group``: a string to describe the group the command is lumped under when "
+"listing commands. For example: ``Database``"
+msgstr "``$group``: 명령 목록에서 이 명령이 속한 그룹을 설명하는 문자열입니다. 예: ``Database``"
+
+#: ../../source/cli/cli_commands.rst:25
+msgid ""
+"``$name``: a string to describe the command's name. For example: "
+"``make:controller``"
+msgstr "``$name``: 명령 이름을 설명하는 문자열입니다. 예: ``make:controller``"
+
+#: ../../source/cli/cli_commands.rst:26
+msgid ""
+"``$description``: a string to describe the command. For example: ``Generates"
+" a new controller file.``"
+msgstr ""
+"``$description``: 명령을 설명하는 문자열입니다. 예: ``Generates a new controller file.``"
+
+#: ../../source/cli/cli_commands.rst:27
+msgid ""
+"``$usage``: a string to describe the command usage. For example: "
+"``make:controller <name> [options]``"
+msgstr ""
+"``$usage``: 명령 사용법을 설명하는 문자열입니다. 예: ``make:controller <name> [options]``"
+
+#: ../../source/cli/cli_commands.rst:28
+msgid ""
+"``$arguments``: an array of strings to describe each command argument. For "
+"example: ``'name' => 'The controller class name.'``"
+msgstr ""
+"``$arguments``: 각 명령 인자를 설명하는 문자열 배열입니다. 예: ``'name' => 'The controller "
+"class name.'``"
+
+#: ../../source/cli/cli_commands.rst:29
+msgid ""
+"``$options``: an array of strings to describe each command option. For "
+"example: ``'--force' => 'Force overwrite existing file.'``"
+msgstr ""
+"``$options``: 각 명령 옵션을 설명하는 문자열 배열입니다. 예: ``'--force' => 'Force overwrite "
+"existing file.'``"
+
+#: ../../source/cli/cli_commands.rst:31
+msgid ""
+"**Help description will be automatically generated according to the above "
+"parameters.**"
+msgstr "**도움말 설명은 위 매개변수를 기준으로 자동 생성됩니다.**"
+
+#: ../../source/cli/cli_commands.rst:34
+msgid "File Location"
+msgstr "파일 위치"
+
+#: ../../source/cli/cli_commands.rst:36
+msgid ""
+"Commands must be stored within a directory named **Commands**. However, that"
+" directory has to be located in the PSR-4 namespaces so that the "
+":doc:`Autoloader </concepts/autoloader>` can locate it. This could be in "
+"**app/Commands**, or a directory that you keep commands in to use in all of "
+"your project development, like **Acme/Commands**."
+msgstr ""
+"명령은 **Commands** 라는 이름의 디렉터리에 저장해야 합니다. 다만 :doc:`Autoloader "
+"</concepts/autoloader>` 가 찾을 수 있도록 그 디렉터리는 PSR-4 네임스페이스 안에 있어야 합니다. 예를 들어 "
+"**app/Commands** 이거나, 프로젝트 전반에서 사용할 명령을 모아두는 **Acme/Commands** 같은 디렉터리가 될 수 "
+"있습니다."
+
+#: ../../source/cli/cli_commands.rst:40
+msgid ""
+"When the commands are executed, the full CodeIgniter CLI environment has "
+"been loaded, making it possible to get environment information, path "
+"information, and to use any of the tools you would use when making a "
+"Controller."
+msgstr ""
+"명령이 실행되면 CodeIgniter CLI 환경 전체가 로드되므로, 환경 정보와 경로 정보를 얻고 컨트롤러를 만들 때 사용하는 것과 "
+"같은 도구들을 사용할 수 있습니다."
+
+#: ../../source/cli/cli_commands.rst:44
+msgid "An Example Command"
+msgstr "예제 명령"
+
+#: ../../source/cli/cli_commands.rst:46
+msgid ""
+"Let's step through an example command whose only function is to report basic"
+" information about the application itself, for demonstration purposes. Start"
+" by creating a new file at **app/Commands/AppInfo.php**. It should contain "
+"the following code:"
+msgstr ""
+"데모용으로 애플리케이션 자체에 대한 기본 정보를 보고하는 기능만 가진 예제 명령을 살펴보겠습니다. 먼저 "
+"**app/Commands/AppInfo.php** 에 새 파일을 만들고 다음 코드를 넣습니다:"
+
+#: ../../source/cli/cli_commands.rst:52
+msgid ""
+"If you run the **list** command, you will see the new command listed under "
+"its own ``Demo`` group. If you take a close look, you should see how this "
+"works fairly easily. The ``$group`` property simply tells it how to organize"
+" this command with all of the other commands that exist, telling it what "
+"heading to list it under."
+msgstr ""
+"**list** 명령을 실행하면 새 명령이 자체 ``Demo`` 그룹 아래에 표시됩니다. 자세히 보면 동작 방식을 쉽게 이해할 수 "
+"있습니다. ``$group`` 속성은 이 명령을 다른 명령들과 어떻게 묶어 표시할지, 어떤 제목 아래에 나열할지를 알려 줍니다."
+
+#: ../../source/cli/cli_commands.rst:56
+msgid ""
+"The ``$name`` property is the name this command can be called by. The only "
+"requirement is that it must not contain a space, and all characters must be "
+"valid on the command line itself. By convention, though, commands are "
+"lowercase, with further grouping of commands being done by using a colon "
+"with the command name itself. This helps keep multiple commands from having "
+"naming collisions."
+msgstr ""
+"``$name`` 속성은 이 명령을 호출할 때 사용하는 이름입니다. 공백을 포함해서는 안 되며, 모든 문자는 명령줄에서 유효해야 합니다."
+" 관례적으로는 명령을 소문자로 작성하고, 명령 이름에 콜론을 사용해 세부 그룹을 나눕니다. 이렇게 하면 여러 명령의 이름 충돌을 줄일 수"
+" 있습니다."
+
+#: ../../source/cli/cli_commands.rst:61
+msgid ""
+"The final property, ``$description`` is a short string that is displayed in "
+"the **list** command and should describe what the command does."
+msgstr ""
+"마지막 속성 ``$description`` 은 **list** 명령에 표시되는 짧은 문자열로, 이 명령이 무엇을 하는지 설명해야 합니다."
+
+#: ../../source/cli/cli_commands.rst:65
+msgid "run()"
+msgstr "run()"
+
+#: ../../source/cli/cli_commands.rst:67
+msgid ""
+"The ``run()`` method is the method that is called when the command is being "
+"run. The ``$params`` array is a list of any CLI arguments after the command "
+"name for your use. If the CLI string was:"
+msgstr ""
+"``run()`` 메서드는 명령이 실행될 때 호출되는 메서드입니다. ``$params`` 배열은 명령 이름 뒤에 오는 CLI 인자 "
+"목록입니다. CLI 문자열이 다음과 같다면:"
+
+#: ../../source/cli/cli_commands.rst:74
+msgid "Then **foo** is the command name, and the ``$params`` array would be:"
+msgstr "그렇다면 **foo** 가 명령 이름이고, ``$params`` 배열은 다음과 같습니다:"
+
+#: ../../source/cli/cli_commands.rst:78
+msgid ""
+"This can also be accessed through the :doc:`CLI </cli/cli_library>` library,"
+" but this already has your command removed from the string. These parameters"
+" can be used to customize how your scripts behave."
+msgstr ""
+"이 값은 :doc:`CLI </cli/cli_library>` 라이브러리를 통해서도 접근할 수 있지만, 그 경우에는 이미 명령 이름이 "
+"문자열에서 제거되어 있습니다. 이 매개변수들은 스크립트 동작을 사용자 정의하는 데 사용할 수 있습니다."
+
+#: ../../source/cli/cli_commands.rst:81
+msgid "Our demo command might have a ``run()`` method something like:"
+msgstr "데모 명령의 ``run()`` 메서드는 대략 다음과 같을 수 있습니다:"
+
+#: ../../source/cli/cli_commands.rst:85 ../../source/cli/cli_overview.rst:55
+msgid ""
+"See the :doc:`CLI Library </cli/cli_library>` page for detailed information."
+msgstr "자세한 내용은 :doc:`CLI Library </cli/cli_library>` 페이지를 참고하세요."
+
+#: ../../source/cli/cli_commands.rst:88
+msgid "Command Termination"
+msgstr "명령 종료"
+
+#: ../../source/cli/cli_commands.rst:90
+msgid ""
+"By default, the command exits with a success code of ``0``. If an error is "
+"encountered while executing a command, you can terminate the command by "
+"using the ``return`` language construct with an exit code in the ``run()`` "
+"method."
+msgstr ""
+"기본적으로 명령은 성공 코드 ``0`` 으로 종료됩니다. 명령을 실행하는 동안 오류가 발생하면 ``run()`` 메서드에서 종료 코드를 "
+"포함한 ``return`` 구문으로 명령을 종료할 수 있습니다."
+
+#: ../../source/cli/cli_commands.rst:93
+msgid "For example, ``return EXIT_ERROR;``"
+msgstr "예를 들면 ``return EXIT_ERROR;``"
+
+#: ../../source/cli/cli_commands.rst:95
+msgid ""
+"This approach can help with debugging at the system level, if the command, "
+"for example, is run via crontab."
+msgstr "이 방식은 예를 들어 명령이 crontab을 통해 실행될 때 시스템 수준의 디버깅에 도움이 됩니다."
+
+#: ../../source/cli/cli_commands.rst:97
+msgid ""
+"You can use the ``EXIT_*`` exit code constants defined in the "
+"**app/Config/Constants.php** file."
+msgstr "**app/Config/Constants.php** 파일에 정의된 ``EXIT_*`` 종료 코드 상수를 사용할 수 있습니다."
+
+#: ../../source/cli/cli_commands.rst:101
+msgid "BaseCommand"
+msgstr "BaseCommand"
+
+#: ../../source/cli/cli_commands.rst:103
+msgid ""
+"The ``BaseCommand`` class that all commands must extend have a couple of "
+"helpful utility methods that you should be familiar with when creating your "
+"own commands. It also has a :doc:`Logger </general/logging>` available at "
+"``$this->logger``."
+msgstr ""
+"모든 명령이 확장해야 하는 ``BaseCommand`` 클래스에는 직접 명령을 만들 때 알아두면 좋은 유틸리티 메서드가 몇 가지 "
+"있습니다. 또한 ``$this->logger`` 에서 사용할 수 있는 :doc:`Logger </general/logging>` 도 "
+"있습니다."
+
+#: ../../source/cli/cli_commands.rst ../../source/cli/cli_signals.rst
+msgid "Parameters"
+msgstr "매개변수"
+
+#: ../../source/cli/cli_commands.rst:113
+msgid "The name of another command to call."
+msgstr "호출할 다른 명령의 이름입니다."
+
+#: ../../source/cli/cli_commands.rst:114
+msgid "Additional CLI arguments to make available to that command."
+msgstr "해당 명령에서 사용할 수 있도록 추가 CLI 인자를 전달합니다."
+
+#: ../../source/cli/cli_commands.rst:116
+msgid ""
+"This method allows you to run other commands during the execution of your "
+"current command:"
+msgstr "이 메서드는 현재 명령을 실행하는 동안 다른 명령을 실행할 수 있게 해줍니다:"
+
+#: ../../source/cli/cli_commands.rst:122
+msgid "The exception to use for error reporting."
+msgstr "오류 보고에 사용할 예외입니다."
+
+#: ../../source/cli/cli_commands.rst:124
+msgid ""
+"A convenience method to maintain a consistent and clear error output to the "
+"CLI:"
+msgstr "CLI에 일관되고 명확한 오류 출력을 유지하기 위한 편의 메서드입니다:"
+
+#: ../../source/cli/cli_commands.rst:130
+msgid "A method to show command help: (usage,arguments,description,options)"
+msgstr "명령 도움말을 표시하는 메서드입니다: (usage,arguments,description,options)"
+
+#: ../../source/cli/cli_commands.rst:134
+msgid "The string item."
+msgstr "문자열 항목입니다."
+
+#: ../../source/cli/cli_commands.rst:135
+msgid "The max size."
+msgstr "최대 크기입니다."
+
+#: ../../source/cli/cli_commands.rst:136
+msgid "How many extra spaces to add at the end."
+msgstr "끝에 추가할 공백 수입니다."
+
+#: ../../source/cli/cli_commands.rst:137
+msgid "The indent spaces."
+msgstr "들여쓰기 공백 수입니다."
+
+#: ../../source/cli/cli_commands.rst:139
+msgid ""
+"Pads our string out so that all titles are the same length to nicely line up"
+" descriptions:"
+msgstr "문자열을 패딩하여 모든 제목 길이를 같게 만들고, 설명이 보기 좋게 맞춰지도록 합니다:"
+
+#: ../../source/cli/cli_commands.rst:147
+msgid "Use :php:meth:`CodeIgniter\\\\CLI\\\\BaseCommand::setPad()` instead."
+msgstr "대신 :php:meth:`CodeIgniter\\\\CLI\\\\BaseCommand::setPad()` 를 사용하세요."
+
+#: ../../source/cli/cli_commands.rst:150
+msgid "The  $key => $value array."
+msgstr "$key => $value 배열입니다."
+
+#: ../../source/cli/cli_commands.rst:151
+msgid "The pad spaces."
+msgstr "패딩 공백입니다."
+
+#: ../../source/cli/cli_commands.rst:153
+msgid ""
+"A method to calculate padding for ``$key => $value`` array output. The "
+"padding can be used to output a will formatted table in CLI."
+msgstr ""
+"``$key => $value`` 배열 출력의 패딩을 계산하는 메서드입니다. 이 패딩은 CLI에서 보기 좋게 정렬된 표를 출력하는 데 "
+"사용할 수 있습니다."
+
+#: ../../source/cli/cli_controllers.rst:3
+msgid "Running Controllers via CLI"
+msgstr "CLI를 통한 컨트롤러 실행"
+
+#: ../../source/cli/cli_controllers.rst:5
+msgid ""
+"As well as calling an application's :doc:`Controllers "
+"</incoming/controllers>` via the URL in a browser they can also be loaded "
+"via the command-line interface (CLI)."
+msgstr ""
+"애플리케이션의 :doc:`Controllers </incoming/controllers>` 를 브라우저 URL로 호출할 수 있듯이, "
+"명령줄 인터페이스(CLI)를 통해서도 불러올 수 있습니다."
+
+#: ../../source/cli/cli_controllers.rst:9
+msgid ""
+"It is recommended to use Spark Commands for CLI scripts instead of calling "
+"controllers via CLI. See the :doc:`spark_commands` and :doc:`cli_commands` "
+"page for detailed information."
+msgstr ""
+"CLI 스크립트는 CLI로 컨트롤러를 호출하기보다 Spark Commands를 사용하는 것이 권장됩니다. 자세한 내용은 "
+":doc:`spark_commands` 와 :doc:`cli_commands` 페이지를 참고하세요."
+
+#: ../../source/cli/cli_controllers.rst:20
+msgid "Let's try it: Hello World!"
+msgstr "직접 해봅시다: Hello World!"
+
+#: ../../source/cli/cli_controllers.rst:23
+msgid "Create a Controller"
+msgstr "컨트롤러 만들기"
+
+#: ../../source/cli/cli_controllers.rst:25
+msgid ""
+"Let's create a simple controller so you can see it in action. Using your "
+"text editor, create a file called Tools.php, and put the following code in "
+"it:"
+msgstr "간단한 컨트롤러를 만들어 동작을 확인해 봅시다. 텍스트 편집기로 Tools.php라는 파일을 만들고, 다음 코드를 넣습니다:"
+
+#: ../../source/cli/cli_controllers.rst:31
+msgid ""
+"If you use :ref:`auto-routing-improved`, change the method name to "
+"``cliMessage()``."
+msgstr ":ref:`auto-routing-improved` 를 사용한다면 메서드 이름을 ``cliMessage()`` 로 바꿉니다."
+
+#: ../../source/cli/cli_controllers.rst:33
+msgid "Then save the file to your **app/Controllers/** directory."
+msgstr "그다음 파일을 **app/Controllers/** 디렉터리에 저장합니다."
+
+#: ../../source/cli/cli_controllers.rst:36
+msgid "Define a Route"
+msgstr "라우트 정의"
+
+#: ../../source/cli/cli_controllers.rst:38
+msgid "If you use Auto Routing, skip this."
+msgstr "자동 라우팅을 사용한다면 이 단계는 건너뜁니다."
+
+#: ../../source/cli/cli_controllers.rst:40
+msgid ""
+"In your **app/Config/Routes.php** file you can create routes that are only "
+"accessible from the CLI as easily as you would create any other route. "
+"Instead of using the ``get()``, ``post()``, or similar method, you would use"
+" the ``cli()`` method. Everything else works exactly like a normal route "
+"definition:"
+msgstr ""
+"**app/Config/Routes.php** 파일에서 CLI로만 접근 가능한 라우트를 다른 라우트와 똑같이 쉽게 만들 수 있습니다. "
+"``get()``, ``post()`` 같은 메서드 대신 ``cli()`` 메서드를 사용하면 됩니다. 나머지는 일반 라우트 정의와 완전히"
+" 같습니다:"
+
+#: ../../source/cli/cli_controllers.rst:47
+msgid ""
+"For more information, see the :ref:`Routes <command-line-only-routes>` page."
+msgstr "자세한 내용은 :ref:`Routes <command-line-only-routes>` 페이지를 참고하세요."
+
+#: ../../source/cli/cli_controllers.rst:49
+msgid ""
+"If you enable :ref:`auto-routing-legacy` and place the command file in "
+"**app/Controllers**, anyone could access the command with the help of "
+":ref:`auto-routing-legacy` via HTTP."
+msgstr ""
+":ref:`auto-routing-legacy` 를 활성화하고 명령 파일을 **app/Controllers** 에 두면, 누구나 "
+"HTTP를 통해 :ref:`auto-routing-legacy` 의 도움으로 해당 명령에 접근할 수 있습니다."
+
+#: ../../source/cli/cli_controllers.rst:53
+msgid "Run via CLI"
+msgstr "CLI로 실행"
+
+#: ../../source/cli/cli_controllers.rst:55
+msgid "Now normally you would visit your site using a URL similar to this::"
+msgstr "보통은 다음과 비슷한 URL로 사이트에 접속하겠지만::"
+
+#: ../../source/cli/cli_controllers.rst:59
+msgid ""
+"Instead, we are going to open Terminal in Mac/Linux or go to Run > \"cmd\" "
+"in Windows and navigate to our CodeIgniter project's web root."
+msgstr ""
+"대신 Mac/Linux에서는 터미널을 열고, Windows에서는 Run > \"cmd\"로 이동한 뒤 CodeIgniter 프로젝트의 웹"
+" 루트로 이동합니다."
+
+#: ../../source/cli/cli_controllers.rst:67
+msgid "If you did it right, you should see \"Hello World!\" printed."
+msgstr "정상적으로 했다면 \"Hello World!\" 가 출력되어야 합니다."
+
+#: ../../source/cli/cli_controllers.rst:73
+msgid ""
+"Here we are passing it an argument in the same way that URL parameters work."
+" \"John Smith\" is passed as an argument and output is::"
+msgstr ""
+"여기서는 URL 매개변수가 동작하는 방식과 같은 방법으로 인자를 전달합니다. \"John Smith\" 가 인자로 전달되고 출력은 다음과"
+" 같습니다::"
+
+#: ../../source/cli/cli_controllers.rst:80
+msgid "That's the Basics!"
+msgstr "기본은 여기까지!"
+
+#: ../../source/cli/cli_controllers.rst:82
+msgid ""
+"That, in a nutshell, is all there is to know about controllers on the "
+"command line. Remember that this is just a normal controller, so routing and"
+" ``_remap()`` works fine."
+msgstr ""
+"요약하면, 명령줄에서 컨트롤러를 사용하는 방법은 이것이 전부입니다. 이것도 일반 컨트롤러이므로 라우팅과 ``_remap()`` 이 "
+"정상적으로 동작한다는 점을 기억하세요."
+
+#: ../../source/cli/cli_controllers.rst:86
+msgid "``_remap()`` does not work with :ref:`auto-routing-improved`."
+msgstr "``_remap()`` 은 :ref:`auto-routing-improved` 와 함께 사용할 수 없습니다."
+
+#: ../../source/cli/cli_controllers.rst:88
+msgid ""
+"If you want to make sure running via CLI, check the return value of "
+":php:func:`is_cli()`."
+msgstr "CLI로 실행 중인지 확인하려면 :php:func:`is_cli()` 의 반환값을 확인하세요."
+
+#: ../../source/cli/cli_controllers.rst:90
+msgid ""
+"However, CodeIgniter provides additional tools to make creating CLI-"
+"accessible scripts even more pleasant, include CLI-only routing, and a "
+"library that helps you with CLI-only tools."
+msgstr ""
+"하지만 CodeIgniter는 CLI에서 접근 가능한 스크립트를 더 편하게 만들 수 있도록 CLI 전용 라우팅과 CLI 전용 도구를 돕는"
+" 라이브러리 같은 추가 도구도 제공합니다."
+
+#: ../../source/cli/cli_generators.rst:3
+msgid "CLI Generators"
+msgstr "CLI 생성기"
+
+#: ../../source/cli/cli_generators.rst:5
+msgid ""
+"CodeIgniter4 now comes equipped with generators to ease the creation of "
+"stock controllers, models, entities, etc. You can also scaffold a complete "
+"set of files with just one command."
+msgstr ""
+"CodeIgniter4에는 기본 컨트롤러, 모델, 엔티티 등을 쉽게 만들 수 있는 생성기가 포함되어 있습니다. 한 번의 명령으로 전체 "
+"파일 세트를 뼈대만 생성할 수도 있습니다."
+
+#: ../../source/cli/cli_generators.rst:14
+msgid "Introduction"
+msgstr "소개"
+
+#: ../../source/cli/cli_generators.rst:16
+msgid ""
+"All built-in generators reside under the ``Generators`` group when listed "
+"using ``php spark list``. To view the full description and usage information"
+" on a particular generator, use the command:"
+msgstr ""
+"모든 내장 생성기는 ``php spark list``\\로 목록을 볼 때 ``Generators`` 그룹 아래에 있습니다. 특정 생성기의"
+" 전체 설명과 사용 정보를 보려면 다음 명령을 사용하세요:"
+
+#: ../../source/cli/cli_generators.rst:23
+msgid ""
+"where ``<generator_command>`` will be replaced with the command to check."
+msgstr "``<generator_command>``\\는 확인할 명령으로 대체됩니다."
+
+#: ../../source/cli/cli_generators.rst:25
+msgid ""
+"Do you need to have the generated code in a subfolder? Let's say if you want"
+" to create a controller class to reside in the ``Admin`` subfolder of the "
+"main ``Controllers`` folder, you will just need to prepend the subfolder to "
+"the class name, like this: ``php spark make:controller admin/login``. This "
+"command will create the ``Login`` controller in the ``Controllers/Admin`` "
+"subfolder with a namespace of ``App\\Controllers\\Admin``."
+msgstr ""
+"생성된 코드를 하위 폴더에 두어야 하나요? 예를 들어 메인 ``Controllers`` 폴더의 ``Admin`` 하위 폴더에 컨트롤러 "
+"클래스를 만들고 싶다면, 클래스 이름 앞에 하위 폴더를 붙이기만 하면 됩니다. 예: ``php spark make:controller "
+"admin/login``. 이 명령은 ``Controllers/Admin`` 하위 폴더에 ``Login`` 컨트롤러를 생성하고 "
+"네임스페이스는 ``App\\Controllers\\Admin``\\로 설정됩니다."
+
+#: ../../source/cli/cli_generators.rst:31
+msgid ""
+"Working on modules? Code generation will set the root namespace to a default"
+" of ``APP_NAMESPACE``. Should you need to have the generated code elsewhere "
+"in your module namespace, make sure to set the ``--namespace`` option in "
+"your command, e.g., ``php spark make:model blog --namespace Acme\\\\Blog``."
+msgstr ""
+"모듈 작업 중인가요? 코드 생성은 루트 네임스페이스를 기본값 ``APP_NAMESPACE``\\로 설정합니다. 생성된 코드를 모듈 "
+"네임스페이스의 다른 위치에 두어야 한다면, 명령에 ``--namespace`` 옵션을 설정하세요. 예: ``php spark "
+"make:model blog --namespace Acme\\\\Blog``."
+
+#: ../../source/cli/cli_generators.rst:35
+msgid ""
+"Make sure when setting the ``--namespace`` option that the supplied "
+"namespace is a valid namespace defined in your ``$psr4`` array in "
+"``Config\\Autoload`` or defined in your composer autoload file. Otherwise, "
+"code generation will be interrupted."
+msgstr ""
+"``--namespace`` 옵션을 설정할 때 지정한 네임스페이스가 ``Config\\Autoload``\\의 ``$psr4`` 배열 "
+"또는 composer autoload 파일에 정의된 올바른 네임스페이스인지 확인하세요. 그렇지 않으면 코드 생성이 중단됩니다."
+
+#: ../../source/cli/cli_generators.rst:41
+msgid "Built-in Generators"
+msgstr "내장 생성기"
+
+#: ../../source/cli/cli_generators.rst:43
+msgid "CodeIgniter4 ships the following generators by default."
+msgstr "CodeIgniter4는 기본적으로 다음 생성기를 제공합니다."
+
+#: ../../source/cli/cli_generators.rst:46
+msgid "make:cell"
+msgstr "make:cell"
+
+#: ../../source/cli/cli_generators.rst:50
+msgid "Creates a new Cell file and its view."
+msgstr "새 Cell 파일과 뷰를 생성합니다."
+
+#: ../../source/cli/cli_generators.rst:53
+#: ../../source/cli/cli_generators.rst:73
+#: ../../source/cli/cli_generators.rst:97
+#: ../../source/cli/cli_generators.rst:118
+#: ../../source/cli/cli_generators.rst:148
+#: ../../source/cli/cli_generators.rst:169
+#: ../../source/cli/cli_generators.rst:190
+#: ../../source/cli/cli_generators.rst:214
+#: ../../source/cli/cli_generators.rst:240
+#: ../../source/cli/cli_generators.rst:260
+#: ../../source/cli/cli_generators.rst:281
+#: ../../source/cli/cli_generators.rst:305
+msgid "Usage:"
+msgstr "사용법:"
+
+#: ../../source/cli/cli_generators.rst:59
+#: ../../source/cli/cli_generators.rst:79
+#: ../../source/cli/cli_generators.rst:103
+#: ../../source/cli/cli_generators.rst:124
+#: ../../source/cli/cli_generators.rst:154
+#: ../../source/cli/cli_generators.rst:175
+#: ../../source/cli/cli_generators.rst:196
+#: ../../source/cli/cli_generators.rst:220
+#: ../../source/cli/cli_generators.rst:246
+#: ../../source/cli/cli_generators.rst:266
+#: ../../source/cli/cli_generators.rst:287
+#: ../../source/cli/cli_generators.rst:311
+msgid "Argument:"
+msgstr "인자:"
+
+#: ../../source/cli/cli_generators.rst:60
+msgid ""
+"``name``: The name of the cell class. It should be in PascalCase. "
+"**[REQUIRED]**"
+msgstr "``name``: Cell 클래스 이름입니다. PascalCase여야 합니다. **[필수]**"
+
+#: ../../source/cli/cli_generators.rst:63
+#: ../../source/cli/cli_generators.rst:83
+#: ../../source/cli/cli_generators.rst:107
+#: ../../source/cli/cli_generators.rst:128
+#: ../../source/cli/cli_generators.rst:158
+#: ../../source/cli/cli_generators.rst:179
+#: ../../source/cli/cli_generators.rst:200
+#: ../../source/cli/cli_generators.rst:224
+#: ../../source/cli/cli_generators.rst:250
+#: ../../source/cli/cli_generators.rst:270
+#: ../../source/cli/cli_generators.rst:291
+#: ../../source/cli/cli_generators.rst:315
+msgid "Options:"
+msgstr "옵션:"
+
+#: ../../source/cli/cli_generators.rst:64
+#: ../../source/cli/cli_generators.rst:87
+#: ../../source/cli/cli_generators.rst:108
+#: ../../source/cli/cli_generators.rst:131
+#: ../../source/cli/cli_generators.rst:159
+#: ../../source/cli/cli_generators.rst:180
+#: ../../source/cli/cli_generators.rst:204
+#: ../../source/cli/cli_generators.rst:225
+#: ../../source/cli/cli_generators.rst:271
+#: ../../source/cli/cli_generators.rst:295
+#: ../../source/cli/cli_generators.rst:316
+msgid ""
+"``--namespace``: Set the root namespace. Defaults to value of "
+"``APP_NAMESPACE``."
+msgstr "``--namespace``: 루트 네임스페이스를 설정합니다. 기본값은 ``APP_NAMESPACE``\\입니다."
+
+#: ../../source/cli/cli_generators.rst:65
+#: ../../source/cli/cli_generators.rst:89
+#: ../../source/cli/cli_generators.rst:110
+#: ../../source/cli/cli_generators.rst:133
+#: ../../source/cli/cli_generators.rst:161
+#: ../../source/cli/cli_generators.rst:182
+#: ../../source/cli/cli_generators.rst:206
+#: ../../source/cli/cli_generators.rst:227
+#: ../../source/cli/cli_generators.rst:252
+#: ../../source/cli/cli_generators.rst:273
+#: ../../source/cli/cli_generators.rst:297
+#: ../../source/cli/cli_generators.rst:318
+msgid "``--force``: Set this flag to overwrite existing files on destination."
+msgstr "``--force``: 이 플래그를 설정하면 대상의 기존 파일을 덮어씁니다."
+
+#: ../../source/cli/cli_generators.rst:68
+msgid "make:command"
+msgstr "make:command"
+
+#: ../../source/cli/cli_generators.rst:70
+msgid "Creates a new spark command."
+msgstr "새 spark 명령을 생성합니다."
+
+#: ../../source/cli/cli_generators.rst:80
+msgid "``name``: The name of the command class. **[REQUIRED]**"
+msgstr "``name``: 명령 클래스 이름입니다. **[필수]**"
+
+#: ../../source/cli/cli_generators.rst:84
+msgid ""
+"``--command``: The command name to run in spark. Defaults to "
+"``command:name``."
+msgstr "``--command``: spark에서 실행할 명령 이름입니다. 기본값은 ``command:name``\\입니다."
+
+#: ../../source/cli/cli_generators.rst:85
+msgid ""
+"``--group``: The group/namespace of the command. Defaults to ``App`` for "
+"basic commands, and ``Generators`` for generator commands."
+msgstr ""
+"``--group``: 명령의 그룹/네임스페이스입니다. 기본값은 기본 명령의 경우 ``App``, 생성기 명령의 경우 "
+"``Generators``\\입니다."
+
+#: ../../source/cli/cli_generators.rst:86
+msgid ""
+"``--type``: The type of command, whether a ``basic`` command or a "
+"``generator`` command. Defaults to ``basic``."
+msgstr ""
+"``--type``: 명령 유형입니다. ``basic`` 명령인지 ``generator`` 명령인지 지정합니다. 기본값은 "
+"``basic``\\입니다."
+
+#: ../../source/cli/cli_generators.rst:88
+#: ../../source/cli/cli_generators.rst:109
+#: ../../source/cli/cli_generators.rst:132
+#: ../../source/cli/cli_generators.rst:160
+#: ../../source/cli/cli_generators.rst:181
+#: ../../source/cli/cli_generators.rst:205
+#: ../../source/cli/cli_generators.rst:226
+#: ../../source/cli/cli_generators.rst:272
+#: ../../source/cli/cli_generators.rst:296
+#: ../../source/cli/cli_generators.rst:317
+msgid "``--suffix``: Append the component suffix to the generated class name."
+msgstr "``--suffix``: 생성된 클래스 이름에 컴포넌트 접미사를 추가합니다."
+
+#: ../../source/cli/cli_generators.rst:92
+msgid "make:config"
+msgstr "make:config"
+
+#: ../../source/cli/cli_generators.rst:94
+msgid "Creates a new config file."
+msgstr "새 config 파일을 생성합니다."
+
+#: ../../source/cli/cli_generators.rst:104
+msgid "``name``: The name of the config class. **[REQUIRED]**"
+msgstr "``name``: config 클래스 이름입니다. **[필수]**"
+
+#: ../../source/cli/cli_generators.rst:113
+msgid "make:controller"
+msgstr "make:controller"
+
+#: ../../source/cli/cli_generators.rst:115
+msgid "Creates a new controller file."
+msgstr "새 controller 파일을 생성합니다."
+
+#: ../../source/cli/cli_generators.rst:125
+msgid "``name``: The name of the controller class. **[REQUIRED]**"
+msgstr "``name``: controller 클래스 이름입니다. **[필수]**"
+
+#: ../../source/cli/cli_generators.rst:129
+msgid ""
+"``--bare``: Extends from ``CodeIgniter\\Controller`` instead of "
+"``BaseController``."
+msgstr "``--bare``: ``BaseController`` 대신 ``CodeIgniter\\Controller``\\에서 상속합니다."
+
+#: ../../source/cli/cli_generators.rst:130
+msgid ""
+"``--restful``: Extends from a RESTful resource. Choices are ``controller`` "
+"and ``presenter``. Defaults to ``controller``."
+msgstr ""
+"``--restful``: RESTful 리소스에서 상속합니다. 선택지는 ``controller``\\와 "
+"``presenter``\\입니다. 기본값은 ``controller``\\입니다."
+
+#: ../../source/cli/cli_generators.rst:135
+msgid ""
+"If you use ``--suffix``, the generated controller name will be like "
+"``ProductController``. That violates the Controller naming convention when "
+"using :ref:`Auto Routing <controller-auto-routing-improved>` (Controller "
+"class names MUST start with an uppercase letter and ONLY the first character"
+" can be uppercase). So ``--suffix`` can be used when you use :ref:`Defined "
+"Routes <defined-route-routing>`."
+msgstr ""
+"``--suffix``\\를 사용하면 생성된 컨트롤러 이름이 ``ProductController``\\처럼 됩니다. 이는 "
+":ref:`Auto Routing <controller-auto-routing-improved>`\\를 사용할 때의 Controller "
+"명명 규칙(Controller 클래스 이름은 반드시 대문자로 시작해야 하며, 첫 글자만 대문자일 수 있음)을 위반합니다. 따라서 "
+"``--suffix``\\는 :ref:`Defined Routes <defined-route-routing>`\\를 사용할 때 사용할 수"
+" 있습니다."
+
+#: ../../source/cli/cli_generators.rst:143
+msgid "make:entity"
+msgstr "make:entity"
+
+#: ../../source/cli/cli_generators.rst:145
+msgid "Creates a new entity file."
+msgstr "새 entity 파일을 생성합니다."
+
+#: ../../source/cli/cli_generators.rst:155
+msgid "``name``: The name of the entity class. **[REQUIRED]**"
+msgstr "``name``: entity 클래스 이름입니다. **[필수]**"
+
+#: ../../source/cli/cli_generators.rst:164
+msgid "make:filter"
+msgstr "make:filter"
+
+#: ../../source/cli/cli_generators.rst:166
+msgid "Creates a new filter file."
+msgstr "새 filter 파일을 생성합니다."
+
+#: ../../source/cli/cli_generators.rst:176
+msgid "``name``: The name of the filter class. **[REQUIRED]**"
+msgstr "``name``: filter 클래스 이름입니다. **[필수]**"
+
+#: ../../source/cli/cli_generators.rst:185
+msgid "make:model"
+msgstr "make:model"
+
+#: ../../source/cli/cli_generators.rst:187
+msgid "Creates a new model file."
+msgstr "새 model 파일을 생성합니다."
+
+#: ../../source/cli/cli_generators.rst:197
+msgid "``name``: The name of the model class. **[REQUIRED]**"
+msgstr "``name``: model 클래스 이름입니다. **[필수]**"
+
+#: ../../source/cli/cli_generators.rst:201
+msgid "``--dbgroup``: Database group to use. Defaults to ``default``."
+msgstr "``--dbgroup``: 사용할 데이터베이스 그룹입니다. 기본값은 ``default``\\입니다."
+
+#: ../../source/cli/cli_generators.rst:202
+msgid ""
+"``--return``: Set the return type from ``array``, ``object``, or ``entity``."
+" Defaults to ``array``."
+msgstr ""
+"``--return``: 반환 유형을 ``array``, ``object``, ``entity`` 중에서 설정합니다. 기본값은 "
+"``array``\\입니다."
+
+#: ../../source/cli/cli_generators.rst:203
+msgid ""
+"``--table``: Supply a different table name. Defaults to the pluralized class"
+" name."
+msgstr "``--table``: 다른 테이블 이름을 지정합니다. 기본값은 복수형 클래스 이름입니다."
+
+#: ../../source/cli/cli_generators.rst:209
+msgid "make:seeder"
+msgstr "make:seeder"
+
+#: ../../source/cli/cli_generators.rst:211
+msgid "Creates a new seeder file."
+msgstr "새 seeder 파일을 생성합니다."
+
+#: ../../source/cli/cli_generators.rst:221
+msgid "``name``: The name of the seeder class. **[REQUIRED]**"
+msgstr "``name``: seeder 클래스 이름입니다. **[필수]**"
+
+#: ../../source/cli/cli_generators.rst:233
+msgid "make:test"
+msgstr "make:test"
+
+#: ../../source/cli/cli_generators.rst:237
+msgid "Creates a new test file."
+msgstr "새 test 파일을 생성합니다."
+
+#: ../../source/cli/cli_generators.rst:247
+msgid "``name``: The name of the test class. **[REQUIRED]**"
+msgstr "``name``: test 클래스 이름입니다. **[필수]**"
+
+#: ../../source/cli/cli_generators.rst:251
+msgid ""
+"``--namespace``: Set the root namespace. Defaults to value of ``Tests``."
+msgstr "``--namespace``: 루트 네임스페이스를 설정합니다. 기본값은 ``Tests``\\입니다."
+
+#: ../../source/cli/cli_generators.rst:255
+msgid "make:transformer"
+msgstr "make:transformer"
+
+#: ../../source/cli/cli_generators.rst:257
+msgid "Creates a new API transformer file."
+msgstr "새 API transformer 파일을 생성합니다."
+
+#: ../../source/cli/cli_generators.rst:267
+msgid "``name``: The name of the transformer class. **[REQUIRED]**"
+msgstr "``name``: transformer 클래스 이름입니다. **[필수]**"
+
+#: ../../source/cli/cli_generators.rst:276
+msgid "make:migration"
+msgstr "make:migration"
+
+#: ../../source/cli/cli_generators.rst:278
+msgid "Creates a new migration file."
+msgstr "새 migration 파일을 생성합니다."
+
+#: ../../source/cli/cli_generators.rst:288
+msgid "``name``: The name of the migration class. **[REQUIRED]**"
+msgstr "``name``: migration 클래스 이름입니다. **[필수]**"
+
+#: ../../source/cli/cli_generators.rst:292
+msgid "``--session``: Generate a migration file for database sessions."
+msgstr "``--session``: 데이터베이스 세션용 migration 파일을 생성합니다."
+
+#: ../../source/cli/cli_generators.rst:293
+msgid ""
+"``--table``: Set the table name to use for database sessions. Defaults to "
+"``ci_sessions``."
+msgstr "``--table``: 데이터베이스 세션에 사용할 테이블 이름을 설정합니다. 기본값은 ``ci_sessions``\\입니다."
+
+#: ../../source/cli/cli_generators.rst:294
+msgid ""
+"``--dbgroup``: Set the database group for database sessions. Defaults to "
+"``default`` group."
+msgstr ""
+"``--dbgroup``: 데이터베이스 세션에 사용할 데이터베이스 그룹을 설정합니다. 기본값은 ``default`` 그룹입니다."
+
+#: ../../source/cli/cli_generators.rst:300
+msgid "make:validation"
+msgstr "make:validation"
+
+#: ../../source/cli/cli_generators.rst:302
+msgid "Creates a new validation file."
+msgstr "새 validation 파일을 생성합니다."
+
+#: ../../source/cli/cli_generators.rst:312
+msgid "``name``: The name of the validation class. **[REQUIRED]**"
+msgstr "``name``: validation 클래스 이름입니다. **[필수]**"
+
+#: ../../source/cli/cli_generators.rst:322
+msgid "Scaffolding a Complete Set of Stock Code"
+msgstr "기본 코드 전체 세트 뼈대 생성"
+
+#: ../../source/cli/cli_generators.rst:324
+msgid ""
+"Sometimes in our development phase we are creating functionalities by "
+"groups, such as creating an *Admin* group. This group will contain its own "
+"controller, model, migration files, or even entities. You may be tempted to "
+"type each generator command one-by-one in the terminal and wishfully "
+"thinking it would be great to have a single generator command to rule them "
+"all."
+msgstr ""
+"개발 단계에서 *Admin* 그룹처럼 기능을 그룹별로 만들 때가 있습니다. 이 그룹에는 자체 컨트롤러, 모델, 마이그레이션 파일, 심지어"
+" 엔티티까지 포함될 수 있습니다. 터미널에 각 생성기 명령을 하나씩 입력하다 보면 이 모든 것을 한 번에 처리하는 단일 생성기 명령이 "
+"있으면 좋겠다고 생각하게 됩니다."
+
+#: ../../source/cli/cli_generators.rst:329
+msgid ""
+"Fret no more! CodeIgniter4 is also shipped with a dedicated "
+"``make:scaffold`` command that is basically a wrapper to the controller, "
+"model, entity, migration, and seeder generator commands. All you need is the"
+" class name that will be used to name all the generated classes. Also, "
+"**individual options** supported by each generator command are recognized by"
+" the scaffold command."
+msgstr ""
+"걱정하지 마세요! CodeIgniter4에는 전용 ``make:scaffold`` 명령도 있으며, 이는 컨트롤러, 모델, 엔티티, "
+"마이그레이션, 시더 생성기 명령을 감싸는 래퍼입니다. 필요한 것은 생성될 모든 클래스의 이름에 사용할 클래스 이름뿐입니다. 또한 각 "
+"생성기 명령이 지원하는 **개별 옵션**\\도 scaffold 명령이 인식합니다."
+
+#: ../../source/cli/cli_generators.rst:334
+msgid "Running this in your terminal:"
+msgstr "터미널에서 다음을 실행하면:"
+
+#: ../../source/cli/cli_generators.rst:340
+msgid "will create the following files:"
+msgstr "다음 파일들이 생성됩니다:"
+
+#: ../../source/cli/cli_generators.rst:342
+msgid "**app/Controllers/User.php**"
+msgstr "**app/Controllers/User.php**"
+
+#: ../../source/cli/cli_generators.rst:343
+msgid "**app/Models/User.php**"
+msgstr "**app/Models/User.php**"
+
+#: ../../source/cli/cli_generators.rst:344
+msgid "**app/Database/Migrations/<some date here>_User.php** and"
+msgstr "**app/Database/Migrations/<some date here>_User.php**\\와"
+
+#: ../../source/cli/cli_generators.rst:345
+msgid "**app/Database/Seeds/User.php**"
+msgstr "**app/Database/Seeds/User.php**"
+
+#: ../../source/cli/cli_generators.rst:347
+msgid ""
+"To include an ``Entity`` class in the scaffolded files, just include the "
+"``--return entity`` to the command and it will be passed to the model "
+"generator."
+msgstr ""
+"scaffold로 생성한 파일에 ``Entity`` 클래스를 포함하려면 명령에 ``--return entity``\\를 추가하면 모델 "
+"생성기로 전달됩니다."
+
+#: ../../source/cli/cli_generators.rst:352
+msgid "GeneratorTrait"
+msgstr "GeneratorTrait"
+
+#: ../../source/cli/cli_generators.rst:354
+msgid ""
+"All generator commands must use the ``GeneratorTrait`` to fully utilize its "
+"methods that are used in code generation."
+msgstr "모든 생성기 명령은 코드 생성에 사용되는 메서드를 완전히 활용하기 위해 ``GeneratorTrait``\\를 사용해야 합니다."
+
+#: ../../source/cli/cli_generators.rst:359
+msgid "Declaring the Location of a Custom Generator Command Template"
+msgstr "사용자 정의 생성기 명령 템플릿 위치 선언"
+
+#: ../../source/cli/cli_generators.rst:361
+msgid ""
+"The default order of lookup for generator templates is (1) the template "
+"defined in the **app/Config/Generators.php** file, and (2) if not found, the"
+" template found at the ``CodeIgniter\\Commands\\Generators\\Views`` "
+"namespace."
+msgstr ""
+"생성기 템플릿을 찾는 기본 순서는 (1) **app/Config/Generators.php** 파일에 정의된 템플릿, (2) 찾을 수 "
+"없으면 ``CodeIgniter\\Commands\\Generators\\Views`` 네임스페이스의 템플릿입니다."
+
+#: ../../source/cli/cli_generators.rst:364
+msgid ""
+"To declare the template location for your custom generator command, you will"
+" need to add it to the **app/Config/Generators.php** file. For example, if "
+"you have a command ``make:awesome-command`` and your generator template is "
+"located within your *app* directory "
+"**app/Commands/Generators/Views/awesomecommand.tpl.php**, you would update "
+"the config file like so:"
+msgstr ""
+"사용자 정의 생성기 명령의 템플릿 위치를 선언하려면 **app/Config/Generators.php** 파일에 추가해야 합니다. 예를 "
+"들어 ``make:awesome-command`` 명령이 있고 생성기 템플릿이 *app* 디렉터리의 "
+"**app/Commands/Generators/Views/awesomecommand.tpl.php**\\에 있다면, 구성 파일을 다음과 "
+"같이 업데이트합니다:"
+
+#: ../../source/cli/cli_library.rst:3
+msgid "CLI Library"
+msgstr "CLI 라이브러리"
+
+#: ../../source/cli/cli_library.rst:5
+msgid ""
+"CodeIgniter's CLI library makes creating interactive command-line scripts "
+"simple, including:"
+msgstr "CodeIgniter의 CLI 라이브러리는 다음과 같이 대화형 명령줄 스크립트 작성을 쉽게 해 줍니다:"
+
+#: ../../source/cli/cli_library.rst:7
+msgid "Prompting the user for more information"
+msgstr "사용자에게 추가 정보를 묻기"
+
+#: ../../source/cli/cli_library.rst:8
+msgid "Writing multi-colored text the terminal"
+msgstr "터미널에 여러 색상의 텍스트 쓰기"
+
+#: ../../source/cli/cli_library.rst:9
+msgid "Beeping (be nice!)"
+msgstr "삑 소리 내기(예의 있게 사용하세요!)"
+
+#: ../../source/cli/cli_library.rst:10
+msgid "Showing progress bars during long tasks"
+msgstr "긴 작업 중 진행률 표시줄 표시"
+
+#: ../../source/cli/cli_library.rst:11
+msgid "Wrapping long text lines to fit the window."
+msgstr "긴 텍스트 줄을 창 크기에 맞게 줄바꿈하기."
+
+#: ../../source/cli/cli_library.rst:18
+msgid "Initializing the Class"
+msgstr "클래스 초기화"
+
+#: ../../source/cli/cli_library.rst:20
+msgid ""
+"You do not need to create an instance of the CLI library, since all of it's "
+"methods are static. Instead, you simply need to ensure your controller can "
+"locate it via a ``use`` statement above your class:"
+msgstr ""
+"CLI 라이브러리는 모든 메서드가 정적이므로 인스턴스를 생성할 필요가 없습니다. 대신 클래스 위의 ``use`` 구문으로 컨트롤러가 이를"
+" 찾을 수 있도록만 하면 됩니다:"
+
+#: ../../source/cli/cli_library.rst:25
+msgid ""
+"The class is automatically initialized when the file is loaded the first "
+"time."
+msgstr "이 클래스는 파일이 처음 로드될 때 자동으로 초기화됩니다."
+
+#: ../../source/cli/cli_library.rst:28
+msgid "Getting Input from the User"
+msgstr "사용자로부터 입력 받기"
+
+#: ../../source/cli/cli_library.rst:30
+msgid ""
+"Sometimes you need to ask the user for more information. They might not have"
+" provided optional command-line arguments, or the script may have "
+"encountered an existing file and needs confirmation before overwriting. This"
+" is handled with the ``prompt()`` or ``promptByKey()`` method."
+msgstr ""
+"때때로 사용자에게 더 많은 정보를 물어야 합니다. 사용자가 선택적 명령줄 인자를 제공하지 않았거나, 스크립트가 기존 파일을 만나 덮어쓰기"
+" 전에 확인이 필요할 수 있습니다. 이는 ``prompt()`` 또는 ``promptByKey()`` 메서드로 처리합니다."
+
+#: ../../source/cli/cli_library.rst:34
+msgid ""
+"Since v4.3.0, you can write tests for these methods with "
+"``PhpStreamWrapper``. See :ref:`testing-cli-input`."
+msgstr ""
+"v4.3.0부터는 ``PhpStreamWrapper``\\ 로 이 메서드들을 테스트할 수 있습니다. :ref:`testing-cli-"
+"input`\\ 을 참고하세요."
+
+#: ../../source/cli/cli_library.rst:38
+msgid "prompt()"
+msgstr "prompt()"
+
+#: ../../source/cli/cli_library.rst:40
+msgid "You can provide a question by passing it in as the first parameter:"
+msgstr "첫 번째 매개변수로 질문을 전달할 수 있습니다:"
+
+#: ../../source/cli/cli_library.rst:44
+msgid ""
+"You can provide a default answer that will be used if the user just hits "
+"enter by passing the default in the second parameter:"
+msgstr "두 번째 매개변수로 기본값을 전달하면 사용자가 그냥 Enter를 눌렀을 때 그 값이 사용됩니다:"
+
+#: ../../source/cli/cli_library.rst:49
+msgid ""
+"You can restrict the acceptable answers by passing in an array of allowed "
+"answers as the second parameter:"
+msgstr "두 번째 매개변수로 허용된 답변 배열을 전달하여 가능한 답변을 제한할 수 있습니다:"
+
+#: ../../source/cli/cli_library.rst:53
+msgid ""
+"Finally, you can pass :ref:`validation <validation>` rules to the answer "
+"input as the third parameter:"
+msgstr ""
+"마지막으로, 세 번째 매개변수로 입력값에 대한 :ref:`validation <validation>` 규칙을 전달할 수 있습니다:"
+
+#: ../../source/cli/cli_library.rst:57
+msgid "Validation rules can also be written in the array syntax:"
+msgstr "검증 규칙은 배열 구문으로도 작성할 수 있습니다:"
+
+#: ../../source/cli/cli_library.rst:62
+msgid "promptByKey()"
+msgstr "promptByKey()"
+
+#: ../../source/cli/cli_library.rst:64
+msgid ""
+"Predefined answers (options) for prompt sometimes need to be described or "
+"are too complex to select via their value. ``promptByKey()`` allows the user"
+" to select an option by its key instead of its value:"
+msgstr ""
+"prompt의 미리 정의된 답변(옵션)은 설명이 필요하거나 값으로 선택하기에는 너무 복잡할 수 있습니다. "
+"``promptByKey()``\\ 는 사용자가 값 대신 키로 옵션을 선택할 수 있게 해 줍니다:"
+
+#: ../../source/cli/cli_library.rst:69
+msgid "Named keys are also possible:"
+msgstr "이름이 있는 키도 가능합니다:"
+
+#: ../../source/cli/cli_library.rst:73
+msgid ""
+"Finally, you can pass :ref:`validation <validation>` rules to the answer "
+"input as the third parameter, the acceptable answers are automatically "
+"restricted to the passed options."
+msgstr ""
+"마지막으로, 세 번째 매개변수로 입력값에 대한 :ref:`validation <validation>` 규칙을 전달할 수 있으며, 허용 "
+"가능한 답변은 전달된 옵션으로 자동 제한됩니다."
+
+#: ../../source/cli/cli_library.rst:78
+msgid "promptByMultipleKeys()"
+msgstr "promptByMultipleKeys()"
+
+#: ../../source/cli/cli_library.rst:82
+msgid ""
+"This method is the same as ``promptByKey()``, but it supports multiple "
+"value."
+msgstr "이 메서드는 ``promptByKey()``\\와 같지만 여러 값을 지원합니다."
+
+#: ../../source/cli/cli_library.rst:86
+msgid ""
+"The method ``promptByMultipleKeys()``, unlike ``promptByKey()``, does not "
+"support named keys or validation."
+msgstr ""
+"``promptByMultipleKeys()`` 메서드는 ``promptByKey()``\\ 와 달리 이름이 있는 키나 검증을 지원하지 "
+"않습니다."
+
+#: ../../source/cli/cli_library.rst:89
+msgid "Providing Feedback"
+msgstr "피드백 제공"
+
+#: ../../source/cli/cli_library.rst:92
+msgid "write()"
+msgstr "write()"
+
+#: ../../source/cli/cli_library.rst:94
+msgid ""
+"Several methods are provided for you to provide feedback to your users. This"
+" can be as simple as a single status update or a complex table of "
+"information that wraps to the user's terminal window. At the core of this is"
+" the ``write()`` method which takes the string to output as the first "
+"parameter:"
+msgstr ""
+"사용자에게 피드백을 제공할 수 있는 여러 메서드가 있습니다. 단순한 상태 업데이트부터 사용자의 터미널 창 너비에 맞춰 줄바꿈되는 복잡한 "
+"정보 표까지 가능합니다. 핵심은 출력할 문자열을 첫 번째 매개변수로 받는 ``write()`` 메서드입니다:"
+
+#: ../../source/cli/cli_library.rst:100
+msgid ""
+"You can change the color of the text by passing in a color name as the "
+"second parameter:"
+msgstr "두 번째 매개변수로 색상 이름을 전달하면 텍스트 색상을 바꿀 수 있습니다:"
+
+#: ../../source/cli/cli_library.rst:104
+msgid ""
+"This could be used to differentiate messages by status, or create 'headers' "
+"by using a different color. You can even set background colors by passing "
+"the color name in as the third parameter:"
+msgstr ""
+"이를 사용하면 상태별로 메시지를 구분하거나 다른 색으로 '헤더'를 만들 수 있습니다. 세 번째 매개변수로 색상 이름을 전달해 배경색도 "
+"설정할 수 있습니다:"
+
+#: ../../source/cli/cli_library.rst:109
+msgid "The following foreground colors are available:"
+msgstr "다음 전경색을 사용할 수 있습니다:"
+
+#: ../../source/cli/cli_library.rst:111 ../../source/cli/cli_library.rst:131
+msgid "black"
+msgstr "black"
+
+#: ../../source/cli/cli_library.rst:112
+msgid "dark_gray"
+msgstr "dark_gray"
+
+#: ../../source/cli/cli_library.rst:113 ../../source/cli/cli_library.rst:132
+msgid "blue"
+msgstr "blue"
+
+#: ../../source/cli/cli_library.rst:114
+msgid "dark_blue"
+msgstr "dark_blue"
+
+#: ../../source/cli/cli_library.rst:115
+msgid "light_blue"
+msgstr "light_blue"
+
+#: ../../source/cli/cli_library.rst:116 ../../source/cli/cli_library.rst:133
+msgid "green"
+msgstr "green"
+
+#: ../../source/cli/cli_library.rst:117
+msgid "light_green"
+msgstr "light_green"
+
+#: ../../source/cli/cli_library.rst:118 ../../source/cli/cli_library.rst:134
+msgid "cyan"
+msgstr "cyan"
+
+#: ../../source/cli/cli_library.rst:119
+msgid "light_cyan"
+msgstr "light_cyan"
+
+#: ../../source/cli/cli_library.rst:120 ../../source/cli/cli_library.rst:135
+msgid "red"
+msgstr "red"
+
+#: ../../source/cli/cli_library.rst:121
+msgid "light_red"
+msgstr "light_red"
+
+#: ../../source/cli/cli_library.rst:122
+msgid "purple"
+msgstr "purple"
+
+#: ../../source/cli/cli_library.rst:123
+msgid "light_purple"
+msgstr "light_purple"
+
+#: ../../source/cli/cli_library.rst:124
+msgid "light_yellow"
+msgstr "light_yellow"
+
+#: ../../source/cli/cli_library.rst:125 ../../source/cli/cli_library.rst:136
+msgid "yellow"
+msgstr "yellow"
+
+#: ../../source/cli/cli_library.rst:126 ../../source/cli/cli_library.rst:137
+msgid "light_gray"
+msgstr "light_gray"
+
+#: ../../source/cli/cli_library.rst:127
+msgid "white"
+msgstr "white"
+
+#: ../../source/cli/cli_library.rst:129
+msgid "And a smaller number are available as background colors:"
+msgstr "배경색으로는 더 적은 수를 사용할 수 있습니다:"
+
+#: ../../source/cli/cli_library.rst:138
+msgid "magenta"
+msgstr "magenta"
+
+#: ../../source/cli/cli_library.rst:141
+msgid "print()"
+msgstr "print()"
+
+#: ../../source/cli/cli_library.rst:143
+msgid ""
+"Print functions identically to the ``write()`` method, except that it does "
+"not force a newline either before or after. Instead it prints it to the "
+"screen wherever the cursor is currently. This allows you to print multiple "
+"items all on the same line, from different calls. This is especially helpful"
+" when you want to show a status, do something, then print \"Done\" on the "
+"same line:"
+msgstr ""
+"``write()`` 메서드와 동일하게 동작하지만, 앞뒤로 줄바꿈을 강제하지 않습니다. 대신 현재 커서 위치에 화면으로 출력합니다. "
+"따라서 서로 다른 호출에서 여러 항목을 같은 줄에 연속해서 출력할 수 있습니다. 상태를 보여 준 뒤 작업을 수행하고 같은 줄에 "
+"\"Done\"을 출력하고 싶을 때 특히 유용합니다:"
+
+#: ../../source/cli/cli_library.rst:153
+msgid "color()"
+msgstr "color()"
+
+#: ../../source/cli/cli_library.rst:155
+msgid ""
+"While the ``write()`` command will write a single line to the terminal, "
+"ending it with a EOL character, you can use the ``color()`` method to make a"
+" string fragment that can be used in the same way, except that it will not "
+"force an EOL after printing. This allows you to create multiple outputs on "
+"the same row. Or, more commonly, you can use it inside of a ``write()`` "
+"method to create a string of a different color inside:"
+msgstr ""
+"``write()`` 명령은 EOL 문자로 끝나는 한 줄을 터미널에 출력하지만, ``color()`` 메서드를 사용하면 같은 방식으로 "
+"사용할 수 있는 문자열 조각을 만들 수 있습니다. 다만 출력 후 EOL을 강제하지 않습니다. 이를 통해 같은 행에 여러 출력을 만들 수 "
+"있습니다. 더 흔하게는 ``write()`` 메서드 안에서 다른 색상의 문자열을 만들 때 사용할 수 있습니다:"
+
+#: ../../source/cli/cli_library.rst:162
+msgid ""
+"This example would write a single line to the window, with ``fileA`` in "
+"yellow, followed by a tab, and then ``/path/to/file`` in white text."
+msgstr ""
+"이 예제는 창에 한 줄을 출력하며, ``fileA`` 는 노란색으로, 그 뒤에 탭을 두고, ``/path/to/file`` 은 흰색 "
+"텍스트로 표시됩니다."
+
+#: ../../source/cli/cli_library.rst:166
+msgid "error()"
+msgstr "error()"
+
+#: ../../source/cli/cli_library.rst:168
+msgid ""
+"If you need to output errors, you should use the appropriately named "
+"``error()`` method. This writes light-red text to STDERR, instead of STDOUT,"
+" like ``write()`` and ``color()`` do. This can be useful if you have scripts"
+" watching for errors so they don't have to sift through all of the "
+"information, only the actual error messages. You use it exactly as you would"
+" the ``write()`` method:"
+msgstr ""
+"오류를 출력해야 한다면 그에 맞는 이름의 ``error()`` 메서드를 사용해야 합니다. 이 메서드는 ``write()``\\ 와 "
+"``color()``\\ 처럼 STDOUT이 아니라 STDERR에 연한 빨간색 텍스트를 출력합니다. 오류를 감시하는 스크립트가 전체 정보"
+" 대신 실제 오류 메시지만 걸러 보게 하고 싶을 때 유용합니다. 사용법은 ``write()`` 메서드와 동일합니다:"
+
+#: ../../source/cli/cli_library.rst:176
+msgid "wrap()"
+msgstr "wrap()"
+
+#: ../../source/cli/cli_library.rst:178
+msgid ""
+"This command will take a string, start printing it on the current line, and "
+"wrap it to a set length on new lines. This might be useful when displaying a"
+" list of options with descriptions that you want to wrap in the current "
+"window and not go off screen:"
+msgstr ""
+"이 명령은 문자열을 받아 현재 줄부터 출력하고, 지정한 길이가 되면 다음 줄로 줄바꿈합니다. 현재 창에서 줄이 화면 밖으로 넘어가지 않게"
+" 설명이 있는 옵션 목록을 표시할 때 유용할 수 있습니다:"
+
+#: ../../source/cli/cli_library.rst:184
+msgid ""
+"By default, the string will wrap at the terminal width. Windows currently "
+"doesn't provide a way to determine the window size, so we default to 80 "
+"characters. If you want to restrict the width to something shorter that you "
+"can be pretty sure fits within the window, pass the maximum line-length as "
+"the second parameter. This will break the string at the nearest word barrier"
+" so that words are not broken."
+msgstr ""
+"기본적으로 문자열은 터미널 너비에 맞춰 줄바꿈됩니다. Windows는 현재 창 크기를 확인할 방법을 제공하지 않으므로 기본값은 "
+"80자입니다. 창 안에 확실히 들어갈 정도로 더 짧은 너비로 제한하려면 두 번째 매개변수로 최대 줄 길이를 전달하세요. 그러면 단어가 "
+"깨지지 않도록 가장 가까운 단어 경계에서 문자열이 나뉩니다."
+
+#: ../../source/cli/cli_library.rst:191
+msgid ""
+"You may find that you want a column on the left of titles, files, or tasks, "
+"while you want a column of text on the right with their descriptions. By "
+"default, this will wrap back to the left edge of the window, which doesn't "
+"allow things to line up in columns. In cases like this, you can pass in a "
+"number of spaces to pad every line after the first line, so that you will "
+"have a crisp column edge on the left:"
+msgstr ""
+"제목, 파일, 작업을 왼쪽 열에 두고, 그 설명을 오른쪽 열에 두고 싶을 수 있습니다. 기본적으로는 창의 왼쪽 가장자리로 다시 "
+"줄바꿈되므로 열을 맞춰 정렬할 수 없습니다. 이런 경우 첫 줄 뒤의 각 줄에 공백 수를 지정해 들여쓰기하면 왼쪽 경계를 깔끔하게 맞출 수"
+" 있습니다:"
+
+#: ../../source/cli/cli_library.rst:198
+msgid "Would create something like this:"
+msgstr "다음과 같이 표시됩니다:"
+
+#: ../../source/cli/cli_library.rst:210
+msgid "newLine()"
+msgstr "newLine()"
+
+#: ../../source/cli/cli_library.rst:212
+msgid ""
+"The ``newLine()`` method displays a blank line to the user. It does not take"
+" any parameters:"
+msgstr "``newLine()`` 메서드는 사용자에게 빈 줄을 표시합니다. 이 메서드는 매개변수를 받지 않습니다:"
+
+#: ../../source/cli/cli_library.rst:217
+msgid "clearScreen()"
+msgstr "clearScreen()"
+
+#: ../../source/cli/cli_library.rst:219
+msgid ""
+"You can clear the current terminal window with the ``clearScreen()`` method."
+" In most versions of Windows, this will simply insert 40 blank lines since "
+"Windows doesn't support this feature. Windows 10 bash integration should "
+"change this:"
+msgstr ""
+"``clearScreen()`` 메서드로 현재 터미널 창을 지울 수 있습니다. 대부분의 Windows 버전에서는 이 기능을 지원하지 "
+"않으므로 단순히 빈 줄 40개를 삽입합니다. Windows 10의 bash 통합에서는 달라질 수 있습니다:"
+
+#: ../../source/cli/cli_library.rst:226
+msgid "showProgress()"
+msgstr "showProgress()"
+
+#: ../../source/cli/cli_library.rst:228
+msgid ""
+"If you have a long-running task that you would like to keep the user updated"
+" with the progress, you can use the ``showProgress()`` method which displays"
+" something like the following:"
+msgstr ""
+"오래 걸리는 작업의 진행 상황을 사용자에게 계속 보여 주고 싶다면 다음과 같은 내용을 표시하는 ``showProgress()`` 메서드를"
+" 사용할 수 있습니다:"
+
+#: ../../source/cli/cli_library.rst:235
+msgid "This block is animated in place for a very nice effect."
+msgstr "이 블록은 제자리에서 애니메이션되어 꽤 멋진 효과를 냅니다."
+
+#: ../../source/cli/cli_library.rst:237
+msgid ""
+"To use it, pass in the current step as the first parameter, and the total "
+"number of steps as the second parameter. The percent complete and the length"
+" of the display will be determined based on that number. When you are done, "
+"pass ``false`` as the first parameter and the progress bar will be removed."
+msgstr ""
+"사용하려면 현재 단계를 첫 번째 매개변수로, 전체 단계 수를 두 번째 매개변수로 전달하세요. 완료율과 표시 길이는 그 숫자를 기준으로 "
+"결정됩니다. 작업이 끝나면 첫 번째 매개변수로 ``false``\\ 를 전달하면 진행 표시줄이 제거됩니다."
+
+#: ../../source/cli/cli_library.rst:244
+msgid "table()"
+msgstr "table()"
+
+#: ../../source/cli/cli_library.rst:258
+msgid "wait()"
+msgstr "wait()"
+
+#: ../../source/cli/cli_library.rst:260
+msgid ""
+"Waits a certain number of seconds, optionally showing a wait message and "
+"waiting for a key press."
+msgstr "지정한 초만큼 대기하며, 필요하면 대기 메시지를 표시하고 키 입력을 기다립니다."
+
+#: ../../source/cli/cli_overview.rst:3
+msgid "CLI Overview"
+msgstr "CLI 개요"
+
+#: ../../source/cli/cli_overview.rst:5
+msgid ""
+"CodeIgniter 4 provides built-in command **spark** and useful commands and "
+"library. You can also create spark commands, and run controllers via CLI."
+msgstr ""
+"CodeIgniter 4는 내장 명령 **spark** 와 유용한 명령 및 라이브러리를 제공합니다. 또한 spark 명령을 직접 만들고 "
+"CLI를 통해 컨트롤러를 실행할 수도 있습니다."
+
+#: ../../source/cli/cli_overview.rst:14
+msgid "What is the CLI?"
+msgstr "CLI란?"
+
+#: ../../source/cli/cli_overview.rst:16
+msgid ""
+"The command-line interface is a text-based method of interacting with "
+"computers. For more information, check the `Wikipedia article "
+"<https://en.wikipedia.org/wiki/Command-line_interface>`_."
+msgstr ""
+"명령줄 인터페이스는 컴퓨터와 상호작용하는 텍스트 기반 방식입니다. 자세한 내용은 `Wikipedia 문서 "
+"<https://en.wikipedia.org/wiki/Command-line_interface>`_ 를 참고하세요."
+
+#: ../../source/cli/cli_overview.rst:22
+msgid "Why Run via the Command-Line?"
+msgstr "왜 명령줄로 실행하나요?"
+
+#: ../../source/cli/cli_overview.rst:24
+msgid ""
+"There are many reasons for running CodeIgniter from the command-line, but "
+"they are not always obvious."
+msgstr "CodeIgniter를 명령줄에서 실행해야 하는 이유는 많지만, 항상 명확한 것은 아닙니다."
+
+#: ../../source/cli/cli_overview.rst:27
+msgid "Run your cron-jobs without needing to use *wget* or *curl*."
+msgstr "*wget* 이나 *curl* 을 사용하지 않고 cron 작업을 실행할 수 있습니다."
+
+#: ../../source/cli/cli_overview.rst:28
+msgid ""
+"Make interactive \"tasks\" that can do things like set permissions, prune "
+"cache folders, run backups, etc."
+msgstr "권한 설정, 캐시 폴더 정리, 백업 실행 등을 할 수 있는 대화형 \"작업\"을 만들 수 있습니다."
+
+#: ../../source/cli/cli_overview.rst:30
+msgid ""
+"Integrate with other applications in other languages. For example, a random "
+"C++ script could call one command and run code in your models!"
+msgstr ""
+"다른 언어의 애플리케이션과 통합할 수 있습니다. 예를 들어 C++ 스크립트 하나가 명령 하나를 호출해 모델 안의 코드를 실행할 수도 "
+"있습니다!"
+
+#: ../../source/cli/cli_overview.rst:35
+msgid "The Spark Commands"
+msgstr "Spark 명령"
+
+#: ../../source/cli/cli_overview.rst:37 ../../source/cli/spark_commands.rst:5
+msgid ""
+"CodeIgniter ships with the official command **spark** and built-in commands."
+msgstr "CodeIgniter에는 공식 명령 **spark** 와 여러 내장 명령이 함께 제공됩니다."
+
+#: ../../source/cli/cli_overview.rst:39
+msgid "You can run the spark and see the help:"
+msgstr "spark를 실행하면 도움말을 볼 수 있습니다:"
+
+#: ../../source/cli/cli_overview.rst:45
+msgid "See the :doc:`spark_commands` page for detailed information."
+msgstr "자세한 내용은 :doc:`spark_commands` 페이지를 참고하세요."
+
+#: ../../source/cli/cli_overview.rst:49
+msgid "The CLI Library"
+msgstr "CLI 라이브러리"
+
+#: ../../source/cli/cli_overview.rst:51
+msgid ""
+"The CLI library makes working with the CLI interface simple. It provides "
+"easy ways to output text in multiple colors to the terminal window. It also "
+"allows you to prompt a user for information, making it easy to build "
+"flexible, smart tools."
+msgstr ""
+"CLI 라이브러리는 CLI 인터페이스 작업을 쉽게 만들어 줍니다. 터미널 창에 여러 색상의 텍스트를 출력하는 간단한 방법을 제공하고, "
+"사용자에게 정보를 묻는 기능도 있어 유연하고 똑똑한 도구를 만들기 쉽습니다."
+
+#: ../../source/cli/cli_request.rst:3
+msgid "CLIRequest Class"
+msgstr "CLIRequest 클래스"
+
+#: ../../source/cli/cli_request.rst:5
+msgid ""
+"If a request comes from a command line invocation, the request object is "
+"actually a ``CLIRequest``. It behaves the same as a :doc:`conventional "
+"request </incoming/request>` but adds some accessor methods for convenience."
+msgstr ""
+"요청이 명령줄 호출에서 왔다면, 해당 요청 객체는 실제로 ``CLIRequest`` 입니다. 이는 :doc:`일반 요청 "
+"</incoming/request>` 과 동일하게 동작하지만 편의를 위한 접근자 메서드가 추가됩니다."
+
+#: ../../source/cli/cli_request.rst:11
+msgid "Additional Accessors"
+msgstr "추가 접근자"
+
+#: ../../source/cli/cli_request.rst:14
+msgid "getSegments()"
+msgstr "getSegments()"
+
+#: ../../source/cli/cli_request.rst:16
+msgid ""
+"Returns an array of the command line arguments deemed to be part of a path:"
+msgstr "경로의 일부로 간주되는 명령줄 인자 배열을 반환합니다:"
+
+#: ../../source/cli/cli_request.rst:21
+msgid "getPath()"
+msgstr "getPath()"
+
+#: ../../source/cli/cli_request.rst:23
+msgid "Returns the reconstructed path as a string:"
+msgstr "재구성된 경로를 문자열로 반환합니다:"
+
+#: ../../source/cli/cli_request.rst:28
+msgid "getOptions()"
+msgstr "getOptions()"
+
+#: ../../source/cli/cli_request.rst:30
+msgid "Returns an array of the command line arguments deemed to be options:"
+msgstr "옵션으로 간주되는 명령줄 인자 배열을 반환합니다:"
+
+#: ../../source/cli/cli_request.rst:35
+msgid "getOption($key)"
+msgstr "getOption($key)"
+
+#: ../../source/cli/cli_request.rst:37
+msgid ""
+"Returns the value of a specific command line argument deemed to be an "
+"option:"
+msgstr "옵션으로 간주되는 특정 명령줄 인자의 값을 반환합니다:"
+
+#: ../../source/cli/cli_request.rst:42
+msgid "getOptionString()"
+msgstr "getOptionString()"
+
+#: ../../source/cli/cli_request.rst:44
+msgid "Returns the reconstructed command line string for the options:"
+msgstr "옵션에 대한 재구성된 명령줄 문자열을 반환합니다:"
+
+#: ../../source/cli/cli_request.rst:48
+msgid ""
+"Passing ``true`` to the first argument will try to write long options using "
+"two dashes:"
+msgstr "첫 번째 인자에 ``true`` 를 전달하면 두 개의 대시를 사용해 긴 옵션을 작성하려고 시도합니다:"
+
+#: ../../source/cli/cli_signals.rst:3
+msgid "CLI Signals"
+msgstr "CLI 시그널"
+
+#: ../../source/cli/cli_signals.rst:5
+msgid ""
+"Unix signals are a fundamental part of process communication and control. "
+"They provide a way to interrupt, control, and communicate with running "
+"processes. CodeIgniter's SignalTrait makes it easy to handle signals in your"
+" CLI commands, enabling graceful shutdowns, pause/resume functionality, and "
+"custom signal handling."
+msgstr ""
+"Unix 시그널은 프로세스 통신과 제어의 기본 요소입니다. 실행 중인 프로세스를 중단, 제어, 통신하는 방법을 제공합니다. "
+"CodeIgniter의 SignalTrait는 CLI 명령에서 시그널을 쉽게 처리할 수 있게 해 주며, 우아한 종료, 일시정지/재개 "
+"기능, 사용자 정의 시그널 처리를 지원합니다."
+
+#: ../../source/cli/cli_signals.rst:15
+msgid "What are Signals?"
+msgstr "시그널이란?"
+
+#: ../../source/cli/cli_signals.rst:17
+msgid ""
+"Signals are software interrupts delivered to a process by the operating "
+"system. They notify processes of various events, from user-initiated "
+"interruptions (like pressing Ctrl+C) to system events (like terminal "
+"disconnection)."
+msgstr ""
+"시그널은 운영체제가 프로세스에 전달하는 소프트웨어 인터럽트입니다. 사용자 입력 중단(Ctrl+C)부터 터미널 연결 끊김 같은 시스템 "
+"이벤트까지 다양한 이벤트를 프로세스에 알립니다."
+
+#: ../../source/cli/cli_signals.rst:20
+msgid ""
+"``SignalTrait`` adds the ability to perform certain actions before the "
+"signal is consumed, as well as the capability to protect certain pieces of "
+"code from signal interruption. This protection mechanism guarantees the "
+"proper execution of critical command operations by ensuring they complete "
+"atomically without being interrupted by incoming signals."
+msgstr ""
+"``SignalTrait``\\는 시그널이 소비되기 전에 특정 동작을 수행할 수 있게 하고, 코드의 특정 부분을 시그널 중단으로부터 "
+"보호할 수 있게 합니다. 이 보호 메커니즘은 들어오는 시그널에 의해 중단되지 않고 중요한 명령 작업이 원자적으로 완료되도록 보장합니다."
+
+#: ../../source/cli/cli_signals.rst:25
+msgid "Common Unix Signals"
+msgstr "일반적인 Unix 시그널"
+
+#: ../../source/cli/cli_signals.rst:27
+msgid "Here are the most commonly used signals in CLI applications:"
+msgstr "CLI 애플리케이션에서 가장 흔히 사용되는 시그널은 다음과 같습니다:"
+
+#: ../../source/cli/cli_signals.rst:29
+msgid "**Handleable Signals:**"
+msgstr "**처리 가능한 시그널:**"
+
+#: ../../source/cli/cli_signals.rst:31
+msgid "**SIGTERM (15)**: Termination signal - requests graceful shutdown"
+msgstr "**SIGTERM (15)**: 종료 시그널 - 정상 종료를 요청합니다"
+
+#: ../../source/cli/cli_signals.rst:32
+msgid "**SIGINT (2)**: Interrupt signal - typically sent by Ctrl+C"
+msgstr "**SIGINT (2)**: 인터럽트 시그널 - 보통 Ctrl+C로 보냅니다"
+
+#: ../../source/cli/cli_signals.rst:33
+msgid "**SIGHUP (1)**: Hangup signal - terminal disconnected or closed"
+msgstr "**SIGHUP (1)**: 행업 시그널 - 터미널이 연결 해제되거나 닫혔음을 의미합니다"
+
+#: ../../source/cli/cli_signals.rst:34
+msgid "**SIGQUIT (3)**: Quit signal - typically sent by Ctrl+\\\\"
+msgstr "**SIGQUIT (3)**: 종료 시그널 - 보통 Ctrl+\\\\로 보냅니다"
+
+#: ../../source/cli/cli_signals.rst:35
+msgid "**SIGTSTP (20)**: Terminal stop - typically sent by Ctrl+Z (suspend)"
+msgstr "**SIGTSTP (20)**: 터미널 중지 - 보통 Ctrl+Z로 보냅니다(일시정지)"
+
+#: ../../source/cli/cli_signals.rst:36
+msgid ""
+"**SIGCONT (18)**: Continue signal - resume suspended process (fg command)"
+msgstr "**SIGCONT (18)**: 계속 시그널 - 일시정지된 프로세스를 재개합니다(fg 명령)"
+
+#: ../../source/cli/cli_signals.rst:37
+msgid "**SIGUSR1 (10)**: User-defined signal 1"
+msgstr "**SIGUSR1 (10)**: 사용자 정의 시그널 1"
+
+#: ../../source/cli/cli_signals.rst:38
+msgid "**SIGUSR2 (12)**: User-defined signal 2"
+msgstr "**SIGUSR2 (12)**: 사용자 정의 시그널 2"
+
+#: ../../source/cli/cli_signals.rst:40
+msgid "**Unhandleable Signals:**"
+msgstr "**처리할 수 없는 시그널:**"
+
+#: ../../source/cli/cli_signals.rst:42
+msgid "Some signals cannot be caught, blocked, or handled by user processes:"
+msgstr "일부 시그널은 사용자 프로세스가 잡거나 차단하거나 처리할 수 없습니다:"
+
+#: ../../source/cli/cli_signals.rst:44
+msgid "**SIGKILL (9)**: Forceful termination - cannot be caught or ignored"
+msgstr "**SIGKILL (9)**: 강제 종료 - 잡거나 무시할 수 없습니다"
+
+#: ../../source/cli/cli_signals.rst:45
+msgid "**SIGSTOP (19)**: Forceful suspend - cannot be caught or ignored"
+msgstr "**SIGSTOP (19)**: 강제 일시정지 - 잡거나 무시할 수 없습니다"
+
+#: ../../source/cli/cli_signals.rst:47
+msgid ""
+"These signals are handled directly by the kernel and will terminate or "
+"suspend your process immediately, bypassing any custom handlers."
+msgstr "이 시그널들은 커널이 직접 처리하며, 사용자 정의 핸들러를 거치지 않고 프로세스를 즉시 종료하거나 일시정지시킵니다."
+
+#: ../../source/cli/cli_signals.rst:50
+msgid "System Requirements"
+msgstr "시스템 요구 사항"
+
+#: ../../source/cli/cli_signals.rst:52
+msgid "Signal handling requires:"
+msgstr "시그널 처리를 위해서는 다음이 필요합니다:"
+
+#: ../../source/cli/cli_signals.rst:54
+msgid "**Unix-based system** (Linux, macOS, BSD) - Windows is not supported"
+msgstr "**Unix 기반 시스템** (Linux, macOS, BSD) - Windows는 지원되지 않습니다"
+
+#: ../../source/cli/cli_signals.rst:55
+msgid "**PCNTL extension** - for signal registration and handling"
+msgstr "**PCNTL 확장** - 시그널 등록 및 처리용"
+
+#: ../../source/cli/cli_signals.rst:56
+msgid ""
+"**POSIX extension** - required for pause/resume functionality "
+"(SIGTSTP/SIGCONT)"
+msgstr "**POSIX 확장** - 일시정지/재개 기능(SIGTSTP/SIGCONT)에 필요합니다"
+
+#: ../../source/cli/cli_signals.rst:58
+msgid ""
+"On systems without these extensions, the SignalTrait will gracefully degrade"
+" and disable signal handling."
+msgstr "이 확장들이 없는 시스템에서는 SignalTrait가 우아하게 기능을 축소하고 시그널 처리를 비활성화합니다."
+
+#: ../../source/cli/cli_signals.rst:62
+msgid "Using the SignalTrait"
+msgstr "SignalTrait 사용하기"
+
+#: ../../source/cli/cli_signals.rst:64
+msgid ""
+"The ``SignalTrait`` provides a comprehensive signal handling system for CLI "
+"commands. To use it, simply add the trait to your command class and register"
+" signals in your command's ``run()`` method:"
+msgstr ""
+"``SignalTrait``\\는 CLI 명령을 위한 종합적인 시그널 처리 시스템을 제공합니다. 사용하려면 트레이트를 명령 클래스에 "
+"추가하고 명령의 ``run()`` 메서드에서 시그널을 등록하기만 하면 됩니다:"
+
+#: ../../source/cli/cli_signals.rst:69
+msgid ""
+"This registers three termination signals that will set the ``$running`` "
+"state to ``false`` when received."
+msgstr "이렇게 하면 수신 시 ``$running`` 상태를 ``false``\\로 설정하는 3개의 종료 시그널이 등록됩니다."
+
+#: ../../source/cli/cli_signals.rst:72
+msgid "Custom Signal Handlers"
+msgstr "사용자 정의 시그널 핸들러"
+
+#: ../../source/cli/cli_signals.rst:74
+msgid "You can map signals to custom methods for specific behavior:"
+msgstr "특정 동작을 위해 시그널을 사용자 정의 메서드에 매핑할 수 있습니다:"
+
+#: ../../source/cli/cli_signals.rst:79
+msgid "Fallback Signal Handler"
+msgstr "기본 시그널 핸들러"
+
+#: ../../source/cli/cli_signals.rst:81
+msgid ""
+"For signals without explicit mappings, you can implement a generic "
+"``onInterruption()`` method:"
+msgstr "명시적 매핑이 없는 시그널에는 일반적인 ``onInterruption()`` 메서드를 구현할 수 있습니다:"
+
+#: ../../source/cli/cli_signals.rst:87
+msgid "Critical Sections"
+msgstr "중요 구간"
+
+#: ../../source/cli/cli_signals.rst:89
+msgid ""
+"Some operations should never be interrupted (database transactions, file "
+"operations). Use ``withSignalsBlocked()`` to create atomic operations:"
+msgstr ""
+"어떤 작업은 절대 중단되면 안 됩니다(데이터베이스 트랜잭션, 파일 작업). 원자적 작업을 만들려면 "
+"``withSignalsBlocked()``\\를 사용하세요:"
+
+#: ../../source/cli/cli_signals.rst:94
+msgid ""
+"During critical sections, ALL signals (including Ctrl+Z) are blocked to "
+"prevent data corruption."
+msgstr "중요 구간에서는 데이터 손상을 막기 위해 Ctrl+Z를 포함한 모든 시그널이 차단됩니다."
+
+#: ../../source/cli/cli_signals.rst:98
+msgid "Pause and Resume"
+msgstr "일시정지와 재개"
+
+#: ../../source/cli/cli_signals.rst:100
+msgid "The SignalTrait supports proper Unix job control with custom handlers:"
+msgstr "SignalTrait는 사용자 정의 핸들러와 함께 올바른 Unix 작업 제어를 지원합니다:"
+
+#: ../../source/cli/cli_signals.rst:105
+msgid "How Pause/Resume Works"
+msgstr "일시정지/재개 동작 방식"
+
+#: ../../source/cli/cli_signals.rst:107
+msgid "**SIGTSTP received**: Custom ``onPause()`` handler runs"
+msgstr "**SIGTSTP 수신**: 사용자 정의 ``onPause()`` 핸들러가 실행됩니다"
+
+#: ../../source/cli/cli_signals.rst:108
+msgid "**Process suspends**: Using standard Unix job control"
+msgstr "**프로세스 일시정지**: 표준 Unix 작업 제어를 사용합니다"
+
+#: ../../source/cli/cli_signals.rst:109
+msgid ""
+"**SIGCONT received**: Process resumes, then ``onResume()`` handler runs"
+msgstr "**SIGCONT 수신**: 프로세스가 재개되고 이어서 ``onResume()`` 핸들러가 실행됩니다"
+
+#: ../../source/cli/cli_signals.rst:111
+msgid ""
+"This allows you to save state before suspension and restore it after "
+"resumption while maintaining proper shell integration."
+msgstr "이렇게 하면 적절한 셸 통합을 유지하면서 일시정지 전에 상태를 저장하고 재개 후 복원할 수 있습니다."
+
+#: ../../source/cli/cli_signals.rst:114
+msgid "Important Limitations"
+msgstr "중요한 제한 사항"
+
+#: ../../source/cli/cli_signals.rst:116
+msgid "**Shell Job Control vs Manual Signals**"
+msgstr "**셸 작업 제어 vs 수동 시그널**"
+
+#: ../../source/cli/cli_signals.rst:118
+msgid ""
+"There's a critical difference between using shell job control and manually "
+"sending signals:"
+msgstr "셸 작업 제어를 사용하는 것과 시그널을 수동으로 보내는 것 사이에는 중요한 차이가 있습니다:"
+
+#: ../../source/cli/cli_signals.rst:132
+msgid "**The Problem with Manual SIGCONT**"
+msgstr "**수동 SIGCONT의 문제**"
+
+#: ../../source/cli/cli_signals.rst:134
+msgid "When you manually send ``kill -CONT`` from a different terminal:"
+msgstr "다른 터미널에서 ``kill -CONT``\\를 수동으로 보내면:"
+
+#: ../../source/cli/cli_signals.rst:136
+msgid "**Expected behavior:**"
+msgstr "**예상 동작:**"
+
+#: ../../source/cli/cli_signals.rst:137
+msgid "Process resumes and custom handlers execute"
+msgstr "프로세스가 재개되고 사용자 정의 핸들러가 실행됩니다"
+
+#: ../../source/cli/cli_signals.rst:139
+msgid "**Side effects:**"
+msgstr "**부작용:**"
+
+#: ../../source/cli/cli_signals.rst:140
+msgid "Process loses foreground terminal control"
+msgstr "프로세스가 포그라운드 터미널 제어를 잃습니다"
+
+#: ../../source/cli/cli_signals.rst:141
+msgid "Ctrl+C and Ctrl+Z may stop working"
+msgstr "Ctrl+C와 Ctrl+Z가 작동하지 않을 수 있습니다"
+
+#: ../../source/cli/cli_signals.rst:142
+msgid "Process runs in background state"
+msgstr "프로세스가 백그라운드 상태로 실행됩니다"
+
+#: ../../source/cli/cli_signals.rst:144
+msgid ""
+"This happens because manual ``kill -CONT`` doesn't restore the process to "
+"the terminal's foreground process group."
+msgstr "이는 수동 ``kill -CONT``\\가 프로세스를 터미널의 포그라운드 프로세스 그룹으로 복원하지 않기 때문에 발생합니다."
+
+#: ../../source/cli/cli_signals.rst:146
+msgid "**Best Practices for Pause/Resume**"
+msgstr "**일시정지/재개 모범 사례**"
+
+#: ../../source/cli/cli_signals.rst:148
+msgid "**Use shell job control** (Ctrl+Z, fg, bg) when possible"
+msgstr "**셸 작업 제어 사용** (Ctrl+Z, fg, bg)을 가능한 경우 사용하세요"
+
+#: ../../source/cli/cli_signals.rst:149
+msgid ""
+"**Document the limitation** if your application needs manual signal control"
+msgstr "애플리케이션이 수동 시그널 제어를 필요로 한다면 **이 제한 사항을 문서화**\\하세요"
+
+#: ../../source/cli/cli_signals.rst:150
+msgid "**Provide alternative control methods** for automated environments"
+msgstr "자동화 환경을 위해 **대체 제어 방법을 제공**\\하세요"
+
+#: ../../source/cli/cli_signals.rst:151
+msgid "**Test thoroughly** in your deployment environment"
+msgstr "배포 환경에서 **충분히 테스트**\\하세요"
+
+#: ../../source/cli/cli_signals.rst:155
+msgid "Triggering Signals"
+msgstr "시그널 보내기"
+
+#: ../../source/cli/cli_signals.rst:158
+msgid "From Command Line"
+msgstr "명령줄에서"
+
+#: ../../source/cli/cli_signals.rst:160
+msgid "You can send signals to running processes using the ``kill`` command:"
+msgstr "``kill`` 명령으로 실행 중인 프로세스에 시그널을 보낼 수 있습니다:"
+
+#: ../../source/cli/cli_signals.rst:180
+msgid "Keyboard Shortcuts"
+msgstr "키보드 단축키"
+
+#: ../../source/cli/cli_signals.rst:182
+msgid "These keyboard shortcuts send signals to the foreground process:"
+msgstr "다음 키보드 단축키는 포그라운드 프로세스에 시그널을 보냅니다:"
+
+#: ../../source/cli/cli_signals.rst:184
+msgid "**Ctrl+C**: Sends SIGINT (interrupt)"
+msgstr "**Ctrl+C**: SIGINT(인터럽트)를 보냅니다"
+
+#: ../../source/cli/cli_signals.rst:185
+msgid "**Ctrl+Z**: Sends SIGTSTP (suspend/pause)"
+msgstr "**Ctrl+Z**: SIGTSTP(일시정지/일시중단)를 보냅니다"
+
+#: ../../source/cli/cli_signals.rst:186
+msgid "**Ctrl+\\\\**: Sends SIGQUIT (quit with core dump)"
+msgstr "**Ctrl+\\\\**: SIGQUIT(코어 덤프와 함께 종료)를 보냅니다"
+
+#: ../../source/cli/cli_signals.rst:189
+msgid "Job Control"
+msgstr "작업 제어"
+
+#: ../../source/cli/cli_signals.rst:191
+msgid "Standard Unix job control works seamlessly:"
+msgstr "표준 Unix 작업 제어가 매끄럽게 동작합니다:"
+
+#: ../../source/cli/cli_signals.rst:203
+msgid "Debugging Signals"
+msgstr "시그널 디버깅"
+
+#: ../../source/cli/cli_signals.rst:206
+msgid "Process State Information"
+msgstr "프로세스 상태 정보"
+
+#: ../../source/cli/cli_signals.rst:208
+msgid "Use ``getProcessState()`` to debug signal issues:"
+msgstr "시그널 문제를 디버깅하려면 ``getProcessState()``\\를 사용하세요:"
+
+#: ../../source/cli/cli_signals.rst:212
+msgid "This returns comprehensive information including:"
+msgstr "다음과 같은 종합 정보를 반환합니다:"
+
+#: ../../source/cli/cli_signals.rst:214
+msgid "Process ID and running state"
+msgstr "프로세스 ID와 실행 상태"
+
+#: ../../source/cli/cli_signals.rst:215
+msgid "Registered signals and mappings"
+msgstr "등록된 시그널과 매핑"
+
+#: ../../source/cli/cli_signals.rst:216
+msgid "Memory usage statistics"
+msgstr "메모리 사용 통계"
+
+#: ../../source/cli/cli_signals.rst:217
+msgid "Terminal control information (session, process group)"
+msgstr "터미널 제어 정보(세션, 프로세스 그룹)"
+
+#: ../../source/cli/cli_signals.rst:218
+msgid "Signal blocking status"
+msgstr "시그널 차단 상태"
+
+#: ../../source/cli/cli_signals.rst:222
+msgid "Class Reference"
+msgstr "클래스 참조"
+
+#: ../../source/cli/cli_signals.rst:230
+msgid "List of signals to handle"
+msgstr "처리할 시그널 목록"
+
+#: ../../source/cli/cli_signals.rst:231
+msgid "Optional signal-to-method mapping"
+msgstr "선택적 시그널-메서드 매핑"
+
+#: ../../source/cli/cli_signals.rst
+msgid "Return type"
+msgstr "반환형"
+
+#: ../../source/cli/cli_signals.rst:234
+msgid "Register signal handlers with optional custom method mapping."
+msgstr "선택적 사용자 정의 메서드 매핑으로 시그널 핸들러를 등록합니다."
+
+#: ../../source/cli/cli_signals.rst:238
+msgid ""
+"Requires the PCNTL extension. On Windows, signal handling is automatically "
+"disabled."
+msgstr "PCNTL 확장이 필요합니다. Windows에서는 시그널 처리가 자동으로 비활성화됩니다."
+
+#: ../../source/cli/cli_signals.rst
+msgid "Returns"
+msgstr "반환값"
+
+#: ../../source/cli/cli_signals.rst:242
+msgid "true if the process should continue running, false if not"
+msgstr "프로세스를 계속 실행해야 하면 true, 아니면 false"
+
+#: ../../source/cli/cli_signals.rst:245
+msgid "Check if the process should continue running (not terminated)."
+msgstr "프로세스가 계속 실행되어야 하는지(종료되지 않았는지) 확인합니다."
+
+#: ../../source/cli/cli_signals.rst:251
+msgid "true if termination has been requested, false if not"
+msgstr "종료 요청이 있으면 true, 아니면 false"
+
+#: ../../source/cli/cli_signals.rst:254
+msgid "Check if termination has been requested (opposite of ``isRunning()``)."
+msgstr "종료 요청이 있었는지 확인합니다(``isRunning()``\\의 반대)."
+
+#: ../../source/cli/cli_signals.rst:262
+msgid "Manually request process termination."
+msgstr "프로세스 종료를 수동으로 요청합니다."
+
+#: ../../source/cli/cli_signals.rst:270
+msgid "Reset all states - useful for testing or restart scenarios."
+msgstr "모든 상태를 초기화합니다. 테스트나 재시작 시나리오에 유용합니다."
+
+#: ../../source/cli/cli_signals.rst:274
+msgid "The critical operation to execute without interruption"
+msgstr "중단 없이 실행할 중요 작업"
+
+#: ../../source/cli/cli_signals.rst:275
+msgid "The result of the operation"
+msgstr "작업 결과"
+
+#: ../../source/cli/cli_signals.rst:278
+msgid ""
+"Execute a critical operation with ALL signals blocked to prevent ANY "
+"interruption."
+msgstr "모든 시그널을 차단해 어떤 중단도 발생하지 않도록 중요 작업을 실행합니다."
+
+#: ../../source/cli/cli_signals.rst:280
+msgid ""
+"This blocks ALL interruptible signals including termination signals "
+"(SIGTERM, SIGINT), pause/resume signals (SIGTSTP, SIGCONT), and custom "
+"signals (SIGUSR1, SIGUSR2). Only SIGKILL (unblockable) can still terminate "
+"the process."
+msgstr ""
+"이것은 종료 시그널(SIGTERM, SIGINT), 일시정지/재개 시그널(SIGTSTP, SIGCONT), 사용자 정의 "
+"시그널(SIGUSR1, SIGUSR2)을 포함한 모든 중단 가능한 시그널을 차단합니다. 차단할 수 없는 SIGKILL만 여전히 프로세스를"
+" 종료할 수 있습니다."
+
+#: ../../source/cli/cli_signals.rst:286
+msgid "true if signals are currently blocked, false if not"
+msgstr "현재 시그널이 차단되어 있으면 true, 아니면 false"
+
+#: ../../source/cli/cli_signals.rst:289
+msgid "Check if signals are currently blocked."
+msgstr "현재 시그널이 차단되어 있는지 확인합니다."
+
+#: ../../source/cli/cli_signals.rst:293 ../../source/cli/cli_signals.rst:303
+msgid "Signal constant"
+msgstr "시그널 상수"
+
+#: ../../source/cli/cli_signals.rst:294
+msgid "Method name to call for this signal"
+msgstr "이 시그널에 대해 호출할 메서드 이름"
+
+#: ../../source/cli/cli_signals.rst:297
+msgid "Add or update signal-to-method mapping at runtime."
+msgstr "실행 중에 시그널-메서드 매핑을 추가하거나 업데이트합니다."
+
+#: ../../source/cli/cli_signals.rst:304
+msgid "Human-readable signal name"
+msgstr "사람이 읽을 수 있는 시그널 이름"
+
+#: ../../source/cli/cli_signals.rst:307
+msgid "Get human-readable name for a signal constant."
+msgstr "시그널 상수의 사람이 읽을 수 있는 이름을 가져옵니다."
+
+#: ../../source/cli/cli_signals.rst:313
+msgid "true if any signals are registered, false if not"
+msgstr "등록된 시그널이 있으면 true, 아니면 false"
+
+#: ../../source/cli/cli_signals.rst:316
+msgid "Check if any signals are registered."
+msgstr "시그널이 하나라도 등록되어 있는지 확인합니다."
+
+#: ../../source/cli/cli_signals.rst:320
+msgid "Array of registered signal constants"
+msgstr "등록된 시그널 상수 배열"
+
+#: ../../source/cli/cli_signals.rst:323
+msgid "Get array of registered signal constants."
+msgstr "등록된 시그널 상수 배열을 가져옵니다."
+
+#: ../../source/cli/cli_signals.rst:327
+msgid "Comprehensive process state information"
+msgstr "종합적인 프로세스 상태 정보"
+
+#: ../../source/cli/cli_signals.rst:330
+msgid ""
+"Get comprehensive process state information including process ID, memory "
+"usage, signal handling status, and terminal control information."
+msgstr "프로세스 ID, 메모리 사용량, 시그널 처리 상태, 터미널 제어 정보를 포함한 종합적인 프로세스 상태 정보를 가져옵니다."
+
+#: ../../source/cli/cli_signals.rst:339
+msgid "Unregister all signals and clean up resources."
+msgstr "모든 시그널 등록을 해제하고 리소스를 정리합니다."
+
+#: ../../source/cli/cli_signals.rst:341
+msgid ""
+"This removes all signal handling behavior for all previously registered "
+"signals."
+msgstr "이렇게 하면 이전에 등록된 모든 시그널에 대한 처리 동작이 제거됩니다."
+
+#: ../../source/cli/index.rst:3
+msgid "Command Line Usage"
+msgstr "명령줄 사용법"
+
+#: ../../source/cli/index.rst:5
+msgid "CodeIgniter 4 can also be used with command line programs."
+msgstr "CodeIgniter 4는 명령줄 프로그램과도 함께 사용할 수 있습니다."
+
+#: ../../source/cli/spark_commands.rst:3
+msgid "Spark Commands"
+msgstr "Spark 명령"
+
+#: ../../source/cli/spark_commands.rst:13
+msgid "Running Commands"
+msgstr "명령 실행"
+
+#: ../../source/cli/spark_commands.rst:16
+msgid "Running via CLI"
+msgstr "CLI로 실행"
+
+#: ../../source/cli/spark_commands.rst:18
+msgid ""
+"The commands are run from the command line, in the project root directory. "
+"The command file **spark** has been provided that is used to run any of the "
+"CLI commands."
+msgstr ""
+"명령은 프로젝트 루트 디렉터리의 명령줄에서 실행합니다. **spark** 명령 파일이 제공되며, 이를 사용해 모든 CLI 명령을 "
+"실행합니다."
+
+#: ../../source/cli/spark_commands.rst:22
+msgid "Showing List of Commands"
+msgstr "명령 목록 보기"
+
+#: ../../source/cli/spark_commands.rst:24
+msgid ""
+"When called **spark** without specifying a command, a simple help page is "
+"displayed that also provides a list of available commands and their "
+"descriptions, sorted by categories:"
+msgstr ""
+"명령을 지정하지 않고 **spark** 를 호출하면, 사용 가능한 명령과 설명을 카테고리별로 정리해 보여주는 간단한 도움말 페이지가 "
+"표시됩니다:"
+
+#: ../../source/cli/spark_commands.rst:33
+msgid "spark list"
+msgstr "spark list"
+
+#: ../../source/cli/spark_commands.rst:35
+msgid "``php spark`` is the exactly same as the ``list`` command:"
+msgstr "``php spark`` 는 ``list`` 명령과 정확히 같습니다:"
+
+#: ../../source/cli/spark_commands.rst:41
+msgid ""
+"You may also use the ``--simple`` option to get a raw list of all available "
+"commands, sorted alphabetically:"
+msgstr "``--simple`` 옵션을 사용하면 사용 가능한 명령의 원시 목록을 알파벳순으로 볼 수도 있습니다:"
+
+#: ../../source/cli/spark_commands.rst:49
+msgid "Showing Help"
+msgstr "도움말 보기"
+
+#: ../../source/cli/spark_commands.rst:51
+msgid ""
+"You can get help about any CLI command using the ``help`` command as "
+"follows:"
+msgstr "다음과 같이 ``help`` 명령을 사용해 모든 CLI 명령의 도움말을 볼 수 있습니다:"
+
+#: ../../source/cli/spark_commands.rst:57
+msgid ""
+"Since v4.3.0, you can also use the ``--help`` option instead of the ``help``"
+" command:"
+msgstr "v4.3.0부터는 ``help`` 명령 대신 ``--help`` 옵션도 사용할 수 있습니다:"
+
+#: ../../source/cli/spark_commands.rst:64
+msgid "Running a Command"
+msgstr "명령 실행하기"
+
+#: ../../source/cli/spark_commands.rst:66
+msgid ""
+"You should pass the name of the command as the first argument to run that "
+"command:"
+msgstr "해당 명령을 실행하려면 명령 이름을 첫 번째 인자로 전달해야 합니다:"
+
+#: ../../source/cli/spark_commands.rst:72
+msgid ""
+"Some commands take additional arguments, which should be provided directly "
+"after the command, separated by spaces:"
+msgstr "일부 명령은 추가 인자를 받으며, 이 인자들은 명령 뒤에 공백으로 구분해 바로 이어서 전달해야 합니다:"
+
+#: ../../source/cli/spark_commands.rst:78
+msgid ""
+"For all of the commands CodeIgniter provides, if you do not provide the "
+"required arguments, you will be prompted for the information it needs to run"
+" correctly:"
+msgstr ""
+"CodeIgniter가 제공하는 모든 명령은 필요한 인자를 제공하지 않으면, 올바르게 실행하기 위해 필요한 정보를 입력하라는 메시지가 "
+"표시됩니다:"
+
+#: ../../source/cli/spark_commands.rst:88
+msgid "Suppressing Header Output"
+msgstr "헤더 출력 숨기기"
+
+#: ../../source/cli/spark_commands.rst:90
+msgid ""
+"When you run a command, the header with CodeIgniter version and the current "
+"time is output:"
+msgstr "명령을 실행하면 CodeIgniter 버전과 현재 시간이 포함된 헤더가 출력됩니다:"
+
+#: ../../source/cli/spark_commands.rst:101
+msgid ""
+"You may always pass ``--no-header`` to suppress the header output, helpful "
+"for parsing results:"
+msgstr "헤더 출력을 숨기려면 언제든지 ``--no-header`` 를 전달할 수 있으며, 결과를 파싱할 때 유용합니다:"
+
+#: ../../source/cli/spark_commands.rst:110
+msgid "Calling Commands"
+msgstr "명령 호출하기"
+
+#: ../../source/cli/spark_commands.rst:112
+msgid ""
+"Commands can also be ran from within your own code. This is most often done "
+"within a controller for cronjob tasks, but they can be used at any time. You"
+" do this by using the ``command()`` function. This function is always "
+"available."
+msgstr ""
+"명령은 직접 작성한 코드 안에서도 실행할 수 있습니다. 보통은 cron 작업용 컨트롤러 안에서 사용하지만, 언제든 사용할 수 있습니다. "
+"이를 위해 ``command()`` 함수를 사용합니다. 이 함수는 항상 사용할 수 있습니다."
+
+#: ../../source/cli/spark_commands.rst:117
+msgid ""
+"The only argument is string that is the command called and any parameters. "
+"This appears exactly as you would call it from the command line."
+msgstr "유일한 인자는 실행할 명령과 그 매개변수를 담은 문자열입니다. 이는 명령줄에서 호출하는 것과 정확히 같은 형태로 표시됩니다."
+
+#: ../../source/cli/spark_commands.rst:120
+msgid ""
+"All output from the command that is ran is captured when not run from the "
+"command line. It is returned from the command so that you can choose to "
+"display it or not."
+msgstr ""
+"명령줄에서 실행하지 않을 경우, 실행된 명령의 모든 출력이 캡처됩니다. 출력은 명령에서 반환되므로 표시 여부를 선택할 수 있습니다."

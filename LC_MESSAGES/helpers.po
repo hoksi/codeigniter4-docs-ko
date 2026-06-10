@@ -1,0 +1,4104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-10 16:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ko <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/helpers/array_helper.rst:3
+msgid "Array Helper"
+msgstr "배열 헬퍼"
+
+#: ../../source/helpers/array_helper.rst:5
+msgid ""
+"The array helper provides several functions to simplify more complex usages "
+"of arrays. It is not intended to duplicate any of the existing functionality"
+" that PHP provides - unless it is to vastly simplify their usage."
+msgstr ""
+"배열 헬퍼는 배열의 복잡한 사용을 단순화하는 여러 함수를 제공합니다. PHP가 이미 제공하는 기능을 중복 구현하지 않으며, 사용 편의성을"
+" 크게 향상시키는 경우에만 예외로 합니다."
+
+#: ../../source/helpers/array_helper.rst:13
+#: ../../source/helpers/cookie_helper.rst:13
+#: ../../source/helpers/date_helper.rst:15
+#: ../../source/helpers/filesystem_helper.rst:13
+#: ../../source/helpers/form_helper.rst:20
+#: ../../source/helpers/html_helper.rst:17
+#: ../../source/helpers/inflector_helper.rst:13
+#: ../../source/helpers/number_helper.rst:13
+#: ../../source/helpers/security_helper.rst:12
+#: ../../source/helpers/test_helper.rst:12
+#: ../../source/helpers/text_helper.rst:12
+#: ../../source/helpers/url_helper.rst:12
+#: ../../source/helpers/xml_helper.rst:13
+msgid "Loading this Helper"
+msgstr "헬퍼 로드"
+
+#: ../../source/helpers/array_helper.rst:15
+#: ../../source/helpers/cookie_helper.rst:15
+#: ../../source/helpers/date_helper.rst:17
+#: ../../source/helpers/filesystem_helper.rst:15
+#: ../../source/helpers/form_helper.rst:22
+#: ../../source/helpers/html_helper.rst:19
+#: ../../source/helpers/inflector_helper.rst:15
+#: ../../source/helpers/number_helper.rst:15
+#: ../../source/helpers/security_helper.rst:14
+#: ../../source/helpers/test_helper.rst:14
+#: ../../source/helpers/text_helper.rst:14
+msgid "This helper is loaded using the following code:"
+msgstr "이 헬퍼는 다음 코드를 사용하여 로드합니다:"
+
+#: ../../source/helpers/array_helper.rst:21
+#: ../../source/helpers/cookie_helper.rst:20
+#: ../../source/helpers/date_helper.rst:22
+#: ../../source/helpers/filesystem_helper.rst:20
+#: ../../source/helpers/form_helper.rst:53
+#: ../../source/helpers/html_helper.rst:24
+#: ../../source/helpers/inflector_helper.rst:20
+#: ../../source/helpers/number_helper.rst:27
+#: ../../source/helpers/security_helper.rst:19
+#: ../../source/helpers/test_helper.rst:19
+#: ../../source/helpers/text_helper.rst:19
+#: ../../source/helpers/url_helper.rst:17
+#: ../../source/helpers/xml_helper.rst:20
+msgid "Available Functions"
+msgstr "사용 가능한 함수"
+
+#: ../../source/helpers/array_helper.rst:23
+#: ../../source/helpers/cookie_helper.rst:22
+#: ../../source/helpers/date_helper.rst:24
+#: ../../source/helpers/filesystem_helper.rst:22
+#: ../../source/helpers/form_helper.rst:55
+#: ../../source/helpers/html_helper.rst:26
+#: ../../source/helpers/inflector_helper.rst:22
+#: ../../source/helpers/number_helper.rst:29
+#: ../../source/helpers/security_helper.rst:21
+#: ../../source/helpers/test_helper.rst:21
+#: ../../source/helpers/text_helper.rst:21
+#: ../../source/helpers/url_helper.rst:19
+#: ../../source/helpers/xml_helper.rst:22
+msgid "The following functions are available:"
+msgstr "다음 함수들을 사용할 수 있습니다:"
+
+#: ../../source/helpers/array_helper.rst
+#: ../../source/helpers/cookie_helper.rst ../../source/helpers/date_helper.rst
+#: ../../source/helpers/filesystem_helper.rst
+#: ../../source/helpers/form_helper.rst ../../source/helpers/html_helper.rst
+#: ../../source/helpers/inflector_helper.rst
+#: ../../source/helpers/number_helper.rst
+#: ../../source/helpers/security_helper.rst
+#: ../../source/helpers/test_helper.rst ../../source/helpers/text_helper.rst
+#: ../../source/helpers/url_helper.rst ../../source/helpers/xml_helper.rst
+msgid "Parameters"
+msgstr "매개변수"
+
+#: ../../source/helpers/array_helper.rst:27
+msgid "The dot-notation string describing how to search the array"
+msgstr "배열 검색 방법을 설명하는 점 표기법 문자열"
+
+#: ../../source/helpers/array_helper.rst:28
+#: ../../source/helpers/array_helper.rst:62
+msgid "The array to search"
+msgstr "검색할 배열"
+
+#: ../../source/helpers/array_helper.rst
+#: ../../source/helpers/cookie_helper.rst ../../source/helpers/date_helper.rst
+#: ../../source/helpers/filesystem_helper.rst
+#: ../../source/helpers/form_helper.rst ../../source/helpers/html_helper.rst
+#: ../../source/helpers/inflector_helper.rst
+#: ../../source/helpers/number_helper.rst
+#: ../../source/helpers/security_helper.rst
+#: ../../source/helpers/test_helper.rst ../../source/helpers/text_helper.rst
+#: ../../source/helpers/url_helper.rst ../../source/helpers/xml_helper.rst
+msgid "Returns"
+msgstr "반환값"
+
+#: ../../source/helpers/array_helper.rst:29
+#: ../../source/helpers/array_helper.rst:63
+msgid "The value found within the array, or null"
+msgstr "배열에서 찾은 값, 또는 null"
+
+#: ../../source/helpers/array_helper.rst
+#: ../../source/helpers/cookie_helper.rst ../../source/helpers/date_helper.rst
+#: ../../source/helpers/filesystem_helper.rst
+#: ../../source/helpers/form_helper.rst ../../source/helpers/html_helper.rst
+#: ../../source/helpers/inflector_helper.rst
+#: ../../source/helpers/number_helper.rst
+#: ../../source/helpers/security_helper.rst
+#: ../../source/helpers/test_helper.rst ../../source/helpers/text_helper.rst
+#: ../../source/helpers/url_helper.rst ../../source/helpers/xml_helper.rst
+msgid "Return type"
+msgstr "반환 타입"
+
+#: ../../source/helpers/array_helper.rst:32
+msgid ""
+"This method allows you to use dot-notation to search through an array for a "
+"specific-key, and allows the use of a the ``*`` wildcard. Given the "
+"following array:"
+msgstr ""
+"이 메서드를 사용하면 점 표기법으로 배열에서 특정 키를 검색할 수 있으며, ``*``\\ 와일드카드 사용도 지원합니다. 다음 배열을 예로"
+" 들겠습니다:"
+
+#: ../../source/helpers/array_helper.rst:38
+msgid ""
+"We can locate the value of ``fizz`` by using the search string "
+"``foo.buzz.fizz``. Likewise, the value of ``baz`` can be found with "
+"``foo.bar.baz``:"
+msgstr ""
+"검색 문자열 ``foo.buzz.fizz``\\ 를 사용하여 ``fizz``\\ 의 값을 찾을 수 있습니다. 마찬가지로 "
+"``foo.bar.baz``\\ 로 ``baz``\\ 의 값을 찾을 수 있습니다:"
+
+#: ../../source/helpers/array_helper.rst:44
+msgid ""
+"You can use the asterisk (``*``) as a wildcard to replace any of the "
+"segments. When found, it will search through all of the child nodes until it"
+" finds it. This is handy if you don't know the values, or if your values "
+"have a numeric index:"
+msgstr ""
+"별표(``*``)를 와일드카드로 사용하면 경로의 임의 세그먼트를 대체할 수 있습니다. 일치하는 항목이 있으면 찾을 때까지 모든 자식 "
+"노드를 탐색합니다. 값을 모르거나 숫자 인덱스를 가진 경우에 유용합니다:"
+
+#: ../../source/helpers/array_helper.rst:51
+msgid ""
+"If the array key contains a dot (``.``), then the key can be escaped with a "
+"backslash (``\\``):"
+msgstr "배열 키에 점(``.``)이 포함된 경우, 백슬래시(``\\``)로 이스케이프할 수 있습니다:"
+
+#: ../../source/helpers/array_helper.rst:56
+msgid ""
+"Prior to v4.2.0, ``dot_array_search('foo.bar.baz', ['foo' => ['bar' => "
+"23]])`` returned ``23`` due to a bug. v4.2.0 and later returns ``null``."
+msgstr ""
+"v4.2.0 이전에는 버그로 인해 ``dot_array_search('foo.bar.baz', ['foo' => ['bar' => "
+"23]])``\\ 가 ``23``\\ 을 반환했습니다. v4.2.0 이상에서는 ``null``\\ 을 반환합니다."
+
+#: ../../source/helpers/array_helper.rst:61
+msgid "The target key"
+msgstr "대상 키"
+
+#: ../../source/helpers/array_helper.rst:66
+msgid ""
+"Returns the value of an element with a key value in an array of uncertain "
+"depth"
+msgstr "깊이를 알 수 없는 배열에서 특정 키 값을 가진 요소의 값을 반환합니다"
+
+#: ../../source/helpers/array_helper.rst:70
+msgid "The array to be sorted (passed by reference)."
+msgstr "정렬할 배열(참조로 전달됩니다)."
+
+#: ../../source/helpers/array_helper.rst:71
+msgid ""
+"The array keys to sort after and the respective PHP sort flags as an "
+"associative array."
+msgstr "정렬 기준이 되는 배열 키와 해당 PHP 정렬 플래그를 연관 배열로 지정합니다."
+
+#: ../../source/helpers/array_helper.rst:73
+msgid "Whether sorting was successful or not."
+msgstr "정렬 성공 여부."
+
+#: ../../source/helpers/array_helper.rst:76
+msgid ""
+"This method sorts the elements of a multidimensional array by the values of "
+"one or more keys in a hierarchical way. Take the following array, that might"
+" be returned from, e.g., the ``find()`` function of a model:"
+msgstr ""
+"이 메서드는 다차원 배열의 요소를 하나 이상의 키 값을 기준으로 계층적으로 정렬합니다. 예를 들어 모델의 ``find()`` 함수에서 "
+"반환될 수 있는 다음 배열을 살펴보겠습니다:"
+
+#: ../../source/helpers/array_helper.rst:83
+msgid ""
+"Now sort this array by two keys. Note that the method supports the dot-"
+"notation to access values in deeper array levels, but does not support "
+"wildcards:"
+msgstr ""
+"이제 이 배열을 두 개의 키를 기준으로 정렬해 보겠습니다. 이 메서드는 깊은 배열 레벨의 값에 접근하는 점 표기법을 지원하지만, "
+"와일드카드는 지원하지 않습니다:"
+
+#: ../../source/helpers/array_helper.rst:89
+msgid ""
+"The ``$players`` array is now sorted by the ``order`` value in each players'"
+" ``team`` subarray. If this value is equal for several players, these "
+"players will be ordered by their ``position``. The resulting array is:"
+msgstr ""
+"``$players`` 배열은 이제 각 플레이어의 ``team`` 하위 배열에 있는 ``order`` 값으로 정렬됩니다. 여러 플레이어의"
+" 이 값이 동일하면 ``position``\\ 으로 추가 정렬됩니다. 결과 배열은 다음과 같습니다:"
+
+#: ../../source/helpers/array_helper.rst:96
+msgid ""
+"In the same way, the method can also handle an array of objects. In the "
+"example above it is further possible that each ``player`` is represented by "
+"an array, while the ``teams`` are objects. The method will detect the type "
+"of elements in each nesting level and handle it accordingly."
+msgstr ""
+"같은 방식으로 이 메서드는 객체 배열도 처리할 수 있습니다. 위 예시에서 각 ``player``\\ 는 배열로, ``teams``\\ 는"
+" 객체로 표현될 수도 있습니다. 메서드는 각 중첩 레벨의 요소 타입을 자동으로 감지하여 적절히 처리합니다."
+
+#: ../../source/helpers/array_helper.rst:103
+msgid "The multidimensional array to flatten"
+msgstr "평탄화할 다차원 배열"
+
+#: ../../source/helpers/array_helper.rst:104
+msgid ""
+"Optional ID to prepend to the outer keys. Used internally for flattening "
+"keys."
+msgstr "외부 키 앞에 붙일 선택적 ID입니다. 내부적으로 키 평탄화에 사용됩니다."
+
+#: ../../source/helpers/array_helper.rst:106
+msgid "The flattened array"
+msgstr "평탄화된 배열"
+
+#: ../../source/helpers/array_helper.rst:108
+msgid ""
+"This function flattens a multidimensional array to a single key-value array "
+"by using dots as separators for the keys."
+msgstr "이 함수는 키 구분자로 점을 사용하여 다차원 배열을 단일 키-값 배열로 평탄화합니다."
+
+#: ../../source/helpers/array_helper.rst:114
+msgid "On inspection, ``$flattened`` is equal to:"
+msgstr "확인해 보면 ``$flattened``\\ 는 다음과 같습니다:"
+
+#: ../../source/helpers/array_helper.rst:119
+msgid ""
+"Users may use the ``$id`` parameter on their own, but are not required to do"
+" so. The function uses this parameter internally to track the flattened "
+"keys. If users will be supplying an initial ``$id``, it will be prepended to"
+" all keys."
+msgstr ""
+"사용자는 ``$id`` 매개변수를 직접 사용할 수 있지만 필수는 아닙니다. 함수는 내부적으로 이 매개변수를 사용하여 평탄화된 키를 "
+"추적합니다. 초기 ``$id``\\ 를 제공하면 모든 키 앞에 붙습니다."
+
+#: ../../source/helpers/array_helper.rst:128
+msgid "Data rows (most likely from query results)"
+msgstr "데이터 행(주로 쿼리 결과에서 가져옴)"
+
+#: ../../source/helpers/array_helper.rst:129
+msgid "Indexes to group values. Follows dot syntax"
+msgstr "값을 그룹화할 인덱스입니다. 점 표기법을 따릅니다"
+
+#: ../../source/helpers/array_helper.rst:130
+msgid "If true, ``null`` and ``''`` values are not filtered out"
+msgstr "true이면 ``null``\\ 과 ``''`` 값을 필터링하지 않습니다"
+
+#: ../../source/helpers/array_helper.rst:132
+msgid "An array grouped by indexes values"
+msgstr "인덱스 값으로 그룹화된 배열"
+
+#: ../../source/helpers/array_helper.rst:134
+msgid ""
+"This function allows you to group data rows together by index values. The "
+"depth of returned array equals the number of indexes passed as parameter."
+msgstr ""
+"이 함수를 사용하면 인덱스 값을 기준으로 데이터 행을 그룹화할 수 있습니다. 반환되는 배열의 깊이는 매개변수로 전달된 인덱스 수와 "
+"같습니다."
+
+#: ../../source/helpers/array_helper.rst:137
+msgid ""
+"The example shows some data (i.e. loaded from an API) with nested arrays."
+msgstr "이 예시는 API에서 불러온 중첩 배열 형태의 데이터를 보여줍니다."
+
+#: ../../source/helpers/array_helper.rst:142
+msgid ""
+"We want to group them first by ``gender``, then by ``hr.department`` (max "
+"depth = 2). First the result when excluding empty values:"
+msgstr ""
+"먼저 ``gender``\\ 로 그룹화한 뒤 ``hr.department``\\ 로 다시 그룹화합니다(최대 깊이 = 2). 빈 값을 "
+"제외한 결과는 다음과 같습니다:"
+
+#: ../../source/helpers/array_helper.rst:148
+msgid "And here the same code, but this time we want to include empty values:"
+msgstr "그리고 동일한 코드에서 이번에는 빈 값을 포함하는 경우입니다:"
+
+#: ../../source/helpers/cookie_helper.rst:3
+msgid "Cookie Helper"
+msgstr "쿠키 헬퍼"
+
+#: ../../source/helpers/cookie_helper.rst:5
+msgid ""
+"The Cookie Helper file contains functions that assist in working with "
+"cookies."
+msgstr "쿠키 헬퍼 파일에는 쿠키 작업을 지원하는 함수들이 포함되어 있습니다."
+
+#: ../../source/helpers/cookie_helper.rst:26
+msgid ""
+"Cookie name *or* associative array of all of the parameters available to "
+"this function *or* an instance of ``CodeIgniter\\Cookie\\Cookie``"
+msgstr ""
+"쿠키 이름 *또는* 이 함수에 사용 가능한 모든 매개변수의 연관 배열 *또는* "
+"``CodeIgniter\\Cookie\\Cookie``\\ 의 인스턴스"
+
+#: ../../source/helpers/cookie_helper.rst:27
+#: ../../source/helpers/cookie_helper.rst:102
+msgid "Cookie value"
+msgstr "쿠키 값"
+
+#: ../../source/helpers/cookie_helper.rst:28
+msgid ""
+"Number of seconds until expiration. If set to ``0`` the cookie will only "
+"last as long as the browser is open"
+msgstr "만료까지의 초 수. ``0``\\ 으로 설정하면 브라우저가 열려 있는 동안만 쿠키가 유지됩니다"
+
+#: ../../source/helpers/cookie_helper.rst:29
+#: ../../source/helpers/cookie_helper.rst:73
+msgid "Cookie domain (usually: .yourdomain.com)"
+msgstr "쿠키 도메인 (일반적으로: .yourdomain.com)"
+
+#: ../../source/helpers/cookie_helper.rst:30
+#: ../../source/helpers/cookie_helper.rst:74
+msgid "Cookie path"
+msgstr "쿠키 경로"
+
+#: ../../source/helpers/cookie_helper.rst:31
+msgid ""
+"Cookie name prefix. If ``''``, the default from **app/Config/Cookie.php** is"
+" used"
+msgstr "쿠키 이름 접두사. ``''``\\ 이면 **app/Config/Cookie.php**\\ 의 기본값이 사용됩니다"
+
+#: ../../source/helpers/cookie_helper.rst:32
+msgid ""
+"Whether to only send the cookie through HTTPS. If ``null``, the default from"
+" **app/Config/Cookie.php** is used"
+msgstr ""
+"HTTPS를 통해서만 쿠키를 전송할지 여부. ``null``\\ 이면 **app/Config/Cookie.php**\\ 의 기본값이 "
+"사용됩니다"
+
+#: ../../source/helpers/cookie_helper.rst:33
+msgid ""
+"Whether to hide the cookie from JavaScript. If ``null``, the default from "
+"**app/Config/Cookie.php** is used"
+msgstr ""
+"JavaScript에서 쿠키를 숨길지 여부. ``null``\\ 이면 **app/Config/Cookie.php**\\ 의 기본값이 "
+"사용됩니다"
+
+#: ../../source/helpers/cookie_helper.rst:34
+msgid ""
+"The value for the SameSite cookie parameter. If ``null``, the default from "
+"**app/Config/Cookie.php** is used"
+msgstr ""
+"SameSite 쿠키 매개변수의 값. ``null``\\ 이면 **app/Config/Cookie.php**\\ 의 기본값이 사용됩니다"
+
+#: ../../source/helpers/cookie_helper.rst:37
+msgid ""
+"Prior to v4.2.7, the default values of ``$secure`` and ``$httpOnly`` were "
+"``false`` due to a bug, and these values from **app/Config/Cookie.php** were"
+" never used."
+msgstr ""
+"v4.2.7 이전에는 버그로 인해 ``$secure``\\ 와 ``$httpOnly``\\ 의 기본값이 ``false``\\ 였으며, "
+"**app/Config/Cookie.php**\\ 의 값은 사용되지 않았습니다."
+
+#: ../../source/helpers/cookie_helper.rst:40
+msgid ""
+"This helper function gives you friendlier syntax to set browser cookies. "
+"Refer to the :doc:`Response Library </outgoing/response>` for a description "
+"of its use, as this function is an alias for "
+":php:meth:`CodeIgniter\\\\HTTP\\\\Response::setCookie()`."
+msgstr ""
+"이 헬퍼 함수는 브라우저 쿠키를 설정하는 더 편리한 문법을 제공합니다. 이 함수는 "
+":php:meth:`CodeIgniter\\\\HTTP\\\\Response::setCookie()`\\ 의 별칭이므로 사용 방법은 "
+":doc:`Response 라이브러리 </outgoing/response>`\\ 를 참고하세요."
+
+#: ../../source/helpers/cookie_helper.rst:45
+msgid ""
+"This helper function just sets browser cookies to the global response "
+"instance that ``Services::response()`` returns. So, if you create and return"
+" another response instance (e.g., if you call :php:func:`redirect()`), the "
+"cookies set here will not be sent automatically."
+msgstr ""
+"이 헬퍼 함수는 ``Services::response()``\\ 가 반환하는 전역 응답 인스턴스에 브라우저 쿠키를 설정합니다. 따라서 "
+"다른 응답 인스턴스를 생성하여 반환하는 경우(예: :php:func:`redirect()` 호출 시) 여기서 설정한 쿠키는 자동으로 "
+"전송되지 않습니다."
+
+#: ../../source/helpers/cookie_helper.rst:52
+#: ../../source/helpers/cookie_helper.rst:72
+#: ../../source/helpers/cookie_helper.rst:101
+msgid "Cookie name"
+msgstr "쿠키 이름"
+
+#: ../../source/helpers/cookie_helper.rst:53
+msgid "Whether to apply XSS filtering to the returned value"
+msgstr "반환된 값에 XSS 필터링을 적용할지 여부"
+
+#: ../../source/helpers/cookie_helper.rst:54
+msgid ""
+"Cookie name prefix. If set to ``''``, the default value from "
+"**app/Config/Cookie.php** will be used. If set to ``null``, no prefix"
+msgstr ""
+"쿠키 이름 접두사. ``''``\\ 로 설정하면 **app/Config/Cookie.php**\\ 의 기본값이 사용됩니다. "
+"``null``\\ 로 설정하면 접두사를 사용하지 않습니다"
+
+#: ../../source/helpers/cookie_helper.rst:55
+msgid "The cookie value or null if not found"
+msgstr "쿠키 값, 찾을 수 없으면 null"
+
+#: ../../source/helpers/cookie_helper.rst:58
+msgid ""
+"Since v4.2.1, the third parameter ``$prefix`` has been introduced and the "
+"behavior has been changed a bit due to a bug fix. See :ref:`Upgrading "
+"<upgrade-421-get_cookie>` for details."
+msgstr ""
+"v4.2.1부터 세 번째 매개변수 ``$prefix``\\ 가 도입되었으며, 버그 수정으로 인해 동작이 일부 변경되었습니다. 자세한 "
+"내용은 :ref:`업그레이드 <upgrade-421-get_cookie>`\\ 를 참고하세요."
+
+#: ../../source/helpers/cookie_helper.rst:60
+msgid ""
+"This helper function gives you friendlier syntax to get browser cookies. "
+"Refer to the :doc:`IncomingRequest Library </incoming/incomingrequest>` for "
+"detailed description of its use, as this function acts very similarly to "
+":php:meth:`CodeIgniter\\\\HTTP\\\\IncomingRequest::getCookie()`, except it "
+"will also prepend the ``Config\\Cookie::$prefix`` that you might've set in "
+"your **app/Config/Cookie.php** file."
+msgstr ""
+"이 헬퍼 함수는 브라우저 쿠키를 가져오는 더 편리한 문법을 제공합니다. 이 함수는 "
+":php:meth:`CodeIgniter\\\\HTTP\\\\IncomingRequest::getCookie()`\\ 와 매우 유사하게 "
+"동작하지만, **app/Config/Cookie.php** 파일에 설정한 ``Config\\Cookie::$prefix``\\ 도 함께 "
+"앞에 붙입니다. 자세한 사용법은 :doc:`IncomingRequest 라이브러리 </incoming/incomingrequest>`\\"
+" 를 참고하세요."
+
+#: ../../source/helpers/cookie_helper.rst:68
+msgid ""
+"Using XSS filtering is a bad practice. It does not prevent XSS attacks "
+"perfectly. Using :php:func:`esc()` with the correct ``$context`` in the "
+"views is recommended."
+msgstr ""
+"XSS 필터링 사용은 좋지 않은 방식입니다. XSS 공격을 완벽하게 막을 수 없습니다. 뷰에서 적절한 ``$context``\\ 와 함께"
+" :php:func:`esc()`\\ 를 사용하는 것을 권장합니다."
+
+#: ../../source/helpers/cookie_helper.rst:75
+msgid "Cookie name prefix"
+msgstr "쿠키 이름 접두사"
+
+#: ../../source/helpers/cookie_helper.rst:78
+msgid ""
+"Lets you delete a cookie. Unless you've set a custom path or other values, "
+"only the name of the cookie is needed."
+msgstr "쿠키를 삭제합니다. 사용자 지정 경로나 다른 값을 설정하지 않은 경우 쿠키 이름만 필요합니다."
+
+#: ../../source/helpers/cookie_helper.rst:83
+msgid ""
+"This function is otherwise identical to :php:func:`set_cookie()`, except "
+"that it does not have the ``value`` and ``expire`` parameters."
+msgstr ""
+"이 함수는 ``value``\\ 와 ``expire`` 매개변수가 없다는 점을 제외하면 :php:func:`set_cookie()`\\ "
+"와 동일합니다."
+
+#: ../../source/helpers/cookie_helper.rst:86
+msgid ""
+"This also just sets browser cookies for deleting the cookies to the global "
+"response instance that ``Services::response()`` returns."
+msgstr ""
+"이 함수도 ``Services::response()``\\ 가 반환하는 전역 응답 인스턴스에 쿠키 삭제를 위한 브라우저 쿠키를 "
+"설정합니다."
+
+#: ../../source/helpers/cookie_helper.rst:89
+msgid ""
+"When you use :php:func:`set_cookie()`, if the ``value`` is set to empty "
+"string and the ``expire`` is set to ``0``, the cookie will be deleted. If "
+"the ``value`` is set to non-empty string and the ``expire`` is set to ``0``,"
+" the cookie will only last as long as the browser is open."
+msgstr ""
+":php:func:`set_cookie()`\\ 를 사용할 때 ``value``\\ 를 빈 문자열로 설정하고 ``expire``\\ 를 "
+"``0``\\ 으로 설정하면 쿠키가 삭제됩니다. ``value``\\ 를 빈 문자열이 아닌 값으로 설정하고 ``expire``\\ 를 "
+"``0``\\ 으로 설정하면 브라우저가 열려 있는 동안만 쿠키가 유지됩니다."
+
+#: ../../source/helpers/cookie_helper.rst:93
+msgid ""
+"You can submit an array of values in the first parameter or you can set "
+"discrete parameters."
+msgstr "첫 번째 매개변수에 값 배열을 전달하거나 개별 매개변수를 설정할 수 있습니다."
+
+#: ../../source/helpers/cookie_helper.rst:103
+msgid "Cookie prefix"
+msgstr "쿠키 접두사"
+
+#: ../../source/helpers/cookie_helper.rst:106
+msgid ""
+"Checks if a cookie exists by name in the global response instance that "
+"``Services::response()`` returns. This is an alias of "
+":php:meth:`CodeIgniter\\\\HTTP\\\\Response::hasCookie()`."
+msgstr ""
+"``Services::response()``\\ 가 반환하는 전역 응답 인스턴스에 지정된 이름의 쿠키가 존재하는지 확인합니다. 이 함수는"
+" :php:meth:`CodeIgniter\\\\HTTP\\\\Response::hasCookie()`\\ 의 별칭입니다."
+
+#: ../../source/helpers/date_helper.rst:3
+msgid "Date Helper"
+msgstr "날짜 헬퍼"
+
+#: ../../source/helpers/date_helper.rst:5
+msgid ""
+"The Date Helper file contains functions that assist in working with dates."
+msgstr "날짜 헬퍼 파일에는 날짜 작업을 지원하는 함수들이 포함되어 있습니다."
+
+#: ../../source/helpers/date_helper.rst:12
+msgid ""
+"Many functions previously found in the CodeIgniter 3 ``date_helper`` have "
+"been moved to the :doc:`Time <../libraries/time>` class in CodeIgniter 4."
+msgstr ""
+"CodeIgniter 3의 ``date_helper``\\ 에 있던 많은 함수들이 CodeIgniter 4의 :doc:`Time "
+"<../libraries/time>` 클래스로 이동되었습니다."
+
+#: ../../source/helpers/date_helper.rst:28
+msgid "Timezone"
+msgstr "타임존"
+
+#: ../../source/helpers/date_helper.rst:29
+msgid "UNIX timestamp"
+msgstr "UNIX 타임스탬프"
+
+#: ../../source/helpers/date_helper.rst:32
+msgid ""
+"It is recommended to use the :doc:`Time <../libraries/time>` class instead. "
+"Use ``Time::now()->getTimestamp()`` to get the current UNIX timestamp."
+msgstr ""
+"대신 :doc:`Time <../libraries/time>` 클래스를 사용하는 것을 권장합니다. 현재 UNIX 타임스탬프를 얻으려면 "
+"``Time::now()->getTimestamp()``\\ 를 사용하세요."
+
+#: ../../source/helpers/date_helper.rst:34
+msgid ""
+"If a timezone is not provided, it will return the current UNIX timestamp by "
+"``time()``."
+msgstr "타임존이 제공되지 않으면 ``time()``\\ 으로 현재 UNIX 타임스탬프를 반환합니다."
+
+#: ../../source/helpers/date_helper.rst:38
+msgid ""
+"If any PHP supported timezone is provided, it will return a timestamp that "
+"is offset by the time difference. It is not the same as the current UNIX "
+"timestamp."
+msgstr ""
+"PHP에서 지원하는 타임존을 지정하면 시간 차이만큼 오프셋된 타임스탬프를 반환합니다. 이는 현재 UNIX 타임스탬프와 동일하지 않습니다."
+
+#: ../../source/helpers/date_helper.rst:40
+msgid ""
+"If you do not intend to set your master time reference to any other PHP "
+"supported timezone (which you'll typically do if you run a site that lets "
+"each user set their own timezone settings) there is no benefit to using this"
+" function over PHP's ``time()`` function."
+msgstr ""
+"마스터 시간 기준을 다른 PHP 지원 타임존으로 설정하지 않을 경우(각 사용자가 자신의 타임존 설정을 지정할 수 있는 사이트를 운영할 때"
+" 주로 사용함) PHP의 ``time()`` 함수 대신 이 함수를 사용할 이점이 없습니다."
+
+#: ../../source/helpers/date_helper.rst:47
+msgid "Optional class to apply to the select field"
+msgstr "select 필드에 적용할 선택적 클래스"
+
+#: ../../source/helpers/date_helper.rst:48
+msgid "Default value for initial selection"
+msgstr "초기 선택값의 기본값"
+
+#: ../../source/helpers/date_helper.rst:49
+msgid ""
+"DateTimeZone class constants (see `listIdentifiers "
+"<https://www.php.net/manual/en/datetimezone.listidentifiers.php>`_)"
+msgstr ""
+"DateTimeZone 클래스 상수 (`listIdentifiers "
+"<https://www.php.net/manual/en/datetimezone.listidentifiers.php>`_ 참고)"
+
+#: ../../source/helpers/date_helper.rst:50
+msgid ""
+"A two-letter ISO 3166-1 compatible country code (see `listIdentifiers "
+"<https://www.php.net/manual/en/datetimezone.listidentifiers.php>`_)"
+msgstr ""
+"ISO 3166-1 호환 두 글자 국가 코드 (`listIdentifiers "
+"<https://www.php.net/manual/en/datetimezone.listidentifiers.php>`_ 참고)"
+
+#: ../../source/helpers/date_helper.rst:51
+msgid "Preformatted HTML select field"
+msgstr "미리 형식화된 HTML select 필드"
+
+#: ../../source/helpers/date_helper.rst:54
+msgid ""
+"Generates a `select` form field of available timezones (optionally filtered "
+"by ``$what`` and ``$country``). You can supply an option class to apply to "
+"the field to make formatting easier, as well as a default selected value."
+msgstr ""
+"사용 가능한 타임존의 `select` 폼 필드를 생성합니다(선택적으로 ``$what``\\ 과 ``$country``\\ 로 필터링 "
+"가능). 필드에 적용할 옵션 클래스와 기본 선택값을 지정하여 서식 지정을 쉽게 할 수 있습니다."
+
+#: ../../source/helpers/filesystem_helper.rst:3
+msgid "Filesystem Helper"
+msgstr "파일시스템 헬퍼"
+
+#: ../../source/helpers/filesystem_helper.rst:5
+msgid ""
+"The Filesystem Helper file contains functions that assist in working with "
+"files and directories."
+msgstr "파일시스템 헬퍼 파일에는 파일 및 디렉토리 작업을 지원하는 함수들이 포함되어 있습니다."
+
+#: ../../source/helpers/filesystem_helper.rst:26
+msgid "Path to the source directory"
+msgstr "소스 디렉토리 경로"
+
+#: ../../source/helpers/filesystem_helper.rst:27
+msgid ""
+"Depth of directories to traverse (``0`` = fully recursive, ``1`` = current "
+"dir, etc)"
+msgstr "탐색할 디렉토리 깊이 (``0`` = 완전 재귀적, ``1`` = 현재 디렉토리만, 등)"
+
+#: ../../source/helpers/filesystem_helper.rst:28
+msgid "Whether to include hidden paths"
+msgstr "숨김 경로 포함 여부"
+
+#: ../../source/helpers/filesystem_helper.rst:29
+msgid "An array of files"
+msgstr "파일 배열"
+
+#: ../../source/helpers/filesystem_helper.rst:32
+#: ../../source/helpers/filesystem_helper.rst:247
+msgid "Examples:"
+msgstr "예시:"
+
+#: ../../source/helpers/filesystem_helper.rst:36
+msgid "Paths are almost always relative to your main **index.php** file."
+msgstr "경로는 거의 항상 메인 **index.php** 파일을 기준으로 한 상대 경로입니다."
+
+#: ../../source/helpers/filesystem_helper.rst:38
+msgid ""
+"Sub-folders contained within the directory will be mapped as well. If you "
+"wish to control the recursion depth, you can do so using the second "
+"parameter (integer). A depth of ``1`` will only map the top level directory:"
+msgstr ""
+"디렉토리 내의 하위 폴더도 함께 매핑됩니다. 재귀 깊이를 조절하려면 두 번째 매개변수(정수)를 사용하세요. 깊이를 ``1``\\ 로 "
+"설정하면 최상위 디렉토리만 매핑합니다:"
+
+#: ../../source/helpers/filesystem_helper.rst:44
+msgid ""
+"By default, hidden files will not be included in the returned array and "
+"hidden directories will be skipped. To override this behavior, you may set a"
+" third parameter to ``true`` (boolean):"
+msgstr ""
+"기본적으로 숨김 파일은 반환 배열에 포함되지 않으며 숨김 디렉토리는 건너뜁니다. 이 동작을 변경하려면 세 번째 매개변수를 "
+"``true``\\ (불리언)로 설정하세요:"
+
+#: ../../source/helpers/filesystem_helper.rst:50
+msgid ""
+"Each folder name will be an array index, while its contained files will be "
+"numerically indexed. Here is an example of a typical array::"
+msgstr "각 폴더 이름은 배열 인덱스가 되며 포함된 파일은 숫자 인덱스로 처리됩니다. 일반적인 배열의 예는 다음과 같습니다::"
+
+#: ../../source/helpers/filesystem_helper.rst:80
+msgid "If no results are found, this will return an empty array."
+msgstr "결과가 없으면 빈 배열을 반환합니다."
+
+#: ../../source/helpers/filesystem_helper.rst:84
+msgid "Original source directory"
+msgstr "원본 소스 디렉토리"
+
+#: ../../source/helpers/filesystem_helper.rst:85
+msgid "Target destination directory"
+msgstr "대상 디렉토리"
+
+#: ../../source/helpers/filesystem_helper.rst:86
+msgid "Whether individual files overwrite on collision"
+msgstr "충돌 시 개별 파일을 덮어쓸지 여부"
+
+#: ../../source/helpers/filesystem_helper.rst:88
+msgid ""
+"Recursively copies the files and directories of the origin directory into "
+"the target directory, i.e. \"mirror\" its contents."
+msgstr "원본 디렉토리의 파일과 디렉토리를 대상 디렉토리로 재귀적으로 복사합니다. 즉, 내용을 \"미러링\"합니다."
+
+#: ../../source/helpers/filesystem_helper.rst:91
+#: ../../source/helpers/filesystem_helper.rst:108
+#: ../../source/helpers/filesystem_helper.rst:140
+#: ../../source/helpers/filesystem_helper.rst:147
+#: ../../source/helpers/filesystem_helper.rst:169
+#: ../../source/helpers/filesystem_helper.rst:185
+#: ../../source/helpers/form_helper.rst:262
+#: ../../source/helpers/form_helper.rst:307
+#: ../../source/helpers/form_helper.rst:386
+#: ../../source/helpers/html_helper.rst:51
+#: ../../source/helpers/html_helper.rst:95
+#: ../../source/helpers/html_helper.rst:120
+#: ../../source/helpers/html_helper.rst:352
+#: ../../source/helpers/inflector_helper.rst:109
+#: ../../source/helpers/security_helper.rst:44
+#: ../../source/helpers/security_helper.rst:56
+#: ../../source/helpers/text_helper.rst:98
+#: ../../source/helpers/text_helper.rst:110
+#: ../../source/helpers/text_helper.rst:188
+#: ../../source/helpers/text_helper.rst:212
+#: ../../source/helpers/text_helper.rst:236
+#: ../../source/helpers/text_helper.rst:258
+#: ../../source/helpers/text_helper.rst:289
+#: ../../source/helpers/text_helper.rst:317
+#: ../../source/helpers/text_helper.rst:342
+#: ../../source/helpers/text_helper.rst:368
+#: ../../source/helpers/url_helper.rst:342
+#: ../../source/helpers/url_helper.rst:349
+msgid "Example:"
+msgstr "예시:"
+
+#: ../../source/helpers/filesystem_helper.rst:95
+msgid ""
+"You can optionally change the overwrite behavior via the third parameter."
+msgstr "세 번째 매개변수로 덮어쓰기 동작을 선택적으로 변경할 수 있습니다."
+
+#: ../../source/helpers/filesystem_helper.rst:99
+#: ../../source/helpers/filesystem_helper.rst:191
+msgid "File path"
+msgstr "파일 경로"
+
+#: ../../source/helpers/filesystem_helper.rst:100
+msgid "Data to write to file"
+msgstr "파일에 쓸 데이터"
+
+#: ../../source/helpers/filesystem_helper.rst:101
+msgid "``fopen()`` mode"
+msgstr "``fopen()`` 모드"
+
+#: ../../source/helpers/filesystem_helper.rst:102
+msgid "``true`` if the write was successful, ``false`` in case of an error"
+msgstr "쓰기 성공 시 ``true``, 오류 발생 시 ``false``"
+
+#: ../../source/helpers/filesystem_helper.rst:105
+msgid ""
+"Writes data to the file specified in the path. If the file does not exist "
+"then the function will create it."
+msgstr "경로에 지정된 파일에 데이터를 씁니다. 파일이 존재하지 않으면 함수가 파일을 생성합니다."
+
+#: ../../source/helpers/filesystem_helper.rst:112
+msgid "You can optionally set the write mode via the third parameter:"
+msgstr "세 번째 매개변수로 쓰기 모드를 선택적으로 설정할 수 있습니다:"
+
+#: ../../source/helpers/filesystem_helper.rst:116
+msgid ""
+"The default mode is ``'wb'``. Please see `fopen() "
+"<https://www.php.net/manual/en/function.fopen.php>`_ in the PHP manual for "
+"mode options."
+msgstr ""
+"기본 모드는 ``'wb'``\\ 입니다. 모드 옵션은 PHP 매뉴얼의 `fopen() "
+"<https://www.php.net/manual/en/function.fopen.php>`_\\ 을 참고하세요."
+
+#: ../../source/helpers/filesystem_helper.rst:119
+msgid ""
+"In order for this function to write data to a file, its permissions must be "
+"set such that it is writable. If the file does not already exist, then the "
+"directory containing it must be writable."
+msgstr ""
+"이 함수가 파일에 데이터를 쓰려면 파일 권한이 쓰기 가능하도록 설정되어 있어야 합니다. 파일이 아직 존재하지 않는 경우 파일이 위치할 "
+"디렉토리가 쓰기 가능해야 합니다."
+
+#: ../../source/helpers/filesystem_helper.rst:123
+msgid ""
+"The path is relative to your main site **index.php** file, NOT your "
+"controller or view files. CodeIgniter uses a front controller so paths are "
+"always relative to the main site index."
+msgstr ""
+"경로는 컨트롤러나 뷰 파일이 아닌 메인 사이트 **index.php** 파일을 기준으로 한 상대 경로입니다. CodeIgniter는 "
+"프론트 컨트롤러를 사용하므로 경로는 항상 메인 사이트 인덱스를 기준으로 합니다."
+
+#: ../../source/helpers/filesystem_helper.rst:127
+msgid ""
+"This function acquires an exclusive lock on the file while writing to it."
+msgstr "이 함수는 파일에 쓰는 동안 파일에 대한 배타적 잠금을 획득합니다."
+
+#: ../../source/helpers/filesystem_helper.rst:131
+#: ../../source/helpers/filesystem_helper.rst:155
+#: ../../source/helpers/filesystem_helper.rst:175
+msgid "Directory path"
+msgstr "디렉토리 경로"
+
+#: ../../source/helpers/filesystem_helper.rst:132
+msgid "Whether to also delete directories"
+msgstr "디렉토리도 함께 삭제할지 여부"
+
+#: ../../source/helpers/filesystem_helper.rst:133
+msgid "Whether to skip deleting .htaccess and index page files"
+msgstr ".htaccess 및 인덱스 페이지 파일 삭제를 건너뛸지 여부"
+
+#: ../../source/helpers/filesystem_helper.rst:134
+msgid "Whether to also delete hidden files (files beginning with a period)"
+msgstr "숨김 파일(점으로 시작하는 파일)도 함께 삭제할지 여부"
+
+#: ../../source/helpers/filesystem_helper.rst:135
+msgid "``true`` on success, ``false`` in case of an error"
+msgstr "성공 시 ``true``, 오류 발생 시 ``false``"
+
+#: ../../source/helpers/filesystem_helper.rst:138
+msgid "Deletes ALL files contained in the supplied path."
+msgstr "지정된 경로에 포함된 모든 파일을 삭제합니다."
+
+#: ../../source/helpers/filesystem_helper.rst:144
+msgid ""
+"If the second parameter is set to ``true``, any directories contained within"
+" the supplied root path will be deleted as well."
+msgstr "두 번째 매개변수를 ``true``\\ 로 설정하면 지정된 루트 경로 내의 모든 디렉토리도 함께 삭제됩니다."
+
+#: ../../source/helpers/filesystem_helper.rst:151
+msgid ""
+"The files must be writable or owned by the system in order to be deleted."
+msgstr "파일을 삭제하려면 파일이 시스템 소유이거나 쓰기 권한이 있어야 합니다."
+
+#: ../../source/helpers/filesystem_helper.rst:156
+msgid ""
+"Whether to include the path as part of the filename; false for no path, null"
+" for the path relative to ``$sourceDir``, true for the full path"
+msgstr ""
+"파일 이름에 경로를 포함할지 여부; false이면 경로 없음, null이면 ``$sourceDir``\\ 에 대한 상대 경로, "
+"true이면 전체 경로"
+
+#: ../../source/helpers/filesystem_helper.rst:157
+msgid "Whether to include hidden files (files beginning with a period)"
+msgstr "숨김 파일(점으로 시작하는 파일) 포함 여부"
+
+#: ../../source/helpers/filesystem_helper.rst:158
+msgid "Whether to include directories in the array output"
+msgstr "배열 출력에 디렉토리 포함 여부"
+
+#: ../../source/helpers/filesystem_helper.rst:159
+msgid "An array of file names"
+msgstr "파일 이름 배열"
+
+#: ../../source/helpers/filesystem_helper.rst:162
+msgid ""
+"Takes a server path as input and returns an array containing the names of "
+"all files contained within it. The file path can optionally be added to the "
+"file names by setting the second parameter to 'relative' for relative paths "
+"or any other non-empty value for a full file path."
+msgstr ""
+"서버 경로를 입력받아 그 안에 포함된 모든 파일 이름의 배열을 반환합니다. 두 번째 매개변수를 'relative'로 설정하면 상대 "
+"경로를, 다른 비어있지 않은 값으로 설정하면 전체 파일 경로를 파일 이름에 선택적으로 추가할 수 있습니다."
+
+#: ../../source/helpers/filesystem_helper.rst:167
+msgid ""
+"Prior to v4.4.4, due to a bug, this function did not follow symlink folders."
+msgstr "v4.4.4 이전에는 버그로 인해 이 함수가 심볼릭 링크 폴더를 따라가지 않았습니다."
+
+#: ../../source/helpers/filesystem_helper.rst:176
+msgid ""
+"Whether to look only at the specified directory (excluding sub-directories)"
+msgstr "지정된 디렉토리만 탐색할지 여부(하위 디렉토리 제외)"
+
+#: ../../source/helpers/filesystem_helper.rst:177
+msgid "An array containing info on the supplied directory's contents"
+msgstr "지정된 디렉토리 내용에 대한 정보를 담은 배열"
+
+#: ../../source/helpers/filesystem_helper.rst:180
+msgid ""
+"Reads the specified directory and builds an array containing the filenames, "
+"filesize, dates, and permissions. Sub-folders contained within the specified"
+" path are only read if forced by sending the second parameter to false, as "
+"this can be an intensive operation."
+msgstr ""
+"지정된 디렉토리를 읽어 파일 이름, 파일 크기, 날짜, 권한을 포함하는 배열을 구성합니다. 지정된 경로 내의 하위 폴더는 두 번째 "
+"매개변수를 false로 설정해야만 읽으며, 이는 집약적인 작업이 될 수 있습니다."
+
+#: ../../source/helpers/filesystem_helper.rst:192
+msgid ""
+"What type of info to return to be passed as array or comma separated string"
+msgstr "반환할 정보 유형으로 배열 또는 쉼표로 구분된 문자열로 전달합니다"
+
+#: ../../source/helpers/filesystem_helper.rst:193
+msgid "An array containing info on the specified file or false on failure"
+msgstr "지정된 파일에 대한 정보를 담은 배열, 실패 시 false"
+
+#: ../../source/helpers/filesystem_helper.rst:196
+msgid ""
+"Given a file and path, returns (optionally) the *name*, *path*, *size* and "
+"*date modified* information attributes for a file. Second parameter allows "
+"you to explicitly declare what information you want returned."
+msgstr ""
+"파일과 경로를 받아 파일의 *이름*, *경로*, *크기*, *수정 날짜* 정보 속성을 (선택적으로) 반환합니다. 두 번째 매개변수로 "
+"반환받을 정보를 명시적으로 지정할 수 있습니다."
+
+#: ../../source/helpers/filesystem_helper.rst:200
+msgid ""
+"Valid ``$returnedValues`` options are: ``name``, ``size``, ``date``, "
+"``readable``, ``writeable``, ``executable`` and ``fileperms``."
+msgstr ""
+"유효한 ``$returnedValues`` 옵션은 ``name``, ``size``, ``date``, ``readable``, "
+"``writeable``, ``executable``, ``fileperms``\\ 입니다."
+
+#: ../../source/helpers/filesystem_helper.rst:205
+#: ../../source/helpers/filesystem_helper.rst:216
+msgid "Permissions"
+msgstr "권한"
+
+#: ../../source/helpers/filesystem_helper.rst:206
+msgid "Symbolic permissions string"
+msgstr "기호 권한 문자열"
+
+#: ../../source/helpers/filesystem_helper.rst:209
+msgid ""
+"Takes numeric permissions (such as is returned by `fileperms() "
+"<https://www.php.net/manual/en/function.fileperms.php>`_) and returns "
+"standard symbolic notation of file permissions."
+msgstr ""
+"`fileperms() <https://www.php.net/manual/en/function.fileperms.php>`_\\ 에서 "
+"반환되는 것과 같은 숫자 권한을 받아 파일 권한의 표준 기호 표기법을 반환합니다."
+
+#: ../../source/helpers/filesystem_helper.rst:217
+msgid "Octal permissions string"
+msgstr "8진수 권한 문자열"
+
+#: ../../source/helpers/filesystem_helper.rst:220
+msgid ""
+"Takes numeric permissions (such as is returned by `fileperms() "
+"<https://www.php.net/manual/en/function.fileperms.php>`_) and returns a "
+"three character octal notation of file permissions."
+msgstr ""
+"`fileperms() <https://www.php.net/manual/en/function.fileperms.php>`_\\ 에서 "
+"반환되는 것과 같은 숫자 권한을 받아 세 자리 8진수 표기법으로 파일 권한을 반환합니다."
+
+#: ../../source/helpers/filesystem_helper.rst:227
+msgid "Path to the first file"
+msgstr "첫 번째 파일 경로"
+
+#: ../../source/helpers/filesystem_helper.rst:228
+msgid "Path to the second file"
+msgstr "두 번째 파일 경로"
+
+#: ../../source/helpers/filesystem_helper.rst:229
+msgid "Whether both files exist with identical hashes"
+msgstr "두 파일이 동일한 해시로 존재하는지 여부"
+
+#: ../../source/helpers/filesystem_helper.rst:232
+msgid ""
+"Compares two files to see if they are the same (based on their MD5 hash)."
+msgstr "두 파일이 동일한지 비교합니다(MD5 해시 기반)."
+
+#: ../../source/helpers/filesystem_helper.rst:238
+msgid "Path"
+msgstr "경로"
+
+#: ../../source/helpers/filesystem_helper.rst:239
+msgid "Whether to check if the path actually exists"
+msgstr "경로가 실제로 존재하는지 확인할지 여부"
+
+#: ../../source/helpers/filesystem_helper.rst:240
+msgid "An absolute path"
+msgstr "절대 경로"
+
+#: ../../source/helpers/filesystem_helper.rst:243
+msgid ""
+"This function will return a server path without symbolic links or relative "
+"directory structures. An optional second argument will cause an error to be "
+"triggered if the path cannot be resolved."
+msgstr ""
+"이 함수는 심볼릭 링크나 상대 디렉토리 구조 없이 서버 경로를 반환합니다. 선택적 두 번째 인수를 지정하면 경로를 확인할 수 없을 때 "
+"오류가 발생합니다."
+
+#: ../../source/helpers/form_helper.rst:3
+msgid "Form Helper"
+msgstr "폼 헬퍼(Form Helper)"
+
+#: ../../source/helpers/form_helper.rst:5
+msgid ""
+"The Form Helper file contains functions that assist in working with forms."
+msgstr "폼 헬퍼 파일은 폼 작업을 돕는 함수들을 포함하고 있습니다."
+
+#: ../../source/helpers/form_helper.rst:14
+#: ../../source/helpers/html_helper.rst:12
+msgid "Configuration"
+msgstr "설정"
+
+#: ../../source/helpers/form_helper.rst:16
+msgid ""
+"Since v4.3.0, void HTML elements (e.g. ``<input>``) in ``form_helper`` "
+"functions have been changed to be HTML5-compatible by default and if you "
+"need to be compatible with XHTML, you must set the ``$html5`` property in "
+"**app/Config/DocTypes.php** to ``false``."
+msgstr ""
+"v4.3.0부터 ``form_helper`` 함수의 void HTML 요소(예: ``<input>``)는 기본적으로 HTML5 호환으로 "
+"변경되었습니다. XHTML과 호환되어야 하는 경우 **app/Config/DocTypes.php**\\ 의 ``$html5`` 속성을 "
+"``false``\\ 로 설정해야 합니다."
+
+#: ../../source/helpers/form_helper.rst:28
+msgid "Escaping Field Values"
+msgstr "필드 값 이스케이프(Escaping)"
+
+#: ../../source/helpers/form_helper.rst:30
+msgid ""
+"You may need to use HTML and characters such as quotes within your form "
+"elements. In order to do that safely, you'll need to use the :doc:`common "
+"function <../general/common_functions>` :php:func:`esc()`."
+msgstr ""
+"폼 요소 내에서 HTML 및 따옴표와 같은 문자를 사용해야 할 수 있습니다. 이를 안전하게 수행하려면 :doc:`공통 함수 "
+"<../general/common_functions>`\\ 인 :php:func:`esc()` 를 사용해야 합니다."
+
+#: ../../source/helpers/form_helper.rst:35
+msgid "Consider the following example:"
+msgstr "다음 예제를 고려해 보십시오:"
+
+#: ../../source/helpers/form_helper.rst:39
+msgid ""
+"Since the above string contains a set of quotes, it will cause the form to "
+"break. The :php:func:`esc()` function converts HTML special characters so "
+"that it can be used safely::"
+msgstr ""
+"위의 문자열에는 따옴표 세트가 포함되어 있어 폼이 깨질 수 있습니다. :php:func:`esc()` 함수는 HTML 특수 문자를 "
+"변환하여 안전하게 사용할 수 있도록 합니다::"
+
+#: ../../source/helpers/form_helper.rst:45
+msgid ""
+"If you use any of the form helper functions listed on this page, and you "
+"pass values as an associative array, the form values will be automatically "
+"escaped, so there is no need to call this function. Use it only if you are "
+"creating your own form elements, which you would pass as strings."
+msgstr ""
+"이 페이지에 나열된 폼 헬퍼 함수를 사용하고 연관 배열로 값을 전달하면 폼 값은 자동으로 이스케이프 처리되므로 이 함수를 호출할 필요가 "
+"없습니다. 직접 폼 요소를 생성하여 문자열로 전달하는 경우에만 사용하십시오."
+
+#: ../../source/helpers/form_helper.rst:59
+#: ../../source/helpers/form_helper.rst:139
+msgid "Form action/target URI string"
+msgstr "폼 action/target URI 문자열"
+
+#: ../../source/helpers/form_helper.rst:60
+#: ../../source/helpers/form_helper.rst:140
+msgid "HTML attributes, as an array or escaped string"
+msgstr "배열 또는 이스케이프된 문자열 형태의 HTML 속성"
+
+#: ../../source/helpers/form_helper.rst:61
+#: ../../source/helpers/form_helper.rst:141
+msgid "An array of hidden fields' definitions"
+msgstr "숨김 필드 정의 배열"
+
+#: ../../source/helpers/form_helper.rst:62
+msgid "An HTML form opening tag"
+msgstr "HTML 폼 여는 태그"
+
+#: ../../source/helpers/form_helper.rst:65
+msgid ""
+"Creates an opening form tag with a site URL **built from your** "
+"``Config\\App::$baseURL``. It will optionally let you add form attributes "
+"and hidden input fields, and will always add the `accept-charset` attribute "
+"based on the ``$charset`` property in your **app/Config/App.php** config "
+"file."
+msgstr ""
+"``Config\\App::$baseURL``\\ **을 기반으로 구성된** 사이트 URL로 폼 여는 태그를 생성합니다. 선택적으로 폼 "
+"속성과 숨김 입력 필드를 추가할 수 있으며, **app/Config/App.php** 설정 파일의 ``$charset`` 속성에 따라 "
+"`accept-charset` 속성은 항상 추가됩니다."
+
+#: ../../source/helpers/form_helper.rst:70
+msgid ""
+"The main benefit of using this tag rather than hard coding your own HTML is "
+"that it permits your site to be more portable in the event your URLs ever "
+"change."
+msgstr ""
+"직접 HTML을 하드코딩하는 대신 이 태그를 사용하는 가장 큰 이점은 URL이 변경되더라도 사이트의 이식성을 높일 수 있다는 점입니다."
+
+#: ../../source/helpers/form_helper.rst:73
+msgid "Here's a simple example:"
+msgstr "간단한 예제입니다:"
+
+#: ../../source/helpers/form_helper.rst:77
+msgid ""
+"The above example would create a form that points to your site URL plus the "
+"\"email/send\" URI segments, like this::"
+msgstr "위의 예제는 사이트 URL에 \"email/send\" URI 세그먼트를 더한 주소를 가리키는 폼을 생성합니다. 예::"
+
+#: ../../source/helpers/form_helper.rst:82
+#, python-brace-format
+msgid "You can also add ``{locale}`` like the following:"
+msgstr "다음과 같이 ``{locale}``\\ 도 추가할 수 있습니다:"
+
+#: ../../source/helpers/form_helper.rst:86
+msgid ""
+"The above example would create a form that points to your site URL plus the "
+"current request locale with \"email/send\" URI segments, like this::"
+msgstr ""
+"위의 예제는 사이트 URL에 현재 요청 로케일과 \"email/send\" URI 세그먼트를 더한 주소를 가리키는 폼을 생성합니다. "
+"예::"
+
+#: ../../source/helpers/form_helper.rst:91
+msgid "**Adding Attributes**"
+msgstr "**속성 추가하기**"
+
+#: ../../source/helpers/form_helper.rst:93
+msgid ""
+"Attributes can be added by passing an associative array to the second "
+"parameter, like this:"
+msgstr "다음과 같이 두 번째 매개변수에 연관 배열을 전달하여 속성을 추가할 수 있습니다:"
+
+#: ../../source/helpers/form_helper.rst:98
+msgid "Alternatively, you can specify the second parameter as a string:"
+msgstr "또는 두 번째 매개변수를 문자열로 지정할 수도 있습니다:"
+
+#: ../../source/helpers/form_helper.rst:102
+msgid "The above examples would create a form similar to this::"
+msgstr "위의 예제들은 다음과 유사한 폼을 생성합니다::"
+
+#: ../../source/helpers/form_helper.rst:106
+msgid ""
+"If :ref:`CSRF <cross-site-request-forgery>` filter is turned on "
+"``form_open()`` will generate CSRF field at the beginning of the form. You "
+"can specify ID of this field by passing **csrf_id** as an element of the "
+"``$attributes`` array:"
+msgstr ""
+":ref:`CSRF <cross-site-request-forgery>` 필터가 활성화되어 있으면 ``form_open()``\\ 은 "
+"폼의 시작 부분에 CSRF 필드를 생성합니다. ``$attributes`` 배열의 요소로 **csrf_id**\\ 를 전달하여 이 필드의"
+" ID를 지정할 수 있습니다:"
+
+#: ../../source/helpers/form_helper.rst:110
+msgid "will return::"
+msgstr "반환값::"
+
+#: ../../source/helpers/form_helper.rst:115
+msgid ""
+"To use auto-generation of CSRF field, you need to turn on the :ref:`CSRF "
+"filter <enable-csrf-protection>` in **app/Config/Filters.php** file. In most"
+" cases the form page is requested using the GET method. Normally, CSRF "
+"protection is required for POST/PUT/DELETE/PATCH requests, but even for GET "
+"requests, CSRF filters must be enabled for pages that display Forms."
+msgstr ""
+"CSRF 필드 자동 생성을 사용하려면 **app/Config/Filters.php** 파일에서 :ref:`CSRF 필터 <enable-"
+"csrf-protection>`\\ 를 활성화해야 합니다. 대부분의 경우 폼 페이지는 GET 메서드로 요청됩니다. 일반적으로 CSRF "
+"보호는 POST/PUT/DELETE/PATCH 요청에 필요하지만, GET 요청의 경우에도 폼을 표시하는 페이지에는 CSRF 필터가 "
+"활성화되어 있어야 합니다."
+
+#: ../../source/helpers/form_helper.rst:119
+msgid ""
+"If you enable CSRF filter with :ref:`filters-globals`, it will be active for"
+" all request types. But if you enable CSRF filter with ``public array "
+"$methods = ['POST' => ['csrf']];``, the hidden CSRF field will not be added "
+"in GET requests."
+msgstr ""
+":ref:`filters-globals`\\ 로 CSRF 필터를 활성화하면 모든 요청 유형에 대해 활성화됩니다. 하지만 ``public "
+"array $methods = ['POST' => ['csrf']];``\\ 로 CSRF 필터를 활성화하면 GET 요청에는 숨김 CSRF"
+" 필드가 추가되지 않습니다."
+
+#: ../../source/helpers/form_helper.rst:122
+msgid "**Adding Hidden Input Fields**"
+msgstr "**숨김 입력 필드 추가하기**"
+
+#: ../../source/helpers/form_helper.rst:124
+msgid ""
+"Hidden fields can be added by passing an associative array to the third "
+"parameter, like this:"
+msgstr "다음과 같이 세 번째 매개변수에 연관 배열을 전달하여 숨김 필드를 추가할 수 있습니다:"
+
+#: ../../source/helpers/form_helper.rst:129
+msgid "You can skip the second parameter by passing any false value to it."
+msgstr "두 번째 매개변수에 false 값을 전달하여 건너뛸 수 있습니다."
+
+#: ../../source/helpers/form_helper.rst:131
+msgid "The above example would create a form similar to this::"
+msgstr "위의 예제는 다음과 유사한 폼을 생성합니다::"
+
+#: ../../source/helpers/form_helper.rst:142
+msgid "An HTML multipart form opening tag"
+msgstr "HTML 멀티파트 폼 여는 태그"
+
+#: ../../source/helpers/form_helper.rst:145
+msgid ""
+"This function is identical to :php:func:`form_open()` above, except that it "
+"adds a *multipart* attribute, which is necessary if you would like to use "
+"the form to upload files with."
+msgstr ""
+"이 함수는 위의 :php:func:`form_open()`\\ 과 동일하지만, 파일 업로드에 필요한 *multipart* 속성을 "
+"추가한다는 점이 다릅니다."
+
+#: ../../source/helpers/form_helper.rst:151
+#: ../../source/helpers/form_helper.rst:248
+#: ../../source/helpers/form_helper.rst:282
+#: ../../source/helpers/form_helper.rst:454
+#: ../../source/helpers/form_helper.rst:475
+#: ../../source/helpers/form_helper.rst:498
+#: ../../source/helpers/form_helper.rst:517
+#: ../../source/helpers/form_helper.rst:579
+msgid "Field name"
+msgstr "필드 이름"
+
+#: ../../source/helpers/form_helper.rst:152
+#: ../../source/helpers/form_helper.rst:176
+#: ../../source/helpers/form_helper.rst:212
+#: ../../source/helpers/form_helper.rst:223
+#: ../../source/helpers/form_helper.rst:235
+#: ../../source/helpers/form_helper.rst:331
+#: ../../source/helpers/form_helper.rst:362
+#: ../../source/helpers/form_helper.rst:457
+msgid "Field value"
+msgstr "필드 값"
+
+#: ../../source/helpers/form_helper.rst:153
+msgid "An HTML hidden input element"
+msgstr "HTML 숨김 입력 요소"
+
+#: ../../source/helpers/form_helper.rst:156
+msgid ""
+"Lets you generate hidden input fields. You can either submit a name/value "
+"string to create one field:"
+msgstr "숨김 입력 필드를 생성할 수 있습니다. 이름/값 문자열을 전달하여 하나의 필드를 생성할 수 있습니다:"
+
+#: ../../source/helpers/form_helper.rst:161
+msgid "... or you can submit an associative array to create multiple fields:"
+msgstr "... 또는 연관 배열을 전달하여 여러 필드를 생성할 수 있습니다:"
+
+#: ../../source/helpers/form_helper.rst:165
+msgid "You can also pass an associative array to the value field:"
+msgstr "값 필드에 연관 배열을 전달할 수도 있습니다:"
+
+#: ../../source/helpers/form_helper.rst:169
+msgid "If you want to create hidden input fields with extra attributes:"
+msgstr "추가 속성이 있는 숨김 입력 필드를 생성하려면 다음과 같이 하십시오:"
+
+#: ../../source/helpers/form_helper.rst:175
+#: ../../source/helpers/form_helper.rst:211
+#: ../../source/helpers/form_helper.rst:222
+#: ../../source/helpers/form_helper.rst:234
+#: ../../source/helpers/form_helper.rst:330
+#: ../../source/helpers/form_helper.rst:361
+msgid "Field attributes data"
+msgstr "필드 속성 데이터"
+
+#: ../../source/helpers/form_helper.rst:177
+#: ../../source/helpers/form_helper.rst:213
+#: ../../source/helpers/form_helper.rst:224
+#: ../../source/helpers/form_helper.rst:236
+#: ../../source/helpers/form_helper.rst:251
+#: ../../source/helpers/form_helper.rst:285
+#: ../../source/helpers/form_helper.rst:333
+#: ../../source/helpers/form_helper.rst:364
+#: ../../source/helpers/form_helper.rst:394
+#: ../../source/helpers/form_helper.rst:410
+#: ../../source/helpers/form_helper.rst:421
+msgid ""
+"Extra attributes to be added to the tag either as an array or a literal "
+"string"
+msgstr "배열 또는 리터럴 문자열 형태로 태그에 추가할 추가 속성"
+
+#: ../../source/helpers/form_helper.rst:178
+msgid "The type of input field. i.e., 'text', 'email', 'number', etc."
+msgstr "입력 필드의 타입. 예: 'text', 'email', 'number' 등"
+
+#: ../../source/helpers/form_helper.rst:179
+msgid "An HTML text input element"
+msgstr "HTML 텍스트 입력 요소"
+
+#: ../../source/helpers/form_helper.rst:182
+msgid ""
+"Lets you generate a standard text input field. You can minimally pass the "
+"field name and value in the first and second parameter:"
+msgstr "표준 텍스트 입력 필드를 생성할 수 있습니다. 첫 번째와 두 번째 매개변수에 최소한 필드 이름과 값을 전달할 수 있습니다:"
+
+#: ../../source/helpers/form_helper.rst:187
+#: ../../source/helpers/form_helper.rst:430
+msgid ""
+"Or you can pass an associative array containing any data you wish your form "
+"to contain:"
+msgstr "또는 폼에 포함하려는 데이터가 담긴 연관 배열을 전달할 수도 있습니다:"
+
+#: ../../source/helpers/form_helper.rst:192
+msgid ""
+"If you want boolean attributes, pass the boolean value (``true``/``false``)."
+" In this case the boolean value does not matter:"
+msgstr ""
+"불리언 속성을 원하면 불리언 값(``true``/``false``)을 전달합니다. 이 경우 불리언 값 자체는 중요하지 않습니다:"
+
+#: ../../source/helpers/form_helper.rst:196
+#: ../../source/helpers/form_helper.rst:435
+msgid ""
+"If you would like your form to contain some additional data, like "
+"JavaScript, you can pass it as a string in the third parameter:"
+msgstr "JavaScript 등 추가 데이터를 폼에 포함하려면 세 번째 매개변수에 문자열로 전달할 수 있습니다:"
+
+#: ../../source/helpers/form_helper.rst:201
+#: ../../source/helpers/form_helper.rst:272
+#: ../../source/helpers/form_helper.rst:355
+msgid "Or you can pass it as an array:"
+msgstr "또는 배열로 전달할 수도 있습니다:"
+
+#: ../../source/helpers/form_helper.rst:205
+msgid ""
+"To support the expanded range of HTML5 input fields, you can pass an input "
+"type in as the fourth parameter:"
+msgstr "확장된 HTML5 입력 필드 범위를 지원하려면 네 번째 매개변수로 입력 타입을 전달할 수 있습니다:"
+
+#: ../../source/helpers/form_helper.rst:214
+msgid "An HTML password input element"
+msgstr "HTML 비밀번호 입력 요소"
+
+#: ../../source/helpers/form_helper.rst:217
+msgid ""
+"This function is identical in all respects to the :php:func:`form_input()` "
+"function above except that it uses the \"password\" input type."
+msgstr ""
+"이 함수는 \"password\" 입력 타입을 사용한다는 점을 제외하면 위의 :php:func:`form_input()` 함수와 모든 "
+"면에서 동일합니다."
+
+#: ../../source/helpers/form_helper.rst:225
+msgid "An HTML file upload input element"
+msgstr "HTML 파일 업로드 입력 요소"
+
+#: ../../source/helpers/form_helper.rst:228
+msgid ""
+"This function is identical in all respects to the :php:func:`form_input()` "
+"function above except that it uses the \"file\" input type, allowing it to "
+"be used to upload files."
+msgstr ""
+"이 함수는 \"file\" 입력 타입을 사용하여 파일 업로드에 활용할 수 있다는 점을 제외하면 위의 "
+":php:func:`form_input()` 함수와 모든 면에서 동일합니다."
+
+#: ../../source/helpers/form_helper.rst:237
+msgid "An HTML textarea element"
+msgstr "HTML textarea 요소"
+
+#: ../../source/helpers/form_helper.rst:240
+msgid ""
+"This function is identical in all respects to the :php:func:`form_input()` "
+"function above except that it generates a \"textarea\" type."
+msgstr ""
+"이 함수는 \"textarea\" 타입을 생성한다는 점을 제외하면 위의 :php:func:`form_input()` 함수와 모든 면에서 "
+"동일합니다."
+
+#: ../../source/helpers/form_helper.rst:243
+msgid ""
+"Instead of the *maxlength* and *size* attributes in the above example, you "
+"will instead specify *rows* and *cols*."
+msgstr "위 예제의 *maxlength*\\ 와 *size* 속성 대신 *rows*\\ 와 *cols*\\ 를 지정합니다."
+
+#: ../../source/helpers/form_helper.rst:249
+#: ../../source/helpers/form_helper.rst:283
+msgid "An associative array of options to be listed"
+msgstr "나열할 옵션의 연관 배열"
+
+#: ../../source/helpers/form_helper.rst:250
+#: ../../source/helpers/form_helper.rst:284
+msgid "List of fields to mark with the *selected* attribute"
+msgstr "*selected* 속성으로 표시할 필드 목록"
+
+#: ../../source/helpers/form_helper.rst:252
+msgid "An HTML select (dropdown) element"
+msgstr "HTML select(드롭다운) 요소"
+
+#: ../../source/helpers/form_helper.rst:255
+msgid ""
+"Lets you create a standard drop-down field. The first parameter will contain"
+" the name of the field, the second parameter will contain an associative "
+"array of options, and the third parameter will contain the value you wish to"
+" be selected. You can also pass an array of multiple items through the third"
+" parameter, and the helper will create a multiple select for you."
+msgstr ""
+"표준 드롭다운 필드를 생성할 수 있습니다. 첫 번째 매개변수에는 필드 이름, 두 번째 매개변수에는 옵션의 연관 배열, 세 번째 "
+"매개변수에는 선택하려는 값이 들어갑니다. 세 번째 매개변수에 여러 항목의 배열을 전달하면 헬퍼가 다중 선택을 생성해 줍니다."
+
+#: ../../source/helpers/form_helper.rst:266
+msgid ""
+"If you would like the opening <select> to contain additional data, like an "
+"id attribute or JavaScript, you can pass it as a string in the fourth "
+"parameter:"
+msgstr ""
+"여는 <select> 태그에 id 속성이나 JavaScript 등 추가 데이터를 포함하려면 네 번째 매개변수에 문자열로 전달할 수 "
+"있습니다:"
+
+#: ../../source/helpers/form_helper.rst:276
+msgid ""
+"If the array passed as ``$options`` is a multidimensional array, then "
+"``form_dropdown()`` will produce an <optgroup> with the array key as the "
+"label."
+msgstr ""
+"``$options``\\ 로 전달된 배열이 다차원 배열이면 ``form_dropdown()``\\ 은 배열 키를 레이블로 하는 "
+"<optgroup>을 생성합니다."
+
+#: ../../source/helpers/form_helper.rst:286
+msgid "An HTML select element with multiple attribute"
+msgstr "multiple 속성이 있는 HTML select 요소"
+
+#: ../../source/helpers/form_helper.rst:289
+msgid ""
+"Lets you create a standard multiselect field. The first parameter will "
+"contain the name of the field, the second parameter will contain an "
+"associative array of options, and the third parameter will contain the value"
+" or values you wish to be selected."
+msgstr ""
+"표준 다중 선택 필드를 생성할 수 있습니다. 첫 번째 매개변수에는 필드 이름, 두 번째 매개변수에는 옵션의 연관 배열, 세 번째 "
+"매개변수에는 선택하려는 값이나 값들이 들어갑니다."
+
+#: ../../source/helpers/form_helper.rst:294
+msgid ""
+"The parameter usage is identical to using :php:func:`form_dropdown()` above,"
+" except of course that the name of the field will need to use POST array "
+"syntax, e.g., foo[]."
+msgstr ""
+"매개변수 사용법은 위의 :php:func:`form_dropdown()`\\ 과 동일하지만, 필드 이름은 POST 배열 구문(예: "
+"foo[])을 사용해야 합니다."
+
+#: ../../source/helpers/form_helper.rst:300
+msgid "Text to put in the <legend> tag"
+msgstr "<legend> 태그에 넣을 텍스트"
+
+#: ../../source/helpers/form_helper.rst:301
+msgid "Attributes to be set on the <fieldset> tag"
+msgstr "<fieldset> 태그에 설정할 속성"
+
+#: ../../source/helpers/form_helper.rst:302
+msgid "An HTML fieldset opening tag"
+msgstr "HTML fieldset 여는 태그"
+
+#: ../../source/helpers/form_helper.rst:305
+msgid "Lets you generate fieldset/legend fields."
+msgstr "fieldset/legend 필드를 생성할 수 있습니다."
+
+#: ../../source/helpers/form_helper.rst:311
+msgid ""
+"Similar to other functions, you can submit an associative array in the "
+"second parameter if you prefer to set additional attributes:"
+msgstr "다른 함수들과 마찬가지로 추가 속성을 설정하려면 두 번째 매개변수에 연관 배열을 전달할 수 있습니다:"
+
+#: ../../source/helpers/form_helper.rst:318
+#: ../../source/helpers/form_helper.rst:442
+msgid "Anything to append after the closing tag, *as is*"
+msgstr "닫는 태그 아래에 *그대로* 추가할 내용"
+
+#: ../../source/helpers/form_helper.rst:319
+msgid "An HTML fieldset closing tag"
+msgstr "HTML fieldset 닫는 태그"
+
+#: ../../source/helpers/form_helper.rst:322
+msgid ""
+"Produces a closing ``</fieldset>`` tag. The only advantage to using this "
+"function is it permits you to pass data to it which will be added below the "
+"tag. For example"
+msgstr ""
+"닫는 ``</fieldset>`` 태그를 생성합니다. 이 함수를 사용하는 유일한 이점은 태그 아래에 추가될 데이터를 전달할 수 있다는 "
+"것입니다. 예:"
+
+#: ../../source/helpers/form_helper.rst:332
+msgid "Whether to mark the checkbox as being *checked*"
+msgstr "체크박스를 *checked* 상태로 표시할지 여부"
+
+#: ../../source/helpers/form_helper.rst:334
+msgid "An HTML checkbox input element"
+msgstr "HTML 체크박스 입력 요소"
+
+#: ../../source/helpers/form_helper.rst:337
+msgid "Lets you generate a checkbox field. Simple example:"
+msgstr "체크박스 필드를 생성할 수 있습니다. 간단한 예제:"
+
+#: ../../source/helpers/form_helper.rst:341
+msgid ""
+"The third parameter contains a boolean true/false to determine whether the "
+"box should be checked or not."
+msgstr "세 번째 매개변수는 체크박스의 선택 여부를 결정하는 불리언 true/false 값을 포함합니다."
+
+#: ../../source/helpers/form_helper.rst:344
+msgid ""
+"Similar to the other form functions in this helper, you can also pass an "
+"array of attributes to the function:"
+msgstr "이 헬퍼의 다른 폼 함수들과 마찬가지로 함수에 속성 배열을 전달할 수도 있습니다:"
+
+#: ../../source/helpers/form_helper.rst:349
+msgid ""
+"Also as with other functions, if you would like the tag to contain "
+"additional data like JavaScript, you can pass it as a string in the fourth "
+"parameter:"
+msgstr ""
+"다른 함수들과 마찬가지로 JavaScript 등 추가 데이터를 태그에 포함하려면 네 번째 매개변수에 문자열로 전달할 수 있습니다:"
+
+#: ../../source/helpers/form_helper.rst:363
+msgid "Whether to mark the radio button as being *checked*"
+msgstr "라디오 버튼을 *checked* 상태로 표시할지 여부"
+
+#: ../../source/helpers/form_helper.rst:365
+msgid "An HTML radio input element"
+msgstr "HTML 라디오 입력 요소"
+
+#: ../../source/helpers/form_helper.rst:368
+msgid ""
+"This function is identical in all respects to the "
+":php:func:`form_checkbox()` function above except that it uses the \"radio\""
+" input type."
+msgstr ""
+"이 함수는 \"radio\" 입력 타입을 사용한다는 점을 제외하면 위의 :php:func:`form_checkbox()` 함수와 모든 "
+"면에서 동일합니다."
+
+#: ../../source/helpers/form_helper.rst:373
+msgid "Text to put in the <label> tag"
+msgstr "<label> 태그에 넣을 텍스트"
+
+#: ../../source/helpers/form_helper.rst:374
+msgid "ID of the form element that we're making a label for"
+msgstr "레이블을 만들 폼 요소의 ID"
+
+#: ../../source/helpers/form_helper.rst:375
+#: ../../source/helpers/html_helper.rst:132
+#: ../../source/helpers/html_helper.rst:205
+#: ../../source/helpers/html_helper.rst:216
+#: ../../source/helpers/html_helper.rst:267
+#: ../../source/helpers/html_helper.rst:280
+#: ../../source/helpers/html_helper.rst:294
+#: ../../source/helpers/html_helper.rst:320
+#: ../../source/helpers/url_helper.rst:187
+#: ../../source/helpers/url_helper.rst:225
+#: ../../source/helpers/url_helper.rst:265
+#: ../../source/helpers/url_helper.rst:284
+msgid "HTML attributes"
+msgstr "HTML 속성"
+
+#: ../../source/helpers/form_helper.rst:376
+msgid "An HTML label element"
+msgstr "HTML label 요소"
+
+#: ../../source/helpers/form_helper.rst:379
+msgid "Lets you generate a <label>. Simple example:"
+msgstr "<label>을 생성할 수 있습니다. 간단한 예제:"
+
+#: ../../source/helpers/form_helper.rst:383
+msgid ""
+"Similar to other functions, you can submit an associative array in the third"
+" parameter if you prefer to set additional attributes."
+msgstr "다른 함수들과 마찬가지로 추가 속성을 설정하려면 세 번째 매개변수에 연관 배열을 전달할 수 있습니다."
+
+#: ../../source/helpers/form_helper.rst:392
+#: ../../source/helpers/form_helper.rst:408
+#: ../../source/helpers/form_helper.rst:419
+msgid "Button name"
+msgstr "버튼 이름"
+
+#: ../../source/helpers/form_helper.rst:393
+#: ../../source/helpers/form_helper.rst:409
+msgid "Button value"
+msgstr "버튼 값"
+
+#: ../../source/helpers/form_helper.rst:395
+msgid "An HTML input submit element"
+msgstr "HTML input submit 요소"
+
+#: ../../source/helpers/form_helper.rst:398
+msgid "Lets you generate a standard submit button. Simple example:"
+msgstr "표준 제출 버튼을 생성할 수 있습니다. 간단한 예제:"
+
+#: ../../source/helpers/form_helper.rst:402
+msgid ""
+"Similar to other functions, you can submit an associative array in the first"
+" parameter if you prefer to set your own attributes. The third parameter "
+"lets you add extra data to your form, like JavaScript."
+msgstr ""
+"다른 함수들과 마찬가지로 직접 속성을 설정하려면 첫 번째 매개변수에 연관 배열을 전달할 수 있습니다. 세 번째 매개변수를 사용하면 "
+"JavaScript 등 추가 데이터를 폼에 추가할 수 있습니다."
+
+#: ../../source/helpers/form_helper.rst:411
+msgid "An HTML input reset element"
+msgstr "HTML input reset 요소"
+
+#: ../../source/helpers/form_helper.rst:414
+msgid ""
+"Lets you generate a standard reset button. Use is identical to "
+":func:`form_submit()`."
+msgstr "표준 리셋 버튼을 생성할 수 있습니다. 사용법은 :func:`form_submit()`\\ 과 동일합니다."
+
+#: ../../source/helpers/form_helper.rst:420
+msgid "Button label"
+msgstr "버튼 레이블"
+
+#: ../../source/helpers/form_helper.rst:422
+msgid "An HTML button element"
+msgstr "HTML button 요소"
+
+#: ../../source/helpers/form_helper.rst:425
+msgid ""
+"Lets you generate a standard button element. You can minimally pass the "
+"button name and content in the first and second parameter:"
+msgstr "표준 버튼 요소를 생성할 수 있습니다. 첫 번째와 두 번째 매개변수에 최소한 버튼 이름과 내용을 전달할 수 있습니다:"
+
+#: ../../source/helpers/form_helper.rst:443
+msgid "An HTML form closing tag"
+msgstr "HTML 폼 닫는 태그"
+
+#: ../../source/helpers/form_helper.rst:446
+msgid ""
+"Produces a closing ``</form>`` tag. The only advantage to using this "
+"function is it permits you to pass data to it which will be added below the "
+"tag. For example:"
+msgstr ""
+"닫는 ``</form>`` 태그를 생성합니다. 이 함수를 사용하는 유일한 이점은 태그 아래에 추가될 데이터를 전달할 수 있다는 것입니다."
+" 예:"
+
+#: ../../source/helpers/form_helper.rst:455
+msgid "Default value"
+msgstr "기본값"
+
+#: ../../source/helpers/form_helper.rst:456
+msgid "Whether to turn off HTML escaping of the value"
+msgstr "값의 HTML 이스케이프 처리를 끌지 여부"
+
+#: ../../source/helpers/form_helper.rst:460
+msgid ""
+"Permits you to set the value of an input or textarea element. You must "
+"supply the field name via the first parameter of the function. The second "
+"(optional) parameter allows you to set a default value for the field value. "
+"The third (optional) parameter allows you to turn off HTML escaping of the "
+"value, in case you need to use this function in combination with i.e., "
+":php:func:`form_input()` and avoid double-escaping."
+msgstr ""
+"입력 또는 textarea 요소의 값을 설정할 수 있습니다. 함수의 첫 번째 매개변수로 필드 이름을 제공해야 합니다. 두 번째(선택적) "
+"매개변수를 사용하면 필드의 기본값을 설정할 수 있습니다. 세 번째(선택적) 매개변수를 사용하면 "
+":php:func:`form_input()` 등과 함께 이 함수를 사용할 때 이중 이스케이프를 피하기 위해 값의 HTML 이스케이프 "
+"처리를 끌 수 있습니다."
+
+#: ../../source/helpers/form_helper.rst:467
+#: ../../source/helpers/form_helper.rst:488
+#: ../../source/helpers/form_helper.rst:510
+#: ../../source/helpers/form_helper.rst:526
+#: ../../source/helpers/form_helper.rst:548
+#: ../../source/helpers/form_helper.rst:571
+#: ../../source/helpers/form_helper.rst:595
+msgid "Example::"
+msgstr "예제::"
+
+#: ../../source/helpers/form_helper.rst:471
+msgid "The above form will show \"0\" when loaded for the first time."
+msgstr "위의 폼은 처음 로드될 때 \"0\"을 표시합니다."
+
+#: ../../source/helpers/form_helper.rst:476
+#: ../../source/helpers/form_helper.rst:499
+#: ../../source/helpers/form_helper.rst:518
+msgid "Value to check for"
+msgstr "확인할 값"
+
+#: ../../source/helpers/form_helper.rst:477
+#: ../../source/helpers/form_helper.rst:500
+#: ../../source/helpers/form_helper.rst:519
+msgid "Whether the value is also a default one"
+msgstr "해당 값이 기본값인지 여부"
+
+#: ../../source/helpers/form_helper.rst:478
+msgid "'selected' attribute or an empty string"
+msgstr "'selected' 속성 또는 빈 문자열"
+
+#: ../../source/helpers/form_helper.rst:481
+msgid ""
+"If you use a <select> menu, this function permits you to display the menu "
+"item that was selected."
+msgstr "<select> 메뉴를 사용하는 경우 이 함수를 통해 선택된 메뉴 항목을 표시할 수 있습니다."
+
+#: ../../source/helpers/form_helper.rst:484
+msgid ""
+"The first parameter must contain the name of the select menu, the second "
+"parameter must contain the value of each item, and the third (optional) "
+"parameter lets you set an item as the default (use boolean true/false)."
+msgstr ""
+"첫 번째 매개변수에는 select 메뉴의 이름, 두 번째 매개변수에는 각 항목의 값이 들어가야 하며, 세 번째(선택적) 매개변수를 "
+"사용하면 항목을 기본값으로 설정할 수 있습니다(불리언 true/false 사용)."
+
+#: ../../source/helpers/form_helper.rst:501
+#: ../../source/helpers/form_helper.rst:520
+msgid "'checked' attribute or an empty string"
+msgstr "'checked' 속성 또는 빈 문자열"
+
+#: ../../source/helpers/form_helper.rst:504
+msgid "Permits you to display a checkbox in the state it was submitted."
+msgstr "제출된 상태 그대로 체크박스를 표시할 수 있습니다."
+
+#: ../../source/helpers/form_helper.rst:506
+msgid ""
+"The first parameter must contain the name of the checkbox, the second "
+"parameter must contain its value, and the third (optional) parameter lets "
+"you set an item as the default (use boolean true/false)."
+msgstr ""
+"첫 번째 매개변수에는 체크박스의 이름, 두 번째 매개변수에는 체크박스의 값이 들어가야 하며, 세 번째(선택적) 매개변수를 사용하면 항목을"
+" 기본값으로 설정할 수 있습니다(불리언 true/false 사용)."
+
+#: ../../source/helpers/form_helper.rst:523
+msgid ""
+"Permits you to display radio buttons in the state they were submitted. This "
+"function is identical to the :php:func:`set_checkbox()` function above."
+msgstr ""
+"제출된 상태 그대로 라디오 버튼을 표시할 수 있습니다. 이 함수는 위의 :php:func:`set_checkbox()` 함수와 "
+"동일합니다."
+
+#: ../../source/helpers/form_helper.rst:535
+msgid "The validation errors"
+msgstr "유효성 검사 오류"
+
+#: ../../source/helpers/form_helper.rst:538
+msgid ""
+"Returns the validation errors. First, this function checks the validation "
+"errors that are stored in the session. To store the errors in the session, "
+"you need to use ``withInput()`` with :php:func:`redirect() <redirect>`."
+msgstr ""
+"유효성 검사 오류를 반환합니다. 이 함수는 먼저 세션에 저장된 유효성 검사 오류를 확인합니다. 오류를 세션에 저장하려면 "
+":php:func:`redirect() <redirect>`\\ 와 함께 ``withInput()``\\ 을 사용해야 합니다."
+
+#: ../../source/helpers/form_helper.rst:541
+msgid ""
+"The returned array is the same as ``Validation::getErrors()``. See "
+":ref:`Validation <validation-redirect-and-validation-errors>` for details."
+msgstr ""
+"반환된 배열은 ``Validation::getErrors()``\\ 와 동일합니다. 자세한 내용은 :ref:`Validation "
+"<validation-redirect-and-validation-errors>`\\ 을 참고하십시오."
+
+#: ../../source/helpers/form_helper.rst:544
+#: ../../source/helpers/form_helper.rst:567
+#: ../../source/helpers/form_helper.rst:591
+msgid ""
+"This function does not work with :ref:`in-model-validation`. If you want to "
+"get the validation errors in model validation, see :ref:`model-getting-"
+"validation-errors`."
+msgstr ""
+"이 함수는 :ref:`in-model-validation`\\ 과 함께 동작하지 않습니다. 모델 유효성 검사에서 오류를 가져오려면 "
+":ref:`model-getting-validation-errors`\\ 를 참고하십시오."
+
+#: ../../source/helpers/form_helper.rst:556
+#: ../../source/helpers/form_helper.rst:580
+msgid "Validation template name"
+msgstr "유효성 검사 템플릿 이름"
+
+#: ../../source/helpers/form_helper.rst:557
+msgid "Rendered HTML of the validation errors"
+msgstr "렌더링된 유효성 검사 오류의 HTML"
+
+#: ../../source/helpers/form_helper.rst:560
+msgid "Returns the rendered HTML of the validation errors."
+msgstr "렌더링된 유효성 검사 오류의 HTML을 반환합니다."
+
+#: ../../source/helpers/form_helper.rst:562
+#: ../../source/helpers/form_helper.rst:586
+msgid ""
+"The parameter ``$template`` is a Validation template name. See "
+":ref:`validation-customizing-error-display` for details."
+msgstr ""
+"``$template`` 매개변수는 유효성 검사 템플릿 이름입니다. 자세한 내용은 :ref:`validation-customizing-"
+"error-display`\\ 를 참고하십시오."
+
+#: ../../source/helpers/form_helper.rst:565
+#: ../../source/helpers/form_helper.rst:589
+msgid "This function uses :php:func:`validation_errors()` internally."
+msgstr "이 함수는 내부적으로 :php:func:`validation_errors()`\\ 를 사용합니다."
+
+#: ../../source/helpers/form_helper.rst:581
+msgid "Rendered HTML of the validation error"
+msgstr "렌더링된 유효성 검사 오류의 HTML"
+
+#: ../../source/helpers/form_helper.rst:584
+msgid "Returns a single error for the specified field in formatted HTML."
+msgstr "지정된 필드에 대한 단일 오류를 형식화된 HTML로 반환합니다."
+
+#: ../../source/helpers/html_helper.rst:3
+msgid "HTML Helper"
+msgstr "HTML 헬퍼(HTML Helper)"
+
+#: ../../source/helpers/html_helper.rst:5
+msgid ""
+"The HTML Helper file contains functions that assist in working with HTML."
+msgstr "HTML 헬퍼 파일은 HTML 작업을 돕는 함수들을 포함하고 있습니다."
+
+#: ../../source/helpers/html_helper.rst:14
+msgid ""
+"Since ``v4.3.0``, void HTML elements (e.g. ``<img>``) in ``html_helper`` "
+"functions have been changed to be HTML5-compatible by default and if you "
+"need to be compatible with XHTML, you must set the ``$html5`` property in "
+"**app/Config/DocTypes.php** to ``false``."
+msgstr ""
+"``v4.3.0``\\ 부터 ``html_helper`` 함수의 void HTML 요소(예: ``<img>``)는 기본적으로 HTML5 "
+"호환으로 변경되었습니다. XHTML과 호환되어야 하는 경우 **app/Config/DocTypes.php**\\ 의 ``$html5`` "
+"속성을 ``false``\\ 로 설정해야 합니다."
+
+#: ../../source/helpers/html_helper.rst:30
+msgid "Image source URI, or array of attributes and values"
+msgstr "이미지 소스 URI, 또는 속성과 값의 배열"
+
+#: ../../source/helpers/html_helper.rst:31
+msgid "Should ``Config\\App::$indexPage`` be added to the source path"
+msgstr "소스 경로에 ``Config\\App::$indexPage``\\ 를 추가할지 여부"
+
+#: ../../source/helpers/html_helper.rst:32
+msgid "Additional HTML attributes"
+msgstr "추가 HTML 속성"
+
+#: ../../source/helpers/html_helper.rst:33
+msgid "An HTML image element"
+msgstr "HTML 이미지 요소"
+
+#: ../../source/helpers/html_helper.rst:36
+msgid ""
+"Lets you create HTML ``<img>`` elements. The first parameter contains the "
+"image source. Example:"
+msgstr "HTML ``<img>`` 요소를 생성할 수 있습니다. 첫 번째 매개변수에는 이미지 소스가 들어갑니다. 예제:"
+
+#: ../../source/helpers/html_helper.rst:41
+msgid ""
+"There is an optional second parameter, a true/false value, that specifies if"
+" the *src* should have ``Config\\App::$indexPage`` added to the address it "
+"creates. Presumably, this would be if you were using a media controller:"
+msgstr ""
+"선택적 두 번째 매개변수로 true/false 값을 사용하여 생성되는 주소에 ``Config\\App::$indexPage``\\ 를 "
+"*src*\\ 에 추가할지 여부를 지정할 수 있습니다. 미디어 컨트롤러를 사용하는 경우에 해당합니다:"
+
+#: ../../source/helpers/html_helper.rst:47
+msgid ""
+"Additionally, an associative array can be passed as the first parameter, for"
+" complete control over all attributes and values. If an *alt* attribute is "
+"not provided, CodeIgniter will generate one with empty string."
+msgstr ""
+"또한 첫 번째 매개변수로 연관 배열을 전달하면 모든 속성과 값을 완전히 제어할 수 있습니다. *alt* 속성이 제공되지 않으면 "
+"CodeIgniter가 빈 문자열로 자동 생성합니다."
+
+#: ../../source/helpers/html_helper.rst:57
+msgid "Path to the image file"
+msgstr "이미지 파일 경로"
+
+#: ../../source/helpers/html_helper.rst:58
+msgid "MIME type to use, or null to guess"
+msgstr "사용할 MIME 타입, 또는 자동 감지를 위한 null"
+
+#: ../../source/helpers/html_helper.rst:59
+msgid "base64 encoded binary image string"
+msgstr "base64 인코딩된 바이너리 이미지 문자열"
+
+#: ../../source/helpers/html_helper.rst:62
+msgid ""
+"Generates a src-ready string from an image using the \"data:\" protocol. "
+"Example:"
+msgstr "\"data:\" 프로토콜을 사용하여 이미지로부터 src에 사용 가능한 문자열을 생성합니다. 예제:"
+
+#: ../../source/helpers/html_helper.rst:67
+msgid ""
+"There is an optional second parameter to specify the MIME type, otherwise "
+"the function will use your Mimes config to guess:"
+msgstr "선택적 두 번째 매개변수로 MIME 타입을 지정할 수 있으며, 지정하지 않으면 함수가 Mimes 설정을 사용하여 추측합니다:"
+
+#: ../../source/helpers/html_helper.rst:72
+msgid ""
+"Note that ``$path`` must exist and be a readable image format supported by "
+"the ``data:`` protocol. This function is not recommended for very large "
+"files, but it provides a convenient way of serving images from your app that"
+" are not web-accessible (e.g., in **public/**)."
+msgstr ""
+"``$path``\\ 는 존재해야 하며 ``data:`` 프로토콜이 지원하는 읽기 가능한 이미지 형식이어야 합니다. 이 함수는 매우 큰 "
+"파일에는 권장되지 않지만, 웹에서 직접 접근할 수 없는 이미지(예: **public/** 외부)를 앱에서 제공하는 편리한 방법을 "
+"제공합니다."
+
+#: ../../source/helpers/html_helper.rst:78
+msgid "The source of the link file"
+msgstr "링크 파일의 소스"
+
+#: ../../source/helpers/html_helper.rst:79
+msgid "Relation type"
+msgstr "관계 타입"
+
+#: ../../source/helpers/html_helper.rst:80
+msgid "Type of the related document"
+msgstr "연결된 문서의 타입"
+
+#: ../../source/helpers/html_helper.rst:81
+msgid "Link title"
+msgstr "링크 제목"
+
+#: ../../source/helpers/html_helper.rst:82
+msgid "Media type"
+msgstr "미디어 타입"
+
+#: ../../source/helpers/html_helper.rst:83
+msgid "Should indexPage be added to the link path"
+msgstr "링크 경로에 indexPage를 추가할지 여부"
+
+#: ../../source/helpers/html_helper.rst:84
+msgid "Hreflang type"
+msgstr "Hreflang 타입"
+
+#: ../../source/helpers/html_helper.rst:85
+msgid "An HTML link element"
+msgstr "HTML link 요소"
+
+#: ../../source/helpers/html_helper.rst:88
+msgid ""
+"Lets you create HTML ``<link>`` elements. This is useful for stylesheet "
+"links, as well as other links. The parameters are *href*, with optional "
+"*rel*, *type*, *title*, *media*, *indexPage* and *hreflang*."
+msgstr ""
+"HTML ``<link>`` 요소를 생성할 수 있습니다. 스타일시트 링크 및 다른 링크에 유용합니다. 매개변수는 *href*\\ 이며, "
+"선택적으로 *rel*, *type*, *title*, *media*, *indexPage*, *hreflang*\\ 을 사용할 수 "
+"있습니다."
+
+#: ../../source/helpers/html_helper.rst:92
+msgid ""
+"*indexPage* is a boolean value that specifies if the *href* should have the "
+"page specified by ``$config['indexPage']`` added to the address it creates."
+msgstr ""
+"*indexPage*\\ 는 생성되는 주소에 ``$config['indexPage']``\\ 로 지정된 페이지를 *href*\\ 에 "
+"추가할지 여부를 지정하는 불리언 값입니다."
+
+#: ../../source/helpers/html_helper.rst:99
+msgid "Further examples:"
+msgstr "추가 예제:"
+
+#: ../../source/helpers/html_helper.rst:103
+msgid ""
+"Alternately, an associative array can be passed to the ``link_tag()`` "
+"function for complete control over all attributes and values:"
+msgstr "또는 연관 배열을 ``link_tag()`` 함수에 전달하면 모든 속성과 값을 완전히 제어할 수 있습니다:"
+
+#: ../../source/helpers/html_helper.rst:110
+msgid ""
+"The source name or URL of a JavaScript file, or an associative array "
+"specifying the attributes"
+msgstr "JavaScript 파일의 소스 이름 또는 URL, 또는 속성을 지정하는 연관 배열"
+
+#: ../../source/helpers/html_helper.rst:111
+msgid "Whether to treat ``$src`` as a routed URI string"
+msgstr "``$src``\\ 를 라우팅된 URI 문자열로 처리할지 여부"
+
+#: ../../source/helpers/html_helper.rst:112
+msgid "An HTML script element"
+msgstr "HTML script 요소"
+
+#: ../../source/helpers/html_helper.rst:115
+msgid ""
+"Lets you create HTML ``<script>`` elements. The parameters are *src* and "
+"optional *indexPage*."
+msgstr "HTML ``<script>`` 요소를 생성할 수 있습니다. 매개변수는 *src*\\ 와 선택적 *indexPage*\\ 입니다."
+
+#: ../../source/helpers/html_helper.rst:117
+msgid ""
+"*indexPage* is a boolean value that specifies if the *src* should have the "
+"page specified by ``$config['indexPage']`` added to the address it creates."
+msgstr ""
+"*indexPage*\\ 는 생성되는 주소에 ``$config['indexPage']``\\ 로 지정된 페이지를 *src*\\ 에 "
+"추가할지 여부를 지정하는 불리언 값입니다."
+
+#: ../../source/helpers/html_helper.rst:124
+msgid ""
+"Alternately, an associative array can be passed to the ``script_tag()`` "
+"function for complete control over all attributes and values:"
+msgstr "또는 연관 배열을 ``script_tag()`` 함수에 전달하면 모든 속성과 값을 완전히 제어할 수 있습니다:"
+
+#: ../../source/helpers/html_helper.rst:131
+#: ../../source/helpers/html_helper.rst:204
+msgid "List entries"
+msgstr "목록 항목"
+
+#: ../../source/helpers/html_helper.rst:133
+msgid "An HTML unordered list element"
+msgstr "HTML 비순서 목록 요소"
+
+#: ../../source/helpers/html_helper.rst:136
+msgid ""
+"Permits you to generate an unordered HTML list from a simple or multi-"
+"dimensional array. Example:"
+msgstr "단순 배열 또는 다차원 배열로부터 비순서 HTML 목록을 생성할 수 있습니다. 예제:"
+
+#: ../../source/helpers/html_helper.rst:141
+#: ../../source/helpers/html_helper.rst:156
+#: ../../source/helpers/html_helper.rst:227
+#: ../../source/helpers/html_helper.rst:305
+msgid "The above code will produce this:"
+msgstr "위의 코드는 다음을 생성합니다:"
+
+#: ../../source/helpers/html_helper.rst:152
+msgid "Here is a more complex example, using a multi-dimensional array:"
+msgstr "다차원 배열을 사용하는 더 복잡한 예제입니다:"
+
+#: ../../source/helpers/html_helper.rst:206
+msgid "An HTML ordered list element"
+msgstr "HTML 순서 목록 요소"
+
+#: ../../source/helpers/html_helper.rst:209
+msgid ""
+"Identical to :php:func:`ul()`, only it produces ``<ol>`` element for ordered"
+" lists instead of ``<ul>``."
+msgstr ":php:func:`ul()`\\ 과 동일하지만, ``<ul>`` 대신 순서 목록을 위한 ``<ol>`` 요소를 생성합니다."
+
+#: ../../source/helpers/html_helper.rst:214
+#: ../../source/helpers/html_helper.rst:253
+msgid ""
+"Either a source string or an array of sources. See :php:func:`source()` "
+"function"
+msgstr "소스 문자열 또는 소스 배열. :php:func:`source()` 함수 참고"
+
+#: ../../source/helpers/html_helper.rst:215
+msgid ""
+"The message to display if the video element is not supported by the browser"
+msgstr "브라우저에서 video 요소를 지원하지 않을 때 표시할 메시지"
+
+#: ../../source/helpers/html_helper.rst:217
+#: ../../source/helpers/html_helper.rst:256
+msgid ""
+"Use the track function inside an array. See :php:func:`track()` function"
+msgstr "배열 안에서 track 함수를 사용합니다. :php:func:`track()` 함수 참고"
+
+#: ../../source/helpers/html_helper.rst:218
+msgid "Should indexPage be added to the video source path"
+msgstr "비디오 소스 경로에 indexPage를 추가할지 여부"
+
+#: ../../source/helpers/html_helper.rst:219
+msgid "An HTML video element"
+msgstr "HTML video 요소"
+
+#: ../../source/helpers/html_helper.rst:222
+msgid ""
+"Permits you to generate an HTML video element from a source string or an "
+"array of sources. Example:"
+msgstr "소스 문자열 또는 소스 배열로부터 HTML video 요소를 생성할 수 있습니다. 예제:"
+
+#: ../../source/helpers/html_helper.rst:254
+msgid ""
+"The message to display if the audio element is not supported by the browser"
+msgstr "브라우저에서 audio 요소를 지원하지 않을 때 표시할 메시지"
+
+#: ../../source/helpers/html_helper.rst:257
+msgid "Should indexPage be added to the audio source path"
+msgstr "오디오 소스 경로에 indexPage를 추가할지 여부"
+
+#: ../../source/helpers/html_helper.rst:258
+msgid "An HTML audio element"
+msgstr "HTML audio 요소"
+
+#: ../../source/helpers/html_helper.rst:261
+msgid ""
+"Identical to :php:func:`video()`, only it produces ``<audio>`` element "
+"instead of ``<video>``."
+msgstr ":php:func:`video()`\\ 와 동일하지만, ``<video>`` 대신 ``<audio>`` 요소를 생성합니다."
+
+#: ../../source/helpers/html_helper.rst:265
+msgid "The path of the media resource"
+msgstr "미디어 리소스의 경로"
+
+#: ../../source/helpers/html_helper.rst:266
+msgid "The MIME-type of the resource with optional codecs parameters"
+msgstr "선택적 코덱 매개변수가 포함된 리소스의 MIME 타입"
+
+#: ../../source/helpers/html_helper.rst:268
+msgid "An HTML source element"
+msgstr "HTML source 요소"
+
+#: ../../source/helpers/html_helper.rst:271
+msgid ""
+"Lets you create HTML ``<source>`` elements. The first parameter contains the"
+" path of the resource. Example:"
+msgstr "HTML ``<source>`` 요소를 생성할 수 있습니다. 첫 번째 매개변수에는 리소스의 경로가 들어갑니다. 예제:"
+
+#: ../../source/helpers/html_helper.rst:278
+msgid "The path of the resource to embed"
+msgstr "삽입할 리소스의 경로"
+
+#: ../../source/helpers/html_helper.rst:279
+msgid "MIME-type"
+msgstr "MIME 타입"
+
+#: ../../source/helpers/html_helper.rst:281
+msgid "Should indexPage be added to the source path"
+msgstr "소스 경로에 indexPage를 추가할지 여부"
+
+#: ../../source/helpers/html_helper.rst:282
+msgid "An HTML embed element"
+msgstr "HTML embed 요소"
+
+#: ../../source/helpers/html_helper.rst:285
+msgid ""
+"Lets you create HTML ``<embed>`` elements. The first parameter contains the "
+"embed source. Example:"
+msgstr "HTML ``<embed>`` 요소를 생성할 수 있습니다. 첫 번째 매개변수에는 삽입 소스가 들어갑니다. 예제:"
+
+#: ../../source/helpers/html_helper.rst:292
+msgid "A resource URL"
+msgstr "리소스 URL"
+
+#: ../../source/helpers/html_helper.rst:293
+msgid "Content-type of the resource"
+msgstr "리소스의 Content-type"
+
+#: ../../source/helpers/html_helper.rst:295
+msgid "Should indexPage be added to the resource URL"
+msgstr "리소스 URL에 indexPage를 추가할지 여부"
+
+#: ../../source/helpers/html_helper.rst:296
+msgid ""
+"Use the param function inside an array. See :php:func:`param()` function"
+msgstr "배열 안에서 param 함수를 사용합니다. :php:func:`param()` 함수 참고"
+
+#: ../../source/helpers/html_helper.rst:297
+msgid "An HTML object element"
+msgstr "HTML object 요소"
+
+#: ../../source/helpers/html_helper.rst:300
+msgid ""
+"Lets you create HTML ``<object>`` elements. The first parameter contains the"
+" object data. Example:"
+msgstr "HTML ``<object>`` 요소를 생성할 수 있습니다. 첫 번째 매개변수에는 object 데이터가 들어갑니다. 예제:"
+
+#: ../../source/helpers/html_helper.rst:318
+msgid "The name of the parameter"
+msgstr "매개변수의 이름"
+
+#: ../../source/helpers/html_helper.rst:319
+msgid "The value of the parameter"
+msgstr "매개변수의 값"
+
+#: ../../source/helpers/html_helper.rst:321
+msgid "An HTML param element"
+msgstr "HTML param 요소"
+
+#: ../../source/helpers/html_helper.rst:324
+msgid ""
+"Lets you create HTML ``<param>`` elements. The first parameter contains the "
+"param source. Example:"
+msgstr "HTML ``<param>`` 요소를 생성할 수 있습니다. 첫 번째 매개변수에는 param 소스가 들어갑니다. 예제:"
+
+#: ../../source/helpers/html_helper.rst:331
+msgid "The path of the track (.vtt file)"
+msgstr "트랙 파일(.vtt 파일)의 경로"
+
+#: ../../source/helpers/html_helper.rst:332
+msgid "The kind of timed track"
+msgstr "시간 기반 트랙의 종류"
+
+#: ../../source/helpers/html_helper.rst:333
+msgid "The language of the timed track"
+msgstr "시간 기반 트랙의 언어"
+
+#: ../../source/helpers/html_helper.rst:334
+msgid "A user-readable title for the timed track"
+msgstr "시간 기반 트랙의 사용자가 읽을 수 있는 제목"
+
+#: ../../source/helpers/html_helper.rst:335
+msgid "An HTML track element"
+msgstr "HTML track 요소"
+
+#: ../../source/helpers/html_helper.rst:338
+msgid ""
+"Generates a track element to specify timed tracks. The tracks are formatted "
+"in WebVTT format. Example:"
+msgstr "시간 기반 트랙을 지정하는 track 요소를 생성합니다. 트랙은 WebVTT 형식으로 작성됩니다. 예제:"
+
+#: ../../source/helpers/html_helper.rst:345
+msgid "Doctype name"
+msgstr "Doctype 이름"
+
+#: ../../source/helpers/html_helper.rst:346
+msgid "An HTML DocType declaration"
+msgstr "HTML DocType 선언"
+
+#: ../../source/helpers/html_helper.rst:349
+msgid ""
+"Helps you generate document type declarations (DTD's). HTML 5 is used by "
+"default, but many doctypes are available."
+msgstr ""
+"문서 타입 선언(DTD)을 생성하는 데 도움을 줍니다. 기본적으로 HTML 5가 사용되지만, 다양한 doctype을 사용할 수 있습니다."
+
+#: ../../source/helpers/html_helper.rst:356
+msgid ""
+"The following is a list of the pre-defined doctypes. These are pulled from "
+"**app/Config/DocTypes.php**, or they could be overridden in your **.env** "
+"configuration."
+msgstr ""
+"다음은 미리 정의된 doctype 목록입니다. 이 값들은 **app/Config/DocTypes.php**\\ 에서 가져오거나 "
+"**.env** 설정에서 재정의할 수 있습니다."
+
+#: ../../source/helpers/html_helper.rst:360
+msgid "Document type"
+msgstr "문서 타입"
+
+#: ../../source/helpers/html_helper.rst:360
+msgid "$type parameter"
+msgstr "$type 매개변수"
+
+#: ../../source/helpers/html_helper.rst:360
+msgid "Result"
+msgstr "결과"
+
+#: ../../source/helpers/html_helper.rst:362
+msgid "XHTML 1.1"
+msgstr "XHTML 1.1"
+
+#: ../../source/helpers/html_helper.rst:362
+msgid "xhtml11"
+msgstr "xhtml11"
+
+#: ../../source/helpers/html_helper.rst:362
+msgid ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" "
+"\"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">"
+msgstr ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" "
+"\"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">"
+
+#: ../../source/helpers/html_helper.rst:363
+msgid "XHTML 1.0 Strict"
+msgstr "XHTML 1.0 Strict"
+
+#: ../../source/helpers/html_helper.rst:363
+msgid "xhtml1-strict"
+msgstr "xhtml1-strict"
+
+#: ../../source/helpers/html_helper.rst:363
+msgid ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" "
+"\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">"
+msgstr ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" "
+"\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">"
+
+#: ../../source/helpers/html_helper.rst:364
+msgid "XHTML 1.0 Transitional"
+msgstr "XHTML 1.0 Transitional"
+
+#: ../../source/helpers/html_helper.rst:364
+msgid "xhtml1-trans"
+msgstr "xhtml1-trans"
+
+#: ../../source/helpers/html_helper.rst:364
+msgid ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" "
+"\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">"
+msgstr ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" "
+"\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">"
+
+#: ../../source/helpers/html_helper.rst:365
+msgid "XHTML 1.0 Frameset"
+msgstr "XHTML 1.0 Frameset"
+
+#: ../../source/helpers/html_helper.rst:365
+msgid "xhtml1-frame"
+msgstr "xhtml1-frame"
+
+#: ../../source/helpers/html_helper.rst:365
+msgid ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Frameset//EN\" "
+"\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd\">"
+msgstr ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Frameset//EN\" "
+"\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd\">"
+
+#: ../../source/helpers/html_helper.rst:366
+msgid "XHTML Basic 1.1"
+msgstr "XHTML Basic 1.1"
+
+#: ../../source/helpers/html_helper.rst:366
+msgid "xhtml-basic11"
+msgstr "xhtml-basic11"
+
+#: ../../source/helpers/html_helper.rst:366
+msgid ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML Basic 1.1//EN\" "
+"\"http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd\">"
+msgstr ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML Basic 1.1//EN\" "
+"\"http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd\">"
+
+#: ../../source/helpers/html_helper.rst:367
+msgid "HTML 5"
+msgstr "HTML 5"
+
+#: ../../source/helpers/html_helper.rst:367
+msgid "html5"
+msgstr "html5"
+
+#: ../../source/helpers/html_helper.rst:367
+msgid "<!DOCTYPE html>"
+msgstr "<!DOCTYPE html>"
+
+#: ../../source/helpers/html_helper.rst:368
+msgid "HTML 4 Strict"
+msgstr "HTML 4 Strict"
+
+#: ../../source/helpers/html_helper.rst:368
+msgid "html4-strict"
+msgstr "html4-strict"
+
+#: ../../source/helpers/html_helper.rst:368
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" "
+"\"http://www.w3.org/TR/html4/strict.dtd\">"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" "
+"\"http://www.w3.org/TR/html4/strict.dtd\">"
+
+#: ../../source/helpers/html_helper.rst:369
+msgid "HTML 4 Transitional"
+msgstr "HTML 4 Transitional"
+
+#: ../../source/helpers/html_helper.rst:369
+msgid "html4-trans"
+msgstr "html4-trans"
+
+#: ../../source/helpers/html_helper.rst:369
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" "
+"\"http://www.w3.org/TR/html4/loose.dtd\">"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" "
+"\"http://www.w3.org/TR/html4/loose.dtd\">"
+
+#: ../../source/helpers/html_helper.rst:370
+msgid "HTML 4 Frameset"
+msgstr "HTML 4 Frameset"
+
+#: ../../source/helpers/html_helper.rst:370
+msgid "html4-frame"
+msgstr "html4-frame"
+
+#: ../../source/helpers/html_helper.rst:370
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Frameset//EN\" "
+"\"http://www.w3.org/TR/html4/frameset.dtd\">"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Frameset//EN\" "
+"\"http://www.w3.org/TR/html4/frameset.dtd\">"
+
+#: ../../source/helpers/html_helper.rst:371
+msgid "MathML 1.01"
+msgstr "MathML 1.01"
+
+#: ../../source/helpers/html_helper.rst:371
+msgid "mathml1"
+msgstr "mathml1"
+
+#: ../../source/helpers/html_helper.rst:371
+msgid "<!DOCTYPE math SYSTEM \"http://www.w3.org/Math/DTD/mathml1/mathml.dtd\">"
+msgstr "<!DOCTYPE math SYSTEM \"http://www.w3.org/Math/DTD/mathml1/mathml.dtd\">"
+
+#: ../../source/helpers/html_helper.rst:372
+msgid "MathML 2.0"
+msgstr "MathML 2.0"
+
+#: ../../source/helpers/html_helper.rst:372
+msgid "mathml2"
+msgstr "mathml2"
+
+#: ../../source/helpers/html_helper.rst:372
+msgid ""
+"<!DOCTYPE math PUBLIC \"-//W3C//DTD MathML 2.0//EN\" "
+"\"http://www.w3.org/Math/DTD/mathml2/mathml2.dtd\">"
+msgstr ""
+"<!DOCTYPE math PUBLIC \"-//W3C//DTD MathML 2.0//EN\" "
+"\"http://www.w3.org/Math/DTD/mathml2/mathml2.dtd\">"
+
+#: ../../source/helpers/html_helper.rst:373
+msgid "SVG 1.0"
+msgstr "SVG 1.0"
+
+#: ../../source/helpers/html_helper.rst:373
+msgid "svg10"
+msgstr "svg10"
+
+#: ../../source/helpers/html_helper.rst:373
+msgid ""
+"<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.0//EN\" "
+"\"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd\">"
+msgstr ""
+"<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.0//EN\" "
+"\"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd\">"
+
+#: ../../source/helpers/html_helper.rst:374
+msgid "SVG 1.1 Full"
+msgstr "SVG 1.1 Full"
+
+#: ../../source/helpers/html_helper.rst:374
+msgid "svg11"
+msgstr "svg11"
+
+#: ../../source/helpers/html_helper.rst:374
+msgid ""
+"<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" "
+"\"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">"
+msgstr ""
+"<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" "
+"\"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">"
+
+#: ../../source/helpers/html_helper.rst:375
+msgid "SVG 1.1 Basic"
+msgstr "SVG 1.1 Basic"
+
+#: ../../source/helpers/html_helper.rst:375
+msgid "svg11-basic"
+msgstr "svg11-basic"
+
+#: ../../source/helpers/html_helper.rst:375
+msgid ""
+"<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1 Basic//EN\" "
+"\"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-basic.dtd\">"
+msgstr ""
+"<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1 Basic//EN\" "
+"\"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-basic.dtd\">"
+
+#: ../../source/helpers/html_helper.rst:376
+msgid "SVG 1.1 Tiny"
+msgstr "SVG 1.1 Tiny"
+
+#: ../../source/helpers/html_helper.rst:376
+msgid "svg11-tiny"
+msgstr "svg11-tiny"
+
+#: ../../source/helpers/html_helper.rst:376
+msgid ""
+"<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1 Tiny//EN\" "
+"\"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd\">"
+msgstr ""
+"<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1 Tiny//EN\" "
+"\"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd\">"
+
+#: ../../source/helpers/html_helper.rst:377
+msgid "XHTML+MathML+SVG (XHTML host)"
+msgstr "XHTML+MathML+SVG (XHTML host)"
+
+#: ../../source/helpers/html_helper.rst:377
+msgid "xhtml-math-svg-xh"
+msgstr "xhtml-math-svg-xh"
+
+#: ../../source/helpers/html_helper.rst:377
+msgid ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG "
+"1.1//EN\" \"http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd\">"
+msgstr ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG "
+"1.1//EN\" \"http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd\">"
+
+#: ../../source/helpers/html_helper.rst:378
+msgid "XHTML+MathML+SVG (SVG host)"
+msgstr "XHTML+MathML+SVG (SVG host)"
+
+#: ../../source/helpers/html_helper.rst:378
+msgid "xhtml-math-svg-sh"
+msgstr "xhtml-math-svg-sh"
+
+#: ../../source/helpers/html_helper.rst:378
+msgid ""
+"<!DOCTYPE svg:svg PUBLIC \"-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG "
+"1.1//EN\" \"http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd\">"
+msgstr ""
+"<!DOCTYPE svg:svg PUBLIC \"-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG "
+"1.1//EN\" \"http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd\">"
+
+#: ../../source/helpers/html_helper.rst:379
+msgid "XHTML+RDFa 1.0"
+msgstr "XHTML+RDFa 1.0"
+
+#: ../../source/helpers/html_helper.rst:379
+msgid "xhtml-rdfa-1"
+msgstr "xhtml-rdfa-1"
+
+#: ../../source/helpers/html_helper.rst:379
+msgid ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.0//EN\" "
+"\"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd\">"
+msgstr ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.0//EN\" "
+"\"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd\">"
+
+#: ../../source/helpers/html_helper.rst:380
+msgid "XHTML+RDFa 1.1"
+msgstr "XHTML+RDFa 1.1"
+
+#: ../../source/helpers/html_helper.rst:380
+msgid "xhtml-rdfa-2"
+msgstr "xhtml-rdfa-2"
+
+#: ../../source/helpers/html_helper.rst:380
+msgid ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.1//EN\" "
+"\"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd\">"
+msgstr ""
+"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML+RDFa 1.1//EN\" "
+"\"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd\">"
+
+#: ../../source/helpers/index.rst:3
+msgid "Helpers"
+msgstr "헬퍼(Helpers)"
+
+#: ../../source/helpers/index.rst:5
+msgid ""
+"Helpers are collections of useful procedural functions. See also "
+":doc:`../general/helpers`."
+msgstr "헬퍼는 유용한 절차적 함수들의 모음입니다. :doc:`../general/helpers`\\ 도 참조하십시오."
+
+#: ../../source/helpers/inflector_helper.rst:3
+msgid "Inflector Helper"
+msgstr "인플렉터(Inflector) 헬퍼"
+
+#: ../../source/helpers/inflector_helper.rst:5
+msgid ""
+"The Inflector Helper file contains functions that permit you to change "
+"**English** words to plural, singular, camel case, etc."
+msgstr ""
+"인플렉터(Inflector) 헬퍼 파일에는 **영어** 단어를 복수형, 단수형, 카멜 케이스 등으로 변환할 수 있는 함수가 포함되어 "
+"있습니다."
+
+#: ../../source/helpers/inflector_helper.rst:26
+#: ../../source/helpers/inflector_helper.rst:36
+#: ../../source/helpers/inflector_helper.rst:47
+#: ../../source/helpers/inflector_helper.rst:57
+#: ../../source/helpers/inflector_helper.rst:68
+#: ../../source/helpers/inflector_helper.rst:79
+#: ../../source/helpers/inflector_helper.rst:90
+#: ../../source/helpers/inflector_helper.rst:101
+#: ../../source/helpers/inflector_helper.rst:119
+#: ../../source/helpers/inflector_helper.rst:129
+#: ../../source/helpers/security_helper.rst:37
+#: ../../source/helpers/security_helper.rst:50
+#: ../../source/helpers/text_helper.rst:56
+#: ../../source/helpers/text_helper.rst:91
+#: ../../source/helpers/text_helper.rst:142
+#: ../../source/helpers/text_helper.rst:153
+#: ../../source/helpers/text_helper.rst:163
+#: ../../source/helpers/text_helper.rst:178
+#: ../../source/helpers/text_helper.rst:200
+#: ../../source/helpers/text_helper.rst:218
+#: ../../source/helpers/text_helper.rst:228
+#: ../../source/helpers/text_helper.rst:246
+#: ../../source/helpers/text_helper.rst:264
+#: ../../source/helpers/text_helper.rst:277
+#: ../../source/helpers/text_helper.rst:309
+#: ../../source/helpers/text_helper.rst:323
+#: ../../source/helpers/url_helper.rst:294
+#: ../../source/helpers/url_helper.rst:327
+#: ../../source/helpers/url_helper.rst:355
+msgid "Input string"
+msgstr "입력 문자열"
+
+#: ../../source/helpers/inflector_helper.rst:27
+msgid "A singular word"
+msgstr "단수형 단어"
+
+#: ../../source/helpers/inflector_helper.rst:30
+msgid "Changes a plural word to singular. Example:"
+msgstr "복수형 단어를 단수형으로 변환합니다. 예:"
+
+#: ../../source/helpers/inflector_helper.rst:37
+msgid "A plural word"
+msgstr "복수형 단어"
+
+#: ../../source/helpers/inflector_helper.rst:40
+msgid "Changes a singular word to plural. Example:"
+msgstr "단수형 단어를 복수형으로 변환합니다. 예:"
+
+#: ../../source/helpers/inflector_helper.rst:46
+msgid "Number of items"
+msgstr "항목 수"
+
+#: ../../source/helpers/inflector_helper.rst:48
+msgid "A singular or plural phrase"
+msgstr "단수 또는 복수 구문"
+
+#: ../../source/helpers/inflector_helper.rst:51
+msgid "Changes a word and its count to a phrase. Example:"
+msgstr "단어와 개수를 구문으로 변환합니다. 예:"
+
+#: ../../source/helpers/inflector_helper.rst:58
+msgid "Camel case string"
+msgstr "카멜 케이스 문자열"
+
+#: ../../source/helpers/inflector_helper.rst:61
+msgid ""
+"Changes a string of words separated by spaces or underscores to camel case. "
+"Example:"
+msgstr "공백이나 밑줄로 구분된 단어 문자열을 카멜 케이스로 변환합니다. 예:"
+
+#: ../../source/helpers/inflector_helper.rst:69
+msgid "Pascal case string"
+msgstr "파스칼 케이스 문자열"
+
+#: ../../source/helpers/inflector_helper.rst:72
+msgid ""
+"Changes a string of words separated by spaces or underscores to Pascal case,"
+" which is camel case with the first letter capitalized. Example:"
+msgstr ""
+"공백이나 밑줄로 구분된 단어 문자열을 파스칼 케이스로 변환합니다. 파스칼 케이스는 첫 글자가 대문자인 카멜 케이스입니다. 예:"
+
+#: ../../source/helpers/inflector_helper.rst:80
+msgid "String containing underscores instead of spaces"
+msgstr "공백 대신 밑줄이 포함된 문자열"
+
+#: ../../source/helpers/inflector_helper.rst:83
+msgid ""
+"Takes multiple words separated by spaces and underscores them. Example:"
+msgstr "공백으로 구분된 여러 단어를 받아 밑줄로 연결합니다. 예:"
+
+#: ../../source/helpers/inflector_helper.rst:91
+msgid "String containing underscores between words"
+msgstr "단어 사이에 밑줄이 포함된 문자열"
+
+#: ../../source/helpers/inflector_helper.rst:94
+msgid ""
+"Takes multiple words in camelCase or PascalCase and converts them to "
+"snake_case. Example:"
+msgstr "camelCase 또는 PascalCase의 여러 단어를 snake_case로 변환합니다. 예:"
+
+#: ../../source/helpers/inflector_helper.rst:102
+msgid "Input separator"
+msgstr "입력 구분자"
+
+#: ../../source/helpers/inflector_helper.rst:103
+msgid "Humanized string"
+msgstr "사람이 읽기 쉬운 문자열"
+
+#: ../../source/helpers/inflector_helper.rst:106
+msgid ""
+"Takes multiple words separated by underscores and adds spaces between them. "
+"Each word is capitalized."
+msgstr "밑줄로 구분된 여러 단어를 받아 단어 사이에 공백을 추가합니다. 각 단어의 첫 글자는 대문자로 변환됩니다."
+
+#: ../../source/helpers/inflector_helper.rst:113
+msgid "To use dashes instead of underscores:"
+msgstr "밑줄 대신 대시를 사용하려면:"
+
+#: ../../source/helpers/inflector_helper.rst:120
+msgid "true if the word is countable or false if not"
+msgstr "단어를 셀 수 있으면 true, 그렇지 않으면 false"
+
+#: ../../source/helpers/inflector_helper.rst:123
+msgid "Checks if the given word has a plural version. Example:"
+msgstr "주어진 단어에 복수형이 있는지 확인합니다. 예:"
+
+#: ../../source/helpers/inflector_helper.rst:130
+msgid "Dasherized string"
+msgstr "대시로 연결된 문자열"
+
+#: ../../source/helpers/inflector_helper.rst:133
+msgid "Replaces underscores with dashes in the string. Example:"
+msgstr "문자열에서 밑줄을 대시로 교체합니다. 예:"
+
+#: ../../source/helpers/inflector_helper.rst:139
+msgid "The integer to determine the suffix"
+msgstr "접미사를 결정할 정수"
+
+#: ../../source/helpers/inflector_helper.rst:140
+msgid "Ordinal suffix"
+msgstr "서수 접미사"
+
+#: ../../source/helpers/inflector_helper.rst:143
+msgid ""
+"Returns the suffix that should be added to a number to denote the position "
+"such as 1st, 2nd, 3rd, 4th. Example:"
+msgstr "1st, 2nd, 3rd, 4th와 같이 순서를 나타내기 위해 숫자에 추가해야 하는 접미사를 반환합니다. 예:"
+
+#: ../../source/helpers/inflector_helper.rst:151
+msgid "The integer to ordinalize"
+msgstr "서수화할 정수"
+
+#: ../../source/helpers/inflector_helper.rst:152
+msgid "Ordinalized integer"
+msgstr "서수화된 정수"
+
+#: ../../source/helpers/inflector_helper.rst:155
+msgid ""
+"Turns a number into an ordinal string used to denote the position such as "
+"1st, 2nd, 3rd, 4th. Example:"
+msgstr "1st, 2nd, 3rd, 4th와 같이 순서를 나타내는 서수 문자열로 숫자를 변환합니다. 예:"
+
+#: ../../source/helpers/number_helper.rst:3
+msgid "Number Helper"
+msgstr "숫자(Number) 헬퍼"
+
+#: ../../source/helpers/number_helper.rst:5
+msgid ""
+"The Number Helper file contains functions that help you work with numeric "
+"data in a locale-aware manner."
+msgstr ""
+"숫자(Number) 헬퍼 파일에는 로케일을 인식하는 방식으로 숫자 데이터를 처리하는 데 도움이 되는 함수가 포함되어 있습니다."
+
+#: ../../source/helpers/number_helper.rst:20
+msgid "When Things Go Wrong"
+msgstr "오류가 발생하는 경우"
+
+#: ../../source/helpers/number_helper.rst:22
+msgid ""
+"If PHP's internationalization and localization logic cannot handle a value "
+"provided, for the given locale and options, then a "
+"``BadFunctionCallException()`` will be thrown."
+msgstr ""
+"PHP의 국제화 및 지역화 로직이 주어진 로케일 및 옵션에 대해 제공된 값을 처리할 수 없는 경우 "
+"``BadFunctionCallException()``\\ 이 발생합니다."
+
+#: ../../source/helpers/number_helper.rst:33
+msgid "Number of bytes"
+msgstr "바이트 수"
+
+#: ../../source/helpers/number_helper.rst:34
+#: ../../source/helpers/number_helper.rst:60
+msgid "Floating point precision"
+msgstr "부동 소수점 정밀도"
+
+#: ../../source/helpers/number_helper.rst:35
+msgid ""
+"Formatted data size string, or false if the provided value is not numeric"
+msgstr "형식화된 데이터 크기 문자열, 제공된 값이 숫자가 아닌 경우 false"
+
+#: ../../source/helpers/number_helper.rst:38
+msgid ""
+"Formats numbers as bytes, based on size, and adds the appropriate suffix. "
+"Examples:"
+msgstr "크기에 따라 숫자를 바이트 형식으로 지정하고 적절한 접미사를 추가합니다. 예:"
+
+#: ../../source/helpers/number_helper.rst:43
+#: ../../source/helpers/number_helper.rst:70
+msgid ""
+"An optional second parameter allows you to set the precision of the result:"
+msgstr "선택적 두 번째 매개변수를 사용하면 결과의 정밀도를 설정할 수 있습니다:"
+
+#: ../../source/helpers/number_helper.rst:47
+msgid ""
+"An optional third parameter allows you to specify the locale that should be "
+"used when generating the number, and can affect the formatting. If no locale"
+" is specified, the Request will be analyzed and an appropriate locale taken "
+"from the headers, or the app-default:"
+msgstr ""
+"선택적 세 번째 매개변수를 사용하면 숫자를 생성할 때 사용할 로케일을 지정할 수 있으며, 이는 형식에 영향을 줄 수 있습니다. 로케일을 "
+"지정하지 않으면 요청을 분석하여 헤더에서 적절한 로케일을 가져오거나 앱 기본값을 사용합니다:"
+
+#: ../../source/helpers/number_helper.rst:54
+msgid ""
+"The text generated by this function is found in the following language file:"
+" *language/<your_lang>/Number.php*"
+msgstr ""
+"이 함수에서 생성된 텍스트는 다음 언어 파일에서 확인할 수 있습니다: *language/<your_lang>/Number.php*"
+
+#: ../../source/helpers/number_helper.rst:59
+#: ../../source/helpers/number_helper.rst:80
+msgid "Number to format"
+msgstr "형식화할 숫자"
+
+#: ../../source/helpers/number_helper.rst:61
+#: ../../source/helpers/number_helper.rst:82
+msgid "The locale to use for formatting"
+msgstr "형식화에 사용할 로케일"
+
+#: ../../source/helpers/number_helper.rst:62
+msgid ""
+"A human-readable version of the string, or false if the provided value is "
+"not numeric"
+msgstr "사람이 읽기 쉬운 형태의 문자열, 제공된 값이 숫자가 아닌 경우 false"
+
+#: ../../source/helpers/number_helper.rst:65
+msgid ""
+"Converts a number into a human-readable version, like **123.4 trillion** for"
+" numbers up to the quadrillions. Examples:"
+msgstr ""
+"숫자를 사람이 읽기 쉬운 형태로 변환합니다. 예를 들어 1000조까지의 숫자에 대해 **123.4 trillion**\\ 과 같이 "
+"표시합니다. 예:"
+
+#: ../../source/helpers/number_helper.rst:74
+msgid "An optional third parameter allows the locale to be specified:"
+msgstr "선택적 세 번째 매개변수를 사용하면 로케일을 지정할 수 있습니다:"
+
+#: ../../source/helpers/number_helper.rst:81
+msgid "The currency type, i.e., USD, EUR, etc"
+msgstr "통화 유형(예: USD, EUR 등)"
+
+#: ../../source/helpers/number_helper.rst:83
+msgid "Number of fraction digits after decimal point"
+msgstr "소수점 이하 자릿수"
+
+#: ../../source/helpers/number_helper.rst:84
+msgid "The number as the appropriate currency for the locale"
+msgstr "로케일에 맞는 통화 형식으로 표현된 숫자"
+
+#: ../../source/helpers/number_helper.rst:87
+msgid "Converts a number in common currency formats, like USD, EUR, GBP, etc:"
+msgstr "USD, EUR, GBP 등 일반 통화 형식으로 숫자를 변환합니다:"
+
+#: ../../source/helpers/number_helper.rst:91
+msgid "If you don't specify a locale, the Request locale is used."
+msgstr "로케일을 지정하지 않으면 요청 로케일이 사용됩니다."
+
+#: ../../source/helpers/number_helper.rst:95
+msgid "The number want to convert"
+msgstr "변환할 숫자"
+
+#: ../../source/helpers/number_helper.rst:96
+msgid "The roman number converted from given parameter"
+msgstr "주어진 매개변수에서 변환된 로마 숫자"
+
+#: ../../source/helpers/number_helper.rst:99
+msgid "Converts a number into roman:"
+msgstr "숫자를 로마 숫자로 변환합니다:"
+
+#: ../../source/helpers/number_helper.rst:103
+msgid ""
+"This function only handles numbers in the range 1 through 3999. It will "
+"return ``null`` for any value outside that range."
+msgstr "이 함수는 1부터 3999 범위의 숫자만 처리합니다. 해당 범위를 벗어나는 값에 대해서는 ``null``\\ 을 반환합니다."
+
+#: ../../source/helpers/security_helper.rst:3
+msgid "Security Helper"
+msgstr "보안(Security) 헬퍼"
+
+#: ../../source/helpers/security_helper.rst:5
+msgid "The Security Helper file contains security related functions."
+msgstr "보안(Security) 헬퍼 파일에는 보안과 관련된 함수가 포함되어 있습니다."
+
+#: ../../source/helpers/security_helper.rst:25
+msgid "Filename"
+msgstr "파일명"
+
+#: ../../source/helpers/security_helper.rst:26
+msgid "Whether the relative path is acceptable (available since v4.6.2)"
+msgstr "상대 경로 허용 여부 (v4.6.2부터 사용 가능)"
+
+#: ../../source/helpers/security_helper.rst:27
+msgid "Sanitized file name"
+msgstr "정제된 파일명"
+
+#: ../../source/helpers/security_helper.rst:30
+msgid "Provides protection against directory traversal."
+msgstr "디렉터리 탐색 공격으로부터 보호합니다."
+
+#: ../../source/helpers/security_helper.rst:32
+msgid ""
+"For more info, please see the :doc:`Security Library "
+"<../libraries/security>` documentation."
+msgstr ""
+"자세한 내용은 :doc:`보안(Security) 라이브러리 <../libraries/security>`\\ 의 문서를 참조하십시오."
+
+#: ../../source/helpers/security_helper.rst:38
+msgid "The input string with no image tags"
+msgstr "이미지 태그가 제거된 입력 문자열"
+
+#: ../../source/helpers/security_helper.rst:41
+msgid ""
+"This is a security function that will strip image tags from a string. It "
+"leaves the image URL as plain text."
+msgstr "이 함수는 문자열에서 이미지 태그를 제거하는 보안 함수입니다. 이미지 URL은 일반 텍스트로 남겨둡니다."
+
+#: ../../source/helpers/security_helper.rst:51
+msgid "Safely formatted string"
+msgstr "안전하게 형식화된 문자열"
+
+#: ../../source/helpers/security_helper.rst:54
+msgid "This is a security function that converts PHP tags to entities."
+msgstr "이 함수는 PHP 태그를 엔티티로 변환하는 보안 함수입니다."
+
+#: ../../source/helpers/test_helper.rst:3
+msgid "Test Helper"
+msgstr "테스트(Test) 헬퍼"
+
+#: ../../source/helpers/test_helper.rst:5
+msgid ""
+"The Test Helper file contains functions that assist in testing your project."
+msgstr "테스트(Test) 헬퍼 파일에는 프로젝트 테스트를 지원하는 함수가 포함되어 있습니다."
+
+#: ../../source/helpers/test_helper.rst:25
+msgid "Instance or name of the model to use with Fabricator"
+msgstr "Fabricator와 함께 사용할 모델의 인스턴스 또는 이름"
+
+#: ../../source/helpers/test_helper.rst:26
+msgid "Overriding data to pass to Fabricator::setOverrides()"
+msgstr "Fabricator::setOverrides()에 전달할 재정의 데이터"
+
+#: ../../source/helpers/test_helper.rst:27
+msgid "A random fake item created and added to the database by Fabricator"
+msgstr "Fabricator가 생성하여 데이터베이스에 추가한 임의의 가짜 항목"
+
+#: ../../source/helpers/test_helper.rst:30
+msgid ""
+"Uses ``CodeIgniter\\Test\\Fabricator`` to create a random item and add it to"
+" the database."
+msgstr "``CodeIgniter\\Test\\Fabricator``\\ 를 사용하여 임의의 항목을 생성하고 데이터베이스에 추가합니다."
+
+#: ../../source/helpers/test_helper.rst:32
+#: ../../source/helpers/text_helper.rst:50
+#: ../../source/helpers/text_helper.rst:66
+msgid "Usage example:"
+msgstr "사용 예:"
+
+#: ../../source/helpers/text_helper.rst:3
+msgid "Text Helper"
+msgstr "텍스트(Text) 헬퍼"
+
+#: ../../source/helpers/text_helper.rst:5
+msgid ""
+"The Text Helper file contains functions that assist in working with Text."
+msgstr "텍스트(Text) 헬퍼 파일에는 텍스트 작업을 지원하는 함수가 포함되어 있습니다."
+
+#: ../../source/helpers/text_helper.rst:25
+msgid "Randomization type"
+msgstr "무작위화 유형"
+
+#: ../../source/helpers/text_helper.rst:26
+msgid "Output string length"
+msgstr "출력 문자열 길이"
+
+#: ../../source/helpers/text_helper.rst:27
+msgid "A random string"
+msgstr "무작위 문자열"
+
+#: ../../source/helpers/text_helper.rst:30
+msgid ""
+"Generates a random string based on the type and length you specify. Useful "
+"for creating passwords or generating random hashes."
+msgstr "지정한 유형과 길이에 따라 무작위 문자열을 생성합니다. 비밀번호를 만들거나 무작위 해시를 생성하는 데 유용합니다."
+
+#: ../../source/helpers/text_helper.rst:33
+msgid ""
+"The first parameter specifies the type of string, the second parameter "
+"specifies the length. The following choices are available:"
+msgstr "첫 번째 매개변수는 문자열 유형을 지정하고, 두 번째 매개변수는 길이를 지정합니다. 다음 선택지를 사용할 수 있습니다:"
+
+#: ../../source/helpers/text_helper.rst:36
+msgid "**alpha**: A string with lower and uppercase letters only."
+msgstr "**alpha**: 소문자와 대문자만 포함된 문자열."
+
+#: ../../source/helpers/text_helper.rst:37
+msgid "**alnum**: Alphanumeric string with lower and uppercase characters."
+msgstr "**alnum**: 소문자, 대문자, 숫자가 포함된 영숫자 문자열."
+
+#: ../../source/helpers/text_helper.rst:38
+msgid "**numeric**: Numeric string."
+msgstr "**numeric**: 숫자 문자열."
+
+#: ../../source/helpers/text_helper.rst:39
+msgid "**nozero**: Numeric string with no zeros."
+msgstr "**nozero**: 0이 포함되지 않은 숫자 문자열."
+
+#: ../../source/helpers/text_helper.rst:40
+msgid "**crypto**: A random string based on ``random_bytes()``."
+msgstr "**crypto**: ``random_bytes()``\\ 를 기반으로 한 무작위 문자열."
+
+#: ../../source/helpers/text_helper.rst:42
+msgid ""
+"When you use **crypto**, you must set an even number to the second "
+"parameter. Since v4.2.2, if you set an odd number, "
+"``InvalidArgumentException`` will be thrown."
+msgstr ""
+"**crypto**\\ 를 사용할 경우 두 번째 매개변수에 짝수를 설정해야 합니다. v4.2.2부터는 홀수를 설정하면 "
+"``InvalidArgumentException``\\ 이 발생합니다."
+
+#: ../../source/helpers/text_helper.rst:45
+msgid ""
+"Since v4.3.3, **alpha**, **alnum** and **nozero** use ``random_byte()``, and"
+" **numeric** uses ``random_int()``. In the previous versions, it used "
+"``str_shuffle()`` that is not cryptographically secure."
+msgstr ""
+"v4.3.3부터 **alpha**, **alnum**, **nozero**\\ 는 ``random_byte()``\\ 를 사용하고, "
+"**numeric**\\ 은 ``random_int()``\\ 를 사용합니다. 이전 버전에서는 암호학적으로 안전하지 않은 "
+"``str_shuffle()``\\ 을 사용했습니다."
+
+#: ../../source/helpers/text_helper.rst:57
+msgid "Separator to append a duplicate number with"
+msgstr "중복 번호를 추가할 때 사용할 구분자"
+
+#: ../../source/helpers/text_helper.rst:58
+msgid "Starting number"
+msgstr "시작 번호"
+
+#: ../../source/helpers/text_helper.rst:59
+msgid "An incremented string"
+msgstr "증가된 문자열"
+
+#: ../../source/helpers/text_helper.rst:62
+msgid ""
+"Increments a string by appending a number to it or increasing the number. "
+"Useful for creating \"copies\" or a file or duplicating database content "
+"which has unique titles or slugs."
+msgstr ""
+"문자열에 번호를 추가하거나 번호를 증가시켜 문자열을 증분합니다. 고유한 제목이나 슬러그를 가진 파일의 \"복사본\"을 만들거나 "
+"데이터베이스 콘텐츠를 복제하는 데 유용합니다."
+
+#: ../../source/helpers/text_helper.rst:72
+msgid "A variable number of arguments"
+msgstr "가변 인수"
+
+#: ../../source/helpers/text_helper.rst:73
+msgid "Alternated string(s)"
+msgstr "교대로 반환되는 문자열"
+
+#: ../../source/helpers/text_helper.rst:76
+msgid ""
+"Allows two or more items to be alternated between, when cycling through a "
+"loop. Example:"
+msgstr "루프를 순환할 때 두 개 이상의 항목을 교대로 사용할 수 있습니다. 예:"
+
+#: ../../source/helpers/text_helper.rst:81
+msgid ""
+"You can add as many parameters as you want, and with each iteration of your "
+"loop the next item will be returned."
+msgstr "원하는 만큼 매개변수를 추가할 수 있으며, 루프를 반복할 때마다 다음 항목이 반환됩니다."
+
+#: ../../source/helpers/text_helper.rst:86
+msgid ""
+"To use multiple separate calls to this function simply call the function "
+"with no arguments to re-initialize."
+msgstr "이 함수를 여러 번 별도로 호출하려면 단순히 인수 없이 함수를 호출하여 초기화하면 됩니다."
+
+#: ../../source/helpers/text_helper.rst:92
+msgid "A string with normalized slashes"
+msgstr "슬래시가 정규화된 문자열"
+
+#: ../../source/helpers/text_helper.rst:95
+msgid ""
+"Converts double slashes in a string to a single slash, except those found in"
+" URL protocol prefixes (e.g., http&#58;//)."
+msgstr "URL 프로토콜 접두사(예: http&#58;//)에 있는 것을 제외하고 문자열의 이중 슬래시를 단일 슬래시로 변환합니다."
+
+#: ../../source/helpers/text_helper.rst:104
+msgid "Input string or an array of strings"
+msgstr "입력 문자열 또는 문자열 배열"
+
+#: ../../source/helpers/text_helper.rst:105
+msgid "String(s) with stripped slashes"
+msgstr "슬래시가 제거된 문자열"
+
+#: ../../source/helpers/text_helper.rst:108
+msgid "Removes any slashes from an array of strings."
+msgstr "문자열 배열에서 모든 슬래시를 제거합니다."
+
+#: ../../source/helpers/text_helper.rst:114
+msgid "The above will return the following array:"
+msgstr "위 코드는 다음 배열을 반환합니다:"
+
+#: ../../source/helpers/text_helper.rst:118
+msgid ""
+"For historical reasons, this function will also accept and handle string "
+"inputs. This however makes it just an alias for ``stripslashes()``."
+msgstr ""
+"역사적인 이유로 이 함수는 문자열 입력도 받아 처리합니다. 하지만 이 경우 ``stripslashes()``\\ 의 별칭에 불과합니다."
+
+#: ../../source/helpers/text_helper.rst:124
+msgid "Text to search in"
+msgstr "검색할 텍스트"
+
+#: ../../source/helpers/text_helper.rst:125
+msgid "Character to reduce"
+msgstr "줄일 문자"
+
+#: ../../source/helpers/text_helper.rst:126
+msgid "Whether to also trim the specified character"
+msgstr "지정된 문자도 트림할지 여부"
+
+#: ../../source/helpers/text_helper.rst:127
+msgid "Reduced string"
+msgstr "줄여진 문자열"
+
+#: ../../source/helpers/text_helper.rst:130
+msgid ""
+"Reduces multiple instances of a particular character occurring directly "
+"after each other. Example:"
+msgstr "연속으로 반복되는 특정 문자의 여러 인스턴스를 줄입니다. 예:"
+
+#: ../../source/helpers/text_helper.rst:135
+msgid ""
+"If the third parameter is set to ``true``, it will remove occurrences of the"
+" character at the beginning and the end of the string. Example:"
+msgstr "세 번째 매개변수를 ``true``\\ 로 설정하면 문자열의 처음과 끝에 있는 해당 문자가 제거됩니다. 예:"
+
+#: ../../source/helpers/text_helper.rst:143
+msgid "String with quotes converted to HTML entities"
+msgstr "따옴표가 HTML 엔티티로 변환된 문자열"
+
+#: ../../source/helpers/text_helper.rst:146
+msgid ""
+"Converts single and double quotes in a string to the corresponding HTML "
+"entities. Example:"
+msgstr "문자열의 작은따옴표와 큰따옴표를 해당 HTML 엔티티로 변환합니다. 예:"
+
+#: ../../source/helpers/text_helper.rst:154
+msgid "String with quotes stripped"
+msgstr "따옴표가 제거된 문자열"
+
+#: ../../source/helpers/text_helper.rst:157
+msgid "Removes single and double quotes from a string. Example:"
+msgstr "문자열에서 작은따옴표와 큰따옴표를 제거합니다. 예:"
+
+#: ../../source/helpers/text_helper.rst:164
+msgid "Limit"
+msgstr "제한"
+
+#: ../../source/helpers/text_helper.rst:165
+#: ../../source/helpers/text_helper.rst:180
+msgid "End character (usually an ellipsis)"
+msgstr "끝 문자 (일반적으로 줄임표)"
+
+#: ../../source/helpers/text_helper.rst:166
+msgid "Word-limited string"
+msgstr "단어 수가 제한된 문자열"
+
+#: ../../source/helpers/text_helper.rst:169
+msgid "Truncates a string to the number of *words* specified. Example:"
+msgstr "지정된 *단어* 수로 문자열을 자릅니다. 예:"
+
+#: ../../source/helpers/text_helper.rst:173
+msgid ""
+"The third parameter is an optional suffix added to the string. By default it"
+" adds an ellipsis."
+msgstr "세 번째 매개변수는 문자열에 추가되는 선택적 접미사입니다. 기본적으로 줄임표가 추가됩니다."
+
+#: ../../source/helpers/text_helper.rst:179
+msgid "Number of characters"
+msgstr "문자 수"
+
+#: ../../source/helpers/text_helper.rst:181
+msgid "Character-limited string"
+msgstr "문자 수가 제한된 문자열"
+
+#: ../../source/helpers/text_helper.rst:184
+msgid ""
+"Truncates a string to the number of *characters* specified. It maintains the"
+" integrity of words so the character count may be slightly more or less than"
+" what you specify."
+msgstr ""
+"지정된 *문자* 수로 문자열을 자릅니다. 단어의 무결성을 유지하므로 실제 문자 수는 지정한 것보다 약간 많거나 적을 수 있습니다."
+
+#: ../../source/helpers/text_helper.rst:192
+msgid ""
+"The third parameter is an optional suffix added to the string, if undeclared"
+" this helper uses an ellipsis."
+msgstr "세 번째 매개변수는 문자열에 추가되는 선택적 접미사로, 선언하지 않으면 헬퍼는 줄임표를 사용합니다."
+
+#: ../../source/helpers/text_helper.rst:195
+msgid ""
+"If you need to truncate to an exact number of characters, please see the "
+":php:func:`ellipsize()` function below."
+msgstr "정확한 문자 수로 자르려면 아래의 :php:func:`ellipsize()` 함수를 참조하십시오."
+
+#: ../../source/helpers/text_helper.rst:201
+msgid "A string with ASCII values converted to entities"
+msgstr "ASCII 값이 엔티티로 변환된 문자열"
+
+#: ../../source/helpers/text_helper.rst:204
+#, python-format
+msgid ""
+"Converts ASCII values to character entities, including high ASCII and MS "
+"Word characters that can cause problems when used in a web page, so that "
+"they can be shown consistently regardless of browser settings or stored "
+"reliably in a database. There is some dependence on your server's supported "
+"character sets, so it may not be 100% reliable in all cases, but for the "
+"most part, it should correctly identify characters outside the normal range "
+"(like accented characters)."
+msgstr ""
+"높은 ASCII 값 및 웹 페이지에서 사용할 때 문제를 일으킬 수 있는 MS Word 문자를 포함하여 ASCII 값을 문자 엔티티로 "
+"변환합니다. 이를 통해 브라우저 설정에 관계없이 일관되게 표시하거나 데이터베이스에 안정적으로 저장할 수 있습니다. 서버에서 지원하는 문자"
+" 집합에 어느 정도 의존하므로 모든 경우에 100% 신뢰할 수는 없지만, 대부분의 경우 정상 범위 밖의 문자(예: 악센트가 있는 문자)를"
+" 올바르게 식별합니다."
+
+#: ../../source/helpers/text_helper.rst:219
+msgid "Whether to convert unsafe entities as well"
+msgstr "안전하지 않은 엔티티도 변환할지 여부"
+
+#: ../../source/helpers/text_helper.rst:220
+msgid "A string with HTML entities converted to ASCII characters"
+msgstr "HTML 엔티티가 ASCII 문자로 변환된 문자열"
+
+#: ../../source/helpers/text_helper.rst:223
+msgid ""
+"This function does the opposite of :php:func:`ascii_to_entities()`. It turns"
+" character entities back into ASCII."
+msgstr ""
+"이 함수는 :php:func:`ascii_to_entities()`\\ 의 반대 작업을 수행합니다. 문자 엔티티를 다시 ASCII로 "
+"변환합니다."
+
+#: ../../source/helpers/text_helper.rst:229
+msgid "A string with accented characters converted"
+msgstr "악센트 문자가 변환된 문자열"
+
+#: ../../source/helpers/text_helper.rst:232
+msgid ""
+"Transliterates high ASCII characters to low ASCII equivalents. Useful when "
+"non-English characters need to be used where only standard ASCII characters "
+"are safely used, for instance, in URLs."
+msgstr ""
+"높은 ASCII 문자를 낮은 ASCII 동등 문자로 음역합니다. URL과 같이 표준 ASCII 문자만 안전하게 사용할 수 있는 곳에서 "
+"비영어 문자를 사용해야 할 때 유용합니다."
+
+#: ../../source/helpers/text_helper.rst:240
+msgid ""
+"This function uses a companion config file "
+"**app/Config/ForeignCharacters.php** to define the to and from array for "
+"transliteration."
+msgstr ""
+"이 함수는 음역을 위한 변환 배열을 정의하기 위해 **app/Config/ForeignCharacters.php** 보조 설정 파일을 "
+"사용합니다."
+
+#: ../../source/helpers/text_helper.rst:247
+msgid "List of bad words to censor"
+msgstr "검열할 금지어 목록"
+
+#: ../../source/helpers/text_helper.rst:248
+msgid "What to replace bad words with"
+msgstr "금지어를 대체할 문자열"
+
+#: ../../source/helpers/text_helper.rst:249
+msgid "Censored string"
+msgstr "검열된 문자열"
+
+#: ../../source/helpers/text_helper.rst:252
+msgid ""
+"Enables you to censor words within a text string. The first parameter will "
+"contain the original string. The second will contain an array of words which"
+" you disallow. The third (optional) parameter can contain a replacement "
+"value for the words. If not specified they are replaced with pound signs: "
+"####."
+msgstr ""
+"텍스트 문자열 내의 단어를 검열할 수 있습니다. 첫 번째 매개변수는 원본 문자열을 포함합니다. 두 번째 매개변수는 허용하지 않는 단어 "
+"배열을 포함합니다. 세 번째 (선택적) 매개변수는 단어의 대체 값을 포함할 수 있습니다. 지정하지 않으면 파운드 기호로 대체됩니다: "
+"####."
+
+#: ../../source/helpers/text_helper.rst:265
+msgid "String with code highlighted via HTML"
+msgstr "HTML로 코드가 강조 표시된 문자열"
+
+#: ../../source/helpers/text_helper.rst:268
+msgid "Colorizes a string of code (PHP, HTML, etc.). Example:"
+msgstr "코드 문자열(PHP, HTML 등)에 색상을 입힙니다. 예:"
+
+#: ../../source/helpers/text_helper.rst:272
+msgid ""
+"The function uses PHP's ``highlight_string()`` function, so the colors used "
+"are the ones specified in your php.ini file."
+msgstr ""
+"이 함수는 PHP의 ``highlight_string()`` 함수를 사용하므로 사용되는 색상은 php.ini 파일에 지정된 색상입니다."
+
+#: ../../source/helpers/text_helper.rst:278
+msgid "Phrase to highlight"
+msgstr "강조 표시할 구문"
+
+#: ../../source/helpers/text_helper.rst:279
+msgid "Opening tag used for the highlight"
+msgstr "강조 표시에 사용되는 여는 태그"
+
+#: ../../source/helpers/text_helper.rst:280
+msgid "Closing tag for the highlight"
+msgstr "강조 표시의 닫는 태그"
+
+#: ../../source/helpers/text_helper.rst:281
+msgid "String with a phrase highlighted via HTML"
+msgstr "HTML로 구문이 강조 표시된 문자열"
+
+#: ../../source/helpers/text_helper.rst:284
+msgid ""
+"Will highlight a phrase within a text string. The first parameter will "
+"contain the original string, the second will contain the phrase you wish to "
+"highlight. The third and fourth parameters will contain the opening/closing "
+"HTML tags you would like the phrase wrapped in."
+msgstr ""
+"텍스트 문자열 내의 구문을 강조 표시합니다. 첫 번째 매개변수는 원본 문자열을 포함하고, 두 번째 매개변수는 강조 표시할 구문을 "
+"포함합니다. 세 번째 및 네 번째 매개변수는 구문을 감쌀 HTML 여는/닫는 태그를 포함합니다."
+
+#: ../../source/helpers/text_helper.rst:293
+msgid "The above code prints::"
+msgstr "위 코드는 다음을 출력합니다::"
+
+#: ../../source/helpers/text_helper.rst:297
+msgid ""
+"This function used to use the ``<strong>`` tag by default. Older browsers "
+"might not support the new HTML5 mark tag, so it is recommended that you "
+"insert the following CSS code into your stylesheet if you need to support "
+"such browsers::"
+msgstr ""
+"이 함수는 기본적으로 ``<strong>`` 태그를 사용했습니다. 구형 브라우저는 새로운 HTML5 mark 태그를 지원하지 않을 수 "
+"있으므로 그러한 브라우저를 지원해야 하는 경우 스타일시트에 다음 CSS 코드를 삽입하는 것이 좋습니다::"
+
+#: ../../source/helpers/text_helper.rst:310
+msgid "Character limit"
+msgstr "문자 제한"
+
+#: ../../source/helpers/text_helper.rst:311
+msgid "Word-wrapped string"
+msgstr "줄 바꿈이 적용된 문자열"
+
+#: ../../source/helpers/text_helper.rst:314
+msgid ""
+"Wraps text at the specified *character* count while maintaining complete "
+"words."
+msgstr "완전한 단어를 유지하면서 지정된 *문자* 수에서 텍스트를 줄 바꿈합니다."
+
+#: ../../source/helpers/text_helper.rst:324
+msgid "String length limit"
+msgstr "문자열 길이 제한"
+
+#: ../../source/helpers/text_helper.rst:325
+msgid "Position to split at (int or float)"
+msgstr "분할 위치 (정수 또는 부동 소수점)"
+
+#: ../../source/helpers/text_helper.rst:326
+#: ../../source/helpers/text_helper.rst:355
+msgid "What to use as the ellipsis character"
+msgstr "줄임표 문자로 사용할 값"
+
+#: ../../source/helpers/text_helper.rst:327
+msgid "Ellipsized string"
+msgstr "줄임표가 삽입된 문자열"
+
+#: ../../source/helpers/text_helper.rst:330
+msgid ""
+"This function will strip tags from a string, split it at a defined maximum "
+"length, and insert an ellipsis."
+msgstr "이 함수는 문자열에서 태그를 제거하고, 정의된 최대 길이에서 분할하여 줄임표를 삽입합니다."
+
+#: ../../source/helpers/text_helper.rst:333
+msgid ""
+"The first parameter is the string to ellipsize, the second is the number of "
+"characters in the final string. The third parameter is where in the string "
+"the ellipsis should appear from 0 - 1, left to right. For example. a value "
+"of 1 will place the ellipsis at the right of the string, .5 in the middle, "
+"and 0 at the left."
+msgstr ""
+"첫 번째 매개변수는 줄임표를 삽입할 문자열이고, 두 번째는 최종 문자열의 문자 수입니다. 세 번째 매개변수는 줄임표가 표시될 위치로 "
+"0에서 1 사이의 값이며, 왼쪽에서 오른쪽 방향입니다. 예를 들어 값이 1이면 문자열 오른쪽에, .5이면 중간에, 0이면 왼쪽에 줄임표가"
+" 위치합니다."
+
+#: ../../source/helpers/text_helper.rst:339
+msgid ""
+"An optional fourth parameter is the kind of ellipsis. By default, &hellip; "
+"will be inserted."
+msgstr "선택적 네 번째 매개변수는 줄임표 종류입니다. 기본적으로 &hellip;\\ 이 삽입됩니다."
+
+#: ../../source/helpers/text_helper.rst:346
+#: ../../source/helpers/text_helper.rst:372
+msgid "Produces::"
+msgstr "다음을 출력합니다::"
+
+#: ../../source/helpers/text_helper.rst:352
+msgid "Text to extract an excerpt"
+msgstr "발췌할 텍스트"
+
+#: ../../source/helpers/text_helper.rst:353
+msgid "Phrase or word to extract the text around"
+msgstr "주변 텍스트를 추출할 구문 또는 단어"
+
+#: ../../source/helpers/text_helper.rst:354
+msgid "Number of characters before and after $phrase"
+msgstr "$phrase 앞뒤의 문자 수"
+
+#: ../../source/helpers/text_helper.rst:356
+msgid "Excerpt."
+msgstr "발췌문."
+
+#: ../../source/helpers/text_helper.rst:359
+msgid ""
+"This function will extract $radius number of characters before and after the"
+" central $phrase with an ellipsis before and after."
+msgstr "이 함수는 중심 $phrase 앞뒤로 $radius 개수의 문자를 추출하고 앞뒤에 줄임표를 붙입니다."
+
+#: ../../source/helpers/text_helper.rst:362
+msgid ""
+"The first parameter is the text to extract an excerpt from, the second is "
+"the central word or phrase to count before and after. The third parameter is"
+" the number of characters to count before and after the central phrase. If "
+"no phrase passed, the excerpt will include the first $radius characters with"
+" the ellipsis at the end."
+msgstr ""
+"첫 번째 매개변수는 발췌할 텍스트이고, 두 번째는 앞뒤로 셀 중심 단어 또는 구문입니다. 세 번째 매개변수는 중심 구문 앞뒤로 셀 문자 "
+"수입니다. 구문을 전달하지 않으면 발췌문은 처음 $radius 개의 문자를 포함하고 끝에 줄임표가 붙습니다."
+
+#: ../../source/helpers/url_helper.rst:3
+msgid "URL Helper"
+msgstr "URL 헬퍼"
+
+#: ../../source/helpers/url_helper.rst:5
+msgid ""
+"The URL Helper file contains functions that assist in working with URLs."
+msgstr "URL 헬퍼 파일에는 URL 작업을 지원하는 함수가 포함되어 있습니다."
+
+#: ../../source/helpers/url_helper.rst:14
+msgid "This helper is automatically loaded by the framework on every request."
+msgstr "이 헬퍼는 모든 요청 시 프레임워크에 의해 자동으로 로드됩니다."
+
+#: ../../source/helpers/url_helper.rst:23
+#: ../../source/helpers/url_helper.rst:59
+msgid "URI string or array of URI segments."
+msgstr "URI 문자열 또는 URI 세그먼트 배열."
+
+#: ../../source/helpers/url_helper.rst:24
+#: ../../source/helpers/url_helper.rst:60
+msgid ""
+"Protocol, e.g., ``'http'`` or ``'https'``. If empty string ``''`` is set, a "
+"protocol-relative link is returned."
+msgstr ""
+"프로토콜(예: ``'http'`` 또는 ``'https'``). 빈 문자열 ``''``\\ 을 설정하면 프로토콜 상대 링크가 반환됩니다."
+
+#: ../../source/helpers/url_helper.rst:25
+msgid "Alternate configuration to use."
+msgstr "사용할 대체 설정."
+
+#: ../../source/helpers/url_helper.rst:26
+msgid "Site URL"
+msgstr "사이트 URL"
+
+#: ../../source/helpers/url_helper.rst:29
+#: ../../source/helpers/url_helper.rst:64
+#: ../../source/helpers/url_helper.rst:113
+msgid ""
+"Since v4.3.0, if you set ``Config\\App::$allowedHostnames``, this returns "
+"the URL with the hostname set in it if the current URL matches."
+msgstr ""
+"v4.3.0부터 ``Config\\App::$allowedHostnames``\\ 를 설정하면 현재 URL이 일치할 때 해당 호스트명이 "
+"설정된 URL을 반환합니다."
+
+#: ../../source/helpers/url_helper.rst:32
+msgid ""
+"Returns your site URL, as specified in your config file. The **index.php** "
+"file (or whatever you have set as your site ``Config\\App::$indexPage`` in "
+"your config file) will be added to the URL, as will any URI segments you "
+"pass to the function."
+msgstr ""
+"설정 파일에 지정된 사이트 URL을 반환합니다. **index.php** 파일(또는 설정 파일의 "
+"``Config\\App::$indexPage``\\ 에 설정한 값)이 URL에 추가되며, 함수에 전달하는 URI 세그먼트도 추가됩니다."
+
+#: ../../source/helpers/url_helper.rst:37
+msgid ""
+"You are encouraged to use this function any time you need to generate a "
+"local URL so that your pages become more portable in the event your URL "
+"changes."
+msgstr "URL이 변경될 경우 페이지의 이식성을 높이기 위해 로컬 URL을 생성할 때는 항상 이 함수를 사용하는 것이 좋습니다."
+
+#: ../../source/helpers/url_helper.rst:41
+msgid ""
+"Segments can be optionally passed to the function as a string or an array. "
+"Here is a string example:"
+msgstr "세그먼트는 선택적으로 문자열 또는 배열 형태로 함수에 전달할 수 있습니다. 다음은 문자열 예입니다:"
+
+#: ../../source/helpers/url_helper.rst:46
+msgid ""
+"The above example would return something like: "
+"**http://example.com/index.php/news/local/123**"
+msgstr ""
+"위 예는 다음과 같은 결과를 반환합니다: **http://example.com/index.php/news/local/123**"
+
+#: ../../source/helpers/url_helper.rst:49
+msgid "Here is an example of segments passed as an array:"
+msgstr "다음은 배열로 전달된 세그먼트의 예입니다:"
+
+#: ../../source/helpers/url_helper.rst:53
+msgid ""
+"You may find the alternate configuration useful if generating URLs for a "
+"different site than yours, which contains different configuration "
+"preferences. We use this for unit testing the framework itself."
+msgstr ""
+"다른 설정 기본 설정을 포함하는 다른 사이트의 URL을 생성하는 경우 대체 설정이 유용할 수 있습니다. 프레임워크 자체의 단위 테스트에 "
+"사용합니다."
+
+#: ../../source/helpers/url_helper.rst:61
+msgid "Base URL"
+msgstr "기본 URL"
+
+#: ../../source/helpers/url_helper.rst:67
+msgid ""
+"In previous versions, this returned the base URL without a trailing slash "
+"(``/``) when called with no argument. The bug was fixed and since v4.3.2 it "
+"returns the base URL with a trailing slash."
+msgstr ""
+"이전 버전에서는 인수 없이 호출하면 끝에 슬래시(``/``)가 없는 기본 URL을 반환했습니다. 이 버그가 수정되어 v4.3.2부터는 "
+"끝에 슬래시가 있는 기본 URL을 반환합니다."
+
+#: ../../source/helpers/url_helper.rst:71
+msgid "Returns your site base URL, as specified in your config file. Example:"
+msgstr "설정 파일에 지정된 사이트 기본 URL을 반환합니다. 예:"
+
+#: ../../source/helpers/url_helper.rst:75
+msgid ""
+"This function returns the same thing as :php:func:`site_url()`, without the "
+"``Config\\App::$indexPage`` being appended."
+msgstr ""
+"이 함수는 ``Config\\App::$indexPage``\\ 가 추가되지 않는다는 점을 제외하고 "
+":php:func:`site_url()`\\ 과 동일한 결과를 반환합니다."
+
+#: ../../source/helpers/url_helper.rst:78
+msgid ""
+"Also like :php:func:`site_url()`, you can supply segments as a string or an "
+"array. Here is a string example:"
+msgstr ""
+"또한 :php:func:`site_url()`\\ 과 마찬가지로 세그먼트를 문자열 또는 배열로 제공할 수 있습니다. 다음은 문자열 "
+"예입니다:"
+
+#: ../../source/helpers/url_helper.rst:83
+msgid ""
+"The above example would return something like: "
+"**http://example.com/blog/post/123**"
+msgstr "위 예는 다음과 같은 결과를 반환합니다: **http://example.com/blog/post/123**"
+
+#: ../../source/helpers/url_helper.rst:86
+msgid ""
+"If you pass an empty string ``''`` as the second parameter, it returns the "
+"protocol-relative link:"
+msgstr "두 번째 매개변수로 빈 문자열 ``''``\\ 을 전달하면 프로토콜 상대 링크를 반환합니다:"
+
+#: ../../source/helpers/url_helper.rst:91
+msgid ""
+"This is useful because unlike :php:func:`site_url()`, you can supply a "
+"string to a file, such as an image or stylesheet. For example:"
+msgstr ""
+":php:func:`site_url()`\\ 과 달리 이미지나 스타일시트와 같은 파일에 대한 문자열을 제공할 수 있으므로 유용합니다. "
+"예:"
+
+#: ../../source/helpers/url_helper.rst:96
+msgid ""
+"This would give you something like: "
+"**http://example.com/images/icons/edit.png**"
+msgstr "이는 다음과 같은 결과를 반환합니다: **http://example.com/images/icons/edit.png**"
+
+#: ../../source/helpers/url_helper.rst:101
+msgid "True if you would like a URI instance returned, instead of a string."
+msgstr "문자열 대신 URI 인스턴스를 반환하려면 true."
+
+#: ../../source/helpers/url_helper.rst:102
+msgid "An alternate request to use for path detection; useful for testing."
+msgstr "경로 감지에 사용할 대체 요청. 테스트에 유용합니다."
+
+#: ../../source/helpers/url_helper.rst:103
+msgid "The current URL"
+msgstr "현재 URL"
+
+#: ../../source/helpers/url_helper.rst:106
+msgid ""
+"Returns the full URL of the page being currently viewed. When returning "
+"string, the query and fragment parts of the URL are removed. When returning "
+"URI, the query and fragment parts are preserved."
+msgstr ""
+"현재 보고 있는 페이지의 전체 URL을 반환합니다. 문자열로 반환할 때는 URL의 쿼리 및 프래그먼트 부분이 제거됩니다. URI로 반환할"
+" 때는 쿼리 및 프래그먼트 부분이 보존됩니다."
+
+#: ../../source/helpers/url_helper.rst:110
+msgid ""
+"However for security reasons, it is created based on the ``Config\\App`` "
+"settings, and not intended to match the browser URL."
+msgstr "그러나 보안상의 이유로 ``Config\\App`` 설정을 기반으로 생성되며, 브라우저 URL과 일치하도록 의도되지 않습니다."
+
+#: ../../source/helpers/url_helper.rst:116
+msgid "Calling ``current_url()`` is the same as doing this:"
+msgstr "``current_url()``\\ 을 호출하는 것은 다음과 동일합니다:"
+
+#: ../../source/helpers/url_helper.rst:121
+msgid ""
+"Prior to v4.1.2, this function had a bug causing it to ignore the "
+"configuration on ``Config\\App::$indexPage``."
+msgstr "v4.1.2 이전에는 이 함수에 ``Config\\App::$indexPage`` 설정을 무시하는 버그가 있었습니다."
+
+#: ../../source/helpers/url_helper.rst:125
+msgid "True if you would like a URI instance returned instead of a string."
+msgstr "문자열 대신 URI 인스턴스를 반환하려면 true."
+
+#: ../../source/helpers/url_helper.rst:126
+msgid "The URL the user was previously on"
+msgstr "사용자가 이전에 방문한 URL"
+
+#: ../../source/helpers/url_helper.rst:129
+msgid ""
+"Returns the full URL (including segments) of the page the user was "
+"previously on."
+msgstr "사용자가 이전에 방문한 페이지의 전체 URL(세그먼트 포함)을 반환합니다."
+
+#: ../../source/helpers/url_helper.rst:131
+msgid ""
+"Due to security issues of blindly trusting the ``HTTP_REFERER`` system "
+"variable, CodeIgniter will store previously visited pages in the session if "
+"it's available. This ensures that we always use a known and trusted source. "
+"If the session hasn't been loaded, or is otherwise unavailable, then a "
+"sanitized version of ``HTTP_REFERER`` will be used."
+msgstr ""
+"``HTTP_REFERER`` 시스템 변수를 무작정 신뢰하는 보안 문제로 인해, 세션을 사용할 수 있는 경우 CodeIgniter는 "
+"이전에 방문한 페이지를 세션에 저장합니다. 이를 통해 항상 알려진 신뢰할 수 있는 출처를 사용할 수 있습니다. 세션이 로드되지 않았거나 "
+"사용할 수 없는 경우 정제된 버전의 ``HTTP_REFERER``\\ 가 사용됩니다."
+
+#: ../../source/helpers/url_helper.rst:138
+msgid "A URI string"
+msgstr "URI 문자열"
+
+#: ../../source/helpers/url_helper.rst:141
+msgid "Returns the path part of the current URL relative to baseURL."
+msgstr "baseURL을 기준으로 한 현재 URL의 경로 부분을 반환합니다."
+
+#: ../../source/helpers/url_helper.rst:143
+msgid ""
+"For example, when your baseURL is **http://some-site.com/** and the current "
+"URL is::"
+msgstr "예를 들어 baseURL이 **http://some-site.com/**\\ 이고 현재 URL이 다음과 같을 때::"
+
+#: ../../source/helpers/url_helper.rst:147
+#: ../../source/helpers/url_helper.rst:155
+msgid "The function would return::"
+msgstr "함수는 다음을 반환합니다::"
+
+#: ../../source/helpers/url_helper.rst:151
+msgid ""
+"When your baseURL is **http://some-site.com/subfolder/** and the current URL"
+" is::"
+msgstr "baseURL이 **http://some-site.com/subfolder/**\\ 이고 현재 URL이 다음과 같을 때::"
+
+#: ../../source/helpers/url_helper.rst:159
+msgid ""
+"In previous versions, the parameter ``$relative = false`` was defined. "
+"However, due to a bug, this function always returned a path relative to "
+"baseURL. Since v4.3.2, the parameter has been removed."
+msgstr ""
+"이전 버전에서는 ``$relative = false`` 매개변수가 정의되어 있었습니다. 그러나 버그로 인해 이 함수는 항상 "
+"baseURL을 기준으로 한 경로를 반환했습니다. v4.3.2부터 해당 매개변수가 제거되었습니다."
+
+#: ../../source/helpers/url_helper.rst:163
+msgid ""
+"In previous versions, when you navigate to the baseURL, this function "
+"returned ``/``. Since v4.3.2, the bug has been fixed and it returns an empty"
+" string(``''``)."
+msgstr ""
+"이전 버전에서는 baseURL로 이동할 때 이 함수가 ``/``\\ 를 반환했습니다. v4.3.2부터 버그가 수정되어 빈 "
+"문자열(``''``)을 반환합니다."
+
+#: ../../source/helpers/url_helper.rst:169
+#: ../../source/helpers/url_helper.rst:188
+#: ../../source/helpers/url_helper.rst:226
+msgid "Alternate configuration to use"
+msgstr "사용할 대체 설정"
+
+#: ../../source/helpers/url_helper.rst:170
+msgid "The ``indexPage`` value"
+msgstr "``indexPage`` 값"
+
+#: ../../source/helpers/url_helper.rst:173
+msgid ""
+"Returns your site **indexPage**, as specified in your config file. Example:"
+msgstr "설정 파일에 지정된 사이트의 **indexPage**\\ 를 반환합니다. 예:"
+
+#: ../../source/helpers/url_helper.rst:178
+msgid ""
+"As with :php:func:`site_url()`, you may specify an alternate configuration. "
+"You may find the alternate configuration useful if generating URLs for a "
+"different site than yours, which contains different configuration "
+"preferences. We use this for unit testing the framework itself."
+msgstr ""
+":php:func:`site_url()`\\ 과 마찬가지로 대체 설정을 지정할 수 있습니다. 다른 설정 기본 설정을 포함하는 다른 "
+"사이트의 URL을 생성하는 경우 대체 설정이 유용할 수 있습니다. 프레임워크 자체의 단위 테스트에 사용합니다."
+
+#: ../../source/helpers/url_helper.rst:185
+msgid "URI string or array of URI segments"
+msgstr "URI 문자열 또는 URI 세그먼트 배열"
+
+#: ../../source/helpers/url_helper.rst:186
+#: ../../source/helpers/url_helper.rst:224
+#: ../../source/helpers/url_helper.rst:264
+#: ../../source/helpers/url_helper.rst:283
+msgid "Anchor title"
+msgstr "앵커 제목"
+
+#: ../../source/helpers/url_helper.rst:189
+msgid "HTML hyperlink (anchor tag)"
+msgstr "HTML 하이퍼링크 (앵커 태그)"
+
+#: ../../source/helpers/url_helper.rst:192
+msgid "Creates a standard HTML anchor link based on your local site URL."
+msgstr "로컬 사이트 URL을 기반으로 표준 HTML 앵커 링크를 생성합니다."
+
+#: ../../source/helpers/url_helper.rst:194
+msgid ""
+"The first parameter can contain any segments you wish appended to the URL. "
+"As with the :php:func:`site_url()` function above, segments can be a string "
+"or an array."
+msgstr ""
+"첫 번째 매개변수는 URL에 추가할 세그먼트를 포함할 수 있습니다. 위의 :php:func:`site_url()` 함수와 마찬가지로 "
+"세그먼트는 문자열 또는 배열이 될 수 있습니다."
+
+#: ../../source/helpers/url_helper.rst:198
+msgid ""
+"If you are building links that are internal to your application do not "
+"include the base URL (``http://...``). This will be added automatically from"
+" the information specified in your config file. Include only the URI "
+"segments you wish appended to the URL."
+msgstr ""
+"애플리케이션 내부 링크를 만들 때는 기본 URL(``http://...``)을 포함하지 마십시오. 설정 파일에 지정된 정보에서 자동으로 "
+"추가됩니다. URL에 추가할 URI 세그먼트만 포함하십시오."
+
+#: ../../source/helpers/url_helper.rst:203
+msgid ""
+"The second segment is the text you would like the link to say. If you leave "
+"it blank, the URL will be used."
+msgstr "두 번째 세그먼트는 링크에 표시할 텍스트입니다. 비워두면 URL이 사용됩니다."
+
+#: ../../source/helpers/url_helper.rst:206
+msgid ""
+"The third parameter can contain a list of attributes you would like added to"
+" the link. The attributes can be a simple string or an associative array."
+msgstr "세 번째 매개변수는 링크에 추가할 속성 목록을 포함할 수 있습니다. 속성은 단순 문자열 또는 연관 배열이 될 수 있습니다."
+
+#: ../../source/helpers/url_helper.rst:210
+#: ../../source/helpers/url_helper.rst:372
+msgid "Here are some examples:"
+msgstr "다음은 몇 가지 예입니다:"
+
+#: ../../source/helpers/url_helper.rst:214
+#: ../../source/helpers/url_helper.rst:240
+msgid ""
+"As above, you may specify an alternate configuration. You may find the "
+"alternate configuration useful if generating links for a different site than"
+" yours, which contains different configuration preferences. We use this for "
+"unit testing the framework itself."
+msgstr ""
+"위와 마찬가지로 대체 설정을 지정할 수 있습니다. 다른 설정 기본 설정을 포함하는 다른 사이트의 링크를 생성하는 경우 대체 설정이 유용할"
+" 수 있습니다. 프레임워크 자체의 단위 테스트에 사용합니다."
+
+#: ../../source/helpers/url_helper.rst:219
+msgid ""
+"Attributes passed into the anchor function are automatically escaped to "
+"protected against XSS attacks."
+msgstr "앵커 함수에 전달된 속성은 XSS 공격으로부터 보호하기 위해 자동으로 이스케이프됩니다."
+
+#: ../../source/helpers/url_helper.rst:223
+msgid "URI string"
+msgstr "URI 문자열"
+
+#: ../../source/helpers/url_helper.rst:227
+msgid "Pop-up hyperlink"
+msgstr "팝업 하이퍼링크"
+
+#: ../../source/helpers/url_helper.rst:230
+msgid ""
+"Nearly identical to the :php:func:`anchor()` function except that it opens "
+"the URL in a new window. You can specify JavaScript window attributes in the"
+" third parameter to control how the window is opened. If the third parameter"
+" is not set it will simply open a new window with your own browser settings."
+msgstr ""
+":php:func:`anchor()` 함수와 거의 동일하지만 URL을 새 창에서 엽니다. 세 번째 매개변수에 JavaScript 창 "
+"속성을 지정하여 창이 열리는 방식을 제어할 수 있습니다. 세 번째 매개변수가 설정되지 않으면 브라우저 설정에 따라 새 창이 열립니다."
+
+#: ../../source/helpers/url_helper.rst:236
+msgid "Here is an example with attributes:"
+msgstr "다음은 속성을 사용한 예입니다:"
+
+#: ../../source/helpers/url_helper.rst:245
+msgid ""
+"The above attributes are the function defaults so you only need to set the "
+"ones that are different from what you need. If you want the function to use "
+"all of its defaults simply pass an empty array in the third parameter:"
+msgstr ""
+"위 속성은 함수의 기본값이므로 필요한 것과 다른 것만 설정하면 됩니다. 함수가 모든 기본값을 사용하게 하려면 세 번째 매개변수로 빈 "
+"배열을 전달하면 됩니다:"
+
+#: ../../source/helpers/url_helper.rst:252
+msgid ""
+"The **window_name** is not really an attribute, but an argument to the "
+"JavaScript `window.open() "
+"<https://www.w3schools.com/jsref/met_win_open.asp>`_ method, which accepts "
+"either a window name or a window target."
+msgstr ""
+"**window_name**\\ 은 실제 속성이 아니라 창 이름 또는 창 대상을 받는 JavaScript `window.open() "
+"<https://www.w3schools.com/jsref/met_win_open.asp>`_ 메서드의 인수입니다."
+
+#: ../../source/helpers/url_helper.rst:256
+msgid ""
+"Any other attribute than the listed above will be parsed as an HTML "
+"attribute to the anchor tag."
+msgstr "위에 나열된 속성 이외의 다른 속성은 앵커 태그의 HTML 속성으로 파싱됩니다."
+
+#: ../../source/helpers/url_helper.rst:259
+msgid ""
+"Attributes passed into the anchor_popup function are automatically escaped "
+"to protected against XSS attacks."
+msgstr "anchor_popup 함수에 전달된 속성은 XSS 공격으로부터 보호하기 위해 자동으로 이스케이프됩니다."
+
+#: ../../source/helpers/url_helper.rst:263
+#: ../../source/helpers/url_helper.rst:282
+msgid "E-mail address"
+msgstr "이메일 주소"
+
+#: ../../source/helpers/url_helper.rst:266
+msgid "A \"mail to\" hyperlink"
+msgstr "\"mail to\" 하이퍼링크"
+
+#: ../../source/helpers/url_helper.rst:269
+msgid "Creates a standard HTML e-mail link. Usage example:"
+msgstr "표준 HTML 이메일 링크를 생성합니다. 사용 예:"
+
+#: ../../source/helpers/url_helper.rst:273
+msgid ""
+"As with the :php:func:`anchor()` tab above, you can set attributes using the"
+" third parameter:"
+msgstr "위의 :php:func:`anchor()` 탭과 마찬가지로 세 번째 매개변수를 사용하여 속성을 설정할 수 있습니다:"
+
+#: ../../source/helpers/url_helper.rst:278
+msgid ""
+"Attributes passed into the mailto function are automatically escaped to "
+"protected against XSS attacks."
+msgstr "mailto 함수에 전달된 속성은 XSS 공격으로부터 보호하기 위해 자동으로 이스케이프됩니다."
+
+#: ../../source/helpers/url_helper.rst:285
+msgid "A spam-safe \"mail to\" hyperlink"
+msgstr "스팸 방지 \"mail to\" 하이퍼링크"
+
+#: ../../source/helpers/url_helper.rst:288
+msgid ""
+"Identical to the :php:func:`mailto()` function except it writes an "
+"obfuscated version of the *mailto* tag using ordinal numbers written with "
+"JavaScript to help prevent the e-mail address from being harvested by spam "
+"bots."
+msgstr ""
+":php:func:`mailto()` 함수와 동일하지만 스팸 봇에 의해 이메일 주소가 수집되는 것을 방지하기 위해 JavaScript로 "
+"작성된 서수 숫자를 사용하여 *mailto* 태그의 난독화된 버전을 작성합니다."
+
+#: ../../source/helpers/url_helper.rst:295
+msgid "Link type (``'email'``, ``'url'`` or ``'both'``)"
+msgstr "링크 유형 (``'email'``, ``'url'`` 또는 ``'both'``)"
+
+#: ../../source/helpers/url_helper.rst:296
+msgid "Whether to create popup links"
+msgstr "팝업 링크 생성 여부"
+
+#: ../../source/helpers/url_helper.rst:297
+msgid "Linkified string"
+msgstr "링크로 변환된 문자열"
+
+#: ../../source/helpers/url_helper.rst:300
+msgid ""
+"Automatically turns URLs and e-mail addresses contained in a string into "
+"links. Example:"
+msgstr "문자열에 포함된 URL과 이메일 주소를 자동으로 링크로 변환합니다. 예:"
+
+#: ../../source/helpers/url_helper.rst:305
+msgid ""
+"The second parameter determines whether URLs and e-mails are converted or "
+"just one or the other. The default behavior is both if the parameter is not "
+"specified. E-mail links are encoded as :php:func:`safe_mailto()` as shown "
+"above."
+msgstr ""
+"두 번째 매개변수는 URL과 이메일이 모두 변환될지 아니면 둘 중 하나만 변환될지를 결정합니다. 매개변수를 지정하지 않으면 기본적으로 둘"
+" 다 변환됩니다. 이메일 링크는 위에 표시된 것처럼 :php:func:`safe_mailto()`\\ 로 인코딩됩니다."
+
+#: ../../source/helpers/url_helper.rst:310
+msgid "Converts only URLs:"
+msgstr "URL만 변환합니다:"
+
+#: ../../source/helpers/url_helper.rst:314
+msgid "Converts only e-mail addresses:"
+msgstr "이메일 주소만 변환합니다:"
+
+#: ../../source/helpers/url_helper.rst:318
+msgid ""
+"The third parameter determines whether links are shown in a new window. The "
+"value can be true or false (boolean):"
+msgstr "세 번째 매개변수는 링크를 새 창에서 표시할지 여부를 결정합니다. 값은 true 또는 false(불리언)가 될 수 있습니다:"
+
+#: ../../source/helpers/url_helper.rst:323
+msgid ""
+"The only URLs recognized are those that start with ``www.`` or with ``://``."
+msgstr "인식되는 URL은 ``www.``\\ 또는 ``://``\\ 으로 시작하는 것뿐입니다."
+
+#: ../../source/helpers/url_helper.rst:328
+#: ../../source/helpers/url_helper.rst:356
+msgid "Word separator (usually ``'-'`` or ``'_'``)"
+msgstr "단어 구분자 (일반적으로 ``'-'`` 또는 ``'_'``)"
+
+#: ../../source/helpers/url_helper.rst:329
+#: ../../source/helpers/url_helper.rst:357
+msgid "Whether to transform the output string to lowercase"
+msgstr "출력 문자열을 소문자로 변환할지 여부"
+
+#: ../../source/helpers/url_helper.rst:330
+#: ../../source/helpers/url_helper.rst:358
+msgid "URL-formatted string"
+msgstr "URL 형식의 문자열"
+
+#: ../../source/helpers/url_helper.rst:333
+msgid ""
+"Takes a string as input and creates a human-friendly URL string. This is "
+"useful if, for example, you have a blog in which you'd like to use the title"
+" of your entries in the URL. Example:"
+msgstr ""
+"문자열을 입력으로 받아 사람이 읽기 쉬운 URL 문자열을 생성합니다. 예를 들어 블로그에서 항목의 제목을 URL에 사용하려는 경우에 "
+"유용합니다. 예:"
+
+#: ../../source/helpers/url_helper.rst:339
+msgid ""
+"The second parameter determines the word delimiter. By default dashes are "
+"used. Preferred options are: ``-`` (dash) or ``_`` (underscore)."
+msgstr ""
+"두 번째 매개변수는 단어 구분자를 결정합니다. 기본적으로 대시가 사용됩니다. 권장 옵션: ``-`` (대시) 또는 ``_`` (밑줄)."
+
+#: ../../source/helpers/url_helper.rst:346
+msgid ""
+"The third parameter determines whether or not lowercase characters are "
+"forced. By default they are not. Options are boolean true/false."
+msgstr ""
+"세 번째 매개변수는 소문자를 강제할지 여부를 결정합니다. 기본적으로 강제하지 않습니다. 옵션은 불리언 true/false입니다."
+
+#: ../../source/helpers/url_helper.rst:361
+msgid ""
+"This function works the same as :php:func:`url_title()` but it converts all "
+"accented characters automatically."
+msgstr "이 함수는 :php:func:`url_title()`\\ 과 동일하게 작동하지만 모든 악센트 문자를 자동으로 변환합니다."
+
+#: ../../source/helpers/url_helper.rst:366
+msgid "The hostname to parse. If null, uses the current request's host."
+msgstr "파싱할 호스트명. null이면 현재 요청의 호스트를 사용합니다."
+
+#: ../../source/helpers/url_helper.rst:367
+msgid "The subdomain, or an empty string if none exists."
+msgstr "서브도메인, 없는 경우 빈 문자열."
+
+#: ../../source/helpers/url_helper.rst:370
+msgid "Parses the subdomain from the given host name."
+msgstr "주어진 호스트명에서 서브도메인을 파싱합니다."
+
+#: ../../source/helpers/url_helper.rst:376
+msgid ""
+"You can customize the list of known two-part TLDs by adding them to the "
+"``Config\\Hostnames::TWO_PART_TLDS`` array."
+msgstr ""
+"``Config\\Hostnames::TWO_PART_TLDS`` 배열에 추가하여 알려진 두 부분으로 구성된 TLD 목록을 사용자 정의할"
+" 수 있습니다."
+
+#: ../../source/helpers/url_helper.rst:381
+msgid "URL string"
+msgstr "URL 문자열"
+
+#: ../../source/helpers/url_helper.rst:382
+msgid "true for ``https://``"
+msgstr "``https://``\\ 를 사용하려면 true"
+
+#: ../../source/helpers/url_helper.rst:383
+msgid "Protocol-prefixed URL string"
+msgstr "프로토콜 접두사가 붙은 URL 문자열"
+
+#: ../../source/helpers/url_helper.rst:386
+msgid ""
+"This function will add ``http://`` or ``https://`` in the event that a "
+"protocol prefix is missing from a URL."
+msgstr "URL에 프로토콜 접두사가 없는 경우 ``http://`` 또는 ``https://``\\ 를 추가합니다."
+
+#: ../../source/helpers/url_helper.rst:389
+msgid "Pass the URL string to the function like this:"
+msgstr "URL 문자열을 다음과 같이 함수에 전달합니다:"
+
+#: ../../source/helpers/url_helper.rst:395
+msgid "Route name or Controller::method"
+msgstr "라우트 이름 또는 Controller::method"
+
+#: ../../source/helpers/url_helper.rst:396
+msgid ""
+"One or more parameters to be passed to the route. The last parameter allows "
+"you to set the locale."
+msgstr "라우트에 전달할 하나 이상의 매개변수. 마지막 매개변수를 사용하면 로케일을 설정할 수 있습니다."
+
+#: ../../source/helpers/url_helper.rst:397
+msgid "Absolute URL"
+msgstr "절대 URL"
+
+#: ../../source/helpers/url_helper.rst:400
+msgid ""
+"This function requires the controller/method to have a route defined in "
+"**app/Config/Routes.php**."
+msgstr "이 함수를 사용하려면 컨트롤러/메서드에 **app/Config/Routes.php**\\ 에 라우트가 정의되어 있어야 합니다."
+
+#: ../../source/helpers/url_helper.rst:402
+msgid "Builds an absolute URL to a controller method in your app. Example:"
+msgstr "앱의 컨트롤러 메서드에 대한 절대 URL을 구성합니다. 예:"
+
+#: ../../source/helpers/url_helper.rst:406
+msgid "You can also add arguments to the route. Here is an example:"
+msgstr "라우트에 인수를 추가할 수도 있습니다. 다음은 예입니다:"
+
+#: ../../source/helpers/url_helper.rst:411
+msgid ""
+"This is useful because you can still change your routes after putting links "
+"into your views."
+msgstr "뷰에 링크를 추가한 후에도 라우트를 변경할 수 있으므로 유용합니다."
+
+#: ../../source/helpers/url_helper.rst:414
+#, python-brace-format
+msgid ""
+"Since v4.3.0, when you use ``{locale}`` in your route, you can optionally "
+"specify the locale value as the last parameter."
+msgstr ""
+"v4.3.0부터 라우트에서 ``{locale}``\\ 을 사용할 때 마지막 매개변수로 선택적으로 로케일 값을 지정할 수 있습니다."
+
+#: ../../source/helpers/url_helper.rst:418
+msgid ""
+"For full details, see the :ref:`reverse-routing` and :ref:`using-named-"
+"routes`."
+msgstr "자세한 내용은 :ref:`reverse-routing`\\ 과 :ref:`using-named-routes`\\ 를 참조하십시오."
+
+#: ../../source/helpers/url_helper.rst:422
+msgid ""
+"The URL path relative to baseURL to check the current URI path against."
+msgstr "현재 URI 경로와 비교할 baseURL 기준의 URL 경로."
+
+#: ../../source/helpers/url_helper.rst:425
+msgid ""
+"Compares the current URL's path against the given path to see if they match."
+" Example:"
+msgstr "현재 URL의 경로를 주어진 경로와 비교하여 일치하는지 확인합니다. 예:"
+
+#: ../../source/helpers/url_helper.rst:429
+msgid ""
+"This would match **http://example.com/admin**. It would match "
+"**http://example.com/subdir/admin** if your baseURL is "
+"``http://example.com/subdir/``."
+msgstr ""
+"이는 **http://example.com/admin**\\ 과 일치합니다. baseURL이 "
+"``http://example.com/subdir/``\\ 이면 **http://example.com/subdir/admin**\\ 과 "
+"일치합니다."
+
+#: ../../source/helpers/url_helper.rst:432
+msgid ""
+"You can use the ``*`` wildcard to match any other applicable characters in "
+"the URL:"
+msgstr "URL에서 다른 적용 가능한 문자를 일치시키려면 ``*`` 와일드카드를 사용할 수 있습니다:"
+
+#: ../../source/helpers/url_helper.rst:437
+msgid "This would match any of the following:"
+msgstr "이는 다음 중 하나와 일치합니다:"
+
+#: ../../source/helpers/url_helper.rst:439
+msgid "/admin"
+msgstr "/admin"
+
+#: ../../source/helpers/url_helper.rst:440
+msgid "/admin/"
+msgstr "/admin/"
+
+#: ../../source/helpers/url_helper.rst:441
+msgid "/admin/users"
+msgstr "/admin/users"
+
+#: ../../source/helpers/url_helper.rst:442
+msgid "/admin/users/schools/classmates/..."
+msgstr "/admin/users/schools/classmates/..."
+
+#: ../../source/helpers/xml_helper.rst:3
+msgid "XML Helper"
+msgstr "XML 헬퍼"
+
+#: ../../source/helpers/xml_helper.rst:5
+msgid ""
+"The XML Helper file contains functions that assist in working with XML data."
+msgstr "XML 헬퍼 파일에는 XML 데이터 작업을 지원하는 함수가 포함되어 있습니다."
+
+#: ../../source/helpers/xml_helper.rst:15
+msgid "This helper is loaded using the following code"
+msgstr "이 헬퍼는 다음 코드를 사용하여 로드합니다"
+
+#: ../../source/helpers/xml_helper.rst:26
+msgid "the text string to convert"
+msgstr "변환할 텍스트 문자열"
+
+#: ../../source/helpers/xml_helper.rst:27
+msgid ""
+"Whether to protect all content that looks like a potential entity instead of"
+" just numbered entities, e.g., &foo;"
+msgstr "번호가 매겨진 엔티티뿐만 아니라 잠재적 엔티티처럼 보이는 모든 콘텐츠를 보호할지 여부(예: &foo;)"
+
+#: ../../source/helpers/xml_helper.rst:28
+msgid "XML-converted string"
+msgstr "XML로 변환된 문자열"
+
+#: ../../source/helpers/xml_helper.rst:31
+msgid ""
+"Takes a string as input and converts the following reserved XML characters "
+"to entities:"
+msgstr "문자열을 입력으로 받아 다음 예약된 XML 문자를 엔티티로 변환합니다:"
+
+#: ../../source/helpers/xml_helper.rst:34
+msgid "Ampersands: &"
+msgstr "앰퍼샌드: &"
+
+#: ../../source/helpers/xml_helper.rst:35
+msgid "Less than and greater than characters: < >"
+msgstr "보다 작음 및 보다 큼 문자: < >"
+
+#: ../../source/helpers/xml_helper.rst:36
+msgid "Single and double quotes: ' \""
+msgstr "작은따옴표 및 큰따옴표: ' \""
+
+#: ../../source/helpers/xml_helper.rst:37
+msgid "Dashes: -"
+msgstr "대시: -"
+
+#: ../../source/helpers/xml_helper.rst:39
+msgid ""
+"This function ignores ampersands if they are part of existing numbered "
+"character entities, e.g., &#123;. Example:"
+msgstr "이 함수는 앰퍼샌드가 기존 번호 매겨진 문자 엔티티(예: &#123;)의 일부인 경우 무시합니다. 예:"
+
+#: ../../source/helpers/xml_helper.rst:44
+msgid "outputs:"
+msgstr "출력 결과:"
