@@ -129,10 +129,10 @@
 # user_guide_src 폴더에서 실행
 
 # 증분 빌드
-.venv/bin/sphinx-build -b html -D language='ko' source build/html
+.venv/bin/sphinx-build -b html -D language='ko' -D locale_dirs=locale source build/html
 
 # 클린 빌드
-rm -rf build/html && .venv/bin/sphinx-build -b html -D language='ko' source build/html
+rm -rf build/html && .venv/bin/sphinx-build -b html -D language='ko' -D locale_dirs=locale source build/html
 ```
 
 ---
