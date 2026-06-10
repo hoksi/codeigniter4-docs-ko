@@ -5733,6 +5733,9 @@ msgid ""
 "task, new methods have been added. These methods make it easier to manage "
 "and display pagination details. Here's an example:"
 msgstr ""
+"항목을 페이지네이션할 때 총 항목 수와 현재 페이지에 표시된 항목 범위를 표시하는 것이 유용한 경우가 많습니다. 이 작업을 단순화하기 "
+"위해 새로운 메서드가 추가되었습니다. 이 메서드들을 통해 페이지네이션 세부 정보를 더 쉽게 관리하고 표시할 수 있습니다. 다음은 "
+"예시입니다:"
 
 #: ../../source/libraries/pagination.rst:356
 msgid "getTotal()"
@@ -12325,6 +12328,8 @@ msgid ""
 "parameters, or if the detected MIME type does not match the MIME types "
 "associated with the extension."
 msgstr ""
+"클라이언트 파일명의 확장자가 매개변수에 나열된 것이 아니거나, 감지된 MIME 타입이 해당 확장자와 연관된 MIME 타입과 일치하지 "
+"않으면 실패합니다."
 
 #: ../../source/libraries/validation.rst:1111
 msgid "``ext_in[field_name,png,jpg,gif]``"

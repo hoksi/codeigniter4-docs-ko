@@ -13537,6 +13537,8 @@ msgid ""
 "The Debug Toolbar now has a new “Hot Reload” feature (*contributed by* "
 "`lonnieezell <https://github.com/lonnieezell>`_). See `Testing`_."
 msgstr ""
+"Debug Toolbar에 새로운 \\\"Hot Reload\\\" 기능이 추가되었습니다 (*contributed by* "
+"`lonnieezell <https://github.com/lonnieezell>`_). `Testing`_\\ 을 참조하십시오."
 
 #: ../../source/changelogs/v4.4.0.rst:26
 msgid "URI::setSegment() and Non-Existent Segment"
@@ -15146,6 +15148,7 @@ msgid ""
 "See :ref:`Using CodeIgniter’s Model <model-update-only-changed>` for "
 "details."
 msgstr ""
+":ref:`Using CodeIgniter's Model <model-update-only-changed>`\\ 을 참조하십시오."
 
 #: ../../source/changelogs/v4.5.0.rst:162
 msgid "Saving Dates"
@@ -18997,7 +19000,7 @@ msgstr "버전 4.7.3"
 
 #: ../../source/changelogs/v4.7.3.rst:5
 msgid "Release Date: May 22, 2026"
-msgstr ""
+msgstr "릴리스 날짜: 2026년 5월 22일"
 
 #: ../../source/changelogs/v4.7.3.rst:7
 msgid "**4.7.3 release of CodeIgniter4**"
@@ -19013,6 +19016,11 @@ msgid ""
 "<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-2gr4-ppc7-7mhx>`_"
 " for more information."
 msgstr ""
+"**Validation:** ``ext_in`` 파일 업로드 유효성 검사 규칙이 이제 클라이언트 파일명 확장자를 검증하고 감지된 MIME"
+" 타입과 일치하는지 확인합니다. 이전에는 ``ext_in``\\ 이 MIME 유래 추정 확장자만 확인했기 때문에 클라이언트 확장자가 "
+"일치하지 않는 파일이 유효성 검사를 통과할 수 있었습니다. 자세한 내용은 `보안 권고 GHSA-2gr4-ppc7-7mhx "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-2gr4-ppc7-7mhx>`_\\"
+" 를 참조하십시오."
 
 #: ../../source/changelogs/v4.7.3.rst:28
 msgid "The ``Cache.invalidHandler`` message string was added."
@@ -19089,6 +19097,9 @@ msgid ""
 "``escapeshellarg()``, letting shell metacharacters in the locally-supplied "
 "argument be interpreted by ``/bin/sh``."
 msgstr ""
+"**Commands:** ``serve`` 명령에서 ``--host`` 옵션이 ``escapeshellarg()`` 없이 "
+"``passthru()`` 호출에 연결되어, 로컬에서 제공한 인수의 쉘 메타 문자가 ``/bin/sh``\\ 에 의해 해석될 수 있는 "
+"버그를 수정했습니다."
 
 #: ../../source/changelogs/v4.7.3.rst:48
 msgid ""
@@ -19130,6 +19141,8 @@ msgid ""
 "**Config:** Fixed a bug where the app starter's ``zlib.output_compression`` "
 "guard rejected the valid disabled value ``Off``."
 msgstr ""
+"**Config:** 앱 스타터의 ``zlib.output_compression`` 가드가 유효한 비활성화 값 ``Off``\\ 를 "
+"거부하는 버그를 수정했습니다."
 
 #: ../../source/changelogs/v4.7.3.rst:53
 msgid ""
