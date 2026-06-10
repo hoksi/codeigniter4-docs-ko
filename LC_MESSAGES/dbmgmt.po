@@ -1,0 +1,1727 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-10 16:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ko <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/dbmgmt/db_commands.rst:3
+msgid "Database Commands"
+msgstr "데이터베이스 명령어"
+
+#: ../../source/dbmgmt/db_commands.rst:5
+msgid "CodeIgniter provides some simple commands for database management."
+msgstr "CodeIgniter는 데이터베이스 관리를 위한 간단한 명령어를 제공합니다."
+
+#: ../../source/dbmgmt/db_commands.rst:13
+msgid "Showing Table Information"
+msgstr "테이블 정보 표시"
+
+#: ../../source/dbmgmt/db_commands.rst:16
+msgid "List the Tables in Your Database"
+msgstr "데이터베이스의 테이블 목록 표시"
+
+#: ../../source/dbmgmt/db_commands.rst:19
+msgid "db:table --show"
+msgstr "db:table --show"
+
+#: ../../source/dbmgmt/db_commands.rst:21
+msgid ""
+"To list all the tables in your database straight from your favorite "
+"terminal, you can use the ``db:table --show`` command:"
+msgstr "터미널에서 데이터베이스의 모든 테이블 목록을 확인하려면 ``db:table --show``\\ 명령어를 사용합니다:"
+
+#: ../../source/dbmgmt/db_commands.rst:28
+msgid ""
+"When using this command it is assumed that a table exists. Otherwise, "
+"CodeIgniter will complain that the database has no tables."
+msgstr ""
+"이 명령어를 사용할 때는 테이블이 존재한다고 가정합니다. 그렇지 않으면 CodeIgniter는 데이터베이스에 테이블이 없다고 알립니다."
+
+#: ../../source/dbmgmt/db_commands.rst:34
+msgid "Specify the Database Group"
+msgstr "데이터베이스 그룹 지정"
+
+#: ../../source/dbmgmt/db_commands.rst:37
+msgid "db:table --dbgroup"
+msgstr "db:table --dbgroup"
+
+#: ../../source/dbmgmt/db_commands.rst:41
+msgid ""
+"You can specify the database group to use with the ``--dbgroup`` option:"
+msgstr "``--dbgroup``\\ 옵션을 사용하여 사용할 데이터베이스 그룹을 지정할 수 있습니다:"
+
+#: ../../source/dbmgmt/db_commands.rst:48
+msgid "Retrieve Some Records"
+msgstr "레코드 조회"
+
+#: ../../source/dbmgmt/db_commands.rst:51
+msgid "db:table"
+msgstr "db:table"
+
+#: ../../source/dbmgmt/db_commands.rst:53
+msgid ""
+"When you have a table named ``my_table``, you can see the field names and "
+"the records of a table:"
+msgstr "``my_table``\\ 이라는 테이블이 있으면 해당 테이블의 필드 이름과 레코드를 확인할 수 있습니다:"
+
+#: ../../source/dbmgmt/db_commands.rst:59
+msgid ""
+"If the table ``my_table`` is not in the database, CodeIgniter displays a "
+"list of available tables to select."
+msgstr "``my_table``\\ 테이블이 데이터베이스에 없으면 CodeIgniter는 선택 가능한 테이블 목록을 표시합니다."
+
+#: ../../source/dbmgmt/db_commands.rst:61
+msgid "You can also use the following command without the table name:"
+msgstr "테이블 이름 없이 다음 명령어를 사용할 수도 있습니다:"
+
+#: ../../source/dbmgmt/db_commands.rst:67
+msgid "In this case, the table name will be asked."
+msgstr "이 경우 테이블 이름을 입력하라는 메시지가 표시됩니다."
+
+#: ../../source/dbmgmt/db_commands.rst:69
+msgid "You can also pass a few options:"
+msgstr "몇 가지 옵션을 전달할 수도 있습니다:"
+
+#: ../../source/dbmgmt/db_commands.rst:75
+msgid "The option ``--limit-rows 50`` limits the number of rows to 50 rows."
+msgstr "``--limit-rows 50``\\ 옵션은 행 수를 50개로 제한합니다."
+
+#: ../../source/dbmgmt/db_commands.rst:77
+msgid ""
+"The option  ``--limit-field-value 20`` limits the length of the field values"
+" to 20 characters, to prevent confusion of the table output in the terminal."
+msgstr ""
+"``--limit-field-value 20``\\ 옵션은 터미널의 테이블 출력이 혼란스러워지지 않도록 필드 값의 길이를 20자로 "
+"제한합니다."
+
+#: ../../source/dbmgmt/db_commands.rst:79
+msgid "The option ``--desc`` sets the sort direction to \"DESC\"."
+msgstr "``--desc``\\ 옵션은 정렬 방향을 \"DESC\"로 설정합니다."
+
+#: ../../source/dbmgmt/db_commands.rst:82
+msgid "Retrieve Field Metadata"
+msgstr "필드 메타데이터 조회"
+
+#: ../../source/dbmgmt/db_commands.rst:85
+msgid "db:table --metadata"
+msgstr "db:table --metadata"
+
+#: ../../source/dbmgmt/db_commands.rst:87
+msgid ""
+"When you have a table named ``my_table``, you can see metadata like the "
+"column type, max length of the table with the ``--metadata`` option:"
+msgstr ""
+"``my_table``\\ 이라는 테이블이 있으면 ``--metadata``\\ 옵션으로 컬럼 타입, 최대 길이 등의 메타데이터를 확인할"
+" 수 있습니다:"
+
+#: ../../source/dbmgmt/db_commands.rst:93
+msgid ""
+"When using this command it is assumed that the table exists. Otherwise, "
+"CodeIgniter will show a table list to select. Also, you can use this command"
+" as ``db:table --metadata``."
+msgstr ""
+"이 명령어를 사용할 때는 테이블이 존재한다고 가정합니다. 그렇지 않으면 CodeIgniter는 선택할 테이블 목록을 표시합니다. 또한 "
+"``db:table --metadata``\\ 형식으로 사용할 수도 있습니다."
+
+#: ../../source/dbmgmt/forge.rst:3
+msgid "Database Forge Class"
+msgstr "데이터베이스 Forge 클래스"
+
+#: ../../source/dbmgmt/forge.rst:5
+msgid ""
+"The Database Forge Class contains methods that help you manage your "
+"database."
+msgstr "데이터베이스 Forge 클래스는 데이터베이스를 관리하는 데 도움이 되는 메서드를 포함합니다."
+
+#: ../../source/dbmgmt/forge.rst:14
+msgid "Initializing the Forge Class"
+msgstr "Forge 클래스 초기화"
+
+#: ../../source/dbmgmt/forge.rst:16
+msgid ""
+"In order to initialize the Forge class, your database driver must already be"
+" running, since the Forge class relies on it."
+msgstr ""
+"Forge 클래스를 초기화하려면 데이터베이스 드라이버가 이미 실행 중이어야 합니다. Forge 클래스는 데이터베이스 드라이버에 의존하기 "
+"때문입니다."
+
+#: ../../source/dbmgmt/forge.rst:19
+msgid "Load the Forge Class as follows:"
+msgstr "Forge 클래스를 다음과 같이 로드합니다:"
+
+#: ../../source/dbmgmt/forge.rst:23
+msgid ""
+"You can also pass another database group name to the DB Forge loader, in "
+"case the database you want to manage isn't the default one:"
+msgstr ""
+"관리하려는 데이터베이스가 기본 데이터베이스가 아닌 경우, DB Forge 로더에 다른 데이터베이스 그룹 이름을 전달할 수도 있습니다:"
+
+#: ../../source/dbmgmt/forge.rst:28
+msgid ""
+"In the above example, we're passing the name of a different database group "
+"to connect to as the first parameter."
+msgstr "위 예제에서는 연결할 다른 데이터베이스 그룹의 이름을 첫 번째 매개변수로 전달합니다."
+
+#: ../../source/dbmgmt/forge.rst:33
+msgid "Creating and Dropping Databases"
+msgstr "데이터베이스 생성 및 삭제"
+
+#: ../../source/dbmgmt/forge.rst:36
+msgid "$forge->createDatabase('db_name')"
+msgstr "$forge->createDatabase('db_name')"
+
+#: ../../source/dbmgmt/forge.rst:38
+msgid ""
+"Permits you to create the database specified in the first parameter. Returns"
+" true/false based on success or failure:"
+msgstr "첫 번째 매개변수에 지정한 데이터베이스를 생성할 수 있습니다. 성공 또는 실패에 따라 true/false를 반환합니다:"
+
+#: ../../source/dbmgmt/forge.rst:43
+msgid ""
+"An optional second parameter set to true will add ``IF EXISTS`` statement or"
+" will check if a database exists before creating it (depending on DBMS)."
+msgstr ""
+"선택적 두 번째 매개변수를 true로 설정하면 ``IF EXISTS`` 구문을 추가하거나 데이터베이스를 생성하기 전에 해당 데이터베이스가"
+" 존재하는지 확인합니다(DBMS에 따라 다름)."
+
+#: ../../source/dbmgmt/forge.rst:49
+msgid "$forge->dropDatabase('db_name')"
+msgstr "$forge->dropDatabase('db_name')"
+
+#: ../../source/dbmgmt/forge.rst:51
+msgid ""
+"Permits you to drop the database specified in the first parameter. Returns "
+"true/false based on success or failure:"
+msgstr "첫 번째 매개변수에 지정한 데이터베이스를 삭제할 수 있습니다. 성공 또는 실패에 따라 true/false를 반환합니다:"
+
+#: ../../source/dbmgmt/forge.rst:57
+msgid "Creating Databases in the Command Line"
+msgstr "커맨드 라인에서 데이터베이스 생성"
+
+#: ../../source/dbmgmt/forge.rst:59
+msgid ""
+"CodeIgniter supports creating databases straight from your favorite terminal"
+" using the dedicated ``db:create`` command. By using this command it is "
+"assumed that the database is not yet existing. Otherwise, CodeIgniter will "
+"complain that the database creation has failed."
+msgstr ""
+"CodeIgniter는 전용 ``db:create`` 명령을 사용하여 터미널에서 직접 데이터베이스를 생성하는 것을 지원합니다. 이 명령을"
+" 사용할 때는 데이터베이스가 아직 존재하지 않는 것으로 가정합니다. 그렇지 않으면 CodeIgniter는 데이터베이스 생성에 실패했다고 "
+"오류를 표시합니다."
+
+#: ../../source/dbmgmt/forge.rst:63
+msgid ""
+"To start, just type the command and the name of the database (e.g., "
+"``foo``):"
+msgstr "시작하려면 명령과 데이터베이스 이름(예: ``foo``)을 입력합니다:"
+
+#: ../../source/dbmgmt/forge.rst:69
+msgid ""
+"If everything went fine, you should expect the ``Database \"foo\" "
+"successfully created.`` message displayed."
+msgstr "모든 것이 정상적으로 진행되면 ``Database \"foo\" successfully created.`` 메시지가 표시됩니다."
+
+#: ../../source/dbmgmt/forge.rst:71
+msgid ""
+"If you are on a testing environment or you are using the SQLite3 driver, you"
+" may pass in the file extension for the file where the database will be "
+"created using the ``--ext`` option. Valid values are ``db`` and ``sqlite`` "
+"and defaults to ``db``. Remember that these should not be preceded by a "
+"period. :"
+msgstr ""
+"테스트 환경에 있거나 SQLite3 드라이버를 사용하는 경우, ``--ext`` 옵션을 사용하여 데이터베이스가 생성될 파일의 확장자를 "
+"전달할 수 있습니다. 유효한 값은 ``db``\\ 와 ``sqlite``\\ 이며, 기본값은 ``db``\\ 입니다. 이 값들 앞에 "
+"마침표를 붙이지 않아야 합니다. :"
+
+#: ../../source/dbmgmt/forge.rst:80
+msgid "The above command will create the db file in **WRITEPATH/foo.sqlite**."
+msgstr "위 명령은 **WRITEPATH/foo.sqlite**\\ 에 db 파일을 생성합니다."
+
+#: ../../source/dbmgmt/forge.rst:82
+msgid ""
+"When using the special SQLite3 database name ``:memory:``, expect that the "
+"command will still produce a success message but no database file is "
+"created. This is because SQLite3 will just use an in-memory database."
+msgstr ""
+"특수한 SQLite3 데이터베이스 이름 ``:memory:``\\ 를 사용하면 명령이 성공 메시지를 출력하지만 데이터베이스 파일은 "
+"생성되지 않습니다. 이는 SQLite3가 인메모리 데이터베이스를 사용하기 때문입니다."
+
+#: ../../source/dbmgmt/forge.rst:88
+msgid "Creating Tables"
+msgstr "테이블 생성"
+
+#: ../../source/dbmgmt/forge.rst:90
+msgid ""
+"There are several things you may wish to do when creating tables. Add "
+"fields, add keys to the table, alter columns. CodeIgniter provides a "
+"mechanism for this."
+msgstr ""
+"테이블을 생성할 때 수행하고 싶은 작업이 여러 가지 있을 수 있습니다. 필드 추가, 테이블에 키 추가, 컬럼 변경 등이 그 예입니다. "
+"CodeIgniter는 이를 위한 메커니즘을 제공합니다."
+
+#: ../../source/dbmgmt/forge.rst:97
+msgid "Adding Fields"
+msgstr "필드 추가"
+
+#: ../../source/dbmgmt/forge.rst:100
+msgid "$forge->addField()"
+msgstr "$forge->addField()"
+
+#: ../../source/dbmgmt/forge.rst:102
+msgid ""
+"Fields are normally created via an associative array. Within the array, you "
+"must include a ``type`` key that relates to the datatype of the field."
+msgstr ""
+"필드는 일반적으로 연관 배열을 통해 생성됩니다. 배열 내에는 필드의 데이터 타입에 해당하는 ``type`` 키를 반드시 포함해야 합니다."
+
+#: ../../source/dbmgmt/forge.rst:105
+msgid ""
+"For example, ``INT``, ``VARCHAR``, ``TEXT``, etc. Many datatypes (for "
+"example ``VARCHAR``) also require a ``constraint`` key."
+msgstr ""
+"예를 들어 ``INT``, ``VARCHAR``, ``TEXT`` 등이 있습니다. 많은 데이터 타입(예: ``VARCHAR``)은 "
+"``constraint`` 키도 필요합니다."
+
+#: ../../source/dbmgmt/forge.rst:110
+msgid "Additionally, the following key/values can be used:"
+msgstr "추가로 다음과 같은 키/값을 사용할 수 있습니다:"
+
+#: ../../source/dbmgmt/forge.rst:112
+msgid "``unsigned``/true : to generate ``UNSIGNED`` in the field definition."
+msgstr "``unsigned``/true : 필드 정의에 ``UNSIGNED``\\ 를 생성합니다."
+
+#: ../../source/dbmgmt/forge.rst:113
+msgid ""
+"``default``/value : to generate ``DEFAULT`` constraint in the field "
+"definition."
+msgstr "``default``/값 : 필드 정의에 ``DEFAULT`` 제약 조건을 생성합니다."
+
+#: ../../source/dbmgmt/forge.rst:114
+msgid ""
+"``null``/true : to generate ``NULL`` in the field definition. Without this, "
+"the field will default to ``NOT NULL``."
+msgstr ""
+"``null``/true : 필드 정의에 ``NULL``\\ 을 생성합니다. 이를 지정하지 않으면 필드의 기본값은 ``NOT "
+"NULL``\\ 이 됩니다."
+
+#: ../../source/dbmgmt/forge.rst:116
+msgid ""
+"``auto_increment``/true : generates an auto_increment flag on the field. "
+"Note that the field type must be a type that supports this, such as "
+"``INTEGER``."
+msgstr ""
+"``auto_increment``/true : 필드에 auto_increment 플래그를 생성합니다. 필드 타입이 "
+"``INTEGER``\\ 와 같이 이를 지원하는 타입이어야 합니다."
+
+#: ../../source/dbmgmt/forge.rst:119
+msgid "``unique``/true : to generate a unique key for the field definition."
+msgstr "``unique``/true : 필드 정의에 유니크 키를 생성합니다."
+
+#: ../../source/dbmgmt/forge.rst:123
+msgid ""
+"After the fields have been defined, they can be added using "
+"``$forge->addField($fields)`` followed by a call to the :ref:`createTable() "
+"<creating-a-table>`  method."
+msgstr ""
+"필드를 정의한 후, ``$forge->addField($fields)``\\ 를 사용하여 필드를 추가하고 "
+":ref:`createTable() <creating-a-table>` 메서드를 호출합니다."
+
+#: ../../source/dbmgmt/forge.rst:128
+msgid "Notes on Data Types"
+msgstr "데이터 타입에 대한 참고 사항"
+
+#: ../../source/dbmgmt/forge.rst:131
+msgid "Floating-Point Types"
+msgstr "부동 소수점 타입"
+
+#: ../../source/dbmgmt/forge.rst:133
+msgid ""
+"Floating-Point types such as ``FLOAT`` and ``DOUBLE`` represent approximate "
+"values. Therefore, they should not be used when exact values are needed."
+msgstr ""
+"``FLOAT``\\ 과 ``DOUBLE``\\ 과 같은 부동 소수점 타입은 근사값을 나타냅니다. 따라서 정확한 값이 필요한 경우에는 "
+"사용하지 않아야 합니다."
+
+#: ../../source/dbmgmt/forge.rst:152
+msgid ""
+"When it is important to preserve exact precision, for example with monetary "
+"data, ``DECIMAL`` or ``NUMERIC`` should be used."
+msgstr ""
+"통화 데이터와 같이 정확한 정밀도를 유지하는 것이 중요한 경우에는 ``DECIMAL`` 또는 ``NUMERIC``\\ 을 사용해야 "
+"합니다."
+
+#: ../../source/dbmgmt/forge.rst:156
+msgid "TEXT"
+msgstr "TEXT"
+
+#: ../../source/dbmgmt/forge.rst:158
+msgid ""
+"``TEXT`` should not be used on SQLSRV. It is deprecated. See `ntext, text, "
+"and image (Transact-SQL) - SQL Server | Microsoft Learn "
+"<https://learn.microsoft.com/en-us/sql/t-sql/data-types/ntext-text-and-"
+"image-transact-sql?view=sql-server-ver16>`_."
+msgstr ""
+"``TEXT``\\ 는 SQLSRV에서 사용하지 않아야 합니다. 이는 더 이상 사용되지 않습니다. `ntext, text, and "
+"image (Transact-SQL) - SQL Server | Microsoft Learn "
+"<https://learn.microsoft.com/en-us/sql/t-sql/data-types/ntext-text-and-"
+"image-transact-sql?view=sql-server-ver16>`_\\ 을 참조하세요."
+
+#: ../../source/dbmgmt/forge.rst:162
+msgid "ENUM"
+msgstr "ENUM"
+
+#: ../../source/dbmgmt/forge.rst:164
+msgid "Not all databases support ``ENUM``."
+msgstr "모든 데이터베이스가 ``ENUM``\\ 을 지원하는 것은 아닙니다."
+
+#: ../../source/dbmgmt/forge.rst:166
+msgid ""
+"Starting with v4.5.0, ``SQLSRV`` Forge converts ``ENUM`` data types to "
+"``VARCHAR(n)``. Previous versions converted to ``TEXT``."
+msgstr ""
+"v4.5.0부터 ``SQLSRV`` Forge는 ``ENUM`` 데이터 타입을 ``VARCHAR(n)``\\ 으로 변환합니다. 이전 "
+"버전에서는 ``TEXT``\\ 로 변환되었습니다."
+
+#: ../../source/dbmgmt/forge.rst:172
+msgid "Raw Sql Strings as Default Values"
+msgstr "기본값으로 Raw SQL 문자열 사용"
+
+#: ../../source/dbmgmt/forge.rst:176
+msgid ""
+"Since v4.2.0, ``$forge->addField()`` accepts a "
+"``CodeIgniter\\Database\\RawSql`` instance, which expresses raw SQL strings."
+msgstr ""
+"v4.2.0부터 ``$forge->addField()``\\ 는 raw SQL 문자열을 표현하는 "
+"``CodeIgniter\\Database\\RawSql`` 인스턴스를 허용합니다."
+
+#: ../../source/dbmgmt/forge.rst:180
+msgid ""
+"When you use ``RawSql``, you MUST escape the data manually. Failure to do so"
+" could result in SQL injections."
+msgstr ""
+"``RawSql``\\ 을 사용할 때는 데이터를 수동으로 이스케이프해야 합니다. 그렇지 않으면 SQL 인젝션이 발생할 수 있습니다."
+
+#: ../../source/dbmgmt/forge.rst:183
+msgid "Passing Strings as Fields"
+msgstr "문자열을 필드로 전달"
+
+#: ../../source/dbmgmt/forge.rst:185
+msgid ""
+"If you know exactly how you want a field to be created, you can pass the "
+"string into the field definitions with ``addField()``:"
+msgstr ""
+"필드를 어떻게 생성할지 정확히 알고 있다면, ``addField()``\\ 를 사용하여 문자열을 필드 정의에 전달할 수 있습니다:"
+
+#: ../../source/dbmgmt/forge.rst:190
+msgid ""
+"Passing raw strings as fields cannot be followed by ``addKey()`` calls on "
+"those fields."
+msgstr "raw 문자열을 필드로 전달한 경우, 해당 필드에 대해 ``addKey()`` 호출을 이어서 사용할 수 없습니다."
+
+#: ../../source/dbmgmt/forge.rst:192
+msgid "Multiple calls to ``addField()`` are cumulative."
+msgstr "``addField()``\\ 를 여러 번 호출하면 누적됩니다."
+
+#: ../../source/dbmgmt/forge.rst:195
+msgid "Creating an id Field"
+msgstr "id 필드 생성"
+
+#: ../../source/dbmgmt/forge.rst:197
+msgid ""
+"There is a special exception for creating id fields. A field with type id "
+"will automatically be assigned as an INT(9) auto_incrementing Primary Key."
+msgstr ""
+"id 필드 생성에는 특별한 예외가 있습니다. 타입이 id인 필드는 자동으로 INT(9) auto_increment 기본 키로 지정됩니다."
+
+#: ../../source/dbmgmt/forge.rst:206
+msgid "Adding Keys"
+msgstr "키 추가"
+
+#: ../../source/dbmgmt/forge.rst:209
+msgid "$forge->addKey()"
+msgstr "$forge->addKey()"
+
+#: ../../source/dbmgmt/forge.rst:211
+msgid ""
+"Generally speaking, you'll want your table to have Keys. This is "
+"accomplished with ``$forge->addKey('field')``. The optional second parameter"
+" set to true will make it a primary key and the third parameter set to true "
+"will make it a unique key. You may specify a name with the fourth parameter."
+" Note that ``addKey()`` must be followed by a call to ``createTable()`` or "
+"``processIndexes()`` when the table already exists."
+msgstr ""
+"일반적으로 테이블에 키를 추가하고 싶을 것입니다. 이는 ``$forge->addKey('field')``\\ 로 수행합니다. 선택적 두 "
+"번째 매개변수를 true로 설정하면 기본 키가 되고, 세 번째 매개변수를 true로 설정하면 유니크 키가 됩니다. 네 번째 매개변수로 "
+"이름을 지정할 수 있습니다. 테이블이 이미 존재하는 경우 ``addKey()`` 이후에 반드시 ``createTable()`` 또는 "
+"``processIndexes()``\\ 를 호출해야 합니다."
+
+#: ../../source/dbmgmt/forge.rst:219
+msgid ""
+"Multiple column non-primary keys must be sent as an array. Sample output "
+"below is for MySQL."
+msgstr "여러 컬럼의 비기본 키는 배열로 전달해야 합니다. 아래 샘플 출력은 MySQL에 대한 것입니다."
+
+#: ../../source/dbmgmt/forge.rst:225
+msgid "$forge->addPrimaryKey()"
+msgstr "$forge->addPrimaryKey()"
+
+#: ../../source/dbmgmt/forge.rst:228
+msgid "$forge->addUniqueKey()"
+msgstr "$forge->addUniqueKey()"
+
+#: ../../source/dbmgmt/forge.rst:230
+msgid ""
+"To make code reading more objective it is also possible to add primary and "
+"unique keys with specific methods:"
+msgstr "코드를 더 명확하게 읽을 수 있도록 특정 메서드를 사용하여 기본 키와 유니크 키를 추가할 수도 있습니다:"
+
+#: ../../source/dbmgmt/forge.rst:235
+msgid ""
+"When you add a primary key, MySQL and SQLite will assume the name "
+"``PRIMARY`` even if a name is provided."
+msgstr "기본 키를 추가할 때, MySQL과 SQLite는 이름을 제공하더라도 ``PRIMARY``\\ 로 이름을 사용합니다."
+
+#: ../../source/dbmgmt/forge.rst:240
+msgid "Adding Foreign Keys"
+msgstr "외래 키 추가"
+
+#: ../../source/dbmgmt/forge.rst:242
+msgid ""
+"Foreign Keys help to enforce relationships and actions across your tables. "
+"For tables that support Foreign Keys, you may add them directly in forge:"
+msgstr ""
+"외래 키는 테이블 간의 관계와 동작을 강제하는 데 도움이 됩니다. 외래 키를 지원하는 테이블의 경우 forge에서 직접 추가할 수 "
+"있습니다:"
+
+#: ../../source/dbmgmt/forge.rst:247
+msgid ""
+"You can specify the desired action for the \"on update\" and \"on delete\" "
+"properties of the constraint as well as the name:"
+msgstr "제약 조건의 \"on update\" 및 \"on delete\" 속성에 대해 원하는 동작과 이름을 지정할 수 있습니다:"
+
+#: ../../source/dbmgmt/forge.rst:251
+msgid ""
+"SQLite3 does not support the naming of foreign keys. CodeIgniter will refer "
+"to them by ``prefix_table_column_foreign``."
+msgstr ""
+"SQLite3는 외래 키 이름 지정을 지원하지 않습니다. CodeIgniter는 "
+"``prefix_table_column_foreign``\\ 으로 외래 키를 참조합니다."
+
+#: ../../source/dbmgmt/forge.rst:256
+msgid "Creating a Table"
+msgstr "테이블 생성하기"
+
+#: ../../source/dbmgmt/forge.rst:258
+msgid ""
+"After fields and keys have been declared, you can create a new table with"
+msgstr "필드와 키를 선언한 후, 다음을 사용하여 새 테이블을 생성할 수 있습니다"
+
+#: ../../source/dbmgmt/forge.rst:263
+msgid ""
+"An optional second parameter set to true will create the table only if it "
+"doesn't already exist."
+msgstr "선택적 두 번째 매개변수를 true로 설정하면 테이블이 존재하지 않는 경우에만 테이블을 생성합니다."
+
+#: ../../source/dbmgmt/forge.rst:267
+msgid ""
+"You could also pass optional table attributes, such as MySQL's ``ENGINE``:"
+msgstr "MySQL의 ``ENGINE``\\ 과 같은 선택적 테이블 속성을 전달할 수도 있습니다:"
+
+#: ../../source/dbmgmt/forge.rst:271
+msgid ""
+"Unless you specify the ``CHARACTER SET`` and/or ``COLLATE`` attributes, "
+"``createTable()`` will always add them with your configured *charset* and "
+"*DBCollat* values, as long as they are not empty (MySQL only)."
+msgstr ""
+"``CHARACTER SET`` 및/또는 ``COLLATE`` 속성을 지정하지 않으면, 설정된 *charset*\\ 과 "
+"*DBCollat* 값이 비어 있지 않는 한 ``createTable()``\\ 은 항상 해당 값을 추가합니다(MySQL 전용)."
+
+#: ../../source/dbmgmt/forge.rst:277
+msgid "Dropping Tables"
+msgstr "테이블 삭제"
+
+#: ../../source/dbmgmt/forge.rst:280
+msgid "Dropping a Table"
+msgstr "테이블 삭제하기"
+
+#: ../../source/dbmgmt/forge.rst:282
+msgid ""
+"Execute a ``DROP TABLE`` statement and optionally add an ``IF EXISTS`` "
+"clause."
+msgstr "``DROP TABLE`` 구문을 실행하고 선택적으로 ``IF EXISTS`` 절을 추가합니다."
+
+#: ../../source/dbmgmt/forge.rst:286
+msgid ""
+"A third parameter can be passed to add a ``CASCADE`` option, which might be "
+"required for some drivers to handle removal of tables with foreign keys."
+msgstr ""
+"세 번째 매개변수를 전달하여 ``CASCADE`` 옵션을 추가할 수 있습니다. 이는 일부 드라이버에서 외래 키가 있는 테이블 삭제를 "
+"처리하는 데 필요할 수 있습니다."
+
+#: ../../source/dbmgmt/forge.rst:293
+msgid "Modifying Tables"
+msgstr "테이블 수정"
+
+#: ../../source/dbmgmt/forge.rst:296
+msgid "Adding a Field to a Table"
+msgstr "테이블에 필드 추가"
+
+#: ../../source/dbmgmt/forge.rst:299
+msgid "$forge->addColumn()"
+msgstr "$forge->addColumn()"
+
+#: ../../source/dbmgmt/forge.rst:301
+msgid ""
+"The ``addColumn()`` method is used to modify an existing table. It accepts "
+"the same field array as :ref:`Creating Tables <adding-fields>`, and can be "
+"used to add additional fields."
+msgstr ""
+"``addColumn()`` 메서드는 기존 테이블을 수정하는 데 사용됩니다. :ref:`테이블 생성 <adding-fields>`\\ 과"
+" 동일한 필드 배열을 허용하며, 추가 필드를 추가하는 데 사용할 수 있습니다."
+
+#: ../../source/dbmgmt/forge.rst:305
+msgid ""
+"Unlike when creating a table, if ``null`` is not specified, the column will "
+"be ``NULL``, not ``NOT NULL``."
+msgstr ""
+"테이블을 생성할 때와 달리, ``null``\\ 을 지정하지 않으면 컬럼은 ``NOT NULL``\\ 이 아닌 ``NULL``\\ 이 "
+"됩니다."
+
+#: ../../source/dbmgmt/forge.rst:310
+msgid ""
+"If you are using MySQL or CUBIRD, then you can take advantage of their "
+"``AFTER`` and ``FIRST`` clauses to position the new column."
+msgstr ""
+"MySQL 또는 CUBRID를 사용하는 경우 ``AFTER`` 및 ``FIRST`` 절을 활용하여 새 컬럼의 위치를 지정할 수 있습니다."
+
+#: ../../source/dbmgmt/forge.rst:313
+msgid "Examples:"
+msgstr "예:"
+
+#: ../../source/dbmgmt/forge.rst:318
+msgid "Dropping Fields From a Table"
+msgstr "테이블에서 필드 삭제"
+
+#: ../../source/dbmgmt/forge.rst:323
+msgid "$forge->dropColumn()"
+msgstr "$forge->dropColumn()"
+
+#: ../../source/dbmgmt/forge.rst:325
+msgid "Used to remove a column from a table."
+msgstr "테이블에서 컬럼을 제거하는 데 사용됩니다."
+
+#: ../../source/dbmgmt/forge.rst:329
+msgid "Used to remove multiple columns from a table."
+msgstr "테이블에서 여러 컬럼을 제거하는 데 사용됩니다."
+
+#: ../../source/dbmgmt/forge.rst:334
+msgid "Modifying a Field in a Table"
+msgstr "테이블의 필드 수정"
+
+#: ../../source/dbmgmt/forge.rst:339
+msgid "$forge->modifyColumn()"
+msgstr "$forge->modifyColumn()"
+
+#: ../../source/dbmgmt/forge.rst:341
+msgid ""
+"The usage of this method is identical to ``addColumn()``, except it alters "
+"an existing column rather than adding a new one. In order to change the "
+"name, you can add a \"name\" key into the field defining array."
+msgstr ""
+"이 메서드의 사용법은 ``addColumn()``\\ 과 동일하지만, 새 컬럼을 추가하는 대신 기존 컬럼을 변경합니다. 이름을 변경하려면"
+" 필드 정의 배열에 \"name\" 키를 추가할 수 있습니다."
+
+#: ../../source/dbmgmt/forge.rst:347
+msgid ""
+"The ``modifyColumn()`` may unexpectedly change ``NULL``/``NOT NULL``. So it "
+"is recommended to always specify the value for ``null`` key. Unlike when "
+"creating a table, if ``null`` is not specified, the column will be ``NULL``,"
+" not ``NOT NULL``."
+msgstr ""
+"``modifyColumn()``\\ 은 ``NULL``/``NOT NULL``\\ 을 예상치 못하게 변경할 수 있습니다. 따라서 항상 "
+"``null`` 키의 값을 명시적으로 지정하는 것이 좋습니다. 테이블을 생성할 때와 달리, ``null``\\ 을 지정하지 않으면 컬럼은"
+" ``NOT NULL``\\ 이 아닌 ``NULL``\\ 이 됩니다."
+
+#: ../../source/dbmgmt/forge.rst:352
+msgid ""
+"Due to a bug, prior v4.3.4, SQLite3 may not set ``NOT NULL`` even if you "
+"specify ``'null' => false``."
+msgstr ""
+"버그로 인해 v4.3.4 이전 버전에서 SQLite3는 ``'null' => false``\\ 를 지정해도 ``NOT NULL``\\ 을"
+" 설정하지 않을 수 있습니다."
+
+#: ../../source/dbmgmt/forge.rst:355
+msgid ""
+"Due to a bug, prior v4.3.4, Postgres and SQLSRV set ``NOT NULL`` even if you"
+" specify ``'null' => true``."
+msgstr ""
+"버그로 인해 v4.3.4 이전 버전에서 Postgres와 SQLSRV는 ``'null' => true``\\ 를 지정해도 ``NOT "
+"NULL``\\ 을 설정합니다."
+
+#: ../../source/dbmgmt/forge.rst:361
+msgid "Adding Keys to a Table"
+msgstr "테이블에 키 추가"
+
+#: ../../source/dbmgmt/forge.rst:365
+msgid ""
+"You may add keys to an existing table by using ``addKey()``, "
+"``addPrimaryKey()``, ``addUniqueKey()`` or ``addForeignKey()`` and "
+"``processIndexes()``:"
+msgstr ""
+"``addKey()``, ``addPrimaryKey()``, ``addUniqueKey()`` 또는 "
+"``addForeignKey()``\\ 와 ``processIndexes()``\\ 를 사용하여 기존 테이블에 키를 추가할 수 있습니다:"
+
+#: ../../source/dbmgmt/forge.rst:373
+msgid "Dropping a Primary Key"
+msgstr "기본 키 삭제"
+
+#: ../../source/dbmgmt/forge.rst:377
+msgid "Execute a DROP PRIMARY KEY."
+msgstr "DROP PRIMARY KEY를 실행합니다."
+
+#: ../../source/dbmgmt/forge.rst:382
+msgid "Dropping a Key"
+msgstr "키 삭제"
+
+#: ../../source/dbmgmt/forge.rst:384
+msgid "Execute a DROP KEY."
+msgstr "DROP KEY를 실행합니다."
+
+#: ../../source/dbmgmt/forge.rst:389
+msgid "Dropping a Foreign Key"
+msgstr "외래 키 삭제"
+
+#: ../../source/dbmgmt/forge.rst:391
+msgid "Execute a DROP FOREIGN KEY."
+msgstr "DROP FOREIGN KEY를 실행합니다."
+
+#: ../../source/dbmgmt/forge.rst:396
+msgid "Renaming a Table"
+msgstr "테이블 이름 변경"
+
+#: ../../source/dbmgmt/forge.rst:398
+msgid "Executes a TABLE rename"
+msgstr "TABLE 이름 변경을 실행합니다"
+
+#: ../../source/dbmgmt/forge.rst:404 ../../source/dbmgmt/migration.rst:253
+msgid "Class Reference"
+msgstr "클래스 레퍼런스"
+
+#: ../../source/dbmgmt/forge.rst ../../source/dbmgmt/migration.rst
+msgid "Parameters"
+msgstr "매개변수"
+
+#: ../../source/dbmgmt/forge.rst:412
+msgid "Table name to add the column to"
+msgstr "컬럼을 추가할 테이블 이름"
+
+#: ../../source/dbmgmt/forge.rst:413 ../../source/dbmgmt/forge.rst:560
+msgid "Column definition(s)"
+msgstr "컬럼 정의"
+
+#: ../../source/dbmgmt/forge.rst ../../source/dbmgmt/migration.rst
+msgid "Returns"
+msgstr "반환값"
+
+#: ../../source/dbmgmt/forge.rst:414 ../../source/dbmgmt/forge.rst:481
+#: ../../source/dbmgmt/forge.rst:500 ../../source/dbmgmt/forge.rst:508
+#: ../../source/dbmgmt/forge.rst:518 ../../source/dbmgmt/forge.rst:529
+#: ../../source/dbmgmt/forge.rst:540 ../../source/dbmgmt/forge.rst:550
+#: ../../source/dbmgmt/forge.rst:561
+msgid "true on success, false on failure"
+msgstr "성공 시 true, 실패 시 false"
+
+#: ../../source/dbmgmt/forge.rst ../../source/dbmgmt/migration.rst
+msgid "Return type"
+msgstr "반환 타입"
+
+#: ../../source/dbmgmt/forge.rst:417
+msgid ""
+"Adds a column to an existing table. Usage: See `Adding a Field to a Table`_."
+msgstr "기존 테이블에 컬럼을 추가합니다. 사용법: `테이블에 필드 추가`_\\ 를 참조하세요."
+
+#: ../../source/dbmgmt/forge.rst:421
+msgid "Field definition to add"
+msgstr "추가할 필드 정의"
+
+#: ../../source/dbmgmt/forge.rst:422 ../../source/dbmgmt/forge.rst:435
+#: ../../source/dbmgmt/forge.rst:448 ../../source/dbmgmt/forge.rst:459
+#: ../../source/dbmgmt/forge.rst:470
+msgid "``\\CodeIgniter\\Database\\Forge`` instance (method chaining)"
+msgstr "``\\CodeIgniter\\Database\\Forge`` 인스턴스 (메서드 체이닝)"
+
+#: ../../source/dbmgmt/forge.rst:423 ../../source/dbmgmt/forge.rst:436
+#: ../../source/dbmgmt/forge.rst:449 ../../source/dbmgmt/forge.rst:460
+#: ../../source/dbmgmt/forge.rst:471
+msgid "``\\CodeIgniter\\Database\\Forge``"
+msgstr "``\\CodeIgniter\\Database\\Forge``"
+
+#: ../../source/dbmgmt/forge.rst:425
+msgid ""
+"Adds a field to the set that will be used to create a table. Usage: See "
+"`Adding Fields`_."
+msgstr "테이블 생성에 사용될 집합에 필드를 추가합니다. 사용법: `필드 추가`_\\ 를 참조하세요."
+
+#: ../../source/dbmgmt/forge.rst:429 ../../source/dbmgmt/forge.rst:444
+#: ../../source/dbmgmt/forge.rst:457 ../../source/dbmgmt/forge.rst:468
+msgid "Name of a key field or an array of fields"
+msgstr "키 필드 이름 또는 필드 배열"
+
+#: ../../source/dbmgmt/forge.rst:430
+msgid "Name of a parent table"
+msgstr "부모 테이블 이름"
+
+#: ../../source/dbmgmt/forge.rst:431
+msgid "Name of a parent table field or an array of fields"
+msgstr "부모 테이블 필드 이름 또는 필드 배열"
+
+#: ../../source/dbmgmt/forge.rst:432
+msgid "Desired action for the \"on update\""
+msgstr "\"on update\"에 대한 원하는 동작"
+
+#: ../../source/dbmgmt/forge.rst:433
+msgid "Desired action for the \"on delete\""
+msgstr "\"on delete\"에 대한 원하는 동작"
+
+#: ../../source/dbmgmt/forge.rst:434
+msgid "Name of foreign key. This does not work with SQLite3"
+msgstr "외래 키 이름. SQLite3에서는 동작하지 않습니다"
+
+#: ../../source/dbmgmt/forge.rst:438
+msgid ""
+"Adds a foreign key to the set that will be used to create a table. Usage: "
+"See `Adding Foreign Keys`_."
+msgstr "테이블 생성에 사용될 집합에 외래 키를 추가합니다. 사용법: `외래 키 추가`_\\ 를 참조하세요."
+
+#: ../../source/dbmgmt/forge.rst:440
+msgid "``$fkName`` can be used since v4.3.0."
+msgstr "``$fkName``\\ 은 v4.3.0부터 사용할 수 있습니다."
+
+#: ../../source/dbmgmt/forge.rst:445
+msgid "Set to true if it should be a primary key or a regular one"
+msgstr "기본 키 또는 일반 키로 설정하려면 true로 설정합니다"
+
+#: ../../source/dbmgmt/forge.rst:446
+msgid "Set to true if it should be a unique key or a regular one"
+msgstr "유니크 키 또는 일반 키로 설정하려면 true로 설정합니다"
+
+#: ../../source/dbmgmt/forge.rst:447 ../../source/dbmgmt/forge.rst:458
+#: ../../source/dbmgmt/forge.rst:469
+msgid "Name of key to be added"
+msgstr "추가할 키 이름"
+
+#: ../../source/dbmgmt/forge.rst:451
+msgid ""
+"Adds a key to the set that will be used to create a table. Usage: See "
+"`Adding Keys`_."
+msgstr "테이블 생성에 사용될 집합에 키를 추가합니다. 사용법: `키 추가`_\\ 를 참조하세요."
+
+#: ../../source/dbmgmt/forge.rst:453 ../../source/dbmgmt/forge.rst:464
+#: ../../source/dbmgmt/forge.rst:475 ../../source/dbmgmt/forge.rst:534
+msgid "``$keyName`` can be used since v4.3.0."
+msgstr "``$keyName``\\ 은 v4.3.0부터 사용할 수 있습니다."
+
+#: ../../source/dbmgmt/forge.rst:462
+msgid ""
+"Adds a primary key to the set that will be used to create a table. Usage: "
+"See `Adding Keys`_."
+msgstr "테이블 생성에 사용될 집합에 기본 키를 추가합니다. 사용법: `키 추가`_\\ 를 참조하세요."
+
+#: ../../source/dbmgmt/forge.rst:473
+msgid ""
+"Adds a unique key to the set that will be used to create a table. Usage: See"
+" `Adding Keys`_."
+msgstr "테이블 생성에 사용될 집합에 유니크 키를 추가합니다. 사용법: `키 추가`_\\ 를 참조하세요."
+
+#: ../../source/dbmgmt/forge.rst:479
+msgid "Name of the database to create"
+msgstr "생성할 데이터베이스 이름"
+
+#: ../../source/dbmgmt/forge.rst:480
+msgid ""
+"Set to true to add an ``IF NOT EXISTS`` clause or check if database exists"
+msgstr "``IF NOT EXISTS`` 절을 추가하거나 데이터베이스 존재 여부를 확인하려면 true로 설정합니다"
+
+#: ../../source/dbmgmt/forge.rst:484
+msgid "Creates a new database. Usage: See `Creating and Dropping Databases`_."
+msgstr "새 데이터베이스를 생성합니다. 사용법: `데이터베이스 생성 및 삭제`_\\ 를 참조하세요."
+
+#: ../../source/dbmgmt/forge.rst:488
+msgid "Name of the table to create"
+msgstr "생성할 테이블 이름"
+
+#: ../../source/dbmgmt/forge.rst:489
+msgid "Set to true to add an ``IF NOT EXISTS`` clause"
+msgstr "``IF NOT EXISTS`` 절을 추가하려면 true로 설정합니다"
+
+#: ../../source/dbmgmt/forge.rst:490
+msgid "An associative array of table attributes"
+msgstr "테이블 속성의 연관 배열"
+
+#: ../../source/dbmgmt/forge.rst:491 ../../source/dbmgmt/forge.rst:570
+msgid "Query object on success, false on failure"
+msgstr "성공 시 쿼리 객체, 실패 시 false"
+
+#: ../../source/dbmgmt/forge.rst:494
+msgid "Creates a new table. Usage: See `Creating a Table`_."
+msgstr "새 테이블을 생성합니다. 사용법: `테이블 생성`_\\ 을 참조하세요."
+
+#: ../../source/dbmgmt/forge.rst:498 ../../source/dbmgmt/forge.rst:559
+msgid "Table name"
+msgstr "테이블 이름"
+
+#: ../../source/dbmgmt/forge.rst:499
+msgid "Comma-delimited string or an array of column names"
+msgstr "쉼표로 구분된 문자열 또는 컬럼 이름의 배열"
+
+#: ../../source/dbmgmt/forge.rst:503
+msgid ""
+"Drops single or multiple columns from a table. Usage: See `Dropping Fields "
+"From a Table`_."
+msgstr "테이블에서 단일 또는 여러 컬럼을 삭제합니다. 사용법: `테이블에서 필드 삭제`_\\ 를 참조하세요."
+
+#: ../../source/dbmgmt/forge.rst:507
+msgid "Name of the database to drop"
+msgstr "삭제할 데이터베이스 이름"
+
+#: ../../source/dbmgmt/forge.rst:511
+msgid "Drops a database. Usage: See `Creating and Dropping Databases`_."
+msgstr "데이터베이스를 삭제합니다. 사용법: `데이터베이스 생성 및 삭제`_\\ 를 참조하세요."
+
+#: ../../source/dbmgmt/forge.rst:515
+msgid "Name of table that has key"
+msgstr "키가 있는 테이블 이름"
+
+#: ../../source/dbmgmt/forge.rst:516
+msgid "Name of key to be dropped"
+msgstr "삭제할 키 이름"
+
+#: ../../source/dbmgmt/forge.rst:517
+msgid "If database prefix should be added to ``$keyName``"
+msgstr "``$keyName``\\ 에 데이터베이스 접두사를 추가해야 하는지 여부"
+
+#: ../../source/dbmgmt/forge.rst:521
+msgid "Drops an index or unique index."
+msgstr "인덱스 또는 유니크 인덱스를 삭제합니다."
+
+#: ../../source/dbmgmt/forge.rst:523
+msgid "``$keyName`` and ``$prefixKeyName`` can be used since v4.3.0."
+msgstr "``$keyName``\\ 과 ``$prefixKeyName``\\ 은 v4.3.0부터 사용할 수 있습니다."
+
+#: ../../source/dbmgmt/forge.rst:527
+msgid "Name of table to drop primary key"
+msgstr "기본 키를 삭제할 테이블 이름"
+
+#: ../../source/dbmgmt/forge.rst:528
+msgid "Name of primary key to be dropped"
+msgstr "삭제할 기본 키 이름"
+
+#: ../../source/dbmgmt/forge.rst:532
+msgid "Drops a primary key from a table."
+msgstr "테이블에서 기본 키를 삭제합니다."
+
+#: ../../source/dbmgmt/forge.rst:538
+msgid "Name of the table to drop"
+msgstr "삭제할 테이블 이름"
+
+#: ../../source/dbmgmt/forge.rst:539
+msgid "Set to true to add an ``IF EXISTS`` clause"
+msgstr "``IF EXISTS`` 절을 추가하려면 true로 설정합니다"
+
+#: ../../source/dbmgmt/forge.rst:543
+msgid "Drops a table. Usage: See `Dropping a Table`_."
+msgstr "테이블을 삭제합니다. 사용법: `테이블 삭제`_\\ 를 참조하세요."
+
+#: ../../source/dbmgmt/forge.rst:549
+msgid "Name of the table to add indexes to"
+msgstr "인덱스를 추가할 테이블 이름"
+
+#: ../../source/dbmgmt/forge.rst:553
+msgid ""
+"Used following ``addKey()``, ``addPrimaryKey()``, ``addUniqueKey()``, and "
+"``addForeignKey()`` to add indexes to an existing table. See `Adding Keys to"
+" a Table`_."
+msgstr ""
+"``addKey()``, ``addPrimaryKey()``, ``addUniqueKey()``, ``addForeignKey()`` "
+"이후에 사용하여 기존 테이블에 인덱스를 추가합니다. `테이블에 키 추가`_\\ 를 참조하세요."
+
+#: ../../source/dbmgmt/forge.rst:564
+msgid "Modifies a table column. Usage: See `Modifying a Field in a Table`_."
+msgstr "테이블 컬럼을 수정합니다. 사용법: `테이블의 필드 수정`_\\ 을 참조하세요."
+
+#: ../../source/dbmgmt/forge.rst:568
+msgid "Current of the table"
+msgstr "현재 테이블 이름"
+
+#: ../../source/dbmgmt/forge.rst:569
+msgid "New name of the table"
+msgstr "테이블의 새 이름"
+
+#: ../../source/dbmgmt/forge.rst:573
+msgid "Renames a table. Usage: See `Renaming a Table`_."
+msgstr "테이블 이름을 변경합니다. 사용법: `테이블 이름 변경`_\\ 을 참조하세요."
+
+#: ../../source/dbmgmt/index.rst:7
+msgid "Database Forge"
+msgstr "데이터베이스 Forge"
+
+#: ../../source/dbmgmt/index.rst:7 ../../source/dbmgmt/migration.rst:3
+msgid "Database Migrations"
+msgstr "데이터베이스 마이그레이션"
+
+#: ../../source/dbmgmt/index.rst:7 ../../source/dbmgmt/seeds.rst:3
+msgid "Database Seeding"
+msgstr "데이터베이스 시딩"
+
+#: ../../source/dbmgmt/index.rst:3
+msgid "Managing Databases"
+msgstr "데이터베이스 관리"
+
+#: ../../source/dbmgmt/index.rst:5
+msgid "CodeIgniter comes with tools to restructure or seed your database."
+msgstr "CodeIgniter는 데이터베이스를 재구성하거나 시딩하기 위한 도구를 제공합니다."
+
+#: ../../source/dbmgmt/migration.rst:5
+msgid ""
+"Migrations are a convenient way for you to alter your database in a "
+"structured and organized manner. You could edit fragments of SQL by hand but"
+" you would then be responsible for telling other developers that they need "
+"to go and run them. You would also have to keep track of which changes need "
+"to be run against the production machines next time you deploy."
+msgstr ""
+"마이그레이션은 데이터베이스를 구조적이고 체계적인 방식으로 변경할 수 있는 편리한 방법입니다. SQL 조각을 직접 편집할 수도 있지만, "
+"그럴 경우 다른 개발자들에게 해당 변경 사항을 실행해야 한다고 알려주어야 할 책임이 생깁니다. 또한 다음에 배포할 때 프로덕션 서버에 "
+"어떤 변경 사항을 적용해야 하는지도 추적해야 합니다."
+
+#: ../../source/dbmgmt/migration.rst:11
+msgid ""
+"The database table **migrations** tracks which migrations have already been "
+"run, so all you have to do is make sure your migrations are in place and run"
+" the ``spark migrate`` command to bring the database up to the most recent "
+"state. You can also use ``spark migrate --all`` to include migrations from "
+"all namespaces."
+msgstr ""
+"데이터베이스 테이블 **migrations**\\ 는 이미 실행된 마이그레이션을 추적하므로, 마이그레이션 파일을 준비한 다음 "
+"``spark migrate`` 명령을 실행하여 데이터베이스를 최신 상태로 만들기만 하면 됩니다. 또한 ``spark migrate "
+"--all``\\ 을 사용하여 모든 네임스페이스의 마이그레이션을 포함할 수 있습니다."
+
+#: ../../source/dbmgmt/migration.rst:23
+msgid "Migration File Names"
+msgstr "마이그레이션 파일 이름"
+
+#: ../../source/dbmgmt/migration.rst:25
+msgid ""
+"A migration file name is made up of a timestamp prefix, an underscore "
+"(``_``), and a descriptive name (classname)."
+msgstr "마이그레이션 파일 이름은 타임스탬프 접두사, 밑줄(``_``), 그리고 설명적인 이름(클래스명)으로 구성됩니다."
+
+#: ../../source/dbmgmt/migration.rst:28
+msgid "2024-09-08-013653_AddBlogTable.php"
+msgstr "2024-09-08-013653_AddBlogTable.php"
+
+#: ../../source/dbmgmt/migration.rst:30
+msgid ""
+"Each migration is numbered using the timestamp (**2024-09-08-013653**) when "
+"the migration was created, in **YYYY-MM-DD-HHIISS** format."
+msgstr ""
+"각 마이그레이션은 생성 시점의 타임스탬프(**2024-09-08-013653**)를 사용하여 번호가 매겨지며, **YYYY-MM-DD-"
+"HHIISS** 형식을 따릅니다."
+
+#: ../../source/dbmgmt/migration.rst:33
+msgid ""
+"The descriptive name (**AddBlogTable**) for the migration is a classname in "
+"PHP. So you must name a valid classname."
+msgstr ""
+"마이그레이션의 설명적 이름(**AddBlogTable**)은 PHP의 클래스명입니다. 따라서 유효한 클래스명으로 지정해야 합니다."
+
+#: ../../source/dbmgmt/migration.rst:36
+msgid ""
+"The year, month, day, and time in a prefix can be separated from each other "
+"by dashes (``-``), underscores (``_``), or not at all. For example:"
+msgstr "접두사의 연, 월, 일, 시간은 대시(``-``), 밑줄(``_``)로 구분하거나 구분 없이 사용할 수 있습니다. 예:"
+
+#: ../../source/dbmgmt/migration.rst:39
+msgid "2012-10-31-100538_AlterBlogTrackViews.php"
+msgstr "2012-10-31-100538_AlterBlogTrackViews.php"
+
+#: ../../source/dbmgmt/migration.rst:40
+msgid "2012_10_31_100539_AlterBlogAddTranslations.php"
+msgstr "2012_10_31_100539_AlterBlogAddTranslations.php"
+
+#: ../../source/dbmgmt/migration.rst:41
+msgid "20121031100537_AddBlog.php"
+msgstr "20121031100537_AddBlog.php"
+
+#: ../../source/dbmgmt/migration.rst:43
+msgid ""
+"Each Migration is run in numeric order forward or backwards depending on the"
+" method taken. This helps prevent numbering conflicts when working in a team"
+" environment."
+msgstr ""
+"각 마이그레이션은 사용하는 메서드에 따라 숫자 순서대로 앞으로 또는 뒤로 실행됩니다. 이는 팀 환경에서 작업할 때 번호 충돌을 방지하는 "
+"데 도움이 됩니다."
+
+#: ../../source/dbmgmt/migration.rst:49
+msgid "Create a Migration"
+msgstr "마이그레이션 생성"
+
+#: ../../source/dbmgmt/migration.rst:51
+msgid ""
+"This will be the first migration for a new site which has a blog. All "
+"migrations go in the **app/Database/Migrations/** directory and have names "
+"such as **2022-01-31-013057_AddBlog.php**."
+msgstr ""
+"이것은 블로그가 있는 새 사이트의 첫 번째 마이그레이션입니다. 모든 마이그레이션은 **app/Database/Migrations/** "
+"디렉터리에 위치하며 **2022-01-31-013057_AddBlog.php**\\ 와 같은 이름을 사용합니다."
+
+#: ../../source/dbmgmt/migration.rst:57
+msgid ""
+"The database connection and the database Forge class are both available to "
+"you through ``$this->db`` and ``$this->forge``, respectively."
+msgstr ""
+"데이터베이스 연결과 데이터베이스 Forge 클래스는 각각 ``$this->db``\\ 와 ``$this->forge``\\ 를 통해 "
+"사용할 수 있습니다."
+
+#: ../../source/dbmgmt/migration.rst:60
+msgid ""
+"Alternatively, you can use a command-line call to generate a skeleton "
+"migration file. See `make:migration`_ in :ref:`command-line-tools` for more "
+"details."
+msgstr ""
+"또는 커맨드라인 호출을 사용하여 마이그레이션 스켈레톤 파일을 생성할 수 있습니다. 자세한 내용은 :ref:`command-line-"
+"tools`\\ 의 `make:migration`_\\ 을 참조하세요."
+
+#: ../../source/dbmgmt/migration.rst:63
+msgid ""
+"Since the migration class is a PHP class, the classname must be unique in "
+"every migration file."
+msgstr "마이그레이션 클래스는 PHP 클래스이므로, 클래스명은 모든 마이그레이션 파일에서 고유해야 합니다."
+
+#: ../../source/dbmgmt/migration.rst:66
+msgid "Foreign Keys"
+msgstr "외래 키"
+
+#: ../../source/dbmgmt/migration.rst:68
+msgid ""
+"When your tables include Foreign Keys, migrations can often cause problems "
+"as you attempt to drop tables and columns. To temporarily bypass the foreign"
+" key checks while running migrations, use the ``disableForeignKeyChecks()`` "
+"and ``enableForeignKeyChecks()`` methods on the database connection."
+msgstr ""
+"테이블에 외래 키가 포함되어 있으면 테이블이나 컬럼을 삭제하려 할 때 마이그레이션에서 문제가 발생할 수 있습니다. 마이그레이션 실행 중 "
+"외래 키 검사를 일시적으로 우회하려면 데이터베이스 연결에서 ``disableForeignKeyChecks()``\\ 와 "
+"``enableForeignKeyChecks()`` 메서드를 사용하세요."
+
+#: ../../source/dbmgmt/migration.rst:75
+msgid "Database Groups"
+msgstr "데이터베이스 그룹"
+
+#: ../../source/dbmgmt/migration.rst:77
+msgid ""
+"A migration will only be run against a single database group. If you have "
+"multiple groups defined in **app/Config/Database.php**, then by default it "
+"will run against the ``$defaultGroup`` as specified in that same "
+"configuration file."
+msgstr ""
+"마이그레이션은 단일 데이터베이스 그룹에 대해서만 실행됩니다. **app/Config/Database.php**\\ 에 여러 그룹이 정의된"
+" 경우, 기본적으로 동일한 설정 파일에 지정된 ``$defaultGroup``\\ 에 대해 실행됩니다."
+
+#: ../../source/dbmgmt/migration.rst:81
+msgid ""
+"There may be times when you need different schemas for different database "
+"groups. Perhaps you have one database that is used for all general site "
+"information, while another database is used for mission critical data."
+msgstr ""
+"데이터베이스 그룹마다 다른 스키마가 필요한 경우도 있습니다. 예를 들어 하나의 데이터베이스는 일반적인 사이트 정보에 사용되고, 다른 "
+"데이터베이스는 중요한 데이터에 사용될 수 있습니다."
+
+#: ../../source/dbmgmt/migration.rst:85
+msgid ""
+"You can ensure that migrations are run only against the proper group by "
+"setting the ``$DBGroup`` property on your migration. This name must match "
+"the name of the database group exactly:"
+msgstr ""
+"마이그레이션에서 ``$DBGroup`` 속성을 설정하여 올바른 그룹에 대해서만 마이그레이션이 실행되도록 할 수 있습니다. 이 이름은 "
+"데이터베이스 그룹 이름과 정확히 일치해야 합니다:"
+
+#: ../../source/dbmgmt/migration.rst:91
+msgid ""
+"The **migrations** table that tracks which migrations have already been run "
+"will be always created in the default database group."
+msgstr "이미 실행된 마이그레이션을 추적하는 **migrations** 테이블은 항상 기본 데이터베이스 그룹에 생성됩니다."
+
+#: ../../source/dbmgmt/migration.rst:95
+msgid "Namespaces"
+msgstr "네임스페이스"
+
+#: ../../source/dbmgmt/migration.rst:97
+msgid ""
+"The migration library can automatically scan all namespaces you have defined"
+" within **app/Config/Autoload.php** or loaded from an external source like "
+"Composer, using the ``$psr4`` property for matching directory names. It will"
+" include all migrations it finds in **Database/Migrations**."
+msgstr ""
+"마이그레이션 라이브러리는 **app/Config/Autoload.php**\\ 에 정의하거나 Composer와 같은 외부 소스에서 로드한"
+" 모든 네임스페이스를 ``$psr4`` 속성을 사용하여 디렉터리 이름을 매칭하는 방식으로 자동으로 스캔합니다. "
+"**Database/Migrations**\\ 에서 찾은 모든 마이그레이션을 포함합니다."
+
+#: ../../source/dbmgmt/migration.rst:102
+msgid ""
+"Each namespace has its own version sequence, this will help you upgrade and "
+"downgrade each module (namespace) without affecting other namespaces."
+msgstr ""
+"각 네임스페이스는 자체 버전 순서를 가지며, 이를 통해 다른 네임스페이스에 영향을 주지 않고 각 모듈(네임스페이스)을 업그레이드 및 "
+"다운그레이드할 수 있습니다."
+
+#: ../../source/dbmgmt/migration.rst:104
+msgid ""
+"For example, assume that we have the following namespaces defined in our "
+"Autoload configuration file:"
+msgstr "예를 들어, Autoload 설정 파일에 다음과 같은 네임스페이스가 정의되어 있다고 가정합니다:"
+
+#: ../../source/dbmgmt/migration.rst:110
+msgid ""
+"This will look for any migrations located at both "
+"**APPPATH/Database/Migrations** and "
+"**ROOTPATH/MyCompany/Database/Migrations**. This makes it simple to include "
+"migrations in your re-usable, modular code suites."
+msgstr ""
+"이는 **APPPATH/Database/Migrations**\\ 와 "
+"**ROOTPATH/MyCompany/Database/Migrations** 양쪽에 위치한 마이그레이션을 탐색합니다. 이를 통해 재사용 "
+"가능한 모듈식 코드 패키지에 마이그레이션을 간편하게 포함시킬 수 있습니다."
+
+#: ../../source/dbmgmt/migration.rst:118
+msgid "Command-Line Tools"
+msgstr "커맨드라인 도구"
+
+#: ../../source/dbmgmt/migration.rst:120
+msgid ""
+"CodeIgniter ships with several :doc:`commands </cli/spark_commands>` that "
+"are available from the command line to help you work with migrations. These "
+"tools make things easier for those of you that wish to use them. The tools "
+"primarily provide access to the same methods that are available within the "
+"MigrationRunner class."
+msgstr ""
+"CodeIgniter는 커맨드라인에서 마이그레이션 작업을 돕기 위한 여러 :doc:`명령어 </cli/spark_commands>`\\ "
+"를 제공합니다. 이 도구들은 사용하고자 하는 분들에게 편의를 제공합니다. 주로 MigrationRunner 클래스 내에서 사용 가능한 "
+"동일한 메서드에 대한 접근을 제공합니다."
+
+#: ../../source/dbmgmt/migration.rst:125
+msgid "migrate"
+msgstr "migrate"
+
+#: ../../source/dbmgmt/migration.rst:127
+msgid "Migrates a database group with all available migrations:"
+msgstr "사용 가능한 모든 마이그레이션으로 데이터베이스 그룹을 마이그레이션합니다:"
+
+#: ../../source/dbmgmt/migration.rst:133
+msgid "You can use ``migrate`` with the following options:"
+msgstr "``migrate``\\ 는 다음 옵션과 함께 사용할 수 있습니다:"
+
+#: ../../source/dbmgmt/migration.rst:135 ../../source/dbmgmt/migration.rst:182
+msgid ""
+"``-g`` - to specify database group. If specified, only migrations for the "
+"specified database group will be run. If not specified, all migrations will "
+"be run."
+msgstr ""
+"``-g`` - 데이터베이스 그룹을 지정합니다. 지정된 경우 해당 데이터베이스 그룹의 마이그레이션만 실행됩니다. 지정하지 않으면 모든 "
+"마이그레이션이 실행됩니다."
+
+#: ../../source/dbmgmt/migration.rst:136 ../../source/dbmgmt/migration.rst:183
+msgid ""
+"``-n`` - to choose namespace, otherwise ``App`` namespace will be used."
+msgstr "``-n`` - 네임스페이스를 선택합니다. 지정하지 않으면 ``App`` 네임스페이스가 사용됩니다."
+
+#: ../../source/dbmgmt/migration.rst:137
+msgid "``--all`` - to migrate all namespaces to the latest migration."
+msgstr "``--all`` - 모든 네임스페이스를 최신 마이그레이션으로 마이그레이션합니다."
+
+#: ../../source/dbmgmt/migration.rst:139
+msgid ""
+"This example will migrate ``Acme\\Blog`` namespace with any new migrations "
+"on the test database group:"
+msgstr "이 예제는 test 데이터베이스 그룹에서 ``Acme\\Blog`` 네임스페이스의 새 마이그레이션을 실행합니다:"
+
+#: ../../source/dbmgmt/migration.rst:141 ../../source/dbmgmt/seeds.rst:94
+msgid "For Unix:"
+msgstr "Unix의 경우:"
+
+#: ../../source/dbmgmt/migration.rst:147 ../../source/dbmgmt/seeds.rst:100
+msgid "For Windows:"
+msgstr "Windows의 경우:"
+
+#: ../../source/dbmgmt/migration.rst:153
+msgid ""
+"When using the ``--all`` option, it will scan through all namespaces "
+"attempting to find any migrations that have not been run. These will all be "
+"collected and then sorted as a group by date created. This should help to "
+"minimize any potential conflicts between the main application and any "
+"modules."
+msgstr ""
+"``--all`` 옵션을 사용하면 아직 실행되지 않은 마이그레이션을 찾기 위해 모든 네임스페이스를 스캔합니다. 이것들은 모두 수집된 후 "
+"생성 날짜별로 그룹으로 정렬됩니다. 이는 메인 애플리케이션과 모든 모듈 간의 잠재적 충돌을 최소화하는 데 도움이 됩니다."
+
+#: ../../source/dbmgmt/migration.rst:158
+msgid "migrate:rollback"
+msgstr "migrate:rollback"
+
+#: ../../source/dbmgmt/migration.rst:160
+msgid "Rolls back all migrations to a blank slate, effectively migration 0:"
+msgstr "모든 마이그레이션을 초기 상태(마이그레이션 0)로 롤백합니다:"
+
+#: ../../source/dbmgmt/migration.rst:166
+msgid "You can use ``migrate:rollback`` with the following options:"
+msgstr "``migrate:rollback``\\ 은 다음 옵션과 함께 사용할 수 있습니다:"
+
+#: ../../source/dbmgmt/migration.rst:168
+msgid "``-b`` - to choose a batch: natural numbers specify the batch."
+msgstr "``-b`` - 배치를 선택합니다: 자연수로 배치를 지정합니다."
+
+#: ../../source/dbmgmt/migration.rst:169 ../../source/dbmgmt/migration.rst:185
+msgid ""
+"``-f`` - to force a bypass confirmation question, it is only asked in a "
+"production environment."
+msgstr "``-f`` - 확인 질문을 강제로 건너뜁니다. 이 질문은 프로덕션 환경에서만 표시됩니다."
+
+#: ../../source/dbmgmt/migration.rst:172
+msgid "migrate:refresh"
+msgstr "migrate:refresh"
+
+#: ../../source/dbmgmt/migration.rst:174
+msgid ""
+"Refreshes the database state by first rolling back all migrations, and then "
+"migrating all:"
+msgstr "먼저 모든 마이그레이션을 롤백한 다음 전체 마이그레이션을 실행하여 데이터베이스 상태를 새로 고칩니다:"
+
+#: ../../source/dbmgmt/migration.rst:180
+msgid "You can use ``migrate:refresh`` with the following options:"
+msgstr "``migrate:refresh``\\ 는 다음 옵션과 함께 사용할 수 있습니다:"
+
+#: ../../source/dbmgmt/migration.rst:184
+msgid "``--all`` - to refresh all namespaces."
+msgstr "``--all`` - 모든 네임스페이스를 새로 고칩니다."
+
+#: ../../source/dbmgmt/migration.rst:188
+msgid "migrate:status"
+msgstr "migrate:status"
+
+#: ../../source/dbmgmt/migration.rst:190
+msgid ""
+"Displays a list of all migrations and the date and time they ran, or '--' if"
+" they have not been run:"
+msgstr "모든 마이그레이션 목록과 실행 날짜 및 시간을 표시하거나, 실행되지 않은 경우 '--'를 표시합니다:"
+
+#: ../../source/dbmgmt/migration.rst:206
+msgid "You can use ``migrate:status`` with the following options:"
+msgstr "``migrate:status``\\ 는 다음 옵션과 함께 사용할 수 있습니다:"
+
+#: ../../source/dbmgmt/migration.rst:208
+msgid ""
+"``-g`` - to specify database group. If specified, only migrations for the "
+"specified database group will be checked. If not specified, all migrations "
+"will be checked."
+msgstr ""
+"``-g`` - 데이터베이스 그룹을 지정합니다. 지정된 경우 해당 데이터베이스 그룹의 마이그레이션만 확인됩니다. 지정하지 않으면 모든 "
+"마이그레이션이 확인됩니다."
+
+#: ../../source/dbmgmt/migration.rst:211
+msgid "make:migration"
+msgstr "make:migration"
+
+#: ../../source/dbmgmt/migration.rst:213
+msgid ""
+"Creates a skeleton migration file in **app/Database/Migrations**. It "
+"automatically prepends the current timestamp. The class name it creates is "
+"the Pascal case version of the filename."
+msgstr ""
+"**app/Database/Migrations**\\ 에 마이그레이션 스켈레톤 파일을 생성합니다. 현재 타임스탬프를 자동으로 앞에 "
+"붙입니다. 생성되는 클래스명은 파일명의 파스칼 케이스 버전입니다."
+
+#: ../../source/dbmgmt/migration.rst:221
+msgid "You can use ``make:migration`` with the following options:"
+msgstr "``make:migration``\\ 은 다음 옵션과 함께 사용할 수 있습니다:"
+
+#: ../../source/dbmgmt/migration.rst:223
+msgid "``--namespace`` - Set root namespace. Default: ``APP_NAMESPACE``."
+msgstr "``--namespace`` - 루트 네임스페이스를 설정합니다. 기본값: ``APP_NAMESPACE``."
+
+#: ../../source/dbmgmt/migration.rst:224
+msgid "``--suffix``    - Append the component title to the class name."
+msgstr "``--suffix``    - 클래스명에 컴포넌트 제목을 추가합니다."
+
+#: ../../source/dbmgmt/migration.rst:226
+msgid ""
+"The following options are also available to generate the migration file for "
+"database sessions:"
+msgstr "데이터베이스 세션을 위한 마이그레이션 파일을 생성하는 데 사용할 수 있는 추가 옵션도 있습니다:"
+
+#: ../../source/dbmgmt/migration.rst:229
+msgid "``--session``   - Generates the migration file for database sessions."
+msgstr "``--session``   - 데이터베이스 세션용 마이그레이션 파일을 생성합니다."
+
+#: ../../source/dbmgmt/migration.rst:230
+msgid ""
+"``--table``     - Table name to use for database sessions. Default: "
+"``ci_sessions``."
+msgstr "``--table``     - 데이터베이스 세션에 사용할 테이블 이름입니다. 기본값: ``ci_sessions``."
+
+#: ../../source/dbmgmt/migration.rst:231
+msgid ""
+"``--dbgroup``   - Database group to use for database sessions. Default: "
+"``default``."
+msgstr "``--dbgroup``   - 데이터베이스 세션에 사용할 데이터베이스 그룹입니다. 기본값: ``default``."
+
+#: ../../source/dbmgmt/migration.rst:235
+msgid "Migration Preferences"
+msgstr "마이그레이션 환경설정"
+
+#: ../../source/dbmgmt/migration.rst:237
+msgid ""
+"The following is a table of all the config options for migrations, available"
+" in **app/Config/Migrations.php**."
+msgstr ""
+"다음은 **app/Config/Migrations.php**\\ 에서 사용할 수 있는 마이그레이션의 모든 설정 옵션 테이블입니다."
+
+#: ../../source/dbmgmt/migration.rst:240
+msgid "Preference"
+msgstr "설정 항목"
+
+#: ../../source/dbmgmt/migration.rst:240
+msgid "Default"
+msgstr "기본값"
+
+#: ../../source/dbmgmt/migration.rst:240
+msgid "Options"
+msgstr "옵션"
+
+#: ../../source/dbmgmt/migration.rst:240
+msgid "Description"
+msgstr "설명"
+
+#: ../../source/dbmgmt/migration.rst:242
+msgid "**enabled**"
+msgstr "**enabled**"
+
+#: ../../source/dbmgmt/migration.rst:242
+msgid "true"
+msgstr "true"
+
+#: ../../source/dbmgmt/migration.rst:242 ../../source/dbmgmt/migration.rst:247
+msgid "true / false"
+msgstr "true / false"
+
+#: ../../source/dbmgmt/migration.rst:242
+msgid "Enable or disable migrations."
+msgstr "마이그레이션을 활성화하거나 비활성화합니다."
+
+#: ../../source/dbmgmt/migration.rst:243
+msgid "**table**"
+msgstr "**table**"
+
+#: ../../source/dbmgmt/migration.rst:243
+msgid "migrations"
+msgstr "migrations"
+
+#: ../../source/dbmgmt/migration.rst:243
+msgid "None"
+msgstr "없음"
+
+#: ../../source/dbmgmt/migration.rst:243
+msgid ""
+"The table name for storing the schema version number. This table is always "
+"created in the default database group (``$defaultGroup``)."
+msgstr ""
+"스키마 버전 번호를 저장하는 테이블 이름입니다. 이 테이블은 항상 기본 데이터베이스 그룹(``$defaultGroup``)에 생성됩니다."
+
+#: ../../source/dbmgmt/migration.rst:246
+msgid "**timestampFormat**"
+msgstr "**timestampFormat**"
+
+#: ../../source/dbmgmt/migration.rst:246
+msgid "Y-m-d-His\\_"
+msgstr "Y-m-d-His\\_"
+
+#: ../../source/dbmgmt/migration.rst:246
+msgid "The format to use for timestamps when creating a migration."
+msgstr "마이그레이션 생성 시 타임스탬프에 사용할 형식입니다."
+
+#: ../../source/dbmgmt/migration.rst:247
+msgid "**lock**"
+msgstr "**lock**"
+
+#: ../../source/dbmgmt/migration.rst:247
+msgid "false"
+msgstr "false"
+
+#: ../../source/dbmgmt/migration.rst:247
+msgid ""
+"Enable distributed locking to prevent concurrent migrations in multi-process"
+" environments (e.g., Kubernetes)."
+msgstr "멀티 프로세스 환경(예: Kubernetes)에서 동시 마이그레이션을 방지하기 위한 분산 잠금을 활성화합니다."
+
+#: ../../source/dbmgmt/migration.rst:261
+msgid "An array of migration files"
+msgstr "마이그레이션 파일 배열"
+
+#: ../../source/dbmgmt/migration.rst:264
+msgid ""
+"An array of migration filenames are returned that are found in the ``path`` "
+"property."
+msgstr "``path`` 속성에서 찾은 마이그레이션 파일명 배열이 반환됩니다."
+
+#: ../../source/dbmgmt/migration.rst:268 ../../source/dbmgmt/migration.rst:278
+#: ../../source/dbmgmt/migration.rst:290
+msgid "database group name, if null default database group will be used."
+msgstr "데이터베이스 그룹 이름. null이면 기본 데이터베이스 그룹이 사용됩니다."
+
+#: ../../source/dbmgmt/migration.rst:269 ../../source/dbmgmt/migration.rst:291
+msgid "``true`` on success, ``false`` on failure"
+msgstr "성공 시 ``true``, 실패 시 ``false``"
+
+#: ../../source/dbmgmt/migration.rst:272
+msgid ""
+"This locates migrations for a namespace (or all namespaces), determines "
+"which migrations have not yet been run, and runs them in order of their "
+"version (namespaces intermingled)."
+msgstr ""
+"네임스페이스(또는 모든 네임스페이스)에 대한 마이그레이션을 찾고, 아직 실행되지 않은 마이그레이션을 파악한 후, 버전 "
+"순서대로(네임스페이스가 혼합된 형태로) 실행합니다."
+
+#: ../../source/dbmgmt/migration.rst:277
+msgid ""
+"previous batch to migrate down to; 1+ specifies the batch, 0 reverts all, "
+"negative refers to the relative batch (e.g., -3 means \"three batches "
+"back\")"
+msgstr ""
+"다운그레이드할 이전 배치; 1 이상은 배치를 지정하고, 0은 전체 롤백, 음수는 상대적 배치를 의미합니다 (예: -3은 \"3 배치 "
+"이전\"을 의미)"
+
+#: ../../source/dbmgmt/migration.rst:279
+msgid "``true`` on success, ``false`` on failure or no migrations are found"
+msgstr "성공 시 ``true``, 실패 또는 마이그레이션을 찾을 수 없는 경우 ``false``"
+
+#: ../../source/dbmgmt/migration.rst:282
+msgid ""
+"Regress can be used to roll back changes to a previous state, batch by "
+"batch."
+msgstr "Regress는 변경 사항을 배치 단위로 이전 상태로 롤백하는 데 사용할 수 있습니다."
+
+#: ../../source/dbmgmt/migration.rst:288
+msgid "path to a valid migration file."
+msgstr "유효한 마이그레이션 파일의 경로."
+
+#: ../../source/dbmgmt/migration.rst:289
+msgid "namespace of the provided migration."
+msgstr "제공된 마이그레이션의 네임스페이스."
+
+#: ../../source/dbmgmt/migration.rst:294
+msgid ""
+"This forces a single file to migrate regardless of order or batches. Method "
+"``up()`` or ``down()`` is detected based on whether it has already been "
+"migrated."
+msgstr ""
+"순서나 배치에 관계없이 단일 파일을 강제로 마이그레이션합니다. ``up()`` 또는 ``down()`` 메서드는 이미 마이그레이션되었는지"
+" 여부에 따라 자동으로 감지됩니다."
+
+#: ../../source/dbmgmt/migration.rst:296
+msgid ""
+"This method is recommended only for testing and could cause data consistency"
+" issues."
+msgstr "이 메서드는 테스트 용도로만 권장되며 데이터 일관성 문제를 일으킬 수 있습니다."
+
+#: ../../source/dbmgmt/migration.rst:300
+msgid "application namespace. ``null`` is all namespaces."
+msgstr "애플리케이션 네임스페이스. ``null``\\ 이면 모든 네임스페이스를 대상으로 합니다."
+
+#: ../../source/dbmgmt/migration.rst:301 ../../source/dbmgmt/migration.rst:313
+msgid "The current MigrationRunner instance"
+msgstr "현재 MigrationRunner 인스턴스"
+
+#: ../../source/dbmgmt/migration.rst:304
+msgid "Sets the namespace the library should look for migration files:"
+msgstr "라이브러리가 마이그레이션 파일을 탐색할 네임스페이스를 설정합니다:"
+
+#: ../../source/dbmgmt/migration.rst:308
+msgid "If you set ``null``, it looks for migration files in all namespaces."
+msgstr "``null``\\ 로 설정하면 모든 네임스페이스에서 마이그레이션 파일을 탐색합니다."
+
+#: ../../source/dbmgmt/migration.rst:312
+msgid "database group name."
+msgstr "데이터베이스 그룹 이름."
+
+#: ../../source/dbmgmt/migration.rst:316
+msgid "Sets the group the library should look for migration files:"
+msgstr "라이브러리가 마이그레이션 파일을 탐색할 그룹을 설정합니다:"
+
+#: ../../source/dbmgmt/seeds.rst:5
+msgid ""
+"Database seeding is a simple way to add data into your database. It is "
+"especially useful during development where you need to populate the database"
+" with sample data that you can develop against, but it is not limited to "
+"that. Seeders can contain static data that you don't want to include in a "
+"migration, like countries, or geo-coding tables, event or setting "
+"information, and more."
+msgstr ""
+"데이터베이스 시딩은 데이터베이스에 데이터를 추가하는 간단한 방법입니다. 개발 중에 샘플 데이터로 데이터베이스를 채워야 할 때 특히 "
+"유용하지만, 이에 국한되지 않습니다. 시더에는 국가, 지오코딩 테이블, 이벤트 또는 설정 정보 등 마이그레이션에 포함하고 싶지 않은 정적"
+" 데이터를 담을 수 있습니다."
+
+#: ../../source/dbmgmt/seeds.rst:16
+msgid "Database Seeders"
+msgstr "데이터베이스 시더"
+
+#: ../../source/dbmgmt/seeds.rst:18
+msgid ""
+"Database seeders are simple classes that must have a ``run()`` method, and "
+"extend ``CodeIgniter\\Database\\Seeder``. Within the ``run()`` the class can"
+" create any form of data that it needs to. It has access to the database "
+"connection and the forge through ``$this->db`` and ``$this->forge``, "
+"respectively. Seed files must be stored within the **app/Database/Seeds** "
+"directory. The name of the file must match the name of the class."
+msgstr ""
+"데이터베이스 시더는 ``run()``\\ 메서드가 있어야 하며 ``CodeIgniter\\Database\\Seeder``\\ 를 "
+"확장하는 간단한 클래스입니다. ``run()``\\ 내에서 필요한 모든 형태의 데이터를 생성할 수 있습니다. ``$this->db``\\"
+" 와 ``$this->forge``\\ 를 통해 각각 데이터베이스 연결과 Forge에 접근할 수 있습니다. 시드 파일은 "
+"**app/Database/Seeds** 디렉토리에 저장해야 하며, 파일 이름은 클래스 이름과 일치해야 합니다."
+
+#: ../../source/dbmgmt/seeds.rst:27
+msgid "Nesting Seeders"
+msgstr "시더 중첩"
+
+#: ../../source/dbmgmt/seeds.rst:29
+msgid ""
+"Seeders can call other seeders, with the ``call()`` method. This allows you "
+"to easily organize a central seeder, but organize the tasks into separate "
+"seeder files:"
+msgstr ""
+"시더는 ``call()``\\ 메서드를 사용하여 다른 시더를 호출할 수 있습니다. 이를 통해 중앙 시더를 쉽게 구성하고 작업을 별도의 "
+"시더 파일로 나눌 수 있습니다:"
+
+#: ../../source/dbmgmt/seeds.rst:34
+msgid ""
+"You can also use a fully-qualified class name in the ``call()`` method, "
+"allowing you to keep your seeders anywhere the autoloader can find them. "
+"This is great for more modular code bases:"
+msgstr ""
+"``call()``\\ 메서드에서 완전한 클래스 이름을 사용할 수도 있어, 오토로더가 찾을 수 있는 어디에나 시더를 둘 수 있습니다. "
+"보다 모듈화된 코드베이스에 적합합니다:"
+
+#: ../../source/dbmgmt/seeds.rst:41
+msgid "Using Seeders"
+msgstr "시더 사용"
+
+#: ../../source/dbmgmt/seeds.rst:43
+msgid ""
+"You can grab a copy of the main seeder through the database config class:"
+msgstr "데이터베이스 설정 클래스를 통해 메인 시더 인스턴스를 가져올 수 있습니다:"
+
+#: ../../source/dbmgmt/seeds.rst:48
+msgid "Using a Different Database Group"
+msgstr "다른 데이터베이스 그룹 사용"
+
+#: ../../source/dbmgmt/seeds.rst:50
+msgid ""
+"You can specify a different database group when obtaining a seeder instance "
+"by passing the group name as the first parameter:"
+msgstr "시더 인스턴스를 가져올 때 첫 번째 매개변수로 그룹 이름을 전달하여 다른 데이터베이스 그룹을 지정할 수 있습니다:"
+
+#: ../../source/dbmgmt/seeds.rst:55
+msgid ""
+"When using ``call()`` to run child seeders, the database connection is "
+"automatically passed to them. This means child seeders will use the same "
+"connection as the parent seeder, unless they explicitly specify their own "
+"``$DBGroup`` property."
+msgstr ""
+"``call()``\\ 을 사용하여 자식 시더를 실행할 때 데이터베이스 연결이 자동으로 전달됩니다. 즉, 자식 시더가 자체 "
+"``$DBGroup``\\ 속성을 명시적으로 지정하지 않는 한 부모 시더와 동일한 연결을 사용합니다."
+
+#: ../../source/dbmgmt/seeds.rst:59
+msgid ""
+"If a seeder needs to always use a specific database group regardless of the "
+"parent seeder's connection, you can set the ``$DBGroup`` property in the "
+"seeder class:"
+msgstr ""
+"시더가 부모 시더의 연결과 상관없이 항상 특정 데이터베이스 그룹을 사용해야 하는 경우, 시더 클래스에서 ``$DBGroup``\\ 속성을"
+" 설정할 수 있습니다:"
+
+#: ../../source/dbmgmt/seeds.rst:64
+msgid "The connection priority is:"
+msgstr "연결 우선순위는 다음과 같습니다:"
+
+#: ../../source/dbmgmt/seeds.rst:66
+msgid ""
+"If ``$DBGroup`` is set in the seeder class, that connection group is always "
+"used"
+msgstr "시더 클래스에 ``$DBGroup``\\ 이 설정된 경우 해당 연결 그룹이 항상 사용됩니다"
+
+#: ../../source/dbmgmt/seeds.rst:67
+msgid ""
+"Otherwise, if a connection was passed (from parent seeder via ``call()`` or "
+"from ``Database::seeder()``), it is used"
+msgstr ""
+"그렇지 않으면, ``call()``\\ 을 통한 부모 시더 또는 ``Database::seeder()``\\ 에서 연결이 전달된 경우 "
+"해당 연결이 사용됩니다"
+
+#: ../../source/dbmgmt/seeds.rst:68
+msgid "Otherwise, the default connection group is used"
+msgstr "그렇지 않으면 기본 연결 그룹이 사용됩니다"
+
+#: ../../source/dbmgmt/seeds.rst:71
+msgid "Command Line Seeding"
+msgstr "커맨드 라인 시딩"
+
+#: ../../source/dbmgmt/seeds.rst:73
+msgid ""
+"You can also seed data from the command line, as part of the Migrations CLI "
+"tools, if you don't want to create a dedicated controller:"
+msgstr "전용 컨트롤러를 만들지 않으려면 마이그레이션 CLI 도구의 일부로 커맨드 라인에서 데이터를 시딩할 수도 있습니다:"
+
+#: ../../source/dbmgmt/seeds.rst:82
+msgid "Creating Seeder Files"
+msgstr "시더 파일 생성"
+
+#: ../../source/dbmgmt/seeds.rst:84
+msgid "Using the command line, you can easily generate seed files:"
+msgstr "커맨드 라인을 사용하여 시드 파일을 쉽게 생성할 수 있습니다:"
+
+#: ../../source/dbmgmt/seeds.rst:90
+msgid ""
+"The above command outputs **UserSeeder.php** file located at "
+"**app/Database/Seeds** directory."
+msgstr "위 명령어는 **app/Database/Seeds** 디렉토리에 **UserSeeder.php** 파일을 생성합니다."
+
+#: ../../source/dbmgmt/seeds.rst:92
+msgid ""
+"You can supply the ``root`` namespace where the seed file will be stored by "
+"supplying the ``--namespace`` option:"
+msgstr "``--namespace``\\ 옵션을 제공하여 시드 파일이 저장될 ``root`` 네임스페이스를 지정할 수 있습니다:"
+
+#: ../../source/dbmgmt/seeds.rst:106
+msgid ""
+"If ``Acme\\Blog`` is mapped to **app/Blog** directory, then this command "
+"will generate **MySeeder.php** at **app/Blog/Database/Seeds** directory."
+msgstr ""
+"``Acme\\Blog``\\ 가 **app/Blog** 디렉토리에 매핑된 경우 이 명령어는 "
+"**app/Blog/Database/Seeds** 디렉토리에 **MySeeder.php**\\ 를 생성합니다."
+
+#: ../../source/dbmgmt/seeds.rst:108
+msgid ""
+"Supplying the ``--force`` option will overwrite existing files in "
+"destination."
+msgstr "``--force``\\ 옵션을 제공하면 대상 경로의 기존 파일을 덮어씁니다."

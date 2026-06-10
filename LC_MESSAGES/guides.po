@@ -1,0 +1,2341 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019-2026 CodeIgniter Foundation
+# This file is distributed under the same license as the CodeIgniter
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CodeIgniter 4.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-10 16:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ko <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/guides/api/conclusion.rst:2
+#: ../../source/guides/first-app/conclusion.rst:2
+msgid "Conclusion"
+msgstr "결론"
+
+#: ../../source/guides/api/conclusion.rst:4
+msgid ""
+"This guide provided an overview of using CodeIgniter4 to build a simple "
+"RESTful API for managing books and authors. You learned how to set up a "
+"CodeIgniter project, configure a database, create models, and implement API "
+"endpoints using controllers and auto-routing, along with the "
+"``ResponseTrait`` for consistent API responses."
+msgstr ""
+"이 가이드는 CodeIgniter4를 사용해 책과 저자를 관리하는 간단한 RESTful API를 만드는 과정을 개괄적으로 다뤘습니다. "
+"CodeIgniter 프로젝트를 설정하고, 데이터베이스를 구성하고, 모델을 만들고, 컨트롤러와 자동 라우팅으로 API 엔드포인트를 "
+"구현하는 방법과, 일관된 API 응답을 위한 ``ResponseTrait`` 사용법을 배웠습니다."
+
+#: ../../source/guides/api/conclusion.rst:6
+msgid ""
+"From here, you can expand your API by adding more resources, implementing "
+"authentication and authorization using `CodeIgniter Shield "
+"<https://shield.codeigniter.com/>`__, and exploring advanced features like "
+":doc:`../../libraries/throttler`, "
+":doc:`../../incoming/controller_attributes`, and "
+":doc:`../../general/caching`. CodeIgniter's flexibility and powerful "
+"features make it an excellent choice for building robust APIs."
+msgstr ""
+"이제 더 많은 리소스를 추가하거나, `CodeIgniter Shield <https://shield.codeigniter.com/>`__"
+" 를 사용해 인증과 권한 부여를 구현하고, :doc:`../../libraries/throttler`, "
+":doc:`../../incoming/controller_attributes`, :doc:`../../general/caching` 같은"
+" 고급 기능을 살펴보며 API를 확장할 수 있습니다. CodeIgniter의 유연성과 강력한 기능은 견고한 API를 만들기에 훌륭한 "
+"선택입니다."
+
+#: ../../source/guides/api/controller.rst:4
+msgid "Building a RESTful Controller"
+msgstr "RESTful 컨트롤러 만들기"
+
+#: ../../source/guides/api/controller.rst:6
+msgid ""
+"In this chapter, we build the API endpoints to expose your ``book`` table "
+"through a proper RESTful API. We'll use "
+":php:class:`CodeIgniter\\\\RESTful\\\\ResourceController` to handle CRUD "
+"actions with almost no boilerplate."
+msgstr ""
+"이 장에서는 ``book`` 테이블을 적절한 RESTful API로 노출하기 위한 API 엔드포인트를 만듭니다. 거의 보일러플레이트 없이"
+" CRUD 작업을 처리하기 위해 :php:class:`CodeIgniter\\\\RESTful\\\\ResourceController` "
+"를 사용합니다."
+
+#: ../../source/guides/api/controller.rst:10
+msgid "What is RESTful?"
+msgstr "RESTful이란?"
+
+#: ../../source/guides/api/controller.rst:12
+msgid ""
+"RESTful APIs use standard HTTP verbs (``GET``, ``POST``, ``PUT``, "
+"``DELETE``) to perform actions on resources identified by URIs. This "
+"approach makes APIs predictable and easy to use. There can be much debate on"
+" some of the finer points of what makes a REST API, but following these "
+"basics can get it close enough for many uses. By using auto-routing and the "
+":php:class:`Api\\ResponseTrait`, CodeIgniter makes it simple to create "
+"RESTful endpoints."
+msgstr ""
+"RESTful API는 표준 HTTP 동사 (``GET``, ``POST``, ``PUT``, ``DELETE``) 를 사용해 URI로 "
+"식별되는 리소스에 작업을 수행합니다. 이 방식은 API를 예측 가능하고 사용하기 쉽게 만듭니다. REST API의 세부 기준에 대해서는 "
+"여러 논의가 있을 수 있지만, 이런 기본 원칙만 지켜도 많은 경우 충분합니다. 자동 라우팅과 "
+":php:class:`Api\\ResponseTrait` 를 사용하면 CodeIgniter로 RESTful 엔드포인트를 쉽게 만들 수 "
+"있습니다."
+
+#: ../../source/guides/api/controller.rst:15
+msgid "Generate the controller"
+msgstr "컨트롤러 생성"
+
+#: ../../source/guides/api/controller.rst:17
+#: ../../source/guides/api/database-setup.rst:17
+msgid "Run the Spark command:"
+msgstr "다음 Spark 명령을 실행합니다:"
+
+#: ../../source/guides/api/controller.rst:23
+msgid "This creates **app/Controllers/Api/Books.php**."
+msgstr "이 명령은 **app/Controllers/Api/Books.php** 를 생성합니다."
+
+#: ../../source/guides/api/controller.rst:25
+msgid "Open it and replace its contents with the following stubbed-out class:"
+msgstr "파일을 열고 내용을 다음과 같은 기본 클래스 코드로 교체합니다:"
+
+#: ../../source/guides/api/controller.rst:29
+msgid ""
+"Since we're using auto-routing, we need to use the ``index`` method names so"
+" it doesn't interfere with mapping to the URI segments. But we can use the "
+"HTTP verb prefixes (``get``, ``post``, ``put``, ``delete``) to indicate "
+"which method handles which verb. The only one that is slightly odd is "
+"``getIndex()``, which must be used to map to both listing all resources and "
+"listing a single resource by ID."
+msgstr ""
+"자동 라우팅을 사용하므로 URI 세그먼트 매핑과 충돌하지 않도록 ``index`` 메서드 이름을 사용해야 합니다. 하지만 HTTP 동사 "
+"접두사 (``get``, ``post``, ``put``, ``delete``) 를 사용해 어떤 메서드가 어떤 동사를 처리하는지 나타낼 "
+"수 있습니다. 조금 특이한 점은 ``getIndex()`` 인데, 이는 모든 리소스 목록과 ID 기반 단일 리소스 조회에 모두 사용해야 "
+"합니다."
+
+#: ../../source/guides/api/controller.rst:33
+msgid ""
+"If you prefer a different naming scheme, you would need to define routes "
+"explicitly in **app/Config/Routes.php** and turn auto-routing off."
+msgstr ""
+"다른 이름 규칙을 선호한다면 **app/Config/Routes.php** 에서 경로를 명시적으로 정의하고 자동 라우팅을 꺼야 합니다."
+
+#: ../../source/guides/api/controller.rst:36
+msgid "API Transformers"
+msgstr "API 트랜스포머"
+
+#: ../../source/guides/api/controller.rst:38
+msgid ""
+"It is considered a best practice to separate your data models from the way "
+"they are presented in your API responses. This is often done using "
+"transformers or resource classes that format the data consistently. "
+"CodeIgniter provides API transformers to help with this."
+msgstr ""
+"데이터 모델과 API 응답에서의 표현 방식을 분리하는 것은 좋은 설계 관행으로 여겨집니다. 이는 데이터를 일관되게 형식화하는 트랜스포머나"
+" 리소스 클래스를 사용해 구현하는 경우가 많습니다. CodeIgniter는 이를 돕기 위해 API 트랜스포머를 제공합니다."
+
+#: ../../source/guides/api/controller.rst:40
+msgid "Create the transformers with the generator command:"
+msgstr "생성기 명령으로 트랜스포머를 생성합니다:"
+
+#: ../../source/guides/api/controller.rst:46
+msgid ""
+"The transformer requires a single method, ``toArray()``, to be present and "
+"accept a mixed data type called ``$resource``. This method transforms the "
+"resource into an array format suitable for API responses. The returned array"
+" is then encoded as JSON or XML for the API response."
+msgstr ""
+"트랜스포머에는 ``toArray()`` 메서드 하나가 필요하며, ``$resource`` 라는 혼합 데이터 타입을 인자로 받아야 합니다."
+" 이 메서드는 리소스를 API 응답에 적합한 배열 형식으로 변환합니다. 반환된 배열은 이후 API 응답용 JSON 또는 XML로 "
+"인코딩됩니다."
+
+#: ../../source/guides/api/controller.rst:48
+msgid ""
+"Edit the Book transformer at **app/Transformers/BookTransformer.php**. This "
+"one is a little more complex since it includes related author data:"
+msgstr ""
+"**app/Transformers/BookTransformer.php** 의 Book 트랜스포머를 수정합니다. 이 예제는 관련 저자 "
+"데이터를 포함하므로 조금 더 복잡합니다:"
+
+#: ../../source/guides/api/controller.rst:52
+msgid ""
+"One feature of transformers is the ability to include related resources "
+"conditionally. In this case, we check if the ``author`` relationship is "
+"loaded on the book resource before including it in the response. This allows"
+" flexibility in how much data is returned based on the request context. The "
+"client calling the API would have to request the related data explicitly "
+"through query parameters such as ``/api/books?include=author``. The method "
+"name must start with ``include`` followed by the related resource name with "
+"the first letter capitalized."
+msgstr ""
+"트랜스포머의 기능 중 하나는 관련 리소스를 조건부로 포함할 수 있다는 점입니다. 여기서는 응답에 포함하기 전에 책 리소스에 "
+"``author`` 관계가 로드되어 있는지 확인합니다. 이를 통해 요청 맥락에 따라 반환되는 데이터 양을 유연하게 조절할 수 있습니다. "
+"API를 호출하는 클라이언트는 ``/api/books?include=author`` 같은 쿼리 매개변수로 관련 데이터를 명시적으로 "
+"요청해야 합니다. 메서드 이름은 ``include`` 로 시작하고, 그 뒤에 첫 글자를 대문자로 한 관련 리소스 이름이 와야 합니다."
+
+#: ../../source/guides/api/controller.rst:54
+msgid ""
+"You may have noticed that we did not use an AuthorTransformer. This is "
+"because the author data is simple enough that we can return it directly "
+"without additional transformation. However, for more complex related "
+"resources, you might want to create separate transformers for them as well. "
+"Additionally, we'll collect the author information at query time so that we "
+"don't hit any N+1 query issues later."
+msgstr ""
+"AuthorTransformer를 사용하지 않은 점을 눈치챘을 수도 있습니다. 저자 데이터는 단순해서 추가 변환 없이 바로 반환할 수 "
+"있기 때문입니다. 하지만 더 복잡한 관련 리소스라면 별도의 트랜스포머를 만드는 편이 좋을 수 있습니다. 또한 나중에 N+1 쿼리 문제가 "
+"생기지 않도록, 저자 정보는 조회 시점에 함께 가져오게 됩니다."
+
+#: ../../source/guides/api/controller.rst:57
+msgid "Listing Books"
+msgstr "책 목록 조회"
+
+#: ../../source/guides/api/controller.rst:59
+msgid ""
+"We made the ``$id`` parameter optional so that the same method can handle "
+"both listing all books and retrieving a single book by ID. Let's implement "
+"that now."
+msgstr ""
+"``$id`` 매개변수를 선택 사항으로 만들어, 같은 메서드가 모든 책 목록 조회와 ID로 단일 책 조회를 모두 처리할 수 있게 "
+"했습니다. 이제 이를 구현해 봅시다."
+
+#: ../../source/guides/api/controller.rst:65
+msgid ""
+"In this method, we check if an ``$id`` is provided. If it is, we attempt to "
+"find the specific book. If we could not find the book by that ID, we return "
+"a 404 Not Found response using the :php:meth:`failNotFound()` helper from "
+":php:trait:`ResponseTrait`. If we do find the book, we use our "
+"BookTransformer and return the formatted response."
+msgstr ""
+"이 메서드에서는 ``$id`` 가 제공되었는지 확인합니다. 제공되었다면 해당 책을 찾습니다. 그 ID로 책을 찾지 못하면 "
+":php:trait:`ResponseTrait` 의 :php:meth:`failNotFound()` 헬퍼를 사용해 404 Not "
+"Found 응답을 반환합니다. 책을 찾으면 BookTransformer를 사용해 형식화된 응답을 반환합니다."
+
+#: ../../source/guides/api/controller.rst:67
+msgid ""
+"If no ``$id`` is provided, we use the model to retrieve all books, stopping "
+"short of actually retrieving the records. This allows us to use the "
+"``ResponseTrait``'s :php:meth:`paginate` method to handle pagination "
+"automatically. We pass the name of the transformer to the ``paginate`` "
+"method so that it can format each book in the paginated result set."
+msgstr ""
+"``$id`` 가 제공되지 않으면 모델을 사용해 모든 책을 조회하되, 실제 레코드 로드는 나중으로 미룹니다. 이렇게 하면 "
+"``ResponseTrait`` 의 :php:meth:`paginate` 메서드를 사용해 자동으로 페이지네이션을 처리할 수 있습니다. "
+"페이지네이션된 결과 집합의 각 책을 형식화할 수 있도록, 트랜스포머 이름을 ``paginate`` 메서드에 전달합니다."
+
+#: ../../source/guides/api/controller.rst:69
+msgid ""
+"In both of these cases, we use a new method on the model called "
+"``withAuthorInfo()``. This is a custom method we will add to the model to "
+"join the related author data when retrieving books."
+msgstr ""
+"이 두 경우 모두 모델의 ``withAuthorInfo()`` 라는 새 메서드를 사용합니다. 이 메서드는 책을 조회할 때 관련 저자 "
+"데이터를 조인하기 위해 모델에 추가할 사용자 정의 메서드입니다."
+
+#: ../../source/guides/api/controller.rst:72
+msgid "Add the Model helper method"
+msgstr "모델 도우미 메서드 추가"
+
+#: ../../source/guides/api/controller.rst:74
+msgid ""
+"In your BookModel, we add a new method called ``withAuthorInfo()``. This "
+"method uses the Query Builder to join the ``author`` table and select the "
+"relevant author fields. This way, when we retrieve books, we also get the "
+"associated author information without needing to make separate queries for "
+"each book."
+msgstr ""
+"BookModel에 ``withAuthorInfo()`` 라는 새 메서드를 추가합니다. 이 메서드는 Query Builder를 사용해 "
+"``author`` 테이블을 조인하고 관련 저자 필드를 선택합니다. 이렇게 하면 책을 조회할 때마다 별도의 쿼리를 보내지 않고도 연결된 "
+"저자 정보를 함께 가져올 수 있습니다."
+
+#: ../../source/guides/api/controller.rst:80
+msgid "Test the list endpoint"
+msgstr "목록 엔드포인트 테스트"
+
+#: ../../source/guides/api/controller.rst:82
+msgid "Start the local server:"
+msgstr "로컬 서버를 시작합니다:"
+
+#: ../../source/guides/api/controller.rst:88
+#: ../../source/guides/api/first-endpoint.rst:67
+msgid "Now visit:"
+msgstr "이제 다음 주소로 접속합니다:"
+
+#: ../../source/guides/api/controller.rst:90
+msgid "**Browser:** ``http://localhost:8080/api/books``"
+msgstr "**브라우저:** ``http://localhost:8080/api/books``"
+
+#: ../../source/guides/api/controller.rst:91
+msgid "**cURL:** ``curl http://localhost:8080/api/books``"
+msgstr "**cURL:** ``curl http://localhost:8080/api/books``"
+
+#: ../../source/guides/api/controller.rst:93
+msgid "You should see a paginated list of books in JSON format:"
+msgstr "책 목록이 JSON 형식의 페이지네이션 결과로 표시될 것입니다:"
+
+#: ../../source/guides/api/controller.rst:131
+msgid ""
+"If you see JSON data from your seeder, congratulations—your API is live!"
+msgstr "시더에서 가져온 JSON 데이터가 보이면, 축하합니다 — API가 실행 중입니다!"
+
+#: ../../source/guides/api/controller.rst:134
+msgid "Implement the remaining methods"
+msgstr "나머지 메서드 구현"
+
+#: ../../source/guides/api/controller.rst:136
+msgid ""
+"Edit **app/Controllers/Api/Books.php** to include the remaining methods:"
+msgstr "나머지 메서드를 포함하도록 **app/Controllers/Api/Books.php** 를 수정합니다:"
+
+#: ../../source/guides/api/controller.rst:140
+msgid ""
+"Each method uses helpers from :php:trait:`ResponseTrait` to send proper HTTP"
+" status codes and JSON payloads."
+msgstr ""
+"각 메서드는 :php:trait:`ResponseTrait` 의 도우미를 사용해 올바른 HTTP 상태 코드와 JSON 페이로드를 "
+"전송합니다."
+
+#: ../../source/guides/api/controller.rst:142
+msgid ""
+"And that's it! You now have a fully functional RESTful API for managing "
+"books, complete with proper HTTP methods, status codes, and data "
+"transformation. You can further enhance this API by adding authentication, "
+"validation, and other features as needed."
+msgstr ""
+"이것으로 끝입니다! 이제 올바른 HTTP 메서드, 상태 코드, 데이터 변환을 갖춘 책 관리용 RESTful API가 완성되었습니다. "
+"필요에 따라 인증, 유효성 검사, 기타 기능을 추가해 더 확장할 수 있습니다."
+
+#: ../../source/guides/api/controller.rst:145
+msgid "A More Semantic Naming Scheme"
+msgstr "더 의미 있는 이름 규칙"
+
+#: ../../source/guides/api/controller.rst:147
+msgid ""
+"In the previous examples, we used method names like ``getIndex()``, "
+"``putIndex()``, etc. because we wanted to rely solely on the HTTP verb to "
+"determine the action. With auto-routing enabled, we have to use the "
+"``index`` method name to avoid conflicts with URI segments. However, if you "
+"prefer more semantic method names, you could change the method names so that"
+" they reflect the action being performed, such as ``getList()``, "
+"``postCreate()``, ``putUpdate()``, and ``deleteDelete()``. This would make "
+"each method's purpose clearer at a glance and would add one new segment to "
+"the URI."
+msgstr ""
+"이전 예제에서는 작업을 HTTP 동사만으로 판단하고자 했기 때문에 ``getIndex()``, ``putIndex()`` 같은 메서드 "
+"이름을 사용했습니다. 자동 라우팅이 활성화된 상태에서는 URI 세그먼트와 충돌하지 않도록 ``index`` 메서드 이름을 사용해야 "
+"합니다. 하지만 더 의미 있는 메서드 이름을 선호한다면, ``getList()``, ``postCreate()``, "
+"``putUpdate()``, ``deleteDelete()`` 처럼 수행하는 작업을 드러내도록 이름을 바꿀 수 있습니다. 이렇게 하면 "
+"각 메서드의 목적이 한눈에 더 잘 보이고, URI에 새 세그먼트 하나가 추가됩니다."
+
+#: ../../source/guides/api/database-setup.rst:4
+msgid "Creating the Database and Model"
+msgstr "데이터베이스 및 모델 생성"
+
+#: ../../source/guides/api/database-setup.rst:10
+msgid ""
+"In this section, we set up the data layer by creating a SQLite database "
+"table for our ``books`` resource, seeding it with sample data, and defining "
+"a model to access it. By the end, you'll have a working ``books`` table "
+"populated with example rows."
+msgstr ""
+"이 섹션에서는 ``books`` 리소스를 위한 SQLite 데이터베이스 테이블을 만들고, 샘플 데이터를 시딩(seeding)하며, 이를 "
+"접근하기 위한 모델을 정의하여 데이터 계층을 설정합니다. 완료되면 예제 행으로 채워진 작동하는 ``books`` 테이블이 준비됩니다."
+
+#: ../../source/guides/api/database-setup.rst:13
+msgid "Create the Migrations"
+msgstr "마이그레이션 생성"
+
+#: ../../source/guides/api/database-setup.rst:15
+msgid ""
+"Migrations let you version-control your database schema by defining what to "
+"apply and how to roll it back. Let's make ones for simple ``authors`` and "
+"``books`` tables."
+msgstr ""
+"마이그레이션은 적용할 내용과 롤백 방법을 정의하여 데이터베이스 스키마를 버전 관리할 수 있게 해줍니다. 간단한 ``authors`` 및 "
+"``books`` 테이블을 위한 마이그레이션을 만들어 봅시다."
+
+#: ../../source/guides/api/database-setup.rst:24
+msgid "This creates a new file under **app/Database/Migrations/**."
+msgstr "이 명령은 **app/Database/Migrations/** 아래에 새 파일을 생성합니다."
+
+#: ../../source/guides/api/database-setup.rst:26
+msgid ""
+"Edit **app/Database/Migrations/CreateAuthorsTable.php** to look like this:"
+msgstr "**app/Database/Migrations/CreateAuthorsTable.php** 를 다음과 같이 수정합니다:"
+
+#: ../../source/guides/api/database-setup.rst:30
+msgid ""
+"Each author only needs a name for our purposes. We've made the name a unique"
+" key to prevent duplicates."
+msgstr "이 예제에서는 각 저자의 이름만 필요합니다. 중복을 방지하기 위해 이름을 고유 키(unique key)로 설정했습니다."
+
+#: ../../source/guides/api/database-setup.rst:32
+msgid ""
+"Now, edit **app/Database/Migrations/CreateBooksTable.php** to look like "
+"this:"
+msgstr "이제 **app/Database/Migrations/CreateBooksTable.php** 를 다음과 같이 수정합니다:"
+
+#: ../../source/guides/api/database-setup.rst:36
+msgid ""
+"This contains a foreign key reference to the ``authors`` table. It lets us "
+"associate each book with an author and keep author names in one place."
+msgstr ""
+"여기에는 ``authors`` 테이블을 참조하는 외래 키(foreign key)가 포함되어 있습니다. 이를 통해 각 책을 저자와 연결하고"
+" 저자 이름을 한 곳에서 관리할 수 있습니다."
+
+#: ../../source/guides/api/database-setup.rst:38
+msgid "Now run the migration:"
+msgstr "이제 마이그레이션을 실행합니다:"
+
+#: ../../source/guides/api/database-setup.rst:44
+msgid ""
+"Now, the database has the structure needed to hold our book and author "
+"records."
+msgstr "이제 데이터베이스에 책과 저자 레코드를 저장할 구조가 마련되었습니다."
+
+#: ../../source/guides/api/database-setup.rst:47
+msgid "Create a seeder"
+msgstr "시더(Seeder) 생성"
+
+#: ../../source/guides/api/database-setup.rst:49
+msgid ""
+"Seeders load sample data for development so you have something to work with "
+"right away. Here, we'll add some example books and their authors."
+msgstr "시더는 개발용 샘플 데이터를 로드하여 즉시 작업할 수 있게 해줍니다. 여기서는 몇 가지 예제 책과 저자를 추가하겠습니다."
+
+#: ../../source/guides/api/database-setup.rst:51
+msgid "Run:"
+msgstr "명령 실행:"
+
+#: ../../source/guides/api/database-setup.rst:57
+msgid "Edit the file at **app/Database/Seeds/BookSeeder.php**:"
+msgstr "**app/Database/Seeds/BookSeeder.php** 파일을 수정합니다:"
+
+#: ../../source/guides/api/database-setup.rst:61
+msgid ""
+"This seeder first inserts authors into the ``authors`` table, captures their"
+" IDs, and then uses those IDs to insert books into the ``books`` table."
+msgstr ""
+"이 시더는 먼저 저자들을 ``authors`` 테이블에 삽입하고 해당 ID를 가져온 다음, 그 ID들을 사용하여 책들을 ``books``"
+" 테이블에 삽입합니다."
+
+#: ../../source/guides/api/database-setup.rst:63
+msgid "Then run the seeder:"
+msgstr "그런 다음 시더를 실행합니다:"
+
+#: ../../source/guides/api/database-setup.rst:69
+msgid ""
+"You should see confirmation messages indicating the rows were inserted."
+msgstr "행이 성공적으로 삽입되었음을 알리는 확인 메시지가 표시될 것입니다."
+
+#: ../../source/guides/api/database-setup.rst:72
+msgid "Create the Book model"
+msgstr "Book 모델 생성"
+
+#: ../../source/guides/api/database-setup.rst:74
+msgid ""
+"Models make database access simple and reusable by providing an object-"
+"oriented interface to your tables and a fluent query API. Let's create "
+"models for the ``authors`` and ``books`` tables."
+msgstr ""
+"모델은 테이블에 대한 객체 지향 인터페이스와 유연한 쿼리 API를 제공하여 데이터베이스 접근을 단순하고 재사용 가능하게 만듭니다. "
+"``authors`` 및 ``books`` 테이블을 위한 모델을 만들어 봅시다."
+
+#: ../../source/guides/api/database-setup.rst:76
+msgid "Generate one:"
+msgstr "생성 명령:"
+
+#: ../../source/guides/api/database-setup.rst:83
+msgid ""
+"Both models will be simple extensions of CodeIgniter's base Model class."
+msgstr "두 모델 모두 CodeIgniter의 기본 Model 클래스를 간단히 확장할 것입니다."
+
+#: ../../source/guides/api/database-setup.rst:85
+msgid "Edit **app/Models/AuthorModel.php**:"
+msgstr "**app/Models/AuthorModel.php** 파일을 수정합니다:"
+
+#: ../../source/guides/api/database-setup.rst:89
+msgid "Edit **app/Models/BookModel.php**:"
+msgstr "**app/Models/BookModel.php** 파일을 수정합니다:"
+
+#: ../../source/guides/api/database-setup.rst:93
+msgid ""
+"This tells CodeIgniter which table to use and which fields can be mass-"
+"assigned."
+msgstr "이를 통해 CodeIgniter에 사용할 테이블과 대량 할당(mass-assigned) 가능한 필드를 알려줍니다."
+
+#: ../../source/guides/api/database-setup.rst:95
+msgid ""
+"In the next section, we'll use your new models to power a RESTful API "
+"controller. You'll build the ``/api/books`` endpoint and see how "
+"CodeIgniter's ``Api\\ResponseTrait`` makes CRUD operations easy."
+msgstr ""
+"다음 섹션에서는 새로운 모델을 사용하여 RESTful API 컨트롤러를 구동하겠습니다. ``/api/books`` 엔드포인트를 구축하고 "
+"CodeIgniter의 ``Api\\ResponseTrait`` 가 어떻게 CRUD 작업을 쉽게 만드는지 확인해 보겠습니다."
+
+#: ../../source/guides/api/first-endpoint.rst:4
+msgid "Auto Routing & Your First Endpoint"
+msgstr "자동 라우팅과 첫 번째 엔드포인트"
+
+#: ../../source/guides/api/first-endpoint.rst:10
+msgid ""
+"In this section, we enable CodeIgniter's *Improved Auto Routing* feature and"
+" create a simple JSON endpoint to confirm everything is wired correctly."
+msgstr ""
+"이 섹션에서는 CodeIgniter의 *개선된 자동 라우팅* 기능을 활성화하고, 모든 설정이 올바르게 연결되었는지 확인하기 위한 간단한 "
+"JSON 엔드포인트를 만듭니다."
+
+#: ../../source/guides/api/first-endpoint.rst:13
+msgid "Why Auto-Routing?"
+msgstr "자동 라우팅을 사용하는 이유?"
+
+#: ../../source/guides/api/first-endpoint.rst:15
+msgid ""
+"The previous tutorial showed how to define routes manually in "
+"**app/Config/Routes.php**. While powerful and flexible, this can be tedious "
+"for RESTful APIs with many endpoints that follow a common pattern. Auto-"
+"Routing simplifies this by mapping URL patterns to controller classes and "
+"methods based on conventions, and its focus on HTTP verbs works well for "
+"RESTful APIs."
+msgstr ""
+"**app/Config/Routes.php** 에서 경로를 수동으로 정의하는 방법은 이전 튜토리얼에서 다뤘습니다. 강력하고 유연하지만, "
+"공통 패턴을 따르는 엔드포인트가 많은 RESTful API에서는 번거로울 수 있습니다. 자동 라우팅은 규칙에 따라 URL 패턴을 컨트롤러"
+" 클래스와 메서드에 매핑하여 이를 단순화하며, HTTP 동사 중심의 방식은 RESTful API와 잘 어울립니다."
+
+#: ../../source/guides/api/first-endpoint.rst:18
+msgid "Enable Improved Auto Routing"
+msgstr "개선된 자동 라우팅 활성화"
+
+#: ../../source/guides/api/first-endpoint.rst:20
+msgid ""
+"By default, Auto-Routing is turned off. Enable it so your controllers "
+"automatically handle REST-style methods."
+msgstr "기본적으로 자동 라우팅은 꺼져 있습니다. 컨트롤러가 REST 스타일 메서드를 자동으로 처리하도록 활성화합니다."
+
+#: ../../source/guides/api/first-endpoint.rst:22
+msgid ""
+"Open **app/Config/Feature.php** and confirm this flag is ``true`` (this is "
+"the default):"
+msgstr "**app/Config/Feature.php** 를 열고 이 플래그가 ``true`` 인지 확인합니다(기본값입니다):"
+
+#: ../../source/guides/api/first-endpoint.rst:28
+msgid ""
+"The \"Improved\" auto router is more secure and reliable than the legacy "
+"version, so it's recommended for all new projects."
+msgstr "\"Improved\" 자동 라우터는 기존 버전보다 더 안전하고 안정적이므로, 새 프로젝트에는 이를 사용하는 것이 권장됩니다."
+
+#: ../../source/guides/api/first-endpoint.rst:30
+msgid ""
+"Then, in **app/Config/Routing.php**, confirm auto-routing is **enabled**:"
+msgstr "그다음 **app/Config/Routing.php** 에서 자동 라우팅이 **활성화**\\ 되어 있는지 확인합니다:"
+
+#: ../../source/guides/api/first-endpoint.rst:36
+msgid ""
+"That's all you need for CodeIgniter to automatically map your controller "
+"classes and to URIs like ``GET /api/ping`` or ``POST /api/ping``."
+msgstr ""
+"이것만으로 CodeIgniter가 컨트롤러 클래스를 ``GET /api/ping`` 또는 ``POST /api/ping`` 같은 URI에"
+" 자동으로 매핑할 수 있습니다."
+
+#: ../../source/guides/api/first-endpoint.rst:39
+msgid "Create a Ping Controller"
+msgstr "Ping 컨트롤러 생성"
+
+#: ../../source/guides/api/first-endpoint.rst:41
+msgid ""
+"To understand how a basic API endpoint works, let's generate a controller to"
+" serve as our first API endpoint. This will provide a simple \"ping\" "
+"response to confirm our setup is correct."
+msgstr ""
+"기본 API 엔드포인트가 어떻게 동작하는지 이해하기 위해, 첫 번째 API 엔드포인트가 될 컨트롤러를 생성해 봅시다. 이를 통해 간단한 "
+"\"ping\" 응답을 제공하고 설정이 올바른지 확인할 수 있습니다."
+
+#: ../../source/guides/api/first-endpoint.rst:47
+msgid "This creates **app/Controllers/Api/Ping.php**."
+msgstr "이 명령은 **app/Controllers/Api/Ping.php** 를 생성합니다."
+
+#: ../../source/guides/api/first-endpoint.rst:49
+msgid "Edit the file so it looks like this:"
+msgstr "파일을 다음과 같이 수정합니다:"
+
+#: ../../source/guides/api/first-endpoint.rst:53
+msgid "Here we:"
+msgstr "여기서는 다음을 수행합니다:"
+
+#: ../../source/guides/api/first-endpoint.rst:55
+msgid ""
+"Use the :php:class:`ResponseTrait`, which already includes REST helpers such"
+" as :php:meth:`respond()` and proper status codes."
+msgstr ""
+":php:meth:`respond()` 같은 REST 도우미와 적절한 상태 코드를 이미 포함하는 "
+":php:class:`ResponseTrait` 를 사용합니다."
+
+#: ../../source/guides/api/first-endpoint.rst:56
+msgid ""
+"Define a ``getIndex()`` method. The ``get`` prefix means it responds to "
+"``GET`` requests, and the ``Index`` name means it matches the base URI "
+"(``/api/ping``)."
+msgstr ""
+"``getIndex()`` 메서드를 정의합니다. ``get`` 접두사는 ``GET`` 요청에 응답함을 뜻하고, ``Index`` 이름은 "
+"기본 URI (``/api/ping``)와 일치함을 뜻합니다."
+
+#: ../../source/guides/api/first-endpoint.rst:59
+msgid "Test the route"
+msgstr "경로 테스트"
+
+#: ../../source/guides/api/first-endpoint.rst:61
+msgid "Start the development server if it isn't running:"
+msgstr "개발 서버가 실행 중이 아니면 시작합니다:"
+
+#: ../../source/guides/api/first-endpoint.rst:69
+msgid "**Browser:** ``http://localhost:8080/api/ping``"
+msgstr "**브라우저:** ``http://localhost:8080/api/ping``"
+
+#: ../../source/guides/api/first-endpoint.rst:70
+msgid "**cURL:** ``curl http://localhost:8080/api/ping``"
+msgstr "**cURL:** ``curl http://localhost:8080/api/ping``"
+
+#: ../../source/guides/api/first-endpoint.rst:72
+msgid "Expected response:"
+msgstr "예상 응답:"
+
+#: ../../source/guides/api/first-endpoint.rst:80
+msgid "Congratulations — that's your first working JSON endpoint!"
+msgstr "축하합니다 — 이것이 첫 번째로 동작하는 JSON 엔드포인트입니다!"
+
+#: ../../source/guides/api/first-endpoint.rst:83
+msgid "Understand how it works"
+msgstr "동작 방식 이해하기"
+
+#: ../../source/guides/api/first-endpoint.rst:85
+msgid "When you request ``/api/ping``:"
+msgstr "``/api/ping`` 을 요청하면:"
+
+#: ../../source/guides/api/first-endpoint.rst:87
+msgid ""
+"The **Improved Auto Router** finds the ``App\\Controllers\\Api\\Ping`` "
+"class."
+msgstr "**개선된 자동 라우터** 가 ``App\\Controllers\\Api\\Ping`` 클래스를 찾습니다."
+
+#: ../../source/guides/api/first-endpoint.rst:88
+msgid "It detects the HTTP verb (``GET``)."
+msgstr "HTTP 동사 (``GET``) 를 감지합니다."
+
+#: ../../source/guides/api/first-endpoint.rst:89
+msgid "It calls the corresponding method name: ``getIndex()``."
+msgstr "해당 메서드 이름인 ``getIndex()`` 를 호출합니다."
+
+#: ../../source/guides/api/first-endpoint.rst:90
+msgid ""
+":php:trait:`ResponseTrait` provides helper methods to produce consistent "
+"output."
+msgstr ":php:trait:`ResponseTrait` 는 일관된 출력을 생성하는 도우미 메서드를 제공합니다."
+
+#: ../../source/guides/api/first-endpoint.rst:92
+msgid "Here's how other verbs would map if you added them later:"
+msgstr "나중에 다른 동사를 추가하면 다음과 같이 매핑됩니다:"
+
+#: ../../source/guides/api/first-endpoint.rst:95
+msgid "HTTP Verb"
+msgstr "HTTP 동사"
+
+#: ../../source/guides/api/first-endpoint.rst:95
+msgid "Method Name"
+msgstr "메서드 이름"
+
+#: ../../source/guides/api/first-endpoint.rst:97
+msgid "``GET /api/ping`` ``POST /api/ping`` ``DELETE /api/ping``"
+msgstr "``GET /api/ping`` ``POST /api/ping`` ``DELETE /api/ping``"
+
+#: ../../source/guides/api/first-endpoint.rst:97
+msgid "``getIndex()`` ``postIndex()`` ``deleteIndex()``"
+msgstr "``getIndex()`` ``postIndex()`` ``deleteIndex()``"
+
+#: ../../source/guides/api/first-endpoint.rst:103
+msgid "Content Negotiation with the Format Class"
+msgstr "Format 클래스를 사용한 콘텐츠 협상"
+
+#: ../../source/guides/api/first-endpoint.rst:105
+msgid ""
+"By default, CodeIgniter uses the "
+":php:class:`CodeIgniter\\\\Format\\\\Format` class to automatically "
+"negotiate the response format. It can return responses in either JSON or XML"
+" depending on what the client requests."
+msgstr ""
+"기본적으로 CodeIgniter는 :php:class:`CodeIgniter\\\\Format\\\\Format` 클래스를 사용하여 응답"
+" 형식을 자동으로 협상합니다. 클라이언트 요청에 따라 JSON 또는 XML 응답을 반환할 수 있습니다."
+
+#: ../../source/guides/api/first-endpoint.rst:107
+msgid ""
+"The :php:trait:`ResponseTrait` sets the format to JSON by default. You can "
+"change this to XML if desired, but this tutorial will focus on JSON "
+"responses."
+msgstr ""
+":php:trait:`ResponseTrait` 는 기본적으로 형식을 JSON으로 설정합니다. 필요하다면 XML로 바꿀 수 있지만, 이 "
+"튜토리얼은 JSON 응답에 중점을 둡니다."
+
+#: ../../source/guides/api/first-endpoint.rst:112
+msgid "Optional: Return More Data"
+msgstr "선택 사항: 더 많은 데이터 반환"
+
+#: ../../source/guides/api/first-endpoint.rst:114
+msgid "The ``respond()`` method can return additional data:"
+msgstr "``respond()`` 메서드는 추가 데이터를 반환할 수 있습니다:"
+
+#: ../../source/guides/api/first-endpoint.rst:118
+msgid ""
+"You now have a working endpoint tested in both the browser and cURL. In the "
+"next section, we'll create our first real database resource. You'll define a"
+" **migration**, **seeder**, and **model** for a simple ``books`` table that "
+"powers the API's CRUD endpoints."
+msgstr ""
+"이제 브라우저와 cURL 모두에서 테스트한 동작하는 엔드포인트가 준비되었습니다. 다음 섹션에서는 첫 번째 실제 데이터베이스 리소스를 "
+"만들겠습니다. API의 CRUD 엔드포인트를 뒷받침하는 간단한 ``books`` 테이블을 위해 **마이그레이션**, **시더**, "
+"**모델** 을 정의합니다."
+
+#: ../../source/guides/api/index.rst:4
+msgid "Getting Started with REST APIs"
+msgstr "REST API 시작하기"
+
+#: ../../source/guides/api/index.rst:10
+msgid ""
+"This tutorial walks you through building a simple RESTful API to manage "
+"books in CodeIgniter 4. You'll learn to set up a project, configure a "
+"database, and create API endpoints, and what makes an API RESTful."
+msgstr ""
+"이 튜토리얼에서는 CodeIgniter 4를 사용하여 책을 관리하는 간단한 RESTful API를 구축하는 과정을 안내합니다. 프로젝트 "
+"설정 방법, 데이터베이스 구성, API 엔드포인트 생성 방법 및 API가 RESTful해지기 위한 조건 등을 배웁니다."
+
+#: ../../source/guides/api/index.rst:12
+#: ../../source/guides/first-app/index.rst:24
+msgid "This tutorial will primarily focus on:"
+msgstr "이 튜토리얼은 주로 다음에 중점을 둡니다:"
+
+#: ../../source/guides/api/index.rst:14
+msgid "Auto-routing (Improved)"
+msgstr "자동 라우팅(개선됨)"
+
+#: ../../source/guides/api/index.rst:15
+msgid "Creating JSON API endpoints"
+msgstr "JSON API 엔드포인트 생성"
+
+#: ../../source/guides/api/index.rst:16
+msgid "Using the API ResponseTrait for consistent responses"
+msgstr "일관된 응답을 위해 API ResponseTrait 사용"
+
+#: ../../source/guides/api/index.rst:17
+msgid "Basic database operations with Models"
+msgstr "모델을 사용한 기본적인 데이터베이스 작업"
+
+#: ../../source/guides/api/index.rst:21
+msgid ""
+"While we cover the basics of CodeIgniter, it is assumed that you have at "
+"least progressed through the :doc:`First App tutorial <../first-app/index>`."
+msgstr ""
+"CodeIgniter의 기초를 다루지만, 최소한 :doc:`첫 번째 애플리케이션 튜토리얼 <../first-app/index>`\\ 을 "
+"완료했다고 가정합니다."
+
+#: ../../source/guides/api/index.rst:33
+#: ../../source/guides/first-app/index.rst:58
+msgid "Getting Up and Running"
+msgstr "설치 및 실행"
+
+#: ../../source/guides/api/index.rst:36
+#: ../../source/guides/first-app/index.rst:61
+msgid "Installing CodeIgniter"
+msgstr "CodeIgniter 설치"
+
+#: ../../source/guides/api/index.rst:44
+msgid ""
+"Open your browser to ``http://localhost:8080`` and you should see the "
+"CodeIgniter welcome page."
+msgstr "브라우저에서 ``http://localhost:8080`` 에 접속하면 CodeIgniter 환영 페이지가 보일 것입니다."
+
+#: ../../source/guides/api/index.rst:48
+msgid ""
+"Keep the server running in one terminal. If you prefer, you can stop it "
+"anytime with :kbd:`Ctrl+C` and start again with ``php spark serve``."
+msgstr ""
+"터미널 하나에서 서버를 계속 실행해 두세요. 원한다면 언제든지 :kbd:`Ctrl+C` 로 서버를 중지하고 ``php spark "
+"serve`` 로 다시 시작할 수 있습니다."
+
+#: ../../source/guides/api/index.rst:51
+#: ../../source/guides/first-app/index.rst:77
+msgid "Setting Development Mode"
+msgstr "개발 모드 설정"
+
+#: ../../source/guides/api/index.rst:53
+msgid "Copy the environment file and enable development settings:"
+msgstr "환경 파일을 복사하고 개발 설정을 활성화합니다:"
+
+#: ../../source/guides/api/index.rst:59
+msgid "Open **.env** and make sure this line is **uncommented**:"
+msgstr "**.env** 파일을 열고 다음 라인의 주석이 **\\ 해제**\\ 되어 있는지 확인합니다:"
+
+#: ../../source/guides/api/index.rst:65
+msgid "You can also use the spark ``env`` command to set the environment:"
+msgstr "spark ``env`` 명령을 사용하여 환경을 설정할 수도 있습니다:"
+
+#: ../../source/guides/api/index.rst:72
+msgid "Configure SQLite"
+msgstr "SQLite 설정"
+
+#: ../../source/guides/api/index.rst:74
+msgid ""
+"We'll use a single-file SQLite database under **writable/** so there's no "
+"external setup."
+msgstr "외부 설정이 필요 없도록 **writable/** 디렉토리 아래에 단일 파일 SQLite 데이터베이스를 사용하겠습니다."
+
+#: ../../source/guides/api/index.rst:76
+msgid "Open **.env** and **uncomment** the database section, then set:"
+msgstr "**.env** 파일을 열고 데이터베이스 섹션의 주석을 **\\ 해제**\\ 한 후 다음과 같이 설정합니다:"
+
+#: ../../source/guides/api/index.rst:88
+msgid ""
+"CodeIgniter will automatically create the SQLite database file if it doesn't"
+" exist, but you need to ensure that the **writable/** directory is writable "
+"by the web server."
+msgstr ""
+"CodeIgniter는 SQLite 데이터베이스 파일이 존재하지 않으면 자동으로 생성하지만, **writable/** 디렉토리가 웹 "
+"서버에 의해 쓰기 가능해야 합니다."
+
+#: ../../source/guides/api/index.rst:92
+msgid ""
+"On some systems you might need to adjust group/owner or use ``chmod 666`` "
+"temporarily during development. Never ship world-writable permissions to "
+"production."
+msgstr ""
+"일부 시스템에서는 그룹/소유자를 조정하거나 개발 기간 동안 일시적으로 ``chmod 666`` 을 사용해야 할 수도 있습니다. 운영 "
+"환경에는 절대 모든 사용자에게 쓰기 권한(world-writable)을 부여하지 마십시오."
+
+#: ../../source/guides/api/index.rst:95
+msgid ""
+"At this point, you have a working CodeIgniter4 project with SQLite "
+"configured."
+msgstr "이제 SQLite가 설정된 작동 가능한 CodeIgniter4 프로젝트가 준비되었습니다."
+
+#: ../../source/guides/api/index.rst:97
+msgid "The app starts with ``php spark serve``"
+msgstr "앱은 ``php spark serve`` 로 시작됩니다."
+
+#: ../../source/guides/api/index.rst:98
+msgid "``CI_ENVIRONMENT`` is set to ``development`` in **.env**"
+msgstr "**.env** 에서 ``CI_ENVIRONMENT`` 가 ``development`` 로 설정되었습니다."
+
+#: ../../source/guides/api/index.rst:99
+msgid "**writable/database.db** exists and is writable"
+msgstr "**writable/database.db** 가 존재하고 쓰기 가능합니다."
+
+#: ../../source/guides/api/index.rst:102
+msgid "What's Next"
+msgstr "다음 단계"
+
+#: ../../source/guides/api/index.rst:104
+msgid ""
+"In the next section, we'll enable auto-routing and create a simple JSON "
+"endpoint (``/api/pings``) to see how HTTP verbs map to controller methods in"
+" CodeIgniter."
+msgstr ""
+"다음 섹션에서는 자동 라우팅을 활성화하고 간단한 JSON 엔드포인트(``/api/pings``)를 생성하여 CodeIgniter에서 "
+"HTTP 동사가 어떻게 컨트롤러 메서드에 매핑되는지 확인하겠습니다."
+
+#: ../../source/guides/first-app/conclusion.rst:4
+msgid ""
+"This tutorial did not cover all of the things you might expect of a full-"
+"fledged content management system, but it introduced you to the more "
+"important topics of routing, writing controllers, and models. We hope this "
+"tutorial gave you an insight into some of CodeIgniter's basic design "
+"patterns, which you can expand upon."
+msgstr ""
+"이 튜토리얼은 본격적인 콘텐츠 관리 시스템(CMS)에서 기대할 수 있는 모든 내용을 다루지는 않았지만, 라우팅, 컨트롤러 및 모델 작성과"
+" 같은 더 중요한 주제들을 소개했습니다. 이 튜토리얼을 통해 여러분이 확장해 나갈 수 있는 CodeIgniter의 기본 디자인 패턴에 "
+"대한 통찰력을 얻었기를 바랍니다."
+
+#: ../../source/guides/first-app/conclusion.rst:10
+msgid ""
+"Now that you've completed this tutorial, we recommend you check out the rest"
+" of the documentation. CodeIgniter is often praised because of its "
+"comprehensive documentation. Use this to your advantage and read the "
+":doc:`Overview <../../concepts/index>` and :doc:`../../general/index` "
+"sections thoroughly. You should read the :doc:`Library "
+"<../../libraries/index>` and :doc:`../../helpers/index` references when "
+"needed."
+msgstr ""
+"이제 튜토리얼을 마쳤으므로 나머지 문서들도 확인해 보시기 바랍니다. CodeIgniter는 포괄적인 문서화로 자주 찬사를 받습니다. 이를"
+" 장점으로 활용하여 :doc:`개요(Overview) <../../concepts/index>`\\ 와 :doc:`일반 주제 "
+"<../../general/index>` 섹션을 철저히 읽어보세요. 필요한 경우 :doc:`라이브러리 "
+"<../../libraries/index>` 및 :doc:`헬퍼 <../../helpers/index>` 레퍼런스도 읽어보시기 바랍니다."
+
+#: ../../source/guides/first-app/conclusion.rst:17
+msgid ""
+"Every intermediate PHP programmer should be able to get the hang of "
+"CodeIgniter within a few days."
+msgstr "중급 PHP 프로그래머라면 누구나 며칠 안에 CodeIgniter의 감을 잡을 수 있을 것입니다."
+
+#: ../../source/guides/first-app/conclusion.rst:20
+msgid ""
+"If you still have questions about the framework or your own CodeIgniter "
+"code, you can:"
+msgstr "프레임워크나 작성한 CodeIgniter 코드에 대해 여전히 궁금한 점이 있다면 다음을 이용할 수 있습니다."
+
+#: ../../source/guides/first-app/conclusion.rst:23
+msgid "Check out our `Forum <https://forum.codeigniter.com/>`_"
+msgstr "`포럼(Forum) <https://forum.codeigniter.com/>`_ 확인"
+
+#: ../../source/guides/first-app/conclusion.rst:24
+msgid ""
+"Check out our `Slack "
+"<https://join.slack.com/t/codeigniterchat/shared_invite/zt-"
+"rl30zw00-obL1Hr1q1ATvkzVkFp8S0Q>`_"
+msgstr ""
+"`Slack <https://join.slack.com/t/codeigniterchat/shared_invite/zt-"
+"rl30zw00-obL1Hr1q1ATvkzVkFp8S0Q>`_ 확인"
+
+#: ../../source/guides/first-app/create_news_items.rst:2
+msgid "Create News Items"
+msgstr "뉴스 항목 만들기"
+
+#: ../../source/guides/first-app/create_news_items.rst:8
+msgid ""
+"You now know how you can read data from a database using CodeIgniter, but "
+"you haven't written any information to the database yet. In this section, "
+"you'll expand your news controller and model created earlier to include this"
+" functionality."
+msgstr ""
+"이제 CodeIgniter를 사용하여 데이터베이스에서 데이터를 읽는 방법을 알게 되었지만, 아직 데이터베이스에 정보를 기록하지는 "
+"않았습니다. 이 섹션에서는 이 기능을 포함하도록 이전에 만든 뉴스 컨트롤러와 모델을 확장합니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:14
+msgid "Enable CSRF Filter"
+msgstr "CSRF 필터 활성화"
+
+#: ../../source/guides/first-app/create_news_items.rst:16
+msgid "Before creating a form, let's enable the CSRF protection."
+msgstr "폼을 만들기 전에 CSRF 보호를 활성화해 봅시다."
+
+#: ../../source/guides/first-app/create_news_items.rst:18
+msgid ""
+"Open the **app/Config/Filters.php** file and update the ``$methods`` "
+"property like the following:"
+msgstr "**app/Config/Filters.php** 파일을 열고 ``$methods`` 속성을 다음과 같이 업데이트합니다:"
+
+#: ../../source/guides/first-app/create_news_items.rst:22
+msgid ""
+"It configures the CSRF filter to be enabled for all **POST** requests. You "
+"can read more about the CSRF protection in :doc:`Security "
+"<../../libraries/security>` library."
+msgstr ""
+"모든 **POST** 요청에 대해 CSRF 필터가 활성화되도록 설정합니다. CSRF 보호에 대한 자세한 내용은 :doc:`Security"
+" <../../libraries/security>` 라이브러리에서 읽어볼 수 있습니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:25
+msgid ""
+"In general, if you use ``$methods`` filters, you should :ref:`disable Auto "
+"Routing (Legacy) <use-defined-routes-only>` because :ref:`auto-routing-"
+"legacy` permits any HTTP method to access a controller. Accessing the "
+"controller with a method you don't expect could bypass the filter."
+msgstr ""
+"일반적으로 ``$methods`` 필터를 사용하는 경우 :ref:`자동 라우팅(레거시)을 비활성화 <use-defined-routes-"
+"only>`\\ 해야 합니다. 왜냐하면 :ref:`auto-routing-legacy`\\ 는 모든 HTTP 메서드가 컨트롤러에 접근하는"
+" 것을 허용하기 때문입니다. 예상치 못한 메서드로 컨트롤러에 접근하면 필터를 우회할 수 있습니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:30
+#: ../../source/guides/first-app/news_section.rst:124
+msgid "Adding Routing Rules"
+msgstr "라우팅 규칙 추가"
+
+#: ../../source/guides/first-app/create_news_items.rst:32
+msgid ""
+"Before you can start adding news items into your CodeIgniter application you"
+" have to add an extra rule to **app/Config/Routes.php** file. Make sure your"
+" file contains the following:"
+msgstr ""
+"CodeIgniter 애플리케이션에 뉴스 항목을 추가하기 전에 **app/Config/Routes.php** 파일에 추가 규칙을 추가해야"
+" 합니다. 파일에 다음 내용이 포함되어 있는지 확인하세요:"
+
+#: ../../source/guides/first-app/create_news_items.rst:38
+msgid ""
+"The route directive for ``'news/new'`` is placed before the directive for "
+"``'news/(:segment)'`` to ensure that the form to create a news item is "
+"displayed."
+msgstr ""
+"``'news/new'``\\ 에 대한 라우트 지침은 뉴스 항목 생성 폼이 제대로 표시되도록 ``'news/(:segment)'`` "
+"지침보다 먼저 배치됩니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:40
+msgid ""
+"The ``$routes->post()`` line defines the router for a POST request. It "
+"matches only a POST request to the URI path **/news**, and it maps to the "
+"``create()`` method of the ``News`` class."
+msgstr ""
+"``$routes->post()`` 라인은 POST 요청에 대한 라우터를 정의합니다. 이는 URI 경로 **/news**\\ 에 대한 "
+"POST 요청과만 일치하며, 이를 ``News`` 클래스의 ``create()`` 메서드에 매핑합니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:44
+msgid ""
+"You can read more about different routing types in :ref:`defined-route-"
+"routing`."
+msgstr "다양한 라우팅 유형에 대한 자세한 내용은 :ref:`defined-route-routing`\\ 에서 읽어볼 수 있습니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:47
+msgid "Create a Form"
+msgstr "폼 생성"
+
+#: ../../source/guides/first-app/create_news_items.rst:50
+msgid "Create news/create View File"
+msgstr "news/create 뷰 파일 생성"
+
+#: ../../source/guides/first-app/create_news_items.rst:52
+msgid ""
+"To input data into the database, you need to create a form where you can "
+"input the information to be stored. This means you'll be needing a form with"
+" two fields, one for the title and one for the text. You'll derive the slug "
+"from our title in the model."
+msgstr ""
+"데이터베이스에 데이터를 입력하려면 저장할 정보를 입력할 수 있는 폼을 만들어야 합니다. 즉, 제목(title)과 텍스트(text)를 위한"
+" 두 개의 필드가 있는 폼이 필요합니다. 슬러그(slug)는 모델에서 제목을 기반으로 생성할 것입니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:57
+msgid "Create a new view at **app/Views/news/create.php**:"
+msgstr "**app/Views/news/create.php**\\ 에 새 뷰를 생성합니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:61
+msgid "There are probably only four things here that look unfamiliar."
+msgstr "여기에는 아마 생소해 보이는 것이 네 가지 정도 있을 것입니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:63
+msgid ""
+"The :php:func:`session()` function is used to get the Session object, and "
+"``session()->getFlashdata('error')`` is used to display the error related to"
+" CSRF protection to the user. However, by default, if a CSRF validation "
+"check fails, an exception will be thrown, so it does not work yet. See "
+":ref:`csrf-redirection-on-failure` for more information."
+msgstr ""
+":php:func:`session()` 함수는 세션 객체를 가져오는 데 사용되며, "
+"``session()->getFlashdata('error')``\\ 는 CSRF 보호와 관련된 에러를 사용자에게 표시하는 데 "
+"사용됩니다. 하지만 기본적으로 CSRF 유효성 검사가 실패하면 예외가 발생하므로 아직은 작동하지 않습니다. 자세한 내용은 "
+":ref:`csrf-redirection-on-failure`\\ 를 참조하세요."
+
+#: ../../source/guides/first-app/create_news_items.rst:68
+msgid ""
+"The :php:func:`validation_list_errors()` function provided by the "
+":doc:`../../helpers/form_helper` is used to report errors related to form "
+"validation."
+msgstr ""
+":doc:`../../helpers/form_helper`\\ 에서 제공하는 "
+":php:func:`validation_list_errors()` 함수는 폼 유효성 검사와 관련된 에러를 보고하는 데 사용됩니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:71
+msgid ""
+"The :php:func:`csrf_field()` function creates a hidden input with a CSRF "
+"token that helps protect against some common attacks."
+msgstr ""
+":php:func:`csrf_field()` 함수는 일반적인 공격으로부터 보호하는 데 도움이 되는 CSRF 토큰을 포함한 "
+"숨겨진(hidden) 입력을 생성합니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:73
+msgid ""
+"The :php:func:`set_value()` function provided by the "
+":doc:`../../helpers/form_helper` is used to show old input data when errors "
+"occur."
+msgstr ""
+":doc:`../../helpers/form_helper`\\ 에서 제공하는 :php:func:`set_value()` 함수는 에러가 "
+"발생했을 때 이전에 입력한 데이터를 다시 보여주는 데 사용됩니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:77
+msgid "News Controller"
+msgstr "뉴스 컨트롤러"
+
+#: ../../source/guides/first-app/create_news_items.rst:79
+msgid "Go back to your ``News`` controller."
+msgstr "``News`` 컨트롤러로 돌아갑니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:82
+msgid "Add News::new() to Display the Form"
+msgstr "폼을 표시하기 위해 News::new() 추가"
+
+#: ../../source/guides/first-app/create_news_items.rst:84
+msgid "First, create a method to display the HTML form you have created."
+msgstr "먼저, 작성한 HTML 폼을 표시하는 메서드를 만듭니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:88
+msgid ""
+"We load the :doc:`Form helper <../../helpers/form_helper>` with the "
+":php:func:`helper()` function. Most helper functions require the helper to "
+"be loaded before use."
+msgstr ""
+":php:func:`helper()` 함수를 사용하여 :doc:`Form 헬퍼 <../../helpers/form_helper>`\\ 를"
+" 로드합니다. 대부분의 헬퍼 함수는 사용하기 전에 로드되어야 합니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:92
+msgid "Then it returns the created form view."
+msgstr "그런 다음 생성된 폼 뷰를 반환합니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:95
+msgid "Add News::create() to Create a News Item"
+msgstr "뉴스 항목을 생성하기 위해 News::create() 추가"
+
+#: ../../source/guides/first-app/create_news_items.rst:97
+msgid "Next, create a method to create a news item from the submitted data."
+msgstr "다음으로 제출된 데이터로부터 뉴스 항목을 생성하는 메서드를 만듭니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:99
+msgid "You're going to do three things here:"
+msgstr "여기서 세 가지 작업을 수행할 것입니다:"
+
+#: ../../source/guides/first-app/create_news_items.rst:101
+msgid "checks whether the submitted data passed the validation rules."
+msgstr "제출된 데이터가 유효성 검사 규칙을 통과했는지 확인합니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:102
+msgid "saves the news item to the database."
+msgstr "뉴스 항목을 데이터베이스에 저장합니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:103
+msgid "returns a success page."
+msgstr "성공 페이지를 반환합니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:107
+msgid "The code above adds a lot of functionality."
+msgstr "위의 코드는 많은 기능을 추가합니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:110
+msgid "Retrieve the Data"
+msgstr "데이터 가져오기"
+
+#: ../../source/guides/first-app/create_news_items.rst:112
+msgid ""
+"First, we use the :doc:`IncomingRequest <../../incoming/incomingrequest>` "
+"object ``$this->request``, which is set in the controller by the framework."
+msgstr ""
+"먼저, 프레임워크에 의해 컨트롤러에 설정된 :doc:`IncomingRequest "
+"<../../incoming/incomingrequest>` 객체인 ``$this->request``\\ 를 사용합니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:115
+msgid ""
+"We get the necessary items from the **POST** data by the user and set them "
+"in the ``$data`` variable."
+msgstr "사용자가 보낸 **POST** 데이터에서 필요한 항목들을 가져와 ``$data`` 변수에 설정합니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:119
+msgid "Validate the Data"
+msgstr "데이터 유효성 검사"
+
+#: ../../source/guides/first-app/create_news_items.rst:121
+msgid ""
+"Next, you'll use the Controller-provided helper function "
+":ref:`validateData() <controller-validatedata>` to validate the submitted "
+"data. In this case, the title and body fields are required and in the "
+"specific length."
+msgstr ""
+"다음으로, 컨트롤러에서 제공하는 헬퍼 함수인 :ref:`validateData() <controller-validatedata>`\\ 를"
+" 사용하여 제출된 데이터를 검증합니다. 이 경우 제목(title)과 본문(body) 필드는 필수이며 특정 길이를 충족해야 합니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:125
+msgid ""
+"CodeIgniter has a powerful validation library as demonstrated above. You can"
+" read more about the :doc:`Validation library <../../libraries/validation>`."
+msgstr ""
+"위에서 보여준 것처럼 CodeIgniter는 강력한 유효성 검사 라이브러리를 가지고 있습니다. :doc:`Validation 라이브러리 "
+"<../../libraries/validation>`\\ 에서 더 자세한 내용을 읽어볼 수 있습니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:128
+msgid ""
+"If the validation fails, we call the ``new()`` method you just created and "
+"return the HTML form."
+msgstr "유효성 검사가 실패하면 방금 만든 ``new()`` 메서드를 호출하여 HTML 폼을 다시 반환합니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:132
+msgid "Save the News Item"
+msgstr "뉴스 항목 저장"
+
+#: ../../source/guides/first-app/create_news_items.rst:134
+msgid ""
+"If the validation passed all the rules, we get the validated data by "
+":ref:`$this->validator->getValidated() <validation-getting-validated-data>` "
+"and set them in the ``$post`` variable."
+msgstr ""
+"유효성 검사가 모든 규칙을 통과하면 :ref:`$this->validator->getValidated() <validation-"
+"getting-validated-data>`\\ 를 통해 검증된 데이터를 가져와 ``$post`` 변수에 설정합니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:138
+msgid ""
+"The ``NewsModel`` is loaded and called. This takes care of passing the news "
+"item into the model. The :ref:`model-save` method handles inserting or "
+"updating the record automatically, based on whether it finds an array key "
+"matching the primary key."
+msgstr ""
+"``NewsModel``\\ 이 로드되고 호출됩니다. 이는 뉴스 항목을 모델로 전달하는 역할을 합니다. :ref:`model-save` "
+"메서드는 기본 키(primary key)와 일치하는 배열 키를 찾는지 여부에 따라 레코드를 자동으로 삽입하거나 업데이트합니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:143
+msgid ""
+"This contains a new function :php:func:`url_title()`. This function - "
+"provided by the :doc:`URL helper <../../helpers/url_helper>` - strips down "
+"the string you pass it, replacing all spaces by dashes (``-``) and makes "
+"sure everything is in lowercase characters. This leaves you with a nice "
+"slug, perfect for creating URIs."
+msgstr ""
+"여기에는 새로운 함수 :php:func:`url_title()`\\ 이 포함되어 있습니다. :doc:`URL 헬퍼 "
+"<../../helpers/url_helper>`\\ 에서 제공하는 이 함수는 전달된 문자열에서 모든 공백을 대시(``-``)로 바꾸고 "
+"모든 문자를 소문자로 만듭니다. 이렇게 하면 URI를 만드는 데 적합한 멋진 슬러그가 생성됩니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:150
+msgid "Return Success Page"
+msgstr "성공 페이지 반환"
+
+#: ../../source/guides/first-app/create_news_items.rst:152
+msgid ""
+"After this, view files are loaded and returned to display a success message."
+" Create a view at **app/Views/news/success.php** and write a success "
+"message."
+msgstr ""
+"이 작업이 끝나면 성공 메시지를 표시하기 위해 뷰 파일이 로드되어 반환됩니다. **app/Views/news/success.php**\\"
+" 에 뷰를 만들고 성공 메시지를 작성하세요."
+
+#: ../../source/guides/first-app/create_news_items.rst:155
+msgid "This could be as simple as::"
+msgstr "다음과 같이 간단할 수 있습니다::"
+
+#: ../../source/guides/first-app/create_news_items.rst:160
+msgid "NewsModel Updating"
+msgstr "NewsModel 업데이트"
+
+#: ../../source/guides/first-app/create_news_items.rst:162
+msgid ""
+"The only thing that remains is ensuring that your model is set up to allow "
+"data to be saved properly. The ``save()`` method that was used will "
+"determine whether the information should be inserted or if the row already "
+"exists and should be updated, based on the presence of a primary key. In "
+"this case, there is no ``id`` field passed to it, so it will insert a new "
+"row into it's table, ``news``."
+msgstr ""
+"남은 일은 모델이 데이터를 올바르게 저장할 수 있도록 설정되어 있는지 확인하는 것입니다. 사용된 ``save()`` 메서드는 기본 키의 "
+"존재 여부에 따라 정보를 삽입해야 할지, 아니면 기존 행을 업데이트해야 할지 결정합니다. 이 경우 ``id`` 필드가 전달되지 않으므로 "
+"``news`` 테이블에 새 행을 삽입합니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:169
+msgid ""
+"However, by default the insert and update methods in the Model will not "
+"actually save any data because it doesn't know what fields are safe to be "
+"updated. Edit the ``NewsModel`` to provide it a list of updatable fields in "
+"the ``$allowedFields`` property."
+msgstr ""
+"하지만 기본적으로 모델의 삽입 및 업데이트 메서드는 어떤 필드가 안전하게 업데이트될 수 있는지 알지 못하기 때문에 실제로 데이터를 "
+"저장하지 않습니다. ``NewsModel``\\ 을 수정하여 ``$allowedFields`` 속성에 업데이트 가능한 필드 목록을 "
+"제공하세요."
+
+#: ../../source/guides/first-app/create_news_items.rst:176
+msgid ""
+"This new property now contains the fields that we allow to be saved to the "
+"database. Notice that we leave out the ``id``? That's because you will "
+"almost never need to do that, since it is an auto-incrementing field in the "
+"database. This helps protect against Mass Assignment Vulnerabilities. If "
+"your model is handling your timestamps, you would also leave those out."
+msgstr ""
+"이 새로운 속성에는 데이터베이스에 저장을 허용할 필드들이 포함됩니다. ``id``\\ 를 제외한 것을 보셨나요? 그 이유는 "
+"데이터베이스에서 자동 증가(auto-incrementing) 필드이므로 직접 다룰 일이 거의 없기 때문입니다. 이는 대량 할당 "
+"취약성(Mass Assignment Vulnerabilities)으로부터 보호하는 데 도움이 됩니다. 만약 모델에서 타임스탬프를 처리하고"
+" 있다면 그 필드들도 제외해야 합니다."
+
+#: ../../source/guides/first-app/create_news_items.rst:183
+msgid "Create a News Item"
+msgstr "뉴스 항목 만들기"
+
+#: ../../source/guides/first-app/create_news_items.rst:185
+msgid ""
+"Now point your browser to your local development environment where you "
+"installed CodeIgniter and add **/news/new** to the URL. Add some news and "
+"check out the different pages you made."
+msgstr ""
+"이제 CodeIgniter를 설치한 로컬 개발 환경의 브라우저에서 URL 뒤에 **/news/new**\\ 를 추가하세요. 뉴스를 "
+"추가하고 직접 만든 여러 페이지들을 확인해 보세요."
+
+#: ../../source/guides/first-app/create_news_items.rst:200
+msgid "Congratulations"
+msgstr "축하합니다"
+
+#: ../../source/guides/first-app/create_news_items.rst:202
+msgid "You just completed your first CodeIgniter4 application!"
+msgstr "방금 첫 번째 CodeIgniter4 애플리케이션을 완성했습니다!"
+
+#: ../../source/guides/first-app/create_news_items.rst:204
+msgid ""
+"The diagram underneath shows your project's **app** folder, with all of the "
+"files that you created or modified."
+msgstr "아래 다이어그램은 여러분이 생성하거나 수정한 모든 파일이 포함된 프로젝트의 **app** 폴더를 보여줍니다."
+
+#: ../../source/guides/first-app/index.rst:3 ../../source/guides/index.rst:15
+msgid "Build Your First Application"
+msgstr "첫 번째 애플리케이션 만들기"
+
+#: ../../source/guides/first-app/index.rst:10
+msgid "Overview"
+msgstr "개요"
+
+#: ../../source/guides/first-app/index.rst:12
+msgid ""
+"This tutorial is intended to introduce you to the CodeIgniter4 framework and"
+" the basic principles of MVC architecture. It will show you how a basic "
+"CodeIgniter application is constructed in a step-by-step fashion."
+msgstr ""
+"이 튜토리얼은 CodeIgniter4 프레임워크와 MVC 아키텍처의 기본 원칙을 소개하기 위해 마련되었습니다. 기본적인 "
+"CodeIgniter 애플리케이션이 어떻게 구성되는지 단계별로 보여줍니다."
+
+#: ../../source/guides/first-app/index.rst:16
+msgid ""
+"If you are not familiar with PHP, we recommend that you check out the "
+"`W3Schools PHP Tutorial <https://www.w3schools.com/php/default.asp>`_ before"
+" continuing."
+msgstr ""
+"PHP에 익숙하지 않다면 계속 진행하기 전에 `W3Schools PHP Tutorial "
+"<https://www.w3schools.com/php/default.asp>`_\\ 을 확인해 보시기 바랍니다."
+
+#: ../../source/guides/first-app/index.rst:19
+msgid ""
+"In this tutorial, you will be creating a **basic news application**. You "
+"will begin by writing the code that can load static pages. Next, you will "
+"create a news section that reads news items from a database. Finally, you'll"
+" add a form to create news items in the database."
+msgstr ""
+"이 튜토리얼에서는 **\\ 기본적인 뉴스 애플리케이션**\\ 을 만들게 됩니다. 먼저 정적 페이지를 로드할 수 있는 코드를 작성하는 "
+"것부터 시작합니다. 다음으로 데이터베이스에서 뉴스 항목을 읽어오는 뉴스 섹션을 만듭니다. 마지막으로 데이터베이스에 뉴스 항목을 생성하기 "
+"위한 폼을 추가합니다."
+
+#: ../../source/guides/first-app/index.rst:26
+msgid "Model-View-Controller basics"
+msgstr "모델-뷰-컨트롤러(MVC) 기초"
+
+#: ../../source/guides/first-app/index.rst:27
+msgid "Routing basics"
+msgstr "라우팅 기초"
+
+#: ../../source/guides/first-app/index.rst:28
+msgid "Form validation"
+msgstr "폼 유효성 검사"
+
+#: ../../source/guides/first-app/index.rst:29
+msgid "Performing basic database queries using CodeIgniter's Model"
+msgstr "CodeIgniter의 모델을 사용한 기본적인 데이터베이스 쿼리 수행"
+
+#: ../../source/guides/first-app/index.rst:31
+msgid ""
+"The entire tutorial is split up over several pages, each explaining a small "
+"part of the functionality of the CodeIgniter framework. You'll go through "
+"the following pages:"
+msgstr ""
+"전체 튜토리얼은 여러 페이지로 나뉘어 있으며, 각 페이지는 CodeIgniter 프레임워크 기능의 작은 부분을 설명합니다. 다음 "
+"페이지들을 진행하게 됩니다:"
+
+#: ../../source/guides/first-app/index.rst:35
+msgid ""
+"Introduction, this page, which gives you an overview of what to expect and "
+"gets your default application downloaded and running."
+msgstr "소개(현재 페이지)에서는 무엇을 배울지에 대한 개요를 제공하고, 기본 애플리케이션을 다운로드하여 실행합니다."
+
+#: ../../source/guides/first-app/index.rst:37
+msgid ""
+":doc:`Static pages <static_pages>`, which will teach you the basics of "
+"controllers, views and routing."
+msgstr ":doc:`정적 페이지 <static_pages>`\\ 에서는 컨트롤러, 뷰 및 라우팅의 기초를 배웁니다."
+
+#: ../../source/guides/first-app/index.rst:39
+msgid ""
+":doc:`News section <news_section>`, where you'll start using models and will"
+" be doing some basic database operations."
+msgstr ":doc:`뉴스 섹션 <news_section>`\\ 에서는 모델을 사용하기 시작하고 기본적인 데이터베이스 작업을 수행합니다."
+
+#: ../../source/guides/first-app/index.rst:41
+msgid ""
+":doc:`Create news items <create_news_items>`, which will introduce more "
+"advanced database operations and form validation."
+msgstr ""
+":doc:`뉴스 항목 만들기 <create_news_items>`\\ 에서는 더 고급 데이터베이스 작업과 폼 유효성 검사를 소개합니다."
+
+#: ../../source/guides/first-app/index.rst:43
+msgid ""
+":doc:`Conclusion <conclusion>`, which will give you some pointers on further"
+" reading and other resources."
+msgstr ":doc:`결론 <conclusion>`\\ 에서는 추가 학습을 위한 지침과 기타 리소스를 제공합니다."
+
+#: ../../source/guides/first-app/index.rst:46
+msgid "Enjoy your exploration of the CodeIgniter framework."
+msgstr "CodeIgniter 프레임워크 탐색을 즐겨보세요."
+
+#: ../../source/guides/first-app/index.rst:63
+msgid ""
+"You can download a release manually from the site, but for this tutorial we "
+"will use the recommended way and install the AppStarter package through "
+"Composer. From your command line type the following:"
+msgstr ""
+"사이트에서 수동으로 릴리스를 다운로드할 수도 있지만, 이 튜토리얼에서는 권장되는 방식인 Composer를 통해 AppStarter "
+"패키지를 설치하겠습니다. 명령줄에 다음을 입력하세요:"
+
+#: ../../source/guides/first-app/index.rst:71
+msgid ""
+"This creates a new folder, **ci-news**, which contains your application "
+"code, with CodeIgniter installed in the vendor folder."
+msgstr ""
+"이렇게 하면 애플리케이션 코드가 포함된 **ci-news**\\ 라는 새 폴더가 생성되며, CodeIgniter는 vendor 폴더에 "
+"설치됩니다."
+
+#: ../../source/guides/first-app/index.rst:79
+msgid ""
+"By default, CodeIgniter starts up in production mode. This is a safety "
+"feature to keep your site a bit more secure in case settings are messed up "
+"once it is live. So first let's fix that. Copy or rename the **env** file to"
+" **.env**. Open it up."
+msgstr ""
+"기본적으로 CodeIgniter는 운영(production) 모드로 시작됩니다. 이는 사이트가 라이브된 후 설정이 잘못되었을 경우 보안을"
+" 강화하기 위한 안전 기능입니다. 먼저 이를 수정해 보겠습니다. **env** 파일을 **.env**\\ 로 복사하거나 이름을 바꾼 후 "
+"엽니다."
+
+#: ../../source/guides/first-app/index.rst:83
+msgid ""
+"This file contains server-specific settings. This means you never will need "
+"to commit any sensitive information to your version control system. It "
+"includes some of the most common ones you want to enter already, though they"
+" are all commented out. So uncomment the line with ``CI_ENVIRONMENT`` on it,"
+" and change ``production`` to ``development``::"
+msgstr ""
+"이 파일에는 서버별 설정이 포함되어 있습니다. 즉, 버전 관리 시스템에 민감한 정보를 커밋할 필요가 없습니다. 이미 가장 일반적으로 "
+"사용되는 설정들이 주석 처리된 채로 포함되어 있습니다. ``CI_ENVIRONMENT``\\ 가 포함된 줄의 주석을 제거하고 "
+"``production``\\ 을 ``development``\\ 로 변경합니다::"
+
+#: ../../source/guides/first-app/index.rst:92
+msgid "Running Development Server"
+msgstr "개발 서버 실행"
+
+#: ../../source/guides/first-app/index.rst:94
+msgid ""
+"With that out of the way it's time to view your application in a browser. "
+"You can serve it through any server of your choice, Apache, nginx, etc, but "
+"CodeIgniter comes with a simple command that takes advantage of PHP's built-"
+"in server to get you up and running fast on your development machines. Type "
+"the following on the command line from the root of your project:"
+msgstr ""
+"이제 브라우저에서 애플리케이션을 확인할 차례입니다. Apache, nginx 등 원하는 서버를 통해 서비스할 수 있지만, "
+"CodeIgniter에는 PHP의 내장 서버를 활용하여 개발 머신에서 빠르게 실행할 수 있는 간단한 명령이 포함되어 있습니다. 프로젝트 "
+"루트의 명령줄에서 다음을 입력하세요:"
+
+#: ../../source/guides/first-app/index.rst:105
+msgid "The Welcome Page"
+msgstr "환영 페이지"
+
+#: ../../source/guides/first-app/index.rst:107
+msgid ""
+"Now point your browser to the correct URL you will be greeted by a welcome "
+"screen. Try it now by heading to the following URL::"
+msgstr "이제 브라우저에서 올바른 URL로 접속하면 환영 화면이 나타납니다. 다음 URL로 이동하여 지금 확인해 보세요::"
+
+#: ../../source/guides/first-app/index.rst:112
+msgid "and you should be greeted by the following page:"
+msgstr "그러면 다음과 같은 페이지가 나타날 것입니다:"
+
+#: ../../source/guides/first-app/index.rst:116
+msgid ""
+"This means that your application works and you can start making changes to "
+"it."
+msgstr "이는 애플리케이션이 작동하며 변경을 시작할 수 있음을 의미합니다."
+
+#: ../../source/guides/first-app/index.rst:119
+msgid "Debugging"
+msgstr "디버깅"
+
+#: ../../source/guides/first-app/index.rst:122
+msgid "Debug Toolbar"
+msgstr "디버그 툴바"
+
+#: ../../source/guides/first-app/index.rst:124
+msgid ""
+"Now that you're in development mode, you'll see the CodeIgniter flame on the"
+" right bottom of your application. Click it and you'll see the debug "
+"toolbar."
+msgstr ""
+"이제 개발 모드이므로 애플리케이션 오른쪽 하단에 CodeIgniter 불꽃 아이콘이 보일 것입니다. 이를 클릭하면 디버그 툴바가 "
+"나타납니다."
+
+#: ../../source/guides/first-app/index.rst:126
+msgid ""
+"This toolbar contains a number of helpful items that you can reference "
+"during development. This will never show in production environments. "
+"Clicking any of the tabs along the bottom brings up additional information. "
+"Clicking the X on the right of the toolbar minimizes it to a small square "
+"with the CodeIgniter flame on it. If you click that the toolbar will show "
+"again."
+msgstr ""
+"이 툴바에는 개발 중에 참조할 수 있는 유용한 항목들이 많이 포함되어 있습니다. 이는 운영 환경에서는 절대 표시되지 않습니다. 하단의 "
+"탭을 클릭하면 추가 정보가 나타납니다. 툴바 오른쪽의 X를 클릭하면 CodeIgniter 불꽃 모양의 작은 사각형으로 최소화됩니다. 이를"
+" 다시 클릭하면 툴바가 다시 나타납니다."
+
+#: ../../source/guides/first-app/index.rst:135
+msgid "Error Pages"
+msgstr "에러 페이지"
+
+#: ../../source/guides/first-app/index.rst:137
+msgid ""
+"In addition to this, CodeIgniter has some helpful error pages when you hit "
+"exceptions or other errors in your program. Open up "
+"**app/Controllers/Home.php** and change some line to generate an error "
+"(removing a semi-colon or brace should do the trick!). You will be greeted "
+"by a screen looking something like this:"
+msgstr ""
+"이 외에도 CodeIgniter는 프로그램에서 예외나 다른 에러가 발생했을 때 도움이 되는 에러 페이지를 제공합니다. "
+"**app/Controllers/Home.php**\\ 를 열고 에러를 발생시키기 위해 일부 라인을 수정해 보세요(세미콜론이나 중괄호를 "
+"제거하면 됩니다!). 그러면 다음과 같은 화면이 나타날 것입니다:"
+
+#: ../../source/guides/first-app/index.rst:144
+msgid "There are a couple of things to note here:"
+msgstr "여기서 주의 깊게 살펴볼 몇 가지 사항이 있습니다:"
+
+#: ../../source/guides/first-app/index.rst:146
+msgid ""
+"Hovering over the red header at the top reveals a **search** link that will "
+"open up DuckDuckGo.com in a new tab and searching for the exception."
+msgstr ""
+"상단의 빨간색 헤더 위에 마우스를 올리면 새 탭에서 DuckDuckGo.com을 열어 해당 예외를 검색할 수 있는 **search** "
+"링크가 나타납니다."
+
+#: ../../source/guides/first-app/index.rst:148
+msgid ""
+"Clicking the **arguments** link on any line in the Backtrace will expand a "
+"list of the arguments that were passed into that function call."
+msgstr ""
+"백트레이스(Backtrace)의 각 라인에서 **arguments** 링크를 클릭하면 해당 함수 호출에 전달된 인자 목록이 펼쳐집니다."
+
+#: ../../source/guides/first-app/index.rst:151
+msgid "Everything else should be clear when you see it."
+msgstr "나머지 부분은 화면을 보면 명확하게 알 수 있을 것입니다."
+
+#: ../../source/guides/first-app/index.rst:153
+msgid ""
+"Now that we know how to get started and how to debug a little, let's get "
+"started building this small news application."
+msgstr "이제 시작하는 방법과 약간의 디버깅 방법을 알았으니, 이 작은 뉴스 애플리케이션 빌드를 시작해 봅시다."
+
+#: ../../source/guides/first-app/news_section.rst:2
+msgid "News Section"
+msgstr "뉴스 섹션"
+
+#: ../../source/guides/first-app/news_section.rst:8
+msgid ""
+"In the last section, we went over some basic concepts of the framework by "
+"writing a class that references static pages. We cleaned up the URI by "
+"adding custom routing rules. Now it's time to introduce dynamic content and "
+"start using a database."
+msgstr ""
+"지난 섹션에서는 정적 페이지를 참조하는 클래스를 작성하여 프레임워크의 몇 가지 기본 개념을 살펴보았습니다. 또한 커스텀 라우팅 규칙을 "
+"추가하여 URI를 깔끔하게 정리했습니다. 이제 동적 콘텐츠를 도입하고 데이터베이스를 사용하기 시작할 때입니다."
+
+#: ../../source/guides/first-app/news_section.rst:14
+msgid "Create a Database to Work with"
+msgstr "작업할 데이터베이스 생성"
+
+#: ../../source/guides/first-app/news_section.rst:16
+msgid ""
+"The CodeIgniter installation assumes that you have set up an appropriate "
+"database, as outlined in the :ref:`requirements <requirements-supported-"
+"databases>`. In this tutorial, we provide SQL code for a MySQL database, and"
+" we also assume that you have a suitable client for issuing database "
+"commands (mysql, MySQL Workbench, or phpMyAdmin)."
+msgstr ""
+"CodeIgniter 설치 시 :ref:`요구 사항 <requirements-supported-databases>`\\ 에 명시된 대로 "
+"적절한 데이터베이스를 설정했다고 가정합니다. 이 튜토리얼에서는 MySQL 데이터베이스를 위한 SQL 코드를 제공하며, 데이터베이스 명령을"
+" 실행하기 위한 적절한 클라이언트(mysql, MySQL Workbench 또는 phpMyAdmin)가 있다고 가정합니다."
+
+#: ../../source/guides/first-app/news_section.rst:22
+msgid ""
+"You need to create a database ``ci4tutorial`` that can be used for this "
+"tutorial, and then configure CodeIgniter to use it."
+msgstr ""
+"이 튜토리얼에서 사용할 ``ci4tutorial`` 데이터베이스를 만든 다음, CodeIgniter에서 이를 사용하도록 설정해야 합니다."
+
+#: ../../source/guides/first-app/news_section.rst:25
+msgid ""
+"Using your database client, connect to your database and run the SQL command"
+" below (MySQL)::"
+msgstr "데이터베이스 클라이언트를 사용하여 데이터베이스에 접속한 후 다음 SQL 명령을 실행합니다(MySQL)::"
+
+#: ../../source/guides/first-app/news_section.rst:36
+msgid ""
+"Also, add some seed records. For now, we'll just show you the SQL statements"
+" needed to create the table, but you should be aware that this can be done "
+"programmatically once you are more familiar with CodeIgniter; you can read "
+"about :doc:`Migrations <../../dbmgmt/migration>` and :doc:`Seeds "
+"<../../dbmgmt/seeds>` to create more useful database setups later."
+msgstr ""
+"또한 몇 개의 시드 레코드를 추가합니다. 지금은 테이블 생성에 필요한 SQL 문만 보여드리지만, CodeIgniter에 더 익숙해지면 "
+"이를 프로그래밍 방식으로 처리할 수 있음을 알아두세요. 나중에 :doc:`마이그레이션 <../../dbmgmt/migration>` 및 "
+":doc:`시드(Seeds) <../../dbmgmt/seeds>`\\ 에 대해 읽어보고 더 유용한 데이터베이스 설정을 만들 수 "
+"있습니다."
+
+#: ../../source/guides/first-app/news_section.rst:41
+msgid ""
+"A note of interest: a \"slug\", in the context of web publishing, is a user-"
+" and SEO-friendly short text used in a URL to identify and describe a "
+"resource."
+msgstr ""
+"참고 사항: 웹 퍼블리싱 맥락에서 \"슬러그(slug)\"는 리소스를 식별하고 설명하기 위해 URL에 사용되는 사용자 및 SEO 친화적인"
+" 짧은 텍스트를 의미합니다."
+
+#: ../../source/guides/first-app/news_section.rst:44
+msgid "The seed records might be something like::"
+msgstr "시드 레코드는 다음과 같을 수 있습니다::"
+
+#: ../../source/guides/first-app/news_section.rst:52
+msgid "Connect to Your Database"
+msgstr "데이터베이스 연결"
+
+#: ../../source/guides/first-app/news_section.rst:54
+msgid ""
+"The local configuration file, **.env**, that you created when you installed "
+"CodeIgniter, should have the database property settings uncommented and set "
+"appropriately for the database you want to use. Make sure you've configured "
+"your database properly as described in :doc:`../../database/configuration`::"
+msgstr ""
+"CodeIgniter를 설치할 때 만든 로컬 설정 파일인 **.env**\\ 에서 데이터베이스 속성 설정의 주석을 해제하고 사용하려는 "
+"데이터베이스에 맞게 적절히 설정해야 합니다. :doc:`../../database/configuration`\\ 에 설명된 대로 "
+"데이터베이스를 올바르게 설정했는지 확인하세요::"
+
+#: ../../source/guides/first-app/news_section.rst:66
+msgid "Setting up Your Model"
+msgstr "모델 설정하기"
+
+#: ../../source/guides/first-app/news_section.rst:68
+msgid ""
+"Instead of writing database operations right in the controller, queries "
+"should be placed in a model, so they can easily be reused later. Models are "
+"the place where you retrieve, insert, and update information in your "
+"database or other data stores. They provide access to your data. You can "
+"read more about it in :doc:`../../models/model`."
+msgstr ""
+"데이터베이스 작업을 컨트롤러에 직접 작성하는 대신, 나중에 쉽게 재사용할 수 있도록 쿼리를 모델에 배치해야 합니다. 모델은 데이터베이스나"
+" 다른 데이터 저장소에서 정보를 검색, 삽입 및 업데이트하는 곳입니다. 모델은 데이터에 대한 접근을 제공합니다. 이에 대한 자세한 내용은"
+" :doc:`../../models/model`\\ 에서 읽어볼 수 있습니다."
+
+#: ../../source/guides/first-app/news_section.rst:75
+msgid "Create NewsModel"
+msgstr "NewsModel 생성"
+
+#: ../../source/guides/first-app/news_section.rst:77
+msgid ""
+"Open up the **app/Models** directory and create a new file called "
+"**NewsModel.php** and add the following code."
+msgstr "**app/Models** 디렉토리를 열고 **NewsModel.php**\\ 라는 새 파일을 만든 후 다음 코드를 추가합니다."
+
+#: ../../source/guides/first-app/news_section.rst:82
+msgid ""
+"This code looks similar to the controller code that was used earlier. It "
+"creates a new model by extending ``CodeIgniter\\Model`` and loads the "
+"database library. This will make the database class available through the "
+"``$this->db`` object."
+msgstr ""
+"이 코드는 이전에 사용한 컨트롤러 코드와 비슷해 보입니다. ``CodeIgniter\\Model``\\ 을 상속받아 새 모델을 생성하고 "
+"데이터베이스 라이브러리를 로드합니다. 이렇게 하면 ``$this->db`` 객체를 통해 데이터베이스 클래스를 사용할 수 있게 됩니다."
+
+#: ../../source/guides/first-app/news_section.rst:88
+msgid "Add NewsModel::getNews() Method"
+msgstr "NewsModel::getNews() 메서드 추가"
+
+#: ../../source/guides/first-app/news_section.rst:90
+msgid ""
+"Now that the database and a model have been set up, you'll need a method to "
+"get all of our posts from our database. To do this, the database abstraction"
+" layer that is included with CodeIgniter - :doc:`Query Builder "
+"<../../database/query_builder>` - is used in the ``CodeIgniter\\Model``. "
+"This makes it possible to write your 'queries' once and make them work on "
+":doc:`all supported database systems <../../intro/requirements>`. The Model "
+"class also allows you to easily work with the Query Builder and provides "
+"some additional tools to make working with data simpler. Add the following "
+"code to your model."
+msgstr ""
+"데이터베이스와 모델이 설정되었으므로 데이터베이스에서 모든 포스트를 가져오는 메서드가 필요합니다. 이를 위해 CodeIgniter에 포함된"
+" 데이터베이스 추상화 계층인 :doc:`쿼리 빌더(Query Builder) <../../database/query_builder>`\\"
+" 가 ``CodeIgniter\\Model``\\ 에서 사용됩니다. 이를 통해 '쿼리'를 한 번만 작성하면 :doc:`지원되는 모든 "
+"데이터베이스 시스템 <../../intro/requirements>`\\ 에서 작동하게 할 수 있습니다. 또한 모델 클래스를 사용하면 "
+"쿼리 빌더를 쉽게 다룰 수 있으며, 데이터 작업을 더 간단하게 만들어주는 몇 가지 추가 도구를 제공합니다. 모델에 다음 코드를 "
+"추가하세요."
+
+#: ../../source/guides/first-app/news_section.rst:103
+msgid ""
+"With this code, you can perform two different queries. You can get all news "
+"records, or get a news item by its slug. You might have noticed that the "
+"``$slug`` variable wasn't escaped before running the query; :doc:`Query "
+"Builder <../../database/query_builder>` does this for you."
+msgstr ""
+"이 코드를 사용하면 두 가지 다른 쿼리를 수행할 수 있습니다. 모든 뉴스 레코드를 가져오거나, 슬러그를 통해 특정 뉴스 항목을 가져올 수"
+" 있습니다. 쿼리를 실행하기 전에 ``$slug`` 변수가 이스케이프되지 않았다는 점을 눈치채셨을 수도 있는데, :doc:`쿼리 빌더 "
+"<../../database/query_builder>`\\ 가 이를 대신 처리해 줍니다."
+
+#: ../../source/guides/first-app/news_section.rst:108
+msgid ""
+"The two methods used here, ``findAll()`` and ``first()``, are provided by "
+"the ``CodeIgniter\\Model`` class. They already know the table to use based "
+"on the ``$table`` property we set in ``NewsModel`` class, earlier. They are "
+"helper methods that use the Query Builder to run their commands on the "
+"current table, and returning an array of results in the format of your "
+"choice. In this example, ``findAll()`` returns an array of array."
+msgstr ""
+"여기서 사용된 두 메서드인 ``findAll()``\\ 과 ``first()``\\ 는 ``CodeIgniter\\Model`` "
+"클래스에서 제공됩니다. 이들은 앞서 ``NewsModel`` 클래스에서 설정한 ``$table`` 속성을 기반으로 사용할 테이블을 이미 "
+"알고 있습니다. 이들은 쿼리 빌더를 사용하여 현재 테이블에서 명령을 실행하고 원하는 형식의 결과 배열을 반환하는 헬퍼 메서드입니다. 이 "
+"예제에서 ``findAll()``\\ 은 배열의 배열을 반환합니다."
+
+#: ../../source/guides/first-app/news_section.rst:116
+msgid "Display the News"
+msgstr "뉴스 표시하기"
+
+#: ../../source/guides/first-app/news_section.rst:118
+msgid ""
+"Now that the queries are written, the model should be tied to the views that"
+" are going to display the news items to the user. This could be done in our "
+"``Pages`` controller created earlier, but for the sake of clarity, a new "
+"``News`` controller is defined."
+msgstr ""
+"쿼리가 작성되었으므로 모델을 사용자에게 뉴스 항목을 표시할 뷰와 연결해야 합니다. 이는 이전에 만든 ``Pages`` 컨트롤러에서 수행할"
+" 수도 있지만, 명확성을 위해 새로운 ``News`` 컨트롤러를 정의하겠습니다."
+
+#: ../../source/guides/first-app/news_section.rst:126
+msgid "Modify your **app/Config/Routes.php** file, so it looks as follows:"
+msgstr "**app/Config/Routes.php** 파일을 다음과 같이 수정합니다:"
+
+#: ../../source/guides/first-app/news_section.rst:130
+msgid ""
+"This makes sure the requests reach the ``News`` controller instead of going "
+"directly to the ``Pages`` controller. The second ``$routes->get()`` line "
+"routes URI's with a slug to the ``show()`` method in the ``News`` "
+"controller."
+msgstr ""
+"이렇게 하면 요청이 ``Pages`` 컨트롤러로 직접 가는 대신 ``News`` 컨트롤러에 도달하게 됩니다. 두 번째 "
+"``$routes->get()`` 라인은 슬러그가 포함된 URI를 ``News`` 컨트롤러의 ``show()`` 메서드로 라우팅합니다."
+
+#: ../../source/guides/first-app/news_section.rst:135
+msgid "Create News Controller"
+msgstr "News 컨트롤러 생성"
+
+#: ../../source/guides/first-app/news_section.rst:137
+msgid "Create the new controller at **app/Controllers/News.php**."
+msgstr "**app/Controllers/News.php**\\ 에 새 컨트롤러를 생성합니다."
+
+#: ../../source/guides/first-app/news_section.rst:141
+msgid ""
+"Looking at the code, you may see some similarity with the files we created "
+"earlier. First, it extends ``BaseController`` that extends a core "
+"CodeIgniter class, ``Controller``, which provides a couple of helper "
+"methods, and makes sure that you have access to the current ``Request`` and "
+"``Response`` objects, as well as the ``Logger`` class, for saving "
+"information to disk."
+msgstr ""
+"코드를 보면 이전에 만든 파일들과 몇 가지 유사점을 발견할 수 있습니다. 먼저, 이 컨트롤러는 CodeIgniter의 핵심 클래스인 "
+"``Controller``\\ 를 상속받는 ``BaseController``\\ 를 확장합니다. 이는 몇 가지 헬퍼 메서드를 제공하며, "
+"현재의 ``Request`` 및 ``Response`` 객체뿐만 아니라 정보를 디스크에 저장하기 위한 ``Logger`` 클래스에 접근할"
+" 수 있도록 보장합니다."
+
+#: ../../source/guides/first-app/news_section.rst:147
+msgid ""
+"Next, there are two methods, one to view all news items, and one for a "
+"specific news item."
+msgstr ""
+"다음으로 두 개의 메서드가 있습니다. 하나는 모든 뉴스 항목을 보기 위한 것이고, 다른 하나는 특정 뉴스 항목을 위한 것입니다."
+
+#: ../../source/guides/first-app/news_section.rst:150
+msgid ""
+"Next, the :php:func:`model()` function is used to create the ``NewsModel`` "
+"instance. This is a helper function. You can read more about it in "
+":doc:`../../general/common_functions`. You could also write ``$model = new "
+"NewsModel();``, if you don't use it."
+msgstr ""
+"다음으로 :php:func:`model()` 함수를 사용하여 ``NewsModel`` 인스턴스를 생성합니다. 이는 헬퍼 함수입니다. 이에"
+" 대한 자세한 내용은 :doc:`../../general/common_functions`\\ 에서 읽어볼 수 있습니다. 이 함수를 "
+"사용하지 않는다면 ``$model = new NewsModel();``\\ 과 같이 작성할 수도 있습니다."
+
+#: ../../source/guides/first-app/news_section.rst:154
+msgid ""
+"You can see that the ``$slug`` variable is passed to the model's method in "
+"the second method. The model is using this slug to identify the news item to"
+" be returned."
+msgstr ""
+"두 번째 메서드에서 ``$slug`` 변수가 모델의 메서드에 전달되는 것을 볼 수 있습니다. 모델은 이 슬러그를 사용하여 반환할 뉴스 "
+"항목을 식별합니다."
+
+#: ../../source/guides/first-app/news_section.rst:159
+msgid "Complete News::index() Method"
+msgstr "News::index() 메서드 완성하기"
+
+#: ../../source/guides/first-app/news_section.rst:161
+msgid ""
+"Now the data is retrieved by the controller through our model, but nothing "
+"is displayed yet. The next thing to do is, passing this data to the views. "
+"Modify the ``index()`` method to look like this:"
+msgstr ""
+"이제 컨트롤러가 모델을 통해 데이터를 가져왔지만, 아직 아무것도 표시되지 않습니다. 다음에 할 일은 이 데이터를 뷰에 전달하는 것입니다."
+" ``index()`` 메서드를 다음과 같이 수정하세요:"
+
+#: ../../source/guides/first-app/news_section.rst:167
+msgid ""
+"The code above gets all news records from the model and assigns it to a "
+"variable. The value for the title is also assigned to the ``$data['title']``"
+" element and all data is passed to the views. You now need to create a view "
+"to render the news items."
+msgstr ""
+"위의 코드는 모델에서 모든 뉴스 레코드를 가져와 변수에 할당합니다. 제목 값도 ``$data['title']`` 요소에 할당되고 모든 "
+"데이터가 뷰로 전달됩니다. 이제 뉴스 항목을 렌더링할 뷰를 만들어야 합니다."
+
+#: ../../source/guides/first-app/news_section.rst:173
+msgid "Create news/index View File"
+msgstr "news/index 뷰 파일 생성"
+
+#: ../../source/guides/first-app/news_section.rst:175
+msgid "Create **app/Views/news/index.php** and add the next piece of code."
+msgstr "**app/Views/news/index.php**\\ 를 만들고 다음 코드를 추가합니다."
+
+#: ../../source/guides/first-app/news_section.rst:179
+msgid ""
+"We are again using :php:func:`esc()` to help prevent XSS attacks. But this "
+"time we also passed \"url\" as a second parameter. That's because attack "
+"patterns are different depending on the context in which the output is used."
+msgstr ""
+"XSS 공격을 방지하기 위해 다시 한번 :php:func:`esc()`\\ 를 사용하고 있습니다. 하지만 이번에는 두 번째 매개변수로 "
+"\"url\"을 전달했습니다. 이는 출력이 사용되는 맥락에 따라 공격 패턴이 다르기 때문입니다."
+
+#: ../../source/guides/first-app/news_section.rst:184
+msgid ""
+"Here, each news item is looped and displayed to the user. You can see we "
+"wrote our template in PHP mixed with HTML. If you prefer to use a template "
+"language, you can use CodeIgniter's :doc:`View Parser "
+"</outgoing/view_parser>` or a third party parser. Parser "
+"</outgoing/view_parser>` or a third party parser."
+msgstr ""
+"여기서 각 뉴스 항목은 루프를 통해 사용자에게 표시됩니다. PHP와 HTML이 섞인 템플릿을 작성한 것을 볼 수 있습니다. 만약 템플릿 "
+"언어를 선호하신다면, CodeIgniter의 :doc:`View Parser </outgoing/view_parser>`\\ 나 서드파티"
+" 파서를 사용할 수 있습니다."
+
+#: ../../source/guides/first-app/news_section.rst:190
+msgid "Complete News::show() Method"
+msgstr "News::show() 메서드 완성하기"
+
+#: ../../source/guides/first-app/news_section.rst:192
+msgid ""
+"The news overview page is now done, but a page to display individual news "
+"items is still absent. The model created earlier is made in such a way that "
+"it can easily be used for this functionality. You only need to add some code"
+" to the controller and create a new view. Go back to the ``News`` controller"
+" and update the ``show()`` method with the following:"
+msgstr ""
+"뉴스 개요 페이지는 완성되었지만, 개별 뉴스 항목을 표시할 페이지가 아직 없습니다. 이전에 만든 모델은 이러한 기능을 쉽게 사용할 수 "
+"있도록 만들어졌습니다. 컨트롤러에 코드를 약간 추가하고 새 뷰를 만들기만 하면 됩니다. ``News`` 컨트롤러로 돌아가서 "
+"``show()`` 메서드를 다음과 같이 업데이트하세요:"
+
+#: ../../source/guides/first-app/news_section.rst:200
+msgid ""
+"Don't forget to add ``use CodeIgniter\\Exceptions\\PageNotFoundException;`` "
+"to import the ``PageNotFoundException`` class."
+msgstr ""
+"``PageNotFoundException`` 클래스를 임포트하기 위해 ``use "
+"CodeIgniter\\Exceptions\\PageNotFoundException;``\\ 을 추가하는 것을 잊지 마세요."
+
+#: ../../source/guides/first-app/news_section.rst:203
+msgid ""
+"Instead of calling the ``getNews()`` method without a parameter, the "
+"``$slug`` variable is passed, so it will return the specific news item."
+msgstr ""
+"매개변수 없이 ``getNews()`` 메서드를 호출하는 대신 ``$slug`` 변수를 전달하여 특정 뉴스 항목을 반환받습니다."
+
+#: ../../source/guides/first-app/news_section.rst:207
+msgid "Create news/view View File"
+msgstr "news/view 뷰 파일 생성"
+
+#: ../../source/guides/first-app/news_section.rst:209
+msgid ""
+"The only thing left to do is create the corresponding view at "
+"**app/Views/news/view.php**. Put the following code in this file."
+msgstr ""
+"남은 작업은 **app/Views/news/view.php**\\ 에 해당하는 뷰를 만드는 것입니다. 이 파일에 다음 코드를 입력하세요."
+
+#: ../../source/guides/first-app/news_section.rst:214
+msgid ""
+"Point your browser to your \"news\" page, i.e., **localhost:8080/news**, you"
+" should see a list of the news items, each of which has a link to display "
+"just the one article."
+msgstr ""
+"브라우저에서 \"뉴스\" 페이지(**localhost:8080/news**)로 접속하면 뉴스 항목 목록이 표시되며, 각 항목에는 해당 "
+"기사만 표시하는 링크가 포함되어 있습니다."
+
+#: ../../source/guides/first-app/static_pages.rst:2
+msgid "Static Pages"
+msgstr "정적 페이지"
+
+#: ../../source/guides/first-app/static_pages.rst:8
+msgid ""
+"This tutorial assumes you've downloaded CodeIgniter and :doc:`installed the "
+"framework <../../installation/index>` in your development environment."
+msgstr ""
+"이 튜토리얼은 여러분이 CodeIgniter를 다운로드하고 개발 환경에 :doc:`프레임워크를 설치 "
+"<../../installation/index>`\\ 했다고 가정합니다."
+
+#: ../../source/guides/first-app/static_pages.rst:12
+msgid ""
+"The first thing you're going to do is set up routing rules to handle static "
+"pages."
+msgstr "가장 먼저 할 일은 정적 페이지를 처리하기 위한 라우팅 규칙을 설정하는 것입니다."
+
+#: ../../source/guides/first-app/static_pages.rst:15
+msgid "Setting Routing Rules"
+msgstr "라우팅 규칙 설정"
+
+#: ../../source/guides/first-app/static_pages.rst:17
+msgid ""
+"Routing associates a URI with a controller's method. A controller is simply "
+"a class that helps delegate work. We will create a controller later."
+msgstr ""
+"라우팅은 URI를 컨트롤러의 메서드와 연결합니다. 컨트롤러는 단순히 작업을 위임하는 데 도움이 되는 클래스입니다. 컨트롤러는 나중에 "
+"만들겠습니다."
+
+#: ../../source/guides/first-app/static_pages.rst:20
+msgid ""
+"Let's set up routing rules. Open the routes file located at "
+"**app/Config/Routes.php**."
+msgstr "라우팅 규칙을 설정해 봅시다. **app/Config/Routes.php**\\ 에 있는 라우팅 파일을 엽니다."
+
+#: ../../source/guides/first-app/static_pages.rst:22
+msgid "The only route directive there to start with should be:"
+msgstr "처음 시작할 때 유일한 라우트 지침은 다음과 같아야 합니다:"
+
+#: ../../source/guides/first-app/static_pages.rst:26
+msgid ""
+"This directive says that any incoming request without any content specified "
+"should be handled by the ``index()`` method inside the ``Home`` controller."
+msgstr ""
+"이 지침은 아무런 내용이 지정되지 않은 모든 들어오는 요청을 ``Home`` 컨트롤러 내의 ``index()`` 메서드에서 처리해야 함을"
+" 의미합니다."
+
+#: ../../source/guides/first-app/static_pages.rst:29
+msgid "Add the following lines, **after** the route directive for ``'/'``."
+msgstr "``'/'``\\ 에 대한 라우트 지침 **\\ 뒤에** 다음 라인들을 추가합니다."
+
+#: ../../source/guides/first-app/static_pages.rst:34
+msgid ""
+"CodeIgniter reads its routing rules from top to bottom and routes the "
+"request to the first matching rule. Each rule is a regular expression (left-"
+"side) mapped to a controller and method name (right-side). When a request "
+"comes in, CodeIgniter looks for the first match, and calls the appropriate "
+"controller and method, possibly with arguments."
+msgstr ""
+"CodeIgniter는 라우팅 규칙을 위에서 아래로 읽으며 첫 번째로 일치하는 규칙으로 요청을 보냅니다. 각 규칙은 컨트롤러 및 메서드 "
+"이름(오른쪽)에 매핑된 정규 표현식(왼쪽)입니다. 요청이 들어오면 CodeIgniter는 첫 번째 일치 항목을 찾아 적절한 컨트롤러와 "
+"메서드를 호출하며, 필요한 경우 인수를 함께 전달합니다."
+
+#: ../../source/guides/first-app/static_pages.rst:41
+msgid ""
+"More information about routing can be found in the "
+":doc:`../../incoming/routing`."
+msgstr "라우팅에 대한 더 자세한 정보는 :doc:`../../incoming/routing`\\ 에서 확인할 수 있습니다."
+
+#: ../../source/guides/first-app/static_pages.rst:43
+msgid ""
+"Here, the second rule in the ``$routes`` object matches a GET request to the"
+" URI path **/pages**, and it maps to the ``index()`` method of the ``Pages``"
+" class."
+msgstr ""
+"여기서 ``$routes`` 객체의 두 번째 규칙은 URI 경로 **/pages**\\ 에 대한 GET 요청과 일치하며, 이를 "
+"``Pages`` 클래스의 ``index()`` 메서드에 매핑합니다."
+
+#: ../../source/guides/first-app/static_pages.rst:46
+msgid ""
+"The third rule in the ``$routes`` object matches a GET request to a URI "
+"segment using the placeholder ``(:segment)``, and passes the parameter to "
+"the ``view()`` method of the ``Pages`` class."
+msgstr ""
+"``$routes`` 객체의 세 번째 규칙은 자리표시자 ``(:segment)``\\ 를 사용하는 URI 세그먼트에 대한 GET 요청과 "
+"일치하며, 해당 매개변수를 ``Pages`` 클래스의 ``view()`` 메서드에 전달합니다."
+
+#: ../../source/guides/first-app/static_pages.rst:51
+msgid "Let's Make our First Controller"
+msgstr "첫 번째 컨트롤러 만들기"
+
+#: ../../source/guides/first-app/static_pages.rst:53
+msgid ""
+"The next thing you're going to do is set up a **controller** to handle "
+"static pages. A controller is simply a class that helps delegate work. It is"
+" the glue of your web application."
+msgstr ""
+"다음으로 할 일은 정적 페이지를 처리할 **\\ 컨트롤러**\\ 를 설정하는 것입니다. 컨트롤러는 단순히 작업을 위임하는 데 도움이 되는"
+" 클래스입니다. 이는 웹 애플리케이션의 접착제와 같습니다."
+
+#: ../../source/guides/first-app/static_pages.rst:58
+msgid "Create Pages Controller"
+msgstr "Pages 컨트롤러 생성"
+
+#: ../../source/guides/first-app/static_pages.rst:60
+msgid ""
+"Create a file at **app/Controllers/Pages.php** with the following code."
+msgstr "다음 코드를 사용하여 **app/Controllers/Pages.php**\\ 에 파일을 생성합니다."
+
+#: ../../source/guides/first-app/static_pages.rst:63
+msgid ""
+"You should always be careful about the case of filenames. Many developers "
+"develop on case-insensitive file systems on Windows or macOS. However, most "
+"server environments use case-sensitive file systems. If the file name case "
+"is incorrect, code that works locally will not work on the server."
+msgstr ""
+"파일 이름의 대소문자에 항상 주의해야 합니다. 많은 개발자가 Windows나 macOS의 대소문자를 구분하지 않는 파일 시스템에서 "
+"개발합니다. 그러나 대부분의 서버 환경은 대소문자를 구분하는 파일 시스템을 사용합니다. 파일 이름의 대소문자가 틀리면 로컬에서 작동하는 "
+"코드가 서버에서는 작동하지 않습니다."
+
+#: ../../source/guides/first-app/static_pages.rst:71
+msgid ""
+"You have created a class named ``Pages``, with a ``view()`` method that "
+"accepts one argument named ``$page``. It also has an ``index()`` method, the"
+" same as the default controller found in **app/Controllers/Home.php**; that "
+"method displays the CodeIgniter welcome page."
+msgstr ""
+"``$page``\\ 라는 이름의 인수를 하나 받는 ``view()`` 메서드를 가진 ``Pages``\\ 라는 클래스를 만들었습니다. "
+"또한 **app/Controllers/Home.php**\\ 에 있는 기본 컨트롤러와 동일한 ``index()`` 메서드도 포함하고 "
+"있습니다. 이 메서드는 CodeIgniter 환영 페이지를 표시합니다."
+
+#: ../../source/guides/first-app/static_pages.rst:76
+msgid ""
+"There are two ``view()`` functions referred to in this tutorial. One is the "
+"class method created with ``public function view($page = 'home')`` and "
+"``return view('welcome_message')`` for displaying a view. Both are "
+"*technically* a function. But when you create a function in a class, it's "
+"called a method."
+msgstr ""
+"이 튜토리얼에는 두 가지 ``view()`` 함수가 언급됩니다. 하나는 ``public function view($page = "
+"'home')``\\ 으로 생성된 클래스 메서드이고, 다른 하나는 뷰를 표시하기 위한 ``return "
+"view('welcome_message')``\\ 입니다. 둘 다 *\\ 기술적으로* 함수입니다. 하지만 클래스 내에 함수를 만들면 이를"
+" 메서드라고 부릅니다."
+
+#: ../../source/guides/first-app/static_pages.rst:82
+msgid ""
+"The ``Pages`` class is extending the ``BaseController`` class that extends "
+"the ``CodeIgniter\\Controller`` class. This means that the new Pages class "
+"can access the methods and properties defined in the "
+"``CodeIgniter\\Controller`` class (**system/Controller.php**)."
+msgstr ""
+"``Pages`` 클래스는 ``CodeIgniter\\Controller`` 클래스를 상속받는 ``BaseController`` 클래스를"
+" 확장합니다. 이는 새로운 Pages 클래스가 ``CodeIgniter\\Controller`` "
+"클래스(**system/Controller.php**)에 정의된 메서드와 속성에 접근할 수 있음을 의미합니다."
+
+#: ../../source/guides/first-app/static_pages.rst:87
+msgid ""
+"The **controller is what will become the center of every request** to your "
+"web application. Like any PHP class, you refer to it within your controllers"
+" as ``$this``."
+msgstr ""
+"**\\ 컨트롤러는 웹 애플리케이션에 대한 모든 요청의 중심**\\ 이 됩니다. 다른 PHP 클래스와 마찬가지로 컨트롤러 내에서는 "
+"``$this``\\ 로 이를 참조합니다."
+
+#: ../../source/guides/first-app/static_pages.rst:92
+msgid "Create Views"
+msgstr "뷰 생성"
+
+#: ../../source/guides/first-app/static_pages.rst:94
+msgid ""
+"Now that you've created your first method, it's time to make some basic page"
+" templates. We will be creating two \"views\" (page templates) that act as "
+"our page footer and header."
+msgstr ""
+"첫 번째 메서드를 만들었으니 이제 기본적인 페이지 템플릿을 만들 차례입니다. 페이지의 푸터(footer)와 헤더(header) 역할을 할"
+" 두 개의 \"뷰\"(페이지 템플릿)를 만들겠습니다."
+
+#: ../../source/guides/first-app/static_pages.rst:98
+msgid ""
+"Create the header at **app/Views/templates/header.php** and add the "
+"following code::"
+msgstr "**app/Views/templates/header.php**\\ 에 헤더를 만들고 다음 코드를 추가합니다::"
+
+#: ../../source/guides/first-app/static_pages.rst:110
+msgid ""
+"The header contains the basic HTML code that you'll want to display before "
+"loading the main view, together with a heading. It will also output the "
+"``$title`` variable, which we'll define later in the controller. Now, create"
+" a footer at **app/Views/templates/footer.php** that includes the following "
+"code::"
+msgstr ""
+"헤더에는 메인 뷰를 로드하기 전에 표시할 기본적인 HTML 코드와 제목(heading)이 포함되어 있습니다. 또한 나중에 컨트롤러에서 "
+"정의할 ``$title`` 변수도 출력합니다. 이제 **app/Views/templates/footer.php**\\ 에 다음 코드를 "
+"포함하는 푸터를 만듭니다::"
+
+#: ../../source/guides/first-app/static_pages.rst:120
+msgid ""
+"If you look closely in **header.php** template we are using an "
+":php:func:`esc()` function. It's a global function provided by CodeIgniter "
+"to help prevent XSS attacks. You can read more about it in "
+":doc:`../../general/common_functions`."
+msgstr ""
+"**header.php** 템플릿을 자세히 보면 :php:func:`esc()` 함수를 사용하고 있습니다. 이는 XSS 공격을 방지하는 "
+"데 도움을 주기 위해 CodeIgniter에서 제공하는 글로벌 함수입니다. 이에 대한 자세한 내용은 "
+":doc:`../../general/common_functions`\\ 에서 읽어볼 수 있습니다."
+
+#: ../../source/guides/first-app/static_pages.rst:125
+msgid "Adding Logic to the Controller"
+msgstr "컨트롤러에 로직 추가하기"
+
+#: ../../source/guides/first-app/static_pages.rst:128
+msgid "Create home.php and about.php"
+msgstr "home.php 및 about.php 생성"
+
+#: ../../source/guides/first-app/static_pages.rst:130
+msgid ""
+"Earlier you set up a controller with a ``view()`` method. The method accepts"
+" one parameter, which is the name of the page to be loaded."
+msgstr ""
+"앞서 ``view()`` 메서드를 가진 컨트롤러를 설정했습니다. 이 메서드는 로드할 페이지의 이름인 매개변수 하나를 받습니다."
+
+#: ../../source/guides/first-app/static_pages.rst:133
+msgid ""
+"The static page bodies will be located in the **app/Views/pages** directory."
+msgstr "정적 페이지 본문은 **app/Views/pages** 디렉토리에 위치합니다."
+
+#: ../../source/guides/first-app/static_pages.rst:135
+msgid ""
+"In that directory, create two files named **home.php** and **about.php**. "
+"Within those files, type some text - anything you'd like - and save them. If"
+" you like to be particularly un-original, try \"Hello World!\"."
+msgstr ""
+"해당 디렉토리에 **home.php**\\ 와 **about.php**\\ 라는 이름의 파일 두 개를 만듭니다. 이 파일들 안에 원하는 "
+"텍스트를 입력하고 저장합니다. 딱히 떠오르는 것이 없다면 \"Hello World!\"라고 입력해 보세요."
+
+#: ../../source/guides/first-app/static_pages.rst:140
+msgid "Complete Pages::view() Method"
+msgstr "Pages::view() 메서드 완성하기"
+
+#: ../../source/guides/first-app/static_pages.rst:142
+msgid ""
+"In order to load those pages, you'll have to check whether the requested "
+"page actually exists. This will be the body of the ``view()`` method in the "
+"``Pages`` controller created above:"
+msgstr ""
+"해당 페이지들을 로드하기 위해 요청된 페이지가 실제로 존재하는지 확인해야 합니다. 위에서 만든 ``Pages`` 컨트롤러의 "
+"``view()`` 메서드 본문은 다음과 같습니다:"
+
+#: ../../source/guides/first-app/static_pages.rst:148
+msgid ""
+"And add ``use CodeIgniter\\Exceptions\\PageNotFoundException;`` after the "
+"``namespace`` line to import the ``PageNotFoundException`` class."
+msgstr ""
+"그리고 ``PageNotFoundException`` 클래스를 임포트하기 위해 ``namespace`` 라인 뒤에 ``use "
+"CodeIgniter\\Exceptions\\PageNotFoundException;``\\ 을 추가합니다."
+
+#: ../../source/guides/first-app/static_pages.rst:151
+msgid ""
+"Now, when the requested page does exist, it is loaded, including the header "
+"and footer, and returned to the user. If a controller returns a string, it "
+"is displayed to the user."
+msgstr ""
+"이제 요청된 페이지가 존재하면 헤더와 푸터를 포함하여 로드되고 사용자에게 반환됩니다. 컨트롤러가 문자열을 반환하면 사용자에게 표시됩니다."
+
+#: ../../source/guides/first-app/static_pages.rst:155
+msgid ""
+"Controllers must return a string or a :doc:`Response "
+"<../../outgoing/response>` object."
+msgstr ""
+"컨트롤러는 문자열 또는 :doc:`응답(Response) <../../outgoing/response>` 객체를 반환해야 합니다."
+
+#: ../../source/guides/first-app/static_pages.rst:157
+msgid ""
+"If the requested page doesn't exist, a \"404 Page not found\" error is "
+"shown."
+msgstr "요청된 페이지가 존재하지 않으면 \"404 Page not found\" 에러가 표시됩니다."
+
+#: ../../source/guides/first-app/static_pages.rst:159
+msgid ""
+"The first line in this method checks whether the page actually exists. PHP's"
+" native ``is_file()`` function is used to check whether the file is where "
+"it's expected to be. The ``PageNotFoundException`` is a CodeIgniter "
+"exception that causes the 404 Page Not Found error page to show."
+msgstr ""
+"이 메서드의 첫 번째 라인은 페이지가 실제로 존재하는지 확인합니다. PHP의 내장 함수인 ``is_file()``\\ 을 사용하여 파일이"
+" 예상되는 위치에 있는지 확인합니다. ``PageNotFoundException``\\ 은 404 Page Not Found 에러 "
+"페이지를 표시하게 하는 CodeIgniter 예외입니다."
+
+#: ../../source/guides/first-app/static_pages.rst:164
+msgid ""
+"In the header template, the ``$title`` variable was used to customize the "
+"page title. The value of title is defined in this method, but instead of "
+"assigning the value to a variable, it is assigned to the title element in "
+"the ``$data`` array."
+msgstr ""
+"헤더 템플릿에서는 페이지 제목을 커스텀하기 위해 ``$title`` 변수를 사용했습니다. 제목 값은 이 메서드에서 정의되지만, 값을 "
+"변수에 직접 할당하는 대신 ``$data`` 배열의 title 요소에 할당합니다."
+
+#: ../../source/guides/first-app/static_pages.rst:169
+msgid ""
+"The last thing that has to be done is loading the views in the order they "
+"should be displayed. The :php:func:`view()` function built-in to CodeIgniter"
+" will be used to do this. The second parameter in the ``view()`` function is"
+" used to pass values to the view. Each value in the ``$data`` array is "
+"assigned to a variable with the name of its key. So the value of "
+"``$data['title']`` in the controller is equivalent to ``$title`` in the "
+"view."
+msgstr ""
+"마지막으로 할 일은 뷰가 표시되어야 할 순서대로 로드하는 것입니다. 이를 위해 CodeIgniter에 내장된 "
+":php:func:`view()` 함수를 사용합니다. ``view()`` 함수의 두 번째 매개변수는 뷰에 값을 전달하는 데 사용됩니다. "
+"``$data`` 배열의 각 값은 키의 이름과 동일한 변수에 할당됩니다. 따라서 컨트롤러의 ``$data['title']`` 값은 뷰의 "
+"``$title``\\ 과 동일합니다."
+
+#: ../../source/guides/first-app/static_pages.rst:177
+msgid ""
+"Any files and directory names passed into the :php:func:`view()` function "
+"MUST match the case of the actual directory and file itself or the system "
+"will throw errors on case-sensitive platforms. You can read more about it in"
+" :doc:`../../outgoing/views`."
+msgstr ""
+":php:func:`view()` 함수에 전달되는 모든 파일 및 디렉토리 이름은 실제 디렉토리 및 파일 자체의 대소문자와 반드시 일치해야"
+" 합니다. 그렇지 않으면 대소문자를 구분하는 플랫폼에서 시스템 에러가 발생합니다. 이에 대한 자세한 내용은 "
+":doc:`../../outgoing/views`\\ 에서 읽어볼 수 있습니다."
+
+#: ../../source/guides/first-app/static_pages.rst:183
+msgid "Running the App"
+msgstr "앱 실행하기"
+
+#: ../../source/guides/first-app/static_pages.rst:185
+msgid ""
+"Ready to test? You cannot run the app using PHP's built-in server, since it "
+"will not properly process the **.htaccess** rules that are provided in "
+"**public**, and which eliminate the need to specify \"**index.php/**\" as "
+"part of a URL. CodeIgniter has its own command that you can use though."
+msgstr ""
+"테스트할 준비가 되셨나요? PHP의 내장 서버를 직접 사용하여 앱을 실행할 수는 없습니다. 왜냐하면 **public**\\ 에 제공되어 "
+"URL의 일부로 \"**index.php/**\"를 지정할 필요가 없게 해주는 **.htaccess** 규칙을 제대로 처리하지 못하기 "
+"때문입니다. 하지만 대신 사용할 수 있는 CodeIgniter 전용 명령이 있습니다."
+
+#: ../../source/guides/first-app/static_pages.rst:190
+msgid "From the command line, at the root of your project:"
+msgstr "프로젝트 루트의 명령줄에서 다음을 입력하세요:"
+
+#: ../../source/guides/first-app/static_pages.rst:196
+msgid ""
+"will start a web server, accessible on port 8080. If you set the location "
+"field in your browser to **localhost:8080**, you should see the CodeIgniter "
+"welcome page."
+msgstr ""
+"그러면 8080 포트에서 접근 가능한 웹 서버가 시작됩니다. 브라우저의 주소창에 **localhost:8080**\\ 을 입력하면 "
+"CodeIgniter 환영 페이지가 보일 것입니다."
+
+#: ../../source/guides/first-app/static_pages.rst:199
+msgid ""
+"Now visit **localhost:8080/home**. Did it get routed correctly to the "
+"``view()`` method in the ``Pages`` controller? Awesome!"
+msgstr ""
+"이제 **localhost:8080/home**\\ 에 접속해 보세요. ``Pages`` 컨트롤러의 ``view()`` 메서드로 제대로 "
+"라우팅되었나요? 멋지네요!"
+
+#: ../../source/guides/first-app/static_pages.rst:202
+msgid "You should see something like the following:"
+msgstr "다음과 같은 화면이 나타날 것입니다:"
+
+#: ../../source/guides/first-app/static_pages.rst:207
+msgid ""
+"You can now try several URLs in the browser location field, to see what the "
+"``Pages`` controller you made above produces..."
+msgstr ""
+"이제 브라우저 주소창에 여러 URL을 입력하여 위에서 만든 ``Pages`` 컨트롤러가 무엇을 생성하는지 확인해 볼 수 있습니다..."
+
+#: ../../source/guides/first-app/static_pages.rst:214
+msgid "URL"
+msgstr "URL"
+
+#: ../../source/guides/first-app/static_pages.rst:214
+msgid "Will show"
+msgstr "표시 내용"
+
+#: ../../source/guides/first-app/static_pages.rst:216
+msgid "localhost:8080/"
+msgstr "localhost:8080/"
+
+#: ../../source/guides/first-app/static_pages.rst:216
+msgid ""
+"the CodeIgniter \"welcome\" page. the results from the ``index()`` method in"
+" the ``Home`` controller."
+msgstr "CodeIgniter \"환영\" 페이지. ``Home`` 컨트롤러 내의 ``index()`` 메서드 결과가 표시됩니다."
+
+#: ../../source/guides/first-app/static_pages.rst:219
+msgid "localhost:8080/pages"
+msgstr "localhost:8080/pages"
+
+#: ../../source/guides/first-app/static_pages.rst:219
+msgid ""
+"the results from the ``index()`` method inside our ``Pages`` controller, "
+"which is to display the CodeIgniter \"welcome\" page."
+msgstr "``Pages`` 컨트롤러 내의 ``index()`` 메서드 결과로, CodeIgniter \"환영\" 페이지가 표시됩니다."
+
+#: ../../source/guides/first-app/static_pages.rst:222
+msgid "localhost:8080/home"
+msgstr "localhost:8080/home"
+
+#: ../../source/guides/first-app/static_pages.rst:222
+msgid ""
+"the \"home\" page that you made above, because we explicitly asked for it. "
+"the results from the ``view()`` method inside our ``Pages`` controller."
+msgstr ""
+"우리가 명시적으로 요청했으므로 위에서 만든 \"home\" 페이지가 표시됩니다. ``Pages`` 컨트롤러 내의 ``view()`` "
+"메서드 결과입니다."
+
+#: ../../source/guides/first-app/static_pages.rst:226
+msgid "localhost:8080/about"
+msgstr "localhost:8080/about"
+
+#: ../../source/guides/first-app/static_pages.rst:226
+msgid ""
+"the \"about\" page that you made above, because we explicitly asked for it."
+msgstr "우리가 명시적으로 요청했으므로 위에서 만든 \"about\" 페이지가 표시됩니다."
+
+#: ../../source/guides/first-app/static_pages.rst:229
+msgid "localhost:8080/shop"
+msgstr "localhost:8080/shop"
+
+#: ../../source/guides/first-app/static_pages.rst:229
+msgid ""
+"a \"404 - File Not Found\" error page, because there is no "
+"**app/Views/pages/shop.php**."
+msgstr ""
+"**app/Views/pages/shop.php**\\ 가 없으므로 \"404 - File Not Found\" 에러 페이지가 "
+"표시됩니다."
+
+#: ../../source/guides/index.rst:3
+msgid "Guides"
+msgstr "가이드"
+
+#: ../../source/guides/index.rst:5
+msgid ""
+"This section contains guides to help you get started with CodeIgniter 4 in a"
+" project-based way."
+msgstr "이 섹션에는 프로젝트 기반으로 CodeIgniter 4를 시작하는 데 도움이 되는 가이드가 포함되어 있습니다."
+
+#: ../../source/guides/index.rst:17
+msgid ""
+"This project walks you through building a basic news application. You will "
+"begin by writing code that loads static pages. Next, you will create a news "
+"section that reads news items from a database. Finally, you'll add a form to"
+" create news items in the database. This gives you a good overview of how "
+"CodeIgniter works and how to use its main components."
+msgstr ""
+"이 프로젝트는 기본적인 뉴스 애플리케이션을 빌드하는 과정을 안내합니다. 먼저 정적 페이지를 로드하는 코드를 작성하는 것부터 시작합니다. "
+"다음으로 데이터베이스에서 뉴스 항목을 읽어오는 뉴스 섹션을 만듭니다. 마지막으로 데이터베이스에 뉴스 항목을 생성하기 위한 폼을 "
+"추가합니다. 이를 통해 CodeIgniter가 작동하는 방식과 주요 구성 요소를 사용하는 방법에 대한 좋은 개요를 얻을 수 있습니다."
+
+#: ../../source/guides/index.rst:21
+msgid "Build a RESTful API"
+msgstr "RESTful API 만들기"
+
+#: ../../source/guides/index.rst:23
+msgid ""
+"This guide helps you build a simple RESTful API using CodeIgniter 4. You "
+"will learn how to use auto-routing, set up controllers, and handle requests "
+"and responses in a RESTful manner. By the end of this guide, you will have a"
+" functional API that can perform CRUD operations on a resource. This "
+"introduces you to the basic concepts of a RESTful API and the tools that "
+"CodeIgniter provides to facilitate its development."
+msgstr ""
+"이 가이드는 CodeIgniter 4를 사용하여 간단한 RESTful API를 구축하는 데 도움을 줍니다. 자동 라우팅 사용법, 컨트롤러"
+" 설정 방법, RESTful 방식으로 요청과 응답을 처리하는 방법을 배웁니다. 이 가이드가 끝나면 리소스에 대해 CRUD 작업을 수행할 "
+"수 있는 기능적인 API를 갖게 될 것입니다. 이를 통해 RESTful API의 기본 개념과 개발을 용이하게 하기 위해 "
+"CodeIgniter가 제공하는 도구들을 소개합니다."
