@@ -7509,7 +7509,7 @@ msgstr "4.7.2에서 4.7.3으로 업그레이드"
 
 #: ../../source/installation/upgrade_473.rst:34
 msgid "File Validation"
-msgstr ""
+msgstr "파일 유효성 검사"
 
 #: ../../source/installation/upgrade_473.rst:36
 msgid ""
@@ -7518,6 +7518,8 @@ msgid ""
 "extension. Previously, ``ext_in`` only checked the MIME-derived guessed "
 "extension."
 msgstr ""
+"``ext_in`` 파일 업로드 유효성 검사 규칙이 이제 클라이언트 파일명 확장자를 확인하고 감지된 MIME 타입이 해당 확장자와 "
+"연관되어 있는지 검증합니다. 이전에는 ``ext_in``\\ 이 MIME 유래 추정 확장자만 확인했습니다."
 
 #: ../../source/installation/upgrade_473.rst:41
 msgid ""
@@ -7527,6 +7529,9 @@ msgid ""
 " remove ``ext_in`` from those validation rules and use a custom validation "
 "rule that matches your application's requirements."
 msgstr ""
+"이는 클라이언트 파일명 확장자가 없거나, 클라이언트 파일명 확장자가 감지된 MIME 타입과 일치하지 않는 파일이 이제 ``ext_in``"
+" 유효성 검사에 실패한다는 것을 의미합니다. 애플리케이션이 의도적으로 이러한 파일을 허용하는 경우, 해당 유효성 검사 규칙에서 "
+"``ext_in``\\ 을 제거하고 애플리케이션 요구 사항에 맞는 사용자 정의 유효성 검사 규칙을 사용하십시오."
 
 #: ../../source/installation/upgrade_4xx.rst:3
 msgid "Upgrading from 3.x to 4.x"
