@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-10 16:32+0900\n"
+"POT-Creation-Date: 2026-09-15 12:19+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ko <LL@li.org>\n"
@@ -705,6 +705,7 @@ msgstr ""
 #: ../../source/installation/upgrade_471.rst:52
 #: ../../source/installation/upgrade_472.rst:22
 #: ../../source/installation/upgrade_473.rst:54
+#: ../../source/installation/upgrade_474.rst:53
 #, python-format
 msgid ""
 "There are some third-party CodeIgniter modules available to assist with "
@@ -2162,6 +2163,7 @@ msgstr "4.0.x에서 4.0.4로 업그레이드"
 #: ../../source/installation/upgrade_471.rst:5
 #: ../../source/installation/upgrade_472.rst:5
 #: ../../source/installation/upgrade_473.rst:5
+#: ../../source/installation/upgrade_474.rst:5
 msgid ""
 "Please refer to the upgrade instructions corresponding to your installation "
 "method."
@@ -2225,6 +2227,7 @@ msgstr "설치 방법에 해당하는 업그레이드 지침을 참조하십시�
 #: ../../source/installation/upgrade_471.rst:7
 #: ../../source/installation/upgrade_472.rst:7
 #: ../../source/installation/upgrade_473.rst:7
+#: ../../source/installation/upgrade_474.rst:7
 msgid ""
 ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
 msgstr ":ref:`Composer 설치 앱 스타터 업그레이드 <app-starter-upgrading>`"
@@ -2287,6 +2290,7 @@ msgstr ":ref:`Composer 설치 앱 스타터 업그레이드 <app-starter-upgradi
 #: ../../source/installation/upgrade_471.rst:8
 #: ../../source/installation/upgrade_472.rst:8
 #: ../../source/installation/upgrade_473.rst:8
+#: ../../source/installation/upgrade_474.rst:8
 msgid ""
 ":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
 "Upgrading <adding-codeigniter4-upgrading>`"
@@ -2352,6 +2356,7 @@ msgstr ""
 #: ../../source/installation/upgrade_471.rst:9
 #: ../../source/installation/upgrade_472.rst:9
 #: ../../source/installation/upgrade_473.rst:9
+#: ../../source/installation/upgrade_474.rst:9
 msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
 msgstr ":ref:`수동 설치 업그레이드 <installing-manual-upgrading>`"
 
@@ -2391,6 +2396,7 @@ msgstr ""
 #: ../../source/installation/upgrade_460.rst:17
 #: ../../source/installation/upgrade_470.rst:17
 #: ../../source/installation/upgrade_473.rst:31
+#: ../../source/installation/upgrade_474.rst:17
 msgid "Breaking Changes"
 msgstr "주요 변경사항"
 
@@ -2713,6 +2719,7 @@ msgstr ""
 #: ../../source/installation/upgrade_471.rst:47
 #: ../../source/installation/upgrade_472.rst:17
 #: ../../source/installation/upgrade_473.rst:49
+#: ../../source/installation/upgrade_474.rst:48
 msgid "Project Files"
 msgstr "프로젝트 파일"
 
@@ -2781,6 +2788,7 @@ msgstr ""
 #: ../../source/installation/upgrade_471.rst:57
 #: ../../source/installation/upgrade_472.rst:27
 #: ../../source/installation/upgrade_473.rst:59
+#: ../../source/installation/upgrade_474.rst:58
 msgid "Content Changes"
 msgstr "내용 변경사항"
 
@@ -2813,6 +2821,7 @@ msgstr "내용 변경사항"
 #: ../../source/installation/upgrade_471.rst:59
 #: ../../source/installation/upgrade_472.rst:29
 #: ../../source/installation/upgrade_473.rst:61
+#: ../../source/installation/upgrade_474.rst:60
 msgid ""
 "The following files received significant changes (including deprecations or "
 "visual adjustments) and it is recommended that you merge the updated "
@@ -2826,7 +2835,7 @@ msgstr "``app/Views/*``"
 
 #: ../../source/installation/upgrade_405.rst:102
 #: ../../source/installation/upgrade_405.rst:162
-#: ../../source/installation/upgrade_412.rst:149
+#: ../../source/installation/upgrade_412.rst:147
 #: ../../source/installation/upgrade_420.rst:24
 #: ../../source/installation/upgrade_450.rst:24
 msgid "``public/index.php``"
@@ -2834,14 +2843,14 @@ msgstr "``public/index.php``"
 
 #: ../../source/installation/upgrade_405.rst:103
 #: ../../source/installation/upgrade_405.rst:161
-#: ../../source/installation/upgrade_412.rst:148
+#: ../../source/installation/upgrade_412.rst:146
 msgid "``public/.htaccess``"
 msgstr "``public/.htaccess``"
 
 #: ../../source/installation/upgrade_405.rst:104
 #: ../../source/installation/upgrade_405.rst:163
 #: ../../source/installation/upgrade_412.rst:120
-#: ../../source/installation/upgrade_412.rst:151
+#: ../../source/installation/upgrade_412.rst:148
 #: ../../source/installation/upgrade_413.rst:34
 #: ../../source/installation/upgrade_420.rst:25
 #: ../../source/installation/upgrade_430.rst:41
@@ -2852,7 +2861,6 @@ msgstr "``spark``"
 
 #: ../../source/installation/upgrade_405.rst:105
 #: ../../source/installation/upgrade_405.rst:160
-#: ../../source/installation/upgrade_412.rst:147
 msgid "``phpunit.xml.dist``"
 msgstr "``phpunit.xml.dist``"
 
@@ -2912,6 +2920,7 @@ msgstr "``composer.json``"
 #: ../../source/installation/upgrade_471.rst:70
 #: ../../source/installation/upgrade_472.rst:38
 #: ../../source/installation/upgrade_473.rst:73
+#: ../../source/installation/upgrade_474.rst:69
 msgid "All Changes"
 msgstr "전체 변경사항"
 
@@ -3349,14 +3358,6 @@ msgstr "``app/Views/welcome_message.php``"
 #: ../../source/installation/upgrade_412.rst:144
 msgid "``contributing/guidelines.rst``"
 msgstr "``contributing/guidelines.rst``"
-
-#: ../../source/installation/upgrade_412.rst:146
-msgid "``phpstan.neon.dist``"
-msgstr "``phpstan.neon.dist``"
-
-#: ../../source/installation/upgrade_412.rst:150
-msgid "``rector.php``"
-msgstr "``rector.php``"
 
 #: ../../source/installation/upgrade_413.rst:3
 msgid "Upgrading from 4.1.2 to 4.1.3"
@@ -3884,6 +3885,7 @@ msgstr ""
 #: ../../source/installation/upgrade_471.rst:72
 #: ../../source/installation/upgrade_472.rst:40
 #: ../../source/installation/upgrade_473.rst:75
+#: ../../source/installation/upgrade_474.rst:71
 msgid ""
 "This is a list of all files in the **project space** that received changes; "
 "many will be simple comments or formatting that have no effect on the "
@@ -5209,6 +5211,7 @@ msgstr ""
 #: ../../source/installation/upgrade_471.rst:63
 #: ../../source/installation/upgrade_472.rst:33
 #: ../../source/installation/upgrade_473.rst:65
+#: ../../source/installation/upgrade_474.rst:64
 msgid "Config"
 msgstr "설정"
 
@@ -5501,6 +5504,7 @@ msgstr "기본값이 설정되지 않으면, 해당 환경 변수를 설정해�
 #: ../../source/installation/upgrade_471.rst:49
 #: ../../source/installation/upgrade_472.rst:19
 #: ../../source/installation/upgrade_473.rst:51
+#: ../../source/installation/upgrade_474.rst:50
 msgid ""
 "Some files in the **project space** (root, app, public, writable) received "
 "updates. Due to these files being outside of the **system** scope they will "
@@ -7235,11 +7239,13 @@ msgstr "4.6.4에서 4.6.5로 업그레이드"
 
 #: ../../source/installation/upgrade_465.rst:35
 #: ../../source/installation/upgrade_472.rst:35
+#: ../../source/installation/upgrade_474.rst:66
 msgid "No config files were changed in this release."
 msgstr "이 릴리스에서는 설정 파일이 변경되지 않았습니다."
 
 #: ../../source/installation/upgrade_465.rst:43
 #: ../../source/installation/upgrade_472.rst:43
+#: ../../source/installation/upgrade_474.rst:74
 msgid "No project files were changed in this release."
 msgstr "이 릴리스에서는 프로젝트 파일이 변경되지 않았습니다."
 
@@ -7532,6 +7538,60 @@ msgstr ""
 "이는 클라이언트 파일명 확장자가 없거나, 클라이언트 파일명 확장자가 감지된 MIME 타입과 일치하지 않는 파일이 이제 ``ext_in``"
 " 유효성 검사에 실패한다는 것을 의미합니다. 애플리케이션이 의도적으로 이러한 파일을 허용하는 경우, 해당 유효성 검사 규칙에서 "
 "``ext_in``\\ 을 제거하고 애플리케이션 요구 사항에 맞는 사용자 정의 유효성 검사 규칙을 사용하십시오."
+
+#: ../../source/installation/upgrade_474.rst:3
+msgid "Upgrading from 4.7.3 to 4.7.4"
+msgstr "4.7.3에서 4.7.4로 업그레이드"
+
+#: ../../source/installation/upgrade_474.rst:20
+msgid "HTTPS Detection Behind Proxies"
+msgstr "프록시 뒤에서의 HTTPS 감지"
+
+#: ../../source/installation/upgrade_474.rst:22
+msgid ""
+"For security reasons, ``IncomingRequest::isSecure()`` no longer trusts the "
+"``X-Forwarded-Proto`` and ``Front-End-Https`` headers unless the request "
+"comes from a trusted proxy. See the `Security advisory GHSA-7wmf-pw8j-mc78 "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-7wmf-"
+"pw8j-mc78>`_ for more information."
+msgstr ""
+"보안상의 이유로, ``IncomingRequest::isSecure()``\\ 는 요청이 신뢰할 수 있는 프록시로부터 오는 경우가 "
+"아니라면 더 이상 ``X-Forwarded-Proto``\\ 와 ``Front-End-Https`` 헤더를 신뢰하지 않습니다. 자세한 "
+"내용은 `보안 권고 GHSA-7wmf-pw8j-mc78 "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-7wmf-"
+"pw8j-mc78>`_\\ 를 참조하십시오."
+
+#: ../../source/installation/upgrade_474.rst:28
+msgid ""
+"If your application runs behind a reverse proxy or load balancer that "
+"terminates TLS, you must register the proxy in ``Config\\App::$proxyIPs``, "
+"e.g.::"
+msgstr ""
+"애플리케이션이 TLS를 종료(terminate)하는 리버스 프록시나 로드 밸런서 뒤에서 동작한다면, 해당 프록시를 "
+"``Config\\\\App::$proxyIPs``\\ 에 등록해야 합니다. 예::"
+
+#: ../../source/installation/upgrade_474.rst:36
+msgid ""
+"Otherwise, ``isSecure()``, ``force_https()``, and "
+"``Config\\App::$forceGlobalSecureRequests`` will treat such requests as non-"
+"HTTPS, which may result in redirect loops."
+msgstr ""
+"그렇지 않으면 ``isSecure()``, ``force_https()``, "
+"``Config\\\\App::$forceGlobalSecureRequests``\\ 는 이러한 요청을 HTTPS가 아닌 것으로 처리하여"
+" 리다이렉트 루프가 발생할 수 있습니다."
+
+#: ../../source/installation/upgrade_474.rst:40
+msgid ""
+"On dual-stack servers, a proxy's IPv4 address may be reported as an "
+"IPv4-mapped IPv6 address (e.g., ``::ffff:192.168.5.21``), which does not "
+"match an IPv4 entry such as ``192.168.5.0/24``. In that case, add the "
+"IPv4-mapped form to ``Config\\App::$proxyIPs``, e.g., "
+"``::ffff:192.168.5.21`` or ``::ffff:192.168.5.0/120``."
+msgstr ""
+"듀얼 스택(dual-stack) 서버에서는 프록시의 IPv4 주소가 IPv4-매핑 IPv6 주소(예: "
+"``::ffff:192.168.5.21``)로 표시될 수 있는데, 이는 ``192.168.5.0/24``\\ 와 같은 IPv4 항목과 "
+"일치하지 않습니다. 이 경우 ``Config\\\\App::$proxyIPs``\\ 에 IPv4-매핑 형식(예: "
+"``::ffff:192.168.5.21`` 또는 ``::ffff:192.168.5.0/120``)을 추가로 등록하세요."
 
 #: ../../source/installation/upgrade_4xx.rst:3
 msgid "Upgrading from 3.x to 4.x"
@@ -10686,3 +10746,9 @@ msgstr "실패한 연결은 자동으로 재수립됩니다"
 msgid ""
 "Uncommitted transactions are automatically rolled back with a warning logged"
 msgstr "커밋되지 않은 트랜잭션은 경고 로그와 함께 자동으로 롤백됩니다"
+
+#~ msgid "``phpstan.neon.dist``"
+#~ msgstr "``phpstan.neon.dist``"
+
+#~ msgid "``rector.php``"
+#~ msgstr "``rector.php``"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-10 16:32+0900\n"
+"POT-Creation-Date: 2026-09-15 12:19+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ko <LL@li.org>\n"
@@ -8829,7 +8829,7 @@ msgstr "CLI 명령으로 생성된 테이블에 이제 색상을 적용할 수 �
 #: ../../source/changelogs/v4.6.5.rst:15
 #: ../../source/changelogs/v4.7.0.rst:394
 #: ../../source/changelogs/v4.7.1.rst:47 ../../source/changelogs/v4.7.2.rst:15
-#: ../../source/changelogs/v4.7.3.rst:40
+#: ../../source/changelogs/v4.7.3.rst:40 ../../source/changelogs/v4.7.4.rst:60
 msgid "Bugs Fixed"
 msgstr "버그 수정"
 
@@ -10178,6 +10178,7 @@ msgstr "**CodeIgniter4\\ 의 4.1.6 릴리즈**"
 #: ../../source/changelogs/v4.3.5.rst:13 ../../source/changelogs/v4.4.3.rst:13
 #: ../../source/changelogs/v4.4.7.rst:15 ../../source/changelogs/v4.5.8.rst:15
 #: ../../source/changelogs/v4.6.2.rst:15 ../../source/changelogs/v4.7.3.rst:15
+#: ../../source/changelogs/v4.7.4.rst:15
 msgid "SECURITY"
 msgstr "보안"
 
@@ -12999,7 +13000,7 @@ msgstr ""
 #: ../../source/changelogs/v4.6.5.rst:20
 #: ../../source/changelogs/v4.7.0.rst:401
 #: ../../source/changelogs/v4.7.1.rst:66 ../../source/changelogs/v4.7.2.rst:21
-#: ../../source/changelogs/v4.7.3.rst:61
+#: ../../source/changelogs/v4.7.3.rst:61 ../../source/changelogs/v4.7.4.rst:80
 msgid ""
 "See the repo's `CHANGELOG.md "
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_ "
@@ -15009,8 +15010,9 @@ msgid ""
 "Added ``spark lang:find`` command to update translations keys. See "
 ":ref:`generating-translation-files-via-command` for the details."
 msgstr ""
-"번역 키를 업데이트하는 ``spark lang:find`` 명령이 추가되었습니다. 자세한 내용은 :ref:`generating-"
-"translation-files-via-command`\\ 를 참고하세요."
+"**Commands:** ``spark lang:find``\\ 가 프레임워크나 다른 네임스페이스에서 이미 제공하는 번역 키(예: "
+"``system/Language``\\ 의 ``Errors.*``)를 새로운 것으로 취급하여 ``--show-new``\\ 목록에 "
+"나열하고, 기존 번역을 덮어쓰는 미번역 자리표시자를 ``app/Language``\\ 에 기록하던 버그를 수정했습니다."
 
 #: ../../source/changelogs/v4.5.0.rst:88
 msgid ""
@@ -19206,3 +19208,265 @@ msgstr ""
 "**Worker Mode:** 감시된 파일이 변경된 후 FrankenPHP의 감시자가 워커 스크립트를 재실행할 때 "
 "``frankenphp-worker.php`` 템플릿이 ``Cannot redeclare class Config\\Paths`` 치명적 "
 "오류를 유발하는 버그가 수정되었습니다."
+
+#: ../../source/changelogs/v4.7.4.rst:3
+msgid "Version 4.7.4"
+msgstr "버전 4.7.4"
+
+#: ../../source/changelogs/v4.7.4.rst:5
+msgid "Release Date: July 7, 2026"
+msgstr "릴리스 날짜: 2026년 7월 7일"
+
+#: ../../source/changelogs/v4.7.4.rst:7
+msgid "**4.7.4 release of CodeIgniter4**"
+msgstr "**CodeIgniter4 4.7.4 릴리스**"
+
+#: ../../source/changelogs/v4.7.4.rst:17
+msgid ""
+"**IncomingRequest:** *HTTPS detection via client-supplied headers* was "
+"fixed. ``IncomingRequest::isSecure()`` now trusts the ``X-Forwarded-Proto`` "
+"and ``Front-End-Https`` headers only when the request comes from a trusted "
+"proxy configured in ``Config\\App::$proxyIPs``. See the `Security advisory "
+"GHSA-7wmf-pw8j-mc78 "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-7wmf-"
+"pw8j-mc78>`_ for more information."
+msgstr ""
+"**IncomingRequest:** *클라이언트가 제공한 헤더를 통한 HTTPS 감지* 문제를 수정했습니다. "
+"``IncomingRequest::isSecure()``\\ 는 이제 요청이 ``Config\\\\App::$proxyIPs``\\ 에 "
+"설정된 신뢰할 수 있는 프록시로부터 온 경우에만 ``X-Forwarded-Proto``\\ 와 ``Front-End-Https`` 헤더를"
+" 신뢰합니다. 자세한 내용은 `보안 권고 GHSA-7wmf-pw8j-mc78 "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-7wmf-"
+"pw8j-mc78>`_\\ 를 참조하십시오."
+
+#: ../../source/changelogs/v4.7.4.rst:24
+msgid ""
+"**Query Builder:** Fixed a SQL injection vulnerability in ``deleteBatch()``."
+" When ``deleteBatch()`` was used together with ``where()`` conditions, the "
+"bound values from the WHERE clause were substituted into the generated SQL "
+"with their escape flag ignored, so they were never escaped or quoted. The "
+"WHERE binds are now escaped in the same way as a regular ``delete()``."
+msgstr ""
+"**Query Builder:** ``deleteBatch()``\\ 의 SQL 인젝션 취약점을 수정했습니다. "
+"``deleteBatch()``\\ 를 ``where()`` 조건과 함께 사용하면, WHERE 절의 바인딩 값이 이스케이프 플래그가 "
+"무시된 채로 생성된 SQL에 대입되어 이스케이프되거나 인용부호로 감싸지지 않았습니다. 이제 WHERE 바인딩도 일반 "
+"``delete()``\\ 와 동일한 방식으로 이스케이프됩니다."
+
+#: ../../source/changelogs/v4.7.4.rst:30
+msgid ""
+"See the `Security advisory GHSA-c9w5-rwh3-7pm9 "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-c9w5-rwh3-7pm9>`_"
+" for more information."
+msgstr ""
+"자세한 내용은 `보안 권고 GHSA-c9w5-rwh3-7pm9 "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-c9w5-rwh3-7pm9>`_\\"
+" 를 참고하세요."
+
+#: ../../source/changelogs/v4.7.4.rst:33
+msgid ""
+"**UploadedFile:** ``UploadedFile::move()`` now sanitizes the client-provided"
+" filename when called without a second argument. Previously, the unsanitized"
+" client filename was used as the default, allowing path traversal sequences "
+"(e.g. ``../../public/shell.php``) to write the uploaded file outside the "
+"intended directory. A name explicitly passed as the second argument is not "
+"sanitized and remains the caller's responsibility. See the `Security "
+"advisory GHSA-hhmc-q9hp-r662 "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-"
+"hhmc-q9hp-r662>`_ for more information."
+msgstr ""
+"**UploadedFile:** 두 번째 인자 없이 호출할 경우, ``UploadedFile::move()``\\ 가 이제 클라이언트가 "
+"제공한 파일 이름을 살균(sanitize)합니다. 이전에는 살균되지 않은 클라이언트 파일 이름이 기본값으로 사용되어, 경로 순회(path"
+" traversal) 시퀀스(예: ``../../public/shell.php``)로 인해 업로드된 파일이 의도한 디렉터리 밖에 기록될 "
+"수 있었습니다. 두 번째 인자로 명시적으로 전달한 이름은 살균되지 않으며, 이는 호출자의 책임으로 남습니다. 자세한 내용은 `보안 권고 "
+"GHSA-hhmc-q9hp-r662 "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-"
+"hhmc-q9hp-r662>`_\\ 를 참조하십시오."
+
+#: ../../source/changelogs/v4.7.4.rst:42
+msgid ""
+"**Validation:** The ``is_image`` and ``mime_in`` file upload validation "
+"rules now also verify non-empty client filename extensions. Previously, "
+"these rules classified an upload solely by its content-derived MIME type, so"
+" a file with a dangerous client extension (for example, a ``.php`` file "
+"prepended with image magic bytes) could pass validation while keeping its "
+"original extension on disk. See the `Security advisory GHSA-mmj4-63m4-r6h5 "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-"
+"mmj4-63m4-r6h5>`_ for more information."
+msgstr ""
+"**Validation:** ``is_image``\\ 와 ``mime_in`` 파일 업로드 유효성 검사 규칙이 이제 비어 있지 않은 "
+"클라이언트 파일명 확장자도 함께 검증합니다. 이전에는 이 규칙들이 콘텐츠로부터 유추한 MIME 타입만으로 업로드를 판별했기 때문에, "
+"위험한 클라이언트 확장자를 가진 파일(예: 이미지 매직 바이트가 앞에 붙은 ``.php`` 파일)이 원래 확장자를 디스크에 유지한 채로 "
+"유효성 검사를 통과할 수 있었습니다. 자세한 내용은 `보안 권고 GHSA-mmj4-63m4-r6h5 "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-"
+"mmj4-63m4-r6h5>`_\\ 를 참조하십시오."
+
+#: ../../source/changelogs/v4.7.4.rst:51
+msgid ""
+"The ``is_image`` rule now rejects uploads when a non-empty client filename "
+"extension is not an image extension. The ``mime_in`` rule now rejects "
+"uploads when a non-empty client filename extension does not match the "
+"detected file content, matching the same extension/content agreement used by"
+" ``ext_in``. Files uploaded without any extension (such as JavaScript "
+"``Blob`` uploads) are still accepted, since the rules validate the file "
+"content."
+msgstr ""
+"``is_image`` 규칙은 이제 비어 있지 않은 클라이언트 파일명 확장자가 이미지 확장자가 아니면 업로드를 거부합니다. "
+"``mime_in`` 규칙은 이제 비어 있지 않은 클라이언트 파일명 확장자가 감지된 파일 콘텐츠와 일치하지 않으면 업로드를 거부하며, "
+"이는 ``ext_in``\\ 이 사용하는 확장자/콘텐츠 일치 방식과 동일합니다. 확장자가 전혀 없이 업로드된 파일(예: "
+"JavaScript ``Blob`` 업로드)은 규칙이 파일 콘텐츠를 검증하므로 여전히 허용됩니다."
+
+#: ../../source/changelogs/v4.7.4.rst:62
+msgid ""
+"**API:** Fixed a bug in Transformers where the root request's ``fields`` and"
+" ``include`` query parameters leaked into nested transformers created inside"
+" ``include*()`` methods, causing incorrect field filtering, unexpected "
+"includes, or infinite recursion."
+msgstr ""
+"**API:** 트랜스포머(Transformer)에서 루트 요청의 ``fields``\\ 와 ``include`` 쿼리 파라미터가 "
+"``include*()`` 메서드 내부에서 생성된 중첩 트랜스포머로 새어 들어가, 잘못된 필드 필터링·예상치 못한 include·무한 "
+"재귀를 유발하던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.4.rst:63
+msgid ""
+"**Commands:** Fixed a bug where ``make:model --return entity`` did not "
+"preserve sub-namespaces when generating the related Entity class."
+msgstr ""
+"**Commands:** ``make:model --return entity``\\ 가 관련 Entity 클래스를 생성할 때 하위 "
+"네임스페이스를 유지하지 않던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.4.rst:64
+msgid ""
+"**Common:** Fixed a bug in ``env()`` where a ``TypeError`` could be thrown "
+"when non-string values were passed."
+msgstr ""
+"**Common:** ``env()``\\ 에 문자열이 아닌 값을 전달했을 때 ``TypeError``\\ 가 발생할 수 있던 버그를 "
+"수정했습니다."
+
+#: ../../source/changelogs/v4.7.4.rst:65
+msgid ""
+"**Common:** Fixed ``esc()`` to propagate encoding correctly and prevent "
+"reference leaks."
+msgstr ""
+"**Common:** ``esc()``\\ 가 인코딩을 올바르게 전파하고 참조 누수(reference leak)를 방지하도록 "
+"수정했습니다."
+
+#: ../../source/changelogs/v4.7.4.rst:66
+msgid ""
+"**Commands:** Fixed a bug where ``spark lang:find`` treated translation keys"
+" already provided by the framework or another namespace (such as "
+"``Errors.*`` in ``system/Language``) as new, listing them under ``--show-"
+"new`` and writing untranslated placeholders into ``app/Language`` that "
+"overrode the existing translations."
+msgstr ""
+"**Commands:** ``spark lang:find``\\ 가 프레임워크나 다른 네임스페이스에서 이미 제공하는 번역 키(예: "
+"``system/Language``\\ 의 ``Errors.*``)를 새로운 것으로 취급하여 ``--show-new``\\ 목록에 "
+"나열하고, 기존 번역을 덮어쓰는 미번역 자리표시자를 ``app/Language``\\ 에 기록하던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.4.rst:67
+msgid ""
+"**Config:** Fixed a bug where ``BaseService::injectMock`` did not apply "
+"``strtolower`` consistently, causing inconsistent Service and Mock "
+"registration and resolution."
+msgstr ""
+"**Config:** ``BaseService::injectMock``\\ 이 ``strtolower``\\ 를 일관되게 적용하지 않아 "
+"서비스와 Mock의 등록·해석이 일관되지 않던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.4.rst:68
+msgid ""
+"**Database:** Fixed a bug where ``updateBatch()`` could be called after "
+"Query Builder ``where()`` conditions, even though it's not supported. In "
+"this situation, now the ``DatabaseException`` is thrown."
+msgstr ""
+"**Database:** 지원되지 않음에도 불구하고 쿼리 빌더 ``where()`` 조건 뒤에 ``updateBatch()``\\ 를 "
+"호출할 수 있던 버그를 수정했습니다. 이제 이런 경우 ``DatabaseException``\\ 이 발생합니다."
+
+#: ../../source/changelogs/v4.7.4.rst:69
+msgid ""
+"**Database:** Fixed a bug in ``BaseUtils::getXMLFromResult()`` where "
+"database values of ``0`` or ``'0'`` were treated as empty and omitted from "
+"the generated XML export."
+msgstr ""
+"**Database:** ``BaseUtils::getXMLFromResult()``\\ 에서 데이터베이스 값 ``0``\\ 이나 "
+"``'0'``\\ 이 빈 값으로 취급되어 생성된 XML 내보내기에서 누락되던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.4.rst:70
+msgid ""
+"**Encryption:** Fixed bugs in ``SodiumHandler`` where runtime ``blockSize`` "
+"overrides without ``key`` were handled incorrectly, invalid key lengths "
+"could leak native Sodium errors, and mismatched decrypt ``blockSize`` values"
+" could throw ``SodiumException`` instead of ``EncryptionException``."
+msgstr ""
+"**Encryption:** ``SodiumHandler``\\ 에서 ``key`` 없이 런타임 ``blockSize``\\ 를 재정의할"
+" 때 잘못 처리되던 문제, 잘못된 키 길이에서 Sodium 네이티브 오류가 그대로 노출되던 문제, 복호화 시 ``blockSize`` "
+"값이 일치하지 않으면 ``EncryptionException``\\ 대신 ``SodiumException``\\ 이 발생하던 버그들을 "
+"수정했습니다."
+
+#: ../../source/changelogs/v4.7.4.rst:71
+msgid ""
+"**Filters:** Fixed a bug in ``InvalidChars`` filter where invalid UTF-8 or "
+"control characters in array keys were not checked."
+msgstr ""
+"**Filters:** ``InvalidChars`` 필터가 배열 키에 있는 잘못된 UTF-8이나 제어 문자를 검사하지 않던 버그를 "
+"수정했습니다."
+
+#: ../../source/changelogs/v4.7.4.rst:72
+msgid ""
+"**HTTP:** Fixed a bug where ``IncomingRequest::getPostGet()`` and "
+"``IncomingRequest::getGetPost()`` threw a ``TypeError`` when passed an array"
+" of indexes."
+msgstr ""
+"**HTTP:** ``IncomingRequest::getPostGet()``\\ 과 "
+"``IncomingRequest::getGetPost()``\\ 에 인덱스 배열을 전달하면 ``TypeError``\\ 가 발생하던 "
+"버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.4.rst:73
+msgid ""
+"**HTTP:** Fixed a bug where the User Agent library reported Safari's WebKit "
+"version instead of the browser version from the ``Version`` token."
+msgstr ""
+"**HTTP:** User Agent 라이브러리가 ``Version`` 토큰의 브라우저 버전 대신 Safari의 WebKit 버전을 "
+"보고하던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.4.rst:74
+msgid ""
+"**Model:** Fixed a bug in ``Model::objectToRawArray()`` where the "
+"``$recursive`` parameter was ignored."
+msgstr ""
+"**Model:** ``Model::objectToRawArray()``\\ 에서 ``$recursive`` 파라미터가 무시되던 버그를 "
+"수정했습니다."
+
+#: ../../source/changelogs/v4.7.4.rst:75
+msgid ""
+"**Security:** Fixed a bug where ``CheckPhpIni`` could raise a type error "
+"when ``ini_get_all()`` returned ``null`` for a configured directive value."
+msgstr ""
+"**Security:** 설정된 지시자(directive) 값에 대해 ``ini_get_all()``\\ 이 ``null``\\ 을 "
+"반환할 때 ``CheckPhpIni``\\ 에서 타입 오류가 발생할 수 있던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.4.rst:76
+msgid ""
+"**Session:** Fixed a bug in ``RedisHandler`` where the configured "
+"``$lockMaxRetries`` and ``$lockRetryInterval`` values were not respected "
+"when acquiring session locks."
+msgstr ""
+"**Session:** 세션 잠금을 획득할 때 ``RedisHandler``\\ 가 설정된 ``$lockMaxRetries``\\ 와 "
+"``$lockRetryInterval`` 값을 반영하지 않던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.4.rst:77
+msgid ""
+"**Testing:** Fixed a bug where using ``MockInputOutput`` within a test that "
+"also uses ``StreamFilterTrait`` tore down the trait's stream filters, so CLI"
+" output produced after the ``MockInputOutput`` interaction (such as in "
+"``tearDown()``) was no longer captured and leaked to the console."
+msgstr ""
+"**Testing:** ``StreamFilterTrait``\\ 도 함께 사용하는 테스트에서 ``MockInputOutput``\\ 을"
+" 사용하면 해당 트레이트의 스트림 필터가 해제되어, ``MockInputOutput``\\ 상호작용 이후(예: "
+"``tearDown()``)에 출력되는 CLI 출력이 더 이상 캡처되지 않고 콘솔로 새어 나가던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.4.rst:78
+msgid ""
+"**Validation:** Fixed bugs in the ``required_without`` rule logic where "
+"using array dot notation caused early exits ignoring subsequent fields and "
+"triggered an ``Undefined array key`` warning for missing keys."
+msgstr ""
+"**Validation:** ``required_without`` 규칙 로직에서 배열 점(dot) 표기법을 사용하면 이후 필드를 무시한 "
+"채 조기 종료되고, 누락된 키에 대해 ``Undefined array key`` 경고가 발생하던 버그들을 수정했습니다."

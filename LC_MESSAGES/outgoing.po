@@ -9,13 +9,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-14 16:28+0900\n"
+"POT-Creation-Date: 2026-09-15 12:19+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ko <LL@li.org>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.18.0\n"
@@ -206,7 +206,7 @@ msgstr ""
 
 #: ../../source/outgoing/api_responses.rst:70
 #: ../../source/outgoing/api_responses.rst:313
-#: ../../source/outgoing/api_transformers.rst:253
+#: ../../source/outgoing/api_transformers.rst:261
 #: ../../source/outgoing/response.rst:257 ../../source/outgoing/table.rst:104
 #: ../../source/outgoing/view_parser.rst:572
 #: ../../source/outgoing/view_renderer.rst:135
@@ -790,26 +790,45 @@ msgstr "이제 클라이언트는 다음을 요청할 수 있습니다: ``/users
 msgid "The response would include:"
 msgstr "응답에는 다음이 포함됩니다."
 
-#: ../../source/outgoing/api_transformers.rst:178
+#: ../../source/outgoing/api_transformers.rst:177
+msgid ""
+"The ``fields`` and ``include`` query parameters describe the **root** "
+"resource only. Transformers instantiated inside an ``include*()`` method "
+"(such as ``PostTransformer`` above) are treated as nested resources: when "
+"created **without an explicit request** they do **not** inherit the root "
+"request's ``fields``/``include`` state. This prevents the parent's query "
+"parameters from leaking into related resources, which could otherwise cause "
+"incorrect field filtering or unexpected/recursive includes. If you "
+"deliberately pass a request to a nested transformer, that request's scope is"
+" honored."
+msgstr ""
+"``fields``\\ 와 ``include`` 쿼리 파라미터는 **루트(root)** 리소스에만 적용됩니다. ``include*()``"
+" 메서드 내부에서 생성되는 트랜스포머(위 예시의 ``PostTransformer`` 등)는 중첩된(nested) 리소스로 취급되며, "
+"**명시적인 요청(request) 없이** 생성된 경우 루트 요청의 ``fields``/``include`` 상태를 상속받지 "
+"**않습니다**. 이렇게 하면 상위(parent)의 쿼리 파라미터가 관련 리소스로 새어 들어가 잘못된 필드 필터링이나 예상치 "
+"못한/재귀적인 include가 발생하는 것을 방지할 수 있습니다. 중첩된 트랜스포머에 의도적으로 요청을 전달하면 해당 요청의 범위가 "
+"그대로 적용됩니다."
+
+#: ../../source/outgoing/api_transformers.rst:186
 msgid "Restricting Available Includes"
 msgstr "사용 가능한 포함 제한"
 
-#: ../../source/outgoing/api_transformers.rst:180
+#: ../../source/outgoing/api_transformers.rst:188
 msgid ""
 "Similar to field filtering, you can restrict which relationships can be "
 "included by overriding the ``getAllowedIncludes()`` method:"
 msgstr ""
 "필드 필터링과 마찬가지로 ``getAllowedIncludes()`` 메서드를 재정의하여 포함할 수 있는 관계를 제한할 수 있습니다."
 
-#: ../../source/outgoing/api_transformers.rst:185
+#: ../../source/outgoing/api_transformers.rst:193
 msgid "If you want to disable all includes, return an empty array:"
 msgstr "모든 포함을 비활성화하려면 빈 배열을 반환하십시오."
 
-#: ../../source/outgoing/api_transformers.rst:190
+#: ../../source/outgoing/api_transformers.rst:198
 msgid "Include Validation"
 msgstr "검증 포함"
 
-#: ../../source/outgoing/api_transformers.rst:192
+#: ../../source/outgoing/api_transformers.rst:200
 msgid ""
 "The transformer automatically validates that any requested includes have "
 "corresponding ``include*()`` methods defined in your transformer class. If a"
@@ -819,11 +838,11 @@ msgstr ""
 "변환기는 요청된 모든 포함에 변환기 클래스에 정의된 해당 ``include*()`` 메서드가 있는지 자동으로 확인합니다. 클라이언트가 "
 "존재하지 않는 포함을 요청하면 ``ApiException``\\이 발생합니다."
 
-#: ../../source/outgoing/api_transformers.rst:196
+#: ../../source/outgoing/api_transformers.rst:204
 msgid "For example, if a client requests::"
 msgstr "예를 들어 클라이언트가 requests::인 경우"
 
-#: ../../source/outgoing/api_transformers.rst:200
+#: ../../source/outgoing/api_transformers.rst:208
 msgid ""
 "And your transformer doesn't have an ``includeInvalid()`` method, an "
 "exception will be thrown with the message: \"Missing include method for: "
@@ -832,21 +851,21 @@ msgstr ""
 "그리고 변환기에 ``includeInvalid()`` 메서드가 없으면 \"다음에 대한 포함 메서드 누락: 유효하지 않음\"이라는 메시지와"
 " 함께 예외가 발생합니다."
 
-#: ../../source/outgoing/api_transformers.rst:203
+#: ../../source/outgoing/api_transformers.rst:211
 msgid "This helps catch typos and prevents unexpected behavior."
 msgstr "이는 오타를 파악하고 예상치 못한 동작을 방지하는 데 도움이 됩니다."
 
-#: ../../source/outgoing/api_transformers.rst:207
+#: ../../source/outgoing/api_transformers.rst:215
 msgid "Transforming Collections"
 msgstr "컬렉션의 변화"
 
-#: ../../source/outgoing/api_transformers.rst:209
+#: ../../source/outgoing/api_transformers.rst:217
 msgid ""
 "The ``transformMany()`` method makes it easy to transform arrays of "
 "resources:"
 msgstr "``transformMany()`` 메서드를 사용하면 리소스 배열을 쉽게 변환할 수 있습니다."
 
-#: ../../source/outgoing/api_transformers.rst:213
+#: ../../source/outgoing/api_transformers.rst:221
 msgid ""
 "The ``transformMany()`` method applies the same transformation logic to each"
 " item in the collection, including any field filtering or includes specified"
@@ -855,19 +874,19 @@ msgstr ""
 "``transformMany()`` 메서드는 요청에 지정된 필드 필터링 또는 포함을 포함하여 컬렉션의 각 항목에 동일한 변환 논리를 "
 "적용합니다."
 
-#: ../../source/outgoing/api_transformers.rst:218
+#: ../../source/outgoing/api_transformers.rst:226
 msgid "Working with Different Data Types"
 msgstr "다양한 데이터 유형 작업"
 
-#: ../../source/outgoing/api_transformers.rst:220
+#: ../../source/outgoing/api_transformers.rst:228
 msgid "Transformers can handle various data types, not just entities."
 msgstr "변환기는 엔터티뿐만 아니라 다양한 데이터 유형을 처리할 수 있습니다."
 
-#: ../../source/outgoing/api_transformers.rst:223
+#: ../../source/outgoing/api_transformers.rst:231
 msgid "Transforming Entities"
 msgstr "엔터티 변환"
 
-#: ../../source/outgoing/api_transformers.rst:225
+#: ../../source/outgoing/api_transformers.rst:233
 msgid ""
 "When you pass an ``Entity`` instance to ``transform()``, it automatically "
 "calls the entity's ``toArray()`` method to get the data:"
@@ -875,48 +894,63 @@ msgstr ""
 "``Entity`` 인스턴스를 ``transform()``\\에 전달하면 자동으로 엔터티의 ``toArray()`` 메서드를 호출하여 "
 "데이터를 가져옵니다."
 
-#: ../../source/outgoing/api_transformers.rst:231
+#: ../../source/outgoing/api_transformers.rst:239
 msgid "Transforming Arrays"
 msgstr "배열 변환"
 
-#: ../../source/outgoing/api_transformers.rst:233
+#: ../../source/outgoing/api_transformers.rst:241
 msgid "You can transform plain arrays as well:"
 msgstr "일반 배열도 변환할 수 있습니다."
 
-#: ../../source/outgoing/api_transformers.rst:238
+#: ../../source/outgoing/api_transformers.rst:246
 msgid "Transforming Objects"
 msgstr "객체 변형"
 
-#: ../../source/outgoing/api_transformers.rst:240
+#: ../../source/outgoing/api_transformers.rst:248
 msgid "Any object can be cast to an array and transformed:"
 msgstr "모든 객체를 배열로 캐스팅하고 변환할 수 있습니다."
 
-#: ../../source/outgoing/api_transformers.rst:245
+#: ../../source/outgoing/api_transformers.rst:253
 msgid "Using toArray() Only"
 msgstr "toArray()만 사용"
 
-#: ../../source/outgoing/api_transformers.rst:247
+#: ../../source/outgoing/api_transformers.rst:255
 msgid ""
 "If you don't pass a resource to ``transform()``, it will use the data from "
 "your ``toArray()`` method:"
 msgstr "``transform()``\\에 리소스를 전달하지 않으면 ``toArray()`` 메서드의 데이터가 사용됩니다."
 
-#: ../../source/outgoing/api_transformers.rst:261
+#: ../../source/outgoing/api_transformers.rst:269
 msgid ""
 "Optional request instance. If not provided, the global request will be used."
 msgstr "선택적 요청 인스턴스. 제공되지 않으면 전역 요청이 사용됩니다."
 
-#: ../../source/outgoing/api_transformers.rst:263
+#: ../../source/outgoing/api_transformers.rst:271
 msgid ""
 "Initializes the transformer and extracts the ``fields`` and ``include`` "
 "query parameters from the request."
 msgstr "변환기를 초기화하고 요청에서 ``fields`` 및 ``include`` 쿼리 매개변수를 추출합니다."
 
-#: ../../source/outgoing/api_transformers.rst:267
+#: ../../source/outgoing/api_transformers.rst:273
+msgid ""
+"When no request is explicitly passed, the global request's ``fields`` and "
+"``include`` are read **only for the root transformer**. A transformer "
+"constructed during a nested transformation (i.e. inside an ``include*()`` "
+"method) without an explicit request still uses the global request object, "
+"but does not read ``fields``/``include`` from it, to avoid leaking the "
+"root's scope. Passing an explicit request always applies that request's "
+"scope, regardless of nesting."
+msgstr ""
+"요청을 명시적으로 전달하지 않으면, 전역 요청의 ``fields``\\ 와 ``include``\\ 는 **루트 트랜스포머에서만** "
+"읽습니다. 중첩된 변환(즉 ``include*()`` 메서드 내부) 과정에서 명시적인 요청 없이 생성된 트랜스포머는 여전히 전역 요청 "
+"객체를 사용하지만, 루트의 범위가 새어 들어가는 것을 막기 위해 그 객체에서 ``fields``/``include``\\ 를 읽지는 "
+"않습니다. 명시적인 요청을 전달하면 중첩 여부와 관계없이 항상 해당 요청의 범위가 적용됩니다."
+
+#: ../../source/outgoing/api_transformers.rst:282
 msgid "The resource being transformed (Entity, array, object, or null)"
 msgstr "변환되는 리소스(엔티티, 배열, 개체 또는 null)"
 
-#: ../../source/outgoing/api_transformers.rst:268
+#: ../../source/outgoing/api_transformers.rst:283
 msgid "The array representation of the resource"
 msgstr "리소스의 배열 표현"
 
@@ -927,7 +961,7 @@ msgstr "리소스의 배열 표현"
 msgid "Return type"
 msgstr "반환 유형"
 
-#: ../../source/outgoing/api_transformers.rst:271
+#: ../../source/outgoing/api_transformers.rst:286
 msgid ""
 "This abstract method must be implemented by child classes to define the "
 "structure of the API resource. The resource parameter contains the data "
@@ -937,15 +971,15 @@ msgstr ""
 "API 리소스의 구조를 정의하려면 하위 클래스에서 이 추상 메서드를 구현해야 합니다. 리소스 매개변수에는 변환되는 데이터가 포함됩니다. "
 "``$resource`` 매개변수의 데이터에 액세스하여 API 응답에 포함하려는 필드가 포함된 배열을 반환합니다."
 
-#: ../../source/outgoing/api_transformers.rst:279
+#: ../../source/outgoing/api_transformers.rst:294
 msgid "The resource to transform (Entity, array, object, or null)"
 msgstr "변환할 리소스(엔티티, 배열, 개체 또는 null)"
 
-#: ../../source/outgoing/api_transformers.rst:280
+#: ../../source/outgoing/api_transformers.rst:295
 msgid "The transformed array"
 msgstr "변환된 배열"
 
-#: ../../source/outgoing/api_transformers.rst:283
+#: ../../source/outgoing/api_transformers.rst:298
 msgid ""
 "Transforms the given resource into an array by calling ``toArray()`` with "
 "the resource data. If ``$resource`` is ``null``, passes ``null`` to "
@@ -956,27 +990,27 @@ msgstr ""
 "``null``\\인 경우 ``null``\\을 ``toArray()``\\에 전달합니다. 엔터티인 경우 먼저 배열 표현을 추출합니다. "
 "그렇지 않으면 배열로 캐스팅합니다."
 
-#: ../../source/outgoing/api_transformers.rst:287
+#: ../../source/outgoing/api_transformers.rst:302
 msgid ""
 "The resource is also stored in ``$this->resource`` so include methods can "
 "access it."
 msgstr "리소스는 ``$this->resource``\\에도 저장되므로 include 메소드에서 액세스할 수 있습니다."
 
-#: ../../source/outgoing/api_transformers.rst:289
+#: ../../source/outgoing/api_transformers.rst:304
 msgid ""
 "The method automatically applies field filtering and includes based on query"
 " parameters."
 msgstr "이 메서드는 필드 필터링을 자동으로 적용하고 쿼리 매개변수를 기반으로 포함합니다."
 
-#: ../../source/outgoing/api_transformers.rst:295
+#: ../../source/outgoing/api_transformers.rst:310
 msgid "The array of resources to transform"
 msgstr "변환할 리소스 배열"
 
-#: ../../source/outgoing/api_transformers.rst:296
+#: ../../source/outgoing/api_transformers.rst:311
 msgid "Array of transformed resources"
 msgstr "변환된 리소스 배열"
 
-#: ../../source/outgoing/api_transformers.rst:299
+#: ../../source/outgoing/api_transformers.rst:314
 msgid ""
 "Transforms a collection of resources by calling ``transform()`` on each "
 "item. Field filtering and includes are applied consistently to all items."
@@ -984,11 +1018,11 @@ msgstr ""
 "각 항목에 대해 ``transform()``\\을 호출하여 리소스 컬렉션을 변환합니다. 필드 필터링 및 포함은 모든 항목에 일관되게 "
 "적용됩니다."
 
-#: ../../source/outgoing/api_transformers.rst:306
+#: ../../source/outgoing/api_transformers.rst:321
 msgid "Array of allowed field names, or ``null`` to allow all fields"
 msgstr "허용되는 필드 이름의 배열 또는 모든 필드를 허용하는 ``null``"
 
-#: ../../source/outgoing/api_transformers.rst:309
+#: ../../source/outgoing/api_transformers.rst:324
 msgid ""
 "Override this method to restrict which fields can be requested via the "
 "``fields`` query parameter. Return ``null`` (the default) to allow all "
@@ -998,11 +1032,11 @@ msgstr ""
 "``fields`` 쿼리 매개변수를 통해 요청할 수 있는 필드를 제한하려면 이 메서드를 재정의하세요. ``toArray()`` 메서드의 "
 "모든 필드를 허용하려면 null (기본값)을 반환합니다. 허용된 필드의 화이트리스트를 생성하려면 필드 이름 배열을 반환합니다."
 
-#: ../../source/outgoing/api_transformers.rst:317
+#: ../../source/outgoing/api_transformers.rst:332
 msgid "Array of allowed include names, or ``null`` to allow all includes"
 msgstr "허용된 포함 이름의 배열 또는 모든 포함을 허용하는 ``null``"
 
-#: ../../source/outgoing/api_transformers.rst:320
+#: ../../source/outgoing/api_transformers.rst:335
 msgid ""
 "Override this method to restrict which related resources can be included via"
 " the ``include`` query parameter. Return ``null`` (the default) to allow all"
@@ -1013,41 +1047,41 @@ msgstr ""
 "포함을 허용하려면 null (기본값)을 반환합니다. 화이트리스트를 생성하려면 포함 이름의 배열을 반환합니다. 모든 포함을 비활성화하려면 "
 "빈 배열을 반환합니다."
 
-#: ../../source/outgoing/api_transformers.rst:328
+#: ../../source/outgoing/api_transformers.rst:343
 msgid "Exception Reference"
 msgstr "예외 참조"
 
-#: ../../source/outgoing/api_transformers.rst:334
+#: ../../source/outgoing/api_transformers.rst:349
 msgid "The invalid field name(s)"
 msgstr "잘못된 필드 이름"
 
-#: ../../source/outgoing/api_transformers.rst:335
-#: ../../source/outgoing/api_transformers.rst:344
-#: ../../source/outgoing/api_transformers.rst:353
+#: ../../source/outgoing/api_transformers.rst:350
+#: ../../source/outgoing/api_transformers.rst:359
+#: ../../source/outgoing/api_transformers.rst:368
 msgid "ApiException instance"
 msgstr "ApiException 인스턴스"
 
-#: ../../source/outgoing/api_transformers.rst:338
+#: ../../source/outgoing/api_transformers.rst:353
 msgid ""
 "Thrown when a client requests a field via the ``fields`` query parameter "
 "that is not in the allowed fields list."
 msgstr "클라이언트가 허용된 필드 목록에 없는 ``fields`` 쿼리 매개변수를 통해 필드를 요청할 때 발생합니다."
 
-#: ../../source/outgoing/api_transformers.rst:343
+#: ../../source/outgoing/api_transformers.rst:358
 msgid "The invalid include name(s)"
 msgstr "잘못된 포함 이름입니다."
 
-#: ../../source/outgoing/api_transformers.rst:347
+#: ../../source/outgoing/api_transformers.rst:362
 msgid ""
 "Thrown when a client requests an include via the ``include`` query parameter"
 " that is not in the allowed includes list."
 msgstr "클라이언트가 허용된 포함 목록에 없는 ``include`` 쿼리 매개변수를 통해 포함을 요청할 때 발생합니다."
 
-#: ../../source/outgoing/api_transformers.rst:352
+#: ../../source/outgoing/api_transformers.rst:367
 msgid "The missing include method name"
 msgstr "누락된 포함 메소드 이름"
 
-#: ../../source/outgoing/api_transformers.rst:356
+#: ../../source/outgoing/api_transformers.rst:371
 msgid ""
 "Thrown when a client requests an include via the ``include`` query "
 "parameter, but the corresponding ``include*()`` method does not exist in the"
@@ -1905,11 +1939,20 @@ msgstr ""
 " 결합합니다. 수술 후에는 언어 키를 직접 번역해야 합니다. 이 명령은 일반적으로 ``File.array.nested.text`` 중첩된"
 " 키를 인식할 수 있습니다. 이전에 저장된 키는 변경되지 않습니다."
 
-#: ../../source/outgoing/localization.rst:326
+#: ../../source/outgoing/localization.rst:320
+msgid ""
+"Keys that ``lang()`` can already resolve (for example ``Errors.*`` from "
+"**system/Language**) are treated as already translated, so they are neither "
+"listed by ``--show-new`` nor written into **app/Language**."
+msgstr ""
+"``lang()``\\ 이 이미 해석할 수 있는 키(예: **system/Language**\\ 의 ``Errors.*``)는 이미 "
+"번역된 것으로 취급되어, ``--show-new``\\ 에도 나열되지 않고 **app/Language**\\ 에도 기록되지 않습니다."
+
+#: ../../source/outgoing/localization.rst:330
 msgid "When the command scans folders, **app/Language** will be skipped."
 msgstr "명령이 폴더를 검색할 때 ``app/Language``\\는 건너뜁니다."
 
-#: ../../source/outgoing/localization.rst:328
+#: ../../source/outgoing/localization.rst:332
 msgid ""
 "The language files generated will most likely not conform to your coding "
 "standards. It is recommended to format them. For example, run "
@@ -1919,32 +1962,32 @@ msgstr ""
 "생성된 언어 파일은 코딩 표준을 따르지 않을 가능성이 높습니다. 포맷하는 것이 좋습니다. 예를 들어 ``php-cs-fixer``\\이 "
 "설치된 경우 ``vendor/bin/php-cs-fixer fix ./app/Language``\\을 실행합니다."
 
-#: ../../source/outgoing/localization.rst:331
+#: ../../source/outgoing/localization.rst:335
 msgid ""
 "Before updating, it is possible to preview the translations found by the "
 "command:"
 msgstr "업데이트하기 전에 다음 명령으로 찾은 번역을 미리 볼 수 있습니다."
 
-#: ../../source/outgoing/localization.rst:337
+#: ../../source/outgoing/localization.rst:341
 msgid ""
 "The detailed output of ``--verbose`` also shows a list of invalid keys. For "
 "example:"
 msgstr "``--verbose``\\의 자세한 출력에는 잘못된 키 목록도 표시됩니다. 예를 들어:"
 
-#: ../../source/outgoing/localization.rst:358
+#: ../../source/outgoing/localization.rst:362
 msgid ""
 "For a more accurate search, specify the desired locale or directory to scan."
 msgstr "보다 정확한 검색을 위해 검색하려는 로캘이나 디렉터리를 지정하세요."
 
-#: ../../source/outgoing/localization.rst:364
+#: ../../source/outgoing/localization.rst:368
 msgid "Detailed information can be found by running the command:"
 msgstr "자세한 정보는 다음 명령을 실행하여 확인할 수 있습니다."
 
-#: ../../source/outgoing/localization.rst:373
+#: ../../source/outgoing/localization.rst:377
 msgid "Synchronization Translation Files via Command"
 msgstr "명령을 통한 동기화 번역 파일"
 
-#: ../../source/outgoing/localization.rst:377
+#: ../../source/outgoing/localization.rst:381
 msgid ""
 "You may need to create files for another language when you've finished "
 "translating for the current language. You can use the spark ``lang:find`` "
@@ -1956,7 +1999,7 @@ msgstr ""
 "``lang:find`` 명령을 사용할 수 있습니다. 그러나 모든 번역, 특히 ``lang('App.status.' . $key, "
 "['payload' => 'John'], 'en')``\\과 같이 동적으로 설정된 매개변수가 있는 번역을 감지하지 못할 수도 있습니다."
 
-#: ../../source/outgoing/localization.rst:379
+#: ../../source/outgoing/localization.rst:383
 msgid ""
 "To ensure no translations are missed, it's best to copy the completed "
 "language files and translate them manually. This approach preserves any "
@@ -1965,17 +2008,17 @@ msgstr ""
 "번역이 누락되지 않도록 하려면 완성된 언어 파일을 복사하여 수동으로 번역하는 것이 가장 좋습니다. 이 접근 방식은 명령이 간과했을 수 "
 "있는 고유 키를 보존합니다."
 
-#: ../../source/outgoing/localization.rst:381
+#: ../../source/outgoing/localization.rst:385
 msgid "All you need to do is execute:"
 msgstr "당신이 해야 할 일은 다음을 실행하는 것 뿐입니다:"
 
-#: ../../source/outgoing/localization.rst:391
+#: ../../source/outgoing/localization.rst:395
 msgid ""
 "As a result, you will receive files with the translation keys. If there were"
 " duplicate keys in the target locale, they are saved."
 msgstr "결과적으로 번역 키가 포함된 파일을 받게 됩니다. 대상 로케일에 중복된 키가 있으면 저장됩니다."
 
-#: ../../source/outgoing/localization.rst:394
+#: ../../source/outgoing/localization.rst:398
 msgid "Non-matching keys in new translations are deleted!"
 msgstr "새 번역에서 일치하지 않는 키가 삭제됩니다!"
 
