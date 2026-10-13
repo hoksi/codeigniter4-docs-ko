@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-15 12:19+0900\n"
+"POT-Creation-Date: 2026-10-12 18:26+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ko <LL@li.org>\n"
@@ -706,6 +706,7 @@ msgstr ""
 #: ../../source/installation/upgrade_472.rst:22
 #: ../../source/installation/upgrade_473.rst:54
 #: ../../source/installation/upgrade_474.rst:53
+#: ../../source/installation/upgrade_475.rst:102
 #, python-format
 msgid ""
 "There are some third-party CodeIgniter modules available to assist with "
@@ -2164,6 +2165,7 @@ msgstr "4.0.x에서 4.0.4로 업그레이드"
 #: ../../source/installation/upgrade_472.rst:5
 #: ../../source/installation/upgrade_473.rst:5
 #: ../../source/installation/upgrade_474.rst:5
+#: ../../source/installation/upgrade_475.rst:5
 msgid ""
 "Please refer to the upgrade instructions corresponding to your installation "
 "method."
@@ -2228,6 +2230,7 @@ msgstr "설치 방법에 해당하는 업그레이드 지침을 참조하십시�
 #: ../../source/installation/upgrade_472.rst:7
 #: ../../source/installation/upgrade_473.rst:7
 #: ../../source/installation/upgrade_474.rst:7
+#: ../../source/installation/upgrade_475.rst:7
 msgid ""
 ":ref:`Composer Installation App Starter Upgrading <app-starter-upgrading>`"
 msgstr ":ref:`Composer 설치 앱 스타터 업그레이드 <app-starter-upgrading>`"
@@ -2291,6 +2294,7 @@ msgstr ":ref:`Composer 설치 앱 스타터 업그레이드 <app-starter-upgradi
 #: ../../source/installation/upgrade_472.rst:8
 #: ../../source/installation/upgrade_473.rst:8
 #: ../../source/installation/upgrade_474.rst:8
+#: ../../source/installation/upgrade_475.rst:8
 msgid ""
 ":ref:`Composer Installation Adding CodeIgniter4 to an Existing Project "
 "Upgrading <adding-codeigniter4-upgrading>`"
@@ -2357,6 +2361,7 @@ msgstr ""
 #: ../../source/installation/upgrade_472.rst:9
 #: ../../source/installation/upgrade_473.rst:9
 #: ../../source/installation/upgrade_474.rst:9
+#: ../../source/installation/upgrade_475.rst:9
 msgid ":ref:`Manual Installation Upgrading <installing-manual-upgrading>`"
 msgstr ":ref:`수동 설치 업그레이드 <installing-manual-upgrading>`"
 
@@ -2397,6 +2402,7 @@ msgstr ""
 #: ../../source/installation/upgrade_470.rst:17
 #: ../../source/installation/upgrade_473.rst:31
 #: ../../source/installation/upgrade_474.rst:17
+#: ../../source/installation/upgrade_475.rst:17
 msgid "Breaking Changes"
 msgstr "주요 변경사항"
 
@@ -2720,6 +2726,7 @@ msgstr ""
 #: ../../source/installation/upgrade_472.rst:17
 #: ../../source/installation/upgrade_473.rst:49
 #: ../../source/installation/upgrade_474.rst:48
+#: ../../source/installation/upgrade_475.rst:97
 msgid "Project Files"
 msgstr "프로젝트 파일"
 
@@ -2789,6 +2796,7 @@ msgstr ""
 #: ../../source/installation/upgrade_472.rst:27
 #: ../../source/installation/upgrade_473.rst:59
 #: ../../source/installation/upgrade_474.rst:58
+#: ../../source/installation/upgrade_475.rst:107
 msgid "Content Changes"
 msgstr "내용 변경사항"
 
@@ -2822,6 +2830,7 @@ msgstr "내용 변경사항"
 #: ../../source/installation/upgrade_472.rst:29
 #: ../../source/installation/upgrade_473.rst:61
 #: ../../source/installation/upgrade_474.rst:60
+#: ../../source/installation/upgrade_475.rst:109
 msgid ""
 "The following files received significant changes (including deprecations or "
 "visual adjustments) and it is recommended that you merge the updated "
@@ -2921,6 +2930,7 @@ msgstr "``composer.json``"
 #: ../../source/installation/upgrade_472.rst:38
 #: ../../source/installation/upgrade_473.rst:73
 #: ../../source/installation/upgrade_474.rst:69
+#: ../../source/installation/upgrade_475.rst:120
 msgid "All Changes"
 msgstr "전체 변경사항"
 
@@ -3886,6 +3896,7 @@ msgstr ""
 #: ../../source/installation/upgrade_472.rst:40
 #: ../../source/installation/upgrade_473.rst:75
 #: ../../source/installation/upgrade_474.rst:71
+#: ../../source/installation/upgrade_475.rst:122
 msgid ""
 "This is a list of all files in the **project space** that received changes; "
 "many will be simple comments or formatting that have no effect on the "
@@ -4243,6 +4254,8 @@ msgstr "app/Config/Validation.php"
 #: ../../source/installation/upgrade_470.rst:160
 #: ../../source/installation/upgrade_473.rst:70
 #: ../../source/installation/upgrade_473.rst:81
+#: ../../source/installation/upgrade_475.rst:115
+#: ../../source/installation/upgrade_475.rst:125
 msgid "app/Config/View.php"
 msgstr "app/Config/View.php"
 
@@ -4252,6 +4265,7 @@ msgstr "app/Config/View.php"
 #: ../../source/installation/upgrade_447.rst:134
 #: ../../source/installation/upgrade_456.rst:34
 #: ../../source/installation/upgrade_464.rst:45
+#: ../../source/installation/upgrade_475.rst:126
 msgid "app/Controllers/BaseController.php"
 msgstr "app/Controllers/BaseController.php"
 
@@ -5212,6 +5226,7 @@ msgstr ""
 #: ../../source/installation/upgrade_472.rst:33
 #: ../../source/installation/upgrade_473.rst:65
 #: ../../source/installation/upgrade_474.rst:64
+#: ../../source/installation/upgrade_475.rst:113
 msgid "Config"
 msgstr "설정"
 
@@ -5505,6 +5520,7 @@ msgstr "기본값이 설정되지 않으면, 해당 환경 변수를 설정해�
 #: ../../source/installation/upgrade_472.rst:19
 #: ../../source/installation/upgrade_473.rst:51
 #: ../../source/installation/upgrade_474.rst:50
+#: ../../source/installation/upgrade_475.rst:99
 msgid ""
 "Some files in the **project space** (root, app, public, writable) received "
 "updates. Due to these files being outside of the **system** scope they will "
@@ -7592,6 +7608,144 @@ msgstr ""
 "``::ffff:192.168.5.21``)로 표시될 수 있는데, 이는 ``192.168.5.0/24``\\ 와 같은 IPv4 항목과 "
 "일치하지 않습니다. 이 경우 ``Config\\\\App::$proxyIPs``\\ 에 IPv4-매핑 형식(예: "
 "``::ffff:192.168.5.21`` 또는 ``::ffff:192.168.5.0/120``)을 추가로 등록하세요."
+
+#: ../../source/installation/upgrade_475.rst:3
+msgid "Upgrading from 4.7.4 to 4.7.5"
+msgstr "4.7.4에서 4.7.5로 업그레이드"
+
+#: ../../source/installation/upgrade_475.rst:22
+msgid "View Parser No Longer Parses Substituted Values"
+msgstr "View Parser가 더 이상 대체된 값을 파싱하지 않음"
+
+#: ../../source/installation/upgrade_475.rst:24
+msgid ""
+"For security reasons, the ``Parser`` now treats every substituted value "
+"strictly as data. A value that contains Parser syntax, such as ``{name}``, "
+"``{!name!}`` or ``{name|upper}``, is rendered literally and is never parsed "
+"again by a later substitution pass. See the `Security advisory GHSA-vgrf-"
+"mv2j-gp8w "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-vgrf-"
+"mv2j-gp8w>`_ for more information."
+msgstr ""
+"보안상의 이유로, ``Parser``\\ 는 이제 대체되는 모든 값을 엄격하게 데이터로만 취급합니다. ``{name}``, "
+"``{!name!}``, ``{name|upper}``\\ 같은 Parser 구문이 포함된 값은 그대로 출력되며, 이후 대체 과정에서 "
+"다시 파싱되지 않습니다. 자세한 내용은 `보안 권고 GHSA-vgrf-mv2j-gp8w "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-vgrf-"
+"mv2j-gp8w>`_\\ 를 참조하십시오."
+
+#: ../../source/installation/upgrade_475.rst:31
+#, python-brace-format
+msgid ""
+"Previously, such a value could be parsed again, depending on the order of "
+"the keys in the data array. This behavior was never documented, but code "
+"that relied on it will now output the placeholders literally. For example, "
+"the following used to render ``<p>Hello, Bob!</p>`` and now renders "
+"``<p>Hello, {name}!</p>``:"
+msgstr ""
+"이전에는 데이터 배열에서 키의 순서에 따라 이런 값이 다시 파싱될 수 있었습니다. 이 동작은 문서화된 적이 없었지만, 이에 의존하던 "
+"코드는 이제 플레이스홀더를 그대로 출력하게 됩니다. 예를 들어 다음 코드는 예전에는 ``<p>Hello, Bob!</p>``\\ 을 "
+"렌더링했지만 이제는 ``<p>Hello, {name}!</p>``\\ 을 렌더링합니다:"
+
+#: ../../source/installation/upgrade_475.rst:43
+msgid ""
+"If you need to insert a rendered template fragment into another template, "
+"render the fragment first and pass the result as a value, using the ``{! "
+"!}`` syntax so it is not escaped again:"
+msgstr ""
+"렌더링된 템플릿 조각을 다른 템플릿에 삽입해야 한다면, 먼저 그 조각을 렌더링한 뒤 결과를 값으로 전달하면서 ``{! !}`` 구문을 "
+"사용해 다시 이스케이프되지 않도록 하세요:"
+
+#: ../../source/installation/upgrade_475.rst:54
+msgid "Built-in Parser Plugin Output"
+msgstr "내장 Parser 플러그인 출력"
+
+#: ../../source/installation/upgrade_475.rst:56
+msgid ""
+"The output of built-in Parser plugins is now treated as rendered data and is"
+" not processed again as Parser syntax. This prevents values such as URLs and"
+" validation messages from introducing variable or plugin instructions. "
+"Applications that relied on placeholders within built-in plugin output must "
+"render those fragments explicitly. Custom plugins that transform template "
+"code retain their existing behavior and are responsible for keeping "
+"untrusted data separate from Parser syntax."
+msgstr ""
+"내장 Parser 플러그인의 출력은 이제 렌더링된 데이터로 취급되어 Parser 구문으로 다시 처리되지 않습니다. 이로써 URL이나 검증"
+" 메시지 같은 값이 변수나 플러그인 지시문을 끌어들이는 것을 방지합니다. 내장 플러그인 출력 안의 플레이스홀더에 의존하던 애플리케이션은 "
+"해당 조각을 명시적으로 렌더링해야 합니다. 템플릿 코드를 변환하는 커스텀 플러그인은 기존 동작을 그대로 유지하며, 신뢰할 수 없는 "
+"데이터를 Parser 구문과 분리해서 관리할 책임이 있습니다."
+
+#: ../../source/installation/upgrade_475.rst:64
+msgid "File Upload Validation"
+msgstr "파일 업로드 유효성 검사"
+
+#: ../../source/installation/upgrade_475.rst:66
+msgid ""
+"The ``is_image``, ``mime_in``, and ``ext_in`` rules now reject client "
+"filenames with a PHP handler extension before the final extension, including"
+" extensions revealed by ``sanitize_filename()`` (for example, "
+"``shell.p$hp.gif`` becomes ``shell.php.gif``). Filenames ending in dots, "
+"including dots followed by spaces, are also rejected."
+msgstr ""
+"``is_image``, ``mime_in``, ``ext_in`` 규칙은 이제 마지막 확장자 앞에 PHP 핸들러 확장자가 있는 "
+"클라이언트 파일명을 거부합니다. 이는 ``sanitize_filename()``\\ 에 의해 드러나는 확장자(예: "
+"``shell.p$hp.gif``\\ 가 ``shell.php.gif``\\ 로 변환되는 경우)도 포함합니다. 마침표로 끝나는 "
+"파일명(마침표 뒤에 공백이 오는 경우 포함)도 거부됩니다."
+
+#: ../../source/installation/upgrade_475.rst:72
+msgid ""
+"These checks apply regardless of the file's contents or the intended meaning"
+" of its name. For example, both ``shell.php.gif`` and an innocent PHP logo "
+"named ``logo.php.gif`` fail validation, even if the latter contains only a "
+"GIF image. Rename such files before uploading, for example to ``logo-"
+"php.gif``. Choosing a generated filename when saving the file does not "
+"bypass these validation checks, which run against the client filename before"
+" the file is saved."
+msgstr ""
+"이 검사들은 파일의 실제 내용이나 이름이 의도하는 의미와 무관하게 적용됩니다. 예를 들어 ``shell.php.gif``\\ 뿐 아니라 "
+"``logo.php.gif``\\ 라는 무해한 PHP 로고 이름도 유효성 검사를 통과하지 못합니다. 후자가 실제로는 GIF 이미지만 담고"
+" 있어도 마찬가지입니다. 이런 파일은 업로드하기 전에 예를 들어 ``logo-php.gif``\\ 처럼 이름을 바꾸세요. 파일을 저장할 "
+"때 생성된 파일명을 선택하더라도 이 검증 자체는 우회할 수 없는데, 이 검사는 파일이 저장되기 전에 클라이언트 파일명을 대상으로 실행되기"
+" 때문입니다."
+
+#: ../../source/installation/upgrade_475.rst:81
+msgid "Behavior Changes"
+msgstr "동작 변경사항"
+
+#: ../../source/installation/upgrade_475.rst:84
+msgid "CURLRequest Options After a Failed Request"
+msgstr "요청 실패 후 CURLRequest 옵션"
+
+#: ../../source/installation/upgrade_475.rst:86
+msgid ""
+"When ``Config\\CURLRequest::$shareOptions`` is ``false``, request-specific "
+"options are now reset even when the request throws an exception. Per-request"
+" ``baseURI`` and ``delay`` values are also reset after both successful and "
+"failed requests. Constructor defaults remain available for subsequent "
+"requests."
+msgstr ""
+"``Config\\CURLRequest::$shareOptions``\\ 가 ``false``\\ 일 때, 요청별 옵션은 이제 요청이 "
+"예외를 던지는 경우에도 초기화됩니다. 요청별 ``baseURI``\\ 와 ``delay`` 값도 요청 성공·실패 여부와 관계없이 "
+"초기화됩니다. 생성자에 전달된 기본값은 이후 요청에서도 계속 사용할 수 있습니다."
+
+#: ../../source/installation/upgrade_475.rst:91
+msgid ""
+"If your application retries a failed request, pass its options again and "
+"reapply any settings made with ``setAuth()``, ``setBody()``, ``setForm()``, "
+"or ``setJSON()``. Do not rely on credentials or body data from the failed "
+"request remaining on the client."
+msgstr ""
+"애플리케이션이 실패한 요청을 재시도한다면, 옵션을 다시 전달하고 ``setAuth()``, ``setBody()``, "
+"``setForm()``, ``setJSON()``\\ 으로 설정했던 값들도 다시 적용하세요. 실패한 요청의 인증 정보나 본문 데이터가 "
+"클라이언트에 남아있을 것이라고 가정하지 마세요."
+
+#: ../../source/installation/upgrade_475.rst:116
+msgid ""
+"``Config\\View::$restrictParserConditionals`` has been added, with a default"
+" value set to ``false``. See :ref:`parser-restricting-conditionals` for "
+"details."
+msgstr ""
+"``Config\\View::$restrictParserConditionals``\\ 가 추가되었으며 기본값은 ``false``\\ "
+"입니다. 자세한 내용은 :ref:`parser-restricting-conditionals`\\ 를 참조하십시오."
 
 #: ../../source/installation/upgrade_4xx.rst:3
 msgid "Upgrading from 3.x to 4.x"

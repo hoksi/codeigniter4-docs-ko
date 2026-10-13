@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-15 12:19+0900\n"
+"POT-Creation-Date: 2026-10-12 18:26+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ko <LL@li.org>\n"
@@ -6823,6 +6823,7 @@ msgstr "Controllers/Home에서 불필요한 모델 참조를 제거하여 수정
 #: ../../source/changelogs/v4.6.4.rst:15
 #: ../../source/changelogs/v4.7.0.rst:358
 #: ../../source/changelogs/v4.7.1.rst:21 ../../source/changelogs/v4.7.3.rst:26
+#: ../../source/changelogs/v4.7.5.rst:76
 msgid "Message Changes"
 msgstr "메시지 변경사항"
 
@@ -8830,6 +8831,7 @@ msgstr "CLI 명령으로 생성된 테이블에 이제 색상을 적용할 수 �
 #: ../../source/changelogs/v4.7.0.rst:394
 #: ../../source/changelogs/v4.7.1.rst:47 ../../source/changelogs/v4.7.2.rst:15
 #: ../../source/changelogs/v4.7.3.rst:40 ../../source/changelogs/v4.7.4.rst:60
+#: ../../source/changelogs/v4.7.5.rst:98
 msgid "Bugs Fixed"
 msgstr "버그 수정"
 
@@ -9259,6 +9261,7 @@ msgstr "Cache ``FileHandler``\\ 가 이제 ``Config\\Cache``\\ 를 통해 파일
 #: ../../source/changelogs/v4.6.4.rst:21
 #: ../../source/changelogs/v4.7.0.rst:366
 #: ../../source/changelogs/v4.7.1.rst:28 ../../source/changelogs/v4.7.3.rst:32
+#: ../../source/changelogs/v4.7.5.rst:86
 msgid "Changes"
 msgstr "변경 사항"
 
@@ -9288,6 +9291,7 @@ msgstr ""
 #: ../../source/changelogs/v4.6.1.rst:20 ../../source/changelogs/v4.6.2.rst:29
 #: ../../source/changelogs/v4.6.4.rst:27
 #: ../../source/changelogs/v4.7.0.rst:382
+#: ../../source/changelogs/v4.7.5.rst:92
 msgid "Deprecations"
 msgstr "사용 중단"
 
@@ -10178,7 +10182,7 @@ msgstr "**CodeIgniter4\\ 의 4.1.6 릴리즈**"
 #: ../../source/changelogs/v4.3.5.rst:13 ../../source/changelogs/v4.4.3.rst:13
 #: ../../source/changelogs/v4.4.7.rst:15 ../../source/changelogs/v4.5.8.rst:15
 #: ../../source/changelogs/v4.6.2.rst:15 ../../source/changelogs/v4.7.3.rst:15
-#: ../../source/changelogs/v4.7.4.rst:15
+#: ../../source/changelogs/v4.7.4.rst:15 ../../source/changelogs/v4.7.5.rst:15
 msgid "SECURITY"
 msgstr "보안"
 
@@ -13001,6 +13005,7 @@ msgstr ""
 #: ../../source/changelogs/v4.7.0.rst:401
 #: ../../source/changelogs/v4.7.1.rst:66 ../../source/changelogs/v4.7.2.rst:21
 #: ../../source/changelogs/v4.7.3.rst:61 ../../source/changelogs/v4.7.4.rst:80
+#: ../../source/changelogs/v4.7.5.rst:129
 msgid ""
 "See the repo's `CHANGELOG.md "
 "<https://github.com/codeigniter4/CodeIgniter4/blob/develop/CHANGELOG.md>`_ "
@@ -19470,3 +19475,459 @@ msgid ""
 msgstr ""
 "**Validation:** ``required_without`` 규칙 로직에서 배열 점(dot) 표기법을 사용하면 이후 필드를 무시한 "
 "채 조기 종료되고, 누락된 키에 대해 ``Undefined array key`` 경고가 발생하던 버그들을 수정했습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:3
+msgid "Version 4.7.5"
+msgstr "버전 4.7.5"
+
+#: ../../source/changelogs/v4.7.5.rst:5
+msgid "Release Date: October 9, 2026"
+msgstr "릴리스 날짜: 2026년 10월 9일"
+
+#: ../../source/changelogs/v4.7.5.rst:7
+msgid "**4.7.5 release of CodeIgniter4**"
+msgstr "**CodeIgniter4 4.7.5 릴리스**"
+
+#: ../../source/changelogs/v4.7.5.rst:17
+msgid ""
+"**CURLRequest:** Request-specific headers, body, and options are now cleared"
+" when a request throws an exception and ``shareOptions`` is ``false``. "
+"Previously, reusing the client after a failed request could send credentials"
+" or private data to a different destination. Options passed to the "
+"constructor remain available for subsequent requests. Per-request "
+"``baseURI`` and ``delay`` values are also reset after successful and failed "
+"requests, preventing URI components from leaking into later requests. When "
+"retrying a failed request, pass its options again, or reapply settings made "
+"with ``setAuth()``, ``setBody()``, ``setForm()``, or ``setJSON()``. See the "
+"`Security advisory GHSA-9g9v-xgwj-697h "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-9g9v-xgwj-697h>`_"
+" for more information."
+msgstr ""
+"**CURLRequest:** 요청이 예외를 던지고 ``shareOptions``\\ 가 ``false``\\ 일 때, 요청별 "
+"헤더·본문·옵션이 이제 초기화됩니다. 이전에는 실패한 요청 이후 클라이언트를 재사용하면 인증 정보나 민감한 데이터가 다른 목적지로 전송될"
+" 수 있었습니다. 생성자에 전달된 옵션은 이후 요청에서도 계속 사용할 수 있습니다. 요청별 ``baseURI``\\ 와 ``delay``"
+" 값도 성공·실패 요청 이후 모두 초기화되어, URI 구성 요소가 이후 요청으로 새어 들어가는 것을 방지합니다. 실패한 요청을 재시도할 "
+"때는 옵션을 다시 전달하거나 ``setAuth()``, ``setBody()``, ``setForm()``, ``setJSON()``\\"
+" 으로 설정한 값을 다시 적용하십시오. 자세한 내용은 `보안 권고 GHSA-9g9v-xgwj-697h "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-9g9v-xgwj-697h>`_\\"
+" 를 참조하십시오."
+
+#: ../../source/changelogs/v4.7.5.rst:28
+msgid ""
+"**Validation:** The ``is_image`` and ``mime_in`` file upload rules now "
+"reject client filenames ending in dots while continuing to accept genuinely "
+"extensionless uploads. These rules and ``ext_in`` also reject filenames with"
+" a PHP handler extension before the final extension, such as "
+"``shell.php.gif``, including extensions revealed by filename sanitization. "
+"These checks also reject innocent filenames such as ``logo.php.gif``. See "
+":doc:`Upgrading from 4.7.4 to 4.7.5 </installation/upgrade_475>` for "
+"migration instructions. Previously, a GIF/PHP polyglot with one of these "
+"names could pass validation. Applications that save uploads with client-"
+"provided names in executable public directories may be affected. Use a "
+"generated filename or disable script execution in the upload directory. See "
+"the `Security advisory GHSA-4hwf-v4mp-hf6c "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-4hwf-v4mp-"
+"hf6c>`_ for more information."
+msgstr ""
+"**Validation:** ``is_image``\\ 와 ``mime_in`` 파일 업로드 규칙이 이제 마침표로 끝나는 클라이언트 "
+"파일명을 거부하며, 실제로 확장자가 없는 업로드는 계속 허용합니다. 이 규칙들과 ``ext_in``\\ 은 "
+"``shell.php.gif``\\ 처럼 마지막 확장자 앞에 PHP 핸들러 확장자가 있는 파일명도 거부하며, 파일명 "
+"살균(sanitization)으로 드러나는 확장자도 포함됩니다. 이 검사는 ``logo.php.gif``\\ 같은 무해한 파일명도 "
+"거부합니다. 마이그레이션 방법은 :doc:`4.7.4에서 4.7.5로 업그레이드 </installation/upgrade_475>`\\ "
+"를 참조하십시오. 이전에는 이런 이름을 가진 GIF/PHP 폴리글랏 파일이 유효성 검사를 통과할 수 있었습니다. 클라이언트가 제공한 "
+"이름으로 업로드를 스크립트 실행 가능한 공개 디렉터리에 저장하는 애플리케이션이 영향을 받을 수 있습니다. 생성된 파일명을 사용하거나 "
+"업로드 디렉터리에서 스크립트 실행을 비활성화하십시오. 자세한 내용은 `보안 권고 GHSA-4hwf-v4mp-hf6c "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-4hwf-v4mp-"
+"hf6c>`_\\ 를 참조하십시오."
+
+#: ../../source/changelogs/v4.7.5.rst:37
+msgid ""
+"**Validation:** File validation rules now check every non-empty file in an "
+"optional multiple upload. Previously, an entry with ``UPLOAD_ERR_NO_FILE`` "
+"could cause ``max_size``, ``is_image``, ``mime_in``, ``ext_in``, "
+"``max_dims``, and ``min_dims`` to accept the upload without checking later "
+"files. ``max_dims`` and ``min_dims`` also return ``false`` for upload errors"
+" other than ``UPLOAD_ERR_NO_FILE`` before reading image dimensions. See the "
+"`Security advisory GHSA-cwxp-v62r-xwx2 "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-"
+"cwxp-v62r-xwx2>`_ for more information."
+msgstr ""
+"**Validation:** 파일 유효성 검사 규칙이 이제 선택적 다중 업로드에서 비어있지 않은 모든 파일을 검사합니다. 이전에는 "
+"``UPLOAD_ERR_NO_FILE``\\ 항목이 있으면 ``max_size``, ``is_image``, ``mime_in``, "
+"``ext_in``, ``max_dims``, ``min_dims``\\ 가 이후 파일을 검사하지 않고 업로드를 통과시킬 수 있었습니다."
+" ``max_dims``\\ 와 ``min_dims``\\ 는 이제 이미지 크기를 읽기 전에 ``UPLOAD_ERR_NO_FILE``\\"
+" 이외의 업로드 오류에 대해서도 ``false``\\ 를 반환합니다. 자세한 내용은 `보안 권고 GHSA-cwxp-v62r-xwx2 "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-"
+"cwxp-v62r-xwx2>`_\\ 를 참조하십시오."
+
+#: ../../source/changelogs/v4.7.5.rst:45
+msgid ""
+"**View Parser:** Fixed a stored XSS vulnerability where a substituted value "
+"containing Parser syntax (e.g., ``{text|raw}`` or ``{!text!}``) was "
+"interpreted by a later substitution pass, allowing user-supplied data to "
+"bypass auto-escaping of other pseudo-variables. Substituted values are now "
+"treated strictly as data and are never parsed again. The same protection "
+"applies to output from built-in Parser plugins, including URLs and "
+"validation messages. See :ref:`upgrade-475-view-parser-values` for more "
+"information. See the `Security advisory GHSA-vgrf-mv2j-gp8w "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-vgrf-"
+"mv2j-gp8w>`_ for more information."
+msgstr ""
+"**View Parser:** Parser 구문(예: ``{text|raw}``\\ 나 ``{!text!}``)이 포함된 대체 값이 이후"
+" 대체 과정에서 다시 해석되어, 사용자 제공 데이터가 다른 의사 변수의 자동 이스케이프를 우회할 수 있었던 저장형 XSS 취약점을 "
+"수정했습니다. 대체 값은 이제 엄격하게 데이터로만 취급되며 다시 파싱되지 않습니다. 동일한 보호 조치가 URL이나 검증 메시지를 포함한 "
+"내장 Parser 플러그인의 출력에도 적용됩니다. 자세한 내용은 :ref:`upgrade-475-view-parser-values`\\ "
+"를 참조하십시오. 자세한 내용은 `보안 권고 GHSA-vgrf-mv2j-gp8w "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-vgrf-"
+"mv2j-gp8w>`_\\ 를 참조하십시오."
+
+#: ../../source/changelogs/v4.7.5.rst:53
+#, python-brace-format
+msgid ""
+"**View Parser:** Added restricted conditionals as an opt-in mitigation for "
+"*Code Injection through Parser Template Source*. Conditions in ``{if ...}`` "
+"and ``{elseif ...}`` tags are evaluated as PHP, so anyone who can edit "
+"Parser template source can execute PHP code. This remains the default "
+"behavior. Applications that let less-trusted users edit Parser templates "
+"must enable the new ``Config\\View::$restrictParserConditionals`` setting or"
+" the ``restrictConditionals`` render option. Restricted conditionals only "
+"limit this execution path; they do not make every template feature safe for "
+"less-trusted authors. The restriction also applies to nested renders on the "
+"same Parser instance. See :ref:`parser-restricting-conditionals` and the "
+"`Security advisory GHSA-4q58-jw8x-8cm7 "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-4q58-jw8x-8cm7>`_"
+" for more information."
+msgstr ""
+"**View Parser:** *Parser 템플릿 원본을 통한 코드 인젝션*\\ 에 대한 선택적(opt-in) 완화책으로 제한된 "
+"조건문(restricted conditionals)을 추가했습니다. ``{if ...}``\\ 와 ``{elseif ...}`` 태그의 "
+"조건은 PHP로 평가되므로, Parser 템플릿 원본을 편집할 수 있는 사람은 누구나 PHP 코드를 실행할 수 있습니다. 이는 여전히 "
+"기본 동작입니다. 신뢰도가 낮은 사용자가 Parser 템플릿을 편집하게 하는 애플리케이션은 새로운 "
+"``Config\\\\View::$restrictParserConditionals`` 설정이나 "
+"``restrictConditionals`` 렌더링 옵션을 활성화해야 합니다. 제한된 조건문은 이 실행 경로만 제한할 뿐, 신뢰도가 낮은"
+" 작성자에게 모든 템플릿 기능을 안전하게 만들어주지는 않습니다. 이 제한은 동일한 Parser 인스턴스의 중첩 렌더링에도 적용됩니다. "
+"자세한 내용은 :ref:`parser-restricting-conditionals`\\ 와 `보안 권고 "
+"GHSA-4q58-jw8x-8cm7 "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-4q58-jw8x-8cm7>`_\\"
+" 를 참조하십시오."
+
+#: ../../source/changelogs/v4.7.5.rst:65
+msgid ""
+"**Views:** Fixed a code execution vulnerability caused by view data keys "
+"overriding renderer-local variables. Data named ``template`` in ``Parser`` "
+"or ``view`` in ``View::renderString()`` could replace the source evaluated "
+"as PHP. Data named ``foundView`` in view cells could replace the selected "
+"file path and cause unintended local file inclusion. These issues require "
+"applications to pass less-trusted data under the affected keys. See the "
+"`Security advisory GHSA-c29x-ffjj-8r7x "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-c29x-ffjj-8r7x>`_"
+" for more information."
+msgstr ""
+"**Views:** 뷰 데이터 키가 렌더러 내부의 지역 변수를 덮어써서 발생하던 코드 실행 취약점을 수정했습니다. ``Parser``\\"
+" 에서는 ``template``, ``View::renderString()``\\ 에서는 ``view``\\ 라는 이름의 데이터가 "
+"PHP로 평가되는 소스를 대체할 수 있었습니다. 뷰 셀(view cell)에서는 ``foundView``\\ 라는 이름의 데이터가 선택된"
+" 파일 경로를 대체해 의도치 않은 로컬 파일 포함(local file inclusion)을 유발할 수 있었습니다. 이 문제들은 "
+"애플리케이션이 해당 키로 신뢰도가 낮은 데이터를 전달해야만 발생합니다. 자세한 내용은 `보안 권고 GHSA-c29x-ffjj-8r7x "
+"<https://github.com/codeigniter4/CodeIgniter4/security/advisories/GHSA-c29x-ffjj-8r7x>`_\\"
+" 를 참조하십시오."
+
+#: ../../source/changelogs/v4.7.5.rst:78
+msgid ""
+"Added the ``CLI.generator.undefinedDatabaseGroup`` and "
+"``CLI.generator.unsupportedSessionDriver`` language strings."
+msgstr ""
+"``CLI.generator.undefinedDatabaseGroup``\\ 과 "
+"``CLI.generator.unsupportedSessionDriver`` 메시지 문자열이 추가되었습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:79
+msgid "Added the ``Cookie.invalidCookieDomain`` language string."
+msgstr "``Cookie.invalidCookieDomain`` 메시지 문자열이 추가되었습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:80
+msgid "Added the ``Cookie.invalidCookiePath`` language string."
+msgstr "``Cookie.invalidCookiePath`` 메시지 문자열이 추가되었습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:81
+msgid "Added the ``Cookie.invalidCookieValue`` language string."
+msgstr "``Cookie.invalidCookieValue`` 메시지 문자열이 추가되었습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:82
+msgid "Added the ``View.restrictedConditional`` language string."
+msgstr "``View.restrictedConditional`` 메시지 문자열이 추가되었습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:88
+msgid ""
+"**Response:** ``setJSON()`` and ``setXML()``, and the "
+"``FormatterInterface::format()`` contract implemented by ``JSONFormatter`` "
+"and ``XMLFormatter``, now type their body/data parameter as ``mixed`` "
+"instead of ``array|object|string``, matching what they already accepted at "
+"runtime (e.g., scalars and ``bool``)."
+msgstr ""
+"**Response:** ``setJSON()``\\ 과 ``setXML()``, 그리고 ``JSONFormatter``\\ 와 "
+"``XMLFormatter``\\ 가 구현하는 ``FormatterInterface::format()`` 계약(contract)의 "
+"body/data 매개변수 타입이 ``array|object|string`` 대신 ``mixed``\\ 로 바뀌어, 런타임에 실제로 "
+"허용되던 값(예: 스칼라나 ``bool``)과 일치하게 되었습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:94
+msgid ""
+"**Debug Toolbar:** Deprecated the unused "
+"``CodeIgniter\\Debug\\Toolbar\\Collectors\\Views::$views`` property."
+msgstr ""
+"**Debug Toolbar:** 사용되지 않는 "
+"``CodeIgniter\\Debug\\Toolbar\\Collectors\\Views::$views`` 프로퍼티를 더 이상 사용하지 "
+"않도록(deprecated) 처리했습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:100
+msgid ""
+"**Autoloader:** Fixed a bug where ``FileLocatorCached::deleteCache()`` left "
+"the deleted data in memory, so it could be written back to the cache file on"
+" shutdown. ``spark optimize`` and ``spark cache:clear`` now clear the shared"
+" locator's cache instead of a separate instance."
+msgstr ""
+"**Autoloader:** ``FileLocatorCached::deleteCache()``\\ 가 삭제된 데이터를 메모리에 남겨두어,"
+" 종료 시 캐시 파일에 다시 기록될 수 있던 버그를 수정했습니다. ``spark optimize``\\ 와 ``spark "
+"cache:clear``\\ 는 이제 별도의 인스턴스가 아니라 공유된 locator의 캐시를 지웁니다."
+
+#: ../../source/changelogs/v4.7.5.rst:101
+msgid ""
+"**BaseModel:** Fixed a bug where auto-generated "
+"``created_at``/``updated_at`` timestamps always rendered ``.000000`` for a "
+"``'datetime'`` ``$dateFormat`` whose connection ``dateFormat`` mask includes"
+" ``.v``/``.u``, instead of the real sub-second value."
+msgstr ""
+"**BaseModel:** 연결(connection)의 ``dateFormat`` 마스크에 ``.v``/``.u``\\ 가 포함된 "
+"``'datetime'`` ``$dateFormat``\\ 에서, 자동 생성되는 ``created_at``/``updated_at`` "
+"타임스탬프가 실제 1초 미만 값 대신 항상 ``.000000``\\ 으로 표시되던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:102
+msgid ""
+"**Cache:** Fixed ``MemcachedHandler::decrement()`` initializing a non-"
+"existent counter to the positive offset. Missing counters are now "
+"initialized to ``0``, reflecting Memcached's unsigned, saturating counter "
+"semantics."
+msgstr ""
+"**Cache:** ``MemcachedHandler::decrement()``\\ 가 존재하지 않는 카운터를 양수 오프셋 값으로 "
+"초기화하던 버그를 수정했습니다. 이제 없는 카운터는 Memcached의 부호 없는(unsigned) 포화(saturating) 카운터 "
+"방식에 맞춰 ``0``\\ 으로 초기화됩니다."
+
+#: ../../source/changelogs/v4.7.5.rst:103
+msgid ""
+"**CLI:** Fixed a bug where pressing backspace in a ``CLI::prompt()`` erased "
+"the prompt text when the ``readline`` extension is enabled. The prompt is "
+"now passed to ``readline()`` so line redraws repaint it. ANSI color codes in"
+" the prompt (e.g., option defaults) are wrapped in readline's non-printing "
+"markers under GNU readline so cursor positioning stays accurate. On Windows,"
+" where the ``readline`` extension is built on WinEditLine, the prompt is "
+"written to STDOUT first because WinEditLine reports no library version and "
+"prints ANSI sequences literally."
+msgstr ""
+"**CLI:** ``readline`` 확장이 활성화된 상태에서 ``CLI::prompt()``\\ 에서 백스페이스를 누르면 프롬프트 "
+"텍스트가 지워지던 버그를 수정했습니다. 이제 프롬프트를 ``readline()``\\ 에 전달하여 줄을 다시 그릴 때 프롬프트도 함께 "
+"다시 그려집니다. 프롬프트 안의 ANSI 색상 코드(예: 옵션 기본값)는 GNU readline에서 커서 위치가 정확하게 유지되도록 "
+"readline의 비출력(non-printing) 마커로 감쌉니다. WinEditLine 기반으로 ``readline`` 확장이 빌드되는"
+" Windows에서는, WinEditLine이 라이브러리 버전을 보고하지 않고 ANSI 시퀀스를 그대로 출력하기 때문에 프롬프트를 먼저 "
+"STDOUT에 씁니다."
+
+#: ../../source/changelogs/v4.7.5.rst:106
+msgid ""
+"**CLI:** Fixed a bug where ``CLI::input()`` and ``CLI::prompt()`` threw a "
+"``TypeError`` when STDIN reached end-of-file (e.g., Ctrl+D) with the "
+"``readline`` extension enabled. An empty string is now returned, matching "
+"the behavior without ``readline``."
+msgstr ""
+"**CLI:** ``readline`` 확장이 활성화된 상태에서 STDIN이 파일 끝(예: Ctrl+D)에 도달했을 때 "
+"``CLI::input()``\\ 과 ``CLI::prompt()``\\ 에서 ``TypeError``\\ 가 발생하던 버그를 "
+"수정했습니다. 이제 ``readline``\\ 이 없을 때와 동일하게 빈 문자열을 반환합니다."
+
+#: ../../source/changelogs/v4.7.5.rst:107
+msgid ""
+"**CLI:** Fixed a bug where ``CLI::error()`` threw an ``Error`` for the "
+"undefined ``STDERR`` constant when a command ran outside the CLI (e.g., "
+"through ``command()`` in a controller). The message is now written like "
+"other output. ``CLI::clearScreen()`` on Windows and "
+"``SignalTrait::getProcessState()`` no longer probe the standard streams "
+"outside the CLI either."
+msgstr ""
+"**CLI:** 컨트롤러 안의 ``command()``\\ 등을 통해 명령이 CLI 바깥에서 실행될 때, 정의되지 않은 "
+"``STDERR`` 상수 때문에 ``CLI::error()``\\ 가 ``Error``\\ 를 던지던 버그를 수정했습니다. 이제 다른 "
+"출력과 동일하게 메시지가 기록됩니다. Windows의 ``CLI::clearScreen()``\\ 과 "
+"``SignalTrait::getProcessState()``\\ 도 CLI 바깥에서는 표준 스트림을 더 이상 확인하지 않습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:109
+msgid ""
+"**CLIRequest:** Fixed a bug where ``parseCommand()`` could throw a TypeError"
+" when ``argv`` is missing."
+msgstr ""
+"**CLIRequest:** ``argv``\\ 가 없을 때 ``parseCommand()``\\ 에서 TypeError가 발생할 수 "
+"있던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:110
+msgid ""
+"**CodeIgniter:** Fixed a bug where ``gatherOutput()`` could be called twice "
+"when ``startController()`` returned a ``ResponseInterface`` (e.g., from "
+"filter attributes or closure routes)."
+msgstr ""
+"**CodeIgniter:** ``startController()``\\ 가 ``ResponseInterface``\\ 를 반환할 "
+"때(예: 필터 속성이나 클로저 라우트에서) ``gatherOutput()``\\ 이 두 번 호출될 수 있던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:111
+msgid ""
+"**Commands:** Fixed a bug where ``make:migration --session`` silently "
+"generated a broken migration when the database group's driver is neither "
+"``MySQLi`` nor ``Postgre``. The command now reports an error and returns "
+"``EXIT_ERROR``."
+msgstr ""
+"**Commands:** 데이터베이스 그룹의 드라이버가 ``MySQLi``\\ 나 ``Postgre``\\ 가 아닐 때 "
+"``make:migration --session``\\ 이 조용히 깨진 마이그레이션을 생성하던 버그를 수정했습니다. 이제 이 명령은 "
+"오류를 보고하고 ``EXIT_ERROR``\\ 를 반환합니다."
+
+#: ../../source/changelogs/v4.7.5.rst:112
+msgid ""
+"**Content Security Policy:** Fixed a bug where empty ``Content-Security-"
+"Policy``, ``Content-Security-Policy-Report-Only``, and ``Reporting-"
+"Endpoints`` response headers were generated when no corresponding values "
+"existed."
+msgstr ""
+"**Content Security Policy:** 해당하는 값이 없을 때 빈 ``Content-Security-Policy``, "
+"``Content-Security-Policy-Report-Only``, ``Reporting-Endpoints`` 응답 헤더가 생성되던"
+" 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:113
+msgid ""
+"**Cookie:** Fixed a bug where ``Cookie`` instances created with ``raw: "
+"true`` allowed invalid characters in cookie values rejected by "
+"``setrawcookie()``."
+msgstr ""
+"**Cookie:** ``raw: true``\\ 로 생성된 ``Cookie`` 인스턴스가 ``setrawcookie()``\\ 가 "
+"거부하는 잘못된 문자를 쿠키 값에 허용하던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:114
+msgid ""
+"**Cookie:** Fixed a bug where ``Cookie`` instances allowed invalid "
+"characters in path, domain, and prefix attributes rejected by "
+"``setcookie()`` and ``setrawcookie()``."
+msgstr ""
+"**Cookie:** ``Cookie`` 인스턴스가 ``setcookie()``\\ 와 ``setrawcookie()``\\ 가 거부하는"
+" 잘못된 문자를 path, domain, prefix 속성에 허용하던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:115
+msgid ""
+"**Database:** Fixed a bug where rebuilding a SQLite3 table (e.g., "
+"``Forge::dropColumn()``, ``Forge::modifyColumn()``, "
+"``Forge::dropForeignKey()`` and ``Forge::dropPrimaryKey()``) corrupted the "
+"table names referenced by its foreign keys when ``DBPrefix`` was set."
+msgstr ""
+"**Database:** ``DBPrefix``\\ 가 설정된 상태에서 SQLite3 테이블을 재구성(예: "
+"``Forge::dropColumn()``, ``Forge::modifyColumn()``, "
+"``Forge::dropForeignKey()``, ``Forge::dropPrimaryKey()``)할 때, 외래 키가 참조하는 테이블"
+" 이름이 손상되던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:116
+msgid ""
+"**Database:** Fixed a bug where Postgre query failures were silently ignored"
+" when ``DBDebug`` was enabled and PHP warnings were disabled. A "
+"``DatabaseException`` is now thrown."
+msgstr ""
+"**Database:** ``DBDebug``\\ 가 활성화되고 PHP 경고가 비활성화된 상태에서 Postgre 쿼리 실패가 조용히 "
+"무시되던 버그를 수정했습니다. 이제 ``DatabaseException``\\ 이 발생합니다."
+
+#: ../../source/changelogs/v4.7.5.rst:117
+msgid ""
+"**Database:** Fixed a bug where ``getFieldData()`` failed for a schema-"
+"qualified table name on Postgre, SQLSRV and SQLite3, and where "
+"``protectIdentifiers()`` prefixed an already protected segment of a dotted "
+"identifier a second time."
+msgstr ""
+"**Database:** Postgre, SQLSRV, SQLite3에서 스키마가 포함된(schema-qualified) 테이블 이름에 "
+"대해 ``getFieldData()``\\ 가 실패하던 버그와, ``protectIdentifiers()``\\ 가 점으로 구분된 식별자"
+" 중 이미 보호된 부분에 접두사를 다시 붙이던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:118
+msgid ""
+"**Database:** Fixed a bug where ``updateBatch()`` and ``deleteBatch()`` "
+"failed on PostgreSQL and Oracle when the rows supplied different PHP types "
+"(e.g., a string and an integer) for the same column, because the ``UNION "
+"ALL`` subquery values were not cast to the column type."
+msgstr ""
+"**Database:** ``UNION ALL`` 서브쿼리 값이 컬럼 타입으로 캐스팅되지 않아, 행마다 같은 컬럼에 서로 다른 PHP "
+"타입(예: 문자열과 정수)을 전달하면 PostgreSQL과 Oracle에서 ``updateBatch()``\\ 와 "
+"``deleteBatch()``\\ 가 실패하던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:119
+msgid ""
+"**Debug:** Fixed a bug where ``Timer::start()`` treated ``0.0`` as an empty "
+"value and substituted the current time."
+msgstr ""
+"**Debug:** ``Timer::start()``\\ 가 ``0.0``\\ 을 빈 값으로 취급해 현재 시각으로 대체하던 버그를 "
+"수정했습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:120
+msgid ""
+"**Files:** Fixed a bug where ``File::move()`` and ``UploadedFile::move()`` "
+"set executable and overly permissive file permissions (``0777 & ~umask()`` "
+"instead of ``0666 & ~umask()``), and ``UploadedFile::move()`` targeted the "
+"parent directory instead of the destination file for ``chmod()``."
+msgstr ""
+"**Files:** ``File::move()``\\ 와 ``UploadedFile::move()``\\ 가 파일 권한을 실행 가능하고 "
+"지나치게 허용적인 값(``0666 & ~umask()``\\ 대신 ``0777 & ~umask()``)으로 설정하던 버그와, "
+"``UploadedFile::move()``\\ 가 ``chmod()``\\ 대상을 대상 파일이 아니라 상위 디렉터리로 지정하던 버그를 "
+"수정했습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:121
+msgid ""
+"**Helpers:** Fixed a bug where ``get_dir_file_info()`` returned incomplete "
+"entries for subdirectories and missing files instead of omitting them."
+msgstr ""
+"**Helpers:** ``get_dir_file_info()``\\ 가 하위 디렉터리와 존재하지 않는 파일을 생략하지 않고 불완전한 "
+"항목으로 반환하던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:122
+msgid ""
+"**Helpers:** Fixed a bug where ``word_wrap()`` entered an infinite loop when"
+" the character limit was below 2. Over-length words are now kept whole in "
+"that case."
+msgstr ""
+"**Helpers:** 글자 수 제한이 2 미만일 때 ``word_wrap()``\\ 이 무한 루프에 빠지던 버그를 수정했습니다. 이제 "
+"이런 경우 너무 긴 단어는 그대로 유지됩니다."
+
+#: ../../source/changelogs/v4.7.5.rst:123
+msgid ""
+"**Honeypot:** Fixed a bug where bot detection returned an HTTP 500 response "
+"instead of 403 (Forbidden)."
+msgstr "**Honeypot:** 봇 감지 시 403(Forbidden) 대신 HTTP 500 응답을 반환하던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:124
+msgid ""
+"**I18n:** Fixed a bug where ``Time::today()``, ``Time::yesterday()``, and "
+"``Time::tomorrow()`` ignored the specified ``$timezone`` and "
+"``setTestNow()`` when calculating the day."
+msgstr ""
+"**I18n:** ``Time::today()``, ``Time::yesterday()``, ``Time::tomorrow()``\\ 가"
+" 날짜를 계산할 때 지정된 ``$timezone``\\ 과 ``setTestNow()``\\ 를 무시하던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:125
+msgid ""
+"**Logger:** Fixed a bug where interpolating a log message with array or non-"
+"stringable context values could raise PHP warnings or errors."
+msgstr ""
+"**Logger:** 배열이나 문자열로 변환할 수 없는 컨텍스트 값으로 로그 메시지를 보간(interpolate)할 때 PHP 경고나 "
+"오류가 발생할 수 있던 버그를 수정했습니다."
+
+#: ../../source/changelogs/v4.7.5.rst:126
+msgid ""
+"**Validation:** Fixed a bug where ``valid_cc_number`` accepted non-digit "
+"characters (e.g., a decimal point) in the card number. Such values could "
+"pass the Luhn check and triggered an ``Undefined array key`` warning inside "
+"it; the number is now checked with ``ctype_digit()``."
+msgstr ""
+"**Validation:** ``valid_cc_number``\\ 가 카드 번호에 숫자가 아닌 문자(예: 소수점)를 허용하던 버그를 "
+"수정했습니다. 그런 값이 Luhn 검사를 통과하면서 내부적으로 ``Undefined array key`` 경고를 유발할 수 있었는데, "
+"이제 ``ctype_digit()``\\ 로 검사합니다."
+
+#: ../../source/changelogs/v4.7.5.rst:127
+msgid ""
+"**View Parser:** Fixed a bug where removing template comments could assemble"
+" PHP tags that were then executed. PHP tags are now escaped after comments "
+"are removed."
+msgstr ""
+"**View Parser:** 템플릿 주석을 제거하는 과정에서 PHP 태그가 조합되어 실행될 수 있던 버그를 수정했습니다. 이제 주석 "
+"제거 후 PHP 태그를 이스케이프합니다."
