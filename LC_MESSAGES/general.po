@@ -393,7 +393,7 @@ msgstr "서비스 액세서"
 
 #: ../../source/general/common_functions.rst
 msgid "Parameters"
-msgstr "매개변수"
+msgstr "파라미터"
 
 #: ../../source/general/common_functions.rst:21
 msgid "The cache name of the item to retrieve from cache (Optional)"
