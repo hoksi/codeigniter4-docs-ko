@@ -725,7 +725,7 @@ msgstr "클래스 레퍼런스"
 
 #: ../../source/dbmgmt/forge.rst ../../source/dbmgmt/migration.rst
 msgid "Parameters"
-msgstr "매개변수"
+msgstr "파라미터"
 
 #: ../../source/dbmgmt/forge.rst:412
 msgid "Table name to add the column to"
