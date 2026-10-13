@@ -321,7 +321,7 @@ msgstr "사용자 정의 API별 오류 코드입니다."
 #: ../../source/outgoing/view_parser.rst
 #: ../../source/outgoing/view_renderer.rst
 msgid "Returns"
-msgstr "보고"
+msgstr "반환값"
 
 #: ../../source/outgoing/api_responses.rst:106
 msgid "A multi-part response in the client's preferred format."
@@ -1779,11 +1779,11 @@ msgstr "철자법 - 숫자를 철자합니다(즉, 34는 34가 됩니다)."
 
 #: ../../source/outgoing/localization.rst:231
 msgid "ordinal"
-msgstr "서수"
+msgstr "ordinal"
 
 #: ../../source/outgoing/localization.rst:232
 msgid "duration"
-msgstr "지속"
+msgstr "duration"
 
 #: ../../source/outgoing/localization.rst:234
 msgid "Here are a few examples:"
@@ -2665,39 +2665,39 @@ msgstr ""
 
 #: ../../source/outgoing/response.rst:362
 msgid "etag"
-msgstr "에태그"
+msgstr "etag"
 
 #: ../../source/outgoing/response.rst:363
 msgid "last-modified"
-msgstr "마지막으로 수정된"
+msgstr "last-modified"
 
 #: ../../source/outgoing/response.rst:364
 msgid "max-age"
-msgstr "최대 연령"
+msgstr "max-age"
 
 #: ../../source/outgoing/response.rst:365
 msgid "s-maxage"
-msgstr "s-최대"
+msgstr "s-maxage"
 
 #: ../../source/outgoing/response.rst:366
 msgid "private"
-msgstr "사적인"
+msgstr "private"
 
 #: ../../source/outgoing/response.rst:367
 msgid "public"
-msgstr "공공의"
+msgstr "public"
 
 #: ../../source/outgoing/response.rst:368
 msgid "must-revalidate"
-msgstr "재검증 필수"
+msgstr "must-revalidate"
 
 #: ../../source/outgoing/response.rst:369
 msgid "proxy-revalidate"
-msgstr "프록시 재검증"
+msgstr "proxy-revalidate"
 
 #: ../../source/outgoing/response.rst:370
 msgid "no-transform"
-msgstr "변환 없음"
+msgstr "no-transform"
 
 #: ../../source/outgoing/response.rst:372
 msgid ""
@@ -4164,7 +4164,7 @@ msgstr ""
 
 #: ../../source/outgoing/view_parser.rst:231
 msgid "Comments"
-msgstr "댓글"
+msgstr "주석"
 
 #: ../../source/outgoing/view_parser.rst:233
 #, python-brace-format
@@ -4492,7 +4492,7 @@ msgstr "설명"
 
 #: ../../source/outgoing/view_parser.rst:443
 msgid "abs"
-msgstr "복근"
+msgstr "abs"
 
 #: ../../source/outgoing/view_parser.rst:443
 msgid "Displays the absolute value of a number."
@@ -4505,7 +4505,7 @@ msgstr "{ v|abs }"
 
 #: ../../source/outgoing/view_parser.rst:445
 msgid "capitalize"
-msgstr "대문자로 쓰다"
+msgstr "capitalize"
 
 #: ../../source/outgoing/view_parser.rst:445
 msgid ""
@@ -4520,7 +4520,7 @@ msgstr "{ v|capitalize}"
 
 #: ../../source/outgoing/view_parser.rst:448
 msgid "date"
-msgstr "날짜"
+msgstr "date"
 
 #: ../../source/outgoing/view_parser.rst:448
 msgid "format (Y-m-d)"
@@ -4537,7 +4537,7 @@ msgstr "{ v|date(Y-m-d) }"
 
 #: ../../source/outgoing/view_parser.rst:450
 msgid "date_modify"
-msgstr "날짜_수정"
+msgstr "date_modify"
 
 #: ../../source/outgoing/view_parser.rst:450
 msgid "value to add / subtract"
@@ -4556,7 +4556,7 @@ msgstr "{ v|date_modify(+1 day) }"
 
 #: ../../source/outgoing/view_parser.rst:453
 msgid "default"
-msgstr "기본"
+msgstr "default"
 
 #: ../../source/outgoing/view_parser.rst:453
 msgid "default value"
@@ -4573,7 +4573,7 @@ msgstr "{ v|default(just in case) }"
 
 #: ../../source/outgoing/view_parser.rst:455
 msgid "esc"
-msgstr "에스"
+msgstr "esc"
 
 #: ../../source/outgoing/view_parser.rst:455
 msgid "html, attr, css, js"
@@ -4590,7 +4590,7 @@ msgstr "{ v|esc(attr) }"
 
 #: ../../source/outgoing/view_parser.rst:458
 msgid "excerpt"
-msgstr "발췌"
+msgstr "excerpt"
 
 #: ../../source/outgoing/view_parser.rst:458
 msgid "phrase, radius"
@@ -4609,11 +4609,11 @@ msgstr "{ v|excerpt(green giant, 20) }"
 
 #: ../../source/outgoing/view_parser.rst:461
 msgid "highlight"
-msgstr "가장 밝은 부분"
+msgstr "highlight"
 
 #: ../../source/outgoing/view_parser.rst:461
 msgid "phrase"
-msgstr "구절"
+msgstr "문구"
 
 #: ../../source/outgoing/view_parser.rst:461
 msgid "Highlights a given phrase within the text using '<mark></mark>' tags."
@@ -4626,7 +4626,7 @@ msgstr "{ v|highlight(view parser) }"
 
 #: ../../source/outgoing/view_parser.rst:464
 msgid "highlight_code"
-msgstr "하이라이트_코드"
+msgstr "highlight_code"
 
 #: ../../source/outgoing/view_parser.rst:464
 msgid "Highlights code samples with HTML/CSS."
@@ -4639,12 +4639,12 @@ msgstr "{ v|highlight_code }"
 
 #: ../../source/outgoing/view_parser.rst:466
 msgid "limit_chars"
-msgstr "한도_문자"
+msgstr "limit_chars"
 
 #: ../../source/outgoing/view_parser.rst:466
 #: ../../source/outgoing/view_parser.rst:468
 msgid "limit"
-msgstr "한계"
+msgstr "제한"
 
 #: ../../source/outgoing/view_parser.rst:466
 msgid "Limits the number of characters to $limit."
@@ -4657,7 +4657,7 @@ msgstr "{ v|limit_chars(100) }"
 
 #: ../../source/outgoing/view_parser.rst:468
 msgid "limit_words"
-msgstr "한도_단어"
+msgstr "limit_words"
 
 #: ../../source/outgoing/view_parser.rst:468
 msgid "Limits the number of words to $limit."
@@ -4670,7 +4670,7 @@ msgstr "{ v|limit_words(20) }"
 
 #: ../../source/outgoing/view_parser.rst:470
 msgid "local_currency"
-msgstr "지역_통화"
+msgstr "local_currency"
 
 #: ../../source/outgoing/view_parser.rst:470
 msgid "currency, locale, fraction"
@@ -4689,7 +4689,7 @@ msgstr "{ v|local_currency(EUR,en_US) }"
 
 #: ../../source/outgoing/view_parser.rst:474
 msgid "local_number"
-msgstr "지역_번호"
+msgstr "local_number"
 
 #: ../../source/outgoing/view_parser.rst:474
 msgid "type, precision, locale"
@@ -4708,7 +4708,7 @@ msgstr "{ v|local_number(decimal,2,en_US) }"
 
 #: ../../source/outgoing/view_parser.rst:478
 msgid "lower"
-msgstr "낮추다"
+msgstr "lower"
 
 #: ../../source/outgoing/view_parser.rst:478
 msgid "Converts a string to lowercase."
@@ -4734,11 +4734,11 @@ msgstr "{ v|nl2br }"
 
 #: ../../source/outgoing/view_parser.rst:482
 msgid "number_format"
-msgstr "숫자_형식"
+msgstr "number_format"
 
 #: ../../source/outgoing/view_parser.rst:482
 msgid "places"
-msgstr "장소"
+msgstr "자릿수"
 
 #: ../../source/outgoing/view_parser.rst:482
 msgid "Wraps PHP **number_format** function for use within the parser."
@@ -4751,7 +4751,7 @@ msgstr "{ v|number_format(3) }"
 
 #: ../../source/outgoing/view_parser.rst:485
 msgid "prose"
-msgstr "산문"
+msgstr "prose"
 
 #: ../../source/outgoing/view_parser.rst:485
 msgid ""
@@ -4766,7 +4766,7 @@ msgstr "{ v|prose }"
 
 #: ../../source/outgoing/view_parser.rst:488
 msgid "round"
-msgstr "둥근"
+msgstr "round"
 
 #: ../../source/outgoing/view_parser.rst:488
 msgid "places, type"
@@ -4786,7 +4786,7 @@ msgstr "{ v|round(3) } { v|round(ceil) }"
 
 #: ../../source/outgoing/view_parser.rst:491
 msgid "strip_tags"
-msgstr "스트립_태그"
+msgstr "strip_tags"
 
 #: ../../source/outgoing/view_parser.rst:491
 msgid "allowed chars"
@@ -4803,7 +4803,7 @@ msgstr "{ v|strip_tags(<br>) }"
 
 #: ../../source/outgoing/view_parser.rst:494
 msgid "title"
-msgstr "제목"
+msgstr "title"
 
 #: ../../source/outgoing/view_parser.rst:494
 msgid ""
@@ -4818,7 +4818,7 @@ msgstr "{ v|title }"
 
 #: ../../source/outgoing/view_parser.rst:497
 msgid "upper"
-msgstr "높은"
+msgstr "upper"
 
 #: ../../source/outgoing/view_parser.rst:497
 msgid "Displays the string in all uppercase."
@@ -4926,7 +4926,7 @@ msgstr "플러그인"
 
 #: ../../source/outgoing/view_parser.rst:555
 msgid "current_url"
-msgstr "현재_url"
+msgstr "current_url"
 
 #: ../../source/outgoing/view_parser.rst:555
 msgid "Alias for the current_url helper function."
@@ -4939,11 +4939,11 @@ msgstr "``{+ current_url +}``"
 
 #: ../../source/outgoing/view_parser.rst:556
 msgid "previous_url"
-msgstr "이전_URL"
+msgstr "previous_url"
 
 #: ../../source/outgoing/view_parser.rst:556
 msgid "Alias for the previous_url helper function."
-msgstr "Previous_url 도우미 함수의 별칭입니다."
+msgstr "previous_url 도우미 함수의 별칭입니다."
 
 #: ../../source/outgoing/view_parser.rst:556
 #, python-brace-format
@@ -4952,7 +4952,7 @@ msgstr "``{+ previous_url +}``"
 
 #: ../../source/outgoing/view_parser.rst:557
 msgid "siteURL"
-msgstr "사이트URL"
+msgstr "siteURL"
 
 #: ../../source/outgoing/view_parser.rst:557
 msgid "Alias for the site_url helper function."
@@ -4965,7 +4965,7 @@ msgstr "``{+ siteURL \"login\" +}``"
 
 #: ../../source/outgoing/view_parser.rst:558
 msgid "mailto"
-msgstr "메일토"
+msgstr "mailto"
 
 #: ../../source/outgoing/view_parser.rst:558
 #: ../../source/outgoing/view_parser.rst:559
@@ -4996,7 +4996,7 @@ msgstr "``{+ safe_mailto email=foo@example.com title=\"Stranger Things\" +}``"
 
 #: ../../source/outgoing/view_parser.rst:560
 msgid "lang"
-msgstr "랭"
+msgstr "lang"
 
 #: ../../source/outgoing/view_parser.rst:560
 msgid "language string"
@@ -5013,7 +5013,7 @@ msgstr "``{+ lang number.terabyteAbbr +}``"
 
 #: ../../source/outgoing/view_parser.rst:561
 msgid "validation_errors"
-msgstr "유효성 검사_오류"
+msgstr "validation_errors"
 
 #: ../../source/outgoing/view_parser.rst:561
 msgid "fieldname(optional)"
@@ -5032,7 +5032,7 @@ msgstr "``{+ validation_errors +} , {+ validation_errors field=\"email\" +}``"
 
 #: ../../source/outgoing/view_parser.rst:563
 msgid "route"
-msgstr "노선"
+msgstr "route"
 
 #: ../../source/outgoing/view_parser.rst:563
 msgid "route name"
@@ -5040,7 +5040,7 @@ msgstr "노선명"
 
 #: ../../source/outgoing/view_parser.rst:563
 msgid "Alias for the route_to helper function."
-msgstr "Route_to 도우미 함수의 별칭입니다."
+msgstr "route_to 도우미 함수의 별칭입니다."
 
 #: ../../source/outgoing/view_parser.rst:563
 #, python-brace-format
