@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-10 16:32+0900\n"
+"POT-Creation-Date: 2026-09-15 12:19+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ko <LL@li.org>\n"
@@ -911,7 +911,7 @@ msgstr ""
 "컨트롤러 ``Acme\\Blog\\Controllers\\Home``\\로 라우팅됩니다."
 
 #: ../../source/incoming/content_negotiation.rst:3
-#: ../../source/incoming/incomingrequest.rst:297
+#: ../../source/incoming/incomingrequest.rst:308
 msgid "Content Negotiation"
 msgstr "콘텐츠 협상"
 
@@ -2791,11 +2791,35 @@ msgid ""
 " the ``isSecure()`` method:"
 msgstr "요청이 HTTPS 연결을 통해 이루어졌는지 여부는 ``isSecure()`` 메서드로 확인할 수 있습니다:"
 
-#: ../../source/incoming/incomingrequest.rst:80
+#: ../../source/incoming/incomingrequest.rst:79
+msgid ""
+"The ``X-Forwarded-Proto`` and ``Front-End-Https`` headers are taken into "
+"account only when the request comes from a trusted proxy configured in "
+"``Config\\App::$proxyIPs``. Otherwise, they are client-supplied and could be"
+" spoofed."
+msgstr ""
+"``X-Forwarded-Proto``\\ 와 ``Front-End-Https`` 헤더는 요청이 "
+"``Config\\\\App::$proxyIPs``\\ 에 설정된 신뢰할 수 있는 프록시로부터 온 경우에만 고려됩니다. 그렇지 않으면 "
+"클라이언트가 임의로 지정한 값이므로 위조될 수 있습니다."
+
+#: ../../source/incoming/incomingrequest.rst:84
+msgid ""
+"On dual-stack servers, a proxy's IPv4 address may be reported as an "
+"IPv4-mapped IPv6 address (e.g., ``::ffff:192.168.5.21``), which does not "
+"match an IPv4 entry such as ``192.168.5.0/24``. In that case, add the "
+"IPv4-mapped form to ``Config\\App::$proxyIPs``, e.g., "
+"``::ffff:192.168.5.21`` or ``::ffff:192.168.5.0/120``."
+msgstr ""
+"듀얼 스택(dual-stack) 서버에서는 프록시의 IPv4 주소가 IPv4-매핑 IPv6 주소(예: "
+"``::ffff:192.168.5.21``)로 표시될 수 있는데, 이는 ``192.168.5.0/24``\\ 와 같은 IPv4 항목과 "
+"일치하지 않습니다. 이 경우 ``Config\\\\App::$proxyIPs``\\ 에 IPv4-매핑 형식(예: "
+"``::ffff:192.168.5.21`` 또는 ``::ffff:192.168.5.0/120``)을 추가로 등록하세요."
+
+#: ../../source/incoming/incomingrequest.rst:91
 msgid "Retrieving Input"
 msgstr "입력 데이터 가져오기"
 
-#: ../../source/incoming/incomingrequest.rst:82
+#: ../../source/incoming/incomingrequest.rst:93
 msgid ""
 "You can retrieve input from ``$_GET``, ``$_POST``, ``$_COOKIE``, "
 "``$_SERVER`` and ``$_ENV`` through the Request object. The data is not "
@@ -2806,13 +2830,13 @@ msgstr ""
 "``$_ENV``\\ 에서 입력을 가져올 수 있습니다. 이 데이터는 자동으로 필터링되지 않으며 요청으로 전달된 원시 입력 데이터가 "
 "반환됩니다."
 
-#: ../../source/incoming/incomingrequest.rst:86
+#: ../../source/incoming/incomingrequest.rst:97
 msgid ""
 "It is bad practice to use global variables. Basically, it should be avoided "
 "and it is recommended to use methods of the Request object."
 msgstr "전역 변수를 직접 사용하는 것은 좋지 않습니다. 가능하면 피하고, Request 객체의 메서드를 사용하는 것을 권장합니다."
 
-#: ../../source/incoming/incomingrequest.rst:89
+#: ../../source/incoming/incomingrequest.rst:100
 msgid ""
 "The main advantages to using these methods instead of accessing them "
 "directly (``$_POST['something']``), is that they will return null if the "
@@ -2824,67 +2848,67 @@ msgstr ""
 "반환하고 데이터를 필터링할 수 있다는 장점이 있습니다. 따라서 항목 존재 여부를 먼저 확인하지 않고도 데이터를 편리하게 사용할 수 "
 "있습니다. 예를 들어 일반적으로는 다음과 같이 작성합니다:"
 
-#: ../../source/incoming/incomingrequest.rst:97
+#: ../../source/incoming/incomingrequest.rst:108
 msgid "With CodeIgniter's built-in methods you can simply do this:"
 msgstr "CodeIgniter의 내장 메서드를 사용하면 다음과 같이 간단히 처리할 수 있습니다:"
 
-#: ../../source/incoming/incomingrequest.rst:104
+#: ../../source/incoming/incomingrequest.rst:115
 msgid "Getting Data"
 msgstr "데이터 가져오기"
 
-#: ../../source/incoming/incomingrequest.rst:107
+#: ../../source/incoming/incomingrequest.rst:118
 msgid "getGet()"
 msgstr "getGet()"
 
-#: ../../source/incoming/incomingrequest.rst:109
+#: ../../source/incoming/incomingrequest.rst:120
 msgid "The ``getGet()`` method will pull from ``$_GET``."
 msgstr "``getGet()`` 메서드는 ``$_GET``\\ 에서 데이터를 가져옵니다."
 
-#: ../../source/incoming/incomingrequest.rst:111
+#: ../../source/incoming/incomingrequest.rst:122
 msgid "``$request->getGet()``"
 msgstr "``$request->getGet()``"
 
-#: ../../source/incoming/incomingrequest.rst:114
+#: ../../source/incoming/incomingrequest.rst:125
 msgid "getPost()"
 msgstr "getPost()"
 
-#: ../../source/incoming/incomingrequest.rst:116
+#: ../../source/incoming/incomingrequest.rst:127
 msgid "The ``getPost()`` method will pull from ``$_POST``."
 msgstr "``getPost()`` 메서드는 ``$_POST``\\ 에서 데이터를 가져옵니다."
 
-#: ../../source/incoming/incomingrequest.rst:118
+#: ../../source/incoming/incomingrequest.rst:129
 msgid "``$request->getPost()``"
 msgstr "``$request->getPost()``"
 
-#: ../../source/incoming/incomingrequest.rst:121
+#: ../../source/incoming/incomingrequest.rst:132
 msgid "getCookie()"
 msgstr "getCookie()"
 
-#: ../../source/incoming/incomingrequest.rst:123
+#: ../../source/incoming/incomingrequest.rst:134
 msgid "The ``getCookie()`` method will pull from ``$_COOKIE``."
 msgstr "``getCookie()`` 메서드는 ``$_COOKIE``\\ 에서 데이터를 가져옵니다."
 
-#: ../../source/incoming/incomingrequest.rst:125
+#: ../../source/incoming/incomingrequest.rst:136
 msgid "``$request->getCookie()``"
 msgstr "``$request->getCookie()``"
 
-#: ../../source/incoming/incomingrequest.rst:128
+#: ../../source/incoming/incomingrequest.rst:139
 msgid "getServer()"
 msgstr "getServer()"
 
-#: ../../source/incoming/incomingrequest.rst:130
+#: ../../source/incoming/incomingrequest.rst:141
 msgid "The ``getServer()`` method will pull from ``$_SERVER``."
 msgstr "``getServer()`` 메서드는 ``$_SERVER``\\ 에서 데이터를 가져옵니다."
 
-#: ../../source/incoming/incomingrequest.rst:132
+#: ../../source/incoming/incomingrequest.rst:143
 msgid "``$request->getServer()``"
 msgstr "``$request->getServer()``"
 
-#: ../../source/incoming/incomingrequest.rst:135
+#: ../../source/incoming/incomingrequest.rst:146
 msgid "getPostGet()"
 msgstr "getPostGet()"
 
-#: ../../source/incoming/incomingrequest.rst:137
+#: ../../source/incoming/incomingrequest.rst:148
 msgid ""
 "In addition, there are a few utility methods for retrieving information from"
 " either ``$_GET`` or ``$_POST``, while maintaining the ability to control "
@@ -2893,24 +2917,24 @@ msgstr ""
 "또한, ``$_GET`` 또는 ``$_POST``\\ 에서 정보를 가져오되 조회 순서를 제어할 수 있는 유틸리티 메서드도 몇 가지 "
 "있습니다:"
 
-#: ../../source/incoming/incomingrequest.rst:140
+#: ../../source/incoming/incomingrequest.rst:151
 msgid "``$request->getPostGet()`` - checks ``$_POST`` first, then ``$_GET``"
 msgstr "``$request->getPostGet()`` - ``$_POST``\\ 를 먼저 확인한 후 ``$_GET``\\ 을 확인합니다."
 
-#: ../../source/incoming/incomingrequest.rst:143
+#: ../../source/incoming/incomingrequest.rst:154
 msgid "getGetPost()"
 msgstr "getGetPost()"
 
-#: ../../source/incoming/incomingrequest.rst:145
+#: ../../source/incoming/incomingrequest.rst:156
 msgid "``$request->getGetPost()`` - checks ``$_GET`` first, then ``$_POST``"
 msgstr "``$request->getGetPost()`` - ``$_GET``\\ 를 먼저 확인한 후 ``$_POST``\\ 를 확인합니다."
 
-#: ../../source/incoming/incomingrequest.rst:148
+#: ../../source/incoming/incomingrequest.rst:159
 msgid "getVar()"
 msgstr "getVar()"
 
-#: ../../source/incoming/incomingrequest.rst:150
-#: ../../source/incoming/incomingrequest.rst:364
+#: ../../source/incoming/incomingrequest.rst:161
+#: ../../source/incoming/incomingrequest.rst:379
 #: ../../source/incoming/routing.rst:323 ../../source/incoming/routing.rst:344
 msgid ""
 "This method exists only for backward compatibility. Do not use it in new "
@@ -2920,7 +2944,7 @@ msgstr ""
 "이 메서드는 하위 호환성을 위해서만 존재합니다. 신규 프로젝트에서는 사용하지 마세요. 이미 사용 중이라면 더 적합한 다른 메서드로 "
 "교체하는 것을 권장합니다."
 
-#: ../../source/incoming/incomingrequest.rst:154
+#: ../../source/incoming/incomingrequest.rst:165
 msgid ""
 "The ``getVar()`` method will pull from ``$_REQUEST``, so will return any "
 "data from ``$_GET``, ``$_POST``, or ``$_COOKIE`` (depending on php.ini "
@@ -2931,7 +2955,7 @@ msgstr ""
 "<https://www.php.net/manual/en/ini.core.php#ini.request-order>`_\\ 설정에 따라 "
 "``$_GET``, ``$_POST``, ``$_COOKIE`` 중 어느 곳에서든 데이터를 반환할 수 있습니다."
 
-#: ../../source/incoming/incomingrequest.rst:156
+#: ../../source/incoming/incomingrequest.rst:167
 msgid ""
 "If you want to validate POST data only, don't use ``getVar()``. Newer values"
 " override older values. POST values may be overridden by the cookies if they"
@@ -2942,7 +2966,7 @@ msgstr ""
 "`request-order <https://www.php.net/manual/en/ini.core.php#ini.request-"
 "order>`_\\ 에서 \"P\" 뒤에 \"C\"를 설정하면 같은 이름의 쿠키가 POST 값을 덮어쓸 수 있습니다."
 
-#: ../../source/incoming/incomingrequest.rst:161
+#: ../../source/incoming/incomingrequest.rst:172
 msgid ""
 "If the incoming request has a ``Content-Type`` header set to "
 "``application/json``, the ``getVar()`` method returns the JSON data instead "
@@ -2951,23 +2975,23 @@ msgstr ""
 "수신 요청의 ``Content-Type`` 헤더가 ``application/json``\\ 으로 설정된 경우, ``getVar()`` "
 "메서드는 ``$_REQUEST`` 데이터 대신 JSON 데이터를 반환합니다."
 
-#: ../../source/incoming/incomingrequest.rst:167
+#: ../../source/incoming/incomingrequest.rst:178
 msgid "Getting JSON Data"
 msgstr "JSON 데이터 가져오기"
 
-#: ../../source/incoming/incomingrequest.rst:169
+#: ../../source/incoming/incomingrequest.rst:180
 msgid ""
 "You can grab the contents of ``php://input`` as a JSON stream with "
 "``getJSON()``."
 msgstr "``getJSON()``\\ 을 사용하면 ``php://input``\\ 의 내용을 JSON 스트림으로 가져올 수 있습니다."
 
-#: ../../source/incoming/incomingrequest.rst:171
+#: ../../source/incoming/incomingrequest.rst:182
 msgid ""
 "This has no way of checking if the incoming data is valid JSON or not, you "
 "should only use this method if you know that you're expecting JSON."
 msgstr "이 메서드는 수신 데이터가 유효한 JSON인지 확인할 방법이 없으므로, JSON을 기대하는 경우에만 사용해야 합니다."
 
-#: ../../source/incoming/incomingrequest.rst:176
+#: ../../source/incoming/incomingrequest.rst:187
 msgid ""
 "By default, this will return any objects in the JSON data as objects. If you"
 " want that converted to associative arrays, pass in ``true`` as the first "
@@ -2975,7 +2999,7 @@ msgid ""
 msgstr ""
 "기본적으로 JSON 데이터의 객체는 객체로 반환됩니다. 연관 배열로 변환하려면 첫 번째 인수로 ``true``\\ 를 전달하세요."
 
-#: ../../source/incoming/incomingrequest.rst:179
+#: ../../source/incoming/incomingrequest.rst:190
 msgid ""
 "The second and third parameters match up to the ``$depth`` and ``$flags`` "
 "arguments of the `json_decode() "
@@ -2985,11 +3009,11 @@ msgstr ""
 "<https://www.php.net/manual/en/function.json-decode.php>`_ 함수의 ``$depth`` 및 "
 "``$flags`` 인수에 해당합니다."
 
-#: ../../source/incoming/incomingrequest.rst:183
+#: ../../source/incoming/incomingrequest.rst:194
 msgid "Getting Specific Data from JSON"
 msgstr "JSON에서 특정 데이터 가져오기"
 
-#: ../../source/incoming/incomingrequest.rst:185
+#: ../../source/incoming/incomingrequest.rst:196
 msgid ""
 "You can get a specific piece of data from a JSON stream by passing a "
 "variable name into ``getJsonVar()`` for the data that you want or you can "
@@ -2999,13 +3023,13 @@ msgstr ""
 "``getJsonVar()``\\ 에 변수 이름을 전달하면 JSON 스트림에서 특정 데이터를 가져올 수 있습니다. 루트 레벨이 아닌 중첩"
 " 데이터를 꺼낼 때는 \"점(dot)\" 표기법을 사용할 수 있습니다."
 
-#: ../../source/incoming/incomingrequest.rst:190
+#: ../../source/incoming/incomingrequest.rst:201
 msgid ""
 "If you want the result to be an associative array instead of an object, you "
 "can pass true in the second parameter:"
 msgstr "결과를 객체 대신 연관 배열로 받으려면 두 번째 인수에 true를 전달하세요:"
 
-#: ../../source/incoming/incomingrequest.rst:195
+#: ../../source/incoming/incomingrequest.rst:206
 msgid ""
 "See the documentation for :php:func:`dot_array_search()` in the ``Array`` "
 "helper for more information on \"dot\" notation."
@@ -3013,31 +3037,31 @@ msgstr ""
 "\"점\" 표기법에 대한 자세한 내용은 ``Array`` 헬퍼의 :php:func:`dot_array_search()` 문서를 "
 "참고하세요."
 
-#: ../../source/incoming/incomingrequest.rst:200
+#: ../../source/incoming/incomingrequest.rst:211
 msgid "Retrieving Raw Data (PUT, PATCH, DELETE)"
 msgstr "원시 데이터 가져오기 (PUT, PATCH, DELETE)"
 
-#: ../../source/incoming/incomingrequest.rst:202
+#: ../../source/incoming/incomingrequest.rst:213
 msgid ""
 "Finally, you can grab the contents of ``php://input`` as a raw stream with "
 "``getRawInput()``:"
 msgstr "``getRawInput()``\\ 을 사용하면 ``php://input``\\ 의 내용을 원시 스트림으로 가져올 수 있습니다:"
 
-#: ../../source/incoming/incomingrequest.rst:206
+#: ../../source/incoming/incomingrequest.rst:217
 msgid "This will retrieve data and convert it to an array. Like this:"
 msgstr "이 메서드는 데이터를 가져와 배열로 변환합니다. 예시:"
 
-#: ../../source/incoming/incomingrequest.rst:210
+#: ../../source/incoming/incomingrequest.rst:221
 msgid ""
 "You can also use ``getRawInputVar()``, to get the specified variable from "
 "raw stream and filter it."
 msgstr "``getRawInputVar()``\\ 를 사용하면 원시 스트림에서 지정한 변수를 가져와 필터링할 수도 있습니다."
 
-#: ../../source/incoming/incomingrequest.rst:217
+#: ../../source/incoming/incomingrequest.rst:228
 msgid "Filtering Input Data"
 msgstr "입력 데이터 필터링"
 
-#: ../../source/incoming/incomingrequest.rst:219
+#: ../../source/incoming/incomingrequest.rst:230
 msgid ""
 "To maintain security of your application, you will want to filter all input "
 "as you access it. You can pass the type of filter to use as the second "
@@ -3049,11 +3073,11 @@ msgstr ""
 " 수 있습니다. 필터링에는 기본 제공 ``filter_var()`` 함수가 사용됩니다. 유효한 필터 유형 목록은 PHP 매뉴얼의 "
 "`valid filter types <https://www.php.net/manual/en/filters.php>`_\\ 을 참고하세요."
 
-#: ../../source/incoming/incomingrequest.rst:224
+#: ../../source/incoming/incomingrequest.rst:235
 msgid "Filtering a POST variable would look like this:"
 msgstr "POST 변수 필터링 예시:"
 
-#: ../../source/incoming/incomingrequest.rst:228
+#: ../../source/incoming/incomingrequest.rst:239
 msgid ""
 "All of the methods mentioned above support the filter type passed in as the "
 "second parameter, with the exception of ``getJSON()`` and ``getRawInput()``."
@@ -3061,11 +3085,11 @@ msgstr ""
 "위에서 언급한 모든 메서드는 두 번째 인수로 필터 유형을 지원하지만, ``getJSON()`` 과 ``getRawInput()`` 은 "
 "예외입니다."
 
-#: ../../source/incoming/incomingrequest.rst:232
+#: ../../source/incoming/incomingrequest.rst:243
 msgid "Retrieving Headers"
 msgstr "헤더 가져오기"
 
-#: ../../source/incoming/incomingrequest.rst:234
+#: ../../source/incoming/incomingrequest.rst:245
 msgid ""
 "You can get access to any header that was sent with the request with the "
 "``headers()`` method, which returns an array of all headers, with the key as"
@@ -3075,7 +3099,7 @@ msgstr ""
 "``headers()`` 메서드를 사용하면 요청과 함께 전송된 모든 헤더에 접근할 수 있습니다. 이 메서드는 헤더 이름을 키로, "
 "``CodeIgniter\\HTTP\\Header`` 인스턴스를 값으로 하는 배열을 반환합니다:"
 
-#: ../../source/incoming/incomingrequest.rst:240
+#: ../../source/incoming/incomingrequest.rst:251
 msgid ""
 "If you only need a single header, you can pass the name into the "
 "``header()`` method. This will grab the specified header object in a case-"
@@ -3084,29 +3108,29 @@ msgstr ""
 "단일 헤더만 필요한 경우 ``header()`` 메서드에 헤더 이름을 전달하면 됩니다. 대소문자를 구분하지 않고 해당 헤더 객체를 "
 "반환하며, 없으면 ``null``\\ 을 반환합니다:"
 
-#: ../../source/incoming/incomingrequest.rst:245
+#: ../../source/incoming/incomingrequest.rst:256
 msgid ""
 "You can always use ``hasHeader()`` to see if the header existed in this "
 "request:"
 msgstr "``hasHeader()``\\ 를 사용하면 해당 헤더가 요청에 포함되어 있는지 확인할 수 있습니다:"
 
-#: ../../source/incoming/incomingrequest.rst:249
+#: ../../source/incoming/incomingrequest.rst:260
 msgid ""
 "If you need the value of header as a string with all values on one line, you"
 " can use the ``getHeaderLine()`` method:"
 msgstr "헤더 값을 한 줄 문자열로 받으려면 ``getHeaderLine()`` 메서드를 사용하세요:"
 
-#: ../../source/incoming/incomingrequest.rst:253
+#: ../../source/incoming/incomingrequest.rst:264
 msgid ""
 "If you need the entire header, with the name and values in a single string, "
 "simply cast the header as a string:"
 msgstr "헤더 이름과 값을 모두 포함한 단일 문자열이 필요하다면 헤더를 문자열로 캐스팅하면 됩니다:"
 
-#: ../../source/incoming/incomingrequest.rst:258
+#: ../../source/incoming/incomingrequest.rst:269
 msgid "The Request URL"
 msgstr "요청 URL"
 
-#: ../../source/incoming/incomingrequest.rst:260
+#: ../../source/incoming/incomingrequest.rst:271
 msgid ""
 "You can retrieve a :doc:`URI </libraries/uri>` object that represents the "
 "current URI for this request through the ``$request->getUri()`` method. You "
@@ -3115,19 +3139,19 @@ msgstr ""
 "``$request->getUri()`` 메서드를 통해 현재 요청의 URI를 나타내는 :doc:`URI </libraries/uri>` "
 "객체를 가져올 수 있습니다. 이 객체를 문자열로 캐스팅하면 현재 요청의 전체 URL을 얻을 수 있습니다:"
 
-#: ../../source/incoming/incomingrequest.rst:265
+#: ../../source/incoming/incomingrequest.rst:276
 msgid ""
 "The object gives you full abilities to grab any part of the request on it's "
 "own:"
 msgstr "이 객체를 통해 요청의 각 부분을 개별적으로 가져올 수 있습니다:"
 
-#: ../../source/incoming/incomingrequest.rst:269
+#: ../../source/incoming/incomingrequest.rst:280
 msgid ""
 "You can work with the current URI string (the path relative to your baseURL)"
 " using the ``getRoutePath()``."
 msgstr "``getRoutePath()``\\ 를 사용하면 baseURL에 상대적인 현재 URI 경로(문자열)를 다룰 수 있습니다."
 
-#: ../../source/incoming/incomingrequest.rst:271
+#: ../../source/incoming/incomingrequest.rst:282
 msgid ""
 "The ``getRoutePath()`` method can be used since v4.4.0. Prior to v4.4.0, the"
 " ``getPath()`` method returned the path relative to your baseURL."
@@ -3135,11 +3159,11 @@ msgstr ""
 "``getRoutePath()`` 메서드는 v4.4.0부터 사용할 수 있습니다. v4.4.0 이전에는 ``getPath()`` 메서드가 "
 "baseURL에 상대적인 경로를 반환했습니다."
 
-#: ../../source/incoming/incomingrequest.rst:275
+#: ../../source/incoming/incomingrequest.rst:286
 msgid "Uploaded Files"
 msgstr "업로드된 파일"
 
-#: ../../source/incoming/incomingrequest.rst:277
+#: ../../source/incoming/incomingrequest.rst:288
 msgid ""
 "Information about all uploaded files can be retrieved through "
 "``$request->getFiles()``, which returns an array of "
@@ -3151,25 +3175,25 @@ msgstr ""
 "``CodeIgniter\\HTTP\\Files\\UploadedFile`` 인스턴스의 배열을 반환합니다. 이를 통해 업로드 파일 처리가"
 " 쉬워지고, 보안 위험을 최소화하는 모범 사례가 적용됩니다."
 
-#: ../../source/incoming/incomingrequest.rst:283
+#: ../../source/incoming/incomingrequest.rst:294
 msgid ""
 "See :ref:`Working with Uploaded Files <uploaded-files-accessing-files>` for "
 "the details."
 msgstr "자세한 내용은 :ref:`업로드된 파일 다루기 <uploaded-files-accessing-files>`\\ 를 참고하세요."
 
-#: ../../source/incoming/incomingrequest.rst:285
+#: ../../source/incoming/incomingrequest.rst:296
 msgid ""
 "You can retrieve a single file uploaded on its own, based on the filename "
 "given in the HTML file input:"
 msgstr "HTML 파일 입력 필드에 지정된 파일명을 기반으로 단일 파일을 가져올 수 있습니다:"
 
-#: ../../source/incoming/incomingrequest.rst:289
+#: ../../source/incoming/incomingrequest.rst:300
 msgid ""
 "You can retrieve an array of same-named files uploaded as part of a multi-"
 "file upload, based on the filename given in the HTML file input:"
 msgstr "HTML 파일 입력 필드에 지정된 파일명을 기반으로, 다중 파일 업로드 시 동일한 이름의 파일 배열을 가져올 수 있습니다:"
 
-#: ../../source/incoming/incomingrequest.rst:294
+#: ../../source/incoming/incomingrequest.rst:305
 msgid ""
 "The files here correspond to ``$_FILES``. Even if a user just clicks submit "
 "button of a form and does not upload any file, the file will still exist. "
@@ -3180,24 +3204,24 @@ msgstr ""
 " 파일이 업로드되었는지 확인하려면 UploadedFile의 ``isValid()`` 메서드를 사용하세요. 자세한 내용은 "
 ":ref:`verify-a-file`\\ 을 참고하세요."
 
-#: ../../source/incoming/incomingrequest.rst:299
+#: ../../source/incoming/incomingrequest.rst:310
 msgid ""
 "You can easily negotiate content types with the request through the "
 "``negotiate()`` method:"
 msgstr "``negotiate()`` 메서드를 통해 요청과의 콘텐츠 유형 협상을 쉽게 처리할 수 있습니다:"
 
-#: ../../source/incoming/incomingrequest.rst:303
+#: ../../source/incoming/incomingrequest.rst:314
 msgid ""
 "See the :doc:`Content Negotiation </incoming/content_negotiation>` page for "
 "more details."
 msgstr "자세한 내용은 :doc:`콘텐츠 협상 </incoming/content_negotiation>` 페이지를 참고하세요."
 
-#: ../../source/incoming/incomingrequest.rst:306
+#: ../../source/incoming/incomingrequest.rst:317
 #: ../../source/incoming/message.rst:14 ../../source/incoming/request.rst:18
 msgid "Class Reference"
 msgstr "클래스 참조"
 
-#: ../../source/incoming/incomingrequest.rst:308
+#: ../../source/incoming/incomingrequest.rst:319
 msgid ""
 "In addition to the methods listed here, this class inherits the methods from"
 " the :doc:`Request Class </incoming/request>` and the :doc:`Message Class "
@@ -3206,91 +3230,91 @@ msgstr ""
 "여기에 나열된 메서드 외에도 이 클래스는 :doc:`Request 클래스 </incoming/request>` 및 "
 ":doc:`Message 클래스 </incoming/message>`\\ 의 메서드를 상속합니다."
 
-#: ../../source/incoming/incomingrequest.rst:311
+#: ../../source/incoming/incomingrequest.rst:322
 msgid "The methods provided by the parent classes that are available are:"
 msgstr "사용 가능한 부모 클래스 제공 메서드는 다음과 같습니다:"
 
-#: ../../source/incoming/incomingrequest.rst:313
+#: ../../source/incoming/incomingrequest.rst:324
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Request::getIPAddress`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Request::getIPAddress`"
 
-#: ../../source/incoming/incomingrequest.rst:314
+#: ../../source/incoming/incomingrequest.rst:325
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Request::isValidIP`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Request::isValidIP`"
 
-#: ../../source/incoming/incomingrequest.rst:315
+#: ../../source/incoming/incomingrequest.rst:326
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Request::getMethod`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Request::getMethod`"
 
-#: ../../source/incoming/incomingrequest.rst:316
+#: ../../source/incoming/incomingrequest.rst:327
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Request::setMethod`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Request::setMethod`"
 
-#: ../../source/incoming/incomingrequest.rst:317
+#: ../../source/incoming/incomingrequest.rst:328
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Request::getServer`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Request::getServer`"
 
-#: ../../source/incoming/incomingrequest.rst:318
+#: ../../source/incoming/incomingrequest.rst:329
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Request::setGlobal`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Request::setGlobal`"
 
-#: ../../source/incoming/incomingrequest.rst:319
+#: ../../source/incoming/incomingrequest.rst:330
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Request::fetchGlobal`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Request::fetchGlobal`"
 
-#: ../../source/incoming/incomingrequest.rst:320
+#: ../../source/incoming/incomingrequest.rst:331
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::getBody`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::getBody`"
 
-#: ../../source/incoming/incomingrequest.rst:321
+#: ../../source/incoming/incomingrequest.rst:332
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::setBody`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::setBody`"
 
-#: ../../source/incoming/incomingrequest.rst:322
+#: ../../source/incoming/incomingrequest.rst:333
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::appendBody`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::appendBody`"
 
-#: ../../source/incoming/incomingrequest.rst:323
+#: ../../source/incoming/incomingrequest.rst:334
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::populateHeaders`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::populateHeaders`"
 
-#: ../../source/incoming/incomingrequest.rst:324
+#: ../../source/incoming/incomingrequest.rst:335
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::headers`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::headers`"
 
-#: ../../source/incoming/incomingrequest.rst:325
+#: ../../source/incoming/incomingrequest.rst:336
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::header`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::header`"
 
-#: ../../source/incoming/incomingrequest.rst:326
+#: ../../source/incoming/incomingrequest.rst:337
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::hasHeader`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::hasHeader`"
 
-#: ../../source/incoming/incomingrequest.rst:327
+#: ../../source/incoming/incomingrequest.rst:338
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::getHeaderLine`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::getHeaderLine`"
 
-#: ../../source/incoming/incomingrequest.rst:328
+#: ../../source/incoming/incomingrequest.rst:339
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::setHeader`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::setHeader`"
 
-#: ../../source/incoming/incomingrequest.rst:329
+#: ../../source/incoming/incomingrequest.rst:340
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::removeHeader`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::removeHeader`"
 
-#: ../../source/incoming/incomingrequest.rst:330
+#: ../../source/incoming/incomingrequest.rst:341
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::appendHeader`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::appendHeader`"
 
-#: ../../source/incoming/incomingrequest.rst:331
+#: ../../source/incoming/incomingrequest.rst:342
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::prependHeader`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::prependHeader`"
 
-#: ../../source/incoming/incomingrequest.rst:332
+#: ../../source/incoming/incomingrequest.rst:343
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::getProtocolVersion`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::getProtocolVersion`"
 
-#: ../../source/incoming/incomingrequest.rst:333
+#: ../../source/incoming/incomingrequest.rst:344
 msgid ":meth:`CodeIgniter\\\\HTTP\\\\Message::setProtocolVersion`"
 msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::setProtocolVersion`"
 
@@ -3299,7 +3323,7 @@ msgstr ":meth:`CodeIgniter\\\\HTTP\\\\Message::setProtocolVersion`"
 msgid "Returns"
 msgstr "반환"
 
-#: ../../source/incoming/incomingrequest.rst:341
+#: ../../source/incoming/incomingrequest.rst:352
 msgid ""
 "True if the request was initiated from the command line, otherwise false."
 msgstr "요청이 커맨드 라인에서 시작된 경우 true, 그렇지 않으면 false."
@@ -3309,33 +3333,38 @@ msgstr "요청이 커맨드 라인에서 시작된 경우 true, 그렇지 않으
 msgid "Return type"
 msgstr "반환 타입"
 
-#: ../../source/incoming/incomingrequest.rst:346
+#: ../../source/incoming/incomingrequest.rst:357
 msgid "True if the request is an AJAX request, otherwise false."
 msgstr "요청이 AJAX 요청이면 true, 그렇지 않으면 false."
 
-#: ../../source/incoming/incomingrequest.rst:351
+#: ../../source/incoming/incomingrequest.rst:362
 msgid "True if the request is an HTTPS request, otherwise false."
 msgstr "요청이 HTTPS 요청이면 true, 그렇지 않으면 false."
+
+#: ../../source/incoming/incomingrequest.rst:365
+msgid ""
+"The ``X-Forwarded-Proto`` and ``Front-End-Https`` headers are taken into "
+"account only when the request comes from a trusted proxy configured in "
+"``Config\\App::$proxyIPs``."
+msgstr ""
+"``X-Forwarded-Proto``\\ 와 ``Front-End-Https`` 헤더는 요청이 "
+"``Config\\App::$proxyIPs``\\ 에 설정된 신뢰할 수 있는 프록시로부터 온 경우에만 고려됩니다."
 
 #: ../../source/incoming/incomingrequest.rst ../../source/incoming/message.rst
 #: ../../source/incoming/request.rst
 msgid "Parameters"
 msgstr "매개변수"
 
-#: ../../source/incoming/incomingrequest.rst:356
-#: ../../source/incoming/incomingrequest.rst:372
-#: ../../source/incoming/incomingrequest.rst:411
-#: ../../source/incoming/incomingrequest.rst:423
-#: ../../source/incoming/incomingrequest.rst:443
+#: ../../source/incoming/incomingrequest.rst:371
 msgid "The name of the variable/key to look for."
 msgstr "찾을 변수/키의 이름입니다."
 
-#: ../../source/incoming/incomingrequest.rst:357
-#: ../../source/incoming/incomingrequest.rst:373
-#: ../../source/incoming/incomingrequest.rst:424
-#: ../../source/incoming/incomingrequest.rst:444
-#: ../../source/incoming/incomingrequest.rst:464
-#: ../../source/incoming/incomingrequest.rst:486
+#: ../../source/incoming/incomingrequest.rst:372
+#: ../../source/incoming/incomingrequest.rst:388
+#: ../../source/incoming/incomingrequest.rst:439
+#: ../../source/incoming/incomingrequest.rst:462
+#: ../../source/incoming/incomingrequest.rst:485
+#: ../../source/incoming/incomingrequest.rst:507
 msgid ""
 "The type of filter to apply. A list of filters can be found in `Types of "
 "filters <https://www.php.net/manual/en/filters.php>`__."
@@ -3343,12 +3372,12 @@ msgstr ""
 "적용할 필터 유형입니다. 필터 목록은 `Types of filters "
 "<https://www.php.net/manual/en/filters.php>`__\\ 에서 확인할 수 있습니다."
 
-#: ../../source/incoming/incomingrequest.rst:359
-#: ../../source/incoming/incomingrequest.rst:375
-#: ../../source/incoming/incomingrequest.rst:426
-#: ../../source/incoming/incomingrequest.rst:446
-#: ../../source/incoming/incomingrequest.rst:466
-#: ../../source/incoming/incomingrequest.rst:488
+#: ../../source/incoming/incomingrequest.rst:374
+#: ../../source/incoming/incomingrequest.rst:390
+#: ../../source/incoming/incomingrequest.rst:441
+#: ../../source/incoming/incomingrequest.rst:464
+#: ../../source/incoming/incomingrequest.rst:487
+#: ../../source/incoming/incomingrequest.rst:509
 msgid ""
 "Flags to apply. A list of flags can be found in `Filter flags "
 "<https://www.php.net/manual/en/filter.constants.php#filter.constants.flags.generic>`__."
@@ -3357,66 +3386,73 @@ msgstr ""
 "<https://www.php.net/manual/en/filter.constants.php#filter.constants.flags.generic>`__\\"
 " 에서 확인할 수 있습니다."
 
-#: ../../source/incoming/incomingrequest.rst:361
+#: ../../source/incoming/incomingrequest.rst:376
 msgid ""
 "``$_REQUEST`` if no parameters supplied, otherwise the REQUEST value if "
 "found, or null if not"
 msgstr "매개변수를 지정하지 않으면 ``$_REQUEST`` 전체, 지정하면 해당 REQUEST 값 또는 없으면 null."
 
-#: ../../source/incoming/incomingrequest.rst:368
+#: ../../source/incoming/incomingrequest.rst:383
 msgid ""
 "This method is identical to ``getGet()``, only it fetches REQUEST data."
 msgstr "이 메서드는 ``getGet()``\\ 과 동일하지만 REQUEST 데이터를 가져옵니다."
 
-#: ../../source/incoming/incomingrequest.rst:377
+#: ../../source/incoming/incomingrequest.rst:387
+#: ../../source/incoming/incomingrequest.rst:426
+#: ../../source/incoming/incomingrequest.rst:438
+#: ../../source/incoming/incomingrequest.rst:461
+msgid "The name of the variable/key to look for, or an array of names."
+msgstr "찾을 변수/키의 이름이며, 이름의 배열일 수도 있습니다."
+
+#: ../../source/incoming/incomingrequest.rst:392
 msgid ""
 "``$_GET`` if no parameters supplied, otherwise the GET value if found, or "
 "null if not"
 msgstr "매개변수를 지정하지 않으면 ``$_GET`` 전체, 지정하면 해당 GET 값 또는 없으면 null."
 
-#: ../../source/incoming/incomingrequest.rst:380
+#: ../../source/incoming/incomingrequest.rst:395
 msgid ""
 "The first parameter will contain the name of the GET item you are looking "
 "for:"
 msgstr "첫 번째 인수에 찾고자 하는 GET 항목의 이름을 지정합니다:"
 
-#: ../../source/incoming/incomingrequest.rst:384
+#: ../../source/incoming/incomingrequest.rst:399
 msgid ""
 "The method returns null if the item you are attempting to retrieve does not "
 "exist."
 msgstr "가져오려는 항목이 존재하지 않으면 메서드는 null을 반환합니다."
 
-#: ../../source/incoming/incomingrequest.rst:387
+#: ../../source/incoming/incomingrequest.rst:402
 msgid ""
 "The second optional parameter lets you run the data through the PHP's "
 "filters. Pass in the desired filter type as the second parameter:"
 msgstr ""
 "두 번째 선택적 인수를 사용하면 PHP 필터를 통해 데이터를 처리할 수 있습니다. 원하는 필터 유형을 두 번째 인수로 전달하세요:"
 
-#: ../../source/incoming/incomingrequest.rst:392
+#: ../../source/incoming/incomingrequest.rst:407
 msgid "To return an array of all GET items call without any parameters."
 msgstr "모든 GET 항목을 배열로 반환하려면 인수 없이 호출하세요."
 
-#: ../../source/incoming/incomingrequest.rst:394
+#: ../../source/incoming/incomingrequest.rst:409
 msgid ""
 "To return all GET items and pass them through the filter, set the first "
 "parameter to null while setting the second parameter to the filter you want "
 "to use:"
 msgstr "모든 GET 항목을 가져와 필터를 적용하려면 첫 번째 인수를 null로, 두 번째 인수를 원하는 필터로 설정하세요:"
 
-#: ../../source/incoming/incomingrequest.rst:400
+#: ../../source/incoming/incomingrequest.rst:415
 msgid ""
 "To return an array of multiple GET parameters, pass all the required keys as"
 " an array:"
 msgstr "여러 GET 파라미터를 배열로 반환하려면 필요한 키 전체를 배열로 전달하세요:"
 
-#: ../../source/incoming/incomingrequest.rst:404
+#: ../../source/incoming/incomingrequest.rst:419
 msgid ""
 "Same rule applied here, to retrieve the parameters with filtering, set the "
 "second parameter to the filter type to apply:"
 msgstr "필터링이 적용된 파라미터를 가져오려면 마찬가지로 두 번째 인수에 필터 유형을 설정하세요:"
 
-#: ../../source/incoming/incomingrequest.rst:412
+#: ../../source/incoming/incomingrequest.rst:427
 msgid ""
 "The type of filter to apply. A list of filters can be found `here "
 "<https://www.php.net/manual/en/filters.php>`__."
@@ -3424,7 +3460,7 @@ msgstr ""
 "적용할 필터 유형입니다. 필터 목록은 `여기 <https://www.php.net/manual/en/filters.php>`__\\ 에서"
 " 확인할 수 있습니다."
 
-#: ../../source/incoming/incomingrequest.rst:414
+#: ../../source/incoming/incomingrequest.rst:429
 msgid ""
 "Flags to apply. A list of flags can be found `here "
 "<https://www.php.net/manual/en/filter.constants.php#filter.constants.flags.generic>`__."
@@ -3433,17 +3469,17 @@ msgstr ""
 "<https://www.php.net/manual/en/filter.constants.php#filter.constants.flags.generic>`__\\"
 " 에서 확인할 수 있습니다."
 
-#: ../../source/incoming/incomingrequest.rst:416
+#: ../../source/incoming/incomingrequest.rst:431
 msgid ""
 "``$_POST`` if no parameters supplied, otherwise the POST value if found, or "
 "null if not"
 msgstr "매개변수를 지정하지 않으면 ``$_POST`` 전체, 지정하면 해당 POST 값 또는 없으면 null."
 
-#: ../../source/incoming/incomingrequest.rst:419
+#: ../../source/incoming/incomingrequest.rst:434
 msgid "This method is identical to ``getGet()``, only it fetches POST data."
 msgstr "이 메서드는 ``getGet()``\\ 과 동일하지만 POST 데이터를 가져옵니다."
 
-#: ../../source/incoming/incomingrequest.rst:428
+#: ../../source/incoming/incomingrequest.rst:443
 msgid ""
 "``$_POST`` and ``$_GET`` combined if no parameters specified (prefer POST "
 "value on conflict), otherwise looks for POST value, if nothing found looks "
@@ -3452,7 +3488,7 @@ msgstr ""
 "매개변수를 지정하지 않으면 ``$_POST``\\ 와 ``$_GET``\\ 을 합산 반환(충돌 시 POST 우선), 지정하면 POST "
 "값을 먼저 찾고 없으면 GET 값을 찾으며 모두 없으면 null."
 
-#: ../../source/incoming/incomingrequest.rst:432
+#: ../../source/incoming/incomingrequest.rst:447
 msgid ""
 "This method works pretty much the same way as ``getPost()`` and "
 "``getGet()``, only combined. It will search through both POST and GET "
@@ -3461,13 +3497,21 @@ msgstr ""
 "이 메서드는 ``getPost()``\\ 와 ``getGet()``\\ 을 합친 방식으로 동작합니다. POST를 먼저, 그 다음 GET "
 "순서로 데이터를 검색합니다:"
 
-#: ../../source/incoming/incomingrequest.rst:438
+#: ../../source/incoming/incomingrequest.rst:453
+msgid ""
+"If an array of indexes is specified, the method returns an associative array"
+" and applies the POST-then-GET lookup order to each index."
+msgstr ""
+"인덱스 배열을 지정하면 이 메서드는 연관 배열(associative array)을 반환하며, 각 인덱스에 POST 우선(POST-"
+"then-GET) 조회 순서를 적용합니다."
+
+#: ../../source/incoming/incomingrequest.rst:456
 msgid ""
 "If no index is specified, it will return both POST and GET streams combined."
 " Although POST data will be preferred in case of name conflict."
 msgstr "인덱스를 지정하지 않으면 POST와 GET 스트림을 합쳐 반환합니다. 이름이 충돌하는 경우 POST 데이터가 우선합니다."
 
-#: ../../source/incoming/incomingrequest.rst:448
+#: ../../source/incoming/incomingrequest.rst:466
 msgid ""
 "``$_GET`` and ``$_POST`` combined if no parameters specified (prefer GET "
 "value on conflict), otherwise looks for GET value, if nothing found looks "
@@ -3476,7 +3520,7 @@ msgstr ""
 "매개변수를 지정하지 않으면 ``$_GET``\\ 와 ``$_POST``\\ 를 합산 반환(충돌 시 GET 우선), 지정하면 GET 값을 "
 "먼저 찾고 없으면 POST 값을 찾으며 모두 없으면 null."
 
-#: ../../source/incoming/incomingrequest.rst:452
+#: ../../source/incoming/incomingrequest.rst:470
 msgid ""
 "This method works pretty much the same way as ``getPost()`` and "
 "``getGet()``, only combined. It will search through both GET and POST "
@@ -3485,35 +3529,43 @@ msgstr ""
 "이 메서드는 ``getPost()``\\ 와 ``getGet()``\\ 을 합친 방식으로 동작합니다. GET을 먼저, 그 다음 POST "
 "순서로 데이터를 검색합니다:"
 
-#: ../../source/incoming/incomingrequest.rst:458
+#: ../../source/incoming/incomingrequest.rst:476
+msgid ""
+"If an array of indexes is specified, the method returns an associative array"
+" and applies the GET-then-POST lookup order to each index."
+msgstr ""
+"인덱스 배열을 지정하면 이 메서드는 연관 배열(associative array)을 반환하며, 각 인덱스에 GET 우선(GET-then-"
+"POST) 조회 순서를 적용합니다."
+
+#: ../../source/incoming/incomingrequest.rst:479
 msgid ""
 "If no index is specified, it will return both GET and POST streams combined."
 " Although GET data will be preferred in case of name conflict."
 msgstr "인덱스를 지정하지 않으면 GET과 POST 스트림을 합쳐 반환합니다. 이름이 충돌하는 경우 GET 데이터가 우선합니다."
 
-#: ../../source/incoming/incomingrequest.rst:463
+#: ../../source/incoming/incomingrequest.rst:484
 msgid "COOKIE name"
 msgstr "쿠키 이름"
 
-#: ../../source/incoming/incomingrequest.rst:468
+#: ../../source/incoming/incomingrequest.rst:489
 msgid ""
 "``$_COOKIE`` if no parameters supplied, otherwise the COOKIE value if found "
 "or null if not"
 msgstr "매개변수를 지정하지 않으면 ``$_COOKIE`` 전체, 지정하면 해당 쿠키 값 또는 없으면 null."
 
-#: ../../source/incoming/incomingrequest.rst:471
+#: ../../source/incoming/incomingrequest.rst:492
 msgid ""
 "This method is identical to ``getPost()`` and ``getGet()``, only it fetches "
 "cookie data:"
 msgstr "이 메서드는 ``getPost()``\\ 및 ``getGet()``\\ 과 동일하지만 쿠키 데이터를 가져옵니다:"
 
-#: ../../source/incoming/incomingrequest.rst:475
+#: ../../source/incoming/incomingrequest.rst:496
 msgid ""
 "To return an array of multiple cookie values, pass all the required keys as "
 "an array:"
 msgstr "여러 쿠키 값을 배열로 반환하려면 필요한 키 전체를 배열로 전달하세요:"
 
-#: ../../source/incoming/incomingrequest.rst:479
+#: ../../source/incoming/incomingrequest.rst:500
 msgid ""
 "Unlike the :doc:`Cookie Helper <../helpers/cookie_helper>` function "
 ":php:func:`get_cookie()`, this method does NOT prepend your configured "
@@ -3522,18 +3574,18 @@ msgstr ""
 ":doc:`Cookie 헬퍼 <../helpers/cookie_helper>`\\ 의 :php:func:`get_cookie()` 함수와"
 " 달리, 이 메서드는 설정된 ``Config\\Cookie::$prefix`` 값을 앞에 붙이지 않습니다."
 
-#: ../../source/incoming/incomingrequest.rst:485
+#: ../../source/incoming/incomingrequest.rst:506
 #: ../../source/incoming/request.rst:88 ../../source/incoming/request.rst:109
 #: ../../source/incoming/request.rst:137
 msgid "Value name"
 msgstr "값 이름"
 
-#: ../../source/incoming/incomingrequest.rst:490
+#: ../../source/incoming/incomingrequest.rst:511
 #: ../../source/incoming/request.rst:91
 msgid "``$_SERVER`` item value if found, null if not"
 msgstr "항목이 존재하면 ``$_SERVER`` 값, 없으면 null."
 
-#: ../../source/incoming/incomingrequest.rst:493
+#: ../../source/incoming/incomingrequest.rst:514
 msgid ""
 "This method is identical to the ``getPost()``, ``getGet()`` and "
 "``getCookie()`` methods, only it fetches Server data (``$_SERVER``):"
@@ -3541,31 +3593,31 @@ msgstr ""
 "이 메서드는 ``getPost()``, ``getGet()``, ``getCookie()`` 메서드와 동일하지만 서버 "
 "데이터(``$_SERVER``)를 가져옵니다:"
 
-#: ../../source/incoming/incomingrequest.rst:498
+#: ../../source/incoming/incomingrequest.rst:519
 #: ../../source/incoming/request.rst:99
 msgid ""
 "To return an array of multiple ``$_SERVER`` values, pass all the required "
 "keys as an array."
 msgstr "여러 ``$_SERVER`` 값을 배열로 반환하려면 필요한 키 전체를 배열로 전달하세요."
 
-#: ../../source/incoming/incomingrequest.rst:505
+#: ../../source/incoming/incomingrequest.rst:526
 msgid ""
 "The User Agent string, as found in the SERVER data, or null if not found."
 msgstr "SERVER 데이터에서 찾은 User Agent 문자열, 없으면 null."
 
-#: ../../source/incoming/incomingrequest.rst:508
+#: ../../source/incoming/incomingrequest.rst:529
 msgid "This method returns the User Agent instance from the SERVER data:"
 msgstr "이 메서드는 SERVER 데이터에서 User Agent 인스턴스를 반환합니다:"
 
-#: ../../source/incoming/incomingrequest.rst:514
+#: ../../source/incoming/incomingrequest.rst:535
 msgid "The current URI path relative to baseURL"
 msgstr "baseURL에 상대적인 현재 URI 경로."
 
-#: ../../source/incoming/incomingrequest.rst:517
+#: ../../source/incoming/incomingrequest.rst:538
 msgid "This method returns the current URI path relative to baseURL."
 msgstr "이 메서드는 baseURL에 상대적인 현재 URI 경로를 반환합니다."
 
-#: ../../source/incoming/incomingrequest.rst:519
+#: ../../source/incoming/incomingrequest.rst:540
 msgid ""
 "Prior to v4.4.0, this was the safest method to determine the \"current "
 "URI\", since ``IncomingRequest::$uri`` might not be aware of the complete "

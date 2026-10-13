@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-10 16:32+0900\n"
+"POT-Creation-Date: 2026-10-12 18:26+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ko <LL@li.org>\n"
@@ -596,11 +596,20 @@ msgstr "**json**\\ 과 **json-array** 캐스트는 다음에 json_encode 함수�
 msgid "the value whenever the property is set:"
 msgstr "속성이 설정될 때마다 해당 값에:"
 
-#: ../../source/models/entities.rst:291
+#: ../../source/models/entities.rst:290
+msgid ""
+"The ``array`` cast uses PHP serialization. Only read values previously "
+"written through the same Entity cast. Never store untrusted serialized "
+"strings directly in an ``array``-cast field."
+msgstr ""
+"``array`` 캐스트는 PHP 직렬화(serialization)를 사용합니다. 동일한 Entity 캐스트를 통해 이전에 기록된 값만 "
+"읽으십시오. 신뢰할 수 없는 직렬화 문자열을 ``array``\\ 캐스트 필드에 직접 저장하지 마십시오."
+
+#: ../../source/models/entities.rst:295
 msgid "CSV Casting"
 msgstr "CSV 캐스팅"
 
-#: ../../source/models/entities.rst:293
+#: ../../source/models/entities.rst:297
 msgid ""
 "If you know you have a flat array of simple values, encoding them as a "
 "serialized or JSON string may be more complex than the original structure. "
@@ -611,11 +620,11 @@ msgstr ""
 "있습니다. 쉼표로 구분된 값(CSV)으로 캐스팅하는 것은 더 간단한 대안으로, 공간을 덜 사용하고 사람이 더 쉽게 읽을 수 있는 문자열을"
 " 생성합니다:"
 
-#: ../../source/models/entities.rst:300
+#: ../../source/models/entities.rst:304
 msgid "Stored in the database as \"red,yellow,green\":"
 msgstr "데이터베이스에 \"red,yellow,green\"으로 저장됩니다:"
 
-#: ../../source/models/entities.rst:304
+#: ../../source/models/entities.rst:308
 msgid ""
 "Casting as CSV uses PHP's internal ``implode`` and ``explode`` methods and "
 "assumes all values are string-safe and free of commas. For more complex data"
@@ -624,81 +633,81 @@ msgstr ""
 "CSV로 캐스팅하면 PHP 내부의 ``implode``\\ 와 ``explode`` 메서드를 사용하며, 모든 값이 문자열로 안전하고 "
 "쉼표가 없다고 가정합니다. 더 복잡한 데이터 캐스트에는 ``array`` 또는 ``json``\\ 을 사용하세요."
 
-#: ../../source/models/entities.rst:307
+#: ../../source/models/entities.rst:311
 msgid "Enum Casting"
 msgstr "Enum 캐스팅"
 
-#: ../../source/models/entities.rst:311
+#: ../../source/models/entities.rst:315
 msgid ""
 "You can cast properties to PHP enums. You must specify the enum class name "
 "as a parameter."
 msgstr "속성을 PHP enum으로 캐스팅할 수 있습니다. 파라미터로 enum 클래스 이름을 지정해야 합니다."
 
-#: ../../source/models/entities.rst:313 ../../source/models/model.rst:426
+#: ../../source/models/entities.rst:317 ../../source/models/model.rst:426
 msgid "Enum casting supports:"
 msgstr "Enum 캐스팅은 다음을 지원합니다:"
 
-#: ../../source/models/entities.rst:315 ../../source/models/model.rst:428
+#: ../../source/models/entities.rst:319 ../../source/models/model.rst:428
 msgid ""
 "**Backed enums** (string or int) - The backing value is stored in the "
 "database"
 msgstr "**Backed enum** (string 또는 int) - 백킹 값이 데이터베이스에 저장됩니다"
 
-#: ../../source/models/entities.rst:316 ../../source/models/model.rst:429
+#: ../../source/models/entities.rst:320 ../../source/models/model.rst:429
 msgid "**Unit enums** - The case name is stored in the database as a string"
 msgstr "**Unit enum** - 케이스 이름이 문자열로 데이터베이스에 저장됩니다"
 
-#: ../../source/models/entities.rst:318
+#: ../../source/models/entities.rst:322
 msgid ""
 "For example, if you had a User entity with a ``status`` property using a "
 "backed enum:"
 msgstr "예를 들어, backed enum을 사용하는 ``status`` 속성을 가진 User 엔티티가 있다면:"
 
-#: ../../source/models/entities.rst:322
+#: ../../source/models/entities.rst:326
 msgid "You can cast it in your Entity:"
 msgstr "엔티티에서 다음과 같이 캐스팅할 수 있습니다:"
 
-#: ../../source/models/entities.rst:326
+#: ../../source/models/entities.rst:330
 msgid ""
 "Now, when you access the ``status`` property, it will automatically be "
 "converted to a ``UserStatus`` enum instance:"
 msgstr "이제 ``status`` 속성에 접근하면 자동으로 ``UserStatus`` enum 인스턴스로 변환됩니다:"
 
-#: ../../source/models/entities.rst:330
+#: ../../source/models/entities.rst:334
 msgid "For nullable enums:"
 msgstr "nullable enum의 경우:"
 
-#: ../../source/models/entities.rst:335 ../../source/models/model.rst:432
+#: ../../source/models/entities.rst:339 ../../source/models/model.rst:432
 msgid "Custom Casting"
 msgstr "커스텀 캐스팅"
 
-#: ../../source/models/entities.rst:337
+#: ../../source/models/entities.rst:341
 msgid "You can define your own conversion types for getting and setting data."
 msgstr "데이터를 가져오고 설정하기 위한 자체 변환 타입을 정의할 수 있습니다."
 
-#: ../../source/models/entities.rst:339
+#: ../../source/models/entities.rst:343
 msgid ""
 "At first you need to create a handler class for your type. Let's say the "
 "class will be located in the **app/Entities/Cast** directory:"
 msgstr ""
 "먼저 타입에 대한 핸들러 클래스를 생성해야 합니다. 클래스가 **app/Entities/Cast** 디렉터리에 위치한다고 가정합니다:"
 
-#: ../../source/models/entities.rst:344 ../../source/models/model.rst:452
+#: ../../source/models/entities.rst:348 ../../source/models/model.rst:452
 msgid "Now you need to register it:"
 msgstr "이제 등록해야 합니다:"
 
-#: ../../source/models/entities.rst:348 ../../source/models/model.rst:444
+#: ../../source/models/entities.rst:352 ../../source/models/model.rst:444
 msgid ""
 "If you don't need to change values when getting or setting a value. Then "
 "just don't implement the appropriate method:"
 msgstr "값을 가져오거나 설정할 때 값을 변경할 필요가 없다면, 해당 메서드를 구현하지 않으면 됩니다:"
 
-#: ../../source/models/entities.rst:353 ../../source/models/model.rst
+#: ../../source/models/entities.rst:357 ../../source/models/model.rst
 #: ../../source/models/model.rst:457
 msgid "Parameters"
 msgstr "파라미터"
 
-#: ../../source/models/entities.rst:355 ../../source/models/model.rst:459
+#: ../../source/models/entities.rst:359 ../../source/models/model.rst:459
 msgid ""
 "In some cases, one type is not enough. In this situation, you can use "
 "additional parameters. Additional parameters are indicated in square "
@@ -707,7 +716,7 @@ msgstr ""
 "경우에 따라 하나의 타입으로는 충분하지 않을 수 있습니다. 이런 상황에서는 추가 파라미터를 사용할 수 있습니다. 추가 파라미터는 대괄호 "
 "안에 ``type[param1, param2]``\\ 처럼 쉼표로 구분하여 나열합니다."
 
-#: ../../source/models/entities.rst:363 ../../source/models/model.rst:467
+#: ../../source/models/entities.rst:367 ../../source/models/model.rst:467
 msgid ""
 "If the casting type is marked as nullable like ``?bool`` and the passed "
 "value is not null, then the parameter with the value ``nullable`` will be "
@@ -718,35 +727,35 @@ msgstr ""
 " 파라미터가 캐스팅 타입 핸들러에 전달됩니다. 캐스팅 타입에 미리 정의된 파라미터가 있으면 ``nullable``\\ 은 목록의 끝에 "
 "추가됩니다."
 
-#: ../../source/models/entities.rst:369
+#: ../../source/models/entities.rst:373
 msgid "Checking for Changed Attributes"
 msgstr "변경된 속성 확인하기"
 
-#: ../../source/models/entities.rst:371
+#: ../../source/models/entities.rst:375
 msgid ""
 "You can check if an Entity attribute has changed since it was created. The "
 "only parameter is the name of the attribute to check:"
 msgstr "엔티티 속성이 생성된 이후 변경되었는지 확인할 수 있습니다. 유일한 파라미터는 확인할 속성의 이름입니다:"
 
-#: ../../source/models/entities.rst:376
+#: ../../source/models/entities.rst:380
 msgid "Or to check the whole entity for changed values omit the parameter:"
 msgstr "또는 전체 엔티티에서 변경된 값을 확인하려면 파라미터를 생략합니다:"
 
-#: ../../source/models/entities.rst:381
+#: ../../source/models/entities.rst:385
 msgid "Deep Change Tracking"
 msgstr "깊은 변경 추적"
 
-#: ../../source/models/entities.rst:385
+#: ../../source/models/entities.rst:389
 msgid ""
 "The Entity class performs **deep comparison** for objects and arrays to "
 "accurately detect changes in their internal state."
 msgstr "엔티티 클래스는 객체와 배열에 대해 **깊은 비교**\\ 를 수행하여 내부 상태의 변경을 정확하게 감지합니다."
 
-#: ../../source/models/entities.rst:388
+#: ../../source/models/entities.rst:392
 msgid "Scalar Values"
 msgstr "스칼라 값"
 
-#: ../../source/models/entities.rst:390
+#: ../../source/models/entities.rst:394
 msgid ""
 "For scalar values (strings, integers, floats, booleans, null), the Entity "
 "uses direct comparison. When all attributes in an Entity are scalars, an "
@@ -755,11 +764,11 @@ msgstr ""
 "스칼라 값(문자열, 정수, 부동소수점, 불리언, null)의 경우 엔티티는 직접 비교를 사용합니다. 엔티티의 모든 속성이 스칼라인 경우 "
 "더 나은 성능을 위해 최적화된 비교가 사용됩니다."
 
-#: ../../source/models/entities.rst:394
+#: ../../source/models/entities.rst:398
 msgid "Objects and Arrays"
 msgstr "객체와 배열"
 
-#: ../../source/models/entities.rst:396
+#: ../../source/models/entities.rst:400
 msgid ""
 "For objects and arrays, the Entity JSON-encodes and normalizes the values "
 "for comparison. This means that modifications to nested structures, object "

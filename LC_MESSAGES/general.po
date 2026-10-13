@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CodeIgniter 4.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-10 16:32+0900\n"
+"POT-Creation-Date: 2026-10-12 18:26+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ko <LL@li.org>\n"
@@ -174,6 +174,18 @@ msgstr ""
 
 #: ../../source/general/caching.rst:29
 msgid ""
+"Web Page Caching is shared between requests with the same HTTP method and "
+"URI. Its cache key does not vary by authenticated user, cookies, "
+"authorization headers, ``Cache-Control``, or ``Vary``. Do not use it for "
+"protected or personalized responses, as cached responses may be returned "
+"before authentication and authorization filters run."
+msgstr ""
+"웹 페이지 캐싱은 동일한 HTTP 메서드와 URI를 가진 요청들 사이에서 공유됩니다. 캐시 키는 인증된 사용자, 쿠키, "
+"인가(authorization) 헤더, ``Cache-Control``, ``Vary``\\ 에 따라 달라지지 않습니다. 인증·인가 "
+"필터가 실행되기 전에 캐시된 응답이 반환될 수 있으므로, 보호되거나 개인화된 응답에는 사용하지 마십시오."
+
+#: ../../source/general/caching.rst:35
+msgid ""
 "When a page is loaded for the first time, the page will be cached using the "
 "currently configured cache engine. On subsequent page loads, the cache will "
 "be retrieved and sent to the requesting user's browser."
@@ -181,27 +193,27 @@ msgstr ""
 "페이지가 처음 로드되면 현재 설정된 캐시 엔진을 사용해 해당 페이지가 캐시됩니다. 이후 페이지 로드에서는 캐시를 가져와 요청한 사용자의 "
 "브라우저로 전송합니다."
 
-#: ../../source/general/caching.rst:33
+#: ../../source/general/caching.rst:39
 msgid ""
 "If it has expired, it will be deleted and refreshed before being sent to the"
 " browser."
 msgstr "캐시가 만료되었으면 삭제 후 갱신되어 브라우저로 전송됩니다."
 
-#: ../../source/general/caching.rst:36
+#: ../../source/general/caching.rst:42
 msgid ""
 "The Benchmark tag is not cached so you can still view your page load speed "
 "when caching is enabled."
 msgstr "Benchmark 태그는 캐시되지 않으므로 캐싱이 활성화된 상태에서도 페이지 로딩 속도를 계속 확인할 수 있습니다."
 
-#: ../../source/general/caching.rst:40
+#: ../../source/general/caching.rst:46
 msgid "Configuring Caching"
 msgstr "캐싱 설정"
 
-#: ../../source/general/caching.rst:43
+#: ../../source/general/caching.rst:49
 msgid "Setting Cache Engine"
 msgstr "캐시 엔진 설정"
 
-#: ../../source/general/caching.rst:45
+#: ../../source/general/caching.rst:51
 msgid ""
 "Before using Web Page Caching, you must set the cache engine up by editing "
 "**app/Config/Cache.php**. See :ref:`libraries-caching-configuring-the-cache`"
@@ -210,22 +222,22 @@ msgstr ""
 "웹 페이지 캐싱을 사용하기 전에 **app/Config/Cache.php** 를 수정하여 캐시 엔진을 설정해야 합니다. 자세한 내용은 "
 ":ref:`libraries-caching-configuring-the-cache` 를 참고하세요."
 
-#: ../../source/general/caching.rst:50
+#: ../../source/general/caching.rst:56
 msgid "Setting $cacheQueryString"
 msgstr "$cacheQueryString 설정"
 
-#: ../../source/general/caching.rst:52
+#: ../../source/general/caching.rst:58
 msgid ""
 "You can set whether or not to include the query string when generating the "
 "cache with ``Config\\Cache::$cacheQueryString``."
 msgstr ""
 "``Config\\Cache::$cacheQueryString`` 으로 캐시 생성 시 쿼리 문자열 포함 여부를 설정할 수 있습니다."
 
-#: ../../source/general/caching.rst:55 ../../source/general/caching.rst:76
+#: ../../source/general/caching.rst:61 ../../source/general/caching.rst:82
 msgid "Valid options are:"
 msgstr "유효한 옵션은 다음과 같습니다:"
 
-#: ../../source/general/caching.rst:57
+#: ../../source/general/caching.rst:63
 msgid ""
 "``false``: (default) Disabled. The query string is not taken into account; "
 "the same cache is returned for requests with the same URI path but different"
@@ -234,7 +246,7 @@ msgstr ""
 "``false``: (기본값) 비활성화. 쿼리 문자열을 고려하지 않으므로 URI 경로가 같고 쿼리 문자열만 다른 요청에는 동일한 캐시가 "
 "반환됩니다."
 
-#: ../../source/general/caching.rst:60
+#: ../../source/general/caching.rst:66
 msgid ""
 "``true``: Enabled, take all query parameters into account. Be aware that "
 "this may result in numerous cache generated for the same page over and over "
@@ -243,31 +255,31 @@ msgstr ""
 "``true``: 활성화. 모든 쿼리 파라미터를 고려합니다. 이 경우 같은 페이지에 대해 많은 캐시가 반복해서 생성될 수 있으니 "
 "주의하세요."
 
-#: ../../source/general/caching.rst:63
+#: ../../source/general/caching.rst:69
 msgid ""
 "**array**: Enabled, but only take into account the specified list of query "
 "parameters. E.g., ``['q', 'page']``."
 msgstr "**array**: 활성화. 단, 지정한 쿼리 파라미터 목록만 고려합니다. 예: ``['q', 'page']``."
 
-#: ../../source/general/caching.rst:69
+#: ../../source/general/caching.rst:75
 msgid "Setting $cacheStatusCodes"
 msgstr "$cacheStatusCodes 설정"
 
-#: ../../source/general/caching.rst:73
+#: ../../source/general/caching.rst:79
 msgid ""
 "You can control which HTTP response status codes are allowed to be cached "
 "with ``Config\\Cache::$cacheStatusCodes``."
 msgstr ""
 "``Config\\Cache::$cacheStatusCodes`` 로 캐시를 허용할 HTTP 응답 상태 코드를 제어할 수 있습니다."
 
-#: ../../source/general/caching.rst:78
+#: ../../source/general/caching.rst:84
 msgid ""
 "``[]``: (default) Cache all HTTP status codes. This maintains backward "
 "compatibility but may cache temporary error pages."
 msgstr ""
 "``[]``: (기본값) 모든 HTTP 상태 코드를 캐시합니다. 하위 호환성은 유지되지만 임시 오류 페이지도 캐시될 수 있습니다."
 
-#: ../../source/general/caching.rst:80
+#: ../../source/general/caching.rst:86
 msgid ""
 "``[200]``: (Recommended) Only cache successful responses. This prevents "
 "caching of error pages (404, 500, etc.) that should be temporary."
@@ -275,24 +287,24 @@ msgstr ""
 "``[200]``: (권장) 성공 응답만 캐시합니다. 이렇게 하면 임시여야 하는 오류 페이지(404, 500 등)의 캐싱을 방지할 수 "
 "있습니다."
 
-#: ../../source/general/caching.rst:82
+#: ../../source/general/caching.rst:88
 msgid "array of status codes: Cache only specific status codes. For example:"
 msgstr "상태 코드 배열: 특정 상태 코드만 캐시합니다. 예:"
 
-#: ../../source/general/caching.rst:84
+#: ../../source/general/caching.rst:90
 msgid "``[200, 404]``: Cache successful responses and not found pages."
 msgstr "``[200, 404]``: 성공 응답과 Not Found 페이지를 캐시합니다."
 
-#: ../../source/general/caching.rst:85
+#: ../../source/general/caching.rst:91
 msgid ""
 "``[200, 404, 410]``: Cache successful responses and specific error codes."
 msgstr "``[200, 404, 410]``: 성공 응답과 특정 오류 코드를 캐시합니다."
 
-#: ../../source/general/caching.rst:86
+#: ../../source/general/caching.rst:92
 msgid "``[200, 201, 202, 203, 204]``: All 2xx successful responses."
 msgstr "``[200, 201, 202, 203, 204]``: 모든 2xx 성공 응답."
 
-#: ../../source/general/caching.rst:88
+#: ../../source/general/caching.rst:94
 msgid ""
 "Using an empty array ``[]`` may cache temporary error pages (404, 500, etc)."
 " For production applications, consider restricting this to ``[200]`` to "
@@ -304,7 +316,7 @@ msgstr ""
 "캐시하지 않도록 ``[200]`` 으로 제한하는 것을 고려하세요. 예를 들어 404 페이지가 캐시되면 리소스가 생성된 뒤에도 캐시 만료 "
 "전까지 계속 남아 있게 됩니다."
 
-#: ../../source/general/caching.rst:93
+#: ../../source/general/caching.rst:99
 msgid ""
 "Regardless of this setting, ``DownloadResponse`` and ``RedirectResponse`` "
 "instances are never cached by the ``PageCache`` filter."
@@ -312,22 +324,22 @@ msgstr ""
 "이 설정과 관계없이 ``DownloadResponse`` 및 ``RedirectResponse`` 인스턴스는 ``PageCache`` "
 "필터에서 절대 캐시되지 않습니다."
 
-#: ../../source/general/caching.rst:97
+#: ../../source/general/caching.rst:103
 msgid "Enabling Caching"
 msgstr "캐싱 활성화"
 
-#: ../../source/general/caching.rst:99
+#: ../../source/general/caching.rst:105
 msgid ""
 "To enable caching, put the following tag in any of your controller methods:"
 msgstr "캐싱을 활성화하려면 컨트롤러 메서드 어디든 다음 태그를 넣으세요:"
 
-#: ../../source/general/caching.rst:104
+#: ../../source/general/caching.rst:110
 msgid ""
 "Where ``$n`` is the number of **seconds** you wish the page to remain cached"
 " between refreshes."
 msgstr "여기서 ``$n``\\ 은 페이지를 새로고침 사이에 캐시 상태로 유지할 **초** 수입니다."
 
-#: ../../source/general/caching.rst:107
+#: ../../source/general/caching.rst:113
 msgid ""
 "The above tag can go anywhere within a method. It is not affected by the "
 "order that it appears, so place it wherever it seems most logical to you. "
@@ -336,23 +348,23 @@ msgstr ""
 "위 태그는 메서드 내부 어디에 두어도 됩니다. 표시 순서의 영향을 받지 않으므로 가장 논리적인 위치에 두세요. 태그를 추가하면 페이지 "
 "캐싱이 시작됩니다."
 
-#: ../../source/general/caching.rst:111
+#: ../../source/general/caching.rst:117
 msgid ""
 "If you change configuration options that might affect your output, you have "
 "to manually delete your cache."
 msgstr "출력에 영향을 줄 수 있는 설정 옵션을 변경했다면 캐시를 수동으로 삭제해야 합니다."
 
-#: ../../source/general/caching.rst:115
+#: ../../source/general/caching.rst:121
 msgid "Deleting Caches"
 msgstr "캐시 삭제"
 
-#: ../../source/general/caching.rst:117
+#: ../../source/general/caching.rst:123
 msgid ""
 "If you no longer wish to cache a page you can remove the caching tag and it "
 "will no longer be refreshed when it expires."
 msgstr "더 이상 페이지를 캐시하고 싶지 않다면 캐싱 태그를 제거하세요. 그러면 만료 시 더 이상 갱신되지 않습니다."
 
-#: ../../source/general/caching.rst:120
+#: ../../source/general/caching.rst:126
 msgid ""
 "Removing the tag will not delete the cache immediately. It will have to "
 "expire normally."
@@ -4374,4 +4386,4 @@ msgstr ""
 #~ msgid ""
 #~ "In VueJS you just need to add the following code to the ``created`` "
 #~ "function, as long as you are using Axios for this type of request."
-#~ msgstr "VueJS에서 이런 유형의 요청에 Axios를 사용한다면, ``created`` 함수에 다음 코드를 추가하기만 하면 됩니다."
+#~ msgstr "VueJS에서는 이런 유형의 요청에 Axios를 사용하고 있다면 ``created`` 함수에 다음 코드만 추가하면 됩니다."
