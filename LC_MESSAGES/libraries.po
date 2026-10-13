@@ -212,7 +212,7 @@ msgstr "반환 타입"
 #: ../../source/libraries/encryption.rst ../../source/libraries/throttler.rst
 #: ../../source/libraries/typography.rst ../../source/libraries/user_agent.rst
 msgid "Parameters"
-msgstr "파라미터"
+msgstr "매개변수"
 
 #: ../../source/libraries/caching.rst:120
 #: ../../source/libraries/caching.rst:133

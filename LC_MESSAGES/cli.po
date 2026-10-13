@@ -259,7 +259,7 @@ msgstr ""
 
 #: ../../source/cli/cli_commands.rst ../../source/cli/cli_signals.rst
 msgid "Parameters"
-msgstr "파라미터"
+msgstr "매개변수"
 
 #: ../../source/cli/cli_commands.rst:113
 msgid "The name of another command to call."

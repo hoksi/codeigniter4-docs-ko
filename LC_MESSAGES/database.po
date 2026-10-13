@@ -3788,7 +3788,7 @@ msgstr "현재 쿼리 빌더 상태를 재설정합니다. 특정 조건에서 �
 
 #: ../../source/database/query_builder.rst ../../source/database/results.rst
 msgid "Parameters"
-msgstr "파라미터"
+msgstr "매개변수"
 
 #: ../../source/database/query_builder.rst:1365
 #: ../../source/database/query_builder.rst:1374

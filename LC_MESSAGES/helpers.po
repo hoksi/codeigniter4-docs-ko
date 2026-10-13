@@ -105,7 +105,7 @@ msgstr "다음 함수들을 사용할 수 있습니다:"
 #: ../../source/helpers/test_helper.rst ../../source/helpers/text_helper.rst
 #: ../../source/helpers/url_helper.rst ../../source/helpers/xml_helper.rst
 msgid "Parameters"
-msgstr "파라미터"
+msgstr "매개변수"
 
 #: ../../source/helpers/array_helper.rst:27
 msgid "The dot-notation string describing how to search the array"
