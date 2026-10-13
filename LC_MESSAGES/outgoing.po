@@ -219,7 +219,7 @@ msgstr "수업 참고자료"
 #: ../../source/outgoing/view_parser.rst
 #: ../../source/outgoing/view_renderer.rst
 msgid "Parameters"
-msgstr "파라미터"
+msgstr "매개변수"
 
 #: ../../source/outgoing/api_responses.rst:74
 msgid "The type of response to return, either ``json`` or ``xml``"

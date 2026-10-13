@@ -798,7 +798,7 @@ msgstr ""
 
 #: ../../source/testing/controllers.rst
 msgid "Parameters"
-msgstr "파라미터"
+msgstr "매개변수"
 
 #: ../../source/testing/controllers.rst:168
 msgid "The URI to check"

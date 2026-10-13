@@ -705,7 +705,7 @@ msgstr "값을 가져오거나 설정할 때 값을 변경할 필요가 없다�
 #: ../../source/models/entities.rst:357 ../../source/models/model.rst
 #: ../../source/models/model.rst:457
 msgid "Parameters"
-msgstr "파라미터"
+msgstr "매개변수"
 
 #: ../../source/models/entities.rst:359 ../../source/models/model.rst:459
 msgid ""

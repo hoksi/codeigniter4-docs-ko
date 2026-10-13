@@ -3353,7 +3353,7 @@ msgstr ""
 #: ../../source/incoming/incomingrequest.rst ../../source/incoming/message.rst
 #: ../../source/incoming/request.rst
 msgid "Parameters"
-msgstr "파라미터"
+msgstr "매개변수"
 
 #: ../../source/incoming/incomingrequest.rst:371
 msgid "The name of the variable/key to look for."
