@@ -708,7 +708,7 @@ msgstr "``null`` (component 이름으로 기본값 설정)"
 
 #: ../../source/concepts/factories.rst:186
 msgid "path"
-msgstr "경로"
+msgstr "path"
 
 #: ../../source/concepts/factories.rst:186
 msgid "The relative path within the namespace/folder to look for classes."
